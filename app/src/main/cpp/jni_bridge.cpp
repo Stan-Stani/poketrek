@@ -140,3 +140,24 @@ extern "C" JNIEXPORT void JNICALL
 Java_com_poketrek_emu_NativeEmulator_destroy(JNIEnv* /*env*/, jobject /*thiz*/) {
     g_emulator.reset();
 }
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_poketrek_emu_NativeEmulator_setKeys(JNIEnv* /*env*/, jobject /*thiz*/, jint keys) {
+    if (!g_emulator || !g_emulator->core) return;
+    g_emulator->core->setKeys(g_emulator->core, static_cast<uint32_t>(keys));
+}
+
+// Writes the current framebuffer into a direct ByteBuffer of length >=
+// FRAMEBUFFER_BYTES. The byte layout is mGBA's native 32-bit color_t: R, G, B, A
+// in memory order, which matches Android Bitmap.Config.ARGB_8888 byte layout
+// (despite the name) and works with Bitmap.copyPixelsFromBuffer.
+extern "C" JNIEXPORT jboolean JNICALL
+Java_com_poketrek_emu_NativeEmulator_writeFramebuffer(JNIEnv* env, jobject /*thiz*/, jobject directBuffer) {
+    if (!g_emulator) return JNI_FALSE;
+    void* dst = env->GetDirectBufferAddress(directBuffer);
+    jlong cap = env->GetDirectBufferCapacity(directBuffer);
+    if (!dst || cap < FRAMEBUFFER_BYTES) return JNI_FALSE;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    std::memcpy(dst, g_emulator->framebuffer.data(), FRAMEBUFFER_BYTES);
+    return JNI_TRUE;
+}

@@ -25,4 +25,30 @@ class NativeEmulator {
 
     /** Releases the native emulator instance. */
     external fun destroy()
+
+    /**
+     * Sets the GBA key bitmask (active-high). Bits per the GBA KEYINPUT layout:
+     * 0=A, 1=B, 2=Select, 3=Start, 4=Right, 5=Left, 6=Up, 7=Down, 8=R, 9=L.
+     */
+    external fun setKeys(keys: Int)
+
+    /**
+     * Copies the current framebuffer into a direct [java.nio.ByteBuffer] of at
+     * least 240*160*4 bytes. Returns true on success. Avoids per-frame allocs.
+     */
+    external fun writeFramebuffer(buffer: java.nio.ByteBuffer): Boolean
+}
+
+/** GBA key bits matching mGBA's setKeys mask. */
+object GbaKey {
+    const val A      = 1 shl 0
+    const val B      = 1 shl 1
+    const val SELECT = 1 shl 2
+    const val START  = 1 shl 3
+    const val RIGHT  = 1 shl 4
+    const val LEFT   = 1 shl 5
+    const val UP     = 1 shl 6
+    const val DOWN   = 1 shl 7
+    const val R      = 1 shl 8
+    const val L      = 1 shl 9
 }

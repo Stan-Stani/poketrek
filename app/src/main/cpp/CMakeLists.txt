@@ -56,3 +56,9 @@ target_compile_options(poketrek PRIVATE
     -Wall -Wextra -Wno-unused-parameter
     -ffunction-sections -fdata-sections
 )
+
+# Android 15+ on devices with 16KB pages requires .so segments aligned to 16KB.
+# Without this the ELF loader falls back to compatibility mode and shows a warning.
+target_link_options(poketrek PRIVATE
+    "-Wl,-z,max-page-size=16384"
+)
