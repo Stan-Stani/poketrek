@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import com.poketrek.emu.CalibrationStore
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.emu.SaveStateStore
 import com.poketrek.step.MovementBudget
@@ -80,7 +81,7 @@ class EmulatorActivity : ComponentActivity() {
                 WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
         budget = MovementBudget.get(applicationContext)
-        runner = EmulatorRunner(budget)
+        runner = EmulatorRunner(budget, CalibrationStore(applicationContext))
         saveStateStore = SaveStateStore(applicationContext)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU

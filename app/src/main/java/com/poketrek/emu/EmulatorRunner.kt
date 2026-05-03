@@ -37,9 +37,26 @@ private const val AUDIO_BUFFER_BYTES = 4096
  * The Compose UI observes [frameTick] (increments each rendered frame) and
  * draws [bitmap]. Input is set via [setKeys].
  */
-class EmulatorRunner(private val budget: MovementBudget) {
+class EmulatorRunner(
+    private val budget: MovementBudget,
+    private val calibrationStore: CalibrationStore? = null,
+) {
     private val native = NativeEmulator()
     val gate: MovementGate = MovementGate(budget)
+
+    /**
+     * Calibration for the currently-loaded ROM. Refreshed on [loadRom] from
+     * [calibrationStore]; null means we have no calibration for this ROM
+     * (gating will be bypassed). Read on the emu thread, written on the UI
+     * thread on ROM load and after a successful calibrate flow.
+     */
+    @Volatile
+    private var calibration: RomCalibration? = null
+
+    /** Set after a successful calibration; emu thread picks it up next frame. */
+    fun applyCalibration(value: RomCalibration) {
+        calibration = value
+    }
 
     fun saveState(): ByteArray? = native.saveState()
     fun loadState(bytes: ByteArray): Boolean = native.loadState(bytes)
@@ -136,8 +153,12 @@ class EmulatorRunner(private val budget: MovementBudget) {
             _romIdentity.value = null
             return false
         }
-        _romIdentity.value = RomIdentity.of(bytes)
+        val identity = RomIdentity.of(bytes)
             .also { Log.i(TAG, "loaded ${it.variant.displayName} (${it.crc32Hex})") }
+        _romIdentity.value = identity
+        calibration = calibrationStore?.load(identity.crc32)
+            ?: if (identity.variant == RomVariant.LEAFGREEN_US_REV1) RomCalibration.DEFAULT_US_REV1
+            else null
         native.initAudio(SAMPLE_RATE)
         startAudio()
         _romLoaded.value = true
@@ -221,6 +242,7 @@ class EmulatorRunner(private val budget: MovementBudget) {
             native.destroy()
             _romLoaded.value = false
             _romIdentity.value = null
+            calibration = null
         }
     }
 
@@ -228,15 +250,12 @@ class EmulatorRunner(private val budget: MovementBudget) {
         var nextFrameAt = System.nanoTime()
         while (running.get()) {
             val rawKeys = keys.get()
-            val snapshot = LeafGreenRam.read(native)
-            // For ROM variants we haven't calibrated, skip gating entirely —
-            // LeafGreenRam reads at addresses that won't be valid on those
-            // builds, and the budget would burn out from random RAM diffs.
-            val gated = if (_romIdentity.value?.variant?.gatingSupported == false) {
-                rawKeys
-            } else {
-                gate.process(rawKeys, snapshot)
-            }
+            val cal = calibration
+            // No calibration → skip gating entirely. LeafGreenRam reads at
+            // addresses that won't be valid on uncalibrated builds, and the
+            // budget would burn out from random RAM diffs.
+            val snapshot = cal?.let { LeafGreenRam.read(native, it) }
+            val gated = if (snapshot == null) rawKeys else gate.process(rawKeys, snapshot)
             native.setKeys(gated)
             native.runFrame()
             if (native.writeFramebuffer(frameBuf)) {

@@ -6,6 +6,10 @@ package com.poketrek.emu
  * Player position lives behind a DMA-protected pointer at `0x03005008`. The
  * pointer's target value moves as the engine reshuffles, so we must deref each
  * read. Other addresses (e.g. moving status) are at fixed locations.
+ *
+ * For non-US-Rev1 builds (Korean), [SAVE_BLOCK1_PTR] is replaced at read time
+ * with the calibrated value from [RomCalibration]. The other addresses are
+ * still hardcoded to the US Rev 1 values until probes for them are added.
  */
 object LeafGreenRam {
     const val SAVE_BLOCK1_PTR = 0x03005008
@@ -22,8 +26,8 @@ object LeafGreenRam {
         val saveBlockPtr: Int,
     )
 
-    fun read(emu: NativeEmulator): Snapshot {
-        val ptr = emu.busRead32(SAVE_BLOCK1_PTR)
+    fun read(emu: NativeEmulator, calibration: RomCalibration = RomCalibration.DEFAULT_US_REV1): Snapshot {
+        val ptr = emu.busRead32(calibration.saveBlock1PtrAddr)
         val playerX: Int
         val playerY: Int
         val mapId: Int
