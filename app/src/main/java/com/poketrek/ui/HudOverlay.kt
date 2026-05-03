@@ -34,9 +34,35 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poketrek.emu.MovementGate
-import com.poketrek.step.MAX_RATIO
-import com.poketrek.step.MIN_RATIO
 import com.poketrek.step.MovementBudget
+
+/**
+ * Discrete ratio steps the slider snaps through. Index 0 is the hardest
+ * (most real steps per tile); the last index is the easiest. The middle
+ * stop is realistic 1:1.
+ */
+private val RATIO_TABLE: List<Pair<Int, Int>> = listOf(
+    1 to 8, 1 to 6, 1 to 4, 1 to 3, 1 to 2,
+    1 to 1,
+    2 to 1, 3 to 1, 4 to 1, 6 to 1, 8 to 1, 12 to 1, 16 to 1,
+)
+
+private fun ratioIndexFor(num: Int, den: Int): Int {
+    val idx = RATIO_TABLE.indexOfFirst { it.first == num && it.second == den }
+    return if (idx >= 0) idx else RATIO_TABLE.indexOfFirst { it.first == 1 && it.second == 1 }
+}
+
+private fun describeRatio(num: Int, den: Int): String = when {
+    num == 1 && den == 1 -> "1 step = 1 tile (realistic)"
+    num >= den -> {
+        val tiles = num / den
+        "1 step = $tiles tile${if (tiles != 1) "s" else ""}"
+    }
+    else -> {
+        val steps = den / num
+        "$steps steps = 1 tile"
+    }
+}
 
 /**
  * Compact, always-visible HUD: just the tile count + a button that opens the
@@ -126,10 +152,14 @@ fun SettingsSheet(
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
-    val ratio by budget.tilesPerStep.collectAsState()
+    val ratioNum by budget.tilesPerStepNum.collectAsState()
+    val ratioDen by budget.tilesPerStepDen.collectAsState()
     val gateOn by budget.gateEnabled.collectAsState()
     val debugOn by budget.debugHudVisible.collectAsState()
-    var ratioDraft by remember(ratio) { mutableStateOf(ratio.toFloat()) }
+    val currentIndex = ratioIndexFor(ratioNum, ratioDen)
+    var ratioDraft by remember(currentIndex) { mutableStateOf(currentIndex.toFloat()) }
+    val draftIndex = ratioDraft.toInt().coerceIn(0, RATIO_TABLE.lastIndex)
+    val (draftNum, draftDen) = RATIO_TABLE[draftIndex]
 
     ModalBottomSheet(onDismissRequest = onDismiss, sheetState = sheetState) {
         Column(
@@ -149,17 +179,35 @@ fun SettingsSheet(
 
             Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
                 Text(
-                    "1 real step = ${ratioDraft.toInt()} tiles",
+                    describeRatio(draftNum, draftDen),
                     fontFamily = FontFamily.Monospace,
                     fontSize = 14.sp,
                 )
                 Slider(
                     value = ratioDraft,
                     onValueChange = { ratioDraft = it },
-                    onValueChangeFinished = { budget.setTilesPerStep(ratioDraft.toInt()) },
-                    valueRange = MIN_RATIO.toFloat()..MAX_RATIO.toFloat(),
-                    steps = (MAX_RATIO - MIN_RATIO) - 1,
+                    onValueChangeFinished = {
+                        val (n, d) = RATIO_TABLE[draftIndex]
+                        budget.setRatio(n, d)
+                    },
+                    valueRange = 0f..(RATIO_TABLE.lastIndex).toFloat(),
+                    steps = RATIO_TABLE.size - 2,
                 )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                ) {
+                    Text(
+                        "8 steps / tile",
+                        color = Color(0xFF6B7280),
+                        fontSize = 11.sp,
+                    )
+                    Text(
+                        "16 tiles / step",
+                        color = Color(0xFF6B7280),
+                        fontSize = 11.sp,
+                    )
+                }
             }
 
             Text(
