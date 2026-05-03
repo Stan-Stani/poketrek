@@ -1,0 +1,25 @@
+# ROMs — never committed (copyright + size). Loaded at runtime via Storage Access Framework picker.
+*.gba
+*.gb
+*.gbc
+*.sav
+*.savestate
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+.cxx/
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+
+# Gradle wrapper jar tracked, but caches not
+**/.gradle/
+
+# macOS
+.DS_Store
+
+# mGBA build artifacts (in case anything escapes the build/ dirs)
+third_party/mgba/build/
