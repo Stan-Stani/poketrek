@@ -41,6 +41,7 @@ fun EmulatorScreen(
 ) {
     val tick by runner.frameTick
     val ramSnapshot by runner.ramSnapshot
+    val romIdentity by runner.romIdentity
     val debugOn by budget.debugHudVisible.collectAsState()
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
@@ -53,6 +54,7 @@ fun EmulatorScreen(
 
         HudBadge(
             budget = budget,
+            romIdentity = romIdentity,
             onOpenSettings = { settingsOpen = true },
             modifier = Modifier
                 .align(Alignment.TopStart)
@@ -62,6 +64,7 @@ fun EmulatorScreen(
         if (debugOn) {
             DebugOverlay(
                 snapshot = ramSnapshot,
+                romIdentity = romIdentity,
                 onDebugAddSteps = onDebugAddSteps,
                 modifier = Modifier
                     .align(Alignment.TopCenter)

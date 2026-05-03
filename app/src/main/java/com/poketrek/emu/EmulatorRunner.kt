@@ -71,6 +71,10 @@ class EmulatorRunner(budget: MovementBudget) {
     private val _ramSnapshot = mutableStateOf<com.poketrek.emu.LeafGreenRam.Snapshot?>(null)
     val ramSnapshot: androidx.compose.runtime.State<com.poketrek.emu.LeafGreenRam.Snapshot?> = _ramSnapshot
 
+    /** Identity (CRC32 + variant) of the currently-loaded ROM, or null when none. */
+    private val _romIdentity = mutableStateOf<RomIdentity?>(null)
+    val romIdentity: androidx.compose.runtime.State<RomIdentity?> = _romIdentity
+
     private val running = AtomicBoolean(false)
     private val keys = AtomicInteger(0)
     private var thread: Thread? = null
@@ -80,8 +84,11 @@ class EmulatorRunner(budget: MovementBudget) {
         val ok = native.loadRom(bytes)
         if (!ok) {
             Log.e(TAG, "loadRom returned false")
+            _romIdentity.value = null
             return false
         }
+        _romIdentity.value = RomIdentity.of(bytes)
+            .also { Log.i(TAG, "loaded ${it.variant.displayName} (${it.crc32Hex})") }
         native.initAudio(SAMPLE_RATE)
         startAudio()
         _romLoaded.value = true
@@ -138,6 +145,7 @@ class EmulatorRunner(budget: MovementBudget) {
         if (_romLoaded.value) {
             native.destroy()
             _romLoaded.value = false
+            _romIdentity.value = null
         }
     }
 
@@ -146,7 +154,14 @@ class EmulatorRunner(budget: MovementBudget) {
         while (running.get()) {
             val rawKeys = keys.get()
             val snapshot = LeafGreenRam.read(native)
-            val gated = gate.process(rawKeys, snapshot)
+            // For ROM variants we haven't calibrated, skip gating entirely —
+            // LeafGreenRam reads at addresses that won't be valid on those
+            // builds, and the budget would burn out from random RAM diffs.
+            val gated = if (_romIdentity.value?.variant?.gatingSupported == false) {
+                rawKeys
+            } else {
+                gate.process(rawKeys, snapshot)
+            }
             native.setKeys(gated)
             native.runFrame()
             if (native.writeFramebuffer(frameBuf)) {

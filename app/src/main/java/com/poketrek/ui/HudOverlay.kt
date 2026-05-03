@@ -74,11 +74,13 @@ private fun describeRatio(num: Int, den: Int): String = when {
 @Composable
 fun HudBadge(
     budget: MovementBudget,
+    romIdentity: com.poketrek.emu.RomIdentity?,
     onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val tiles by budget.budget.collectAsState()
     val gateOn by budget.gateEnabled.collectAsState()
+    val warn = romIdentity != null && !romIdentity.variant.gatingSupported
     Row(
         modifier = modifier
             .background(Color(0xCC000000), shape = RoundedCornerShape(10.dp))
@@ -86,13 +88,23 @@ fun HudBadge(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        Text(
-            text = if (gateOn) "TILES $tiles" else "TILES $tiles (free)",
-            color = if (gateOn && tiles == 0) Color(0xFFEF4444) else Color.White,
-            fontFamily = FontFamily.Monospace,
-            fontWeight = FontWeight.Bold,
-            fontSize = 13.sp,
-        )
+        Column {
+            Text(
+                text = if (gateOn) "TILES $tiles" else "TILES $tiles (free)",
+                color = if (gateOn && tiles == 0) Color(0xFFEF4444) else Color.White,
+                fontFamily = FontFamily.Monospace,
+                fontWeight = FontWeight.Bold,
+                fontSize = 13.sp,
+            )
+            if (warn) {
+                Text(
+                    text = "⚠ ${romIdentity!!.variant.displayName} — gating off",
+                    color = Color(0xFFFBBF24),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 9.sp,
+                )
+            }
+        }
         Button(
             onClick = onOpenSettings,
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF374151)),
@@ -111,6 +123,7 @@ fun HudBadge(
 @Composable
 fun DebugOverlay(
     snapshot: com.poketrek.emu.LeafGreenRam.Snapshot?,
+    romIdentity: com.poketrek.emu.RomIdentity?,
     onDebugAddSteps: (Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -120,6 +133,14 @@ fun DebugOverlay(
             .padding(horizontal = 8.dp, vertical = 4.dp),
         verticalArrangement = Arrangement.spacedBy(2.dp),
     ) {
+        if (romIdentity != null) {
+            Text(
+                text = "ROM: ${romIdentity.variant.displayName} ${romIdentity.crc32Hex}",
+                color = Color(0xFF9CA3AF),
+                fontFamily = FontFamily.Monospace,
+                fontSize = 10.sp,
+            )
+        }
         if (snapshot != null) {
             Text(
                 text = formatSnapshot(snapshot),
