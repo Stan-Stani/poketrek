@@ -57,6 +57,18 @@ class EmulatorRunner(
     private val _hasCalibration = mutableStateOf(false)
     val hasCalibration: androidx.compose.runtime.State<Boolean> = _hasCalibration
 
+    /**
+     * Stored EWRAM baseline for an in-progress calibration. Lives here (not in
+     * Compose `remember`) so the user can dismiss the settings menu, walk one
+     * tile in the overworld, and resume the calibration on reopen.
+     */
+    private val _calibrationBaseline = mutableStateOf<ByteArray?>(null)
+    val calibrationBaseline: androidx.compose.runtime.State<ByteArray?> = _calibrationBaseline
+
+    /** Latest calibration result for UI feedback. Cleared by the UI after display. */
+    private val _calibrationStatus = mutableStateOf<RomCalibrator.Result?>(null)
+    val calibrationStatus: androidx.compose.runtime.State<RomCalibrator.Result?> = _calibrationStatus
+
     private fun setCalibration(value: RomCalibration?) {
         calibration = value
         _hasCalibration.value = value != null
@@ -65,6 +77,43 @@ class EmulatorRunner(
     /** Reads a 256KB EWRAM snapshot for the calibration baseline step. */
     fun snapshotEwram(): ByteArray? =
         native.busReadBytes(RomCalibrator.EWRAM_BASE, RomCalibrator.EWRAM_SIZE)
+
+    /**
+     * Captures and stores the EWRAM baseline. UI calls this while the player
+     * is standing still in the overworld; survives menu dismissal so the
+     * user can then walk one tile and call [finishCalibration] on return.
+     */
+    fun beginCalibration(): Boolean {
+        val b = snapshotEwram() ?: return false
+        _calibrationBaseline.value = b
+        _calibrationStatus.value = null
+        return true
+    }
+
+    /** Drops any pending baseline / status (user cancelled the flow). */
+    fun cancelCalibration() {
+        _calibrationBaseline.value = null
+        _calibrationStatus.value = null
+    }
+
+    /** Clears the most recent result (e.g. after the user dismisses a toast). */
+    fun clearCalibrationStatus() {
+        _calibrationStatus.value = null
+    }
+
+    /**
+     * Completes calibration with the stored baseline. Returns
+     * [RomCalibrator.Result.ReadFailed] if no baseline was captured.
+     * On success, clears the baseline; the status is exposed via
+     * [calibrationStatus] for the UI.
+     */
+    suspend fun finishCalibration(): RomCalibrator.Result {
+        val b = _calibrationBaseline.value ?: return RomCalibrator.Result.ReadFailed
+        val r = runCalibration(b)
+        _calibrationStatus.value = r
+        if (r is RomCalibrator.Result.Ok) _calibrationBaseline.value = null
+        return r
+    }
 
     /**
      * Runs the calibration scan against [before] (an earlier EWRAM snapshot
@@ -186,6 +235,9 @@ class EmulatorRunner(
         val identity = RomIdentity.of(bytes)
             .also { Log.i(TAG, "loaded ${it.variant.displayName} (${it.crc32Hex})") }
         _romIdentity.value = identity
+        // Drop any pending calibration baseline — it belongs to the prior ROM.
+        _calibrationBaseline.value = null
+        _calibrationStatus.value = null
         val loaded = calibrationStore?.load(identity.crc32)
             ?: if (identity.variant == RomVariant.LEAFGREEN_US_REV1) RomCalibration.DEFAULT_US_REV1
             else null
@@ -274,6 +326,8 @@ class EmulatorRunner(
             _romLoaded.value = false
             _romIdentity.value = null
             setCalibration(null)
+            _calibrationBaseline.value = null
+            _calibrationStatus.value = null
         }
     }
 

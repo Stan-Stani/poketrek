@@ -144,6 +144,39 @@ fun HudBadge(
 }
 
 /**
+ * Floating reminder rendered while a calibration baseline is captured but not
+ * yet completed. The settings sheet is dismissed after baseline capture so the
+ * player can walk one tile in the overworld; this chip nudges them back.
+ */
+@Composable
+fun CalibrationPendingChip(
+    onOpenSettings: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Row(
+        modifier = modifier
+            .background(Color(0xCC92400E), shape = RoundedCornerShape(10.dp))
+            .padding(horizontal = 10.dp, vertical = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Text(
+            "Walk 1 tile, then capture",
+            color = Color.White,
+            fontFamily = FontFamily.Monospace,
+            fontSize = 11.sp,
+        )
+        Button(
+            onClick = onOpenSettings,
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF111827)),
+            contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+        ) {
+            Text("Capture", color = Color.White, fontSize = 11.sp)
+        }
+    }
+}
+
+/**
  * Lightweight read-only debug overlay: shows the RAM probe snapshot. Only
  * rendered when the user has enabled the debug HUD in settings. Designed to
  * sit somewhere unobtrusive (top-center letterbox).
@@ -204,8 +237,12 @@ fun SettingsSheet(
     onLoadSlot: (Int) -> Boolean,
     onBuyRareCandy: (Int) -> EmulatorRunner.BuyResult,
     hasCalibration: Boolean,
-    onSnapshotEwram: () -> ByteArray?,
-    onCalibrate: suspend (ByteArray) -> RomCalibrator.Result,
+    hasPendingBaseline: Boolean,
+    calibrationStatus: RomCalibrator.Result?,
+    onBeginCalibration: () -> Boolean,
+    onFinishCalibration: suspend () -> RomCalibrator.Result,
+    onCancelCalibration: () -> Unit,
+    onClearCalibrationStatus: () -> Unit,
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
@@ -322,9 +359,15 @@ fun SettingsSheet(
                 Spacer(Modifier.height(4.dp))
                 CalibrationSection(
                     hasCalibration = hasCalibration,
+                    hasPendingBaseline = hasPendingBaseline,
+                    status = calibrationStatus,
                     romIdentity = romIdentity,
-                    onSnapshotEwram = onSnapshotEwram,
-                    onCalibrate = onCalibrate,
+                    onBeginCalibration = {
+                        if (onBeginCalibration()) onDismiss()
+                    },
+                    onFinishCalibration = onFinishCalibration,
+                    onCancelCalibration = onCancelCalibration,
+                    onClearStatus = onClearCalibrationStatus,
                 )
             }
 
@@ -677,127 +720,93 @@ private fun ShopSection(
 @Composable
 private fun CalibrationSection(
     hasCalibration: Boolean,
+    hasPendingBaseline: Boolean,
+    status: com.poketrek.emu.RomCalibrator.Result?,
     romIdentity: com.poketrek.emu.RomIdentity,
-    onSnapshotEwram: () -> ByteArray?,
-    onCalibrate: suspend (ByteArray) -> com.poketrek.emu.RomCalibrator.Result,
+    onBeginCalibration: () -> Unit,
+    onFinishCalibration: suspend () -> com.poketrek.emu.RomCalibrator.Result,
+    onCancelCalibration: () -> Unit,
+    onClearStatus: () -> Unit,
 ) {
-    var dialogOpen by remember { mutableStateOf(false) }
-
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Row {
-            Text(
-                text = "ROM Calibration",
-                fontWeight = FontWeight.SemiBold,
-                fontSize = 14.sp
-            )
-        }
-        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Text(
-                text = if (hasCalibration) "Calibrated for ${romIdentity.crc32Hex} ✓" else "Not calibrated — step gating disabled for this ROM.",
-                color = if (hasCalibration) Color(0xFF059669) else Color(0xFFD97706),
-                fontSize = 12.sp
-            )
-            Button(onClick = { dialogOpen = true }) {
-                Text(text = if (hasCalibration) "Re-calibrate" else "Calibrate")
-            }
-        }
-    }
-
-    if (dialogOpen) {
-        CalibrationDialog(
-            onDismiss = { dialogOpen = false },
-            onSnapshotEwram = onSnapshotEwram,
-            onCalibrate = onCalibrate
-        )
-    }
-}
-
-@Composable
-private fun CalibrationDialog(
-    onDismiss: () -> Unit,
-    onSnapshotEwram: () -> ByteArray?,
-    onCalibrate: suspend (ByteArray) -> com.poketrek.emu.RomCalibrator.Result,
-) {
-    var baseline by remember { mutableStateOf<ByteArray?>(null) }
-    var calibrating by remember { mutableStateOf(false) }
-    var result by remember { mutableStateOf<com.poketrek.emu.RomCalibrator.Result?>(null) }
+    var capturing by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
-    AlertDialog(
-        onDismissRequest = onDismiss,
-        title = { Text("Calibrate ROM") },
-        text = {
-            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                when {
-                    result is com.poketrek.emu.RomCalibrator.Result.Ok -> {
-                        val ok = result as com.poketrek.emu.RomCalibrator.Result.Ok
-                        Text("Success — calibration saved.", color = Color(0xFF059669))
-                        Text(
-                            "SaveBlock1 ptr: 0x${ok.saveBlock1PtrAddr.toUInt().toString(16).uppercase()}",
-                            fontFamily = FontFamily.Monospace,
-                            fontSize = 12.sp
-                        )
-                        Text(
-                            "SaveBlock1 base: 0x${ok.saveBlock1Base.toUInt().toString(16).uppercase()}",
-                            fontFamily = FontFamily.Monospace,
-                            fontSize = 12.sp
-                        )
-                    }
-                    result != null -> {
-                        Text("Calibration failed.", color = Color(0xFFB91C1C))
-                        Text(formatCalibrationError(result), fontSize = 12.sp)
-                    }
-                    calibrating -> {
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            horizontalArrangement = Arrangement.spacedBy(8.dp)
-                        ) {
-                            CircularProgressIndicator(
-                                modifier = Modifier.size(20.dp),
-                                strokeWidth = 2.dp
-                            )
-                            Text("Scanning...", fontSize = 12.sp)
-                        }
-                    }
-                    baseline == null -> {
-                        Text("Stand still in the overworld and pause.", fontSize = 13.sp)
-                        Text("Then tap Take Baseline.", fontSize = 12.sp, color = Color(0xFF6B7280))
-                    }
-                    else -> {
-                        Text(
-                            "Walk EXACTLY one tile in any direction, wait for the move animation to finish.",
-                            fontSize = 13.sp
-                        )
-                        Text("Then tap Capture.", fontSize = 12.sp, color = Color(0xFF6B7280))
-                    }
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("ROM Calibration", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+
+        when {
+            status is com.poketrek.emu.RomCalibrator.Result.Ok -> {
+                Text("Calibration saved.", color = Color(0xFF059669), fontSize = 12.sp)
+                Text(
+                    "SaveBlock1 ptr: 0x${status.saveBlock1PtrAddr.toUInt().toString(16).uppercase()}",
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 11.sp,
+                )
+                Button(onClick = onClearStatus) { Text("OK") }
+            }
+            status != null -> {
+                Text("Calibration failed.", color = Color(0xFFB91C1C), fontSize = 12.sp)
+                Text(formatCalibrationError(status), fontSize = 11.sp, color = Color(0xFF6B7280))
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Button(onClick = {
+                        onClearStatus()
+                        onBeginCalibration()
+                    }) { Text("Try again") }
+                    TextButton(onClick = onClearStatus) { Text("Dismiss") }
                 }
             }
-        },
-        confirmButton = {
-            when {
-                result != null -> TextButton(onClick = onDismiss) { Text("Done") }
-                calibrating -> Button(onClick = {}, enabled = false) { Text("Working...") }
-                baseline == null -> Button(onClick = {
-                    val b = onSnapshotEwram()
-                    if (b != null) baseline = b
-                    else result = com.poketrek.emu.RomCalibrator.Result.ReadFailed
-                }) { Text("Take Baseline") }
-                else -> Button(onClick = {
-                    calibrating = true
-                    scope.launch {
-                        val r = onCalibrate(baseline!!)
-                        result = r
-                        calibrating = false
-                    }
-                }) { Text("Capture") }
+            capturing -> {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    CircularProgressIndicator(
+                        modifier = Modifier.size(18.dp),
+                        strokeWidth = 2.dp,
+                    )
+                    Text("Scanning EWRAM…", fontSize = 12.sp)
+                }
             }
-        },
-        dismissButton = {
-            TextButton(onClick = onDismiss, enabled = !calibrating) {
-                Text(if (result != null) "Close" else "Cancel")
+            hasPendingBaseline -> {
+                Text(
+                    "Baseline taken. Walk exactly one tile in the overworld, then tap Capture.",
+                    color = Color(0xFFD97706),
+                    fontSize = 12.sp,
+                )
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Button(onClick = {
+                        capturing = true
+                        scope.launch {
+                            try {
+                                onFinishCalibration()
+                            } finally {
+                                capturing = false
+                            }
+                        }
+                    }) { Text("Capture") }
+                    TextButton(onClick = onCancelCalibration) { Text("Cancel") }
+                }
+            }
+            else -> {
+                Text(
+                    text = if (hasCalibration)
+                        "Calibrated for ${romIdentity.crc32Hex} ✓"
+                    else
+                        "Not calibrated — step gating disabled for this ROM.",
+                    color = if (hasCalibration) Color(0xFF059669) else Color(0xFFD97706),
+                    fontSize = 12.sp,
+                )
+                Text(
+                    "Stand still in the overworld, then tap below — the menu closes so you can walk one tile.",
+                    color = Color(0xFF6B7280),
+                    fontSize = 11.sp,
+                )
+                Button(onClick = onBeginCalibration) {
+                    Text(if (hasCalibration) "Re-calibrate" else "Calibrate")
+                }
             }
         }
-    )
+    }
 }
 
 private fun formatCalibrationError(r: com.poketrek.emu.RomCalibrator.Result?): String = when (r) {

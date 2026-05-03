@@ -43,6 +43,8 @@ fun EmulatorScreen(
     val ramSnapshot by runner.ramSnapshot
     val romIdentity by runner.romIdentity
     val debugOn by budget.debugHudVisible.collectAsState()
+    val pendingBaseline by runner.calibrationBaseline
+    val calibrationStatus by runner.calibrationStatus
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
 
@@ -96,6 +98,15 @@ fun EmulatorScreen(
                 .padding(end = 16.dp, bottom = 16.dp),
         )
 
+        if (pendingBaseline != null && !settingsOpen) {
+            CalibrationPendingChip(
+                onOpenSettings = { settingsOpen = true },
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 8.dp),
+            )
+        }
+
         if (settingsOpen) {
             val hasCalibration by runner.hasCalibration
             SettingsSheet(
@@ -109,8 +120,12 @@ fun EmulatorScreen(
                 onLoadSlot = onLoadSlot,
                 onBuyRareCandy = runner::buyRareCandy,
                 hasCalibration = hasCalibration,
-                onSnapshotEwram = runner::snapshotEwram,
-                onCalibrate = runner::runCalibration,
+                hasPendingBaseline = pendingBaseline != null,
+                calibrationStatus = calibrationStatus,
+                onBeginCalibration = runner::beginCalibration,
+                onFinishCalibration = runner::finishCalibration,
+                onCancelCalibration = runner::cancelCalibration,
+                onClearCalibrationStatus = runner::clearCalibrationStatus,
             )
         }
     }
