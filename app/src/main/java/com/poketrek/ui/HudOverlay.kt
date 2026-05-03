@@ -103,12 +103,17 @@ private fun describeRatio(num: Int, den: Int): String = when {
 fun HudBadge(
     budget: MovementBudget,
     romIdentity: com.poketrek.emu.RomIdentity?,
+    hasCalibration: Boolean,
     onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val tiles by budget.budget.collectAsState()
     val gateOn by budget.gateEnabled.collectAsState()
-    val warn = romIdentity != null && !romIdentity.variant.gatingSupported
+    // Warn whenever no calibration is loaded — that's the actual condition
+    // the run loop checks before gating. The variant's static
+    // `gatingSupported` flag only says "ships pre-calibrated"; a Korean ROM
+    // becomes gateable as soon as the user runs the calibration flow.
+    val warn = romIdentity != null && !hasCalibration
     Row(
         modifier = modifier
             .background(Color(0xCC000000), shape = RoundedCornerShape(10.dp))

@@ -45,6 +45,7 @@ fun EmulatorScreen(
     val debugOn by budget.debugHudVisible.collectAsState()
     val pendingBaseline by runner.calibrationBaseline
     val calibrationStatus by runner.calibrationStatus
+    val hasCalibration by runner.hasCalibration
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
 
@@ -57,6 +58,7 @@ fun EmulatorScreen(
         HudBadge(
             budget = budget,
             romIdentity = romIdentity,
+            hasCalibration = hasCalibration,
             onOpenSettings = { settingsOpen = true },
             modifier = Modifier
                 .align(Alignment.TopStart)
@@ -108,7 +110,6 @@ fun EmulatorScreen(
         }
 
         if (settingsOpen) {
-            val hasCalibration by runner.hasCalibration
             SettingsSheet(
                 budget = budget,
                 gate = runner.gate,
