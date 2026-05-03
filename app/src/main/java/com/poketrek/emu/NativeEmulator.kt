@@ -56,6 +56,14 @@ class NativeEmulator {
     /** Writes [value] as a 32-bit little-endian word to [addr]. */
     external fun busWrite32(addr: Int, value: Int)
 
+    /**
+     * Bulk-reads [length] bytes starting at [addr]. One JNI/mutex round-trip
+     * regardless of length; intended for calibration scans of EWRAM/IWRAM
+     * where per-byte reads would be too slow. Returns null if no ROM is
+     * loaded.
+     */
+    external fun busReadBytes(addr: Int, length: Int): ByteArray?
+
     /** Serializes the emulator state into a byte array. Returns null on failure. */
     external fun saveState(): ByteArray?
 

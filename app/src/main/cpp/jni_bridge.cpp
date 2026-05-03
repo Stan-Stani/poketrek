@@ -267,6 +267,39 @@ Java_com_poketrek_emu_NativeEmulator_busWrite32(JNIEnv* /*env*/, jobject /*thiz*
                                  static_cast<uint32_t>(value));
 }
 
+// Bulk reads: drains [addr, addr+length) into a freshly-allocated jbyteArray.
+// Used by the ROM calibrator to scan EWRAM (256KB) and IWRAM (32KB) without
+// firing thousands of separate JNI calls. Reads aligned chunks via busRead32
+// for speed; tail bytes via busRead8.
+extern "C" JNIEXPORT jbyteArray JNICALL
+Java_com_poketrek_emu_NativeEmulator_busReadBytes(JNIEnv* env, jobject /*thiz*/, jint addr, jint length) {
+    if (!g_emulator || !g_emulator->core || length <= 0) return nullptr;
+    jbyteArray result = env->NewByteArray(length);
+    if (!result) return nullptr;
+    std::vector<uint8_t> buf(static_cast<size_t>(length));
+    {
+        std::lock_guard<std::mutex> lock(g_emulator->mutex);
+        int i = 0;
+        while (i + 4 <= length && ((addr + i) & 3) == 0) {
+            uint32_t v = g_emulator->core->busRead32(g_emulator->core,
+                                                    static_cast<uint32_t>(addr + i));
+            buf[i + 0] = static_cast<uint8_t>(v & 0xff);
+            buf[i + 1] = static_cast<uint8_t>((v >> 8) & 0xff);
+            buf[i + 2] = static_cast<uint8_t>((v >> 16) & 0xff);
+            buf[i + 3] = static_cast<uint8_t>((v >> 24) & 0xff);
+            i += 4;
+        }
+        while (i < length) {
+            buf[i] = static_cast<uint8_t>(
+                g_emulator->core->busRead8(g_emulator->core,
+                                           static_cast<uint32_t>(addr + i)) & 0xff);
+            i++;
+        }
+    }
+    env->SetByteArrayRegion(result, 0, length, reinterpret_cast<const jbyte*>(buf.data()));
+    return result;
+}
+
 // Save / load state. Pattern matches src/platform/libretro/libretro.c
 // retro_serialize / retro_unserialize: serialize into a growable in-memory
 // VFile, then copy out to a Java byte[].
