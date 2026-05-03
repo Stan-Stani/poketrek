@@ -1,6 +1,7 @@
 package com.poketrek.step
 
 import android.content.Context
+import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.longPreferencesKey
@@ -20,8 +21,12 @@ private val Context.budgetStore by preferencesDataStore("movement_budget")
 private val KEY_BUDGET = intPreferencesKey("budget_tiles")
 private val KEY_RATIO = intPreferencesKey("tiles_per_step")
 private val KEY_LAST_SENSOR_VALUE = longPreferencesKey("last_sensor_value")
+private val KEY_GATE_ENABLED = booleanPreferencesKey("gate_enabled")
+private val KEY_DEBUG_HUD = booleanPreferencesKey("debug_hud_visible")
 
 private const val DEFAULT_RATIO = 4
+const val MIN_RATIO = 1
+const val MAX_RATIO = 16
 
 /**
  * Tracks the player's movement budget — how many in-game tiles they're allowed
@@ -53,14 +58,22 @@ class MovementBudget private constructor(private val context: Context) {
     private val _tilesPerStep = MutableStateFlow(DEFAULT_RATIO)
     val tilesPerStep: StateFlow<Int> = _tilesPerStep.asStateFlow()
 
+    private val _gateEnabled = MutableStateFlow(false)
+    val gateEnabled: StateFlow<Boolean> = _gateEnabled.asStateFlow()
+
+    private val _debugHudVisible = MutableStateFlow(false)
+    val debugHudVisible: StateFlow<Boolean> = _debugHudVisible.asStateFlow()
+
     private var lastSensorValue: Long = -1L
 
     init {
         runBlocking {
             val prefs = context.budgetStore.data.first()
             _budget.value = prefs[KEY_BUDGET] ?: 0
-            _tilesPerStep.value = prefs[KEY_RATIO] ?: DEFAULT_RATIO
+            _tilesPerStep.value = (prefs[KEY_RATIO] ?: DEFAULT_RATIO).coerceIn(MIN_RATIO, MAX_RATIO)
             lastSensorValue = prefs[KEY_LAST_SENSOR_VALUE] ?: -1L
+            _gateEnabled.value = prefs[KEY_GATE_ENABLED] ?: false
+            _debugHudVisible.value = prefs[KEY_DEBUG_HUD] ?: false
         }
     }
 
@@ -105,10 +118,24 @@ class MovementBudget private constructor(private val context: Context) {
     }
 
     fun setTilesPerStep(value: Int) {
-        val clamped = value.coerceIn(1, 64)
+        val clamped = value.coerceIn(MIN_RATIO, MAX_RATIO)
         _tilesPerStep.value = clamped
         scope.launch {
             context.budgetStore.edit { it[KEY_RATIO] = clamped }
+        }
+    }
+
+    fun setGateEnabled(value: Boolean) {
+        _gateEnabled.value = value
+        scope.launch {
+            context.budgetStore.edit { it[KEY_GATE_ENABLED] = value }
+        }
+    }
+
+    fun setDebugHudVisible(value: Boolean) {
+        _debugHudVisible.value = value
+        scope.launch {
+            context.budgetStore.edit { it[KEY_DEBUG_HUD] = value }
         }
     }
 

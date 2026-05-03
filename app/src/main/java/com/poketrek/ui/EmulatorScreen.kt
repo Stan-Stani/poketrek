@@ -6,7 +6,11 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -21,9 +25,8 @@ import com.poketrek.step.MovementBudget
 
 /**
  * Full-screen emulator: framebuffer letterboxed across the entire window,
- * with semi-transparent controls floating on top. This frees the game to
- * render at maximum size, with the on-screen controls overlaid in the
- * letterbox margins where they don't obscure gameplay.
+ * with semi-transparent controls floating on top. The HUD is just a tiny
+ * badge + a settings sheet so it doesn't cover the game.
  */
 @Composable
 fun EmulatorScreen(
@@ -37,7 +40,9 @@ fun EmulatorScreen(
 ) {
     val tick by runner.frameTick
     val ramSnapshot by runner.ramSnapshot
+    val debugOn by budget.debugHudVisible.collectAsState()
     val controlState = rememberControlState()
+    var settingsOpen by remember { mutableStateOf(false) }
 
     Box(modifier = modifier.fillMaxSize().background(Color.Black)) {
         Canvas(modifier = Modifier.fillMaxSize()) {
@@ -45,18 +50,23 @@ fun EmulatorScreen(
             drawFramebuffer(runner)
         }
 
-        HudOverlay(
+        HudBadge(
             budget = budget,
-            gate = runner.gate,
-            ramSnapshot = ramSnapshot,
-            onDebugAddSteps = onDebugAddSteps,
-            onSaveState = onSaveState,
-            onLoadState = onLoadState,
-            canLoadState = canLoadState,
+            onOpenSettings = { settingsOpen = true },
             modifier = Modifier
                 .align(Alignment.TopStart)
                 .padding(8.dp),
         )
+
+        if (debugOn) {
+            DebugOverlay(
+                snapshot = ramSnapshot,
+                onDebugAddSteps = onDebugAddSteps,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 8.dp),
+            )
+        }
 
         StartSelectChips(
             state = controlState,
@@ -81,6 +91,17 @@ fun EmulatorScreen(
                 .align(Alignment.BottomEnd)
                 .padding(end = 16.dp, bottom = 16.dp),
         )
+
+        if (settingsOpen) {
+            SettingsSheet(
+                budget = budget,
+                gate = runner.gate,
+                onDismiss = { settingsOpen = false },
+                onSaveState = onSaveState,
+                onLoadState = onLoadState,
+                canLoadState = canLoadState(),
+            )
+        }
     }
 }
 
