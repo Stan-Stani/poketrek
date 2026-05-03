@@ -37,6 +37,15 @@ class NativeEmulator {
      * least 240*160*4 bytes. Returns true on success. Avoids per-frame allocs.
      */
     external fun writeFramebuffer(buffer: java.nio.ByteBuffer): Boolean
+
+    /** Reads one byte from emulated GBA address [addr]. Returns 0..255. */
+    external fun busRead8(addr: Int): Int
+
+    /** Reads a little-endian 16-bit halfword. Returns 0..65535. */
+    external fun busRead16(addr: Int): Int
+
+    /** Reads a little-endian 32-bit word. Sign-extended into Java Int. */
+    external fun busRead32(addr: Int): Int
 }
 
 /** GBA key bits matching mGBA's setKeys mask. */

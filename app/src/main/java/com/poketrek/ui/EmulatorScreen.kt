@@ -30,6 +30,7 @@ fun EmulatorScreen(
     modifier: Modifier = Modifier,
 ) {
     val tick by runner.frameTick
+    val ramSnapshot by runner.ramSnapshot
 
     Column(modifier = modifier.fillMaxSize().background(Color.Black)) {
         Box(
@@ -43,6 +44,7 @@ fun EmulatorScreen(
             }
             HudOverlay(
                 budget = budget,
+                ramSnapshot = ramSnapshot,
                 onDebugAddSteps = onDebugAddSteps,
                 modifier = Modifier
                     .align(Alignment.TopStart)

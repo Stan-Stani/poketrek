@@ -47,6 +47,10 @@ class EmulatorRunner {
     private val _romLoaded = mutableStateOf(false)
     val romLoaded: androidx.compose.runtime.State<Boolean> = _romLoaded
 
+    /** Latest LeafGreen RAM snapshot, updated every ~30 frames (~0.5s). */
+    private val _ramSnapshot = mutableStateOf<com.poketrek.emu.LeafGreenRam.Snapshot?>(null)
+    val ramSnapshot: androidx.compose.runtime.State<com.poketrek.emu.LeafGreenRam.Snapshot?> = _ramSnapshot
+
     private val running = AtomicBoolean(false)
     private val keys = AtomicInteger(0)
     private var thread: Thread? = null
@@ -92,7 +96,11 @@ class EmulatorRunner {
                 synchronized(bitmap) {
                     bitmap.copyPixelsFromBuffer(frameBuf)
                 }
-                _frameTick.intValue = _frameTick.intValue + 1
+                val nextTick = _frameTick.intValue + 1
+                _frameTick.intValue = nextTick
+                if (nextTick % 30 == 0) {
+                    _ramSnapshot.value = LeafGreenRam.read(native)
+                }
             }
             nextFrameAt += FRAME_PERIOD_NS
             val sleepNs = nextFrameAt - System.nanoTime()

@@ -161,3 +161,30 @@ Java_com_poketrek_emu_NativeEmulator_writeFramebuffer(JNIEnv* env, jobject /*thi
     std::memcpy(dst, g_emulator->framebuffer.data(), FRAMEBUFFER_BYTES);
     return JNI_TRUE;
 }
+
+// RAM reads. The mutex is held to avoid racing with a runFrame on the emu thread.
+// Returned values are zero-extended into Java's signed int.
+
+extern "C" JNIEXPORT jint JNICALL
+Java_com_poketrek_emu_NativeEmulator_busRead8(JNIEnv* /*env*/, jobject /*thiz*/, jint addr) {
+    if (!g_emulator || !g_emulator->core) return 0;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    return static_cast<jint>(
+        g_emulator->core->busRead8(g_emulator->core, static_cast<uint32_t>(addr)) & 0xff);
+}
+
+extern "C" JNIEXPORT jint JNICALL
+Java_com_poketrek_emu_NativeEmulator_busRead16(JNIEnv* /*env*/, jobject /*thiz*/, jint addr) {
+    if (!g_emulator || !g_emulator->core) return 0;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    return static_cast<jint>(
+        g_emulator->core->busRead16(g_emulator->core, static_cast<uint32_t>(addr)) & 0xffff);
+}
+
+extern "C" JNIEXPORT jint JNICALL
+Java_com_poketrek_emu_NativeEmulator_busRead32(JNIEnv* /*env*/, jobject /*thiz*/, jint addr) {
+    if (!g_emulator || !g_emulator->core) return 0;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    return static_cast<jint>(
+        g_emulator->core->busRead32(g_emulator->core, static_cast<uint32_t>(addr)));
+}
