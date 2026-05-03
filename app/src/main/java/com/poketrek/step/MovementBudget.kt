@@ -30,8 +30,21 @@ private const val DEFAULT_RATIO = 4
  * One real-world step contributes [tilesPerStep] tiles to [budget]. Phase 3b
  * will call [consumeOneTile] from the native frame callback when a tile
  * transition is detected in the overworld.
+ *
+ * Process-wide singleton (use [get]) so the foreground StepCounterService and
+ * the Activity share state.
  */
-class MovementBudget(private val context: Context) {
+class MovementBudget private constructor(private val context: Context) {
+
+    companion object {
+        @Volatile private var instance: MovementBudget? = null
+
+        fun get(context: Context): MovementBudget {
+            return instance ?: synchronized(this) {
+                instance ?: MovementBudget(context.applicationContext).also { instance = it }
+            }
+        }
+    }
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     private val _budget = MutableStateFlow(0)

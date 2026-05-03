@@ -1,6 +1,7 @@
 package com.poketrek
 
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -25,7 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.emu.SaveStateStore
 import com.poketrek.step.MovementBudget
-import com.poketrek.step.StepSensor
+import com.poketrek.step.StepCounterService
 
 private const val TAG = "EmulatorActivity"
 
@@ -34,17 +35,20 @@ class EmulatorActivity : ComponentActivity() {
     private lateinit var budget: MovementBudget
     private lateinit var runner: EmulatorRunner
     private lateinit var saveStateStore: SaveStateStore
-    private var stepSensor: StepSensor? = null
 
     private val requestActivityRecognition = registerForActivityResult(
         ActivityResultContracts.RequestPermission(),
     ) { granted ->
         if (granted) {
-            stepSensor?.register()
+            StepCounterService.start(applicationContext)
         } else {
             Log.w(TAG, "ACTIVITY_RECOGNITION denied — step counter unavailable")
         }
     }
+
+    private val requestPostNotifications = registerForActivityResult(
+        ActivityResultContracts.RequestPermission(),
+    ) { /* result ignored — service still runs without it on Android 13+ */ }
 
     private val pickRom = registerForActivityResult(
         ActivityResultContracts.OpenDocument(),
@@ -66,14 +70,18 @@ class EmulatorActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        budget = MovementBudget(applicationContext)
+        budget = MovementBudget.get(applicationContext)
         runner = EmulatorRunner(budget)
         saveStateStore = SaveStateStore(applicationContext)
-        stepSensor = StepSensor(applicationContext, budget)
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
+            && checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS)
+            != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            requestPostNotifications.launch(android.Manifest.permission.POST_NOTIFICATIONS)
+        }
         if (checkSelfPermission(android.Manifest.permission.ACTIVITY_RECOGNITION)
             == android.content.pm.PackageManager.PERMISSION_GRANTED) {
-            stepSensor?.register()
+            StepCounterService.start(applicationContext)
         } else {
             requestActivityRecognition.launch(android.Manifest.permission.ACTIVITY_RECOGNITION)
         }
@@ -103,7 +111,6 @@ class EmulatorActivity : ComponentActivity() {
     }
 
     override fun onDestroy() {
-        stepSensor?.unregister()
         runner.stop()
         super.onDestroy()
     }
