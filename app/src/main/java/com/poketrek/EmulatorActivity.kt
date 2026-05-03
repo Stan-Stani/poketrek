@@ -143,6 +143,7 @@ private fun AppRoot(
             runner = runner,
             budget = budget,
             onDebugAddSteps = onDebugAddSteps,
+            onPickRom = onPickRom,
             getSaveSlots = getSaveSlots,
             onSaveSlot = onSaveSlot,
             onLoadSlot = onLoadSlot,
