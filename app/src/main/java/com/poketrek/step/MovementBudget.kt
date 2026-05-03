@@ -10,8 +10,11 @@ import com.poketrek.emu.MovementGateBudget
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -31,6 +34,7 @@ private val KEY_STEP_CARRY = intPreferencesKey("step_carry_remainder")
 private val KEY_LAST_SENSOR_VALUE = longPreferencesKey("last_sensor_value")
 private val KEY_GATE_ENABLED = booleanPreferencesKey("gate_enabled")
 private val KEY_DEBUG_HUD = booleanPreferencesKey("debug_hud_visible")
+private val KEY_HAPTIC_ON_STEP = booleanPreferencesKey("haptic_on_step")
 
 private const val DEFAULT_RATIO_NUM = 4
 private const val DEFAULT_RATIO_DEN = 1
@@ -104,6 +108,18 @@ class MovementBudget private constructor(private val context: Context) : Movemen
     private val _debugHudVisible = MutableStateFlow(false)
     val debugHudVisible: StateFlow<Boolean> = _debugHudVisible.asStateFlow()
 
+    private val _hapticOnStep = MutableStateFlow(true)
+    val hapticOnStep: StateFlow<Boolean> = _hapticOnStep.asStateFlow()
+
+    /**
+     * Fires (tilesAwarded) every time the budget is credited. Subscribers
+     * (e.g. the haptic vibrator in StepCounterService, future HUD flash
+     * animations, step-history graph) consume this without having to poll
+     * the budget StateFlow.
+     */
+    private val _creditedTiles = MutableSharedFlow<Int>(extraBufferCapacity = 16)
+    val creditedTiles: SharedFlow<Int> = _creditedTiles.asSharedFlow()
+
     private var lastSensorValue: Long = -1L
     private var stepCarry: Int = 0
 
@@ -120,6 +136,7 @@ class MovementBudget private constructor(private val context: Context) : Movemen
             lastSensorValue = prefs[KEY_LAST_SENSOR_VALUE] ?: -1L
             _gateEnabled.value = prefs[KEY_GATE_ENABLED] ?: false
             _debugHudVisible.value = prefs[KEY_DEBUG_HUD] ?: false
+            _hapticOnStep.value = prefs[KEY_HAPTIC_ON_STEP] ?: true
         }
     }
 
@@ -215,9 +232,17 @@ class MovementBudget private constructor(private val context: Context) : Movemen
         }
     }
 
+    fun setHapticOnStep(value: Boolean) {
+        _hapticOnStep.value = value
+        scope.launch {
+            context.budgetStore.edit { it[KEY_HAPTIC_ON_STEP] = value }
+        }
+    }
+
     private fun addTiles(tiles: Int) {
         val next = (_budget.value + tiles).coerceAtMost(Int.MAX_VALUE / 2)
         _budget.value = next
+        _creditedTiles.tryEmit(tiles)
         val carryToWrite = stepCarry
         scope.launch {
             context.budgetStore.edit {

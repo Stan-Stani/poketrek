@@ -156,6 +156,7 @@ fun SettingsSheet(
     val ratioDen by budget.tilesPerStepDen.collectAsState()
     val gateOn by budget.gateEnabled.collectAsState()
     val debugOn by budget.debugHudVisible.collectAsState()
+    val hapticOn by budget.hapticOnStep.collectAsState()
     val currentIndex = ratioIndexFor(ratioNum, ratioDen)
     var ratioDraft by remember(currentIndex) { mutableStateOf(currentIndex.toFloat()) }
     val draftIndex = ratioDraft.toInt().coerceIn(0, RATIO_TABLE.lastIndex)
@@ -215,6 +216,13 @@ fun SettingsSheet(
                 color = Color(0xFF6B7280),
                 fontFamily = FontFamily.Monospace,
                 fontSize = 12.sp,
+            )
+
+            ToggleRow(
+                label = "Vibrate on step credit",
+                sublabel = "Brief pulse when a real step adds to your tile budget",
+                checked = hapticOn,
+                onCheckedChange = { budget.setHapticOnStep(it) },
             )
 
             ToggleRow(
