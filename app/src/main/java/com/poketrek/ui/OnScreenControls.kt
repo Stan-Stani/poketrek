@@ -20,9 +20,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.PointerId
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poketrek.emu.GbaKey
@@ -70,15 +72,21 @@ fun DPadCluster(
     onKeysChanged: (Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Box(modifier = modifier, contentAlignment = Alignment.Center) {
+    val cellSize = 56.dp
+    Box(
+        modifier = modifier
+            .size(cellSize * 3)
+            .dpadSlide(cellSize, state, onKeysChanged),
+        contentAlignment = Alignment.Center,
+    ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            DPadButton("▲", GbaKey.UP, state, onKeysChanged)
+            DPadButton("▲")
             Row {
-                DPadButton("◀", GbaKey.LEFT, state, onKeysChanged)
-                Spacer(Modifier.size(56.dp))
-                DPadButton("▶", GbaKey.RIGHT, state, onKeysChanged)
+                DPadButton("◀")
+                Spacer(Modifier.size(cellSize))
+                DPadButton("▶")
             }
-            DPadButton("▼", GbaKey.DOWN, state, onKeysChanged)
+            DPadButton("▼")
         }
     }
 }
@@ -106,17 +114,11 @@ fun ActionCluster(
 }
 
 @Composable
-private fun DPadButton(
-    glyph: String,
-    bit: Int,
-    state: ControlState,
-    onKeysChanged: (Int) -> Unit,
-) {
+private fun DPadButton(glyph: String) {
     Box(
         modifier = Modifier
             .size(56.dp)
-            .background(DPadBg, shape = RoundedCornerShape(6.dp))
-            .pressBit(bit, state, onKeysChanged),
+            .background(DPadBg, shape = RoundedCornerShape(6.dp)),
         contentAlignment = Alignment.Center,
     ) {
         Text(glyph, color = Color.White, fontSize = 24.sp)
@@ -199,6 +201,59 @@ private fun Modifier.pressBit(
             if (event.type == PointerEventType.Release && !anyDown && pressed) {
                 pressed = false
                 onKeysChanged(state.update(bit, false))
+            }
+        }
+    }
+}
+
+/**
+ * Whole-cluster touch handler so a finger can slide between directions without
+ * lifting. The cluster is laid out as a 3×3 grid of [cellSize] cells; each
+ * active pointer maps to the bit of whichever cell it currently sits in
+ * (center cell and out-of-bounds map to nothing). The union of every active
+ * pointer's bit becomes the held d-pad mask.
+ */
+private fun Modifier.dpadSlide(
+    cellSize: Dp,
+    state: ControlState,
+    onKeysChanged: (Int) -> Unit,
+): Modifier = pointerInput(Unit) {
+    val cellPx = cellSize.toPx()
+    val pointerBits = mutableMapOf<PointerId, Int>()
+    var ownedBits = 0
+
+    fun bitAt(x: Float, y: Float): Int {
+        if (x < 0f || y < 0f) return 0
+        val col = (x / cellPx).toInt()
+        val row = (y / cellPx).toInt()
+        return when {
+            col == 1 && row == 0 -> GbaKey.UP
+            col == 0 && row == 1 -> GbaKey.LEFT
+            col == 2 && row == 1 -> GbaKey.RIGHT
+            col == 1 && row == 2 -> GbaKey.DOWN
+            else -> 0
+        }
+    }
+
+    awaitPointerEventScope {
+        while (true) {
+            val event = awaitPointerEvent()
+            for (change in event.changes) {
+                if (change.pressed) {
+                    pointerBits[change.id] = bitAt(change.position.x, change.position.y)
+                } else {
+                    pointerBits.remove(change.id)
+                }
+            }
+            val newBits = pointerBits.values.fold(0) { acc, b -> acc or b }
+            if (newBits != ownedBits) {
+                val toPress = newBits and ownedBits.inv()
+                val toRelease = ownedBits and newBits.inv()
+                var keys = state.keys
+                if (toPress != 0) keys = state.update(toPress, true)
+                if (toRelease != 0) keys = state.update(toRelease, false)
+                ownedBits = newBits
+                onKeysChanged(keys)
             }
         }
     }
