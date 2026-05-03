@@ -33,9 +33,9 @@ fun EmulatorScreen(
     runner: EmulatorRunner,
     budget: MovementBudget,
     onDebugAddSteps: (Int) -> Unit,
-    onSaveState: () -> Unit,
-    onLoadState: () -> Unit,
-    canLoadState: () -> Boolean,
+    getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
+    onSaveSlot: (Int) -> Boolean,
+    onLoadSlot: (Int) -> Boolean,
     modifier: Modifier = Modifier,
 ) {
     val tick by runner.frameTick
@@ -97,9 +97,9 @@ fun EmulatorScreen(
                 budget = budget,
                 gate = runner.gate,
                 onDismiss = { settingsOpen = false },
-                onSaveState = onSaveState,
-                onLoadState = onLoadState,
-                canLoadState = canLoadState(),
+                getSaveSlots = getSaveSlots,
+                onSaveSlot = onSaveSlot,
+                onLoadSlot = onLoadSlot,
             )
         }
     }

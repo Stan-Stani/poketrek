@@ -94,13 +94,13 @@ class EmulatorActivity : ComponentActivity() {
                         budget = budget,
                         onPickRom = { pickRom.launch(arrayOf("application/octet-stream", "*/*")) },
                         onDebugAddSteps = budget::debugAddSteps,
-                        onSaveState = {
-                            runner.saveState()?.let { saveStateStore.save(it) }
+                        getSaveSlots = saveStateStore::slots,
+                        onSaveSlot = { slot ->
+                            runner.saveState()?.let { saveStateStore.save(slot, it) } ?: false
                         },
-                        onLoadState = {
-                            saveStateStore.load()?.let { runner.loadState(it) }
+                        onLoadSlot = { slot ->
+                            saveStateStore.load(slot)?.let { runner.loadState(it) } ?: false
                         },
-                        canLoadState = { saveStateStore.hasSave() },
                     )
                 }
             }
@@ -122,9 +122,9 @@ private fun AppRoot(
     budget: MovementBudget,
     onPickRom: () -> Unit,
     onDebugAddSteps: (Int) -> Unit,
-    onSaveState: () -> Unit,
-    onLoadState: () -> Unit,
-    canLoadState: () -> Boolean,
+    getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
+    onSaveSlot: (Int) -> Boolean,
+    onLoadSlot: (Int) -> Boolean,
 ) {
     val romLoaded by runner.romLoaded
     if (!romLoaded) {
@@ -143,9 +143,9 @@ private fun AppRoot(
             runner = runner,
             budget = budget,
             onDebugAddSteps = onDebugAddSteps,
-            onSaveState = onSaveState,
-            onLoadState = onLoadState,
-            canLoadState = canLoadState,
+            getSaveSlots = getSaveSlots,
+            onSaveSlot = onSaveSlot,
+            onLoadSlot = onLoadSlot,
             modifier = Modifier.fillMaxSize().padding(8.dp),
         )
     }

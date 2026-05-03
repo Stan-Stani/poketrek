@@ -146,9 +146,9 @@ fun SettingsSheet(
     budget: MovementBudget,
     gate: MovementGate,
     onDismiss: () -> Unit,
-    onSaveState: () -> Unit,
-    onLoadState: () -> Unit,
-    canLoadState: Boolean,
+    getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
+    onSaveSlot: (Int) -> Boolean,
+    onLoadSlot: (Int) -> Boolean,
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
@@ -233,16 +233,65 @@ fun SettingsSheet(
             )
 
             Spacer(Modifier.height(4.dp))
-            Text("Save state", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                Button(onClick = { onSaveState(); onDismiss() }) { Text("Save") }
-                Button(onClick = { onLoadState(); onDismiss() }, enabled = canLoadState) {
-                    Text("Load")
-                }
+            Text("Save states", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+            var slotsVersion by remember { mutableStateOf(0) }
+            val slots = remember(slotsVersion) { getSaveSlots() }
+            slots.forEach { slot ->
+                SlotRow(
+                    slot = slot,
+                    onSave = {
+                        if (onSaveSlot(slot.index)) slotsVersion++
+                    },
+                    onLoad = {
+                        if (onLoadSlot(slot.index)) onDismiss()
+                    },
+                )
             }
             Spacer(Modifier.height(8.dp))
         }
     }
+}
+
+@Composable
+private fun SlotRow(
+    slot: com.poketrek.emu.SaveStateStore.Slot,
+    onSave: () -> Unit,
+    onLoad: () -> Unit,
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Column(Modifier.weight(1f)) {
+            Text("Slot ${slot.index}", fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
+            Text(
+                if (slot.isEmpty) "Empty" else relativeTime(slot.savedAt!!),
+                color = Color(0xFF6B7280),
+                fontSize = 11.sp,
+            )
+        }
+        Button(onClick = onSave, contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp)) {
+            Text("Save", fontSize = 12.sp)
+        }
+        Button(
+            onClick = onLoad,
+            enabled = !slot.isEmpty,
+            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+        ) {
+            Text("Load", fontSize = 12.sp)
+        }
+    }
+}
+
+private fun relativeTime(epochMs: Long): String {
+    val cs = android.text.format.DateUtils.getRelativeTimeSpanString(
+        epochMs,
+        System.currentTimeMillis(),
+        android.text.format.DateUtils.MINUTE_IN_MILLIS,
+        android.text.format.DateUtils.FORMAT_ABBREV_RELATIVE,
+    )
+    return cs?.toString() ?: "unknown"
 }
 
 @Composable
