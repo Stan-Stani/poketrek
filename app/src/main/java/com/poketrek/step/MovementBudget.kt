@@ -6,6 +6,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.poketrek.emu.MovementGateBudget
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -39,7 +40,7 @@ const val MAX_RATIO = 16
  * Process-wide singleton (use [get]) so the foreground StepCounterService and
  * the Activity share state.
  */
-class MovementBudget private constructor(private val context: Context) {
+class MovementBudget private constructor(private val context: Context) : MovementGateBudget {
 
     companion object {
         @Volatile private var instance: MovementBudget? = null
@@ -53,13 +54,13 @@ class MovementBudget private constructor(private val context: Context) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     private val _budget = MutableStateFlow(0)
-    val budget: StateFlow<Int> = _budget.asStateFlow()
+    override val budget: StateFlow<Int> = _budget.asStateFlow()
 
     private val _tilesPerStep = MutableStateFlow(DEFAULT_RATIO)
     val tilesPerStep: StateFlow<Int> = _tilesPerStep.asStateFlow()
 
     private val _gateEnabled = MutableStateFlow(false)
-    val gateEnabled: StateFlow<Boolean> = _gateEnabled.asStateFlow()
+    override val gateEnabled: StateFlow<Boolean> = _gateEnabled.asStateFlow()
 
     private val _debugHudVisible = MutableStateFlow(false)
     val debugHudVisible: StateFlow<Boolean> = _debugHudVisible.asStateFlow()
@@ -109,7 +110,7 @@ class MovementBudget private constructor(private val context: Context) {
     }
 
     /** Consumes one tile of the budget. Returns false if the budget was 0. */
-    fun consumeOneTile(): Boolean {
+    override fun consumeOneTile(): Boolean {
         val current = _budget.value
         if (current <= 0) return false
         _budget.value = current - 1
@@ -125,7 +126,7 @@ class MovementBudget private constructor(private val context: Context) {
         }
     }
 
-    fun setGateEnabled(value: Boolean) {
+    override fun setGateEnabled(value: Boolean) {
         _gateEnabled.value = value
         scope.launch {
             context.budgetStore.edit { it[KEY_GATE_ENABLED] = value }

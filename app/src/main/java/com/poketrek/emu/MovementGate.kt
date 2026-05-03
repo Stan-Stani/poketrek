@@ -1,24 +1,36 @@
 package com.poketrek.emu
 
-import com.poketrek.step.MovementBudget
+import kotlinx.coroutines.flow.StateFlow
+
+/**
+ * Minimal surface MovementGate needs from the budget. Letting the gate take
+ * an interface (instead of the concrete MovementBudget, which depends on a
+ * Context + DataStore) keeps the gate testable on the plain JVM.
+ */
+interface MovementGateBudget {
+    val budget: StateFlow<Int>
+    val gateEnabled: StateFlow<Boolean>
+    fun setGateEnabled(value: Boolean)
+    fun consumeOneTile(): Boolean
+}
 
 /**
  * The actual step-gating logic. Sits between the emulator's frame loop and
  * mGBA's setKeys: every frame, [process] (a) detects player tile transitions
  * by diffing the LeafGreen RAM snapshot vs the previous frame and consumes
- * one tile from the [MovementBudget] when one occurs, and (b) masks the
- * direction bits out of the key bitmask when the gate is enabled and the
- * budget is exhausted.
+ * one tile from the budget when one occurs, and (b) masks the direction
+ * bits out of the key bitmask when the gate is enabled and the budget is
+ * exhausted.
  *
  * The decrement rule mirrors the plan: only count a step if (X or Y changed)
  * AND (map ID unchanged — otherwise we're warping through a door) AND
  * (a direction was held last frame — so cutscenes/scripted movement and
  * ledge hops/ice tiles don't get charged).
  *
- * The gate-enabled flag and current budget live in [MovementBudget] so the
+ * The gate-enabled flag and current budget live in the budget so the
  * settings UI can drive them and they survive process death.
  */
-class MovementGate(private val budget: MovementBudget) {
+class MovementGate(private val budget: MovementGateBudget) {
     val enabled = budget.gateEnabled
 
     private var prevSnapshot: LeafGreenRam.Snapshot? = null
