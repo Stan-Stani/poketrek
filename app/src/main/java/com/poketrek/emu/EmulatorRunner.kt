@@ -53,9 +53,39 @@ class EmulatorRunner(
     @Volatile
     private var calibration: RomCalibration? = null
 
-    /** Set after a successful calibration; emu thread picks it up next frame. */
-    fun applyCalibration(value: RomCalibration) {
+    /** Compose-observable mirror of [calibration] presence for UI gating. */
+    private val _hasCalibration = mutableStateOf(false)
+    val hasCalibration: androidx.compose.runtime.State<Boolean> = _hasCalibration
+
+    private fun setCalibration(value: RomCalibration?) {
         calibration = value
+        _hasCalibration.value = value != null
+    }
+
+    /** Reads a 256KB EWRAM snapshot for the calibration baseline step. */
+    fun snapshotEwram(): ByteArray? =
+        native.busReadBytes(RomCalibrator.EWRAM_BASE, RomCalibrator.EWRAM_SIZE)
+
+    /**
+     * Runs the calibration scan against [before] (an earlier EWRAM snapshot
+     * taken before the user walked one tile). On success, the discovered
+     * calibration is applied to the run loop and persisted under the
+     * current ROM's CRC. Returns the typed result for the UI to surface.
+     */
+    suspend fun runCalibration(before: ByteArray): RomCalibrator.Result {
+        val identity = _romIdentity.value ?: return RomCalibrator.Result.ReadFailed
+        val reader = object : RomCalibrator.BusReader {
+            override fun readBytes(addr: Int, length: Int): ByteArray? =
+                native.busReadBytes(addr, length)
+        }
+        val result = RomCalibrator.calibrate(reader, before)
+        if (result is RomCalibrator.Result.Ok) {
+            val cal = RomCalibration(saveBlock1PtrAddr = result.saveBlock1PtrAddr)
+            setCalibration(cal)
+            calibrationStore?.save(identity.crc32, cal)
+            Log.i(TAG, "calibrated ${identity.crc32Hex}: sb1Ptr=0x${result.saveBlock1PtrAddr.toUInt().toString(16)}")
+        }
+        return result
     }
 
     fun saveState(): ByteArray? = native.saveState()
@@ -156,9 +186,10 @@ class EmulatorRunner(
         val identity = RomIdentity.of(bytes)
             .also { Log.i(TAG, "loaded ${it.variant.displayName} (${it.crc32Hex})") }
         _romIdentity.value = identity
-        calibration = calibrationStore?.load(identity.crc32)
+        val loaded = calibrationStore?.load(identity.crc32)
             ?: if (identity.variant == RomVariant.LEAFGREEN_US_REV1) RomCalibration.DEFAULT_US_REV1
             else null
+        setCalibration(loaded)
         native.initAudio(SAMPLE_RATE)
         startAudio()
         _romLoaded.value = true
@@ -242,7 +273,7 @@ class EmulatorRunner(
             native.destroy()
             _romLoaded.value = false
             _romIdentity.value = null
-            calibration = null
+            setCalibration(null)
         }
     }
 

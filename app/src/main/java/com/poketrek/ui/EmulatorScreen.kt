@@ -97,6 +97,7 @@ fun EmulatorScreen(
         )
 
         if (settingsOpen) {
+            val hasCalibration by runner.hasCalibration
             SettingsSheet(
                 budget = budget,
                 gate = runner.gate,
@@ -107,6 +108,9 @@ fun EmulatorScreen(
                 onSaveSlot = onSaveSlot,
                 onLoadSlot = onLoadSlot,
                 onBuyRareCandy = runner::buyRareCandy,
+                hasCalibration = hasCalibration,
+                onSnapshotEwram = runner::snapshotEwram,
+                onCalibrate = runner::runCalibration,
             )
         }
     }

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,6 +19,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
@@ -32,6 +34,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -44,12 +47,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.emu.MovementGate
+import com.poketrek.emu.RomCalibrator
 import com.poketrek.emu.RomIdentity
 import com.poketrek.emu.RomVariant
 import com.poketrek.step.MAX_RARE_CANDY_COST
 import com.poketrek.step.MIN_RARE_CANDY_COST
 import com.poketrek.step.MovementBudget
 import com.poketrek.step.parseRatioInput
+import kotlinx.coroutines.launch
 
 /**
  * Discrete ratio steps the slider snaps through. Index 0 is the hardest
@@ -198,6 +203,9 @@ fun SettingsSheet(
     onSaveSlot: (Int) -> Boolean,
     onLoadSlot: (Int) -> Boolean,
     onBuyRareCandy: (Int) -> EmulatorRunner.BuyResult,
+    hasCalibration: Boolean,
+    onSnapshotEwram: () -> ByteArray?,
+    onCalibrate: suspend (ByteArray) -> RomCalibrator.Result,
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
@@ -307,6 +315,16 @@ fun SettingsSheet(
                 ShopSection(
                     budget = budget,
                     onBuyRareCandy = onBuyRareCandy,
+                )
+            }
+
+            if (romIdentity != null) {
+                Spacer(Modifier.height(4.dp))
+                CalibrationSection(
+                    hasCalibration = hasCalibration,
+                    romIdentity = romIdentity,
+                    onSnapshotEwram = onSnapshotEwram,
+                    onCalibrate = onCalibrate,
                 )
             }
 
@@ -655,4 +673,138 @@ private fun ShopSection(
             }
         }
     }
+}
+@Composable
+private fun CalibrationSection(
+    hasCalibration: Boolean,
+    romIdentity: com.poketrek.emu.RomIdentity,
+    onSnapshotEwram: () -> ByteArray?,
+    onCalibrate: suspend (ByteArray) -> com.poketrek.emu.RomCalibrator.Result,
+) {
+    var dialogOpen by remember { mutableStateOf(false) }
+
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row {
+            Text(
+                text = "ROM Calibration",
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 14.sp
+            )
+        }
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(
+                text = if (hasCalibration) "Calibrated for ${romIdentity.crc32Hex} ✓" else "Not calibrated — step gating disabled for this ROM.",
+                color = if (hasCalibration) Color(0xFF059669) else Color(0xFFD97706),
+                fontSize = 12.sp
+            )
+            Button(onClick = { dialogOpen = true }) {
+                Text(text = if (hasCalibration) "Re-calibrate" else "Calibrate")
+            }
+        }
+    }
+
+    if (dialogOpen) {
+        CalibrationDialog(
+            onDismiss = { dialogOpen = false },
+            onSnapshotEwram = onSnapshotEwram,
+            onCalibrate = onCalibrate
+        )
+    }
+}
+
+@Composable
+private fun CalibrationDialog(
+    onDismiss: () -> Unit,
+    onSnapshotEwram: () -> ByteArray?,
+    onCalibrate: suspend (ByteArray) -> com.poketrek.emu.RomCalibrator.Result,
+) {
+    var baseline by remember { mutableStateOf<ByteArray?>(null) }
+    var calibrating by remember { mutableStateOf(false) }
+    var result by remember { mutableStateOf<com.poketrek.emu.RomCalibrator.Result?>(null) }
+    val scope = rememberCoroutineScope()
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("Calibrate ROM") },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                when {
+                    result is com.poketrek.emu.RomCalibrator.Result.Ok -> {
+                        val ok = result as com.poketrek.emu.RomCalibrator.Result.Ok
+                        Text("Success — calibration saved.", color = Color(0xFF059669))
+                        Text(
+                            "SaveBlock1 ptr: 0x${ok.saveBlock1PtrAddr.toUInt().toString(16).uppercase()}",
+                            fontFamily = FontFamily.Monospace,
+                            fontSize = 12.sp
+                        )
+                        Text(
+                            "SaveBlock1 base: 0x${ok.saveBlock1Base.toUInt().toString(16).uppercase()}",
+                            fontFamily = FontFamily.Monospace,
+                            fontSize = 12.sp
+                        )
+                    }
+                    result != null -> {
+                        Text("Calibration failed.", color = Color(0xFFB91C1C))
+                        Text(formatCalibrationError(result), fontSize = 12.sp)
+                    }
+                    calibrating -> {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            CircularProgressIndicator(
+                                modifier = Modifier.size(20.dp),
+                                strokeWidth = 2.dp
+                            )
+                            Text("Scanning...", fontSize = 12.sp)
+                        }
+                    }
+                    baseline == null -> {
+                        Text("Stand still in the overworld and pause.", fontSize = 13.sp)
+                        Text("Then tap Take Baseline.", fontSize = 12.sp, color = Color(0xFF6B7280))
+                    }
+                    else -> {
+                        Text(
+                            "Walk EXACTLY one tile in any direction, wait for the move animation to finish.",
+                            fontSize = 13.sp
+                        )
+                        Text("Then tap Capture.", fontSize = 12.sp, color = Color(0xFF6B7280))
+                    }
+                }
+            }
+        },
+        confirmButton = {
+            when {
+                result != null -> TextButton(onClick = onDismiss) { Text("Done") }
+                calibrating -> Button(onClick = {}, enabled = false) { Text("Working...") }
+                baseline == null -> Button(onClick = {
+                    val b = onSnapshotEwram()
+                    if (b != null) baseline = b
+                    else result = com.poketrek.emu.RomCalibrator.Result.ReadFailed
+                }) { Text("Take Baseline") }
+                else -> Button(onClick = {
+                    calibrating = true
+                    scope.launch {
+                        val r = onCalibrate(baseline!!)
+                        result = r
+                        calibrating = false
+                    }
+                }) { Text("Capture") }
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss, enabled = !calibrating) {
+                Text(if (result != null) "Close" else "Cancel")
+            }
+        }
+    )
+}
+
+private fun formatCalibrationError(r: com.poketrek.emu.RomCalibrator.Result?): String = when (r) {
+    is com.poketrek.emu.RomCalibrator.Result.NoChangedHalfword -> "No coordinate change detected. Did you walk exactly one tile? Make sure you took the baseline while standing still."
+    is com.poketrek.emu.RomCalibrator.Result.TooManyChangedHalfwords -> "Too noisy (${r.count} candidates). Try again from a quieter game state — minimize NPCs/animations on screen."
+    is com.poketrek.emu.RomCalibrator.Result.NoPointerFound -> "Found a coordinate change but no IWRAM pointer references it. Unexpected — please report."
+    is com.poketrek.emu.RomCalibrator.Result.MultiplePointers -> "Ambiguous: ${r.addrs.size} candidate pointers. Try recalibrating after a save+reload."
+    com.poketrek.emu.RomCalibrator.Result.ReadFailed -> "Memory read failed (no ROM loaded?)."
+    else -> "Unknown failure."
 }
