@@ -23,6 +23,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.emu.SaveStateStore
 import com.poketrek.step.MovementBudget
@@ -70,6 +73,12 @@ class EmulatorActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        WindowCompat.getInsetsController(window, window.decorView).apply {
+            hide(WindowInsetsCompat.Type.systemBars())
+            systemBarsBehavior =
+                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        }
         budget = MovementBudget.get(applicationContext)
         runner = EmulatorRunner(budget)
         saveStateStore = SaveStateStore(applicationContext)
@@ -110,9 +119,27 @@ class EmulatorActivity : ComponentActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        runner.resume()
+    }
+
+    override fun onStop() {
+        runner.pause()
+        super.onStop()
+    }
+
     override fun onDestroy() {
         runner.stop()
         super.onDestroy()
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        if (hasFocus) {
+            WindowCompat.getInsetsController(window, window.decorView)
+                .hide(WindowInsetsCompat.Type.systemBars())
+        }
     }
 }
 
