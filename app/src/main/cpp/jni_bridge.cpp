@@ -114,6 +114,53 @@ Java_com_poketrek_emu_NativeEmulator_loadRom(JNIEnv* env, jobject /*thiz*/, jbyt
 }
 
 extern "C" JNIEXPORT void JNICALL
+Java_com_poketrek_emu_NativeEmulator_initAudio(JNIEnv* /*env*/, jobject /*thiz*/, jint sampleRate) {
+    if (!g_emulator || !g_emulator->core) return;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    mCore* core = g_emulator->core;
+    // Match the libretro core's sizing (src/platform/libretro/libretro.c L893–L909):
+    // expected samples per frame = sampleRate * frameCycles / frequency. Double
+    // it for headroom; clamp to blip's hard 0x4000 limit.
+    auto samplesPerFrame = static_cast<size_t>(
+        static_cast<float>(sampleRate) * static_cast<float>(core->frameCycles(core))
+            / static_cast<float>(core->frequency(core)));
+    size_t bufSize = samplesPerFrame * 2;
+    if (bufSize > 0x4000) bufSize = 0x4000;
+    core->setAudioBufferSize(core, bufSize);
+    blip_set_rates(core->getAudioChannel(core, 0),
+                   static_cast<double>(core->frequency(core)),
+                   static_cast<double>(sampleRate));
+    blip_set_rates(core->getAudioChannel(core, 1),
+                   static_cast<double>(core->frequency(core)),
+                   static_cast<double>(sampleRate));
+}
+
+// Drains both blip channels into a direct ShortBuffer as interleaved L/R
+// samples. Returns the number of stereo frames written (each frame is two shorts).
+extern "C" JNIEXPORT jint JNICALL
+Java_com_poketrek_emu_NativeEmulator_pollAudio(JNIEnv* env, jobject /*thiz*/, jobject directShortBuffer) {
+    if (!g_emulator || !g_emulator->core) return 0;
+    short* dst = static_cast<short*>(env->GetDirectBufferAddress(directShortBuffer));
+    jlong capBytes = env->GetDirectBufferCapacity(directShortBuffer);
+    if (!dst || capBytes <= 0) return 0;
+    int maxStereoFrames = static_cast<int>((capBytes / sizeof(short)) / 2);
+    if (maxStereoFrames <= 0) return 0;
+
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    blip_t* left = g_emulator->core->getAudioChannel(g_emulator->core, 0);
+    blip_t* right = g_emulator->core->getAudioChannel(g_emulator->core, 1);
+    int avail = blip_samples_avail(left);
+    int availR = blip_samples_avail(right);
+    if (availR < avail) avail = availR;
+    if (avail > maxStereoFrames) avail = maxStereoFrames;
+    if (avail <= 0) return 0;
+    // blip_read_samples with stereo=1 writes every other slot (stride 2).
+    blip_read_samples(left, dst, avail, 1);
+    blip_read_samples(right, dst + 1, avail, 1);
+    return avail;
+}
+
+extern "C" JNIEXPORT void JNICALL
 Java_com_poketrek_emu_NativeEmulator_runFrame(JNIEnv* /*env*/, jobject /*thiz*/) {
     if (!g_emulator || !g_emulator->core) return;
     std::lock_guard<std::mutex> lock(g_emulator->mutex);

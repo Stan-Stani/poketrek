@@ -52,6 +52,16 @@ class NativeEmulator {
 
     /** Restores emulator state from a previously-saved byte array. */
     external fun loadState(data: ByteArray): Boolean
+
+    /** Configures mGBA's blip channels for the desired output sample rate. */
+    external fun initAudio(sampleRate: Int)
+
+    /**
+     * Pulls available audio samples into a direct [java.nio.ByteBuffer]
+     * (interpreted as 16-bit signed PCM, interleaved stereo). Returns the
+     * number of stereo frames written.
+     */
+    external fun pollAudio(buffer: java.nio.ByteBuffer): Int
 }
 
 /** GBA key bits matching mGBA's setKeys mask. */

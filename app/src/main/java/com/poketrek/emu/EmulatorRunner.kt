@@ -1,6 +1,10 @@
 package com.poketrek.emu
 
 import android.graphics.Bitmap
+import android.media.AudioAttributes
+import android.media.AudioFormat
+import android.media.AudioManager
+import android.media.AudioTrack
 import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -23,6 +27,10 @@ private const val FRAMEBUFFER_BYTES = GBA_W * GBA_H * 4
 /** Targeted GBA frame period — actual mGBA rate is 59.7275 Hz. */
 private const val FRAME_PERIOD_NS = 16_750_419L
 
+private const val SAMPLE_RATE = 48000
+/** Headroom for ~one full frame of stereo samples + slack. */
+private const val AUDIO_BUFFER_BYTES = 4096
+
 /**
  * Owns the [NativeEmulator], the framebuffer Bitmap, and the run loop thread.
  *
@@ -40,6 +48,13 @@ class EmulatorRunner(budget: MovementBudget) {
     private val frameBuf: ByteBuffer = ByteBuffer
         .allocateDirect(FRAMEBUFFER_BYTES)
         .order(ByteOrder.nativeOrder())
+
+    /** Direct ByteBuffer for audio samples; reused each frame. */
+    private val audioBuf: ByteBuffer = ByteBuffer
+        .allocateDirect(AUDIO_BUFFER_BYTES)
+        .order(ByteOrder.nativeOrder())
+
+    private var audioTrack: AudioTrack? = null
 
     /** UI bitmap; pixels mutated each frame via copyPixelsFromBuffer. */
     val bitmap: Bitmap = Bitmap.createBitmap(GBA_W, GBA_H, Bitmap.Config.ARGB_8888)
@@ -67,9 +82,39 @@ class EmulatorRunner(budget: MovementBudget) {
             Log.e(TAG, "loadRom returned false")
             return false
         }
+        native.initAudio(SAMPLE_RATE)
+        startAudio()
         _romLoaded.value = true
         start()
         return true
+    }
+
+    private fun startAudio() {
+        val minBuf = AudioTrack.getMinBufferSize(
+            SAMPLE_RATE,
+            AudioFormat.CHANNEL_OUT_STEREO,
+            AudioFormat.ENCODING_PCM_16BIT,
+        )
+        // Double the minimum to absorb scheduling jitter without underrunning.
+        val bufSize = (minBuf * 2).coerceAtLeast(AUDIO_BUFFER_BYTES)
+        audioTrack = AudioTrack.Builder()
+            .setAudioAttributes(
+                AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_GAME)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .build(),
+            )
+            .setAudioFormat(
+                AudioFormat.Builder()
+                    .setSampleRate(SAMPLE_RATE)
+                    .setChannelMask(AudioFormat.CHANNEL_OUT_STEREO)
+                    .setEncoding(AudioFormat.ENCODING_PCM_16BIT)
+                    .build(),
+            )
+            .setBufferSizeInBytes(bufSize)
+            .setTransferMode(AudioTrack.MODE_STREAM)
+            .build()
+            .also { it.play() }
     }
 
     fun setKeys(mask: Int) {
@@ -85,6 +130,11 @@ class EmulatorRunner(budget: MovementBudget) {
         running.set(false)
         thread?.join(500)
         thread = null
+        audioTrack?.let {
+            it.stop()
+            it.release()
+        }
+        audioTrack = null
         if (_romLoaded.value) {
             native.destroy()
             _romLoaded.value = false
@@ -108,6 +158,15 @@ class EmulatorRunner(budget: MovementBudget) {
                 _frameTick.intValue = nextTick
                 if (nextTick % 30 == 0) {
                     _ramSnapshot.value = snapshot
+                }
+            }
+            audioTrack?.let { track ->
+                val frames = native.pollAudio(audioBuf)
+                if (frames > 0) {
+                    val bytes = frames * 4  // 2 channels * 2 bytes
+                    audioBuf.position(0).limit(bytes)
+                    track.write(audioBuf, bytes, AudioTrack.WRITE_NON_BLOCKING)
+                    audioBuf.clear()
                 }
             }
             nextFrameAt += FRAME_PERIOD_NS
