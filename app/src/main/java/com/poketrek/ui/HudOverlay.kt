@@ -26,6 +26,9 @@ fun HudOverlay(
     gate: MovementGate,
     ramSnapshot: com.poketrek.emu.LeafGreenRam.Snapshot?,
     onDebugAddSteps: (Int) -> Unit,
+    onSaveState: () -> Unit,
+    onLoadState: () -> Unit,
+    canLoadState: () -> Boolean,
     modifier: Modifier = Modifier,
 ) {
     val tiles by budget.budget.collectAsState()
@@ -67,6 +70,23 @@ fun HudOverlay(
                 contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp, vertical = 0.dp),
             ) {
                 Text(if (gateOn) "GATE: ON" else "GATE: OFF", color = Color.White, fontSize = 11.sp)
+            }
+        }
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(
+                onClick = onSaveState,
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6B7280)),
+                contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            ) {
+                Text("Save", color = Color.White, fontSize = 11.sp)
+            }
+            Button(
+                onClick = onLoadState,
+                enabled = canLoadState(),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6B7280)),
+                contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            ) {
+                Text("Load", color = Color.White, fontSize = 11.sp)
             }
         }
         if (ramSnapshot != null) {

@@ -46,6 +46,12 @@ class NativeEmulator {
 
     /** Reads a little-endian 32-bit word. Sign-extended into Java Int. */
     external fun busRead32(addr: Int): Int
+
+    /** Serializes the emulator state into a byte array. Returns null on failure. */
+    external fun saveState(): ByteArray?
+
+    /** Restores emulator state from a previously-saved byte array. */
+    external fun loadState(data: ByteArray): Boolean
 }
 
 /** GBA key bits matching mGBA's setKeys mask. */

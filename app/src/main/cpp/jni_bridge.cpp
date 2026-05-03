@@ -17,6 +17,7 @@ extern "C" {
 #include <mgba/core/core.h>
 #include <mgba/core/blip_buf.h>
 #include <mgba/core/config.h>
+#include <mgba/core/serialize.h>
 #include <mgba/gba/core.h>
 #include <mgba-util/vfs.h>
 }
@@ -187,4 +188,48 @@ Java_com_poketrek_emu_NativeEmulator_busRead32(JNIEnv* /*env*/, jobject /*thiz*/
     std::lock_guard<std::mutex> lock(g_emulator->mutex);
     return static_cast<jint>(
         g_emulator->core->busRead32(g_emulator->core, static_cast<uint32_t>(addr)));
+}
+
+// Save / load state. Pattern matches src/platform/libretro/libretro.c
+// retro_serialize / retro_unserialize: serialize into a growable in-memory
+// VFile, then copy out to a Java byte[].
+
+extern "C" JNIEXPORT jbyteArray JNICALL
+Java_com_poketrek_emu_NativeEmulator_saveState(JNIEnv* env, jobject /*thiz*/) {
+    if (!g_emulator || !g_emulator->core) return nullptr;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    VFile* vfm = VFileMemChunk(nullptr, 0);
+    if (!vfm) return nullptr;
+    bool ok = mCoreSaveStateNamed(g_emulator->core, vfm,
+                                  SAVESTATE_SAVEDATA | SAVESTATE_RTC);
+    if (!ok) {
+        vfm->close(vfm);
+        return nullptr;
+    }
+    ssize_t size = vfm->size(vfm);
+    jbyteArray result = env->NewByteArray(static_cast<jsize>(size));
+    if (result) {
+        vfm->seek(vfm, 0, SEEK_SET);
+        std::vector<uint8_t> buf(size);
+        vfm->read(vfm, buf.data(), size);
+        env->SetByteArrayRegion(result, 0, static_cast<jsize>(size),
+                                reinterpret_cast<const jbyte*>(buf.data()));
+    }
+    vfm->close(vfm);
+    return result;
+}
+
+extern "C" JNIEXPORT jboolean JNICALL
+Java_com_poketrek_emu_NativeEmulator_loadState(JNIEnv* env, jobject /*thiz*/, jbyteArray data) {
+    if (!g_emulator || !g_emulator->core || !data) return JNI_FALSE;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    jsize len = env->GetArrayLength(data);
+    std::vector<uint8_t> buf(len);
+    env->GetByteArrayRegion(data, 0, len, reinterpret_cast<jbyte*>(buf.data()));
+    VFile* vfm = VFileFromConstMemory(buf.data(), len);
+    if (!vfm) return JNI_FALSE;
+    bool ok = mCoreLoadStateNamed(g_emulator->core, vfm,
+                                  SAVESTATE_SAVEDATA | SAVESTATE_RTC);
+    vfm->close(vfm);
+    return ok ? JNI_TRUE : JNI_FALSE;
 }

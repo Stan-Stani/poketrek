@@ -23,6 +23,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.poketrek.emu.EmulatorRunner
+import com.poketrek.emu.SaveStateStore
 import com.poketrek.step.MovementBudget
 import com.poketrek.step.StepSensor
 
@@ -32,6 +33,7 @@ class EmulatorActivity : ComponentActivity() {
 
     private lateinit var budget: MovementBudget
     private lateinit var runner: EmulatorRunner
+    private lateinit var saveStateStore: SaveStateStore
     private var stepSensor: StepSensor? = null
 
     private val requestActivityRecognition = registerForActivityResult(
@@ -66,6 +68,7 @@ class EmulatorActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         budget = MovementBudget(applicationContext)
         runner = EmulatorRunner(budget)
+        saveStateStore = SaveStateStore(applicationContext)
         stepSensor = StepSensor(applicationContext, budget)
 
         if (checkSelfPermission(android.Manifest.permission.ACTIVITY_RECOGNITION)
@@ -83,6 +86,13 @@ class EmulatorActivity : ComponentActivity() {
                         budget = budget,
                         onPickRom = { pickRom.launch(arrayOf("application/octet-stream", "*/*")) },
                         onDebugAddSteps = budget::debugAddSteps,
+                        onSaveState = {
+                            runner.saveState()?.let { saveStateStore.save(it) }
+                        },
+                        onLoadState = {
+                            saveStateStore.load()?.let { runner.loadState(it) }
+                        },
+                        canLoadState = { saveStateStore.hasSave() },
                     )
                 }
             }
@@ -105,6 +115,9 @@ private fun AppRoot(
     budget: MovementBudget,
     onPickRom: () -> Unit,
     onDebugAddSteps: (Int) -> Unit,
+    onSaveState: () -> Unit,
+    onLoadState: () -> Unit,
+    canLoadState: () -> Boolean,
 ) {
     val romLoaded by runner.romLoaded
     if (!romLoaded) {
@@ -123,6 +136,9 @@ private fun AppRoot(
             runner = runner,
             budget = budget,
             onDebugAddSteps = onDebugAddSteps,
+            onSaveState = onSaveState,
+            onLoadState = onLoadState,
+            canLoadState = canLoadState,
             modifier = Modifier.fillMaxSize().padding(8.dp),
         )
     }

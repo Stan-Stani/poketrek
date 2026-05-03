@@ -30,6 +30,9 @@ fun EmulatorScreen(
     runner: EmulatorRunner,
     budget: MovementBudget,
     onDebugAddSteps: (Int) -> Unit,
+    onSaveState: () -> Unit,
+    onLoadState: () -> Unit,
+    canLoadState: () -> Boolean,
     modifier: Modifier = Modifier,
 ) {
     val tick by runner.frameTick
@@ -47,6 +50,9 @@ fun EmulatorScreen(
             gate = runner.gate,
             ramSnapshot = ramSnapshot,
             onDebugAddSteps = onDebugAddSteps,
+            onSaveState = onSaveState,
+            onLoadState = onLoadState,
+            canLoadState = canLoadState,
             modifier = Modifier
                 .align(Alignment.TopStart)
                 .padding(8.dp),

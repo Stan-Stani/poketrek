@@ -33,6 +33,9 @@ class EmulatorRunner(budget: MovementBudget) {
     private val native = NativeEmulator()
     val gate: MovementGate = MovementGate(budget)
 
+    fun saveState(): ByteArray? = native.saveState()
+    fun loadState(bytes: ByteArray): Boolean = native.loadState(bytes)
+
     /** Direct ByteBuffer the native side writes into; rewound before each copy. */
     private val frameBuf: ByteBuffer = ByteBuffer
         .allocateDirect(FRAMEBUFFER_BYTES)
