@@ -6,6 +6,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import com.poketrek.step.MovementBudget
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.util.concurrent.atomic.AtomicBoolean
@@ -28,8 +29,9 @@ private const val FRAME_PERIOD_NS = 16_750_419L
  * The Compose UI observes [frameTick] (increments each rendered frame) and
  * draws [bitmap]. Input is set via [setKeys].
  */
-class EmulatorRunner {
+class EmulatorRunner(budget: MovementBudget) {
     private val native = NativeEmulator()
+    val gate: MovementGate = MovementGate(budget)
 
     /** Direct ByteBuffer the native side writes into; rewound before each copy. */
     private val frameBuf: ByteBuffer = ByteBuffer
@@ -89,7 +91,10 @@ class EmulatorRunner {
     private fun runLoop() {
         var nextFrameAt = System.nanoTime()
         while (running.get()) {
-            native.setKeys(keys.get())
+            val rawKeys = keys.get()
+            val snapshot = LeafGreenRam.read(native)
+            val gated = gate.process(rawKeys, snapshot)
+            native.setKeys(gated)
             native.runFrame()
             if (native.writeFramebuffer(frameBuf)) {
                 frameBuf.rewind()
@@ -99,7 +104,7 @@ class EmulatorRunner {
                 val nextTick = _frameTick.intValue + 1
                 _frameTick.intValue = nextTick
                 if (nextTick % 30 == 0) {
-                    _ramSnapshot.value = LeafGreenRam.read(native)
+                    _ramSnapshot.value = snapshot
                 }
             }
             nextFrameAt += FRAME_PERIOD_NS

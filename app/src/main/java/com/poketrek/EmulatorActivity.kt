@@ -30,8 +30,8 @@ private const val TAG = "EmulatorActivity"
 
 class EmulatorActivity : ComponentActivity() {
 
-    private val runner = EmulatorRunner()
     private lateinit var budget: MovementBudget
+    private lateinit var runner: EmulatorRunner
     private var stepSensor: StepSensor? = null
 
     private val requestActivityRecognition = registerForActivityResult(
@@ -65,6 +65,7 @@ class EmulatorActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         budget = MovementBudget(applicationContext)
+        runner = EmulatorRunner(budget)
         stepSensor = StepSensor(applicationContext, budget)
 
         if (checkSelfPermission(android.Manifest.permission.ACTIVITY_RECOGNITION)

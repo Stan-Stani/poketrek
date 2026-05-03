@@ -44,6 +44,7 @@ fun EmulatorScreen(
             }
             HudOverlay(
                 budget = budget,
+                gate = runner.gate,
                 ramSnapshot = ramSnapshot,
                 onDebugAddSteps = onDebugAddSteps,
                 modifier = Modifier

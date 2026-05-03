@@ -17,17 +17,20 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.poketrek.emu.MovementGate
 import com.poketrek.step.MovementBudget
 
 @Composable
 fun HudOverlay(
     budget: MovementBudget,
+    gate: MovementGate,
     ramSnapshot: com.poketrek.emu.LeafGreenRam.Snapshot?,
     onDebugAddSteps: (Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val tiles by budget.budget.collectAsState()
     val ratio by budget.tilesPerStep.collectAsState()
+    val gateOn by gate.enabled.collectAsState()
 
     androidx.compose.foundation.layout.Column(
         modifier = modifier
@@ -55,6 +58,15 @@ fun HudOverlay(
                 contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp, vertical = 0.dp),
             ) {
                 Text("+10 steps", color = Color.White, fontSize = 11.sp)
+            }
+            Button(
+                onClick = { gate.setEnabled(!gateOn) },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = if (gateOn) Color(0xFF06A77D) else Color(0xFF4B5563),
+                ),
+                contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            ) {
+                Text(if (gateOn) "GATE: ON" else "GATE: OFF", color = Color.White, fontSize = 11.sp)
             }
         }
         if (ramSnapshot != null) {
