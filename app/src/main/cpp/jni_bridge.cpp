@@ -237,6 +237,36 @@ Java_com_poketrek_emu_NativeEmulator_busRead32(JNIEnv* /*env*/, jobject /*thiz*/
         g_emulator->core->busRead32(g_emulator->core, static_cast<uint32_t>(addr)));
 }
 
+// RAM writes. Mutex-locked like reads — mGBA's bus writes can poke MMIO and we
+// don't want to race a concurrent runFrame on the emu thread.
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_poketrek_emu_NativeEmulator_busWrite8(JNIEnv* /*env*/, jobject /*thiz*/, jint addr, jint value) {
+    if (!g_emulator || !g_emulator->core) return;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    g_emulator->core->busWrite8(g_emulator->core,
+                                static_cast<uint32_t>(addr),
+                                static_cast<uint8_t>(value & 0xff));
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_poketrek_emu_NativeEmulator_busWrite16(JNIEnv* /*env*/, jobject /*thiz*/, jint addr, jint value) {
+    if (!g_emulator || !g_emulator->core) return;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    g_emulator->core->busWrite16(g_emulator->core,
+                                 static_cast<uint32_t>(addr),
+                                 static_cast<uint16_t>(value & 0xffff));
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_poketrek_emu_NativeEmulator_busWrite32(JNIEnv* /*env*/, jobject /*thiz*/, jint addr, jint value) {
+    if (!g_emulator || !g_emulator->core) return;
+    std::lock_guard<std::mutex> lock(g_emulator->mutex);
+    g_emulator->core->busWrite32(g_emulator->core,
+                                 static_cast<uint32_t>(addr),
+                                 static_cast<uint32_t>(value));
+}
+
 // Save / load state. Pattern matches src/platform/libretro/libretro.c
 // retro_serialize / retro_unserialize: serialize into a growable in-memory
 // VFile, then copy out to a Java byte[].

@@ -100,11 +100,13 @@ fun EmulatorScreen(
             SettingsSheet(
                 budget = budget,
                 gate = runner.gate,
+                romIdentity = romIdentity,
                 onDismiss = { settingsOpen = false },
                 onPickRom = onPickRom,
                 getSaveSlots = getSaveSlots,
                 onSaveSlot = onSaveSlot,
                 onLoadSlot = onLoadSlot,
+                onBuyRareCandy = runner::buyRareCandy,
             )
         }
     }

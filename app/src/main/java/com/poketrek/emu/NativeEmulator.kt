@@ -47,6 +47,15 @@ class NativeEmulator {
     /** Reads a little-endian 32-bit word. Sign-extended into Java Int. */
     external fun busRead32(addr: Int): Int
 
+    /** Writes the low 8 bits of [value] to emulated GBA address [addr]. */
+    external fun busWrite8(addr: Int, value: Int)
+
+    /** Writes the low 16 bits of [value] little-endian to [addr]. */
+    external fun busWrite16(addr: Int, value: Int)
+
+    /** Writes [value] as a 32-bit little-endian word to [addr]. */
+    external fun busWrite32(addr: Int, value: Int)
+
     /** Serializes the emulator state into a byte array. Returns null on failure. */
     external fun saveState(): ByteArray?
 

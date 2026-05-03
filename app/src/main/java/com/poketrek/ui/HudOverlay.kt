@@ -13,14 +13,19 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -33,10 +38,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.poketrek.emu.EmulatorRunner
 import com.poketrek.emu.MovementGate
+import com.poketrek.emu.RomIdentity
+import com.poketrek.emu.RomVariant
+import com.poketrek.step.MAX_RARE_CANDY_COST
+import com.poketrek.step.MIN_RARE_CANDY_COST
 import com.poketrek.step.MovementBudget
+import com.poketrek.step.parseRatioInput
 
 /**
  * Discrete ratio steps the slider snaps through. Index 0 is the hardest
@@ -50,9 +63,19 @@ private val RATIO_TABLE: List<Pair<Int, Int>> = listOf(
 )
 
 private fun ratioIndexFor(num: Int, den: Int): Int {
-    val idx = RATIO_TABLE.indexOfFirst { it.first == num && it.second == den }
-    return if (idx >= 0) idx else RATIO_TABLE.indexOfFirst { it.first == 1 && it.second == 1 }
+    val exact = RATIO_TABLE.indexOfFirst { it.first == num && it.second == den }
+    if (exact >= 0) return exact
+    // Custom-set ratio not in the preset table — snap to the closest preset
+    // by tile-per-step value so the slider doesn't surprise-jump to 1:1.
+    val target = num.toDouble() / den.toDouble()
+    return RATIO_TABLE.indices.minByOrNull { i ->
+        val (n, d) = RATIO_TABLE[i]
+        kotlin.math.abs(n.toDouble() / d - target)
+    } ?: RATIO_TABLE.indexOfFirst { it.first == 1 && it.second == 1 }
 }
+
+private fun ratioMatchesPreset(num: Int, den: Int): Boolean =
+    RATIO_TABLE.any { it.first == num && it.second == den }
 
 private fun describeRatio(num: Int, den: Int): String = when {
     num == 1 && den == 1 -> "1 step = 1 tile (realistic)"
@@ -168,11 +191,13 @@ fun DebugOverlay(
 fun SettingsSheet(
     budget: MovementBudget,
     gate: MovementGate,
+    romIdentity: RomIdentity?,
     onDismiss: () -> Unit,
     onPickRom: () -> Unit,
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
     onLoadSlot: (Int) -> Boolean,
+    onBuyRareCandy: (Int) -> EmulatorRunner.BuyResult,
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
@@ -216,8 +241,10 @@ fun SettingsSheet(
             )
 
             Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                val isCustom = !ratioMatchesPreset(ratioNum, ratioDen)
                 Text(
-                    describeRatio(draftNum, draftDen),
+                    if (isCustom) "Custom: ${describeRatio(ratioNum, ratioDen)}"
+                    else describeRatio(draftNum, draftDen),
                     fontFamily = FontFamily.Monospace,
                     fontSize = 14.sp,
                 )
@@ -248,6 +275,12 @@ fun SettingsSheet(
                 }
             }
 
+            CustomRatioRow(
+                currentNum = ratioNum,
+                currentDen = ratioDen,
+                onApply = { n, d -> budget.setRatio(n, d) },
+            )
+
             Text(
                 "Current budget: $tiles tiles",
                 color = Color(0xFF6B7280),
@@ -267,6 +300,19 @@ fun SettingsSheet(
                 sublabel = "Shows RAM probe + fake-step button",
                 checked = debugOn,
                 onCheckedChange = { budget.setDebugHudVisible(it) },
+            )
+
+            if (romIdentity?.variant == RomVariant.LEAFGREEN_US_REV1) {
+                Spacer(Modifier.height(4.dp))
+                ShopSection(
+                    budget = budget,
+                    onBuyRareCandy = onBuyRareCandy,
+                )
+            }
+
+            Spacer(Modifier.height(4.dp))
+            AdvancedSection(
+                onResetSteps = { budget.resetBudgetAndRebaseSteps() },
             )
 
             Spacer(Modifier.height(4.dp))
@@ -358,4 +404,255 @@ private fun ToggleRow(
 private fun formatSnapshot(s: com.poketrek.emu.LeafGreenRam.Snapshot): String {
     fun hex(v: Int, width: Int) = "0x" + v.toUInt().toString(16).padStart(width, '0').uppercase()
     return "X:${s.playerX} Y:${s.playerY} bank:${s.mapBank}/${s.mapId} mov:${s.movingStatus} sb1=${hex(s.saveBlockPtr, 8)}"
+}
+
+/**
+ * Free-form ratio input: accepts integers, decimals, or fractions and applies
+ * via [parseRatioInput]. Sits below the discrete preset slider; the slider
+ * snaps to the closest preset when a non-preset value is set here.
+ */
+@Composable
+private fun CustomRatioRow(
+    currentNum: Int,
+    currentDen: Int,
+    onApply: (num: Int, den: Int) -> Unit,
+) {
+    var draft by remember(currentNum, currentDen) {
+        mutableStateOf(if (currentDen == 1) "$currentNum" else "$currentNum/$currentDen")
+    }
+    val parsed = parseRatioInput(draft)
+    val isError = draft.isNotBlank() && parsed == null
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        OutlinedTextField(
+            value = draft,
+            onValueChange = { draft = it },
+            modifier = Modifier.weight(1f),
+            label = { Text("Custom ratio (e.g. 2.5 or 5/2)", fontSize = 11.sp) },
+            singleLine = true,
+            isError = isError,
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Decimal,
+                imeAction = ImeAction.Done,
+            ),
+            keyboardActions = KeyboardActions(
+                onDone = { parsed?.let { (n, d) -> onApply(n, d) } },
+            ),
+        )
+        Button(
+            onClick = { parsed?.let { (n, d) -> onApply(n, d) } },
+            enabled = parsed != null && parsed != (currentNum to currentDen),
+            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 0.dp),
+        ) {
+            Text("Set", fontSize = 12.sp)
+        }
+    }
+}
+
+/**
+ * Collapsible "Advanced / debug" section. Hidden by default to keep the
+ * primary settings sheet calm; expand to reveal destructive actions.
+ */
+@Composable
+private fun AdvancedSection(
+    onResetSteps: () -> Unit,
+) {
+    var expanded by remember { mutableStateOf(false) }
+    var confirmReset by remember { mutableStateOf(false) }
+
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            Text("Advanced", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+            TextButton(
+                onClick = { expanded = !expanded },
+                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            ) {
+                Text(if (expanded) "Hide" else "Show", fontSize = 12.sp)
+            }
+        }
+        if (expanded) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Column(Modifier.weight(1f)) {
+                    Text("Reset budget & step baseline", fontSize = 13.sp)
+                    Text(
+                        "Zeros tiles, clears carry, and rebases the step counter so future steps count from now.",
+                        color = Color(0xFF6B7280),
+                        fontSize = 11.sp,
+                    )
+                }
+                Spacer(Modifier.width(8.dp))
+                Button(
+                    onClick = { confirmReset = true },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFB91C1C)),
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                ) {
+                    Text("Reset", fontSize = 12.sp)
+                }
+            }
+        }
+    }
+
+    if (confirmReset) {
+        AlertDialog(
+            onDismissRequest = { confirmReset = false },
+            title = { Text("Reset budget?") },
+            text = {
+                Text(
+                    "This zeros your tile budget and forgets all previously-walked steps. " +
+                        "Settings, save states, and ROM are not affected.",
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    confirmReset = false
+                    onResetSteps()
+                }) { Text("Reset") }
+            },
+            dismissButton = {
+                TextButton(onClick = { confirmReset = false }) { Text("Cancel") }
+            },
+        )
+    }
+}
+
+/**
+ * Collapsible "Shop" section. Spends tiles to mint Rare Candies into the
+ * bag. Only shown for the calibrated US Rev 1 ROM — the bag-pocket and
+ * encryption-key offsets are FRLG-specific and would corrupt other builds.
+ */
+@Composable
+private fun ShopSection(
+    budget: MovementBudget,
+    onBuyRareCandy: (Int) -> EmulatorRunner.BuyResult,
+) {
+    val tiles by budget.budget.collectAsState()
+    val cost by budget.rareCandyCost.collectAsState()
+    var expanded by remember { mutableStateOf(false) }
+    var costDraft by remember(cost) { mutableStateOf(cost.toString()) }
+    var quantity by remember { mutableStateOf(1) }
+    var feedback by remember { mutableStateOf<String?>(null) }
+    val parsedCost = costDraft.trim().toIntOrNull()
+        ?.takeIf { it in MIN_RARE_CANDY_COST..MAX_RARE_CANDY_COST }
+    val totalCost = cost.toLong() * quantity.toLong()
+    val canAfford = totalCost <= tiles
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            Text("Shop", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+            TextButton(
+                onClick = { expanded = !expanded },
+                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            ) {
+                Text(if (expanded) "Hide" else "Show", fontSize = 12.sp)
+            }
+        }
+        if (expanded) {
+            Text(
+                "Spend tiles for in-game items. Writes directly to the bag's items pocket.",
+                color = Color(0xFF6B7280),
+                fontSize = 11.sp,
+            )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                OutlinedTextField(
+                    value = costDraft,
+                    onValueChange = { costDraft = it.filter(Char::isDigit).take(6) },
+                    modifier = Modifier.weight(1f),
+                    label = { Text("Tiles per Rare Candy", fontSize = 11.sp) },
+                    singleLine = true,
+                    isError = costDraft.isNotBlank() && parsedCost == null,
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Number,
+                        imeAction = ImeAction.Done,
+                    ),
+                    keyboardActions = KeyboardActions(
+                        onDone = { parsedCost?.let { budget.setRareCandyCost(it) } },
+                    ),
+                )
+                Button(
+                    onClick = { parsedCost?.let { budget.setRareCandyCost(it) } },
+                    enabled = parsedCost != null && parsedCost != cost,
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                ) {
+                    Text("Set", fontSize = 12.sp)
+                }
+            }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                Column(Modifier.weight(1f)) {
+                    Text("Rare Candy × $quantity", fontSize = 13.sp)
+                    Text(
+                        "Cost: $totalCost tiles",
+                        color = if (canAfford) Color(0xFF6B7280) else Color(0xFFEF4444),
+                        fontFamily = FontFamily.Monospace,
+                        fontSize = 11.sp,
+                    )
+                }
+                Button(
+                    onClick = { if (quantity > 1) quantity-- },
+                    enabled = quantity > 1,
+                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+                ) { Text("−", fontSize = 14.sp) }
+                Text(
+                    "$quantity",
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 14.sp,
+                    modifier = Modifier.width(28.dp),
+                )
+                Button(
+                    onClick = { if (quantity < 999) quantity++ },
+                    enabled = quantity < 999,
+                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+                ) { Text("+", fontSize = 14.sp) }
+            }
+            Button(
+                onClick = {
+                    feedback = when (val r = onBuyRareCandy(quantity)) {
+                        EmulatorRunner.BuyResult.Ok ->
+                            "Bought $quantity Rare Cand${if (quantity == 1) "y" else "ies"}."
+                        EmulatorRunner.BuyResult.NotEnoughTiles -> "Not enough tiles."
+                        EmulatorRunner.BuyResult.UnsupportedRom -> "Shop disabled on this ROM."
+                        EmulatorRunner.BuyResult.NotInGame ->
+                            "Save the game once before buying — bag isn't initialized yet."
+                        EmulatorRunner.BuyResult.BagFull -> "Bag is full."
+                        is EmulatorRunner.BuyResult.StackWouldOverflow ->
+                            "Stack would exceed 999 (have ${r.existing})."
+                    }
+                },
+                enabled = canAfford,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF059669)),
+            ) {
+                Text("Buy", fontSize = 13.sp)
+            }
+            feedback?.let {
+                Text(
+                    it,
+                    color = Color(0xFF6B7280),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 11.sp,
+                )
+            }
+        }
+    }
 }

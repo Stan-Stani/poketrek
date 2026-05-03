@@ -37,12 +37,61 @@ private const val AUDIO_BUFFER_BYTES = 4096
  * The Compose UI observes [frameTick] (increments each rendered frame) and
  * draws [bitmap]. Input is set via [setKeys].
  */
-class EmulatorRunner(budget: MovementBudget) {
+class EmulatorRunner(private val budget: MovementBudget) {
     private val native = NativeEmulator()
     val gate: MovementGate = MovementGate(budget)
 
     fun saveState(): ByteArray? = native.saveState()
     fun loadState(bytes: ByteArray): Boolean = native.loadState(bytes)
+
+    /** Adapter so RareCandyShop can drive the native bus through a small interface. */
+    private val nativeBusIo = object : RareCandyShop.BusIO {
+        override fun read16(addr: Int): Int = native.busRead16(addr)
+        override fun read32(addr: Int): Int = native.busRead32(addr)
+        override fun write16(addr: Int, value: Int) = native.busWrite16(addr, value)
+    }
+
+    sealed class BuyResult {
+        object Ok : BuyResult()
+        object NotEnoughTiles : BuyResult()
+        object UnsupportedRom : BuyResult()
+        object NotInGame : BuyResult()
+        object BagFull : BuyResult()
+        data class StackWouldOverflow(val existing: Int) : BuyResult()
+    }
+
+    /**
+     * Spends rareCandyCost × [count] tiles, then writes [count] Rare Candies
+     * into the bag. Refunds the spend if the shop write fails (bag full,
+     * not in-game, etc.) so the user isn't charged for a no-op.
+     */
+    fun buyRareCandy(count: Int): BuyResult {
+        if (count <= 0) return BuyResult.Ok
+        if (_romIdentity.value?.variant != RomVariant.LEAFGREEN_US_REV1) {
+            return BuyResult.UnsupportedRom
+        }
+        val costLong = budget.rareCandyCost.value.toLong() * count.toLong()
+        if (costLong > Int.MAX_VALUE) return BuyResult.NotEnoughTiles
+        val cost = costLong.toInt()
+
+        // Spend first so the gate-consumer thread can't outbid the player
+        // between our check and our debit. Refund on any shop-side failure.
+        if (!budget.spend(cost)) return BuyResult.NotEnoughTiles
+        val shopResult = RareCandyShop.addRareCandy(nativeBusIo, count)
+        return when (shopResult) {
+            RareCandyShop.Result.Ok -> BuyResult.Ok
+            else -> {
+                budget.refund(cost)
+                when (shopResult) {
+                    RareCandyShop.Result.NotInGame -> BuyResult.NotInGame
+                    RareCandyShop.Result.BagFull -> BuyResult.BagFull
+                    is RareCandyShop.Result.StackOverflow ->
+                        BuyResult.StackWouldOverflow(shopResult.existing)
+                    RareCandyShop.Result.Ok -> BuyResult.Ok // unreachable
+                }
+            }
+        }
+    }
 
     /** Direct ByteBuffer the native side writes into; rewound before each copy. */
     private val frameBuf: ByteBuffer = ByteBuffer
@@ -131,6 +180,32 @@ class EmulatorRunner(budget: MovementBudget) {
     private fun start() {
         if (running.getAndSet(true)) return
         thread = thread(name = "emulator-runner", isDaemon = true) { runLoop() }
+    }
+
+    /**
+     * Halts the run loop and silences audio without destroying the native
+     * core. Safe to call when not running. Pair with [resume]; for full
+     * teardown use [stop].
+     */
+    fun pause() {
+        if (!running.get()) return
+        running.set(false)
+        thread?.join(500)
+        thread = null
+        // Clear held inputs so a button stuck down at pause-time doesn't
+        // keep firing when we resume.
+        keys.set(0)
+        audioTrack?.let {
+            it.pause()
+            it.flush()
+        }
+    }
+
+    /** Resumes a paused run loop. No-op if no ROM is loaded or already running. */
+    fun resume() {
+        if (!_romLoaded.value || running.get()) return
+        audioTrack?.play()
+        start()
     }
 
     fun stop() {

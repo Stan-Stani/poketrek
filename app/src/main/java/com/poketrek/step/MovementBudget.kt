@@ -35,11 +35,72 @@ private val KEY_LAST_SENSOR_VALUE = longPreferencesKey("last_sensor_value")
 private val KEY_GATE_ENABLED = booleanPreferencesKey("gate_enabled")
 private val KEY_DEBUG_HUD = booleanPreferencesKey("debug_hud_visible")
 private val KEY_HAPTIC_ON_STEP = booleanPreferencesKey("haptic_on_step")
+private val KEY_RARE_CANDY_COST = intPreferencesKey("rare_candy_cost_tiles")
 
 private const val DEFAULT_RATIO_NUM = 4
 private const val DEFAULT_RATIO_DEN = 1
 const val MIN_RATIO_PART = 1
-const val MAX_RATIO_PART = 32
+// Generous upper bound for custom user-entered ratios. The discrete slider
+// table is independent of this and tops out much lower; this only widens
+// the floor/ceiling for the typed text-field input.
+const val MAX_RATIO_PART = 1000
+
+/** Default tile cost to mint one Rare Candy. Tunable from the Shop UI. */
+const val DEFAULT_RARE_CANDY_COST = 1000
+const val MIN_RARE_CANDY_COST = 1
+const val MAX_RARE_CANDY_COST = 100_000
+
+private tailrec fun gcd(a: Long, b: Long): Long = if (b == 0L) a else gcd(b, a % b)
+
+/**
+ * Parses a user-typed step ratio into reduced (num, den) ints. Accepts:
+ *   - integer:  "4"        → 4/1
+ *   - decimal:  "2.5"      → 5/2
+ *   - fraction: "5/2", "1/3" → as-typed, reduced by GCD
+ *
+ * Returns null on empty/malformed input or if either reduced part falls
+ * outside [MIN_RATIO_PART, MAX_RATIO_PART]. Pure — kept out of MovementBudget
+ * so the parser can be tested without an Android Context.
+ */
+fun parseRatioInput(input: String): Pair<Int, Int>? {
+    val s = input.trim()
+    if (s.isEmpty()) return null
+    val (rawNum, rawDen) = when {
+        '/' in s -> {
+            val parts = s.split('/')
+            if (parts.size != 2) return null
+            val n = parts[0].trim().toLongOrNull() ?: return null
+            val d = parts[1].trim().toLongOrNull() ?: return null
+            n to d
+        }
+        '.' in s -> {
+            val parts = s.split('.')
+            if (parts.size != 2) return null
+            val intPart = parts[0].trim().ifEmpty { "0" }
+            val fracPart = parts[1].trim()
+            if (fracPart.isEmpty()
+                || !intPart.all(Char::isDigit)
+                || !fracPart.all(Char::isDigit)) return null
+            // Cap fractional digits so 0.000000001 doesn't blow past Long range.
+            if (fracPart.length > 9) return null
+            val combined = (intPart + fracPart).toLongOrNull() ?: return null
+            var denom = 1L
+            repeat(fracPart.length) { denom *= 10L }
+            combined to denom
+        }
+        else -> {
+            val n = s.toLongOrNull() ?: return null
+            n to 1L
+        }
+    }
+    if (rawNum <= 0 || rawDen <= 0) return null
+    val g = gcd(rawNum, rawDen)
+    val n = rawNum / g
+    val d = rawDen / g
+    if (n < MIN_RATIO_PART || d < MIN_RATIO_PART) return null
+    if (n > MAX_RATIO_PART || d > MAX_RATIO_PART) return null
+    return n.toInt() to d.toInt()
+}
 
 /**
  * Computes how many whole tiles to credit for [deltaSteps] real-world steps
@@ -111,6 +172,9 @@ class MovementBudget private constructor(private val context: Context) : Movemen
     private val _hapticOnStep = MutableStateFlow(true)
     val hapticOnStep: StateFlow<Boolean> = _hapticOnStep.asStateFlow()
 
+    private val _rareCandyCost = MutableStateFlow(DEFAULT_RARE_CANDY_COST)
+    val rareCandyCost: StateFlow<Int> = _rareCandyCost.asStateFlow()
+
     /**
      * Fires (tilesAwarded) every time the budget is credited. Subscribers
      * (e.g. the haptic vibrator in StepCounterService, future HUD flash
@@ -137,6 +201,8 @@ class MovementBudget private constructor(private val context: Context) : Movemen
             _gateEnabled.value = prefs[KEY_GATE_ENABLED] ?: false
             _debugHudVisible.value = prefs[KEY_DEBUG_HUD] ?: false
             _hapticOnStep.value = prefs[KEY_HAPTIC_ON_STEP] ?: true
+            _rareCandyCost.value = (prefs[KEY_RARE_CANDY_COST] ?: DEFAULT_RARE_CANDY_COST)
+                .coerceIn(MIN_RARE_CANDY_COST, MAX_RARE_CANDY_COST)
         }
     }
 
@@ -197,6 +263,47 @@ class MovementBudget private constructor(private val context: Context) : Movemen
     }
 
     /**
+     * Atomic-ish spend of [tiles] from the budget. Returns true if the budget
+     * had enough and was decremented; false otherwise (budget unchanged).
+     *
+     * Atomicity caveat: this isn't strictly thread-safe against concurrent
+     * spenders, but the only writers are (a) the emu thread's gate consumer,
+     * which spends 1 tile/frame, and (b) the UI thread's Buy button. The
+     * compare-and-set on a single _budget.value read is good enough here.
+     */
+    fun spend(tiles: Int): Boolean {
+        if (tiles <= 0) return true
+        val current = _budget.value
+        if (current < tiles) return false
+        val next = current - tiles
+        _budget.value = next
+        persistBudget(next)
+        return true
+    }
+
+    /**
+     * Returns [tiles] to the budget. Used to undo a [spend] when the
+     * downstream action (e.g. shop write) fails after we've already debited.
+     * Skips the credit-tiles SharedFlow so the haptic pulse doesn't fire on
+     * what is effectively a transactional rollback.
+     */
+    fun refund(tiles: Int) {
+        if (tiles <= 0) return
+        val next = (_budget.value + tiles).coerceAtMost(Int.MAX_VALUE / 2)
+        _budget.value = next
+        persistBudget(next)
+    }
+
+    fun setRareCandyCost(value: Int) {
+        val v = value.coerceIn(MIN_RARE_CANDY_COST, MAX_RARE_CANDY_COST)
+        if (v == _rareCandyCost.value) return
+        _rareCandyCost.value = v
+        scope.launch {
+            context.budgetStore.edit { it[KEY_RARE_CANDY_COST] = v }
+        }
+    }
+
+    /**
      * Sets the credit ratio to [num] tiles per [den] real-world steps. Resets
      * the carry remainder so a switch from e.g. 1:8 → 8:1 doesn't drop a
      * stale partial credit.
@@ -236,6 +343,30 @@ class MovementBudget private constructor(private val context: Context) : Movemen
         _hapticOnStep.value = value
         scope.launch {
             context.budgetStore.edit { it[KEY_HAPTIC_ON_STEP] = value }
+        }
+    }
+
+    /**
+     * Zeros the tile budget, clears the fractional carry remainder, and
+     * rebases the hardware step counter so the next sensor sample is treated
+     * as the new origin (i.e. previously-walked steps are forgotten). The
+     * ratio and toggles are left alone.
+     *
+     * "Rebase" rather than "set lastSensorValue = 0": the counter is
+     * monotonic-since-boot so we can't actually reset it; instead we mark
+     * lastSensorValue = -1 and let [onSensorValue]'s first-read branch
+     * adopt whatever the next sample happens to be as the new baseline.
+     */
+    fun resetBudgetAndRebaseSteps() {
+        _budget.value = 0
+        stepCarry = 0
+        lastSensorValue = -1L
+        scope.launch {
+            context.budgetStore.edit {
+                it[KEY_BUDGET] = 0
+                it[KEY_STEP_CARRY] = 0
+                it.remove(KEY_LAST_SENSOR_VALUE)
+            }
         }
     }
 
