@@ -106,7 +106,9 @@ class EmulatorActivity : ComponentActivity() {
                         onDebugAddSteps = budget::debugAddSteps,
                         getSaveSlots = saveStateStore::slots,
                         onSaveSlot = { slot ->
-                            runner.saveState()?.let { saveStateStore.save(slot, it) } ?: false
+                            runner.saveState()?.let {
+                                saveStateStore.save(slot, it, runner.romIdentity.value?.crc32)
+                            } ?: false
                         },
                         onLoadSlot = { slot ->
                             saveStateStore.load(slot)?.let { runner.loadState(it) } ?: false

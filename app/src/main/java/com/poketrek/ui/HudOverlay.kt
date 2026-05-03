@@ -388,6 +388,7 @@ fun SettingsSheet(
             slots.forEach { slot ->
                 SlotRow(
                     slot = slot,
+                    currentRomCrc = romIdentity?.crc32,
                     onSave = {
                         if (onSaveSlot(slot.index)) slotsVersion++
                     },
@@ -404,9 +405,21 @@ fun SettingsSheet(
 @Composable
 private fun SlotRow(
     slot: com.poketrek.emu.SaveStateStore.Slot,
+    currentRomCrc: Long?,
     onSave: () -> Unit,
     onLoad: () -> Unit,
 ) {
+    val mismatch = slot.romCrc32 != null
+        && currentRomCrc != null
+        && slot.romCrc32 != currentRomCrc
+    val romLabel = when {
+        slot.isEmpty -> null
+        slot.romCrc32 == null -> "Unknown ROM"
+        else -> {
+            val v = RomIdentity.variantFor(slot.romCrc32)
+            "${v.displayName} ${RomIdentity.crc32Hex(slot.romCrc32)}"
+        }
+    }
     Row(
         modifier = Modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically,
@@ -419,13 +432,21 @@ private fun SlotRow(
                 color = Color(0xFF6B7280),
                 fontSize = 11.sp,
             )
+            romLabel?.let {
+                Text(
+                    text = if (mismatch) "$it  ⚠ different ROM" else it,
+                    color = if (mismatch) Color(0xFFEF4444) else Color(0xFF6B7280),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 10.sp,
+                )
+            }
         }
         Button(onClick = onSave, contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp)) {
             Text("Save", fontSize = 12.sp)
         }
         Button(
             onClick = onLoad,
-            enabled = !slot.isEmpty,
+            enabled = !slot.isEmpty && !mismatch,
             contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
         ) {
             Text("Load", fontSize = 12.sp)

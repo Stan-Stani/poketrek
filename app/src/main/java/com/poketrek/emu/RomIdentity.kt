@@ -40,7 +40,14 @@ data class RomIdentity(val crc32: Long, val variant: RomVariant) {
 
         fun of(bytes: ByteArray): RomIdentity {
             val crc = CRC32().apply { update(bytes) }.value
-            return RomIdentity(crc, KNOWN[crc] ?: RomVariant.UNKNOWN)
+            return RomIdentity(crc, variantFor(crc))
         }
+
+        /** Maps a known CRC32 to its ROM variant; falls back to [RomVariant.UNKNOWN]. */
+        fun variantFor(crc32: Long): RomVariant = KNOWN[crc32] ?: RomVariant.UNKNOWN
+
+        /** Pretty-prints a CRC32 as `0xXXXXXXXX`. */
+        fun crc32Hex(crc32: Long): String =
+            "0x" + crc32.toString(16).uppercase().padStart(8, '0')
     }
 }

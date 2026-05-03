@@ -11,6 +11,8 @@ private const val FILENAME_LEGACY = "savestate.bin"
 private const val SLOTS_DIR = "savestates"
 private const val SLOT_FILE_PREFIX = "slot_"
 private const val SLOT_FILE_SUFFIX = ".bin"
+/** Sidecar holding the source ROM's CRC32 (lowercase hex, no prefix). */
+private const val SLOT_META_SUFFIX = ".meta"
 
 /** Number of save slots the UI exposes. Bump along with the settings UI if growing. */
 const val NUM_SAVE_SLOTS = 3
@@ -30,8 +32,14 @@ class SaveStateStore(private val context: Context) {
     /**
      * @param savedAt epoch millis when the slot was last written, or null
      *   if the slot is empty.
+     * @param romCrc32 CRC32 of the ROM that produced this save, or null for
+     *   legacy slots written before metadata was tracked.
      */
-    data class Slot(val index: Int, val savedAt: Long?) {
+    data class Slot(
+        val index: Int,
+        val savedAt: Long?,
+        val romCrc32: Long?,
+    ) {
         val isEmpty: Boolean get() = savedAt == null
     }
 
@@ -40,6 +48,20 @@ class SaveStateStore(private val context: Context) {
 
     private fun slotFile(index: Int): File =
         File(slotsDir, "$SLOT_FILE_PREFIX$index$SLOT_FILE_SUFFIX")
+
+    private fun metaFile(index: Int): File =
+        File(slotsDir, "$SLOT_FILE_PREFIX$index$SLOT_META_SUFFIX")
+
+    private fun readSlotCrc(index: Int): Long? {
+        val mf = metaFile(index)
+        if (!mf.exists() || mf.length() == 0L) return null
+        return try {
+            mf.readText().trim().toLong(16)
+        } catch (e: Exception) {
+            Log.w(TAG, "slot $index meta unreadable", e)
+            null
+        }
+    }
 
     init { migrateLegacyIfNeeded() }
 
@@ -61,7 +83,11 @@ class SaveStateStore(private val context: Context) {
 
     fun slots(): List<Slot> = (1..NUM_SAVE_SLOTS).map { i ->
         val f = slotFile(i)
-        if (f.exists() && f.length() > 0) Slot(i, f.lastModified()) else Slot(i, null)
+        if (f.exists() && f.length() > 0) {
+            Slot(i, f.lastModified(), readSlotCrc(i))
+        } else {
+            Slot(i, null, null)
+        }
     }
 
     fun hasSave(slot: Int): Boolean {
@@ -69,10 +95,22 @@ class SaveStateStore(private val context: Context) {
         return f.exists() && f.length() > 0
     }
 
-    fun save(slot: Int, bytes: ByteArray): Boolean {
+    /**
+     * Persists [bytes] into [slot]. When [romCrc32] is non-null the source
+     * ROM's CRC is recorded alongside so the UI can later display the
+     * variant and prevent loading a save into an incompatible ROM. Passing
+     * null deletes any existing sidecar (slot becomes "ROM unknown").
+     */
+    fun save(slot: Int, bytes: ByteArray, romCrc32: Long? = null): Boolean {
         require(slot in 1..NUM_SAVE_SLOTS) { "slot out of range: $slot" }
         return try {
             slotFile(slot).writeBytes(bytes)
+            val mf = metaFile(slot)
+            if (romCrc32 != null) {
+                mf.writeText(romCrc32.toString(16))
+            } else if (mf.exists()) {
+                mf.delete()
+            }
             true
         } catch (e: Exception) {
             Log.e(TAG, "save slot $slot failed", e)
