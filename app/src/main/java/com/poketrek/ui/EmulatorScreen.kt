@@ -2,12 +2,15 @@ package com.poketrek.ui
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.FilterQuality
@@ -17,23 +20,34 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.poketrek.emu.EmulatorRunner
+import com.poketrek.step.MovementBudget
 
 @Composable
 fun EmulatorScreen(
     runner: EmulatorRunner,
+    budget: MovementBudget,
+    onDebugAddSteps: (Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val tick by runner.frameTick
 
     Column(modifier = modifier.fillMaxSize().background(Color.Black)) {
-        // Framebuffer fills available vertical space; controls take a fixed slice.
-        Canvas(
+        Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f),
         ) {
-            @Suppress("UNUSED_VARIABLE") val t = tick
-            drawFramebuffer(runner)
+            Canvas(modifier = Modifier.fillMaxSize()) {
+                @Suppress("UNUSED_VARIABLE") val t = tick
+                drawFramebuffer(runner)
+            }
+            HudOverlay(
+                budget = budget,
+                onDebugAddSteps = onDebugAddSteps,
+                modifier = Modifier
+                    .align(Alignment.TopStart)
+                    .padding(8.dp),
+            )
         }
 
         OnScreenControls(

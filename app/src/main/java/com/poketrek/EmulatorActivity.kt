@@ -23,12 +23,26 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.poketrek.emu.EmulatorRunner
+import com.poketrek.step.MovementBudget
+import com.poketrek.step.StepSensor
 
 private const val TAG = "EmulatorActivity"
 
 class EmulatorActivity : ComponentActivity() {
 
     private val runner = EmulatorRunner()
+    private lateinit var budget: MovementBudget
+    private var stepSensor: StepSensor? = null
+
+    private val requestActivityRecognition = registerForActivityResult(
+        ActivityResultContracts.RequestPermission(),
+    ) { granted ->
+        if (granted) {
+            stepSensor?.register()
+        } else {
+            Log.w(TAG, "ACTIVITY_RECOGNITION denied — step counter unavailable")
+        }
+    }
 
     private val pickRom = registerForActivityResult(
         ActivityResultContracts.OpenDocument(),
@@ -50,12 +64,24 @@ class EmulatorActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        budget = MovementBudget(applicationContext)
+        stepSensor = StepSensor(applicationContext, budget)
+
+        if (checkSelfPermission(android.Manifest.permission.ACTIVITY_RECOGNITION)
+            == android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            stepSensor?.register()
+        } else {
+            requestActivityRecognition.launch(android.Manifest.permission.ACTIVITY_RECOGNITION)
+        }
+
         setContent {
             MaterialTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     AppRoot(
                         runner = runner,
+                        budget = budget,
                         onPickRom = { pickRom.launch(arrayOf("application/octet-stream", "*/*")) },
+                        onDebugAddSteps = budget::debugAddSteps,
                     )
                 }
             }
@@ -66,6 +92,7 @@ class EmulatorActivity : ComponentActivity() {
     }
 
     override fun onDestroy() {
+        stepSensor?.unregister()
         runner.stop()
         super.onDestroy()
     }
@@ -74,7 +101,9 @@ class EmulatorActivity : ComponentActivity() {
 @Composable
 private fun AppRoot(
     runner: EmulatorRunner,
+    budget: MovementBudget,
     onPickRom: () -> Unit,
+    onDebugAddSteps: (Int) -> Unit,
 ) {
     val romLoaded by runner.romLoaded
     if (!romLoaded) {
@@ -91,6 +120,8 @@ private fun AppRoot(
     } else {
         com.poketrek.ui.EmulatorScreen(
             runner = runner,
+            budget = budget,
+            onDebugAddSteps = onDebugAddSteps,
             modifier = Modifier.fillMaxSize().padding(8.dp),
         )
     }
