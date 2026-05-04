@@ -930,6 +930,43 @@ private fun MoneoSection(
                     contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
                 ) { Text("Reset capture", fontSize = 11.sp) }
             }
+            // Probe button: read gStringVar1-4 synchronously and log to Logcat
+            // tag "MoneoProbe". Take a screenshot at the same time to correlate
+            // hex bytes → on-screen Hangul characters (charmap derivation).
+            var probeResult by remember { mutableStateOf("") }
+            val scope = rememberCoroutineScope()
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Button(
+                    onClick = {
+                        scope.launch(kotlinx.coroutines.Dispatchers.Default) {
+                            val result = capture.probeTextBuffers()
+                            val summary = result.entries.joinToString("\n") { (k, v) ->
+                                "$k: ${v?.take(60) ?: "(null)"}"
+                            }
+                            probeResult = summary
+                        }
+                    },
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                ) { Text("Probe gStringVar1-4", fontSize = 11.sp) }
+                Text(
+                    "→ also in Logcat tag MoneoProbe",
+                    color = Color(0xFF6B7280),
+                    fontSize = 10.sp,
+                )
+            }
+            if (probeResult.isNotEmpty()) {
+                Text(
+                    probeResult,
+                    color = Color(0xFFE0E0E0),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 9.sp,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+            }
         }
     }
 }

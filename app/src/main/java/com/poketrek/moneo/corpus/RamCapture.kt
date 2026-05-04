@@ -66,6 +66,8 @@ class RamCapture(
     private val recentDigests = ArrayDeque<Long>()
     private val recentDigestSet = HashSet<Long>()
 
+    private var lastCharblock0Hash: Int = 0
+
     fun setEnabled(value: Boolean) {
         if (value == _enabled.value) return
         _enabled.value = value
@@ -75,16 +77,35 @@ class RamCapture(
                 while (isActive && _enabled.value) {
                     runCatching { sampleOnce() }
                         .onFailure { Log.w(TAG, "sample failed", it) }
+                    runCatching { snapshotCharblockIfChanged() }
+                        .onFailure { Log.w(TAG, "charblock snapshot failed", it) }
                     delay(SAMPLE_INTERVAL_MS)
                 }
             }
         } else {
             pollJob?.cancel()
             pollJob = null
-            // Drop the snapshot so re-enabling doesn't emit "everything changed
-            // since you last had it on" as one giant blob.
             lastSnapshot = null
         }
+    }
+
+    /** Save charblock0 whenever its content changes significantly (≥32 tiles differ). */
+    private fun snapshotCharblockIfChanged() {
+        val cb0 = reader.readBytes(0x06000000, 16384) ?: return
+        val hash = cb0.contentHashCode()
+        if (hash == lastCharblock0Hash) return
+        // Count non-zero tiles
+        val nonZeroTiles = (0 until 512).count { t ->
+            cb0.slice(t*32 until t*32+32).any { it != 0.toByte() }
+        }
+        // Only save if it looks like a font/text charblock (moderate number of non-zero tiles)
+        if (nonZeroTiles in 50..400) {
+            val ts = System.currentTimeMillis()
+            val cbFile = File(outputDir, "charblock0_snap_${ts}.bin")
+            cbFile.writeBytes(cb0)
+            Log.i("MoneoProbe", "CharblockSnap: nonzeroTiles=$nonZeroTiles saved=${cbFile.name}")
+        }
+        lastCharblock0Hash = hash
     }
 
     private fun sampleOnce() {
@@ -165,6 +186,144 @@ class RamCapture(
         ((v ushr 16) and 0xFF).toByte(),
         ((v ushr 24) and 0xFF).toByte(),
     )
+
+    /**
+     * Synchronously read gStringVar1–4 from EWRAM and log to Logcat with tag "MoneoProbe".
+     * Call from any thread; does its own bus read.
+     *
+     * Gen3 string buffer addresses (identical in US and KO LeafGreen):
+     *   gStringVar1 = 0x020370E4
+     *   gStringVar2 = 0x020371E8
+     *   gStringVar3 = 0x020372EC
+     *   gStringVar4 = 0x020373F0
+     *
+     * Returns a map of varName → raw hex (null if the read failed).
+     */
+    fun probeTextBuffers(): Map<String, String?> {
+        val bases = mapOf(
+            "gStringVar1" to 0x020370E4,
+            "gStringVar2" to 0x020371E8,
+            "gStringVar3" to 0x020372EC,
+            "gStringVar4" to 0x020373F0,
+        )
+        val result = LinkedHashMap<String, String?>()
+        for ((name, addr) in bases) {
+            val bytes = reader.readBytes(addr, 64) ?: continue
+            val hex = bytes.joinToString(" ") { "%02x".format(it) }
+            Log.i("MoneoProbe", "$name @ 0x${addr.toString(16)} = $hex")
+            result[name] = hex
+        }
+
+        // Scan EWRAM for ROM pointers (values in 0x08000000–0x09FFFFFF).
+        // The Gen3 text printer stores the current message text pointer in a struct
+        // somewhere in EWRAM. By finding ROM pointers we can read the raw script bytes
+        // and observe the byte encoding for each Korean character on screen.
+        val ewramBase = 0x02000000
+        val ewramSize = 256 * 1024
+        val ewram = reader.readBytes(ewramBase, ewramSize) ?: ByteArray(0)
+        val romPtrs = mutableListOf<Pair<Int, Int>>() // (ewram_offset, rom_addr)
+        if (ewram.isNotEmpty()) {
+            var i = 0
+            while (i + 3 < ewram.size) {
+                val lo = ewram[i].toInt() and 0xFF
+                val b1 = ewram[i+1].toInt() and 0xFF
+                val b2 = ewram[i+2].toInt() and 0xFF
+                val hi = ewram[i+3].toInt() and 0xFF
+                // ROM address range: 0x08000000–0x09FFFFFF (hi byte = 0x08 or 0x09)
+                if (hi == 0x08 || hi == 0x09) {
+                    val romAddr = lo or (b1 shl 8) or (b2 shl 16) or (hi shl 24)
+                    romPtrs.add(Pair(ewramBase + i, romAddr))
+                }
+                i += 4
+            }
+        }
+        Log.i("MoneoProbe", "Found ${romPtrs.size} ROM pointers in EWRAM")
+        // For each unique ROM pointer, read 32 bytes and log (capped at 50 ptrs)
+        val seenRomAddrs = mutableSetOf<Int>()
+        var ptrCount = 0
+        for ((ewramOff, romAddr) in romPtrs) {
+            if (!seenRomAddrs.add(romAddr)) continue
+            if (ptrCount++ >= 50) break
+            val romBytes = reader.readBytes(romAddr, 32) ?: continue
+            val hex = romBytes.joinToString(" ") { "%02x".format(it) }
+            Log.i("MoneoProbe", "ROM_PTR @ ewram+0x${(ewramOff - ewramBase).toString(16)} -> 0x${romAddr.toString(16)} = $hex")
+        }
+        result["rom_ptrs"] = "${romPtrs.size} found"
+
+        // Scan IWRAM (0x03000000–0x03007FFF) for ROM text pointers.
+        // Gen3 text printer state lives in IWRAM; finding ROM pointers there gives
+        // us the active message text address.
+        val iwramBase = 0x03000000
+        val iwram = reader.readBytes(iwramBase, 32 * 1024) ?: ByteArray(0)
+        if (iwram.isNotEmpty()) {
+            var i = 0
+            while (i + 3 < iwram.size) {
+                val lo = iwram[i].toInt() and 0xFF
+                val b1 = iwram[i+1].toInt() and 0xFF
+                val b2 = iwram[i+2].toInt() and 0xFF
+                val hi = iwram[i+3].toInt() and 0xFF
+                if (hi == 0x08 || hi == 0x09) {
+                    val romAddr = lo or (b1 shl 8) or (b2 shl 16) or (hi shl 24)
+                    val strBytes = reader.readBytes(romAddr, 48) ?: continue
+                    // Look for text: bytes in 0x01-0xFE range, not all 0xFF or 0x00
+                    val textLike = strBytes.count { (it.toInt() and 0xFF) in 0x01..0xFE }
+                    if (textLike >= 8) {
+                        val hex = strBytes.joinToString(" ") { "%02x".format(it) }
+                        Log.i("MoneoProbe", "IWRAM_PTR+0x${i.toString(16)} -> 0x${romAddr.toString(16)} textLike=$textLike | $hex")
+                    }
+                }
+                i += 4
+            }
+        }
+
+        // Scan all 32 VRAM screenblocks (0x06000000–0x0600FFFF, each 2KB)
+        // to find which BG has non-zero tile indices (= text on screen).
+        val vramBgBase = 0x06000000
+        val sb = 2048 // bytes per screenblock
+        val dumpFile = File(outputDir, "vram_probe.bin")
+        val dumpOut = dumpFile.outputStream().buffered()
+        try {
+            for (i in 0 until 32) {
+                val addr = vramBgBase + i * sb
+                val bytes = reader.readBytes(addr, sb) ?: continue
+                val nonZero = bytes.count { it != 0.toByte() }
+                val preview = bytes.take(64).joinToString(" ") { "%02x".format(it) }
+                Log.i("MoneoProbe", "VRAM_SB$i (0x${addr.toString(16)}) nonzero=$nonZero = $preview")
+                result["VRAM_SB$i"] = "nonzero=$nonZero"
+                // Write header: [i:u8, addr:u32LE, nonzero:u32LE, 2048 bytes]
+                dumpOut.write(byteArrayOf(i.toByte()))
+                dumpOut.write(le32(addr))
+                dumpOut.write(le32(nonZero))
+                dumpOut.write(bytes)
+            }
+        } finally {
+            dumpOut.close()
+        }
+        Log.i("MoneoProbe", "VRAM dump written to ${dumpFile.absolutePath}")
+        result["vram_dump"] = dumpFile.absolutePath
+
+        // Dump charblock 0 (0x06000000, 16KB) — contains all glyph pixel data
+        val charblock0 = reader.readBytes(0x06000000, 16384)
+        if (charblock0 != null) {
+            val cbFile = File(outputDir, "charblock0.bin")
+            cbFile.writeBytes(charblock0)
+            Log.i("MoneoProbe", "Charblock0 dump written to ${cbFile.absolutePath}")
+            result["charblock0_dump"] = cbFile.absolutePath
+        }
+
+        // Try ROM bus read — if ROM is decrypted at runtime, 0x08000000 returns plaintext
+        val romHeader = reader.readBytes(0x08000000, 256)
+        if (romHeader != null) {
+            val romHex = romHeader.take(64).joinToString(" ") { "%02x".format(it) }
+            Log.i("MoneoProbe", "ROM bus @ 0x8000000 (first 64B) = $romHex")
+            result["rom_header"] = romHex
+            // Search for "GAMEFREAK" or "POKEMON" ASCII to confirm decryption
+            val ascii = romHeader.map { if (it in 0x20..0x7E) it.toInt().toChar() else '.' }.joinToString("")
+            Log.i("MoneoProbe", "ROM header ASCII = $ascii")
+        }
+
+        return result
+    }
 
     /** File location for export. */
     fun captureFile(): File = File(outputDir, FILE_NAME)
