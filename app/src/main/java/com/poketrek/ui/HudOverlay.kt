@@ -903,5 +903,33 @@ private fun MoneoSection(
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
             ) { Text("Open", fontSize = 12.sp) }
         }
+
+        // --- Dev: runtime EWRAM text capture (Phase 2 corpus path) -------------
+        val capture = moneo.ramCapture
+        if (capture != null) {
+            val captureOn by capture.enabled.collectAsState()
+            val runs by capture.runsCaptured.collectAsState()
+            ToggleRow(
+                label = "Capture runtime text (dev)",
+                sublabel = if (captureOn)
+                    "Sampling EWRAM diffs · $runs run${if (runs == 1) "" else "s"} captured"
+                else
+                    "Records candidate Korean strings to filesDir/moneo/capture.bin",
+                checked = captureOn,
+                onCheckedChange = { capture.setEnabled(it) },
+            )
+            if (runs > 0) {
+                Text(
+                    "Capture file: ${capture.captureSizeBytes()} bytes",
+                    color = Color(0xFF6B7280),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 10.sp,
+                )
+                TextButton(
+                    onClick = { capture.resetCapture() },
+                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+                ) { Text("Reset capture", fontSize = 11.sp) }
+            }
+        }
     }
 }

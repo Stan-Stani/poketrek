@@ -88,6 +88,7 @@ class EmulatorActivity : ComponentActivity() {
         runner = EmulatorRunner(budget, CalibrationStore(applicationContext))
         saveStateStore = SaveStateStore(applicationContext)
         moneo = MoneoModule.get(applicationContext)
+        moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU

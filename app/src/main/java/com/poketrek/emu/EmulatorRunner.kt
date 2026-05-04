@@ -79,6 +79,13 @@ class EmulatorRunner(
         native.busReadBytes(RomCalibrator.EWRAM_BASE, RomCalibrator.EWRAM_SIZE)
 
     /**
+     * Bulk RAM read passthrough. Used by Moneo's [com.poketrek.moneo.corpus.RamCapture]
+     * to sample EWRAM for runtime text dumping. Lives on the runner so the
+     * Moneo package doesn't need a direct handle to the private NativeEmulator.
+     */
+    fun busReadBytes(addr: Int, length: Int): ByteArray? = native.busReadBytes(addr, length)
+
+    /**
      * Captures and stores the EWRAM baseline. UI calls this while the player
      * is standing still in the overworld; survives menu dismissal so the
      * user can then walk one tile and call [finishCalibration] on return.
