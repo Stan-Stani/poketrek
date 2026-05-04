@@ -338,6 +338,14 @@ class RamCapture(
         _runsCaptured.value = 0
     }
 
+    /**
+     * Decode all Korean text currently visible on-screen using the supplied
+     * [charmap] and our [BusReader]. Returns one string per non-blank text
+     * row-pair (max 7). Empty list when no text is visible or VRAM read fails.
+     */
+    fun decodeVisibleText(charmap: KoreanCharmap): List<String> =
+        VramTextReader.readLines(reader, charmap)
+
     companion object {
         private const val TAG = "RamCapture"
         private const val FILE_NAME = "capture.bin"

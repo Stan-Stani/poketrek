@@ -958,6 +958,41 @@ private fun MoneoSection(
                     fontSize = 10.sp,
                 )
             }
+            // Decode visible Korean text via VramTextReader + KoreanCharmap.
+            var decodeResult by remember { mutableStateOf("") }
+            val ctx = androidx.compose.ui.platform.LocalContext.current
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Button(
+                    onClick = {
+                        scope.launch(kotlinx.coroutines.Dispatchers.Default) {
+                            val charmap = com.poketrek.moneo.corpus.KoreanCharmap.get(ctx)
+                            val lines = capture.decodeVisibleText(charmap)
+                            decodeResult = if (lines.isEmpty()) "(no text)"
+                            else lines.joinToString("\n")
+                            android.util.Log.i("MoneoProbe", "DecodeKO:\n$decodeResult")
+                        }
+                    },
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                ) { Text("Decode KO", fontSize = 11.sp) }
+                Text(
+                    "(${decodeResult.lines().size} lines)",
+                    color = Color(0xFF6B7280),
+                    fontSize = 10.sp,
+                )
+            }
+            if (decodeResult.isNotEmpty()) {
+                Text(
+                    decodeResult,
+                    color = Color(0xFFFFE0B0),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 11.sp,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+            }
             if (probeResult.isNotEmpty()) {
                 Text(
                     probeResult,

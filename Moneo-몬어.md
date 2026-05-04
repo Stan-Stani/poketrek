@@ -8,11 +8,11 @@ A new in-app mode layered on top of the existing emulator. Separate from and dec
 | ----- | ------------------------------------------ | --------------------------------- |
 | 0     | Skeleton & toggle                          | ✅ done                           |
 | 1     | SRS core + soft gate                       | ✅ done                           |
-| 2     | Corpus extraction spike / live RAM capture | ✅ scaffolded (see blocker below) |
+| 2     | Corpus extraction / live VRAM decoder      | ✅ pivoted to VRAM, charmap done  |
 | 3     | Bundled example sentences                  | not started                       |
 | 4     | Hard area gate (Korean ROM calibration)    | not started                       |
 
-Phases 0–1 are committed and the build is green. Phase 2 infra is committed.
+Phases 0–2 are committed and the build is green.
 
 ---
 
@@ -33,7 +33,7 @@ Settings sheet section with "Korean learning mode" toggle + "Open Moneo" button.
 
 ---
 
-## Phase 2 — Corpus Extraction ⚠️ BLOCKER
+## Phase 2 — Corpus Extraction ✅
 
 ### Korean ROM is encrypted (`YJencrypted`)
 
@@ -61,14 +61,22 @@ Implemented: `com.poketrek.moneo.corpus.RamCapture`
 - Dev panel row in Moneo settings section: capture toggle + run counter + reset.
 - `RamCaptureTest` verifies a synthetic 30-byte EWRAM diff produces at least one record.
 
+### Pivot — pixel-fingerprint VRAM decoding
+
+ROM byte encoding turned out to be **the wrong primitive**. EWRAM/IWRAM scans for ROM text pointers found audio and sprite-animation tables but no Korean text strings — tutorial pages appear to be pre-rendered Hangul tile graphics rather than dynamically encoded text. Rather than chase a hypothetical Gen3-KO charmap, we extract glyphs directly from VRAM:
+
+- **Tile structure.** Korean LeafGreen renders dialog text on a BG layer with `screenbase = 31` (tile-index map at `0x0600F800`) and `charbase = 0` (glyph pixel data at `0x06000000`). Each Hangul character is a 2×2 tile block (16×16 px, 4 bpp = 128 bytes total).
+- **Fingerprinting.** SHA-256[:16] over the concatenated 128 bytes of a 4-tile group uniquely identifies a rendered glyph. Pixel data is identical across re-renders of the same character (same glyph, same palette index pattern).
+- **Charmap derivation.** Two VRAM dumps were captured during the in-game tutorial pages, then cross-referenced with the known on-screen text (`상하좌우로 움직이거나` / `항목을 선택합니다。` / etc.) to build `assets/moneo/ko_charmap.json` — 45 fingerprint→char entries covering 34 Hangul syllables + the ideographic full stop. 19/19 chars from the shared tutorial line decoded identically across both dumps, confirming fingerprint stability.
+- **Runtime decoder.** `KoreanCharmap.kt` loads the asset, `VramTextReader.readLines(reader, charmap)` does a single 64 KB bus read and decodes up to 7 text row-pairs in one shot. The HUD's debug panel exposes a **"Decode KO"** button that prints the current screen's text to logcat — used to expand the charmap incrementally as new dialogs are encountered.
+
 ### What's still missing for Phase 2
 
-The capture infra exists but the **charmap** (byte index → Hangul syllable) has not been derived yet. Two options:
+The charmap is bootstrapped but small:
 
-1. **Tile inspector overlay** — show the framebuffer's font tilemap with byte indices overlaid; developer labels characters by visual inspection.
-2. **Manual annotation** — pull `capture.bin`, display runs as hex in a dev tool, label against in-game screenshots by hand.
-
-Once ~20–30 characters are mapped, a partial decoder can bootstrap extraction of more text. This is the next concrete action for Phase 2.
+- **Coverage.** ~34 syllables — enough to validate the pipeline, far from full Korean text. The next dialogs encountered in-game will surface unknown fingerprints (logged as `?` by the decoder); each one needs ~30 s of screenshot + manual labelling.
+- **Ambiguity.** `때` and `니` collide on fingerprint `6847b2f87293526b` in one capture; the conflicting entry was dropped pending re-capture from a context where each is unambiguous.
+- **Vocab discovery loop.** The decoder logs lines but does not yet feed `MoneoRepository`. A simple "unseen-line accumulator" would write decoded strings to `filesDir/moneo/discovered.json` for offline review; that wiring is deferred until coverage warrants it.
 
 ---
 
