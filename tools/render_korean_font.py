@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Render all 768 Korean font glyphs from the Korean LeafGreen ROM.
+Render all Korean font glyphs from the Korean LeafGreen ROM.
 
-Font format: GBA 4bpp tiled, 16x16 px, 4 tiles of 8x8, 128 bytes/glyph.
-6 pages x 128 glyphs = 768 total, at ROM 0x780000-0x798000.
+Font format: 2bpp interleaved bitplanes (Game Boy style), 16x16 px,
+stored in pokefirered grid layout (NOT contiguous).
+6 pages x 512 glyphs = 3072 total, at ROM 0x780000-0x798000.
 
 Usage:
     python3 tools/render_korean_font.py [rom_path] [output_dir]
@@ -13,9 +14,9 @@ Defaults:
     output_dir = ".moneo-artifacts/font-glyphs"
 
 Outputs:
-    - font_all_pages.png   -- full contact sheet, all 768 glyphs
+    - font_all_pages.png   -- full contact sheet, all 3072 glyphs
     - font_page_N.png      -- per-page contact sheets (pages 1-6)
-    - individual/PPPP_II.png -- individual glyph images (page_index)
+    - individual/PPPP_III.png -- individual glyph images (page_index)
 """
 import os
 import sys
@@ -31,43 +32,64 @@ except ImportError:
 FONT_BASE = 0x780000          # ROM offset of first Korean font page
 FONT_PTR_TABLE = 0x38492C     # Font pointer table (17 entries)
 PAGES = 6                     # Korean font pages (F1-F6)
-GLYPHS_PER_PAGE = 128
-PAGE_SIZE = 0x4000            # 16384 bytes = 128 x 128
-GLYPH_BYTES = 128             # 4 tiles x 32 bytes
-TILE_BYTES = 32               # 8x8 pixels at 4bpp
+GLYPHS_PER_PAGE = 512         # Grid: 32 rows x 16 cols
+GLYPHS_PER_ROW = 16           # Glyphs per grid row
+PAGE_SIZE = 0x4000             # 16384 bytes per page
 GLYPH_PX = 16                 # 16x16 pixel glyphs
 SCALE = 4                     # Upscale factor for readability
 
+# 2bpp brightness map: palette index -> grayscale
+BRIGHTNESS = [0, 255, 180, 100]
 
-def render_glyph(rom, offset):
-    """Render a single 16x16 glyph from 4bpp tiled data."""
+
+def glyph_byte_offset(glyph_id):
+    """Compute byte offset of a glyph within its page (pokefirered grid layout)."""
+    row = glyph_id // GLYPHS_PER_ROW
+    col = glyph_id % GLYPHS_PER_ROW
+    return 0x200 * row + 0x20 * col
+
+
+def render_glyph(rom, page_base, glyph_id):
+    """Render a single 16x16 glyph from 2bpp interleaved bitplane data."""
     img = Image.new('L', (GLYPH_PX, GLYPH_PX), 0)
-    for tile_idx in range(4):
-        tx = (tile_idx % 2) * 8
-        ty = (tile_idx // 2) * 8
+    off = page_base + glyph_byte_offset(glyph_id)
+    # 4 sub-tiles: TL(+0), TR(+16), BL(+256), BR(+272)
+    for dx, dy, tile_off in [(0, 0, 0), (8, 0, 16), (0, 8, 256), (8, 8, 272)]:
         for row in range(8):
-            for px in range(4):
-                byte = rom[offset + tile_idx * TILE_BYTES + row * 4 + px]
-                p0 = byte & 0x0F
-                p1 = (byte >> 4) & 0x0F
-                if p0:
-                    img.putpixel((tx + px * 2, ty + row), p0 * 17)
-                if p1:
-                    img.putpixel((tx + px * 2 + 1, ty + row), p1 * 17)
+            plane0 = rom[off + tile_off + row * 2]
+            plane1 = rom[off + tile_off + row * 2 + 1]
+            for bit in range(8):
+                mask = 0x80 >> bit
+                v = 0
+                if plane0 & mask:
+                    v |= 1
+                if plane1 & mask:
+                    v |= 2
+                if v > 0:
+                    img.putpixel((dx + bit, dy + row), BRIGHTNESS[v])
     return img
 
 
-def render_contact_sheet(rom, base, count, cols=16):
+def is_blank(rom, page_base, glyph_id):
+    """Check if a glyph slot contains all zeros."""
+    off = page_base + glyph_byte_offset(glyph_id)
+    for tile_off in [0, 16, 256, 272]:
+        for i in range(16):
+            if rom[off + tile_off + i] != 0:
+                return False
+    return True
+
+
+def render_contact_sheet(rom, page_base, count, cols=16):
     """Render a grid of glyphs as a contact sheet."""
     rows = (count + cols - 1) // cols
     cell = GLYPH_PX + 1  # 1px gap
     img = Image.new('L', (cols * cell, rows * cell), 0)
     for g in range(count):
-        glyph = render_glyph(rom, base + g * GLYPH_BYTES)
+        glyph = render_glyph(rom, page_base, g)
         gx = (g % cols) * cell
         gy = (g // cols) * cell
         img.paste(glyph, (gx, gy))
-    # Scale up for readability
     return img.resize((img.width * SCALE, img.height * SCALE), Image.NEAREST)
 
 
@@ -88,7 +110,7 @@ def main():
     os.makedirs(os.path.join(out_dir, "individual"), exist_ok=True)
 
     print("ROM: {} ({:,} bytes)".format(rom_path, len(rom)))
-    print("Font base: 0x{:06X}, {} pages x {} glyphs".format(
+    print("Font: 2bpp grid, 0x{:06X}, {} pages x {} glyphs".format(
         FONT_BASE, PAGES, GLYPHS_PER_PAGE))
 
     # Verify font pointer table
@@ -101,48 +123,37 @@ def main():
             suffix = "  -> ROM 0x{:06X}  (Korean page {})".format(rom_off, i)
         print("  [{:2d}] = 0x{:08X}{}".format(i, ptr, suffix))
 
-    # Render per-page contact sheets
+    # Render per-page contact sheets and count glyphs
+    total_non_blank = 0
     for page in range(PAGES):
         page_num = page + 1  # F1-F6
         base = FONT_BASE + page * PAGE_SIZE
+        non_blank = sum(1 for g in range(GLYPHS_PER_PAGE)
+                        if not is_blank(rom, base, g))
+        total_non_blank += non_blank
+
         sheet = render_contact_sheet(rom, base, GLYPHS_PER_PAGE)
         path = os.path.join(out_dir, "font_page_{}.png".format(page_num))
         sheet.save(path)
-        print("Saved {} (page F{}, {} glyphs)".format(
-            path, page_num, GLYPHS_PER_PAGE))
-
-    # Render full contact sheet (all pages)
-    full = render_contact_sheet(rom, FONT_BASE,
-                                PAGES * GLYPHS_PER_PAGE, cols=16)
-    full_path = os.path.join(out_dir, "font_all_pages.png")
-    full.save(full_path)
-    print("Saved {} (all {} glyphs)".format(
-        full_path, PAGES * GLYPHS_PER_PAGE))
+        print("Saved {} (page F{}, {}/{} non-blank)".format(
+            path, page_num, non_blank, GLYPHS_PER_PAGE))
 
     # Render individual glyphs
     for page in range(PAGES):
+        base = FONT_BASE + page * PAGE_SIZE
         for idx in range(GLYPHS_PER_PAGE):
-            offset = FONT_BASE + page * PAGE_SIZE + idx * GLYPH_BYTES
-            glyph = render_glyph(rom, offset)
+            if is_blank(rom, base, idx):
+                continue
+            glyph = render_glyph(rom, base, idx)
             glyph_big = glyph.resize((GLYPH_PX * SCALE, GLYPH_PX * SCALE),
                                      Image.NEAREST)
             path = os.path.join(out_dir, "individual",
                                 "F{}_{:03d}.png".format(page + 1, idx))
             glyph_big.save(path)
 
-    print("Saved {} individual glyphs to {}/individual/".format(
-        PAGES * GLYPHS_PER_PAGE, out_dir))
-
-    # Count non-blank glyphs
-    blank = 0
-    for g in range(PAGES * GLYPHS_PER_PAGE):
-        offset = FONT_BASE + g * GLYPH_BYTES
-        chunk = rom[offset:offset + GLYPH_BYTES]
-        if all(b == 0 for b in chunk):
-            blank += 1
-    print("\nNon-blank glyphs: {} / {}".format(
-        PAGES * GLYPHS_PER_PAGE - blank, PAGES * GLYPHS_PER_PAGE))
-    print("Blank glyphs: {}".format(blank))
+    print("Saved individual glyphs to {}/individual/".format(out_dir))
+    print("\nTotal non-blank: {} / {}".format(
+        total_non_blank, PAGES * GLYPHS_PER_PAGE))
 
 
 if __name__ == '__main__':

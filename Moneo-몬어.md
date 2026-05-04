@@ -149,7 +149,7 @@ Sources: [Bulbapedia Character_encoding_(Generation_III)](https://bulbapedia.bul
 | 6       | `FONT_BRAILLE` | Braille puzzles             | 8×16            |
 | 7       | `FONT_BOLD`    | Bold (JP only)              | 8×12            |
 
-Font glyph data is stored as binary blobs (`INCBIN`) in the ROM. Japanese glyphs use 2×2 tile layout (16×16 px, 0x100 bytes per row of 16, offset `0x10 * (glyphId & 0x7)` within row `glyphId >> 4`). Latin glyphs use linear indexing (`0x20 * glyphId`). The `DecompressGlyphTile()` function copies 4bpp tile data to a pixel buffer for rendering.
+Font glyph data is stored as binary blobs (`INCBIN`) in the ROM. Japanese/Korean glyphs use 2×2 tile layout (16×16 px) in a **grid format**: glyph offset = `0x200 * (id / 16) + 0x20 * (id % 16)` bytes, with sub-tiles at TL(+0), TR(+16), BL(+256), BR(+272), each 16 bytes of 2bpp interleaved bitplane data. Latin glyphs use linear indexing (`0x20 * glyphId`). The `DecompressGlyphTile()` function copies 2bpp tile data and converts to 4bpp for VRAM rendering.
 
 The namu.wiki article confirms: male NPCs use sans-serif font (`FONT_MALE`), female NPCs use serif font (`FONT_FEMALE`). In the US version this is color-differentiated (blue vs pink) rather than font-differentiated.
 
@@ -169,9 +169,9 @@ The Korean ROM (YJ-patched) **completely replaces** the text engine with custom 
    - `0xFF` — string terminator
    - Bytes `0xF7–0xF9` — also treated as control/single-byte (≥0xF7 threshold)
 
-3. **Actual capacity:** 6 pages × 252 entries = 1,512 possible syllable codes. In practice, 1,319 distinct codes are used across ~41,000 Korean character instances in the text data region.
+3. **Actual capacity:** 6 pages × 512 glyph slots = 3,072 possible syllable codes (3,010 non-blank glyphs confirmed). In practice, 1,319 distinct codes are observed across ~41,000 Korean character instances in the text data region. The text engine addresses glyphs using the page's grid layout.
 
-4. **Font data at known ROM location.** 6 font pages at ROM 0x780000–0x798000, each 0x4000 (16KB) = 128 glyphs of 16×16 px (4bpp tiled, 4 tiles of 8×8, 128 bytes per glyph). Total: **768 Korean glyphs in 96KB**. Font pointer table at ROM 0x38492C. Text indices > 127 overflow into the next font page (data is contiguous).
+4. **Font data at known ROM location.** 6 font pages at ROM 0x780000–0x798000, each 0x4000 (16KB) = 512 glyphs of 16×16 px in **2bpp interleaved bitplane format** with pokefirered grid layout (glyph offset = `0x200 * (id/16) + 0x20 * (id%16)`, sub-tiles at +0, +16, +256, +272, 16 bytes each = 64 bytes/glyph). Total: **3,072 glyph slots, 3,010 non-blank, in 96KB**. Font pointer table at ROM 0x38492C.
 
 5. **Per-page distribution:** F1 is the densest page (~22,812 occurrences, 246 unique indices), then F2 (~9,823), F3 (~4,238), F4 (~2,393), F6 (~1,119), F5 (~718).
 
@@ -184,7 +184,7 @@ We have **two halves** of the puzzle:
 | What we have | Source | Count |
 |---|---|---|
 | All ROM text byte sequences | Script pointer analysis (0x160000–0x1A0000) | 1,319 distinct (F1–F6, index) codes, ~41,000 occurrences |
-| Font glyph bitmaps | ROM 0x780000–0x798000 | 768 glyphs, 4bpp 16×16 tiled, visually confirmed as Korean |
+| Font glyph bitmaps | ROM 0x780000–0x798000 | 3,010 non-blank glyphs (2bpp grid, 512/page × 6 pages), visually confirmed as Korean |
 | Pixel → Unicode mapping | VRAM fingerprint decoder (`ko_charmap.json`) | 46 entries (34 unique Hangul + `。`) |
 | VRAM encoding formula | Validated from 8 captures | `adj = ksx_pos + 1; page = F0 + adj//252; idx = adj%252` |
 
@@ -194,23 +194,24 @@ The **missing bridge**: `(page, index) → Unicode Hangul` for all 1,319 ROM tex
 
 **Approach 1 — Font glyph rendering + OCR/fingerprint matching (recommended)**
 
-Font data location is now KNOWN: ROM 0x780000–0x798000, 768 glyphs in 4bpp tiled format.
+Font data location is now KNOWN: ROM 0x780000–0x798000, 3,010 non-blank glyphs in 2bpp interleaved bitplane format.
 
-1. **Font data already located.** 6 pages × 128 glyphs at 0x780000, 0x784000, ..., 0x794000. Format: 4 tiles of 8×8 at 4bpp = 128 bytes per glyph. Rendering code verified — produces readable Korean syllables.
-2. **Extract all 768 glyph tiles as 16×16 images.** Rendering code:
+1. **Font data already located.** 6 pages × 512 glyphs at 0x780000, 0x784000, ..., 0x794000. Format: 2bpp interleaved bitplane with pokefirered grid layout (offset = `0x200*(id/16) + 0x20*(id%16)`, sub-tiles at +0, +16, +256, +272, 16 bytes each = 64 bytes/glyph). Rendering code verified — produces readable Korean syllables.
+2. **Extract all 3,010 glyph tiles as 16×16 images.** Rendering code:
    ```python
-   # tile arrangement: TL(+0), TR(+32), BL(+64), BR(+96)
-   for tile_idx in range(4):
-       tx = (tile_idx % 2) * 8; ty = (tile_idx // 2) * 8
+   # Grid layout: sub-tiles TL(+0), TR(+16), BL(+256), BR(+272)
+   # Each sub-tile: 2bpp interleaved, 16 bytes (8 rows × 2 bytes)
+   for dx, dy, tile_off in [(0,0,0), (8,0,16), (0,8,256), (8,8,272)]:
        for row in range(8):
-           for px in range(4):
-               byte = rom[offset + tile_idx*32 + row*4 + px]
-               p0 = byte & 0x0F  # left pixel
-               p1 = (byte >> 4) & 0x0F  # right pixel
+           plane0 = rom[off + tile_off + row * 2]
+           plane1 = rom[off + tile_off + row * 2 + 1]
+           for bit in range(8):
+               mask = 0x80 >> bit
+               v = ((plane0 & mask) != 0) | (((plane1 & mask) != 0) << 1)
    ```
 3. **SHA-256 fingerprint each glyph.** Match against existing `ko_charmap.json` entries.
 4. **For unmatched glyphs:** OCR with Korean model or manual labeling.
-5. **Key complication:** Text codes (F1, idx) address glyphs via `font_ptrs[page] + idx*128`, where overflow past 128 crosses into the next page. The character ordering is CUSTOM (not KSX1001, not Unicode order). The text engine at 0x384800 translates ROM codes to VRAM codes at render time.
+5. **Key complication:** Text codes (F1, idx) address glyphs via the grid layout formula within each page. The character ordering is CUSTOM (not KSX1001, not Unicode order). The text engine at 0x384800 translates ROM codes to VRAM codes at render time.
 
 **Approach 2 — Runtime correlation (slower but reliable)**
 
@@ -226,7 +227,7 @@ Already partially implemented in `RamCapture.snapshotCharblockIfChanged()`:
 1. When the game loads a font, the complete glyph data is in VRAM charblock 0 (0x06000000, 16 KB per charblock)
 2. Dump all 4 charblocks (64 KB) → extract all loaded glyph tiles
 3. Fingerprint each tile group and cross-reference with `ko_charmap.json` known entries
-4. The 16 KB charblock only holds ~128 glyphs at a time (16384 ÷ 128 = 128), but the game swaps font data as needed. Multiple captures across different game states would eventually cover all glyphs.
+4. The 16 KB charblock holds ~128 glyphs at a time (16384 ÷ 128 = 128 at 4bpp VRAM format — note: ROM stores 2bpp, game converts to 4bpp for VRAM). Multiple captures across different game states would eventually cover all glyphs.
 
 ### Implementation plan
 
