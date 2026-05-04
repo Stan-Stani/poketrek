@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "rom": "Pocket Monsters - LeafGreen (Korean).gba",
+  "encoding": {
+    "scheme": "2-byte (page, low) for Korean syllables",
+    "page_byte_range": "0xF0..0xFC",
+    "expansion_command": "0xFD XX (2-byte command)",
+    "subrecord_separator": "0xFE",
+    "record_terminator": "0xFF",
+    "line_pause_bytes": "0xAB, 0xAD (end-of-phrase / wait-for-A-button)",
+    "single_ctrl_bytes": "0x00..0x0F (formatting, NULL, line-feed)"
+  },
+  "stats": {
+    "total_records": 9999,
+    "total_syllables": 50200,
+    "distinct_syllable_codes": 2393,
+    "per_page": {
+      "0xF0": 7992,
+      "0xF1": 14112,
+      "0xF2": 5761,
+      "0xF3": 4197,
+      "0xF4": 3564,
+      "0xF5": 2386,
+      "0xF6": 1794,
+      "0xF7": 1556,
+      "0xF8": 1442,
+      "0xF9": 1545,
+      "0xFA": 1634,
+      "0xFB": 1975,
+      "0xFC": 2242
+    },
+    "regions_count": 107,
+    "regions_total_bytes": 329472
+  },
+  "control_codes": {
+    "0x00..0x0F": "single-byte formatting / NULL / line-feed",
+    "0xAB / 0xAD": "end-of-phrase / wait-for-A-button",
+    "0xFD XX": "2-byte expansion command (FD02/FD03 = swap text colour, FDFC/FDFD = trainer name etc.)",
+    "0xFE": "sub-record (line break inside a multi-line dialog)",
+    "0xFF": "record terminator"
+  },
+  "next_step": "Build a (page, low_byte) -> Korean Unicode mapping by cross-referencing with VRAM via VramTextReader/KoreanCharmap."
+}
