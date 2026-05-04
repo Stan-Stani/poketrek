@@ -2,7 +2,7 @@
 """
 Render all Korean font glyphs from the Korean LeafGreen ROM.
 
-Font format: 2bpp interleaved bitplanes (Game Boy style), 16x16 px,
+Font format: GBA-native packed 2bpp, 16x16 px,
 stored in pokefirered grid layout (NOT contiguous).
 6 pages x 512 glyphs = 3072 total, at ROM 0x780000-0x798000.
 
@@ -50,23 +50,23 @@ def glyph_byte_offset(glyph_id):
 
 
 def render_glyph(rom, page_base, glyph_id):
-    """Render a single 16x16 glyph from 2bpp interleaved bitplane data."""
+    """Render a single 16x16 glyph from packed 2bpp data (GBA native).
+
+    Each byte holds 4 pixels (2 bits each), low bits = leftmost pixel.
+    Each 8x8 sub-tile is 16 bytes (8 rows x 2 bytes/row).
+    """
     img = Image.new('L', (GLYPH_PX, GLYPH_PX), 0)
     off = page_base + glyph_byte_offset(glyph_id)
     # 4 sub-tiles: TL(+0), TR(+16), BL(+256), BR(+272)
     for dx, dy, tile_off in [(0, 0, 0), (8, 0, 16), (0, 8, 256), (8, 8, 272)]:
         for row in range(8):
-            plane0 = rom[off + tile_off + row * 2]
-            plane1 = rom[off + tile_off + row * 2 + 1]
-            for bit in range(8):
-                mask = 0x80 >> bit
-                v = 0
-                if plane0 & mask:
-                    v |= 1
-                if plane1 & mask:
-                    v |= 2
-                if v > 0:
-                    img.putpixel((dx + bit, dy + row), BRIGHTNESS[v])
+            for bidx in range(2):  # 2 bytes per row, 4 pixels each
+                b = rom[off + tile_off + row * 2 + bidx]
+                for px in range(4):
+                    v = (b >> (px * 2)) & 0x3  # low 2 bits = leftmost
+                    if v > 0:
+                        img.putpixel((dx + bidx * 4 + px, dy + row),
+                                     BRIGHTNESS[v])
     return img
 
 
