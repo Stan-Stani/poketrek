@@ -97,6 +97,153 @@ Dev-time pipeline: reads vocab JSON, generates TOPIK 1–2 level sentences via L
 
 ---
 
+## Text & Font Encoding — Complete Technical Analysis
+
+### How Gen 3 (US/JP) encodes text (baseline)
+
+Sources: [Bulbapedia Character_encoding_(Generation_III)](https://bulbapedia.bulbagarden.net/wiki/Character_encoding_(Generation_III)), [pret/pokefirered](https://github.com/pret/pokefirered) decompilation (`src/text.c`, `charmap.txt`).
+
+**Single-byte encoding (0x00–0xFF):**
+
+| Range       | Content                                                  |
+|-------------|----------------------------------------------------------|
+| `0x00`      | Space (JP) / null-ish                                    |
+| `0x01–0xA0` | Kana (JP) or accented Latin chars (Western)              |
+| `0xA1–0xAA` | Digits 0–9                                               |
+| `0xAB–0xBA` | Punctuation (`!`, `?`, `.`, `-`, `·`, `…`, `"`, `'`, `♂`, `♀`, `$`, `,`, `×`, `/`) |
+| `0xBB–0xD4` | Uppercase A–Z                                            |
+| `0xD5–0xEE` | Lowercase a–z                                            |
+| `0xEF`      | `►` scroll arrow                                         |
+| `0xF0`      | `:` (colon)                                              |
+| `0xF1–0xF6` | `Ä Ö Ü ä ö ü` (German accented chars)                   |
+| `0xF7`      | Dynamic data escape (FRLG/E only)                        |
+| `0xF8`      | Keypad icon escape (FRLG/E only)                         |
+| `0xF9`      | Extra symbol escape (FRLG/E only)                        |
+| `0xFA`      | Scroll prompt (scroll up, continue)                      |
+| `0xFB`      | Clear prompt (clear dialog box, continue)                |
+| `0xFC`      | Extended control code (function index + params follow)   |
+| `0xFD`      | Variable substitution (player name, buffers, etc.)       |
+| `0xFE`      | Line break                                               |
+| `0xFF`      | String terminator                                        |
+
+**FC extended functions (key ones):**
+- `FC 01 XX` — change text color
+- `FC 04 XX XX XX` — set text / highlight / shadow colors
+- `FC 06 XX` — change font (`00`=Small, `01`=NormalCopy1, `02`=Normal, `03`=NormalCopy2, `04`=Male, `05`=Female)
+- `FC 0C XX` — print extra symbol (glyph from the 0x100+ extended set)
+- `FC 15` — switch to Japanese font; `FC 16` — switch to international font
+
+**FD variables:**
+- `FD 01` = player name, `FD 02–04` = script buffers, `FD 06` = rival name
+
+**Fonts in the official ROM (from pokefirered `text.c`):**
+
+| Font ID | Name           | Use case                    | Glyph size      |
+|---------|----------------|-----------------------------|-----------------|
+| 0       | `FONT_SMALL`   | Party screen, Pokédex       | 8×12 (JP) / var×13 (Latin) |
+| 1       | `FONT_NORMAL_COPY_1` | General text          | 10×12 (JP) / var×16 (Latin) |
+| 2       | `FONT_NORMAL`  | General text                | same as above   |
+| 3       | `FONT_NORMAL_COPY_2` | General text          | same as above   |
+| 4       | `FONT_MALE`    | Male NPC dialog (sans-serif)| same as above   |
+| 5       | `FONT_FEMALE`  | Female NPC dialog (serif)   | same as above   |
+| 6       | `FONT_BRAILLE` | Braille puzzles             | 8×16            |
+| 7       | `FONT_BOLD`    | Bold (JP only)              | 8×12            |
+
+Font glyph data is stored as binary blobs (`INCBIN`) in the ROM. Japanese glyphs use 2×2 tile layout (16×16 px, 0x100 bytes per row of 16, offset `0x10 * (glyphId & 0x7)` within row `glyphId >> 4`). Latin glyphs use linear indexing (`0x20 * glyphId`). The `DecompressGlyphTile()` function copies 4bpp tile data to a pixel buffer for rendering.
+
+The namu.wiki article confirms: male NPCs use sans-serif font (`FONT_MALE`), female NPCs use serif font (`FONT_FEMALE`). In the US version this is color-differentiated (blue vs pink) rather than font-differentiated.
+
+### How the Korean fan translation re-encodes text
+
+The Korean ROM (YJ-patched) **completely replaces** the text engine with custom Thumb code at ROM 0x384800:
+
+1. **Bytes `0xF1–0xF6` are 2-byte Korean syllable page selectors.** In the official encoding 0xF1–0xF6 were single printable characters (`Ä Ö Ü ä ö ü`). The Korean translation repurposes them as the first byte of a 2-byte Korean syllable code: `(page, index)` where `page ∈ 0xF1..0xF6` (6 pages) and `index ∈ 0x00..0xFB` (252 usable codes per page). The text engine parses: `page_number = byte - 0xF0`, stores it at RAM 0x03007E3F, reads the next byte as the glyph index.
+
+2. **Control characters preserved:**
+   - `0x00–0xF0` — single-byte characters (ASCII-like, game-specific char table; ≤0xF0 threshold)
+   - `0xFA` — scroll prompt (scroll up, continue)
+   - `0xFB` — clear prompt (clear dialog box, continue)
+   - `0xFC XX [params]` — extended format (FC 01 XX = color change, etc.)
+   - `0xFD XX` — variable substitution (player name, buffers, etc.)
+   - `0xFE` — line break
+   - `0xFF` — string terminator
+   - Bytes `0xF7–0xF9` — also treated as control/single-byte (≥0xF7 threshold)
+
+3. **Actual capacity:** 6 pages × 252 entries = 1,512 possible syllable codes. In practice, 1,319 distinct codes are used across ~41,000 Korean character instances in the text data region.
+
+4. **Font data at known ROM location.** 6 font pages at ROM 0x780000–0x798000, each 0x4000 (16KB) = 128 glyphs of 16×16 px (4bpp tiled, 4 tiles of 8×8, 128 bytes per glyph). Total: **768 Korean glyphs in 96KB**. Font pointer table at ROM 0x38492C. Text indices > 127 overflow into the next font page (data is contiguous).
+
+5. **Per-page distribution:** F1 is the densest page (~22,812 occurrences, 246 unique indices), then F2 (~9,823), F3 (~4,238), F4 (~2,393), F6 (~1,119), F5 (~718).
+
+6. **CRITICAL: Two separate encodings exist.** ROM text uses pages F1–F6 in a custom glyph order. VRAM rendering uses pages F0–F9 in KSX1001 sequential order (validated 8/8 characters). The text engine translates between them at render time. The translation formula is not yet reverse-engineered.
+
+### Why this matters: bridging the encoding gap
+
+We have **two halves** of the puzzle:
+
+| What we have | Source | Count |
+|---|---|---|
+| All ROM text byte sequences | Script pointer analysis (0x160000–0x1A0000) | 1,319 distinct (F1–F6, index) codes, ~41,000 occurrences |
+| Font glyph bitmaps | ROM 0x780000–0x798000 | 768 glyphs, 4bpp 16×16 tiled, visually confirmed as Korean |
+| Pixel → Unicode mapping | VRAM fingerprint decoder (`ko_charmap.json`) | 46 entries (34 unique Hangul + `。`) |
+| VRAM encoding formula | Validated from 8 captures | `adj = ksx_pos + 1; page = F0 + adj//252; idx = adj%252` |
+
+The **missing bridge**: `(page, index) → Unicode Hangul` for all 1,319 ROM text codes.
+
+### Strategy to complete the charmap
+
+**Approach 1 — Font glyph rendering + OCR/fingerprint matching (recommended)**
+
+Font data location is now KNOWN: ROM 0x780000–0x798000, 768 glyphs in 4bpp tiled format.
+
+1. **Font data already located.** 6 pages × 128 glyphs at 0x780000, 0x784000, ..., 0x794000. Format: 4 tiles of 8×8 at 4bpp = 128 bytes per glyph. Rendering code verified — produces readable Korean syllables.
+2. **Extract all 768 glyph tiles as 16×16 images.** Rendering code:
+   ```python
+   # tile arrangement: TL(+0), TR(+32), BL(+64), BR(+96)
+   for tile_idx in range(4):
+       tx = (tile_idx % 2) * 8; ty = (tile_idx // 2) * 8
+       for row in range(8):
+           for px in range(4):
+               byte = rom[offset + tile_idx*32 + row*4 + px]
+               p0 = byte & 0x0F  # left pixel
+               p1 = (byte >> 4) & 0x0F  # right pixel
+   ```
+3. **SHA-256 fingerprint each glyph.** Match against existing `ko_charmap.json` entries.
+4. **For unmatched glyphs:** OCR with Korean model or manual labeling.
+5. **Key complication:** Text codes (F1, idx) address glyphs via `font_ptrs[page] + idx*128`, where overflow past 128 crosses into the next page. The character ordering is CUSTOM (not KSX1001, not Unicode order). The text engine at 0x384800 translates ROM codes to VRAM codes at render time.
+
+**Approach 2 — Runtime correlation (slower but reliable)**
+
+Play through dialogs. For each:
+1. Intercept the ROM text pointer being fed to the text engine (the `(page, lo)` sequence)
+2. Simultaneously read VRAM pixels via `VramTextReader`
+3. Align byte positions with rendered character positions to assign codes to characters
+4. Each new dialog seen adds entries; ~50–100 distinct dialogs would cover most codes
+
+**Approach 3 — Charblock dump at runtime (hybrid)**
+
+Already partially implemented in `RamCapture.snapshotCharblockIfChanged()`:
+1. When the game loads a font, the complete glyph data is in VRAM charblock 0 (0x06000000, 16 KB per charblock)
+2. Dump all 4 charblocks (64 KB) → extract all loaded glyph tiles
+3. Fingerprint each tile group and cross-reference with `ko_charmap.json` known entries
+4. The 16 KB charblock only holds ~128 glyphs at a time (16384 ÷ 128 = 128), but the game swaps font data as needed. Multiple captures across different game states would eventually cover all glyphs.
+
+### Implementation plan
+
+The recommended path is **Approach 1** (font tile extraction):
+
+1. Write a JVM tool (`CharmapTool.kt`) that:
+   - Scans the Korean ROM binary for the font data area
+   - Extracts all glyph tiles, renders them as PNG images
+   - SHA-256 fingerprints each and cross-references with existing `ko_charmap.json`
+   - Outputs the complete `ko-syllable-codes.json` with `hangul` fields filled
+
+2. For OCR of unknown glyphs, use Tesseract with Korean language model, or render to a contact sheet for manual labeling.
+
+3. Once the complete `(page, lo) → Unicode` mapping exists, a simple decoder can convert the entire ROM text dump into readable Korean — completing the dialog rip for Moneo.
+
+---
+
 ## Phase 4 — Hard Area Gate
 
 Depends on Korean ROM map-ID calibration. Identify the Korean ROM equivalent of `SaveBlock1` pointer (`0x03005008` in US Rev1) and `mapBank`/`mapId` offsets. Extend `LeafGreenRam` / add `LeafGreenRamKr`. When Moneo enabled and the current map corresponds to an area with due prereq cards, mask D-pad and surface a "Review required" modal.
