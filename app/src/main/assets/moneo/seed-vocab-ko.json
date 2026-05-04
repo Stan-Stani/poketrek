@@ -3,55 +3,325 @@
   "sourceTag": "seed-v1",
   "notes": "Hand-curated MVP seed corpus. Will be replaced/extended by Phase 2 ROM-rip output. Romanization is Revised Romanization of Korean (RR).",
   "entries": [
-    { "korean": "포켓몬",   "romanization": "pokemon",       "gloss": "Pokémon",                   "partOfSpeech": "noun",  "areaId": "pallet_town" },
-    { "korean": "마을",     "romanization": "ma-eul",        "gloss": "town, village",             "partOfSpeech": "noun",  "areaId": "pallet_town" },
-    { "korean": "박사",     "romanization": "baksa",         "gloss": "professor, doctor (PhD)",   "partOfSpeech": "noun",  "areaId": "pallet_town" },
-    { "korean": "나",       "romanization": "na",            "gloss": "I, me (informal)",          "partOfSpeech": "pronoun","areaId": "pallet_town" },
-    { "korean": "이름",     "romanization": "ireum",         "gloss": "name",                      "partOfSpeech": "noun",  "areaId": "pallet_town" },
-    { "korean": "안녕",     "romanization": "annyeong",      "gloss": "hi / hey (casual)",         "partOfSpeech": "interj","areaId": "pallet_town" },
-    { "korean": "가다",     "romanization": "gada",          "gloss": "to go",                     "partOfSpeech": "verb",  "areaId": "pallet_town" },
-    { "korean": "오다",     "romanization": "oda",           "gloss": "to come",                   "partOfSpeech": "verb",  "areaId": "pallet_town" },
-    { "korean": "집",       "romanization": "jip",           "gloss": "house, home",               "partOfSpeech": "noun",  "areaId": "pallet_town" },
+    {
+      "korean": "포켓몬",
+      "romanization": "pokemon",
+      "gloss": "Pokémon",
+      "partOfSpeech": "noun",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "마을",
+      "romanization": "ma-eul",
+      "gloss": "town, village",
+      "partOfSpeech": "noun",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "박사",
+      "romanization": "baksa",
+      "gloss": "professor, doctor (PhD)",
+      "partOfSpeech": "noun",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "나",
+      "romanization": "na",
+      "gloss": "I, me (informal)",
+      "partOfSpeech": "pronoun",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "이름",
+      "romanization": "ireum",
+      "gloss": "name",
+      "partOfSpeech": "noun",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "안녕",
+      "romanization": "annyeong",
+      "gloss": "hi / hey (casual)",
+      "partOfSpeech": "interj",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "가다",
+      "romanization": "gada",
+      "gloss": "to go",
+      "partOfSpeech": "verb",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "오다",
+      "romanization": "oda",
+      "gloss": "to come",
+      "partOfSpeech": "verb",
+      "areaId": "pallet_town"
+    },
+    {
+      "korean": "집",
+      "romanization": "jip",
+      "gloss": "house, home",
+      "partOfSpeech": "noun",
+      "areaId": "pallet_town"
+    },
 
-    { "korean": "길",       "romanization": "gil",           "gloss": "road, path",                "partOfSpeech": "noun",  "areaId": "route_1" },
-    { "korean": "풀",       "romanization": "pul",           "gloss": "grass",                     "partOfSpeech": "noun",  "areaId": "route_1" },
-    { "korean": "야생",     "romanization": "yasaeng",       "gloss": "wild (e.g. wild Pokémon)",  "partOfSpeech": "noun",  "areaId": "route_1" },
-    { "korean": "나타나다", "romanization": "natanada",      "gloss": "to appear",                 "partOfSpeech": "verb",  "areaId": "route_1" },
-    { "korean": "싸우다",   "romanization": "ssauda",        "gloss": "to fight",                  "partOfSpeech": "verb",  "areaId": "route_1" },
-    { "korean": "잡다",     "romanization": "japda",         "gloss": "to catch, to grab",         "partOfSpeech": "verb",  "areaId": "route_1" },
-    { "korean": "새",       "romanization": "sae",           "gloss": "bird",                      "partOfSpeech": "noun",  "areaId": "route_1" },
-    { "korean": "쥐",       "romanization": "jwi",           "gloss": "rat / mouse",               "partOfSpeech": "noun",  "areaId": "route_1" },
+    {
+      "korean": "길",
+      "romanization": "gil",
+      "gloss": "road, path",
+      "partOfSpeech": "noun",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "풀",
+      "romanization": "pul",
+      "gloss": "grass",
+      "partOfSpeech": "noun",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "야생",
+      "romanization": "yasaeng",
+      "gloss": "wild (e.g. wild Pokémon)",
+      "partOfSpeech": "noun",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "나타나다",
+      "romanization": "natanada",
+      "gloss": "to appear",
+      "partOfSpeech": "verb",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "싸우다",
+      "romanization": "ssauda",
+      "gloss": "to fight",
+      "partOfSpeech": "verb",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "잡다",
+      "romanization": "japda",
+      "gloss": "to catch, to grab",
+      "partOfSpeech": "verb",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "새",
+      "romanization": "sae",
+      "gloss": "bird",
+      "partOfSpeech": "noun",
+      "areaId": "route_1"
+    },
+    {
+      "korean": "쥐",
+      "romanization": "jwi",
+      "gloss": "rat / mouse",
+      "partOfSpeech": "noun",
+      "areaId": "route_1"
+    },
 
-    { "korean": "도시",     "romanization": "dosi",          "gloss": "city",                      "partOfSpeech": "noun",  "areaId": "viridian_city" },
-    { "korean": "사람",     "romanization": "saram",         "gloss": "person",                    "partOfSpeech": "noun",  "areaId": "viridian_city" },
-    { "korean": "가게",     "romanization": "gage",          "gloss": "shop, store",               "partOfSpeech": "noun",  "areaId": "viridian_city" },
-    { "korean": "사다",     "romanization": "sada",          "gloss": "to buy",                    "partOfSpeech": "verb",  "areaId": "viridian_city" },
-    { "korean": "팔다",     "romanization": "palda",         "gloss": "to sell",                   "partOfSpeech": "verb",  "areaId": "viridian_city" },
-    { "korean": "체육관",   "romanization": "cheyukgwan",    "gloss": "gym",                       "partOfSpeech": "noun",  "areaId": "viridian_city" },
-    { "korean": "관장",     "romanization": "gwanjang",      "gloss": "leader, director (gym leader)","partOfSpeech":"noun","areaId": "viridian_city" },
+    {
+      "korean": "도시",
+      "romanization": "dosi",
+      "gloss": "city",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_city"
+    },
+    {
+      "korean": "사람",
+      "romanization": "saram",
+      "gloss": "person",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_city"
+    },
+    {
+      "korean": "가게",
+      "romanization": "gage",
+      "gloss": "shop, store",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_city"
+    },
+    {
+      "korean": "사다",
+      "romanization": "sada",
+      "gloss": "to buy",
+      "partOfSpeech": "verb",
+      "areaId": "viridian_city"
+    },
+    {
+      "korean": "팔다",
+      "romanization": "palda",
+      "gloss": "to sell",
+      "partOfSpeech": "verb",
+      "areaId": "viridian_city"
+    },
+    {
+      "korean": "체육관",
+      "romanization": "cheyukgwan",
+      "gloss": "gym",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_city"
+    },
+    {
+      "korean": "관장",
+      "romanization": "gwanjang",
+      "gloss": "leader, director (gym leader)",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_city"
+    },
 
-    { "korean": "북쪽",     "romanization": "bukjjok",       "gloss": "north (direction)",         "partOfSpeech": "noun",  "areaId": "route_2" },
-    { "korean": "남쪽",     "romanization": "namjjok",       "gloss": "south (direction)",         "partOfSpeech": "noun",  "areaId": "route_2" },
-    { "korean": "동쪽",     "romanization": "dongjjok",      "gloss": "east (direction)",          "partOfSpeech": "noun",  "areaId": "route_2" },
-    { "korean": "서쪽",     "romanization": "seojjok",       "gloss": "west (direction)",          "partOfSpeech": "noun",  "areaId": "route_2" },
-    { "korean": "지나가다", "romanization": "jinagada",      "gloss": "to pass through",           "partOfSpeech": "verb",  "areaId": "route_2" },
-    { "korean": "입구",     "romanization": "ipgu",          "gloss": "entrance",                  "partOfSpeech": "noun",  "areaId": "route_2" },
-    { "korean": "출구",     "romanization": "chulgu",        "gloss": "exit",                      "partOfSpeech": "noun",  "areaId": "route_2" },
+    {
+      "korean": "북쪽",
+      "romanization": "bukjjok",
+      "gloss": "north (direction)",
+      "partOfSpeech": "noun",
+      "areaId": "route_2"
+    },
+    {
+      "korean": "남쪽",
+      "romanization": "namjjok",
+      "gloss": "south (direction)",
+      "partOfSpeech": "noun",
+      "areaId": "route_2"
+    },
+    {
+      "korean": "동쪽",
+      "romanization": "dongjjok",
+      "gloss": "east (direction)",
+      "partOfSpeech": "noun",
+      "areaId": "route_2"
+    },
+    {
+      "korean": "서쪽",
+      "romanization": "seojjok",
+      "gloss": "west (direction)",
+      "partOfSpeech": "noun",
+      "areaId": "route_2"
+    },
+    {
+      "korean": "지나가다",
+      "romanization": "jinagada",
+      "gloss": "to pass through",
+      "partOfSpeech": "verb",
+      "areaId": "route_2"
+    },
+    {
+      "korean": "입구",
+      "romanization": "ipgu",
+      "gloss": "entrance",
+      "partOfSpeech": "noun",
+      "areaId": "route_2"
+    },
+    {
+      "korean": "출구",
+      "romanization": "chulgu",
+      "gloss": "exit",
+      "partOfSpeech": "noun",
+      "areaId": "route_2"
+    },
 
-    { "korean": "숲",       "romanization": "sup",           "gloss": "forest",                    "partOfSpeech": "noun",  "areaId": "viridian_forest" },
-    { "korean": "나무",     "romanization": "namu",          "gloss": "tree",                      "partOfSpeech": "noun",  "areaId": "viridian_forest" },
-    { "korean": "벌레",     "romanization": "beolle",        "gloss": "bug, insect",               "partOfSpeech": "noun",  "areaId": "viridian_forest" },
-    { "korean": "어둡다",   "romanization": "eodupda",       "gloss": "to be dark",                "partOfSpeech": "adj",   "areaId": "viridian_forest" },
-    { "korean": "깊다",     "romanization": "gipda",         "gloss": "to be deep",                "partOfSpeech": "adj",   "areaId": "viridian_forest" },
-    { "korean": "조심하다", "romanization": "josimhada",     "gloss": "to be careful",             "partOfSpeech": "verb",  "areaId": "viridian_forest" },
+    {
+      "korean": "숲",
+      "romanization": "sup",
+      "gloss": "forest",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_forest"
+    },
+    {
+      "korean": "나무",
+      "romanization": "namu",
+      "gloss": "tree",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_forest"
+    },
+    {
+      "korean": "벌레",
+      "romanization": "beolle",
+      "gloss": "bug, insect",
+      "partOfSpeech": "noun",
+      "areaId": "viridian_forest"
+    },
+    {
+      "korean": "어둡다",
+      "romanization": "eodupda",
+      "gloss": "to be dark",
+      "partOfSpeech": "adj",
+      "areaId": "viridian_forest"
+    },
+    {
+      "korean": "깊다",
+      "romanization": "gipda",
+      "gloss": "to be deep",
+      "partOfSpeech": "adj",
+      "areaId": "viridian_forest"
+    },
+    {
+      "korean": "조심하다",
+      "romanization": "josimhada",
+      "gloss": "to be careful",
+      "partOfSpeech": "verb",
+      "areaId": "viridian_forest"
+    },
 
-    { "korean": "회색",     "romanization": "hoesaek",       "gloss": "grey (the color)",          "partOfSpeech": "noun",  "areaId": "pewter_city" },
-    { "korean": "바위",     "romanization": "bawi",          "gloss": "rock, boulder",             "partOfSpeech": "noun",  "areaId": "pewter_city" },
-    { "korean": "첫",       "romanization": "cheot",         "gloss": "first (modifier)",          "partOfSpeech": "modifier","areaId": "pewter_city" },
-    { "korean": "배지",     "romanization": "baeji",         "gloss": "badge",                     "partOfSpeech": "noun",  "areaId": "pewter_city" },
-    { "korean": "도전하다", "romanization": "dojeonhada",    "gloss": "to challenge",              "partOfSpeech": "verb",  "areaId": "pewter_city" },
-    { "korean": "이기다",   "romanization": "igida",         "gloss": "to win, to defeat",         "partOfSpeech": "verb",  "areaId": "pewter_city" },
-    { "korean": "지다",     "romanization": "jida",          "gloss": "to lose",                   "partOfSpeech": "verb",  "areaId": "pewter_city" },
-    { "korean": "박물관",   "romanization": "bakmulgwan",    "gloss": "museum",                    "partOfSpeech": "noun",  "areaId": "pewter_city" }
+    {
+      "korean": "회색",
+      "romanization": "hoesaek",
+      "gloss": "grey (the color)",
+      "partOfSpeech": "noun",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "바위",
+      "romanization": "bawi",
+      "gloss": "rock, boulder",
+      "partOfSpeech": "noun",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "첫",
+      "romanization": "cheot",
+      "gloss": "first (modifier)",
+      "partOfSpeech": "modifier",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "배지",
+      "romanization": "baeji",
+      "gloss": "badge",
+      "partOfSpeech": "noun",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "도전하다",
+      "romanization": "dojeonhada",
+      "gloss": "to challenge",
+      "partOfSpeech": "verb",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "이기다",
+      "romanization": "igida",
+      "gloss": "to win, to defeat",
+      "partOfSpeech": "verb",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "지다",
+      "romanization": "jida",
+      "gloss": "to lose",
+      "partOfSpeech": "verb",
+      "areaId": "pewter_city"
+    },
+    {
+      "korean": "박물관",
+      "romanization": "bakmulgwan",
+      "gloss": "museum",
+      "partOfSpeech": "noun",
+      "areaId": "pewter_city"
+    }
   ]
 }

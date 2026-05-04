@@ -1,11 +1,41 @@
 {
   "version": 1,
   "areas": [
-    { "id": "pallet_town",      "ordinal": 1, "englishName": "Pallet Town",      "koreanLabel": "태초마을" },
-    { "id": "route_1",          "ordinal": 2, "englishName": "Route 1",          "koreanLabel": "1번 도로" },
-    { "id": "viridian_city",    "ordinal": 3, "englishName": "Viridian City",    "koreanLabel": "상록시티" },
-    { "id": "route_2",          "ordinal": 4, "englishName": "Route 2",          "koreanLabel": "2번 도로" },
-    { "id": "viridian_forest",  "ordinal": 5, "englishName": "Viridian Forest",  "koreanLabel": "상록숲" },
-    { "id": "pewter_city",      "ordinal": 6, "englishName": "Pewter City",      "koreanLabel": "회색시티" }
+    {
+      "id": "pallet_town",
+      "ordinal": 1,
+      "englishName": "Pallet Town",
+      "koreanLabel": "태초마을"
+    },
+    {
+      "id": "route_1",
+      "ordinal": 2,
+      "englishName": "Route 1",
+      "koreanLabel": "1번 도로"
+    },
+    {
+      "id": "viridian_city",
+      "ordinal": 3,
+      "englishName": "Viridian City",
+      "koreanLabel": "상록시티"
+    },
+    {
+      "id": "route_2",
+      "ordinal": 4,
+      "englishName": "Route 2",
+      "koreanLabel": "2번 도로"
+    },
+    {
+      "id": "viridian_forest",
+      "ordinal": 5,
+      "englishName": "Viridian Forest",
+      "koreanLabel": "상록숲"
+    },
+    {
+      "id": "pewter_city",
+      "ordinal": 6,
+      "englishName": "Pewter City",
+      "koreanLabel": "회색시티"
+    }
   ]
 }
