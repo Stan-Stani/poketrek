@@ -29,6 +29,8 @@ import androidx.core.view.WindowInsetsControllerCompat
 import com.poketrek.emu.CalibrationStore
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.emu.SaveStateStore
+import com.poketrek.moneo.MoneoModule
+import com.poketrek.moneo.gate.MoneoSoftGate
 import com.poketrek.step.MovementBudget
 import com.poketrek.step.StepCounterService
 
@@ -39,6 +41,8 @@ class EmulatorActivity : ComponentActivity() {
     private lateinit var budget: MovementBudget
     private lateinit var runner: EmulatorRunner
     private lateinit var saveStateStore: SaveStateStore
+    private lateinit var moneo: MoneoModule
+    private lateinit var moneoGate: MoneoSoftGate
 
     private val requestActivityRecognition = registerForActivityResult(
         ActivityResultContracts.RequestPermission(),
@@ -83,6 +87,8 @@ class EmulatorActivity : ComponentActivity() {
         budget = MovementBudget.get(applicationContext)
         runner = EmulatorRunner(budget, CalibrationStore(applicationContext))
         saveStateStore = SaveStateStore(applicationContext)
+        moneo = MoneoModule.get(applicationContext)
+        moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
             && checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS)
@@ -102,6 +108,8 @@ class EmulatorActivity : ComponentActivity() {
                     AppRoot(
                         runner = runner,
                         budget = budget,
+                        moneo = moneo,
+                        moneoGate = moneoGate,
                         onPickRom = { pickRom.launch(arrayOf("application/octet-stream", "*/*")) },
                         onDebugAddSteps = budget::debugAddSteps,
                         getSaveSlots = saveStateStore::slots,
@@ -150,6 +158,8 @@ class EmulatorActivity : ComponentActivity() {
 private fun AppRoot(
     runner: EmulatorRunner,
     budget: MovementBudget,
+    moneo: MoneoModule,
+    moneoGate: MoneoSoftGate,
     onPickRom: () -> Unit,
     onDebugAddSteps: (Int) -> Unit,
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
@@ -172,6 +182,8 @@ private fun AppRoot(
         com.poketrek.ui.EmulatorScreen(
             runner = runner,
             budget = budget,
+            moneo = moneo,
+            moneoGate = moneoGate,
             onDebugAddSteps = onDebugAddSteps,
             onPickRom = onPickRom,
             getSaveSlots = getSaveSlots,

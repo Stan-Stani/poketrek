@@ -21,6 +21,10 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import com.poketrek.emu.EmulatorRunner
+import com.poketrek.moneo.MoneoModule
+import com.poketrek.moneo.gate.MoneoSoftGate
+import com.poketrek.moneo.ui.MoneoHud
+import com.poketrek.moneo.ui.MoneoOverlay
 import com.poketrek.step.MovementBudget
 
 /**
@@ -32,6 +36,8 @@ import com.poketrek.step.MovementBudget
 fun EmulatorScreen(
     runner: EmulatorRunner,
     budget: MovementBudget,
+    moneo: MoneoModule,
+    moneoGate: MoneoSoftGate,
     onDebugAddSteps: (Int) -> Unit,
     onPickRom: () -> Unit,
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
@@ -48,6 +54,7 @@ fun EmulatorScreen(
     val hasCalibration by runner.hasCalibration
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
+    var moneoOpen by remember { mutableStateOf(false) }
 
     Box(modifier = modifier.fillMaxSize().background(Color.Black)) {
         Canvas(modifier = Modifier.fillMaxSize()) {
@@ -63,6 +70,14 @@ fun EmulatorScreen(
             modifier = Modifier
                 .align(Alignment.TopStart)
                 .padding(8.dp),
+        )
+
+        MoneoHud(
+            gate = moneoGate,
+            onOpenMoneo = { moneoOpen = true },
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(start = 8.dp, top = 56.dp),
         )
 
         if (debugOn) {
@@ -127,6 +142,16 @@ fun EmulatorScreen(
                 onFinishCalibration = runner::finishCalibration,
                 onCancelCalibration = runner::cancelCalibration,
                 onClearCalibrationStatus = runner::clearCalibrationStatus,
+                moneo = moneo,
+                onOpenMoneo = { moneoOpen = true },
+            )
+        }
+
+        if (moneoOpen) {
+            MoneoOverlay(
+                module = moneo,
+                onClose = { moneoOpen = false },
+                modifier = Modifier.fillMaxSize(),
             )
         }
     }

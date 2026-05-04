@@ -50,6 +50,7 @@ import com.poketrek.emu.MovementGate
 import com.poketrek.emu.RomCalibrator
 import com.poketrek.emu.RomIdentity
 import com.poketrek.emu.RomVariant
+import com.poketrek.moneo.MoneoModule
 import com.poketrek.step.MAX_RARE_CANDY_COST
 import com.poketrek.step.MIN_RARE_CANDY_COST
 import com.poketrek.step.MovementBudget
@@ -248,6 +249,8 @@ fun SettingsSheet(
     onFinishCalibration: suspend () -> RomCalibrator.Result,
     onCancelCalibration: () -> Unit,
     onClearCalibrationStatus: () -> Unit,
+    moneo: MoneoModule,
+    onOpenMoneo: () -> Unit,
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
@@ -350,6 +353,12 @@ fun SettingsSheet(
                 sublabel = "Shows RAM probe + fake-step button",
                 checked = debugOn,
                 onCheckedChange = { budget.setDebugHudVisible(it) },
+            )
+
+            Spacer(Modifier.height(4.dp))
+            MoneoSection(
+                moneo = moneo,
+                onOpenMoneo = { onOpenMoneo(); onDismiss() },
             )
 
             if (romIdentity?.variant == RomVariant.LEAFGREEN_US_REV1) {
@@ -842,4 +851,57 @@ private fun formatCalibrationError(r: com.poketrek.emu.RomCalibrator.Result?): S
     is com.poketrek.emu.RomCalibrator.Result.MultiplePointers -> "Ambiguous: ${r.addrs.size} candidate pointers. Try recalibrating after a save+reload."
     com.poketrek.emu.RomCalibrator.Result.ReadFailed -> "Memory read failed (no ROM loaded?)."
     else -> "Unknown failure."
+}
+
+/**
+ * Small Settings-sheet section for the Moneo (Korean learning) feature.
+ * Shows enable toggle, current target area, and an "Open Moneo" button.
+ * Anything more advanced lives in the dedicated [com.poketrek.moneo.ui.MoneoOverlay].
+ */
+@Composable
+private fun MoneoSection(
+    moneo: MoneoModule,
+    onOpenMoneo: () -> Unit,
+) {
+    val enabled by moneo.prefs.enabled.collectAsState()
+    val targetAreaId by moneo.prefs.targetAreaId.collectAsState()
+    val areas by moneo.repository.areas.collectAsState()
+    val cards by moneo.repository.cards.collectAsState()
+    val targetArea = areas.firstOrNull { it.id == targetAreaId }
+    @Suppress("UNUSED_VARIABLE") val tick = cards
+    val totalDue = moneo.repository.totalDueCount()
+
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("Moneo · 몬어 (Korean)", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+        ToggleRow(
+            label = "Korean learning mode",
+            sublabel = if (enabled) "Review badge visible during play" else "Hidden",
+            checked = enabled,
+            onCheckedChange = { moneo.prefs.setEnabled(it) },
+        )
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            Column(Modifier.weight(1f)) {
+                Text(
+                    if (targetArea != null) "Studying: ${targetArea.koreanLabel} · ${targetArea.englishName}"
+                    else "No area selected",
+                    fontSize = 13.sp,
+                )
+                Text(
+                    "$totalDue card${if (totalDue == 1) "" else "s"} due across all areas",
+                    color = Color(0xFF6B7280),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 11.sp,
+                )
+            }
+            Spacer(Modifier.width(8.dp))
+            Button(
+                onClick = onOpenMoneo,
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+            ) { Text("Open", fontSize = 12.sp) }
+        }
+    }
 }
