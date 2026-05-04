@@ -50,22 +50,29 @@ def glyph_byte_offset(glyph_id):
 
 
 def render_glyph(rom, page_base, glyph_id):
-    """Render a single 16x16 glyph from packed 2bpp data (GBA native).
+    """Render a single 16x16 glyph from packed 2bpp data.
 
-    Each byte holds 4 pixels (2 bits each), low bits = leftmost pixel.
+    Format: each byte holds 4 pixels (2 bits each).
+    Within each 8-pixel row of an 8x8 sub-tile:
+      - byte at offset+1 holds the LEFT 4 pixels
+      - byte at offset+0 holds the RIGHT 4 pixels
+      - Within each byte, the HIGH 2 bits are the LEFTMOST pixel
     Each 8x8 sub-tile is 16 bytes (8 rows x 2 bytes/row).
+    Sub-tile order within glyph: TL=+0, TR=+16, BL=+256, BR=+272.
     """
     img = Image.new('L', (GLYPH_PX, GLYPH_PX), 0)
     off = page_base + glyph_byte_offset(glyph_id)
-    # 4 sub-tiles: TL(+0), TR(+16), BL(+256), BR(+272)
     for dx, dy, tile_off in [(0, 0, 0), (8, 0, 16), (0, 8, 256), (8, 8, 272)]:
         for row in range(8):
-            for bidx in range(2):  # 2 bytes per row, 4 pixels each
-                b = rom[off + tile_off + row * 2 + bidx]
+            # Byte order swapped: byte 1 = left half, byte 0 = right half
+            for half in range(2):
+                byte_idx = 1 - half  # half=0 reads byte 1 (left); half=1 reads byte 0 (right)
+                b = rom[off + tile_off + row * 2 + byte_idx]
                 for px in range(4):
-                    v = (b >> (px * 2)) & 0x3  # low 2 bits = leftmost
+                    # High bits = leftmost pixel within byte
+                    v = (b >> ((3 - px) * 2)) & 0x3
                     if v > 0:
-                        img.putpixel((dx + bidx * 4 + px, dy + row),
+                        img.putpixel((dx + half * 4 + px, dy + row),
                                      BRIGHTNESS[v])
     return img
 
