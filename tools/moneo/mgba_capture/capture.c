@@ -2,9 +2,11 @@
 //
 // mgba_capture: native libmgba-driven capture tool for the Korean LeafGreen
 // text engine. Loads the ROM, attaches a custom debugger, sets a software
-// breakpoint at the per-glyph render entry (0x080062B4 Thumb), auto-presses
-// keys, and on each hit captures (page, idx) decoded from r0 plus periodic
-// VRAM tile-group fingerprints. Output: JSON.
+// breakpoint at the prebyte handler (0x08384818 Thumb) immediately after the
+// page-byte check passes; reads the (page, idx) byte pair directly from the
+// string buffer via the bus. Auto-presses keys and captures periodic VRAM
+// tile-group fingerprints. Output: JSON. Optional --dump-iwram / --dump-vram
+// flags emit raw memory blobs after the savestate is loaded.
 //
 // Built against the vendored mGBA 0.10.5 (third_party/mgba/build-mac).
 
@@ -70,7 +72,7 @@ static void sha256_final(SHA256*c,uint8_t out[32]){c->buf[c->blen++]=0x80;if(c->
 static volatile int g_stop = 0;
 static void on_sigint(int s) { (void)s; g_stop = 1; }
 
-typedef struct { uint64_t frame; uint32_t pc; uint8_t page; uint16_t idx; uint32_t r0; } Token;
+typedef struct { uint64_t frame; uint32_t pc; uint8_t page; uint8_t idx; uint8_t mailbox; uint32_t strptr; } Token;
 typedef struct { uint64_t frame; int line; int pos; uint16_t tiles[4]; char fps[4][17]; } Group;
 
 #define MAX_TOKENS 200000
@@ -97,13 +99,14 @@ static void dbg_entered(struct mDebugger* d,
     g_hits++;
     if (reason == DEBUGGER_ENTER_BREAKPOINT) {
         struct ARMCore* cpu = (struct ARMCore*)g_core->cpu;
-        uint32_t r0 = (uint32_t)cpu->gprs[0];
+        uint32_t r0 = (uint32_t)cpu->gprs[0]; // string pointer at BP 0x08384818
         uint32_t pc = (uint32_t)cpu->gprs[15];
-        uint8_t  page = (uint8_t)(r0 & 0xF);
-        uint16_t idx  = (uint16_t)((r0 >> 4) & 0xFFF);
-        if (g_ntok < MAX_TOKENS) {
+        uint8_t  byte0 = (uint8_t)g_core->busRead8(g_core, r0);
+        uint8_t  byte1 = (uint8_t)g_core->busRead8(g_core, r0 + 1);
+        uint8_t  mailbox = (uint8_t)g_core->busRead8(g_core, 0x03007E3F);
+        if (g_ntok < MAX_TOKENS && byte0 >= 0xF1 && byte0 <= 0xF6) {
             uint64_t fr = g_core->frameCounter(g_core);
-            g_tokens[g_ntok++] = (Token){fr, pc, page, idx, r0};
+            g_tokens[g_ntok++] = (Token){fr, pc, (uint8_t)(byte0 - 0xF0), byte1, mailbox, r0};
         }
     }
     d->state = DEBUGGER_RUNNING;
@@ -222,8 +225,8 @@ static void write_json(const char* path, const char* rom, uint64_t frames_run, u
     fprintf(f, "  \"tokens\": [\n");
     for (size_t i = 0; i < g_ntok; i++) {
         Token* t = &g_tokens[i];
-        fprintf(f, "    {\"frame\":%llu,\"pc\":%u,\"page\":%u,\"idx\":%u,\"r0\":%u}%s\n",
-                (unsigned long long)t->frame, t->pc, t->page, t->idx, t->r0,
+        fprintf(f, "    {\"frame\":%llu,\"pc\":%u,\"page\":%u,\"idx\":%u,\"mailbox\":%u,\"strptr\":%u}%s\n",
+                (unsigned long long)t->frame, t->pc, t->page, t->idx, t->mailbox, t->strptr,
                 i + 1 == g_ntok ? "" : ",");
     }
     fprintf(f, "  ],\n  \"groups\": [\n");
@@ -249,8 +252,11 @@ int main(int argc, char** argv) {
     const char* outPath = ".moneo-artifacts/capture.json";
     uint64_t maxFrames = 60ull * 60ull * 5ull;
     int snapshotEvery = 30;
-    uint32_t bpPC = 0x080062B4;
+    uint32_t bpPC = 0x08384818; // prebyte handler: page just stored, r0=strptr
     uint32_t pressKeys = KEY_A;
+    const char* dumpIwramPath = NULL;
+    const char* dumpVramPath = NULL;
+    const char* dumpFbPath = NULL;
 
     static struct option opts[] = {
         {"rom",        required_argument, 0, 'r'},
@@ -261,11 +267,14 @@ int main(int argc, char** argv) {
         {"snapshot-frames", required_argument, 0, 'n'},
         {"break-pc",   required_argument, 0, 'b'},
         {"state",      required_argument, 0, 'S'},
+        {"dump-iwram", required_argument, 0, 'I'},
+        {"dump-vram",  required_argument, 0, 'V'},
+        {"dump-fb",    required_argument, 0, 'F'},
         {"verbose",    no_argument,       0, 'v'},
         {0,0,0,0}
     };
     int c, oi = 0;
-    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:v", opts, &oi)) != -1) {
+    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:v", opts, &oi)) != -1) {
         switch (c) {
             case 'r': romPath = optarg; break;
             case 'o': outPath = optarg; break;
@@ -275,6 +284,9 @@ int main(int argc, char** argv) {
             case 'n': snapshotEvery = atoi(optarg); break;
             case 'b': bpPC = (uint32_t)strtoul(optarg, NULL, 0); break;
             case 'S': statePath = optarg; break;
+            case 'I': dumpIwramPath = optarg; break;
+            case 'V': dumpVramPath = optarg; break;
+            case 'F': dumpFbPath = optarg; break;
             case 'v': /* ignore; always verbose */ break;
             default:  return 2;
         }
@@ -312,6 +324,18 @@ int main(int argc, char** argv) {
         }
         svf->close(svf);
         fprintf(stderr, "[capture] savestate loaded from %s\n", statePath);
+    }
+
+    if (dumpIwramPath) {
+        // IWRAM: 0x03000000..0x03008000 (32 KiB) — dumped EARLY (savestate state)
+        FILE* df = fopen(dumpIwramPath, "wb");
+        if (!df) { fprintf(stderr, "[capture] cannot open %s\n", dumpIwramPath); return 1; }
+        for (uint32_t a = 0; a < 0x8000; a++) {
+            uint8_t b = (uint8_t)g_core->busRead8(g_core, 0x03000000 + a);
+            fputc(b, df);
+        }
+        fclose(df);
+        fprintf(stderr, "[capture] dumped IWRAM (32 KiB) -> %s\n", dumpIwramPath);
     }
 
     // Set up debugger (0.10 API: zero-init mDebugger, fill callbacks, attach)
@@ -367,6 +391,28 @@ int main(int argc, char** argv) {
 
     fprintf(stderr, "[capture] done. frames=%llu tokens=%zu groups=%zu hits=%d\n",
             (unsigned long long)frame, g_ntok, g_ngrp, g_hits);
+
+    if (dumpVramPath) {
+        // VRAM dumped AFTER capture so it reflects in-game state
+        FILE* df = fopen(dumpVramPath, "wb");
+        if (df) {
+            for (uint32_t a = 0; a < 0x18000; a++) {
+                uint8_t b = (uint8_t)g_core->busRead8(g_core, 0x06000000 + a);
+                fputc(b, df);
+            }
+            fclose(df);
+            fprintf(stderr, "[capture] dumped VRAM (96 KiB, post-capture) -> %s\n", dumpVramPath);
+        }
+    }
+
+    if (dumpFbPath) {
+        FILE* df = fopen(dumpFbPath, "wb");
+        if (df) {
+            fwrite(s_videoBuffer, 4, 240*160, df);
+            fclose(df);
+            fprintf(stderr, "[capture] dumped framebuffer (240x160 RGBA) -> %s\n", dumpFbPath);
+        }
+    }
 
     write_json(outPath, romPath, frame, bpPC);
     fprintf(stderr, "[capture] wrote %s\n", outPath);
