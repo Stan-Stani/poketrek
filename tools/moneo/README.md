@@ -16,10 +16,11 @@ Korean→English glyph map and corpus suitable for in-app translation overlays.
   rendered text screens for ground-truth alignment.
 - Token-burst → framebuffer-OCR alignment (`align_union.py`) accumulates votes
   for each `(page, idx)` slot and produces a high-confidence map.
-- Blit-table layout was decoded and verified in live VRAM
-  (`verify_blit*.py`): table1 at ROM file offset `0x1CDF1C` (256 bytes), table2
-  at IWRAM offset `0x0A40` (256 halfwords). Layout B confirmed on 5 raw bytes.
-  This gives an offline path from `(page, idx)` → expected VRAM bitmap.
+- Blit-table layout was decoded and verified
+  (`verify_blit*.py`, `blit_match2.py`): table1 at ROM file offset `0x1CDF1C`
+  (256 bytes), table2 at IWRAM offset `0x0A40` (256 halfwords). Layout
+  `perm=(TL, TR, BL, BR), hi_first=False` is correct. This gives an offline
+  path from `(page, idx)` → expected raw glyph bitmap.
 
 **What was discarded (verified bogus):**
 
@@ -74,11 +75,15 @@ yielding only ~115 unique `(page, idx)` slots. To grow the map:
    across `capture-{fb,walk,fresh,long-aligned}.json`. Add new captures to its
    `CAPTURES` list.
 4. **Path B, fully exploited**. The blit-table verification gives an offline
-   `(page, idx) → VRAM bitmap` function. Matching that bitmap against live
-   tile groups captured in the same run would let us label tokens without
-   needing the FB to render the same string the token came from. This is not
-   yet wired up end-to-end (PMI alignment failed at the snapshot-every=30
-   timing resolution).
+   `(page, idx) → raw glyph bitmap` function (`blit_match2.py`,
+   `path_b_label.py`). However, **live VRAM tiles do not match blit output
+   byte-for-byte** — the engine OR-composites the glyph mask with shadow
+   color `0x44` (palette index 4) before writing to VRAM. So
+   `live_vram_tile == blit_output | shadow_fill_pattern`. To use blit fps for
+   live group matching, the matcher must apply the same compositing or strip
+   shadow pixels from live data first. Not yet implemented; Path A
+   (alignment) currently outperforms because OCR'd ground truth from FB
+   matches what's actually on screen regardless of compositing.
 
 ## Files
 
