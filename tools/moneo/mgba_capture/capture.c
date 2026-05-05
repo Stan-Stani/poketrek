@@ -83,6 +83,7 @@ static Group g_groups[MAX_GROUPS]; static size_t g_ngrp = 0;
 static struct mCore*    g_core = NULL;
 static struct mDebugger g_debugger;
 static int              g_hits = 0;
+static const char*      g_dumpIwramBpDir = NULL;
 
 // ---- Debugger callbacks (0.10 API) -----------------------------------------
 static void dbg_init(struct mDebugger* d)   { (void)d; }
@@ -97,6 +98,16 @@ static void dbg_entered(struct mDebugger* d,
                         struct mDebuggerEntryInfo* info) {
     (void)info;
     g_hits++;
+    if (g_dumpIwramBpDir) {
+        char fname[512];
+        snprintf(fname, sizeof(fname), "%s/iwram-bp-%06d.bin", g_dumpIwramBpDir, g_hits);
+        FILE* f = fopen(fname, "wb");
+        if (f) {
+            for (uint32_t a = 0; a < 0x8000; a++)
+                fputc((uint8_t)g_core->busRead8(g_core, 0x03000000 + a), f);
+            fclose(f);
+        }
+    }
     if (reason == DEBUGGER_ENTER_BREAKPOINT) {
         struct ARMCore* cpu = (struct ARMCore*)g_core->cpu;
         uint32_t r0 = (uint32_t)cpu->gprs[0]; // string pointer at BP 0x08384818
@@ -286,11 +297,12 @@ int main(int argc, char** argv) {
         {"dump-iwram-every", required_argument, 0, 'W'},
         {"dump-ewram-dir", required_argument, 0, 'U'},
         {"dump-ewram-every", required_argument, 0, 'T'},
+        {"dump-iwram-bp-dir", required_argument, 0, 'Q'},
         {"verbose",    no_argument,       0, 'v'},
         {0,0,0,0}
     };
     int c, oi = 0;
-    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:D:E:X:Y:Z:W:U:T:v", opts, &oi)) != -1) {
+    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:D:E:X:Y:Z:W:U:T:Q:v", opts, &oi)) != -1) {
         switch (c) {
             case 'r': romPath = optarg; break;
             case 'o': outPath = optarg; break;
@@ -311,6 +323,7 @@ int main(int argc, char** argv) {
             case 'W': dumpIwramEvery = atoi(optarg); break;
             case 'U': dumpEwramDir = optarg; break;
             case 'T': dumpEwramEvery = atoi(optarg); break;
+            case 'Q': g_dumpIwramBpDir = optarg; break;
             case 'v': /* ignore; always verbose */ break;
             default:  return 2;
         }
