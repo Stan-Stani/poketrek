@@ -257,6 +257,8 @@ int main(int argc, char** argv) {
     const char* dumpIwramPath = NULL;
     const char* dumpVramPath = NULL;
     const char* dumpFbPath = NULL;
+    const char* dumpFbDir = NULL;
+    int dumpFbEvery = 0;
 
     static struct option opts[] = {
         {"rom",        required_argument, 0, 'r'},
@@ -270,11 +272,13 @@ int main(int argc, char** argv) {
         {"dump-iwram", required_argument, 0, 'I'},
         {"dump-vram",  required_argument, 0, 'V'},
         {"dump-fb",    required_argument, 0, 'F'},
+        {"dump-fb-dir", required_argument, 0, 'D'},
+        {"dump-fb-every", required_argument, 0, 'E'},
         {"verbose",    no_argument,       0, 'v'},
         {0,0,0,0}
     };
     int c, oi = 0;
-    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:v", opts, &oi)) != -1) {
+    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:D:E:v", opts, &oi)) != -1) {
         switch (c) {
             case 'r': romPath = optarg; break;
             case 'o': outPath = optarg; break;
@@ -287,6 +291,8 @@ int main(int argc, char** argv) {
             case 'I': dumpIwramPath = optarg; break;
             case 'V': dumpVramPath = optarg; break;
             case 'F': dumpFbPath = optarg; break;
+            case 'D': dumpFbDir = optarg; break;
+            case 'E': dumpFbEvery = atoi(optarg); break;
             case 'v': /* ignore; always verbose */ break;
             default:  return 2;
         }
@@ -380,6 +386,12 @@ int main(int argc, char** argv) {
         g_core->setKeys(g_core, k);
         mDebuggerRunFrame(&g_debugger);
         frame++;
+        if (dumpFbDir && dumpFbEvery > 0 && (frame % (uint64_t)dumpFbEvery) == 0) {
+            char fp[1024];
+            snprintf(fp, sizeof fp, "%s/fb-%06llu.bin", dumpFbDir, (unsigned long long)frame);
+            FILE* df = fopen(fp, "wb");
+            if (df) { fwrite(s_videoBuffer, 4, 240*160, df); fclose(df); }
+        }
         if ((int)(frame % snapshotEvery) == 0) {
             capture_groups(frame);
             if (frame % (uint64_t)(snapshotEvery * 60) == 0) {
