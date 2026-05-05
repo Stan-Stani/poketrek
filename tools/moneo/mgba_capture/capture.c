@@ -1,14 +1,12 @@
 // SPDX-License-Identifier: MPL-2.0
 //
 // mgba_capture: native libmgba-driven capture tool for the Korean LeafGreen
-// text engine. Loads the ROM, attaches a custom debugger module, sets a
-// software breakpoint at the per-glyph render entry (0x080062B4 Thumb),
-// auto-presses A to advance dialog, and on each breakpoint hit captures
-// (page, idx) decoded from r0 plus periodic VRAM tile-group fingerprints.
-// Output: JSON to --out (default .moneo-artifacts/capture.json).
+// text engine. Loads the ROM, attaches a custom debugger, sets a software
+// breakpoint at the per-glyph render entry (0x080062B4 Thumb), auto-presses
+// keys, and on each hit captures (page, idx) decoded from r0 plus periodic
+// VRAM tile-group fingerprints. Output: JSON.
 //
-// Built against mGBA HEAD's debugger-module API (post-0.10.x split between
-// `struct mDebugger` and per-client `struct mDebuggerModule`).
+// Built against the vendored mGBA 0.10.5 (third_party/mgba/build-mac).
 
 #define ENABLE_VFS
 
@@ -30,7 +28,14 @@
 #include <signal.h>
 #include <getopt.h>
 #include <fcntl.h>
-#include <unistd.h>
+
+extern const uint32_t DEBUGGER_ID;
+
+static void quiet_log(struct mLogger* l, int cat, enum mLogLevel level,
+                      const char* fmt, va_list args) {
+    (void)l; (void)cat; (void)level; (void)fmt; (void)args;
+}
+static struct mLogger g_quiet_logger = { .log = quiet_log };
 
 // ---- Tiny SHA-256 (public domain) ------------------------------------------
 typedef struct { uint32_t s[8]; uint64_t bits; uint8_t buf[64]; size_t blen; } SHA256;
@@ -72,24 +77,22 @@ typedef struct { uint64_t frame; int line; int pos; uint16_t tiles[4]; char fps[
 static Token g_tokens[MAX_TOKENS]; static size_t g_ntok = 0;
 static Group g_groups[MAX_GROUPS]; static size_t g_ngrp = 0;
 
-static struct mCore* g_core = NULL;
-static struct mDebugger     g_debugger;
-static struct mDebuggerModule g_module;
-static int                  g_hits = 0;
+static struct mCore*    g_core = NULL;
+static struct mDebugger g_debugger;
+static int              g_hits = 0;
 
-// ---- Module callbacks (HEAD API) -------------------------------------------
-static void mod_init(struct mDebuggerModule* m)   { (void)m; }
-static void mod_deinit(struct mDebuggerModule* m) { (void)m; }
-static void mod_paused(struct mDebuggerModule* m, int32_t timeoutMs) {
-    (void)timeoutMs; m->isPaused = false;
-}
-static void mod_update(struct mDebuggerModule* m) { (void)m; }
-static void mod_custom(struct mDebuggerModule* m) { (void)m; }
-static void mod_interrupt(struct mDebuggerModule* m) { (void)m; }
+// ---- Debugger callbacks (0.10 API) -----------------------------------------
+static void dbg_init(struct mDebugger* d)   { (void)d; }
+static void dbg_deinit(struct mDebugger* d) { (void)d; }
+static void dbg_paused(struct mDebugger* d) { d->state = DEBUGGER_RUNNING; }
+static void dbg_update(struct mDebugger* d) { (void)d; }
+static void dbg_custom(struct mDebugger* d) { (void)d; }
+static void dbg_interrupt(struct mDebugger* d) { (void)d; }
 
-static void mod_entered(struct mDebuggerModule* m,
+static void dbg_entered(struct mDebugger* d,
                         enum mDebuggerEntryReason reason,
                         struct mDebuggerEntryInfo* info) {
+    (void)info;
     g_hits++;
     if (reason == DEBUGGER_ENTER_BREAKPOINT) {
         struct ARMCore* cpu = (struct ARMCore*)g_core->cpu;
@@ -102,9 +105,7 @@ static void mod_entered(struct mDebuggerModule* m,
             g_tokens[g_ntok++] = (Token){fr, pc, page, idx, r0};
         }
     }
-    (void)info;
-    m->isPaused = false;
-    m->p->state = DEBUGGER_RUNNING;
+    d->state = DEBUGGER_RUNNING;
 }
 
 // ---- VRAM fingerprinting ---------------------------------------------------
@@ -150,9 +151,9 @@ static void capture_groups(uint64_t frame) {
             uint16_t br = sb31_tile(vram, top+1, col+1);
             if (!tl && !tr && !bl && !br) continue;
             if (g_ngrp >= MAX_GROUPS) return;
-            Group* g = &g_groups[g_ngrp++];
-            g->frame = frame; g->line = li; g->pos = n;
-            g->tiles[0]=tl; g->tiles[1]=tr; g->tiles[2]=bl; g->tiles[3]=br;
+            Group* gp = &g_groups[g_ngrp++];
+            gp->frame = frame; gp->line = li; gp->pos = n;
+            gp->tiles[0]=tl; gp->tiles[1]=tr; gp->tiles[2]=bl; gp->tiles[3]=br;
             uint8_t buf[128];
             uint16_t idxs[4] = {tl, tr, bl, br};
             for (int cb = 0; cb < 4; cb++) {
@@ -164,20 +165,36 @@ static void capture_groups(uint64_t frame) {
                         memcpy(buf + t*TILE_BYTES, vram + off, TILE_BYTES);
                     }
                 }
-                fp16(buf, g->fps[cb]);
+                fp16(buf, gp->fps[cb]);
             }
         }
     }
 }
 
-static void quiet_log(struct mLogger* l, int category, enum mLogLevel level,
-                      const char* fmt, va_list args) {
-    (void)l; (void)category; (void)level; (void)fmt; (void)args;
-}
-static struct mLogger g_log_quiet = { .log = quiet_log };
-
 enum { KEY_A=1, KEY_B=2, KEY_SELECT=4, KEY_START=8, KEY_RIGHT=16, KEY_LEFT=32,
        KEY_UP=64, KEY_DOWN=128, KEY_R=256, KEY_L=512 };
+#define MAX_PRESS_BTNS 8
+static int      g_press_n = 0;
+static uint32_t g_press[MAX_PRESS_BTNS];
+static int parse_press_seq(const char* s) {
+    if (!s || !*s) return 0;
+    char tmp[256]; strncpy(tmp, s, sizeof tmp - 1); tmp[sizeof tmp - 1] = 0;
+    int n = 0;
+    for (char* tok = strtok(tmp, ","); tok && n < MAX_PRESS_BTNS; tok = strtok(NULL, ",")) {
+        uint32_t k = 0;
+        if (!strcasecmp(tok, "A")) k = KEY_A;
+        else if (!strcasecmp(tok, "B")) k = KEY_B;
+        else if (!strcasecmp(tok, "SELECT")) k = KEY_SELECT;
+        else if (!strcasecmp(tok, "START")) k = KEY_START;
+        else if (!strcasecmp(tok, "RIGHT")) k = KEY_RIGHT;
+        else if (!strcasecmp(tok, "LEFT"))  k = KEY_LEFT;
+        else if (!strcasecmp(tok, "UP"))    k = KEY_UP;
+        else if (!strcasecmp(tok, "DOWN"))  k = KEY_DOWN;
+        if (k) g_press[n++] = k;
+    }
+    g_press_n = n;
+    return n;
+}
 static uint32_t parse_keys(const char* s) {
     if (!s || !*s) return 0;
     uint32_t k = 0;
@@ -210,17 +227,20 @@ static void write_json(const char* path, const char* rom, uint64_t frames_run, u
     }
     fprintf(f, "  ],\n  \"groups\": [\n");
     for (size_t i = 0; i < g_ngrp; i++) {
-        Group* g = &g_groups[i];
+        Group* gp = &g_groups[i];
         fprintf(f, "    {\"frame\":%llu,\"line\":%d,\"pos\":%d,"
                    "\"tiles\":[%u,%u,%u,%u],\"fps\":[\"%s\",\"%s\",\"%s\",\"%s\"]}%s\n",
-                (unsigned long long)g->frame, g->line, g->pos,
-                g->tiles[0], g->tiles[1], g->tiles[2], g->tiles[3],
-                g->fps[0], g->fps[1], g->fps[2], g->fps[3],
+                (unsigned long long)gp->frame, gp->line, gp->pos,
+                gp->tiles[0], gp->tiles[1], gp->tiles[2], gp->tiles[3],
+                gp->fps[0], gp->fps[1], gp->fps[2], gp->fps[3],
                 i + 1 == g_ngrp ? "" : ",");
     }
     fprintf(f, "  ]\n}\n");
     fclose(f);
 }
+
+// 240x160 video buffer (mGBA needs one set even when we don't render)
+static uint32_t s_videoBuffer[240 * 160];
 
 int main(int argc, char** argv) {
     const char* romPath = NULL;
@@ -228,7 +248,6 @@ int main(int argc, char** argv) {
     uint64_t maxFrames = 60ull * 60ull * 5ull;
     int snapshotEvery = 30;
     uint32_t bpPC = 0x080062B4;
-    bool quiet = true;
     uint32_t pressKeys = KEY_A;
 
     static struct option opts[] = {
@@ -249,10 +268,10 @@ int main(int argc, char** argv) {
             case 'o': outPath = optarg; break;
             case 'f': maxFrames = strtoull(optarg, NULL, 0); break;
             case 's': maxFrames = strtoull(optarg, NULL, 0) * 60; break;
-            case 'p': pressKeys = parse_keys(optarg); break;
+            case 'p': pressKeys = parse_keys(optarg); parse_press_seq(optarg); break;
             case 'n': snapshotEvery = atoi(optarg); break;
             case 'b': bpPC = (uint32_t)strtoul(optarg, NULL, 0); break;
-            case 'v': quiet = false; break;
+            case 'v': /* ignore; always verbose */ break;
             default:  return 2;
         }
     }
@@ -261,63 +280,63 @@ int main(int argc, char** argv) {
         return 2;
     }
 
-    fprintf(stderr, "[capture] start; rom=%s\n", romPath);
-    /* if (quiet) mLogSetDefaultLogger(&g_log_quiet); */
-    (void)quiet;
     signal(SIGINT, on_sigint);
+    mLogSetDefaultLogger(&g_quiet_logger);
 
     g_core = GBACoreCreate();
-    fprintf(stderr, "[capture] core created\n");
     if (!g_core) { fprintf(stderr, "GBACoreCreate failed\n"); return 1; }
-    g_core->init(g_core);
-    fprintf(stderr, "[capture] core init\n");
-    mCoreInitConfig(g_core, "mgba_capture");
-    fprintf(stderr, "[capture] core config\n");
+    if (!g_core->init(g_core)) { fprintf(stderr, "core init failed\n"); return 1; }
+    g_core->setVideoBuffer(g_core, s_videoBuffer, 240);
 
     struct VFile* vf = VFileOpen(romPath, O_RDONLY);
     if (!vf || !g_core->loadROM(g_core, vf)) {
         fprintf(stderr, "loadROM failed: %s\n", romPath); return 1;
     }
+    mCoreInitConfig(g_core, "mgba_capture");
+    fprintf(stderr, "[capture] config init\n");
     g_core->reset(g_core);
     fprintf(stderr, "[capture] core reset\n");
 
+    // Set up debugger (0.10 API: zero-init mDebugger, fill callbacks, attach)
     memset(&g_debugger, 0, sizeof g_debugger);
-    mDebuggerInit(&g_debugger);
-    fprintf(stderr, "[capture] dbg init\n");
+    g_debugger.d.id    = DEBUGGER_ID;
+    g_debugger.type    = DEBUGGER_CUSTOM;
+    g_debugger.init    = dbg_init;
+    g_debugger.deinit  = dbg_deinit;
+    g_debugger.paused  = dbg_paused;
+    g_debugger.update  = dbg_update;
+    g_debugger.entered = dbg_entered;
+    g_debugger.custom  = dbg_custom;
+    g_debugger.interrupt = dbg_interrupt;
     mDebuggerAttach(&g_debugger, g_core);
-
-    memset(&g_module, 0, sizeof g_module);
-    g_module.type      = DEBUGGER_CUSTOM;
-    g_module.init      = mod_init;
-    g_module.deinit    = mod_deinit;
-    g_module.paused    = mod_paused;
-    g_module.update    = mod_update;
-    g_module.entered   = mod_entered;
-    g_module.custom    = mod_custom;
-    g_module.interrupt = mod_interrupt;
-    mDebuggerAttachModule(&g_debugger, &g_module);
-
     g_debugger.state = DEBUGGER_RUNNING;
-    fprintf(stderr, "[capture] debugger attached, module type=%d\n", g_module.type);
+    fprintf(stderr, "[capture] debugger attached, platform=%p\n", (void*)g_debugger.platform);
 
     struct mBreakpoint bp = {
-        .address     = bpPC,
-        .segment     = -1,
-        .type        = BREAKPOINT_SOFTWARE,
-        .condition   = NULL,
-        .disabled    = false,
-        .isTemporary = false,
+        .address   = bpPC,
+        .segment   = -1,
+        .type      = BREAKPOINT_HARDWARE,
+        .condition = NULL,
     };
-    ssize_t bpId = g_debugger.platform->setBreakpoint(g_debugger.platform, &g_module, &bp);
-    fprintf(stderr, "[capture] setBreakpoint @ 0x%08x → id=%zd\n", bpPC, bpId);
+    ssize_t bpId = g_debugger.platform->setBreakpoint(g_debugger.platform, &bp);
+    fprintf(stderr, "[capture] setBreakpoint @ 0x%08x -> id=%zd\n", bpPC, bpId);
 
     fprintf(stderr, "[capture] running for up to %llu frames; presskeys=0x%x; snapshot every %d\n",
             (unsigned long long)maxFrames, pressKeys, snapshotEvery);
 
     uint64_t frame = 0;
-    uint32_t holdPattern[] = { pressKeys, pressKeys, 0, 0 };
+    // 30 frames pressed, 10 frames released, cycle through the press list
     while (!g_stop && frame < maxFrames) {
-        g_core->setKeys(g_core, holdPattern[(frame >> 3) & 3]);
+        uint32_t k = 0;
+        if (g_press_n > 0) {
+            uint64_t cyc = frame / 40;
+            uint64_t pos = frame % 40;
+            if (pos < 30) k = g_press[cyc % (uint64_t)g_press_n];
+        } else {
+            uint64_t pos = frame & 31;
+            if (pos < 16) k = pressKeys;
+        }
+        g_core->setKeys(g_core, k);
         mDebuggerRunFrame(&g_debugger);
         frame++;
         if ((int)(frame % snapshotEvery) == 0) {
