@@ -13,6 +13,7 @@
 #include <mgba/core/core.h>
 #include <mgba/core/config.h>
 #include <mgba/core/log.h>
+#include <mgba/core/serialize.h>
 #include <mgba/gba/core.h>
 #include <mgba/gba/interface.h>
 #include <mgba/debugger/debugger.h>
@@ -244,6 +245,7 @@ static uint32_t s_videoBuffer[240 * 160];
 
 int main(int argc, char** argv) {
     const char* romPath = NULL;
+    const char* statePath = NULL;
     const char* outPath = ".moneo-artifacts/capture.json";
     uint64_t maxFrames = 60ull * 60ull * 5ull;
     int snapshotEvery = 30;
@@ -258,11 +260,12 @@ int main(int argc, char** argv) {
         {"press",      required_argument, 0, 'p'},
         {"snapshot-frames", required_argument, 0, 'n'},
         {"break-pc",   required_argument, 0, 'b'},
+        {"state",      required_argument, 0, 'S'},
         {"verbose",    no_argument,       0, 'v'},
         {0,0,0,0}
     };
     int c, oi = 0;
-    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:v", opts, &oi)) != -1) {
+    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:v", opts, &oi)) != -1) {
         switch (c) {
             case 'r': romPath = optarg; break;
             case 'o': outPath = optarg; break;
@@ -271,12 +274,13 @@ int main(int argc, char** argv) {
             case 'p': pressKeys = parse_keys(optarg); parse_press_seq(optarg); break;
             case 'n': snapshotEvery = atoi(optarg); break;
             case 'b': bpPC = (uint32_t)strtoul(optarg, NULL, 0); break;
+            case 'S': statePath = optarg; break;
             case 'v': /* ignore; always verbose */ break;
             default:  return 2;
         }
     }
     if (!romPath) {
-        fprintf(stderr, "usage: %s --rom <rom.gba> [--out <out.json>] [--frames N|--seconds S]\n", argv[0]);
+        fprintf(stderr, "usage: %s --rom <rom.gba> [--out <out.json>] [--frames N|--seconds S] [--state <file.ss0>]\n", argv[0]);
         return 2;
     }
 
@@ -294,8 +298,21 @@ int main(int argc, char** argv) {
     }
     mCoreInitConfig(g_core, "mgba_capture");
     fprintf(stderr, "[capture] config init\n");
+    mCoreAutoloadSave(g_core);
     g_core->reset(g_core);
     fprintf(stderr, "[capture] core reset\n");
+
+    if (statePath) {
+        struct VFile* svf = VFileOpen(statePath, O_RDONLY);
+        if (!svf) {
+            fprintf(stderr, "[capture] cannot open state: %s\n", statePath); return 1;
+        }
+        if (!mCoreLoadStateNamed(g_core, svf, SAVESTATE_SCREENSHOT | SAVESTATE_RTC)) {
+            fprintf(stderr, "[capture] mCoreLoadStateNamed failed for %s\n", statePath); return 1;
+        }
+        svf->close(svf);
+        fprintf(stderr, "[capture] savestate loaded from %s\n", statePath);
+    }
 
     // Set up debugger (0.10 API: zero-init mDebugger, fill callbacks, attach)
     memset(&g_debugger, 0, sizeof g_debugger);

@@ -6,9 +6,15 @@ cd "$(dirname "$0")/../../.."
 ROM='Pocket Monsters - LeafGreen (Korean).gba'
 OUT='.moneo-artifacts/capture-long.json'
 FRAMES="${1:-108000}"
-PRESS="${2:-A,A,START,A,A,A,DOWN,A}"
+PRESS="${2:-A,A,A,A,B,A,A,A,A,A}"
+STATE="${3:-}"
+EXTRA=""
+if [ -n "$STATE" ]; then
+    EXTRA="--state $STATE"
+fi
 exec ./tools/moneo/mgba_capture/build/mgba_capture \
     --rom "$ROM" \
     --out "$OUT" \
     --frames "$FRAMES" \
-    --press "$PRESS"
+    --press "$PRESS" \
+    $EXTRA
