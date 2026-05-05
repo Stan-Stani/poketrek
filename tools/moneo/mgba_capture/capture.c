@@ -259,6 +259,12 @@ int main(int argc, char** argv) {
     const char* dumpFbPath = NULL;
     const char* dumpFbDir = NULL;
     int dumpFbEvery = 0;
+    const char* dumpVramDir = NULL;
+    int dumpVramEvery = 0;
+    const char* dumpIwramDir = NULL;
+    int dumpIwramEvery = 0;
+    const char* dumpEwramDir = NULL;
+    int dumpEwramEvery = 0;
 
     static struct option opts[] = {
         {"rom",        required_argument, 0, 'r'},
@@ -274,11 +280,17 @@ int main(int argc, char** argv) {
         {"dump-fb",    required_argument, 0, 'F'},
         {"dump-fb-dir", required_argument, 0, 'D'},
         {"dump-fb-every", required_argument, 0, 'E'},
+        {"dump-vram-dir", required_argument, 0, 'X'},
+        {"dump-vram-every", required_argument, 0, 'Y'},
+        {"dump-iwram-dir", required_argument, 0, 'Z'},
+        {"dump-iwram-every", required_argument, 0, 'W'},
+        {"dump-ewram-dir", required_argument, 0, 'U'},
+        {"dump-ewram-every", required_argument, 0, 'T'},
         {"verbose",    no_argument,       0, 'v'},
         {0,0,0,0}
     };
     int c, oi = 0;
-    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:D:E:v", opts, &oi)) != -1) {
+    while ((c = getopt_long(argc, argv, "r:o:f:s:p:n:b:S:I:V:F:D:E:X:Y:Z:W:U:T:v", opts, &oi)) != -1) {
         switch (c) {
             case 'r': romPath = optarg; break;
             case 'o': outPath = optarg; break;
@@ -293,6 +305,12 @@ int main(int argc, char** argv) {
             case 'F': dumpFbPath = optarg; break;
             case 'D': dumpFbDir = optarg; break;
             case 'E': dumpFbEvery = atoi(optarg); break;
+            case 'X': dumpVramDir = optarg; break;
+            case 'Y': dumpVramEvery = atoi(optarg); break;
+            case 'Z': dumpIwramDir = optarg; break;
+            case 'W': dumpIwramEvery = atoi(optarg); break;
+            case 'U': dumpEwramDir = optarg; break;
+            case 'T': dumpEwramEvery = atoi(optarg); break;
             case 'v': /* ignore; always verbose */ break;
             default:  return 2;
         }
@@ -391,6 +409,39 @@ int main(int argc, char** argv) {
             snprintf(fp, sizeof fp, "%s/fb-%06llu.bin", dumpFbDir, (unsigned long long)frame);
             FILE* df = fopen(fp, "wb");
             if (df) { fwrite(s_videoBuffer, 4, 240*160, df); fclose(df); }
+        }
+        if (dumpVramDir && dumpVramEvery > 0 && (frame % (uint64_t)dumpVramEvery) == 0) {
+            char fp[1024];
+            snprintf(fp, sizeof fp, "%s/vram-%06llu.bin", dumpVramDir, (unsigned long long)frame);
+            FILE* df = fopen(fp, "wb");
+            if (df) {
+                for (uint32_t a = 0; a < 0x18000; a++) {
+                    fputc((uint8_t)g_core->busRead8(g_core, 0x06000000 + a), df);
+                }
+                fclose(df);
+            }
+        }
+        if (dumpIwramDir && dumpIwramEvery > 0 && (frame % (uint64_t)dumpIwramEvery) == 0) {
+            char fp[1024];
+            snprintf(fp, sizeof fp, "%s/iwram-%06llu.bin", dumpIwramDir, (unsigned long long)frame);
+            FILE* df = fopen(fp, "wb");
+            if (df) {
+                for (uint32_t a = 0; a < 0x8000; a++) {
+                    fputc((uint8_t)g_core->busRead8(g_core, 0x03000000 + a), df);
+                }
+                fclose(df);
+            }
+        }
+        if (dumpEwramDir && dumpEwramEvery > 0 && (frame % (uint64_t)dumpEwramEvery) == 0) {
+            char fp[1024];
+            snprintf(fp, sizeof fp, "%s/ewram-%06llu.bin", dumpEwramDir, (unsigned long long)frame);
+            FILE* df = fopen(fp, "wb");
+            if (df) {
+                for (uint32_t a = 0; a < 0x40000; a++) {
+                    fputc((uint8_t)g_core->busRead8(g_core, 0x02000000 + a), df);
+                }
+                fclose(df);
+            }
         }
         if ((int)(frame % snapshotEvery) == 0) {
             capture_groups(frame);

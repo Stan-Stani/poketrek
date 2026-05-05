@@ -13,14 +13,31 @@ CAPTURES = [
     ('.moneo-artifacts/capture-walk.json',         '.moneo-artifacts/dumps/fb-walk'),
     ('.moneo-artifacts/capture-fresh.json',        '.moneo-artifacts/dumps/fb-fresh'),
     ('.moneo-artifacts/capture-long-aligned.json', '.moneo-artifacts/dumps/fb-seq-long'),
+    ('.moneo-artifacts/capture-shadowsave2.json',  '.moneo-artifacts/dumps/fb-shadow2'),
+    ('.moneo-artifacts/capture-shadowsave3.json',  '.moneo-artifacts/dumps/fb-shadow3'),
+    ('.moneo-artifacts/capture-shadowsave4.json',  '.moneo-artifacts/dumps/fb-shadow4'),
+    ('.moneo-artifacts/capture-shadowsave5.json',  '.moneo-artifacts/dumps/fb-shadow5'),
+    ('.moneo-artifacts/capture-shadowsave6.json',  '.moneo-artifacts/dumps/fb-shadow6'),
+    ('.moneo-artifacts/capture-shadowK.json',      '.moneo-artifacts/dumps/fb-shadowK'),
+    ('.moneo-artifacts/capture-shadow2-v2.json',   '.moneo-artifacts/dumps/fb-shadow2v2'),
+    ('.moneo-artifacts/capture-shadow3-v2.json',   '.moneo-artifacts/dumps/fb-shadow3v2'),
+    ('.moneo-artifacts/capture-shadow4-v2.json',   '.moneo-artifacts/dumps/fb-shadow4v2'),
+    ('.moneo-artifacts/capture-shadow5-v2.json',   '.moneo-artifacts/dumps/fb-shadow5v2'),
+    ('.moneo-artifacts/capture-shadow6-v2.json',   '.moneo-artifacts/dumps/fb-shadow6v2'),
+    ('.moneo-artifacts/capture-shadowK-v2.json',   '.moneo-artifacts/dumps/fb-shadowKv2'),
 ]
 
 
 def ocr_one(fb_path):
+    # Crop to dialog-box region (bottom ~3 rows of 8x8 tiles = y 104..152)
+    # to drop overworld noise that confuses Tesseract.
     img = Image.frombytes('RGBA', (240, 160), Path(fb_path).read_bytes()).convert('L')
-    big = img.resize((240*4, 160*4), Image.LANCZOS)
+    dialog = img.crop((4, 104, 236, 152))
+    big = dialog.resize((232*4, 48*4), Image.LANCZOS)
+    pad = Image.new('L', (big.width + 32, big.height + 32), 255)
+    pad.paste(big, (16, 16))
     with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tf:
-        big.save(tf.name); tmp = tf.name
+        pad.save(tf.name); tmp = tf.name
     try:
         out = subprocess.run(['tesseract', tmp, '-', '-l', 'kor', '--psm', '6'],
                              capture_output=True, text=True, timeout=20)
