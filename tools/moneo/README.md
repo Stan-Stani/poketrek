@@ -26,9 +26,16 @@ Korean→English glyph map and corpus suitable for in-app translation overlays.
 
 - `ko_charmap.json` (45 entries, prior work): 0/45 fingerprints matched any
   live VRAM tile group across 50 000 captured snapshots.
-- Per-glyph Tesseract OCR map (`glyph-map-ocr.json`, 1349 entries): disagreed
-  with aligned ground truth on 35/35 first samples. Tesseract cannot reliably
-  read 8 × 8 GBA font glyphs in isolation.
+- Per-glyph Tesseract OCR map (`glyph-map-ocr.json`, 1349 entries): produced
+  by an early script that read raw ROM bytes (without blit-table expansion)
+  AND used incorrect page strides. Replaced by `path_c_ocr.py`.
+- Per-glyph Tesseract OCR map v2 (`path_c_ocr.py`, 1472 entries with verified
+  rendering): 0/81 agreement with ground-truth verified entries. Tesseract
+  cannot reliably OCR 16x16 Korean glyphs in isolation even when the
+  rendered bitmap visually matches the correct character. Path C is
+  fundamentally limited by per-glyph OCR accuracy. Sheet
+  (`/tmp/sheet_p1.png` style) is useful for HUMAN visual labeling but not
+  for automated OCR.
 
 **Current `glyph-map.json`**: 88 entries, all from union-of-captures
 ground-truth alignment. This is small but verified — every entry is backed by
@@ -96,19 +103,42 @@ yielding only ~115 unique `(page, idx)` slots. To grow the map:
   iterations; kept for reference.
 - `ocr_all_glyphs.py` — per-glyph Tesseract OCR (verified unreliable; output
   in `glyph-map-ocr.json` for comparison only).
+- `path_c_ocr.py` — render every (page, idx) glyph from blit-table-expanded
+  pixel data and OCR with Tesseract. Result: 1472 entries, 0/81 agree with
+  verified — **do not use as data source**, but the rendering function
+  (`render_glyph(p, i)`) is correct and useful for visual review or future
+  manual labeling. Output: `.moneo-artifacts/glyph-map-pathC2.json`.
 - `build_corpus.py` — turns `glyph-map.json` + ROM-extracted records into
   `corpus.ko.json`.
 - `verify_blit*.py`, `blit_fp*.py`, `inspect_*.py`, `disasm_blit.py` —
   blit-table decoding and verification harness.
 - `glyph-map.json` — **canonical**, 88 entries, ground-truth verified.
 - `glyph-map-old.json` — previous bogus per-glyph-OCR map (kept for diff).
-- `glyph-map-ocr.json` — raw per-glyph OCR output (do not use).
 
 ## Verified facts about the engine
 
 - Page-byte mailbox at IWRAM `0x03007E3F`.
 - Prebyte handler at `0x08384800` (Thumb), main render at `0x080062B4`.
-- Font pointer literals at `0x0838492C`: F1=`0x08780000` … F6=`0x08794000`.
+- Font pointer table at `0x0838492C`, 7 entries:
+  - `[0]` = `0x081DEEE8` — non-Korean base font (numerals/ASCII/symbols).
+  - `[1..6]` = Korean pages F1..F6 at `0x08780000`, `0x08784000`,
+    `0x08788000`, `0x0878C000`, `0x08790000`, `0x08794000`. Stride
+    `0x4000` = 16 KB per page = 256 glyphs.
+- **Page byte (`0xF1..0xF6`) `p` selects font pointer index `p`** in the
+  table, i.e. token `0xF1, idx` resolves to font pointer `[1]` = page F1
+  base `0x08780000`.
+- Glyph layout per page: 8 glyphs per horizontal stripe of 512 ROM bytes.
+  TL/TR sub-tiles in the first 256 bytes (8×32), BL/BR in the next 256.
+  For glyph index `i`: stripe `= i // 8`, col `= i % 8`,
+  base `= page_base + stripe*512 + col*32`,
+  TL=`base+0`, TR=`base+16`, BL=`base+256`, BR=`base+272`.
+  Each ROM sub-tile is 16 bytes 2bpp; runtime expands via blit tables to
+  32 bytes 4bpp.
+- **Blit tables**: `table1` at ROM `0x081CDF1C` (256 bytes, ROM byte →
+  pattern_idx 0..80). `table2` at IWRAM `0x03000A40` (256 halfwords,
+  pattern_idx → packed 16-bit 4bpp pixels). Pixel value `1` is the
+  runtime background, `2` is glyph dark, `3` is glyph mid; value `0` is
+  rare/unused.
 - Text strings live at `0x081A....` (compressed ROM blocks) and
   `0x083D....` (game text bank).
 - Each text byte 0xF1..0xF6 = page select; following byte = glyph index 0..255.
