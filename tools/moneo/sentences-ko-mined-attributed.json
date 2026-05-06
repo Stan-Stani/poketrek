@@ -3,7 +3,7 @@
   "sourceTag": "rom-mine-v2",
   "notes": [
     "One ROM sentence per mined lemma; targetForm pins the surface form.",
-    "Sentence attribution via vocab map; 86 attributed, 79 unattributed."
+    "Sentence attribution via vocab map; 146 attributed, 19 unattributed."
   ],
   "entries": [
     {
@@ -62,23 +62,24 @@
         "celadon_city",
         "route_9",
         "route_22",
-        "outcast_island",
-        "two_island",
-        "trainer_tower",
-        "seven_island",
-        "five_island",
-        "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "canyon_entrance",
-        "water_path",
-        "kindle_road",
-        "resort_gorgeous",
-        "green_path",
-        "memorial_pillar",
-        "six_island",
+        "rom_mined",
         "water_labyrinth",
-        "three_island"
+        "seven_island",
+        "two_island",
+        "six_island",
+        "green_path",
+        "resort_gorgeous",
+        "five_isle_meadow",
+        "memorial_pillar",
+        "outcast_island",
+        "water_path",
+        "four_island",
+        "five_island",
+        "canyon_entrance",
+        "kindle_road",
+        "three_island",
+        "trainer_tower",
+        "ruin_valley"
       ]
     },
     {
@@ -97,7 +98,11 @@
       "gloss": "(ROM example, rec144)",
       "targetForm": "회복",
       "areaId": "rom_mined",
-      "source": "rom-rec144"
+      "source": "rom-rec144",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:되다",
@@ -127,22 +132,23 @@
         "cinnabar_island",
         "celadon_city",
         "route_9",
+        "rom_mined",
+        "water_labyrinth",
         "two_island",
-        "outcast_island",
-        "trainer_tower",
-        "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "three_island",
-        "canyon_entrance",
-        "water_path",
-        "kindle_road",
         "resort_gorgeous",
         "green_path",
-        "one_island",
+        "five_isle_meadow",
         "memorial_pillar",
-        "treasure_beach",
-        "water_labyrinth"
+        "outcast_island",
+        "one_island",
+        "water_path",
+        "four_island",
+        "canyon_entrance",
+        "kindle_road",
+        "three_island",
+        "trainer_tower",
+        "ruin_valley",
+        "treasure_beach"
       ]
     },
     {
@@ -164,15 +170,16 @@
         "route_15",
         "celadon_city",
         "route_9",
-        "kindle_road",
+        "rom_mined",
         "water_path",
-        "two_island",
-        "outcast_island",
         "four_island",
+        "two_island",
+        "kindle_road",
+        "three_island",
         "five_isle_meadow",
-        "ruin_valley",
         "memorial_pillar",
-        "three_island"
+        "ruin_valley",
+        "outcast_island"
       ]
     },
     {
@@ -186,7 +193,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -196,7 +204,11 @@
       "gloss": "(ROM example, rec225)",
       "targetForm": "지닌",
       "areaId": "rom_mined",
-      "source": "rom-rec225"
+      "source": "rom-rec225",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:갈다",
@@ -205,7 +217,11 @@
       "gloss": "(ROM example, rec246)",
       "targetForm": "갈",
       "areaId": "rom_mined",
-      "source": "rom-rec246"
+      "source": "rom-rec246",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:약재",
@@ -214,7 +230,11 @@
       "gloss": "(ROM example, rec246)",
       "targetForm": "약재",
       "areaId": "rom_mined",
-      "source": "rom-rec246"
+      "source": "rom-rec246",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:으깨다",
@@ -223,7 +243,11 @@
       "gloss": "(ROM example, rec246)",
       "targetForm": "으깨",
       "areaId": "rom_mined",
-      "source": "rom-rec246"
+      "source": "rom-rec246",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:갚다",
@@ -262,13 +286,14 @@
         "route_21",
         "celadon_city",
         "route_9",
+        "rom_mined",
+        "water_labyrinth",
         "two_island",
+        "six_island",
+        "resort_gorgeous",
+        "one_island",
         "canyon_entrance",
         "kindle_road",
-        "resort_gorgeous",
-        "water_labyrinth",
-        "one_island",
-        "six_island",
         "treasure_beach"
       ]
     },
@@ -302,17 +327,18 @@
         "route_19",
         "route_20",
         "route_21",
-        "kindle_road",
+        "rom_mined",
+        "water_labyrinth",
         "water_path",
         "two_island",
-        "outcast_island",
+        "kindle_road",
+        "three_island",
         "resort_gorgeous",
         "green_path",
-        "one_island",
-        "three_island",
         "memorial_pillar",
+        "outcast_island",
         "treasure_beach",
-        "water_labyrinth"
+        "one_island"
       ]
     },
     {
@@ -353,17 +379,18 @@
         "route_22",
         "route_23",
         "indigo_plateau",
+        "rom_mined",
+        "water_labyrinth",
         "two_island",
-        "trainer_tower",
-        "four_island",
+        "resort_gorgeous",
         "five_isle_meadow",
-        "three_island",
+        "memorial_pillar",
+        "one_island",
+        "four_island",
         "canyon_entrance",
         "kindle_road",
-        "resort_gorgeous",
-        "water_labyrinth",
-        "one_island",
-        "memorial_pillar",
+        "three_island",
+        "trainer_tower",
         "treasure_beach"
       ]
     },
@@ -407,24 +434,25 @@
         "route_21",
         "celadon_city",
         "route_9",
-        "outcast_island",
-        "two_island",
-        "trainer_tower",
-        "seven_island",
-        "five_island",
-        "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "three_island",
-        "canyon_entrance",
-        "water_path",
-        "kindle_road",
-        "resort_gorgeous",
-        "green_path",
+        "rom_mined",
         "water_labyrinth",
-        "one_island",
-        "memorial_pillar",
+        "seven_island",
+        "two_island",
         "six_island",
+        "green_path",
+        "resort_gorgeous",
+        "five_isle_meadow",
+        "memorial_pillar",
+        "outcast_island",
+        "one_island",
+        "water_path",
+        "four_island",
+        "five_island",
+        "canyon_entrance",
+        "kindle_road",
+        "three_island",
+        "trainer_tower",
+        "ruin_valley",
         "treasure_beach"
       ]
     },
@@ -449,7 +477,8 @@
         "cinnabar_island",
         "route_9",
         "route_22",
-        "route_23"
+        "route_23",
+        "rom_mined"
       ]
     },
     {
@@ -459,7 +488,11 @@
       "gloss": "(ROM example, rec9820)",
       "targetForm": "달달",
       "areaId": "rom_mined",
-      "source": "rom-rec9820"
+      "source": "rom-rec9820",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:울다",
@@ -495,20 +528,21 @@
         "celadon_city",
         "route_9",
         "indigo_plateau",
-        "two_island",
-        "outcast_island",
-        "seven_island",
-        "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "water_path",
-        "kindle_road",
-        "resort_gorgeous",
-        "green_path",
+        "rom_mined",
         "water_labyrinth",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "resort_gorgeous",
+        "five_isle_meadow",
+        "outcast_island",
         "one_island",
-        "treasure_beach",
-        "three_island"
+        "water_path",
+        "four_island",
+        "kindle_road",
+        "three_island",
+        "ruin_valley",
+        "treasure_beach"
       ]
     },
     {
@@ -537,7 +571,8 @@
         "route_8",
         "route_10",
         "route_12",
-        "route_13"
+        "route_13",
+        "rom_mined"
       ]
     },
     {
@@ -553,7 +588,8 @@
         "pallet_town",
         "viridian_city",
         "pewter_city",
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -604,20 +640,21 @@
         "route_21",
         "cinnabar_island",
         "route_9",
+        "rom_mined",
+        "water_labyrinth",
         "two_island",
-        "outcast_island",
-        "trainer_tower",
-        "five_isle_meadow",
-        "ruin_valley",
-        "canyon_entrance",
-        "kindle_road",
-        "water_path",
         "resort_gorgeous",
         "green_path",
-        "one_island",
+        "five_isle_meadow",
         "memorial_pillar",
-        "treasure_beach",
-        "water_labyrinth"
+        "outcast_island",
+        "one_island",
+        "water_path",
+        "canyon_entrance",
+        "kindle_road",
+        "trainer_tower",
+        "ruin_valley",
+        "treasure_beach"
       ]
     },
     {
@@ -650,14 +687,15 @@
         "route_22",
         "route_23",
         "indigo_plateau",
-        "kindle_road",
+        "rom_mined",
+        "water_labyrinth",
         "water_path",
-        "outcast_island",
+        "kindle_road",
         "resort_gorgeous",
         "green_path",
-        "water_labyrinth",
-        "treasure_beach",
-        "memorial_pillar"
+        "memorial_pillar",
+        "outcast_island",
+        "treasure_beach"
       ]
     },
     {
@@ -667,7 +705,11 @@
       "gloss": "(ROM example, rec219)",
       "targetForm": "편지지",
       "areaId": "rom_mined",
-      "source": "rom-rec219"
+      "source": "rom-rec219",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:푸다",
@@ -685,7 +727,11 @@
       "gloss": "(ROM example, rec219)",
       "targetForm": "프린트",
       "areaId": "rom_mined",
-      "source": "rom-rec219"
+      "source": "rom-rec219",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:마치",
@@ -707,7 +753,8 @@
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
-        "viridian_city"
+        "viridian_city",
+        "rom_mined"
       ]
     },
     {
@@ -747,23 +794,24 @@
         "route_21",
         "celadon_city",
         "route_9",
-        "two_island",
-        "outcast_island",
-        "trainer_tower",
+        "rom_mined",
+        "water_labyrinth",
         "seven_island",
-        "five_island",
-        "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "three_island",
-        "canyon_entrance",
-        "kindle_road",
-        "water_path",
+        "two_island",
+        "six_island",
         "resort_gorgeous",
         "green_path",
-        "water_labyrinth",
-        "six_island",
+        "five_isle_meadow",
         "memorial_pillar",
+        "outcast_island",
+        "water_path",
+        "four_island",
+        "five_island",
+        "canyon_entrance",
+        "kindle_road",
+        "three_island",
+        "trainer_tower",
+        "ruin_valley",
         "treasure_beach"
       ]
     },
@@ -782,6 +830,7 @@
         "route_4",
         "lavender_town",
         "fuchsia_city",
+        "rom_mined",
         "seven_island"
       ]
     },
@@ -820,17 +869,18 @@
         "celadon_city",
         "route_9",
         "route_22",
-        "outcast_island",
-        "two_island",
-        "five_isle_meadow",
-        "four_island",
-        "ruin_valley",
-        "kindle_road",
-        "water_path",
-        "green_path",
-        "memorial_pillar",
+        "rom_mined",
         "water_labyrinth",
-        "three_island"
+        "two_island",
+        "green_path",
+        "five_isle_meadow",
+        "memorial_pillar",
+        "outcast_island",
+        "water_path",
+        "four_island",
+        "kindle_road",
+        "three_island",
+        "ruin_valley"
       ]
     },
     {
@@ -865,16 +915,17 @@
         "route_21",
         "celadon_city",
         "route_9",
+        "rom_mined",
         "two_island",
-        "trainer_tower",
+        "resort_gorgeous",
         "five_isle_meadow",
         "four_island",
-        "ruin_valley",
         "canyon_entrance",
         "kindle_road",
-        "resort_gorgeous",
-        "treasure_beach",
-        "three_island"
+        "three_island",
+        "trainer_tower",
+        "ruin_valley",
+        "treasure_beach"
       ]
     },
     {
@@ -926,22 +977,23 @@
         "celadon_city",
         "route_9",
         "indigo_plateau",
-        "two_island",
-        "outcast_island",
-        "trainer_tower",
-        "seven_island",
-        "five_island",
-        "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "kindle_road",
-        "canyon_entrance",
-        "water_path",
-        "resort_gorgeous",
+        "rom_mined",
         "water_labyrinth",
-        "one_island",
+        "seven_island",
+        "two_island",
         "six_island",
+        "resort_gorgeous",
+        "five_isle_meadow",
         "memorial_pillar",
+        "outcast_island",
+        "one_island",
+        "water_path",
+        "four_island",
+        "five_island",
+        "canyon_entrance",
+        "kindle_road",
+        "trainer_tower",
+        "ruin_valley",
         "treasure_beach"
       ]
     },
@@ -964,7 +1016,8 @@
         "route_12",
         "route_13",
         "fuchsia_city",
-        "celadon_city"
+        "celadon_city",
+        "rom_mined"
       ]
     },
     {
@@ -999,6 +1052,7 @@
         "route_11",
         "cinnabar_island",
         "indigo_plateau",
+        "rom_mined",
         "four_island",
         "three_island"
       ]
@@ -1010,7 +1064,11 @@
       "gloss": "(ROM example, rec4855)",
       "targetForm": "키트",
       "areaId": "rom_mined",
-      "source": "rom-rec4855"
+      "source": "rom-rec4855",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:펴다",
@@ -1022,7 +1080,8 @@
       "source": "rom-rec8552",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
-        "viridian_city"
+        "viridian_city",
+        "rom_mined"
       ]
     },
     {
@@ -1032,7 +1091,11 @@
       "gloss": "(ROM example, rec171)",
       "targetForm": "혼란",
       "areaId": "rom_mined",
-      "source": "rom-rec171"
+      "source": "rom-rec171",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:꼬리",
@@ -1046,7 +1109,8 @@
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -1059,7 +1123,8 @@
       "source": "rom-rec4388",
       "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1099,21 +1164,22 @@
         "route_21",
         "celadon_city",
         "route_9",
-        "two_island",
-        "outcast_island",
-        "trainer_tower",
+        "rom_mined",
+        "water_labyrinth",
         "seven_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "canyon_entrance",
-        "kindle_road",
-        "water_path",
+        "two_island",
         "resort_gorgeous",
         "green_path",
+        "five_isle_meadow",
         "memorial_pillar",
-        "treasure_beach",
-        "water_labyrinth",
-        "three_island"
+        "outcast_island",
+        "water_path",
+        "canyon_entrance",
+        "kindle_road",
+        "three_island",
+        "trainer_tower",
+        "ruin_valley",
+        "treasure_beach"
       ]
     },
     {
@@ -1123,7 +1189,11 @@
       "gloss": "(ROM example, rec225)",
       "targetForm": "모습",
       "areaId": "rom_mined",
-      "source": "rom-rec225"
+      "source": "rom-rec225",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:밀다",
@@ -1140,15 +1210,16 @@
         "pewter_city",
         "lavender_town",
         "vermilion_city",
-        "four_island",
-        "canyon_entrance",
-        "kindle_road",
-        "memorial_pillar",
+        "rom_mined",
+        "water_labyrinth",
         "trainer_tower",
+        "four_island",
+        "memorial_pillar",
+        "canyon_entrance",
         "outcast_island",
+        "kindle_road",
         "resort_gorgeous",
-        "treasure_beach",
-        "water_labyrinth"
+        "treasure_beach"
       ]
     },
     {
@@ -1162,7 +1233,8 @@
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1176,7 +1248,8 @@
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
-        "viridian_city"
+        "viridian_city",
+        "rom_mined"
       ]
     },
     {
@@ -1189,7 +1262,8 @@
       "source": "rom-rec3674",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
-        "viridian_city"
+        "viridian_city",
+        "rom_mined"
       ]
     },
     {
@@ -1213,15 +1287,16 @@
         "route_15",
         "celadon_city",
         "route_9",
-        "kindle_road",
+        "rom_mined",
         "water_path",
-        "two_island",
-        "outcast_island",
         "four_island",
+        "two_island",
+        "kindle_road",
+        "three_island",
         "five_isle_meadow",
-        "ruin_valley",
         "memorial_pillar",
-        "three_island"
+        "ruin_valley",
+        "outcast_island"
       ]
     },
     {
@@ -1240,7 +1315,11 @@
       "gloss": "(ROM example, rec193)",
       "targetForm": "교체",
       "areaId": "rom_mined",
-      "source": "rom-rec193"
+      "source": "rom-rec193",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:그림",
@@ -1249,7 +1328,11 @@
       "gloss": "(ROM example, rec220)",
       "targetForm": "그림",
       "areaId": "rom_mined",
-      "source": "rom-rec220"
+      "source": "rom-rec220",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:데다",
@@ -1267,7 +1350,11 @@
       "gloss": "(ROM example, rec9563)",
       "targetForm": "들통",
       "areaId": "rom_mined",
-      "source": "rom-rec9563"
+      "source": "rom-rec9563",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:말다",
@@ -1282,7 +1369,8 @@
         "pewter_city",
         "cerulean_city",
         "route_12",
-        "route_13"
+        "route_13",
+        "rom_mined"
       ]
     },
     {
@@ -1292,7 +1380,11 @@
       "gloss": "(ROM example, rec7570)",
       "targetForm": "맸",
       "areaId": "rom_mined",
-      "source": "rom-rec7570"
+      "source": "rom-rec7570",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:매우",
@@ -1301,7 +1393,11 @@
       "gloss": "(ROM example, rec161)",
       "targetForm": "매우",
       "areaId": "rom_mined",
-      "source": "rom-rec161"
+      "source": "rom-rec161",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:먹다",
@@ -1314,7 +1410,8 @@
       "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
         "fuchsia_city",
-        "celadon_city"
+        "celadon_city",
+        "rom_mined"
       ]
     },
     {
@@ -1339,6 +1436,7 @@
         "cinnabar_island",
         "route_22",
         "indigo_plateau",
+        "rom_mined",
         "kindle_road",
         "canyon_entrance"
       ]
@@ -1354,7 +1452,8 @@
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -1373,7 +1472,11 @@
       "gloss": "(ROM example, rec160)",
       "targetForm": "영양",
       "areaId": "rom_mined",
-      "source": "rom-rec160"
+      "source": "rom-rec160",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:공격",
@@ -1382,7 +1485,11 @@
       "gloss": "(ROM example, rec4430)",
       "targetForm": "공격",
       "areaId": "rom_mined",
-      "source": "rom-rec4430"
+      "source": "rom-rec4430",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:기초",
@@ -1391,7 +1498,11 @@
       "gloss": "(ROM example, rec184)",
       "targetForm": "기초",
       "areaId": "rom_mined",
-      "source": "rom-rec184"
+      "source": "rom-rec184",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:노트",
@@ -1404,7 +1515,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -1414,7 +1526,11 @@
       "gloss": "(ROM example, rec194)",
       "targetForm": "높이",
       "areaId": "rom_mined",
-      "source": "rom-rec194"
+      "source": "rom-rec194",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:능력",
@@ -1423,7 +1539,11 @@
       "gloss": "(ROM example, rec4460)",
       "targetForm": "능력",
       "areaId": "rom_mined",
-      "source": "rom-rec4460"
+      "source": "rom-rec4460",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:도감",
@@ -1437,7 +1557,8 @@
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1455,10 +1576,11 @@
         "pewter_city",
         "route_4",
         "fuchsia_city",
+        "rom_mined",
         "four_island",
-        "six_island",
         "seven_island",
-        "five_island"
+        "five_island",
+        "six_island"
       ]
     },
     {
@@ -1471,7 +1593,8 @@
       "source": "rom-rec4465",
       "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1481,7 +1604,11 @@
       "gloss": "(ROM example, rec3562)",
       "targetForm": "베이",
       "areaId": "rom_mined",
-      "source": "rom-rec3562"
+      "source": "rom-rec3562",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:보이다",
@@ -1495,7 +1622,8 @@
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1510,9 +1638,10 @@
       "areasReferenced": [
         "route_1",
         "viridian_city",
+        "rom_mined",
         "four_island",
-        "five_island",
         "seven_island",
+        "five_island",
         "six_island"
       ]
     },
@@ -1529,7 +1658,8 @@
         "pallet_town",
         "viridian_city",
         "pewter_city",
-        "route_3"
+        "route_3",
+        "rom_mined"
       ]
     },
     {
@@ -1542,7 +1672,8 @@
       "source": "rom-rec205",
       "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1557,14 +1688,15 @@
       "areasReferenced": [
         "route_1",
         "pewter_city",
+        "rom_mined",
+        "water_labyrinth",
         "four_island",
-        "five_isle_meadow",
+        "seven_island",
+        "five_island",
         "six_island",
         "resort_gorgeous",
-        "seven_island",
-        "water_labyrinth",
         "treasure_beach",
-        "five_island"
+        "five_isle_meadow"
       ]
     },
     {
@@ -1593,19 +1725,20 @@
         "route_11",
         "vermilion_city",
         "route_12",
-        "kindle_road",
-        "two_island",
-        "resort_gorgeous",
+        "rom_mined",
+        "water_labyrinth",
+        "four_island",
         "seven_island",
         "five_island",
-        "four_island",
-        "one_island",
+        "two_island",
+        "six_island",
+        "kindle_road",
+        "three_island",
+        "resort_gorgeous",
         "five_isle_meadow",
         "memorial_pillar",
-        "six_island",
         "treasure_beach",
-        "water_labyrinth",
-        "three_island"
+        "one_island"
       ]
     },
     {
@@ -1615,7 +1748,11 @@
       "gloss": "(ROM example, rec184)",
       "targetForm": "포인트",
       "areaId": "rom_mined",
-      "source": "rom-rec184"
+      "source": "rom-rec184",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:기다",
@@ -1636,7 +1773,8 @@
       "source": "rom-rec3711",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "pallet_town",
+        "rom_mined"
       ]
     },
     {
@@ -1670,11 +1808,12 @@
         "route_20",
         "route_9",
         "indigo_plateau",
-        "canyon_entrance",
+        "rom_mined",
         "two_island",
+        "canyon_entrance",
+        "three_island",
         "trainer_tower",
-        "one_island",
-        "three_island"
+        "one_island"
       ]
     },
     {
@@ -1691,7 +1830,8 @@
         "route_17",
         "route_18",
         "route_19",
-        "route_20"
+        "route_20",
+        "rom_mined"
       ]
     },
     {
@@ -1705,7 +1845,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -1725,15 +1866,16 @@
         "route_15",
         "celadon_city",
         "route_9",
-        "kindle_road",
+        "rom_mined",
         "water_path",
-        "two_island",
-        "outcast_island",
         "four_island",
+        "two_island",
+        "kindle_road",
+        "three_island",
         "five_isle_meadow",
-        "ruin_valley",
         "memorial_pillar",
-        "three_island"
+        "ruin_valley",
+        "outcast_island"
       ]
     },
     {
@@ -1749,7 +1891,8 @@
         "pallet_town",
         "viridian_city",
         "pewter_city",
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1762,7 +1905,8 @@
       "source": "rom-rec4430",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "pallet_town",
+        "rom_mined"
       ]
     },
     {
@@ -1772,7 +1916,11 @@
       "gloss": "(ROM example, rec9951)",
       "targetForm": "솔솔",
       "areaId": "rom_mined",
-      "source": "rom-rec9951"
+      "source": "rom-rec9951",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:수면",
@@ -1784,7 +1932,8 @@
       "source": "rom-rec148",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -1803,10 +1952,11 @@
         "route_2",
         "pewter_city",
         "route_3",
+        "rom_mined",
         "four_island",
-        "six_island",
         "seven_island",
-        "five_island"
+        "five_island",
+        "six_island"
       ]
     },
     {
@@ -1829,15 +1979,16 @@
         "route_15",
         "celadon_city",
         "route_9",
-        "kindle_road",
+        "rom_mined",
         "water_path",
-        "two_island",
-        "outcast_island",
         "four_island",
+        "two_island",
+        "kindle_road",
+        "three_island",
         "five_isle_meadow",
-        "ruin_valley",
         "memorial_pillar",
-        "three_island"
+        "ruin_valley",
+        "outcast_island"
       ]
     },
     {
@@ -1850,7 +2001,8 @@
       "source": "rom-rec8893",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "pallet_town",
+        "rom_mined"
       ]
     },
     {
@@ -1860,7 +2012,11 @@
       "gloss": "(ROM example, rec4386)",
       "targetForm": "아주",
       "areaId": "rom_mined",
-      "source": "rom-rec4386"
+      "source": "rom-rec4386",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:양복",
@@ -1869,7 +2025,11 @@
       "gloss": "(ROM example, rec7053)",
       "targetForm": "양복",
       "areaId": "rom_mined",
-      "source": "rom-rec7053"
+      "source": "rom-rec7053",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:오르다",
@@ -1881,7 +2041,8 @@
       "source": "rom-rec266",
       "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
-        "cerulean_city"
+        "cerulean_city",
+        "rom_mined"
       ]
     },
     {
@@ -1894,7 +2055,8 @@
       "source": "rom-rec4360",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "pallet_town",
+        "rom_mined"
       ]
     },
     {
@@ -1904,7 +2066,11 @@
       "gloss": "(ROM example, rec205)",
       "targetForm": "진화",
       "areaId": "rom_mined",
-      "source": "rom-rec205"
+      "source": "rom-rec205",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:특공",
@@ -1913,7 +2079,11 @@
       "gloss": "(ROM example, rec198)",
       "targetForm": "특공",
       "areaId": "rom_mined",
-      "source": "rom-rec198"
+      "source": "rom-rec198",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:특정",
@@ -1922,7 +2092,11 @@
       "gloss": "(ROM example, rec205)",
       "targetForm": "특정",
       "areaId": "rom_mined",
-      "source": "rom-rec205"
+      "source": "rom-rec205",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:파다",
@@ -1940,7 +2114,11 @@
       "gloss": "(ROM example, rec161)",
       "targetForm": "가루약",
       "areaId": "rom_mined",
-      "source": "rom-rec161"
+      "source": "rom-rec161",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:감전",
@@ -1949,7 +2127,11 @@
       "gloss": "(ROM example, rec4428)",
       "targetForm": "감전",
       "areaId": "rom_mined",
-      "source": "rom-rec4428"
+      "source": "rom-rec4428",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:개다",
@@ -1976,12 +2158,13 @@
         "route_16",
         "celadon_city",
         "route_9",
+        "rom_mined",
         "two_island",
-        "four_island",
         "five_isle_meadow",
-        "ruin_valley",
+        "four_island",
         "kindle_road",
-        "three_island"
+        "three_island",
+        "ruin_valley"
       ]
     },
     {
@@ -1991,7 +2174,11 @@
       "gloss": "(ROM example, rec4420)",
       "targetForm": "거의",
       "areaId": "rom_mined",
-      "source": "rom-rec4420"
+      "source": "rom-rec4420",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:걸다",
@@ -2009,6 +2196,7 @@
         "fuchsia_city",
         "route_20",
         "route_22",
+        "rom_mined",
         "seven_island"
       ]
     },
@@ -2030,15 +2218,16 @@
         "route_15",
         "celadon_city",
         "route_9",
-        "kindle_road",
+        "rom_mined",
         "water_path",
-        "two_island",
-        "outcast_island",
         "four_island",
+        "two_island",
+        "kindle_road",
+        "three_island",
         "five_isle_meadow",
-        "ruin_valley",
         "memorial_pillar",
-        "three_island"
+        "ruin_valley",
+        "outcast_island"
       ]
     },
     {
@@ -2052,7 +2241,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -2062,7 +2252,11 @@
       "gloss": "(ROM example, rec193)",
       "targetForm": "급소",
       "areaId": "rom_mined",
-      "source": "rom-rec193"
+      "source": "rom-rec193",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:기술",
@@ -2078,6 +2272,7 @@
         "pewter_city",
         "route_4",
         "fuchsia_city",
+        "rom_mined",
         "seven_island"
       ]
     },
@@ -2106,16 +2301,17 @@
         "route_21",
         "celadon_city",
         "route_9",
-        "kindle_road",
+        "rom_mined",
         "water_path",
-        "two_island",
-        "outcast_island",
-        "resort_gorgeous",
         "four_island",
-        "five_isle_meadow",
-        "ruin_valley",
+        "two_island",
+        "kindle_road",
         "three_island",
+        "resort_gorgeous",
+        "five_isle_meadow",
         "memorial_pillar",
+        "ruin_valley",
+        "outcast_island",
         "treasure_beach"
       ]
     },
@@ -2136,13 +2332,14 @@
         "route_10",
         "route_11",
         "route_9",
-        "four_island",
-        "canyon_entrance",
-        "water_path",
-        "ruin_valley",
-        "memorial_pillar",
-        "outcast_island",
+        "rom_mined",
         "trainer_tower",
+        "water_path",
+        "four_island",
+        "memorial_pillar",
+        "ruin_valley",
+        "canyon_entrance",
+        "outcast_island",
         "green_path"
       ]
     },
@@ -2153,7 +2350,11 @@
       "gloss": "(ROM example, rec1042)",
       "targetForm": "낳",
       "areaId": "rom_mined",
-      "source": "rom-rec1042"
+      "source": "rom-rec1042",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:넓다",
@@ -2191,19 +2392,20 @@
         "route_21",
         "celadon_city",
         "route_9",
-        "outcast_island",
-        "trainer_tower",
+        "rom_mined",
+        "water_labyrinth",
         "seven_island",
-        "five_isle_meadow",
-        "ruin_valley",
-        "canyon_entrance",
-        "kindle_road",
-        "water_path",
         "resort_gorgeous",
         "green_path",
+        "five_isle_meadow",
         "memorial_pillar",
-        "treasure_beach",
-        "water_labyrinth"
+        "outcast_island",
+        "water_path",
+        "canyon_entrance",
+        "kindle_road",
+        "trainer_tower",
+        "ruin_valley",
+        "treasure_beach"
       ]
     },
     {
@@ -2216,7 +2418,8 @@
       "source": "rom-rec519",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "pallet_town",
+        "rom_mined"
       ]
     },
     {
@@ -2226,7 +2429,11 @@
       "gloss": "(ROM example, rec4391)",
       "targetForm": "도망",
       "areaId": "rom_mined",
-      "source": "rom-rec4391"
+      "source": "rom-rec4391",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:돌진",
@@ -2235,7 +2442,11 @@
       "gloss": "(ROM example, rec4456)",
       "targetForm": "돌진",
       "areaId": "rom_mined",
-      "source": "rom-rec4456"
+      "source": "rom-rec4456",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:드세다",
@@ -2244,7 +2455,11 @@
       "gloss": "(ROM example, rec9317)",
       "targetForm": "드세",
       "areaId": "rom_mined",
-      "source": "rom-rec9317"
+      "source": "rom-rec9317",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:들치다",
@@ -2253,7 +2468,11 @@
       "gloss": "(ROM example, rec1673)",
       "targetForm": "들치",
       "areaId": "rom_mined",
-      "source": "rom-rec1673"
+      "source": "rom-rec1673",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:디밀다",
@@ -2262,7 +2481,11 @@
       "gloss": "(ROM example, rec9594)",
       "targetForm": "디미",
       "areaId": "rom_mined",
-      "source": "rom-rec9594"
+      "source": "rom-rec9594",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:떨다",
@@ -2275,7 +2498,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -2285,7 +2509,11 @@
       "gloss": "(ROM example, rec4428)",
       "targetForm": "만졌",
       "areaId": "rom_mined",
-      "source": "rom-rec4428"
+      "source": "rom-rec4428",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:맡기다",
@@ -2300,7 +2528,8 @@
         "pallet_town",
         "viridian_city",
         "pewter_city",
-        "route_3"
+        "route_3",
+        "rom_mined"
       ]
     },
     {
@@ -2315,8 +2544,9 @@
       "areasReferenced": [
         "saffron_city",
         "route_22",
-        "one_island",
-        "two_island"
+        "rom_mined",
+        "two_island",
+        "one_island"
       ]
     },
     {
@@ -2330,7 +2560,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -2347,7 +2578,8 @@
         "route_25",
         "route_6",
         "route_11",
-        "route_9"
+        "route_9",
+        "rom_mined"
       ]
     },
     {
@@ -2361,7 +2593,8 @@
       "firstAreaEncountered": "vermilion_city",
       "areasReferenced": [
         "vermilion_city",
-        "celadon_city"
+        "celadon_city",
+        "rom_mined"
       ]
     },
     {
@@ -2386,8 +2619,9 @@
         "fuchsia_city",
         "route_22",
         "route_23",
-        "one_island",
-        "two_island"
+        "rom_mined",
+        "two_island",
+        "one_island"
       ]
     },
     {
@@ -2417,17 +2651,18 @@
         "route_4",
         "route_20",
         "route_21",
-        "canyon_entrance",
+        "rom_mined",
         "water_path",
-        "kindle_road",
-        "outcast_island",
-        "trainer_tower",
-        "green_path",
+        "four_island",
         "seven_island",
         "five_island",
-        "four_island",
-        "ruin_valley",
         "six_island",
+        "canyon_entrance",
+        "kindle_road",
+        "green_path",
+        "trainer_tower",
+        "ruin_valley",
+        "outcast_island",
         "treasure_beach"
       ]
     },
@@ -2438,7 +2673,11 @@
       "gloss": "(ROM example, rec4428)",
       "targetForm": "발전소",
       "areaId": "rom_mined",
-      "source": "rom-rec4428"
+      "source": "rom-rec4428",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:방심",
@@ -2447,7 +2686,11 @@
       "gloss": "(ROM example, rec4382)",
       "targetForm": "방심",
       "areaId": "rom_mined",
-      "source": "rom-rec4382"
+      "source": "rom-rec4382",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:방어",
@@ -2456,7 +2699,11 @@
       "gloss": "(ROM example, rec195)",
       "targetForm": "방어",
       "areaId": "rom_mined",
-      "source": "rom-rec195"
+      "source": "rom-rec195",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:베다",
@@ -2474,7 +2721,11 @@
       "gloss": "(ROM example, rec156)",
       "targetForm": "빈사",
       "areaId": "rom_mined",
-      "source": "rom-rec156"
+      "source": "rom-rec156",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:산란",
@@ -2483,7 +2734,11 @@
       "gloss": "(ROM example, rec4447)",
       "targetForm": "산란",
       "areaId": "rom_mined",
-      "source": "rom-rec4447"
+      "source": "rom-rec4447",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:살다",
@@ -2497,7 +2752,8 @@
       "areasReferenced": [
         "viridian_city",
         "pewter_city",
-        "route_3"
+        "route_3",
+        "rom_mined"
       ]
     },
     {
@@ -2514,11 +2770,12 @@
         "pewter_city",
         "cerulean_city",
         "fuchsia_city",
-        "canyon_entrance",
+        "rom_mined",
+        "trainer_tower",
         "water_path",
         "ruin_valley",
+        "canyon_entrance",
         "outcast_island",
-        "trainer_tower",
         "green_path"
       ]
     },
@@ -2529,7 +2786,11 @@
       "gloss": "(ROM example, rec8998)",
       "targetForm": "석양",
       "areaId": "rom_mined",
-      "source": "rom-rec8998"
+      "source": "rom-rec8998",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:솟다",
@@ -2545,7 +2806,8 @@
         "viridian_city",
         "pewter_city",
         "route_20",
-        "route_22"
+        "route_22",
+        "rom_mined"
       ]
     },
     {
@@ -2555,7 +2817,11 @@
       "gloss": "(ROM example, rec4348)",
       "targetForm": "수완",
       "areaId": "rom_mined",
-      "source": "rom-rec4348"
+      "source": "rom-rec4348",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:술통",
@@ -2564,7 +2830,11 @@
       "gloss": "(ROM example, rec9190)",
       "targetForm": "술통",
       "areaId": "rom_mined",
-      "source": "rom-rec9190"
+      "source": "rom-rec9190",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:스치다",
@@ -2573,7 +2843,11 @@
       "gloss": "(ROM example, rec8705)",
       "targetForm": "스치",
       "areaId": "rom_mined",
-      "source": "rom-rec8705"
+      "source": "rom-rec8705",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:시트",
@@ -2585,7 +2859,8 @@
       "source": "rom-rec4482",
       "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "fuchsia_city"
+        "fuchsia_city",
+        "rom_mined"
       ]
     },
     {
@@ -2599,7 +2874,8 @@
       "firstAreaEncountered": "route_20",
       "areasReferenced": [
         "route_20",
-        "route_22"
+        "route_22",
+        "rom_mined"
       ]
     },
     {
@@ -2612,7 +2888,8 @@
       "source": "rom-rec139",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -2622,7 +2899,11 @@
       "gloss": "(ROM example, rec9163)",
       "targetForm": "요트",
       "areaId": "rom_mined",
-      "source": "rom-rec9163"
+      "source": "rom-rec9163",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:잘리다",
@@ -2631,7 +2912,11 @@
       "gloss": "(ROM example, rec4348)",
       "targetForm": "잘린",
       "areaId": "rom_mined",
-      "source": "rom-rec4348"
+      "source": "rom-rec4348",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:접다",
@@ -2643,7 +2928,8 @@
       "source": "rom-rec4430",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     },
     {
@@ -2653,7 +2939,11 @@
       "gloss": "(ROM example, rec2985)",
       "targetForm": "정보",
       "areaId": "rom_mined",
-      "source": "rom-rec2985"
+      "source": "rom-rec2985",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:주거",
@@ -2662,7 +2952,11 @@
       "gloss": "(ROM example, rec7409)",
       "targetForm": "주거",
       "areaId": "rom_mined",
-      "source": "rom-rec7409"
+      "source": "rom-rec7409",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:주소",
@@ -2671,7 +2965,11 @@
       "gloss": "(ROM example, rec8312)",
       "targetForm": "주소",
       "areaId": "rom_mined",
-      "source": "rom-rec8312"
+      "source": "rom-rec8312",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:짖다",
@@ -2686,6 +2984,7 @@
         "route_19",
         "route_20",
         "route_21",
+        "rom_mined",
         "kindle_road"
       ]
     },
@@ -2699,7 +2998,8 @@
       "source": "rom-rec4413",
       "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "fuchsia_city"
+        "fuchsia_city",
+        "rom_mined"
       ]
     },
     {
@@ -2709,7 +3009,11 @@
       "gloss": "(ROM example, rec9308)",
       "targetForm": "치석",
       "areaId": "rom_mined",
-      "source": "rom-rec9308"
+      "source": "rom-rec9308",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:치우다",
@@ -2721,7 +3025,8 @@
       "source": "rom-rec8858",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
-        "viridian_city"
+        "viridian_city",
+        "rom_mined"
       ]
     },
     {
@@ -2731,7 +3036,11 @@
       "gloss": "(ROM example, rec4610)",
       "targetForm": "토란",
       "areaId": "rom_mined",
-      "source": "rom-rec4610"
+      "source": "rom-rec4610",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:토의",
@@ -2740,7 +3049,11 @@
       "gloss": "(ROM example, rec386)",
       "targetForm": "토의",
       "areaId": "rom_mined",
-      "source": "rom-rec386"
+      "source": "rom-rec386",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:트이다",
@@ -2749,7 +3062,11 @@
       "gloss": "(ROM example, rec404)",
       "targetForm": "트이",
       "areaId": "rom_mined",
-      "source": "rom-rec404"
+      "source": "rom-rec404",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:포트",
@@ -2758,7 +3075,11 @@
       "gloss": "(ROM example, rec4833)",
       "targetForm": "포트",
       "areaId": "rom_mined",
-      "source": "rom-rec4833"
+      "source": "rom-rec4833",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:폭발",
@@ -2767,7 +3088,11 @@
       "gloss": "(ROM example, rec4437)",
       "targetForm": "폭발",
       "areaId": "rom_mined",
-      "source": "rom-rec4437"
+      "source": "rom-rec4437",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:하하",
@@ -2798,7 +3123,8 @@
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
-        "pewter_city"
+        "pewter_city",
+        "rom_mined"
       ]
     }
   ]

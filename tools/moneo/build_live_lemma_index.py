@@ -15,9 +15,19 @@ from mine_vocab import (
 )
 
 CORPUS_PATH = Path(__file__).resolve().parent / "corpus.ko.live.json"
+STATIC_CORPUS_PATH = Path(__file__).resolve().parents[2] / "app/src/main/assets/moneo/corpus.ko.json"
 MAP_AREA_PATH = Path(__file__).resolve().parent / "map_area_index.json"
-AREAS_PATH = Path(__file__).resolve().parent.parent / "app/src/main/assets/moneo/areas.json"
+AREAS_PATH = Path(__file__).resolve().parents[2] / "app/src/main/assets/moneo/areas.json"
 OUTPUT_PATH = Path(__file__).resolve().parent / "lemma_area_index.json"
+
+# Sentinel area for vocabulary that exists only in the static corpus
+# (Pokédex entries, item descriptions, menu strings). These records are
+# not tied to a specific story-progression area, but they ARE in the
+# game -- you can read them once you have the Pokédex (Pallet onwards)
+# or buy the corresponding item. Tagging with the existing rom_mined
+# area_id surfaces them as attributed without preempting canonical
+# area assignments (rom_mined ordinal 99 > all canonical area ordinals).
+STATIC_ONLY_AREA_ID = "rom_mined"
 
 
 def load_json(path: Path):
@@ -85,6 +95,50 @@ def main():
             if len(lemma_rec_ids[lemma]) < 5 and rid not in lemma_rec_ids[lemma]:
                 lemma_rec_ids[lemma].append(rid)
 
+    # Second pass: static corpus (Pokédex / item descriptions / menu strings).
+    # Records here aren't tied to a specific story-progression area, so we
+    # tag every static-extracted lemma with STATIC_ONLY_AREA_ID (rom_mined,
+    # ordinal 99). Lemmas that ALSO appear in live-region records keep their
+    # canonical area as first_area because canonical ordinals (1..50) beat
+    # rom_mined's 99. Lemmas appearing ONLY in static text get rom_mined as
+    # their first_area -- which is at least an honest "yes, this is in the
+    # game's text somewhere" attribution.
+    static_corpus = load_json(STATIC_CORPUS_PATH)
+    static_records_tokenized = 0
+    for rec in static_corpus["records"]:
+        text = rec.get("text", "")
+        if not text or rec.get("unknown", 0) > 1:
+            continue
+        static_records_tokenized += 1
+        try:
+            tokens = mecab_lemmatize(text)
+        except Exception:
+            continue
+        for lemma, pos, surface in tokens:
+            if not (2 <= len(lemma) <= 5):
+                continue
+            if not all(is_hangul(c) for c in lemma):
+                continue
+            if is_phonetic_noise(lemma):
+                continue
+            if is_kana_shape_token(lemma):
+                continue
+            if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
+                continue
+            lemma_areas[lemma].add(STATIC_ONLY_AREA_ID)
+            # Don't override live-region rec_ids; only attach static rec_id
+            # if there are no live records for this lemma yet.
+            if not lemma_rec_ids[lemma] and len(lemma_rec_ids[lemma]) < 5:
+                lemma_rec_ids[lemma].append(rec["id"])
+
+    # Make sure rom_mined is in area_ordinals so the rank() lookup works.
+    if STATIC_ONLY_AREA_ID not in area_ordinals:
+        # Pull from areas.json (where rom_mined ordinal is 99).
+        for a in load_json(AREAS_PATH)["areas"]:
+            if a["id"] == STATIC_ONLY_AREA_ID:
+                area_ordinals[a["id"]] = a["ordinal"]
+                break
+
     # Build output
     lemmas_indexed = len(lemma_areas)
     all_area_ids = set()
@@ -121,7 +175,8 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     # Summary
-    print(f"records tokenized: {records_tokenized}")
+    print(f"live records tokenized: {records_tokenized}")
+    print(f"static records tokenized: {static_records_tokenized}")
     print(f"distinct lemmas indexed: {lemmas_indexed}")
     top10 = sorted(lemma_areas.items(), key=lambda kv: len(kv[1]), reverse=True)[:10]
     for i, (lemma, areas) in enumerate(top10, 1):
