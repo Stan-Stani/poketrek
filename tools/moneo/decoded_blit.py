@@ -98,9 +98,10 @@ _TABLE2 = _bt["table2"]
 def blit_subtile(rom_bytes16: bytes) -> bytes:
     """Apply the engine's blit_tile (0x08002F5C) to 16 ROM bytes.
 
-    Returns the 32 output bytes that get written into the staging buffer
-    for one 8x8 sub-tile (with the nibble-swap convention used by the
-    staging-ground-truth dump format).
+    Returns the 32 output bytes for one 8x8 4bpp sub-tile, exactly as the
+    engine writes them. Visual verification (variant B): produces clean
+    recognizable Hangul when rendered at standard GBA tile-byte semantics
+    (low nibble = leftmost pixel of a pair).
     """
     if len(rom_bytes16) < 16:
         raise ValueError("need at least 16 ROM bytes")
@@ -112,15 +113,9 @@ def blit_subtile(rom_bytes16: bytes) -> bytes:
         b = rom_bytes16[pair * 2 + (1 if k % 2 == 0 else 0)]
         idx = _TABLE1[b]
         hw = _TABLE2[idx]
-        # Halfword written via STRH; little-endian -> low byte then high byte.
-        # Apply nibble-swap-per-byte to match the staging-ground-truth string
-        # convention (high-pixel-first within each byte).
-        lo = hw & 0xFF
-        hi = (hw >> 8) & 0xFF
-        lo_sw = ((lo << 4) & 0xF0) | ((lo >> 4) & 0x0F)
-        hi_sw = ((hi << 4) & 0xF0) | ((hi >> 4) & 0x0F)
-        out[k * 2] = lo_sw
-        out[k * 2 + 1] = hi_sw
+        # Halfword written via STRH little-endian -> low byte then high byte.
+        out[k * 2] = hw & 0xFF
+        out[k * 2 + 1] = (hw >> 8) & 0xFF
     return bytes(out)
 
 
