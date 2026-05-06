@@ -168,7 +168,15 @@ def find_message_starts(rom: bytes, gm: dict, scan_end: int):
         if q is None:
             continue
         length, hangul, invalid, end = q
-        if hangul >= 1 and invalid == 0 and length >= 2:
+        # Accept if either:
+        #   (a) zero invalid bytes (clean message), OR
+        #   (b) hangul-heavy with a few unmapped glyphs (real text where the
+        #       glyph-map has gaps). The trainer dialog at e.g. 0x16E90C has
+        #       10 hangul + 2 invalid bytes -- previously rejected, now kept.
+        if length >= 2 and hangul >= 1 and (
+            invalid == 0 or
+            (hangul >= 5 and invalid <= max(1, hangul // 4))
+        ):
             spans.append((c, end))
 
     for start, end in spans:
