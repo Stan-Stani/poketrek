@@ -1,0 +1,76 @@
+package com.poketrek.moneo.data
+
+import android.content.Context
+import org.json.JSONObject
+
+/**
+ * One Korean example sentence pinned to a specific [VocabEntry]. Used by the
+ * review screen to show an example after the card is revealed.
+ *
+ * Invariant (validator-enforced in `SentenceCorpusTest`):
+ *  - [vocabId] resolves to an existing seed entry
+ *  - [korean] contains that entry's `korean` field as a substring
+ */
+data class SentenceEntry(
+    val vocabId: String,
+    val korean: String,
+    val romanization: String,
+    val gloss: String,
+    /**
+     * Optional override of the substring that proves this sentence exercises
+     * its target vocab. When null, validators use the target's `korean` field
+     * (with trailing `다` dropped for verbs/adjectives). Required when the
+     * conjugation is irregular (e.g. 오다 → 와요, 이기다 → 이겼어요).
+     */
+    val targetForm: String? = null,
+    /**
+     * Optional area where this sentence's context fits (matches `Area.id`).
+     * Used by [MoneoRepository.sentenceFor] to prefer area-matched examples.
+     * Null = area-agnostic (system message, item description, generic dex).
+     */
+    val areaId: String? = null,
+    /**
+     * Provenance string. For sentences ripped from the Korean ROM, this is
+     * `"rom-rec<id>"` referencing `corpus.ko.json` records. Empty / null when
+     * hand-curated.
+     */
+    val source: String? = null,
+    /** Speaker label when the line is attributable to a named NPC (e.g. `오키드`). */
+    val speaker: String? = null,
+)
+
+/**
+ * Loads bundled example sentences from `assets/moneo/sentences-ko.json`.
+ * Same shape as [SeedLoader] but flatter (no per-entry id; sentences are
+ * keyed by [SentenceEntry.vocabId]).
+ */
+object SentenceLoader {
+
+    fun loadFromAssets(
+        context: Context,
+        path: String = "moneo/sentences-ko.json",
+    ): List<SentenceEntry> {
+        val json = context.assets.open(path).use { it.readBytes() }.toString(Charsets.UTF_8)
+        return parse(json)
+    }
+
+    fun parse(json: String): List<SentenceEntry> {
+        val root = JSONObject(json)
+        val arr = root.getJSONArray("entries")
+        val out = ArrayList<SentenceEntry>(arr.length())
+        for (i in 0 until arr.length()) {
+            val o = arr.getJSONObject(i)
+            out += SentenceEntry(
+                vocabId = o.getString("vocabId"),
+                korean = o.getString("korean"),
+                romanization = o.getString("romanization"),
+                gloss = o.getString("gloss"),
+                targetForm = o.optString("targetForm").takeIf { it.isNotEmpty() },
+                areaId = o.optString("areaId").takeIf { it.isNotEmpty() },
+                source = o.optString("source").takeIf { it.isNotEmpty() },
+                speaker = o.optString("speaker").takeIf { it.isNotEmpty() },
+            )
+        }
+        return out
+    }
+}

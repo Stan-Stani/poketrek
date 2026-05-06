@@ -23,6 +23,7 @@ class MoneoRepository(
     private val store: MoneoCardStore,
     initialVocab: List<VocabEntry>,
     initialAreas: List<Area>,
+    initialSentences: List<SentenceEntry> = emptyList(),
     private val now: () -> Long = { System.currentTimeMillis() },
 ) {
 
@@ -36,6 +37,24 @@ class MoneoRepository(
 
     private val _cards = MutableStateFlow<Map<String, CardRecord>>(emptyMap())
     val cards: StateFlow<Map<String, CardRecord>> = _cards.asStateFlow()
+
+    /** Sentences indexed by [SentenceEntry.vocabId]; multiple per vocab allowed. */
+    private val sentencesByVocab: Map<String, List<SentenceEntry>> =
+        initialSentences.groupBy { it.vocabId }
+
+    /**
+     * Returns up to one example sentence for the given vocab id.
+     *
+     * When [preferAreaId] is supplied, picks the first sentence whose
+     * `areaId` matches; falls back to any sentence for the vocab.
+     */
+    fun sentenceFor(vocabId: String, preferAreaId: String? = null): SentenceEntry? {
+        val all = sentencesByVocab[vocabId] ?: return null
+        if (preferAreaId != null) {
+            all.firstOrNull { it.areaId == preferAreaId }?.let { return it }
+        }
+        return all.firstOrNull()
+    }
 
     init {
         // Make sure every seed entry has a card row. Idempotent on repeat launch.

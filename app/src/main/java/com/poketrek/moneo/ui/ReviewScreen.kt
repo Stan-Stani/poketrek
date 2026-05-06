@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.data.CardRecord
+import com.poketrek.moneo.data.SentenceEntry
 import com.poketrek.moneo.data.VocabEntry
 import com.poketrek.moneo.srs.CardSnapshot
 import com.poketrek.moneo.srs.CardState
@@ -86,6 +87,9 @@ fun ReviewScreen(
         CardFront(vocab, showRomanization, revealed)
         if (revealed) {
             CardBack(vocab)
+            module.repository.sentenceFor(vocab.id, preferAreaId = areaId)?.let { sentence ->
+                SentenceCard(sentence, showRomanization)
+            }
             RatingButtons(
                 onGrade = { rating ->
                     module.repository.grade(vocab.id, rating)
@@ -200,6 +204,34 @@ private fun CardBack(vocab: VocabEntry) {
         vocab.notes?.let {
             Text(it, color = Color(0xFFA7F3D0), fontSize = 12.sp)
         }
+    }
+}
+
+@Composable
+private fun SentenceCard(sentence: SentenceEntry, showRomanization: Boolean) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color(0xFF1E293B), shape = RoundedCornerShape(12.dp))
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        Text("Example", color = Color(0xFF93C5FD), fontSize = 10.sp)
+        Text(
+            sentence.korean,
+            color = Color.White,
+            fontWeight = FontWeight.Medium,
+            fontSize = 18.sp,
+        )
+        if (showRomanization) {
+            Text(
+                sentence.romanization,
+                color = Color(0xFF94A3B8),
+                fontFamily = FontFamily.Monospace,
+                fontSize = 12.sp,
+            )
+        }
+        Text(sentence.gloss, color = Color(0xFFCBD5E1), fontSize = 13.sp)
     }
 }
 
