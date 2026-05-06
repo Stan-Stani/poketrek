@@ -92,6 +92,9 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     testImplementation(libs.junit4)
+    // Real org.json on the JVM unit-test classpath so JSON validators
+    // (e.g. SentenceCorpusTest) can run without an Android device.
+    testImplementation("org.json:json:20240303")
 
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
