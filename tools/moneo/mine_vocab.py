@@ -136,6 +136,42 @@ def is_hangul(c: str) -> bool:
     return "가" <= c <= "힣"
 
 
+def is_vowel_only_syllable(c: str) -> bool:
+    """A precomposed Hangul syllable with the silent ㅇ initial AND no jongseong
+    (i.e., pure vowel: 아 어 오 우 이 에 야 여 요 유 etc.). Strings made
+    entirely of these are almost always kana-romanized Japanese debris in this
+    corpus, not real Korean."""
+    code = ord(c)
+    if not (0xAC00 <= code <= 0xD7A3):
+        return False
+    idx = code - 0xAC00
+    initial = idx // 588          # 11 == ㅇ (silent placeholder)
+    jongseong = idx % 28          # 0 == no batchim
+    return initial == 11 and jongseong == 0
+
+
+def is_phonetic_noise(token: str) -> bool:
+    """Reject tokens whose every character is a vowel-only syllable."""
+    if not token:
+        return False
+    return all(is_vowel_only_syllable(c) for c in token)
+
+
+def has_no_batchim(token: str) -> bool:
+    """True if no syllable in the token carries a final consonant. Real Korean
+    of length ≥3 nearly always has at least one batchim (받침); strings without
+    one are almost always kana-romanized Japanese (e.g. 스프레, 후쿠스루,
+    스레바니, 사등픽뮤). Length-2 tokens are tolerated since open-syllable
+    Korean nouns like 마리/꼬리/유리/어서 do exist."""
+    for c in token:
+        code = ord(c)
+        if not (0xAC00 <= code <= 0xD7A3):
+            continue
+        if (code - 0xAC00) % 28 != 0:
+            return False
+    return True
+
+
 def clean_record(text: str) -> str:
     text = VAR_RE.sub(" ", text)
     text = ANGLE_RE.sub(" ", text)
@@ -259,7 +295,11 @@ def mine(threshold: int, limit: int | None) -> tuple[list[dict], list[dict], dic
             sentence_stripped = sentence.rstrip(" .!?,。…")
             ends_korean = KOREAN_END_RE.search(sentence_stripped) is not None
             has_particle = len(PARTICLE_PROBE_RE.findall(sentence)) >= 1
-            if not (ends_korean and has_particle):
+            # OR (not AND): item descriptions / Pokédex titles often have a
+            # particle but no verb-ending; exclamations end with a verb but
+            # have no particle. Either signal is enough evidence the line
+            # is real Korean rather than kana-rendered Japanese.
+            if not (ends_korean or has_particle):
                 continue
             jp_hits = sum(1 for pat in JAPANESE_ROM_PATTERNS if pat in sentence)
             if jp_hits >= 1:
@@ -278,10 +318,16 @@ def mine(threshold: int, limit: int | None) -> tuple[list[dict], list[dict], dic
                 # Reject tokens carrying Japanese-romanization signature.
                 if any(pat in tok for pat in JAPANESE_ROM_PATTERNS):
                     continue
+                if is_phonetic_noise(tok):
+                    continue
                 lemma = deconjugate(tok)
                 if not lemma or len(lemma) < 2 or len(lemma) > 5:
                     continue
                 if any(pat in lemma for pat in JAPANESE_ROM_PATTERNS):
+                    continue
+                if is_phonetic_noise(lemma):
+                    continue
+                if len(lemma) >= 3 and has_no_batchim(lemma):
                     continue
                 if lemma in STOPWORDS or lemma in seed_terms:
                     continue
