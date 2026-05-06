@@ -44,10 +44,16 @@
       "koreanLabel": "코퍼스"
     },
     {
-      "id": "topik_basic",
+      "id": "topik_1",
       "ordinal": 100,
-      "englishName": "TOPIK 1+2",
-      "koreanLabel": "토픽 초급"
+      "englishName": "TOPIK 1",
+      "koreanLabel": "토픽 1급"
+    },
+    {
+      "id": "topik_2",
+      "ordinal": 101,
+      "englishName": "TOPIK 2",
+      "koreanLabel": "토픽 2급"
     }
   ]
 }

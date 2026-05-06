@@ -22,12 +22,14 @@ from mecab import MeCab  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[2]
 GLOSSES_PATH = ROOT / "tools/moneo/topik_glosses.json"
+LEVELS_PATH = ROOT / "tools/moneo/topik_levels.json"
 CORPUS_PATH = ROOT / "app/src/main/assets/moneo/corpus.ko.json"
 OUT_VOCAB = ROOT / "app/src/main/assets/moneo/seed-vocab-ko-topik.json"
 OUT_SENTS = ROOT / "app/src/main/assets/moneo/sentences-ko-topik.json"
 
-SOURCE_TAG = "topik-v1"
-AREA_ID = "topik_basic"
+SOURCE_TAG = "topik-v2"
+# TOPIK Level A → topik_1 area (beginner); Level B → topik_2 area (lower-int).
+LEVEL_TO_AREA = {"A": "topik_1", "B": "topik_2"}
 
 SENT_SPLIT = re.compile(r"[\.!\?。…]+|\n+")
 HANGUL_RE = re.compile(r"[가-힣]")
@@ -88,6 +90,7 @@ def lemmas_in(sentence: str, m: MeCab) -> set[str]:
 
 def main() -> int:
     glosses = json.loads(GLOSSES_PATH.read_text(encoding="utf-8"))["glosses"]
+    levels = json.loads(LEVELS_PATH.read_text(encoding="utf-8"))["levels"]
     corpus = json.loads(CORPUS_PATH.read_text(encoding="utf-8"))
     m = MeCab()
 
@@ -116,46 +119,52 @@ def main() -> int:
     # Pick best example per lemma: shortest sentence that contains the lemma.
     vocab_entries = []
     sent_entries = []
-    pos_for = {}
-    for lemma in sorted(glosses.keys()):
-        if lemma == "_comment":
-            continue
-        if lemma not in candidates:
-            continue
+    skipped_no_level = 0
+    # Sort by descending frequency so the front of each level deck shows
+    # the words the player will hit most often in this corpus.
+    lemmas_by_freq = sorted(
+        (l for l in glosses if not l.startswith("_") and l in candidates),
+        key=lambda l: (-len(candidates[l]), l),
+    )
+    for lemma in lemmas_by_freq:
         candidates[lemma].sort(key=lambda c: c[2])
         rec_id, sentence, _ = candidates[lemma][0]
         gloss = glosses[lemma]
-        # Heuristic POS from lemma shape — same buckets the runtime expects.
-        if lemma.endswith("다"):
-            pos = "verb/adj"
-        else:
-            pos = "noun/adv"
-        pos_for[lemma] = pos
+        level = levels.get(lemma)
+        area_id = LEVEL_TO_AREA.get(level)
+        if not area_id:
+            skipped_no_level += 1
+            continue
+        pos = "verb/adj" if lemma.endswith("다") else "noun/adv"
         vocab_entries.append({
             "korean": lemma,
             "romanization": romanize(lemma),
             "gloss": gloss,
             "partOfSpeech": pos,
-            "areaId": AREA_ID,
+            "areaId": area_id,
             "frequency": len(candidates[lemma]),
+            "topikLevel": level,
         })
         sent_entries.append({
             "vocabId": f"{SOURCE_TAG}:{lemma}",
             "korean": sentence,
             "romanization": romanize(sentence),
-            "gloss": "(TOPIK 1/2 example from ROM)",
+            "gloss": "(TOPIK example from ROM)",
             "targetForm": lemma,
-            "areaId": AREA_ID,
+            "areaId": area_id,
             "source": f"rom-rec{rec_id}",
         })
+    if skipped_no_level:
+        print(f"  skipped {skipped_no_level} lemmas with no TOPIK level")
 
     OUT_VOCAB.write_text(json.dumps({
-        "version": 1,
+        "version": 2,
         "source": SOURCE_TAG,
-        "areaId": AREA_ID,
         "notes": (
             "TOPIK Level 1+2 vocabulary that occurs in the Korean LeafGreen ROM "
-            "dialogue corpus. Hand-glossed from julienshim/combined_korean_vocabulary_list."
+            "dialogue corpus. Level A → topik_1 area, Level B → topik_2 area. "
+            "Within each area, entries are pre-sorted by descending corpus "
+            "frequency so the most-encountered words come up first."
         ),
         "entries": vocab_entries,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
