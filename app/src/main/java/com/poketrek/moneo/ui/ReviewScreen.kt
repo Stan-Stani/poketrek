@@ -1,6 +1,7 @@
 package com.poketrek.moneo.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -9,7 +10,9 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
@@ -81,11 +84,37 @@ fun ReviewScreen(
 
     val (record, vocab) = nextPair
     Column(
-        modifier = modifier.padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp),
+        modifier = modifier
+            .verticalScroll(rememberScrollState())
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        StateChip(record.snapshot)
-        CardFront(vocab, showRomanization, revealed)
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            StateChip(record.snapshot)
+            // Toggling romanization is a small per-session preference; keep it
+            // unobtrusive next to the state chip, far from the grade buttons.
+            Button(
+                onClick = { module.prefs.setShowRomanization(!showRomanization) },
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+            ) {
+                Text(
+                    if (showRomanization) "발음 ✓" else "발음 —",
+                    color = Color(0xFF94A3B8),
+                    fontSize = 11.sp,
+                )
+            }
+        }
+        CardFront(
+            vocab = vocab,
+            showRomanization = showRomanization,
+            revealed = revealed,
+            onTapToReveal = { if (!revealed) revealed = true },
+        )
         if (revealed) {
             CardBack(vocab)
             module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)?.let { sentence ->
@@ -103,22 +132,7 @@ fun ReviewScreen(
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2563EB)),
             ) {
-                Text("Reveal", color = Color.White, fontSize = 14.sp)
-            }
-        }
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-        ) {
-            Button(
-                onClick = { module.prefs.setShowRomanization(!showRomanization) },
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
-                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
-            ) {
-                Text(
-                    if (showRomanization) "Hide romanization" else "Show romanization",
-                    fontSize = 11.sp,
-                )
+                Text("Reveal meaning", color = Color.White, fontSize = 14.sp)
             }
         }
     }
@@ -148,20 +162,28 @@ private fun StateChip(snapshot: CardSnapshot) {
 }
 
 @Composable
-private fun CardFront(vocab: VocabEntry, showRomanization: Boolean, revealed: Boolean) {
+private fun CardFront(
+    vocab: VocabEntry,
+    showRomanization: Boolean,
+    revealed: Boolean,
+    onTapToReveal: () -> Unit,
+) {
+    val verticalPadding = if (revealed) 12.dp else 24.dp
+    val koreanSize = if (revealed) 28.sp else 36.sp
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .background(Color(0xFF1F2937), shape = RoundedCornerShape(12.dp))
-            .padding(24.dp),
+            .let { if (!revealed) it.clickable { onTapToReveal() } else it }
+            .padding(horizontal = 24.dp, vertical = verticalPadding),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         Text(
             vocab.korean,
             color = Color.White,
             fontWeight = FontWeight.Bold,
-            fontSize = 36.sp,
+            fontSize = koreanSize,
         )
         if (showRomanization) {
             Text(
@@ -178,7 +200,7 @@ private fun CardFront(vocab: VocabEntry, showRomanization: Boolean, revealed: Bo
         )
         if (!revealed) {
             Text(
-                "Tap reveal when ready",
+                "Tap card or Reveal button",
                 color = Color(0xFF6B7280),
                 fontSize = 10.sp,
             )
