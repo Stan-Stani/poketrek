@@ -1,0 +1,6423 @@
+{
+  "version": 1,
+  "source": "topik-v1",
+  "entries": [
+    {
+      "vocabId": "topik-v1:가게",
+      "korean": "아키가게메츠소가기치쌀퀸우소부솔에넨힌멕버진피비",
+      "romanization": "a-ki-ga-ge-me-cheu-so-ga-gi-chi-ssal-kwin-u-so-bu-sol-e-nen-hin-meg-beo-jin-pi-bi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가게",
+      "areaId": "topik_basic",
+      "source": "rom-rec1732"
+    },
+    {
+      "vocabId": "topik-v1:가구",
+      "korean": "아에오키케사소츠츠츠테토누히호호마야루로트가기기기기가가구게기트로루라라유마하니토타코오",
+      "romanization": "a-e-o-ki-ke-sa-so-cheu-cheu-cheu-te-to-nu-hi-ho-ho-ma-ya-ru-ro-teu-ga-gi-gi-gi-gi-ga-ga-gu-ge-gi-teu-ro-ru-ra-ra-yu-ma-ha-ni-to-ta-ko-o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가구",
+      "areaId": "topik_basic",
+      "source": "rom-rec7102"
+    },
+    {
+      "vocabId": "topik-v1:가끔",
+      "korean": "가끔물속에서",
+      "romanization": "ga-kkeum-mul-sog-e-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가끔",
+      "areaId": "topik_basic",
+      "source": "rom-rec4336"
+    },
+    {
+      "vocabId": "topik-v1:가다",
+      "korean": "간괃보흩",
+      "romanization": "gan-gwad-bo-heut",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec523"
+    },
+    {
+      "vocabId": "topik-v1:가로",
+      "korean": "아오카키키키키케스츠누네네네하헤모리리유야라와구자자게가가구고고게가로요야야요야마네치스시스시쿠이",
+      "romanization": "a-o-ka-ki-ki-ki-ki-ke-seu-cheu-nu-ne-ne-ne-ha-he-mo-ri-ri-yu-ya-ra-wa-gu-ja-ja-ge-ga-ga-gu-go-go-ge-ga-ro-yo-ya-ya-yo-ya-ma-ne-chi-seu-si-seu-si-ku-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가로",
+      "areaId": "topik_basic",
+      "source": "rom-rec7113"
+    },
+    {
+      "vocabId": "topik-v1:가루",
+      "korean": "우선독가루로상대의",
+      "romanization": "u-seon-dog-ga-ru-ro-sang-dae-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가루",
+      "areaId": "topik_basic",
+      "source": "rom-rec4398"
+    },
+    {
+      "vocabId": "topik-v1:가만히",
+      "korean": "가만히있는듯보여도",
+      "romanization": "ga-man-hi-iss-neun-deus-bo-yeo-do",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가만히",
+      "areaId": "topik_basic",
+      "source": "rom-rec4435"
+    },
+    {
+      "vocabId": "topik-v1:가방",
+      "korean": "도구를넣는주꼬니가방",
+      "romanization": "do-gu-reul-neoh-neun-ju-kko-ni-ga-bang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가방",
+      "areaId": "topik_basic",
+      "source": "rom-rec3709"
+    },
+    {
+      "vocabId": "topik-v1:가볍다",
+      "korean": "날아다니듯가볍게뚜어다닌다",
+      "romanization": "nal-a-da-ni-deus-ga-byeob-ge-ttu-eo-da-nin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가볍다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4387"
+    },
+    {
+      "vocabId": "topik-v1:가스",
+      "korean": "자신도모르는사이에가스에",
+      "romanization": "ja-sin-do-mo-reu-neun-sa-i-e-ga-seu-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가스",
+      "areaId": "topik_basic",
+      "source": "rom-rec4420"
+    },
+    {
+      "vocabId": "topik-v1:가을",
+      "korean": "가을이오면산란을위해",
+      "romanization": "ga-eul-i-o-myeon-san-ran-eul-wi-hae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가을",
+      "areaId": "topik_basic",
+      "source": "rom-rec4447"
+    },
+    {
+      "vocabId": "topik-v1:가지다",
+      "korean": "가진뱃지수",
+      "romanization": "ga-jin-baes-ji-su",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "가지다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2578"
+    },
+    {
+      "vocabId": "topik-v1:간",
+      "korean": "간닦동견",
+      "romanization": "gan-dakk-dong-gyeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "간",
+      "areaId": "topik_basic",
+      "source": "rom-rec501"
+    },
+    {
+      "vocabId": "topik-v1:갈다",
+      "korean": "갈아으깨서가루로만들면",
+      "romanization": "gal-a-eu-kkae-seo-ga-ru-ro-man-deul-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "갈다",
+      "areaId": "topik_basic",
+      "source": "rom-rec246"
+    },
+    {
+      "vocabId": "topik-v1:감다",
+      "korean": "A감겁것B감겟게",
+      "romanization": "Agam-geob-geosBgam-ges-ge",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "감다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3695"
+    },
+    {
+      "vocabId": "topik-v1:갑자기",
+      "korean": "뭐갑자기였으니까",
+      "romanization": "mwo-gab-ja-gi-yeoss-eu-ni-kka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "갑자기",
+      "areaId": "topik_basic",
+      "source": "rom-rec1345"
+    },
+    {
+      "vocabId": "topik-v1:강",
+      "korean": "강끓꿈꾸",
+      "romanization": "gang-kkeulh-kkum-kku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "강",
+      "areaId": "topik_basic",
+      "source": "rom-rec4068"
+    },
+    {
+      "vocabId": "topik-v1:강하다",
+      "korean": "강했던듯",
+      "romanization": "gang-haess-deon-deus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "강하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4457"
+    },
+    {
+      "vocabId": "topik-v1:같다",
+      "korean": "밀밟간같",
+      "romanization": "mil-balb-gan-gat",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "같다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2560"
+    },
+    {
+      "vocabId": "topik-v1:같이",
+      "korean": "마치로켓발사와같이",
+      "romanization": "ma-chi-ro-kes-bal-sa-wa-gat-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "같이",
+      "areaId": "topik_basic",
+      "source": "rom-rec4337"
+    },
+    {
+      "vocabId": "topik-v1:개",
+      "korean": "꿈뺄개끼",
+      "romanization": "kkum-ppael-gae-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "개",
+      "areaId": "topik_basic",
+      "source": "rom-rec3324"
+    },
+    {
+      "vocabId": "topik-v1:거",
+      "korean": "거6칙K쿠후토쿠",
+      "romanization": "geo6chigKku-hu-to-ku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "거",
+      "areaId": "topik_basic",
+      "source": "rom-rec8712"
+    },
+    {
+      "vocabId": "topik-v1:거리",
+      "korean": "란요술내치습헤래핏잔래츠케후가」루이거양가티렛V{var:0F}릿무N하타노모솔9등거리:에사키게삼",
+      "romanization": "ran-yo-sul-nae-chi-seub-he-rae-pis-jan-rae-cheu-ke-hu-ga」ru-i-geo-yang-ga-ti-resV{var:0F}ris-muNha-ta-no-mo-sol9deung-geo-ri:e-sa-ki-ge-sam",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "거리",
+      "areaId": "topik_basic",
+      "source": "rom-rec8410"
+    },
+    {
+      "vocabId": "topik-v1:거의",
+      "korean": "모습이거의안보인다",
+      "romanization": "mo-seub-i-geo-ui-an-bo-in-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "거의",
+      "areaId": "topik_basic",
+      "source": "rom-rec4420"
+    },
+    {
+      "vocabId": "topik-v1:걷다",
+      "korean": "건걷걸검",
+      "romanization": "geon-geod-geol-geom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "걷다",
+      "areaId": "topik_basic",
+      "source": "rom-rec307"
+    },
+    {
+      "vocabId": "topik-v1:걸다",
+      "korean": "꽥걸검미",
+      "romanization": "kkwaeg-geol-geom-mi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "걸다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5760"
+    },
+    {
+      "vocabId": "topik-v1:걸리다",
+      "korean": "턴수가걸리면",
+      "romanization": "teon-su-ga-geol-ri-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "걸리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec141"
+    },
+    {
+      "vocabId": "topik-v1:검다",
+      "korean": "건걷걸검",
+      "romanization": "geon-geod-geol-geom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "검다",
+      "areaId": "topik_basic",
+      "source": "rom-rec307"
+    },
+    {
+      "vocabId": "topik-v1:겁",
+      "korean": "갱겁것겔겜",
+      "romanization": "gaeng-geob-geos-gel-gem",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "겁",
+      "areaId": "topik_basic",
+      "source": "rom-rec6117"
+    },
+    {
+      "vocabId": "topik-v1:겉",
+      "korean": "꿈꽁겉끼",
+      "romanization": "kkum-kkong-geot-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "겉",
+      "areaId": "topik_basic",
+      "source": "rom-rec1328"
+    },
+    {
+      "vocabId": "topik-v1:게다가",
+      "korean": "게다가꼬리의침은찔려을때",
+      "romanization": "ge-da-ga-kko-ri-ui-chim-eun-jjil-ryeo-eul-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "게다가",
+      "areaId": "topik_basic",
+      "source": "rom-rec4361"
+    },
+    {
+      "vocabId": "topik-v1:결과",
+      "korean": "계속한결과탄생했다",
+      "romanization": "gye-sog-han-gyeol-gwa-tan-saeng-haess-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "결과",
+      "areaId": "topik_basic",
+      "source": "rom-rec4479"
+    },
+    {
+      "vocabId": "topik-v1:결정",
+      "korean": "선택결정",
+      "romanization": "seon-taeg-gyeol-jeong",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "결정",
+      "areaId": "topik_basic",
+      "source": "rom-rec2589"
+    },
+    {
+      "vocabId": "topik-v1:경우",
+      "korean": "촉수에찔린경우가많다",
+      "romanization": "chog-su-e-jjil-rin-gyeong-u-ga-manh-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "경우",
+      "areaId": "topik_basic",
+      "source": "rom-rec4400"
+    },
+    {
+      "vocabId": "topik-v1:경주",
+      "korean": "경주하고싶어져서맹렬한",
+      "romanization": "gyeong-ju-ha-go-sip-eo-jyeo-seo-maeng-ryeol-han",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "경주",
+      "areaId": "topik_basic",
+      "source": "rom-rec4406"
+    },
+    {
+      "vocabId": "topik-v1:경험",
+      "korean": "□재의경험치",
+      "romanization": "□jae-ui-gyeong-heom-chi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "경험",
+      "areaId": "topik_basic",
+      "source": "rom-rec3639"
+    },
+    {
+      "vocabId": "topik-v1:곁",
+      "korean": "간끔경곁",
+      "romanization": "gan-kkeum-gyeong-gyeot",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "곁",
+      "areaId": "topik_basic",
+      "source": "rom-rec2854"
+    },
+    {
+      "vocabId": "topik-v1:계산",
+      "korean": "계산할수있는지능을갗고있다",
+      "romanization": "gye-san-hal-su-iss-neun-ji-neung-eul-gach-go-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "계산",
+      "areaId": "topik_basic",
+      "source": "rom-rec4393"
+    },
+    {
+      "vocabId": "topik-v1:계속",
+      "korean": "계속날수있다",
+      "romanization": "gye-sog-nal-su-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "계속",
+      "areaId": "topik_basic",
+      "source": "rom-rec4350"
+    },
+    {
+      "vocabId": "topik-v1:고기",
+      "korean": "고기를좋아한다",
+      "romanization": "go-gi-reul-joh-a-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "고기",
+      "areaId": "topik_basic",
+      "source": "rom-rec4358"
+    },
+    {
+      "vocabId": "topik-v1:고르다",
+      "korean": "이걸고르면포켓몬들의",
+      "romanization": "i-geol-go-reu-myeon-po-kes-mon-deul-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "고르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2985"
+    },
+    {
+      "vocabId": "topik-v1:고모",
+      "korean": "관고모□웃름소문게꺽몬",
+      "romanization": "gwan-go-mo□us-reum-so-mun-ge-kkeog-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "고모",
+      "areaId": "topik_basic",
+      "source": "rom-rec4854"
+    },
+    {
+      "vocabId": "topik-v1:고속",
+      "korean": "고속으로빠르게날아들어",
+      "romanization": "go-sog-eu-ro-ppa-reu-ge-nal-a-deul-eo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "고속",
+      "areaId": "topik_basic",
+      "source": "rom-rec4343"
+    },
+    {
+      "vocabId": "topik-v1:고통",
+      "korean": "우우힌굴키키모주주조×버트렛키고엔양고통네버겨×복데우우술코에호",
+      "romanization": "u-u-hin-gul-ki-ki-mo-ju-ju-jo×beo-teu-res-ki-go-en-yang-go-tong-ne-beo-gyeo×bog-de-u-u-sul-ko-e-ho",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "고통",
+      "areaId": "topik_basic",
+      "source": "rom-rec7520"
+    },
+    {
+      "vocabId": "topik-v1:고프다",
+      "korean": "래석년잔7고파보게구멕티3자자야펼츠무가가등등가아달달달석",
+      "romanization": "rae-seog-nyeon-jan7go-pa-bo-ge-gu-meg-ti3ja-ja-ya-pyeol-cheu-mu-ga-ga-deung-deung-ga-a-dal-dal-dal-seog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "고프다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9866"
+    },
+    {
+      "vocabId": "topik-v1:곧",
+      "korean": "곧교간갔",
+      "romanization": "god-gyo-gan-gass",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "곧",
+      "areaId": "topik_basic",
+      "source": "rom-rec5303"
+    },
+    {
+      "vocabId": "topik-v1:곱다",
+      "korean": "곱슈맥맵□",
+      "romanization": "gob-syu-maeg-maeb□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "곱다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7029"
+    },
+    {
+      "vocabId": "topik-v1:곳",
+      "korean": "곳공락굶",
+      "romanization": "gos-gong-rag-gulm",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "곳",
+      "areaId": "topik_basic",
+      "source": "rom-rec4487"
+    },
+    {
+      "vocabId": "topik-v1:공",
+      "korean": "좌공땋걔",
+      "romanization": "jwa-gong-ttah-gyae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "공",
+      "areaId": "topik_basic",
+      "source": "rom-rec958"
+    },
+    {
+      "vocabId": "topik-v1:공간",
+      "korean": "전자공간을자유자재로",
+      "romanization": "jeon-ja-gong-gan-eul-ja-yu-ja-jae-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "공간",
+      "areaId": "topik_basic",
+      "source": "rom-rec4466"
+    },
+    {
+      "vocabId": "topik-v1:공기",
+      "korean": "공기중의음이온을",
+      "romanization": "gong-gi-jung-ui-eum-i-on-eul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "공기",
+      "areaId": "topik_basic",
+      "source": "rom-rec4464"
+    },
+    {
+      "vocabId": "topik-v1:공장",
+      "korean": "공장에서버리는오물과",
+      "romanization": "gong-jang-e-seo-beo-ri-neun-o-mul-gwa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "공장",
+      "areaId": "topik_basic",
+      "source": "rom-rec4416"
+    },
+    {
+      "vocabId": "topik-v1:공짜",
+      "korean": "롤냇곳공짜낡간끔눗",
+      "romanization": "rol-naes-gos-gong-jja-nalg-gan-kkeum-nus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "공짜",
+      "areaId": "topik_basic",
+      "source": "rom-rec4734"
+    },
+    {
+      "vocabId": "topik-v1:과",
+      "korean": "끔육믄2과",
+      "romanization": "kkeum-yug-meun2gwa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "과",
+      "areaId": "topik_basic",
+      "source": "rom-rec5664"
+    },
+    {
+      "vocabId": "topik-v1:과학자",
+      "korean": "어느과학자가몇년동안",
+      "romanization": "eo-neu-gwa-hag-ja-ga-myeoch-nyeon-dong-an",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "과학자",
+      "areaId": "topik_basic",
+      "source": "rom-rec4479"
+    },
+    {
+      "vocabId": "topik-v1:관련",
+      "korean": "도구관련",
+      "romanization": "do-gu-gwan-ryeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "관련",
+      "areaId": "topik_basic",
+      "source": "rom-rec3021"
+    },
+    {
+      "vocabId": "topik-v1:괜찮다",
+      "korean": "땀에안내려와도괜찮다",
+      "romanization": "ttam-e-an-nae-ryeo-wa-do-gwaen-chanh-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "괜찮다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4350"
+    },
+    {
+      "vocabId": "topik-v1:교수",
+      "korean": "덫꽂꺽꿉교수된쵼꿈",
+      "romanization": "deoch-kkoj-kkeog-kkub-gyo-su-doen-chyon-kkum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "교수",
+      "areaId": "topik_basic",
+      "source": "rom-rec4669"
+    },
+    {
+      "vocabId": "topik-v1:구",
+      "korean": "구B기우타사의·",
+      "romanization": "guBgi-u-ta-sa-ui·",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "구",
+      "areaId": "topik_basic",
+      "source": "rom-rec639"
+    },
+    {
+      "vocabId": "topik-v1:구름",
+      "korean": "구름위에서거대한번개가",
+      "romanization": "gu-reum-wi-e-seo-geo-dae-han-beon-gae-ga",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "구름",
+      "areaId": "topik_basic",
+      "source": "rom-rec4474"
+    },
+    {
+      "vocabId": "topik-v1:구멍",
+      "korean": "구멍을파고나무수액을",
+      "romanization": "gu-meong-eul-pa-go-na-mu-su-aeg-eul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "구멍",
+      "areaId": "topik_basic",
+      "source": "rom-rec4374"
+    },
+    {
+      "vocabId": "topik-v1:군",
+      "korean": "눔맘군귤",
+      "romanization": "num-mam-gun-gyul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "군",
+      "areaId": "topik_basic",
+      "source": "rom-rec3876"
+    },
+    {
+      "vocabId": "topik-v1:굽다",
+      "korean": "쿼멱교딤궈득",
+      "romanization": "kwo-myeog-gyo-dim-gwo-deug",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "굽다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4812"
+    },
+    {
+      "vocabId": "topik-v1:귀",
+      "korean": "귀를세우고위험을",
+      "romanization": "gwi-reul-se-u-go-wi-heom-eul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "귀",
+      "areaId": "topik_basic",
+      "source": "rom-rec4360"
+    },
+    {
+      "vocabId": "topik-v1:귀엽다",
+      "korean": "귀여운포켓몬3마리가",
+      "romanization": "gwi-yeo-un-po-kes-mon3ma-ri-ga",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "귀엽다",
+      "areaId": "topik_basic",
+      "source": "rom-rec230"
+    },
+    {
+      "vocabId": "topik-v1:규칙",
+      "korean": "유전자가불규칙하다",
+      "romanization": "yu-jeon-ja-ga-bul-gyu-chig-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "규칙",
+      "areaId": "topik_basic",
+      "source": "rom-rec4461"
+    },
+    {
+      "vocabId": "topik-v1:그대로",
+      "korean": "그대로몸을굴려",
+      "romanization": "geu-dae-ro-mom-eul-gul-ryeo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "그대로",
+      "areaId": "topik_basic",
+      "source": "rom-rec4356"
+    },
+    {
+      "vocabId": "topik-v1:그림",
+      "korean": "캬모메의그림이",
+      "romanization": "kya-mo-me-ui-geu-rim-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "그림",
+      "areaId": "topik_basic",
+      "source": "rom-rec220"
+    },
+    {
+      "vocabId": "topik-v1:그만",
+      "korean": "우모그만키9삼만에마Ü",
+      "romanization": "u-mo-geu-man-ki9sam-man-e-maÜ",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "그만",
+      "areaId": "topik_basic",
+      "source": "rom-rec2189"
+    },
+    {
+      "vocabId": "topik-v1:근처",
+      "korean": "그녁호수근처에서",
+      "romanization": "geu-nyeog-ho-su-geun-cheo-e-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "근처",
+      "areaId": "topik_basic",
+      "source": "rom-rec4383"
+    },
+    {
+      "vocabId": "topik-v1:글",
+      "korean": "꼭글긁생긋",
+      "romanization": "kkog-geul-geulg-saeng-geus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "글",
+      "areaId": "topik_basic",
+      "source": "rom-rec4511"
+    },
+    {
+      "vocabId": "topik-v1:금",
+      "korean": "깊금급금픕",
+      "romanization": "gip-geum-geub-geum-peub",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "금",
+      "areaId": "topik_basic",
+      "source": "rom-rec5862"
+    },
+    {
+      "vocabId": "topik-v1:급",
+      "korean": "젖띨급낀",
+      "romanization": "jeoj-ttil-geub-kkin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "급",
+      "areaId": "topik_basic",
+      "source": "rom-rec5713"
+    },
+    {
+      "vocabId": "topik-v1:급하다",
+      "korean": "급하게달릴때점점",
+      "romanization": "geub-ha-ge-dal-ril-ttae-jeom-jeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "급하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4434"
+    },
+    {
+      "vocabId": "topik-v1:기르다",
+      "korean": "많이기르지만곤잘",
+      "romanization": "manh-i-gi-reu-ji-man-gon-jal",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4381"
+    },
+    {
+      "vocabId": "topik-v1:기본",
+      "korean": "입히는건승부의기본",
+      "romanization": "ib-hi-neun-geon-seung-bu-ui-gi-bon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기본",
+      "areaId": "topik_basic",
+      "source": "rom-rec1339"
+    },
+    {
+      "vocabId": "topik-v1:기분",
+      "korean": "기분좋은노래를부른다",
+      "romanization": "gi-bun-joh-eun-no-rae-reul-bu-reun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기분",
+      "areaId": "topik_basic",
+      "source": "rom-rec4367"
+    },
+    {
+      "vocabId": "topik-v1:기술",
+      "korean": "기술꼬신",
+      "romanization": "gi-sul-kko-sin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기술",
+      "areaId": "topik_basic",
+      "source": "rom-rec3126"
+    },
+    {
+      "vocabId": "topik-v1:기자",
+      "korean": "펩쉴굴▶짐□아우우에에카세하미메메메메요트자즈자기기자제다제고트라요리요마누치케",
+      "romanization": "peb-swil-gul▶jim□a-u-u-e-e-ka-se-ha-mi-me-me-me-me-yo-teu-ja-jeu-ja-gi-gi-ja-je-da-je-go-teu-ra-yo-ri-yo-ma-nu-chi-ke",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기자",
+      "areaId": "topik_basic",
+      "source": "rom-rec7074"
+    },
+    {
+      "vocabId": "topik-v1:기준",
+      "korean": "시□렛네석카마준히드모□타릿로록니굴토×세들시시석구I기준노케T란6데렛C는4파달나□헤솔트닌모R가굴",
+      "romanization": "si□res-ne-seog-ka-ma-jun-hi-deu-mo□ta-ris-ro-rog-ni-gul-to×se-deul-si-si-seog-guIgi-jun-no-keTran6de-resCneun4pa-dal-na□he-sol-teu-nin-moRga-gul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기준",
+      "areaId": "topik_basic",
+      "source": "rom-rec7460"
+    },
+    {
+      "vocabId": "topik-v1:기초",
+      "korean": "기초포인트를준다",
+      "romanization": "gi-cho-po-in-teu-reul-jun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기초",
+      "areaId": "topik_basic",
+      "source": "rom-rec183"
+    },
+    {
+      "vocabId": "topik-v1:기타",
+      "korean": "소세기타",
+      "romanization": "so-se-gi-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "기타",
+      "areaId": "topik_basic",
+      "source": "rom-rec2618"
+    },
+    {
+      "vocabId": "topik-v1:길",
+      "korean": "길끕몬둘멜",
+      "romanization": "gil-kkeub-mon-dul-mel",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "길",
+      "areaId": "topik_basic",
+      "source": "rom-rec585"
+    },
+    {
+      "vocabId": "topik-v1:길다",
+      "korean": "긴문둘솜",
+      "romanization": "gin-mun-dul-som",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "길다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5849"
+    },
+    {
+      "vocabId": "topik-v1:깊다",
+      "korean": "다당뿐깊",
+      "romanization": "da-dang-ppun-gip",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "깊다",
+      "areaId": "topik_basic",
+      "source": "rom-rec305"
+    },
+    {
+      "vocabId": "topik-v1:깨다",
+      "korean": "끔깨겹눈",
+      "romanization": "kkeum-kkae-gyeob-nun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "깨다",
+      "areaId": "topik_basic",
+      "source": "rom-rec577"
+    },
+    {
+      "vocabId": "topik-v1:껌",
+      "korean": "꿈껌빵끼",
+      "romanization": "kkum-kkeom-ppang-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "껌",
+      "areaId": "topik_basic",
+      "source": "rom-rec3776"
+    },
+    {
+      "vocabId": "topik-v1:껍질",
+      "korean": "공격받으면껍질표면의",
+      "romanization": "gong-gyeog-bad-eu-myeon-kkeob-jil-pyo-myeon-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "껍질",
+      "areaId": "topik_basic",
+      "source": "rom-rec4419"
+    },
+    {
+      "vocabId": "topik-v1:꼭",
+      "korean": "빠꼭멱꿋",
+      "romanization": "ppa-kkog-myeog-kkus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꼭",
+      "areaId": "topik_basic",
+      "source": "rom-rec3559"
+    },
+    {
+      "vocabId": "topik-v1:꽃",
+      "korean": "커다란꽃을피운다",
+      "romanization": "keo-da-ran-kkoch-eul-pi-un-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꽃",
+      "areaId": "topik_basic",
+      "source": "rom-rec4331"
+    },
+    {
+      "vocabId": "topik-v1:꽃잎",
+      "korean": "꽃잎이릍수록많은",
+      "romanization": "kkoch-ip-i-reut-su-rog-manh-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꽃잎",
+      "areaId": "topik_basic",
+      "source": "rom-rec4373"
+    },
+    {
+      "vocabId": "topik-v1:꽤",
+      "korean": "꽝꽤몬겊",
+      "romanization": "kkwang-kkwae-mon-geop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꽤",
+      "areaId": "topik_basic",
+      "source": "rom-rec2747"
+    },
+    {
+      "vocabId": "topik-v1:꾸다",
+      "korean": "눈쓰꾸력",
+      "romanization": "nun-sseu-kku-ryeog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꾸다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2819"
+    },
+    {
+      "vocabId": "topik-v1:꿀",
+      "korean": "꿀둬몬겊",
+      "romanization": "kkul-dwo-mon-geop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꿀",
+      "areaId": "topik_basic",
+      "source": "rom-rec5814"
+    },
+    {
+      "vocabId": "topik-v1:꿈",
+      "korean": "컴묶꿈넬",
+      "romanization": "keom-mukk-kkum-nel",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꿈",
+      "areaId": "topik_basic",
+      "source": "rom-rec1134"
+    },
+    {
+      "vocabId": "topik-v1:꿈꾸다",
+      "korean": "궂꿈꾸갯",
+      "romanization": "guj-kkum-kku-gaes",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "꿈꾸다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3746"
+    },
+    {
+      "vocabId": "topik-v1:끄다",
+      "korean": "끔멍다당",
+      "romanization": "kkeum-meong-da-dang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "끄다",
+      "areaId": "topik_basic",
+      "source": "rom-rec383"
+    },
+    {
+      "vocabId": "topik-v1:끊다",
+      "korean": "접속끊기",
+      "romanization": "jeob-sog-kkeunh-gi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "끊다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3019"
+    },
+    {
+      "vocabId": "topik-v1:끌다",
+      "korean": "꽝꽤끊끌느",
+      "romanization": "kkwang-kkwae-kkeunh-kkeul-neu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "끌다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3858"
+    },
+    {
+      "vocabId": "topik-v1:끓다",
+      "korean": "꺅포뜨끓",
+      "romanization": "kkyag-po-tteu-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "끓다",
+      "areaId": "topik_basic",
+      "source": "rom-rec726"
+    },
+    {
+      "vocabId": "topik-v1:끝",
+      "korean": "논문끝끗",
+      "romanization": "non-mun-kkeut-kkeus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "끝",
+      "areaId": "topik_basic",
+      "source": "rom-rec4023"
+    },
+    {
+      "vocabId": "topik-v1:끼다",
+      "korean": "끔혹껴껸",
+      "romanization": "kkeum-hog-kkyeo-kkyeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "끼다",
+      "areaId": "topik_basic",
+      "source": "rom-rec579"
+    },
+    {
+      "vocabId": "topik-v1:나가다",
+      "korean": "매일밤밖으로나가서",
+      "romanization": "mae-il-bam-bakk-eu-ro-na-ga-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4380"
+    },
+    {
+      "vocabId": "topik-v1:나누다",
+      "korean": "꽉나눈깠콘다당",
+      "romanization": "kkwag-na-nun-kkass-kon-da-dang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나누다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5344"
+    },
+    {
+      "vocabId": "topik-v1:나다",
+      "korean": "오치나쿠",
+      "romanization": "o-chi-na-ku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9503"
+    },
+    {
+      "vocabId": "topik-v1:나라",
+      "korean": "나라나쿠나루",
+      "romanization": "na-ra-na-ku-na-ru",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나라",
+      "areaId": "topik_basic",
+      "source": "rom-rec474"
+    },
+    {
+      "vocabId": "topik-v1:나무",
+      "korean": "이쿠나무히쿠",
+      "romanization": "i-ku-na-mu-hi-ku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나무",
+      "areaId": "topik_basic",
+      "source": "rom-rec9215"
+    },
+    {
+      "vocabId": "topik-v1:나쁘다",
+      "korean": "나쁜꿈만먹었을땐",
+      "romanization": "na-ppeun-kkum-man-meog-eoss-eul-ttaen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나쁘다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4424"
+    },
+    {
+      "vocabId": "topik-v1:나오다",
+      "korean": "즈우제나오란타",
+      "romanization": "jeu-u-je-na-o-ran-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나오다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1318"
+    },
+    {
+      "vocabId": "topik-v1:나이",
+      "korean": "키카나이",
+      "romanization": "ki-ka-na-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나이",
+      "areaId": "topik_basic",
+      "source": "rom-rec1171"
+    },
+    {
+      "vocabId": "topik-v1:나타나다",
+      "korean": "나타나지않는다",
+      "romanization": "na-ta-na-ji-anh-neun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나타나다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4364"
+    },
+    {
+      "vocabId": "topik-v1:나타내다",
+      "korean": "나타내고있는거지",
+      "romanization": "na-ta-nae-go-iss-neun-geo-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "나타내다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2985"
+    },
+    {
+      "vocabId": "topik-v1:낚시",
+      "korean": "낚시꾼이실수로낚았다가",
+      "romanization": "nakk-si-kkun-i-sil-su-ro-nakk-ass-da-ga",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "낚시",
+      "areaId": "topik_basic",
+      "source": "rom-rec4400"
+    },
+    {
+      "vocabId": "topik-v1:날",
+      "korean": "날신화크",
+      "romanization": "nal-sin-hwa-keu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "날",
+      "areaId": "topik_basic",
+      "source": "rom-rec2531"
+    },
+    {
+      "vocabId": "topik-v1:날개",
+      "korean": "날개가짧아서먼제나",
+      "romanization": "nal-gae-ga-jjalb-a-seo-meon-je-na",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "날개",
+      "areaId": "topik_basic",
+      "source": "rom-rec4349"
+    },
+    {
+      "vocabId": "topik-v1:날다",
+      "korean": "미끌어지듯이날아",
+      "romanization": "mi-kkeul-eo-ji-deus-i-nal-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "날다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4346"
+    },
+    {
+      "vocabId": "topik-v1:날씨",
+      "korean": "날씨를바꾸는",
+      "romanization": "nal-ssi-reul-ba-kku-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "날씨",
+      "areaId": "topik_basic",
+      "source": "rom-rec4477"
+    },
+    {
+      "vocabId": "topik-v1:날아가다",
+      "korean": "날아가버린다고한다",
+      "romanization": "nal-a-ga-beo-rin-da-go-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "날아가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4396"
+    },
+    {
+      "vocabId": "topik-v1:낡다",
+      "korean": "군률낡첵",
+      "romanization": "gun-ryul-nalg-cheg",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "낡다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4982"
+    },
+    {
+      "vocabId": "topik-v1:남",
+      "korean": "맵□U마진키WK굴코라데바유면통남▶무사양코나호오아코에거,",
+      "romanization": "maeb□Uma-jin-kiWKgul-ko-ra-de-ba-yu-myeon-tong-nam▶mu-sa-yang-ko-na-ho-o-a-ko-e-geo,",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "남",
+      "areaId": "topik_basic",
+      "source": "rom-rec9608"
+    },
+    {
+      "vocabId": "topik-v1:남기다",
+      "korean": "큰발자논을남기며",
+      "romanization": "keun-bal-ja-non-eul-nam-gi-myeo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "남기다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4412"
+    },
+    {
+      "vocabId": "topik-v1:남자",
+      "korean": "남자아이",
+      "romanization": "nam-ja-a-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "남자",
+      "areaId": "topik_basic",
+      "source": "rom-rec2597"
+    },
+    {
+      "vocabId": "topik-v1:낫다",
+      "korean": "아이시즈우랑르섹낫노",
+      "romanization": "a-i-si-jeu-u-rang-reu-seg-nas-no",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "낫다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4057"
+    },
+    {
+      "vocabId": "topik-v1:낮",
+      "korean": "미믄낮함",
+      "romanization": "mi-meun-naj-ham",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "낮",
+      "areaId": "topik_basic",
+      "source": "rom-rec3748"
+    },
+    {
+      "vocabId": "topik-v1:낮다",
+      "korean": "화공낮릍",
+      "romanization": "hwa-gong-naj-reut",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "낮다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3714"
+    },
+    {
+      "vocabId": "topik-v1:낳다",
+      "korean": "낱낳끔냈",
+      "romanization": "nat-nah-kkeum-naess",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "낳다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5736"
+    },
+    {
+      "vocabId": "topik-v1:내다",
+      "korean": "림냈군낳",
+      "romanization": "rim-naess-gun-nah",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "내다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1087"
+    },
+    {
+      "vocabId": "topik-v1:내려오다",
+      "korean": "땀에안내려와도괜찮다",
+      "romanization": "ttam-e-an-nae-ryeo-wa-do-gwaen-chanh-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "내려오다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4350"
+    },
+    {
+      "vocabId": "topik-v1:내리다",
+      "korean": "내릴수없게만드는도구",
+      "romanization": "nae-ril-su-eobs-ge-man-deu-neun-do-gu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "내리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec192"
+    },
+    {
+      "vocabId": "topik-v1:내밀다",
+      "korean": "가끔땀위로얼굴을내민다",
+      "romanization": "ga-kkeum-ttam-wi-ro-eol-gul-eul-nae-min-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "내밀다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4378"
+    },
+    {
+      "vocabId": "topik-v1:너무",
+      "korean": "너무도강인한육체여서",
+      "romanization": "neo-mu-do-gang-in-han-yug-che-yeo-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "너무",
+      "areaId": "topik_basic",
+      "source": "rom-rec4395"
+    },
+    {
+      "vocabId": "topik-v1:넓다",
+      "korean": "벌넓꽈끓",
+      "romanization": "beol-neolb-kkwa-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "넓다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1227"
+    },
+    {
+      "vocabId": "topik-v1:넘다",
+      "korean": "몹껌넘늑",
+      "romanization": "mob-kkeom-neom-neug",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "넘다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4081"
+    },
+    {
+      "vocabId": "topik-v1:넘어지다",
+      "korean": "발로차거나걸려넘어지곤한다",
+      "romanization": "bal-ro-cha-geo-na-geol-ryeo-neom-eo-ji-gon-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "넘어지다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4402"
+    },
+    {
+      "vocabId": "topik-v1:넣다",
+      "korean": "넣넣길끕",
+      "romanization": "neoh-neoh-gil-kkeub",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "넣다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4050"
+    },
+    {
+      "vocabId": "topik-v1:네",
+      "korean": "타사릴버세루미복먼네",
+      "romanization": "ta-sa-ril-beo-se-ru-mi-bog-meon-ne",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "네",
+      "areaId": "topik_basic",
+      "source": "rom-rec9484"
+    },
+    {
+      "vocabId": "topik-v1:넷",
+      "korean": "베멱브네넷솔세츠×",
+      "romanization": "be-myeog-beu-ne-nes-sol-se-cheu×",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "넷",
+      "areaId": "topik_basic",
+      "source": "rom-rec5595"
+    },
+    {
+      "vocabId": "topik-v1:년",
+      "korean": "조금변년된볼",
+      "romanization": "jo-geum-byeon-nyeon-doen-bol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "년",
+      "areaId": "topik_basic",
+      "source": "rom-rec137"
+    },
+    {
+      "vocabId": "topik-v1:노란색",
+      "korean": "노란색의작은조곽",
+      "romanization": "no-ran-saeg-ui-jag-eun-jo-gwag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "노란색",
+      "areaId": "topik_basic",
+      "source": "rom-rec181"
+    },
+    {
+      "vocabId": "topik-v1:노랗다",
+      "korean": "니노란테",
+      "romanization": "ni-no-ran-te",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "노랗다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4524"
+    },
+    {
+      "vocabId": "topik-v1:노래",
+      "korean": "기분좋은노래를부른다",
+      "romanization": "gi-bun-joh-eun-no-rae-reul-bu-reun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "노래",
+      "areaId": "topik_basic",
+      "source": "rom-rec4367"
+    },
+    {
+      "vocabId": "topik-v1:노트",
+      "korean": "에모노트",
+      "romanization": "e-mo-no-teu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "노트",
+      "areaId": "topik_basic",
+      "source": "rom-rec4859"
+    },
+    {
+      "vocabId": "topik-v1:논문",
+      "korean": "논문끝끗",
+      "romanization": "non-mun-kkeut-kkeus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "논문",
+      "areaId": "topik_basic",
+      "source": "rom-rec4023"
+    },
+    {
+      "vocabId": "topik-v1:놀다",
+      "korean": "호호Q키놀후",
+      "romanization": "ho-hoQki-nol-hu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "놀다",
+      "areaId": "topik_basic",
+      "source": "rom-rec8416"
+    },
+    {
+      "vocabId": "topik-v1:높다",
+      "korean": "간끔두높",
+      "romanization": "gan-kkeum-du-nop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "높다",
+      "areaId": "topik_basic",
+      "source": "rom-rec910"
+    },
+    {
+      "vocabId": "topik-v1:높이다",
+      "korean": "공격을높이는도구",
+      "romanization": "gong-gyeog-eul-nop-i-neun-do-gu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "높이다",
+      "areaId": "topik_basic",
+      "source": "rom-rec194"
+    },
+    {
+      "vocabId": "topik-v1:놓다",
+      "korean": "놔흡댐끓",
+      "romanization": "nwa-heub-daem-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "놓다",
+      "areaId": "topik_basic",
+      "source": "rom-rec788"
+    },
+    {
+      "vocabId": "topik-v1:누나",
+      "korean": "세누나코",
+      "romanization": "se-nu-na-ko",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "누나",
+      "areaId": "topik_basic",
+      "source": "rom-rec9509"
+    },
+    {
+      "vocabId": "topik-v1:눈",
+      "korean": "낱낳섭눈",
+      "romanization": "nat-nah-seob-nun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "눈",
+      "areaId": "topik_basic",
+      "source": "rom-rec711"
+    },
+    {
+      "vocabId": "topik-v1:눈앞",
+      "korean": "눈앞에나타난다고하는",
+      "romanization": "nun-ap-e-na-ta-nan-da-go-ha-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "눈앞",
+      "areaId": "topik_basic",
+      "source": "rom-rec4473"
+    },
+    {
+      "vocabId": "topik-v1:눕다",
+      "korean": "눕하고터지는소다",
+      "romanization": "nub-ha-go-teo-ji-neun-so-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "눕다",
+      "areaId": "topik_basic",
+      "source": "rom-rec158"
+    },
+    {
+      "vocabId": "topik-v1:느끼다",
+      "korean": "느끼고도망가는것같다",
+      "romanization": "neu-kki-go-do-mang-ga-neun-geos-gat-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "느끼다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4364"
+    },
+    {
+      "vocabId": "topik-v1:느리다",
+      "korean": "느려지는것같다",
+      "romanization": "neu-ryeo-ji-neun-geos-gat-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "느리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4348"
+    },
+    {
+      "vocabId": "topik-v1:늘",
+      "korean": "늘군딤으",
+      "romanization": "neul-gun-dim-eu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "늘",
+      "areaId": "topik_basic",
+      "source": "rom-rec5692"
+    },
+    {
+      "vocabId": "topik-v1:늘다",
+      "korean": "넌널댕느간괃까",
+      "romanization": "neon-neol-daeng-neu-gan-gwad-kka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "늘다",
+      "areaId": "topik_basic",
+      "source": "rom-rec519"
+    },
+    {
+      "vocabId": "topik-v1:늘어나다",
+      "korean": "쭉쭉늘어난다",
+      "romanization": "jjug-jjug-neul-eo-nan-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "늘어나다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4436"
+    },
+    {
+      "vocabId": "topik-v1:늙다",
+      "korean": "코갚같늙",
+      "romanization": "ko-gap-gat-neulg",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "늙다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9634"
+    },
+    {
+      "vocabId": "topik-v1:능력",
+      "korean": "포켓몬능력",
+      "romanization": "po-kes-mon-neung-ryeog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "능력",
+      "areaId": "topik_basic",
+      "source": "rom-rec3636"
+    },
+    {
+      "vocabId": "topik-v1:늦다",
+      "korean": "끔늦논위눔",
+      "romanization": "kkeum-neuj-non-wi-num",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "늦다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4499"
+    },
+    {
+      "vocabId": "topik-v1:다",
+      "korean": "다당밀밈",
+      "romanization": "da-dang-mil-mim",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3502"
+    },
+    {
+      "vocabId": "topik-v1:다니다",
+      "korean": "씨앗을뿌리며다닌다",
+      "romanization": "ssi-as-eul-ppu-ri-myeo-da-nin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "다니다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4371"
+    },
+    {
+      "vocabId": "topik-v1:다르다",
+      "korean": "뇨비부아키달라모훈린",
+      "romanization": "nyo-bi-bu-a-ki-dal-ra-mo-hun-rin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "다르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec6599"
+    },
+    {
+      "vocabId": "topik-v1:다리",
+      "korean": "자라면두다리로",
+      "romanization": "ja-ra-myeon-du-da-ri-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "다리",
+      "areaId": "topik_basic",
+      "source": "rom-rec4330"
+    },
+    {
+      "vocabId": "topik-v1:다음",
+      "korean": "다음뒤로",
+      "romanization": "da-eum-dwi-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "다음",
+      "areaId": "topik_basic",
+      "source": "rom-rec2591"
+    },
+    {
+      "vocabId": "topik-v1:닦다",
+      "korean": "곽테단에타들▶두록들사헤K구석사닦슈노아단치잔시나힌게준{var:0B}늑네R디준치록니이",
+      "romanization": "gwag-te-dan-e-ta-deul▶du-rog-deul-sa-heKgu-seog-sa-dakk-syu-no-a-dan-chi-jan-si-na-hin-ge-jun{var:0B}neug-neRdi-jun-chi-rog-ni-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "닦다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9625"
+    },
+    {
+      "vocabId": "topik-v1:단",
+      "korean": "나□단등히드양닌9I",
+      "romanization": "na□dan-deung-hi-deu-yang-nin9I",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "단",
+      "areaId": "topik_basic",
+      "source": "rom-rec9308"
+    },
+    {
+      "vocabId": "topik-v1:단맛",
+      "korean": "매우단맛의쥬스",
+      "romanization": "mae-u-dan-mas-ui-jyu-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "단맛",
+      "areaId": "topik_basic",
+      "source": "rom-rec159"
+    },
+    {
+      "vocabId": "topik-v1:닫다",
+      "korean": "닫습니다",
+      "romanization": "dad-seub-ni-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "닫다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2727"
+    },
+    {
+      "vocabId": "topik-v1:달",
+      "korean": "렛돈달넨",
+      "romanization": "res-don-dal-nen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "달",
+      "areaId": "topik_basic",
+      "source": "rom-rec8158"
+    },
+    {
+      "vocabId": "topik-v1:달걀",
+      "korean": "달걀이라고생곽하여만지면",
+      "romanization": "dal-gyal-i-ra-go-saeng-gwag-ha-yeo-man-ji-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "달걀",
+      "areaId": "topik_basic",
+      "source": "rom-rec4430"
+    },
+    {
+      "vocabId": "topik-v1:달다",
+      "korean": ":조래달모카래아메닌",
+      "romanization": ":jo-rae-dal-mo-ka-rae-a-me-nin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "달다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7529"
+    },
+    {
+      "vocabId": "topik-v1:달리다",
+      "korean": "급하게달릴때점점",
+      "romanization": "geub-ha-ge-dal-ril-ttae-jeom-jeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "달리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4434"
+    },
+    {
+      "vocabId": "topik-v1:닭",
+      "korean": "간냅닭봅",
+      "romanization": "gan-naeb-dalg-bob",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "닭",
+      "areaId": "topik_basic",
+      "source": "rom-rec2886"
+    },
+    {
+      "vocabId": "topik-v1:닿다",
+      "korean": "닿겹겼끗",
+      "romanization": "dah-gyeob-gyeoss-kkeus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "닿다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3329"
+    },
+    {
+      "vocabId": "topik-v1:대단히",
+      "korean": "대단히짜다",
+      "romanization": "dae-dan-hi-jja-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "대단히",
+      "areaId": "topik_basic",
+      "source": "rom-rec177"
+    },
+    {
+      "vocabId": "topik-v1:더",
+      "korean": "겔겜뿌더덩",
+      "romanization": "gel-gem-ppu-deo-deong",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "더",
+      "areaId": "topik_basic",
+      "source": "rom-rec2797"
+    },
+    {
+      "vocabId": "topik-v1:더럽다",
+      "korean": "더러운곳에나타난다",
+      "romanization": "deo-reo-un-gos-e-na-ta-nan-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "더럽다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4416"
+    },
+    {
+      "vocabId": "topik-v1:던지다",
+      "korean": "던져버린다",
+      "romanization": "deon-jyeo-beo-rin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "던지다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4455"
+    },
+    {
+      "vocabId": "topik-v1:덜",
+      "korean": "꼬공덜환",
+      "romanization": "kko-gong-deol-hwan",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "덜",
+      "areaId": "topik_basic",
+      "source": "rom-rec2670"
+    },
+    {
+      "vocabId": "topik-v1:덥다",
+      "korean": "걸검덥쁜",
+      "romanization": "geol-geom-deob-ppeun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "덥다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3910"
+    },
+    {
+      "vocabId": "topik-v1:덮다",
+      "korean": "덮간혹끼",
+      "romanization": "deop-gan-hog-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "덮다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2808"
+    },
+    {
+      "vocabId": "topik-v1:데",
+      "korean": "는반노와데노",
+      "romanization": "neun-ban-no-wa-de-no",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "데",
+      "areaId": "topik_basic",
+      "source": "rom-rec470"
+    },
+    {
+      "vocabId": "topik-v1:도구",
+      "korean": "도구관련",
+      "romanization": "do-gu-gwan-ryeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "도구",
+      "areaId": "topik_basic",
+      "source": "rom-rec3021"
+    },
+    {
+      "vocabId": "topik-v1:도로",
+      "korean": "펌술잔래달렛굴□이키스츠노마야리레로루요호토키닌L엔7탕콧랑2B힌에레했밧윤본린터도로하사",
+      "romanization": "peom-sul-jan-rae-dal-res-gul□i-ki-seu-cheu-no-ma-ya-ri-re-ro-ru-yo-ho-to-ki-ninLen7tang-kos-rang2Bhin-e-re-haess-bas-yun-bon-rin-teo-do-ro-ha-sa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "도로",
+      "areaId": "topik_basic",
+      "source": "rom-rec9054"
+    },
+    {
+      "vocabId": "topik-v1:도망가다",
+      "korean": "박거나도망간다",
+      "romanization": "bag-geo-na-do-mang-gan-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "도망가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4356"
+    },
+    {
+      "vocabId": "topik-v1:도시",
+      "korean": "도시의포켓몬",
+      "romanization": "do-si-ui-po-kes-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "도시",
+      "areaId": "topik_basic",
+      "source": "rom-rec2613"
+    },
+    {
+      "vocabId": "topik-v1:돈",
+      "korean": "렛돈달넨",
+      "romanization": "res-don-dal-nen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돈",
+      "areaId": "topik_basic",
+      "source": "rom-rec8158"
+    },
+    {
+      "vocabId": "topik-v1:돌",
+      "korean": "헤소의돌",
+      "romanization": "he-so-ui-dol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돌",
+      "areaId": "topik_basic",
+      "source": "rom-rec3208"
+    },
+    {
+      "vocabId": "topik-v1:돌다",
+      "korean": "아닐까라는소문이돌고있다",
+      "romanization": "a-nil-kka-ra-neun-so-mun-i-dol-go-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돌다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4421"
+    },
+    {
+      "vocabId": "topik-v1:돌리다",
+      "korean": "침사이에끼운채로빙빙돌려",
+      "romanization": "chim-sa-i-e-kki-un-chae-ro-bing-bing-dol-ryeo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돌리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4455"
+    },
+    {
+      "vocabId": "topik-v1:돌아가다",
+      "korean": "돌아갑니다",
+      "romanization": "dol-a-gab-ni-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돌아가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2706"
+    },
+    {
+      "vocabId": "topik-v1:돌아오다",
+      "korean": "그곳에가면돌아오지못한다",
+      "romanization": "geu-gos-e-ga-myeon-dol-a-o-ji-mos-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돌아오다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4399"
+    },
+    {
+      "vocabId": "topik-v1:돕다",
+      "korean": "끔혹돕닿높",
+      "romanization": "kkeum-hog-dob-dah-nop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "돕다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3398"
+    },
+    {
+      "vocabId": "topik-v1:동물",
+      "korean": "털이아름다워서애완동물로",
+      "romanization": "teol-i-a-reum-da-wo-seo-ae-wan-dong-mul-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "동물",
+      "areaId": "topik_basic",
+      "source": "rom-rec4381"
+    },
+    {
+      "vocabId": "topik-v1:동안",
+      "korean": "5턴동안만",
+      "romanization": "5teon-dong-an-man",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "동안",
+      "areaId": "topik_basic",
+      "source": "rom-rec192"
+    },
+    {
+      "vocabId": "topik-v1:되다",
+      "korean": "약재가된다",
+      "romanization": "yag-jae-ga-doen-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "되다",
+      "areaId": "topik_basic",
+      "source": "rom-rec246"
+    },
+    {
+      "vocabId": "topik-v1:두다",
+      "korean": "꿀둬몬겊",
+      "romanization": "kkul-dwo-mon-geop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "두다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5814"
+    },
+    {
+      "vocabId": "topik-v1:둥글다",
+      "korean": "몸을둥글게말면뽀족한",
+      "romanization": "mom-eul-dung-geul-ge-mal-myeon-ppo-jog-han",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "둥글다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4356"
+    },
+    {
+      "vocabId": "topik-v1:뒤",
+      "korean": "다음뒤로",
+      "romanization": "da-eum-dwi-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뒤",
+      "areaId": "topik_basic",
+      "source": "rom-rec2591"
+    },
+    {
+      "vocabId": "topik-v1:드리다",
+      "korean": "포켓몬의영양드림크",
+      "romanization": "po-kes-mon-ui-yeong-yang-deu-rim-keu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "드리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec183"
+    },
+    {
+      "vocabId": "topik-v1:듣다",
+      "korean": "설명듣다",
+      "romanization": "seol-myeong-deud-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "듣다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3053"
+    },
+    {
+      "vocabId": "topik-v1:들",
+      "korean": "들에통쎈트사버",
+      "romanization": "deul-e-tong-ssen-teu-sa-beo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "들",
+      "areaId": "topik_basic",
+      "source": "rom-rec8431"
+    },
+    {
+      "vocabId": "topik-v1:들다",
+      "korean": "원논덤든까",
+      "romanization": "won-non-deom-deun-kka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "들다",
+      "areaId": "topik_basic",
+      "source": "rom-rec485"
+    },
+    {
+      "vocabId": "topik-v1:들리다",
+      "korean": "들리쿠N나헤양주사카달테아렛시□치좋니누갓오마",
+      "romanization": "deul-ri-kuNna-he-yang-ju-sa-ka-dal-te-a-res-si□chi-joh-ni-nu-gas-o-ma",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "들리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7526"
+    },
+    {
+      "vocabId": "topik-v1:등",
+      "korean": "피키루등야",
+      "romanization": "pi-ki-ru-deung-ya",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "등",
+      "areaId": "topik_basic",
+      "source": "rom-rec3401"
+    },
+    {
+      "vocabId": "topik-v1:등록",
+      "korean": "등록B하코D□록데들달포케오힌메렛미지넨",
+      "romanization": "deung-rogBha-koD□rog-de-deul-dal-po-ke-o-hin-me-res-mi-ji-nen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "등록",
+      "areaId": "topik_basic",
+      "source": "rom-rec7552"
+    },
+    {
+      "vocabId": "topik-v1:따라가다",
+      "korean": "스피드로따라가기시작한다",
+      "romanization": "seu-pi-deu-ro-tta-ra-ga-gi-si-jag-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "따라가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4406"
+    },
+    {
+      "vocabId": "topik-v1:따르다",
+      "korean": "매우잘따르게되고",
+      "romanization": "mae-u-jal-tta-reu-ge-doe-go",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "따르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec142"
+    },
+    {
+      "vocabId": "topik-v1:딱",
+      "korean": "딱휜곽넌",
+      "romanization": "ttag-hwin-gwag-neon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "딱",
+      "areaId": "topik_basic",
+      "source": "rom-rec3665"
+    },
+    {
+      "vocabId": "topik-v1:딸",
+      "korean": "딴딸꺼둔몬덤덥",
+      "romanization": "ttan-ttal-kkeo-dun-mon-deom-deob",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "딸",
+      "areaId": "topik_basic",
+      "source": "rom-rec3557"
+    },
+    {
+      "vocabId": "topik-v1:땀",
+      "korean": "떨게표땀",
+      "romanization": "tteol-ge-pyo-ttam",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "땀",
+      "areaId": "topik_basic",
+      "source": "rom-rec5743"
+    },
+    {
+      "vocabId": "topik-v1:때",
+      "korean": "한성격때",
+      "romanization": "han-seong-gyeog-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "때",
+      "areaId": "topik_basic",
+      "source": "rom-rec3597"
+    },
+    {
+      "vocabId": "topik-v1:떡",
+      "korean": "떡꼴몬툰낀",
+      "romanization": "tteog-kkol-mon-tun-kkin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "떡",
+      "areaId": "topik_basic",
+      "source": "rom-rec4946"
+    },
+    {
+      "vocabId": "topik-v1:떨다",
+      "korean": "떨뻔멁허",
+      "romanization": "tteol-ppeon-meolg-heo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "떨다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4105"
+    },
+    {
+      "vocabId": "topik-v1:떨어지다",
+      "korean": "하나가땀에떨어지면",
+      "romanization": "ha-na-ga-ttam-e-tteol-eo-ji-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "떨어지다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4431"
+    },
+    {
+      "vocabId": "topik-v1:떼다",
+      "korean": "떼모캬□다당몬델딧",
+      "romanization": "tte-mo-kya□da-dang-mon-del-dis",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "떼다",
+      "areaId": "topik_basic",
+      "source": "rom-rec567"
+    },
+    {
+      "vocabId": "topik-v1:똑같이",
+      "korean": "복사하여상대와똑같이",
+      "romanization": "bog-sa-ha-yeo-sang-dae-wa-ttog-gat-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "똑같이",
+      "areaId": "topik_basic",
+      "source": "rom-rec4460"
+    },
+    {
+      "vocabId": "topik-v1:뜨겁다",
+      "korean": "뜨거운것을좋아하는성격",
+      "romanization": "tteu-geo-un-geos-eul-joh-a-ha-neun-seong-gyeog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뜨겁다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4332"
+    },
+    {
+      "vocabId": "topik-v1:뜨다",
+      "korean": "꺅포뜨끓",
+      "romanization": "kkyag-po-tteu-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뜨다",
+      "areaId": "topik_basic",
+      "source": "rom-rec726"
+    },
+    {
+      "vocabId": "topik-v1:뜻",
+      "korean": "뜻게둥눔",
+      "romanization": "tteus-ge-dung-num",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뜻",
+      "areaId": "topik_basic",
+      "source": "rom-rec3422"
+    },
+    {
+      "vocabId": "topik-v1:마구",
+      "korean": "에마구헤Ü",
+      "romanization": "e-ma-gu-heÜ",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마구",
+      "areaId": "topik_basic",
+      "source": "rom-rec2093"
+    },
+    {
+      "vocabId": "topik-v1:마루",
+      "korean": "마루준와두치Q케",
+      "romanization": "ma-ru-jun-wa-du-chiQke",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마루",
+      "areaId": "topik_basic",
+      "source": "rom-rec7522"
+    },
+    {
+      "vocabId": "topik-v1:마리",
+      "korean": "미바타마리니스제타트아라와스",
+      "romanization": "mi-ba-ta-ma-ri-ni-seu-je-ta-teu-a-ra-wa-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마리",
+      "areaId": "topik_basic",
+      "source": "rom-rec4733"
+    },
+    {
+      "vocabId": "topik-v1:마시다",
+      "korean": "에마테프마신",
+      "romanization": "e-ma-te-peu-ma-sin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마시다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4232"
+    },
+    {
+      "vocabId": "topik-v1:마을",
+      "korean": "모습을감추면마을에",
+      "romanization": "mo-seub-eul-gam-chu-myeon-ma-eul-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마을",
+      "areaId": "topik_basic",
+      "source": "rom-rec4453"
+    },
+    {
+      "vocabId": "topik-v1:마주",
+      "korean": "상대와눈이마주처을때",
+      "romanization": "sang-dae-wa-nun-i-ma-ju-cheo-eul-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마주",
+      "areaId": "topik_basic",
+      "source": "rom-rec4425"
+    },
+    {
+      "vocabId": "topik-v1:마치",
+      "korean": "마등등마치년달Ä",
+      "romanization": "ma-deung-deung-ma-chi-nyeon-dalÄ",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마치",
+      "areaId": "topik_basic",
+      "source": "rom-rec9900"
+    },
+    {
+      "vocabId": "topik-v1:마치다",
+      "korean": "마치쿠베사이",
+      "romanization": "ma-chi-ku-be-sa-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "마치다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4130"
+    },
+    {
+      "vocabId": "topik-v1:막",
+      "korean": "롤냇막군꽥꿈깊냈너",
+      "romanization": "rol-naes-mag-gun-kkwaeg-kkum-gip-naess-neo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "막",
+      "areaId": "topik_basic",
+      "source": "rom-rec4683"
+    },
+    {
+      "vocabId": "topik-v1:막다",
+      "korean": "움직임을막은후에",
+      "romanization": "um-jig-im-eul-mag-eun-hu-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "막다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4398"
+    },
+    {
+      "vocabId": "topik-v1:만나다",
+      "korean": "포켓몬과만나거나잡았을경우",
+      "romanization": "po-kes-mon-gwa-man-na-geo-na-jab-ass-eul-gyeong-u",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "만나다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3707"
+    },
+    {
+      "vocabId": "topik-v1:만남",
+      "korean": "에서만남",
+      "romanization": "e-seo-man-nam",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "만남",
+      "areaId": "topik_basic",
+      "source": "rom-rec3597"
+    },
+    {
+      "vocabId": "topik-v1:만들다",
+      "korean": "특별히만들어졌다",
+      "romanization": "teug-byeol-hi-man-deul-eo-jyeoss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "만들다",
+      "areaId": "topik_basic",
+      "source": "rom-rec143"
+    },
+    {
+      "vocabId": "topik-v1:만지다",
+      "korean": "몬스터볼같아서만졌다가",
+      "romanization": "mon-seu-teo-bol-gat-a-seo-man-jyeoss-da-ga",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "만지다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4428"
+    },
+    {
+      "vocabId": "topik-v1:만화",
+      "korean": "타우츄만만화페시닷피만카사키토랐닷□",
+      "romanization": "ta-u-chyu-man-man-hwa-pe-si-das-pi-man-ka-sa-ki-to-rass-das□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "만화",
+      "areaId": "topik_basic",
+      "source": "rom-rec1750"
+    },
+    {
+      "vocabId": "topik-v1:많다",
+      "korean": "겹듀픈많존",
+      "romanization": "gyeob-dyu-peun-manh-jon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "많다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3551"
+    },
+    {
+      "vocabId": "topik-v1:많이",
+      "korean": "많이기르지만곤잘",
+      "romanization": "manh-i-gi-reu-ji-man-gon-jal",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "많이",
+      "areaId": "topik_basic",
+      "source": "rom-rec4381"
+    },
+    {
+      "vocabId": "topik-v1:말",
+      "korean": "□놉놋걷말",
+      "romanization": "□nob-nos-geod-mal",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "말",
+      "areaId": "topik_basic",
+      "source": "rom-rec507"
+    },
+    {
+      "vocabId": "topik-v1:말다",
+      "korean": "키마네:아",
+      "romanization": "ki-ma-ne:a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "말다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1652"
+    },
+    {
+      "vocabId": "topik-v1:맑다",
+      "korean": "세노코맑실누츠",
+      "romanization": "se-no-ko-malg-sil-nu-cheu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맑다",
+      "areaId": "topik_basic",
+      "source": "rom-rec8616"
+    },
+    {
+      "vocabId": "topik-v1:맛",
+      "korean": "맛맛맛코",
+      "romanization": "mas-mas-mas-ko",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맛",
+      "areaId": "topik_basic",
+      "source": "rom-rec6933"
+    },
+    {
+      "vocabId": "topik-v1:맡기다",
+      "korean": "도구를맡긴다",
+      "romanization": "do-gu-reul-mat-gin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맡기다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3023"
+    },
+    {
+      "vocabId": "topik-v1:맡다",
+      "korean": "몇개맡길까",
+      "romanization": "myeoch-gae-mat-gil-kka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맡다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2738"
+    },
+    {
+      "vocabId": "topik-v1:매다",
+      "korean": "소소치맸케",
+      "romanization": "so-so-chi-maess-ke",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "매다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1088"
+    },
+    {
+      "vocabId": "topik-v1:매우",
+      "korean": "매우쓴약초",
+      "romanization": "mae-u-sseun-yag-cho",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "매우",
+      "areaId": "topik_basic",
+      "source": "rom-rec164"
+    },
+    {
+      "vocabId": "topik-v1:매일",
+      "korean": "매일밤밖으로나가서",
+      "romanization": "mae-il-bam-bakk-eu-ro-na-ga-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "매일",
+      "areaId": "topik_basic",
+      "source": "rom-rec4380"
+    },
+    {
+      "vocabId": "topik-v1:맥주",
+      "korean": "오오쿠시츠와베섹톤브브랍냐푸루쿠×온ROPZ록굴카이우□석준WTRRY닌래통주:슬맥주주버주□아오타토노히노하테치키에",
+      "romanization": "o-o-ku-si-cheu-wa-be-seg-ton-beu-beu-rab-nya-pu-ru-ku×onROPZrog-gul-ka-i-u□seog-junWTRRYnin-rae-tong-ju:seul-maeg-ju-ju-beo-ju□a-o-ta-to-no-hi-no-ha-te-chi-ki-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맥주",
+      "areaId": "topik_basic",
+      "source": "rom-rec7018"
+    },
+    {
+      "vocabId": "topik-v1:맨",
+      "korean": "망통렛록통석복복×맨",
+      "romanization": "mang-tong-res-rog-tong-seog-bog-bog×maen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맨",
+      "areaId": "topik_basic",
+      "source": "rom-rec7010"
+    },
+    {
+      "vocabId": "topik-v1:맵다",
+      "korean": "보맵아아",
+      "romanization": "bo-maeb-a-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "맵다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9053"
+    },
+    {
+      "vocabId": "topik-v1:먹다",
+      "korean": "다년납먹",
+      "romanization": "da-nyeon-nab-meog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "먹다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2558"
+    },
+    {
+      "vocabId": "topik-v1:멀다",
+      "korean": "혜멀밋분",
+      "romanization": "hye-meol-mis-bun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "멀다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5448"
+    },
+    {
+      "vocabId": "topik-v1:멋",
+      "korean": "□버하멋주",
+      "romanization": "□beo-ha-meos-ju",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "멋",
+      "areaId": "topik_basic",
+      "source": "rom-rec7459"
+    },
+    {
+      "vocabId": "topik-v1:메뉴",
+      "korean": "이메뉴를닫는다",
+      "romanization": "i-me-nyu-reul-dad-neun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "메뉴",
+      "areaId": "topik_basic",
+      "source": "rom-rec3713"
+    },
+    {
+      "vocabId": "topik-v1:메다",
+      "korean": "석놔뇌메",
+      "romanization": "seog-nwa-noe-me",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "메다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9859"
+    },
+    {
+      "vocabId": "topik-v1:메모",
+      "korean": "마미무메모",
+      "romanization": "ma-mi-mu-me-mo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "메모",
+      "areaId": "topik_basic",
+      "source": "rom-rec3923"
+    },
+    {
+      "vocabId": "topik-v1:메일",
+      "korean": "메일박스",
+      "romanization": "me-il-bag-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "메일",
+      "areaId": "topik_basic",
+      "source": "rom-rec3022"
+    },
+    {
+      "vocabId": "topik-v1:모두",
+      "korean": "소모두쿤폰완쥬론퀸보라이준B2콧블반반3우P솔▶",
+      "romanization": "so-mo-du-kun-pon-wan-jyu-ron-kwin-bo-ra-i-junB2kos-beul-ban-ban3uPsol▶",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모두",
+      "areaId": "topik_basic",
+      "source": "rom-rec9228"
+    },
+    {
+      "vocabId": "topik-v1:모래",
+      "korean": "모래를뿌리곤한다",
+      "romanization": "mo-rae-reul-ppu-ri-gon-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모래",
+      "areaId": "topik_basic",
+      "source": "rom-rec4344"
+    },
+    {
+      "vocabId": "topik-v1:모레",
+      "korean": "복S드합고멕팡티5톰엔네렛함타카키모레케버굴",
+      "romanization": "bogSdeu-hab-go-meg-pang-ti5tom-en-ne-res-ham-ta-ka-ki-mo-re-ke-beo-gul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모레",
+      "areaId": "topik_basic",
+      "source": "rom-rec9510"
+    },
+    {
+      "vocabId": "topik-v1:모르다",
+      "korean": "자신도모르는사이에가스에",
+      "romanization": "ja-sin-do-mo-reu-neun-sa-i-e-ga-seu-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4420"
+    },
+    {
+      "vocabId": "topik-v1:모습",
+      "korean": "모습을본사람은",
+      "romanization": "mo-seub-eul-bon-sa-ram-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모습",
+      "areaId": "topik_basic",
+      "source": "rom-rec4480"
+    },
+    {
+      "vocabId": "topik-v1:모양",
+      "korean": "번개모양이있다",
+      "romanization": "beon-gae-mo-yang-i-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모양",
+      "areaId": "topik_basic",
+      "source": "rom-rec208"
+    },
+    {
+      "vocabId": "topik-v1:모으다",
+      "korean": "불을모으고있을때는",
+      "romanization": "bul-eul-mo-eu-go-iss-eul-ttae-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모으다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4465"
+    },
+    {
+      "vocabId": "topik-v1:모이다",
+      "korean": "친구들이점점모여서",
+      "romanization": "chin-gu-deul-i-jeom-jeom-mo-yeo-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "모이다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4430"
+    },
+    {
+      "vocabId": "topik-v1:몰다",
+      "korean": "꽝꽤몬겊",
+      "romanization": "kkwang-kkwae-mon-geop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "몰다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2747"
+    },
+    {
+      "vocabId": "topik-v1:몸",
+      "korean": "검몸멀몬",
+      "romanization": "geom-mom-meol-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "몸",
+      "areaId": "topik_basic",
+      "source": "rom-rec5852"
+    },
+    {
+      "vocabId": "topik-v1:못",
+      "korean": "밟못빡갯",
+      "romanization": "balb-mos-ppag-gaes",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "못",
+      "areaId": "topik_basic",
+      "source": "rom-rec5825"
+    },
+    {
+      "vocabId": "topik-v1:무",
+      "korean": "후쿠라무",
+      "romanization": "hu-ku-ra-mu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "무",
+      "areaId": "topik_basic",
+      "source": "rom-rec4536"
+    },
+    {
+      "vocabId": "topik-v1:무겁다",
+      "korean": "빤뒤몸이무거워져서",
+      "romanization": "ppan-dwi-mom-i-mu-geo-wo-jyeo-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "무겁다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4370"
+    },
+    {
+      "vocabId": "topik-v1:무늬",
+      "korean": "트채무늬로만들어져있다",
+      "romanization": "teu-chae-mu-nui-ro-man-deul-eo-jyeo-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "무늬",
+      "areaId": "topik_basic",
+      "source": "rom-rec136"
+    },
+    {
+      "vocabId": "topik-v1:무섭다",
+      "korean": "뚜에있는무서운모양은",
+      "romanization": "ttu-e-iss-neun-mu-seo-un-mo-yang-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "무섭다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4352"
+    },
+    {
+      "vocabId": "topik-v1:묶다",
+      "korean": "몬얻멀묶약",
+      "romanization": "mon-eod-meol-mukk-yag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "묶다",
+      "areaId": "topik_basic",
+      "source": "rom-rec409"
+    },
+    {
+      "vocabId": "topik-v1:문",
+      "korean": "문끓쇄넴",
+      "romanization": "mun-kkeulh-swae-nem",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "문",
+      "areaId": "topik_basic",
+      "source": "rom-rec750"
+    },
+    {
+      "vocabId": "topik-v1:묻다",
+      "korean": "화동묻선껌",
+      "romanization": "hwa-dong-mud-seon-kkeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "묻다",
+      "areaId": "topik_basic",
+      "source": "rom-rec497"
+    },
+    {
+      "vocabId": "topik-v1:물",
+      "korean": "조금물속에",
+      "romanization": "jo-geum-mul-sog-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "물",
+      "areaId": "topik_basic",
+      "source": "rom-rec4476"
+    },
+    {
+      "vocabId": "topik-v1:물건",
+      "korean": "여러물건을자를수있다",
+      "romanization": "yeo-reo-mul-geon-eul-ja-reul-su-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "물건",
+      "areaId": "topik_basic",
+      "source": "rom-rec4411"
+    },
+    {
+      "vocabId": "topik-v1:물다",
+      "korean": "갔갤물녈",
+      "romanization": "gass-gael-mul-nyeol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "물다",
+      "areaId": "topik_basic",
+      "source": "rom-rec573"
+    },
+    {
+      "vocabId": "topik-v1:물속",
+      "korean": "물속의여뫙이라고도불린다",
+      "romanization": "mul-sog-ui-yeo-mwang-i-ra-go-do-bul-rin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "물속",
+      "areaId": "topik_basic",
+      "source": "rom-rec4446"
+    },
+    {
+      "vocabId": "topik-v1:미리",
+      "korean": "뉴고미리미쿠",
+      "romanization": "nyu-go-mi-ri-mi-ku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "미리",
+      "areaId": "topik_basic",
+      "source": "rom-rec8863"
+    },
+    {
+      "vocabId": "topik-v1:미소",
+      "korean": "□에케시사시코스츠토소오:S맛랑복후미소아매ü",
+      "romanization": "□e-ke-si-sa-si-ko-seu-cheu-to-so-o:Smas-rang-bog-hu-mi-so-a-maeü",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "미소",
+      "areaId": "topik_basic",
+      "source": "rom-rec8759"
+    },
+    {
+      "vocabId": "topik-v1:미인",
+      "korean": "보핏▶트×미인:했타냐타딘낫",
+      "romanization": "bo-pis▶teu×mi-in:haess-ta-nya-ta-din-nas",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "미인",
+      "areaId": "topik_basic",
+      "source": "rom-rec5496"
+    },
+    {
+      "vocabId": "topik-v1:미치다",
+      "korean": "×Y랑우노다루후미치오에오",
+      "romanization": "×Yrang-u-no-da-ru-hu-mi-chi-o-e-o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "미치다",
+      "areaId": "topik_basic",
+      "source": "rom-rec8886"
+    },
+    {
+      "vocabId": "topik-v1:믿다",
+      "korean": "믿겪빡갯",
+      "romanization": "mid-gyeokk-ppag-gaes",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "믿다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5644"
+    },
+    {
+      "vocabId": "topik-v1:밀다",
+      "korean": "미믄낮함",
+      "romanization": "mi-meun-naj-ham",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밀다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3748"
+    },
+    {
+      "vocabId": "topik-v1:밉다",
+      "korean": "말람꿈밉□",
+      "romanization": "mal-ram-kkum-mib□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밉다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4585"
+    },
+    {
+      "vocabId": "topik-v1:밑",
+      "korean": "문끓밑박묶",
+      "romanization": "mun-kkeulh-mit-bag-mukk",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밑",
+      "areaId": "topik_basic",
+      "source": "rom-rec811"
+    },
+    {
+      "vocabId": "topik-v1:바꾸다",
+      "korean": "바꿀까요",
+      "romanization": "ba-kkul-kka-yo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "바꾸다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1176"
+    },
+    {
+      "vocabId": "topik-v1:바다",
+      "korean": "바다의포켓몬",
+      "romanization": "ba-da-ui-po-kes-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "바다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2609"
+    },
+    {
+      "vocabId": "topik-v1:바라다",
+      "korean": "달M「9Z달사바란쿤멕피고치",
+      "romanization": "dalM「9Zdal-sa-ba-ran-kun-meg-pi-go-chi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "바라다",
+      "areaId": "topik_basic",
+      "source": "rom-rec8663"
+    },
+    {
+      "vocabId": "topik-v1:바람",
+      "korean": "바람을타고날아든다",
+      "romanization": "ba-ram-eul-ta-go-nal-a-deun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "바람",
+      "areaId": "topik_basic",
+      "source": "rom-rec4340"
+    },
+    {
+      "vocabId": "topik-v1:바쁘다",
+      "korean": "바쁘게날개짓을한다",
+      "romanization": "ba-ppeu-ge-nal-gae-jis-eul-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "바쁘다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4349"
+    },
+    {
+      "vocabId": "topik-v1:박물관",
+      "korean": "니비박물관",
+      "romanization": "ni-bi-bag-mul-gwan",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "박물관",
+      "areaId": "topik_basic",
+      "source": "rom-rec3862"
+    },
+    {
+      "vocabId": "topik-v1:박스",
+      "korean": "메일박스",
+      "romanization": "me-il-bag-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "박스",
+      "areaId": "topik_basic",
+      "source": "rom-rec3022"
+    },
+    {
+      "vocabId": "topik-v1:밖",
+      "korean": "향갚밖갤",
+      "romanization": "hyang-gap-bakk-gael",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밖",
+      "areaId": "topik_basic",
+      "source": "rom-rec962"
+    },
+    {
+      "vocabId": "topik-v1:반",
+      "korean": "반몬넷크안",
+      "romanization": "ban-mon-nes-keu-an",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "반",
+      "areaId": "topik_basic",
+      "source": "rom-rec4115"
+    },
+    {
+      "vocabId": "topik-v1:반드시",
+      "korean": "반드시도망칠수있다",
+      "romanization": "ban-deu-si-do-mang-chil-su-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "반드시",
+      "areaId": "topik_basic",
+      "source": "rom-rec199"
+    },
+    {
+      "vocabId": "topik-v1:받다",
+      "korean": "버례받꽉물돼",
+      "romanization": "beo-rye-bad-kkwag-mul-dwae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "받다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4047"
+    },
+    {
+      "vocabId": "topik-v1:발",
+      "korean": "겔겜발먹",
+      "romanization": "gel-gem-bal-meog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "발",
+      "areaId": "topik_basic",
+      "source": "rom-rec3327"
+    },
+    {
+      "vocabId": "topik-v1:발견",
+      "korean": "이겨서받거나발견해서",
+      "romanization": "i-gyeo-seo-bad-geo-na-bal-gyeon-hae-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "발견",
+      "areaId": "topik_basic",
+      "source": "rom-rec3709"
+    },
+    {
+      "vocabId": "topik-v1:밝다",
+      "korean": "밝몬둘둠",
+      "romanization": "balg-mon-dul-dum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밝다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3136"
+    },
+    {
+      "vocabId": "topik-v1:밟다",
+      "korean": "밀밟간같",
+      "romanization": "mil-balb-gan-gat",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밟다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2560"
+    },
+    {
+      "vocabId": "topik-v1:밤",
+      "korean": "딕갤밤덤",
+      "romanization": "dig-gael-bam-deom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밤",
+      "areaId": "topik_basic",
+      "source": "rom-rec5672"
+    },
+    {
+      "vocabId": "topik-v1:밥",
+      "korean": "햇꼬밥끓",
+      "romanization": "haes-kko-bab-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "밥",
+      "areaId": "topik_basic",
+      "source": "rom-rec3794"
+    },
+    {
+      "vocabId": "topik-v1:방금",
+      "korean": "다리가방금나와서",
+      "romanization": "da-ri-ga-bang-geum-na-wa-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "방금",
+      "areaId": "topik_basic",
+      "source": "rom-rec4388"
+    },
+    {
+      "vocabId": "topik-v1:뱀",
+      "korean": "빠꼭뱀같깊6콘궐",
+      "romanization": "ppa-kkog-baem-gat-gip6kon-gwol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뱀",
+      "areaId": "topik_basic",
+      "source": "rom-rec3587"
+    },
+    {
+      "vocabId": "topik-v1:버리다",
+      "korean": "공장에서버리는오물과",
+      "romanization": "gong-jang-e-seo-beo-ri-neun-o-mul-gwa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "버리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4416"
+    },
+    {
+      "vocabId": "topik-v1:버섯",
+      "korean": "작은희귀한버섯",
+      "romanization": "jag-eun-hui-gwi-han-beo-seos",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "버섯",
+      "areaId": "topik_basic",
+      "source": "rom-rec211"
+    },
+    {
+      "vocabId": "topik-v1:버스",
+      "korean": "버스굴댑□아코",
+      "romanization": "beo-seu-gul-daeb□a-ko",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "버스",
+      "areaId": "topik_basic",
+      "source": "rom-rec7525"
+    },
+    {
+      "vocabId": "topik-v1:버튼",
+      "korean": "버튼모드",
+      "romanization": "beo-teun-mo-deu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "버튼",
+      "areaId": "topik_basic",
+      "source": "rom-rec3677"
+    },
+    {
+      "vocabId": "topik-v1:벌다",
+      "korean": "버온오타",
+      "romanization": "beo-on-o-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "벌다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7412"
+    },
+    {
+      "vocabId": "topik-v1:벌레",
+      "korean": "물,벌레타입의",
+      "romanization": "mul,beol-re-ta-ib-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "벌레",
+      "areaId": "topik_basic",
+      "source": "rom-rec137"
+    },
+    {
+      "vocabId": "topik-v1:법",
+      "korean": "법껄녀녁",
+      "romanization": "beob-kkeol-nyeo-nyeog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "법",
+      "areaId": "topik_basic",
+      "source": "rom-rec1202"
+    },
+    {
+      "vocabId": "topik-v1:벨트",
+      "korean": "파워세이브벨트를차고",
+      "romanization": "pa-wo-se-i-beu-bel-teu-reul-cha-go",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "벨트",
+      "areaId": "topik_basic",
+      "source": "rom-rec4395"
+    },
+    {
+      "vocabId": "topik-v1:벽",
+      "korean": "끔벽핸핸훤낱낳",
+      "romanization": "kkeum-byeog-haen-haen-hwon-nat-nah",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "벽",
+      "areaId": "topik_basic",
+      "source": "rom-rec4663"
+    },
+    {
+      "vocabId": "topik-v1:변하다",
+      "korean": "맘석성분이변해서",
+      "romanization": "mam-seog-seong-bun-i-byeon-hae-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "변하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4423"
+    },
+    {
+      "vocabId": "topik-v1:병",
+      "korean": "깊꿈넬몬꺽병냈",
+      "romanization": "gip-kkum-nel-mon-kkeog-byeong-naess",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "병",
+      "areaId": "topik_basic",
+      "source": "rom-rec4848"
+    },
+    {
+      "vocabId": "topik-v1:보다",
+      "korean": "상태보기",
+      "romanization": "sang-tae-bo-gi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "보다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2829"
+    },
+    {
+      "vocabId": "topik-v1:보이다",
+      "korean": "캇파로보일때도있다",
+      "romanization": "kas-pa-ro-bo-il-ttae-do-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "보이다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4383"
+    },
+    {
+      "vocabId": "topik-v1:보호",
+      "korean": "몸을보호한다",
+      "romanization": "mom-eul-bo-ho-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "보호",
+      "areaId": "topik_basic",
+      "source": "rom-rec4342"
+    },
+    {
+      "vocabId": "topik-v1:복사",
+      "korean": ":히통니펄호복사□",
+      "romanization": ":hi-tong-ni-peol-ho-bog-sa□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "복사",
+      "areaId": "topik_basic",
+      "source": "rom-rec7455"
+    },
+    {
+      "vocabId": "topik-v1:볶다",
+      "korean": "문볶곽겊",
+      "romanization": "mun-bokk-gwag-geop",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "볶다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5243"
+    },
+    {
+      "vocabId": "topik-v1:뵈다",
+      "korean": "칼뿐뵈필",
+      "romanization": "kal-ppun-boe-pil",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뵈다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2565"
+    },
+    {
+      "vocabId": "topik-v1:부",
+      "korean": "아뮤케타히부E랑",
+      "romanization": "a-myu-ke-ta-hi-buErang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부",
+      "areaId": "topik_basic",
+      "source": "rom-rec2149"
+    },
+    {
+      "vocabId": "topik-v1:부근",
+      "korean": "에레브가발전소부근에서",
+      "romanization": "e-re-beu-ga-bal-jeon-so-bu-geun-e-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부근",
+      "areaId": "topik_basic",
+      "source": "rom-rec4453"
+    },
+    {
+      "vocabId": "topik-v1:부르다",
+      "korean": "기분좋은노래를부른다",
+      "romanization": "gi-bun-joh-eun-no-rae-reul-bu-reun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4367"
+    },
+    {
+      "vocabId": "topik-v1:부모",
+      "korean": "아기가루라는부모의뚜에있는",
+      "romanization": "a-gi-ga-ru-ra-neun-bu-mo-ui-ttu-e-iss-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부모",
+      "areaId": "topik_basic",
+      "source": "rom-rec4443"
+    },
+    {
+      "vocabId": "topik-v1:부부",
+      "korean": "부부에부인츄:노키",
+      "romanization": "bu-bu-e-bu-in-chyu:no-ki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부부",
+      "areaId": "topik_basic",
+      "source": "rom-rec1746"
+    },
+    {
+      "vocabId": "topik-v1:부분",
+      "korean": "중심의코어라는부분은",
+      "romanization": "jung-sim-ui-ko-eo-ra-neun-bu-bun-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부분",
+      "areaId": "topik_basic",
+      "source": "rom-rec4449"
+    },
+    {
+      "vocabId": "topik-v1:부산",
+      "korean": "부산랐보누주달×□·",
+      "romanization": "bu-san-rass-bo-nu-ju-dal×□·",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부산",
+      "areaId": "topik_basic",
+      "source": "rom-rec9265"
+    },
+    {
+      "vocabId": "topik-v1:부인",
+      "korean": "부부에부인츄:노키",
+      "romanization": "bu-bu-e-bu-in-chyu:no-ki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부인",
+      "areaId": "topik_basic",
+      "source": "rom-rec1746"
+    },
+    {
+      "vocabId": "topik-v1:부족",
+      "korean": "효과는부족한듯",
+      "romanization": "hyo-gwa-neun-bu-jog-han-deus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부족",
+      "areaId": "topik_basic",
+      "source": "rom-rec1092"
+    },
+    {
+      "vocabId": "topik-v1:부치다",
+      "korean": "화누메냐누모부센인부치오Y랐고□큐고타소밧힌오Q츄게",
+      "romanization": "hwa-nu-me-nya-nu-mo-bu-sen-in-bu-chi-oYrass-go□kyu-go-ta-so-bas-hin-oQchyu-ge",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "부치다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1691"
+    },
+    {
+      "vocabId": "topik-v1:북",
+      "korean": "꿈덥북몬덤됩",
+      "romanization": "kkum-deob-bug-mon-deom-doeb",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "북",
+      "areaId": "topik_basic",
+      "source": "rom-rec575"
+    },
+    {
+      "vocabId": "topik-v1:분",
+      "korean": "분펜슨슨슨슬핀□",
+      "romanization": "bun-pen-seun-seun-seun-seul-pin□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "분",
+      "areaId": "topik_basic",
+      "source": "rom-rec9445"
+    },
+    {
+      "vocabId": "topik-v1:불",
+      "korean": "불을모으고있을때는",
+      "romanization": "bul-eul-mo-eu-go-iss-eul-ttae-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "불",
+      "areaId": "topik_basic",
+      "source": "rom-rec4465"
+    },
+    {
+      "vocabId": "topik-v1:불꽃",
+      "korean": "작열의불꽃을뿜어내",
+      "romanization": "jag-yeol-ui-bul-kkoch-eul-ppum-eo-nae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "불꽃",
+      "areaId": "topik_basic",
+      "source": "rom-rec4334"
+    },
+    {
+      "vocabId": "topik-v1:불리다",
+      "korean": "전설의포켓몬이라불린다",
+      "romanization": "jeon-seol-ui-po-kes-mon-i-ra-bul-rin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "불리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4480"
+    },
+    {
+      "vocabId": "topik-v1:붉다",
+      "korean": "붉고폐쁜모래",
+      "romanization": "bulg-go-pye-ppeun-mo-rae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "붉다",
+      "areaId": "topik_basic",
+      "source": "rom-rec215"
+    },
+    {
+      "vocabId": "topik-v1:비",
+      "korean": "들비팔아",
+      "romanization": "deul-bi-pal-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "비",
+      "areaId": "topik_basic",
+      "source": "rom-rec7562"
+    },
+    {
+      "vocabId": "topik-v1:비밀",
+      "korean": "포켓몬의비밀이기록되는도구",
+      "romanization": "po-kes-mon-ui-bi-mil-i-gi-rog-doe-neun-do-gu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "비밀",
+      "areaId": "topik_basic",
+      "source": "rom-rec3707"
+    },
+    {
+      "vocabId": "topik-v1:비싸다",
+      "korean": "샵에서비싸게팔린다",
+      "romanization": "syab-e-seo-bi-ssa-ge-pal-rin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "비싸다",
+      "areaId": "topik_basic",
+      "source": "rom-rec214"
+    },
+    {
+      "vocabId": "topik-v1:빛",
+      "korean": "일문빛꽐로빛난다",
+      "romanization": "il-mun-bich-kkwal-ro-bich-nan-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빛",
+      "areaId": "topik_basic",
+      "source": "rom-rec4449"
+    },
+    {
+      "vocabId": "topik-v1:빠르다",
+      "korean": "작아서움직임이빠르다",
+      "romanization": "jag-a-seo-um-jig-im-i-ppa-reu-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빠르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4347"
+    },
+    {
+      "vocabId": "topik-v1:빨간색",
+      "korean": "빨간색의작은조곽",
+      "romanization": "ppal-gan-saeg-ui-jag-eun-jo-gwag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빨간색",
+      "areaId": "topik_basic",
+      "source": "rom-rec179"
+    },
+    {
+      "vocabId": "topik-v1:빨갛다",
+      "korean": "유리로만든빨간피리",
+      "romanization": "yu-ri-ro-man-deun-ppal-gan-pi-ri",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빨갛다",
+      "areaId": "topik_basic",
+      "source": "rom-rec172"
+    },
+    {
+      "vocabId": "topik-v1:빨다",
+      "korean": "간끔빨랙뚜그",
+      "romanization": "gan-kkeum-ppal-raeg-ttu-geu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빨다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3496"
+    },
+    {
+      "vocabId": "topik-v1:빨리",
+      "korean": "더빨리뚜워지게지",
+      "romanization": "deo-ppal-ri-ttu-wo-ji-ge-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빨리",
+      "areaId": "topik_basic",
+      "source": "rom-rec1338"
+    },
+    {
+      "vocabId": "topik-v1:빵",
+      "korean": "꿈껌빵몬픕낀",
+      "romanization": "kkum-kkeom-ppang-mon-peub-kkin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빵",
+      "areaId": "topik_basic",
+      "source": "rom-rec1183"
+    },
+    {
+      "vocabId": "topik-v1:빼다",
+      "korean": "꿈뺄개끼",
+      "romanization": "kkum-ppael-gae-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "빼다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3324"
+    },
+    {
+      "vocabId": "topik-v1:뺨",
+      "korean": "교뼘겉뺨",
+      "romanization": "gyo-ppyeom-geot-ppyam",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뺨",
+      "areaId": "topik_basic",
+      "source": "rom-rec3569"
+    },
+    {
+      "vocabId": "topik-v1:뼈",
+      "korean": "눈넋뼈끼",
+      "romanization": "nun-neogs-ppyeo-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뼈",
+      "areaId": "topik_basic",
+      "source": "rom-rec4048"
+    },
+    {
+      "vocabId": "topik-v1:뿌리",
+      "korean": "매우쓴약초뿌리",
+      "romanization": "mae-u-sseun-yag-cho-ppu-ri",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뿌리",
+      "areaId": "topik_basic",
+      "source": "rom-rec162"
+    },
+    {
+      "vocabId": "topik-v1:뿌리다",
+      "korean": "모래를뿌리곤한다",
+      "romanization": "mo-rae-reul-ppu-ri-gon-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "뿌리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4344"
+    },
+    {
+      "vocabId": "topik-v1:사",
+      "korean": "넵갓렛사",
+      "romanization": "neb-gas-res-sa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사",
+      "areaId": "topik_basic",
+      "source": "rom-rec8663"
+    },
+    {
+      "vocabId": "topik-v1:사다",
+      "korean": "마솔사짠쿠",
+      "romanization": "ma-sol-sa-jjan-ku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7451"
+    },
+    {
+      "vocabId": "topik-v1:사람",
+      "korean": "모습을본사람은",
+      "romanization": "mo-seub-eul-bon-sa-ram-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사람",
+      "areaId": "topik_basic",
+      "source": "rom-rec4480"
+    },
+    {
+      "vocabId": "topik-v1:사무",
+      "korean": "사무쿠나루토롯일롯제",
+      "romanization": "sa-mu-ku-na-ru-to-ros-il-ros-je",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사무",
+      "areaId": "topik_basic",
+      "source": "rom-rec4811"
+    },
+    {
+      "vocabId": "topik-v1:사용",
+      "korean": "사용하면포켓몬1마리의",
+      "romanization": "sa-yong-ha-myeon-po-kes-mon1ma-ri-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사용",
+      "areaId": "topik_basic",
+      "source": "rom-rec188"
+    },
+    {
+      "vocabId": "topik-v1:사이",
+      "korean": "쿠베사이",
+      "romanization": "ku-be-sa-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사이",
+      "areaId": "topik_basic",
+      "source": "rom-rec3328"
+    },
+    {
+      "vocabId": "topik-v1:사탕",
+      "korean": "에너지가꽉찬사탕",
+      "romanization": "e-neo-ji-ga-kkwag-chan-sa-tang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "사탕",
+      "areaId": "topik_basic",
+      "source": "rom-rec188"
+    },
+    {
+      "vocabId": "topik-v1:산",
+      "korean": "누히움산",
+      "romanization": "nu-hi-um-san",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "산",
+      "areaId": "topik_basic",
+      "source": "rom-rec1499"
+    },
+    {
+      "vocabId": "topik-v1:산소",
+      "korean": "R핀나그산닷소소테산소세켄타우윈",
+      "romanization": "Rpin-na-geu-san-das-so-so-te-san-so-se-ken-ta-u-win",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "산소",
+      "areaId": "topik_basic",
+      "source": "rom-rec1566"
+    },
+    {
+      "vocabId": "topik-v1:살다",
+      "korean": "츄산팡퀸킹",
+      "romanization": "chyu-san-pang-kwin-king",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "살다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3928"
+    },
+    {
+      "vocabId": "topik-v1:상대",
+      "korean": "상대를조인다",
+      "romanization": "sang-dae-reul-jo-in-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "상대",
+      "areaId": "topik_basic",
+      "source": "rom-rec4362"
+    },
+    {
+      "vocabId": "topik-v1:상처",
+      "korean": "스프레이식의상처약",
+      "romanization": "seu-peu-re-i-sig-ui-sang-cheo-yag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "상처",
+      "areaId": "topik_basic",
+      "source": "rom-rec144"
+    },
+    {
+      "vocabId": "topik-v1:새로",
+      "korean": "새로시작하다",
+      "romanization": "sae-ro-si-jag-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "새로",
+      "areaId": "topik_basic",
+      "source": "rom-rec2554"
+    },
+    {
+      "vocabId": "topik-v1:색",
+      "korean": "꼴색푥씨",
+      "romanization": "kkol-saeg-pyolg-ssi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "색",
+      "areaId": "topik_basic",
+      "source": "rom-rec5038"
+    },
+    {
+      "vocabId": "topik-v1:생기다",
+      "korean": "단단한갑곽이생긴다",
+      "romanization": "dan-dan-han-gab-gwag-i-saeng-gin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "생기다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4335"
+    },
+    {
+      "vocabId": "topik-v1:서다",
+      "korean": "깊꼴선껌",
+      "romanization": "gip-kkol-seon-kkeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "서다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5752"
+    },
+    {
+      "vocabId": "topik-v1:서투르다",
+      "korean": "나는건서투르지만달릴땐",
+      "romanization": "na-neun-geon-seo-tu-reu-ji-man-dal-ril-ttaen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "서투르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4412"
+    },
+    {
+      "vocabId": "topik-v1:석유",
+      "korean": "키테히후니쿠□VMLV석유자두디게야테헌잔렛주오카아래릿릿달늑헤기도부두와누",
+      "romanization": "ki-te-hi-hu-ni-ku□VMLVseog-yu-ja-du-di-ge-ya-te-heon-jan-res-ju-o-ka-a-rae-ris-ris-dal-neug-he-gi-do-bu-du-wa-nu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "석유",
+      "areaId": "topik_basic",
+      "source": "rom-rec9559"
+    },
+    {
+      "vocabId": "topik-v1:선수",
+      "korean": "올림픽선수로도",
+      "romanization": "ol-rim-pig-seon-su-ro-do",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "선수",
+      "areaId": "topik_basic",
+      "source": "rom-rec4390"
+    },
+    {
+      "vocabId": "topik-v1:선택",
+      "korean": "선택결정",
+      "romanization": "seon-taeg-gyeol-jeong",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "선택",
+      "areaId": "topik_basic",
+      "source": "rom-rec2589"
+    },
+    {
+      "vocabId": "topik-v1:설명",
+      "korean": "상세설명",
+      "romanization": "sang-se-seol-myeong",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "설명",
+      "areaId": "topik_basic",
+      "source": "rom-rec2588"
+    },
+    {
+      "vocabId": "topik-v1:섬",
+      "korean": "탄생의섬",
+      "romanization": "tan-saeng-ui-seom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "섬",
+      "areaId": "topik_basic",
+      "source": "rom-rec3209"
+    },
+    {
+      "vocabId": "topik-v1:성격",
+      "korean": "한성격때",
+      "romanization": "han-seong-gyeog-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "성격",
+      "areaId": "topik_basic",
+      "source": "rom-rec3597"
+    },
+    {
+      "vocabId": "topik-v1:세",
+      "korean": "키슈켄세",
+      "romanization": "ki-syu-ken-se",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "세",
+      "areaId": "topik_basic",
+      "source": "rom-rec1808"
+    },
+    {
+      "vocabId": "topik-v1:세기",
+      "korean": "시키세기테할갱양",
+      "romanization": "si-ki-se-gi-te-hal-gaeng-yang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "세기",
+      "areaId": "topik_basic",
+      "source": "rom-rec8427"
+    },
+    {
+      "vocabId": "topik-v1:세다",
+      "korean": "베세릿달",
+      "romanization": "be-se-ris-dal",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "세다",
+      "areaId": "topik_basic",
+      "source": "rom-rec8310"
+    },
+    {
+      "vocabId": "topik-v1:세우다",
+      "korean": "귀를세우고위험을",
+      "romanization": "gwi-reul-se-u-go-wi-heom-eul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "세우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4360"
+    },
+    {
+      "vocabId": "topik-v1:소",
+      "korean": "피게닷소",
+      "romanization": "pi-ge-das-so",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소",
+      "areaId": "topik_basic",
+      "source": "rom-rec1608"
+    },
+    {
+      "vocabId": "topik-v1:소금",
+      "korean": "찾은아름다운소금",
+      "romanization": "chaj-eun-a-reum-da-un-so-geum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소금",
+      "areaId": "topik_basic",
+      "source": "rom-rec177"
+    },
+    {
+      "vocabId": "topik-v1:소년",
+      "korean": "세소년석Ä",
+      "romanization": "se-so-nyeon-seogÄ",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소년",
+      "areaId": "topik_basic",
+      "source": "rom-rec9838"
+    },
+    {
+      "vocabId": "topik-v1:소문",
+      "korean": "좋턴이있다는소문이있다",
+      "romanization": "joh-teon-i-iss-da-neun-so-mun-i-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소문",
+      "areaId": "topik_basic",
+      "source": "rom-rec4352"
+    },
+    {
+      "vocabId": "topik-v1:소스",
+      "korean": "오소스오아□",
+      "romanization": "o-so-seu-o-a□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소스",
+      "areaId": "topik_basic",
+      "source": "rom-rec8867"
+    },
+    {
+      "vocabId": "topik-v1:소주",
+      "korean": "□마누테쿠이우코세거Q네□소주:하들□",
+      "romanization": "□ma-nu-te-ku-i-u-ko-se-geoQne□so-ju:ha-deul□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소주",
+      "areaId": "topik_basic",
+      "source": "rom-rec7511"
+    },
+    {
+      "vocabId": "topik-v1:소포",
+      "korean": "키세치메메츠치모소포",
+      "romanization": "ki-se-chi-me-me-cheu-chi-mo-so-po",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "소포",
+      "areaId": "topik_basic",
+      "source": "rom-rec1494"
+    },
+    {
+      "vocabId": "topik-v1:속",
+      "korean": "조금물속에",
+      "romanization": "jo-geum-mul-sog-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "속",
+      "areaId": "topik_basic",
+      "source": "rom-rec4476"
+    },
+    {
+      "vocabId": "topik-v1:속도",
+      "korean": "텍스트속도",
+      "romanization": "teg-seu-teu-sog-do",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "속도",
+      "areaId": "topik_basic",
+      "source": "rom-rec3673"
+    },
+    {
+      "vocabId": "topik-v1:손",
+      "korean": "□소테스쿠에손8반",
+      "romanization": "□so-te-seu-ku-e-son8ban",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "손",
+      "areaId": "topik_basic",
+      "source": "rom-rec8895"
+    },
+    {
+      "vocabId": "topik-v1:손바닥",
+      "korean": "갑자기큰손바닥으로",
+      "romanization": "gab-ja-gi-keun-son-ba-dag-eu-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "손바닥",
+      "areaId": "topik_basic",
+      "source": "rom-rec4450"
+    },
+    {
+      "vocabId": "topik-v1:수",
+      "korean": "꺽꿉교뵐템수된문",
+      "romanization": "kkeog-kkub-gyo-boel-tem-su-doen-mun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "수",
+      "areaId": "topik_basic",
+      "source": "rom-rec4802"
+    },
+    {
+      "vocabId": "topik-v1:수많다",
+      "korean": "최면술등수많은",
+      "romanization": "choe-myeon-sul-deung-su-manh-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "수많다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4425"
+    },
+    {
+      "vocabId": "topik-v1:숙이다",
+      "korean": "호세등등마마마마마호제론준힌힌록▶W석석석:마호가타아맥소디어자N우고모테숙이아타타마마마마뇌Ä",
+      "romanization": "ho-se-deung-deung-ma-ma-ma-ma-ma-ho-je-ron-jun-hin-hin-rog▶Wseog-seog-seog:ma-ho-ga-ta-a-maeg-so-di-eo-jaNu-go-mo-te-sug-i-a-ta-ta-ma-ma-ma-ma-noeÄ",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "숙이다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9817"
+    },
+    {
+      "vocabId": "topik-v1:순간",
+      "korean": "세포조직을한순간에",
+      "romanization": "se-po-jo-jig-eul-han-sun-gan-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "순간",
+      "areaId": "topik_basic",
+      "source": "rom-rec4460"
+    },
+    {
+      "vocabId": "topik-v1:술",
+      "korean": "우쿠릿술",
+      "romanization": "u-ku-ris-sul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "술",
+      "areaId": "topik_basic",
+      "source": "rom-rec9183"
+    },
+    {
+      "vocabId": "topik-v1:술잔",
+      "korean": ":굴술잔록힌힌솔솔준릿거준석렛굴맵□",
+      "romanization": ":gul-sul-jan-rog-hin-hin-sol-sol-jun-ris-geo-jun-seog-res-gul-maeb□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "술잔",
+      "areaId": "topik_basic",
+      "source": "rom-rec7080"
+    },
+    {
+      "vocabId": "topik-v1:숨",
+      "korean": "화가나면숨을들이마쉬며",
+      "romanization": "hwa-ga-na-myeon-sum-eul-deul-i-ma-swi-myeo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "숨",
+      "areaId": "topik_basic",
+      "source": "rom-rec4368"
+    },
+    {
+      "vocabId": "topik-v1:숨다",
+      "korean": "불속에숨게되면",
+      "romanization": "bul-sog-e-sum-ge-doe-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "숨다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4454"
+    },
+    {
+      "vocabId": "topik-v1:숲",
+      "korean": "숲촘몬놋",
+      "romanization": "sup-chom-mon-nos",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "숲",
+      "areaId": "topik_basic",
+      "source": "rom-rec5076"
+    },
+    {
+      "vocabId": "topik-v1:쉬다",
+      "korean": "술쿠히치쉴",
+      "romanization": "sul-ku-hi-chi-swil",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "쉬다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9318"
+    },
+    {
+      "vocabId": "topik-v1:쉽다",
+      "korean": "쉽게풀□한다",
+      "romanization": "swib-ge-pul□han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "쉽다",
+      "areaId": "topik_basic",
+      "source": "rom-rec174"
+    },
+    {
+      "vocabId": "topik-v1:스스로",
+      "korean": "스스로독상태를회복",
+      "romanization": "seu-seu-ro-dog-sang-tae-reul-hoe-bog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "스스로",
+      "areaId": "topik_basic",
+      "source": "rom-rec233"
+    },
+    {
+      "vocabId": "topik-v1:스키",
+      "korean": "키소타세스스키",
+      "romanization": "ki-so-ta-se-seu-seu-ki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "스키",
+      "areaId": "topik_basic",
+      "source": "rom-rec7050"
+    },
+    {
+      "vocabId": "topik-v1:스타",
+      "korean": "넨PT렛펼노요레무테스타QZ주",
+      "romanization": "nenPTres-pyeol-no-yo-re-mu-te-seu-taQZju",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "스타",
+      "areaId": "topik_basic",
+      "source": "rom-rec9692"
+    },
+    {
+      "vocabId": "topik-v1:슬프다",
+      "korean": "슬플정도로약하다",
+      "romanization": "seul-peul-jeong-do-ro-yag-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "슬프다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4457"
+    },
+    {
+      "vocabId": "topik-v1:시",
+      "korean": "시마란타",
+      "romanization": "si-ma-ran-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "시",
+      "areaId": "topik_basic",
+      "source": "rom-rec3768"
+    },
+    {
+      "vocabId": "topik-v1:시간",
+      "korean": "플레이시간",
+      "romanization": "peul-re-i-si-gan",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "시간",
+      "areaId": "topik_basic",
+      "source": "rom-rec4013"
+    },
+    {
+      "vocabId": "topik-v1:시대",
+      "korean": "로갓미타릿케W식네게주닌하단:에굴에키하메X달카록스사싶우테이L오:버리시댄준록토굴기우",
+      "romanization": "ro-gas-mi-ta-ris-keWsig-ne-ge-ju-nin-ha-dan:e-gul-e-ki-ha-meXdal-ka-rog-seu-sa-sip-u-te-iLo:beo-ri-si-daen-jun-rog-to-gul-gi-u",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "시대",
+      "areaId": "topik_basic",
+      "source": "rom-rec8416"
+    },
+    {
+      "vocabId": "topik-v1:시작",
+      "korean": "새로시작하다",
+      "romanization": "sae-ro-si-jag-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "시작",
+      "areaId": "topik_basic",
+      "source": "rom-rec2554"
+    },
+    {
+      "vocabId": "topik-v1:시키다",
+      "korean": "케시키아",
+      "romanization": "ke-si-ki-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "시키다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9135"
+    },
+    {
+      "vocabId": "topik-v1:식",
+      "korean": "초원이나산중에서식한다",
+      "romanization": "cho-won-i-na-san-jung-e-seo-sig-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "식",
+      "areaId": "topik_basic",
+      "source": "rom-rec4402"
+    },
+    {
+      "vocabId": "topik-v1:신",
+      "korean": "신버록슨래마며움",
+      "romanization": "sin-beo-rog-seun-rae-ma-myeo-um",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "신",
+      "areaId": "topik_basic",
+      "source": "rom-rec5563"
+    },
+    {
+      "vocabId": "topik-v1:신다",
+      "korean": "면핫드호란큐신게우통복슥",
+      "romanization": "myeon-has-deu-ho-ran-kyu-sin-ge-u-tong-bog-seug",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "신다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9268"
+    },
+    {
+      "vocabId": "topik-v1:신체",
+      "korean": "폐리한신체부위가",
+      "romanization": "pye-ri-han-sin-che-bu-wi-ga",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "신체",
+      "areaId": "topik_basic",
+      "source": "rom-rec4468"
+    },
+    {
+      "vocabId": "topik-v1:실수",
+      "korean": "낚시꾼이실수로낚았다가",
+      "romanization": "nakk-si-kkun-i-sil-su-ro-nakk-ass-da-ga",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "실수",
+      "areaId": "topik_basic",
+      "source": "rom-rec4400"
+    },
+    {
+      "vocabId": "topik-v1:심다",
+      "korean": "꿈밴심몬□딧",
+      "romanization": "kkum-baen-sim-mon□dis",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "심다",
+      "areaId": "topik_basic",
+      "source": "rom-rec598"
+    },
+    {
+      "vocabId": "topik-v1:싸다",
+      "korean": "싼떨냈꿈넬",
+      "romanization": "ssan-tteol-naess-kkum-nel",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "싸다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4673"
+    },
+    {
+      "vocabId": "topik-v1:싸우다",
+      "korean": "자싸워보려무나",
+      "romanization": "ja-ssa-wo-bo-ryeo-mu-na",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "싸우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1338"
+    },
+    {
+      "vocabId": "topik-v1:쌀",
+      "korean": "큰나무아래에쌀면서",
+      "romanization": "keun-na-mu-a-rae-e-ssal-myeon-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "쌀",
+      "areaId": "topik_basic",
+      "source": "rom-rec4376"
+    },
+    {
+      "vocabId": "topik-v1:쌓다",
+      "korean": "끔쌓잤캬애낵",
+      "romanization": "kkeum-ssah-jass-kya-ae-naeg",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "쌓다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4613"
+    },
+    {
+      "vocabId": "topik-v1:쌓이다",
+      "korean": "쌓여있어서가끔",
+      "romanization": "ssah-yeo-iss-eo-seo-ga-kkeum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "쌓이다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4437"
+    },
+    {
+      "vocabId": "topik-v1:쓰다",
+      "korean": "매우쓴약초",
+      "romanization": "mae-u-sseun-yag-cho",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "쓰다",
+      "areaId": "topik_basic",
+      "source": "rom-rec164"
+    },
+    {
+      "vocabId": "topik-v1:아",
+      "korean": "코누세코□×아에에니토슈소코스우▶눑",
+      "romanization": "ko-nu-se-ko□×a-e-e-ni-to-syu-so-ko-seu-u▶nult",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아",
+      "areaId": "topik_basic",
+      "source": "rom-rec8454"
+    },
+    {
+      "vocabId": "topik-v1:아기",
+      "korean": "아기가루라는부모의뚜에있는",
+      "romanization": "a-gi-ga-ru-ra-neun-bu-mo-ui-ttu-e-iss-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아기",
+      "areaId": "topik_basic",
+      "source": "rom-rec4443"
+    },
+    {
+      "vocabId": "topik-v1:아들",
+      "korean": "카시치테테치스쿠아들록릿드Y드릿록들:",
+      "romanization": "ka-si-chi-te-te-chi-seu-ku-a-deul-rog-ris-deuYdeu-ris-rog-deul:",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아들",
+      "areaId": "topik_basic",
+      "source": "rom-rec8989"
+    },
+    {
+      "vocabId": "topik-v1:아래",
+      "korean": ":아래아신",
+      "romanization": ":a-rae-a-sin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아래",
+      "areaId": "topik_basic",
+      "source": "rom-rec2153"
+    },
+    {
+      "vocabId": "topik-v1:아름답다",
+      "korean": "찾은아름다운소금",
+      "romanization": "chaj-eun-a-reum-da-un-so-geum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아름답다",
+      "areaId": "topik_basic",
+      "source": "rom-rec177"
+    },
+    {
+      "vocabId": "topik-v1:아마",
+      "korean": "아마등비호마",
+      "romanization": "a-ma-deung-bi-ho-ma",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아마",
+      "areaId": "topik_basic",
+      "source": "rom-rec9855"
+    },
+    {
+      "vocabId": "topik-v1:아무",
+      "korean": "미코버카키주니호사카치노아무아이릭석래드CO릿GZ",
+      "romanization": "mi-ko-beo-ka-ki-ju-ni-ho-sa-ka-chi-no-a-mu-a-i-rig-seog-rae-deuCOrisGZ",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아무",
+      "areaId": "topik_basic",
+      "source": "rom-rec7406"
+    },
+    {
+      "vocabId": "topik-v1:아무리",
+      "korean": "아무리도망제도끝까지",
+      "romanization": "a-mu-ri-do-mang-je-do-kkeut-kka-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아무리",
+      "areaId": "topik_basic",
+      "source": "rom-rec4385"
+    },
+    {
+      "vocabId": "topik-v1:아아",
+      "korean": "아아이아",
+      "romanization": "a-a-i-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아아",
+      "areaId": "topik_basic",
+      "source": "rom-rec7772"
+    },
+    {
+      "vocabId": "topik-v1:아이",
+      "korean": "남자아이",
+      "romanization": "nam-ja-a-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아이",
+      "areaId": "topik_basic",
+      "source": "rom-rec2597"
+    },
+    {
+      "vocabId": "topik-v1:아주",
+      "korean": "아주단단하다",
+      "romanization": "a-ju-dan-dan-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아주",
+      "areaId": "topik_basic",
+      "source": "rom-rec4414"
+    },
+    {
+      "vocabId": "topik-v1:아프다",
+      "korean": "꼬리가아파온다",
+      "romanization": "kko-ri-ga-a-pa-on-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "아프다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4392"
+    },
+    {
+      "vocabId": "topik-v1:안",
+      "korean": "안타사엔",
+      "romanization": "an-ta-sa-en",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "안",
+      "areaId": "topik_basic",
+      "source": "rom-rec1803"
+    },
+    {
+      "vocabId": "topik-v1:안다",
+      "korean": "의얀칙삼ㅎ준오레티핏안냐픽란보게야네스오",
+      "romanization": "ui-yan-chig-samㅎjun-o-re-ti-pis-an-nya-pig-ran-bo-ge-ya-ne-seu-o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "안다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9017"
+    },
+    {
+      "vocabId": "topik-v1:안주",
+      "korean": "호트안주주",
+      "romanization": "ho-teu-an-ju-ju",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "안주",
+      "areaId": "topik_basic",
+      "source": "rom-rec9891"
+    },
+    {
+      "vocabId": "topik-v1:않다",
+      "korean": "않게꼴너몬졌",
+      "romanization": "anh-ge-kkol-neo-mon-jyeoss",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "않다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5721"
+    },
+    {
+      "vocabId": "topik-v1:알",
+      "korean": "알을통째로삼켜버린다",
+      "romanization": "al-eul-tong-jjae-ro-sam-kyeo-beo-rin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "알",
+      "areaId": "topik_basic",
+      "source": "rom-rec4351"
+    },
+    {
+      "vocabId": "topik-v1:알다",
+      "korean": ":아래아신",
+      "romanization": ":a-rae-a-sin",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "알다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2153"
+    },
+    {
+      "vocabId": "topik-v1:알리다",
+      "korean": "불새전설로알려져있다",
+      "romanization": "bul-sae-jeon-seol-ro-al-ryeo-jyeo-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "알리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4475"
+    },
+    {
+      "vocabId": "topik-v1:앞",
+      "korean": "갗둥분□앞벤□",
+      "romanization": "gach-dung-bun□ap-ben□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "앞",
+      "areaId": "topik_basic",
+      "source": "rom-rec3438"
+    },
+    {
+      "vocabId": "topik-v1:애",
+      "korean": "애빙뤄허",
+      "romanization": "ae-bing-rwo-heo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "애",
+      "areaId": "topik_basic",
+      "source": "rom-rec4173"
+    },
+    {
+      "vocabId": "topik-v1:야",
+      "korean": "키드니테치온주케야에굴잔",
+      "romanization": "ki-deu-ni-te-chi-on-ju-ke-ya-e-gul-jan",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "야",
+      "areaId": "topik_basic",
+      "source": "rom-rec8311"
+    },
+    {
+      "vocabId": "topik-v1:야구",
+      "korean": "들복:통렛×야구토",
+      "romanization": "deul-bog:tong-res×ya-gu-to",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "야구",
+      "areaId": "topik_basic",
+      "source": "rom-rec9520"
+    },
+    {
+      "vocabId": "topik-v1:약",
+      "korean": "백았같깊맨약",
+      "romanization": "baeg-ass-gat-gip-maen-yag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "약",
+      "areaId": "topik_basic",
+      "source": "rom-rec4816"
+    },
+    {
+      "vocabId": "topik-v1:약간",
+      "korean": "가지고있으며약간의",
+      "romanization": "ga-ji-go-iss-eu-myeo-yag-gan-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "약간",
+      "areaId": "topik_basic",
+      "source": "rom-rec4429"
+    },
+    {
+      "vocabId": "topik-v1:약하다",
+      "korean": "약할수록잡기쉽다",
+      "romanization": "yag-hal-su-rog-jab-gi-swib-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "약하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec139"
+    },
+    {
+      "vocabId": "topik-v1:양",
+      "korean": "오버양버",
+      "romanization": "o-beo-yang-beo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "양",
+      "areaId": "topik_basic",
+      "source": "rom-rec8105"
+    },
+    {
+      "vocabId": "topik-v1:양복",
+      "korean": "펄양복타시",
+      "romanization": "peol-yang-bog-ta-si",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "양복",
+      "areaId": "topik_basic",
+      "source": "rom-rec9666"
+    },
+    {
+      "vocabId": "topik-v1:양쪽",
+      "korean": "굴와양쪽닌치니잔무립무복오메온사우힌요{var:F0}마넨",
+      "romanization": "gul-wa-yang-jjog-nin-chi-ni-jan-mu-rib-mu-bog-o-me-on-sa-u-hin-yo{var:F0}ma-nen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "양쪽",
+      "areaId": "topik_basic",
+      "source": "rom-rec9357"
+    },
+    {
+      "vocabId": "topik-v1:얕다",
+      "korean": "얕은물의동굴안에서",
+      "romanization": "yat-eun-mul-ui-dong-gul-an-e-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "얕다",
+      "areaId": "topik_basic",
+      "source": "rom-rec177"
+    },
+    {
+      "vocabId": "topik-v1:어둡다",
+      "korean": "어두운곳에접단으로",
+      "romanization": "eo-du-un-gos-e-jeob-dan-eu-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "어둡다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4369"
+    },
+    {
+      "vocabId": "topik-v1:어렵다",
+      "korean": "나오기어려워진다",
+      "romanization": "na-o-gi-eo-ryeo-wo-jin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "어렵다",
+      "areaId": "topik_basic",
+      "source": "rom-rec173"
+    },
+    {
+      "vocabId": "topik-v1:얻다",
+      "korean": "꼴얻특튼",
+      "romanization": "kkol-eod-teug-teun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "얻다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4988"
+    },
+    {
+      "vocabId": "topik-v1:얼굴",
+      "korean": "낮에는얼굴을콤은채",
+      "romanization": "naj-e-neun-eol-gul-eul-kom-eun-chae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "얼굴",
+      "areaId": "topik_basic",
+      "source": "rom-rec4371"
+    },
+    {
+      "vocabId": "topik-v1:얼다",
+      "korean": "눈오는산에서얼어죽어갈때",
+      "romanization": "nun-o-neun-san-e-seo-eol-eo-jug-eo-gal-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "얼다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4473"
+    },
+    {
+      "vocabId": "topik-v1:얼음",
+      "korean": "포켓몬1마리의얼음",
+      "romanization": "po-kes-mon1ma-ri-ui-eol-eum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "얼음",
+      "areaId": "topik_basic",
+      "source": "rom-rec147"
+    },
+    {
+      "vocabId": "topik-v1:없다",
+      "korean": "다당없끓",
+      "romanization": "da-dang-eobs-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "없다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1332"
+    },
+    {
+      "vocabId": "topik-v1:없이",
+      "korean": "낌새없이이동한다",
+      "romanization": "kkim-sae-eobs-i-i-dong-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "없이",
+      "areaId": "topik_basic",
+      "source": "rom-rec4351"
+    },
+    {
+      "vocabId": "topik-v1:에너지",
+      "korean": "에너지가꽉찬사탕",
+      "romanization": "e-neo-ji-ga-kkwag-chan-sa-tang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "에너지",
+      "areaId": "topik_basic",
+      "source": "rom-rec188"
+    },
+    {
+      "vocabId": "topik-v1:엔",
+      "korean": "엔츠카란타",
+      "romanization": "en-cheu-ka-ran-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "엔",
+      "areaId": "topik_basic",
+      "source": "rom-rec3779"
+    },
+    {
+      "vocabId": "topik-v1:여",
+      "korean": "딤땀꿈□여",
+      "romanization": "dim-ttam-kkum□yeo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "여",
+      "areaId": "topik_basic",
+      "source": "rom-rec4549"
+    },
+    {
+      "vocabId": "topik-v1:여자",
+      "korean": "여자아이",
+      "romanization": "yeo-ja-a-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "여자",
+      "areaId": "topik_basic",
+      "source": "rom-rec2598"
+    },
+    {
+      "vocabId": "topik-v1:역",
+      "korean": "역교뼘꿈몬촉촉첵분",
+      "romanization": "yeog-gyo-ppyeom-kkum-mon-chog-chog-cheg-bun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "역",
+      "areaId": "topik_basic",
+      "source": "rom-rec3553"
+    },
+    {
+      "vocabId": "topik-v1:역할",
+      "korean": "군년을잡는역할도한다",
+      "romanization": "gun-nyeon-eul-jab-neun-yeog-hal-do-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "역할",
+      "areaId": "topik_basic",
+      "source": "rom-rec4426"
+    },
+    {
+      "vocabId": "topik-v1:연구",
+      "korean": "지독한유전자연구를",
+      "romanization": "ji-dog-han-yu-jeon-ja-yeon-gu-reul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "연구",
+      "areaId": "topik_basic",
+      "source": "rom-rec4479"
+    },
+    {
+      "vocabId": "topik-v1:연기",
+      "korean": "연기가나온다고한다",
+      "romanization": "yeon-gi-ga-na-on-da-go-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "연기",
+      "areaId": "topik_basic",
+      "source": "rom-rec4332"
+    },
+    {
+      "vocabId": "topik-v1:열리다",
+      "korean": "안이열려을때",
+      "romanization": "an-i-yeol-ryeo-eul-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "열리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4418"
+    },
+    {
+      "vocabId": "topik-v1:옛날",
+      "korean": "먼옛날바다였던",
+      "romanization": "meon-yes-nal-ba-da-yeoss-deon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "옛날",
+      "areaId": "topik_basic",
+      "source": "rom-rec4469"
+    },
+    {
+      "vocabId": "topik-v1:오",
+      "korean": "아오키오",
+      "romanization": "a-o-ki-o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오",
+      "areaId": "topik_basic",
+      "source": "rom-rec7734"
+    },
+    {
+      "vocabId": "topik-v1:오다",
+      "korean": "오있에타",
+      "romanization": "o-iss-e-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2885"
+    },
+    {
+      "vocabId": "topik-v1:오랫동안",
+      "korean": "오랫동안옴제진곳에서",
+      "romanization": "o-raes-dong-an-om-je-jin-gos-e-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오랫동안",
+      "areaId": "topik_basic",
+      "source": "rom-rec4438"
+    },
+    {
+      "vocabId": "topik-v1:오렌지",
+      "korean": "오렌지뱃지",
+      "romanization": "o-ren-ji-baes-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오렌지",
+      "areaId": "topik_basic",
+      "source": "rom-rec3238"
+    },
+    {
+      "vocabId": "topik-v1:오르다",
+      "korean": "레벨이1오른다",
+      "romanization": "re-bel-i1o-reun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec188"
+    },
+    {
+      "vocabId": "topik-v1:오리",
+      "korean": "오리도즈우타이니",
+      "romanization": "o-ri-do-jeu-u-ta-i-ni",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오리",
+      "areaId": "topik_basic",
+      "source": "rom-rec462"
+    },
+    {
+      "vocabId": "topik-v1:오이",
+      "korean": "오쿠오이",
+      "romanization": "o-ku-o-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오이",
+      "areaId": "topik_basic",
+      "source": "rom-rec7698"
+    },
+    {
+      "vocabId": "topik-v1:오후",
+      "korean": "주털오후키들쿠마츠쿠사우세상준츠소쿠무테굴□",
+      "romanization": "ju-teol-o-hu-ki-deul-ku-ma-cheu-ku-sa-u-se-sang-jun-cheu-so-ku-mu-te-gul□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "오후",
+      "areaId": "topik_basic",
+      "source": "rom-rec9612"
+    },
+    {
+      "vocabId": "topik-v1:온",
+      "korean": "버솔온래버사사오",
+      "romanization": "beo-sol-on-rae-beo-sa-sa-o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "온",
+      "areaId": "topik_basic",
+      "source": "rom-rec9561"
+    },
+    {
+      "vocabId": "topik-v1:온도",
+      "korean": "주변의온도가점점",
+      "romanization": "ju-byeon-ui-on-do-ga-jeom-jeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "온도",
+      "areaId": "topik_basic",
+      "source": "rom-rec4333"
+    },
+    {
+      "vocabId": "topik-v1:온통",
+      "korean": "키츠소사석닌YU거온통술××굴양달석준솔힌달통양주맥질",
+      "romanization": "ki-cheu-so-sa-seog-ninYUgeo-on-tong-sul××gul-yang-dal-seog-jun-sol-hin-dal-tong-yang-ju-maeg-jil",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "온통",
+      "areaId": "topik_basic",
+      "source": "rom-rec7009"
+    },
+    {
+      "vocabId": "topik-v1:올라가다",
+      "korean": "올라가상대를고룹힌다",
+      "romanization": "ol-ra-ga-sang-dae-reul-go-rub-hin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "올라가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4333"
+    },
+    {
+      "vocabId": "topik-v1:올림픽",
+      "korean": "올림픽선수로도",
+      "romanization": "ol-rim-pig-seon-su-ro-do",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "올림픽",
+      "areaId": "topik_basic",
+      "source": "rom-rec4390"
+    },
+    {
+      "vocabId": "topik-v1:옷",
+      "korean": "옷검뚜잎",
+      "romanization": "os-geom-ttu-ip",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "옷",
+      "areaId": "topik_basic",
+      "source": "rom-rec5666"
+    },
+    {
+      "vocabId": "topik-v1:와",
+      "korean": "복굴달달갑코돈쿤지□/F릿나스타메네쿠편버달복사바는보치Q/FM렛쿠세에타메하시{var:F1}퍽복양에로멕투와들은HJU□오시무마치케",
+      "romanization": "bog-gul-dal-dal-gab-ko-don-kun-ji□/Fris-na-seu-ta-me-ne-ku-pyeon-beo-dal-bog-sa-ba-neun-bo-chiQ/FMres-ku-se-e-ta-me-ha-si{var:F1}peog-bog-yang-e-ro-meg-tu-wa-deul-eunHJU□o-si-mu-ma-chi-ke",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "와",
+      "areaId": "topik_basic",
+      "source": "rom-rec8673"
+    },
+    {
+      "vocabId": "topik-v1:완전히",
+      "korean": "완전히잊었다",
+      "romanization": "wan-jeon-hi-ij-eoss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "완전히",
+      "areaId": "topik_basic",
+      "source": "rom-rec706"
+    },
+    {
+      "vocabId": "topik-v1:요리",
+      "korean": "치카요리푸쿠노산랑피오소우",
+      "romanization": "chi-ka-yo-ri-pu-ku-no-san-rang-pi-o-so-u",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "요리",
+      "areaId": "topik_basic",
+      "source": "rom-rec4839"
+    },
+    {
+      "vocabId": "topik-v1:우산",
+      "korean": "키잔키잔우산츄인닷비껌□브키주린랐인",
+      "romanization": "ki-jan-ki-jan-u-san-chyu-in-das-bi-kkeom□beu-ki-ju-rin-rass-in",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "우산",
+      "areaId": "topik_basic",
+      "source": "rom-rec1548"
+    },
+    {
+      "vocabId": "topik-v1:우선",
+      "korean": "우선독가루로상대의",
+      "romanization": "u-seon-dog-ga-ru-ro-sang-dae-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "우선",
+      "areaId": "topik_basic",
+      "source": "rom-rec4398"
+    },
+    {
+      "vocabId": "topik-v1:우승",
+      "korean": "놓양통쿠미우승쿠",
+      "romanization": "noh-yang-tong-ku-mi-u-seung-ku",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "우승",
+      "areaId": "topik_basic",
+      "source": "rom-rec9317"
+    },
+    {
+      "vocabId": "topik-v1:우유",
+      "korean": "영양만점의우유",
+      "romanization": "yeong-yang-man-jeom-ui-u-yu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "우유",
+      "areaId": "topik_basic",
+      "source": "rom-rec160"
+    },
+    {
+      "vocabId": "topik-v1:운",
+      "korean": "탄베쿠B탄베쿠N탄베쿠V탄베쿠J탄베쿠준탄베쿠술탄베쿠운베쿠베쿠칙베쿠시칙베쿠□녈밋분",
+      "romanization": "tan-be-kuBtan-be-kuNtan-be-kuVtan-be-kuJtan-be-ku-jun-tan-be-ku-sul-tan-be-ku-un-be-ku-be-ku-chig-be-ku-si-chig-be-ku□nyeol-mis-bun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "운",
+      "areaId": "topik_basic",
+      "source": "rom-rec5447"
+    },
+    {
+      "vocabId": "topik-v1:울다",
+      "korean": "우오에아",
+      "romanization": "u-o-e-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "울다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7173"
+    },
+    {
+      "vocabId": "topik-v1:움직이다",
+      "korean": "움직이며웃는건",
+      "romanization": "um-jig-i-myeo-us-neun-geon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "움직이다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4422"
+    },
+    {
+      "vocabId": "topik-v1:웃다",
+      "korean": "움직이며웃는건",
+      "romanization": "um-jig-i-myeo-us-neun-geon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "웃다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4422"
+    },
+    {
+      "vocabId": "topik-v1:원",
+      "korean": "원논넬렘",
+      "romanization": "won-non-nel-rem",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "원",
+      "areaId": "topik_basic",
+      "source": "rom-rec5656"
+    },
+    {
+      "vocabId": "topik-v1:월",
+      "korean": "검월너몬",
+      "romanization": "geom-wol-neo-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "월",
+      "areaId": "topik_basic",
+      "source": "rom-rec5704"
+    },
+    {
+      "vocabId": "topik-v1:위",
+      "korean": "검껴위눔",
+      "romanization": "geom-kkyeo-wi-num",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "위",
+      "areaId": "topik_basic",
+      "source": "rom-rec5661"
+    },
+    {
+      "vocabId": "topik-v1:위하다",
+      "korean": "잡기위한볼",
+      "romanization": "jab-gi-wi-han-bol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "위하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec135"
+    },
+    {
+      "vocabId": "topik-v1:위험",
+      "korean": "귀를세우고위험을",
+      "romanization": "gwi-reul-se-u-go-wi-heom-eul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "위험",
+      "areaId": "topik_basic",
+      "source": "rom-rec4360"
+    },
+    {
+      "vocabId": "topik-v1:유리",
+      "korean": "유리로만든푸른피리",
+      "romanization": "yu-ri-ro-man-deun-pu-reun-pi-ri",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "유리",
+      "areaId": "topik_basic",
+      "source": "rom-rec170"
+    },
+    {
+      "vocabId": "topik-v1:육",
+      "korean": "녔눅끓□육",
+      "romanization": "nyeoss-nug-kkeulh□yug",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "육",
+      "areaId": "topik_basic",
+      "source": "rom-rec1311"
+    },
+    {
+      "vocabId": "topik-v1:이기다",
+      "korean": "승부에서이겼다",
+      "romanization": "seung-bu-e-seo-i-gyeoss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이기다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1178"
+    },
+    {
+      "vocabId": "topik-v1:이날",
+      "korean": "뚜탈이날때도있다",
+      "romanization": "ttu-tal-i-nal-ttae-do-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이날",
+      "areaId": "topik_basic",
+      "source": "rom-rec4424"
+    },
+    {
+      "vocabId": "topik-v1:이동",
+      "korean": "어디로이동할까",
+      "romanization": "eo-di-ro-i-dong-hal-kka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이동",
+      "areaId": "topik_basic",
+      "source": "rom-rec2938"
+    },
+    {
+      "vocabId": "topik-v1:이렇다",
+      "korean": "이레페케등코우나시즈우코",
+      "romanization": "i-re-pe-ke-deung-ko-u-na-si-jeu-u-ko",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이렇다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4721"
+    },
+    {
+      "vocabId": "topik-v1:이루다",
+      "korean": "하이란테이루니모츠",
+      "romanization": "ha-i-ran-te-i-ru-ni-mo-cheu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이루다",
+      "areaId": "topik_basic",
+      "source": "rom-rec396"
+    },
+    {
+      "vocabId": "topik-v1:이름",
+      "korean": "너의이름은",
+      "romanization": "neo-ui-i-reum-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이름",
+      "areaId": "topik_basic",
+      "source": "rom-rec3532"
+    },
+    {
+      "vocabId": "topik-v1:이리",
+      "korean": "이리캐레시주T",
+      "romanization": "i-ri-kae-re-si-juT",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이리",
+      "areaId": "topik_basic",
+      "source": "rom-rec9309"
+    },
+    {
+      "vocabId": "topik-v1:이모",
+      "korean": "노복당키힌마구넨솔베누I소헤잔이모들단스□고M석섹×「바",
+      "romanization": "no-bog-dang-ki-hin-ma-gu-nen-sol-be-nuIso-he-jan-i-mo-deul-dan-seu□goMseog-seg×「ba",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이모",
+      "areaId": "topik_basic",
+      "source": "rom-rec7528"
+    },
+    {
+      "vocabId": "topik-v1:이미",
+      "korean": "이미키라와레테이루의퀸센크",
+      "romanization": "i-mi-ki-ra-wa-re-te-i-ru-ui-kwin-sen-keu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이미",
+      "areaId": "topik_basic",
+      "source": "rom-rec4574"
+    },
+    {
+      "vocabId": "topik-v1:이번",
+      "korean": "이번엔내가내주도록하마",
+      "romanization": "i-beon-en-nae-ga-nae-ju-do-rog-ha-ma",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이번",
+      "areaId": "topik_basic",
+      "source": "rom-rec1345"
+    },
+    {
+      "vocabId": "topik-v1:이사",
+      "korean": "사이사케",
+      "romanization": "sa-i-sa-ke",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이사",
+      "areaId": "topik_basic",
+      "source": "rom-rec8450"
+    },
+    {
+      "vocabId": "topik-v1:이상",
+      "korean": "이상을회복시키고",
+      "romanization": "i-sang-eul-hoe-bog-si-ki-go",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이상",
+      "areaId": "topik_basic",
+      "source": "rom-rec150"
+    },
+    {
+      "vocabId": "topik-v1:이유",
+      "korean": "소오버이유",
+      "romanization": "so-o-beo-i-yu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이유",
+      "areaId": "topik_basic",
+      "source": "rom-rec9313"
+    },
+    {
+      "vocabId": "topik-v1:이제",
+      "korean": "나키두에노시지루이제치제우노베",
+      "romanization": "na-ki-du-e-no-si-ji-ru-i-je-chi-je-u-no-be",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이제",
+      "areaId": "topik_basic",
+      "source": "rom-rec4624"
+    },
+    {
+      "vocabId": "topik-v1:이하",
+      "korean": "노페아이하",
+      "romanization": "no-pe-a-i-ha",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이하",
+      "areaId": "topik_basic",
+      "source": "rom-rec444"
+    },
+    {
+      "vocabId": "topik-v1:이후",
+      "korean": "맏Z『넷랑Y라킹섹팡도코잔준렛통복이후로레후토스",
+      "romanization": "madZ『nes-rangYra-king-seg-pang-do-ko-jan-jun-res-tong-bog-i-hu-ro-re-hu-to-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "이후",
+      "areaId": "topik_basic",
+      "source": "rom-rec9261"
+    },
+    {
+      "vocabId": "topik-v1:인간",
+      "korean": "지능도인간과비슷한듯하다",
+      "romanization": "ji-neung-do-in-gan-gwa-bi-seus-han-deus-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "인간",
+      "areaId": "topik_basic",
+      "source": "rom-rec4478"
+    },
+    {
+      "vocabId": "topik-v1:인기",
+      "korean": "제법인기가많다",
+      "romanization": "je-beob-in-gi-ga-manh-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "인기",
+      "areaId": "topik_basic",
+      "source": "rom-rec211"
+    },
+    {
+      "vocabId": "topik-v1:인분",
+      "korean": "맹독의인분이",
+      "romanization": "maeng-dog-ui-in-bun-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "인분",
+      "areaId": "topik_basic",
+      "source": "rom-rec4340"
+    },
+    {
+      "vocabId": "topik-v1:인삼",
+      "korean": "인삼츄콘제사등두시즈우니아츠마리",
+      "romanization": "in-sam-chyu-kon-je-sa-deung-du-si-jeu-u-ni-a-cheu-ma-ri",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "인삼",
+      "areaId": "topik_basic",
+      "source": "rom-rec4907"
+    },
+    {
+      "vocabId": "topik-v1:일",
+      "korean": "르우힌일윈비잔",
+      "romanization": "reu-u-hin-il-win-bi-jan",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "일",
+      "areaId": "topik_basic",
+      "source": "rom-rec2179"
+    },
+    {
+      "vocabId": "topik-v1:일기",
+      "korean": "구파일기키완본본미키본뇨란키츄뇨",
+      "romanization": "gu-pa-il-gi-ki-wan-bon-bon-mi-ki-bon-nyo-ran-ki-chyu-nyo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "일기",
+      "areaId": "topik_basic",
+      "source": "rom-rec5515"
+    },
+    {
+      "vocabId": "topik-v1:일부",
+      "korean": "몸의일부가잘려도",
+      "romanization": "mom-ui-il-bu-ga-jal-ryeo-do",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "일부",
+      "areaId": "topik_basic",
+      "source": "rom-rec4448"
+    },
+    {
+      "vocabId": "topik-v1:입",
+      "korean": "입에서흘르고있는것은",
+      "romanization": "ib-e-seo-heul-reu-go-iss-neun-geos-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "입",
+      "areaId": "topik_basic",
+      "source": "rom-rec4372"
+    },
+    {
+      "vocabId": "topik-v1:있다",
+      "korean": "팬이있다",
+      "romanization": "paen-i-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "있다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4363"
+    },
+    {
+      "vocabId": "topik-v1:잊다",
+      "korean": "잊갯꺅싶",
+      "romanization": "ij-gaes-kkyag-sip",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잊다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3741"
+    },
+    {
+      "vocabId": "topik-v1:잎",
+      "korean": "옷검뚜잎",
+      "romanization": "os-geom-ttu-ip",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잎",
+      "areaId": "topik_basic",
+      "source": "rom-rec5666"
+    },
+    {
+      "vocabId": "topik-v1:자",
+      "korean": "우터자돌모며저솜",
+      "romanization": "u-teo-ja-dol-mo-myeo-jeo-som",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자",
+      "areaId": "topik_basic",
+      "source": "rom-rec1657"
+    },
+    {
+      "vocabId": "topik-v1:자다",
+      "korean": "떨잤팟뚜",
+      "romanization": "tteol-jass-pas-ttu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5698"
+    },
+    {
+      "vocabId": "topik-v1:자라다",
+      "korean": "자라면두다리로",
+      "romanization": "ja-ra-myeon-du-da-ri-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자라다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4330"
+    },
+    {
+      "vocabId": "topik-v1:자르다",
+      "korean": "여러물건을자를수있다",
+      "romanization": "yeo-reo-mul-geon-eul-ja-reul-su-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4411"
+    },
+    {
+      "vocabId": "topik-v1:자리",
+      "korean": ":넨한5스자리히라후카",
+      "romanization": ":nen-han5seu-ja-ri-hi-ra-hu-ka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자리",
+      "areaId": "topik_basic",
+      "source": "rom-rec8871"
+    },
+    {
+      "vocabId": "topik-v1:자세히",
+      "korean": "자세히아는것도중요하단다",
+      "romanization": "ja-se-hi-a-neun-geos-do-jung-yo-ha-dan-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자세히",
+      "areaId": "topik_basic",
+      "source": "rom-rec2983"
+    },
+    {
+      "vocabId": "topik-v1:자신",
+      "korean": "자신의공격이오른다",
+      "romanization": "ja-sin-ui-gong-gyeog-i-o-reun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자신",
+      "areaId": "topik_basic",
+      "source": "rom-rec266"
+    },
+    {
+      "vocabId": "topik-v1:자주",
+      "korean": "자주풀전한다",
+      "romanization": "ja-ju-pul-jeon-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "자주",
+      "areaId": "topik_basic",
+      "source": "rom-rec4390"
+    },
+    {
+      "vocabId": "topik-v1:작다",
+      "korean": "조금작은진주",
+      "romanization": "jo-geum-jag-eun-jin-ju",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "작다",
+      "areaId": "topik_basic",
+      "source": "rom-rec213"
+    },
+    {
+      "vocabId": "topik-v1:잔",
+      "korean": "네잔구우쿤",
+      "romanization": "ne-jan-gu-u-kun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잔",
+      "areaId": "topik_basic",
+      "source": "rom-rec1909"
+    },
+    {
+      "vocabId": "topik-v1:잔치",
+      "korean": "후제라젖솔카네우복▶소야히사코네메유유노{var:E4}양카타족잔치구요쿠메루네",
+      "romanization": "hu-je-ra-jeoj-sol-ka-ne-u-bog▶so-ya-hi-sa-ko-ne-me-yu-yu-no{var:E4}yang-ka-ta-jog-jan-chi-gu-yo-ku-me-ru-ne",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잔치",
+      "areaId": "topik_basic",
+      "source": "rom-rec9469"
+    },
+    {
+      "vocabId": "topik-v1:잘",
+      "korean": "뿐믄잘냈",
+      "romanization": "ppun-meun-jal-naess",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잘",
+      "areaId": "topik_basic",
+      "source": "rom-rec5677"
+    },
+    {
+      "vocabId": "topik-v1:잘못",
+      "korean": "잘못걷는다",
+      "romanization": "jal-mos-geod-neun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잘못",
+      "areaId": "topik_basic",
+      "source": "rom-rec4388"
+    },
+    {
+      "vocabId": "topik-v1:잠",
+      "korean": "런림뚝잠",
+      "romanization": "reon-rim-ttug-jam",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잠",
+      "areaId": "topik_basic",
+      "source": "rom-rec782"
+    },
+    {
+      "vocabId": "topik-v1:잠깐",
+      "korean": "잠깐쉬고싶다면이레포트로",
+      "romanization": "jam-kkan-swi-go-sip-da-myeon-i-re-po-teu-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잠깐",
+      "areaId": "topik_basic",
+      "source": "rom-rec3711"
+    },
+    {
+      "vocabId": "topik-v1:잡다",
+      "korean": "잡을수있는",
+      "romanization": "jab-eul-su-iss-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잡다",
+      "areaId": "topik_basic",
+      "source": "rom-rec132"
+    },
+    {
+      "vocabId": "topik-v1:잡히다",
+      "korean": "옛날에너무많이잡혀서",
+      "romanization": "yes-nal-e-neo-mu-manh-i-jab-hyeo-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "잡히다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4459"
+    },
+    {
+      "vocabId": "topik-v1:장",
+      "korean": "장콤몬놋",
+      "romanization": "jang-kom-mon-nos",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "장",
+      "areaId": "topik_basic",
+      "source": "rom-rec5082"
+    },
+    {
+      "vocabId": "topik-v1:장소",
+      "korean": "건조한장소에",
+      "romanization": "geon-jo-han-jang-so-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "장소",
+      "areaId": "topik_basic",
+      "source": "rom-rec4355"
+    },
+    {
+      "vocabId": "topik-v1:적",
+      "korean": "적의주의를끌어",
+      "romanization": "jeog-ui-ju-ui-reul-kkeul-eo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "적",
+      "areaId": "topik_basic",
+      "source": "rom-rec199"
+    },
+    {
+      "vocabId": "topik-v1:적다",
+      "korean": "아주적은수가서식하고있다",
+      "romanization": "a-ju-jeog-eun-su-ga-seo-sig-ha-go-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "적다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4441"
+    },
+    {
+      "vocabId": "topik-v1:적어도",
+      "korean": "옛날에는적어도조금더",
+      "romanization": "yes-nal-e-neun-jeog-eo-do-jo-geum-deo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "적어도",
+      "areaId": "topik_basic",
+      "source": "rom-rec4457"
+    },
+    {
+      "vocabId": "topik-v1:전",
+      "korean": "자주풀전한다",
+      "romanization": "ja-ju-pul-jeon-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "전",
+      "areaId": "topik_basic",
+      "source": "rom-rec4390"
+    },
+    {
+      "vocabId": "topik-v1:전기",
+      "korean": "방대한전기에너지를",
+      "romanization": "bang-dae-han-jeon-gi-e-neo-ji-reul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "전기",
+      "areaId": "topik_basic",
+      "source": "rom-rec4429"
+    },
+    {
+      "vocabId": "topik-v1:전부",
+      "korean": "전부회복시킨다",
+      "romanization": "jeon-bu-hoe-bog-si-kin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "전부",
+      "areaId": "topik_basic",
+      "source": "rom-rec151"
+    },
+    {
+      "vocabId": "topik-v1:전자",
+      "korean": "전자공간을자유자재로",
+      "romanization": "jeon-ja-gong-gan-eul-ja-yu-ja-jae-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "전자",
+      "areaId": "topik_basic",
+      "source": "rom-rec4466"
+    },
+    {
+      "vocabId": "topik-v1:전하다",
+      "korean": "힘이있다고전해진다",
+      "romanization": "him-i-iss-da-go-jeon-hae-jin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "전하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4477"
+    },
+    {
+      "vocabId": "topik-v1:전혀",
+      "korean": "전혀나오지않게된다",
+      "romanization": "jeon-hyeo-na-o-ji-anh-ge-doen-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "전혀",
+      "areaId": "topik_basic",
+      "source": "rom-rec201"
+    },
+    {
+      "vocabId": "topik-v1:절반",
+      "korean": "절반까지회복시킨다",
+      "romanization": "jeol-ban-kka-ji-hoe-bog-si-kin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "절반",
+      "areaId": "topik_basic",
+      "source": "rom-rec155"
+    },
+    {
+      "vocabId": "topik-v1:젊다",
+      "korean": "젊□몬묶점",
+      "romanization": "jeolm□mon-mukk-jeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "젊다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5703"
+    },
+    {
+      "vocabId": "topik-v1:점",
+      "korean": "섭점둑둥",
+      "romanization": "seob-jeom-dug-dung",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "점",
+      "areaId": "topik_basic",
+      "source": "rom-rec2560"
+    },
+    {
+      "vocabId": "topik-v1:점점",
+      "korean": "주변의온도가점점",
+      "romanization": "ju-byeon-ui-on-do-ga-jeom-jeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "점점",
+      "areaId": "topik_basic",
+      "source": "rom-rec4333"
+    },
+    {
+      "vocabId": "topik-v1:접시",
+      "korean": "우소테사:접시니미로조포쿤츄핏밧퀸티자테넋』르솟류덴0엔R단",
+      "romanization": "u-so-te-sa:jeob-si-ni-mi-ro-jo-po-kun-chyu-pis-bas-kwin-ti-ja-te-neogs』reu-sos-ryu-den0enRdan",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "접시",
+      "areaId": "topik_basic",
+      "source": "rom-rec9137"
+    },
+    {
+      "vocabId": "topik-v1:정",
+      "korean": "□정놔취까",
+      "romanization": "□jeong-nwa-chwi-kka",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "정",
+      "areaId": "topik_basic",
+      "source": "rom-rec493"
+    },
+    {
+      "vocabId": "topik-v1:정도",
+      "korean": "맘석도태울정도의",
+      "romanization": "mam-seog-do-tae-ul-jeong-do-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "정도",
+      "areaId": "topik_basic",
+      "source": "rom-rec4334"
+    },
+    {
+      "vocabId": "topik-v1:정말",
+      "korean": "정말찾기힘들게된다",
+      "romanization": "jeong-mal-chaj-gi-him-deul-ge-doen-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "정말",
+      "areaId": "topik_basic",
+      "source": "rom-rec4454"
+    },
+    {
+      "vocabId": "topik-v1:정보",
+      "korean": "포켓몬정보",
+      "romanization": "po-kes-mon-jeong-bo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "정보",
+      "areaId": "topik_basic",
+      "source": "rom-rec3635"
+    },
+    {
+      "vocabId": "topik-v1:정하다",
+      "korean": "사냥감을정하면",
+      "romanization": "sa-nyang-gam-eul-jeong-ha-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "정하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4456"
+    },
+    {
+      "vocabId": "topik-v1:정확히",
+      "korean": "레포트가정확히써있지않아",
+      "romanization": "re-po-teu-ga-jeong-hwag-hi-sseo-iss-ji-anh-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "정확히",
+      "areaId": "topik_basic",
+      "source": "rom-rec2568"
+    },
+    {
+      "vocabId": "topik-v1:젖다",
+      "korean": "꼬리가비에젖으면",
+      "romanization": "kko-ri-ga-bi-e-jeoj-eu-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "젖다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4332"
+    },
+    {
+      "vocabId": "topik-v1:제법",
+      "korean": "제법큰진주",
+      "romanization": "je-beob-keun-jin-ju",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "제법",
+      "areaId": "topik_basic",
+      "source": "rom-rec214"
+    },
+    {
+      "vocabId": "topik-v1:조금",
+      "korean": "조금물속에",
+      "romanization": "jo-geum-mul-sog-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "조금",
+      "areaId": "topik_basic",
+      "source": "rom-rec4476"
+    },
+    {
+      "vocabId": "topik-v1:조사",
+      "korean": "I▶로쿤돈와츠테히치늘RU넨멘치세디조사□",
+      "romanization": "I▶ro-kun-don-wa-cheu-te-hi-chi-neulRUnen-men-chi-se-di-jo-sa□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "조사",
+      "areaId": "topik_basic",
+      "source": "rom-rec9552"
+    },
+    {
+      "vocabId": "topik-v1:좀",
+      "korean": "좀띨덤갚",
+      "romanization": "jom-ttil-deom-gap",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "좀",
+      "areaId": "topik_basic",
+      "source": "rom-rec5731"
+    },
+    {
+      "vocabId": "topik-v1:좁다",
+      "korean": "긴문좁냈",
+      "romanization": "gin-mun-job-naess",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "좁다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5888"
+    },
+    {
+      "vocabId": "topik-v1:종류",
+      "korean": "지역마다여러종류의",
+      "romanization": "ji-yeog-ma-da-yeo-reo-jong-ryu-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "종류",
+      "areaId": "topik_basic",
+      "source": "rom-rec4352"
+    },
+    {
+      "vocabId": "topik-v1:좋다",
+      "korean": "견템좋둘",
+      "romanization": "gyeon-tem-joh-dul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "좋다",
+      "areaId": "topik_basic",
+      "source": "rom-rec952"
+    },
+    {
+      "vocabId": "topik-v1:좋아하다",
+      "korean": "고기를좋아한다",
+      "romanization": "go-gi-reul-joh-a-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "좋아하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4358"
+    },
+    {
+      "vocabId": "topik-v1:주",
+      "korean": "주늑치시",
+      "romanization": "ju-neug-chi-si",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주",
+      "areaId": "topik_basic",
+      "source": "rom-rec8602"
+    },
+    {
+      "vocabId": "topik-v1:주다",
+      "korean": "상금을주게되지",
+      "romanization": "sang-geum-eul-ju-ge-doe-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1345"
+    },
+    {
+      "vocabId": "topik-v1:주로",
+      "korean": "주로숲이나수풀에분포",
+      "romanization": "ju-ro-sup-i-na-su-pul-e-bun-po",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주로",
+      "areaId": "topik_basic",
+      "source": "rom-rec4344"
+    },
+    {
+      "vocabId": "topik-v1:주변",
+      "korean": "주변의온도가점점",
+      "romanization": "ju-byeon-ui-on-do-ga-jeom-jeom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주변",
+      "areaId": "topik_basic",
+      "source": "rom-rec4333"
+    },
+    {
+      "vocabId": "topik-v1:주사",
+      "korean": "들리쿠N나헤양주사카달테아렛시□치좋니누갓오마",
+      "romanization": "deul-ri-kuNna-he-yang-ju-sa-ka-dal-te-a-res-si□chi-joh-ni-nu-gas-o-ma",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주사",
+      "areaId": "topik_basic",
+      "source": "rom-rec7526"
+    },
+    {
+      "vocabId": "topik-v1:주소",
+      "korean": "주소우아나단사에드구술치토H미",
+      "romanization": "ju-so-u-a-na-dan-sa-e-deu-gu-sul-chi-toHmi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주소",
+      "areaId": "topik_basic",
+      "source": "rom-rec8312"
+    },
+    {
+      "vocabId": "topik-v1:주인",
+      "korean": "주인놉놋다당넣비",
+      "romanization": "ju-in-nob-nos-da-dang-neoh-bi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주인",
+      "areaId": "topik_basic",
+      "source": "rom-rec5430"
+    },
+    {
+      "vocabId": "topik-v1:주제",
+      "korean": "누×V부달츠라복J노라유A하지통래데▶P요오JW도트X좋짧케단오쿠와구달주제비오니T데술케석코츠릿우키츠넨넨피석츠통츠",
+      "romanization": "nu×Vbu-dal-cheu-ra-bogJno-ra-yuAha-ji-tong-rae-de▶Pyo-oJWdo-teuXjoh-jjalb-ke-dan-o-ku-wa-gu-dal-ju-je-bi-o-niTde-sul-ke-seog-ko-cheu-ris-u-ki-cheu-nen-nen-pi-seog-cheu-tong-cheu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "주제",
+      "areaId": "topik_basic",
+      "source": "rom-rec7572"
+    },
+    {
+      "vocabId": "topik-v1:죽",
+      "korean": "겔게몸멀죽줍",
+      "romanization": "gel-ge-mom-meol-jug-jub",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "죽",
+      "areaId": "topik_basic",
+      "source": "rom-rec5754"
+    },
+    {
+      "vocabId": "topik-v1:죽다",
+      "korean": "눈오는산에서얼어죽어갈때",
+      "romanization": "nun-o-neun-san-e-seo-eol-eo-jug-eo-gal-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "죽다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4473"
+    },
+    {
+      "vocabId": "topik-v1:줄",
+      "korean": "카누쿠우꼬네네아세소소스사오스치코:드싼시스시줄×아카이술주츠누사",
+      "romanization": "ka-nu-ku-u-kko-ne-ne-a-se-so-so-seu-sa-o-seu-chi-ko:deu-ssan-si-seu-si-jul×a-ka-i-sul-ju-cheu-nu-sa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "줄",
+      "areaId": "topik_basic",
+      "source": "rom-rec9318"
+    },
+    {
+      "vocabId": "topik-v1:줄다",
+      "korean": "줄줌듯끓",
+      "romanization": "jul-jum-deus-kkeulh",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "줄다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1015"
+    },
+    {
+      "vocabId": "topik-v1:줄무늬",
+      "korean": "청백줄무늬가있다",
+      "romanization": "cheong-baeg-jul-mu-nui-ga-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "줄무늬",
+      "areaId": "topik_basic",
+      "source": "rom-rec178"
+    },
+    {
+      "vocabId": "topik-v1:줍다",
+      "korean": "겔게몸멀죽줍",
+      "romanization": "gel-ge-mom-meol-jug-jub",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "줍다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5754"
+    },
+    {
+      "vocabId": "topik-v1:중",
+      "korean": "중이쿠헤키▶렛편",
+      "romanization": "jung-i-ku-he-ki▶res-pyeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "중",
+      "areaId": "topik_basic",
+      "source": "rom-rec8450"
+    },
+    {
+      "vocabId": "topik-v1:중심",
+      "korean": "중심의코어라는부분은",
+      "romanization": "jung-sim-ui-ko-eo-ra-neun-bu-bun-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "중심",
+      "areaId": "topik_basic",
+      "source": "rom-rec4449"
+    },
+    {
+      "vocabId": "topik-v1:중요",
+      "korean": "중요포켓",
+      "romanization": "jung-yo-po-kes",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "중요",
+      "areaId": "topik_basic",
+      "source": "rom-rec3177"
+    },
+    {
+      "vocabId": "topik-v1:즉시",
+      "korean": "즉시완력이나사슬묶기로",
+      "romanization": "jeug-si-wan-ryeog-i-na-sa-seul-mukk-gi-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "즉시",
+      "areaId": "topik_basic",
+      "source": "rom-rec4382"
+    },
+    {
+      "vocabId": "topik-v1:지",
+      "korean": "지픽섹퀸비유키녔힌복",
+      "romanization": "ji-pig-seg-kwin-bi-yu-ki-nyeoss-hin-bog",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지",
+      "areaId": "topik_basic",
+      "source": "rom-rec8661"
+    },
+    {
+      "vocabId": "topik-v1:지구",
+      "korean": "녹아코코오에토루지구라요야후세오코토네네유디파베바트사술N",
+      "romanization": "nog-a-ko-ko-o-e-to-ru-ji-gu-ra-yo-ya-hu-se-o-ko-to-ne-ne-yu-di-pa-be-ba-teu-sa-sulN",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지구",
+      "areaId": "topik_basic",
+      "source": "rom-rec9156"
+    },
+    {
+      "vocabId": "topik-v1:지금",
+      "korean": "하지만지금은",
+      "romanization": "ha-ji-man-ji-geum-eun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지금",
+      "areaId": "topik_basic",
+      "source": "rom-rec4457"
+    },
+    {
+      "vocabId": "topik-v1:지나가다",
+      "korean": "대지를쓸고지나간다",
+      "romanization": "dae-ji-reul-sseul-go-ji-na-gan-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지나가다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4412"
+    },
+    {
+      "vocabId": "topik-v1:지내다",
+      "korean": "지내기가편한볼",
+      "romanization": "ji-nae-gi-ga-pyeon-han-bol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지내다",
+      "areaId": "topik_basic",
+      "source": "rom-rec142"
+    },
+    {
+      "vocabId": "topik-v1:지다",
+      "korean": "더빨리뚜워지게지",
+      "romanization": "deo-ppal-ri-ttu-wo-ji-ge-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1338"
+    },
+    {
+      "vocabId": "topik-v1:지역",
+      "korean": "지역마다여러종류의",
+      "romanization": "ji-yeog-ma-da-yeo-reo-jong-ryu-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지역",
+      "areaId": "topik_basic",
+      "source": "rom-rec4352"
+    },
+    {
+      "vocabId": "topik-v1:지우다",
+      "korean": "피등치지우니",
+      "romanization": "pi-deung-chi-ji-u-ni",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4789"
+    },
+    {
+      "vocabId": "topik-v1:지치다",
+      "korean": "무거워져서빨리지친다",
+      "romanization": "mu-geo-wo-jyeo-seo-ppal-ri-ji-chin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지치다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4373"
+    },
+    {
+      "vocabId": "topik-v1:지키다",
+      "korean": "지키고있다",
+      "romanization": "ji-ki-go-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지키다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4440"
+    },
+    {
+      "vocabId": "topik-v1:지하",
+      "korean": "지하1KM정도를파면서",
+      "romanization": "ji-ha1KMjeong-do-reul-pa-myeon-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지하",
+      "areaId": "topik_basic",
+      "source": "rom-rec4378"
+    },
+    {
+      "vocabId": "topik-v1:지하도",
+      "korean": "지하도를굴러다닌다",
+      "romanization": "ji-ha-do-reul-gul-reo-da-nin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "지하도",
+      "areaId": "topik_basic",
+      "source": "rom-rec4403"
+    },
+    {
+      "vocabId": "topik-v1:직접",
+      "korean": "직접본사람은거의없지만",
+      "romanization": "jig-jeob-bon-sa-ram-eun-geo-ui-eobs-ji-man",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "직접",
+      "areaId": "topik_basic",
+      "source": "rom-rec4478"
+    },
+    {
+      "vocabId": "topik-v1:진짜",
+      "korean": "쓰고있기때문에진짜",
+      "romanization": "sseu-go-iss-gi-ttae-mun-e-jin-jja",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "진짜",
+      "areaId": "topik_basic",
+      "source": "rom-rec4432"
+    },
+    {
+      "vocabId": "topik-v1:질",
+      "korean": "술:질:주복들복×맸",
+      "romanization": "sul:jil:ju-bog-deul-bog×maess",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "질",
+      "areaId": "topik_basic",
+      "source": "rom-rec9667"
+    },
+    {
+      "vocabId": "topik-v1:짐",
+      "korean": "꽁꽁눈짐",
+      "romanization": "kkong-kkong-nun-jim",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "짐",
+      "areaId": "topik_basic",
+      "source": "rom-rec3832"
+    },
+    {
+      "vocabId": "topik-v1:짓",
+      "korean": ":굴짓카아",
+      "romanization": ":gul-jis-ka-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "짓",
+      "areaId": "topik_basic",
+      "source": "rom-rec9154"
+    },
+    {
+      "vocabId": "topik-v1:짓다",
+      "korean": "짓갤꼴덤",
+      "romanization": "jis-gael-kkol-deom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "짓다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5862"
+    },
+    {
+      "vocabId": "topik-v1:짜다",
+      "korean": "견걸갚짜",
+      "romanization": "gyeon-geol-gap-jja",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "짜다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1024"
+    },
+    {
+      "vocabId": "topik-v1:짧다",
+      "korean": "뇌짧곽낙",
+      "romanization": "noe-jjalb-gwag-nag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "짧다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5899"
+    },
+    {
+      "vocabId": "topik-v1:찌다",
+      "korean": "멜먼□쪄몬욱끔",
+      "romanization": "mel-meon□jjyeo-mon-ug-kkeum",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "찌다",
+      "areaId": "topik_basic",
+      "source": "rom-rec5926"
+    },
+    {
+      "vocabId": "topik-v1:찍다",
+      "korean": "며아멍찍솔스픕렛쿠토Y구M피S카소다L메뤂아",
+      "romanization": "myeo-a-meong-jjig-sol-seu-peub-res-ku-toYguMpiSka-so-daLme-rup-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "찍다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7452"
+    },
+    {
+      "vocabId": "topik-v1:차",
+      "korean": "쿠B낫케차",
+      "romanization": "kuBnas-ke-cha",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "차",
+      "areaId": "topik_basic",
+      "source": "rom-rec2294"
+    },
+    {
+      "vocabId": "topik-v1:차다",
+      "korean": "에너지가꽉찬사탕",
+      "romanization": "e-neo-ji-ga-kkwag-chan-sa-tang",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "차다",
+      "areaId": "topik_basic",
+      "source": "rom-rec188"
+    },
+    {
+      "vocabId": "topik-v1:차리다",
+      "korean": "도타쿠노차린킹크니오쿠란테오쿠네",
+      "romanization": "do-ta-ku-no-cha-rin-king-keu-ni-o-ku-ran-te-o-ku-ne",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "차리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2807"
+    },
+    {
+      "vocabId": "topik-v1:참",
+      "korean": "고덜환참□",
+      "romanization": "go-deol-hwan-cham□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "참",
+      "areaId": "topik_basic",
+      "source": "rom-rec6037"
+    },
+    {
+      "vocabId": "topik-v1:찾다",
+      "korean": "도구를찾는다",
+      "romanization": "do-gu-reul-chaj-neun-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "찾다",
+      "areaId": "topik_basic",
+      "source": "rom-rec3024"
+    },
+    {
+      "vocabId": "topik-v1:책",
+      "korean": "미키침츠□랐미소린린미마첸□누키이카누키E타하책마:슈",
+      "romanization": "mi-ki-chim-cheu□rass-mi-so-rin-rin-mi-ma-chen□nu-ki-i-ka-nu-kiEta-ha-chaeg-ma:syu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "책",
+      "areaId": "topik_basic",
+      "source": "rom-rec4265"
+    },
+    {
+      "vocabId": "topik-v1:처음",
+      "korean": "처음이지",
+      "romanization": "cheo-eum-i-ji",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "처음",
+      "areaId": "topik_basic",
+      "source": "rom-rec1335"
+    },
+    {
+      "vocabId": "topik-v1:철",
+      "korean": "쿠키철키□헤힌자UW주메소Z브",
+      "romanization": "ku-ki-cheol-ki□he-hin-jaUWju-me-soZbeu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "철",
+      "areaId": "topik_basic",
+      "source": "rom-rec1519"
+    },
+    {
+      "vocabId": "topik-v1:최고",
+      "korean": "최고성능의볼",
+      "romanization": "choe-go-seong-neung-ui-bol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "최고",
+      "areaId": "topik_basic",
+      "source": "rom-rec132"
+    },
+    {
+      "vocabId": "topik-v1:추다",
+      "korean": "춤을춘다고한다",
+      "romanization": "chum-eul-chun-da-go-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "추다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4452"
+    },
+    {
+      "vocabId": "topik-v1:추위",
+      "korean": "추위를이기기위해몸안에",
+      "romanization": "chu-wi-reul-i-gi-gi-wi-hae-mom-an-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "추위",
+      "areaId": "topik_basic",
+      "source": "rom-rec4415"
+    },
+    {
+      "vocabId": "topik-v1:춤",
+      "korean": "춤을춘다고한다",
+      "romanization": "chum-eul-chun-da-go-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "춤",
+      "areaId": "topik_basic",
+      "source": "rom-rec4452"
+    },
+    {
+      "vocabId": "topik-v1:충격",
+      "korean": "강한충격을받으면",
+      "romanization": "gang-han-chung-gyeog-eul-bad-eu-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "충격",
+      "areaId": "topik_basic",
+      "source": "rom-rec4339"
+    },
+    {
+      "vocabId": "topik-v1:취소",
+      "korean": "전환취소",
+      "romanization": "jeon-hwan-chwi-so",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "취소",
+      "areaId": "topik_basic",
+      "source": "rom-rec3641"
+    },
+    {
+      "vocabId": "topik-v1:치다",
+      "korean": "쿠키치누",
+      "romanization": "ku-ki-chi-nu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "치다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1705"
+    },
+    {
+      "vocabId": "topik-v1:치마",
+      "korean": "츠츠치치치타치마마지××▶래잔바",
+      "romanization": "cheu-cheu-chi-chi-chi-ta-chi-ma-ma-ji××▶rae-jan-ba",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "치마",
+      "areaId": "topik_basic",
+      "source": "rom-rec9988"
+    },
+    {
+      "vocabId": "topik-v1:치우다",
+      "korean": "가마달아세가치석치세치아석타호치치래가호맥",
+      "romanization": "ga-ma-dal-a-se-ga-chi-seog-chi-se-chi-a-seog-ta-ho-chi-chi-rae-ga-ho-maeg",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "치우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec9902"
+    },
+    {
+      "vocabId": "topik-v1:치즈",
+      "korean": "모록치즈메릭",
+      "romanization": "mo-rog-chi-jeu-me-rig",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "치즈",
+      "areaId": "topik_basic",
+      "source": "rom-rec1539"
+    },
+    {
+      "vocabId": "topik-v1:친구",
+      "korean": "요정의친구로좀처럼",
+      "romanization": "yo-jeong-ui-chin-gu-ro-jom-cheo-reom",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "친구",
+      "areaId": "topik_basic",
+      "source": "rom-rec4364"
+    },
+    {
+      "vocabId": "topik-v1:카드",
+      "korean": "누리구지도투퀸윈완안는다모니토하무메노케술주□솔ZZ솔:아케카드RPQPG』3탕르」Y요구즈도투산닷딘만화데유니테누마무하사",
+      "romanization": "nu-ri-gu-ji-do-tu-kwin-win-wan-an-neun-da-mo-ni-to-ha-mu-me-no-ke-sul-ju□solZZsol:a-ke-ka-deuRPQPG』3tang-reu」Yyo-gu-jeu-do-tu-san-das-din-man-hwa-de-yu-ni-te-nu-ma-mu-ha-sa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "카드",
+      "areaId": "topik_basic",
+      "source": "rom-rec6989"
+    },
+    {
+      "vocabId": "topik-v1:카레",
+      "korean": "카레와등자트코오",
+      "romanization": "ka-re-wa-deung-ja-teu-ko-o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "카레",
+      "areaId": "topik_basic",
+      "source": "rom-rec9412"
+    },
+    {
+      "vocabId": "topik-v1:칼",
+      "korean": "칼뿐뵈필",
+      "romanization": "kal-ppun-boe-pil",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "칼",
+      "areaId": "topik_basic",
+      "source": "rom-rec2565"
+    },
+    {
+      "vocabId": "topik-v1:커다랗다",
+      "korean": "커다란희귀한버섯",
+      "romanization": "keo-da-ran-hui-gwi-han-beo-seos",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "커다랗다",
+      "areaId": "topik_basic",
+      "source": "rom-rec212"
+    },
+    {
+      "vocabId": "topik-v1:컴퓨터",
+      "korean": "컴퓨터에",
+      "romanization": "keom-pyu-teo-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "컴퓨터",
+      "areaId": "topik_basic",
+      "source": "rom-rec3026"
+    },
+    {
+      "vocabId": "topik-v1:코",
+      "korean": "코등푸네",
+      "romanization": "ko-deung-pu-ne",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "코",
+      "areaId": "topik_basic",
+      "source": "rom-rec5286"
+    },
+    {
+      "vocabId": "topik-v1:크기",
+      "korean": "크기가믁하기",
+      "romanization": "keu-gi-ga-meug-ha-gi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "크기",
+      "areaId": "topik_basic",
+      "source": "rom-rec2643"
+    },
+    {
+      "vocabId": "topik-v1:크다",
+      "korean": "날신화크",
+      "romanization": "nal-sin-hwa-keu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "크다",
+      "areaId": "topik_basic",
+      "source": "rom-rec2531"
+    },
+    {
+      "vocabId": "topik-v1:키",
+      "korean": "키마세등",
+      "romanization": "ki-ma-se-deung",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "키",
+      "areaId": "topik_basic",
+      "source": "rom-rec2735"
+    },
+    {
+      "vocabId": "topik-v1:키우다",
+      "korean": "□이키우아아",
+      "romanization": "□i-ki-u-a-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "키우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7699"
+    },
+    {
+      "vocabId": "topik-v1:타다",
+      "korean": "나카란타",
+      "romanization": "na-ka-ran-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "타다",
+      "areaId": "topik_basic",
+      "source": "rom-rec856"
+    },
+    {
+      "vocabId": "topik-v1:탑",
+      "korean": "꿈탑홈끼",
+      "romanization": "kkum-tab-hom-kki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "탑",
+      "areaId": "topik_basic",
+      "source": "rom-rec3486"
+    },
+    {
+      "vocabId": "topik-v1:태양",
+      "korean": "태양같이붉은색이다",
+      "romanization": "tae-yang-gat-i-bulg-eun-saeg-i-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "태양",
+      "areaId": "topik_basic",
+      "source": "rom-rec205"
+    },
+    {
+      "vocabId": "topik-v1:태어나다",
+      "korean": "태어날때부터등에",
+      "romanization": "tae-eo-nal-ttae-bu-teo-deung-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "태어나다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4329"
+    },
+    {
+      "vocabId": "topik-v1:태우다",
+      "korean": "맘석도태울정도의",
+      "romanization": "mam-seog-do-tae-ul-jeong-do-ui",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "태우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4334"
+    },
+    {
+      "vocabId": "topik-v1:터",
+      "korean": "고터토치파",
+      "romanization": "go-teo-to-chi-pa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "터",
+      "areaId": "topik_basic",
+      "source": "rom-rec29"
+    },
+    {
+      "vocabId": "topik-v1:터널",
+      "korean": "이와야마터널",
+      "romanization": "i-wa-ya-ma-teo-neol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "터널",
+      "areaId": "topik_basic",
+      "source": "rom-rec3872"
+    },
+    {
+      "vocabId": "topik-v1:턱",
+      "korean": "떨곧끓슬덤포턱몬",
+      "romanization": "tteol-god-kkeulh-seul-deom-po-teog-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "턱",
+      "areaId": "topik_basic",
+      "source": "rom-rec3587"
+    },
+    {
+      "vocabId": "topik-v1:털",
+      "korean": "털이아름다워서애완동물로",
+      "romanization": "teol-i-a-reum-da-wo-seo-ae-wan-dong-mul-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "털",
+      "areaId": "topik_basic",
+      "source": "rom-rec4381"
+    },
+    {
+      "vocabId": "topik-v1:털다",
+      "korean": "턴수가걸리면",
+      "romanization": "teon-su-ga-geol-ri-myeon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "털다",
+      "areaId": "topik_basic",
+      "source": "rom-rec141"
+    },
+    {
+      "vocabId": "topik-v1:톤",
+      "korean": "롯프쥬톤센",
+      "romanization": "ros-peu-jyu-ton-sen",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "톤",
+      "areaId": "topik_basic",
+      "source": "rom-rec3933"
+    },
+    {
+      "vocabId": "topik-v1:통",
+      "korean": "우R래통굴",
+      "romanization": "uRrae-tong-gul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "통",
+      "areaId": "topik_basic",
+      "source": "rom-rec9197"
+    },
+    {
+      "vocabId": "topik-v1:통하다",
+      "korean": "치네키토Y했치넷에통치치치키",
+      "romanization": "chi-ne-ki-toYhaess-chi-nes-e-tong-chi-chi-chi-ki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "통하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1651"
+    },
+    {
+      "vocabId": "topik-v1:특별히",
+      "korean": "특별히만들어졌다",
+      "romanization": "teug-byeol-hi-man-deul-eo-jyeoss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "특별히",
+      "areaId": "topik_basic",
+      "source": "rom-rec143"
+    },
+    {
+      "vocabId": "topik-v1:틀림없다",
+      "korean": "겐가의짓이틀림없다",
+      "romanization": "gen-ga-ui-jis-i-teul-rim-eobs-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "틀림없다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4422"
+    },
+    {
+      "vocabId": "topik-v1:팀",
+      "korean": "군□낡팀몬",
+      "romanization": "gun□nalg-tim-mon",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "팀",
+      "areaId": "topik_basic",
+      "source": "rom-rec5004"
+    },
+    {
+      "vocabId": "topik-v1:파",
+      "korean": "좋힌힌멕파",
+      "romanization": "joh-hin-hin-meg-pa",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "파",
+      "areaId": "topik_basic",
+      "source": "rom-rec9"
+    },
+    {
+      "vocabId": "topik-v1:파도",
+      "korean": "핫훈샤뮤블-S×스라두투쿤화화는캐투파도즈기루메히테코이",
+      "romanization": "has-hun-sya-myu-beulS×seu-ra-du-tu-kun-hwa-hwa-neun-kae-tu-pa-do-jeu-gi-ru-me-hi-te-ko-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "파도",
+      "areaId": "topik_basic",
+      "source": "rom-rec8986"
+    },
+    {
+      "vocabId": "topik-v1:파란색",
+      "korean": "파란색의작은조곽",
+      "romanization": "pa-ran-saeg-ui-jag-eun-jo-gwag",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "파란색",
+      "areaId": "topik_basic",
+      "source": "rom-rec180"
+    },
+    {
+      "vocabId": "topik-v1:파리",
+      "korean": "잔넨×시히토치후타들MS버사히하토테세아로파리술주온JP굴스니쿠리리스□NZ{var:1B}무리디베트케눅들",
+      "romanization": "jan-nen×si-hi-to-chi-hu-ta-deulMSbeo-sa-hi-ha-to-te-se-a-ro-pa-ri-sul-ju-onJPgul-seu-ni-ku-ri-ri-seu□NZ{var:1B}mu-ri-di-be-teu-ke-nug-deul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "파리",
+      "areaId": "topik_basic",
+      "source": "rom-rec9545"
+    },
+    {
+      "vocabId": "topik-v1:파일",
+      "korean": "치잔치브츠복타우쥬탄넷삼석기우:아타파일훈훈몬타우",
+      "romanization": "chi-jan-chi-beu-cheu-bog-ta-u-jyu-tan-nes-sam-seog-gi-u:a-ta-pa-il-hun-hun-mon-ta-u",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "파일",
+      "areaId": "topik_basic",
+      "source": "rom-rec642"
+    },
+    {
+      "vocabId": "topik-v1:팔",
+      "korean": "마스이오키팔×세타츠헤오렛이곽헤스시무넨렛",
+      "romanization": "ma-seu-i-o-ki-pal×se-ta-cheu-he-o-res-i-gwag-he-seu-si-mu-nen-res",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "팔",
+      "areaId": "topik_basic",
+      "source": "rom-rec8427"
+    },
+    {
+      "vocabId": "topik-v1:팔다",
+      "korean": "들비팔아",
+      "romanization": "deul-bi-pal-a",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "팔다",
+      "areaId": "topik_basic",
+      "source": "rom-rec7562"
+    },
+    {
+      "vocabId": "topik-v1:팔리다",
+      "korean": "샵에서싸게팔린다",
+      "romanization": "syab-e-seo-ssa-ge-pal-rin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "팔리다",
+      "areaId": "topik_basic",
+      "source": "rom-rec213"
+    },
+    {
+      "vocabId": "topik-v1:팩",
+      "korean": "딤포팩몬곤겼",
+      "romanization": "dim-po-paeg-mon-gon-gyeoss",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "팩",
+      "areaId": "topik_basic",
+      "source": "rom-rec5049"
+    },
+    {
+      "vocabId": "topik-v1:팬",
+      "korean": "팬이있다",
+      "romanization": "paen-i-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "팬",
+      "areaId": "topik_basic",
+      "source": "rom-rec4363"
+    },
+    {
+      "vocabId": "topik-v1:펴다",
+      "korean": "아카아폈",
+      "romanization": "a-ka-a-pyeoss",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "펴다",
+      "areaId": "topik_basic",
+      "source": "rom-rec8366"
+    },
+    {
+      "vocabId": "topik-v1:편",
+      "korean": "카편에퐁갔츠:오",
+      "romanization": "ka-pyeon-e-pong-gass-cheu:o",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "편",
+      "areaId": "topik_basic",
+      "source": "rom-rec7464"
+    },
+    {
+      "vocabId": "topik-v1:편하다",
+      "korean": "지내기가편한볼",
+      "romanization": "ji-nae-gi-ga-pyeon-han-bol",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "편하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec142"
+    },
+    {
+      "vocabId": "topik-v1:평소",
+      "korean": "촉수는평소에짧지만",
+      "romanization": "chog-su-neun-pyeong-so-e-jjalb-ji-man",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "평소",
+      "areaId": "topik_basic",
+      "source": "rom-rec4401"
+    },
+    {
+      "vocabId": "topik-v1:포도",
+      "korean": "E맴넨저있신멕포도유키",
+      "romanization": "Emaem-nen-jeo-iss-sin-meg-po-do-yu-ki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "포도",
+      "areaId": "topik_basic",
+      "source": "rom-rec8664"
+    },
+    {
+      "vocabId": "topik-v1:폭",
+      "korean": "짠아폭에",
+      "romanization": "jjan-a-pog-e",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "폭",
+      "areaId": "topik_basic",
+      "source": "rom-rec8197"
+    },
+    {
+      "vocabId": "topik-v1:표",
+      "korean": "떨게표땀",
+      "romanization": "tteol-ge-pyo-ttam",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "표",
+      "areaId": "topik_basic",
+      "source": "rom-rec5743"
+    },
+    {
+      "vocabId": "topik-v1:푸르다",
+      "korean": "유리로만든푸른피리",
+      "romanization": "yu-ri-ro-man-deun-pu-reun-pi-ri",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "푸르다",
+      "areaId": "topik_basic",
+      "source": "rom-rec170"
+    },
+    {
+      "vocabId": "topik-v1:풀",
+      "korean": "괅뜻똑□풀",
+      "romanization": "gwalg-tteus-ttog□pul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "풀",
+      "areaId": "topik_basic",
+      "source": "rom-rec2781"
+    },
+    {
+      "vocabId": "topik-v1:풀다",
+      "korean": "누풀A키니켄포",
+      "romanization": "nu-pulAki-ni-ken-po",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "풀다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1561"
+    },
+    {
+      "vocabId": "topik-v1:프로그램",
+      "korean": "몸이프로그램으로되어있다",
+      "romanization": "mom-i-peu-ro-geu-raem-eu-ro-doe-eo-iss-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "프로그램",
+      "areaId": "topik_basic",
+      "source": "rom-rec4466"
+    },
+    {
+      "vocabId": "topik-v1:피",
+      "korean": "피록자치피",
+      "romanization": "pi-rog-ja-chi-pi",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "피",
+      "areaId": "topik_basic",
+      "source": "rom-rec15"
+    },
+    {
+      "vocabId": "topik-v1:피다",
+      "korean": "피게닷소",
+      "romanization": "pi-ge-das-so",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "피다",
+      "areaId": "topik_basic",
+      "source": "rom-rec1608"
+    },
+    {
+      "vocabId": "topik-v1:피부",
+      "korean": "피부를매끈하게한다",
+      "romanization": "pi-bu-reul-mae-kkeun-ha-ge-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "피부",
+      "areaId": "topik_basic",
+      "source": "rom-rec4389"
+    },
+    {
+      "vocabId": "topik-v1:피시",
+      "korean": "피시바카니",
+      "romanization": "pi-si-ba-ka-ni",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "피시",
+      "areaId": "topik_basic",
+      "source": "rom-rec4666"
+    },
+    {
+      "vocabId": "topik-v1:피우다",
+      "korean": "커다란꽃을피운다",
+      "romanization": "keo-da-ran-kkoch-eul-pi-un-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "피우다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4331"
+    },
+    {
+      "vocabId": "topik-v1:필요",
+      "korean": "갗고있어서주의가필요하다",
+      "romanization": "gach-go-iss-eo-seo-ju-ui-ga-pil-yo-ha-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "필요",
+      "areaId": "topik_basic",
+      "source": "rom-rec4357"
+    },
+    {
+      "vocabId": "topik-v1:하늘",
+      "korean": "큰날개로넓은하늘을",
+      "romanization": "keun-nal-gae-ro-neolb-eun-ha-neul-eul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "하늘",
+      "areaId": "topik_basic",
+      "source": "rom-rec4350"
+    },
+    {
+      "vocabId": "topik-v1:하다",
+      "korean": "하이란타",
+      "romanization": "ha-i-ran-ta",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec927"
+    },
+    {
+      "vocabId": "topik-v1:하루",
+      "korean": "카리하하루카토오쿠마피토푸키",
+      "romanization": "ka-ri-ha-ha-ru-ka-to-o-ku-ma-pi-to-pu-ki",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "하루",
+      "areaId": "topik_basic",
+      "source": "rom-rec4540"
+    },
+    {
+      "vocabId": "topik-v1:하얗다",
+      "korean": "유리로만든하얀피리",
+      "romanization": "yu-ri-ro-man-deun-ha-yan-pi-ri",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "하얗다",
+      "areaId": "topik_basic",
+      "source": "rom-rec174"
+    },
+    {
+      "vocabId": "topik-v1:하하",
+      "korean": "하하굴닌우스",
+      "romanization": "ha-ha-gul-nin-u-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "하하",
+      "areaId": "topik_basic",
+      "source": "rom-rec8427"
+    },
+    {
+      "vocabId": "topik-v1:한",
+      "korean": "랑움류팜한",
+      "romanization": "rang-um-ryu-pam-han",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "한",
+      "areaId": "topik_basic",
+      "source": "rom-rec9153"
+    },
+    {
+      "vocabId": "topik-v1:한편",
+      "korean": "슈퍼파워풀한편치를",
+      "romanization": "syu-peo-pa-wo-pul-han-pyeon-chi-reul",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "한편",
+      "areaId": "topik_basic",
+      "source": "rom-rec4396"
+    },
+    {
+      "vocabId": "topik-v1:할아버지",
+      "korean": "할아버지는",
+      "romanization": "hal-a-beo-ji-neun",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "할아버지",
+      "areaId": "topik_basic",
+      "source": "rom-rec1274"
+    },
+    {
+      "vocabId": "topik-v1:함께",
+      "korean": "함께모험할때",
+      "romanization": "ham-kke-mo-heom-hal-ttae",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "함께",
+      "areaId": "topik_basic",
+      "source": "rom-rec3708"
+    },
+    {
+      "vocabId": "topik-v1:향하다",
+      "korean": "정면을향한채로뒤로",
+      "romanization": "jeong-myeon-eul-hyang-han-chae-ro-dwi-ro",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "향하다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4445"
+    },
+    {
+      "vocabId": "topik-v1:허리",
+      "korean": "허리를흔들며걸어다닌다",
+      "romanization": "heo-ri-reul-heun-deul-myeo-geol-eo-da-nin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "허리",
+      "areaId": "topik_basic",
+      "source": "rom-rec4452"
+    },
+    {
+      "vocabId": "topik-v1:혀",
+      "korean": "혀가카멜레온같이",
+      "romanization": "hyeo-ga-ka-mel-re-on-gat-i",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "혀",
+      "areaId": "topik_basic",
+      "source": "rom-rec4436"
+    },
+    {
+      "vocabId": "topik-v1:호",
+      "korean": "카호레호",
+      "romanization": "ka-ho-re-ho",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "호",
+      "areaId": "topik_basic",
+      "source": "rom-rec9213"
+    },
+    {
+      "vocabId": "topik-v1:호수",
+      "korean": "그녁호수근처에서",
+      "romanization": "geu-nyeog-ho-su-geun-cheo-e-seo",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "호수",
+      "areaId": "topik_basic",
+      "source": "rom-rec4383"
+    },
+    {
+      "vocabId": "topik-v1:호주",
+      "korean": "호주니양맷코",
+      "romanization": "ho-ju-ni-yang-maes-ko",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "호주",
+      "areaId": "topik_basic",
+      "source": "rom-rec8318"
+    },
+    {
+      "vocabId": "topik-v1:혼자",
+      "korean": "혼자서는거의못움직이지만",
+      "romanization": "hon-ja-seo-neun-geo-ui-mos-um-jig-i-ji-man",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "혼자",
+      "areaId": "topik_basic",
+      "source": "rom-rec4342"
+    },
+    {
+      "vocabId": "topik-v1:화",
+      "korean": "화핏트타투루",
+      "romanization": "hwa-pis-teu-ta-tu-ru",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "화",
+      "areaId": "topik_basic",
+      "source": "rom-rec4807"
+    },
+    {
+      "vocabId": "topik-v1:활동",
+      "korean": "버섯의의지로활동한다",
+      "romanization": "beo-seos-ui-ui-ji-ro-hwal-dong-han-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "활동",
+      "areaId": "topik_basic",
+      "source": "rom-rec4375"
+    },
+    {
+      "vocabId": "topik-v1:효과",
+      "korean": "효과는부족한듯",
+      "romanization": "hyo-gwa-neun-bu-jog-han-deus",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "효과",
+      "areaId": "topik_basic",
+      "source": "rom-rec1092"
+    },
+    {
+      "vocabId": "topik-v1:후",
+      "korean": "후키베스",
+      "romanization": "hu-ki-be-seu",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "후",
+      "areaId": "topik_basic",
+      "source": "rom-rec4682"
+    },
+    {
+      "vocabId": "topik-v1:흔들다",
+      "korean": "허리를흔들며걸어다닌다",
+      "romanization": "heo-ri-reul-heun-deul-myeo-geol-eo-da-nin-da",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "흔들다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4452"
+    },
+    {
+      "vocabId": "topik-v1:힘",
+      "korean": "끔껌애□갤힘□",
+      "romanization": "kkeum-kkeom-ae□gael-him□",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "힘",
+      "areaId": "topik_basic",
+      "source": "rom-rec4563"
+    },
+    {
+      "vocabId": "topik-v1:힘들다",
+      "korean": "할퀴어서힘들지도",
+      "romanization": "hal-kwi-eo-seo-him-deul-ji-do",
+      "gloss": "(TOPIK 1/2 example from ROM)",
+      "targetForm": "힘들다",
+      "areaId": "topik_basic",
+      "source": "rom-rec4381"
+    }
+  ]
+}

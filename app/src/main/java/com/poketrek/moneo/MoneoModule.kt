@@ -39,7 +39,12 @@ class MoneoModule private constructor(context: Context) {
         val vocabMined = runCatching {
             SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-mined.json")
         }.getOrElse { emptyList() }
-        val vocab = vocabSeed + vocabMined
+        // TOPIK 1+2 vocab that also occurs in the ROM corpus (~700 cards,
+        // hand-glossed). Optional like the mined deck.
+        val vocabTopik = runCatching {
+            SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-topik.json")
+        }.getOrElse { emptyList() }
+        val vocab = vocabSeed + vocabMined + vocabTopik
         val sentencesRom = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-rom.json")
         }.getOrElse { emptyList() }
@@ -51,12 +56,15 @@ class MoneoModule private constructor(context: Context) {
         val sentencesMined = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-mined.json")
         }.getOrElse { emptyList() }
+        val sentencesTopik = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-topik.json")
+        }.getOrElse { emptyList() }
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
             initialAreas = areas,
-            initialSentencesRom = sentencesRom + sentencesMined,
-            initialSentencesStudy = sentencesStudy + sentencesMined,
+            initialSentencesRom = sentencesRom + sentencesMined + sentencesTopik,
+            initialSentencesStudy = sentencesStudy + sentencesMined + sentencesTopik,
         )
     }
 
