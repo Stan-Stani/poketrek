@@ -24,3 +24,7 @@ captures/
 # mGBA build artifacts (in case anything escapes the build/ dirs)
 third_party/mgba/build/
 .moneo-artifacts/
+
+# Python venvs (mining/tooling)
+.venv*/
+__pycache__/

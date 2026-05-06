@@ -1,13 +1,93 @@
 {
   "version": 1,
-  "sourceTag": "rom-mine-v1",
+  "sourceTag": "rom-mine-v2",
   "notes": "Auto-mined from corpus.ko.json at frequency threshold 2. Lemmatization is heuristic — irregular conjugations and polysemous fragments may misclassify. Glosses are placeholders.",
   "entries": [
     {
-      "korean": "된다",
-      "romanization": "doenda",
+      "korean": "하다",
+      "romanization": "hada",
+      "gloss": "(unglossed; freq 55)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 55
+    },
+    {
+      "korean": "타다",
+      "romanization": "tada",
+      "gloss": "(unglossed; freq 42)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 42
+    },
+    {
+      "korean": "있다",
+      "romanization": "issda",
+      "gloss": "(unglossed; freq 41)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 41
+    },
+    {
+      "korean": "메다",
+      "romanization": "meda",
+      "gloss": "(unglossed; freq 36)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 36
+    },
+    {
+      "korean": "회복",
+      "romanization": "hoebog",
+      "gloss": "(unglossed; freq 36)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 36
+    },
+    {
+      "korean": "되다",
+      "romanization": "doeda",
+      "gloss": "(unglossed; freq 34)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 34
+    },
+    {
+      "korean": "만들다",
+      "romanization": "mandeulda",
+      "gloss": "(unglossed; freq 28)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 28
+    },
+    {
+      "korean": "상태",
+      "romanization": "sangtae",
+      "gloss": "(unglossed; freq 23)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 23
+    },
+    {
+      "korean": "키다",
+      "romanization": "kida",
+      "gloss": "(unglossed; freq 23)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 23
+    },
+    {
+      "korean": "지니다",
+      "romanization": "jinida",
+      "gloss": "(unglossed; freq 22)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 22
+    },
+    {
+      "korean": "갈다",
+      "romanization": "galda",
       "gloss": "(unglossed; freq 21)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 21
     },
@@ -15,63 +95,351 @@
       "korean": "약재",
       "romanization": "yagjae",
       "gloss": "(unglossed; freq 21)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 21
     },
     {
-      "korean": "데노",
-      "romanization": "deno",
+      "korean": "으깨다",
+      "romanization": "eukkaeda",
+      "gloss": "(unglossed; freq 21)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 21
+    },
+    {
+      "korean": "갚다",
+      "romanization": "gapda",
+      "gloss": "(unglossed; freq 20)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 20
+    },
+    {
+      "korean": "놓다",
+      "romanization": "nohda",
+      "gloss": "(unglossed; freq 20)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 20
+    },
+    {
+      "korean": "트다",
+      "romanization": "teuda",
       "gloss": "(unglossed; freq 18)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 18
     },
     {
-      "korean": "마리",
-      "romanization": "mari",
-      "gloss": "(unglossed; freq 15)",
-      "partOfSpeech": "noun?",
+      "korean": "몰다",
+      "romanization": "molda",
+      "gloss": "(unglossed; freq 17)",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 15
+      "frequency": 17
     },
     {
       "korean": "반노",
       "romanization": "banno",
+      "gloss": "(unglossed; freq 17)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 17
+    },
+    {
+      "korean": "스다",
+      "romanization": "seuda",
+      "gloss": "(unglossed; freq 17)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 17
+    },
+    {
+      "korean": "굴다",
+      "romanization": "gulda",
+      "gloss": "(unglossed; freq 16)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 16
+    },
+    {
+      "korean": "달달",
+      "romanization": "daldal",
       "gloss": "(unglossed; freq 14)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adverb",
       "areaId": "rom_mined",
       "frequency": 14
     },
     {
-      "korean": "상태",
-      "romanization": "sangtae",
+      "korean": "울다",
+      "romanization": "ulda",
+      "gloss": "(unglossed; freq 14)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 14
+    },
+    {
+      "korean": "치다",
+      "romanization": "chida",
+      "gloss": "(unglossed; freq 14)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 14
+    },
+    {
+      "korean": "쓰다",
+      "romanization": "sseuda",
+      "gloss": "(unglossed; freq 13)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 13
+    },
+    {
+      "korean": "아다",
+      "romanization": "ada",
+      "gloss": "(unglossed; freq 13)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 13
+    },
+    {
+      "korean": "주다",
+      "romanization": "juda",
+      "gloss": "(unglossed; freq 13)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 13
+    },
+    {
+      "korean": "보다",
+      "romanization": "boda",
       "gloss": "(unglossed; freq 12)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 12
     },
     {
-      "korean": "스스",
-      "romanization": "seuseu",
+      "korean": "세다",
+      "romanization": "seda",
+      "gloss": "(unglossed; freq 12)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 12
+    },
+    {
+      "korean": "크다",
+      "romanization": "keuda",
+      "gloss": "(unglossed; freq 12)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 12
+    },
+    {
+      "korean": "벌다",
+      "romanization": "beolda",
       "gloss": "(unglossed; freq 11)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 11
+    },
+    {
+      "korean": "편지지",
+      "romanization": "pyeonjiji",
+      "gloss": "(unglossed; freq 11)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 11
+    },
+    {
+      "korean": "푸다",
+      "romanization": "puda",
+      "gloss": "(unglossed; freq 11)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 11
+    },
+    {
+      "korean": "프린트",
+      "romanization": "peurinteu",
+      "gloss": "(unglossed; freq 11)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 11
+    },
+    {
+      "korean": "혀다",
+      "romanization": "hyeoda",
+      "gloss": "(unglossed; freq 10)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 10
+    },
+    {
+      "korean": "개마",
+      "romanization": "gaema",
+      "gloss": "(unglossed; freq 9)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 9
+    },
+    {
+      "korean": "마치",
+      "romanization": "machi",
+      "gloss": "(unglossed; freq 9)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 9
+    },
+    {
+      "korean": "전부",
+      "romanization": "jeonbu",
+      "gloss": "(unglossed; freq 9)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 9
+    },
+    {
+      "korean": "끄다",
+      "romanization": "kkeuda",
+      "gloss": "(unglossed; freq 8)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 8
+    },
+    {
+      "korean": "달다",
+      "romanization": "dalda",
+      "gloss": "(unglossed; freq 8)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 8
+    },
+    {
+      "korean": "같다",
+      "romanization": "gatda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "검다",
+      "romanization": "geomda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "나다",
+      "romanization": "nada",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "넣다",
+      "romanization": "neohda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "들다",
+      "romanization": "deulda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "병문",
+      "romanization": "byeongmun",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "에우다",
+      "romanization": "euda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "자다",
+      "romanization": "jada",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "캐다",
+      "romanization": "kaeda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "키트",
+      "romanization": "kiteu",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "펴다",
+      "romanization": "pyeoda",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 7
+    },
+    {
+      "korean": "혼란",
+      "romanization": "honran",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 7
     },
     {
       "korean": "꼬리",
       "romanization": "kkori",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6
     },
     {
-      "korean": "레루",
-      "romanization": "reru",
+      "korean": "나오다",
+      "romanization": "naoda",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 6
+    },
+    {
+      "korean": "내다",
+      "romanization": "naeda",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 6
+    },
+    {
+      "korean": "뇌다",
+      "romanization": "noeda",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 6
     },
@@ -79,15 +447,39 @@
       "korean": "모습",
       "romanization": "moseub",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6
     },
     {
-      "korean": "얀톤",
-      "romanization": "yanton",
+      "korean": "밀다",
+      "romanization": "milda",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 6
+    },
+    {
+      "korean": "복복",
+      "romanization": "bogbog",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 6
+    },
+    {
+      "korean": "석석",
+      "romanization": "seogseog",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 6
+    },
+    {
+      "korean": "이상",
+      "romanization": "isang",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6
     },
@@ -95,239 +487,767 @@
       "korean": "자신",
       "romanization": "jasin",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6
     },
     {
-      "korean": "치비등트",
-      "romanization": "chibideungteu",
+      "korean": "전투",
+      "romanization": "jeontu",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6
     },
     {
-      "korean": "혼란상태",
-      "romanization": "honransangtae",
+      "korean": "좋다",
+      "romanization": "johda",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 6
     },
     {
-      "korean": "회복",
-      "romanization": "hoebog",
+      "korean": "피다",
+      "romanization": "pida",
       "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 6
+    },
+    {
+      "korean": "호등",
+      "romanization": "hodeung",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 6
+    },
+    {
+      "korean": "갓다",
+      "romanization": "gasda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "교체",
+      "romanization": "gyoche",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
     },
     {
       "korean": "그림",
       "romanization": "geurim",
       "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5
     },
     {
-      "korean": "될수있다",
-      "romanization": "doelsuissda",
+      "korean": "노다",
+      "romanization": "noda",
       "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 5
     },
     {
-      "korean": "퀸센크",
-      "romanization": "kwinsenkeu",
+      "korean": "뇌뇌",
+      "romanization": "noenoe",
       "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5
     },
     {
-      "korean": "회복하",
-      "romanization": "hoebogha",
+      "korean": "데다",
+      "romanization": "deda",
       "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 5
+    },
+    {
+      "korean": "들통",
+      "romanization": "deultong",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "등제",
+      "romanization": "deungje",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "말다",
+      "romanization": "malda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "매다",
+      "romanization": "maeda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "매우",
+      "romanization": "maeu",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "먹다",
+      "romanization": "meogda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "멀다",
+      "romanization": "meolda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "블다",
+      "romanization": "beulda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "상대",
+      "romanization": "sangdae",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "석마",
+      "romanization": "seogma",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "아마",
+      "romanization": "ama",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "영양",
+      "romanization": "yeongyang",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "우트",
+      "romanization": "uteu",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "주주",
+      "romanization": "juju",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "통다",
+      "romanization": "tongda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "헤다",
+      "romanization": "heda",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 5
+    },
+    {
+      "korean": "가트",
+      "romanization": "gateu",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "공격",
+      "romanization": "gonggyeog",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "기초",
+      "romanization": "gicho",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "노트",
+      "romanization": "noteu",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "높이다",
+      "romanization": "nopida",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "누다",
+      "romanization": "nuda",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 4
     },
     {
       "korean": "능력",
       "romanization": "neungryeog",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "상처약",
-      "romanization": "sangcheoyag",
+      "korean": "도감",
+      "romanization": "dogam",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "오른다",
-      "romanization": "oreunda",
+      "korean": "드다",
+      "romanization": "deuda",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "유리",
-      "romanization": "yuri",
+      "korean": "드리다",
+      "romanization": "deurida",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "있다",
-      "romanization": "issda",
+      "korean": "리트",
+      "romanization": "riteu",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "준다",
-      "romanization": "junda",
+      "korean": "모으다",
+      "romanization": "moeuda",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "카키",
-      "romanization": "kaki",
+      "korean": "베이다",
+      "romanization": "beida",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "한다",
-      "romanization": "handa",
+      "korean": "보이다",
+      "romanization": "boida",
       "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 4
     },
     {
-      "korean": "걸검",
-      "romanization": "geolgeom",
+      "korean": "상처",
+      "romanization": "sangcheo",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "승부",
+      "romanization": "seungbu",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "신비",
+      "romanization": "sinbi",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "싸다",
+      "romanization": "ssada",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "아프다",
+      "romanization": "apeuda",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "이양",
+      "romanization": "iyang",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "잔우",
+      "romanization": "janu",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "치치다",
+      "romanization": "chichida",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "타투",
+      "romanization": "tatu",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "포인트",
+      "romanization": "pointeu",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 4
+    },
+    {
+      "korean": "가년",
+      "romanization": "ganyeon",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "공격",
-      "romanization": "gonggyeog",
+      "korean": "가달",
+      "romanization": "gadal",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "니츠",
-      "romanization": "nicheu",
+      "korean": "기다",
+      "romanization": "gida",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "메루",
-      "romanization": "meru",
+      "korean": "기록",
+      "romanization": "girog",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "방어",
-      "romanization": "bangeo",
+      "korean": "깨다",
+      "romanization": "kkaeda",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "병문갚네",
-      "romanization": "byeongmungapne",
+      "korean": "놀다",
+      "romanization": "nolda",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "사등픽뮤",
-      "romanization": "sadeungpigmyu",
+      "korean": "단록",
+      "romanization": "danrog",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "상대",
-      "romanization": "sangdae",
+      "korean": "단주",
+      "romanization": "danju",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "신비한돌",
-      "romanization": "sinbihandol",
+      "korean": "덴트",
+      "romanization": "denteu",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "어서",
-      "romanization": "eoseo",
+      "korean": "레트",
+      "romanization": "reteu",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "오니",
-      "romanization": "oni",
+      "korean": "루트",
+      "romanization": "ruteu",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "진화시키",
-      "romanization": "jinhwasiki",
+      "korean": "마다",
+      "romanization": "mada",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "카쿠",
-      "romanization": "kaku",
+      "korean": "만나다",
+      "romanization": "mannada",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "테등시자",
-      "romanization": "tedeungsija",
+      "korean": "만만",
+      "romanization": "manman",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "많다",
+      "romanization": "manhda",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "모이다",
+      "romanization": "moida",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "복치",
+      "romanization": "bogchi",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "석아",
+      "romanization": "seoga",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "소래",
+      "romanization": "sorae",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "솔래",
+      "romanization": "solrae",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "솔솔",
+      "romanization": "solsol",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "솔양",
+      "romanization": "solyang",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "솔통",
+      "romanization": "soltong",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "수면",
+      "romanization": "sumyeon",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "쉬다",
+      "romanization": "swida",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "쉽다",
+      "romanization": "swibda",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "슬다",
+      "romanization": "seulda",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "아매",
+      "romanization": "amae",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "아주",
+      "romanization": "aju",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "아콘",
+      "romanization": "akon",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "양복",
+      "romanization": "yangbog",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "에트",
+      "romanization": "eteu",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "오르다",
+      "romanization": "oreuda",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "와트",
+      "romanization": "wateu",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "우티",
+      "romanization": "uti",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "위험",
+      "romanization": "wiheom",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "이달",
+      "romanization": "idal",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "이복",
+      "romanization": "ibog",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "이우다",
+      "romanization": "iuda",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "진화",
+      "romanization": "jinhwa",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "치카",
+      "romanization": "chika",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "케버",
+      "romanization": "kebeo",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "타트",
+      "romanization": "tateu",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "트레",
+      "romanization": "teure",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "트루",
+      "romanization": "teuru",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
@@ -335,63 +1255,159 @@
       "korean": "특공",
       "romanization": "teuggong",
       "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3
     },
     {
-      "korean": "간끔갚네",
-      "romanization": "gankkeumgapne",
+      "korean": "특정",
+      "romanization": "teugjeong",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "티라",
+      "romanization": "tira",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "파다",
+      "romanization": "pada",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "피피",
+      "romanization": "pipi",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "호호",
+      "romanization": "hoho",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 3
+    },
+    {
+      "korean": "가루약",
+      "romanization": "garuyag",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "갚네",
-      "romanization": "gapne",
+      "korean": "감전",
+      "romanization": "gamjeon",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "거지",
-      "romanization": "geoji",
+      "korean": "개다",
+      "romanization": "gaeda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "걸검욱끔",
-      "romanization": "geolgeomugkkeum",
+      "korean": "거석",
+      "romanization": "geoseog",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "것같다",
-      "romanization": "geosgatda",
+      "korean": "거의",
+      "romanization": "geoui",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "adverb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "곽넌깃",
-      "romanization": "gwagneongis",
+      "korean": "걸다",
+      "romanization": "geolda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "군년",
-      "romanization": "gunnyeon",
+      "korean": "고등",
+      "romanization": "godeung",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "고르다",
+      "romanization": "goreuda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "과우",
+      "romanization": "gwau",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "곽마",
+      "romanization": "gwagma",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "굴드",
+      "romanization": "guldeu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "그롯",
+      "romanization": "geuros",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "근처",
+      "romanization": "geuncheo",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "급소",
+      "romanization": "geubso",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
@@ -399,167 +1415,447 @@
       "korean": "기술",
       "romanization": "gisul",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "노키",
-      "romanization": "noki",
+      "korean": "꼬니",
+      "romanization": "kkoni",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "뇌뇌",
-      "romanization": "noenoe",
+      "korean": "나누다",
+      "romanization": "nanuda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "니등키노",
-      "romanization": "nideungkino",
+      "korean": "나주",
+      "romanization": "naju",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "단주",
-      "romanization": "danju",
+      "korean": "낫다",
+      "romanization": "nasda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "대폭발",
-      "romanization": "daepogbal",
+      "korean": "낳다",
+      "romanization": "nahda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "덴트요",
-      "romanization": "denteuyo",
+      "korean": "넓다",
+      "romanization": "neolbda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "되어버린",
-      "romanization": "doeeobeorin",
+      "korean": "노나다",
+      "romanization": "nonada",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "등등",
-      "romanization": "deungdeung",
+      "korean": "노누다",
+      "romanization": "nonuda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "래버",
-      "romanization": "raebeo",
+      "korean": "늘다",
+      "romanization": "neulda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "레타",
-      "romanization": "reta",
+      "korean": "단세",
+      "romanization": "danse",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "루약",
-      "romanization": "ruyag",
+      "korean": "단잔",
+      "romanization": "danjan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "마아",
-      "romanization": "maa",
+      "korean": "달단",
+      "romanization": "daldan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "마호",
-      "romanization": "maho",
+      "korean": "달달달",
+      "romanization": "daldaldal",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adverb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "마히",
-      "romanization": "mahi",
+      "korean": "달제",
+      "romanization": "dalje",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "매우쓴",
-      "romanization": "maeusseun",
+      "korean": "도란",
+      "romanization": "doran",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "미아",
-      "romanization": "mia",
+      "korean": "도망",
+      "romanization": "domang",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "병문",
-      "romanization": "byeongmun",
+      "korean": "도솔",
+      "romanization": "dosol",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "복복",
-      "romanization": "bogbog",
+      "korean": "도투",
+      "romanization": "dotu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "복치",
-      "romanization": "bogchi",
+      "korean": "돌진",
+      "romanization": "doljin",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "비피멕",
-      "romanization": "bipimeg",
+      "korean": "드세다",
+      "romanization": "deuseda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "들치다",
+      "romanization": "deulchida",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "등리",
+      "romanization": "deungri",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "등시",
+      "romanization": "deungsi",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "디밀다",
+      "romanization": "dimilda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "떨다",
+      "romanization": "tteolda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "라트",
+      "romanization": "rateu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "래비",
+      "romanization": "raebi",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "로트",
+      "romanization": "roteu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "록키",
+      "romanization": "rogki",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "론딘",
+      "romanization": "rondin",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "린린",
+      "romanization": "rinrin",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "마드",
+      "romanization": "madeu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "만지다",
+      "romanization": "manjida",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "맡기다",
+      "romanization": "matgida",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "맥소",
+      "romanization": "maegso",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "모다",
+      "romanization": "moda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "모래",
+      "romanization": "morae",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "모양",
+      "romanization": "moyang",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "몬독",
+      "romanization": "mondog",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "무트",
+      "romanization": "muteu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "묶다",
+      "romanization": "mukkda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "묻다",
+      "romanization": "mudda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "물다",
+      "romanization": "mulda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "미리",
+      "romanization": "miri",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "받다",
+      "romanization": "badda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "발전소",
+      "romanization": "baljeonso",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "방심",
+      "romanization": "bangsim",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "방어",
+      "romanization": "bangeo",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "버주",
+      "romanization": "beoju",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "버진",
+      "romanization": "beojin",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "베다",
+      "romanization": "beda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "복석",
+      "romanization": "bogseog",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "복소",
+      "romanization": "bogso",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "복시",
+      "romanization": "bogsi",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "부다",
+      "romanization": "buda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
@@ -567,63 +1863,111 @@
       "korean": "빈사",
       "romanization": "binsa",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "석달",
-      "romanization": "seogdal",
+      "korean": "산돈",
+      "romanization": "sandon",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "석석석",
-      "romanization": "seogseogseog",
+      "korean": "산란",
+      "romanization": "sanran",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "세루",
-      "romanization": "seru",
+      "korean": "살다",
+      "romanization": "salda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "세무",
-      "romanization": "semu",
+      "korean": "삼다",
+      "romanization": "samda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "세테",
-      "romanization": "sete",
+      "korean": "석가",
+      "romanization": "seogga",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "소다",
-      "romanization": "soda",
+      "korean": "석검",
+      "romanization": "seoggeom",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "verb/adj?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "소호등",
-      "romanization": "sohodeung",
+      "korean": "석단",
+      "romanization": "seogdan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "석등",
+      "romanization": "seogdeung",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "석복",
+      "romanization": "seogbog",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "석양",
+      "romanization": "seogyang",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "소복",
+      "romanization": "sobog",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "소티",
+      "romanization": "soti",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "솟다",
+      "romanization": "sosda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
@@ -631,127 +1975,223 @@
       "korean": "수완",
       "romanization": "suwan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "스루",
-      "romanization": "seuru",
+      "korean": "술통",
+      "romanization": "sultong",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "스석",
-      "romanization": "seuseog",
+      "korean": "스렛",
+      "romanization": "seures",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "스키",
-      "romanization": "seuki",
+      "korean": "스치다",
+      "romanization": "seuchida",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "승부",
-      "romanization": "seungbu",
+      "korean": "시통",
+      "romanization": "sitong",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아기",
-      "romanization": "agi",
+      "korean": "시트",
+      "romanization": "siteu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아마",
-      "romanization": "ama",
+      "korean": "아단",
+      "romanization": "adan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아콘",
-      "romanization": "akon",
+      "korean": "아드",
+      "romanization": "adeu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아쿠",
-      "romanization": "aku",
+      "korean": "아들",
+      "romanization": "adeul",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아키",
-      "romanization": "aki",
+      "korean": "아잔",
+      "romanization": "ajan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아팜아",
-      "romanization": "apama",
+      "korean": "아칙",
+      "romanization": "achig",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "아픽",
-      "romanization": "apig",
+      "korean": "아팜",
+      "romanization": "apam",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "오소",
-      "romanization": "oso",
+      "korean": "약하다",
+      "romanization": "yaghada",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "오있",
-      "romanization": "oiss",
+      "korean": "양우",
+      "romanization": "yangu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "우타",
-      "romanization": "uta",
+      "korean": "양카",
+      "romanization": "yangka",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "잡기쉽게",
-      "romanization": "jabgiswibge",
+      "korean": "양통",
+      "romanization": "yangtong",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "오록",
+      "romanization": "orog",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "오릿",
+      "romanization": "oris",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "요트",
+      "romanization": "yoteu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "우드",
+      "romanization": "udeu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "우숙",
+      "romanization": "usug",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "욱다",
+      "romanization": "ugda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "adjective",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "이립",
+      "romanization": "irib",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "이카다",
+      "romanization": "ikada",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "이트",
+      "romanization": "iteu",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "잔거",
+      "romanization": "jangeo",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "잘리다",
+      "romanization": "jalrida",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "접다",
+      "romanization": "jeobda",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
@@ -759,7 +2199,7 @@
       "korean": "정보",
       "romanization": "jeongbo",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
@@ -767,207 +2207,255 @@
       "korean": "제등",
       "romanization": "jedeung",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "주주",
-      "romanization": "juju",
+      "korean": "조티",
+      "romanization": "joti",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "즈세",
-      "romanization": "jeuse",
+      "korean": "주거",
+      "romanization": "jugeo",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "치할달",
-      "romanization": "chihaldal",
+      "korean": "주소",
+      "romanization": "juso",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "카우",
-      "romanization": "kau",
+      "korean": "지트",
+      "romanization": "jiteu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "카카",
-      "romanization": "kaka",
+      "korean": "짖다",
+      "romanization": "jijda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "카케",
-      "romanization": "kake",
+      "korean": "짜다",
+      "romanization": "jjada",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "케케",
-      "romanization": "keke",
+      "korean": "츄만",
+      "romanization": "chyuman",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "케코",
-      "romanization": "keko",
+      "korean": "치석",
+      "romanization": "chiseog",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "케쿠",
-      "romanization": "keku",
+      "korean": "치우다",
+      "romanization": "chiuda",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "케타",
-      "romanization": "keta",
+      "korean": "쿠트",
+      "romanization": "kuteu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "코코",
-      "romanization": "koko",
+      "korean": "쿤산",
+      "romanization": "kunsan",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "콘밧",
-      "romanization": "konbas",
+      "korean": "키달",
+      "romanization": "kidal",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "쿠쿠",
-      "romanization": "kuku",
+      "korean": "키요",
+      "romanization": "kiyo",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "adverb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "퀸센크하",
-      "romanization": "kwinsenkeuha",
+      "korean": "타나다",
+      "romanization": "tanada",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "키레",
-      "romanization": "kire",
+      "korean": "토란",
+      "romanization": "toran",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "키오",
-      "romanization": "kio",
+      "korean": "토의",
+      "romanization": "toui",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "테노",
-      "romanization": "teno",
+      "korean": "통메",
+      "romanization": "tongme",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "트카",
-      "romanization": "teuka",
+      "korean": "통복",
+      "romanization": "tongbog",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "특방",
-      "romanization": "teugbang",
+      "korean": "통술",
+      "romanization": "tongsul",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "페페",
-      "romanization": "pepe",
+      "korean": "통양",
+      "romanization": "tongyang",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "편지지",
-      "romanization": "pyeonjiji",
+      "korean": "투츠",
+      "romanization": "tucheu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "프린트되",
-      "romanization": "peurinteudoe",
+      "korean": "트시",
+      "romanization": "teusi",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "하나",
-      "romanization": "hana",
+      "korean": "트이다",
+      "romanization": "teuida",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "호등등",
-      "romanization": "hodeungdeung",
+      "korean": "티시",
+      "romanization": "tisi",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     },
     {
-      "korean": "화슴",
-      "romanization": "hwaseum",
+      "korean": "포트",
+      "romanization": "poteu",
       "gloss": "(unglossed; freq 2)",
-      "partOfSpeech": "noun?",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "폭발",
+      "romanization": "pogbal",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "프아",
+      "romanization": "peua",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "하도",
+      "romanization": "hado",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "하하",
+      "romanization": "haha",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "헤헤",
+      "romanization": "hehe",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "adverb",
+      "areaId": "rom_mined",
+      "frequency": 2
+    },
+    {
+      "korean": "화상",
+      "romanization": "hwasang",
+      "gloss": "(unglossed; freq 2)",
+      "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2
     }

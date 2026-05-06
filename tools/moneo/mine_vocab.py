@@ -38,11 +38,71 @@ SEED = ROOT / "app/src/main/assets/moneo/seed-vocab-ko.json"
 OUT_VOCAB = ROOT / "app/src/main/assets/moneo/seed-vocab-ko-mined.json"
 OUT_SENTS = ROOT / "app/src/main/assets/moneo/sentences-ko-mined.json"
 
-SOURCE_TAG = "rom-mine-v1"
+SOURCE_TAG = "rom-mine-v2"
 AREA_ID = "rom_mined"
 
 # ---------------------------------------------------------------------------
-# Korean morphology
+# Mecab-ko (preferred) — proper Korean morphological analysis.
+# Falls back to the regex-based heuristic below when the package isn't
+# installed, so the script remains runnable without the venv.
+# ---------------------------------------------------------------------------
+
+try:
+    from mecab import MeCab as _MeCabImpl  # type: ignore
+    _MECAB = _MeCabImpl()
+except Exception:  # ImportError or dictionary-load errors
+    _MECAB = None
+
+
+# Mecab-ko POS tags we want as content lemmas.
+_LEMMA_POS = {
+    "NNG": "noun",       # general noun
+    "NNP": "noun",       # proper noun
+    "VV":  "verb",       # verb stem
+    "VA":  "adjective",  # descriptive verb (adjective)
+    "MAG": "adverb",     # adverb
+}
+
+
+def mecab_lemmatize(sentence: str) -> list[tuple[str, str, str]]:
+    """Tokenize *sentence* via mecab-ko and return [(lemma, pos, surface)].
+
+    For inflected verbs/adjectives (type='Inflect') the lemma is reconstructed
+    from the first verb/adjective morpheme of `expression`, with 다 appended,
+    e.g. "강해져" → ("강해지다", "verb", "강해져"). Particles, endings, and
+    punctuation are dropped.
+    """
+    assert _MECAB is not None
+    out: list[tuple[str, str, str]] = []
+    for tok in _MECAB.parse(sentence):
+        f = tok.feature
+        pos = f.pos
+        if f.type == "Inflect" and f.expression:
+            # expression looks like "강하/VA/*+아/EC/*+지/VX/*+어/EC/*"
+            # — find the first VV/VA morpheme to recover the dict form.
+            chosen = None
+            for piece in f.expression.split("+"):
+                parts = piece.split("/")
+                if len(parts) >= 2 and parts[1] in ("VV", "VA"):
+                    chosen = (parts[0] + "다", _LEMMA_POS[parts[1]])
+                    break
+                if len(parts) >= 2 and parts[1] in ("NNG", "NNP"):
+                    chosen = (parts[0], _LEMMA_POS[parts[1]])
+                    break
+            if chosen is not None:
+                out.append((chosen[0], chosen[1], tok.surface))
+            continue
+        # Simple POS — keep as-is for nouns/adverbs, append 다 for verb/adj
+        # stems so the flashcard shows the dictionary form.
+        if pos in ("VV", "VA"):
+            out.append((tok.surface + "다", _LEMMA_POS[pos], tok.surface))
+        elif pos in _LEMMA_POS:
+            out.append((tok.surface, _LEMMA_POS[pos], tok.surface))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Korean morphology (legacy regex-based fallback)
 # ---------------------------------------------------------------------------
 
 # Particles split AFTER (so "포켓몬을 잡다" surfaces "포켓몬을" + "잡다",
@@ -120,6 +180,42 @@ JAPANESE_ROM_PATTERNS = [
     "미타이", "테쿠", "쿠레", "샤이", "마이", "와루", "베쿠",
     "이마", "나이", "오쿠", "으우",
 ]
+
+# Hangul syllables that the ROM uses to render Japanese kana phonetically.
+# A 2-syllable noun consisting entirely of these (with no final consonant)
+# is overwhelmingly a fan-translation Pokémon move/ability/item name, not
+# real Korean — drop it. Native Korean 2-syl words sometimes share this
+# shape (e.g. 가지, 모기) but those will pass the threshold filter via
+# repetition in real dialogue contexts and can be hand-curated later.
+KANA_SHAPE_SYLLABLES = set(
+    "아이우에오"
+    "카키쿠케코가기구게고"
+    "사시스세소자지즈제조"
+    "타치츠테토다디두데도"
+    "나니누네노"
+    "하히후헤호바비부베보파피푸페포"
+    "마미무메모"
+    "야유요"
+    "라리루레로"
+    "와데"
+)
+
+
+def is_kana_shape_token(token: str) -> bool:
+    """True if every syllable in *token* is open-syllable (no batchim) and
+    drawn from the kana-rendering subset above. Length-2 tokens matching
+    this are almost always Japanese romanization in this corpus."""
+    if len(token) != 2:
+        return False
+    for c in token:
+        code = ord(c) - 0xAC00
+        if code < 0 or code >= 0xD7A4 - 0xAC00:
+            return False
+        if code % 28 != 0:  # has batchim
+            return False
+        if c not in KANA_SHAPE_SYLLABLES:
+            return False
+    return True
 
 # Sentence must end with a plausible Korean copula/verb-ending. Real Korean
 # sentences end in 다/요/까/자/네/지/면/서/고/며/든 etc.; Japanese-rendered
@@ -304,30 +400,40 @@ def mine(threshold: int, limit: int | None) -> tuple[list[dict], list[dict], dic
             jp_hits = sum(1 for pat in JAPANESE_ROM_PATTERNS if pat in sentence)
             if jp_hits >= 1:
                 continue
-            # Pre-tokenize via particles + endings
-            spaced = split_at_particles_and_endings(sentence)
-            spaced = NON_HANGUL_RE.sub(" ", spaced)
-            tokens = [t for t in spaced.split() if t]
+            # Tokenize. Prefer mecab-ko when installed — it gives proper
+            # POS tags + lemmatization (강해져 → 강해지다). Falls back to
+            # the regex-based heuristic below for environments without the
+            # mecab-ko Python package.
             seen_in_sentence: set[str] = set()
-            for tok in tokens:
-                tok = strip_particle(tok)
-                if not tok:
-                    continue
-                if len(tok) < 2 or len(tok) > 4:
-                    continue
-                # Reject tokens carrying Japanese-romanization signature.
-                if any(pat in tok for pat in JAPANESE_ROM_PATTERNS):
-                    continue
-                if is_phonetic_noise(tok):
-                    continue
-                lemma = deconjugate(tok)
+            if _MECAB is not None:
+                pairs = mecab_lemmatize(sentence)
+            else:
+                spaced = split_at_particles_and_endings(sentence)
+                spaced = NON_HANGUL_RE.sub(" ", spaced)
+                pairs = []
+                for t in spaced.split():
+                    t = strip_particle(t)
+                    if not t:
+                        continue
+                    lem = deconjugate(t)
+                    if lem:
+                        pairs.append((lem, "verb/adj?" if lem.endswith("다") else "noun?", t))
+            for lemma, lemma_pos, surface in pairs:
                 if not lemma or len(lemma) < 2 or len(lemma) > 5:
                     continue
+                # All-Hangul check: drop any token that picked up Latin/digits.
+                if not all(is_hangul(c) for c in lemma):
+                    continue
+                # Reject tokens carrying Japanese-romanization signature.
                 if any(pat in lemma for pat in JAPANESE_ROM_PATTERNS):
                     continue
                 if is_phonetic_noise(lemma):
                     continue
-                if len(lemma) >= 3 and has_no_batchim(lemma):
+                if len(lemma) >= 3 and not lemma.endswith("다") and has_no_batchim(lemma):
+                    # Skip romanization-shaped nouns; spare verb/adj lemmas
+                    # which always end in 다 and may be open-syllable stems.
+                    continue
+                if lemma_pos == "noun" and is_kana_shape_token(lemma):
                     continue
                 if lemma in STOPWORDS or lemma in seed_terms:
                     continue
@@ -335,7 +441,7 @@ def mine(threshold: int, limit: int | None) -> tuple[list[dict], list[dict], dic
                     continue
                 seen_in_sentence.add(lemma)
                 lemma_freq[lemma] += 1
-                lemma_examples[lemma].append((r["id"], tok, sentence, len(sentence)))
+                lemma_examples[lemma].append((r["id"], surface, sentence, len(sentence), lemma_pos))
 
     candidates = [(l, n) for l, n in lemma_freq.items() if n >= threshold]
     candidates.sort(key=lambda kv: (-kv[1], kv[0]))
@@ -350,9 +456,8 @@ def mine(threshold: int, limit: int | None) -> tuple[list[dict], list[dict], dic
         # Pick the shortest sentence with the surface form, prefer surface form
         # closest in length to the lemma (less inflection noise).
         exs.sort(key=lambda e: (e[3], abs(len(e[1]) - len(lemma))))
-        rec_id, surface, sentence, _ = exs[0]
-        is_verb = lemma.endswith("다") and len(lemma) >= 2
-        pos = "verb/adj?" if is_verb else "noun?"
+        rec_id, surface, sentence, _, lemma_pos = exs[0]
+        pos = lemma_pos
         vocab_id = f"{SOURCE_TAG}:{lemma}"
         vocab_entries.append(
             {
