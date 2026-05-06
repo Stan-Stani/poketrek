@@ -90,7 +90,19 @@
       "targetForm": "어서",
       "areaId": "rom_mined",
       "source": "rom-rec17411",
-      "mapsecs": []
+      "sourceMapsecVia": "rom-rec18795 (overlap)",
+      "mapsecs": [
+        "0x59",
+        "0x5A",
+        "0x5B",
+        "0xB3"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city",
+        "0x5A->pewter_city",
+        "0x5B->cerulean_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
     },
     {
       "vocabId": "rom-mine-v2:자전거",
@@ -111,10 +123,13 @@
       "areaId": "rom_mined",
       "source": "rom-rec15721",
       "mapsecs": [
-        "0x58"
+        "0x58",
+        "0xAE",
+        "0xBB"
       ],
       "mapsecAreaTrace": [
-        "0x58->pallet_town"
+        "0x58->pallet_town",
+        "0xAE->pallet_town"
       ],
       "firstAreaEncountered": "pallet_town"
     },
@@ -239,10 +254,13 @@
       "areaId": "rom_mined",
       "source": "rom-rec15721",
       "mapsecs": [
-        "0x58"
+        "0x58",
+        "0xAE",
+        "0xBB"
       ],
       "mapsecAreaTrace": [
-        "0x58->pallet_town"
+        "0x58->pallet_town",
+        "0xAE->pallet_town"
       ],
       "firstAreaEncountered": "pallet_town"
     },
@@ -504,7 +522,13 @@
       "targetForm": "그렇",
       "areaId": "rom_mined",
       "source": "rom-rec17185",
-      "mapsecs": []
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "vocabId": "rom-mine-v2:낫다",
@@ -799,7 +823,13 @@
       "targetForm": "세계",
       "areaId": "rom_mined",
       "source": "rom-rec17185",
-      "mapsecs": []
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "vocabId": "rom-mine-v2:시티",
@@ -948,14 +978,13 @@
       "targetForm": "할아버지",
       "areaId": "rom_mined",
       "source": "rom-rec17161",
-      "sourceMapsecVia": "rom-rec15771 (overlap)",
       "mapsecs": [
-        "0x59"
+        "0x58"
       ],
       "mapsecAreaTrace": [
-        "0x59->viridian_city"
+        "0x58->pallet_town"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "vocabId": "rom-mine-v2:효과",

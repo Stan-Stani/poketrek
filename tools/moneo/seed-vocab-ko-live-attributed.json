@@ -76,8 +76,10 @@
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
       "frequency": 13,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
     },
     {
       "korean": "자전거",
@@ -440,8 +442,10 @@
       "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "낫다",
@@ -704,8 +708,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "시티",
@@ -827,9 +833,9 @@
       "areaId": "rom_mined",
       "frequency": 3,
       "areasReferenced": [
-        "viridian_city"
+        "pallet_town"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "효과",

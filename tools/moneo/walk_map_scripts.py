@@ -154,7 +154,7 @@ def collect_seed_scripts(rom: bytes, header_off: int) -> list[int]:
 
 def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
                       visited: set | None = None,
-                      depth: int = 0, max_depth: int = 0,
+                      depth: int = 0, max_depth: int = 3,
                       max_window: int = 512) -> set:
     """Find every u32 LE ROM-pointer in the [script_off, script_off+max_window]
     window that targets a known corpus offset.
@@ -187,6 +187,10 @@ def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
     found: set = set()
     sub_targets: set = set()
     end = min(script_off + max_window, rom_len)
+    # Pass 1: every u32-aligned-or-misaligned pointer literal that hits a
+    # known corpus offset. This is the main signal -- text references are
+    # encoded as `0x16 <reg> <ptr:4>` somewhere in the script body, and a
+    # corpus-membership filter discriminates real refs from coincidence.
     for i in range(script_off, end - 3):
         v = struct.unpack_from("<I", rom, i)[0]
         if (v & 0xFE000000) != GBA_BASE:
@@ -194,10 +198,31 @@ def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
         t = v - GBA_BASE
         if t in corpus_offsets:
             found.add(t)
-        # Bounded recursion: only chase ROM pointers that look like
-        # plausible scripts (in the lower half of ROM, where code lives).
-        elif depth < max_depth and 0x100000 <= t < 0x900000:
-            sub_targets.add(t)
+
+    # Pass 2: follow explicit CALL (0x04) and GOTO (0x05) opcodes. This is
+    # narrower than chasing every u32 pointer (which over-recurses into
+    # data tables) but recovers script-CALL chains that live above the
+    # initial 512-byte window. We require the byte BEFORE the pointer to
+    # be exactly 0x04 or 0x05, with the pointer immediately following --
+    # the pokefirered/pokeruby canonical encoding. False positives are
+    # bounded because the target must (a) look like a ROM pointer, (b)
+    # land in the code half of ROM, and (c) when recursed-into, only
+    # contributes refs that themselves hit corpus offsets.
+    if depth < max_depth:
+        for i in range(script_off, end - 4):
+            op = rom[i]
+            if op not in (0x04, 0x05):
+                continue
+            v = struct.unpack_from("<I", rom, i + 1)[0]
+            if (v & 0xFE000000) != GBA_BASE:
+                continue
+            t = v - GBA_BASE
+            # Skip if it points back into known text region (irrelevant
+            # for control flow) or outside the code half of ROM.
+            if t in corpus_offsets:
+                continue
+            if 0x100000 <= t < 0xC00000:
+                sub_targets.add(t)
 
     for sub in sub_targets:
         found |= collect_text_refs(rom, sub, corpus_offsets, visited,
