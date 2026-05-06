@@ -85,7 +85,7 @@ class EmulatorActivity : ComponentActivity() {
         }
         val bytes = contentResolver.openInputStream(uri)?.use { it.readBytes() }
         if (bytes != null) {
-            runner.loadRom(bytes)
+            if (runner.loadRom(bytes)) cacheRomBytes(bytes)
         }
     }
 
@@ -109,6 +109,10 @@ class EmulatorActivity : ComponentActivity() {
         // sees the phone being held in the opposite landscape — see init below.
         applyPersistedOrientation()
         installOrientationFlipDetector()
+
+        // If a previously-picked ROM is cached in private storage, load it
+        // so the user doesn't have to re-pick from Downloads on every launch.
+        loadCachedRomIfPresent()
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
             && checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS)
@@ -172,6 +176,30 @@ class EmulatorActivity : ComponentActivity() {
     }
 
     private fun uiPrefs() = getSharedPreferences("ui", MODE_PRIVATE)
+
+    private fun romCacheFile() = java.io.File(filesDir, "rom.gba")
+
+    private fun cacheRomBytes(bytes: ByteArray) {
+        try {
+            romCacheFile().writeBytes(bytes)
+        } catch (e: Exception) {
+            Log.w(TAG, "Failed to cache ROM bytes", e)
+        }
+    }
+
+    private fun loadCachedRomIfPresent() {
+        val f = romCacheFile()
+        if (!f.exists() || f.length() < 1024) return
+        try {
+            if (!runner.loadRom(f.readBytes())) {
+                Log.w(TAG, "Cached ROM failed to load; deleting")
+                f.delete()
+            }
+        } catch (e: Exception) {
+            Log.w(TAG, "Failed to read cached ROM; deleting", e)
+            f.delete()
+        }
+    }
 
     private fun applyPersistedOrientation() {
         portraitLocked = uiPrefs().getBoolean("orient_portrait", false)
