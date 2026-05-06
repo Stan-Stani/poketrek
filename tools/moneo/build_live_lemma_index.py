@@ -265,6 +265,35 @@ def main():
                 n_pokedex_recs += 1
         print(f"  pokedex-entry attributions: {n_pokedex_recs}")
 
+    # Sixth pass: trainer-class names (gTrainerClasses table walk).
+    # Each Korean class name is short text -- "포켓몬트레이너", "유적매니아",
+    # "들뜨소녀", "수영팬티소년" etc. -- containing common Korean nouns.
+    # These don't have a per-area mapping (trainer classes appear across
+    # many maps), so tag with the existing trainer_dialog sentinel.
+    TRAINER_CLASS_PATH = Path(__file__).resolve().parent / "trainer_class_names.json"
+    if TRAINER_CLASS_PATH.exists():
+        tc = json.loads(TRAINER_CLASS_PATH.read_text())
+        n_class_names = 0
+        for idx, name in tc.get("translated_class_names", []):
+            try:
+                tokens = mecab_lemmatize(name)
+            except Exception:
+                continue
+            for lemma, pos, surface in tokens:
+                if not (2 <= len(lemma) <= 5):
+                    continue
+                if not all(is_hangul(c) for c in lemma):
+                    continue
+                if is_phonetic_noise(lemma):
+                    continue
+                if is_kana_shape_token(lemma):
+                    continue
+                if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
+                    continue
+                lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
+            n_class_names += 1
+        print(f"  trainer-class-name lemmas added: {n_class_names}")
+
     # Make sure the special area ids exist in area_ordinals for rank().
     area_ordinals[TRAINER_DIALOG_AREA_ID] = 51
     if STATIC_ONLY_AREA_ID not in area_ordinals:
