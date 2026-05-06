@@ -1,0 +1,978 @@
+{
+  "version": 1,
+  "sourceTag": "rom-mine-v2+mapattr",
+  "notes": "One ROM sentence per mined lemma; targetForm pins the surface form. | Annotated with mapsecs + firstAreaEncountered via map_text_index.json and mapsec_areas.json. Some entries may have no mapsec match if their source rec_id is not script-referenced (e.g. battle text, system msgs).",
+  "entries": [
+    {
+      "vocabId": "rom-mine-v2:있다",
+      "korean": "있을거다",
+      "romanization": "isseulgeoda",
+      "gloss": "(ROM example, rec17163)",
+      "targetForm": "있",
+      "areaId": "rom_mined",
+      "source": "rom-rec17163",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:하다",
+      "korean": "먹울하다",
+      "romanization": "meogulhada",
+      "gloss": "(ROM example, rec14565)",
+      "targetForm": "하",
+      "areaId": "rom_mined",
+      "source": "rom-rec14565",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:보다",
+      "korean": "나가볼까",
+      "romanization": "nagabolkka",
+      "gloss": "(ROM example, rec17014)",
+      "targetForm": "볼까",
+      "areaId": "rom_mined",
+      "source": "rom-rec17014",
+      "sourceMapsecVia": "rom-rec17015 (overlap)",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:미산",
+      "korean": "오츠키미산에",
+      "romanization": "ocheukimisane",
+      "gloss": "(ROM example, rec15845)",
+      "targetForm": "미산",
+      "areaId": "rom_mined",
+      "source": "rom-rec15845",
+      "mapsecs": [
+        "0x5A"
+      ],
+      "mapsecAreaTrace": [
+        "0x5A->pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:데리다",
+      "korean": "등… 데리고 갈수있는",
+      "romanization": "deung… derigo galsuissneun",
+      "gloss": "(ROM example, rec18234)",
+      "targetForm": "데리",
+      "areaId": "rom_mined",
+      "source": "rom-rec18234",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:피다",
+      "korean": "핏피는 달에서 왕다는",
+      "romanization": "pispineun daleseo wangdaneun",
+      "gloss": "(ROM example, rec15845)",
+      "targetForm": "피",
+      "areaId": "rom_mined",
+      "source": "rom-rec15845",
+      "mapsecs": [
+        "0x5A"
+      ],
+      "mapsecAreaTrace": [
+        "0x5A->pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:어서",
+      "korean": "어서오세요",
+      "romanization": "eoseooseyo",
+      "gloss": "(ROM example, rec17411)",
+      "targetForm": "어서",
+      "areaId": "rom_mined",
+      "source": "rom-rec17411",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:자전거",
+      "korean": "여기는 미라릍 자전거가게",
+      "romanization": "yeogineun mirareut jajeongeogage",
+      "gloss": "(ROM example, rec17411)",
+      "targetForm": "자전거",
+      "areaId": "rom_mined",
+      "source": "rom-rec17411",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:되다",
+      "korean": "강하게 되면",
+      "romanization": "ganghage doemyeon",
+      "gloss": "(ROM example, rec15721)",
+      "targetForm": "되",
+      "areaId": "rom_mined",
+      "source": "rom-rec15721",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:떨어지다",
+      "korean": "달의돌이 떨어졌을때부터",
+      "romanization": "daluidoli tteoleojyeosseulttaebuteo",
+      "gloss": "(ROM example, rec15845)",
+      "targetForm": "떨어졌",
+      "areaId": "rom_mined",
+      "source": "rom-rec15845",
+      "mapsecs": [
+        "0x5A"
+      ],
+      "mapsecAreaTrace": [
+        "0x5A->pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:메다",
+      "korean": "츠헤주마덥×래치치메×▶츠게트록V게고",
+      "romanization": "cheuhejumadeob×raechichime×▶cheugeteurogVgego",
+      "gloss": "(ROM example, rec29614)",
+      "targetForm": "메",
+      "areaId": "rom_mined",
+      "source": "rom-rec29614",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:완이",
+      "korean": "윤소 아O네쿠케에완이볼을 벨트에 장착",
+      "romanization": "yunso aOnekukeewaniboleul belteue jangchag",
+      "gloss": "(ROM example, rec18247)",
+      "targetForm": "완이",
+      "areaId": "rom_mined",
+      "source": "rom-rec18247",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:좋다",
+      "korean": "키우면 좋단다",
+      "romanization": "kiumyeon johdanda",
+      "gloss": "(ROM example, rec17173)",
+      "targetForm": "좋",
+      "areaId": "rom_mined",
+      "source": "rom-rec17173",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:눕다",
+      "korean": "헤라코우토이누우오단스쿠이에F",
+      "romanization": "herakoutoinuuodanseukuieF",
+      "gloss": "(ROM example, rec20253)",
+      "targetForm": "누우",
+      "areaId": "rom_mined",
+      "source": "rom-rec20253",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:등리",
+      "korean": "리코V술 부히켄 부피F킨케래  뇨치무쿠단베이이술 부히켄 부피켄킨탓후지리기W 트등VT미부 류보레V 등리W누: 에 시코무차깜",
+      "romanization": "rikoVsul buhiken bupiFkinkerae  nyochimukudanbeiisul buhiken bupikenkintashujirigiW teudeungVTmibu ryuboreV deungriWnu: e sikomuchakkam",
+      "gloss": "(ROM example, rec11326)",
+      "targetForm": "등리",
+      "areaId": "rom_mined",
+      "source": "rom-rec11326",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:무차",
+      "korean": "리코V술 부히켄 부피F킨케래  뇨치무쿠단베이이술 부히켄 부피켄킨탓후지리기W 트등VT미부 류보레V 등리W누: 에 시코무차깜",
+      "romanization": "rikoVsul buhiken bupiFkinkerae  nyochimukudanbeiisul buhiken bupikenkintashujirigiW teudeungVTmibu ryuboreV deungriWnu: e sikomuchakkam",
+      "gloss": "(ROM example, rec11326)",
+      "targetForm": "무차",
+      "areaId": "rom_mined",
+      "source": "rom-rec11326",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:부다",
+      "korean": "리코V술 부히켄 부피F킨케래  뇨치무쿠단베이이술 부히켄 부피켄킨탓후지리기W 트등VT미부 류보레V 등리W누: 에 시코무차깜",
+      "romanization": "rikoVsul buhiken bupiFkinkerae  nyochimukudanbeiisul buhiken bupikenkintashujirigiW teudeungVTmibu ryuboreV deungriWnu: e sikomuchakkam",
+      "gloss": "(ROM example, rec11326)",
+      "targetForm": "부",
+      "areaId": "rom_mined",
+      "source": "rom-rec11326",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:우딘",
+      "korean": "이우딘이에",
+      "romanization": "iudinie",
+      "gloss": "(ROM example, rec17896)",
+      "targetForm": "우딘",
+      "areaId": "rom_mined",
+      "source": "rom-rec17896",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:윤소",
+      "korean": "윤소 아O네쿠케에완이볼을 벨트에 장착",
+      "romanization": "yunso aOnekukeewaniboleul belteue jangchag",
+      "gloss": "(ROM example, rec18247)",
+      "targetForm": "윤소",
+      "areaId": "rom_mined",
+      "source": "rom-rec18247",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:강하다",
+      "korean": "강하게 되면",
+      "romanization": "ganghage doemyeon",
+      "gloss": "(ROM example, rec15721)",
+      "targetForm": "강하",
+      "areaId": "rom_mined",
+      "source": "rom-rec15721",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:데다",
+      "korean": "카이세요투팡미란파부네 덴 리아V",
+      "romanization": "kaiseyotupangmiranpabune den riaV",
+      "gloss": "(ROM example, rec11245)",
+      "targetForm": "덴",
+      "areaId": "rom_mined",
+      "source": "rom-rec11245",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:석류",
+      "korean": "가요 기에석류네쿠유솟 루닷이우딘이에",
+      "romanization": "gayo gieseogryunekuyusos rudasiudinie",
+      "gloss": "(ROM example, rec17895)",
+      "targetForm": "석류",
+      "areaId": "rom_mined",
+      "source": "rom-rec17895",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:키우다",
+      "korean": "키우면 좋단다",
+      "romanization": "kiumyeon johdanda",
+      "gloss": "(ROM example, rec17173)",
+      "targetForm": "키우",
+      "areaId": "rom_mined",
+      "source": "rom-rec17173",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:타다",
+      "korean": "ㅎ이에타시아무쿠부 리이W란시",
+      "romanization": "ㅎietasiamukubu riiWransi",
+      "gloss": "(ROM example, rec12451)",
+      "targetForm": "타",
+      "areaId": "rom_mined",
+      "source": "rom-rec12451",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:가지다",
+      "korean": "도구를 가지게하면",
+      "romanization": "dogureul gajigehamyeon",
+      "gloss": "(ROM example, rec15960)",
+      "targetForm": "가지",
+      "areaId": "rom_mined",
+      "source": "rom-rec15960",
+      "mapsecs": [
+        "0x5B"
+      ],
+      "mapsecAreaTrace": [
+        "0x5B->cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:디다",
+      "korean": "있라코우이데▶디쿠이에키 아 사 아 이뇨들디쿠곤에",
+      "romanization": "issrakouide▶dikuieki a sa a inyodeuldikugone",
+      "gloss": "(ROM example, rec20257)",
+      "targetForm": "디",
+      "areaId": "rom_mined",
+      "source": "rom-rec20257",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:로켓단",
+      "korean": "로켓단은",
+      "romanization": "rokesdaneun",
+      "gloss": "(ROM example, rec14613)",
+      "targetForm": "로켓단",
+      "areaId": "rom_mined",
+      "source": "rom-rec14613",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:멀다",
+      "korean": "먼제와도",
+      "romanization": "meonjewado",
+      "gloss": "(ROM example, rec15766)",
+      "targetForm": "먼",
+      "areaId": "rom_mined",
+      "source": "rom-rec15766",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:같다",
+      "korean": "에- 바보같은",
+      "romanization": "e- babogateun",
+      "gloss": "(ROM example, rec17156)",
+      "targetForm": "같",
+      "areaId": "rom_mined",
+      "source": "rom-rec17156",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:다당",
+      "korean": "소 켄「니쿠케이이다당슥",
+      "romanization": "so ken「nikukeiidadangseug",
+      "gloss": "(ROM example, rec15312)",
+      "targetForm": "다당",
+      "areaId": "rom_mined",
+      "source": "rom-rec15312",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:도감",
+      "korean": "도감 같은것이 있다",
+      "romanization": "dogam gateungeosi issda",
+      "gloss": "(ROM example, rec17188)",
+      "targetForm": "도감",
+      "areaId": "rom_mined",
+      "source": "rom-rec17188",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:몬스터",
+      "korean": "몬스터볼속에",
+      "romanization": "monseuteobolsoge",
+      "gloss": "(ROM example, rec17163)",
+      "targetForm": "몬스터",
+      "areaId": "rom_mined",
+      "source": "rom-rec17163",
+      "sourceMapsecVia": "rom-rec17165 (overlap)",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:물다",
+      "korean": "무쿠술드미쿠와바이이에티 낫산:밧",
+      "romanization": "mukusuldeumikuwabaiieti nassan:bas",
+      "gloss": "(ROM example, rec11183)",
+      "targetForm": "무",
+      "areaId": "rom_mined",
+      "source": "rom-rec11183",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:벨트",
+      "korean": "윤소 아O네쿠케에완이볼을 벨트에 장착",
+      "romanization": "yunso aOnekukeewaniboleul belteue jangchag",
+      "gloss": "(ROM example, rec18247)",
+      "targetForm": "벨트",
+      "areaId": "rom_mined",
+      "source": "rom-rec18247",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:부르다",
+      "korean": "너를불러어",
+      "romanization": "neoreulbulreoeo",
+      "gloss": "(ROM example, rec17001)",
+      "targetForm": "불러",
+      "areaId": "rom_mined",
+      "source": "rom-rec17001",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:승부",
+      "korean": "승부하자",
+      "romanization": "seungbuhaja",
+      "gloss": "(ROM example, rec14561)",
+      "targetForm": "승부",
+      "areaId": "rom_mined",
+      "source": "rom-rec14561",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:없다",
+      "korean": "3마리밖에 없지만",
+      "romanization": "3maribakke eobsjiman",
+      "gloss": "(ROM example, rec17163)",
+      "targetForm": "없",
+      "areaId": "rom_mined",
+      "source": "rom-rec17163",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:장착",
+      "korean": "윤소 아O네쿠케에완이볼을 벨트에 장착",
+      "romanization": "yunso aOnekukeewaniboleul belteue jangchag",
+      "gloss": "(ROM example, rec18247)",
+      "targetForm": "장착",
+      "areaId": "rom_mined",
+      "source": "rom-rec18247",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:트다",
+      "korean": "샤네쿠딘이터",
+      "romanization": "syanekudiniteo",
+      "gloss": "(ROM example, rec17907)",
+      "targetForm": "터",
+      "areaId": "rom_mined",
+      "source": "rom-rec17907",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:게시판",
+      "korean": "되는 게시판",
+      "romanization": "doeneun gesipan",
+      "gloss": "(ROM example, rec15961)",
+      "targetForm": "게시판",
+      "areaId": "rom_mined",
+      "source": "rom-rec15961",
+      "sourceMapsecVia": "rom-rec15780 (overlap)",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:그렇다",
+      "korean": "그렇게까지 무리는 할수없다",
+      "romanization": "geureohgekkaji murineun halsueobsda",
+      "gloss": "(ROM example, rec17185)",
+      "targetForm": "그렇",
+      "areaId": "rom_mined",
+      "source": "rom-rec17185",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:낫다",
+      "korean": "시래기구 우자란 우조란 우픽비이이야두이이네낫아:",
+      "romanization": "siraegigu ujaran ujoran upigbiiiyaduiinenasa:",
+      "gloss": "(ROM example, rec11350)",
+      "targetForm": "낫",
+      "areaId": "rom_mined",
+      "source": "rom-rec11350",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:도움",
+      "korean": "…도움이 되는 게시판",
+      "romanization": "…doumi doeneun gesipan",
+      "gloss": "(ROM example, rec14580)",
+      "targetForm": "도움",
+      "areaId": "rom_mined",
+      "source": "rom-rec14580",
+      "sourceMapsecVia": "rom-rec15780 (overlap)",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:드다",
+      "korean": "소포를 드려다",
+      "romanization": "soporeul deuryeoda",
+      "gloss": "(ROM example, rec17175)",
+      "targetForm": "드",
+      "areaId": "rom_mined",
+      "source": "rom-rec17175",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:성능",
+      "korean": "최고 성능의 볼",
+      "romanization": "choego seongneungui bol",
+      "gloss": "(ROM example, rec25076)",
+      "targetForm": "성능",
+      "areaId": "rom_mined",
+      "source": "rom-rec25076",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:여해",
+      "korean": "여해을 떠나는거야",
+      "romanization": "yeohaeeul tteonaneungeoya",
+      "gloss": "(ROM example, rec17001)",
+      "targetForm": "여해",
+      "areaId": "rom_mined",
+      "source": "rom-rec17001",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:울다",
+      "korean": "아이에쿠타미부켄 아이우오   에아",
+      "romanization": "aiekutamibuken aiuo   ea",
+      "gloss": "(ROM example, rec28223)",
+      "targetForm": "우",
+      "areaId": "rom_mined",
+      "source": "rom-rec28223",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:진화",
+      "korean": "으로 진화했습니다",
+      "romanization": "euro jinhwahaessseubnida",
+      "gloss": "(ROM example, rec26278)",
+      "targetForm": "진화",
+      "areaId": "rom_mined",
+      "source": "rom-rec26278",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:최고",
+      "korean": "최고 성능의 볼",
+      "romanization": "choego seongneungui bol",
+      "gloss": "(ROM example, rec25076)",
+      "targetForm": "최고",
+      "areaId": "rom_mined",
+      "source": "rom-rec25076",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:킹킹",
+      "korean": "드네T다는있닌킹킹딘네모킹로탕고솔두",
+      "romanization": "deuneTdaneunissninkingkingdinnemokingrotanggosoldu",
+      "gloss": "(ROM example, rec26250)",
+      "targetForm": "킹킹",
+      "areaId": "rom_mined",
+      "source": "rom-rec26250",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:곤보",
+      "korean": "덴낫이메면츄 카우니X네우미쿠츄시후곤보에온미혼케래  픽",
+      "romanization": "dennasimemyeonchyu kauniXneumikuchyusihugonboeonmihonkerae  pig",
+      "gloss": "(ROM example, rec13841)",
+      "targetForm": "곤보",
+      "areaId": "rom_mined",
+      "source": "rom-rec13841",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:기다리다",
+      "korean": "기다려어요",
+      "romanization": "gidaryeoeoyo",
+      "gloss": "(ROM example, rec17149)",
+      "targetForm": "기다려",
+      "areaId": "rom_mined",
+      "source": "rom-rec17149",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:남자",
+      "korean": "남자아이는 먼펜가",
+      "romanization": "namjaaineun meonpenga",
+      "gloss": "(ROM example, rec17001)",
+      "targetForm": "남자",
+      "areaId": "rom_mined",
+      "source": "rom-rec17001",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:노다",
+      "korean": "소 미치네쿠케이이유움아무스켄이 카아만란노쿠윤킹윈날두노쿠만뮤",
+      "romanization": "so michinekukeiiyuumamuseukeni kaamanrannokuyunkingwinnaldunokumanmyu",
+      "gloss": "(ROM example, rec17441)",
+      "targetForm": "노",
+      "areaId": "rom_mined",
+      "source": "rom-rec17441",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:노르",
+      "korean": "우이에미미츄곤보아힌래낫 래팡노르프0낫리후",
+      "romanization": "uiemimichyugonboahinraenas raepangnoreupeu0nasrihu",
+      "gloss": "(ROM example, rec13839)",
+      "targetForm": "노르",
+      "areaId": "rom_mined",
+      "source": "rom-rec13839",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:누다",
+      "korean": "소 유퀸누쿠케우이아파",
+      "romanization": "so yukwinnukukeuiapa",
+      "gloss": "(ROM example, rec16279)",
+      "targetForm": "누",
+      "areaId": "rom_mined",
+      "source": "rom-rec16279",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:떠나다",
+      "korean": "여해을 떠나는거야",
+      "romanization": "yeohaeeul tteonaneungeoya",
+      "gloss": "(ROM example, rec17001)",
+      "targetForm": "떠나",
+      "areaId": "rom_mined",
+      "source": "rom-rec17001",
+      "mapsecs": [
+        "0x58"
+      ],
+      "mapsecAreaTrace": [
+        "0x58->pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
+    },
+    {
+      "vocabId": "rom-mine-v2:리그",
+      "korean": "포켓몬리그본부에는",
+      "romanization": "pokesmonrigeubonbueneun",
+      "gloss": "(ROM example, rec17254)",
+      "targetForm": "리그",
+      "areaId": "rom_mined",
+      "source": "rom-rec17254",
+      "sourceMapsecVia": "rom-rec17253 (overlap)",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:미란",
+      "korean": "카이세요투팡미란파부네 덴 리아V",
+      "romanization": "kaiseyotupangmiranpabune den riaV",
+      "gloss": "(ROM example, rec11245)",
+      "targetForm": "미란",
+      "areaId": "rom_mined",
+      "source": "rom-rec11245",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:미치다",
+      "korean": "소 미치네쿠케이이유움아무스켄이 카아만란노쿠윤킹윈날두노쿠만뮤",
+      "romanization": "so michinekukeiiyuumamuseukeni kaamanrannokuyunkingwinnaldunokumanmyu",
+      "gloss": "(ROM example, rec17441)",
+      "targetForm": "미치",
+      "areaId": "rom_mined",
+      "source": "rom-rec17441",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:미혼",
+      "korean": "덴낫이메면츄 카우니X네우미쿠츄시후곤보에온미혼케래  픽",
+      "romanization": "dennasimemyeonchyu kauniXneumikuchyusihugonboeonmihonkerae  pig",
+      "gloss": "(ROM example, rec13841)",
+      "targetForm": "미혼",
+      "areaId": "rom_mined",
+      "source": "rom-rec13841",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:베다",
+      "korean": "등들도이이에베본",
+      "romanization": "deungdeuldoiiebebon",
+      "gloss": "(ROM example, rec20773)",
+      "targetForm": "베",
+      "areaId": "rom_mined",
+      "source": "rom-rec20773",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:본부",
+      "korean": "포켓몬리그본부에는",
+      "romanization": "pokesmonrigeubonbueneun",
+      "gloss": "(ROM example, rec17254)",
+      "targetForm": "본부",
+      "areaId": "rom_mined",
+      "source": "rom-rec17254",
+      "sourceMapsecVia": "rom-rec17253 (overlap)",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:사래",
+      "korean": "사래리두이이티-무쿠야두이이야로이이삼본피쿠 :5",
+      "romanization": "saraeriduiiti-mukuyaduiiyaroiisambonpiku :5",
+      "gloss": "(ROM example, rec14464)",
+      "targetForm": "사래",
+      "areaId": "rom_mined",
+      "source": "rom-rec14464",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:삼본",
+      "korean": "사래리두이이티-무쿠야두이이야로이이삼본피쿠 :5",
+      "romanization": "saraeriduiiti-mukuyaduiiyaroiisambonpiku :5",
+      "gloss": "(ROM example, rec14464)",
+      "targetForm": "삼본",
+      "areaId": "rom_mined",
+      "source": "rom-rec14464",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:세계",
+      "korean": "이 세계의 모든",
+      "romanization": "i segyeui modeun",
+      "gloss": "(ROM example, rec17185)",
+      "targetForm": "세계",
+      "areaId": "rom_mined",
+      "source": "rom-rec17185",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:시티",
+      "korean": "니비시티는",
+      "romanization": "nibisitineun",
+      "gloss": "(ROM example, rec15857)",
+      "targetForm": "시티",
+      "areaId": "rom_mined",
+      "source": "rom-rec15857",
+      "mapsecs": [
+        "0x5A"
+      ],
+      "mapsecAreaTrace": [
+        "0x5A->pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:쓰다",
+      "korean": "쓰는일도 있습니다",
+      "romanization": "sseuneunildo issseubnida",
+      "gloss": "(ROM example, rec15960)",
+      "targetForm": "쓰",
+      "areaId": "rom_mined",
+      "source": "rom-rec15960",
+      "mapsecs": [
+        "0x5B"
+      ],
+      "mapsecAreaTrace": [
+        "0x5B->cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:이윤",
+      "korean": "소 9…네쿠케이이윤킹무밧부아 카아르…네쿠소 쿠『네쿠케에완이소 고『네쿠케에완이다당급놉간괃",
+      "romanization": "so 9…nekukeiiyunkingmubasbua kaareu…nekuso ku『nekukeewaniso go『nekukeewanidadanggeubnobgangwad",
+      "gloss": "(ROM example, rec18144)",
+      "targetForm": "이윤",
+      "areaId": "rom_mined",
+      "source": "rom-rec18144",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:전화",
+      "korean": "전화하는거다",
+      "romanization": "jeonhwahaneungeoda",
+      "gloss": "(ROM example, rec17352)",
+      "targetForm": "전화",
+      "areaId": "rom_mined",
+      "source": "rom-rec17352",
+      "sourceMapsecVia": "rom-rec17354 (overlap)",
+      "mapsecs": [
+        "0x5A"
+      ],
+      "mapsecAreaTrace": [
+        "0x5A->pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:접근",
+      "korean": "포켓몬도 접근하지 않아",
+      "romanization": "pokesmondo jeobgeunhaji anha",
+      "gloss": "(ROM example, rec17439)",
+      "targetForm": "접근",
+      "areaId": "rom_mined",
+      "source": "rom-rec17439",
+      "sourceMapsecVia": "rom-rec17443 (overlap)",
+      "mapsecs": [
+        "0x5B"
+      ],
+      "mapsecAreaTrace": [
+        "0x5B->cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:주다",
+      "korean": "1마리를 주게다",
+      "romanization": "1marireul jugeda",
+      "gloss": "(ROM example, rec17163)",
+      "targetForm": "주",
+      "areaId": "rom_mined",
+      "source": "rom-rec17163",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:쪽발",
+      "korean": "왼쪽발에 오게하면",
+      "romanization": "oenjjogbale ogehamyeon",
+      "gloss": "(ROM example, rec17439)",
+      "targetForm": "쪽발",
+      "areaId": "rom_mined",
+      "source": "rom-rec17439",
+      "sourceMapsecVia": "rom-rec17443 (overlap)",
+      "mapsecs": [
+        "0x5B"
+      ],
+      "mapsecAreaTrace": [
+        "0x5B->cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:카다",
+      "korean": "덴낫이메면츄 카우니X네우미쿠츄시후곤보에온미혼케래  픽",
+      "romanization": "dennasimemyeonchyu kauniXneumikuchyusihugonboeonmihonkerae  pig",
+      "gloss": "(ROM example, rec13841)",
+      "targetForm": "카",
+      "areaId": "rom_mined",
+      "source": "rom-rec13841",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:캐다",
+      "korean": "캐터피는 독이없지만",
+      "romanization": "kaeteopineun dogieobsjiman",
+      "gloss": "(ROM example, rec15770)",
+      "targetForm": "캐",
+      "areaId": "rom_mined",
+      "source": "rom-rec15770",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:키다",
+      "korean": "있라코우이데▶디쿠이에키 아 사 아 이뇨들디쿠곤에",
+      "romanization": "issrakouide▶dikuieki a sa a inyodeuldikugone",
+      "gloss": "(ROM example, rec20257)",
+      "targetForm": "키",
+      "areaId": "rom_mined",
+      "source": "rom-rec20257",
+      "mapsecs": []
+    },
+    {
+      "vocabId": "rom-mine-v2:할아버지",
+      "korean": "할아버지",
+      "romanization": "halabeoji",
+      "gloss": "(ROM example, rec17161)",
+      "targetForm": "할아버지",
+      "areaId": "rom_mined",
+      "source": "rom-rec17161",
+      "sourceMapsecVia": "rom-rec15771 (overlap)",
+      "mapsecs": [
+        "0x59"
+      ],
+      "mapsecAreaTrace": [
+        "0x59->viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city"
+    },
+    {
+      "vocabId": "rom-mine-v2:효과",
+      "korean": "효과는 뚜가 된다",
+      "romanization": "hyogwaneun ttuga doenda",
+      "gloss": "(ROM example, rec17439)",
+      "targetForm": "효과",
+      "areaId": "rom_mined",
+      "source": "rom-rec17439",
+      "sourceMapsecVia": "rom-rec17443 (overlap)",
+      "mapsecs": [
+        "0x5B"
+      ],
+      "mapsecAreaTrace": [
+        "0x5B->cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city"
+    }
+  ]
+}

@@ -79,19 +79,44 @@ def main() -> int:
           f"{out['stats']['distinct_records']:,} distinct records)")
 
     if args.identify:
-        print("\n--- per-mapsec samples (use these to map mapsec -> area_id) ---")
+        print("\n--- per-mapsec samples (translated dialog ranked first) ---")
+        # Common Korean grammar markers that strongly indicate translated
+        # dialog (vs kana-romaji noise). The kana-romaji uses single-syllable
+        # phonetic Korean glyphs that don't form these patterns.
+        TRANSLATED_MARKERS = (
+            "이에요", "이지만", "입니다", "예요", "있어", "있다", "있는",
+            "이에", "한다", "해요", "해서", "어요", "어서", "어!", "이?",
+            "끼!", "끓!", "!\n", "?\n", "?", "!", "데요", "는걸",
+            "을게", "은데", "이지", "이야", "어요", "지요", "다。",
+        )
+
+        def score(text: str) -> int:
+            """Higher = more likely translated Korean."""
+            s = 0
+            if "{var:01}" in text:
+                s += 5
+            for m in TRANSLATED_MARKERS:
+                if m in text:
+                    s += 2
+            # Penalize records dominated by single-syllable kana-romaji
+            # (lots of repeated ' 누쿠' / ' 무스켄' / ' 케에' patterns).
+            for noise in (" 누쿠", " 무스켄", " 케에", "하쿠", "키누쿠"):
+                s -= text.count(noise)
+            # Reward newline-broken dialog lines
+            s += min(text.count("\n"), 5)
+            return s
+
         for ms in sorted(mapsec_dialog):
             recs = mapsec_dialog[ms]
-            # Pick the longest records (most likely to be substantive
-            # dialog rather than menu fragments).
-            top = sorted(recs, key=lambda r: -len(r["text"]))[:args.limit]
-            print(f"\nmapsec {ms} ({len(recs)} records, showing top {len(top)} by length):")
+            ranked = sorted(recs, key=lambda r: (-score(r["text"]), -len(r["text"])))
+            top = ranked[:args.limit]
+            best_score = score(top[0]["text"]) if top else 0
+            tag = "" if best_score >= 5 else " (low-translated-content)"
+            print(f"\nmapsec {ms} ({len(recs)} records{tag}):")
             for r in top:
-                # Replace player-name var with placeholder for readability
                 text = r["text"].replace("{var:01}", "[player]")
-                # First 90 chars, single-line
-                preview = text.replace("\n", " | ")[:120]
-                print(f"  rec{r['recId']:5d} @ 0x{r['offset']:06X}: {preview}")
+                preview = text.replace("\n", " | ")[:140]
+                print(f"  rec{r['recId']:5d} @ 0x{r['offset']:06X} (score={score(r['text']):+d}): {preview}")
 
     return 0
 

@@ -358,6 +358,30 @@ def fluent_records(corpus: dict) -> tuple[list[dict], set[str]]:
         # Also reject records with very low character diversity (repeated junk)
         if len(set(han)) / len(han) < 0.3:
             continue
+        # Reject records dominated by Japanese-kana-rendered-as-Korean bigrams.
+        # The live-region corpus contains untranslated leftovers where the
+        # original Japanese kana was just transliterated into the closest-
+        # sounding Korean syllables. These bigrams are common in those
+        # passages and almost never appear in genuine Korean prose.
+        kana_bigrams = ("누쿠", "무스", "케에", "하쿠", "케우", "노쿠", "등노",
+                        "케이", "리쿠", "이쿠", "이뇨", "이본", "이딘", "닷노",
+                        "키누", "키니", "키쿠", "키케", "딘이", "쿠쿤",
+                        "스켄", "이파", "와쿠", "냐쿠")
+        kana_hits = sum(text.count(b) for b in kana_bigrams)
+        # Each hit is 2 chars; >12% of the record being kana bigrams = noise.
+        if kana_hits * 2 > len(text) * 0.12:
+            continue
+        # Require at least one strong-confidence Korean grammar/dialog
+        # marker. Records without any of these are almost always either
+        # untranslated kana-romaji or pure menu fragments that don't
+        # produce useful sentences.
+        ko_markers = ("이에", "예요", "이야", "이지", "있어", "있다",
+                      "한다", "해요", "하다", "어요", "어!", "어?",
+                      "는걸", "은데", "을게", "지요", "다.", "다!",
+                      "다?", "다。", "이다", "있는", "다는", "는데",
+                      "받았", "주세", "고있", "고싶", "주마", "라구")
+        if not any(m in text for m in ko_markers):
+            continue
         fluent.append(r)
     return fluent, common
 
@@ -485,13 +509,28 @@ def mine(threshold: int, limit: int | None) -> tuple[list[dict], list[dict], dic
 
 
 def main() -> int:
+    global CORPUS, OUT_VOCAB, OUT_SENTS
     p = argparse.ArgumentParser()
     p.add_argument("--threshold", type=int, default=15)
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--corpus", type=Path, default=None,
+                   help="Override corpus path (default: app/src/main/assets/moneo/corpus.ko.json). "
+                        "Use to mine the live-region corpus: --corpus tools/moneo/corpus.ko.live.json")
+    p.add_argument("--out-vocab", type=Path, default=None,
+                   help="Override seed-vocab output path.")
+    p.add_argument("--out-sents", type=Path, default=None,
+                   help="Override sentences output path.")
     args = p.parse_args()
+    if args.corpus:
+        CORPUS = args.corpus
+    if args.out_vocab:
+        OUT_VOCAB = args.out_vocab
+    if args.out_sents:
+        OUT_SENTS = args.out_sents
 
     vocab, sents, stats = mine(args.threshold, args.limit)
+    print(f"Corpus: {CORPUS.relative_to(ROOT) if CORPUS.is_relative_to(ROOT) else CORPUS}")
     print(f"Records: {stats['total_records']} total, {stats['fluent_records']} fluent")
     print(f"Mined {stats['mined']} lemmas at threshold {args.threshold}")
 
@@ -502,7 +541,7 @@ def main() -> int:
 
     OUT_VOCAB.write_text(json.dumps({
         "version": 1, "sourceTag": SOURCE_TAG,
-        "notes": (f"Auto-mined from corpus.ko.json at frequency threshold {args.threshold}. "
+        "notes": (f"Auto-mined from {CORPUS.name} at frequency threshold {args.threshold}. "
                   "Lemmatization is heuristic — irregular conjugations and polysemous "
                   "fragments may misclassify. Glosses are placeholders."),
         "entries": vocab,
@@ -512,8 +551,8 @@ def main() -> int:
         "notes": "One ROM sentence per mined lemma; targetForm pins the surface form.",
         "entries": sents,
     }, ensure_ascii=False, indent=2))
-    print(f"Wrote {OUT_VOCAB.relative_to(ROOT)}")
-    print(f"Wrote {OUT_SENTS.relative_to(ROOT)}")
+    print(f"Wrote {OUT_VOCAB}")
+    print(f"Wrote {OUT_SENTS}")
     return 0
 
 
