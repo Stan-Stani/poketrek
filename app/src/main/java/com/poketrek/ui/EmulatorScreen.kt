@@ -43,6 +43,10 @@ fun EmulatorScreen(
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
     onLoadSlot: (Int) -> Boolean,
+    getRomLibrary: () -> List<com.poketrek.emu.RomCache.Slot> = { emptyList() },
+    currentRomCrc32: () -> Long? = { null },
+    onLoadCachedRom: (Long) -> Boolean = { false },
+    onRemoveCachedRom: (Long) -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     val tick by runner.frameTick
@@ -144,6 +148,10 @@ fun EmulatorScreen(
                 onClearCalibrationStatus = runner::clearCalibrationStatus,
                 moneo = moneo,
                 onOpenMoneo = { moneoOpen = true },
+                getRomLibrary = getRomLibrary,
+                currentRomCrc32 = currentRomCrc32,
+                onLoadCachedRom = onLoadCachedRom,
+                onRemoveCachedRom = onRemoveCachedRom,
             )
         }
 

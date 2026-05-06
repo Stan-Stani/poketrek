@@ -30,8 +30,10 @@ import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import android.provider.OpenableColumns
 import com.poketrek.emu.CalibrationStore
 import com.poketrek.emu.EmulatorRunner
+import com.poketrek.emu.RomCache
 import com.poketrek.emu.SaveStateStore
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.gate.MoneoSoftGate
@@ -47,6 +49,7 @@ class EmulatorActivity : ComponentActivity() {
     private lateinit var saveStateStore: SaveStateStore
     private lateinit var moneo: MoneoModule
     private lateinit var moneoGate: MoneoSoftGate
+    private lateinit var romCache: RomCache
 
     // Orientation lock + manual flip. The activity is locked (no sensor
     // follow) but we listen to OrientationEventListener purely to detect when
@@ -84,8 +87,12 @@ class EmulatorActivity : ComponentActivity() {
             Log.w(TAG, "Could not persist URI permission", e)
         }
         val bytes = contentResolver.openInputStream(uri)?.use { it.readBytes() }
-        if (bytes != null) {
-            if (runner.loadRom(bytes)) cacheRomBytes(bytes)
+        if (bytes != null && runner.loadRom(bytes)) {
+            val identity = runner.romIdentity.value ?: return@registerForActivityResult
+            val label = displayNameFor(uri)
+                ?: identity.variant.displayName.takeIf { it.isNotBlank() }
+                ?: "ROM ${identity.crc32Hex}"
+            romCache.put(bytes, identity.crc32, label)
         }
     }
 
@@ -103,6 +110,7 @@ class EmulatorActivity : ComponentActivity() {
         moneo = MoneoModule.get(applicationContext)
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
+        romCache = RomCache(applicationContext)
 
         // Manual orientation: locked to landscape (manifest), no sensor follow.
         // A floating "flip" prompt only appears when OrientationEventListener
@@ -148,6 +156,10 @@ class EmulatorActivity : ComponentActivity() {
                         showFlipPrompt = showFlipPrompt.value,
                         flipTargetIsPortrait = !portraitLocked,
                         onFlipOrientation = ::flipOrientation,
+                        getRomLibrary = romCache::list,
+                        currentRomCrc32 = { runner.romIdentity.value?.crc32 },
+                        onLoadCachedRom = ::loadCachedRom,
+                        onRemoveCachedRom = romCache::remove,
                     )
                 }
             }
@@ -177,28 +189,32 @@ class EmulatorActivity : ComponentActivity() {
 
     private fun uiPrefs() = getSharedPreferences("ui", MODE_PRIVATE)
 
-    private fun romCacheFile() = java.io.File(filesDir, "rom.gba")
+    private fun loadCachedRomIfPresent() {
+        val recent = romCache.mostRecent() ?: return
+        loadCachedRom(recent.crc32)
+    }
 
-    private fun cacheRomBytes(bytes: ByteArray) {
-        try {
-            romCacheFile().writeBytes(bytes)
-        } catch (e: Exception) {
-            Log.w(TAG, "Failed to cache ROM bytes", e)
+    private fun loadCachedRom(crc32: Long): Boolean {
+        val bytes = romCache.load(crc32) ?: run {
+            romCache.remove(crc32)
+            return false
+        }
+        return if (runner.loadRom(bytes)) {
+            true
+        } else {
+            Log.w(TAG, "Cached ROM ${"0x" + crc32.toString(16)} failed to load; removing")
+            romCache.remove(crc32)
+            false
         }
     }
 
-    private fun loadCachedRomIfPresent() {
-        val f = romCacheFile()
-        if (!f.exists() || f.length() < 1024) return
-        try {
-            if (!runner.loadRom(f.readBytes())) {
-                Log.w(TAG, "Cached ROM failed to load; deleting")
-                f.delete()
-            }
-        } catch (e: Exception) {
-            Log.w(TAG, "Failed to read cached ROM; deleting", e)
-            f.delete()
-        }
+    private fun displayNameFor(uri: Uri): String? = try {
+        contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)
+            ?.use { c -> if (c.moveToFirst()) c.getString(0) else null }
+            ?.removeSuffix(".gba")
+    } catch (e: Exception) {
+        Log.w(TAG, "Failed to query display name", e)
+        null
     }
 
     private fun applyPersistedOrientation() {
@@ -264,6 +280,10 @@ private fun AppRoot(
     showFlipPrompt: Boolean,
     flipTargetIsPortrait: Boolean,
     onFlipOrientation: () -> Unit,
+    getRomLibrary: () -> List<com.poketrek.emu.RomCache.Slot>,
+    currentRomCrc32: () -> Long?,
+    onLoadCachedRom: (Long) -> Boolean,
+    onRemoveCachedRom: (Long) -> Unit,
 ) {
     val romLoaded by runner.romLoaded
     Box(modifier = Modifier.fillMaxSize()) {
@@ -289,6 +309,10 @@ private fun AppRoot(
                 getSaveSlots = getSaveSlots,
                 onSaveSlot = onSaveSlot,
                 onLoadSlot = onLoadSlot,
+                getRomLibrary = getRomLibrary,
+                currentRomCrc32 = currentRomCrc32,
+                onLoadCachedRom = onLoadCachedRom,
+                onRemoveCachedRom = onRemoveCachedRom,
                 modifier = Modifier.fillMaxSize().padding(8.dp),
             )
         }

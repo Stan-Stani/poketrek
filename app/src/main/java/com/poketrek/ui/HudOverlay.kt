@@ -1,6 +1,7 @@
 package com.poketrek.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -251,6 +252,10 @@ fun SettingsSheet(
     onClearCalibrationStatus: () -> Unit,
     moneo: MoneoModule,
     onOpenMoneo: () -> Unit,
+    getRomLibrary: () -> List<com.poketrek.emu.RomCache.Slot> = { emptyList() },
+    currentRomCrc32: () -> Long? = { null },
+    onLoadCachedRom: (Long) -> Boolean = { false },
+    onRemoveCachedRom: (Long) -> Unit = {},
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     val tiles by budget.budget.collectAsState()
@@ -282,9 +287,20 @@ fun SettingsSheet(
                     onClick = { onPickRom(); onDismiss() },
                     contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
                 ) {
-                    Text("Change ROM…", fontSize = 12.sp)
+                    Text("Add ROM…", fontSize = 12.sp)
                 }
             }
+
+            var romLibrary by remember { mutableStateOf(getRomLibrary()) }
+            RomLibrarySection(
+                slots = romLibrary,
+                currentCrc32 = currentRomCrc32(),
+                onLoad = { crc -> if (onLoadCachedRom(crc)) onDismiss() },
+                onRemove = { crc ->
+                    onRemoveCachedRom(crc)
+                    romLibrary = getRomLibrary()
+                },
+            )
 
             ToggleRow(
                 label = "Step gate",
@@ -1011,6 +1027,66 @@ private fun MoneoSection(
                     fontSize = 9.sp,
                     modifier = Modifier.fillMaxWidth(),
                 )
+            }
+        }
+    }
+}
+
+/**
+ * ROM library: clickable rows for each cached ROM, current one highlighted.
+ * Hidden when nothing has been cached yet (first launch).
+ */
+@Composable
+private fun RomLibrarySection(
+    slots: List<com.poketrek.emu.RomCache.Slot>,
+    currentCrc32: Long?,
+    onLoad: (Long) -> Unit,
+    onRemove: (Long) -> Unit,
+) {
+    if (slots.isEmpty()) return
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(
+            "ROM library",
+            color = Color(0xFF6B7280),
+            fontSize = 11.sp,
+        )
+        for (slot in slots) {
+            val isCurrent = slot.crc32 == currentCrc32
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(
+                        color = if (isCurrent) Color(0xFF1F3A2E) else Color(0xFF1F2937),
+                        shape = RoundedCornerShape(8.dp),
+                    )
+                    .clickable(enabled = !isCurrent) { onLoad(slot.crc32) }
+                    .padding(horizontal = 12.dp, vertical = 8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween,
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        slot.label,
+                        color = Color.White,
+                        fontWeight = FontWeight.SemiBold,
+                        fontSize = 13.sp,
+                    )
+                    Text(
+                        if (isCurrent) "Loaded · ${slot.sizeBytes / 1024} KB"
+                        else "${slot.sizeBytes / 1024} KB",
+                        color = if (isCurrent) Color(0xFF6EE7B7) else Color(0xFF9CA3AF),
+                        fontFamily = FontFamily.Monospace,
+                        fontSize = 10.sp,
+                    )
+                }
+                if (!isCurrent) {
+                    TextButton(
+                        onClick = { onRemove(slot.crc32) },
+                        contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+                    ) {
+                        Text("Remove", color = Color(0xFFEF4444), fontSize = 11.sp)
+                    }
+                }
             }
         }
     }
