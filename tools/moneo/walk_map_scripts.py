@@ -155,7 +155,7 @@ def collect_seed_scripts(rom: bytes, header_off: int) -> list[int]:
 def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
                       visited: set | None = None,
                       depth: int = 0, max_depth: int = 2,
-                      max_window: int = 1024) -> set:
+                      max_window: int = 2048) -> set:
     """Find every u32 LE ROM-pointer in the [script_off, script_off+max_window]
     window that targets a known corpus offset.
 
@@ -222,7 +222,41 @@ def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
             if t in corpus_offsets:
                 continue
             if 0x100000 <= t < 0xC00000:
+                # Validate target starts with a plausible script opcode
+                # (< 0xC0) AND a script terminator (END=0x02 / RETURN=0x03)
+                # appears within the next 256 bytes. Real scripts always
+                # end with one of these; data tables don't, which is what
+                # filters out the over-attribution from data-table CALL
+                # false-matches.
+                if rom[t] >= 0xC0:
+                    continue
+                term_window = rom[t : t + 256]
+                if 0x02 not in term_window and 0x03 not in term_window:
+                    continue
                 sub_targets.add(t)
+
+    # Pass 3: parse trainerbattle (0x5C) opcodes inline. The standard
+    # pokefirered/pokeruby encoding is:
+    #   5C <subtype:1> <trainerId:2> <flags:2> <intro:4> <defeat:4>
+    #     [post_battle:4] [post_script:4 ...]
+    # depending on subtype. Pointer slots at offsets 6, 10, 14, 18 from
+    # the 5C opcode catch the intro/defeat/follow-up text references for
+    # most subtypes. Pass 1's u32 scan will also pick these up but only
+    # if they're within the seed window -- explicit parsing handles them
+    # robustly.
+    for i in range(script_off, end - 18):
+        if rom[i] != 0x5C:
+            continue
+        for ptr_off in (6, 10, 14, 18):
+            ptr_at = i + ptr_off
+            if ptr_at + 4 > rom_len:
+                break
+            v = struct.unpack_from("<I", rom, ptr_at)[0]
+            if (v & 0xFE000000) != GBA_BASE:
+                continue
+            t = v - GBA_BASE
+            if t in corpus_offsets:
+                found.add(t)
 
     for sub in sub_targets:
         found |= collect_text_refs(rom, sub, corpus_offsets, visited,
