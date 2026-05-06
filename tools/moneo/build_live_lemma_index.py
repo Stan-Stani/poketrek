@@ -187,6 +187,46 @@ def main():
                     continue
                 lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
 
+    # Fourth pass: items obtained per area (from gItems table walk +
+    # pokemart/giveitem opcode scan). For each (area, item_rec_id) entry
+    # in item_obtain_index.json, tokenize the item description and add
+    # the area to each lemma's set. Lemmas in canonical-area dialog keep
+    # their canonical first_area (lower ordinal); item-only lemmas now
+    # attribute to where the item is sold/given rather than rom_mined.
+    ITEM_INDEX_PATH = Path(__file__).resolve().parent / "item_obtain_index.json"
+    if ITEM_INDEX_PATH.exists():
+        items_idx = json.loads(ITEM_INDEX_PATH.read_text())
+        rec_id_to_record = {r["id"]: r for r in records}
+        for r in static_corpus["records"]:
+            rec_id_to_record.setdefault(r["id"], r)
+        n_item_recs = 0
+        for area, rec_ids in items_idx.get("area_to_item_rec_ids", {}).items():
+            for rid in rec_ids:
+                rec = rec_id_to_record.get(rid)
+                if rec is None:
+                    continue
+                text = rec.get("text", "")
+                if not text:
+                    continue
+                try:
+                    tokens = mecab_lemmatize(text)
+                except Exception:
+                    continue
+                for lemma, pos, surface in tokens:
+                    if not (2 <= len(lemma) <= 5):
+                        continue
+                    if not all(is_hangul(c) for c in lemma):
+                        continue
+                    if is_phonetic_noise(lemma):
+                        continue
+                    if is_kana_shape_token(lemma):
+                        continue
+                    if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
+                        continue
+                    lemma_areas[lemma].add(area)
+                n_item_recs += 1
+        print(f"  item-obtain attributions: {n_item_recs}")
+
     # Make sure the special area ids exist in area_ordinals for rank().
     area_ordinals[TRAINER_DIALOG_AREA_ID] = 51
     if STATIC_ONLY_AREA_ID not in area_ordinals:
