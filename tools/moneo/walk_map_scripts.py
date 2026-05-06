@@ -154,7 +154,7 @@ def collect_seed_scripts(rom: bytes, header_off: int) -> list[int]:
 
 def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
                       visited: set | None = None,
-                      depth: int = 0, max_depth: int = 2,
+                      depth: int = 0, max_depth: int = 4,
                       max_window: int = 2048) -> set:
     """Find every u32 LE ROM-pointer in the [script_off, script_off+max_window]
     window that targets a known corpus offset.
@@ -293,12 +293,54 @@ def main() -> int:
     n_seeds_total = 0
     n_text_refs = 0
 
+    # First pass: collect direct map seeds.
+    seed_to_map: dict[int, tuple[int, int, int, int, int]] = {}
+    map_seeds_list: list[tuple[int, int, int, int, int, list[int]]] = []
     for g, m, mh, mapsec, music in walk_maps(rom):
         seeds = collect_seed_scripts(rom, mh)
+        map_seeds_list.append((g, m, mh, mapsec, music, seeds))
+        for s in seeds:
+            # If multiple maps share a seed (shared scripts), prefer the
+            # FIRST map encountered (lowest group/mapNum order ~ progression).
+            if s not in seed_to_map:
+                seed_to_map[s] = (g, m, mh, mapsec, music)
+
+    sorted_seeds = sorted(seed_to_map.keys())
+
+    # Second pass: scan ROM for u32 ROM-pointer-to-corpus-offset locations
+    # in script regions; for each such pointer at location L, find the
+    # NEAREST map seed S with S <= L and L - S < expansion_window. Attribute
+    # the target to that seed's map. This catches text records reached via
+    # shared sub-scripts and follow-up bytecode that isn't a direct map seed.
+    EXPANSION_WINDOW = 65536  # 64 KB max distance from seed to ptr-location
+    SCRIPT_RANGE = (0x000000, 0xC00000)  # full ROM minus header
+    map_to_extra_offs: dict[tuple[int, int], set[int]] = defaultdict(set)
+    import bisect
+    for off in range(SCRIPT_RANGE[0], SCRIPT_RANGE[1] - 3):
+        v = struct.unpack_from("<I", rom, off)[0]
+        if (v & 0xFE000000) != GBA_BASE:
+            continue
+        target = v - GBA_BASE
+        if target not in corpus_offsets:
+            continue
+        # Find nearest seed <= off
+        i = bisect.bisect_right(sorted_seeds, off) - 1
+        if i < 0:
+            continue
+        seed = sorted_seeds[i]
+        if off - seed > EXPANSION_WINDOW:
+            continue
+        g, m, mh, mapsec, music = seed_to_map[seed]
+        map_to_extra_offs[(g, m)].add(target)
+
+    # Third pass: walk each map's direct seeds via collect_text_refs, then
+    # union with the expansion-pass results.
+    for g, m, mh, mapsec, music, seeds in map_seeds_list:
         n_seeds_total += len(seeds)
         text_offs: set[int] = set()
         for s in seeds:
             text_offs |= collect_text_refs(rom, s, corpus_offsets)
+        text_offs |= map_to_extra_offs.get((g, m), set())
         n_text_refs += len(text_offs)
         rec_ids = {rec_by_offset[o]["id"] for o in text_offs}
         mapsec_to_recids[mapsec] |= rec_ids

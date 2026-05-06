@@ -64,27 +64,28 @@
         "route_9",
         "route_22",
         "route_23",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
         "six_island",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "five_isle_meadow",
+        "outcast_island",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -145,22 +146,22 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
         "four_island",
         "kindle_road",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -185,15 +186,16 @@
         "route_9",
         "trainer_dialog",
         "rom_mined",
-        "ruin_valley",
-        "memorial_pillar",
-        "four_island",
+        "two_island",
+        "water_path",
+        "treasure_beach",
         "outcast_island",
         "five_isle_meadow",
-        "water_path",
-        "two_island",
-        "three_island",
-        "kindle_road"
+        "four_island",
+        "kindle_road",
+        "ruin_valley",
+        "memorial_pillar",
+        "three_island"
       ]
     },
     {
@@ -306,14 +308,14 @@
         "route_23",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "six_island",
         "one_island",
+        "kindle_road",
+        "resort_gorgeous",
         "two_island",
-        "kindle_road"
+        "canyon_entrance",
+        "treasure_beach",
+        "water_labyrinth",
+        "six_island"
       ]
     },
     {
@@ -355,22 +357,23 @@
         "cinnabar_island",
         "celadon_city",
         "route_9",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
         "kindle_road",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -413,22 +416,22 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
         "four_island",
         "kindle_road",
-        "seven_island",
         "ruin_valley",
-        "memorial_pillar",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -478,25 +481,25 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "six_island",
-        "outcast_island",
-        "five_isle_meadow",
-        "two_island",
-        "four_island",
-        "kindle_road",
-        "seven_island",
-        "ruin_valley",
-        "green_path",
-        "three_island",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
         "one_island",
         "five_island",
+        "four_island",
+        "three_island",
         "memorial_pillar",
+        "seven_island",
         "trainer_tower",
-        "water_path"
+        "two_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "water_path",
+        "green_path",
+        "kindle_road",
+        "ruin_valley",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "six_island"
       ]
     },
     {
@@ -523,13 +526,17 @@
         "vermilion_city",
         "route_12",
         "route_13",
+        "fuchsia_city",
         "route_16",
         "cinnabar_island",
+        "celadon_city",
         "route_9",
         "route_22",
         "route_23",
+        "indigo_plateau",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -540,8 +547,9 @@
       "targetForm": "달달",
       "areaId": "rom_mined",
       "source": "rom-rec9820",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
+        "viridian_city",
         "rom_mined"
       ]
     },
@@ -584,22 +592,22 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
-        "water_path",
-        "three_island"
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
+        "two_island",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -636,7 +644,8 @@
         "celadon_city",
         "route_22",
         "route_23",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -656,18 +665,24 @@
         "route_24",
         "route_25",
         "saffron_city",
+        "lavender_town",
         "route_12",
+        "fuchsia_city",
         "route_16",
         "route_17",
         "route_18",
         "route_19",
+        "cinnabar_island",
+        "celadon_city",
         "route_23",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
         "green_path",
-        "memorial_pillar",
+        "treasure_beach",
         "outcast_island",
-        "five_isle_meadow"
+        "five_isle_meadow",
+        "memorial_pillar"
       ]
     },
     {
@@ -725,24 +740,25 @@
         "cinnabar_island",
         "celadon_city",
         "route_9",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
-        "two_island",
         "one_island",
+        "water_path",
+        "green_path",
         "four_island",
         "kindle_road",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -773,21 +789,22 @@
         "fuchsia_city",
         "route_16",
         "cinnabar_island",
+        "celadon_city",
         "route_9",
         "route_22",
         "route_23",
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "water_labyrinth",
+        "water_path",
         "treasure_beach",
-        "resort_gorgeous",
-        "memorial_pillar",
         "green_path",
         "outcast_island",
         "five_isle_meadow",
-        "water_path",
-        "kindle_road"
+        "kindle_road",
+        "water_labyrinth",
+        "memorial_pillar",
+        "resort_gorgeous"
       ]
     },
     {
@@ -893,25 +910,25 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "six_island",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
+        "three_island",
+        "resort_gorgeous",
         "memorial_pillar",
-        "green_path",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "six_island"
       ]
     },
     {
@@ -929,13 +946,17 @@
         "pewter_city",
         "route_4",
         "cerulean_city",
+        "saffron_city",
         "lavender_town",
         "vermilion_city",
+        "route_12",
         "fuchsia_city",
+        "cinnabar_island",
         "celadon_city",
         "trainer_dialog",
         "rom_mined",
-        "seven_island"
+        "seven_island",
+        "treasure_beach"
       ]
     },
     {
@@ -982,22 +1003,23 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "water_labyrinth",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -1039,22 +1061,22 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
         "four_island",
         "kindle_road",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "five_isle_meadow",
+        "outcast_island",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -1110,25 +1132,25 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "six_island",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
         "memorial_pillar",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "six_island"
       ]
     },
     {
@@ -1147,6 +1169,7 @@
         "cerulean_city",
         "saffron_city",
         "route_8",
+        "lavender_town",
         "route_10",
         "route_11",
         "route_12",
@@ -1158,7 +1181,9 @@
         "route_19",
         "route_20",
         "celadon_city",
-        "rom_mined"
+        "indigo_plateau",
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -1204,13 +1229,13 @@
         "trainer_dialog",
         "rom_mined",
         "seven_island",
-        "treasure_beach",
-        "five_island",
         "two_island",
         "one_island",
+        "treasure_beach",
+        "five_island",
         "four_island",
-        "three_island",
-        "kindle_road"
+        "kindle_road",
+        "three_island"
       ]
     },
     {
@@ -1221,10 +1246,13 @@
       "targetForm": "키트",
       "areaId": "rom_mined",
       "source": "rom-rec4855",
-      "firstAreaEncountered": "trainer_dialog",
+      "firstAreaEncountered": "route_12",
       "areasReferenced": [
+        "route_12",
+        "cinnabar_island",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -1235,8 +1263,9 @@
       "targetForm": "폈",
       "areaId": "rom_mined",
       "source": "rom-rec8552",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "route_2",
         "pewter_city",
@@ -1253,12 +1282,13 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "ruin_valley",
-        "five_isle_meadow",
         "two_island",
+        "treasure_beach",
+        "five_isle_meadow",
         "four_island",
-        "three_island",
-        "kindle_road"
+        "kindle_road",
+        "ruin_valley",
+        "three_island"
       ]
     },
     {
@@ -1269,8 +1299,9 @@
       "targetForm": "혼란",
       "areaId": "rom_mined",
       "source": "rom-rec171",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
+        "fuchsia_city",
         "rom_mined"
       ]
     },
@@ -1299,9 +1330,12 @@
       "targetForm": "나와서",
       "areaId": "rom_mined",
       "source": "rom-rec4388",
-      "firstAreaEncountered": "cerulean_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "cerulean_city",
+        "cinnabar_island",
+        "celadon_city",
         "rom_mined"
       ]
     },
@@ -1350,23 +1384,23 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
         "four_island",
         "kindle_road",
-        "seven_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -1377,8 +1411,9 @@
       "targetForm": "모습",
       "areaId": "rom_mined",
       "source": "rom-rec225",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
+        "cerulean_city",
         "rom_mined"
       ]
     },
@@ -1409,24 +1444,25 @@
         "fuchsia_city",
         "route_16",
         "route_20",
+        "cinnabar_island",
         "celadon_city",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
-        "two_island",
         "one_island",
+        "five_island",
         "four_island",
         "kindle_road",
+        "three_island",
+        "resort_gorgeous",
         "seven_island",
-        "five_island",
-        "memorial_pillar",
         "trainer_tower",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "five_isle_meadow",
+        "outcast_island",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -1457,6 +1493,9 @@
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
+        "cerulean_city",
+        "lavender_town",
+        "fuchsia_city",
         "rom_mined"
       ]
     },
@@ -1492,6 +1531,7 @@
         "cerulean_city",
         "route_24",
         "route_25",
+        "lavender_town",
         "route_11",
         "vermilion_city",
         "route_12",
@@ -1501,21 +1541,21 @@
         "route_9",
         "trainer_dialog",
         "rom_mined",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
-        "two_island",
+        "water_path",
+        "green_path",
         "four_island",
         "kindle_road",
-        "seven_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -1570,8 +1610,10 @@
       "targetForm": "들통",
       "areaId": "rom_mined",
       "source": "rom-rec9563",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "saffron_city",
       "areasReferenced": [
+        "saffron_city",
+        "cinnabar_island",
         "rom_mined"
       ]
     },
@@ -1583,12 +1625,18 @@
       "targetForm": "마",
       "areaId": "rom_mined",
       "source": "rom-rec2189",
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
+        "viridian_city",
         "pewter_city",
         "cerulean_city",
+        "saffron_city",
+        "lavender_town",
         "route_12",
         "route_13",
+        "fuchsia_city",
+        "celadon_city",
         "rom_mined"
       ]
     },
@@ -1600,19 +1648,26 @@
       "targetForm": "맸",
       "areaId": "rom_mined",
       "source": "rom-rec7570",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "pewter_city",
         "mt_moon",
         "route_4",
+        "cerulean_city",
         "route_25",
+        "saffron_city",
+        "lavender_town",
+        "route_12",
+        "fuchsia_city",
         "route_20",
         "trainer_dialog",
         "rom_mined",
-        "ruin_valley",
+        "treasure_beach",
+        "trainer_tower",
         "canyon_entrance",
-        "trainer_tower"
+        "ruin_valley"
       ]
     },
     {
@@ -1643,14 +1698,16 @@
         "viridian_city",
         "pewter_city",
         "route_4",
+        "cerulean_city",
         "vermilion_city",
         "fuchsia_city",
         "celadon_city",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
+        "treasure_beach",
+        "seven_island",
         "trainer_tower",
-        "seven_island"
+        "canyon_entrance"
       ]
     },
     {
@@ -1673,6 +1730,7 @@
         "route_25",
         "saffron_city",
         "lavender_town",
+        "route_12",
         "fuchsia_city",
         "route_19",
         "route_20",
@@ -1684,9 +1742,10 @@
         "trainer_dialog",
         "rom_mined",
         "canyon_entrance",
+        "treasure_beach",
         "four_island",
-        "three_island",
-        "kindle_road"
+        "kindle_road",
+        "three_island"
       ]
     },
     {
@@ -1762,10 +1821,13 @@
       "targetForm": "노트",
       "areaId": "rom_mined",
       "source": "rom-rec4823",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "pewter_city",
+        "saffron_city",
+        "fuchsia_city",
         "trainer_dialog",
         "rom_mined"
       ]
@@ -1810,7 +1872,8 @@
         "viridian_city",
         "cerulean_city",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -1832,10 +1895,10 @@
         "fuchsia_city",
         "celadon_city",
         "rom_mined",
-        "six_island",
         "seven_island",
+        "five_island",
         "four_island",
-        "five_island"
+        "six_island"
       ]
     },
     {
@@ -1846,8 +1909,9 @@
       "targetForm": "모으",
       "areaId": "rom_mined",
       "source": "rom-rec4465",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "route_2",
         "pewter_city",
@@ -1855,6 +1919,7 @@
         "route_24",
         "route_25",
         "route_8",
+        "lavender_town",
         "route_10",
         "vermilion_city",
         "route_12",
@@ -1862,17 +1927,19 @@
         "route_14",
         "fuchsia_city",
         "route_16",
+        "cinnabar_island",
         "celadon_city",
         "route_9",
         "route_23",
         "trainer_dialog",
         "rom_mined",
-        "five_isle_meadow",
-        "two_island",
         "four_island",
         "kindle_road",
         "ruin_valley",
-        "three_island"
+        "three_island",
+        "two_island",
+        "treasure_beach",
+        "five_isle_meadow"
       ]
     },
     {
@@ -1883,10 +1950,12 @@
       "targetForm": "베이",
       "areaId": "rom_mined",
       "source": "rom-rec3562",
-      "firstAreaEncountered": "trainer_dialog",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -1902,8 +1971,11 @@
         "pallet_town",
         "viridian_city",
         "cerulean_city",
+        "lavender_town",
+        "route_12",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -1919,10 +1991,10 @@
         "route_1",
         "viridian_city",
         "rom_mined",
-        "six_island",
-        "four_island",
+        "seven_island",
         "five_island",
-        "seven_island"
+        "six_island",
+        "four_island"
       ]
     },
     {
@@ -1966,19 +2038,22 @@
       "targetForm": "쌀",
       "areaId": "rom_mined",
       "source": "rom-rec4389",
-      "firstAreaEncountered": "route_1",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "route_1",
+        "viridian_city",
         "pewter_city",
         "cerulean_city",
+        "lavender_town",
         "rom_mined",
-        "six_island",
-        "five_isle_meadow",
         "seven_island",
-        "water_labyrinth",
-        "treasure_beach",
-        "four_island",
         "five_island",
+        "treasure_beach",
+        "five_isle_meadow",
+        "four_island",
+        "water_labyrinth",
+        "six_island",
         "resort_gorgeous"
       ]
     },
@@ -2016,27 +2091,28 @@
         "cinnabar_island",
         "celadon_city",
         "route_22",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
         "six_island",
-        "outcast_island",
-        "five_isle_meadow",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -2103,6 +2179,7 @@
         "route_10",
         "route_11",
         "vermilion_city",
+        "route_12",
         "route_13",
         "route_14",
         "route_15",
@@ -2116,22 +2193,22 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
         "four_island",
         "kindle_road",
-        "seven_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -2166,6 +2243,7 @@
         "viridian_city",
         "pewter_city",
         "cerulean_city",
+        "route_12",
         "rom_mined"
       ]
     },
@@ -2181,23 +2259,26 @@
       "areasReferenced": [
         "viridian_city",
         "pewter_city",
+        "cerulean_city",
+        "lavender_town",
         "route_11",
         "route_12",
         "route_15",
         "fuchsia_city",
+        "cinnabar_island",
         "celadon_city",
         "route_9",
         "trainer_dialog",
         "rom_mined",
-        "ruin_valley",
-        "memorial_pillar",
-        "four_island",
+        "two_island",
+        "water_path",
         "outcast_island",
         "five_isle_meadow",
-        "water_path",
-        "two_island",
-        "three_island",
-        "kindle_road"
+        "four_island",
+        "kindle_road",
+        "ruin_valley",
+        "memorial_pillar",
+        "three_island"
       ]
     },
     {
@@ -2214,6 +2295,8 @@
         "viridian_city",
         "pewter_city",
         "cerulean_city",
+        "lavender_town",
+        "route_12",
         "trainer_dialog",
         "rom_mined"
       ]
@@ -2229,6 +2312,10 @@
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
+        "viridian_city",
+        "pewter_city",
+        "fuchsia_city",
+        "cinnabar_island",
         "rom_mined"
       ]
     },
@@ -2240,8 +2327,10 @@
       "targetForm": "솔솔",
       "areaId": "rom_mined",
       "source": "rom-rec9951",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
+        "cerulean_city",
+        "lavender_town",
         "rom_mined"
       ]
     },
@@ -2275,16 +2364,20 @@
         "route_2",
         "pewter_city",
         "route_3",
+        "cerulean_city",
         "route_6",
         "route_8",
+        "lavender_town",
         "route_10",
         "route_11",
+        "fuchsia_city",
         "route_9",
         "rom_mined",
-        "six_island",
-        "five_island",
         "seven_island",
-        "four_island"
+        "five_island",
+        "treasure_beach",
+        "four_island",
+        "six_island"
       ]
     },
     {
@@ -2308,15 +2401,15 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "ruin_valley",
-        "memorial_pillar",
-        "four_island",
-        "outcast_island",
-        "five_isle_meadow",
         "two_island",
         "water_path",
-        "three_island",
-        "kindle_road"
+        "outcast_island",
+        "five_isle_meadow",
+        "four_island",
+        "kindle_road",
+        "ruin_valley",
+        "memorial_pillar",
+        "three_island"
       ]
     },
     {
@@ -2330,7 +2423,11 @@
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
-        "rom_mined"
+        "cerulean_city",
+        "route_12",
+        "fuchsia_city",
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -2355,8 +2452,9 @@
       "targetForm": "양복",
       "areaId": "rom_mined",
       "source": "rom-rec7053",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "lavender_town",
       "areasReferenced": [
+        "lavender_town",
         "rom_mined"
       ]
     },
@@ -2371,7 +2469,9 @@
       "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
         "cerulean_city",
-        "rom_mined"
+        "route_12",
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -2397,8 +2497,9 @@
       "targetForm": "진화",
       "areaId": "rom_mined",
       "source": "rom-rec205",
-      "firstAreaEncountered": "trainer_dialog",
+      "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
+        "cerulean_city",
         "trainer_dialog",
         "rom_mined"
       ]
@@ -2490,12 +2591,13 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "five_isle_meadow",
-        "two_island",
         "four_island",
         "kindle_road",
         "ruin_valley",
-        "three_island"
+        "three_island",
+        "two_island",
+        "treasure_beach",
+        "five_isle_meadow"
       ]
     },
     {
@@ -2526,6 +2628,8 @@
         "viridian_city",
         "pewter_city",
         "route_4",
+        "cerulean_city",
+        "lavender_town",
         "vermilion_city",
         "route_13",
         "route_14",
@@ -2537,7 +2641,8 @@
         "route_22",
         "trainer_dialog",
         "rom_mined",
-        "seven_island"
+        "seven_island",
+        "treasure_beach"
       ]
     },
     {
@@ -2559,15 +2664,15 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "ruin_valley",
-        "memorial_pillar",
-        "four_island",
+        "two_island",
+        "water_path",
         "outcast_island",
         "five_isle_meadow",
-        "water_path",
-        "two_island",
-        "three_island",
-        "kindle_road"
+        "four_island",
+        "kindle_road",
+        "ruin_valley",
+        "memorial_pillar",
+        "three_island"
       ]
     },
     {
@@ -2612,11 +2717,14 @@
         "viridian_city",
         "pewter_city",
         "route_4",
+        "cerulean_city",
         "vermilion_city",
+        "route_12",
         "fuchsia_city",
         "celadon_city",
         "rom_mined",
-        "seven_island"
+        "seven_island",
+        "treasure_beach"
       ]
     },
     {
@@ -2627,8 +2735,9 @@
       "targetForm": "나누",
       "areaId": "rom_mined",
       "source": "rom-rec7146",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "pewter_city",
         "route_3",
@@ -2636,6 +2745,7 @@
         "cerulean_city",
         "route_24",
         "route_25",
+        "saffron_city",
         "route_11",
         "vermilion_city",
         "route_12",
@@ -2650,17 +2760,17 @@
         "route_9",
         "trainer_dialog",
         "rom_mined",
-        "treasure_beach",
-        "ruin_valley",
-        "resort_gorgeous",
-        "memorial_pillar",
-        "four_island",
-        "outcast_island",
-        "five_isle_meadow",
         "two_island",
         "water_path",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "four_island",
+        "kindle_road",
+        "ruin_valley",
+        "memorial_pillar",
         "three_island",
-        "kindle_road"
+        "resort_gorgeous"
       ]
     },
     {
@@ -2695,29 +2805,31 @@
         "route_17",
         "route_18",
         "route_19",
+        "cinnabar_island",
         "celadon_city",
         "route_9",
         "route_22",
         "route_23",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -2732,7 +2844,12 @@
       "areasReferenced": [
         "pewter_city",
         "cerulean_city",
-        "rom_mined"
+        "saffron_city",
+        "route_12",
+        "cinnabar_island",
+        "indigo_plateau",
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -2754,6 +2871,7 @@
         "route_24",
         "route_25",
         "route_6",
+        "saffron_city",
         "route_8",
         "lavender_town",
         "route_10",
@@ -2775,21 +2893,21 @@
         "route_9",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
-        "outcast_island",
-        "five_isle_meadow",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path"
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "five_isle_meadow",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -2803,14 +2921,18 @@
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
+        "viridian_city",
         "pewter_city",
         "cerulean_city",
+        "saffron_city",
+        "route_12",
         "route_16",
         "route_17",
         "route_18",
         "route_19",
         "route_20",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -2848,8 +2970,9 @@
       "targetForm": "드세",
       "areaId": "rom_mined",
       "source": "rom-rec9317",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
+        "fuchsia_city",
         "rom_mined"
       ]
     },
@@ -2874,10 +2997,16 @@
       "targetForm": "디미",
       "areaId": "rom_mined",
       "source": "rom-rec9594",
-      "firstAreaEncountered": "cerulean_city",
+      "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
+        "pewter_city",
         "cerulean_city",
-        "rom_mined"
+        "lavender_town",
+        "route_12",
+        "fuchsia_city",
+        "cinnabar_island",
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -2912,12 +3041,12 @@
         "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "ruin_valley",
-        "five_isle_meadow",
         "two_island",
+        "five_isle_meadow",
         "four_island",
-        "three_island",
-        "kindle_road"
+        "kindle_road",
+        "ruin_valley",
+        "three_island"
       ]
     },
     {
@@ -2928,8 +3057,9 @@
       "targetForm": "만졌",
       "areaId": "rom_mined",
       "source": "rom-rec4428",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
+        "viridian_city",
         "rom_mined"
       ]
     },
@@ -2959,18 +3089,22 @@
       "targetForm": "모래",
       "areaId": "rom_mined",
       "source": "rom-rec4344",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "pewter_city",
         "route_3",
         "cerulean_city",
         "saffron_city",
+        "lavender_town",
         "route_12",
         "route_16",
+        "cinnabar_island",
         "route_22",
         "trainer_dialog",
         "rom_mined",
+        "treasure_beach",
         "two_island",
         "one_island"
       ]
@@ -2983,10 +3117,12 @@
       "targetForm": "모양",
       "areaId": "rom_mined",
       "source": "rom-rec208",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
         "pewter_city",
+        "cerulean_city",
         "trainer_dialog",
         "rom_mined"
       ]
@@ -3009,7 +3145,8 @@
         "route_11",
         "route_9",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -3024,7 +3161,8 @@
       "areasReferenced": [
         "vermilion_city",
         "celadon_city",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -3056,20 +3194,23 @@
         "fuchsia_city",
         "route_16",
         "route_20",
+        "cinnabar_island",
         "celadon_city",
         "route_22",
         "route_23",
+        "indigo_plateau",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
         "seven_island",
-        "five_island",
-        "ruin_valley",
         "trainer_tower",
         "two_island",
         "one_island",
+        "canyon_entrance",
         "water_path",
-        "four_island"
+        "treasure_beach",
+        "five_island",
+        "four_island",
+        "ruin_valley"
       ]
     },
     {
@@ -3097,6 +3238,7 @@
         "pewter_city",
         "mt_moon",
         "route_4",
+        "cerulean_city",
         "saffron_city",
         "route_8",
         "route_10",
@@ -3106,24 +3248,24 @@
         "route_9",
         "trainer_dialog",
         "rom_mined",
-        "canyon_entrance",
-        "water_labyrinth",
-        "treasure_beach",
-        "resort_gorgeous",
         "six_island",
-        "outcast_island",
         "one_island",
-        "two_island",
+        "water_path",
+        "green_path",
+        "five_island",
         "four_island",
         "kindle_road",
-        "seven_island",
-        "five_island",
         "ruin_valley",
-        "memorial_pillar",
-        "green_path",
+        "three_island",
+        "resort_gorgeous",
+        "seven_island",
         "trainer_tower",
-        "water_path",
-        "three_island"
+        "two_island",
+        "canyon_entrance",
+        "treasure_beach",
+        "outcast_island",
+        "water_labyrinth",
+        "memorial_pillar"
       ]
     },
     {
@@ -3195,8 +3337,11 @@
       "targetForm": "산란",
       "areaId": "rom_mined",
       "source": "rom-rec4447",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
+        "viridian_city",
+        "cerulean_city",
+        "route_12",
         "rom_mined"
       ]
     },
@@ -3216,13 +3361,17 @@
         "route_3",
         "route_4",
         "cerulean_city",
+        "saffron_city",
+        "lavender_town",
         "vermilion_city",
+        "route_12",
         "fuchsia_city",
         "cinnabar_island",
         "celadon_city",
         "trainer_dialog",
         "rom_mined",
         "seven_island",
+        "treasure_beach",
         "four_island",
         "three_island"
       ]
@@ -3245,20 +3394,25 @@
         "cerulean_city",
         "route_24",
         "route_25",
+        "saffron_city",
+        "lavender_town",
+        "route_12",
         "fuchsia_city",
+        "cinnabar_island",
+        "celadon_city",
         "trainer_dialog",
         "rom_mined",
+        "trainer_tower",
         "canyon_entrance",
-        "treasure_beach",
-        "ruin_valley",
+        "water_path",
         "resort_gorgeous",
-        "memorial_pillar",
+        "treasure_beach",
         "green_path",
         "outcast_island",
-        "trainer_tower",
         "five_isle_meadow",
-        "water_path",
-        "kindle_road"
+        "kindle_road",
+        "ruin_valley",
+        "memorial_pillar"
       ]
     },
     {
@@ -3269,14 +3423,15 @@
       "targetForm": "석양",
       "areaId": "rom_mined",
       "source": "rom-rec8998",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "rom_mined",
-        "canyon_entrance",
-        "trainer_tower",
+        "green_path",
         "ruin_valley",
         "water_path",
-        "green_path"
+        "canyon_entrance",
+        "trainer_tower"
       ]
     },
     {
@@ -3295,11 +3450,17 @@
         "cerulean_city",
         "route_24",
         "route_25",
+        "saffron_city",
+        "route_12",
+        "fuchsia_city",
         "route_20",
+        "cinnabar_island",
         "route_22",
         "route_23",
+        "indigo_plateau",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -3323,8 +3484,10 @@
       "targetForm": "술통",
       "areaId": "rom_mined",
       "source": "rom-rec9190",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "lavender_town",
       "areasReferenced": [
+        "lavender_town",
+        "cinnabar_island",
         "rom_mined"
       ]
     },
@@ -3341,18 +3504,19 @@
         "viridian_city",
         "pewter_city",
         "route_11",
+        "cinnabar_island",
         "celadon_city",
         "route_9",
         "rom_mined",
-        "ruin_valley",
         "outcast_island",
         "five_isle_meadow",
-        "two_island",
-        "water_path",
         "four_island",
-        "three_island",
         "kindle_road",
-        "memorial_pillar"
+        "two_island",
+        "ruin_valley",
+        "memorial_pillar",
+        "water_path",
+        "three_island"
       ]
     },
     {
@@ -3363,11 +3527,17 @@
       "targetForm": "시트",
       "areaId": "rom_mined",
       "source": "rom-rec4482",
-      "firstAreaEncountered": "fuchsia_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
+        "viridian_city",
+        "pewter_city",
+        "lavender_town",
+        "route_12",
         "fuchsia_city",
         "trainer_dialog",
-        "rom_mined"
+        "rom_mined",
+        "treasure_beach"
       ]
     },
     {
@@ -3378,8 +3548,12 @@
       "targetForm": "아들",
       "areaId": "rom_mined",
       "source": "rom-rec9002",
-      "firstAreaEncountered": "fuchsia_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
+        "cerulean_city",
+        "lavender_town",
+        "route_12",
         "fuchsia_city",
         "route_20",
         "route_22",
@@ -3409,8 +3583,10 @@
       "targetForm": "요트",
       "areaId": "rom_mined",
       "source": "rom-rec9163",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "lavender_town",
       "areasReferenced": [
+        "lavender_town",
+        "route_12",
         "rom_mined"
       ]
     },
@@ -3505,8 +3681,10 @@
       "targetForm": "짠다",
       "areaId": "rom_mined",
       "source": "rom-rec4413",
-      "firstAreaEncountered": "fuchsia_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
+        "lavender_town",
         "fuchsia_city",
         "rom_mined"
       ]
@@ -3519,10 +3697,12 @@
       "targetForm": "치석",
       "areaId": "rom_mined",
       "source": "rom-rec9308",
-      "firstAreaEncountered": "lavender_town",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "lavender_town",
         "vermilion_city",
+        "route_12",
         "rom_mined"
       ]
     },
@@ -3534,9 +3714,12 @@
       "targetForm": "치우",
       "areaId": "rom_mined",
       "source": "rom-rec8858",
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
         "viridian_city",
+        "route_12",
+        "cinnabar_island",
         "rom_mined"
       ]
     },
@@ -3548,8 +3731,11 @@
       "targetForm": "토란",
       "areaId": "rom_mined",
       "source": "rom-rec4610",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
+        "pallet_town",
+        "viridian_city",
+        "cinnabar_island",
         "rom_mined"
       ]
     },
@@ -3561,8 +3747,12 @@
       "targetForm": "토의",
       "areaId": "rom_mined",
       "source": "rom-rec386",
-      "firstAreaEncountered": "trainer_dialog",
+      "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
+        "pewter_city",
+        "lavender_town",
+        "fuchsia_city",
+        "cinnabar_island",
         "trainer_dialog",
         "rom_mined"
       ]
@@ -3575,8 +3765,12 @@
       "targetForm": "트이",
       "areaId": "rom_mined",
       "source": "rom-rec404",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
+        "pewter_city",
+        "route_12",
+        "fuchsia_city",
+        "cinnabar_island",
         "rom_mined"
       ]
     },
@@ -3588,8 +3782,11 @@
       "targetForm": "포트",
       "areaId": "rom_mined",
       "source": "rom-rec4833",
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
+        "pewter_city",
+        "route_12",
+        "fuchsia_city",
         "rom_mined"
       ]
     },
