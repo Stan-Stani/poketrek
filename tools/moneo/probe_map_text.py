@@ -1,15 +1,42 @@
 #!/usr/bin/env python3
-"""Korean LeafGreen map → text reverse-engineering probe.
+"""Korean LeafGreen map -> text reverse-engineering probe.
 
-This is a partial-progress investigative tool, not a finished pipeline. It
-captures the state of the (rec_id → area_id) mapping work as of session
-2026-05-06 so a future session can resume without re-discovering the layout.
+Captures the state of (rec_id -> area_id) mapping recon. Updated 2026-05-06
+after the prior blocker was resolved by `find_text_in_rom.py` (see below).
+
+KEY FINDING (resolves the prior "runtime synthesis" blocker)
+============================================================
+
+The rendered Korean text from EWRAM exists VERBATIM in ROM. The previous
+session's hypothesis -- that the engine synthesizes display strings via a
+runtime translation hook -- is WRONG. Verified: the rendered string from
+`koreanStartSaveState.ss0` ("쿤는...하고있다!...좋아!나가볼까?") sits at
+ROM 0x17BF36 (terminator FF at 0x17BF59). The leading "쿤" was not a
+different character -- it's `FD 01` (player-name var) that the engine
+substitutes at render time.
+
+What was previously called the "OLD pre-translation Japanese region"
+(0x069000..0x350000) actually contains the LIVE Korean dialog. The fan
+translation patched the existing Japanese region in-place rather than
+relocating. NPC scripts still point at those original addresses; those
+addresses now hold Korean. Specifically (from `find_text_in_rom.py`):
+
+  * 48,584 candidate-valid Korean messages in ROM[:0x800000]
+  * 341 dense clusters (>=30 messages each) total 31,448 messages
+  * 6,630 u32 ROM-pointer literals in ROM[:0xC00000] hit a message start:
+      - 4,147 into the "live" region (0x069000..0x350000)
+      -   175 into the cluster containing our verified rendered text
+      - exactly 1 pointer (ROM[0x17BEE3]) targets 0x17BF36 directly
+
+corpus.ko.json (records starting at 0x35D7FA / "힌힌{VDD}...") was built
+from leftover untranslated data, not the live region. That is why none of
+its records matched the rendered text.
 
 WHAT'S WORKING
 ==============
 
 1. Map structure decoded:
-   * gMapGroups[6] at ROM offset 0x316740 (six u32 ptrs, one per group).
+   * gMapGroups[6] at ROM offset 0x316740, walked all 146 maps' events.
    * 146 maps total: 60 + 66 + 4 + 6 + 8 + 2 across groups 0-5.
    * Group-array offsets: [0x316294, 0x316384, 0x31648C, 0x31649C, 0x3164B4,
      0x3164D4]; the 7th value (0x316294 + 146*4) terminates group 5.
@@ -27,59 +54,42 @@ WHAT'S WORKING
    offsets, 0x02xxxxxx, into the in-flight dialog buffer).
 
 3. Decoding `ewram[strptr - 0x02000000:]` with `tools/moneo/glyph-map.json`
-   produces readable Korean (e.g. "좋아!나가볼까?").
+   produces readable Korean.
 
-WHAT'S BLOCKED
-==============
+4. `find_text_in_rom.py` reverse-encodes a Korean string into glyph bytes
+   and locates it in ROM. Use it to verify any captured rendered text
+   against the live ROM region.
 
-A. The rendered text does NOT appear verbatim in `corpus.ko.json`, even
-   after stripping `{var:XX}` substitutions and normalizing whitespace.
-   Hypotheses (none confirmed):
-   * The runtime synthesizes display strings from multiple corpus records
-     plus name substitutions, so no single record matches.
-   * `corpus.ko.json` was built from a different ROM region than the one
-     the live engine actually pulls from — there may be a parallel "live"
-     region or a cache that's populated on-the-fly.
-   * The runtime translation hook keeps the rendered bytes in EWRAM only;
-     they were never extracted into corpus.ko.json.
+NEXT STEPS -- area attribution is now a STATIC problem
+======================================================
 
-B. `gMapHeader` (the active-map copy) was not found by signature search in
-   either IWRAM or EWRAM. Diffing IWRAM/EWRAM between savestates at
-   nominally-different maps yielded zero matching candidates. Possible
-   reasons: the savestates may both be on the same map (or no map yet —
-   intro sequence), or `gMapHeader` is stored in a non-standard format.
-   Without it we can't tag a captured text rendering with its current map.
+No runtime hook needed. Map -> text resolution becomes:
 
-C. NPC scripts in ROM still reference the OLD (pre-translation, kana-rendered
-   Japanese) text region at 0x180000-0x350000. There are 15,635 such
-   references across 98 maps. The fan-translation hook that maps these to
-   Korean (corpus.ko.json's region 0x35D000+) is not a static lookup table:
-   * No (old, new) ptr pair arrays found.
-   * No flat new-ptr arrays at ROM ranges where scripts reference them.
-   * The corpus rec_offsets are not referenced as u32 literals anywhere in ROM.
+1. Re-extract corpus from the live region (0x069000..0x6D0000):
+   * Walk every 0xFF terminator; treat each subsequent run of glyph bytes
+     as a record (filter by hangul count + zero invalid bytes -- see the
+     msg_quality function inside find_text_in_rom.py / cluster scan).
+   * Output schema: same as current corpus.ko.json plus a `region` field
+     so callers can distinguish live vs leftover records.
 
-NEXT STEPS (for a future session)
-=================================
+2. Static map -> text mapping:
+   * For each MapHeader, follow events.scripts and mapScripts.
+   * For each script blob, scan u32 LE literals; ones that hit a known
+     message start are dialog references.
+   * Build mapsec -> set[rec_offset] -> set[rec_id].
 
-1. Find `gMapHeader` by RUNTIME tracing instead of signature search:
-   * Set a breakpoint at the function that reads gMapHeader.events when
-     transitioning maps. Capture the EWRAM/IWRAM read address.
-   * Or: instrument mgba_capture to dump RAM each frame after a known
-     map-transition input sequence, then diff.
+3. (Optional) Disassemble the script bytecode to filter spurious pointer
+   matches. The likely text-loading opcodes are `loadword R0, <ptr>`
+   followed by `callstd <type>` -- but a u32-literal scan should already
+   give a clean signal because random data rarely coincides with a valid
+   message-start offset.
 
-2. Find the runtime text-translation hook:
-   * Set a memory-read watchpoint on a high-frequency corpus rec offset
-     (e.g. rec0 at 0x35D800 — but it's "garbled" so may never be read).
-     Use a Pokédex-entry record like rec4347 instead.
-   * Or: breakpoint at higher levels in the text engine — one level above
-     0x080062B4 (per-glyph render) — to see what loads bytes into the
-     EWRAM buffer at strptr.
+4. Annotate areas.json with each mapsec's rec_id set; surface the first
+   mapsec each rec_id appears in as that card's "first encountered in".
 
-3. Once gMapHeader is reachable, capture (rendered_korean_text, mapsec)
-   pairs across many savestates / playthrough segments. Match the rendered
-   text fuzzy-against corpus.ko.json (or against the new "live" region if
-   discovered) → rec_ids. Build mapsec → list[rec_id]. Manually annotate
-   each mapsec with its area_id (areas.json).
+gMapHeader RAM-search is no longer on the critical path -- attribution
+becomes static. Keep it as a fallback if a script's text references are
+ambiguous.
 
 USAGE
 =====
@@ -89,6 +99,9 @@ USAGE
 
   # Capture EWRAM + tokens from a savestate, decode the rendered Korean.
   python3 tools/moneo/probe_map_text.py --state koreanStartSaveState.ss0
+
+  # Verify a rendered string is in ROM and locate its offset:
+  python3 tools/moneo/find_text_in_rom.py "<korean text>"
 """
 from __future__ import annotations
 import argparse
