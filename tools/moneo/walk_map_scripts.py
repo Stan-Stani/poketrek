@@ -154,8 +154,8 @@ def collect_seed_scripts(rom: bytes, header_off: int) -> list[int]:
 
 def collect_text_refs(rom: bytes, script_off: int, corpus_offsets: set,
                       visited: set | None = None,
-                      depth: int = 0, max_depth: int = 3,
-                      max_window: int = 512) -> set:
+                      depth: int = 0, max_depth: int = 0,
+                      max_window: int = 2048) -> set:
     """Find every u32 LE ROM-pointer in the [script_off, script_off+max_window]
     window that targets a known corpus offset.
 

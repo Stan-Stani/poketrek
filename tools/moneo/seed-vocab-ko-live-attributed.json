@@ -10,8 +10,10 @@
       "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 80,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "하다",
@@ -77,9 +79,9 @@
       "areaId": "rom_mined",
       "frequency": 13,
       "areasReferenced": [
-        "viridian_city"
+        "cerulean_city"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "cerulean_city"
     },
     {
       "korean": "자전거",
@@ -88,8 +90,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 13,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city"
     },
     {
       "korean": "되다",
@@ -301,9 +305,9 @@
       "areaId": "rom_mined",
       "frequency": 6,
       "areasReferenced": [
-        "viridian_city"
+        "pallet_town"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "같다",
@@ -400,8 +404,10 @@
       "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "장착",
@@ -431,9 +437,9 @@
       "areaId": "rom_mined",
       "frequency": 4,
       "areasReferenced": [
-        "viridian_city"
+        "pallet_town"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "그렇다",
@@ -465,9 +471,9 @@
       "areaId": "rom_mined",
       "frequency": 4,
       "areasReferenced": [
-        "viridian_city"
+        "pallet_town"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "드다",
@@ -560,8 +566,10 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "남자",
@@ -778,8 +786,10 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "쪽발",
@@ -811,9 +821,9 @@
       "areaId": "rom_mined",
       "frequency": 3,
       "areasReferenced": [
-        "viridian_city"
+        "pallet_town"
       ],
-      "firstAreaEncountered": "viridian_city"
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "키다",

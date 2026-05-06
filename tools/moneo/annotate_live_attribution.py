@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SENTS_IN = ROOT / "tools/moneo/sentences-ko-live-mined.json"
 VOCAB_IN = ROOT / "tools/moneo/seed-vocab-ko-live-mined.json"
 MAP_INDEX = ROOT / "tools/moneo/map_text_index.json"
+MAP_AREA_INDEX = ROOT / "tools/moneo/map_area_index.json"  # warp-resolved per-map area
 MAPSEC_AREAS = ROOT / "tools/moneo/mapsec_areas.json"
 AREAS = ROOT / "app/src/main/assets/moneo/areas.json"
 
@@ -45,6 +46,19 @@ def main() -> int:
     for ms, rids in map_idx["mapsec_to_rec_ids"].items():
         for rid in rids:
             rec_to_mapsecs[rid].add(ms)
+
+    # Stronger source: per-map area resolution from resolve_map_areas.py.
+    # Each area maps to the union of rec_ids referenced by ANY map that
+    # resolved to that area (either directly via mapsec, or via warp
+    # parent). This recovers interior-building maps whose mapsec is
+    # generic (e.g. mapsec 0xAE spans 22 maps; each warps to a different
+    # parent town).
+    rec_to_areas: dict[int, set[str]] = defaultdict(set)
+    if MAP_AREA_INDEX.exists():
+        map_area_idx = json.loads(MAP_AREA_INDEX.read_text())
+        for aid, info in map_area_idx.get("resolved_areas", {}).items():
+            for rid in info.get("recIds", []):
+                rec_to_areas[rid].add(aid)
 
     # Build overlap-fallback: many "fluent" records in the live corpus
     # are SUPERSETS of script-pointed records (the broader extraction
@@ -109,35 +123,80 @@ def main() -> int:
                 return set(rec_to_mapsecs[rid]), rid
         return set(), None
 
-    # Annotate sentences
+    def first_area_direct(rid: int) -> tuple[str | None, list[str]]:
+        """Resolve via map_area_index.json (per-map, warp-resolved)."""
+        areas_seen = sorted(rec_to_areas.get(rid, set()))
+        if not areas_seen:
+            return None, []
+        ranked = sorted(
+            areas_seen, key=lambda a: area_ordinal.get(a, DEFAULT_ORDINAL)
+        )
+        return ranked[0], areas_seen
+
+    # Annotate sentences. Strategy (in order of preference):
+    #   1. Direct rec_id -> area via map_area_index.json (covers mapsec
+    #      direct + warp-resolved maps).
+    #   2. Legacy mapsec lookup via map_text_index + mapsec_areas (kept
+    #      as a fallback for any rec that the per-map resolver didn't
+    #      attribute, e.g. unresolved mapsecs whose maps couldn't be
+    #      warp-traced).
+    #   3. Text-overlap fallback: a sentence whose source rec_id wasn't
+    #      reached by any walker can sometimes be matched against an
+    #      overlapping referenced rec by substring containment.
     n_attributed = 0
-    n_attributed_via_overlap = 0
-    n_no_mapsec = 0
-    n_no_area = 0
+    n_via_direct = 0
+    n_via_legacy_mapsec = 0
+    n_via_overlap = 0
+    n_no_match = 0
     for s in sents["entries"]:
         src = s.get("source")
         rid = rec_id_from_source(src)
         if rid is None:
             continue
-        mapsecs = set(rec_to_mapsecs.get(rid, set()))
-        if not mapsecs:
-            # Fallback: search for the sentence text in any referenced rec.
-            ms_set, matched_rid = fallback_mapsecs_via_overlap(s.get("korean", ""))
-            if ms_set:
-                mapsecs = ms_set
-                s["sourceMapsecVia"] = f"rom-rec{matched_rid} (overlap)"
-                n_attributed_via_overlap += 1
-        s["mapsecs"] = sorted(mapsecs)
-        if not mapsecs:
-            n_no_mapsec += 1
-            continue
-        first, all_seen = first_area(mapsecs)
-        s["mapsecAreaTrace"] = all_seen
-        s["firstAreaEncountered"] = first
+
+        # Path 1: direct per-map area resolution
+        first, all_seen = first_area_direct(rid)
         if first:
+            s["resolvedAreas"] = all_seen
+            s["firstAreaEncountered"] = first
+            s["attributionVia"] = "map_area_direct"
             n_attributed += 1
-        else:
-            n_no_area += 1
+            n_via_direct += 1
+            continue
+
+        # Path 2: legacy mapsec lookup
+        mapsecs = set(rec_to_mapsecs.get(rid, set()))
+        if mapsecs:
+            first2, all_seen2 = first_area(mapsecs)
+            s["mapsecs"] = sorted(mapsecs)
+            s["mapsecAreaTrace"] = all_seen2
+            if first2:
+                s["firstAreaEncountered"] = first2
+                s["attributionVia"] = "mapsec_legacy"
+                n_attributed += 1
+                n_via_legacy_mapsec += 1
+                continue
+
+        # Path 3: text-overlap fallback (find a referenced rec whose text
+        # contains the sentence text)
+        ms_set, matched_rid = fallback_mapsecs_via_overlap(s.get("korean", ""))
+        if ms_set:
+            first3, _ = first_area(ms_set)
+            if matched_rid is not None:
+                # Also try direct rec lookup for the overlap match
+                direct_first, _ = first_area_direct(matched_rid)
+                if direct_first:
+                    first3 = direct_first
+            if first3:
+                s["mapsecs"] = sorted(ms_set)
+                s["sourceMapsecVia"] = f"rom-rec{matched_rid} (overlap)"
+                s["firstAreaEncountered"] = first3
+                s["attributionVia"] = "text_overlap"
+                n_attributed += 1
+                n_via_overlap += 1
+                continue
+
+        n_no_match += 1
 
     # Aggregate per-vocab: which areas does this lemma's sentences appear in?
     vocab_areas: dict[str, set[str]] = defaultdict(set)
@@ -163,10 +222,11 @@ def main() -> int:
 
     # Stats
     print(f"sentences: {len(sents['entries'])} total")
-    print(f"  with mapsec attribution: {n_attributed}")
-    print(f"    of which recovered via text-overlap fallback: {n_attributed_via_overlap}")
-    print(f"  no mapsec match (rec_id not in map_text_index): {n_no_mapsec}")
-    print(f"  mapsec hit but no area_id mapped: {n_no_area}")
+    print(f"  attributed: {n_attributed}")
+    print(f"    via map_area_direct (per-map + warp-resolved): {n_via_direct}")
+    print(f"    via legacy mapsec only:                        {n_via_legacy_mapsec}")
+    print(f"    via text-overlap fallback:                     {n_via_overlap}")
+    print(f"  unattributed: {n_no_match}")
     print(f"vocab: {len(vocab['entries'])} total")
     print(f"  with firstAreaEncountered: {sum(1 for v in vocab['entries'] if v.get('firstAreaEncountered'))}")
 
