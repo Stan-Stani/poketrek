@@ -49,6 +49,7 @@ fun ReviewScreen(
     val cards by module.repository.cards.collectAsState()
     val showRomanization by module.prefs.showRomanization.collectAsState()
     var revealed by remember(areaId) { mutableStateOf(false) }
+    val verbatim by module.prefs.verbatimSentences.collectAsState()
 
     // Pull the next due card. We re-derive on every recomposition; the cards
     // flow ensures recomposition happens after `grade()`.
@@ -87,7 +88,7 @@ fun ReviewScreen(
         CardFront(vocab, showRomanization, revealed)
         if (revealed) {
             CardBack(vocab)
-            module.repository.sentenceFor(vocab.id, preferAreaId = areaId)?.let { sentence ->
+            module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)?.let { sentence ->
                 SentenceCard(sentence, showRomanization)
             }
             RatingButtons(

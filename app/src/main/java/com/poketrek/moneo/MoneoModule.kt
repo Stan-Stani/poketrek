@@ -34,7 +34,19 @@ class MoneoModule private constructor(context: Context) {
         val store = MoneoCardStore.forContext(context)
         val areas = runCatching { AreaCatalog.loadFromAssets(context) }.getOrElse { emptyList() }
         val vocab = runCatching { SeedLoader.loadFromAssets(context) }.getOrElse { emptyList() }
-        repository = MoneoRepository(store, vocab, areas)
+        val sentencesRom = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-rom.json")
+        }.getOrElse { emptyList() }
+        val sentencesStudy = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-study.json")
+        }.getOrElse { emptyList() }
+        repository = MoneoRepository(
+            store = store,
+            initialVocab = vocab,
+            initialAreas = areas,
+            initialSentencesRom = sentencesRom,
+            initialSentencesStudy = sentencesStudy,
+        )
     }
 
     /** Wire up the optional runtime EWRAM capture once the runner exists. */

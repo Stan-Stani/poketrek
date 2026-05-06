@@ -1,0 +1,312 @@
+{
+  "version": 2,
+  "sourceTag": "study-v1",
+  "notes": "Hand-written TOPIK-1/2 study sentences. Each one was crafted after looking at how the target vocab actually appears in corpus.ko.json (the Phase-2 ROM rip) — the patterns and contexts are real-Korean-usage informed, but no game dialog or plot points are quoted. Use when 'Verbatim ROM examples' is OFF. `inspiredBy` notes which ROM record(s) informed the construction; absence means no corpus match (vocab is taught with a generic textbook pattern).",
+  "entries": [
+    {
+      "vocabId": "seed-v1:포켓몬",
+      "korean": "포켓몬을 좋아해요.",
+      "romanization": "pokemon-eul joahaeyo.",
+      "gloss": "I like Pokémon.",
+      "inspiredBy": "rom-rec1344"
+    },
+    {
+      "vocabId": "seed-v1:마을",
+      "korean": "이 마을은 조용해요.",
+      "romanization": "i ma-eul-eun joyonghaeyo.",
+      "gloss": "This town is quiet.",
+      "inspiredBy": "rom-rec4453"
+    },
+    {
+      "vocabId": "seed-v1:박사",
+      "korean": "박사님은 친절해요.",
+      "romanization": "baksanim-eun chinjeolhaeyo.",
+      "gloss": "The professor is kind."
+    },
+    {
+      "vocabId": "seed-v1:나",
+      "korean": "나는 학생이에요.",
+      "romanization": "na-neun haksaeng-i-eyo.",
+      "gloss": "I am a student.",
+      "inspiredBy": "rom-rec4412"
+    },
+    {
+      "vocabId": "seed-v1:이름",
+      "korean": "이름이 뭐예요?",
+      "romanization": "ireum-i mwoyeyo?",
+      "gloss": "What is your name?",
+      "inspiredBy": "rom-rec3532"
+    },
+    {
+      "vocabId": "seed-v1:안녕",
+      "korean": "안녕! 잘 지냈어?",
+      "romanization": "annyeong! jal jinaesseo?",
+      "gloss": "Hi! How have you been?"
+    },
+    {
+      "vocabId": "seed-v1:가다",
+      "korean": "학교에 가요.",
+      "romanization": "hakgyo-e gayo.",
+      "gloss": "I go to school."
+    },
+    {
+      "vocabId": "seed-v1:오다",
+      "korean": "친구가 와요.",
+      "romanization": "chinguga wayo.",
+      "gloss": "My friend is coming.",
+      "targetForm": "와"
+    },
+    {
+      "vocabId": "seed-v1:집",
+      "korean": "집에 갈 시간이에요.",
+      "romanization": "jib-e gal sigan-i-eyo.",
+      "gloss": "It's time to go home."
+    },
+    {
+      "vocabId": "seed-v1:길",
+      "korean": "이 길로 가세요.",
+      "romanization": "i gillo gaseyo.",
+      "gloss": "Please take this road."
+    },
+    {
+      "vocabId": "seed-v1:풀",
+      "korean": "풀이 길어요.",
+      "romanization": "pul-i gireoyo.",
+      "gloss": "The grass is long.",
+      "inspiredBy": "rom-rec4344"
+    },
+    {
+      "vocabId": "seed-v1:야생",
+      "korean": "야생 포켓몬을 봤어요.",
+      "romanization": "yasaeng pokemon-eul bwasseoyo.",
+      "gloss": "I saw a wild Pokémon.",
+      "inspiredBy": "rom-rec135"
+    },
+    {
+      "vocabId": "seed-v1:나타나다",
+      "korean": "포켓몬이 나타나요.",
+      "romanization": "pokemon-i natanayo.",
+      "gloss": "A Pokémon appears.",
+      "targetForm": "나타나",
+      "inspiredBy": "rom-rec4347"
+    },
+    {
+      "vocabId": "seed-v1:싸우다",
+      "korean": "싸우지 마세요.",
+      "romanization": "ssauji maseyo.",
+      "gloss": "Please don't fight.",
+      "targetForm": "싸우",
+      "inspiredBy": "rom-rec4361"
+    },
+    {
+      "vocabId": "seed-v1:잡다",
+      "korean": "포켓몬을 잡았어요.",
+      "romanization": "pokemon-eul jabasseoyo.",
+      "gloss": "I caught a Pokémon.",
+      "targetForm": "잡",
+      "inspiredBy": "rom-rec135"
+    },
+    {
+      "vocabId": "seed-v1:새",
+      "korean": "새가 하늘을 날아요.",
+      "romanization": "saega haneul-eul narayo.",
+      "gloss": "The bird flies in the sky.",
+      "inspiredBy": "rom-rec4474"
+    },
+    {
+      "vocabId": "seed-v1:쥐",
+      "korean": "쥐는 작아요.",
+      "romanization": "jwineun jagayo.",
+      "gloss": "Mice are small."
+    },
+    {
+      "vocabId": "seed-v1:도시",
+      "korean": "이 도시는 커요.",
+      "romanization": "i dosineun keoyo.",
+      "gloss": "This city is big.",
+      "inspiredBy": "rom-rec2613"
+    },
+    {
+      "vocabId": "seed-v1:사람",
+      "korean": "사람이 많아요.",
+      "romanization": "sarami manayo.",
+      "gloss": "There are many people.",
+      "inspiredBy": "rom-rec4432"
+    },
+    {
+      "vocabId": "seed-v1:가게",
+      "korean": "가게에서 빵을 사요.",
+      "romanization": "gage-eseo ppang-eul sayo.",
+      "gloss": "I buy bread at the shop."
+    },
+    {
+      "vocabId": "seed-v1:사다",
+      "korean": "물을 사고 싶어요.",
+      "romanization": "mul-eul sago sipeoyo.",
+      "gloss": "I want to buy water.",
+      "targetForm": "사"
+    },
+    {
+      "vocabId": "seed-v1:팔다",
+      "korean": "포켓볼을 팔아요.",
+      "romanization": "pokebol-eul parayo.",
+      "gloss": "They sell Poké Balls.",
+      "targetForm": "팔",
+      "inspiredBy": "rom-rec213"
+    },
+    {
+      "vocabId": "seed-v1:체육관",
+      "korean": "체육관은 어디예요?",
+      "romanization": "cheyukgwan-eun eodiyeyo?",
+      "gloss": "Where is the gym?"
+    },
+    {
+      "vocabId": "seed-v1:관장",
+      "korean": "관장님은 강해요.",
+      "romanization": "gwanjangnim-eun ganghaeyo.",
+      "gloss": "The gym leader is strong."
+    },
+    {
+      "vocabId": "seed-v1:북쪽",
+      "korean": "북쪽으로 가요.",
+      "romanization": "bukjjog-euro gayo.",
+      "gloss": "I go north."
+    },
+    {
+      "vocabId": "seed-v1:남쪽",
+      "korean": "집은 남쪽에 있어요.",
+      "romanization": "jib-eun namjjog-e isseoyo.",
+      "gloss": "Home is to the south."
+    },
+    {
+      "vocabId": "seed-v1:동쪽",
+      "korean": "동쪽에 산이 있어요.",
+      "romanization": "dongjjog-e san-i isseoyo.",
+      "gloss": "There's a mountain to the east."
+    },
+    {
+      "vocabId": "seed-v1:서쪽",
+      "korean": "서쪽 하늘이 빨개요.",
+      "romanization": "seojjok haneul-i ppalgaeyo.",
+      "gloss": "The western sky is red."
+    },
+    {
+      "vocabId": "seed-v1:지나가다",
+      "korean": "마을을 지나가요.",
+      "romanization": "ma-eul-eul jinagayo.",
+      "gloss": "I pass through the town.",
+      "targetForm": "지나가",
+      "inspiredBy": "rom-rec4412"
+    },
+    {
+      "vocabId": "seed-v1:입구",
+      "korean": "입구가 어디예요?",
+      "romanization": "ipgu-ga eodiyeyo?",
+      "gloss": "Where is the entrance?"
+    },
+    {
+      "vocabId": "seed-v1:출구",
+      "korean": "출구는 저쪽이에요.",
+      "romanization": "chulguneun jeojjogi-eyo.",
+      "gloss": "The exit is over there."
+    },
+    {
+      "vocabId": "seed-v1:숲",
+      "korean": "숲이 넓어요.",
+      "romanization": "sup-i neolbeoyo.",
+      "gloss": "The forest is wide.",
+      "inspiredBy": "rom-rec4341"
+    },
+    {
+      "vocabId": "seed-v1:나무",
+      "korean": "나무가 커요.",
+      "romanization": "namuga keoyo.",
+      "gloss": "The tree is big.",
+      "inspiredBy": "rom-rec4378"
+    },
+    {
+      "vocabId": "seed-v1:벌레",
+      "korean": "벌레가 무서워요.",
+      "romanization": "beolle-ga museowoyo.",
+      "gloss": "Bugs are scary.",
+      "inspiredBy": "rom-rec4349"
+    },
+    {
+      "vocabId": "seed-v1:어둡다",
+      "korean": "방이 어두워요.",
+      "romanization": "bang-i eoduwoyo.",
+      "gloss": "The room is dark.",
+      "targetForm": "어두",
+      "inspiredBy": "rom-rec4369"
+    },
+    {
+      "vocabId": "seed-v1:깊다",
+      "korean": "물이 깊어요.",
+      "romanization": "mul-i gipeoyo.",
+      "gloss": "The water is deep.",
+      "targetForm": "깊",
+      "inspiredBy": "rom-rec138"
+    },
+    {
+      "vocabId": "seed-v1:조심하다",
+      "korean": "조심하세요!",
+      "romanization": "josimhaseyo!",
+      "gloss": "Please be careful!",
+      "targetForm": "조심하",
+      "inspiredBy": "rom-rec4435"
+    },
+    {
+      "vocabId": "seed-v1:회색",
+      "korean": "회색 옷을 입었어요.",
+      "romanization": "hoesaek os-eul ibeosseoyo.",
+      "gloss": "I wore grey clothes."
+    },
+    {
+      "vocabId": "seed-v1:바위",
+      "korean": "바위가 커요.",
+      "romanization": "bawi-ga keoyo.",
+      "gloss": "The boulder is big."
+    },
+    {
+      "vocabId": "seed-v1:첫",
+      "korean": "오늘이 첫 날이에요.",
+      "romanization": "oneur-i cheot nar-i-eyo.",
+      "gloss": "Today is the first day."
+    },
+    {
+      "vocabId": "seed-v1:배지",
+      "korean": "배지를 받았어요!",
+      "romanization": "baeji-reul badasseoyo!",
+      "gloss": "I got a badge!",
+      "inspiredBy": "rom-rec3710"
+    },
+    {
+      "vocabId": "seed-v1:도전하다",
+      "korean": "관장님께 도전해요.",
+      "romanization": "gwanjangnimkke dojeonhaeyo.",
+      "gloss": "I challenge the gym leader.",
+      "targetForm": "도전"
+    },
+    {
+      "vocabId": "seed-v1:이기다",
+      "korean": "친구를 이겼어요.",
+      "romanization": "chingu-reul igyeosseoyo.",
+      "gloss": "I beat my friend.",
+      "targetForm": "이겼"
+    },
+    {
+      "vocabId": "seed-v1:지다",
+      "korean": "오늘은 졌어요.",
+      "romanization": "oneur-eun jyeosseoyo.",
+      "gloss": "Today I lost.",
+      "targetForm": "졌"
+    },
+    {
+      "vocabId": "seed-v1:박물관",
+      "korean": "박물관에 가고 싶어요.",
+      "romanization": "bakmulgwan-e gago sipeoyo.",
+      "gloss": "I want to go to the museum.",
+      "inspiredBy": "rom-rec3862"
+    }
+  ]
+}

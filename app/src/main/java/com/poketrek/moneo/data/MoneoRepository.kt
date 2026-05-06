@@ -23,7 +23,8 @@ class MoneoRepository(
     private val store: MoneoCardStore,
     initialVocab: List<VocabEntry>,
     initialAreas: List<Area>,
-    initialSentences: List<SentenceEntry> = emptyList(),
+    initialSentencesRom: List<SentenceEntry> = emptyList(),
+    initialSentencesStudy: List<SentenceEntry> = emptyList(),
     private val now: () -> Long = { System.currentTimeMillis() },
 ) {
 
@@ -39,17 +40,24 @@ class MoneoRepository(
     val cards: StateFlow<Map<String, CardRecord>> = _cards.asStateFlow()
 
     /** Sentences indexed by [SentenceEntry.vocabId]; multiple per vocab allowed. */
-    private val sentencesByVocab: Map<String, List<SentenceEntry>> =
-        initialSentences.groupBy { it.vocabId }
+    private val sentencesRomByVocab: Map<String, List<SentenceEntry>> = initialSentencesRom.groupBy { it.vocabId }
+    private val sentencesStudyByVocab: Map<String, List<SentenceEntry>> = initialSentencesStudy.groupBy { it.vocabId }
 
     /**
      * Returns up to one example sentence for the given vocab id.
      *
-     * When [preferAreaId] is supplied, picks the first sentence whose
-     * `areaId` matches; falls back to any sentence for the vocab.
+     * [verbatim] selects the source: true = ROM-rip text (may spoil dialog),
+     * false = hand-written study sentences. When [preferAreaId] is supplied,
+     * picks the first sentence whose areaId matches; falls back to any
+     * sentence for the vocab in that source.
      */
-    fun sentenceFor(vocabId: String, preferAreaId: String? = null): SentenceEntry? {
-        val all = sentencesByVocab[vocabId] ?: return null
+    fun sentenceFor(
+        vocabId: String,
+        preferAreaId: String? = null,
+        verbatim: Boolean = true,
+    ): SentenceEntry? {
+        val map = if (verbatim) sentencesRomByVocab else sentencesStudyByVocab
+        val all = map[vocabId] ?: return null
         if (preferAreaId != null) {
             all.firstOrNull { it.areaId == preferAreaId }?.let { return it }
         }

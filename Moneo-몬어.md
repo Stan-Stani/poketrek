@@ -93,19 +93,25 @@ We now have BOTH halves: the encoded text bytes from the ROM (2,436 distinct cod
 
 ## Phase 3 — Bundled Example Sentences ✅
 
-Original plan (LLM-generated TOPIK 1–2 sentences + no-spoiler Gradle task) was dropped in favor of a **ROM-corpus approach**: sentences are pulled verbatim from the Phase 2 extracted text (`assets/moneo/corpus.ko.json`, 98.1% glyph coverage, 1368 charmap entries). This keeps every example genuine to the fan-translated game and avoids fabricating Korean.
+Two parallel sentence sources, runtime-toggled by **Settings → "Verbatim ROM examples"** (default on). The toggle lets a player pick between authenticity and spoiler-avoidance without restarting the app.
 
-- **Output** — `assets/moneo/sentences-ko.json` with 30 sentences covering 25 of 45 seed-vocab entries (55.6%).
-- **Per-sentence fields** — `vocabId`, `korean` (verbatim ROM text with added word-spacing), `romanization` (RR), `gloss` (English), `targetForm` (when conjugation hides the stem, e.g. 나타나다 → `나타난` because the ㄴ from ㄴ다 attaches to 나), `areaId` (`pallet_town` / `route_1` / `viridian_city` / `viridian_forest` / `pewter_city` / `null`), `source` (`rom-rec<id>`), optional `speaker` (e.g. `오키드` for Oak's tutorial speeches).
-- **Area distribution** — pallet_town 5, route_1 8, viridian_city 5, viridian_forest 7, pewter_city 2, agnostic 3.
-- **Notable sources** — rec1344/1345 (Oak's win/loss speeches), rec3532/3536 (name-entry prompts), rec4341/4344/4347/4349/4361/4369/4378 (early-route Pokédex entries), rec135/138/213/203 (item descriptions), rec3862/3710 (Pewter Museum label, Trainer Card description).
+| File | Contents | Coverage | When to use |
+|------|----------|----------|-------------|
+| `assets/moneo/sentences-ko-rom.json` | 30 lines pulled verbatim from `corpus.ko.json` (the Phase-2 ROM rip, 98.1% glyph coverage). Each entry references its source `rom-rec<id>` and pins to an area. | 25/45 seed vocab (55.6%) — bounded by which seed words occur in decoded dialog/Pokédex/item text. | Authentic Korean LeafGreen text. May spoil dialog and Pokédex entries. |
+| `assets/moneo/sentences-ko-study.json` | 45 hand-written TOPIK-1/2 sentences. Each one was crafted *after* mining the same word's usage in the ROM corpus, so phrasing is real-Korean-usage informed but no game lines are quoted. `inspiredBy` field references the corpus record(s) consulted. | 45/45 seed vocab (100%). | Plain study sentences. No spoilers. |
 
-**Vocab without corpus matches (skipped, not fabricated):** 박사, 안녕, 집, 가게, 사다, 체육관, 관장, the four directional adverbs, 입구/출구, 회색, 바위, 첫, 도전하다, 이기다, 지다, 쥐. The Korean fan translation uses different words (니비 for Pewter, 뱃지 for 배지, 오키드 for 오박사) or didn't translate those segments, so no genuine ROM sentence exists.
+**Per-sentence schema** (both files): `vocabId`, `korean`, `romanization` (RR), `gloss`, optional `targetForm` (when conjugation hides the stem, e.g. 나타나다 → `나타난` because the ㄴ from ㄴ다 attaches to 나), optional `areaId` (`pallet_town` / `route_1` / `viridian_city` / `viridian_forest` / `pewter_city` / null), optional `source` (ROM file only — `rom-rec<id>`), optional `speaker` (ROM only — e.g. `오키드` for Oak's tutorial speeches), optional `inspiredBy` (study file only).
+
+**ROM file area distribution** — pallet_town 5, route_1 8, viridian_city 5, viridian_forest 7, pewter_city 2, agnostic 3. **Notable sources** — rec1344/1345 (Oak's win/loss speeches), rec3532/3536 (name-entry prompts), rec4341/4344/4347/4349/4361/4369/4378 (early-route Pokédex entries), rec135/138/213/203 (item descriptions), rec3862/3710 (Pewter Museum label, Trainer Card description).
+
+**ROM file: vocab without corpus matches (skipped, not fabricated):** 박사, 안녕, 집, 가게, 사다, 체육관, 관장, the four directional adverbs, 입구/출구, 회색, 바위, 첫, 도전하다, 이기다, 지다, 쥐. The Korean fan translation uses different words (니비 for Pewter, 뱃지 for 배지, 오키드 for 오박사) or didn't translate those segments, so no genuine ROM sentence exists. The study file fills these gaps with hand-written examples.
 
 **Implementation notes:**
-- `SentenceEntry` gained optional `areaId` / `source` / `speaker`; `SentenceLoader` reads them.
-- `MoneoRepository.sentenceFor(vocabId, preferAreaId)` prefers area-matched sentences; `ReviewScreen` passes its current `areaId`.
-- `SentenceCorpusTest` coverage threshold lowered from 0.80 → 0.50 with comment explaining that pure-corpus sourcing inherently caps match rate. The original Gradle validator was not shipped — substring + coverage checks live in `SentenceCorpusTest` (JUnit) instead.
+- `SentenceEntry` carries optional `areaId` / `source` / `speaker`.
+- `MoneoRepository.sentenceFor(vocabId, preferAreaId, verbatim)` selects from one of two internal maps (`sentencesRomByVocab` / `sentencesStudyByVocab`) and prefers area-matched lines.
+- `MoneoPrefs.verbatimSentences: StateFlow<Boolean>` (DataStore-backed, default true). `ReviewScreen` collects it and threads it through. `HudOverlay`'s Moneo settings section exposes the toggle.
+- `MoneoModule.init` loads both JSON files via separate `runCatching { ... }` blocks; either failing silently degrades to empty without crashing the other.
+- `SentenceCorpusTest` validates both files: substring/duplicates/blanks for each, ROM coverage ≥0.50, study coverage =1.00. The original "no-spoiler validator Gradle task" from the early plan never shipped — JUnit covers the same constraints.
 
 ---
 

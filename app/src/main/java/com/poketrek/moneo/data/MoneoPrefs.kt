@@ -20,6 +20,7 @@ private val Context.moneoStore by preferencesDataStore("moneo_prefs")
 private val KEY_ENABLED = booleanPreferencesKey("moneo_enabled")
 private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
 private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
+private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 
 /**
  * Moneo's user preferences. Intentionally separate from [MovementBudget]'s
@@ -38,12 +39,22 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _showRomanization = MutableStateFlow(true)
     val showRomanization: StateFlow<Boolean> = _showRomanization.asStateFlow()
 
+    /**
+     * Toggle for the example-sentence source on the review screen.
+     *  - `true`  → ROM verbatim (`sentences-ko-rom.json`); authentic but may spoil dialog/Pokédex.
+     *  - `false` → hand-written study sentences (`sentences-ko-study.json`); plain TOPIK-1 phrasing, no plot leaks.
+     * Defaults to `true` to match the Phase 3 ship behavior.
+     */
+    private val _verbatimSentences = MutableStateFlow(true)
+    val verbatimSentences: StateFlow<Boolean> = _verbatimSentences.asStateFlow()
+
     init {
         runBlocking {
             val prefs = context.moneoStore.data.first()
             _enabled.value = prefs[KEY_ENABLED] ?: false
             _targetAreaId.value = prefs[KEY_TARGET_AREA]
             _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
+            _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
         }
     }
 
@@ -65,6 +76,11 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setShowRomanization(value: Boolean) {
         _showRomanization.value = value
         scope.launch { context.moneoStore.edit { it[KEY_SHOW_ROMAJI] = value } }
+    }
+
+    fun setVerbatimSentences(value: Boolean) {
+        _verbatimSentences.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_VERBATIM_SENTENCES] = value } }
     }
 
     companion object {

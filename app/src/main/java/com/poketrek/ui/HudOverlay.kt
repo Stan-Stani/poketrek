@@ -879,6 +879,16 @@ private fun MoneoSection(
             checked = enabled,
             onCheckedChange = { moneo.prefs.setEnabled(it) },
         )
+        val verbatimSentences by moneo.prefs.verbatimSentences.collectAsState()
+        ToggleRow(
+            label = "Verbatim ROM examples",
+            sublabel = if (verbatimSentences)
+                "Reviews show real game lines (may spoil dialog/Pokédex)"
+            else
+                "Reviews show plain study sentences (no spoilers)",
+            checked = verbatimSentences,
+            onCheckedChange = { moneo.prefs.setVerbatimSentences(it) },
+        )
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
