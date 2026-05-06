@@ -119,19 +119,37 @@ def blit_subtile(rom_bytes16: bytes) -> bytes:
     return bytes(out)
 
 
-def glyph_rom_base(page: int, idx: int) -> int:
-    """Return the ROM bus address of the (page, idx) Korean glyph.
+# Font-base addresses (ROM file offsets, for bytes-only access).
+# Bus addresses (load 0x08000000) are in disasm_engine.md font ptr table.
+_PAGE_BASES = {
+    0: 0x1DEEE8,  # F0 — base font (numerals/ASCII/symbols + common Korean)
+    1: 0x780000,  # F1
+    2: 0x784000,  # F2
+    3: 0x788000,  # F3
+    4: 0x78C000,  # F4
+    5: 0x790000,  # F5
+    6: 0x794000,  # F6
+    7: 0x798000,  # F7 — extended (per disasm)
+}
 
-    Pages 1..6 correspond to F1..F6 token bytes; idx is 0..255. Each page
-    holds 256 16x16 glyphs at 0x780000 + (page-1)*0x4000.
+
+def glyph_rom_base(page: int, idx: int) -> int:
+    """Return the ROM file offset of the (page, idx) glyph.
+
+    Pages 0..7. Page 0 is the base font (non-Korean + common Korean).
+    Pages 1..6 are F1..F6 (Korean syllable pages). Page 7 is the extended page.
+
+    Each page holds 256 16x16 glyphs in stripe layout: 32 stripes of 8 glyphs,
+    each glyph spanning 32 ROM bytes (16+16 for top + 16+16 for bottom rows of
+    the 16x16 = 4 sub-tiles of 16 ROM bytes 2bpp each).
 
     Sub-tile offsets within the glyph: TL = +0, TR = +16, BL = +256, BR = +272.
     """
-    if not (1 <= page <= 6):
-        raise ValueError(f"page must be 1..6, got {page}")
+    if page not in _PAGE_BASES:
+        raise ValueError(f"unknown page {page} (supported: {sorted(_PAGE_BASES)})")
     if not (0 <= idx <= 255):
         raise ValueError(f"idx must be 0..255, got {idx}")
-    page_base = 0x780000 + (page - 1) * 0x4000
+    page_base = _PAGE_BASES[page]
     stripe = idx // 8
     col = idx % 8
     return page_base + stripe * 512 + col * 32

@@ -62,7 +62,7 @@ def main() -> None:
 
     GW, GH = 80, 80
     cols, rows = 16, 16
-    for page in range(1, 7):
+    for page in range(0, 8):  # 0..7 (page 0 = base font, 1-6 = F1-F6, 7 = extended)
         sheet = Image.new("RGB", (GW * cols, GH * rows), "white")
         draw = ImageDraw.Draw(sheet)
         for i in range(256):

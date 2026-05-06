@@ -3,7 +3,9 @@
 glyph map produced by build_glyph_map.py.
 
 Encoding (per disassembly of text engine at ROM 0x384800):
-  - byte <= 0xF0: single-byte char (ASCII/Latin/punctuation/digits/etc.)
+  - byte <= 0xF0: single-byte char rendered with default page=0 (F0 base font).
+    The byte itself is used as the idx into F0; F0 holds digits, ASCII letters,
+    German umlauts, and the most common Korean syllables.
   - byte 0xF1..0xF6 + idx: Korean syllable from font page (page=byte-0xF0, idx)
   - byte 0xF7..0xF9: reserved/extended codes (treated as control)
   - byte 0xFA: scroll
@@ -54,17 +56,21 @@ def decode_record(raw_bytes: list[int], glyph_map: dict[str, str]) -> str:
         if b in (0xF7, 0xF8, 0xF9) and i + 1 < n:
             # treat as 2-byte unknown control
             i += 2; continue
-        if b == 0xF0 and i + 1 < n:
-            # extended/control — skip 1 param byte
-            i += 2; continue
-        # Pre-0xF0 single-byte chars: many are likely roman/punctuation in this
-        # encoding. Until the ASCII page is mapped, emit a placeholder.
-        if 0x20 <= b <= 0x7E:
-            out.append(chr(b))
-        elif b == 0x00:
+        # NOTE: 0xF0 itself is rejected by the prebyte handler (`bls .return`
+        # at <=0xF0), so it falls through to the default page=0 path below.
+        # Bytes <= 0xF0 default to page=0 in the engine (per disasm). The byte
+        # itself is the idx into F0. F0 holds digits, ASCII letters, German
+        # umlauts, and the most common Korean syllables.
+        if b == 0x00:
             pass  # NUL/padding; ignore
         else:
-            out.append(f"\u00B7")  # · for unknown single-byte
+            ch = glyph_map.get(f"F0,{b}")
+            if ch is not None:
+                out.append(ch)
+            elif 0x20 <= b <= 0x7E:
+                out.append(chr(b))  # fallback for unmapped printable ASCII
+            else:
+                out.append("·")  # · unmapped non-printable
         i += 1
     return "".join(out)
 
