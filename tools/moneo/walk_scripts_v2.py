@@ -38,8 +38,19 @@ CORPUS_LIVE = THIS_DIR / "corpus.ko.live.json"
 OUT = THIS_DIR / "map_text_index.json"
 
 GBA_BASE = 0x08000000
-GROUP_OFFSETS = [0x316294, 0x316384, 0x31648C, 0x31649C, 0x3164B4, 0x3164D4,
-                 0x316294 + 146 * 4]
+# gMapGroups @ 0x316740: 41 group-table pointers. Each consecutive pair gives
+# the byte range of one group's map-header-pointer array. The last group
+# ends where gMapGroups itself begins.
+GMAP_GROUPS = 0x316740
+GROUP_OFFSETS = [
+    0x316294, 0x316384, 0x31648C, 0x31649C, 0x3164B4, 0x3164D4, 0x3164FC,
+    0x316514, 0x316534, 0x316584, 0x3165AC, 0x3165CC, 0x3165D4, 0x3165FC,
+    0x31660C, 0x316614, 0x31661C, 0x316624, 0x316628, 0x31662C, 0x316634,
+    0x31663C, 0x316648, 0x316650, 0x31665C, 0x316664, 0x316668, 0x31666C,
+    0x316670, 0x316674, 0x316690, 0x3166A4, 0x3166B8, 0x3166D8, 0x3166F8,
+    0x31670C, 0x316720, 0x316724, 0x316728, 0x31672C, 0x316734,
+    GMAP_GROUPS,  # sentinel: end of last group table
+]
 
 
 def u32(rom: bytes, off: int) -> int:

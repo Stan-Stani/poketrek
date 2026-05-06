@@ -227,6 +227,44 @@ def main():
                 n_item_recs += 1
         print(f"  item-obtain attributions: {n_item_recs}")
 
+    # Fifth pass: Pokedex entries per area (from gPokedexEntries +
+    # gWildMonHeaders table walk). Each species' first-encounter area
+    # gets its Pokedex description's lemmas tagged with that area.
+    # Implements the canonical "first encountered in <route>" semantics.
+    POKEDEX_INDEX_PATH = Path(__file__).resolve().parent / "pokedex_obtain_index.json"
+    if POKEDEX_INDEX_PATH.exists():
+        pokedex_idx = json.loads(POKEDEX_INDEX_PATH.read_text())
+        rec_id_to_record_pdx = {r["id"]: r for r in records}
+        for r in static_corpus["records"]:
+            rec_id_to_record_pdx.setdefault(r["id"], r)
+        n_pokedex_recs = 0
+        for area, rec_ids in pokedex_idx.get("area_to_pokedex_rec_ids", {}).items():
+            for rid in rec_ids:
+                rec = rec_id_to_record_pdx.get(rid)
+                if rec is None:
+                    continue
+                text = rec.get("text", "")
+                if not text:
+                    continue
+                try:
+                    tokens = mecab_lemmatize(text)
+                except Exception:
+                    continue
+                for lemma, pos, surface in tokens:
+                    if not (2 <= len(lemma) <= 5):
+                        continue
+                    if not all(is_hangul(c) for c in lemma):
+                        continue
+                    if is_phonetic_noise(lemma):
+                        continue
+                    if is_kana_shape_token(lemma):
+                        continue
+                    if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
+                        continue
+                    lemma_areas[lemma].add(area)
+                n_pokedex_recs += 1
+        print(f"  pokedex-entry attributions: {n_pokedex_recs}")
+
     # Make sure the special area ids exist in area_ordinals for rank().
     area_ordinals[TRAINER_DIALOG_AREA_ID] = 51
     if STATIC_ONLY_AREA_ID not in area_ordinals:

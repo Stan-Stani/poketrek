@@ -1,21 +1,120 @@
 {
- "version": 1,
+ "version": 2,
  "wildmon_table_offset": 3739140,
  "wildmon_stride": 20,
+ "group_translation": "pokefirered_group + -2",
  "method": "first-encounter-by-lowest-area-ordinal",
  "area_to_pokedex_rec_ids": {
-  "viridian_city": [
-   4388,
-   4389,
+  "pallet_town": [
    4400,
    4407,
    4426,
    4427,
    4444,
-   4446,
    4448,
    4457,
    4458
+  ],
+  "mt_moon": [
+   4401,
+   4613,
+   4619
+  ],
+  "pewter_city": [
+   4349,
+   4350,
+   4380,
+   4381,
+   4397,
+   4398,
+   4402,
+   4403,
+   4408,
+   4423,
+   4432,
+   4433,
+   4629,
+   4659
+  ],
+  "kindle_road": [
+   4405,
+   4406
+  ],
+  "route_21": [
+   4442
+  ],
+  "viridian_city": [
+   4388,
+   4389,
+   4446
+  ],
+  "route_1": [
+   4344,
+   4347
+  ],
+  "route_13": [
+   4345,
+   4460
+  ],
+  "route_12": [
+   4376
+  ],
+  "treasure_beach": [
+   4589
+  ],
+  "resort_gorgeous": [
+   4551
+  ],
+  "five_isle_meadow": [
+   4499
+  ],
+  "ruin_valley": [
+   4531,
+   4543,
+   4563,
+   4581
+  ],
+  "route_2": [
+   4338,
+   4341
+  ],
+  "route_3": [
+   4357,
+   4360,
+   4367,
+   4384
+  ],
+  "route_4": [
+   4355
+  ],
+  "route_7": [
+   4365
+  ],
+  "route_10": [
+   4428
+  ],
+  "route_11": [
+   4424
+  ],
+  "route_16": [
+   4348,
+   4412
+  ],
+  "route_23": [
+   4356,
+   4385
+  ],
+  "route_24": [
+   4339,
+   4342,
+   4391
+  ],
+  "celadon_city": [
+   4416,
+   4437
+  ],
+  "fuchsia_city": [
+   4447
   ]
  }
 }
