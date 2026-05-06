@@ -4,9 +4,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -83,12 +85,11 @@ fun ReviewScreen(
     }
 
     val (record, vocab) = nextPair
-    Column(
-        modifier = modifier
-            .verticalScroll(rememberScrollState())
-            .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
-    ) {
+    val sentence = if (revealed) {
+        module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)
+    } else null
+
+    val header: @Composable () -> Unit = {
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
@@ -109,30 +110,97 @@ fun ReviewScreen(
                 )
             }
         }
+    }
+
+    val front: @Composable () -> Unit = {
         CardFront(
             vocab = vocab,
             showRomanization = showRomanization,
             revealed = revealed,
             onTapToReveal = { if (!revealed) revealed = true },
         )
-        if (revealed) {
-            CardBack(vocab)
-            module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)?.let { sentence ->
-                SentenceCard(sentence, showRomanization)
-            }
-            RatingButtons(
-                onGrade = { rating ->
-                    module.repository.grade(vocab.id, rating)
-                    revealed = false
-                },
-            )
-        } else {
-            Button(
-                onClick = { revealed = true },
-                modifier = Modifier.fillMaxWidth(),
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2563EB)),
+    }
+
+    val ratings: @Composable () -> Unit = {
+        RatingButtons(
+            onGrade = { rating ->
+                module.repository.grade(vocab.id, rating)
+                revealed = false
+            },
+        )
+    }
+    val revealButton: @Composable () -> Unit = {
+        Button(
+            onClick = { revealed = true },
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2563EB)),
+        ) {
+            Text("Reveal meaning", color = Color.White, fontSize = 14.sp)
+        }
+    }
+
+    BoxWithConstraints(modifier = modifier) {
+        // Two-column layout when wider than tall (landscape phones, tablets).
+        // Keeps the prompt visible on the left while the answer is on the
+        // right; rating buttons are pinned to the bottom of the right column
+        // so they stay reachable even when the example sentence is long.
+        val twoColumn = maxWidth > maxHeight
+        if (twoColumn) {
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
             ) {
-                Text("Reveal meaning", color = Color.White, fontSize = 14.sp)
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxHeight()
+                        .verticalScroll(rememberScrollState()),
+                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                ) {
+                    header()
+                    front()
+                }
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxHeight(),
+                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                ) {
+                    if (revealed) {
+                        Column(
+                            modifier = Modifier
+                                .weight(1f)
+                                .verticalScroll(rememberScrollState()),
+                            verticalArrangement = Arrangement.spacedBy(12.dp),
+                        ) {
+                            CardBack(vocab)
+                            sentence?.let { SentenceCard(it, showRomanization) }
+                        }
+                        ratings()
+                    } else {
+                        revealButton()
+                    }
+                }
+            }
+        } else {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                header()
+                front()
+                if (revealed) {
+                    CardBack(vocab)
+                    sentence?.let { SentenceCard(it, showRomanization) }
+                    ratings()
+                } else {
+                    revealButton()
+                }
             }
         }
     }

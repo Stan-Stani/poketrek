@@ -1,9 +1,11 @@
 package com.poketrek
 
+import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.OrientationEventListener
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
@@ -18,7 +20,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -43,6 +47,15 @@ class EmulatorActivity : ComponentActivity() {
     private lateinit var saveStateStore: SaveStateStore
     private lateinit var moneo: MoneoModule
     private lateinit var moneoGate: MoneoSoftGate
+
+    // Orientation lock + manual flip. The activity is locked (no sensor
+    // follow) but we listen to OrientationEventListener purely to detect when
+    // the user is *trying* to rotate between landscape and portrait, and
+    // surface a one-tap "switch" prompt in that case. Portrait is mainly
+    // useful for the Moneo card-review overlay.
+    private var portraitLocked = false
+    private val showFlipPrompt: MutableState<Boolean> = mutableStateOf(false)
+    private var orientListener: OrientationEventListener? = null
 
     private val requestActivityRecognition = registerForActivityResult(
         ActivityResultContracts.RequestPermission(),
@@ -91,6 +104,12 @@ class EmulatorActivity : ComponentActivity() {
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
+        // Manual orientation: locked to landscape (manifest), no sensor follow.
+        // A floating "flip" prompt only appears when OrientationEventListener
+        // sees the phone being held in the opposite landscape — see init below.
+        applyPersistedOrientation()
+        installOrientationFlipDetector()
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
             && checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS)
             != android.content.pm.PackageManager.PERMISSION_GRANTED) {
@@ -122,6 +141,9 @@ class EmulatorActivity : ComponentActivity() {
                         onLoadSlot = { slot ->
                             saveStateStore.load(slot)?.let { runner.loadState(it) } ?: false
                         },
+                        showFlipPrompt = showFlipPrompt.value,
+                        flipTargetIsPortrait = !portraitLocked,
+                        onFlipOrientation = ::flipOrientation,
                     )
                 }
             }
@@ -134,16 +156,61 @@ class EmulatorActivity : ComponentActivity() {
     override fun onStart() {
         super.onStart()
         runner.resume()
+        orientListener?.enable()
     }
 
     override fun onStop() {
         runner.pause()
+        orientListener?.disable()
+        showFlipPrompt.value = false
         super.onStop()
     }
 
     override fun onDestroy() {
         runner.stop()
         super.onDestroy()
+    }
+
+    private fun uiPrefs() = getSharedPreferences("ui", MODE_PRIVATE)
+
+    private fun applyPersistedOrientation() {
+        portraitLocked = uiPrefs().getBoolean("orient_portrait", false)
+        requestedOrientation = if (portraitLocked) {
+            ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        } else {
+            ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+        }
+    }
+
+    private fun installOrientationFlipDetector() {
+        // OrientationEventListener emits 0..359 with 0° = device's natural
+        // orientation (portrait on phones), ~90°/270° = landscape. Show the
+        // prompt only when the device is being held perpendicular to the
+        // current lock — i.e. landscape is locked but device is portrait, or
+        // vice versa.
+        orientListener = object : OrientationEventListener(this) {
+            override fun onOrientationChanged(degrees: Int) {
+                if (degrees == ORIENTATION_UNKNOWN) return
+                val portraitHeld = degrees <= 30 || degrees >= 330 ||
+                    (degrees in 150..210)
+                val landscapeHeld = (degrees in 60..120) || (degrees in 240..300)
+                val perpendicular = if (portraitLocked) landscapeHeld else portraitHeld
+                if (showFlipPrompt.value != perpendicular) {
+                    showFlipPrompt.value = perpendicular
+                }
+            }
+        }.also { if (it.canDetectOrientation()) it.enable() else it.disable() }
+    }
+
+    private fun flipOrientation() {
+        portraitLocked = !portraitLocked
+        uiPrefs().edit().putBoolean("orient_portrait", portraitLocked).apply()
+        requestedOrientation = if (portraitLocked) {
+            ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        } else {
+            ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+        }
+        showFlipPrompt.value = false
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
@@ -166,31 +233,46 @@ private fun AppRoot(
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
     onLoadSlot: (Int) -> Boolean,
+    showFlipPrompt: Boolean,
+    flipTargetIsPortrait: Boolean,
+    onFlipOrientation: () -> Unit,
 ) {
     val romLoaded by runner.romLoaded
-    if (!romLoaded) {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Column(
-                verticalArrangement = Arrangement.spacedBy(16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally,
+    Box(modifier = Modifier.fillMaxSize()) {
+        if (!romLoaded) {
+            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                ) {
+                    Text("PokéTrek", style = MaterialTheme.typography.headlineMedium)
+                    Text("Pick a LeafGreen ROM (.gba) to begin")
+                    Button(onClick = onPickRom) { Text("Choose ROM") }
+                }
+            }
+        } else {
+            com.poketrek.ui.EmulatorScreen(
+                runner = runner,
+                budget = budget,
+                moneo = moneo,
+                moneoGate = moneoGate,
+                onDebugAddSteps = onDebugAddSteps,
+                onPickRom = onPickRom,
+                getSaveSlots = getSaveSlots,
+                onSaveSlot = onSaveSlot,
+                onLoadSlot = onLoadSlot,
+                modifier = Modifier.fillMaxSize().padding(8.dp),
+            )
+        }
+        if (showFlipPrompt) {
+            Button(
+                onClick = onFlipOrientation,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 12.dp),
             ) {
-                Text("PokéTrek", style = MaterialTheme.typography.headlineMedium)
-                Text("Pick a LeafGreen ROM (.gba) to begin")
-                Button(onClick = onPickRom) { Text("Choose ROM") }
+                Text(if (flipTargetIsPortrait) "Switch to portrait" else "Switch to landscape")
             }
         }
-    } else {
-        com.poketrek.ui.EmulatorScreen(
-            runner = runner,
-            budget = budget,
-            moneo = moneo,
-            moneoGate = moneoGate,
-            onDebugAddSteps = onDebugAddSteps,
-            onPickRom = onPickRom,
-            getSaveSlots = getSaveSlots,
-            onSaveSlot = onSaveSlot,
-            onLoadSlot = onLoadSlot,
-            modifier = Modifier.fillMaxSize().padding(8.dp),
-        )
     }
 }
