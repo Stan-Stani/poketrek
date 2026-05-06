@@ -92,8 +92,18 @@ def render_terminal(rom: bytes, p: int, i: int) -> str:
     return "\n".join(rows)
 
 
-def is_hangul(c: str) -> bool:
-    return len(c) == 1 and "가" <= c <= "힣"
+def is_korean(c: str) -> bool:
+    """Accept Hangul syllables, Jamo, and Compatibility Jamo blocks."""
+    if len(c) != 1:
+        return False
+    cp = ord(c)
+    return (
+        0xAC00 <= cp <= 0xD7A3   # Hangul Syllables (가..힣)
+        or 0x1100 <= cp <= 0x11FF  # Hangul Jamo
+        or 0x3130 <= cp <= 0x318F  # Hangul Compatibility Jamo (ㄱ..ㅎ etc.)
+        or 0xA960 <= cp <= 0xA97F  # Hangul Jamo Extended-A
+        or 0xD7B0 <= cp <= 0xD7FF  # Hangul Jamo Extended-B
+    )
 
 
 def main():
@@ -170,8 +180,9 @@ def main():
             skipped += 1
             n += 1
             continue
-        if not all(is_hangul(c) for c in ans):
-            print(f"   '{ans}' is not pure Hangul. Try again or skip with empty Enter.")
+        if not all(is_korean(c) for c in ans):
+            print(f"   '{ans}' contains non-Korean chars. Press Enter on empty to skip,")
+            print(f"   or retype. Accepted: Hangul syllables (가-힣) + Jamo (ㄱ-ㅎ etc.)")
             continue
         history.append((n, key, labels.get(key)))
         labels[key] = ans
