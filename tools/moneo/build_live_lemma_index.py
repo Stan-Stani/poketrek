@@ -187,43 +187,6 @@ def main():
                     continue
                 lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
 
-    # Fourth pass: spatial-fallback attributions from spatial_attribute.py.
-    # For records whose only "attribution" is "nearest attributed neighbor in
-    # ROM offset space", we still tokenize them and add the spatially-resolved
-    # area to each lemma's area set. Lemmas already in canonical-area sets via
-    # passes 1-3 keep their canonical first_area (lower ordinal wins).
-    SPATIAL_PATH = Path(__file__).resolve().parent / "spatial_rec_areas.json"
-    if SPATIAL_PATH.exists():
-        spatial = json.loads(SPATIAL_PATH.read_text())
-        rec_id_to_record = {r["id"]: r for r in records}
-        n_spatial = 0
-        for rid_str, area in spatial.get("rec_to_area", {}).items():
-            rid = int(rid_str)
-            rec = rec_id_to_record.get(rid)
-            if rec is None:
-                continue
-            text = rec.get("text", "")
-            if not text:
-                continue
-            try:
-                tokens = mecab_lemmatize(text)
-            except Exception:
-                continue
-            for lemma, pos, surface in tokens:
-                if not (2 <= len(lemma) <= 5):
-                    continue
-                if not all(is_hangul(c) for c in lemma):
-                    continue
-                if is_phonetic_noise(lemma):
-                    continue
-                if is_kana_shape_token(lemma):
-                    continue
-                if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
-                    continue
-                lemma_areas[lemma].add(area)
-            n_spatial += 1
-        print(f"  spatially-attributed records tokenized: {n_spatial}")
-
     # Make sure the special area ids exist in area_ordinals for rank().
     area_ordinals[TRAINER_DIALOG_AREA_ID] = 51
     if STATIC_ONLY_AREA_ID not in area_ordinals:
