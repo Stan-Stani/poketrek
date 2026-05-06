@@ -33,19 +33,30 @@ class MoneoModule private constructor(context: Context) {
     init {
         val store = MoneoCardStore.forContext(context)
         val areas = runCatching { AreaCatalog.loadFromAssets(context) }.getOrElse { emptyList() }
-        val vocab = runCatching { SeedLoader.loadFromAssets(context) }.getOrElse { emptyList() }
+        val vocabSeed = runCatching { SeedLoader.loadFromAssets(context) }.getOrElse { emptyList() }
+        // Auto-mined vocab from corpus.ko.json. Optional — if the file is
+        // absent or fails to parse, fall back to seed-only.
+        val vocabMined = runCatching {
+            SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-mined.json")
+        }.getOrElse { emptyList() }
+        val vocab = vocabSeed + vocabMined
         val sentencesRom = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-rom.json")
         }.getOrElse { emptyList() }
         val sentencesStudy = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-study.json")
         }.getOrElse { emptyList() }
+        // Mined sentences are used regardless of the verbatim toggle (they're
+        // the only source for mined vocab, and they're always ROM-sourced).
+        val sentencesMined = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-mined.json")
+        }.getOrElse { emptyList() }
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
             initialAreas = areas,
-            initialSentencesRom = sentencesRom,
-            initialSentencesStudy = sentencesStudy,
+            initialSentencesRom = sentencesRom + sentencesMined,
+            initialSentencesStudy = sentencesStudy + sentencesMined,
         )
     }
 
