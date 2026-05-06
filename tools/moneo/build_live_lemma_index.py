@@ -1,4 +1,5 @@
 import json
+import struct
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -131,7 +132,63 @@ def main():
             if not lemma_rec_ids[lemma] and len(lemma_rec_ids[lemma]) < 5:
                 lemma_rec_ids[lemma].append(rec["id"])
 
-    # Make sure rom_mined is in area_ordinals so the rank() lookup works.
+    # Third pass: trainer-dialog ROM table region.
+    # Scans the GBA ROM for pointers into trainer/sign-dialog text,
+    # tokenises those records and tags their lemmas with a dedicated area.
+    TRAINER_TABLE_REGIONS = [(0x163000, 0x166000)]
+    TRAINER_DIALOG_AREA_ID = "trainer_dialog"
+
+    # Build offset -> record mapping from both live and static corpora
+    offset_to_record: dict[int, dict] = {}
+    for rec in records:
+        if rec.get("offset") is not None:
+            offset_to_record[rec["offset"]] = rec
+    for rec in static_corpus["records"]:
+        if rec.get("offset") is not None:
+            offset_to_record[rec["offset"]] = rec
+
+    root = Path(__file__).resolve().parents[2]
+    rom_path = root / "Pocket Monsters - LeafGreen (Korean).gba"
+    with open(rom_path, "rb") as rom_file:
+        rom_bytes = rom_file.read()
+
+    trainer_records_tokenized = 0
+    for region_start, region_end in TRAINER_TABLE_REGIONS:
+        seen_targets = set()
+        for off in range(region_start, region_end - 3):
+            v = struct.unpack_from('<I', rom_bytes, off)[0]
+            if (v & 0xFE000000) != 0x08000000:
+                continue
+            target = v - 0x08000000
+            if target in seen_targets:
+                continue
+            seen_targets.add(target)
+            rec = offset_to_record.get(target)
+            if rec is None:
+                continue
+            text = rec.get("text", "")
+            if not text:
+                continue
+            trainer_records_tokenized += 1
+            try:
+                tokens = mecab_lemmatize(text)
+            except Exception:
+                continue
+            for lemma, pos, surface in tokens:
+                if not (2 <= len(lemma) <= 5):
+                    continue
+                if not all(is_hangul(c) for c in lemma):
+                    continue
+                if is_phonetic_noise(lemma):
+                    continue
+                if is_kana_shape_token(lemma):
+                    continue
+                if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
+                    continue
+                lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
+
+    # Make sure the special area ids exist in area_ordinals for rank().
+    area_ordinals[TRAINER_DIALOG_AREA_ID] = 51
     if STATIC_ONLY_AREA_ID not in area_ordinals:
         # Pull from areas.json (where rom_mined ordinal is 99).
         for a in load_json(AREAS_PATH)["areas"]:
@@ -177,6 +234,7 @@ def main():
     # Summary
     print(f"live records tokenized: {records_tokenized}")
     print(f"static records tokenized: {static_records_tokenized}")
+    print(f"trainer-table records tokenized: {trainer_records_tokenized}")
     print(f"distinct lemmas indexed: {lemmas_indexed}")
     top10 = sorted(lemma_areas.items(), key=lambda kv: len(kv[1]), reverse=True)[:10]
     for i, (lemma, areas) in enumerate(top10, 1):
