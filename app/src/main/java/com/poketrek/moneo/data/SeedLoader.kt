@@ -43,7 +43,12 @@ object SeedLoader {
                 romanization = o.getString("romanization"),
                 gloss = o.getString("gloss"),
                 partOfSpeech = o.getString("partOfSpeech"),
-                areaId = o.getString("areaId"),
+                // Prefer firstAreaEncountered (set by the attribution
+                // pipeline) so per-area review queues include species/mined/
+                // topik cards whose generic areaId bucket is "rom_mined" /
+                // "topik_1" while their actual in-game area is more specific.
+                areaId = o.optString("firstAreaEncountered").takeIf { it.isNotEmpty() }
+                    ?: o.getString("areaId"),
                 sourceTag = sourceTag,
                 notes = o.optString("notes").takeIf { it.isNotEmpty() },
             )
