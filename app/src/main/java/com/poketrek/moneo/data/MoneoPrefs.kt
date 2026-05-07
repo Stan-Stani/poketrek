@@ -3,6 +3,7 @@ package com.poketrek.moneo.data
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.CoroutineScope
@@ -23,6 +24,12 @@ private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
+private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabled")
+private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
+
+const val DEFAULT_AREA_GATE_THRESHOLD_PCT = 80
+const val MIN_AREA_GATE_THRESHOLD_PCT = 0
+const val MAX_AREA_GATE_THRESHOLD_PCT = 100
 
 /**
  * Moneo's user preferences. Intentionally separate from [MovementBudget]'s
@@ -61,6 +68,18 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _includeEtymology = MutableStateFlow(false)
     val includeEtymology: StateFlow<Boolean> = _includeEtymology.asStateFlow()
 
+    /**
+     * Hard area gate: when on, MovementGate refuses to enter a downstream area
+     * until the upstream area's review maturity meets [areaGateThresholdPct].
+     * Default off — the player should opt in once they've built up some review
+     * history, otherwise the very first map transition would be blocked.
+     */
+    private val _areaGateEnabled = MutableStateFlow(false)
+    val areaGateEnabled: StateFlow<Boolean> = _areaGateEnabled.asStateFlow()
+
+    private val _areaGateThresholdPct = MutableStateFlow(DEFAULT_AREA_GATE_THRESHOLD_PCT)
+    val areaGateThresholdPct: StateFlow<Int> = _areaGateThresholdPct.asStateFlow()
+
     init {
         runBlocking {
             val prefs = context.moneoStore.data.first()
@@ -70,6 +89,10 @@ class MoneoPrefs private constructor(private val context: Context) {
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
             _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
+            _areaGateEnabled.value = prefs[KEY_AREA_GATE_ENABLED] ?: false
+            _areaGateThresholdPct.value =
+                (prefs[KEY_AREA_GATE_THRESHOLD_PCT] ?: DEFAULT_AREA_GATE_THRESHOLD_PCT)
+                    .coerceIn(MIN_AREA_GATE_THRESHOLD_PCT, MAX_AREA_GATE_THRESHOLD_PCT)
         }
     }
 
@@ -106,6 +129,19 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setIncludeEtymology(value: Boolean) {
         _includeEtymology.value = value
         scope.launch { context.moneoStore.edit { it[KEY_INCLUDE_ETYMOLOGY] = value } }
+    }
+
+    fun setAreaGateEnabled(value: Boolean) {
+        if (value == _areaGateEnabled.value) return
+        _areaGateEnabled.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_AREA_GATE_ENABLED] = value } }
+    }
+
+    fun setAreaGateThresholdPct(value: Int) {
+        val v = value.coerceIn(MIN_AREA_GATE_THRESHOLD_PCT, MAX_AREA_GATE_THRESHOLD_PCT)
+        if (v == _areaGateThresholdPct.value) return
+        _areaGateThresholdPct.value = v
+        scope.launch { context.moneoStore.edit { it[KEY_AREA_GATE_THRESHOLD_PCT] = v } }
     }
 
     companion object {
