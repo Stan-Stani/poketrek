@@ -43,7 +43,15 @@ def main():
     import xdelta3
     patch = PATCH.read_bytes()
     print(f"applying {PATCH.name} ({len(patch):,} bytes) to base ({len(base):,} bytes)...")
-    patched = xdelta3.decode(original=base, delta=patch)
+    # ADLER32_NOVER skips source-checksum verification so the patch will
+    # also apply to non-canonical dumps like [f1]-fixed ROMs (typical small
+    # save-type or header repairs that don't fall in patched regions).
+    try:
+        patched = xdelta3.decode(original=base, delta=patch)
+    except xdelta3.XDeltaError:
+        print("  initial apply failed, retrying with ADLER32_NOVER (skip source check)...")
+        patched = xdelta3.decode(original=base, delta=patch,
+                                 flags=xdelta3.Flags.ADLER32_NOVER)
     out_path.write_bytes(patched)
     print(f"wrote {out_path} ({len(patched):,} bytes)")
 

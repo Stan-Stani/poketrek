@@ -56,8 +56,13 @@ Patch authors: 명군 (lead), tony, koi, 돌아온달토끼.
    # writes -> tools/moneo/rom_swap/leafgreen_J-K_2024.gba
    ```
 
-   If the MD5 doesn't match, the script warns but still tries; xdelta3 will
-   fail with `XD3_INVALID_INPUT` if the base is too different.
+   If the MD5 doesn't match, the script warns and retries with the
+   `ADLER32_NOVER` flag, which skips xdelta's source-checksum
+   verification. This lets the patch apply to "[f1]"-fixed dumps and
+   other ROMs whose small repairs (save-type byte, header checksum,
+   etc.) don't fall in regions the patch references. If the patch
+   still fails after the retry, the ROM is too different and you need
+   a closer match.
 
 3. **Diagnose which offsets need re-derivation:**
 
