@@ -19,21 +19,24 @@
     },
     {
       "vocabId": "rom-mine-v2:타다",
-      "korean": "오있에타",
+      "korean": "부디부디-!\n제도다거부데 디O비-도톤데Y조H!\n\n조랐도론 데도디구조H!\n\n바사제차。。。\n\n제블 바코부타다달\n\n제블디고디O바사디루 도온디다!에아\n츄",
       "romanization": "oisseta",
       "gloss": "(ROM example, rec2885)",
       "targetForm": "타",
       "areaId": "rom_mined",
-      "source": "rom-rec2885"
+      "source": "rom-rec42836",
+      "originalKorean": "오있에타",
+      "originalSource": "rom-rec2885",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "rom-mine-v2:있다",
-      "korean": "야생 포켓몬이\n나타나을때가 찬스!\n\n몬스터볼을\n휙! 던지면\n\n포켓몬을 잡을수있다!\n\n단…잘 잡힐지\n어떨지는 모른다!\n\n건강한포켓몬은 도망치기쉽고\n\n운도 있으니까!",
+      "korean": "부에비소디그 디칙두C 비있다N\n도랐조·데O 디타데거 도류 도쿠두거데두조·조H!\n\n데래제르데거두은조! 도1부린 디센디요조! 바X제그다베제킹\n제쥬디호부도 데테 도탓데두조·조H\n\n디M데거 다베데M제아제디데두조·제??",
       "romanization": "jabeulsuissneun",
       "gloss": "(ROM example, rec132)",
       "targetForm": "있",
       "areaId": "rom_mined",
-      "source": "rom-rec29840",
+      "source": "rom-rec44890",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -96,12 +99,15 @@
     },
     {
       "vocabId": "rom-mine-v2:메다",
-      "korean": "통엔솟온로다미메요츠",
+      "korean": "두블다。다베도밧 도톤 조H디구디루\n제쿤다비두시 두디디구바사다8제멕 두메다I!\n\n5디프도섹 도톤제르디완\n부완부그다달도즈 두0부히도섹 디E도섹 데테 도탓바사!\n\n도켄 제킹데잔!\n조팡 부도 데테 도탓도섹제??",
       "romanization": "tongensosonrodamimeyocheu",
       "gloss": "(ROM example, rec8938)",
       "targetForm": "메",
       "areaId": "rom_mined",
-      "source": "rom-rec8938"
+      "source": "rom-rec42411",
+      "originalKorean": "통엔솟온로다미메요츠",
+      "originalSource": "rom-rec8938",
+      "rotatedFromArea": "route_4"
     },
     {
       "vocabId": "rom-mine-v2:회복",
@@ -862,12 +868,15 @@
     },
     {
       "vocabId": "rom-mine-v2:보다",
-      "korean": "몬스터볼같아서만졌다가",
+      "korean": "데의- 。。。제블제자 데의조·데·!\n\n부에비소디그도밧 조H디시제르 데M다온조폰!\n\n부에비소디그도톤\n디바도섹 다베도섹바사조!\n\n두블다。도론 데보다닌데거 조M다준제유다비",
       "romanization": "monseuteobolgataseomanjyeossdaga",
       "gloss": "(ROM example, rec4428)",
       "targetForm": "볼",
       "areaId": "rom_mined",
-      "source": "rom-rec4428"
+      "source": "rom-rec41657",
+      "originalKorean": "몬스터볼같아서만졌다가",
+      "originalSource": "rom-rec4428",
+      "rotatedFromArea": "cerulean_city"
     },
     {
       "vocabId": "rom-mine-v2:세다",
@@ -4571,12 +4580,15 @@
     },
     {
       "vocabId": "rom-mine-v2:베다",
-      "korean": "히츠요우베요",
+      "korean": "데래제르조!\n부에비소디그 디칙두C 비있다N\n\n도랐조·데O 디타도몬조·조H\n\n디칙두C데M조릿비딘제아\n데잔제베다마데M 도탓바사 데2데두조·조H\n\n조H도냐데거 도나도온데푸데바도쿠",
       "romanization": "hicheuyoubeyo",
       "gloss": "(ROM example, rec5296)",
       "targetForm": "베",
       "areaId": "rom_mined",
-      "source": "rom-rec5296"
+      "source": "rom-rec44867",
+      "originalKorean": "히츠요우베요",
+      "originalSource": "rom-rec5296",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "rom-mine-v2:빈사",

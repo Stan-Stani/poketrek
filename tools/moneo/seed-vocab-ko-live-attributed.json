@@ -1,1039 +1,3928 @@
 {
-  "version": 1,
-  "sourceTag": "rom-mine-v2+mapattr",
-  "notes": "Auto-mined from corpus.ko.live.json at frequency threshold 3. Lemmatization is heuristic — irregular conjugations and polysemous fragments may misclassify. Glosses are placeholders. | Each entry tagged with areasReferenced (all areas its sentences appear in) and firstAreaEncountered (lowest-ordinal area).",
-  "entries": [
-    {
-      "korean": "있다",
-      "romanization": "issda",
-      "gloss": "(unglossed; freq 80)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 80,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "하다",
-      "romanization": "hada",
-      "gloss": "(unglossed; freq 30)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 30,
-      "areasReferenced": [
-        "pewter_city",
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city",
-      "filledViaSubstring": {
-        "rec_id": 30057,
-        "score": 40
-      }
-    },
-    {
-      "korean": "보다",
-      "romanization": "boda",
-      "gloss": "(unglossed; freq 17)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 17,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "미산",
-      "romanization": "misan",
-      "gloss": "(unglossed; freq 16)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 16,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "데리다",
-      "romanization": "derida",
-      "gloss": "(unglossed; freq 15)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 15,
-      "areasReferenced": [
-        "route_2"
-      ],
-      "firstAreaEncountered": "route_2"
-    },
-    {
-      "korean": "피다",
-      "romanization": "pida",
-      "gloss": "(unglossed; freq 15)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 15,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "어서",
-      "romanization": "eoseo",
-      "gloss": "(unglossed; freq 13)",
-      "partOfSpeech": "adverb",
-      "areaId": "rom_mined",
-      "frequency": 13,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    },
-    {
-      "korean": "자전거",
-      "romanization": "jajeongeo",
-      "gloss": "(unglossed; freq 13)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 13,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    },
-    {
-      "korean": "되다",
-      "romanization": "doeda",
-      "gloss": "(unglossed; freq 12)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 12,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "떨어지다",
-      "romanization": "tteoleojida",
-      "gloss": "(unglossed; freq 12)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 12,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "메다",
-      "romanization": "meda",
-      "gloss": "(unglossed; freq 12)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 12,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "완이",
-      "romanization": "wani",
-      "gloss": "(unglossed; freq 12)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 12,
-      "areasReferenced": [
-        "route_2"
-      ],
-      "firstAreaEncountered": "route_2"
-    },
-    {
-      "korean": "좋다",
-      "romanization": "johda",
-      "gloss": "(unglossed; freq 10)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 10,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "눕다",
-      "romanization": "nubda",
-      "gloss": "(unglossed; freq 9)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 9,
-      "areasReferenced": [
-        "celadon_city",
-        "mt_moon",
-        "pallet_town",
-        "route_12",
-        "route_16",
-        "route_24",
-        "route_25",
-        "route_3",
-        "route_4",
-        "route_6"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 28687,
-        "score": 0
-      }
-    },
-    {
-      "korean": "등리",
-      "romanization": "deungri",
-      "gloss": "(unglossed; freq 8)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 8,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city",
-      "filledViaSubstring": {
-        "rec_id": 12261,
-        "score": 0
-      }
-    },
-    {
-      "korean": "부다",
-      "romanization": "buda",
-      "gloss": "(unglossed; freq 8)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 8,
-      "areasReferenced": [
-        "five_island",
-        "four_island"
-      ],
-      "firstAreaEncountered": "five_island",
-      "filledViaSubstring": {
-        "rec_id": 20006,
-        "score": 24
-      }
-    },
-    {
-      "korean": "우딘",
-      "romanization": "udin",
-      "gloss": "(unglossed; freq 8)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 8,
-      "areasReferenced": [
-        "fuchsia_city"
-      ],
-      "firstAreaEncountered": "fuchsia_city"
-    },
-    {
-      "korean": "윤소",
-      "romanization": "yunso",
-      "gloss": "(unglossed; freq 8)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 8,
-      "areasReferenced": [
-        "route_2"
-      ],
-      "firstAreaEncountered": "route_2"
-    },
-    {
-      "korean": "강하다",
-      "romanization": "ganghada",
-      "gloss": "(unglossed; freq 7)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 7,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "데다",
-      "romanization": "deda",
-      "gloss": "(unglossed; freq 7)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 7,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 29830,
-        "score": 38
-      }
-    },
-    {
-      "korean": "석류",
-      "romanization": "seogryu",
-      "gloss": "(unglossed; freq 7)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 7,
-      "areasReferenced": [
-        "fuchsia_city"
-      ],
-      "firstAreaEncountered": "fuchsia_city"
-    },
-    {
-      "korean": "키우다",
-      "romanization": "kiuda",
-      "gloss": "(unglossed; freq 7)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 7,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "타다",
-      "romanization": "tada",
-      "gloss": "(unglossed; freq 7)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 7,
-      "areasReferenced": [
-        "pewter_city",
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city",
-      "filledViaSubstring": {
-        "rec_id": 30058,
-        "score": 40
-      }
-    },
-    {
-      "korean": "가지다",
-      "romanization": "gajida",
-      "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 6,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    },
-    {
-      "korean": "디다",
-      "romanization": "dida",
-      "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 6,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 29838,
-        "score": 32
-      }
-    },
-    {
-      "korean": "로켓단",
-      "romanization": "rokesdan",
-      "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 6,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city",
-      "filledViaSubstring": {
-        "rec_id": 30096,
-        "score": 31
-      }
-    },
-    {
-      "korean": "멀다",
-      "romanization": "meolda",
-      "gloss": "(unglossed; freq 6)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 6,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "같다",
-      "romanization": "gatda",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "다당",
-      "romanization": "dadang",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "celadon_city",
-        "fuchsia_city"
-      ],
-      "firstAreaEncountered": "fuchsia_city",
-      "filledViaSubstring": {
-        "rec_id": 28280,
-        "score": 24
-      }
-    },
-    {
-      "korean": "도감",
-      "romanization": "dogam",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "몬스터",
-      "romanization": "monseuteo",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "물다",
-      "romanization": "mulda",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city",
-      "filledViaSubstring": {
-        "rec_id": 28038,
-        "score": 34
-      }
-    },
-    {
-      "korean": "벨트",
-      "romanization": "belteu",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "route_2"
-      ],
-      "firstAreaEncountered": "route_2"
-    },
-    {
-      "korean": "부르다",
-      "romanization": "bureuda",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "승부",
-      "romanization": "seungbu",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pewter_city",
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city",
-      "filledViaSubstring": {
-        "rec_id": 30062,
-        "score": 33
-      }
-    },
-    {
-      "korean": "없다",
-      "romanization": "eobsda",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "장착",
-      "romanization": "jangchag",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "route_2"
-      ],
-      "firstAreaEncountered": "route_2"
-    },
-    {
-      "korean": "트다",
-      "romanization": "teuda",
-      "gloss": "(unglossed; freq 5)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 5,
-      "areasReferenced": [
-        "fuchsia_city"
-      ],
-      "firstAreaEncountered": "fuchsia_city"
-    },
-    {
-      "korean": "게시판",
-      "romanization": "gesipan",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "그렇다",
-      "romanization": "geureohda",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "낫다",
-      "romanization": "nasda",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "adjective",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "green_path",
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 13165,
-        "score": 32
-      }
-    },
-    {
-      "korean": "도움",
-      "romanization": "doum",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "드다",
-      "romanization": "deuda",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "성능",
-      "romanization": "seongneung",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": "rom_mined",
-      "filledViaSubstring": {
-        "rec_id": 132,
-        "scope": "static"
-      }
-    },
-    {
-      "korean": "여해",
-      "romanization": "yeohae",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "울다",
-      "romanization": "ulda",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "route_4"
-      ],
-      "firstAreaEncountered": "route_4",
-      "filledViaSubstring": {
-        "rec_id": 28667,
-        "score": 35
-      }
-    },
-    {
-      "korean": "진화",
-      "romanization": "jinhwa",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "route_2"
-      ],
-      "firstAreaEncountered": "route_2",
-      "filledViaSubstring": {
-        "rec_id": 31665,
-        "score": 32
-      }
-    },
-    {
-      "korean": "최고",
-      "romanization": "choego",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city",
-      "filledViaSubstring": {
-        "rec_id": 29940,
-        "score": 32
-      }
-    },
-    {
-      "korean": "킹킹",
-      "romanization": "kingking",
-      "gloss": "(unglossed; freq 4)",
-      "partOfSpeech": "adverb",
-      "areaId": "rom_mined",
-      "frequency": 4,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "곤보",
-      "romanization": "gonbo",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "celadon_city",
-        "cerulean_city",
-        "cinnabar_island",
-        "five_island",
-        "four_island",
-        "fuchsia_city",
-        "indigo_plateau",
-        "lavender_town",
-        "mt_moon",
-        "one_island",
-        "pallet_town",
-        "pewter_city",
-        "route_10",
-        "route_11",
-        "route_12",
-        "route_16",
-        "route_18",
-        "route_2",
-        "route_3",
-        "route_4",
-        "saffron_city",
-        "seven_island",
-        "six_island",
-        "three_island",
-        "treasure_beach",
-        "two_island",
-        "vermilion_city",
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 17281,
-        "score": 0
-      }
-    },
-    {
-      "korean": "기다리다",
-      "romanization": "gidarida",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "남자",
-      "romanization": "namja",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "노다",
-      "romanization": "noda",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "green_path",
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 13165,
-        "score": 32
-      }
-    },
-    {
-      "korean": "누다",
-      "romanization": "nuda",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 29818,
-        "score": 38
-      }
-    },
-    {
-      "korean": "떠나다",
-      "romanization": "tteonada",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "리그",
-      "romanization": "rigeu",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city"
-    },
-    {
-      "korean": "미치다",
-      "romanization": "michida",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "celadon_city",
-        "cerulean_city",
-        "cinnabar_island",
-        "five_island",
-        "four_island",
-        "fuchsia_city",
-        "indigo_plateau",
-        "lavender_town",
-        "one_island",
-        "pewter_city",
-        "route_10",
-        "route_4",
-        "saffron_city",
-        "seven_island",
-        "six_island",
-        "three_island",
-        "two_island",
-        "vermilion_city",
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city",
-      "filledViaSubstring": {
-        "rec_id": 19825,
-        "score": 0
-      }
-    },
-    {
-      "korean": "베다",
-      "romanization": "beda",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "green_path",
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 13165,
-        "score": 32
-      }
-    },
-    {
-      "korean": "본부",
-      "romanization": "bonbu",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "viridian_city"
-      ],
-      "firstAreaEncountered": "viridian_city"
-    },
-    {
-      "korean": "사래",
-      "romanization": "sarae",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city",
-      "filledViaSubstring": {
-        "rec_id": 12261,
-        "score": 0
-      }
-    },
-    {
-      "korean": "세계",
-      "romanization": "segye",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "시티",
-      "romanization": "siti",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "쓰다",
-      "romanization": "sseuda",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    },
-    {
-      "korean": "이윤",
-      "romanization": "iyun",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "saffron_city"
-      ],
-      "firstAreaEncountered": "saffron_city"
-    },
-    {
-      "korean": "전화",
-      "romanization": "jeonhwa",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pewter_city"
-      ],
-      "firstAreaEncountered": "pewter_city"
-    },
-    {
-      "korean": "접근",
-      "romanization": "jeobgeun",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    },
-    {
-      "korean": "주다",
-      "romanization": "juda",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "쪽발",
-      "romanization": "jjogbal",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    },
-    {
-      "korean": "카다",
-      "romanization": "kada",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 29823,
-        "score": 37
-      }
-    },
-    {
-      "korean": "캐다",
-      "romanization": "kaeda",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "키다",
-      "romanization": "kida",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "verb",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town",
-      "filledViaSubstring": {
-        "rec_id": 29819,
-        "score": 42
-      }
-    },
-    {
-      "korean": "할아버지",
-      "romanization": "halabeoji",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "pallet_town"
-      ],
-      "firstAreaEncountered": "pallet_town"
-    },
-    {
-      "korean": "효과",
-      "romanization": "hyogwa",
-      "gloss": "(unglossed; freq 3)",
-      "partOfSpeech": "noun",
-      "areaId": "rom_mined",
-      "frequency": 3,
-      "areasReferenced": [
-        "cerulean_city"
-      ],
-      "firstAreaEncountered": "cerulean_city"
-    }
-  ]
+ "version": 1,
+ "sourceTag": "rom-mine-v2+mapattr",
+ "notes": "Auto-mined from corpus.ko.live.json at frequency threshold 3. Lemmatization is heuristic — irregular conjugations and polysemous fragments may misclassify. Glosses are placeholders. | Each entry tagged with areasReferenced (all areas its sentences appear in) and firstAreaEncountered (lowest-ordinal area). | dropped 18 phonetic-noise artifact lemmas",
+ "entries": [
+  {
+   "korean": "디그",
+   "romanization": "digeu",
+   "gloss": "(unglossed; freq 224)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 224,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city"
+  },
+  {
+   "korean": "블다",
+   "romanization": "beulda",
+   "gloss": "(unglossed; freq 145)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 145,
+   "areasReferenced": [
+    "four_island",
+    "one_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 41842,
+    "score": 46
+   }
+  },
+  {
+   "korean": "부디",
+   "romanization": "budi",
+   "gloss": "(unglossed; freq 139)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 139,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43540,
+    "score": 45
+   }
+  },
+  {
+   "korean": "도론",
+   "romanization": "doron",
+   "gloss": "(unglossed; freq 121)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 121,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island"
+  },
+  {
+   "korean": "다달",
+   "romanization": "dadal",
+   "gloss": "(unglossed; freq 106)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 106,
+   "areasReferenced": [
+    "route_15"
+   ],
+   "firstAreaEncountered": "route_15"
+  },
+  {
+   "korean": "제르",
+   "romanization": "jereu",
+   "gloss": "(unglossed; freq 104)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 104,
+   "areasReferenced": [
+    "route_8"
+   ],
+   "firstAreaEncountered": "route_8"
+  },
+  {
+   "korean": "두다",
+   "romanization": "duda",
+   "gloss": "(unglossed; freq 96)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 96,
+   "areasReferenced": [
+    "cerulean_city"
+   ],
+   "firstAreaEncountered": "cerulean_city"
+  },
+  {
+   "korean": "타다",
+   "romanization": "tada",
+   "gloss": "(unglossed; freq 94)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 94,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "도큐",
+   "romanization": "dokyu",
+   "gloss": "(unglossed; freq 81)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 81,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "있다",
+   "romanization": "issda",
+   "gloss": "(unglossed; freq 69)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 69,
+   "areasReferenced": [
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "cerulean_city",
+   "filledViaSubstring": {
+    "rec_id": 43078,
+    "score": 37
+   }
+  },
+  {
+   "korean": "도켄",
+   "romanization": "doken",
+   "gloss": "(unglossed; freq 67)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 67,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "몰다",
+   "romanization": "molda",
+   "gloss": "(unglossed; freq 54)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 54,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 385,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "거두다",
+   "romanization": "geoduda",
+   "gloss": "(unglossed; freq 51)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 51,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island"
+  },
+  {
+   "korean": "데다",
+   "romanization": "deda",
+   "gloss": "(unglossed; freq 50)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 50,
+   "areasReferenced": [
+    "celadon_city"
+   ],
+   "firstAreaEncountered": "celadon_city"
+  },
+  {
+   "korean": "디다",
+   "romanization": "dida",
+   "gloss": "(unglossed; freq 50)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 50,
+   "areasReferenced": [
+    "four_island",
+    "one_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 41842,
+    "score": 46
+   }
+  },
+  {
+   "korean": "하다",
+   "romanization": "hada",
+   "gloss": "(unglossed; freq 45)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 45,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 44882,
+    "score": 33
+   }
+  },
+  {
+   "korean": "다뇨",
+   "romanization": "danyo",
+   "gloss": "(unglossed; freq 44)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 44,
+   "areasReferenced": [
+    "cerulean_city",
+    "lavender_town"
+   ],
+   "firstAreaEncountered": "cerulean_city",
+   "filledViaSubstring": {
+    "rec_id": 43023,
+    "score": 30
+   }
+  },
+  {
+   "korean": "도온",
+   "romanization": "doon",
+   "gloss": "(unglossed; freq 43)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 43,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "세다",
+   "romanization": "seda",
+   "gloss": "(unglossed; freq 42)",
+   "partOfSpeech": "adjective",
+   "areaId": "rom_mined",
+   "frequency": 42,
+   "areasReferenced": [
+    "five_island"
+   ],
+   "firstAreaEncountered": "five_island"
+  },
+  {
+   "korean": "도탄",
+   "romanization": "dotan",
+   "gloss": "(unglossed; freq 35)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 35,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "제트",
+   "romanization": "jeteu",
+   "gloss": "(unglossed; freq 35)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 35,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "제팡",
+   "romanization": "jepang",
+   "gloss": "(unglossed; freq 35)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 35,
+   "areasReferenced": [
+    "one_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 43832,
+    "score": 34
+   }
+  },
+  {
+   "korean": "낫다",
+   "romanization": "nasda",
+   "gloss": "(unglossed; freq 34)",
+   "partOfSpeech": "adjective",
+   "areaId": "rom_mined",
+   "frequency": 34,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43518,
+    "score": 31
+   }
+  },
+  {
+   "korean": "바덴",
+   "romanization": "baden",
+   "gloss": "(unglossed; freq 32)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 32,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "거제",
+   "romanization": "geoje",
+   "gloss": "(unglossed; freq 31)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 31,
+   "areasReferenced": [
+    "route_4"
+   ],
+   "firstAreaEncountered": "route_4",
+   "filledViaSubstring": {
+    "rec_id": 41899,
+    "score": 38
+   }
+  },
+  {
+   "korean": "크다",
+   "romanization": "keuda",
+   "gloss": "(unglossed; freq 29)",
+   "partOfSpeech": "adjective",
+   "areaId": "rom_mined",
+   "frequency": 29,
+   "areasReferenced": [
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_4",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8"
+   ],
+   "firstAreaEncountered": "route_4",
+   "filledViaSubstring": {
+    "rec_id": 43661,
+    "score": 43
+   }
+  },
+  {
+   "korean": "보다",
+   "romanization": "boda",
+   "gloss": "(unglossed; freq 26)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 26,
+   "areasReferenced": [
+    "celadon_city"
+   ],
+   "firstAreaEncountered": "celadon_city"
+  },
+  {
+   "korean": "트다",
+   "romanization": "teuda",
+   "gloss": "(unglossed; freq 25)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 25,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "돕다",
+   "romanization": "dobda",
+   "gloss": "(unglossed; freq 24)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 24,
+   "areasReferenced": [
+    "one_island"
+   ],
+   "firstAreaEncountered": "one_island"
+  },
+  {
+   "korean": "다드",
+   "romanization": "dadeu",
+   "gloss": "(unglossed; freq 23)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 23,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "메다",
+   "romanization": "meda",
+   "gloss": "(unglossed; freq 21)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 21,
+   "areasReferenced": [
+    "canyon_entrance",
+    "green_path",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42782,
+    "score": 45
+   }
+  },
+  {
+   "korean": "캐다",
+   "romanization": "kaeda",
+   "gloss": "(unglossed; freq 21)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 21,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42787,
+    "score": 41
+   }
+  },
+  {
+   "korean": "비딘",
+   "romanization": "bidin",
+   "gloss": "(unglossed; freq 20)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 20,
+   "areasReferenced": [
+    "celadon_city"
+   ],
+   "firstAreaEncountered": "celadon_city"
+  },
+  {
+   "korean": "다니다",
+   "romanization": "danida",
+   "gloss": "(unglossed; freq 19)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 19,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 420,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "티다",
+   "romanization": "tida",
+   "gloss": "(unglossed; freq 19)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 19,
+   "areasReferenced": [
+    "one_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 43832,
+    "score": 34
+   }
+  },
+  {
+   "korean": "데잔",
+   "romanization": "dejan",
+   "gloss": "(unglossed; freq 18)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 18,
+   "areasReferenced": [
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "vermilion_city"
+  },
+  {
+   "korean": "카다",
+   "romanization": "kada",
+   "gloss": "(unglossed; freq 18)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 18,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "파다",
+   "romanization": "pada",
+   "gloss": "(unglossed; freq 18)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 18,
+   "areasReferenced": [
+    "celadon_city",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 43355,
+    "score": 34
+   }
+  },
+  {
+   "korean": "도훈",
+   "romanization": "dohun",
+   "gloss": "(unglossed; freq 17)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 17,
+   "areasReferenced": [
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "vermilion_city"
+  },
+  {
+   "korean": "달다",
+   "romanization": "dalda",
+   "gloss": "(unglossed; freq 16)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 16,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43540,
+    "score": 45
+   }
+  },
+  {
+   "korean": "디프",
+   "romanization": "dipeu",
+   "gloss": "(unglossed; freq 15)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 15,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau"
+   ],
+   "firstAreaEncountered": "cinnabar_island",
+   "filledViaSubstring": {
+    "rec_id": 43449,
+    "score": 37
+   }
+  },
+  {
+   "korean": "도다",
+   "romanization": "doda",
+   "gloss": "(unglossed; freq 14)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 14,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island"
+  },
+  {
+   "korean": "무류",
+   "romanization": "muryu",
+   "gloss": "(unglossed; freq 14)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 14,
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city",
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "vermilion_city",
+   "filledViaSubstring": {
+    "rec_id": 25541,
+    "score": 0
+   }
+  },
+  {
+   "korean": "의도",
+   "romanization": "uido",
+   "gloss": "(unglossed; freq 14)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 14,
+   "areasReferenced": [
+    "route_12"
+   ],
+   "firstAreaEncountered": "route_12"
+  },
+  {
+   "korean": "제티",
+   "romanization": "jeti",
+   "gloss": "(unglossed; freq 14)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 14,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "조다",
+   "romanization": "joda",
+   "gloss": "(unglossed; freq 14)",
+   "partOfSpeech": "adjective",
+   "areaId": "rom_mined",
+   "frequency": 14,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "도몬",
+   "romanization": "domon",
+   "gloss": "(unglossed; freq 13)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 13,
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42867,
+    "score": 38
+   }
+  },
+  {
+   "korean": "도움",
+   "romanization": "doum",
+   "gloss": "(unglossed; freq 13)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 13,
+   "areasReferenced": [
+    "lavender_town"
+   ],
+   "firstAreaEncountered": "lavender_town"
+  },
+  {
+   "korean": "모래",
+   "romanization": "morae",
+   "gloss": "(unglossed; freq 13)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 13,
+   "areasReferenced": [
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18"
+   ],
+   "firstAreaEncountered": "route_15",
+   "filledViaSubstring": {
+    "rec_id": 16788,
+    "score": 0
+   }
+  },
+  {
+   "korean": "우안",
+   "romanization": "uan",
+   "gloss": "(unglossed; freq 13)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 13,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10879,
+    "score": 0
+   }
+  },
+  {
+   "korean": "이프",
+   "romanization": "ipeu",
+   "gloss": "(unglossed; freq 13)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 13,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "제차",
+   "romanization": "jecha",
+   "gloss": "(unglossed; freq 13)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 13,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "부그",
+   "romanization": "bugeu",
+   "gloss": "(unglossed; freq 12)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 12,
+   "areasReferenced": [
+    "cerulean_city"
+   ],
+   "firstAreaEncountered": "cerulean_city"
+  },
+  {
+   "korean": "의제",
+   "romanization": "uije",
+   "gloss": "(unglossed; freq 12)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 12,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "이브",
+   "romanization": "ibeu",
+   "gloss": "(unglossed; freq 12)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 12,
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 15577,
+    "score": 0
+   }
+  },
+  {
+   "korean": "노다",
+   "romanization": "noda",
+   "gloss": "(unglossed; freq 11)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 11,
+   "areasReferenced": [
+    "celadon_city",
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "vermilion_city",
+   "filledViaSubstring": {
+    "rec_id": 17227,
+    "score": 27
+   }
+  },
+  {
+   "korean": "비다",
+   "romanization": "bida",
+   "gloss": "(unglossed; freq 11)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 11,
+   "areasReferenced": [
+    "four_island",
+    "one_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 41842,
+    "score": 46
+   }
+  },
+  {
+   "korean": "아다",
+   "romanization": "ada",
+   "gloss": "(unglossed; freq 11)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 11,
+   "areasReferenced": [
+    "route_12"
+   ],
+   "firstAreaEncountered": "route_12"
+  },
+  {
+   "korean": "이미",
+   "romanization": "imi",
+   "gloss": "(unglossed; freq 11)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 11,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "조석",
+   "romanization": "joseog",
+   "gloss": "(unglossed; freq 11)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 11,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42803,
+    "score": 40
+   }
+  },
+  {
+   "korean": "기뇨",
+   "romanization": "ginyo",
+   "gloss": "(unglossed; freq 10)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 10,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11517,
+    "score": 27
+   }
+  },
+  {
+   "korean": "도르",
+   "romanization": "doreu",
+   "gloss": "(unglossed; freq 10)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 10,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "우티",
+   "romanization": "uti",
+   "gloss": "(unglossed; freq 10)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 10,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "kindle_road",
+    "lavender_town",
+    "memorial_pillar",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_2",
+    "route_25",
+    "route_4",
+    "route_5",
+    "route_8",
+    "route_9",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10102,
+    "score": 0
+   }
+  },
+  {
+   "korean": "울다",
+   "romanization": "ulda",
+   "gloss": "(unglossed; freq 10)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 10,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 4334,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "투도",
+   "romanization": "tudo",
+   "gloss": "(unglossed; freq 10)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 10,
+   "areasReferenced": [
+    "celadon_city",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 43357,
+    "score": 35
+   }
+  },
+  {
+   "korean": "후비다",
+   "romanization": "hubida",
+   "gloss": "(unglossed; freq 10)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 10,
+   "areasReferenced": [
+    "canyon_entrance",
+    "four_island",
+    "mt_moon",
+    "pewter_city",
+    "ruin_valley",
+    "trainer_tower",
+    "viridian_city",
+    "water_path"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 44407,
+    "score": 0
+   }
+  },
+  {
+   "korean": "굴다",
+   "romanization": "gulda",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "route_15"
+   ],
+   "firstAreaEncountered": "route_15"
+  },
+  {
+   "korean": "낫우다",
+   "romanization": "nasuda",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 1739,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "도잔",
+   "romanization": "dojan",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "route_17"
+   ],
+   "firstAreaEncountered": "route_17"
+  },
+  {
+   "korean": "무투",
+   "romanization": "mutu",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11203,
+    "score": 0
+   }
+  },
+  {
+   "korean": "부리다",
+   "romanization": "burida",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "route_25"
+   ],
+   "firstAreaEncountered": "route_25"
+  },
+  {
+   "korean": "부샤",
+   "romanization": "busya",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "cerulean_city"
+   ],
+   "firstAreaEncountered": "cerulean_city"
+  },
+  {
+   "korean": "아랍",
+   "romanization": "arab",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "완두",
+   "romanization": "wandu",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "route_21"
+   ],
+   "firstAreaEncountered": "route_21"
+  },
+  {
+   "korean": "자다",
+   "romanization": "jada",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "제탄",
+   "romanization": "jetan",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "one_island",
+    "route_25",
+    "seven_island"
+   ],
+   "firstAreaEncountered": "route_25",
+   "filledViaSubstring": {
+    "rec_id": 43780,
+    "score": 38
+   }
+  },
+  {
+   "korean": "조딘",
+   "romanization": "jodin",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city"
+  },
+  {
+   "korean": "치다",
+   "romanization": "chida",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42867,
+    "score": 38
+   }
+  },
+  {
+   "korean": "코티",
+   "romanization": "koti",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "mt_moon",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_18",
+    "route_22",
+    "route_25",
+    "seven_island",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10164,
+    "score": 0
+   }
+  },
+  {
+   "korean": "키다",
+   "romanization": "kida",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "kindle_road",
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 41576,
+    "score": 33
+   }
+  },
+  {
+   "korean": "톤디",
+   "romanization": "tondi",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "four_island",
+    "one_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 41842,
+    "score": 46
+   }
+  },
+  {
+   "korean": "투부",
+   "romanization": "tubu",
+   "gloss": "(unglossed; freq 9)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 9,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11517,
+    "score": 27
+   }
+  },
+  {
+   "korean": "다솔",
+   "romanization": "dasol",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "다치다",
+   "romanization": "dachida",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island"
+  },
+  {
+   "korean": "바차",
+   "romanization": "bacha",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "산도",
+   "romanization": "sando",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "우투",
+   "romanization": "utu",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10055,
+    "score": 0
+   }
+  },
+  {
+   "korean": "키티",
+   "romanization": "kiti",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 12422,
+    "score": 0
+   }
+  },
+  {
+   "korean": "투아",
+   "romanization": "tua",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "kindle_road",
+    "lavender_town",
+    "memorial_pillar",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_2",
+    "route_25",
+    "route_4",
+    "route_5",
+    "route_8",
+    "route_9",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10080,
+    "score": 0
+   }
+  },
+  {
+   "korean": "티파",
+   "romanization": "tipa",
+   "gloss": "(unglossed; freq 8)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 8,
+   "areasReferenced": [
+    "celadon_city",
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "vermilion_city",
+   "filledViaSubstring": {
+    "rec_id": 10682,
+    "score": 0
+   }
+  },
+  {
+   "korean": "날다",
+   "romanization": "nalda",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43519,
+    "score": 37
+   }
+  },
+  {
+   "korean": "물다",
+   "romanization": "mulda",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 137,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "세투",
+   "romanization": "setu",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "kindle_road",
+    "pewter_city",
+    "route_10",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_16",
+    "route_2",
+    "route_25",
+    "route_8",
+    "route_9",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 13923,
+    "score": 0
+   }
+  },
+  {
+   "korean": "안무",
+   "romanization": "anmu",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 12422,
+    "score": 0
+   }
+  },
+  {
+   "korean": "에티",
+   "romanization": "eti",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "엔조",
+   "romanization": "enjo",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "mt_moon",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_16",
+    "route_18",
+    "route_2",
+    "route_3",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "treasure_beach",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 41886,
+    "score": 0
+   }
+  },
+  {
+   "korean": "오래",
+   "romanization": "orae",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "four_island",
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 27488,
+    "score": 0
+   }
+  },
+  {
+   "korean": "이투",
+   "romanization": "itu",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "canyon_entrance",
+    "celadon_city",
+    "cinnabar_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "green_path",
+    "kindle_road",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_15",
+    "route_16",
+    "route_2",
+    "route_24",
+    "route_25",
+    "route_4",
+    "route_8",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "three_island",
+    "trainer_tower",
+    "treasure_beach",
+    "two_island",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10188,
+    "score": 0
+   }
+  },
+  {
+   "korean": "제산",
+   "romanization": "jesan",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "route_4"
+   ],
+   "firstAreaEncountered": "route_4"
+  },
+  {
+   "korean": "투쿠",
+   "romanization": "tuku",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "후양",
+   "romanization": "huyang",
+   "gloss": "(unglossed; freq 7)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 7,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 7450,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "달비",
+   "romanization": "dalbi",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city",
+   "filledViaSubstring": {
+    "rec_id": 41651,
+    "score": 36
+   }
+  },
+  {
+   "korean": "도르다",
+   "romanization": "doreuda",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42821,
+    "score": 34
+   }
+  },
+  {
+   "korean": "두거",
+   "romanization": "dugeo",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "canyon_entrance",
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "mt_moon",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_20",
+    "route_25",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 44408,
+    "score": 37
+   }
+  },
+  {
+   "korean": "두록",
+   "romanization": "durog",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "드다",
+   "romanization": "deuda",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "celadon_city"
+   ],
+   "firstAreaEncountered": "celadon_city",
+   "filledViaSubstring": {
+    "rec_id": 43267,
+    "score": 35
+   }
+  },
+  {
+   "korean": "미훈",
+   "romanization": "mihun",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "kindle_road",
+    "resort_gorgeous",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_22",
+    "route_23",
+    "route_24",
+    "route_25",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "route_24",
+   "filledViaSubstring": {
+    "rec_id": 10376,
+    "score": 0
+   }
+  },
+  {
+   "korean": "바롯",
+   "romanization": "baros",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city"
+  },
+  {
+   "korean": "세신",
+   "romanization": "sesin",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 4206,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "세티",
+   "romanization": "seti",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "canyon_entrance",
+    "celadon_city",
+    "cinnabar_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "green_path",
+    "kindle_road",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_15",
+    "route_16",
+    "route_2",
+    "route_24",
+    "route_25",
+    "route_4",
+    "route_8",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "three_island",
+    "trainer_tower",
+    "treasure_beach",
+    "two_island",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10188,
+    "score": 0
+   }
+  },
+  {
+   "korean": "스티",
+   "romanization": "seuti",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "route_12",
+    "route_16"
+   ],
+   "firstAreaEncountered": "route_12",
+   "filledViaSubstring": {
+    "rec_id": 13685,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아낫",
+   "romanization": "anas",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "아훈",
+   "romanization": "ahun",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11517,
+    "score": 27
+   }
+  },
+  {
+   "korean": "이칙",
+   "romanization": "ichig",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 8953,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "잔도",
+   "romanization": "jando",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "canyon_entrance",
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "mt_moon",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_20",
+    "route_25",
+    "route_4",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "trainer_tower",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 43864,
+    "score": 34
+   }
+  },
+  {
+   "korean": "제프",
+   "romanization": "jepeu",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "조그",
+   "romanization": "jogeu",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city"
+  },
+  {
+   "korean": "조솔",
+   "romanization": "josol",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [
+    "route_12"
+   ],
+   "firstAreaEncountered": "route_12"
+  },
+  {
+   "korean": "하브",
+   "romanization": "habeu",
+   "gloss": "(unglossed; freq 6)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 6,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 4271,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "다소",
+   "romanization": "daso",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15"
+   ],
+   "firstAreaEncountered": "route_12",
+   "filledViaSubstring": {
+    "rec_id": 42184,
+    "score": 33
+   }
+  },
+  {
+   "korean": "디디다",
+   "romanization": "didida",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "one_island"
+   ],
+   "firstAreaEncountered": "one_island"
+  },
+  {
+   "korean": "딘도",
+   "romanization": "dindo",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "mt_moon",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_16",
+    "route_18",
+    "route_2",
+    "route_3",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "treasure_beach",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 41872,
+    "score": 0
+   }
+  },
+  {
+   "korean": "미뇨",
+   "romanization": "minyo",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11882,
+    "score": 0
+   }
+  },
+  {
+   "korean": "미티",
+   "romanization": "miti",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "canyon_entrance",
+    "celadon_city",
+    "cinnabar_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "green_path",
+    "kindle_road",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_15",
+    "route_16",
+    "route_2",
+    "route_24",
+    "route_25",
+    "route_4",
+    "route_8",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "three_island",
+    "trainer_tower",
+    "treasure_beach",
+    "two_island",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10188,
+    "score": 0
+   }
+  },
+  {
+   "korean": "바딘",
+   "romanization": "badin",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "바준",
+   "romanization": "bajun",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "cinnabar_island"
+   ],
+   "firstAreaEncountered": "cinnabar_island"
+  },
+  {
+   "korean": "부다",
+   "romanization": "buda",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "celadon_city",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 43316,
+    "score": 34
+   }
+  },
+  {
+   "korean": "비래",
+   "romanization": "birae",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "빨다",
+   "romanization": "ppalda",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 172,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "샤타",
+   "romanization": "syata",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "one_island",
+    "pewter_city",
+    "route_10",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 35628,
+    "score": 0
+   }
+  },
+  {
+   "korean": "센디",
+   "romanization": "sendi",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "cerulean_city"
+   ],
+   "firstAreaEncountered": "cerulean_city"
+  },
+  {
+   "korean": "아단",
+   "romanization": "adan",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 25230,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아켄",
+   "romanization": "aken",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "kindle_road",
+    "pewter_city",
+    "route_10",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_16",
+    "route_2",
+    "route_25",
+    "route_8",
+    "route_9",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 13923,
+    "score": 0
+   }
+  },
+  {
+   "korean": "유론",
+   "romanization": "yuron",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11293,
+    "score": 0
+   }
+  },
+  {
+   "korean": "제본",
+   "romanization": "jebon",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "route_15"
+   ],
+   "firstAreaEncountered": "route_15"
+  },
+  {
+   "korean": "제통",
+   "romanization": "jetong",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 43375,
+    "score": 41
+   }
+  },
+  {
+   "korean": "조지다",
+   "romanization": "jojida",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "canyon_entrance",
+    "green_path",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42782,
+    "score": 45
+   }
+  },
+  {
+   "korean": "조혼",
+   "romanization": "johon",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43455,
+    "score": 36
+   }
+  },
+  {
+   "korean": "주다",
+   "romanization": "juda",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "one_island",
+    "seven_island"
+   ],
+   "firstAreaEncountered": "one_island",
+   "filledViaSubstring": {
+    "rec_id": 26714,
+    "score": 2
+   }
+  },
+  {
+   "korean": "진제",
+   "romanization": "jinje",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "차다",
+   "romanization": "chada",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "one_island"
+   ],
+   "firstAreaEncountered": "one_island"
+  },
+  {
+   "korean": "톰보이",
+   "romanization": "tomboi",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "cinnabar_island",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 11257,
+    "score": 0
+   }
+  },
+  {
+   "korean": "통아",
+   "romanization": "tonga",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 7516,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "혀다",
+   "romanization": "hyeoda",
+   "gloss": "(unglossed; freq 5)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 5,
+   "areasReferenced": [
+    "route_20"
+   ],
+   "firstAreaEncountered": "route_20"
+  },
+  {
+   "korean": "거조",
+   "romanization": "geojo",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city",
+   "filledViaSubstring": {
+    "rec_id": 41651,
+    "score": 36
+   }
+  },
+  {
+   "korean": "겐조",
+   "romanization": "genjo",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "route_10"
+   ],
+   "firstAreaEncountered": "route_10"
+  },
+  {
+   "korean": "놓다",
+   "romanization": "nohda",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city"
+  },
+  {
+   "korean": "다디다",
+   "romanization": "dadida",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "canyon_entrance",
+    "green_path",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42782,
+    "score": 45
+   }
+  },
+  {
+   "korean": "도단",
+   "romanization": "dodan",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "도혼",
+   "romanization": "dohon",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island"
+  },
+  {
+   "korean": "란시",
+   "romanization": "ransi",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "메드",
+   "romanization": "medeu",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 7573,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "메주",
+   "romanization": "meju",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 9618,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "무란",
+   "romanization": "muran",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "kindle_road",
+    "pewter_city",
+    "route_10",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_16",
+    "route_2",
+    "route_25",
+    "route_8",
+    "route_9",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 13923,
+    "score": 0
+   }
+  },
+  {
+   "korean": "부신",
+   "romanization": "busin",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42928,
+    "score": 34
+   }
+  },
+  {
+   "korean": "사티",
+   "romanization": "sati",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 16534,
+    "score": 0
+   }
+  },
+  {
+   "korean": "시래",
+   "romanization": "sirae",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "kindle_road",
+    "resort_gorgeous",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_22",
+    "route_23",
+    "route_24",
+    "route_25",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "route_24",
+   "filledViaSubstring": {
+    "rec_id": 10376,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아미",
+   "romanization": "ami",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "five_isle_meadow",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "kindle_road",
+    "lavender_town",
+    "memorial_pillar",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_2",
+    "route_25",
+    "route_4",
+    "route_5",
+    "route_8",
+    "route_9",
+    "ruin_valley",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city",
+    "water_labyrinth",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10136,
+    "score": 0
+   }
+  },
+  {
+   "korean": "알다",
+   "romanization": "alda",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 3708,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "얀다",
+   "romanization": "yanda",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42787,
+    "score": 41
+   }
+  },
+  {
+   "korean": "오티",
+   "romanization": "oti",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "kindle_road",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_21",
+    "route_8",
+    "route_9",
+    "treasure_beach",
+    "water_labyrinth"
+   ],
+   "firstAreaEncountered": "route_8",
+   "filledViaSubstring": {
+    "rec_id": 14010,
+    "score": 0
+   }
+  },
+  {
+   "korean": "온조",
+   "romanization": "onjo",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "route_2"
+   ],
+   "firstAreaEncountered": "route_2"
+  },
+  {
+   "korean": "완부",
+   "romanization": "wanbu",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "canyon_entrance",
+    "green_path",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42782,
+    "score": 45
+   }
+  },
+  {
+   "korean": "윈도",
+   "romanization": "windo",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island"
+  },
+  {
+   "korean": "잘다",
+   "romanization": "jalda",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "adjective",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 142,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "제탄부",
+   "romanization": "jetanbu",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "one_island",
+    "route_25",
+    "seven_island"
+   ],
+   "firstAreaEncountered": "route_25",
+   "filledViaSubstring": {
+    "rec_id": 43780,
+    "score": 38
+   }
+  },
+  {
+   "korean": "제터",
+   "romanization": "jeteo",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "조티",
+   "romanization": "joti",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "조화",
+   "romanization": "johwa",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "지레",
+   "romanization": "jire",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 9268,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "쿠프",
+   "romanization": "kupeu",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10055,
+    "score": 0
+   }
+  },
+  {
+   "korean": "킹킹",
+   "romanization": "kingking",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "canyon_entrance",
+    "cerulean_city",
+    "five_isle_meadow",
+    "green_path",
+    "memorial_pillar",
+    "outcast_island",
+    "pallet_town",
+    "pewter_city",
+    "ruin_valley",
+    "trainer_tower",
+    "water_path"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 38748,
+    "score": 0
+   }
+  },
+  {
+   "korean": "탄도",
+   "romanization": "tando",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "route_17"
+   ],
+   "firstAreaEncountered": "route_17"
+  },
+  {
+   "korean": "톤제",
+   "romanization": "tonje",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "route_19"
+   ],
+   "firstAreaEncountered": "route_19"
+  },
+  {
+   "korean": "티샤",
+   "romanization": "tisya",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 11517,
+    "score": 27
+   }
+  },
+  {
+   "korean": "혼도",
+   "romanization": "hondo",
+   "gloss": "(unglossed; freq 4)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 4,
+   "areasReferenced": [
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city"
+  },
+  {
+   "korean": "고다",
+   "romanization": "goda",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 42803,
+    "score": 40
+   }
+  },
+  {
+   "korean": "난부",
+   "romanization": "nanbu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "논제",
+   "romanization": "nonje",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "눕다",
+   "romanization": "nubda",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_4",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 27244,
+    "score": 0
+   }
+  },
+  {
+   "korean": "다킨",
+   "romanization": "dakin",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ],
+   "firstAreaEncountered": "pewter_city",
+   "filledViaSubstring": {
+    "rec_id": 41664,
+    "score": 34
+   }
+  },
+  {
+   "korean": "다트",
+   "romanization": "dateu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "five_island",
+    "four_island",
+    "route_1",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_2",
+    "route_20",
+    "route_3",
+    "route_4",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "route_9",
+    "seven_island",
+    "six_island",
+    "three_island"
+   ],
+   "firstAreaEncountered": "route_1",
+   "filledViaSubstring": {
+    "rec_id": 42346,
+    "score": 0
+   }
+  },
+  {
+   "korean": "데버",
+   "romanization": "debeo",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "도만",
+   "romanization": "doman",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "cerulean_city"
+   ],
+   "firstAreaEncountered": "cerulean_city"
+  },
+  {
+   "korean": "도준",
+   "romanization": "dojun",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 43375,
+    "score": 41
+   }
+  },
+  {
+   "korean": "두석",
+   "romanization": "duseog",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city"
+  },
+  {
+   "korean": "만기",
+   "romanization": "mangi",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 6177,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "멕스",
+   "romanization": "megseu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 36132,
+    "score": 0
+   }
+  },
+  {
+   "korean": "무훈",
+   "romanization": "muhun",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10042,
+    "score": 0
+   }
+  },
+  {
+   "korean": "미몬",
+   "romanization": "mimon",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 3004,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "바겐",
+   "romanization": "bagen",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "route_25"
+   ],
+   "firstAreaEncountered": "route_25"
+  },
+  {
+   "korean": "바론",
+   "romanization": "baron",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city"
+   ],
+   "firstAreaEncountered": "celadon_city",
+   "filledViaSubstring": {
+    "rec_id": 43250,
+    "score": 33
+   }
+  },
+  {
+   "korean": "바움",
+   "romanization": "baum",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "canyon_entrance",
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "mt_moon",
+    "pewter_city",
+    "resort_gorgeous",
+    "route_20",
+    "route_25",
+    "route_4",
+    "ruin_valley",
+    "saffron_city",
+    "trainer_tower",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 42720,
+    "score": 0
+   }
+  },
+  {
+   "korean": "반제",
+   "romanization": "banje",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "벌다",
+   "romanization": "beolda",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 137,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "베다",
+   "romanization": "beda",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "verb",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43540,
+    "score": 45
+   }
+  },
+  {
+   "korean": "사투",
+   "romanization": "satu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "산즈",
+   "romanization": "sanjeu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 7063,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "삼도",
+   "romanization": "samdo",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "소티",
+   "romanization": "soti",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city",
+   "filledViaSubstring": {
+    "rec_id": 11695,
+    "score": 20
+   }
+  },
+  {
+   "korean": "시샤",
+   "romanization": "sisya",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "four_island"
+   ],
+   "firstAreaEncountered": "four_island",
+   "filledViaSubstring": {
+    "rec_id": 21656,
+    "score": 0
+   }
+  },
+  {
+   "korean": "시티",
+   "romanization": "siti",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 25948,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아얀",
+   "romanization": "ayan",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "route_12",
+    "route_16"
+   ],
+   "firstAreaEncountered": "route_12",
+   "filledViaSubstring": {
+    "rec_id": 11841,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아투",
+   "romanization": "atu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "resort_gorgeous",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 10055,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아팜",
+   "romanization": "apam",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "cinnabar_island",
+    "five_island",
+    "four_island",
+    "fuchsia_city",
+    "indigo_plateau",
+    "lavender_town",
+    "one_island",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_18",
+    "route_2",
+    "route_22",
+    "route_25",
+    "route_4",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "saffron_city",
+    "seven_island",
+    "six_island",
+    "three_island",
+    "two_island",
+    "vermilion_city",
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "pallet_town",
+   "filledViaSubstring": {
+    "rec_id": 27164,
+    "score": 0
+   }
+  },
+  {
+   "korean": "아프다",
+   "romanization": "apeuda",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "adjective",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city",
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "vermilion_city",
+   "filledViaSubstring": {
+    "rec_id": 10682,
+    "score": 0
+   }
+  },
+  {
+   "korean": "온제",
+   "romanization": "onje",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "cerulean_city",
+    "lavender_town"
+   ],
+   "firstAreaEncountered": "cerulean_city",
+   "filledViaSubstring": {
+    "rec_id": 43044,
+    "score": 33
+   }
+  },
+  {
+   "korean": "완이",
+   "romanization": "wani",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "완제",
+   "romanization": "wanje",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "cerulean_city"
+   ],
+   "firstAreaEncountered": "cerulean_city"
+  },
+  {
+   "korean": "우래",
+   "romanization": "urae",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "kindle_road",
+    "resort_gorgeous",
+    "route_10",
+    "route_11",
+    "route_21",
+    "route_8",
+    "route_9",
+    "treasure_beach",
+    "water_labyrinth"
+   ],
+   "firstAreaEncountered": "route_8",
+   "filledViaSubstring": {
+    "rec_id": 14010,
+    "score": 0
+   }
+  },
+  {
+   "korean": "우석",
+   "romanization": "useog",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 8425,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "윤소",
+   "romanization": "yunso",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "route_2",
+    "route_4",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "route_2",
+   "filledViaSubstring": {
+    "rec_id": 26467,
+    "score": 5
+   }
+  },
+  {
+   "korean": "윤제",
+   "romanization": "yunje",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "route_4"
+   ],
+   "firstAreaEncountered": "route_4"
+  },
+  {
+   "korean": "은도",
+   "romanization": "eundo",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "은아",
+   "romanization": "euna",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "four_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 26761,
+    "score": 0
+   }
+  },
+  {
+   "korean": "이날",
+   "romanization": "inal",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 364,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "일부",
+   "romanization": "ilbu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "viridian_city"
+   ],
+   "firstAreaEncountered": "viridian_city"
+  },
+  {
+   "korean": "제류",
+   "romanization": "jeryu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "firstAreaEncountered": "pallet_town"
+  },
+  {
+   "korean": "제탕",
+   "romanization": "jetang",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city"
+   ],
+   "firstAreaEncountered": "cerulean_city",
+   "filledViaSubstring": {
+    "rec_id": 41712,
+    "score": 0
+   }
+  },
+  {
+   "korean": "조록",
+   "romanization": "jorog",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "adverb",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city"
+  },
+  {
+   "korean": "조복",
+   "romanization": "jobog",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "kindle_road",
+    "route_20",
+    "route_21",
+    "treasure_beach"
+   ],
+   "firstAreaEncountered": "route_20",
+   "filledViaSubstring": {
+    "rec_id": 42507,
+    "score": 0
+   }
+  },
+  {
+   "korean": "주온",
+   "romanization": "juon",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 7518,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "켄도",
+   "romanization": "kendo",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city"
+   ],
+   "firstAreaEncountered": "fuchsia_city",
+   "filledViaSubstring": {
+    "rec_id": 43377,
+    "score": 35
+   }
+  },
+  {
+   "korean": "타톤",
+   "romanization": "taton",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [],
+   "firstAreaEncountered": "rom_mined",
+   "filledViaSubstring": {
+    "rec_id": 6220,
+    "scope": "static"
+   }
+  },
+  {
+   "korean": "탄제",
+   "romanization": "tanje",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "cinnabar_island",
+    "indigo_plateau",
+    "saffron_city"
+   ],
+   "firstAreaEncountered": "saffron_city",
+   "filledViaSubstring": {
+    "rec_id": 43523,
+    "score": 32
+   }
+  },
+  {
+   "korean": "탕부",
+   "romanization": "tangbu",
+   "gloss": "(unglossed; freq 3)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 3,
+   "areasReferenced": [
+    "four_island",
+    "three_island",
+    "two_island"
+   ],
+   "firstAreaEncountered": "two_island",
+   "filledViaSubstring": {
+    "rec_id": 43855,
+    "score": 33
+   }
+  }
+ ]
 }

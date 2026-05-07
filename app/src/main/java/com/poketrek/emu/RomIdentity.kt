@@ -14,7 +14,8 @@ import java.util.zip.CRC32
  */
 enum class RomVariant(val displayName: String, val gatingSupported: Boolean) {
     LEAFGREEN_US_REV1("LeafGreen (USA Rev 1)", gatingSupported = true),
-    LEAFGREEN_KOREAN("LeafGreen (Korean)", gatingSupported = false),
+    LEAFGREEN_KOREAN("LeafGreen (Korean 2010 fan translation)", gatingSupported = false),
+    LEAFGREEN_KR_2024("LeafGreen (Korean 2024-02-29 patch)", gatingSupported = false),
     UNKNOWN("Unknown ROM", gatingSupported = false),
 }
 
@@ -36,6 +37,7 @@ data class RomIdentity(val crc32: Long, val variant: RomVariant) {
         private val KNOWN: Map<Long, RomVariant> = mapOf(
             0xDAFFECECL to RomVariant.LEAFGREEN_US_REV1,
             0x398C4817L to RomVariant.LEAFGREEN_KOREAN,
+            0x4A38A8CBL to RomVariant.LEAFGREEN_KR_2024,
         )
 
         fun of(bytes: ByteArray): RomIdentity {
