@@ -19,7 +19,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[1]"
+      "source": "gSpeciesNames[1]",
+      "notes": "이상해 (strange) + 씨 (seed)"
     },
     {
       "korean": "이상해풀",
@@ -32,7 +33,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[2]"
+      "source": "gSpeciesNames[2]",
+      "notes": "이상해 (strange) + 풀 (grass)"
     },
     {
       "korean": "이상해꽃",
@@ -45,7 +47,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[3]"
+      "source": "gSpeciesNames[3]",
+      "notes": "이상해 (strange) + 꽃 (flower)"
     },
     {
       "korean": "파이리",
@@ -58,7 +61,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[4]"
+      "source": "gSpeciesNames[4]",
+      "notes": "파이어 (fire, English) + 꼬리 (tail)"
     },
     {
       "korean": "리자드",
@@ -71,7 +75,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[5]"
+      "source": "gSpeciesNames[5]",
+      "notes": "Loanword: 'lizard' (English)"
     },
     {
       "korean": "리자몽",
@@ -84,7 +89,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[6]"
+      "source": "gSpeciesNames[6]",
+      "notes": "리자드 (lizard) + 몽 (monster/dragon)"
     },
     {
       "korean": "꼬부기",
@@ -97,7 +103,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[7]"
+      "source": "gSpeciesNames[7]",
+      "notes": "꼬마 (small) + 거북 (turtle)"
     },
     {
       "korean": "어니부기",
@@ -110,7 +117,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[8]"
+      "source": "gSpeciesNames[8]",
+      "notes": "어른 (adult) + 거북 (turtle)"
     },
     {
       "korean": "거북왕",
@@ -123,7 +131,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[9]"
+      "source": "gSpeciesNames[9]",
+      "notes": "거북 (turtle) + 왕 (king)"
     },
     {
       "korean": "캐터피",
@@ -140,7 +149,8 @@
         "six_island",
         "viridian_forest"
       ],
-      "source": "gSpeciesNames[10]"
+      "source": "gSpeciesNames[10]",
+      "notes": "Loanword: 'caterpie' from caterpillar"
     },
     {
       "korean": "단데기",
@@ -156,7 +166,8 @@
         "six_island",
         "viridian_forest"
       ],
-      "source": "gSpeciesNames[11]"
+      "source": "gSpeciesNames[11]",
+      "notes": "번데기 (pupa/cocoon) — pupa stage"
     },
     {
       "korean": "버터플",
@@ -169,7 +180,8 @@
       "areasReferenced": [
         "route_24"
       ],
-      "source": "gSpeciesNames[12]"
+      "source": "gSpeciesNames[12]",
+      "notes": "Loanword: 'butterfly/Butterfree'"
     },
     {
       "korean": "뿔충이",
@@ -186,7 +198,8 @@
         "six_island",
         "viridian_forest"
       ],
-      "source": "gSpeciesNames[13]"
+      "source": "gSpeciesNames[13]",
+      "notes": "뿔 (horn) + 충 (insect, 蟲) + 이 (suffix)"
     },
     {
       "korean": "딱충이",
@@ -202,7 +215,8 @@
         "six_island",
         "viridian_forest"
       ],
-      "source": "gSpeciesNames[14]"
+      "source": "gSpeciesNames[14]",
+      "notes": "딱딱 (hard) + 충 (insect, 蟲)"
     },
     {
       "korean": "독침붕",
@@ -215,7 +229,8 @@
       "areasReferenced": [
         "route_24"
       ],
-      "source": "gSpeciesNames[15]"
+      "source": "gSpeciesNames[15]",
+      "notes": "독침 (poison stinger) + 붕 (buzzing)"
     },
     {
       "korean": "구구",
@@ -242,7 +257,8 @@
         "route_8",
         "three_island"
       ],
-      "source": "gSpeciesNames[16]"
+      "source": "gSpeciesNames[16]",
+      "notes": "구구 — pigeon cooing, onomatopoeia"
     },
     {
       "korean": "피죤",
@@ -259,7 +275,8 @@
         "route_15",
         "three_island"
       ],
-      "source": "gSpeciesNames[17]"
+      "source": "gSpeciesNames[17]",
+      "notes": "Loanword: 'pigeon' (English)"
     },
     {
       "korean": "피죤투",
@@ -272,7 +289,8 @@
       "areasReferenced": [
         "route_13"
       ],
-      "source": "gSpeciesNames[18]"
+      "source": "gSpeciesNames[18]",
+      "notes": "피죤 (pigeon) + 투 (two/2nd)"
     },
     {
       "korean": "꼬렛",
@@ -293,7 +311,8 @@
         "route_4",
         "route_9"
       ],
-      "source": "gSpeciesNames[19]"
+      "source": "gSpeciesNames[19]",
+      "notes": "꼬마 (small) + 렛 (rat, English)"
     },
     {
       "korean": "레트라",
@@ -309,7 +328,8 @@
         "route_17",
         "route_18"
       ],
-      "source": "gSpeciesNames[20]"
+      "source": "gSpeciesNames[20]",
+      "notes": "렛 (rat) + 울트라 (ultra)"
     },
     {
       "korean": "깨비참",
@@ -337,7 +357,8 @@
         "treasure_beach",
         "two_island"
       ],
-      "source": "gSpeciesNames[21]"
+      "source": "gSpeciesNames[21]",
+      "notes": "도깨비 (goblin) + 참새 (sparrow)"
     },
     {
       "korean": "깨비드릴조",
@@ -358,7 +379,8 @@
         "treasure_beach",
         "two_island"
       ],
-      "source": "gSpeciesNames[22]"
+      "source": "gSpeciesNames[22]",
+      "notes": "깨비 (goblin) + 드릴 (drill) + 조 (鳥, bird)"
     },
     {
       "korean": "아보",
@@ -376,7 +398,8 @@
         "route_8",
         "route_9"
       ],
-      "source": "gSpeciesNames[23]"
+      "source": "gSpeciesNames[23]",
+      "notes": "Reversal: 보아 (boa) reversed"
     },
     {
       "korean": "아보크",
@@ -389,7 +412,8 @@
       "areasReferenced": [
         "route_23"
       ],
-      "source": "gSpeciesNames[24]"
+      "source": "gSpeciesNames[24]",
+      "notes": "Reversal: 코브라 (cobra) reversed"
     },
     {
       "korean": "피카츄",
@@ -403,7 +427,8 @@
         "power_plant",
         "viridian_forest"
       ],
-      "source": "gSpeciesNames[25]"
+      "source": "gSpeciesNames[25]",
+      "notes": "Japanese loanword: 'pikachu' — sparking + squeak"
     },
     {
       "korean": "라이츄",
@@ -414,7 +439,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[26]"
+      "source": "gSpeciesNames[26]",
+      "notes": "라이 (雷, thunder) + 츄 (squeak)"
     },
     {
       "korean": "모래두지",
@@ -432,7 +458,8 @@
         "route_8",
         "route_9"
       ],
-      "source": "gSpeciesNames[27]"
+      "source": "gSpeciesNames[27]",
+      "notes": "모래 (sand) + 두더지 (mole)"
     },
     {
       "korean": "고지",
@@ -445,7 +472,8 @@
       "areasReferenced": [
         "route_23"
       ],
-      "source": "gSpeciesNames[28]"
+      "source": "gSpeciesNames[28]",
+      "notes": "고슴도치 (hedgehog) shortened"
     },
     {
       "korean": "니드리나",
@@ -458,7 +486,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[30]"
+      "source": "gSpeciesNames[30]",
+      "notes": "Loanword: from 'Nidorina' (needle, English)"
     },
     {
       "korean": "니드퀸",
@@ -469,7 +498,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[31]"
+      "source": "gSpeciesNames[31]",
+      "notes": "니드 (needle) + 퀸 (queen, English)"
     },
     {
       "korean": "니드리노",
@@ -482,7 +512,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[33]"
+      "source": "gSpeciesNames[33]",
+      "notes": "Loanword: from 'Nidorino' (needle, English)"
     },
     {
       "korean": "니드킹",
@@ -493,7 +524,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[34]"
+      "source": "gSpeciesNames[34]",
+      "notes": "니드 (needle) + 킹 (king, English)"
     },
     {
       "korean": "삐삐",
@@ -506,7 +538,8 @@
       "areasReferenced": [
         "mt_moon"
       ],
-      "source": "gSpeciesNames[35]"
+      "source": "gSpeciesNames[35]",
+      "notes": "삐삐 — beep sound, onomatopoeia"
     },
     {
       "korean": "픽시",
@@ -517,7 +550,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[36]"
+      "source": "gSpeciesNames[36]",
+      "notes": "Loanword: 'pixie' (English fairy)"
     },
     {
       "korean": "식스테일",
@@ -532,7 +566,8 @@
         "route_7",
         "route_8"
       ],
-      "source": "gSpeciesNames[37]"
+      "source": "gSpeciesNames[37]",
+      "notes": "Loanword: 'six tail' (English)"
     },
     {
       "korean": "나인테일",
@@ -545,7 +580,8 @@
       "areasReferenced": [
         "route_7"
       ],
-      "source": "gSpeciesNames[38]"
+      "source": "gSpeciesNames[38]",
+      "notes": "Loanword: 'nine tail' (English)"
     },
     {
       "korean": "푸린",
@@ -558,7 +594,8 @@
       "areasReferenced": [
         "route_3"
       ],
-      "source": "gSpeciesNames[39]"
+      "source": "gSpeciesNames[39]",
+      "notes": "Japanese loanword: 'purin' (custard pudding)"
     },
     {
       "korean": "푸크린",
@@ -571,7 +608,8 @@
       "areasReferenced": [
         "route_3"
       ],
-      "source": "gSpeciesNames[40]"
+      "source": "gSpeciesNames[40]",
+      "notes": "푸린 (purin) + 크 (intensifier) — bigger pudding"
     },
     {
       "korean": "주뱃",
@@ -590,7 +628,8 @@
         "seafoam_islands",
         "six_island"
       ],
-      "source": "gSpeciesNames[41]"
+      "source": "gSpeciesNames[41]",
+      "notes": "주바 + 뱃 (bat, English) — like Zubat"
     },
     {
       "korean": "골뱃",
@@ -607,7 +646,8 @@
         "route_23",
         "seafoam_islands"
       ],
-      "source": "gSpeciesNames[42]"
+      "source": "gSpeciesNames[42]",
+      "notes": "골 (skull) + 뱃 (bat, English)"
     },
     {
       "korean": "뚜벅쵸",
@@ -631,7 +671,8 @@
         "three_island",
         "two_island"
       ],
-      "source": "gSpeciesNames[43]"
+      "source": "gSpeciesNames[43]",
+      "notes": "뚜벅뚜벅 (walking sound) + 쵸 (草, grass)"
     },
     {
       "korean": "냄새꼬",
@@ -650,7 +691,8 @@
         "three_island",
         "two_island"
       ],
-      "source": "gSpeciesNames[44]"
+      "source": "gSpeciesNames[44]",
+      "notes": "냄새 (smell) + 꼬 (suffix) — stinky one"
     },
     {
       "korean": "라플레시아",
@@ -661,7 +703,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[45]"
+      "source": "gSpeciesNames[45]",
+      "notes": "Loanword: 'Rafflesia' (giant smelly flower)"
     },
     {
       "korean": "파라스",
@@ -675,7 +718,8 @@
         "fuchsia_city",
         "mt_moon"
       ],
-      "source": "gSpeciesNames[46]"
+      "source": "gSpeciesNames[46]",
+      "notes": "Loanword: 'paras' (parasite, English)"
     },
     {
       "korean": "파라섹트",
@@ -689,7 +733,8 @@
         "cerulean_cave",
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[47]"
+      "source": "gSpeciesNames[47]",
+      "notes": "Loanword: 'parasect' (parasite + insect)"
     },
     {
       "korean": "콘팡",
@@ -707,7 +752,8 @@
         "route_15",
         "three_island"
       ],
-      "source": "gSpeciesNames[48]"
+      "source": "gSpeciesNames[48]",
+      "notes": "콘 (cocoon-like body) + 팡 (puff, onomatopoeia)"
     },
     {
       "korean": "도나리",
@@ -721,7 +767,8 @@
         "fuchsia_city",
         "three_island"
       ],
-      "source": "gSpeciesNames[49]"
+      "source": "gSpeciesNames[49]",
+      "notes": "독 (poison) + 나방 (moth, abbreviated) + 리 (suffix)"
     },
     {
       "korean": "디그다",
@@ -734,7 +781,8 @@
       "areasReferenced": [
         "digletts_cave"
       ],
-      "source": "gSpeciesNames[50]"
+      "source": "gSpeciesNames[50]",
+      "notes": "Loanword: 'dig' (English) + 다 (suffix)"
     },
     {
       "korean": "닥트리오",
@@ -747,7 +795,8 @@
       "areasReferenced": [
         "digletts_cave"
       ],
-      "source": "gSpeciesNames[51]"
+      "source": "gSpeciesNames[51]",
+      "notes": "닥 (dig) + 트리오 (trio, English)"
     },
     {
       "korean": "나옹",
@@ -770,7 +819,8 @@
         "treasure_beach",
         "two_island"
       ],
-      "source": "gSpeciesNames[52]"
+      "source": "gSpeciesNames[52]",
+      "notes": "나옹 — Korean cat meow sound"
     },
     {
       "korean": "페르시온",
@@ -789,7 +839,8 @@
         "treasure_beach",
         "two_island"
       ],
-      "source": "gSpeciesNames[53]"
+      "source": "gSpeciesNames[53]",
+      "notes": "Loanword: 'Persian' (cat breed) + suffix"
     },
     {
       "korean": "고라파덕",
@@ -835,7 +886,8 @@
         "vermilion_city",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[54]"
+      "source": "gSpeciesNames[54]",
+      "notes": "골아파 (headache) + 덕 (duck, English)"
     },
     {
       "korean": "골덕",
@@ -851,7 +903,8 @@
         "three_island",
         "two_island"
       ],
-      "source": "gSpeciesNames[55]"
+      "source": "gSpeciesNames[55]",
+      "notes": "골 (head/skull) + 덕 (duck, English)"
     },
     {
       "korean": "망키",
@@ -868,7 +921,8 @@
         "route_3",
         "route_4"
       ],
-      "source": "gSpeciesNames[56]"
+      "source": "gSpeciesNames[56]",
+      "notes": "Loanword: 'monkey' (English)"
     },
     {
       "korean": "성원숭",
@@ -882,7 +936,8 @@
         "cerulean_cave",
         "route_23"
       ],
-      "source": "gSpeciesNames[57]"
+      "source": "gSpeciesNames[57]",
+      "notes": "성난 (angry) + 원숭이 (monkey)"
     },
     {
       "korean": "가디",
@@ -897,7 +952,8 @@
         "route_7",
         "route_8"
       ],
-      "source": "gSpeciesNames[58]"
+      "source": "gSpeciesNames[58]",
+      "notes": "Loanword: 'guard' (English) — guard dog"
     },
     {
       "korean": "윈디",
@@ -908,7 +964,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[59]"
+      "source": "gSpeciesNames[59]",
+      "notes": "Loanword: 'windy' (English) — swift dog"
     },
     {
       "korean": "발챙이",
@@ -931,7 +988,8 @@
         "two_island",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[60]"
+      "source": "gSpeciesNames[60]",
+      "notes": "발 (foot) + 올챙이 (tadpole)"
     },
     {
       "korean": "슈륙챙이",
@@ -952,7 +1010,8 @@
         "two_island",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[61]"
+      "source": "gSpeciesNames[61]",
+      "notes": "수륙 (amphibious, 水陸) + 올챙이 (tadpole)"
     },
     {
       "korean": "강챙이",
@@ -965,7 +1024,8 @@
       "areasReferenced": [
         "viridian_city"
       ],
-      "source": "gSpeciesNames[62]"
+      "source": "gSpeciesNames[62]",
+      "notes": "강 (strong) + 올챙이 (tadpole)"
     },
     {
       "korean": "캐이시",
@@ -979,7 +1039,8 @@
         "route_24",
         "route_25"
       ],
-      "source": "gSpeciesNames[63]"
+      "source": "gSpeciesNames[63]",
+      "notes": "Loanword: 'Casey' (Edgar Cayce, psychic)"
     },
     {
       "korean": "윤겔라",
@@ -992,7 +1053,8 @@
       "areasReferenced": [
         "cerulean_cave"
       ],
-      "source": "gSpeciesNames[64]"
+      "source": "gSpeciesNames[64]",
+      "notes": "Loanword: 'Uri Geller' (psychic)"
     },
     {
       "korean": "후딘",
@@ -1003,7 +1065,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[65]"
+      "source": "gSpeciesNames[65]",
+      "notes": "Loanword: 'Houdini' (magician)"
     },
     {
       "korean": "알통몬",
@@ -1018,7 +1081,8 @@
         "rock_tunnel",
         "route_23"
       ],
-      "source": "gSpeciesNames[66]"
+      "source": "gSpeciesNames[66]",
+      "notes": "알통 (bicep) + 몬 (mon, monster)"
     },
     {
       "korean": "근육몬",
@@ -1033,7 +1097,8 @@
         "one_island",
         "route_23"
       ],
-      "source": "gSpeciesNames[67]"
+      "source": "gSpeciesNames[67]",
+      "notes": "근육 (muscle) + 몬 (mon, monster)"
     },
     {
       "korean": "괴력몬",
@@ -1044,7 +1109,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[68]"
+      "source": "gSpeciesNames[68]",
+      "notes": "괴력 (super-strength) + 몬 (mon)"
     },
     {
       "korean": "모다피",
@@ -1068,7 +1134,8 @@
         "three_island",
         "two_island"
       ],
-      "source": "gSpeciesNames[69]"
+      "source": "gSpeciesNames[69]",
+      "notes": "모 (sprout) + 다피 (suffix) — sprouting plant"
     },
     {
       "korean": "우츠동",
@@ -1087,7 +1154,8 @@
         "three_island",
         "two_island"
       ],
-      "source": "gSpeciesNames[70]"
+      "source": "gSpeciesNames[70]",
+      "notes": "Japanese loanword: 'utsubon' (pitcher plant)"
     },
     {
       "korean": "우츠보트",
@@ -1100,7 +1168,8 @@
       "areasReferenced": [
         "route_12"
       ],
-      "source": "gSpeciesNames[71]"
+      "source": "gSpeciesNames[71]",
+      "notes": "Japanese loanword: pitcher plant + 'boat'"
     },
     {
       "korean": "왕눈해",
@@ -1136,7 +1205,8 @@
         "treasure_beach",
         "vermilion_city"
       ],
-      "source": "gSpeciesNames[72]"
+      "source": "gSpeciesNames[72]",
+      "notes": "왕 (big) + 눈 (eye) + 해 (sea, 海)"
     },
     {
       "korean": "독파리",
@@ -1158,7 +1228,8 @@
         "three_island",
         "treasure_beach"
       ],
-      "source": "gSpeciesNames[73]"
+      "source": "gSpeciesNames[73]",
+      "notes": "독 (poison) + 파리 (fly) — poison jellyfish"
     },
     {
       "korean": "꼬마돌",
@@ -1177,7 +1248,8 @@
         "route_23",
         "seven_island"
       ],
-      "source": "gSpeciesNames[74]"
+      "source": "gSpeciesNames[74]",
+      "notes": "꼬마 (small) + 돌 (rock)"
     },
     {
       "korean": "데구리",
@@ -1194,7 +1266,8 @@
         "rock_tunnel",
         "seven_island"
       ],
-      "source": "gSpeciesNames[75]"
+      "source": "gSpeciesNames[75]",
+      "notes": "데굴데굴 (rolling sound) + 이 (suffix)"
     },
     {
       "korean": "딱구리",
@@ -1207,7 +1280,8 @@
       "areasReferenced": [
         "pewter_city"
       ],
-      "source": "gSpeciesNames[76]"
+      "source": "gSpeciesNames[76]",
+      "notes": "딱딱 (hard) + 구리 (rolling) — boulder"
     },
     {
       "korean": "포니타",
@@ -1221,7 +1295,8 @@
         "kindle_road",
         "one_island"
       ],
-      "source": "gSpeciesNames[77]"
+      "source": "gSpeciesNames[77]",
+      "notes": "Loanword: 'ponyta' (pony + tail)"
     },
     {
       "korean": "날쌩마",
@@ -1235,7 +1310,8 @@
         "kindle_road",
         "one_island"
       ],
-      "source": "gSpeciesNames[78]"
+      "source": "gSpeciesNames[78]",
+      "notes": "날쌘 (swift) + 마 (horse, 馬)"
     },
     {
       "korean": "야돈",
@@ -1281,7 +1357,8 @@
         "vermilion_city",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[79]"
+      "source": "gSpeciesNames[79]",
+      "notes": "야 (hey) + 돈 (sound) — dazed sound"
     },
     {
       "korean": "야도란",
@@ -1298,7 +1375,8 @@
         "three_island",
         "two_island"
       ],
-      "source": "gSpeciesNames[80]"
+      "source": "gSpeciesNames[80]",
+      "notes": "야돈 (Slowpoke) + 란 (variant suffix)"
     },
     {
       "korean": "코일",
@@ -1311,7 +1389,8 @@
       "areasReferenced": [
         "power_plant"
       ],
-      "source": "gSpeciesNames[81]"
+      "source": "gSpeciesNames[81]",
+      "notes": "Loanword: 'coil' (English)"
     },
     {
       "korean": "레어코일",
@@ -1325,7 +1404,8 @@
         "cerulean_cave",
         "power_plant"
       ],
-      "source": "gSpeciesNames[82]"
+      "source": "gSpeciesNames[82]",
+      "notes": "Loanword: 'rare coil' (English)"
     },
     {
       "korean": "파오리",
@@ -1336,7 +1416,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[83]"
+      "source": "gSpeciesNames[83]",
+      "notes": "파 (green onion) + 오리 (duck)"
     },
     {
       "korean": "두두",
@@ -1352,7 +1433,8 @@
         "route_17",
         "route_18"
       ],
-      "source": "gSpeciesNames[84]"
+      "source": "gSpeciesNames[84]",
+      "notes": "두 (two, 二) doubled — two heads"
     },
     {
       "korean": "두트리오",
@@ -1365,7 +1447,8 @@
       "areasReferenced": [
         "route_16"
       ],
-      "source": "gSpeciesNames[85]"
+      "source": "gSpeciesNames[85]",
+      "notes": "두 (head) + 트리오 (trio, English)"
     },
     {
       "korean": "쥬쥬",
@@ -1379,7 +1462,8 @@
         "four_island",
         "seafoam_islands"
       ],
-      "source": "gSpeciesNames[86]"
+      "source": "gSpeciesNames[86]",
+      "notes": "쥬쥬 — baby seal sound, onomatopoeia"
     },
     {
       "korean": "쥬레곤",
@@ -1393,7 +1477,8 @@
         "four_island",
         "seafoam_islands"
       ],
-      "source": "gSpeciesNames[87]"
+      "source": "gSpeciesNames[87]",
+      "notes": "쥬 (seal sound) + 드래곤 (dragon)"
     },
     {
       "korean": "질퍽이",
@@ -1407,7 +1492,8 @@
         "celadon_city",
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[88]"
+      "source": "gSpeciesNames[88]",
+      "notes": "질퍽 (muddy/squishy) + 이 (suffix)"
     },
     {
       "korean": "질뻐기",
@@ -1420,7 +1506,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[89]"
+      "source": "gSpeciesNames[89]",
+      "notes": "질퍽이 evolved — stickier sludge"
     },
     {
       "korean": "셀러",
@@ -1439,7 +1526,8 @@
         "ssanne",
         "vermilion_city"
       ],
-      "source": "gSpeciesNames[90]"
+      "source": "gSpeciesNames[90]",
+      "notes": "Loanword: 'sheller' (English)"
     },
     {
       "korean": "파르셀",
@@ -1450,7 +1538,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[91]"
+      "source": "gSpeciesNames[91]",
+      "notes": "Loanword: 'pearl + shell' (English)"
     },
     {
       "korean": "고오스",
@@ -1464,7 +1553,8 @@
         "five_island",
         "pokemon_tower"
       ],
-      "source": "gSpeciesNames[92]"
+      "source": "gSpeciesNames[92]",
+      "notes": "Loanword: 'ghost' (English) — drawn-out"
     },
     {
       "korean": "고우스트",
@@ -1478,7 +1568,8 @@
         "five_island",
         "pokemon_tower"
       ],
-      "source": "gSpeciesNames[93]"
+      "source": "gSpeciesNames[93]",
+      "notes": "Loanword: 'ghost' (English)"
     },
     {
       "korean": "팬텀",
@@ -1489,7 +1580,8 @@
       "frequency": 7,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[94]"
+      "source": "gSpeciesNames[94]",
+      "notes": "Loanword: 'phantom' (English)"
     },
     {
       "korean": "롱스톤",
@@ -1504,7 +1596,8 @@
         "route_23",
         "seven_island"
       ],
-      "source": "gSpeciesNames[95]"
+      "source": "gSpeciesNames[95]",
+      "notes": "Loanword: 'long stone' (English)"
     },
     {
       "korean": "슬리프",
@@ -1518,7 +1611,8 @@
         "route_11",
         "three_island"
       ],
-      "source": "gSpeciesNames[96]"
+      "source": "gSpeciesNames[96]",
+      "notes": "Loanword: 'sleep' (English)"
     },
     {
       "korean": "슬리퍼",
@@ -1531,7 +1625,8 @@
       "areasReferenced": [
         "three_island"
       ],
-      "source": "gSpeciesNames[97]"
+      "source": "gSpeciesNames[97]",
+      "notes": "Loanword: 'sleeper' (English)"
     },
     {
       "korean": "크랩",
@@ -1568,7 +1663,8 @@
         "treasure_beach",
         "vermilion_city"
       ],
-      "source": "gSpeciesNames[98]"
+      "source": "gSpeciesNames[98]",
+      "notes": "Loanword: 'crab' (English)"
     },
     {
       "korean": "킹크랩",
@@ -1594,7 +1690,8 @@
         "three_island",
         "treasure_beach"
       ],
-      "source": "gSpeciesNames[99]"
+      "source": "gSpeciesNames[99]",
+      "notes": "킹 (king) + 크랩 (crab, English)"
     },
     {
       "korean": "찌리리공",
@@ -1608,7 +1705,8 @@
         "power_plant",
         "route_10"
       ],
-      "source": "gSpeciesNames[100]"
+      "source": "gSpeciesNames[100]",
+      "notes": "찌릿찌릿 (electric tingle) + 공 (ball)"
     },
     {
       "korean": "붐볼",
@@ -1621,7 +1719,8 @@
       "areasReferenced": [
         "cerulean_cave"
       ],
-      "source": "gSpeciesNames[101]"
+      "source": "gSpeciesNames[101]",
+      "notes": "붐 (boom) + 볼 (ball, English)"
     },
     {
       "korean": "아라리",
@@ -1635,7 +1734,8 @@
         "fuchsia_city",
         "three_island"
       ],
-      "source": "gSpeciesNames[102]"
+      "source": "gSpeciesNames[102]",
+      "notes": "알알이 (egg by egg) — cluster of eggs"
     },
     {
       "korean": "나시",
@@ -1646,7 +1746,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[103]"
+      "source": "gSpeciesNames[103]",
+      "notes": "Japanese loanword: 'nashi' (palm/coconut tree)"
     },
     {
       "korean": "탕구리",
@@ -1660,7 +1761,8 @@
         "pokemon_tower",
         "seven_island"
       ],
-      "source": "gSpeciesNames[104]"
+      "source": "gSpeciesNames[104]",
+      "notes": "탕 (banging sound) + 구리 (suffix)"
     },
     {
       "korean": "텅구리",
@@ -1674,7 +1776,8 @@
         "route_23",
         "seven_island"
       ],
-      "source": "gSpeciesNames[105]"
+      "source": "gSpeciesNames[105]",
+      "notes": "탕구리 evolved — bigger bone wielder"
     },
     {
       "korean": "시라소몬",
@@ -1687,7 +1790,8 @@
       "areasReferenced": [
         "saffron_city"
       ],
-      "source": "gSpeciesNames[106]"
+      "source": "gSpeciesNames[106]",
+      "notes": "시라소니 (lynx) + 몬 (mon) — kicking fighter"
     },
     {
       "korean": "홍수몬",
@@ -1700,7 +1804,8 @@
       "areasReferenced": [
         "saffron_city"
       ],
-      "source": "gSpeciesNames[107]"
+      "source": "gSpeciesNames[107]",
+      "notes": "홍수 (flood, of punches) + 몬 (mon) — boxer"
     },
     {
       "korean": "내루미",
@@ -1711,7 +1816,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[108]"
+      "source": "gSpeciesNames[108]",
+      "notes": "내밀다 (stick out) + 미 (suffix) — tongue sticker"
     },
     {
       "korean": "또가스",
@@ -1725,7 +1831,8 @@
         "celadon_city",
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[109]"
+      "source": "gSpeciesNames[109]",
+      "notes": "또 (again) + 가스 (gas) — gas cloud"
     },
     {
       "korean": "또도가스",
@@ -1738,7 +1845,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[110]"
+      "source": "gSpeciesNames[110]",
+      "notes": "또 + 도 + 가스 — double gas cloud"
     },
     {
       "korean": "뿔카노",
@@ -1751,7 +1859,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[111]"
+      "source": "gSpeciesNames[111]",
+      "notes": "뿔 (horn) + 카노 (from volcano)"
     },
     {
       "korean": "코뿌리",
@@ -1762,7 +1871,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[112]"
+      "source": "gSpeciesNames[112]",
+      "notes": "코 (nose) + 뿌리 (root) — nose-horn"
     },
     {
       "korean": "럭키",
@@ -1775,7 +1885,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[113]"
+      "source": "gSpeciesNames[113]",
+      "notes": "Loanword: 'lucky' (English)"
     },
     {
       "korean": "덩쿠리",
@@ -1789,7 +1900,8 @@
         "route_21",
         "treasure_beach"
       ],
-      "source": "gSpeciesNames[114]"
+      "source": "gSpeciesNames[114]",
+      "notes": "덩굴 (vine) + 구리 (suffix)"
     },
     {
       "korean": "캥카",
@@ -1802,7 +1914,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[115]"
+      "source": "gSpeciesNames[115]",
+      "notes": "Loanword: 'kanga' from kangaroo"
     },
     {
       "korean": "쏘드라",
@@ -1839,7 +1952,8 @@
         "treasure_beach",
         "vermilion_city"
       ],
-      "source": "gSpeciesNames[116]"
+      "source": "gSpeciesNames[116]",
+      "notes": "쏘다 (to shoot) + 드라 (dra, dragon)"
     },
     {
       "korean": "시드라",
@@ -1866,7 +1980,8 @@
         "three_island",
         "treasure_beach"
       ],
-      "source": "gSpeciesNames[117]"
+      "source": "gSpeciesNames[117]",
+      "notes": "Loanword: 'sea' + dra (dragon)"
     },
     {
       "korean": "콘치",
@@ -1889,7 +2004,8 @@
         "two_island",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[118]"
+      "source": "gSpeciesNames[118]",
+      "notes": "콘 (corn, English — horn-like) + 치 (fish suffix)"
     },
     {
       "korean": "왕콘치",
@@ -1903,7 +2019,8 @@
         "fuchsia_city",
         "three_island"
       ],
-      "source": "gSpeciesNames[119]"
+      "source": "gSpeciesNames[119]",
+      "notes": "왕 (king/big) + 콘치 (Goldeen)"
     },
     {
       "korean": "별가사리",
@@ -1922,7 +2039,8 @@
         "ssanne",
         "vermilion_city"
       ],
-      "source": "gSpeciesNames[120]"
+      "source": "gSpeciesNames[120]",
+      "notes": "별 (star) + 불가사리 (starfish)"
     },
     {
       "korean": "아쿠스타",
@@ -1935,7 +2053,8 @@
       "areasReferenced": [
         "pallet_town"
       ],
-      "source": "gSpeciesNames[121]"
+      "source": "gSpeciesNames[121]",
+      "notes": "Loanword: 'aqua' + 'star' (English)"
     },
     {
       "korean": "마임맨",
@@ -1946,7 +2065,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[122]"
+      "source": "gSpeciesNames[122]",
+      "notes": "Loanword: 'mime man' (English)"
     },
     {
       "korean": "스라크",
@@ -1959,7 +2079,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[123]"
+      "source": "gSpeciesNames[123]",
+      "notes": "Loanword: 'strike' (English) — slashing sound"
     },
     {
       "korean": "루주라",
@@ -1970,7 +2091,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[124]"
+      "source": "gSpeciesNames[124]",
+      "notes": "Loanword: French 'rouge' (red lipstick)"
     },
     {
       "korean": "에레브",
@@ -1983,7 +2105,8 @@
       "areasReferenced": [
         "power_plant"
       ],
-      "source": "gSpeciesNames[125]"
+      "source": "gSpeciesNames[125]",
+      "notes": "Loanword: from Erebus / 에레키 (electric)"
     },
     {
       "korean": "마그마",
@@ -1996,7 +2119,8 @@
       "areasReferenced": [
         "one_island"
       ],
-      "source": "gSpeciesNames[126]"
+      "source": "gSpeciesNames[126]",
+      "notes": "마그마 (magma) — same as the geological term"
     },
     {
       "korean": "쁘사이저",
@@ -2009,7 +2133,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[127]"
+      "source": "gSpeciesNames[127]",
+      "notes": "Loanword: 'pincer' (English)"
     },
     {
       "korean": "켄타로스",
@@ -2022,7 +2147,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[128]"
+      "source": "gSpeciesNames[128]",
+      "notes": "Loanword: 'Centaurus' (Greek/Latin)"
     },
     {
       "korean": "잉어킹",
@@ -2068,7 +2194,8 @@
         "vermilion_city",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[129]"
+      "source": "gSpeciesNames[129]",
+      "notes": "잉어 (carp) + 킹 (king, English)"
     },
     {
       "korean": "갸라도스",
@@ -2113,7 +2240,8 @@
         "vermilion_city",
         "viridian_city"
       ],
-      "source": "gSpeciesNames[130]"
+      "source": "gSpeciesNames[130]",
+      "notes": "Loanword: from Japanese 'Gyarados'"
     },
     {
       "korean": "라프라스",
@@ -2126,7 +2254,8 @@
       "areasReferenced": [
         "four_island"
       ],
-      "source": "gSpeciesNames[131]"
+      "source": "gSpeciesNames[131]",
+      "notes": "Loanword: from 'Laplace' (mathematician)"
     },
     {
       "korean": "메타몽",
@@ -2143,7 +2272,8 @@
         "route_14",
         "route_15"
       ],
-      "source": "gSpeciesNames[132]"
+      "source": "gSpeciesNames[132]",
+      "notes": "메타 (meta-, transform) + 몽 (mon)"
     },
     {
       "korean": "이브이",
@@ -2156,7 +2286,8 @@
       "areasReferenced": [
         "celadon_city"
       ],
-      "source": "gSpeciesNames[133]"
+      "source": "gSpeciesNames[133]",
+      "notes": "Loanword: 'Eevee' — letters E-V (evolution)"
     },
     {
       "korean": "샤미드",
@@ -2169,7 +2300,8 @@
       "areasReferenced": [
         "celadon_city"
       ],
-      "source": "gSpeciesNames[134]"
+      "source": "gSpeciesNames[134]",
+      "notes": "샤 (water sound) + 미드 (suffix) — water Eevee"
     },
     {
       "korean": "쥬피썬더",
@@ -2182,7 +2314,8 @@
       "areasReferenced": [
         "celadon_city"
       ],
-      "source": "gSpeciesNames[135]"
+      "source": "gSpeciesNames[135]",
+      "notes": "쥬피터 (Jupiter, planet) + 썬더 (thunder)"
     },
     {
       "korean": "부스터",
@@ -2195,7 +2328,8 @@
       "areasReferenced": [
         "celadon_city"
       ],
-      "source": "gSpeciesNames[136]"
+      "source": "gSpeciesNames[136]",
+      "notes": "Loanword: 'booster' (English) — fire Eevee"
     },
     {
       "korean": "폴리곤",
@@ -2208,7 +2342,8 @@
       "areasReferenced": [
         "silph_co"
       ],
-      "source": "gSpeciesNames[137]"
+      "source": "gSpeciesNames[137]",
+      "notes": "Loanword: 'polygon' (English)"
     },
     {
       "korean": "암나이트",
@@ -2221,7 +2356,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[138]"
+      "source": "gSpeciesNames[138]",
+      "notes": "Loanword: 'ammonite' (English) shortened"
     },
     {
       "korean": "암스타",
@@ -2234,7 +2370,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[139]"
+      "source": "gSpeciesNames[139]",
+      "notes": "암모 (ammon-) + 스타 (star, English)"
     },
     {
       "korean": "투구",
@@ -2247,7 +2384,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[140]"
+      "source": "gSpeciesNames[140]",
+      "notes": "투구 (helmet) — helmet-shaped trilobite"
     },
     {
       "korean": "투구푸스",
@@ -2260,7 +2398,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[141]"
+      "source": "gSpeciesNames[141]",
+      "notes": "투구 (helmet) + 푸스 (-pus, octopus suffix)"
     },
     {
       "korean": "프테라",
@@ -2273,7 +2412,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[142]"
+      "source": "gSpeciesNames[142]",
+      "notes": "Loanword: from 'pterodactyl' (Greek wing)"
     },
     {
       "korean": "잠만보",
@@ -2286,7 +2426,8 @@
       "areasReferenced": [
         "route_12"
       ],
-      "source": "gSpeciesNames[143]"
+      "source": "gSpeciesNames[143]",
+      "notes": "잠 (sleep) + 만보 (countless steps) — always asleep"
     },
     {
       "korean": "프리져",
@@ -2299,7 +2440,8 @@
       "areasReferenced": [
         "seafoam_islands"
       ],
-      "source": "gSpeciesNames[144]"
+      "source": "gSpeciesNames[144]",
+      "notes": "Loanword: 'freezer' (English)"
     },
     {
       "korean": "썬더",
@@ -2312,7 +2454,8 @@
       "areasReferenced": [
         "power_plant"
       ],
-      "source": "gSpeciesNames[145]"
+      "source": "gSpeciesNames[145]",
+      "notes": "Loanword: 'thunder' (English)"
     },
     {
       "korean": "파이어",
@@ -2325,7 +2468,8 @@
       "areasReferenced": [
         "cinnabar_island"
       ],
-      "source": "gSpeciesNames[146]"
+      "source": "gSpeciesNames[146]",
+      "notes": "Loanword: 'fire' (English)"
     },
     {
       "korean": "미뇽",
@@ -2338,7 +2482,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[147]"
+      "source": "gSpeciesNames[147]",
+      "notes": "Loanword: French 'mignon' (cute, small)"
     },
     {
       "korean": "신뇽",
@@ -2351,7 +2496,8 @@
       "areasReferenced": [
         "fuchsia_city"
       ],
-      "source": "gSpeciesNames[148]"
+      "source": "gSpeciesNames[148]",
+      "notes": "신 (divine, 神) + 뇽 (from 용/dragon)"
     },
     {
       "korean": "망나뇽",
@@ -2362,7 +2508,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[149]"
+      "source": "gSpeciesNames[149]",
+      "notes": "망나니 (rascal/wild) + 뇽 (dragon)"
     },
     {
       "korean": "뮤츠",
@@ -2375,7 +2522,8 @@
       "areasReferenced": [
         "cerulean_cave"
       ],
-      "source": "gSpeciesNames[150]"
+      "source": "gSpeciesNames[150]",
+      "notes": "뮤 (Mew) + 츠 (two, English) — second Mew"
     },
     {
       "korean": "치코리타",
@@ -2386,7 +2534,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[152]"
+      "source": "gSpeciesNames[152]",
+      "notes": "Loanword: 'chicory' (English herb)"
     },
     {
       "korean": "베이리프",
@@ -2397,7 +2546,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[153]"
+      "source": "gSpeciesNames[153]",
+      "notes": "Loanword: 'bay leaf' (English herb)"
     },
     {
       "korean": "메가니움",
@@ -2408,7 +2558,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[154]"
+      "source": "gSpeciesNames[154]",
+      "notes": "Loanword: 'meganium' (mega + geranium)"
     },
     {
       "korean": "브케인",
@@ -2419,7 +2570,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[155]"
+      "source": "gSpeciesNames[155]",
+      "notes": "불 (fire) + 케인 (cane/tail) — fiery hedgehog"
     },
     {
       "korean": "마그케인",
@@ -2430,7 +2582,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[156]"
+      "source": "gSpeciesNames[156]",
+      "notes": "불 (fire) + 허리케인 (hurricane) — fire whirlwind"
     },
     {
       "korean": "블레이범",
@@ -2441,7 +2594,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[157]"
+      "source": "gSpeciesNames[157]",
+      "notes": "Loanword: 'blaze' (English) + 범 (tiger/beast)"
     },
     {
       "korean": "리아코",
@@ -2452,7 +2606,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[158]"
+      "source": "gSpeciesNames[158]",
+      "notes": "Loanword: from English 'rio' (river) + suffix"
     },
     {
       "korean": "엘리게이",
@@ -2463,7 +2618,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[159]"
+      "source": "gSpeciesNames[159]",
+      "notes": "Loanword: 'alligator' (English) shortened"
     },
     {
       "korean": "장크로다일",
@@ -2474,7 +2630,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[160]"
+      "source": "gSpeciesNames[160]",
+      "notes": "장 (long, 長) + 크로커다일 (crocodile, English)"
     },
     {
       "korean": "꼬리선",
@@ -2489,7 +2646,8 @@
         "seven_island",
         "six_island"
       ],
-      "source": "gSpeciesNames[161]"
+      "source": "gSpeciesNames[161]",
+      "notes": "꼬리 (tail) + 선 (line, 線)"
     },
     {
       "korean": "다꼬리",
@@ -2500,7 +2658,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[162]"
+      "source": "gSpeciesNames[162]",
+      "notes": "다 (many) + 꼬리 (tail)"
     },
     {
       "korean": "부우부",
@@ -2511,7 +2670,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[163]"
+      "source": "gSpeciesNames[163]",
+      "notes": "부엉부엉 (owl hoot) — onomatopoeia"
     },
     {
       "korean": "야부엉",
@@ -2522,7 +2682,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[164]"
+      "source": "gSpeciesNames[164]",
+      "notes": "야 (night, 夜) + 부엉이 (owl)"
     },
     {
       "korean": "레디바",
@@ -2535,7 +2696,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[165]"
+      "source": "gSpeciesNames[165]",
+      "notes": "Loanword: 'lady' + 'bug' (ladybug)"
     },
     {
       "korean": "레디안",
@@ -2546,7 +2708,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[166]"
+      "source": "gSpeciesNames[166]",
+      "notes": "Loanword: 'lady' + suffix — evolved ladybug"
     },
     {
       "korean": "페이검",
@@ -2559,7 +2722,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[167]"
+      "source": "gSpeciesNames[167]",
+      "notes": "Loanword: from Japanese 'itomaru' — thread spider"
     },
     {
       "korean": "아리아도스",
@@ -2570,7 +2734,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[168]"
+      "source": "gSpeciesNames[168]",
+      "notes": "Loanword: 'Ariadne' (Greek myth weaver)"
     },
     {
       "korean": "크로뱃",
@@ -2581,7 +2746,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[169]"
+      "source": "gSpeciesNames[169]",
+      "notes": "Loanword: 'cross' + 'bat' (English)"
     },
     {
       "korean": "초라기",
@@ -2592,7 +2758,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[170]"
+      "source": "gSpeciesNames[170]",
+      "notes": "초롱 (lantern) + 아기 (baby)"
     },
     {
       "korean": "랜턴",
@@ -2603,7 +2770,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[171]"
+      "source": "gSpeciesNames[171]",
+      "notes": "Loanword: 'lantern' (English)"
     },
     {
       "korean": "피츄",
@@ -2614,7 +2782,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[172]"
+      "source": "gSpeciesNames[172]",
+      "notes": "피카츄 (Pikachu) baby form"
     },
     {
       "korean": "푸푸린",
@@ -2625,7 +2794,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[174]"
+      "source": "gSpeciesNames[174]",
+      "notes": "푸린 (Jigglypuff) baby — diminutive"
     },
     {
       "korean": "토게피",
@@ -2636,7 +2806,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[175]"
+      "source": "gSpeciesNames[175]",
+      "notes": "Japanese loanword: 토게 (toge, thorn) + 피 (baby)"
     },
     {
       "korean": "토게틱",
@@ -2647,7 +2818,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[176]"
+      "source": "gSpeciesNames[176]",
+      "notes": "토게 (thorn) + 틱 (suffix)"
     },
     {
       "korean": "네이티",
@@ -2660,7 +2832,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[177]"
+      "source": "gSpeciesNames[177]",
+      "notes": "Loanword: 'native' (English)"
     },
     {
       "korean": "네이티오",
@@ -2671,7 +2844,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[178]"
+      "source": "gSpeciesNames[178]",
+      "notes": "네이티 (native) + 오 (suffix)"
     },
     {
       "korean": "메리프",
@@ -2684,7 +2858,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[179]"
+      "source": "gSpeciesNames[179]",
+      "notes": "Loanword: 'merry sheep' / Japanese 'merriep'"
     },
     {
       "korean": "보송송",
@@ -2695,7 +2870,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[180]"
+      "source": "gSpeciesNames[180]",
+      "notes": "보송보송 (fluffy/soft) — onomatopoeia"
     },
     {
       "korean": "전룡",
@@ -2706,7 +2882,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[181]"
+      "source": "gSpeciesNames[181]",
+      "notes": "전 (electric, 電) + 룡 (dragon, 龍)"
     },
     {
       "korean": "아르코",
@@ -2717,7 +2894,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[182]"
+      "source": "gSpeciesNames[182]",
+      "notes": "Loanword: from 'aroma' / Latin 'arco'"
     },
     {
       "korean": "마릴",
@@ -2731,7 +2909,8 @@
         "four_island",
         "six_island"
       ],
-      "source": "gSpeciesNames[183]"
+      "source": "gSpeciesNames[183]",
+      "notes": "Loanword: from Japanese 'maril' (sea + ball)"
     },
     {
       "korean": "마릴리",
@@ -2742,7 +2921,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[184]"
+      "source": "gSpeciesNames[184]",
+      "notes": "마릴 + 리 — bigger water mouse"
     },
     {
       "korean": "꼬지모",
@@ -2753,7 +2933,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[185]"
+      "source": "gSpeciesNames[185]",
+      "notes": "꼬마 (small) + 지목 (potted tree)"
     },
     {
       "korean": "왕구리",
@@ -2764,7 +2945,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[186]"
+      "source": "gSpeciesNames[186]",
+      "notes": "왕 (king/big) + 개구리 (frog)"
     },
     {
       "korean": "통통코",
@@ -2778,7 +2960,8 @@
         "five_island",
         "four_island"
       ],
-      "source": "gSpeciesNames[187]"
+      "source": "gSpeciesNames[187]",
+      "notes": "통통 (plump/bouncy) + 코 (suffix)"
     },
     {
       "korean": "두코",
@@ -2789,7 +2972,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[188]"
+      "source": "gSpeciesNames[188]",
+      "notes": "두둥실 (floating) + 코 (suffix) — floating cloud"
     },
     {
       "korean": "솜솜코",
@@ -2800,7 +2984,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[189]"
+      "source": "gSpeciesNames[189]",
+      "notes": "솜 (cotton) + 솜 + 코 — cottony plant"
     },
     {
       "korean": "에이팜",
@@ -2813,7 +2998,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[190]"
+      "source": "gSpeciesNames[190]",
+      "notes": "Loanword: 'A-palm' (ape with palm hands)"
     },
     {
       "korean": "해너츠",
@@ -2824,7 +3010,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[191]"
+      "source": "gSpeciesNames[191]",
+      "notes": "해 (sun) + 너츠 (nuts, English) — sun seed"
     },
     {
       "korean": "해루미",
@@ -2835,7 +3022,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[192]"
+      "source": "gSpeciesNames[192]",
+      "notes": "해 (sun) + 루미 (light/glow) — sunflower"
     },
     {
       "korean": "왕자리",
@@ -2848,7 +3036,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[193]"
+      "source": "gSpeciesNames[193]",
+      "notes": "왕 (king/big) + 잠자리 (dragonfly)"
     },
     {
       "korean": "우파",
@@ -2862,7 +3051,8 @@
         "four_island",
         "six_island"
       ],
-      "source": "gSpeciesNames[194]"
+      "source": "gSpeciesNames[194]",
+      "notes": "Loanword: from 'wooper looper' (axolotl pet name)"
     },
     {
       "korean": "누오",
@@ -2873,7 +3063,8 @@
       "frequency": 6,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[195]"
+      "source": "gSpeciesNames[195]",
+      "notes": "Japanese loanword: 'nuoh' (slimy)"
     },
     {
       "korean": "에브이",
@@ -2886,7 +3077,8 @@
       "areasReferenced": [
         "celadon_city"
       ],
-      "source": "gSpeciesNames[196]"
+      "source": "gSpeciesNames[196]",
+      "notes": "이브이 (Eevee) + ESP — psychic Eevee"
     },
     {
       "korean": "블래키",
@@ -2899,7 +3091,8 @@
       "areasReferenced": [
         "celadon_city"
       ],
-      "source": "gSpeciesNames[197]"
+      "source": "gSpeciesNames[197]",
+      "notes": "Loanword: 'blacky' (English) — dark Eevee"
     },
     {
       "korean": "니로우",
@@ -2912,7 +3105,8 @@
       "areasReferenced": [
         "five_island"
       ],
-      "source": "gSpeciesNames[198]"
+      "source": "gSpeciesNames[198]",
+      "notes": "Japanese loanword: 'kurow' (black crow)"
     },
     {
       "korean": "야도킹",
@@ -2923,7 +3117,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[199]"
+      "source": "gSpeciesNames[199]",
+      "notes": "야돈 (Slowpoke) + 킹 (king, English)"
     },
     {
       "korean": "무우마",
@@ -2936,7 +3131,8 @@
       "areasReferenced": [
         "five_island"
       ],
-      "source": "gSpeciesNames[200]"
+      "source": "gSpeciesNames[200]",
+      "notes": "무서운 (scary) + 마 (devil, 魔)"
     },
     {
       "korean": "안농",
@@ -2949,7 +3145,8 @@
       "areasReferenced": [
         "seven_island"
       ],
-      "source": "gSpeciesNames[201]"
+      "source": "gSpeciesNames[201]",
+      "notes": "Loanword: 'unknown' (English) Korean rendering"
     },
     {
       "korean": "마자용",
@@ -2963,7 +3160,8 @@
         "cerulean_cave",
         "six_island"
       ],
-      "source": "gSpeciesNames[202]"
+      "source": "gSpeciesNames[202]",
+      "notes": "맞아요 (that's right) — its catchphrase"
     },
     {
       "korean": "키링키",
@@ -2974,7 +3172,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[203]"
+      "source": "gSpeciesNames[203]",
+      "notes": "키린 (giraffe) palindrome — like the English name"
     },
     {
       "korean": "피콘",
@@ -2987,7 +3186,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[204]"
+      "source": "gSpeciesNames[204]",
+      "notes": "Loanword: 'pinecone' (English)"
     },
     {
       "korean": "쏘콘",
@@ -2998,7 +3198,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[205]"
+      "source": "gSpeciesNames[205]",
+      "notes": "쏘다 (to shoot) + 콘 (cone, English)"
     },
     {
       "korean": "노고치",
@@ -3011,7 +3212,8 @@
       "areasReferenced": [
         "three_island"
       ],
-      "source": "gSpeciesNames[206]"
+      "source": "gSpeciesNames[206]",
+      "notes": "노고 (effort) + 치 (suffix) — humble worker"
     },
     {
       "korean": "글라이거",
@@ -3022,7 +3224,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[207]"
+      "source": "gSpeciesNames[207]",
+      "notes": "Loanword: 'glide' (English) + suffix"
     },
     {
       "korean": "강철톤",
@@ -3033,7 +3236,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[208]"
+      "source": "gSpeciesNames[208]",
+      "notes": "강철 (steel) + 톤 (ton, weight)"
     },
     {
       "korean": "블루",
@@ -3044,7 +3248,8 @@
       "frequency": 47,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[209]"
+      "source": "gSpeciesNames[209]",
+      "notes": "Loanword: 'bull/blue' (English)"
     },
     {
       "korean": "그랑블루",
@@ -3055,7 +3260,8 @@
       "frequency": 3,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[210]"
+      "source": "gSpeciesNames[210]",
+      "notes": "Loanword: 'grand' (French) + bull/blue"
     },
     {
       "korean": "침바루",
@@ -3074,7 +3280,8 @@
         "six_island",
         "three_island"
       ],
-      "source": "gSpeciesNames[211]"
+      "source": "gSpeciesNames[211]",
+      "notes": "침 (needle/sting) + 바루 (puffer fish)"
     },
     {
       "korean": "핫삼",
@@ -3085,7 +3292,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[212]"
+      "source": "gSpeciesNames[212]",
+      "notes": "Loanword: from Japanese 'hassam' (scissor sound)"
     },
     {
       "korean": "단단지",
@@ -3098,7 +3306,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[213]"
+      "source": "gSpeciesNames[213]",
+      "notes": "단단 (hard, solid) + 지 (suffix) — hard pot"
     },
     {
       "korean": "헤라크로스",
@@ -3111,7 +3320,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[214]"
+      "source": "gSpeciesNames[214]",
+      "notes": "Loanword: 'Heracles' + cross (English)"
     },
     {
       "korean": "포푸니",
@@ -3124,7 +3334,8 @@
       "areasReferenced": [
         "four_island"
       ],
-      "source": "gSpeciesNames[215]"
+      "source": "gSpeciesNames[215]",
+      "notes": "Transliteration adapted from Japanese 'Nyula'"
     },
     {
       "korean": "깜지곰",
@@ -3137,7 +3348,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[216]"
+      "source": "gSpeciesNames[216]",
+      "notes": "깜지 (small/cute) + 곰 (bear)"
     },
     {
       "korean": "링곰",
@@ -3148,7 +3360,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[217]"
+      "source": "gSpeciesNames[217]",
+      "notes": "링 (ring, on its chest) + 곰 (bear)"
     },
     {
       "korean": "마그마그",
@@ -3161,7 +3374,8 @@
       "areasReferenced": [
         "one_island"
       ],
-      "source": "gSpeciesNames[218]"
+      "source": "gSpeciesNames[218]",
+      "notes": "마그마 (magma) doubled — molten slug"
     },
     {
       "korean": "마그카르고",
@@ -3174,7 +3388,8 @@
       "areasReferenced": [
         "one_island"
       ],
-      "source": "gSpeciesNames[219]"
+      "source": "gSpeciesNames[219]",
+      "notes": "마그마 (magma) + 카르고 (from escargot)"
     },
     {
       "korean": "꾸꾸리",
@@ -3187,7 +3402,8 @@
       "areasReferenced": [
         "four_island"
       ],
-      "source": "gSpeciesNames[220]"
+      "source": "gSpeciesNames[220]",
+      "notes": "꿀꿀 (oink, pig sound) + 이 — piglet"
     },
     {
       "korean": "메꾸리",
@@ -3198,7 +3414,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[221]"
+      "source": "gSpeciesNames[221]",
+      "notes": "메 (mountain) + 꿀꿀 (oink) — mountain pig"
     },
     {
       "korean": "코산호",
@@ -3209,7 +3426,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[222]"
+      "source": "gSpeciesNames[222]",
+      "notes": "코 (small) + 산호 (coral, 珊瑚)"
     },
     {
       "korean": "총어",
@@ -3228,7 +3446,8 @@
         "six_island",
         "three_island"
       ],
-      "source": "gSpeciesNames[223]"
+      "source": "gSpeciesNames[223]",
+      "notes": "총 (gun) + 어 (fish, 魚)"
     },
     {
       "korean": "대포무노",
@@ -3241,7 +3460,8 @@
       "areasReferenced": [
         "mt_moon"
       ],
-      "source": "gSpeciesNames[224]"
+      "source": "gSpeciesNames[224]",
+      "notes": "대포 (cannon) + 무노 (octopus suffix)"
     },
     {
       "korean": "딜리버드",
@@ -3254,7 +3474,8 @@
       "areasReferenced": [
         "four_island"
       ],
-      "source": "gSpeciesNames[225]"
+      "source": "gSpeciesNames[225]",
+      "notes": "Loanword: 'deliver' + 'bird' (English)"
     },
     {
       "korean": "만타인",
@@ -3268,7 +3489,8 @@
         "resort_gorgeous",
         "seven_island"
       ],
-      "source": "gSpeciesNames[226]"
+      "source": "gSpeciesNames[226]",
+      "notes": "Loanword: 'manta ray' + suffix"
     },
     {
       "korean": "무장조",
@@ -3281,7 +3503,8 @@
       "areasReferenced": [
         "seven_island"
       ],
-      "source": "gSpeciesNames[227]"
+      "source": "gSpeciesNames[227]",
+      "notes": "무장 (armored, 武裝) + 조 (bird, 鳥)"
     },
     {
       "korean": "델빌",
@@ -3294,7 +3517,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[228]"
+      "source": "gSpeciesNames[228]",
+      "notes": "Loanword: 'devil' (English)"
     },
     {
       "korean": "헬가",
@@ -3305,7 +3529,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[229]"
+      "source": "gSpeciesNames[229]",
+      "notes": "Loanword: 'hell' (English) + 가 (suffix)"
     },
     {
       "korean": "킹드라",
@@ -3316,7 +3541,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[230]"
+      "source": "gSpeciesNames[230]",
+      "notes": "킹 (king, English) + 드라 (from dragon)"
     },
     {
       "korean": "코코리",
@@ -3329,7 +3555,8 @@
       "areasReferenced": [
         "seven_island"
       ],
-      "source": "gSpeciesNames[231]"
+      "source": "gSpeciesNames[231]",
+      "notes": "코 (nose/trunk) + 코리 (small) — baby elephant"
     },
     {
       "korean": "코리갑",
@@ -3342,7 +3569,8 @@
       "areasReferenced": [
         "pewter_city"
       ],
-      "source": "gSpeciesNames[232]"
+      "source": "gSpeciesNames[232]",
+      "notes": "코 (trunk) + 갑 (armor, 甲)"
     },
     {
       "korean": "노라키",
@@ -3355,7 +3583,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[234]"
+      "source": "gSpeciesNames[234]",
+      "notes": "노루 (roe deer) + 키 (suffix)"
     },
     {
       "korean": "루브도",
@@ -3368,7 +3597,8 @@
       "areasReferenced": [
         "six_island"
       ],
-      "source": "gSpeciesNames[235]"
+      "source": "gSpeciesNames[235]",
+      "notes": "Japanese loanword: from 'doburu' (paintbrush dabbing)"
     },
     {
       "korean": "배루키",
@@ -3379,7 +3609,8 @@
       "frequency": 1,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[236]"
+      "source": "gSpeciesNames[236]",
+      "notes": "배 (belly) + 루키 (rookie, English)"
     },
     {
       "korean": "카포에라",
@@ -3390,7 +3621,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[237]"
+      "source": "gSpeciesNames[237]",
+      "notes": "Loanword: 'capoeira' (Brazilian martial art)"
     },
     {
       "korean": "뽀뽀라",
@@ -3401,7 +3633,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[238]"
+      "source": "gSpeciesNames[238]",
+      "notes": "뽀뽀 (kiss, baby talk) + 라 (suffix)"
     },
     {
       "korean": "에레키드",
@@ -3412,7 +3645,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[239]"
+      "source": "gSpeciesNames[239]",
+      "notes": "에레키 (electric, from Japanese) + 키드 (kid, English)"
     },
     {
       "korean": "마그비",
@@ -3423,7 +3657,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[240]"
+      "source": "gSpeciesNames[240]",
+      "notes": "마그마 (magma) + 비 (baby suffix)"
     },
     {
       "korean": "밀탱크",
@@ -3434,7 +3669,8 @@
       "frequency": 4,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[241]"
+      "source": "gSpeciesNames[241]",
+      "notes": "Loanword: 'milk tank' (English)"
     },
     {
       "korean": "해피너스",
@@ -3445,7 +3681,8 @@
       "frequency": 5,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[242]"
+      "source": "gSpeciesNames[242]",
+      "notes": "Loanword: 'happiness' (English) + suffix"
     },
     {
       "korean": "라이코",
@@ -3458,7 +3695,8 @@
       "areasReferenced": [
         "one_island"
       ],
-      "source": "gSpeciesNames[243]"
+      "source": "gSpeciesNames[243]",
+      "notes": "Japanese loanword: 'raikou' (雷光, lightning)"
     },
     {
       "korean": "앤테이",
@@ -3471,7 +3709,8 @@
       "areasReferenced": [
         "one_island"
       ],
-      "source": "gSpeciesNames[244]"
+      "source": "gSpeciesNames[244]",
+      "notes": "Japanese loanword: 'entei' (炎帝, flame emperor)"
     },
     {
       "korean": "스이쿤",
@@ -3484,7 +3723,8 @@
       "areasReferenced": [
         "one_island"
       ],
-      "source": "gSpeciesNames[245]"
+      "source": "gSpeciesNames[245]",
+      "notes": "Japanese loanword: 'suicune' (水, water beast)"
     },
     {
       "korean": "애버라스",
@@ -3497,7 +3737,8 @@
       "areasReferenced": [
         "seven_island"
       ],
-      "source": "gSpeciesNames[246]"
+      "source": "gSpeciesNames[246]",
+      "notes": "Loanword: 'Larvitar' phonetic (larva-based)"
     },
     {
       "korean": "데기라스",
@@ -3510,7 +3751,8 @@
       "areasReferenced": [
         "pewter_city"
       ],
-      "source": "gSpeciesNames[247]"
+      "source": "gSpeciesNames[247]",
+      "notes": "번데기 (pupa) + 라스 (-tar suffix)"
     },
     {
       "korean": "마기라스",
@@ -3521,7 +3763,8 @@
       "frequency": 2,
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [],
-      "source": "gSpeciesNames[248]"
+      "source": "gSpeciesNames[248]",
+      "notes": "마 (demon, 魔) + 기라스 (-tar) — demon tyrant"
     },
     {
       "korean": "루기아",
@@ -3534,7 +3777,8 @@
       "areasReferenced": [
         "navel_rock"
       ],
-      "source": "gSpeciesNames[249]"
+      "source": "gSpeciesNames[249]",
+      "notes": "Transliteration of 'Lugia' (proper noun)"
     },
     {
       "korean": "칠색조",
@@ -3547,7 +3791,8 @@
       "areasReferenced": [
         "navel_rock"
       ],
-      "source": "gSpeciesNames[250]"
+      "source": "gSpeciesNames[250]",
+      "notes": "칠색 (seven-color, 七色) + 조 (bird, 鳥)"
     },
     {
       "korean": "세레비",
@@ -3560,7 +3805,8 @@
       "areasReferenced": [
         "navel_rock"
       ],
-      "source": "gSpeciesNames[251]"
+      "source": "gSpeciesNames[251]",
+      "notes": "Transliteration of 'Celebi' (proper noun)"
     }
   ]
 }
