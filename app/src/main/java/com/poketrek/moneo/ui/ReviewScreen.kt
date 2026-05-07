@@ -17,12 +17,19 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Snackbar
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.SnackbarResult
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -31,6 +38,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlinx.coroutines.launch
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.data.CardRecord
 import com.poketrek.moneo.data.SentenceEntry
@@ -55,6 +63,8 @@ fun ReviewScreen(
     val showRomanization by module.prefs.showRomanization.collectAsState()
     var revealed by remember(areaId) { mutableStateOf(false) }
     val verbatim by module.prefs.verbatimSentences.collectAsState()
+    val snackbarHostState = remember { SnackbarHostState() }
+    val snackbarScope = rememberCoroutineScope()
 
     // Pull the next due card. We re-derive on every recomposition; the cards
     // flow ensures recomposition happens after `grade()`.
@@ -89,6 +99,24 @@ fun ReviewScreen(
         module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)
     } else null
 
+    val onSuspendCurrent: () -> Unit = {
+        // Capture the vocab being suspended so the snackbar text and Undo
+        // refer to *this* card, even after the queue advances.
+        val suspendedVocab = vocab
+        module.repository.setSuspended(suspendedVocab.id, true)
+        revealed = false
+        snackbarScope.launch {
+            val result = snackbarHostState.showSnackbar(
+                message = "Suspended ${suspendedVocab.korean} / ${suspendedVocab.gloss}",
+                actionLabel = "Undo",
+                duration = androidx.compose.material3.SnackbarDuration.Long,
+            )
+            if (result == SnackbarResult.ActionPerformed) {
+                module.repository.setSuspended(suspendedVocab.id, false)
+            }
+        }
+    }
+
     val header: @Composable () -> Unit = {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -96,18 +124,28 @@ fun ReviewScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
         ) {
             StateChip(record.snapshot)
-            // Toggling romanization is a small per-session preference; keep it
-            // unobtrusive next to the state chip, far from the grade buttons.
-            Button(
-                onClick = { module.prefs.setShowRomanization(!showRomanization) },
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
-                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
-            ) {
-                Text(
-                    if (showRomanization) "발음 ✓" else "발음 —",
-                    color = Color(0xFF94A3B8),
-                    fontSize = 11.sp,
-                )
+            // Suspend + romanization toggle live in the header, far from the
+            // grade buttons — Suspend is destructive-ish (removes from review)
+            // so it must not sit alongside Again/Hard/Good/Easy.
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                Button(
+                    onClick = onSuspendCurrent,
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
+                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+                ) {
+                    Text("Suspend", color = Color(0xFF94A3B8), fontSize = 11.sp)
+                }
+                Button(
+                    onClick = { module.prefs.setShowRomanization(!showRomanization) },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
+                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+                ) {
+                    Text(
+                        if (showRomanization) "발음 ✓" else "발음 —",
+                        color = Color(0xFF94A3B8),
+                        fontSize = 11.sp,
+                    )
+                }
             }
         }
     }
@@ -139,7 +177,8 @@ fun ReviewScreen(
         }
     }
 
-    BoxWithConstraints(modifier = modifier) {
+    Box(modifier = modifier.fillMaxSize()) {
+    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         // Two-column layout when wider than tall (landscape phones, tablets).
         // Keeps the prompt visible on the left while the answer is on the
         // right; rating buttons are pinned to the bottom of the right column
@@ -203,6 +242,13 @@ fun ReviewScreen(
                 }
             }
         }
+    }
+        SnackbarHost(
+            hostState = snackbarHostState,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(16.dp),
+        )
     }
 }
 

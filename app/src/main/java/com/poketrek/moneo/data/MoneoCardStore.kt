@@ -102,6 +102,7 @@ class MoneoCardStore(private val rootDir: File) {
             o.put("reps", s.reps)
             o.put("lapses", s.lapses)
             o.put("learningStep", s.learningStep)
+            if (rec.suspended) o.put("suspended", true)
             arr.put(o)
         }
         return JSONObject().apply {
@@ -131,6 +132,7 @@ class MoneoCardStore(private val rootDir: File) {
                 snapshot = snap,
                 createdAt = o.optLong("createdAt", 0L),
                 lastReviewedAt = if (o.has("lastReviewedAt")) o.getLong("lastReviewedAt") else null,
+                suspended = o.optBoolean("suspended", false),
             )
         }
         return out

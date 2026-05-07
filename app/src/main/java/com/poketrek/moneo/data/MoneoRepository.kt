@@ -112,7 +112,7 @@ class MoneoRepository(
     private fun computeAreaProgress(areaId: String): AreaProgress {
         val vocab = vocabForArea(areaId)
         val ids = vocab.map { it.id }.toSet()
-        val cards = _cards.value.values.filter { it.vocabId in ids }
+        val cards = _cards.value.values.filter { it.vocabId in ids && !it.suspended }
         val n = now()
         val newCount = cards.count { it.snapshot.state == CardState.NEW }
         val learning = cards.count { it.snapshot.state == CardState.LEARNING }
@@ -142,7 +142,7 @@ class MoneoRepository(
     fun nextDueCard(areaId: String, nowMs: Long = now()): Pair<CardRecord, VocabEntry>? {
         val vocab = vocabForArea(areaId).associateBy { it.id }
         if (vocab.isEmpty()) return null
-        val cards = _cards.value.values.filter { it.vocabId in vocab.keys }
+        val cards = _cards.value.values.filter { it.vocabId in vocab.keys && !it.suspended }
 
         val learning = cards.filter { it.snapshot.state == CardState.LEARNING && it.snapshot.dueAt <= nowMs }
             .sortedBy { it.snapshot.dueAt }
@@ -181,7 +181,7 @@ class MoneoRepository(
     fun totalDueCount(nowMs: Long = now()): Int {
         val visible = visibleVocabIds()
         return _cards.value.values.count { rec ->
-            rec.vocabId in visible &&
+            rec.vocabId in visible && !rec.suspended &&
                 (rec.snapshot.state == CardState.NEW || rec.snapshot.dueAt <= nowMs)
         }
     }
@@ -190,8 +190,22 @@ class MoneoRepository(
     fun dueCountForArea(areaId: String, nowMs: Long = now()): Int {
         val ids = vocabForArea(areaId).map { it.id }.toSet()
         return _cards.value.values.count { rec ->
-            rec.vocabId in ids && (rec.snapshot.state == CardState.NEW || rec.snapshot.dueAt <= nowMs)
+            rec.vocabId in ids && !rec.suspended &&
+                (rec.snapshot.state == CardState.NEW || rec.snapshot.dueAt <= nowMs)
         }
+    }
+
+    /**
+     * Mark [vocabId] as user-suspended ("I know this") or restore it. Suspended
+     * cards are hidden from review queues and progress counts but kept in the
+     * store so the action is reversible (e.g. via the snackbar Undo).
+     */
+    fun setSuspended(vocabId: String, suspended: Boolean) {
+        val current = _cards.value[vocabId] ?: return
+        if (current.suspended == suspended) return
+        val updated = current.copy(suspended = suspended)
+        store.put(updated)
+        _cards.value = _cards.value + (vocabId to updated)
     }
 
     /** Wipe all SRS state. Used by debug actions. */

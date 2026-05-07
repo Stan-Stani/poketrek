@@ -29,6 +29,11 @@ data class CardRecord(
     val snapshot: CardSnapshot,
     val createdAt: Long,
     val lastReviewedAt: Long? = null,
+    /**
+     * User-suspended ("I know this") cards stay in storage but are hidden from
+     * review queues and progress counts. Reversible via [MoneoRepository.setSuspended].
+     */
+    val suspended: Boolean = false,
 )
 
 data class AreaProgress(
