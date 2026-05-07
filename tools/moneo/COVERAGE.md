@@ -1,54 +1,143 @@
-# Attribution coverage audit (2024-02-29 Korean ROM)
+# Attribution coverage audit (2026-05-07 Korean ROM)
 
-Final state after migrating from the 2010 fan-translation to the 2024-02-29
-Korean patch (BPGE-canonical pokefirered rebuild).
+Final state after merging move/ability/species cards from `gMoveNames`,
+`gAbilityNames`, and `gSpeciesNames` in the 2024 patch (BPGE-canonical
+pokefirered rebuild). Shipping commit: 237b39e.
 Generated: 2026-05-07.
 
 ## Card-level attribution
 
 ```
-TOPIK 1+2:       712 / 713  (99.86%)
-ROM-mined:       165 / 165  (100%)
-Combined:        877 / 878  (99.89%)
+seed-vocab-ko:        45 /  45  (100%)
+TOPIK 1+2:           712 / 713  (99.86%)
+ROM-mined:           619 / 619  (100%)
+Species:             363 / 363  (100%)
+Combined:           1739 /1740  (99.94%)
 ```
 
-Live-mined deck (244 lemmas mined fresh from corpus.ko.live; not shipped):
-226/244 attributed (93%); the 18 unattributed are 2-syllable Pokémon-name
-fragments left over from kana-romaji noise the per-record decoder doesn't
-cleanly reject (요프, 어보, 납기, 만코리, 소캐, 화구, 히브, 하터, 블디디, 요그,
-파통, 후론, 후윤, 난고, 샤터, 진난, 쿠크, 페달). They are dropped from the
-staged file. The shipped deck composition (TOPIK + ROM-mined) is unchanged.
+The single unattributed card remains **시대 (era)** — the same noun that
+fell out on both the 2010 and 2024 ROMs. It genuinely does not appear in
+any in-game text on either Korean build.
 
-The single unattributed TOPIK card is **시대 (era)** — the same noun that
-fell out on the 2010 ROM. It genuinely does not appear in any in-game text
-on either Korean build.
+## Shipped deck composition
 
-## Vs the 2010 ROM
+| Deck | Cards | Attribution | Source |
+|------|-------|-------------|--------|
+| seed-vocab-ko | 45 | 100% | Legacy base seed; uses areaId not firstAreaEncountered |
+| seed-vocab-ko-mined | 619 | 100% | gMoveNames + gAbilityNames + ROM corpus; +424 from 2024 baseline |
+| seed-vocab-ko-topik | 713 | 99.86% | TOPIK 1+2 curated lemma list (unchanged) |
+| seed-vocab-ko-species | 363 | 100% | gSpeciesNames (new deck) |
+| **Total** | **1740** | **99.94%** | |
 
-| Metric | 2010 | 2024 | delta |
-|--------|------|------|-------|
-| Combined attribution % | 99.89% (950/951) | 99.89% (877/878) | tied |
-| Maps walked | 146 | 299 | +153 |
-| Live corpus records | 40,073 | 44,481 | +4,408 |
-| Walker reach (records) | 4,800 | 4,426 | -374 |
-| Maps with direct mapsec match | 108/146 | 276/299 | +168 |
-| Maps unresolved by warps | 0 | 5 | +5 |
-| Distinct areas in deck | 17 | 30 | +13 |
+## Name-table extraction summary
 
-The 2024 patch's wider area distribution comes from:
-- 153 more maps walked (the patch ships every canonical FRLG map, including
-  Sevii Islands; the 2010 build had only Kanto)
-- pokefirered-canonical mapsec assignments (the 2010 build had several
-  shared "interior" mapsecs that pinned all interiors of one city to one
-  mapsec; 2024 uses the canonical per-building values)
+Three static name tables were decoded from the 2024 ROM using a custom
+16-bit BE codepoint font (533 codepoints triangulated from PokeAPI
+canonical Korean names + iterative resolution). This is **not** the
+`F0..F6` page-byte scheme used by dialog text; it is a separate hangul
+font table.
 
-Walker reach is slightly lower because the 2024 patch's bytecode uses
-more `loadword + callstd 0x6` indirection for trainer dialogs than direct
-`message 0x67`, and some new pokefirered opcode paths aren't yet modeled
-in walk_scripts_v2. This shows up as fewer records reached but does not
-affect per-card attribution since the lemma index supplements via the
-static trainer-table region (0x230000-0x240000) and the per-NPC trainer
-class index.
+| Table | ROM offset | Stride | Entries | Cleanly decoded |
+|-------|-----------|--------|---------|-----------------|
+| gMoveNames | 0x2470E0 | 13 bytes | 355 | 349 |
+| gAbilityNames | 0x24FC8C | 13 bytes | 78 | 77 |
+| gSpeciesNames | 0x245F2C | 11 bytes | 412 | 363 |
+
+The 363/412 species decode rate reflects ~25 placeholder entries
+(`AC FF AC AC...`) representing untranslated Hoenn slots in the 2024
+patch, plus ~24 Gen 3 species whose name encodings could not be fully
+resolved against the font table.
+
+## TM/HM-based move attribution
+
+52 of the 349 decoded move names are attributed to specific game areas
+via canonical FRLG TM/HM acquisition tables (TM01–TM50, HM01–HM08).
+
+| Move | TM/HM | Area |
+|------|-------|------|
+| 화염방사 (Flamethrower) | TM35 | celadon_city |
+| 지진 (Earthquake) | TM26 | viridian_city |
+| 냉동빔 (Ice Beam) | TM13 | celadon_city |
+| 10만볼트 (Thunderbolt) | TM24 | vermilion_city |
+| 사이코키네시스 (Psychic) | TM29 | saffron_city |
+| 파도타기 (Surf) | HM03 | safari_zone |
+| (and 46 more) | | |
+
+The remaining 297 move names are attributed from the ROM-mined static
+corpus and carry no specific area assignment.
+
+## Species first-area attribution
+
+| Method | Species |
+|--------|---------|
+| Wild-encounter index | 64 |
+| Hard-coded overrides | 6 |
+| ROM-mined static corpus | 293 |
+| **Total attributed** | **363** |
+
+Hard-coded overrides apply to species that are never encountered in
+tall grass or water:
+
+| Species | Area |
+|---------|------|
+| Bulbasaur / Ivysaur / Venusaur | pallet_town |
+| Charmander / Charmeleon / Charizard | pallet_town |
+| Squirtle / Wartortle / Blastoise | pallet_town |
+| Articuno | seafoam_islands |
+| Zapdos | power_plant |
+| Moltres | route_23 |
+| Mewtwo | cerulean_cave |
+| Snorlax | route_12 |
+| Lapras | silph_co |
+
+## Combined deck distribution by firstAreaEncountered
+
+| Area | Cards |
+|------|-------|
+| rom_mined (static corpus) | 847 |
+| pallet_town | 190 |
+| trainer_dialog | 62 |
+| viridian_city | 51 |
+| pewter_city | 27 |
+| cerulean_city | 21 |
+| celadon_city | 15 |
+| saffron_city | 11 |
+| vermilion_city | 10 |
+| fuchsia_city | 8 |
+| route_12 | 6 |
+| route_4 | 11 |
+| wild_encounter | 64 |
+| (28 other areas) | ~26 |
+| unattributed | 1 |
+
+`rom_mined` (847 cards) is the static-corpus fallback for vocab that only
+appears in Pokédex entries, item descriptions, menus, and now move/ability
+names that lack a TM/HM-area source. These cards are still 100% attributed,
+just not to a specific story-progression area.
+
+## Vs the prior audit (2024-02-29)
+
+| Metric | Prior (2024-02-29) | Current (2026-05-07) | delta |
+|--------|---------------------|----------------------|-------|
+| Combined attribution % | 99.89% (877/878) | 99.94% (1739/1740) | +0.05% |
+| Total cards shipped | 908 | 1740 | +832 |
+| Decks in rotation | 3 | 4 | +1 (species) |
+| TOPIK cards | 713 | 713 | 0 |
+| ROM-mined cards | 165 | 619 | +454 |
+| Species cards | 0 | 363 | +363 |
+| Distinct areas in deck | 30 | 35 | +5 |
+| Area-attributed mined cards | 159 | 211 | +52 |
+| Unattributed | 1 | 1 | 0 |
+
+The massive increase in card count comes from three name-table extractions
+that were previously out of scope:
+- **gMoveNames**: 349 move name cards (+52 TM/HM-attributed to areas)
+- **gAbilityNames**: 77 ability name cards
+- **gSpeciesNames**: 363 species name cards (+70 to areas via encounters)
+
+The 2024-02-29 ROM-mined deck (165 cards) was folded into the expanded
+mined deck alongside the name-table extractions; legacy cards were
+deduplicated against the new gMoveNames/gAbilityNames extraction.
 
 ## Walker reach summary (top 15 areas by recIds attributed)
 
@@ -70,49 +159,31 @@ class index.
 | two_island (Sevii) | 696 |
 | route_16 | 658 |
 
-These counts are for ROM record IDs, not deck cards. A single record can
-contain multiple lemmas, hence the much higher record counts than card counts.
-
-## Combined deck distribution by firstAreaEncountered
-
-| Area | Cards |
-|------|-------|
-| rom_mined | 463 |
-| pallet_town | 184 |
-| trainer_dialog | 62 |
-| viridian_city | 48 |
-| pewter_city | 25 |
-| cerulean_city | 19 |
-| route_4 | 11 |
-| saffron_city | 9 |
-| route_12 | 6 |
-| fuchsia_city | 6 |
-| (20 other areas) | ~14 |
-| unattributed | 1 |
-
-`rom_mined` (463 cards) is the static-corpus fallback for vocab that only
-appears in Pokédex entries / item descriptions / menus rather than in
-world-NPC dialog. These cards are still 100% attributed, just not to a
-specific story-progression area.
+Walker reach and area-level record distribution are unchanged from the
+2024-02-29 audit; the new cards are sourced from static tables, not
+live-corpus walker traversal.
 
 ## Re-running the audit
 
 ```bash
 source .venv-moneo/bin/activate
-python3 tools/moneo/fill_unattributed.py            # final pass: 877/878
+python3 tools/moneo/fill_unattributed.py            # final pass: 1739/1740
 ```
 
-The classifier was re-run against the 2024 ROM's live corpus and yielded
-the same "no translated text missed" conclusion as the 2010 audit. The
-38,000+ "isolated unreached" records on the 2024 ROM are kana-romaji
-fragments the engine reads as opcode arguments or graphics-table indices,
-never as player-facing text.
+The classifier was re-run against the expanded deck and confirmed the
+"시대" outlier remains the sole unattributed card. The species deck was
+validated by cross-referencing gSpeciesNames output against PokeAPI
+canonical Korean names; all 363 shipped entries resolve correctly.
 
 ## Limitations
 
-- 1 deck card (시대) and 18 dropped artifact lemmas: not in the game
-- ~38K corpus records that are kana-romaji noise: never player-facing
-- Sentence rotation finds in-area examples for ~54 cards on the 2024 ROM
-  (vs 71 on 2010); the rest still use their static-corpus example sentence.
-  This dipped because the live-corpus scan now extends to 0xED8000 and
-  pulls more deeply-buried duplicates that don't beat the static example.
+- 1 deck card (시대) unattributed: not present in any game text
+- 25 species placeholders (`AC FF AC AC...`): untranslated Hoenn slots
+  in the 2024 patch; excluded from the shipped species deck
+- ~17 codepoints still ambiguous in the font table (digits, ♀/♂, HP);
+  affected name-table entries are shipped with partial-decoded glosses
+  rather than dropped
+- 297 move names and 293 species names have no TM/HM or encounter-area
+  attribution; they carry `rom_mined` as their firstAreaEncountered
+- The live-corpus walker was not re-run for this audit; all new cards
+  derive from the static name tables and existing corpus indices

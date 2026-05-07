@@ -1,3 +1,4 @@
+```markdown
 # Moneo attribution pipeline runbook
 
 End-to-end pipeline that takes the Korean LeafGreen ROM and emits per-card
@@ -199,6 +200,56 @@ python3 tools/moneo/attribute_existing_decks.py
 - Writes: `tools/moneo/seed-vocab-ko-{topik,mined}-attributed.json` and
   matching sentences with `firstAreaEncountered` and `areasReferenced` per card.
 
+### 9. Extract name tables (moves, abilities, species) from ROM
+
+The 2024 patch encodes gMoveNames, gAbilityNames, and gSpeciesNames as
+inline byte arrays of 16-bit BE codepoints into a custom hangul font
+(distinct from the F0..F6 page-byte scheme used by dialog text). To
+extract them as deck cards:
+
+```bash
+# 1. Locate the table offsets (one-shot, results saved into rom_config-ish files)
+python3 tools/moneo/rom_swap/find_name_tables.py
+# Expected output:
+#   gMoveNames    @ 0x2470E0  (stride 13, 355 entries)
+#   gAbilityNames @ 0x24FC8C  (stride 13,  78 entries)
+#   gSpeciesNames @ 0x245F2C  (stride 11, 412 entries)
+
+# 2. Fetch canonical Korean names from PokeAPI (CSV mirror) for triangulation
+curl -s -o tools/moneo/rom_swap/pokemon_species_names.csv \
+    https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/pokemon_species_names.csv
+curl -s -o tools/moneo/rom_swap/move_names.csv \
+    https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/move_names.csv
+curl -s -o tools/moneo/rom_swap/ability_names.csv \
+    https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/ability_names.csv
+python3 tools/moneo/rom_swap/parse_korean_names.py
+# Writes korean_{species,move,ability}_names.json
+
+# 3. Triangulate codepoint -> hangul mapping from the joined data
+python3 tools/moneo/rom_swap/build_codepoint_map.py
+python3 tools/moneo/rom_swap/iterative_resolve.py
+# Writes codepoint_map.json (~533 codepoints resolved)
+
+# 4. Decode all entries and inspect for unresolved codepoints
+python3 tools/moneo/rom_swap/decode_with_map.py
+# Writes decoded_names.json
+
+# 5. Build deck cards (TM/HM-based move attribution applied)
+python3 tools/moneo/build_name_table_decks.py
+# Writes seed-vocab-ko-rom-names.json, seed-vocab-ko-species.json,
+# and matching sentences.
+
+# 6. Merge into shipped decks
+python3 tools/moneo/merge_into_shipped_decks.py
+# Updates app/src/main/assets/moneo/seed-vocab-ko-mined.json (+424 cards),
+# matching sentences (+426 cards), copies species deck to assets dir.
+```
+
+After step 6, MoneoModule.kt loads the species deck automatically
+(seed-vocab-ko-species.json + sentences-ko-species.json).
+
+Total deck size grows from ~908 to 1740 cards.
+
 ## End state
 
 `tools/moneo/*-attributed.json` (4 files: vocab+sentences for both topik and mined,
@@ -342,3 +393,4 @@ Combined deck: 956 cards total, 639 attributed (67%).
 | celadon_city | 5 | |
 | route_4..route_25 + others | ~32 | long tail |
 | **unattributed** | 317 | TOPIK vocab not tokenizing in any ROM text |
+```
