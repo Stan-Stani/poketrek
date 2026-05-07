@@ -43,7 +43,7 @@ def main():
     import xdelta3
     patch = PATCH.read_bytes()
     print(f"applying {PATCH.name} ({len(patch):,} bytes) to base ({len(base):,} bytes)...")
-    patched = xdelta3.decode(input_bytes=patch, source_bytes=base)
+    patched = xdelta3.decode(original=base, delta=patch)
     out_path.write_bytes(patched)
     print(f"wrote {out_path} ({len(patched):,} bytes)")
 
