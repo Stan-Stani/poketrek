@@ -84,6 +84,14 @@ fun EmulatorScreen(
                 .padding(start = 8.dp, top = 56.dp),
         )
 
+        AreaGateLockChip(
+            gate = runner.gate,
+            moneo = moneo,
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(start = 8.dp, top = 96.dp),
+        )
+
         if (debugOn) {
             DebugOverlay(
                 snapshot = ramSnapshot,

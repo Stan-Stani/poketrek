@@ -925,6 +925,36 @@ private fun MoneoSection(
             checked = includeEtymology,
             onCheckedChange = { moneo.prefs.setIncludeEtymology(it) },
         )
+        // Hard area-gate: blocks the player from physically entering an area
+        // until they've cleared enough cards anchored to the upstream area.
+        val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
+        ToggleRow(
+            label = "Area gate (block at boundaries)",
+            sublabel = if (areaGateEnabled)
+                "Blocks DPAD at area edges/warps until vocab maturity ≥ threshold"
+            else
+                "Off — area transitions are unrestricted",
+            checked = areaGateEnabled,
+            onCheckedChange = { moneo.prefs.setAreaGateEnabled(it) },
+        )
+        if (areaGateEnabled) {
+            val areaGateThresholdPct by moneo.prefs.areaGateThresholdPct.collectAsState()
+            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(
+                    "Maturity threshold: ${areaGateThresholdPct}%",
+                    fontSize = 12.sp,
+                    color = Color(0xFF374151),
+                )
+                Slider(
+                    value = areaGateThresholdPct.toFloat(),
+                    onValueChange = {
+                        moneo.prefs.setAreaGateThresholdPct(it.toInt())
+                    },
+                    valueRange = 0f..100f,
+                    steps = 9, // 10-percent increments (0, 10, 20, ..., 100)
+                )
+            }
+        }
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
