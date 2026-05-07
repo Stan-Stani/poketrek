@@ -208,6 +208,24 @@ class MoneoRepository(
         _cards.value = _cards.value + (vocabId to updated)
     }
 
+    /**
+     * Fraction of cards in [areaId] considered "mature" — i.e. cards in the
+     * REVIEW state or user-suspended (the user vouched they know it). Used
+     * by the area-gate to decide whether the player may cross into a higher
+     * ordinal area in-game.
+     *
+     * Returns 1.0 for areas with no visible vocab (vacuously cleared) so
+     * empty/unused areas never block progression.
+     */
+    fun maturityPct(areaId: String): Float {
+        val ids = vocabForArea(areaId).map { it.id }.toSet()
+        if (ids.isEmpty()) return 1f
+        val cards = _cards.value.values.filter { it.vocabId in ids }
+        if (cards.isEmpty()) return 1f
+        val mature = cards.count { it.suspended || it.snapshot.state == CardState.REVIEW }
+        return mature.toFloat() / cards.size
+    }
+
     /** Wipe all SRS state. Used by debug actions. */
     fun resetAllProgress() {
         store.clear()
