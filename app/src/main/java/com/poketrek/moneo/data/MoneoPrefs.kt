@@ -21,6 +21,7 @@ private val KEY_ENABLED = booleanPreferencesKey("moneo_enabled")
 private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
 private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
+private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 
 /**
  * Moneo's user preferences. Intentionally separate from [MovementBudget]'s
@@ -48,6 +49,9 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _verbatimSentences = MutableStateFlow(true)
     val verbatimSentences: StateFlow<Boolean> = _verbatimSentences.asStateFlow()
 
+    private val _includeSpecies = MutableStateFlow(true)
+    val includeSpecies: StateFlow<Boolean> = _includeSpecies.asStateFlow()
+
     init {
         runBlocking {
             val prefs = context.moneoStore.data.first()
@@ -55,6 +59,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _targetAreaId.value = prefs[KEY_TARGET_AREA]
             _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
+            _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
         }
     }
 
@@ -81,6 +86,11 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setVerbatimSentences(value: Boolean) {
         _verbatimSentences.value = value
         scope.launch { context.moneoStore.edit { it[KEY_VERBATIM_SENTENCES] = value } }
+    }
+
+    fun setIncludeSpecies(value: Boolean) {
+        _includeSpecies.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_INCLUDE_SPECIES] = value } }
     }
 
     companion object {

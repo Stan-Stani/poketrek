@@ -905,6 +905,16 @@ private fun MoneoSection(
             checked = verbatimSentences,
             onCheckedChange = { moneo.prefs.setVerbatimSentences(it) },
         )
+        val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
+        ToggleRow(
+            label = "Pokémon name cards",
+            sublabel = if (includeSpecies)
+                "246 Gen 1+2 species names included in your deck"
+            else
+                "Species names hidden — focus on grammar/vocab only",
+            checked = includeSpecies,
+            onCheckedChange = { moneo.prefs.setIncludeSpecies(it) },
+        )
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,

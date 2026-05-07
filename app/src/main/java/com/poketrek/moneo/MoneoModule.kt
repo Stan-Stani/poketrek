@@ -45,10 +45,14 @@ class MoneoModule private constructor(context: Context) {
             SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-topik.json")
         }.getOrElse { emptyList() }
         // Species names (proper nouns) extracted from gSpeciesNames in the
-        // 2024 ROM. Optional like the other decks.
-        val vocabSpecies = runCatching {
-            SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-species.json")
-        }.getOrElse { emptyList() }
+        // 2024 ROM. User-toggleable via prefs.includeSpecies (default true);
+        // when off, species deck is omitted at startup. Toggle takes effect on
+        // next app launch -- live filtering would require repository plumbing.
+        val vocabSpecies = if (prefs.includeSpecies.value) {
+            runCatching {
+                SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-species.json")
+            }.getOrElse { emptyList() }
+        } else emptyList()
         val vocab = vocabSeed + vocabMined + vocabTopik + vocabSpecies
         val sentencesRom = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-rom.json")
@@ -66,9 +70,11 @@ class MoneoModule private constructor(context: Context) {
         }.getOrElse { emptyList() }
         // Species sentences match the species vocab deck. Same shape as the
         // other corpora; auto-generated example sentences.
-        val sentencesSpecies = runCatching {
-            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-species.json")
-        }.getOrElse { emptyList() }
+        val sentencesSpecies = if (prefs.includeSpecies.value) {
+            runCatching {
+                com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-species.json")
+            }.getOrElse { emptyList() }
+        } else emptyList()
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
