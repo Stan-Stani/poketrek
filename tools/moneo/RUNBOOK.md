@@ -18,8 +18,10 @@ be filtered or sorted by story progression.
 ## Prerequisites
 
 ```bash
-# Korean LeafGreen ROM at repo root
-ls "Pocket Monsters - LeafGreen (Korean).gba"
+# Korean LeafGreen ROM (2024-02-29 patch is the current default)
+ls tools/moneo/rom_swap/leafgreen_J-K_2024.gba   # CRC32 0x4A38A8CB
+# legacy 2010 build still works if you swap rom_config.ROM_PATH:
+# ls "Pocket Monsters - LeafGreen (Korean).gba"   # CRC32 0x398C4817
 
 # Python venv with mecab-ko
 source .venv-moneo/bin/activate
@@ -64,7 +66,11 @@ python3 tools/moneo/walk_scripts_v2.py
   (msgbox pattern), `trainerbattle` (0x5C with subtype layouts), `bufferstring`
   (0x85/0xBF), CALL/GOTO recursion (depth=2), END/RETURN terminators.
   Falls back to scoped 2KB window u32 scan on unknown opcodes.
-- Map walker uses gMapGroups @ 0x316740 — 41 groups, 299 maps total.
+- Map walker uses gMapGroups (2024 patch: 0x352700; 2010 build: 0x316740).
+  Group offsets are now derived dynamically from the ROM via
+  `rom_config.get_group_offsets()`, so the walker auto-adapts to either
+  build. The 2024 patch ships 299 maps (every canonical FRLG map including
+  Sevii Islands); the 2010 build shipped only 146 (Kanto only).
 
 If `script_opcodes.py` is missing (or pokefirered updates), regenerate:
 ```bash
@@ -272,12 +278,30 @@ python3 tools/moneo/attribute_existing_decks.py
 
 | Symbol | Offset | Notes |
 |--------|--------|-------|
-| gMapGroups | 0x316740 | 41 groups, 299 maps |
-| gItems | 0x3A058C | 40-byte stride, 374 items, name@0, itemId@14, desc@20 |
-| gPokedexEntries | 0x40E254 | 28-byte stride, 387 entries, desc@16 |
+**2024-02-29 patch (current):** see `tools/moneo/rom_config.py` for the
+authoritative constants. Verified by `tools/moneo/rom_swap/find_offsets_2024.py`.
+
+| Symbol | Offset | Notes |
+|--------|--------|-------|
+| gMapGroups | 0x352700 | 41 groups, 299 maps |
+| gItems | 0x3DAED4 | 44-byte stride (canonical), 375 items |
+| gPokedexEntries | 0x44E2E0 | 36-byte stride (canonical), 387 entries |
+| gWildMonHeaders | 0x3C9B64 | 20-byte stride, 132 entries; group offset still -2 |
+| gTrainers | 0x23EB3C | 40-byte stride (canonical), 743 trainers |
+| gTrainerClassNames | 0x23E5A4 | 13-byte stride (canonical), 107 class names |
+| Trainer dialog table | 0x230000-0x240000 | dense pointer region |
+
+**2010 fan translation (legacy):**
+
+| Symbol | Offset | Notes |
+|--------|--------|-------|
+| gMapGroups | 0x316740 | 41 groups, 146 maps |
+| gItems | 0x3A058C | 40-byte stride, 374 items |
+| gPokedexEntries | 0x40E254 | 28-byte stride, 387 entries |
 | gWildMonHeaders | 0x390E04 | 20-byte stride, 76 entries; group offset -2 |
-| gTrainers | 0x1FE1B4 | 32-byte stride (Korean compacted), 504 trainers; class@1, partySize@24, party@28 |
-| gTrainerClassNames | 0x1FDB18 | 11-byte stride, 117 translated class names |
+| gTrainers | 0x1FE1B4 | 32-byte stride (Korean compacted), 504 trainers |
+| gTrainerClassNames | 0x1FDB18 | 11-byte stride, 117 class names |
+| Trainer dialog table | 0x163000-0x166000 | dense pointer region |
 | Trainer dialog table | 0x163000-0x166000 | flat region of trainer/sign-dialog ptrs |
 
 These are derived from the canonical pokefirered struct definitions, applied

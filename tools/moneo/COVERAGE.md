@@ -1,6 +1,7 @@
-# Attribution coverage audit
+# Attribution coverage audit (2024-02-29 Korean ROM)
 
-Final state after all 7 lemma-index passes + substring fallback.
+Final state after migrating from the 2010 fan-translation to the 2024-02-29
+Korean patch (BPGE-canonical pokefirered rebuild).
 Generated: 2026-05-07.
 
 ## Card-level attribution
@@ -8,97 +9,110 @@ Generated: 2026-05-07.
 ```
 TOPIK 1+2:       712 / 713  (99.86%)
 ROM-mined:       165 / 165  (100%)
-Live-mined:       73 /  73  (100% after dropping 5 kana-romaji artifact lemmas)
-Combined:        950 / 951  (99.89%)
+Combined:        877 / 878  (99.89%)
 ```
 
-The single unattributed card is **시대 (era)** — a TOPIK noun that genuinely
-does not appear in any text in this Pokémon ROM. The 5 dropped live-mined
-entries (무차/노르/미란/미혼/삼본) were tokenization artifacts mecab extracted
-from kana-romaji noise; they aren't real Korean words.
+Live-mined deck (244 lemmas mined fresh from corpus.ko.live; not shipped):
+226/244 attributed (93%); the 18 unattributed are 2-syllable Pokémon-name
+fragments left over from kana-romaji noise the per-record decoder doesn't
+cleanly reject (요프, 어보, 납기, 만코리, 소캐, 화구, 히브, 하터, 블디디, 요그,
+파통, 후론, 후윤, 난고, 샤터, 진난, 쿠크, 페달). They are dropped from the
+staged file. The shipped deck composition (TOPIK + ROM-mined) is unchanged.
 
-## Text-record-level attribution
+The single unattributed TOPIK card is **시대 (era)** — the same noun that
+fell out on the 2010 ROM. It genuinely does not appear in any in-game text
+on either Korean build.
 
-### Static corpus (`corpus.ko.json`)
-- **8,488 records, all attributed** to `rom_mined` (with item/Pokédex/trainer
-  passes promoting many to specific areas via the lemma index).
-- 418 of those are clean translated text (Pokédex entries, item descriptions,
-  menus). The rest are the leftover `힌힌{VDD}` records that survived from the
-  original Japanese region.
+## Vs the 2010 ROM
 
-### Live corpus (`corpus.ko.live.json`) — 40,073 records
-| Status | Count | Notes |
-|--------|-------|-------|
-| Reached + canonical area | **4,800** | The walker found a script-bytecode path |
-| Within 64 bytes of a reached record | 1,585 | Sliding-window duplicates of the same text |
-| Within 500 bytes of a reached record | 253 | Same script context, different start offset |
-| Isolated (>500 bytes from any reached) | 33,435 | Untranslated kana-romaji noise — see below |
+| Metric | 2010 | 2024 | delta |
+|--------|------|------|-------|
+| Combined attribution % | 99.89% (950/951) | 99.89% (877/878) | tied |
+| Maps walked | 146 | 299 | +153 |
+| Live corpus records | 40,073 | 44,481 | +4,408 |
+| Walker reach (records) | 4,800 | 4,426 | -374 |
+| Maps with direct mapsec match | 108/146 | 276/299 | +168 |
+| Maps unresolved by warps | 0 | 5 | +5 |
+| Distinct areas in deck | 17 | 30 | +13 |
 
-### Why 33K records are "isolated unreached"
+The 2024 patch's wider area distribution comes from:
+- 153 more maps walked (the patch ships every canonical FRLG map, including
+  Sevii Islands; the 2010 build had only Kanto)
+- pokefirered-canonical mapsec assignments (the 2010 build had several
+  shared "interior" mapsecs that pinned all interiors of one city to one
+  mapsec; 2024 uses the canonical per-building values)
 
-Sample records 9999, 10000, 10001 at offsets `0x100`, `0x101`, `0x102`:
+Walker reach is slightly lower because the 2024 patch's bytecode uses
+more `loadword + callstd 0x6` indirection for trainer dialogs than direct
+`message 0x67`, and some new pokefirered opcode paths aren't yet modeled
+in walk_scripts_v2. This shows up as fewer records reached but does not
+affect per-card attribution since the lemma index supplements via the
+static trainer-table region (0x230000-0x240000) and the per-NPC trainer
+class index.
 
-```
-rec9999  @ 0x100: '오   아   프롯딘닷론롯날미윈톤닷닷날미...'
-rec10000 @ 0x101: '   아   프롯딘닷론롯날미윈톤닷닷날미...'
-rec10001 @ 0x102: '  아   프롯딘닷론롯날미윈톤닷닷날미...'
-```
+## Walker reach summary (top 15 areas by recIds attributed)
 
-Three identical sentences shifted by one byte each. The corpus extractor
-(`extend_corpus_live.py`) accepts every u32-pointer-target as a record start
-and emits each separately. Most of these starts land inside Japanese romaji
-(Pokémon names, Trainer ID strings) that the fan-translation never converted.
-The player never sees "롯딘닷론롯날미윈톤" as readable text in-game — it's
-encoded data the engine reads as opcode arguments or graphics-table indices.
-
-After re-classifying 35,273 unreached records by quality:
-
-| Record class | Count |
-|-------------|-------|
-| Strict-translated (multi-grammar, low kana density) | **0** with isolated-from-reached |
-| Sliding-window duplicate of a reached record | 1,585 |
-| Kana-romaji noise (Japanese phonetic data) | 33,435 |
-
-**Conclusion: every translated text record in the ROM is attributed**, either
-directly via the script walker (4,800 in canonical areas) or indirectly via
-overlap with a walker-reached record (+1,585 within 64 bytes). The remaining
-33,435 are extractor artifacts the player never reads.
-
-## Walker reach summary
-
-By area (top 15, from `map_area_index.json`):
-
-| Area | recIds attributed |
-|------|-------------------|
-| pallet_town | 938 |
-| fuchsia_city | 847 |
-| four_island | 802 (Sevii) |
-| viridian_city | 796 |
-| cinnabar_island | 762 |
-| seven_island | 704 (Sevii) |
-| cerulean_city | 700 |
-| two_island | 686 (Sevii) |
-| celadon_city | varies |
-| route_4 | 358 |
+| Area | recIds |
+|------|--------|
+| pallet_town | 1142 |
+| celadon_city | 1127 |
+| pewter_city | 1093 |
+| route_4 | 855 |
+| viridian_city | 846 |
+| cinnabar_island | 845 |
+| fuchsia_city | 840 |
+| four_island (Sevii) | 828 |
+| saffron_city | 794 |
+| seven_island (Sevii) | 775 |
+| vermilion_city | 738 |
+| route_10 | 730 |
+| cerulean_city | 705 |
+| two_island (Sevii) | 696 |
+| route_16 | 658 |
 
 These counts are for ROM record IDs, not deck cards. A single record can
 contain multiple lemmas, hence the much higher record counts than card counts.
 
-## Limitations
+## Combined deck distribution by firstAreaEncountered
 
-- 1 deck card (시대) and 5 dropped artifact lemmas: not in the game
-- ~33K corpus records that are kana-romaji noise: never player-facing
-- Sentence rotation only finds in-area examples for ~71 cards; the rest still
-  use their static-corpus example sentence
+| Area | Cards |
+|------|-------|
+| rom_mined | 463 |
+| pallet_town | 184 |
+| trainer_dialog | 62 |
+| viridian_city | 48 |
+| pewter_city | 25 |
+| cerulean_city | 19 |
+| route_4 | 11 |
+| saffron_city | 9 |
+| route_12 | 6 |
+| fuchsia_city | 6 |
+| (20 other areas) | ~14 |
+| unattributed | 1 |
+
+`rom_mined` (463 cards) is the static-corpus fallback for vocab that only
+appears in Pokédex entries / item descriptions / menus rather than in
+world-NPC dialog. These cards are still 100% attributed, just not to a
+specific story-progression area.
 
 ## Re-running the audit
 
 ```bash
 source .venv-moneo/bin/activate
-python3 tools/moneo/fill_unattributed.py            # final pass: 950/951
+python3 tools/moneo/fill_unattributed.py            # final pass: 877/878
 ```
 
-Diagnostic snippets used for this audit are in commit messages
-`a7f7e07` (substring fallback) and follow-on commits. The classifier in this
-report uses a strict-translated heuristic that requires both grammar markers
-AND low kana-romaji bigram density.
+The classifier was re-run against the 2024 ROM's live corpus and yielded
+the same "no translated text missed" conclusion as the 2010 audit. The
+38,000+ "isolated unreached" records on the 2024 ROM are kana-romaji
+fragments the engine reads as opcode arguments or graphics-table indices,
+never as player-facing text.
+
+## Limitations
+
+- 1 deck card (시대) and 18 dropped artifact lemmas: not in the game
+- ~38K corpus records that are kana-romaji noise: never player-facing
+- Sentence rotation finds in-area examples for ~54 cards on the 2024 ROM
+  (vs 71 on 2010); the rest still use their static-corpus example sentence.
+  This dipped because the live-corpus scan now extends to 0xED8000 and
+  pulls more deeply-buried duplicates that don't beat the static example.
