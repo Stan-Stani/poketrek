@@ -1,0 +1,174 @@
+package com.poketrek.moneo
+
+import com.poketrek.emu.AreaGateDecision
+import com.poketrek.emu.GbaKey
+import com.poketrek.emu.LeafGreenRam
+import com.poketrek.emu.MoneoAreaGate
+import com.poketrek.moneo.data.MapBoundaryLookup
+import com.poketrek.moneo.data.MoneoPrefs
+import com.poketrek.moneo.data.MoneoRepository
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+
+/**
+ * Tiny oracle the area gate consults for area maturity. Letting the gate
+ * take this interface (instead of [MoneoRepository]) keeps it testable on
+ * the plain JVM. The production path forwards to [MoneoRepository.maturityPct].
+ */
+fun interface MaturityOracle {
+    /** Fraction (0..1) of cards in [areaId] considered mature. */
+    fun maturityFraction(areaId: String): Float
+}
+
+/**
+ * Tiny configuration the area gate consults each frame. Same testability
+ * motivation as [MaturityOracle].
+ */
+interface AreaGateConfig {
+    val enabled: Boolean
+    val thresholdPct: Int
+}
+
+/**
+ * Concrete implementation of [MoneoAreaGate] that uses [MapBoundaryLookup] to detect
+ * area boundaries and warps, [MoneoPrefs] to read the user's enable toggle and maturity
+ * threshold, and [MoneoRepository] to obtain the actual maturity of the destination area.
+ *
+ * Each call to [evaluate] checks whether any currently pressed direction would step
+ * into a not-yet-mature Moneo Area and returns an [AreaGateDecision] that may block one
+ * or more direction bits. The latest decision is exposed through [lastDecision] so the
+ * HUD can display a lock chip without re-running the full evaluation.
+ */
+class MoneoAreaGateImpl(
+    private val boundaries: MapBoundaryLookup,
+    private val config: AreaGateConfig,
+    private val oracle: MaturityOracle,
+) : MoneoAreaGate {
+
+    private val _last = MutableStateFlow(AreaGateDecision.NONE)
+    override val lastDecision: StateFlow<AreaGateDecision> = _last.asStateFlow()
+
+    override fun evaluate(rawKeys: Int, snapshot: LeafGreenRam.Snapshot): AreaGateDecision {
+        // Gate disabled → no blocking
+        if (!config.enabled) {
+            return updateAndReturn(AreaGateDecision.NONE)
+        }
+
+        // SaveBlock not yet initialised (title screen / intro). Avoid querying
+        // the lookup with garbage coordinates.
+        if (snapshot.saveBlockPtr == 0) {
+            return updateAndReturn(AreaGateDecision.NONE)
+        }
+
+        val thresholdPct = config.thresholdPct.coerceIn(0, 100)
+        val thresholdFrac = thresholdPct / 100f
+
+        val list = boundaries.boundariesFor(snapshot.mapBank, snapshot.mapId)
+        if (list.isEmpty()) return updateAndReturn(AreaGateDecision.NONE)
+
+        var blockedMask = 0
+        var firstHitArea: String? = null
+        var firstHitMaturity = 0f
+
+        // Edge case: standing on a warp tile (any pressed dir would trigger
+        // the warp on the next step). Block all four directions.
+        val warpHere = list.firstOrNull {
+            it.kind == "warp" && it.x == snapshot.playerX && it.y == snapshot.playerY
+        }
+        if (warpHere != null) {
+            val mat = oracle.maturityFraction(warpHere.destArea)
+            if (mat < thresholdFrac) {
+                blockedMask = blockedMask or DIR_MASK
+                firstHitArea = warpHere.destArea
+                firstHitMaturity = mat
+            }
+        }
+
+        // Edge boundaries: only if pressing the matching direction.
+        // Adjacent warp: pressing toward a warp tile.
+        val pressedDirs: List<Pair<String, Int>> = listOf(
+            "up" to GbaKey.UP,
+            "down" to GbaKey.DOWN,
+            "left" to GbaKey.LEFT,
+            "right" to GbaKey.RIGHT,
+        )
+        for ((dirName, dirBit) in pressedDirs) {
+            if ((rawKeys and dirBit) == 0) continue
+
+            // (a) Edge at current tile?
+            val edge = list.firstOrNull {
+                it.kind == "edge" && it.x == snapshot.playerX && it.y == snapshot.playerY && it.dir == dirName
+            }
+            if (edge != null) {
+                val mat = oracle.maturityFraction(edge.destArea)
+                if (mat < thresholdFrac) {
+                    blockedMask = blockedMask or dirBit
+                    if (firstHitArea == null) {
+                        firstHitArea = edge.destArea
+                        firstHitMaturity = mat
+                    }
+                }
+                continue
+            }
+
+            // (b) Adjacent warp tile (pressing toward it)?
+            val (ax, ay) = adjacent(snapshot.playerX, snapshot.playerY, dirName)
+            val warp = list.firstOrNull { it.kind == "warp" && it.x == ax && it.y == ay }
+            if (warp != null) {
+                val mat = oracle.maturityFraction(warp.destArea)
+                if (mat < thresholdFrac) {
+                    blockedMask = blockedMask or dirBit
+                    if (firstHitArea == null) {
+                        firstHitArea = warp.destArea
+                        firstHitMaturity = mat
+                    }
+                }
+            }
+        }
+
+        if (blockedMask == 0) {
+            return updateAndReturn(AreaGateDecision.NONE)
+        }
+        val dec = AreaGateDecision(
+            shouldBlock = true,
+            blockedDirMask = blockedMask,
+            destArea = firstHitArea,
+            maturityFraction = firstHitMaturity,
+            thresholdFraction = thresholdFrac,
+        )
+        return updateAndReturn(dec)
+    }
+
+
+    private fun updateAndReturn(decision: AreaGateDecision): AreaGateDecision {
+        if (_last.value != decision) _last.value = decision
+        return decision
+    }
+
+    private fun adjacent(x: Int, y: Int, dir: String): Pair<Int, Int> = when (dir) {
+        "up" -> x to (y - 1)
+        "down" -> x to (y + 1)
+        "left" -> (x - 1) to y
+        "right" -> (x + 1) to y
+        else -> x to y
+    }
+
+    companion object {
+        private const val DIR_MASK = GbaKey.RIGHT or GbaKey.LEFT or GbaKey.UP or GbaKey.DOWN
+
+        /** Build the production area gate from concrete Moneo singletons. */
+        fun create(
+            boundaries: MapBoundaryLookup,
+            prefs: MoneoPrefs,
+            repo: MoneoRepository,
+        ): MoneoAreaGateImpl {
+            val cfg = object : AreaGateConfig {
+                override val enabled: Boolean get() = prefs.areaGateEnabled.value
+                override val thresholdPct: Int get() = prefs.areaGateThresholdPct.value
+            }
+            val oracle = MaturityOracle { areaId -> repo.maturityPct(areaId) }
+            return MoneoAreaGateImpl(boundaries, cfg, oracle)
+        }
+    }
+}

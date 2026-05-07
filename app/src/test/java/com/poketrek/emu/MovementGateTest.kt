@@ -202,4 +202,116 @@ class MovementGateTest {
         // Make sure other bits would have passed through.
         assertNotEquals(GbaKey.A, out and GbaKey.A) // A wasn't held; nothing to assert vs mask
     }
+
+    // ---- area gate ----------------------------------------------------------
+
+    /**
+     * Hand-rolled fake area gate that returns a fixed decision when the
+     * snapshot matches a configured tile + pressed-dir, otherwise NONE.
+     * Mirrors the FakeBudget pattern — no Context, no real lookup.
+     */
+    private class FakeAreaGate(
+        private val blockOnTile: Triple<Int, Int, Int>? = null, // (mapBank, x, y)
+        private val blockedDirMask: Int = 0,
+        private val destArea: String = "route_1",
+    ) : MoneoAreaGate {
+        private val _last = MutableStateFlow(AreaGateDecision.NONE)
+        override val lastDecision: StateFlow<AreaGateDecision> = _last.asStateFlow()
+        var evalCalls = 0
+            private set
+        override fun evaluate(rawKeys: Int, snapshot: LeafGreenRam.Snapshot): AreaGateDecision {
+            evalCalls++
+            val tile = blockOnTile
+            if (tile == null) return AreaGateDecision.NONE
+            val (b, x, y) = tile
+            if (snapshot.mapBank != b || snapshot.playerX != x || snapshot.playerY != y) {
+                return AreaGateDecision.NONE
+            }
+            // Only block if the press includes one of our blocked dir bits.
+            if ((rawKeys and blockedDirMask) == 0) return AreaGateDecision.NONE
+            val dec = AreaGateDecision(
+                shouldBlock = true,
+                blockedDirMask = blockedDirMask,
+                destArea = destArea,
+                maturityFraction = 0.5f,
+                thresholdFraction = 0.8f,
+            )
+            _last.value = dec
+            return dec
+        }
+    }
+
+    @Test fun `area gate off (NONE decision) does not mask anything`() {
+        val b = FakeBudget(initialTiles = 10)
+        val gate = MovementGate(b, areaGate = FakeAreaGate(blockOnTile = null))
+        val out = gate.process(GbaKey.UP, snap(x = 5, y = 0))
+        assertEquals(GbaKey.UP, out and GbaKey.UP)
+    }
+
+    @Test fun `area gate on, threshold met (NONE returned), no mask`() {
+        // FakeAreaGate with blockOnTile = null simulates "threshold met"
+        // (the impl returns NONE either way; the gate only masks based on
+        // the decision).
+        val b = FakeBudget(initialTiles = 10)
+        val gate = MovementGate(b, areaGate = FakeAreaGate(blockOnTile = null))
+        val out = gate.process(GbaKey.UP, snap(x = 5, y = 0))
+        assertEquals(GbaKey.UP, out and GbaKey.UP)
+    }
+
+    @Test fun `area gate masks press toward unmatured edge boundary`() {
+        // Player at (5, 0) on map (0, 1). Pressing UP would cross into a
+        // not-yet-mature area → mask just UP, leave A/B/LEFT untouched.
+        val b = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, areaGate = areaGate)
+        val pressed = GbaKey.UP or GbaKey.A
+        val out = gate.process(pressed, snap(x = 5, y = 0))
+        assertEquals(0, out and GbaKey.UP)
+        assertEquals(GbaKey.A, out and GbaKey.A)
+    }
+
+    @Test fun `area gate does not mask press AWAY from edge boundary`() {
+        // Same setup as above but the player presses LEFT instead — fake
+        // gate's blocked-dir mask is UP only, so LEFT passes through.
+        val b = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, areaGate = areaGate)
+        val out = gate.process(GbaKey.LEFT, snap(x = 5, y = 0))
+        assertEquals(GbaKey.LEFT, out and GbaKey.LEFT)
+    }
+
+    @Test fun `area gate masks all four dirs when standing on warp tile`() {
+        // Warps trigger on entry, so any press blocks. The fake encodes that
+        // by setting blockedDirMask = all four DIR bits.
+        val b = FakeBudget(initialTiles = 10)
+        val allDirs = GbaKey.UP or GbaKey.DOWN or GbaKey.LEFT or GbaKey.RIGHT
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 12, 8),
+            blockedDirMask = allDirs,
+        )
+        val gate = MovementGate(b, areaGate = areaGate)
+        val out = gate.process(GbaKey.RIGHT or GbaKey.B, snap(x = 12, y = 8))
+        assertEquals(0, out and GbaKey.RIGHT)
+        assertEquals(GbaKey.B, out and GbaKey.B)
+    }
+
+    @Test fun `step gate and area gate compose - both contribute`() {
+        // budget=0 + gateEnabled → step gate clears all dirs.
+        // Area gate would also clear UP. Combined result: no DIR bits.
+        val b = FakeBudget(initialTiles = 0, initialEnabled = true)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, areaGate = areaGate)
+        val out = gate.process(GbaKey.UP or GbaKey.A, snap(x = 5, y = 0))
+        assertEquals(0, out and GbaKey.UP)
+        assertEquals(GbaKey.A, out and GbaKey.A)
+    }
 }
