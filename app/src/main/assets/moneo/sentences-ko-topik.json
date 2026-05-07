@@ -360,12 +360,12 @@
     },
     {
       "vocabId": "topik-v2:같다",
-      "korean": "밀밟간같",
+      "korean": "몬스터볼이다。\n안에 포켓몬이 있는것 같다!",
       "romanization": "mil-balb-gan-gat",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "같다",
       "areaId": "topik_1",
-      "source": "rom-rec2560",
+      "source": "rom-rec29846",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -423,7 +423,10 @@
         "two_island",
         "green_path",
         "three_island"
-      ]
+      ],
+      "originalKorean": "밀밟간같",
+      "originalSource": "rom-rec2560",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:끓다",
@@ -497,12 +500,12 @@
     },
     {
       "vocabId": "topik-v2:있다",
-      "korean": "팬이있다",
+      "korean": "야생 포켓몬이\n나타나을때가 찬스!\n\n몬스터볼을\n휙! 던지면\n\n포켓몬을 잡을수있다!\n\n단…잘 잡힐지\n어떨지는 모른다!\n\n건강한포켓몬은 도망치기쉽고\n\n운도 있으니까!",
       "romanization": "paen-i-iss-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "있다",
       "areaId": "topik_1",
-      "source": "rom-rec4363",
+      "source": "rom-rec29840",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -558,7 +561,10 @@
         "outcast_island",
         "four_island",
         "two_island"
-      ]
+      ],
+      "originalKorean": "팬이있다",
+      "originalSource": "rom-rec4363",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:타다",
@@ -3163,12 +3169,12 @@
     },
     {
       "vocabId": "topik-v2:전부",
-      "korean": "전부회복시킨다",
+      "korean": "{var:06}『좋아! 할아버지!\n전부 내게맡기라구!",
       "romanization": "jeon-bu-hoe-bog-si-kin-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "전부",
       "areaId": "topik_2",
-      "source": "rom-rec151",
+      "source": "rom-rec29817",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -3205,7 +3211,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "전부회복시킨다",
+      "originalSource": "rom-rec151",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:지",
@@ -3227,12 +3236,12 @@
     },
     {
       "vocabId": "topik-v2:기술",
-      "korean": "기술꼬신",
+      "korean": "…도움이 되는 게시판!\n\n포켓몬에겐 체력외에도\n기술을 쓰는힘의 원천인\n\n기술포인트가 있습니다。\n\n기술들의 포인트를\n다□을 때에도\n\n포켓몬센터에서 쉬게해주세요!",
       "romanization": "gi-sul-kko-sin",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "기술",
       "areaId": "topik_2",
-      "source": "rom-rec3126",
+      "source": "rom-rec27933",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -3269,7 +3278,10 @@
         "green_path",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "기술꼬신",
+      "originalSource": "rom-rec3126",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:낮다",
@@ -3567,12 +3579,12 @@
     },
     {
       "vocabId": "topik-v2:노트",
-      "korean": "에모노트",
+      "korean": "노트를 펼처다!\n\n1페이지째…\n\n포켓몬은\n몬스터볼로 잡아서\n\n6마리까지 가질수있다。\n\n포켓몬을 키워서 싸우는\n사람을 트레이너라 한다。",
       "romanization": "e-mo-no-teu",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "노트",
       "areaId": "topik_1",
-      "source": "rom-rec4859",
+      "source": "rom-rec29938",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -3596,7 +3608,10 @@
         "seven_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "에모노트",
+      "originalSource": "rom-rec4859",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:덜",
@@ -4307,12 +4322,12 @@
     },
     {
       "vocabId": "topik-v2:조금",
-      "korean": "조금물속에",
+      "korean": "덤마『{var:01}…!\n조금 쉬었다 가면\n\n어떨까…?\n\n………",
       "romanization": "jo-geum-mul-sog-e",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "조금",
       "areaId": "topik_1",
-      "source": "rom-rec4476",
+      "source": "rom-rec29622",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -4355,7 +4370,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "조금물속에",
+      "originalSource": "rom-rec4476",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:폭",
@@ -4701,12 +4719,12 @@
     },
     {
       "vocabId": "topik-v2:없다",
-      "korean": "다당없끓",
+      "korean": "{var:01}!\n유감이지만 니차례는\n\n전혀없다!\n\n그래! 우리누나에게\n타운맵을 빌려가야지!\n\n{var:01}에겐 빌려주지 말라고\n누나에게 말해둘거니깐\n\n우리접에 와도 무리라구!",
       "romanization": "da-dang-eobs-kkeulh",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "없다",
       "areaId": "topik_1",
-      "source": "rom-rec1332",
+      "source": "rom-rec29818",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -4750,23 +4768,29 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "다당없끓",
+      "originalSource": "rom-rec1332",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:자신",
-      "korean": "자신의공격이오른다",
+      "korean": "자신이있는 장소나\n마을의이름을 알고싶을때\n\n타운맵을쓰면 좋아",
       "romanization": "ja-sin-ui-gong-gyeog-i-o-reun-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "자신",
       "areaId": "topik_2",
-      "source": "rom-rec266",
+      "source": "rom-rec29660",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
         "saffron_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "자신의공격이오른다",
+      "originalSource": "rom-rec266",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:그림",
@@ -5136,12 +5160,12 @@
     },
     {
       "vocabId": "topik-v2:빨리",
-      "korean": "더빨리뚜워지게지",
+      "korean": "이 세계의 모든\n포켓몬을 기록한\n\n완벽한 도감을 만드는것!\n\n그것이 나의 꿈이었다!\n\n하지만 나도이제 할아버지!\n그렇게까지 무리는 할수없다!\n\n그래서 너희들이\n내 대신\n\n꿈을 이뤄주었으면 한다!\n\n자,둘다\n빨리 풀발하렴!\n\n이건 포켓몬역사에 남을\n위대한 일이다!",
       "romanization": "deo-ppal-ri-ttu-wo-ji-ge-ji",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "빨리",
       "areaId": "topik_1",
-      "source": "rom-rec1338",
+      "source": "rom-rec29841",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -5182,16 +5206,19 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "더빨리뚜워지게지",
+      "originalSource": "rom-rec1338",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:사람",
-      "korean": "모습을본사람은",
+      "korean": "나나미『사람과 똑같이\n포켓몬도 쌀아있어!\n\n체력이 없을땐\n쉬게 해주렴!",
       "romanization": "mo-seub-eul-bon-sa-ram-eun",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "사람",
       "areaId": "topik_1",
-      "source": "rom-rec4480",
+      "source": "rom-rec29661",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -5200,7 +5227,10 @@
         "cerulean_city",
         "route_10",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "모습을본사람은",
+      "originalSource": "rom-rec4480",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:색",
@@ -5672,12 +5702,12 @@
     },
     {
       "vocabId": "topik-v2:서다",
-      "korean": "깊꼴선껌",
+      "korean": "1969년 7훨 20일!\n\n인류\n처음으로 달에 서다!\n\n나는 그 뉴스를 보고\n컬러TV를 □어!",
       "romanization": "gip-kkol-seon-kkeom",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "서다",
       "areaId": "topik_1",
-      "source": "rom-rec5752",
+      "source": "rom-rec30038",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -5691,7 +5721,10 @@
         "route_17",
         "celadon_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "깊꼴선껌",
+      "originalSource": "rom-rec5752",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:술잔",
@@ -5742,12 +5775,12 @@
     },
     {
       "vocabId": "topik-v2:얼굴",
-      "korean": "낮에는얼굴을콤은채",
+      "korean": "프로필은 좋아하는말을\n4개 조합해서 만드는거야\n\n조합할 말은\n많이 있어!\n\n니가 알기쉽도록\n몇개의 그롤에\n\n나누어져 있으니 일단 너는\n\n그롤을 고르고 나서\n\n그안의 말을 고르는거야!\n\n……어렵다는듯한 얼굴을 하네\n하여튼 해보자!",
       "romanization": "naj-e-neun-eol-gul-eul-kom-eun-chae",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "얼굴",
       "areaId": "topik_1",
-      "source": "rom-rec4371",
+      "source": "rom-rec34026",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -5768,7 +5801,10 @@
         "two_island",
         "memorial_pillar",
         "three_island"
-      ]
+      ],
+      "originalKorean": "낮에는얼굴을콤은채",
+      "originalSource": "rom-rec4371",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:온",
@@ -6180,12 +6216,12 @@
     },
     {
       "vocabId": "topik-v2:모양",
-      "korean": "번개모양이있다",
+      "korean": "너를\n얕꺼던 모양이군\n\n나를이긴 증표인\n포켓몬리그 공인\n\n그레이뱃지를 주마!\n\n이{var:01}는「은」 타케시로부터\n그레이뱃지를받았다!에아\n츄\n\n에그레이뱃지를 가지고있는\n것만으로도\n\n너의포켓몬은 강해진다!\n\n그리고 플래시라는 기술을\n가지고있는 포켓몬은\n\n싸우지 않아도 플래시를\n\n쓸수있게되지!",
       "romanization": "beon-gae-mo-yang-i-iss-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "모양",
       "areaId": "topik_2",
-      "source": "rom-rec208",
+      "source": "rom-rec30058",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -6216,7 +6252,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "번개모양이있다",
+      "originalSource": "rom-rec208",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:바꾸다",
@@ -6624,12 +6663,12 @@
     },
     {
       "vocabId": "topik-v2:가끔",
-      "korean": "가끔물속에서",
+      "korean": "마비되면 가끔\n기술을 쓸수없고\n\n스피드도 떨어접니다!\n\n전투가 끝나도\n마비는 남아있으니\n\n마비치료제로 치료합시다。",
       "romanization": "ga-kkeum-mul-sog-e-seo",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "가끔",
       "areaId": "topik_1",
-      "source": "rom-rec4336",
+      "source": "rom-rec29952",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -6653,7 +6692,10 @@
         "two_island",
         "green_path",
         "three_island"
-      ]
+      ],
+      "originalKorean": "가끔물속에서",
+      "originalSource": "rom-rec4336",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:갑자기",
@@ -6807,17 +6849,20 @@
     },
     {
       "vocabId": "topik-v2:다음",
-      "korean": "다음뒤로",
+      "korean": "다음 페이지도 볼까?",
       "romanization": "da-eum-dwi-ro",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "다음",
       "areaId": "topik_1",
-      "source": "rom-rec2591",
+      "source": "rom-rec29943",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "다음뒤로",
+      "originalSource": "rom-rec2591",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:데",
@@ -7041,12 +7086,12 @@
     },
     {
       "vocabId": "topik-v2:벌레",
-      "korean": "물,벌레타입의",
+      "korean": "애벌레 포켓몬은\n2종류 있다는거 알어?",
       "romanization": "mul,beol-re-ta-ib-ui",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "벌레",
       "areaId": "topik_2",
-      "source": "rom-rec137",
+      "source": "rom-rec27916",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -7060,7 +7105,10 @@
         "route_15",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "물,벌레타입의",
+      "originalSource": "rom-rec137",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:비싸다",
@@ -7269,12 +7317,12 @@
     },
     {
       "vocabId": "topik-v2:위험",
-      "korean": "귀를세우고위험을",
+      "korean": "오키드『위험했다!\n풀숲에서는\n\n야생의 포켓몬이 튀어나온다!\n\n너도 포켓몬을\n가지고 있으면\n\n싸울수 있을지도…\n\n그래!\n\n…잠시\n나를 따라오거라!",
       "romanization": "gwi-reul-se-u-go-wi-heom-eul",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "위험",
       "areaId": "topik_1",
-      "source": "rom-rec4360",
+      "source": "rom-rec27865",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -7282,7 +7330,10 @@
         "route_24",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "귀를세우고위험을",
+      "originalSource": "rom-rec4360",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:이동",
@@ -7309,12 +7360,12 @@
     },
     {
       "vocabId": "topik-v2:장소",
-      "korean": "건조한장소에",
+      "korean": "PC를 보면\n몇번이나 메일이 오고있다!\n\n…… …… ……\n\n포켓몬을 강하게 키워서\n싸우는 포켓몬트레이너!\n\n여기에 최강의\n\n트레이너가 모였습니다\n\n장소는 세키에이고원의\n포켓몬 리그본부입니다!\n\n오키드박사님도\n한번 봐주세요。\n\n…… 포켓몬 리그보다\n\n…… …… ……",
       "romanization": "geon-jo-han-jang-so-e",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "장소",
       "areaId": "topik_1",
-      "source": "rom-rec4355",
+      "source": "rom-rec29851",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -7322,7 +7373,10 @@
         "route_12",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "건조한장소에",
+      "originalSource": "rom-rec4355",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:전",
@@ -7765,12 +7819,12 @@
     },
     {
       "vocabId": "topik-v2:많이",
-      "korean": "많이기르지만곤잘",
+      "korean": "프로필은 좋아하는말을\n4개 조합해서 만드는거야\n\n조합할 말은\n많이 있어!\n\n니가 알기쉽도록\n몇개의 그롤에\n\n나누어져 있으니 일단 너는\n\n그롤을 고르고 나서\n\n그안의 말을 고르는거야!\n\n……어렵다는듯한 얼굴을 하네\n하여튼 해보자!",
       "romanization": "manh-i-gi-reu-ji-man-gon-jal",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "많이",
       "areaId": "topik_1",
-      "source": "rom-rec4381",
+      "source": "rom-rec34026",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -7792,7 +7846,10 @@
         "two_island",
         "memorial_pillar",
         "three_island"
-      ]
+      ],
+      "originalKorean": "많이기르지만곤잘",
+      "originalSource": "rom-rec4381",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:맵다",
@@ -7861,35 +7918,41 @@
     },
     {
       "vocabId": "topik-v2:반드시",
-      "korean": "반드시도망칠수있다",
+      "korean": "오키드『포켓몬을 그그\n발견하기만 해서는\n\n자세한 데이터를\n\n손에 넣을수 없지!\n\n반드시\n잡아야만 한단다!\n\n어디 그걸 위해서\n\n필요한 도구를 주마!",
       "romanization": "ban-deu-si-do-mang-chil-su-iss-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "반드시",
       "areaId": "topik_2",
-      "source": "rom-rec199",
+      "source": "rom-rec29838",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "pewter_city",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "반드시도망칠수있다",
+      "originalSource": "rom-rec199",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:발견",
-      "korean": "이겨서받거나발견해서",
+      "korean": "책상위에 있는건\n내가만든 포켓몬도감!\n\n발견한포켓몬의 데이터가\n자동으로 입력되어\n\n페이지가 늘어가는\n\n곧장히 하이테크한 도감이다!",
       "romanization": "i-gyeo-seo-bad-geo-na-bal-gyeon-hae-seo",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "발견",
       "areaId": "topik_2",
-      "source": "rom-rec3709",
+      "source": "rom-rec29834",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "pewter_city",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "이겨서받거나발견해서",
+      "originalSource": "rom-rec3709",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:벽",
@@ -8041,12 +8104,12 @@
     },
     {
       "vocabId": "topik-v2:소년",
-      "korean": "세소년석Ä",
+      "korean": "니비시티는\n벌레잡이소년 같이\n\n단지 취미로 포켓몬을\n\n키우는녀석 뿐이야!\n\n하지만 니비 포켓몬 체육관의\n타케시는 아냐",
       "romanization": "se-so-nyeon-seogÄ",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "소년",
       "areaId": "topik_2",
-      "source": "rom-rec9838",
+      "source": "rom-rec28016",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
@@ -8062,7 +8125,10 @@
         "rom_mined",
         "kindle_road",
         "resort_gorgeous"
-      ]
+      ],
+      "originalKorean": "세소년석Ä",
+      "originalSource": "rom-rec9838",
+      "rotatedFromArea": "pewter_city"
     },
     {
       "vocabId": "topik-v2:소주",
@@ -8332,12 +8398,12 @@
     },
     {
       "vocabId": "topik-v2:전혀",
-      "korean": "전혀나오지않게된다",
+      "korean": "{var:01}!\n유감이지만 니차례는\n\n전혀없다!\n\n그래! 우리누나에게\n타운맵을 빌려가야지!\n\n{var:01}에겐 빌려주지 말라고\n누나에게 말해둘거니깐\n\n우리접에 와도 무리라구!",
       "romanization": "jeon-hyeo-na-o-ji-anh-ge-doen-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "전혀",
       "areaId": "topik_2",
-      "source": "rom-rec201",
+      "source": "rom-rec29818",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -8367,7 +8433,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "전혀나오지않게된다",
+      "originalSource": "rom-rec201",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:좋아하다",
@@ -9158,17 +9227,20 @@
     },
     {
       "vocabId": "topik-v2:메일",
-      "korean": "메일박스",
+      "korean": "PC를 보면\n몇번이나 메일이 오고있다!\n\n…… …… ……\n\n포켓몬을 강하게 키워서\n싸우는 포켓몬트레이너!\n\n여기에 최강의\n\n트레이너가 모였습니다\n\n장소는 세키에이고원의\n포켓몬 리그본부입니다!\n\n오키드박사님도\n한번 봐주세요。\n\n…… 포켓몬 리그보다\n\n…… …… ……",
       "romanization": "me-il-bag-seu",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "메일",
       "areaId": "topik_2",
-      "source": "rom-rec3022",
+      "source": "rom-rec29851",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "메일박스",
+      "originalSource": "rom-rec3022",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:모레",
@@ -9396,17 +9468,20 @@
     },
     {
       "vocabId": "topik-v2:소문",
-      "korean": "좋턴이있다는소문이있다",
+      "korean": "츠타츠츠츠츠츠츠츠츠\n츠츠츠츠츠츠츠츠츠\n츠츠츠츠츠츠츠츠츠\n라\n핏피는 달에서 왕다는\n소문 알고 있어?\n\n오츠키미산에\n달의돌이 떨어졌을때부터\n\n발견되었어",
       "romanization": "joh-teon-i-iss-da-neun-so-mun-i-iss-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "소문",
       "areaId": "topik_2",
-      "source": "rom-rec4352",
+      "source": "rom-rec28011",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "좋턴이있다는소문이있다",
+      "originalSource": "rom-rec4352",
+      "rotatedFromArea": "pewter_city"
     },
     {
       "vocabId": "topik-v2:손",
@@ -9491,12 +9566,12 @@
     },
     {
       "vocabId": "topik-v2:얼음",
-      "korean": "포켓몬1마리의얼음",
+      "korean": "얼어버리면\n움직일수가 없습니다!\n\n전투가 끝나도 얼어있습니다。\n얼음상태치료제로 눅여줍시다。",
       "romanization": "po-kes-mon1ma-ri-ui-eol-eum",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "얼음",
       "areaId": "topik_2",
-      "source": "rom-rec147",
+      "source": "rom-rec29951",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -9525,7 +9600,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "포켓몬1마리의얼음",
+      "originalSource": "rom-rec147",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:없이",
@@ -9616,17 +9694,20 @@
     },
     {
       "vocabId": "topik-v2:이름",
-      "korean": "너의이름은",
+      "korean": "자신이있는 장소나\n마을의이름을 알고싶을때\n\n타운맵을쓰면 좋아",
       "romanization": "neo-ui-i-reum-eun",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "이름",
       "areaId": "topik_1",
-      "source": "rom-rec3532",
+      "source": "rom-rec29660",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "너의이름은",
+      "originalSource": "rom-rec3532",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:이하",
@@ -9769,17 +9850,20 @@
     },
     {
       "vocabId": "topik-v2:정말",
-      "korean": "정말찾기힘들게된다",
+      "korean": "오! 이건\n내가 주문한\n\n특별주문 몬스터볼이군!\n\n정말 고맙다!",
       "romanization": "jeong-mal-chaj-gi-him-deul-ge-doen-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "정말",
       "areaId": "topik_2",
-      "source": "rom-rec4454",
+      "source": "rom-rec29832",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "정말찾기힘들게된다",
+      "originalSource": "rom-rec4454",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:제법",
@@ -9952,17 +10036,20 @@
     },
     {
       "vocabId": "topik-v2:최고",
-      "korean": "최고성능의볼",
+      "korean": "3페이지째…\n\n포켓몬끼리 싸워서\n이겼을때 트레이너는\n\n최고로 기뽈것이다!\n\n곽지의 체육관에서는\n먼제나 격렬한\n\n싸움이 펼제지고 있다!",
       "romanization": "choe-go-seong-neung-ui-bol",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "최고",
       "areaId": "topik_2",
-      "source": "rom-rec132",
+      "source": "rom-rec29940",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "최고성능의볼",
+      "originalSource": "rom-rec132",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:친구",
@@ -10000,12 +10087,12 @@
     },
     {
       "vocabId": "topik-v2:컴퓨터",
-      "korean": "컴퓨터에",
+      "korean": "포켓몬센터의 컴퓨터\n혹시 사용하니?\n\n1개의 박스에 포켓몬을\n30마리 맡길수있어",
       "romanization": "keom-pyu-teo-e",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "컴퓨터",
       "areaId": "topik_1",
-      "source": "rom-rec3026",
+      "source": "rom-rec28637",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -10037,7 +10124,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "컴퓨터에",
+      "originalSource": "rom-rec3026",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:태우다",
@@ -10174,12 +10264,12 @@
     },
     {
       "vocabId": "topik-v2:함께",
-      "korean": "함께모험할때",
+      "korean": "포켓몬 잡지!\n\n포켓몬연구자\n오키드박사님 특접!\n\n오키드박사님은\n손주인 나나미씨와\n\n{var:06}씨와 함께\n\n3명이서 쌀고있는듯 하다!",
       "romanization": "ham-kke-mo-heom-hal-ttae",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "함께",
       "areaId": "topik_1",
-      "source": "rom-rec3708",
+      "source": "rom-rec33325",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -10190,7 +10280,10 @@
         "trainer_tower",
         "water_path",
         "canyon_entrance"
-      ]
+      ],
+      "originalKorean": "함께모험할때",
+      "originalSource": "rom-rec3708",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:호주",
@@ -10207,17 +10300,20 @@
     },
     {
       "vocabId": "topik-v2:효과",
-      "korean": "효과는부족한듯",
+      "korean": "벌레스프레이는\n벌레는 물론\n\n포켓몬도 접근하지 않아\n\n강한 포켓몬을 맨앞에…\n즉 포켓몬 리스트의\n\n왼쪽발에 오게하면\n\n효과는 뚜가 된다!",
       "romanization": "hyo-gwa-neun-bu-jog-han-deus",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "효과",
       "areaId": "topik_2",
-      "source": "rom-rec1092",
+      "source": "rom-rec30264",
       "firstAreaEncountered": "cerulean_city",
       "areasReferenced": [
         "cerulean_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "효과는부족한듯",
+      "originalSource": "rom-rec1092",
+      "rotatedFromArea": "cerulean_city"
     },
     {
       "vocabId": "topik-v2:가만히",
@@ -10274,33 +10370,39 @@
     },
     {
       "vocabId": "topik-v2:같이",
-      "korean": "마치로켓발사와같이",
+      "korean": "웃스!\n포켓몬챔피먼을\n\n눔표로 하고있는거지?\n\n나는 트레이너가 아냐\n하지만 이기기 위해서\n\n어드바이스는 할수있어!\n\n그니까…! 같이\n열심히 하자",
       "romanization": "ma-chi-ro-kes-bal-sa-wa-gat-i",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "같이",
       "areaId": "topik_1",
-      "source": "rom-rec4337",
+      "source": "rom-rec30066",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "마치로켓발사와같이",
+      "originalSource": "rom-rec4337",
+      "rotatedFromArea": "pewter_city"
     },
     {
       "vocabId": "topik-v2:거리",
-      "korean": "란요술내치습헤래핏잔래츠케후가」루이거양가티렛V{var:0F}릿무N하타노모솔9등거리:에사키게삼",
+      "korean": "아침싸!\n\n10000광년은… …\n시간이 아냐!\n\n… … 거리다!",
       "romanization": "ran-yo-sul-nae-chi-seub-he-rae-pis-jan-rae-cheu-ke-hu-ga」ru-i-geo-yang-ga-ti-resV{var:0F}ris-muNha-ta-no-mo-sol9deung-geo-ri:e-sa-ki-ge-sam",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "거리",
       "areaId": "topik_1",
-      "source": "rom-rec8410",
+      "source": "rom-rec30064",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
         "route_12",
         "route_16"
-      ]
+      ],
+      "originalKorean": "란요술내치습헤래핏잔래츠케후가」루이거양가티렛V{var:0F}릿무N하타노모솔9등거리:에사키게삼",
+      "originalSource": "rom-rec8410",
+      "rotatedFromArea": "pewter_city"
     },
     {
       "vocabId": "topik-v2:겁",
@@ -10448,17 +10550,20 @@
     },
     {
       "vocabId": "topik-v2:공짜",
-      "korean": "롤냇곳공짜낡간끔눗",
+      "korean": "포켓몬 센터는\n어느 마을에나 가도 있어!\n\n몇마리를 맡겨도 공짜니까\n잘 사용하면 좋아!",
       "romanization": "rol-naes-gos-gong-jja-nalg-gan-kkeum-nus",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "공짜",
       "areaId": "topik_2",
-      "source": "rom-rec4734",
+      "source": "rom-rec29981",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "롤냇곳공짜낡간끔눗",
+      "originalSource": "rom-rec4734",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:과학자",
@@ -10651,18 +10756,21 @@
     },
     {
       "vocabId": "topik-v2:기본",
-      "korean": "입히는건승부의기본",
+      "korean": "모르는것이 있을때\n이것을보면 도움이 될거야。\n\n포켓몬 트레이너의\n\n기본을 알수있다구!",
       "romanization": "ib-hi-neun-geon-seung-bu-ui-gi-bon",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "기본",
       "areaId": "topik_2",
-      "source": "rom-rec1339",
+      "source": "rom-rec27926",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "입히는건승부의기본",
+      "originalSource": "rom-rec1339",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:기준",
@@ -10797,12 +10905,12 @@
     },
     {
       "vocabId": "topik-v2:남자",
-      "korean": "남자아이",
+      "korean": "덤마『…그렇구나\n남자아이는 먼펜가\n\n여해을 떠나는거야!\n\n등… TV의 이야기야!\n\n그러고보니\n오키드박사님께서\n\n너를불러어。",
       "romanization": "nam-ja-a-i",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "남자",
       "areaId": "topik_1",
-      "source": "rom-rec2597",
+      "source": "rom-rec29620",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -10813,7 +10921,10 @@
         "route_9",
         "rom_mined",
         "canyon_entrance"
-      ]
+      ],
+      "originalKorean": "남자아이",
+      "originalSource": "rom-rec2597",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:내려오다",
@@ -11111,18 +11222,21 @@
     },
     {
       "vocabId": "topik-v2:똑같이",
-      "korean": "복사하여상대와똑같이",
+      "korean": "나나미『사람과 똑같이\n포켓몬도 쌀아있어!\n\n체력이 없을땐\n쉬게 해주렴!",
       "romanization": "bog-sa-ha-yeo-sang-dae-wa-ttog-gat-i",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "똑같이",
       "areaId": "topik_2",
-      "source": "rom-rec4460",
+      "source": "rom-rec29661",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "route_13",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "복사하여상대와똑같이",
+      "originalSource": "rom-rec4460",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:뜨겁다",
@@ -11148,18 +11262,21 @@
     },
     {
       "vocabId": "topik-v2:마을",
-      "korean": "모습을감추면마을에",
+      "korean": "오키드『그럼!\n야생포켓몬이 나타나도\n\n그녀석을 싸우게하면서 가면\n\n이웃마을로 갈수있어",
       "romanization": "mo-seub-eul-gam-chu-myeon-ma-eul-e",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "마을",
       "areaId": "topik_2",
-      "source": "rom-rec4453",
+      "source": "rom-rec29828",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "모습을감추면마을에",
+      "originalSource": "rom-rec4453",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:막다",
@@ -11244,17 +11361,20 @@
     },
     {
       "vocabId": "topik-v2:메뉴",
-      "korean": "이메뉴를닫는다",
+      "korean": "…도움이 되는 게시판!\n\n스타트버튼을 누르면\n메뉴가 열립니다!",
       "romanization": "i-me-nyu-reul-dad-neun-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "메뉴",
       "areaId": "topik_1",
-      "source": "rom-rec3713",
+      "source": "rom-rec33337",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "이메뉴를닫는다",
+      "originalSource": "rom-rec3713",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:모두",
@@ -11280,18 +11400,21 @@
     },
     {
       "vocabId": "topik-v2:물건",
-      "korean": "여러물건을자를수있다",
+      "korean": "안늦어서 다해이다……\n오키드박사님의 조수입니다\n\n전할 물건을\n드리게습니다\n\n여기!",
       "romanization": "yeo-reo-mul-geon-eul-ja-reul-su-iss-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "물건",
       "areaId": "topik_1",
-      "source": "rom-rec4411",
+      "source": "rom-rec28033",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "여러물건을자를수있다",
+      "originalSource": "rom-rec4411",
+      "rotatedFromArea": "pewter_city"
     },
     {
       "vocabId": "topik-v2:물속",
@@ -11413,12 +11536,12 @@
     },
     {
       "vocabId": "topik-v2:박스",
-      "korean": "메일박스",
+      "korean": "포켓몬센터의 컴퓨터\n혹시 사용하니?\n\n1개의 박스에 포켓몬을\n30마리 맡길수있어",
       "romanization": "me-il-bag-seu",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "박스",
       "areaId": "topik_2",
-      "source": "rom-rec3022",
+      "source": "rom-rec28637",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -11449,7 +11572,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "메일박스",
+      "originalSource": "rom-rec3022",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:밥",
@@ -11476,18 +11602,21 @@
     },
     {
       "vocabId": "topik-v2:버튼",
-      "korean": "버튼모드",
+      "korean": "…도움이 되는 게시판!\n\n스타트버튼을 누르면\n메뉴가 열립니다!",
       "romanization": "beo-teun-mo-deu",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "버튼",
       "areaId": "topik_2",
-      "source": "rom-rec3677",
+      "source": "rom-rec33337",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "pewter_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "버튼모드",
+      "originalSource": "rom-rec3677",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:벨트",
@@ -11628,18 +11757,21 @@
     },
     {
       "vocabId": "topik-v2:비밀",
-      "korean": "포켓몬의비밀이기록되는도구",
+      "korean": "아그씨『아가씨\n당신만에게…!\n\n좋은 이야기가 있어서\n\n비밀의 포켓몬 코이킹이\n단돈 500엔!\n\n어때 사게어?",
       "romanization": "po-kes-mon-ui-bi-mil-i-gi-rog-doe-neun-do-gu",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "비밀",
       "areaId": "topik_2",
-      "source": "rom-rec3707",
+      "source": "rom-rec31696",
       "firstAreaEncountered": "route_2",
       "areasReferenced": [
         "route_2",
         "route_4",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "포켓몬의비밀이기록되는도구",
+      "originalSource": "rom-rec3707",
+      "rotatedFromArea": "route_2"
     },
     {
       "vocabId": "topik-v2:빨간색",
@@ -11671,12 +11803,12 @@
     },
     {
       "vocabId": "topik-v2:사용",
-      "korean": "사용하면포켓몬1마리의",
+      "korean": "포켓몬센터의 컴퓨터\n혹시 사용하니?\n\n1개의 박스에 포켓몬을\n30마리 맡길수있어",
       "romanization": "sa-yong-ha-myeon-po-kes-mon1ma-ri-ui",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "사용",
       "areaId": "topik_2",
-      "source": "rom-rec188",
+      "source": "rom-rec28637",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -11720,7 +11852,10 @@
         "four_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "사용하면포켓몬1마리의",
+      "originalSource": "rom-rec188",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:사탕",
@@ -11960,18 +12095,21 @@
     },
     {
       "vocabId": "topik-v2:시간",
-      "korean": "플레이시간",
+      "korean": "아침싸!\n\n10000광년은… …\n시간이 아냐!\n\n… … 거리다!",
       "romanization": "peul-re-i-si-gan",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "시간",
       "areaId": "topik_1",
-      "source": "rom-rec4013",
+      "source": "rom-rec30064",
       "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
         "pewter_city",
         "cerulean_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "플레이시간",
+      "originalSource": "rom-rec4013",
+      "rotatedFromArea": "pewter_city"
     },
     {
       "vocabId": "topik-v2:시대",
@@ -12154,17 +12292,20 @@
     },
     {
       "vocabId": "topik-v2:약간",
-      "korean": "가지고있으며약간의",
+      "korean": "2페이지째…\n\n포켓몬을 잡을땐\n일단 지치게하자!\n\n독이나 화상으로\n\n약간 지제도된다!\n\n팔팔하면 잡기힘들다!",
       "romanization": "ga-ji-go-iss-eu-myeo-yag-gan-ui",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "약간",
       "areaId": "topik_2",
-      "source": "rom-rec4429",
+      "source": "rom-rec29939",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "가지고있으며약간의",
+      "originalSource": "rom-rec4429",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:양쪽",
@@ -12196,12 +12337,12 @@
     },
     {
       "vocabId": "topik-v2:어렵다",
-      "korean": "나오기어려워진다",
+      "korean": "프로필은 좋아하는말을\n4개 조합해서 만드는거야\n\n조합할 말은\n많이 있어!\n\n니가 알기쉽도록\n몇개의 그롤에\n\n나누어져 있으니 일단 너는\n\n그롤을 고르고 나서\n\n그안의 말을 고르는거야!\n\n……어렵다는듯한 얼굴을 하네\n하여튼 해보자!",
       "romanization": "na-o-gi-eo-ryeo-wo-jin-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "어렵다",
       "areaId": "topik_1",
-      "source": "rom-rec173",
+      "source": "rom-rec34026",
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
         "viridian_city",
@@ -12223,7 +12364,10 @@
         "two_island",
         "memorial_pillar",
         "three_island"
-      ]
+      ],
+      "originalKorean": "나오기어려워진다",
+      "originalSource": "rom-rec173",
+      "rotatedFromArea": "viridian_city"
     },
     {
       "vocabId": "topik-v2:얼다",
@@ -12243,12 +12387,12 @@
     },
     {
       "vocabId": "topik-v2:여자",
-      "korean": "여자아이",
+      "korean": "덤마『…그렇구나\n여자아이라면 먼펜가\n\n여해을 꿈꾸보는거야!\n\n등… TV의 이야기야!\n\n그러고보니\n오키드박사님께서\n\n너를불러어。",
       "romanization": "yeo-ja-a-i",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "여자",
       "areaId": "topik_1",
-      "source": "rom-rec2598",
+      "source": "rom-rec29621",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -12256,7 +12400,10 @@
         "pewter_city",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "여자아이",
+      "originalSource": "rom-rec2598",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:역",
@@ -12283,18 +12430,21 @@
     },
     {
       "vocabId": "topik-v2:연구",
-      "korean": "지독한유전자연구를",
+      "korean": "나나미『안□\n{var:01}{var:05}!\n\n남동생인 {var:06}는「은」\n할아버지의연구소에 있어",
       "romanization": "ji-dog-han-yu-jeon-ja-yeon-gu-reul",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "연구",
       "areaId": "topik_2",
-      "source": "rom-rec4479",
+      "source": "rom-rec29656",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "trainer_dialog",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "지독한유전자연구를",
+      "originalSource": "rom-rec4479",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:연기",
@@ -12871,12 +13021,12 @@
     },
     {
       "vocabId": "topik-v2:주변",
-      "korean": "주변의온도가점점",
+      "korean": "이주변은\n숲과는 버다른\n\n포켓몬을 잡을수있어!",
       "romanization": "ju-byeon-ui-on-do-ga-jeom-jeom",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "주변",
       "areaId": "topik_2",
-      "source": "rom-rec4333",
+      "source": "rom-rec28634",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -12908,7 +13058,10 @@
         "seven_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "주변의온도가점점",
+      "originalSource": "rom-rec4333",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:주인",
@@ -13107,12 +13260,12 @@
     },
     {
       "vocabId": "topik-v2:처음",
-      "korean": "처음이지",
+      "korean": "으음…\n술에 취하고싶어!\n\n꼬리가 아프군…\n\n포켓몬도감은 잘 채우고있게지?\n처음에는 말야\n\n포켓몬을 지치게한후\n\n잡는게 요렴이다!",
       "romanization": "cheo-eum-i-ji",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "처음",
       "areaId": "topik_1",
-      "source": "rom-rec1335",
+      "source": "rom-rec27927",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
@@ -13136,7 +13289,10 @@
         "seven_island",
         "two_island",
         "three_island"
-      ]
+      ],
+      "originalKorean": "처음이지",
+      "originalSource": "rom-rec1335",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:철",
@@ -13198,17 +13354,20 @@
     },
     {
       "vocabId": "topik-v2:취소",
-      "korean": "전환취소",
+      "korean": "진화취소를 쓰고있어?\n\n진화하려는 포켓몬을\n도중에 그만두게하는거야\n\n그모습 그대로\n\n키울수있는 기술이야",
       "romanization": "jeon-hwan-chwi-so",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "취소",
       "areaId": "topik_2",
-      "source": "rom-rec3641",
+      "source": "rom-rec31665",
       "firstAreaEncountered": "route_2",
       "areasReferenced": [
         "route_2",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "전환취소",
+      "originalSource": "rom-rec3641",
+      "rotatedFromArea": "route_2"
     },
     {
       "vocabId": "topik-v2:카드",
@@ -13439,19 +13598,22 @@
     },
     {
       "vocabId": "topik-v2:필요",
-      "korean": "갗고있어서주의가필요하다",
+      "korean": "오키드『포켓몬을 그그\n발견하기만 해서는\n\n자세한 데이터를\n\n손에 넣을수 없지!\n\n반드시\n잡아야만 한단다!\n\n어디 그걸 위해서\n\n필요한 도구를 주마!",
       "romanization": "gach-go-iss-eo-seo-ju-ui-ga-pil-yo-ha-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "필요",
       "areaId": "topik_1",
-      "source": "rom-rec4357",
+      "source": "rom-rec29838",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "pewter_city",
         "route_3",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "갗고있어서주의가필요하다",
+      "originalSource": "rom-rec4357",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:하늘",
@@ -13482,19 +13644,22 @@
     },
     {
       "vocabId": "topik-v2:할아버지",
-      "korean": "할아버지는",
+      "korean": "이 세계의 모든\n포켓몬을 기록한\n\n완벽한 도감을 만드는것!\n\n그것이 나의 꿈이었다!\n\n하지만 나도이제 할아버지!\n그렇게까지 무리는 할수없다!\n\n그래서 너희들이\n내 대신\n\n꿈을 이뤄주었으면 한다!\n\n자,둘다\n빨리 풀발하렴!\n\n이건 포켓몬역사에 남을\n위대한 일이다!",
       "romanization": "hal-a-beo-ji-neun",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "할아버지",
       "areaId": "topik_1",
-      "source": "rom-rec1274",
+      "source": "rom-rec29841",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
         "rom_mined",
         "green_path"
-      ]
+      ],
+      "originalKorean": "할아버지는",
+      "originalSource": "rom-rec1274",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:향하다",
@@ -13512,18 +13677,21 @@
     },
     {
       "vocabId": "topik-v2:허리",
-      "korean": "허리를흔들며걸어다닌다",
+      "korean": "니가 허리에 차고있는\n그 몬스터볼은!\n\n틀림없이 포켓몬이구나!\n\n먼제라도 포켓몬을 자유룹게\n휴대할수 있다니\n\n편리한 세상이지",
       "romanization": "heo-ri-reul-heun-deul-myeo-geol-eo-da-nin-da",
       "gloss": "(TOPIK example from ROM)",
       "targetForm": "허리",
       "areaId": "topik_1",
-      "source": "rom-rec4452",
+      "source": "rom-rec27913",
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
         "pallet_town",
         "viridian_city",
         "rom_mined"
-      ]
+      ],
+      "originalKorean": "허리를흔들며걸어다닌다",
+      "originalSource": "rom-rec4452",
+      "rotatedFromArea": "pallet_town"
     },
     {
       "vocabId": "topik-v2:혀",
