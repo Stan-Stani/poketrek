@@ -34,12 +34,11 @@ class CalibrationStore(private val context: Context) {
     fun load(crc32: Long): RomCalibration? = runBlocking {
         val prefs = context.calibrationStore.data.first()
         val sb1 = prefs[sb1Key(crc32)]
-        if (sb1 != null) {
-            RomCalibration(saveBlock1PtrAddr = sb1)
-        } else if (crc32 == US_REV1_CRC) {
-            RomCalibration.DEFAULT_US_REV1
-        } else {
-            null
+        when {
+            sb1 != null -> RomCalibration(saveBlock1PtrAddr = sb1)
+            crc32 == US_REV1_CRC -> RomCalibration.DEFAULT_US_REV1
+            crc32 == KR_2024_CRC -> RomCalibration.DEFAULT_KR_2024
+            else -> null
         }
     }
 
@@ -57,6 +56,7 @@ class CalibrationStore(private val context: Context) {
 
     companion object {
         private const val US_REV1_CRC = 0xDAFFECECL
+        private const val KR_2024_CRC = 0x4A38A8CBL
     }
 }
 
