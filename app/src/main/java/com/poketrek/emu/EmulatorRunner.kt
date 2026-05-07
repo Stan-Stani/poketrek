@@ -45,6 +45,17 @@ class EmulatorRunner(
     val gate: MovementGate = MovementGate(budget)
 
     /**
+     * Wire the Moneo area gate. Called once from EmulatorActivity.onCreate
+     * after the MoneoModule singleton + MapBoundaryLookup have been built.
+     * Replaces the DISABLED default on [MovementGate]. Safe to call multiple
+     * times (the runner thread reads the gate's current area-gate by
+     * volatile reference).
+     */
+    fun setMoneoAreaGate(areaGate: MoneoAreaGate) {
+        gate.setAreaGate(areaGate)
+    }
+
+    /**
      * Calibration for the currently-loaded ROM. Refreshed on [loadRom] from
      * [calibrationStore]; null means we have no calibration for this ROM
      * (gating will be bypassed). Read on the emu thread, written on the UI

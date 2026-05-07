@@ -243,7 +243,7 @@ class MovementGateTest {
 
     @Test fun `area gate off (NONE decision) does not mask anything`() {
         val b = FakeBudget(initialTiles = 10)
-        val gate = MovementGate(b, areaGate = FakeAreaGate(blockOnTile = null))
+        val gate = MovementGate(b, initialAreaGate = FakeAreaGate(blockOnTile = null))
         val out = gate.process(GbaKey.UP, snap(x = 5, y = 0))
         assertEquals(GbaKey.UP, out and GbaKey.UP)
     }
@@ -253,7 +253,7 @@ class MovementGateTest {
         // (the impl returns NONE either way; the gate only masks based on
         // the decision).
         val b = FakeBudget(initialTiles = 10)
-        val gate = MovementGate(b, areaGate = FakeAreaGate(blockOnTile = null))
+        val gate = MovementGate(b, initialAreaGate = FakeAreaGate(blockOnTile = null))
         val out = gate.process(GbaKey.UP, snap(x = 5, y = 0))
         assertEquals(GbaKey.UP, out and GbaKey.UP)
     }
@@ -266,7 +266,7 @@ class MovementGateTest {
             blockOnTile = Triple(0, 5, 0),
             blockedDirMask = GbaKey.UP,
         )
-        val gate = MovementGate(b, areaGate = areaGate)
+        val gate = MovementGate(b, initialAreaGate = areaGate)
         val pressed = GbaKey.UP or GbaKey.A
         val out = gate.process(pressed, snap(x = 5, y = 0))
         assertEquals(0, out and GbaKey.UP)
@@ -281,7 +281,7 @@ class MovementGateTest {
             blockOnTile = Triple(0, 5, 0),
             blockedDirMask = GbaKey.UP,
         )
-        val gate = MovementGate(b, areaGate = areaGate)
+        val gate = MovementGate(b, initialAreaGate = areaGate)
         val out = gate.process(GbaKey.LEFT, snap(x = 5, y = 0))
         assertEquals(GbaKey.LEFT, out and GbaKey.LEFT)
     }
@@ -295,7 +295,7 @@ class MovementGateTest {
             blockOnTile = Triple(0, 12, 8),
             blockedDirMask = allDirs,
         )
-        val gate = MovementGate(b, areaGate = areaGate)
+        val gate = MovementGate(b, initialAreaGate = areaGate)
         val out = gate.process(GbaKey.RIGHT or GbaKey.B, snap(x = 12, y = 8))
         assertEquals(0, out and GbaKey.RIGHT)
         assertEquals(GbaKey.B, out and GbaKey.B)
@@ -309,7 +309,7 @@ class MovementGateTest {
             blockOnTile = Triple(0, 5, 0),
             blockedDirMask = GbaKey.UP,
         )
-        val gate = MovementGate(b, areaGate = areaGate)
+        val gate = MovementGate(b, initialAreaGate = areaGate)
         val out = gate.process(GbaKey.UP or GbaKey.A, snap(x = 5, y = 0))
         assertEquals(0, out and GbaKey.UP)
         assertEquals(GbaKey.A, out and GbaKey.A)

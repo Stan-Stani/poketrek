@@ -97,9 +97,26 @@ private object NoopMoneoAreaGate : MoneoAreaGate {
  */
 class MovementGate(
     private val budget: MovementGateBudget,
-    private val areaGate: MoneoAreaGate = MoneoAreaGate.DISABLED,
+    initialAreaGate: MoneoAreaGate = MoneoAreaGate.DISABLED,
 ) {
     val enabled = budget.gateEnabled
+
+    /**
+     * Currently active area gate. Volatile because the runner thread reads
+     * it every frame while the activity may swap it in once at startup
+     * after MoneoModule is built.
+     */
+    @Volatile
+    private var areaGate: MoneoAreaGate = initialAreaGate
+
+    /** Replace the area gate. Activity uses this after Moneo wires up. */
+    fun setAreaGate(value: MoneoAreaGate) {
+        areaGate = value
+    }
+
+    /** Exposed so callers (HUD) can observe the current gate's decisions. */
+    val areaGateDecisions: kotlinx.coroutines.flow.StateFlow<AreaGateDecision>
+        get() = areaGate.lastDecision
 
     private var prevSnapshot: LeafGreenRam.Snapshot? = null
     private var prevKeys: Int = 0
@@ -131,8 +148,10 @@ class MovementGate(
 
         // Area gate: clear only the specific direction(s) that would step into
         // a not-yet-mature area. Layered on top of the step gate so the two
-        // can both contribute (the more restrictive wins).
-        val decision = areaGate.evaluate(masked, current)
+        // can both contribute (the more restrictive wins). Snapshot the
+        // volatile reference once for thread-safety.
+        val ag = areaGate
+        val decision = ag.evaluate(masked, current)
         if (decision.shouldBlock && decision.blockedDirMask != 0) {
             masked = masked and decision.blockedDirMask.inv()
         }

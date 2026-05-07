@@ -110,6 +110,24 @@ class EmulatorActivity : ComponentActivity() {
         moneo = MoneoModule.get(applicationContext)
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
+
+        // Wire the hard area-gate. ROM identity gating: we currently allow
+        // any ROM with a calibration to use the area gate (per user
+        // request — Korean ROMs are the primary target). EmulatorRunner
+        // already bypasses LeafGreenRam.read when calibration is null, so
+        // a non-calibrated ROM never reaches the gate path anyway.
+        runCatching {
+            val boundaries = com.poketrek.moneo.data.MapBoundaryLookup
+                .loadFromAssets(applicationContext)
+            val areaGate = com.poketrek.moneo.MoneoAreaGateImpl
+                .create(boundaries, moneo.prefs, moneo.repository)
+            runner.setMoneoAreaGate(areaGate)
+        }.onFailure {
+            android.util.Log.w(
+                "EmulatorActivity",
+                "MoneoAreaGate not wired (asset missing or parse failed): ${it.message}"
+            )
+        }
         romCache = RomCache(applicationContext)
 
         // Manual orientation: locked to landscape (manifest), no sensor follow.
