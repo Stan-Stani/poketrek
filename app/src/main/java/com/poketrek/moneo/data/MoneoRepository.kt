@@ -39,6 +39,20 @@ class MoneoRepository(
     private val _cards = MutableStateFlow<Map<String, CardRecord>>(emptyMap())
     val cards: StateFlow<Map<String, CardRecord>> = _cards.asStateFlow()
 
+    /**
+     * Source tags that should be excluded from review surfaces. Driven by user
+     * preferences (e.g. opting out of Pokemon-name flashcards). Vocab entries
+     * with a matching [VocabEntry.sourceTag] are filtered from [vocabForArea],
+     * [nextDueCard], [totalDueCount], [dueCountForArea], and area progress.
+     * Default empty so all decks are visible.
+     */
+    private val _excludedSourceTags = MutableStateFlow<Set<String>>(emptySet())
+    val excludedSourceTags: StateFlow<Set<String>> = _excludedSourceTags.asStateFlow()
+
+    fun setExcludedSourceTags(tags: Set<String>) {
+        _excludedSourceTags.value = tags
+    }
+
     /** Sentences indexed by [SentenceEntry.vocabId]; multiple per vocab allowed. */
     private val sentencesRomByVocab: Map<String, List<SentenceEntry>> = initialSentencesRom.groupBy { it.vocabId }
     private val sentencesStudyByVocab: Map<String, List<SentenceEntry>> = initialSentencesStudy.groupBy { it.vocabId }
@@ -70,8 +84,19 @@ class MoneoRepository(
         _cards.value = store.all().associateBy { it.vocabId }
     }
 
-    fun vocabForArea(areaId: String): List<VocabEntry> =
-        _vocab.value.values.filter { it.areaId == areaId }
+    fun vocabForArea(areaId: String): List<VocabEntry> {
+        val excluded = _excludedSourceTags.value
+        return _vocab.value.values.filter {
+            it.areaId == areaId && it.sourceTag !in excluded
+        }
+    }
+
+    /** Vocab IDs visible after applying [excludedSourceTags]. Used by due-count helpers. */
+    private fun visibleVocabIds(): Set<String> {
+        val excluded = _excludedSourceTags.value
+        if (excluded.isEmpty()) return _vocab.value.keys
+        return _vocab.value.values.filter { it.sourceTag !in excluded }.map { it.id }.toSet()
+    }
 
     fun areaProgress(areaId: String): StateFlow<AreaProgress> {
         // Backed by combining the cards flow with the vocab snapshot. Since
@@ -153,8 +178,13 @@ class MoneoRepository(
     }
 
     /** Total cards due across all areas at [nowMs]. NEW cards always count as due. */
-    fun totalDueCount(nowMs: Long = now()): Int =
-        _cards.value.values.count { it.snapshot.state == CardState.NEW || it.snapshot.dueAt <= nowMs }
+    fun totalDueCount(nowMs: Long = now()): Int {
+        val visible = visibleVocabIds()
+        return _cards.value.values.count { rec ->
+            rec.vocabId in visible &&
+                (rec.snapshot.state == CardState.NEW || rec.snapshot.dueAt <= nowMs)
+        }
+    }
 
     /** Cards due in the player's currently-selected target area. */
     fun dueCountForArea(areaId: String, nowMs: Long = now()): Int {

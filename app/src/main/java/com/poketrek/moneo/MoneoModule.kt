@@ -8,6 +8,8 @@ import com.poketrek.moneo.data.MoneoPrefs
 import com.poketrek.moneo.data.MoneoRepository
 import com.poketrek.moneo.data.SeedLoader
 import java.io.File
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 /**
  * Process-wide singleton owning Moneo's collaborators. Mirrors the
@@ -45,14 +47,11 @@ class MoneoModule private constructor(context: Context) {
             SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-topik.json")
         }.getOrElse { emptyList() }
         // Species names (proper nouns) extracted from gSpeciesNames in the
-        // 2024 ROM. User-toggleable via prefs.includeSpecies (default true);
-        // when off, species deck is omitted at startup. Toggle takes effect on
-        // next app launch -- live filtering would require repository plumbing.
-        val vocabSpecies = if (prefs.includeSpecies.value) {
-            runCatching {
-                SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-species.json")
-            }.getOrElse { emptyList() }
-        } else emptyList()
+        // 2024 ROM. Always loaded; runtime filtering driven by
+        // prefs.includeSpecies via repository.setExcludedSourceTags below.
+        val vocabSpecies = runCatching {
+            SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-species.json")
+        }.getOrElse { emptyList() }
         val vocab = vocabSeed + vocabMined + vocabTopik + vocabSpecies
         val sentencesRom = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-rom.json")
@@ -70,11 +69,9 @@ class MoneoModule private constructor(context: Context) {
         }.getOrElse { emptyList() }
         // Species sentences match the species vocab deck. Same shape as the
         // other corpora; auto-generated example sentences.
-        val sentencesSpecies = if (prefs.includeSpecies.value) {
-            runCatching {
-                com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-species.json")
-            }.getOrElse { emptyList() }
-        } else emptyList()
+        val sentencesSpecies = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-species.json")
+        }.getOrElse { emptyList() }
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
@@ -82,6 +79,15 @@ class MoneoModule private constructor(context: Context) {
             initialSentencesRom = sentencesRom + sentencesMined + sentencesTopik + sentencesSpecies,
             initialSentencesStudy = sentencesStudy + sentencesMined + sentencesTopik + sentencesSpecies,
         )
+        // Drive species visibility from the user pref. When toggled off,
+        // species cards (sourceTag "rom-species-2024") are filtered out of
+        // review surfaces immediately -- no app restart needed.
+        kotlinx.coroutines.GlobalScope.launch {
+            prefs.includeSpecies.collect { include ->
+                val excluded = if (include) emptySet() else setOf("rom-species-2024")
+                repository.setExcludedSourceTags(excluded)
+            }
+        }
     }
 
     /** Wire up the optional runtime EWRAM capture once the runner exists. */
