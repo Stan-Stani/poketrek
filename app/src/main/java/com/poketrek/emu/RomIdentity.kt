@@ -12,10 +12,24 @@ import java.util.zip.CRC32
  * addresses that won't be correct on those builds — runtime calibration
  * is the planned path (see project memory).
  */
-enum class RomVariant(val displayName: String, val gatingSupported: Boolean) {
+enum class RomVariant(
+    val displayName: String,
+    val gatingSupported: Boolean,
+    /**
+     * Whether the Moneo *area* gate (Korean-only, distinct from the step
+     * gate above) runs on this ROM. boundary_tiles.json is keyed for the
+     * 2024 Korean patch's bank/mapId numbering, so it's the only variant
+     * with this enabled today.
+     */
+    val areaGateSupported: Boolean = false,
+) {
     LEAFGREEN_US_REV1("LeafGreen (USA Rev 1)", gatingSupported = true),
     LEAFGREEN_KOREAN("LeafGreen (Korean 2010 fan translation)", gatingSupported = false),
-    LEAFGREEN_KR_2024("LeafGreen (Korean 2024-02-29 patch)", gatingSupported = false),
+    LEAFGREEN_KR_2024(
+        "LeafGreen (Korean 2024-02-29 patch)",
+        gatingSupported = false,
+        areaGateSupported = true,
+    ),
     UNKNOWN("Unknown ROM", gatingSupported = false),
 }
 

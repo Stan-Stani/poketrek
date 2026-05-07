@@ -44,14 +44,23 @@ class MoneoAreaGateImpl(
     private val boundaries: MapBoundaryLookup,
     private val config: AreaGateConfig,
     private val oracle: MaturityOracle,
+    /**
+     * Per-frame check: is the currently-loaded ROM one for which boundary
+     * data is valid? Returns false if no ROM is loaded, the ROM hasn't been
+     * identified yet, or the variant isn't on the supported list. The
+     * boundary_tiles.json asset is keyed for the 2024 Korean patch's
+     * bank/mapId numbering — running it against a different ROM would mask
+     * directions on tiles that belong to entirely different maps.
+     */
+    private val isRomSupported: () -> Boolean = { true },
 ) : MoneoAreaGate {
 
     private val _last = MutableStateFlow(AreaGateDecision.NONE)
     override val lastDecision: StateFlow<AreaGateDecision> = _last.asStateFlow()
 
     override fun evaluate(rawKeys: Int, snapshot: LeafGreenRam.Snapshot): AreaGateDecision {
-        // Gate disabled → no blocking
-        if (!config.enabled) {
+        // Gate disabled OR loaded ROM isn't on the supported list → no blocking
+        if (!config.enabled || !isRomSupported()) {
             return updateAndReturn(AreaGateDecision.NONE)
         }
 
@@ -162,13 +171,14 @@ class MoneoAreaGateImpl(
             boundaries: MapBoundaryLookup,
             prefs: MoneoPrefs,
             repo: MoneoRepository,
+            isRomSupported: () -> Boolean = { true },
         ): MoneoAreaGateImpl {
             val cfg = object : AreaGateConfig {
                 override val enabled: Boolean get() = prefs.areaGateEnabled.value
                 override val thresholdPct: Int get() = prefs.areaGateThresholdPct.value
             }
             val oracle = MaturityOracle { areaId -> repo.maturityPct(areaId) }
-            return MoneoAreaGateImpl(boundaries, cfg, oracle)
+            return MoneoAreaGateImpl(boundaries, cfg, oracle, isRomSupported)
         }
     }
 }

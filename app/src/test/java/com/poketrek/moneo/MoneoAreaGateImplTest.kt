@@ -63,6 +63,20 @@ class MoneoAreaGateImplTest {
     }
 
     @Test
+    fun `unsupported ROM never blocks even on a real boundary`() {
+        val lookup = MapBoundaryLookup.parse(boundaryJson)
+        val gate = MoneoAreaGateImpl(
+            lookup,
+            FakeConfig(enabled = true, thresholdPct = 80),
+            FakeOracle(mapOf("route_1" to 0f)),
+            isRomSupported = { false },
+        )
+        val snapshot = snap(bank = 1, mapId = 0, x = 5, y = 0)
+        val decision = gate.evaluate(GbaKey.UP, snapshot)
+        assertEquals(AreaGateDecision.NONE, decision)
+    }
+
+    @Test
     fun `save block not initialised yields NONE`() {
         val lookup = MapBoundaryLookup.parse(boundaryJson)
         val gate = MoneoAreaGateImpl(

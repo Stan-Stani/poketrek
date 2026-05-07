@@ -111,16 +111,19 @@ class EmulatorActivity : ComponentActivity() {
         moneo.bindCapture { addr, length -> runner.busReadBytes(addr, length) }
         moneoGate = MoneoSoftGate(moneo.repository, moneo.prefs)
 
-        // Wire the hard area-gate. ROM identity gating: we currently allow
-        // any ROM with a calibration to use the area gate (per user
-        // request — Korean ROMs are the primary target). EmulatorRunner
-        // already bypasses LeafGreenRam.read when calibration is null, so
-        // a non-calibrated ROM never reaches the gate path anyway.
+        // Wire the hard area-gate. boundary_tiles.json is keyed for the
+        // 2024 Korean patch's bank/mapId numbering — RomVariant.areaGateSupported
+        // is the firewall. The predicate is queried each frame so a ROM swap
+        // mid-session immediately enables/disables the gate without rewiring.
         runCatching {
             val boundaries = com.poketrek.moneo.data.MapBoundaryLookup
                 .loadFromAssets(applicationContext)
-            val areaGate = com.poketrek.moneo.MoneoAreaGateImpl
-                .create(boundaries, moneo.prefs, moneo.repository)
+            val areaGate = com.poketrek.moneo.MoneoAreaGateImpl.create(
+                boundaries,
+                moneo.prefs,
+                moneo.repository,
+                isRomSupported = { runner.romIdentity.value?.variant?.areaGateSupported == true },
+            )
             runner.setMoneoAreaGate(areaGate)
         }.onFailure {
             android.util.Log.w(
