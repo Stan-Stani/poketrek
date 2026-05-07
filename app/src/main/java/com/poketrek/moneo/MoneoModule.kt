@@ -52,7 +52,12 @@ class MoneoModule private constructor(context: Context) {
         val vocabSpecies = runCatching {
             SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-species.json")
         }.getOrElse { emptyList() }
-        val vocab = vocabSeed + vocabMined + vocabTopik + vocabSpecies
+        // Korean root morphemes harvested from species-name pun etymologies.
+        // Off by default; opt-in via prefs.includeEtymology.
+        val vocabEtymology = runCatching {
+            SeedLoader.loadFromAssets(context, "moneo/seed-vocab-ko-etymology.json")
+        }.getOrElse { emptyList() }
+        val vocab = vocabSeed + vocabMined + vocabTopik + vocabSpecies + vocabEtymology
         val sentencesRom = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-rom.json")
         }.getOrElse { emptyList() }
@@ -72,21 +77,27 @@ class MoneoModule private constructor(context: Context) {
         val sentencesSpecies = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-species.json")
         }.getOrElse { emptyList() }
+        val sentencesEtymology = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-etymology.json")
+        }.getOrElse { emptyList() }
+        val allRomSentences = sentencesRom + sentencesMined + sentencesTopik + sentencesSpecies + sentencesEtymology
+        val allStudySentences = sentencesStudy + sentencesMined + sentencesTopik + sentencesSpecies + sentencesEtymology
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
             initialAreas = areas,
-            initialSentencesRom = sentencesRom + sentencesMined + sentencesTopik + sentencesSpecies,
-            initialSentencesStudy = sentencesStudy + sentencesMined + sentencesTopik + sentencesSpecies,
+            initialSentencesRom = allRomSentences,
+            initialSentencesStudy = allStudySentences,
         )
-        // Drive species visibility from the user pref. When toggled off,
-        // species cards (sourceTag "rom-species-2024") are filtered out of
-        // review surfaces immediately -- no app restart needed.
-        kotlinx.coroutines.GlobalScope.launch {
-            prefs.includeSpecies.collect { include ->
-                val excluded = if (include) emptySet() else setOf("rom-species-2024")
-                repository.setExcludedSourceTags(excluded)
-            }
+        // Drive optional-deck visibility from user prefs. Combined so toggles
+        // take effect immediately without an app restart.
+        GlobalScope.launch {
+            kotlinx.coroutines.flow.combine(prefs.includeSpecies, prefs.includeEtymology) { species, etym ->
+                val tags = mutableSetOf<String>()
+                if (!species) tags.add("rom-species-2024")
+                if (!etym) tags.add("etymology-roots")
+                tags.toSet()
+            }.collect { repository.setExcludedSourceTags(it) }
         }
     }
 

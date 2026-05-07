@@ -22,6 +22,7 @@ private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
 private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
+private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
 
 /**
  * Moneo's user preferences. Intentionally separate from [MovementBudget]'s
@@ -52,6 +53,14 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _includeSpecies = MutableStateFlow(true)
     val includeSpecies: StateFlow<Boolean> = _includeSpecies.asStateFlow()
 
+    /**
+     * Etymology root cards harvested from species-name pun explanations
+     * (e.g. 곰 from 링곰, 거북 from 꼬부기). Default off because it's an
+     * opt-in tangential vocab boost, not core game vocab.
+     */
+    private val _includeEtymology = MutableStateFlow(false)
+    val includeEtymology: StateFlow<Boolean> = _includeEtymology.asStateFlow()
+
     init {
         runBlocking {
             val prefs = context.moneoStore.data.first()
@@ -60,6 +69,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
+            _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
         }
     }
 
@@ -91,6 +101,11 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setIncludeSpecies(value: Boolean) {
         _includeSpecies.value = value
         scope.launch { context.moneoStore.edit { it[KEY_INCLUDE_SPECIES] = value } }
+    }
+
+    fun setIncludeEtymology(value: Boolean) {
+        _includeEtymology.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_INCLUDE_ETYMOLOGY] = value } }
     }
 
     companion object {

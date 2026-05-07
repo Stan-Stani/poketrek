@@ -915,6 +915,16 @@ private fun MoneoSection(
             checked = includeSpecies,
             onCheckedChange = { moneo.prefs.setIncludeSpecies(it) },
         )
+        val includeEtymology by moneo.prefs.includeEtymology.collectAsState()
+        ToggleRow(
+            label = "Etymology root cards",
+            sublabel = if (includeEtymology)
+                "142 Korean roots from Pokémon name puns (e.g. 곰 from 링곰)"
+            else
+                "Off — enable to study compound roots tangentially",
+            checked = includeEtymology,
+            onCheckedChange = { moneo.prefs.setIncludeEtymology(it) },
+        )
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
