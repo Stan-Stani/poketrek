@@ -396,10 +396,11 @@
    "resolve_note": "Pewter interior; warp to Pewter outdoor"
   },
   "0xBB": {
-   "area_id": null,
-   "frlg_canonical": "(unknown)",
-   "sample": "꽝꽤『끼[player]! 화꽈끓끗 다당됩휴 런껼몬냉훤끓 닐꽉겉겉깃?",
-   "confidence": "unidentified"
+   "area_id": "pallet_town",
+   "frlg_canonical": "(intro cutscene area)",
+   "sample": "오키드『어-이! 기다려-! 기다리라구! / 위험했다! 풀숲에서는 야생의 포켓몬이...",
+   "confidence": "high",
+   "resolve_note": "Intro cutscene where Oak grabs player; effectively part of Pallet first-encounter."
   },
   "0xBC": {
    "area_id": "mt_moon",

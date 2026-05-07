@@ -3,9 +3,9 @@
  "rom": "Pocket Monsters - LeafGreen (Korean).gba",
  "stats": {
   "maps_total": 299,
-  "maps_with_mapsec_area": 275,
-  "maps_resolved_via_warp": 3,
-  "maps_unresolved": 21
+  "maps_with_mapsec_area": 277,
+  "maps_resolved_via_warp": 17,
+  "maps_unresolved": 5
  },
  "resolved_areas": {
   "pallet_town": {
@@ -972,6 +972,9 @@
     10814,
     12575,
     12583,
+    14605,
+    14614,
+    14701,
     14859,
     16457,
     16465,
@@ -1033,6 +1036,14 @@
     27780,
     27781,
     27784,
+    27785,
+    27786,
+    27787,
+    27788,
+    27790,
+    27791,
+    27792,
+    27793,
     27931,
     28430,
     29378,
@@ -1185,6 +1196,20 @@
     30584,
     31403,
     31404,
+    31708,
+    31712,
+    31714,
+    31716,
+    31718,
+    31719,
+    31720,
+    31721,
+    31722,
+    31723,
+    31724,
+    31725,
+    31726,
+    32144,
     32174,
     32421,
     32477,
@@ -1232,6 +1257,7 @@
     32554,
     32645,
     32652,
+    32728,
     32743,
     32856,
     32858,
@@ -1248,6 +1274,45 @@
     33323,
     33324,
     33329,
+    34010,
+    34011,
+    34012,
+    34013,
+    34014,
+    34015,
+    34016,
+    34017,
+    34018,
+    34019,
+    34020,
+    34021,
+    34022,
+    34023,
+    34024,
+    34025,
+    34026,
+    34027,
+    34028,
+    34029,
+    34030,
+    34031,
+    34032,
+    34033,
+    34034,
+    34035,
+    34036,
+    34038,
+    34039,
+    34040,
+    34041,
+    34042,
+    34043,
+    34044,
+    34045,
+    34046,
+    34047,
+    34048,
+    34073,
     34289,
     34290,
     34292,
@@ -1288,6 +1353,7 @@
     34327,
     34328,
     36678,
+    38872,
     41334,
     45989,
     47641,
@@ -22784,102 +22850,6 @@
  },
  "unresolved_maps": [
   {
-   "group": 0,
-   "mapNum": 14,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 15,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 16,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 53
-  },
-  {
-   "group": 0,
-   "mapNum": 17,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 18,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 19,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 20,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 21,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 0
-  },
-  {
-   "group": 0,
-   "mapNum": 22,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 109
-  },
-  {
-   "group": 0,
-   "mapNum": 23,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 57
-  },
-  {
-   "group": 0,
-   "mapNum": 24,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 57
-  },
-  {
-   "group": 0,
-   "mapNum": 25,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 57
-  },
-  {
-   "group": 0,
-   "mapNum": 26,
-   "mapsec_hex": "0xB5",
-   "recIds_count": 58
-  },
-  {
-   "group": 0,
-   "mapNum": 56,
-   "mapsec_hex": "0xBB",
-   "recIds_count": 128
-  },
-  {
-   "group": 0,
-   "mapNum": 58,
-   "mapsec_hex": "0xBB",
-   "recIds_count": 226
-  },
-  {
-   "group": 1,
-   "mapNum": 47,
-   "mapsec_hex": "0x98",
-   "recIds_count": 0
-  },
-  {
    "group": 1,
    "mapNum": 50,
    "mapsec_hex": "0x9B",
@@ -23027,104 +22997,104 @@
    "group": 0,
    "mapNum": 14,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 15,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 16,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 53
   },
   {
    "group": 0,
    "mapNum": 17,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 18,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 19,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 20,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 21,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {
    "group": 0,
    "mapNum": 22,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 109
   },
   {
    "group": 0,
    "mapNum": 23,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 57
   },
   {
    "group": 0,
    "mapNum": 24,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 57
   },
   {
    "group": 0,
    "mapNum": 25,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 57
   },
   {
    "group": 0,
    "mapNum": 26,
    "mapsec": 181,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "resort_gorgeous",
+   "resolution_path": "warp_hop2",
    "recIds_count": 58
   },
   {
@@ -23363,8 +23333,8 @@
    "group": 0,
    "mapNum": 56,
    "mapsec": 187,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "pallet_town",
+   "resolution_path": "mapsec_direct",
    "recIds_count": 128
   },
   {
@@ -23379,8 +23349,8 @@
    "group": 0,
    "mapNum": 58,
    "mapsec": 187,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "pallet_town",
+   "resolution_path": "mapsec_direct",
    "recIds_count": 226
   },
   {
@@ -23771,8 +23741,8 @@
    "group": 1,
    "mapNum": 47,
    "mapsec": 152,
-   "resolved_area_id": null,
-   "resolution_path": "unresolved",
+   "resolved_area_id": "pewter_city",
+   "resolution_path": "warp_hop2",
    "recIds_count": 0
   },
   {

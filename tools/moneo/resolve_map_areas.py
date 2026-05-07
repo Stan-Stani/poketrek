@@ -21,7 +21,7 @@ AREAS_JSON = ROOT / "app/src/main/assets/moneo/areas.json"
 OUT = ROOT / "tools/moneo/map_area_index.json"
 
 GBA_BASE = 0x08000000
-MAX_WARP_HOPS = 2
+MAX_WARP_HOPS = 6  # interior building chains (e.g. Trainer Tower) need 4-5 hops
 
 
 def u32(rom: bytes, off: int) -> int:
