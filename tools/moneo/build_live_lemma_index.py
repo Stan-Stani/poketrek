@@ -265,16 +265,50 @@ def main():
                 n_pokedex_recs += 1
         print(f"  pokedex-entry attributions: {n_pokedex_recs}")
 
-    # Sixth pass: trainer-class names (gTrainerClasses table walk).
-    # Each Korean class name is short text -- "포켓몬트레이너", "유적매니아",
-    # "들뜨소녀", "수영팬티소년" etc. -- containing common Korean nouns.
-    # These don't have a per-area mapping (trainer classes appear across
-    # many maps), so tag with the existing trainer_dialog sentinel.
+    # Sixth pass: per-NPC trainer classes (gTrainers + objectEvent walk).
+    # For each map's NPC trainer, parse trainerbattle opcode -> trainer_id,
+    # look up gTrainers[trainer_id].class_id, get the Korean class name,
+    # tag each lemma with that map's area. This is genuinely per-area
+    # ("벌레잡이소년" attributes to pewter_city since the first Bug Catcher
+    # the player meets is in Pewter), not the trainer_dialog sentinel.
+    #
+    # Falls back to the trainer_dialog sentinel for any class name whose
+    # trainer NPCs weren't successfully mapped to a specific area.
+    TRAINER_NPC_PATH = Path(__file__).resolve().parent / "trainer_npc_index.json"
     TRAINER_CLASS_PATH = Path(__file__).resolve().parent / "trainer_class_names.json"
+
+    n_class_attributions = 0
+    n_class_fallback = 0
+    seen_class_names: set = set()
+    if TRAINER_NPC_PATH.exists():
+        npc_idx = json.loads(TRAINER_NPC_PATH.read_text())
+        for area, class_names in npc_idx.get("area_to_trainer_class_names", {}).items():
+            for name in class_names:
+                seen_class_names.add(name)
+                try:
+                    tokens = mecab_lemmatize(name)
+                except Exception:
+                    continue
+                for lemma, pos, surface in tokens:
+                    if not (2 <= len(lemma) <= 5):
+                        continue
+                    if not all(is_hangul(c) for c in lemma):
+                        continue
+                    if is_phonetic_noise(lemma):
+                        continue
+                    if is_kana_shape_token(lemma):
+                        continue
+                    if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
+                        continue
+                    lemma_areas[lemma].add(area)
+                n_class_attributions += 1
+
+    # Fallback: any class names not seen in the per-NPC walk -> trainer_dialog
     if TRAINER_CLASS_PATH.exists():
         tc = json.loads(TRAINER_CLASS_PATH.read_text())
-        n_class_names = 0
         for idx, name in tc.get("translated_class_names", []):
+            if name in seen_class_names:
+                continue
             try:
                 tokens = mecab_lemmatize(name)
             except Exception:
@@ -291,8 +325,8 @@ def main():
                 if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                     continue
                 lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
-            n_class_names += 1
-        print(f"  trainer-class-name lemmas added: {n_class_names}")
+            n_class_fallback += 1
+    print(f"  trainer-class per-NPC attributions: {n_class_attributions} (fallback: {n_class_fallback})")
 
     # Make sure the special area ids exist in area_ordinals for rank().
     area_ordinals[TRAINER_DIALOG_AREA_ID] = 51
