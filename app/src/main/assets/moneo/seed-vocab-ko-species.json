@@ -132,8 +132,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_2",
+      "areasReferenced": [
+        "route_2",
+        "route_24",
+        "route_25",
+        "six_island",
+        "viridian_forest"
+      ],
       "source": "gSpeciesNames[10]"
     },
     {
@@ -143,9 +149,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "route_2",
+      "firstAreaEncountered": "viridian_forest",
       "areasReferenced": [
-        "route_2"
+        "route_24",
+        "route_25",
+        "six_island",
+        "viridian_forest"
       ],
       "source": "gSpeciesNames[11]"
     },
@@ -169,8 +178,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_2",
+      "areasReferenced": [
+        "route_2",
+        "route_24",
+        "route_25",
+        "six_island",
+        "viridian_forest"
+      ],
       "source": "gSpeciesNames[13]"
     },
     {
@@ -180,9 +195,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "route_2",
+      "firstAreaEncountered": "viridian_forest",
       "areasReferenced": [
-        "route_2"
+        "route_24",
+        "route_25",
+        "six_island",
+        "viridian_forest"
       ],
       "source": "gSpeciesNames[14]"
     },
@@ -206,8 +224,24 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 11,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_1",
+      "areasReferenced": [
+        "five_island",
+        "route_1",
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15",
+        "route_2",
+        "route_24",
+        "route_25",
+        "route_3",
+        "route_5",
+        "route_6",
+        "route_7",
+        "route_8",
+        "three_island"
+      ],
       "source": "gSpeciesNames[16]"
     },
     {
@@ -217,9 +251,13 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "route_1",
+      "firstAreaEncountered": "route_13",
       "areasReferenced": [
-        "route_1"
+        "five_island",
+        "route_13",
+        "route_14",
+        "route_15",
+        "three_island"
       ],
       "source": "gSpeciesNames[17]"
     },
@@ -243,8 +281,18 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_1",
+      "areasReferenced": [
+        "cinnabar_island",
+        "route_1",
+        "route_16",
+        "route_17",
+        "route_18",
+        "route_2",
+        "route_22",
+        "route_4",
+        "route_9"
+      ],
       "source": "gSpeciesNames[19]"
     },
     {
@@ -254,9 +302,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "route_1",
+      "firstAreaEncountered": "route_16",
       "areasReferenced": [
-        "route_1"
+        "cinnabar_island",
+        "route_16",
+        "route_17",
+        "route_18"
       ],
       "source": "gSpeciesNames[20]"
     },
@@ -267,9 +318,24 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "route_16",
+      "firstAreaEncountered": "route_3",
       "areasReferenced": [
-        "route_16"
+        "kindle_road",
+        "one_island",
+        "route_10",
+        "route_11",
+        "route_16",
+        "route_17",
+        "route_18",
+        "route_22",
+        "route_23",
+        "route_3",
+        "route_4",
+        "route_9",
+        "seven_island",
+        "six_island",
+        "treasure_beach",
+        "two_island"
       ],
       "source": "gSpeciesNames[21]"
     },
@@ -280,9 +346,17 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "route_3",
+      "firstAreaEncountered": "route_17",
       "areasReferenced": [
-        "route_3"
+        "kindle_road",
+        "one_island",
+        "route_17",
+        "route_18",
+        "route_23",
+        "seven_island",
+        "six_island",
+        "treasure_beach",
+        "two_island"
       ],
       "source": "gSpeciesNames[22]"
     },
@@ -293,9 +367,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 15,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "route_4",
       "areasReferenced": [
-        "pewter_city"
+        "route_10",
+        "route_11",
+        "route_23",
+        "route_4",
+        "route_8",
+        "route_9"
       ],
       "source": "gSpeciesNames[23]"
     },
@@ -306,8 +385,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_23",
+      "areasReferenced": [
+        "route_23"
+      ],
       "source": "gSpeciesNames[24]"
     },
     {
@@ -317,8 +398,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 15,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "viridian_forest",
+      "areasReferenced": [
+        "power_plant",
+        "viridian_forest"
+      ],
       "source": "gSpeciesNames[25]"
     },
     {
@@ -339,8 +423,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_10",
+        "route_11",
+        "route_23",
+        "route_4",
+        "route_8",
+        "route_9"
+      ],
       "source": "gSpeciesNames[27]"
     },
     {
@@ -350,9 +441,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "route_4",
+      "firstAreaEncountered": "route_23",
       "areasReferenced": [
-        "route_4"
+        "route_23"
       ],
       "source": "gSpeciesNames[28]"
     },
@@ -363,9 +454,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "route_3",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "route_3"
+        "fuchsia_city"
       ],
       "source": "gSpeciesNames[30]"
     },
@@ -387,9 +478,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "route_3",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "route_3"
+        "fuchsia_city"
       ],
       "source": "gSpeciesNames[33]"
     },
@@ -411,8 +502,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 23,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "mt_moon",
+      "areasReferenced": [
+        "mt_moon"
+      ],
       "source": "gSpeciesNames[35]"
     },
     {
@@ -433,8 +526,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_7",
+      "areasReferenced": [
+        "cinnabar_island",
+        "route_7",
+        "route_8"
+      ],
       "source": "gSpeciesNames[37]"
     },
     {
@@ -457,8 +554,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 11,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_3",
+      "areasReferenced": [
+        "route_3"
+      ],
       "source": "gSpeciesNames[39]"
     },
     {
@@ -481,8 +580,16 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "mt_moon",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "mt_moon",
+        "rock_tunnel",
+        "route_23",
+        "seafoam_islands",
+        "six_island"
+      ],
       "source": "gSpeciesNames[41]"
     },
     {
@@ -492,8 +599,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cerulean_cave",
+      "areasReferenced": [
+        "cerulean_cave",
+        "five_island",
+        "four_island",
+        "route_23",
+        "seafoam_islands"
+      ],
       "source": "gSpeciesNames[42]"
     },
     {
@@ -503,8 +616,21 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_24",
+      "areasReferenced": [
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15",
+        "route_24",
+        "route_25",
+        "route_5",
+        "route_6",
+        "route_7",
+        "six_island",
+        "three_island",
+        "two_island"
+      ],
       "source": "gSpeciesNames[43]"
     },
     {
@@ -514,8 +640,16 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15",
+        "six_island",
+        "three_island",
+        "two_island"
+      ],
       "source": "gSpeciesNames[44]"
     },
     {
@@ -536,8 +670,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "mt_moon",
+      "areasReferenced": [
+        "fuchsia_city",
+        "mt_moon"
+      ],
       "source": "gSpeciesNames[46]"
     },
     {
@@ -547,8 +684,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "cerulean_cave",
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[47]"
     },
     {
@@ -558,8 +698,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "fuchsia_city",
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15",
+        "three_island"
+      ],
       "source": "gSpeciesNames[48]"
     },
     {
@@ -569,9 +716,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "route_12",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "route_12"
+        "fuchsia_city",
+        "three_island"
       ],
       "source": "gSpeciesNames[49]"
     },
@@ -582,8 +730,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 9,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "digletts_cave",
+      "areasReferenced": [
+        "digletts_cave"
+      ],
       "source": "gSpeciesNames[50]"
     },
     {
@@ -593,8 +743,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "digletts_cave",
+      "areasReferenced": [
+        "digletts_cave"
+      ],
       "source": "gSpeciesNames[51]"
     },
     {
@@ -604,8 +756,20 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_5",
+      "areasReferenced": [
+        "five_island",
+        "kindle_road",
+        "route_5",
+        "route_6",
+        "route_7",
+        "route_8",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach",
+        "two_island"
+      ],
       "source": "gSpeciesNames[52]"
     },
     {
@@ -615,9 +779,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "five_island",
       "areasReferenced": [
-        "pewter_city"
+        "five_island",
+        "kindle_road",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach",
+        "two_island"
       ],
       "source": "gSpeciesNames[53]"
     },
@@ -628,9 +798,42 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pewter_city"
+        "celadon_city",
+        "cerulean_cave",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_22",
+        "route_23",
+        "route_24",
+        "route_25",
+        "route_4",
+        "route_6",
+        "seafoam_islands",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
       ],
       "source": "gSpeciesNames[54]"
     },
@@ -641,8 +844,13 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cerulean_cave",
+      "areasReferenced": [
+        "cerulean_cave",
+        "seafoam_islands",
+        "three_island",
+        "two_island"
+      ],
       "source": "gSpeciesNames[55]"
     },
     {
@@ -652,8 +860,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_3",
+      "areasReferenced": [
+        "rock_tunnel",
+        "route_22",
+        "route_23",
+        "route_3",
+        "route_4"
+      ],
       "source": "gSpeciesNames[56]"
     },
     {
@@ -663,9 +877,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "route_3",
+      "firstAreaEncountered": "cerulean_cave",
       "areasReferenced": [
-        "route_3"
+        "cerulean_cave",
+        "route_23"
       ],
       "source": "gSpeciesNames[57]"
     },
@@ -676,9 +891,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "route_23",
+      "firstAreaEncountered": "route_7",
       "areasReferenced": [
-        "route_23"
+        "cinnabar_island",
+        "route_7",
+        "route_8"
       ],
       "source": "gSpeciesNames[58]"
     },
@@ -700,8 +917,20 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "cerulean_cave",
+        "four_island",
+        "fuchsia_city",
+        "route_22",
+        "route_23",
+        "route_25",
+        "route_6",
+        "six_island",
+        "three_island",
+        "two_island",
+        "viridian_city"
+      ],
       "source": "gSpeciesNames[60]"
     },
     {
@@ -713,6 +942,14 @@
       "frequency": 3,
       "firstAreaEncountered": "viridian_city",
       "areasReferenced": [
+        "cerulean_cave",
+        "four_island",
+        "route_22",
+        "route_23",
+        "route_25",
+        "route_6",
+        "six_island",
+        "two_island",
         "viridian_city"
       ],
       "source": "gSpeciesNames[61]"
@@ -737,8 +974,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_24",
+      "areasReferenced": [
+        "route_24",
+        "route_25"
+      ],
       "source": "gSpeciesNames[63]"
     },
     {
@@ -748,9 +988,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "route_24",
+      "firstAreaEncountered": "cerulean_cave",
       "areasReferenced": [
-        "route_24"
+        "cerulean_cave"
       ],
       "source": "gSpeciesNames[64]"
     },
@@ -772,8 +1012,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "rock_tunnel",
+      "areasReferenced": [
+        "one_island",
+        "rock_tunnel",
+        "route_23"
+      ],
       "source": "gSpeciesNames[66]"
     },
     {
@@ -783,8 +1027,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cerulean_cave",
+      "areasReferenced": [
+        "cerulean_cave",
+        "one_island",
+        "route_23"
+      ],
       "source": "gSpeciesNames[67]"
     },
     {
@@ -805,8 +1053,21 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_24",
+      "areasReferenced": [
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15",
+        "route_24",
+        "route_25",
+        "route_5",
+        "route_6",
+        "route_7",
+        "six_island",
+        "three_island",
+        "two_island"
+      ],
       "source": "gSpeciesNames[69]"
     },
     {
@@ -816,9 +1077,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "route_24",
+      "firstAreaEncountered": "route_12",
       "areasReferenced": [
-        "route_24"
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15",
+        "six_island",
+        "three_island",
+        "two_island"
       ],
       "source": "gSpeciesNames[70]"
     },
@@ -842,8 +1109,33 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_24",
+        "route_4",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "vermilion_city"
+      ],
       "source": "gSpeciesNames[72]"
     },
     {
@@ -853,9 +1145,18 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "pallet_town",
+      "firstAreaEncountered": "five_island",
       "areasReferenced": [
-        "pallet_town"
+        "five_island",
+        "four_island",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "resort_gorgeous",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach"
       ],
       "source": "gSpeciesNames[73]"
     },
@@ -868,7 +1169,13 @@
       "frequency": 2,
       "firstAreaEncountered": "mt_moon",
       "areasReferenced": [
-        "mt_moon"
+        "cerulean_cave",
+        "kindle_road",
+        "mt_moon",
+        "one_island",
+        "rock_tunnel",
+        "route_23",
+        "seven_island"
       ],
       "source": "gSpeciesNames[74]"
     },
@@ -879,9 +1186,13 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "rock_tunnel",
       "areasReferenced": [
-        "pewter_city"
+        "cerulean_cave",
+        "kindle_road",
+        "one_island",
+        "rock_tunnel",
+        "seven_island"
       ],
       "source": "gSpeciesNames[75]"
     },
@@ -905,8 +1216,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "kindle_road",
+      "areasReferenced": [
+        "kindle_road",
+        "one_island"
+      ],
       "source": "gSpeciesNames[77]"
     },
     {
@@ -916,8 +1230,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "kindle_road",
+      "areasReferenced": [
+        "kindle_road",
+        "one_island"
+      ],
       "source": "gSpeciesNames[78]"
     },
     {
@@ -927,8 +1244,43 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 9,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_cave",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_22",
+        "route_23",
+        "route_24",
+        "route_25",
+        "route_4",
+        "route_6",
+        "seafoam_islands",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
       "source": "gSpeciesNames[79]"
     },
     {
@@ -938,9 +1290,13 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 12,
-      "firstAreaEncountered": "pallet_town",
+      "firstAreaEncountered": "cinnabar_island",
       "areasReferenced": [
-        "pallet_town"
+        "cerulean_cave",
+        "cinnabar_island",
+        "seafoam_islands",
+        "three_island",
+        "two_island"
       ],
       "source": "gSpeciesNames[80]"
     },
@@ -951,9 +1307,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "cinnabar_island",
+      "firstAreaEncountered": "power_plant",
       "areasReferenced": [
-        "cinnabar_island"
+        "power_plant"
       ],
       "source": "gSpeciesNames[81]"
     },
@@ -964,8 +1320,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "power_plant",
+      "areasReferenced": [
+        "cerulean_cave",
+        "power_plant"
+      ],
       "source": "gSpeciesNames[82]"
     },
     {
@@ -986,8 +1345,13 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city",
+        "route_16",
+        "route_17",
+        "route_18"
+      ],
       "source": "gSpeciesNames[84]"
     },
     {
@@ -1010,8 +1374,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "seafoam_islands",
+      "areasReferenced": [
+        "four_island",
+        "seafoam_islands"
+      ],
       "source": "gSpeciesNames[86]"
     },
     {
@@ -1021,8 +1388,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "seafoam_islands",
+      "areasReferenced": [
+        "four_island",
+        "seafoam_islands"
+      ],
       "source": "gSpeciesNames[87]"
     },
     {
@@ -1032,8 +1402,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "celadon_city",
+        "cinnabar_island"
+      ],
       "source": "gSpeciesNames[88]"
     },
     {
@@ -1043,9 +1416,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "celadon_city",
+      "firstAreaEncountered": "cinnabar_island",
       "areasReferenced": [
-        "celadon_city"
+        "cinnabar_island"
       ],
       "source": "gSpeciesNames[89]"
     },
@@ -1056,8 +1429,16 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "one_island",
+        "pallet_town",
+        "ssanne",
+        "vermilion_city"
+      ],
       "source": "gSpeciesNames[90]"
     },
     {
@@ -1078,8 +1459,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pokemon_tower",
+      "areasReferenced": [
+        "five_island",
+        "pokemon_tower"
+      ],
       "source": "gSpeciesNames[92]"
     },
     {
@@ -1089,8 +1473,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pokemon_tower",
+      "areasReferenced": [
+        "five_island",
+        "pokemon_tower"
+      ],
       "source": "gSpeciesNames[93]"
     },
     {
@@ -1111,8 +1498,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "rock_tunnel",
+      "areasReferenced": [
+        "rock_tunnel",
+        "route_23",
+        "seven_island"
+      ],
       "source": "gSpeciesNames[95]"
     },
     {
@@ -1122,9 +1513,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "route_11",
       "areasReferenced": [
-        "pewter_city"
+        "route_11",
+        "three_island"
       ],
       "source": "gSpeciesNames[96]"
     },
@@ -1135,9 +1527,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "route_11",
+      "firstAreaEncountered": "three_island",
       "areasReferenced": [
-        "route_11"
+        "three_island"
       ],
       "source": "gSpeciesNames[97]"
     },
@@ -1148,8 +1540,34 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_24",
+        "route_4",
+        "seafoam_islands",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "vermilion_city"
+      ],
       "source": "gSpeciesNames[98]"
     },
     {
@@ -1161,7 +1579,20 @@
       "frequency": 2,
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "five_island",
+        "four_island",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_19",
+        "route_20",
+        "route_21",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach"
       ],
       "source": "gSpeciesNames[99]"
     },
@@ -1172,9 +1603,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "pallet_town",
+      "firstAreaEncountered": "route_10",
       "areasReferenced": [
-        "pallet_town"
+        "power_plant",
+        "route_10"
       ],
       "source": "gSpeciesNames[100]"
     },
@@ -1185,9 +1617,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "route_10",
+      "firstAreaEncountered": "cerulean_cave",
       "areasReferenced": [
-        "route_10"
+        "cerulean_cave"
       ],
       "source": "gSpeciesNames[101]"
     },
@@ -1198,8 +1630,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city",
+        "three_island"
+      ],
       "source": "gSpeciesNames[102]"
     },
     {
@@ -1220,8 +1655,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 10,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pokemon_tower",
+      "areasReferenced": [
+        "pokemon_tower",
+        "seven_island"
+      ],
       "source": "gSpeciesNames[104]"
     },
     {
@@ -1231,9 +1669,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 10,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "route_23",
       "areasReferenced": [
-        "pewter_city"
+        "route_23",
+        "seven_island"
       ],
       "source": "gSpeciesNames[105]"
     },
@@ -1281,8 +1720,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "celadon_city",
+        "cinnabar_island"
+      ],
       "source": "gSpeciesNames[109]"
     },
     {
@@ -1292,9 +1734,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "celadon_city",
+      "firstAreaEncountered": "cinnabar_island",
       "areasReferenced": [
-        "celadon_city"
+        "cinnabar_island"
       ],
       "source": "gSpeciesNames[110]"
     },
@@ -1305,8 +1747,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[111]"
     },
     {
@@ -1327,8 +1771,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 19,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[113]"
     },
     {
@@ -1338,8 +1784,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_21",
+      "areasReferenced": [
+        "route_21",
+        "treasure_beach"
+      ],
       "source": "gSpeciesNames[114]"
     },
     {
@@ -1349,9 +1798,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 9,
-      "firstAreaEncountered": "route_21",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "route_21"
+        "fuchsia_city"
       ],
       "source": "gSpeciesNames[115]"
     },
@@ -1362,8 +1811,34 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_24",
+        "route_4",
+        "seafoam_islands",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "vermilion_city"
+      ],
       "source": "gSpeciesNames[116]"
     },
     {
@@ -1375,7 +1850,21 @@
       "frequency": 1,
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_19",
+        "route_20",
+        "route_21",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach"
       ],
       "source": "gSpeciesNames[117]"
     },
@@ -1386,8 +1875,20 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "cerulean_cave",
+        "four_island",
+        "fuchsia_city",
+        "route_22",
+        "route_23",
+        "route_25",
+        "route_6",
+        "six_island",
+        "three_island",
+        "two_island",
+        "viridian_city"
+      ],
       "source": "gSpeciesNames[118]"
     },
     {
@@ -1397,9 +1898,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "viridian_city",
+      "firstAreaEncountered": "fuchsia_city",
       "areasReferenced": [
-        "viridian_city"
+        "fuchsia_city",
+        "three_island"
       ],
       "source": "gSpeciesNames[119]"
     },
@@ -1410,9 +1912,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "fuchsia_city",
+      "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "fuchsia_city"
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "one_island",
+        "pallet_town",
+        "ssanne",
+        "vermilion_city"
       ],
       "source": "gSpeciesNames[120]"
     },
@@ -1447,8 +1955,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[123]"
     },
     {
@@ -1469,8 +1979,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "power_plant",
+      "areasReferenced": [
+        "power_plant"
+      ],
       "source": "gSpeciesNames[125]"
     },
     {
@@ -1480,8 +1992,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 14,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
       "source": "gSpeciesNames[126]"
     },
     {
@@ -1491,8 +2005,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[127]"
     },
     {
@@ -1502,8 +2018,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[128]"
     },
     {
@@ -1513,8 +2031,43 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 18,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_cave",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_22",
+        "route_23",
+        "route_24",
+        "route_25",
+        "route_4",
+        "route_6",
+        "seafoam_islands",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
       "source": "gSpeciesNames[129]"
     },
     {
@@ -1526,7 +2079,39 @@
       "frequency": 6,
       "firstAreaEncountered": "pallet_town",
       "areasReferenced": [
-        "pallet_town"
+        "cerulean_cave",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "kindle_road",
+        "one_island",
+        "outcast_island",
+        "pallet_town",
+        "resort_gorgeous",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_13",
+        "route_19",
+        "route_20",
+        "route_21",
+        "route_22",
+        "route_23",
+        "route_24",
+        "route_25",
+        "route_4",
+        "route_6",
+        "seafoam_islands",
+        "seven_island",
+        "six_island",
+        "ssanne",
+        "three_island",
+        "treasure_beach",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
       ],
       "source": "gSpeciesNames[130]"
     },
@@ -1537,9 +2122,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 17,
-      "firstAreaEncountered": "silph_co",
+      "firstAreaEncountered": "four_island",
       "areasReferenced": [
-        "silph_co"
+        "four_island"
       ],
       "source": "gSpeciesNames[131]"
     },
@@ -1550,8 +2135,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "route_13",
+      "areasReferenced": [
+        "cerulean_cave",
+        "cinnabar_island",
+        "route_13",
+        "route_14",
+        "route_15"
+      ],
       "source": "gSpeciesNames[132]"
     },
     {
@@ -1561,9 +2152,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "route_13",
+      "firstAreaEncountered": "celadon_city",
       "areasReferenced": [
-        "route_13"
+        "celadon_city"
       ],
       "source": "gSpeciesNames[133]"
     },
@@ -1574,8 +2165,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
       "source": "gSpeciesNames[134]"
     },
     {
@@ -1585,8 +2178,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
       "source": "gSpeciesNames[135]"
     },
     {
@@ -1596,8 +2191,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
       "source": "gSpeciesNames[136]"
     },
     {
@@ -1607,8 +2204,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 12,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "silph_co",
+      "areasReferenced": [
+        "silph_co"
+      ],
       "source": "gSpeciesNames[137]"
     },
     {
@@ -1618,8 +2217,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island"
+      ],
       "source": "gSpeciesNames[138]"
     },
     {
@@ -1629,8 +2230,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island"
+      ],
       "source": "gSpeciesNames[139]"
     },
     {
@@ -1640,8 +2243,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island"
+      ],
       "source": "gSpeciesNames[140]"
     },
     {
@@ -1651,8 +2256,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island"
+      ],
       "source": "gSpeciesNames[141]"
     },
     {
@@ -1662,9 +2269,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "pewter_city",
+      "firstAreaEncountered": "cinnabar_island",
       "areasReferenced": [
-        "pewter_city"
+        "cinnabar_island"
       ],
       "source": "gSpeciesNames[142]"
     },
@@ -1714,9 +2321,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 11,
-      "firstAreaEncountered": "route_23",
+      "firstAreaEncountered": "cinnabar_island",
       "areasReferenced": [
-        "route_23"
+        "cinnabar_island"
       ],
       "source": "gSpeciesNames[146]"
     },
@@ -1727,8 +2334,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[147]"
     },
     {
@@ -1738,8 +2347,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
       "source": "gSpeciesNames[148]"
     },
     {
@@ -1872,8 +2483,12 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island",
+        "seven_island",
+        "six_island"
+      ],
       "source": "gSpeciesNames[161]"
     },
     {
@@ -1916,8 +2531,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[165]"
     },
     {
@@ -1938,8 +2555,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[167]"
     },
     {
@@ -2037,8 +2656,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[177]"
     },
     {
@@ -2059,8 +2680,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[179]"
     },
     {
@@ -2103,8 +2726,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island",
+        "six_island"
+      ],
       "source": "gSpeciesNames[183]"
     },
     {
@@ -2147,8 +2773,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island",
+        "four_island"
+      ],
       "source": "gSpeciesNames[187]"
     },
     {
@@ -2180,8 +2809,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[190]"
     },
     {
@@ -2213,8 +2844,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[193]"
     },
     {
@@ -2224,8 +2857,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island",
+        "six_island"
+      ],
       "source": "gSpeciesNames[194]"
     },
     {
@@ -2246,8 +2882,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
       "source": "gSpeciesNames[196]"
     },
     {
@@ -2257,8 +2895,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
       "source": "gSpeciesNames[197]"
     },
     {
@@ -2268,8 +2908,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island"
+      ],
       "source": "gSpeciesNames[198]"
     },
     {
@@ -2290,8 +2932,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island"
+      ],
       "source": "gSpeciesNames[200]"
     },
     {
@@ -2301,8 +2945,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "seven_island",
+      "areasReferenced": [
+        "seven_island"
+      ],
       "source": "gSpeciesNames[201]"
     },
     {
@@ -2312,9 +2958,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "mt_moon",
+      "firstAreaEncountered": "cerulean_cave",
       "areasReferenced": [
-        "mt_moon"
+        "cerulean_cave",
+        "six_island"
       ],
       "source": "gSpeciesNames[202]"
     },
@@ -2336,8 +2983,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[204]"
     },
     {
@@ -2358,8 +3007,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "three_island",
+      "areasReferenced": [
+        "three_island"
+      ],
       "source": "gSpeciesNames[206]"
     },
     {
@@ -2413,8 +3064,16 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "outcast_island",
+        "resort_gorgeous",
+        "seven_island",
+        "six_island",
+        "three_island"
+      ],
       "source": "gSpeciesNames[211]"
     },
     {
@@ -2435,8 +3094,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[213]"
     },
     {
@@ -2446,8 +3107,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 12,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[214]"
     },
     {
@@ -2457,8 +3120,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island"
+      ],
       "source": "gSpeciesNames[215]"
     },
     {
@@ -2468,8 +3133,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[216]"
     },
     {
@@ -2490,8 +3157,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
       "source": "gSpeciesNames[218]"
     },
     {
@@ -2501,8 +3170,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
       "source": "gSpeciesNames[219]"
     },
     {
@@ -2512,8 +3183,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island"
+      ],
       "source": "gSpeciesNames[220]"
     },
     {
@@ -2545,8 +3218,16 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "outcast_island",
+        "resort_gorgeous",
+        "seven_island",
+        "six_island",
+        "three_island"
+      ],
       "source": "gSpeciesNames[223]"
     },
     {
@@ -2569,8 +3250,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island"
+      ],
       "source": "gSpeciesNames[225]"
     },
     {
@@ -2580,8 +3263,11 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "resort_gorgeous",
+      "areasReferenced": [
+        "resort_gorgeous",
+        "seven_island"
+      ],
       "source": "gSpeciesNames[226]"
     },
     {
@@ -2591,9 +3277,9 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "mt_moon",
+      "firstAreaEncountered": "seven_island",
       "areasReferenced": [
-        "mt_moon"
+        "seven_island"
       ],
       "source": "gSpeciesNames[227]"
     },
@@ -2604,8 +3290,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[228]"
     },
     {
@@ -2637,8 +3325,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "seven_island",
+      "areasReferenced": [
+        "seven_island"
+      ],
       "source": "gSpeciesNames[231]"
     },
     {
@@ -2661,8 +3351,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[234]"
     },
     {
@@ -2672,8 +3364,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "six_island",
+      "areasReferenced": [
+        "six_island"
+      ],
       "source": "gSpeciesNames[235]"
     },
     {
@@ -2760,8 +3454,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
       "source": "gSpeciesNames[243]"
     },
     {
@@ -2771,8 +3467,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
       "source": "gSpeciesNames[244]"
     },
     {
@@ -2782,8 +3480,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
       "source": "gSpeciesNames[245]"
     },
     {
@@ -2793,8 +3493,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "seven_island",
+      "areasReferenced": [
+        "seven_island"
+      ],
       "source": "gSpeciesNames[246]"
     },
     {
@@ -2828,8 +3530,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "navel_rock",
+      "areasReferenced": [
+        "navel_rock"
+      ],
       "source": "gSpeciesNames[249]"
     },
     {
@@ -2839,8 +3543,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 1,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "navel_rock",
+      "areasReferenced": [
+        "navel_rock"
+      ],
       "source": "gSpeciesNames[250]"
     },
     {
@@ -2850,8 +3556,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "rom_mined",
-      "areasReferenced": [],
+      "firstAreaEncountered": "navel_rock",
+      "areasReferenced": [
+        "navel_rock"
+      ],
       "source": "gSpeciesNames[251]"
     }
   ]
