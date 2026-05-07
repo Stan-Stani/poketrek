@@ -6,6 +6,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from rom_config import ROM_PATH, TRAINER_DIALOG_REGIONS_2024  # noqa: E402
+
 from mine_vocab import (
     mecab_lemmatize,
     is_hangul,
@@ -135,7 +137,7 @@ def main():
     # Third pass: trainer-dialog ROM table region.
     # Scans the GBA ROM for pointers into trainer/sign-dialog text,
     # tokenises those records and tags their lemmas with a dedicated area.
-    TRAINER_TABLE_REGIONS = [(0x163000, 0x166000)]
+    TRAINER_TABLE_REGIONS = TRAINER_DIALOG_REGIONS_2024
     TRAINER_DIALOG_AREA_ID = "trainer_dialog"
 
     # Build offset -> record mapping from both live and static corpora
@@ -148,8 +150,7 @@ def main():
             offset_to_record[rec["offset"]] = rec
 
     root = Path(__file__).resolve().parents[2]
-    rom_path = root / "Pocket Monsters - LeafGreen (Korean).gba"
-    with open(rom_path, "rb") as rom_file:
+    with open(ROM_PATH, "rb") as rom_file:
         rom_bytes = rom_file.read()
 
     trainer_records_tokenized = 0

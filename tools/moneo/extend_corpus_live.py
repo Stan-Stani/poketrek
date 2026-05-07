@@ -35,7 +35,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-ROM = ROOT / "Pocket Monsters - LeafGreen (Korean).gba"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rom_config import ROM_PATH  # noqa: E402
+
+ROM = ROM_PATH
 GLYPH_MAP = ROOT / "tools/moneo/glyph-map.json"
 CORPUS = ROOT / "app/src/main/assets/moneo/corpus.ko.json"
 LIVE_CORPUS = ROOT / "tools/moneo/corpus.ko.live.json"
@@ -188,8 +191,9 @@ def main() -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dry", action="store_true",
                     help="Don't write; just report counts and a few samples.")
-    ap.add_argument("--scan-end", type=lambda s: int(s, 0), default=0x800000,
-                    help="Scan ROM[:scan_end] for messages (default 0x800000).")
+    ap.add_argument("--scan-end", type=lambda s: int(s, 0), default=0x1000000,
+                    help="Scan ROM[:scan_end] for messages (default 0x1000000 -- "
+                         "the 2024 patch keeps item/Pokédex text up to ~0xED8000).")
     args = ap.parse_args()
 
     rom = ROM.read_bytes()

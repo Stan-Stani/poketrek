@@ -10,11 +10,13 @@ from __future__ import annotations
 
 import json
 import struct
+import sys
 from collections import defaultdict, deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-ROM_PATH = ROOT / "Pocket Monsters - LeafGreen (Korean).gba"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rom_config import ROM_PATH  # noqa: E402
 MAP_TEXT_INDEX = ROOT / "tools/moneo/map_text_index.json"
 MAPSEC_AREAS_JSON = ROOT / "tools/moneo/mapsec_areas.json"
 AREAS_JSON = ROOT / "app/src/main/assets/moneo/areas.json"
