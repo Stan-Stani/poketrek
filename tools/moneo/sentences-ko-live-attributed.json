@@ -11,11 +11,12 @@
       "targetForm": "있",
       "areaId": "rom_mined",
       "source": "rom-rec17163",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29819 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:하다",
@@ -34,13 +35,14 @@
       "targetForm": "볼까",
       "areaId": "rom_mined",
       "source": "rom-rec17014",
-      "mapsecs": [
-        "0x58",
-        "0xA9"
+      "resolvedAreas": [
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "treasure_beach"
       ],
-      "sourceMapsecVia": "rom-rec17015 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "text_overlap"
+      "attributionVia": "map_area_direct"
     },
     {
       "vocabId": "rom-mine-v2:미산",
@@ -50,11 +52,12 @@
       "targetForm": "미산",
       "areaId": "rom_mined",
       "source": "rom-rec15845",
-      "resolvedAreas": [
-        "pewter_city"
+      "mapsecs": [
+        "0x5A"
       ],
+      "sourceMapsecVia": "rom-rec28004 (overlap)",
       "firstAreaEncountered": "pewter_city",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:데리다",
@@ -63,7 +66,13 @@
       "gloss": "(ROM example, rec18234)",
       "targetForm": "데리",
       "areaId": "rom_mined",
-      "source": "rom-rec18234"
+      "source": "rom-rec18234",
+      "mapsecs": [
+        "0x66"
+      ],
+      "sourceMapsecVia": "rom-rec31667 (overlap)",
+      "firstAreaEncountered": "route_2",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:피다",
@@ -73,11 +82,12 @@
       "targetForm": "피",
       "areaId": "rom_mined",
       "source": "rom-rec15845",
-      "resolvedAreas": [
-        "pewter_city"
+      "mapsecs": [
+        "0x5A"
       ],
+      "sourceMapsecVia": "rom-rec28004 (overlap)",
       "firstAreaEncountered": "pewter_city",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:어서",
@@ -90,7 +100,7 @@
       "mapsecs": [
         "0x5B"
       ],
-      "sourceMapsecVia": "rom-rec17419 (overlap)",
+      "sourceMapsecVia": "rom-rec30234 (overlap)",
       "firstAreaEncountered": "cerulean_city",
       "attributionVia": "text_overlap"
     },
@@ -105,7 +115,7 @@
       "mapsecs": [
         "0x5B"
       ],
-      "sourceMapsecVia": "rom-rec17419 (overlap)",
+      "sourceMapsecVia": "rom-rec30234 (overlap)",
       "firstAreaEncountered": "cerulean_city",
       "attributionVia": "text_overlap"
     },
@@ -117,11 +127,15 @@
       "targetForm": "되",
       "areaId": "rom_mined",
       "source": "rom-rec15721",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58",
+        "0xAE",
+        "0xBB",
+        "0xC3"
       ],
+      "sourceMapsecVia": "rom-rec27866 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:떨어지다",
@@ -131,11 +145,12 @@
       "targetForm": "떨어졌",
       "areaId": "rom_mined",
       "source": "rom-rec15845",
-      "resolvedAreas": [
-        "pewter_city"
+      "mapsecs": [
+        "0x5A"
       ],
+      "sourceMapsecVia": "rom-rec28004 (overlap)",
       "firstAreaEncountered": "pewter_city",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:메다",
@@ -144,7 +159,13 @@
       "gloss": "(ROM example, rec29614)",
       "targetForm": "메",
       "areaId": "rom_mined",
-      "source": "rom-rec29614"
+      "source": "rom-rec29614",
+      "resolvedAreas": [
+        "canyon_entrance",
+        "pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city",
+      "attributionVia": "map_area_direct"
     },
     {
       "vocabId": "rom-mine-v2:완이",
@@ -153,7 +174,13 @@
       "gloss": "(ROM example, rec18247)",
       "targetForm": "완이",
       "areaId": "rom_mined",
-      "source": "rom-rec18247"
+      "source": "rom-rec18247",
+      "mapsecs": [
+        "0x66"
+      ],
+      "sourceMapsecVia": "rom-rec31667 (overlap)",
+      "firstAreaEncountered": "route_2",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:좋다",
@@ -163,11 +190,12 @@
       "targetForm": "좋",
       "areaId": "rom_mined",
       "source": "rom-rec17173",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29829 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:눕다",
@@ -212,7 +240,14 @@
       "gloss": "(ROM example, rec17896)",
       "targetForm": "우딘",
       "areaId": "rom_mined",
-      "source": "rom-rec17896"
+      "source": "rom-rec17896",
+      "mapsecs": [
+        "0x5F",
+        "0x60"
+      ],
+      "sourceMapsecVia": "rom-rec31137 (overlap)",
+      "firstAreaEncountered": "fuchsia_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:윤소",
@@ -221,7 +256,13 @@
       "gloss": "(ROM example, rec18247)",
       "targetForm": "윤소",
       "areaId": "rom_mined",
-      "source": "rom-rec18247"
+      "source": "rom-rec18247",
+      "mapsecs": [
+        "0x66"
+      ],
+      "sourceMapsecVia": "rom-rec31667 (overlap)",
+      "firstAreaEncountered": "route_2",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:강하다",
@@ -231,11 +272,15 @@
       "targetForm": "강하",
       "areaId": "rom_mined",
       "source": "rom-rec15721",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58",
+        "0xAE",
+        "0xBB",
+        "0xC3"
       ],
+      "sourceMapsecVia": "rom-rec27866 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:데다",
@@ -253,7 +298,14 @@
       "gloss": "(ROM example, rec17895)",
       "targetForm": "석류",
       "areaId": "rom_mined",
-      "source": "rom-rec17895"
+      "source": "rom-rec17895",
+      "mapsecs": [
+        "0x5F",
+        "0x60"
+      ],
+      "sourceMapsecVia": "rom-rec31137 (overlap)",
+      "firstAreaEncountered": "fuchsia_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:키우다",
@@ -263,11 +315,12 @@
       "targetForm": "키우",
       "areaId": "rom_mined",
       "source": "rom-rec17173",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29829 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:타다",
@@ -286,11 +339,12 @@
       "targetForm": "가지",
       "areaId": "rom_mined",
       "source": "rom-rec15960",
-      "resolvedAreas": [
-        "cerulean_city"
+      "mapsecs": [
+        "0x5B"
       ],
+      "sourceMapsecVia": "rom-rec28128 (overlap)",
       "firstAreaEncountered": "cerulean_city",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:디다",
@@ -318,12 +372,14 @@
       "targetForm": "먼",
       "areaId": "rom_mined",
       "source": "rom-rec15766",
-      "resolvedAreas": [
-        "pallet_town",
-        "viridian_city"
+      "mapsecs": [
+        "0x58",
+        "0x59",
+        "0xAE"
       ],
+      "sourceMapsecVia": "rom-rec27914 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:같다",
@@ -333,11 +389,12 @@
       "targetForm": "같",
       "areaId": "rom_mined",
       "source": "rom-rec17156",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29812 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:다당",
@@ -356,11 +413,12 @@
       "targetForm": "도감",
       "areaId": "rom_mined",
       "source": "rom-rec17188",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29845 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:몬스터",
@@ -370,11 +428,12 @@
       "targetForm": "몬스터",
       "areaId": "rom_mined",
       "source": "rom-rec17163",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29819 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:물다",
@@ -392,7 +451,13 @@
       "gloss": "(ROM example, rec18247)",
       "targetForm": "벨트",
       "areaId": "rom_mined",
-      "source": "rom-rec18247"
+      "source": "rom-rec18247",
+      "mapsecs": [
+        "0x66"
+      ],
+      "sourceMapsecVia": "rom-rec31667 (overlap)",
+      "firstAreaEncountered": "route_2",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:부르다",
@@ -402,12 +467,13 @@
       "targetForm": "불러",
       "areaId": "rom_mined",
       "source": "rom-rec17001",
-      "resolvedAreas": [
-        "pallet_town",
-        "pewter_city"
+      "mapsecs": [
+        "0xA8",
+        "0xA9"
       ],
-      "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "sourceMapsecVia": "rom-rec29613 (overlap)",
+      "firstAreaEncountered": "pewter_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:승부",
@@ -426,11 +492,12 @@
       "targetForm": "없",
       "areaId": "rom_mined",
       "source": "rom-rec17163",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29819 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:장착",
@@ -439,7 +506,13 @@
       "gloss": "(ROM example, rec18247)",
       "targetForm": "장착",
       "areaId": "rom_mined",
-      "source": "rom-rec18247"
+      "source": "rom-rec18247",
+      "mapsecs": [
+        "0x66"
+      ],
+      "sourceMapsecVia": "rom-rec31667 (overlap)",
+      "firstAreaEncountered": "route_2",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:트다",
@@ -448,7 +521,14 @@
       "gloss": "(ROM example, rec17907)",
       "targetForm": "터",
       "areaId": "rom_mined",
-      "source": "rom-rec17907"
+      "source": "rom-rec17907",
+      "mapsecs": [
+        "0x5F",
+        "0x60"
+      ],
+      "sourceMapsecVia": "rom-rec31137 (overlap)",
+      "firstAreaEncountered": "fuchsia_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:게시판",
@@ -464,7 +544,7 @@
         "0xAE",
         "0xBB"
       ],
-      "sourceMapsecVia": "rom-rec15780 (overlap)",
+      "sourceMapsecVia": "rom-rec27932 (overlap)",
       "firstAreaEncountered": "pallet_town",
       "attributionVia": "text_overlap"
     },
@@ -476,11 +556,12 @@
       "targetForm": "그렇",
       "areaId": "rom_mined",
       "source": "rom-rec17185",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29841 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:낫다",
@@ -505,7 +586,7 @@
         "0xAE",
         "0xBB"
       ],
-      "sourceMapsecVia": "rom-rec15780 (overlap)",
+      "sourceMapsecVia": "rom-rec27932 (overlap)",
       "firstAreaEncountered": "pallet_town",
       "attributionVia": "text_overlap"
     },
@@ -517,11 +598,12 @@
       "targetForm": "드",
       "areaId": "rom_mined",
       "source": "rom-rec17175",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29831 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:성능",
@@ -540,12 +622,13 @@
       "targetForm": "여해",
       "areaId": "rom_mined",
       "source": "rom-rec17001",
-      "resolvedAreas": [
-        "pallet_town",
-        "pewter_city"
+      "mapsecs": [
+        "0xA8",
+        "0xA9"
       ],
-      "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "sourceMapsecVia": "rom-rec29613 (overlap)",
+      "firstAreaEncountered": "pewter_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:울다",
@@ -581,7 +664,13 @@
       "gloss": "(ROM example, rec26250)",
       "targetForm": "킹킹",
       "areaId": "rom_mined",
-      "source": "rom-rec26250"
+      "source": "rom-rec26250",
+      "resolvedAreas": [
+        "green_path",
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "attributionVia": "map_area_direct"
     },
     {
       "vocabId": "rom-mine-v2:곤보",
@@ -600,11 +689,12 @@
       "targetForm": "기다려",
       "areaId": "rom_mined",
       "source": "rom-rec17149",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29805 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:남자",
@@ -614,12 +704,13 @@
       "targetForm": "남자",
       "areaId": "rom_mined",
       "source": "rom-rec17001",
-      "resolvedAreas": [
-        "pallet_town",
-        "pewter_city"
+      "mapsecs": [
+        "0xA8",
+        "0xA9"
       ],
-      "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "sourceMapsecVia": "rom-rec29613 (overlap)",
+      "firstAreaEncountered": "pewter_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:노다",
@@ -656,12 +747,13 @@
       "targetForm": "떠나",
       "areaId": "rom_mined",
       "source": "rom-rec17001",
-      "resolvedAreas": [
-        "pallet_town",
-        "pewter_city"
+      "mapsecs": [
+        "0xA8",
+        "0xA9"
       ],
-      "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "sourceMapsecVia": "rom-rec29613 (overlap)",
+      "firstAreaEncountered": "pewter_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:리그",
@@ -674,7 +766,7 @@
       "mapsecs": [
         "0x59"
       ],
-      "sourceMapsecVia": "rom-rec17253 (overlap)",
+      "sourceMapsecVia": "rom-rec29941 (overlap)",
       "firstAreaEncountered": "viridian_city",
       "attributionVia": "text_overlap"
     },
@@ -725,7 +817,7 @@
       "mapsecs": [
         "0x59"
       ],
-      "sourceMapsecVia": "rom-rec17253 (overlap)",
+      "sourceMapsecVia": "rom-rec29941 (overlap)",
       "firstAreaEncountered": "viridian_city",
       "attributionVia": "text_overlap"
     },
@@ -755,11 +847,12 @@
       "targetForm": "세계",
       "areaId": "rom_mined",
       "source": "rom-rec17185",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29841 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:시티",
@@ -769,11 +862,12 @@
       "targetForm": "시티",
       "areaId": "rom_mined",
       "source": "rom-rec15857",
-      "resolvedAreas": [
-        "pewter_city"
+      "mapsecs": [
+        "0x5A"
       ],
+      "sourceMapsecVia": "rom-rec28016 (overlap)",
       "firstAreaEncountered": "pewter_city",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:쓰다",
@@ -783,11 +877,12 @@
       "targetForm": "쓰",
       "areaId": "rom_mined",
       "source": "rom-rec15960",
-      "resolvedAreas": [
-        "cerulean_city"
+      "mapsecs": [
+        "0x5B"
       ],
+      "sourceMapsecVia": "rom-rec28128 (overlap)",
       "firstAreaEncountered": "cerulean_city",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:이윤",
@@ -796,7 +891,13 @@
       "gloss": "(ROM example, rec18144)",
       "targetForm": "이윤",
       "areaId": "rom_mined",
-      "source": "rom-rec18144"
+      "source": "rom-rec18144",
+      "mapsecs": [
+        "0x62"
+      ],
+      "sourceMapsecVia": "rom-rec31543 (overlap)",
+      "firstAreaEncountered": "saffron_city",
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:전화",
@@ -809,7 +910,7 @@
       "mapsecs": [
         "0x5A"
       ],
-      "sourceMapsecVia": "rom-rec17354 (overlap)",
+      "sourceMapsecVia": "rom-rec30096 (overlap)",
       "firstAreaEncountered": "pewter_city",
       "attributionVia": "text_overlap"
     },
@@ -824,7 +925,7 @@
       "mapsecs": [
         "0x5B"
       ],
-      "sourceMapsecVia": "rom-rec17443 (overlap)",
+      "sourceMapsecVia": "rom-rec30263 (overlap)",
       "firstAreaEncountered": "cerulean_city",
       "attributionVia": "text_overlap"
     },
@@ -836,11 +937,12 @@
       "targetForm": "주",
       "areaId": "rom_mined",
       "source": "rom-rec17163",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58"
       ],
+      "sourceMapsecVia": "rom-rec29819 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:쪽발",
@@ -853,7 +955,7 @@
       "mapsecs": [
         "0x5B"
       ],
-      "sourceMapsecVia": "rom-rec17443 (overlap)",
+      "sourceMapsecVia": "rom-rec30263 (overlap)",
       "firstAreaEncountered": "cerulean_city",
       "attributionVia": "text_overlap"
     },
@@ -874,12 +976,13 @@
       "targetForm": "캐",
       "areaId": "rom_mined",
       "source": "rom-rec15770",
-      "resolvedAreas": [
-        "pallet_town",
-        "viridian_city"
+      "mapsecs": [
+        "0x58",
+        "0x59"
       ],
+      "sourceMapsecVia": "rom-rec27918 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:키다",
@@ -898,11 +1001,13 @@
       "targetForm": "할아버지",
       "areaId": "rom_mined",
       "source": "rom-rec17161",
-      "resolvedAreas": [
-        "pallet_town"
+      "mapsecs": [
+        "0x58",
+        "0x59"
       ],
+      "sourceMapsecVia": "rom-rec27919 (overlap)",
       "firstAreaEncountered": "pallet_town",
-      "attributionVia": "map_area_direct"
+      "attributionVia": "text_overlap"
     },
     {
       "vocabId": "rom-mine-v2:효과",
@@ -915,7 +1020,7 @@
       "mapsecs": [
         "0x5B"
       ],
-      "sourceMapsecVia": "rom-rec17443 (overlap)",
+      "sourceMapsecVia": "rom-rec30263 (overlap)",
       "firstAreaEncountered": "cerulean_city",
       "attributionVia": "text_overlap"
     }

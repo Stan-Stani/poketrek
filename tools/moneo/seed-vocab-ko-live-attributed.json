@@ -56,8 +56,10 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 15,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_2"
+      ],
+      "firstAreaEncountered": "route_2"
     },
     {
       "korean": "피다",
@@ -126,8 +128,10 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 12,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city"
     },
     {
       "korean": "완이",
@@ -136,8 +140,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 12,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_2"
+      ],
+      "firstAreaEncountered": "route_2"
     },
     {
       "korean": "좋다",
@@ -198,8 +204,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 8,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "firstAreaEncountered": "fuchsia_city"
     },
     {
       "korean": "윤소",
@@ -208,8 +216,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 8,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_2"
+      ],
+      "firstAreaEncountered": "route_2"
     },
     {
       "korean": "강하다",
@@ -240,8 +250,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 7,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "firstAreaEncountered": "fuchsia_city"
     },
     {
       "korean": "키우다",
@@ -372,8 +384,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_2"
+      ],
+      "firstAreaEncountered": "route_2"
     },
     {
       "korean": "부르다",
@@ -383,9 +397,9 @@
       "areaId": "rom_mined",
       "frequency": 5,
       "areasReferenced": [
-        "pallet_town"
+        "pewter_city"
       ],
-      "firstAreaEncountered": "pallet_town"
+      "firstAreaEncountered": "pewter_city"
     },
     {
       "korean": "승부",
@@ -416,8 +430,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_2"
+      ],
+      "firstAreaEncountered": "route_2"
     },
     {
       "korean": "트다",
@@ -426,8 +442,10 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "firstAreaEncountered": "fuchsia_city"
     },
     {
       "korean": "게시판",
@@ -505,9 +523,9 @@
       "areaId": "rom_mined",
       "frequency": 4,
       "areasReferenced": [
-        "pallet_town"
+        "pewter_city"
       ],
-      "firstAreaEncountered": "pallet_town"
+      "firstAreaEncountered": "pewter_city"
     },
     {
       "korean": "울다",
@@ -546,8 +564,10 @@
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
       "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town"
     },
     {
       "korean": "곤보",
@@ -579,9 +599,9 @@
       "areaId": "rom_mined",
       "frequency": 3,
       "areasReferenced": [
-        "pallet_town"
+        "pewter_city"
       ],
-      "firstAreaEncountered": "pallet_town"
+      "firstAreaEncountered": "pewter_city"
     },
     {
       "korean": "노다",
@@ -621,9 +641,9 @@
       "areaId": "rom_mined",
       "frequency": 3,
       "areasReferenced": [
-        "pallet_town"
+        "pewter_city"
       ],
-      "firstAreaEncountered": "pallet_town"
+      "firstAreaEncountered": "pewter_city"
     },
     {
       "korean": "리그",
@@ -752,8 +772,10 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "saffron_city"
+      ],
+      "firstAreaEncountered": "saffron_city"
     },
     {
       "korean": "전화",

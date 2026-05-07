@@ -115,53 +115,241 @@
    "sample": "깠환관덤갚둑놓 깐낵픈…떾듀픈",
    "confidence": "frlg-canonical"
   },
-  "0x6A": {"area_id": "route_6",  "frlg_canonical": "MAPSEC_ROUTE_6",  "confidence": "frlg-canonical"},
-  "0x6B": {"area_id": "route_7",  "frlg_canonical": "MAPSEC_ROUTE_7",  "confidence": "frlg-canonical"},
-  "0x6C": {"area_id": "route_8",  "frlg_canonical": "MAPSEC_ROUTE_8",  "confidence": "frlg-canonical"},
-  "0x6D": {"area_id": "route_9",  "frlg_canonical": "MAPSEC_ROUTE_9",  "confidence": "frlg-canonical"},
-  "0x6E": {"area_id": "route_10", "frlg_canonical": "MAPSEC_ROUTE_10", "confidence": "frlg-canonical"},
-  "0x6F": {"area_id": "route_11", "frlg_canonical": "MAPSEC_ROUTE_11", "confidence": "frlg-canonical"},
-  "0x70": {"area_id": "route_12", "frlg_canonical": "MAPSEC_ROUTE_12", "confidence": "frlg-canonical"},
-  "0x71": {"area_id": "route_13", "frlg_canonical": "MAPSEC_ROUTE_13", "confidence": "frlg-canonical"},
-  "0x72": {"area_id": "route_14", "frlg_canonical": "MAPSEC_ROUTE_14", "confidence": "frlg-canonical"},
-  "0x73": {"area_id": "route_15", "frlg_canonical": "MAPSEC_ROUTE_15", "confidence": "frlg-canonical"},
-  "0x74": {"area_id": "route_16", "frlg_canonical": "MAPSEC_ROUTE_16", "confidence": "frlg-canonical"},
-  "0x75": {"area_id": "route_17", "frlg_canonical": "MAPSEC_ROUTE_17", "confidence": "frlg-canonical"},
-  "0x76": {"area_id": "route_18", "frlg_canonical": "MAPSEC_ROUTE_18", "confidence": "frlg-canonical"},
-  "0x77": {"area_id": "route_19", "frlg_canonical": "MAPSEC_ROUTE_19", "confidence": "frlg-canonical"},
-  "0x78": {"area_id": "route_20", "frlg_canonical": "MAPSEC_ROUTE_20", "confidence": "frlg-canonical"},
-  "0x79": {"area_id": "route_21", "frlg_canonical": "MAPSEC_ROUTE_21", "confidence": "frlg-canonical"},
-  "0x7A": {"area_id": "route_22", "frlg_canonical": "MAPSEC_ROUTE_22", "confidence": "frlg-canonical"},
-  "0x7B": {"area_id": "route_23", "frlg_canonical": "MAPSEC_ROUTE_23", "confidence": "frlg-canonical"},
-  "0x7C": {"area_id": "route_24", "frlg_canonical": "MAPSEC_ROUTE_24", "confidence": "frlg-canonical"},
-  "0x7D": {"area_id": "route_25", "frlg_canonical": "MAPSEC_ROUTE_25", "confidence": "frlg-canonical"},
-  "0x7E": {"area_id": "viridian_forest", "frlg_canonical": "MAPSEC_VIRIDIAN_FOREST", "confidence": "frlg-canonical"},
-  "0x7F": {"area_id": "mt_moon", "frlg_canonical": "MAPSEC_MT_MOON", "confidence": "frlg-canonical"},
-  "0x80": {"area_id": "ss_anne", "frlg_canonical": "MAPSEC_SS_ANNE", "confidence": "frlg-canonical"},
-  "0x83": {"area_id": "digletts_cave", "frlg_canonical": "MAPSEC_DIGLETTS_CAVE", "confidence": "frlg-canonical"},
-  "0x8A": {"area_id": "rock_tunnel", "frlg_canonical": "MAPSEC_ROCK_TUNNEL", "confidence": "frlg-canonical"},
-  "0x8C": {"area_id": "pokemon_tower", "frlg_canonical": "MAPSEC_POKEMON_TOWER", "confidence": "frlg-canonical"},
-  "0x8F": {"area_id": "one_island", "frlg_canonical": "MAPSEC_ONE_ISLAND", "confidence": "frlg-canonical"},
-  "0x90": {"area_id": "two_island", "frlg_canonical": "MAPSEC_TWO_ISLAND", "confidence": "frlg-canonical"},
-  "0x91": {"area_id": "three_island", "frlg_canonical": "MAPSEC_THREE_ISLAND", "confidence": "frlg-canonical"},
-  "0x92": {"area_id": "four_island", "frlg_canonical": "MAPSEC_FOUR_ISLAND", "confidence": "frlg-canonical"},
-  "0x93": {"area_id": "five_island", "frlg_canonical": "MAPSEC_FIVE_ISLAND", "confidence": "frlg-canonical"},
-  "0x94": {"area_id": "seven_island", "frlg_canonical": "MAPSEC_SEVEN_ISLAND", "confidence": "frlg-canonical"},
-  "0x95": {"area_id": "six_island", "frlg_canonical": "MAPSEC_SIX_ISLAND", "confidence": "frlg-canonical"},
-  "0x96": {"area_id": "kindle_road", "frlg_canonical": "MAPSEC_KINDLE_ROAD", "confidence": "frlg-canonical"},
-  "0x97": {"area_id": "treasure_beach", "frlg_canonical": "MAPSEC_TREASURE_BEACH", "confidence": "frlg-canonical"},
-  "0x99": {"area_id": "kindle_road", "frlg_canonical": "(check) MAPSEC_KINDLE_ROAD adjacent", "confidence": "low"},
-  "0x9A": {"area_id": "treasure_beach", "frlg_canonical": "(check)", "confidence": "low"},
-  "0x9F": {"area_id": "resort_gorgeous", "frlg_canonical": "MAPSEC_RESORT_GORGEOUS", "confidence": "frlg-canonical"},
-  "0xA0": {"area_id": "water_labyrinth", "frlg_canonical": "MAPSEC_WATER_LABYRINTH", "confidence": "frlg-canonical"},
-  "0xA1": {"area_id": "five_isle_meadow", "frlg_canonical": "MAPSEC_FIVE_ISLE_MEADOW", "confidence": "frlg-canonical"},
-  "0xA2": {"area_id": "memorial_pillar", "frlg_canonical": "MAPSEC_MEMORIAL_PILLAR", "confidence": "frlg-canonical"},
-  "0xA3": {"area_id": "outcast_island", "frlg_canonical": "MAPSEC_OUTCAST_ISLAND", "confidence": "frlg-canonical"},
-  "0xA4": {"area_id": "green_path", "frlg_canonical": "MAPSEC_GREEN_PATH", "confidence": "frlg-canonical"},
-  "0xA5": {"area_id": "water_path", "frlg_canonical": "MAPSEC_WATER_PATH", "confidence": "frlg-canonical"},
-  "0xA6": {"area_id": "ruin_valley", "frlg_canonical": "MAPSEC_RUIN_VALLEY", "confidence": "frlg-canonical"},
-  "0xA7": {"area_id": "trainer_tower", "frlg_canonical": "MAPSEC_TRAINER_TOWER", "confidence": "frlg-canonical"},
-  "0xA8": {"area_id": "canyon_entrance", "frlg_canonical": "MAPSEC_CANYON_ENTRANCE", "confidence": "frlg-canonical"},
+  "0x6A": {
+   "area_id": "route_6",
+   "frlg_canonical": "MAPSEC_ROUTE_6",
+   "confidence": "frlg-canonical"
+  },
+  "0x6B": {
+   "area_id": "route_7",
+   "frlg_canonical": "MAPSEC_ROUTE_7",
+   "confidence": "frlg-canonical"
+  },
+  "0x6C": {
+   "area_id": "route_8",
+   "frlg_canonical": "MAPSEC_ROUTE_8",
+   "confidence": "frlg-canonical"
+  },
+  "0x6D": {
+   "area_id": "route_9",
+   "frlg_canonical": "MAPSEC_ROUTE_9",
+   "confidence": "frlg-canonical"
+  },
+  "0x6E": {
+   "area_id": "route_10",
+   "frlg_canonical": "MAPSEC_ROUTE_10",
+   "confidence": "frlg-canonical"
+  },
+  "0x6F": {
+   "area_id": "route_11",
+   "frlg_canonical": "MAPSEC_ROUTE_11",
+   "confidence": "frlg-canonical"
+  },
+  "0x70": {
+   "area_id": "route_12",
+   "frlg_canonical": "MAPSEC_ROUTE_12",
+   "confidence": "frlg-canonical"
+  },
+  "0x71": {
+   "area_id": "route_13",
+   "frlg_canonical": "MAPSEC_ROUTE_13",
+   "confidence": "frlg-canonical"
+  },
+  "0x72": {
+   "area_id": "route_14",
+   "frlg_canonical": "MAPSEC_ROUTE_14",
+   "confidence": "frlg-canonical"
+  },
+  "0x73": {
+   "area_id": "route_15",
+   "frlg_canonical": "MAPSEC_ROUTE_15",
+   "confidence": "frlg-canonical"
+  },
+  "0x74": {
+   "area_id": "route_16",
+   "frlg_canonical": "MAPSEC_ROUTE_16",
+   "confidence": "frlg-canonical"
+  },
+  "0x75": {
+   "area_id": "route_17",
+   "frlg_canonical": "MAPSEC_ROUTE_17",
+   "confidence": "frlg-canonical"
+  },
+  "0x76": {
+   "area_id": "route_18",
+   "frlg_canonical": "MAPSEC_ROUTE_18",
+   "confidence": "frlg-canonical"
+  },
+  "0x77": {
+   "area_id": "route_19",
+   "frlg_canonical": "MAPSEC_ROUTE_19",
+   "confidence": "frlg-canonical"
+  },
+  "0x78": {
+   "area_id": "route_20",
+   "frlg_canonical": "MAPSEC_ROUTE_20",
+   "confidence": "frlg-canonical"
+  },
+  "0x79": {
+   "area_id": "route_21",
+   "frlg_canonical": "MAPSEC_ROUTE_21",
+   "confidence": "frlg-canonical"
+  },
+  "0x7A": {
+   "area_id": "route_22",
+   "frlg_canonical": "MAPSEC_ROUTE_22",
+   "confidence": "frlg-canonical"
+  },
+  "0x7B": {
+   "area_id": "route_23",
+   "frlg_canonical": "MAPSEC_ROUTE_23",
+   "confidence": "frlg-canonical"
+  },
+  "0x7C": {
+   "area_id": "route_24",
+   "frlg_canonical": "MAPSEC_ROUTE_24",
+   "confidence": "frlg-canonical"
+  },
+  "0x7D": {
+   "area_id": "route_25",
+   "frlg_canonical": "MAPSEC_ROUTE_25",
+   "confidence": "frlg-canonical"
+  },
+  "0x7E": {
+   "area_id": "viridian_forest",
+   "frlg_canonical": "MAPSEC_VIRIDIAN_FOREST",
+   "confidence": "frlg-canonical"
+  },
+  "0x7F": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "MAPSEC_MT_MOON",
+   "confidence": "frlg-canonical"
+  },
+  "0x80": {
+   "area_id": "ss_anne",
+   "frlg_canonical": "MAPSEC_SS_ANNE",
+   "confidence": "frlg-canonical"
+  },
+  "0x83": {
+   "area_id": "digletts_cave",
+   "frlg_canonical": "MAPSEC_DIGLETTS_CAVE",
+   "confidence": "frlg-canonical"
+  },
+  "0x8A": {
+   "area_id": "rock_tunnel",
+   "frlg_canonical": "MAPSEC_ROCK_TUNNEL",
+   "confidence": "frlg-canonical"
+  },
+  "0x8C": {
+   "area_id": "pokemon_tower",
+   "frlg_canonical": "MAPSEC_POKEMON_TOWER",
+   "confidence": "frlg-canonical"
+  },
+  "0x8F": {
+   "area_id": "one_island",
+   "frlg_canonical": "MAPSEC_ONE_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x90": {
+   "area_id": "two_island",
+   "frlg_canonical": "MAPSEC_TWO_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x91": {
+   "area_id": "three_island",
+   "frlg_canonical": "MAPSEC_THREE_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x92": {
+   "area_id": "four_island",
+   "frlg_canonical": "MAPSEC_FOUR_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x93": {
+   "area_id": "five_island",
+   "frlg_canonical": "MAPSEC_FIVE_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x94": {
+   "area_id": "seven_island",
+   "frlg_canonical": "MAPSEC_SEVEN_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x95": {
+   "area_id": "six_island",
+   "frlg_canonical": "MAPSEC_SIX_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0x96": {
+   "area_id": "kindle_road",
+   "frlg_canonical": "MAPSEC_KINDLE_ROAD",
+   "confidence": "frlg-canonical"
+  },
+  "0x97": {
+   "area_id": "treasure_beach",
+   "frlg_canonical": "MAPSEC_TREASURE_BEACH",
+   "confidence": "frlg-canonical"
+  },
+  "0x99": {
+   "area_id": "kindle_road",
+   "frlg_canonical": "(check) MAPSEC_KINDLE_ROAD adjacent",
+   "confidence": "low"
+  },
+  "0x9A": {
+   "area_id": "treasure_beach",
+   "frlg_canonical": "(check)",
+   "confidence": "low"
+  },
+  "0x9F": {
+   "area_id": "resort_gorgeous",
+   "frlg_canonical": "MAPSEC_RESORT_GORGEOUS",
+   "confidence": "frlg-canonical"
+  },
+  "0xA0": {
+   "area_id": "water_labyrinth",
+   "frlg_canonical": "MAPSEC_WATER_LABYRINTH",
+   "confidence": "frlg-canonical"
+  },
+  "0xA1": {
+   "area_id": "five_isle_meadow",
+   "frlg_canonical": "MAPSEC_FIVE_ISLE_MEADOW",
+   "confidence": "frlg-canonical"
+  },
+  "0xA2": {
+   "area_id": "memorial_pillar",
+   "frlg_canonical": "MAPSEC_MEMORIAL_PILLAR",
+   "confidence": "frlg-canonical"
+  },
+  "0xA3": {
+   "area_id": "outcast_island",
+   "frlg_canonical": "MAPSEC_OUTCAST_ISLAND",
+   "confidence": "frlg-canonical"
+  },
+  "0xA4": {
+   "area_id": "green_path",
+   "frlg_canonical": "MAPSEC_GREEN_PATH",
+   "confidence": "frlg-canonical"
+  },
+  "0xA5": {
+   "area_id": "water_path",
+   "frlg_canonical": "MAPSEC_WATER_PATH",
+   "confidence": "frlg-canonical"
+  },
+  "0xA6": {
+   "area_id": "ruin_valley",
+   "frlg_canonical": "MAPSEC_RUIN_VALLEY",
+   "confidence": "frlg-canonical"
+  },
+  "0xA7": {
+   "area_id": "trainer_tower",
+   "frlg_canonical": "MAPSEC_TRAINER_TOWER",
+   "confidence": "frlg-canonical"
+  },
+  "0xA8": {
+   "area_id": "canyon_entrance",
+   "frlg_canonical": "MAPSEC_CANYON_ENTRANCE",
+   "confidence": "frlg-canonical"
+  },
   "0xA9": {
    "area_id": "pewter_city",
    "frlg_canonical": "(check) sevii region in canonical -- but Korean ROM dialog clearly references Pewter (그레이뱃지, 타케시)",
@@ -180,18 +368,94 @@
    "sample": "오키드『어-이! 기다려-! 기다리라구!",
    "confidence": "low -- could be route_1 or pallet"
   },
-  "0xB3": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "공캬럴끓 넋뼈끼! 군콘군콘꽈... 견템!!", "confidence": "unidentified"},
-  "0xB5": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "프로필은 좋아하는말을 4개 조합해서 만드는거야 -- character creation?", "confidence": "unidentified"},
-  "0xB9": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "땍땍몬앨약! 꽁꽁걸검끼!", "confidence": "unidentified"},
-  "0xBA": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "꼴숙딧…… 검다당몬욱끔끔갠갤깃?", "confidence": "unidentified"},
-  "0xBB": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "꽝꽤『끼[player]! 화꽈끓끗 다당됩휴 런껼몬냉훤끓 닐꽉겉겉깃?", "confidence": "unidentified"},
-  "0xBC": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xBD": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xBE": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xBF": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xC0": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xC1": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xC2": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "(short fragments)", "confidence": "unidentified"},
-  "0xC3": {"area_id": null, "frlg_canonical": "(unknown)", "sample": "[player]궂다당 꿈꺾승!", "confidence": "unidentified"}
+  "0xB3": {
+   "area_id": "pallet_town",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "공캬럴끓 넋뼈끼! 군콘군콘꽈... 견템!!",
+   "confidence": "high",
+   "resolve_note": "Pallet interior buildings (player house, rival house, Oak's lab) - 6/11 maps warp to Pallet outdoor"
+  },
+  "0xB5": {
+   "area_id": null,
+   "frlg_canonical": "(unknown)",
+   "sample": "프로필은 좋아하는말을 4개 조합해서 만드는거야 -- character creation?",
+   "confidence": "unidentified"
+  },
+  "0xB9": {
+   "area_id": "treasure_beach",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "땍땍몬앨약! 꽁꽁걸검끼!",
+   "confidence": "medium",
+   "resolve_note": "Single map; warps to Treasure Beach"
+  },
+  "0xBA": {
+   "area_id": "pewter_city",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "꼴숙딧…… 검다당몬욱끔끔갠갤깃?",
+   "confidence": "high",
+   "resolve_note": "Pewter interior; warp to Pewter outdoor"
+  },
+  "0xBB": {
+   "area_id": null,
+   "frlg_canonical": "(unknown)",
+   "sample": "꽝꽤『끼[player]! 화꽈끓끗 다당됩휴 런껼몬냉훤끓 닐꽉겉겉깃?",
+   "confidence": "unidentified"
+  },
+  "0xBC": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor; warps to Mt. Moon entrance"
+  },
+  "0xBD": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor"
+  },
+  "0xBE": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor"
+  },
+  "0xBF": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor"
+  },
+  "0xC0": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor"
+  },
+  "0xC1": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor"
+  },
+  "0xC2": {
+   "area_id": "mt_moon",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "(short fragments)",
+   "confidence": "high",
+   "resolve_note": "Mt. Moon sub-floor"
+  },
+  "0xC3": {
+   "area_id": "kindle_road",
+   "frlg_canonical": "(resolved via warp graph + pokefirered g-2 offset)",
+   "sample": "[player]궂다당 꿈꺾승!",
+   "confidence": "high",
+   "resolve_note": "Single map; warp to Kindle Road"
+  }
  }
 }

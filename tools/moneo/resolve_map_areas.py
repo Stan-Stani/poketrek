@@ -102,9 +102,17 @@ def resolve_area_for_map(
     # warp destinations with depth=1
     for warp in start_entry["warps"]:
         dg, dm = warp["destGroup"], warp["destMapNum"]
-        if (dg, dm) not in visited:
-            visited.add((dg, dm))
-            queue.append((dg, dm, 1))
+        # Korean ROM warp dest_g/dest_m use pokefirered's canonical group
+        # indexing, not gMapGroups indexing. The Korean fan-build dropped
+        # pokefirered's first 2 groups (Link, Dungeons), so subtract 2 to
+        # align with our walker. Try the translated form first; fall back
+        # to the raw value if no map matches (some warps may be already
+        # in walker indexing for special-case maps).
+        for cand_g, cand_m in [(dg - 2, dm), (dg, dm)]:
+            if (cand_g, cand_m) in maps_lookup and (cand_g, cand_m) not in visited:
+                visited.add((cand_g, cand_m))
+                queue.append((cand_g, cand_m, 1))
+                break
 
     candidates: list[tuple[int, int, int]] = []  # (area_id, ordinal, depth)
 
@@ -124,13 +132,15 @@ def resolve_area_for_map(
             # Continue exploring so we can find potentially lower-ordinal areas
             # via other branches even if this map has an area.
 
-        # Expand warps
+        # Expand warps (apply same pokefirered-group-offset translation)
         if depth < MAX_WARP_HOPS:
             for warp in entry["warps"]:
                 dg2, dm2 = warp["destGroup"], warp["destMapNum"]
-                if (dg2, dm2) not in visited:
-                    visited.add((dg2, dm2))
-                    queue.append((dg2, dm2, depth + 1))
+                for cand_g, cand_m in [(dg2 - 2, dm2), (dg2, dm2)]:
+                    if (cand_g, cand_m) in maps_lookup and (cand_g, cand_m) not in visited:
+                        visited.add((cand_g, cand_m))
+                        queue.append((cand_g, cand_m, depth + 1))
+                        break
 
     if not candidates:
         return None, "unresolved"
