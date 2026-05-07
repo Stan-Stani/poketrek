@@ -14,7 +14,16 @@
       "gloss": "to do",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 55
+      "frequency": 55,
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "타다",
@@ -22,7 +31,16 @@
       "gloss": "to ride; to burn",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 42
+      "frequency": 42,
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "있다",
@@ -101,7 +119,15 @@
       "gloss": "to carry on the shoulder; to be choked up",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 36
+      "frequency": 36,
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28671,
+        "score": 35
+      }
     },
     {
       "korean": "회복",
@@ -829,7 +855,15 @@
       "gloss": "to hit; to strike",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 14
+      "frequency": 14,
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28667,
+        "score": 35
+      }
     },
     {
       "korean": "쓰다",
@@ -942,7 +976,15 @@
       "gloss": "to see; to look",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 12
+      "frequency": 12,
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30298,
+        "score": 35
+      }
     },
     {
       "korean": "세다",
@@ -950,7 +992,15 @@
       "gloss": "strong; to count",
       "partOfSpeech": "adjective",
       "areaId": "rom_mined",
-      "frequency": 12
+      "frequency": 12,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "크다",
@@ -1105,7 +1155,16 @@
       "gloss": "to scoop; to ladle out",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 11
+      "frequency": 11,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "프린트",
@@ -1128,7 +1187,34 @@
       "gloss": "as if; just like",
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
-      "frequency": 9
+      "frequency": 9,
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33908,
+        "score": 0
+      }
     },
     {
       "korean": "전부",
@@ -1443,7 +1529,16 @@
       "gloss": "to come out; to grow; to occur",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 7
+      "frequency": 7,
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30062,
+        "score": 33
+      }
     },
     {
       "korean": "넣다",
@@ -1577,7 +1672,15 @@
       "gloss": "to sleep",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 7
+      "frequency": 7,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "캐다",
@@ -2131,7 +2234,15 @@
       "gloss": "to bloom",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 6
+      "frequency": 6,
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30066,
+        "score": 34
+      }
     },
     {
       "korean": "교체",
@@ -2197,7 +2308,15 @@
       "gloss": "to get burned; to scald",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 5
+      "frequency": 5,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29830,
+        "score": 38
+      }
     },
     {
       "korean": "들통",
@@ -2475,7 +2594,19 @@
       "gloss": "probably; maybe",
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
-      "frequency": 5
+      "frequency": 5,
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "cinnabar_island",
+        "indigo_plateau",
+        "one_island",
+        "saffron_city",
+        "two_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 46377,
+        "score": 20
+      }
     },
     {
       "korean": "영양",
@@ -3191,7 +3322,15 @@
       "gloss": "to crawl",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 3
+      "frequency": 3,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "기록",
@@ -3834,7 +3973,15 @@
       "gloss": "to dig",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 3
+      "frequency": 3,
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28671,
+        "score": 35
+      }
     },
     {
       "korean": "가루약",
@@ -4860,7 +5007,16 @@
       "gloss": "in advance; beforehand",
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
-      "frequency": 2
+      "frequency": 2,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 10065,
+        "score": 0
+      }
     },
     {
       "korean": "받다",
@@ -5001,7 +5157,16 @@
       "gloss": "to cut; to mow",
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
-      "frequency": 2
+      "frequency": 2,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "빈사",
@@ -5663,7 +5828,15 @@
       "gloss": "ha ha (laugh)",
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
-      "frequency": 2
+      "frequency": 2,
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "헤헤",
@@ -5671,7 +5844,16 @@
       "gloss": "hehe (giggle)",
       "partOfSpeech": "adverb",
       "areaId": "rom_mined",
-      "frequency": 2
+      "frequency": 2,
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island",
+        "indigo_plateau"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28373,
+        "score": 0
+      }
     },
     {
       "korean": "화상",

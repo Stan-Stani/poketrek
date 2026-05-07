@@ -15,7 +15,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 365,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "몰다",
@@ -253,7 +261,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 219,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "후",
@@ -262,7 +279,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 211,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29825,
+        "score": 37
+      }
     },
     {
       "korean": "오다",
@@ -271,7 +296,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 190,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "달",
@@ -280,7 +313,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 184,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28011,
+        "score": 33
+      }
     },
     {
       "korean": "주",
@@ -289,7 +330,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 164,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "꿈",
@@ -298,7 +347,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 157,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "코",
@@ -307,7 +364,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 147,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "내다",
@@ -390,7 +456,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 142,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "같다",
@@ -622,7 +697,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 124,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "통",
@@ -631,7 +715,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 123,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33957,
+        "score": 27
+      }
     },
     {
       "korean": "잔",
@@ -640,7 +751,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 117,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "pallet_town",
+        "route_1",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 34089,
+        "score": 20
+      }
     },
     {
       "korean": "메다",
@@ -649,7 +772,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 115,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28671,
+        "score": 35
+      }
     },
     {
       "korean": "검다",
@@ -730,7 +861,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 103,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "소",
@@ -739,7 +878,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 103,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30298,
+        "score": 35
+      }
     },
     {
       "korean": "놓다",
@@ -895,7 +1042,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 84,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "끼다",
@@ -976,7 +1131,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 80,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "보다",
@@ -985,7 +1149,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 72,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30298,
+        "score": 35
+      }
     },
     {
       "korean": "늘",
@@ -994,7 +1166,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 70,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "치다",
@@ -1003,7 +1184,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 69,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28667,
+        "score": 35
+      }
     },
     {
       "korean": "공",
@@ -1012,7 +1201,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 68,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "피",
@@ -1021,7 +1219,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 67,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30066,
+        "score": 34
+      }
     },
     {
       "korean": "양",
@@ -1030,7 +1236,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 62,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "되다",
@@ -1111,7 +1326,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 60,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "안",
@@ -1120,7 +1344,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 56,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30249,
+        "score": 33
+      }
     },
     {
       "korean": "주다",
@@ -1195,7 +1427,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 53,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "넣다",
@@ -1279,7 +1520,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 49,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "celadon_city",
+        "fuchsia_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28280,
+        "score": 24
+      }
     },
     {
       "korean": "다",
@@ -1288,7 +1538,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 49,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "벌다",
@@ -1554,7 +1812,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 46,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28011,
+        "score": 33
+      }
     },
     {
       "korean": "아이",
@@ -1563,7 +1829,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 46,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29621,
+        "score": 31
+      }
     },
     {
       "korean": "때",
@@ -1572,7 +1847,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 45,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29830,
+        "score": 38
+      }
     },
     {
       "korean": "사이",
@@ -1581,7 +1864,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 44,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30249,
+        "score": 33
+      }
     },
     {
       "korean": "오이",
@@ -1590,7 +1881,18 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 41,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "outcast_island",
+      "areasReferenced": [
+        "five_isle_meadow",
+        "green_path",
+        "memorial_pillar",
+        "outcast_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 25544,
+        "score": 29
+      }
     },
     {
       "korean": "맛",
@@ -1599,7 +1901,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 40,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "canyon_entrance",
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "indigo_plateau",
+        "lavender_town",
+        "mt_moon",
+        "pewter_city",
+        "resort_gorgeous",
+        "route_20",
+        "route_25",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 12575,
+        "score": 0
+      }
     },
     {
       "korean": "몸",
@@ -1608,7 +1937,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 40,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29945,
+        "score": 27
+      }
     },
     {
       "korean": "껌",
@@ -1617,7 +1954,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 39,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "celadon_city",
+        "fuchsia_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28280,
+        "score": 24
+      }
     },
     {
       "korean": "크다",
@@ -1697,7 +2043,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 39,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28671,
+        "score": 35
+      }
     },
     {
       "korean": "달다",
@@ -1743,7 +2097,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 38,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "군",
@@ -1752,7 +2114,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 37,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "터",
@@ -1761,7 +2131,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 37,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "만들다",
@@ -1826,7 +2204,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 35,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "세다",
@@ -1835,7 +2221,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 35,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "차",
@@ -1844,7 +2238,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 35,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "곁",
@@ -1853,7 +2255,18 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 34,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "route_12",
+        "route_13",
+        "route_14",
+        "route_15"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28956,
+        "score": 0
+      }
     },
     {
       "korean": "짐",
@@ -1862,7 +2275,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 34,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 23064,
+        "score": 0
+      }
     },
     {
       "korean": "파",
@@ -1871,7 +2292,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 32,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28671,
+        "score": 35
+      }
     },
     {
       "korean": "날",
@@ -1880,7 +2309,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 31,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "피다",
@@ -1889,7 +2327,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 31,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30066,
+        "score": 34
+      }
     },
     {
       "korean": "나다",
@@ -1898,7 +2344,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 30,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30062,
+        "score": 33
+      }
     },
     {
       "korean": "나이",
@@ -1907,7 +2362,18 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 30,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 17014,
+        "score": 0
+      }
     },
     {
       "korean": "더",
@@ -1916,7 +2382,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 30,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "부",
@@ -1925,7 +2400,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 30,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "먹다",
@@ -1992,7 +2476,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 28,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30295,
+        "score": 35
+      }
     },
     {
       "korean": "꾸다",
@@ -2074,7 +2566,35 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 28,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "five_isle_meadow",
+        "four_island",
+        "fuchsia_city",
+        "kindle_road",
+        "memorial_pillar",
+        "outcast_island",
+        "pewter_city",
+        "resort_gorgeous",
+        "route_11",
+        "route_12",
+        "route_15",
+        "route_24",
+        "route_25",
+        "route_4",
+        "route_9",
+        "ruin_valley",
+        "three_island",
+        "two_island",
+        "viridian_city",
+        "water_path"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 34024,
+        "score": 33
+      }
     },
     {
       "korean": "사",
@@ -2083,7 +2603,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 28,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "겉",
@@ -2092,7 +2621,24 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 27,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cinnabar_island",
+        "four_island",
+        "fuchsia_city",
+        "pallet_town",
+        "pewter_city",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27646,
+        "score": 0
+      }
     },
     {
       "korean": "산",
@@ -2101,7 +2647,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 27,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28011,
+        "score": 33
+      }
     },
     {
       "korean": "쓰다",
@@ -2218,7 +2772,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 27,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29830,
+        "score": 38
+      }
     },
     {
       "korean": "가루",
@@ -2227,7 +2789,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 26,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 161,
+        "scope": "static"
+      }
     },
     {
       "korean": "단",
@@ -2236,7 +2803,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 26,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "땀",
@@ -2245,7 +2821,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 26,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "resort_gorgeous",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27778,
+        "score": 13
+      }
     },
     {
       "korean": "등",
@@ -2254,7 +2842,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 25,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30298,
+        "score": 35
+      }
     },
     {
       "korean": "매다",
@@ -2306,7 +2902,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 24,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_1",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "route_1",
+        "seven_island",
+        "six_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28618,
+        "score": 32
+      }
     },
     {
       "korean": "들다",
@@ -2435,7 +3043,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 23,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "갈다",
@@ -2550,7 +3166,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 21,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28128,
+        "score": 33
+      }
     },
     {
       "korean": "밀다",
@@ -2677,7 +3301,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 20,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "소스",
@@ -2686,7 +3319,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 20,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 7022,
+        "scope": "static"
+      }
     },
     {
       "korean": "덥다",
@@ -2734,7 +3372,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 19,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33908,
+        "score": 0
+      }
     },
     {
       "korean": "애",
@@ -2743,7 +3408,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 19,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29949,
+        "score": 30
+      }
     },
     {
       "korean": "양복",
@@ -2768,7 +3441,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 19,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "green_path",
+      "areasReferenced": [
+        "green_path"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 10025,
+        "score": 0
+      }
     },
     {
       "korean": "잡다",
@@ -2916,7 +3597,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 18,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "saffron_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 22747,
+        "score": 0
+      }
     },
     {
       "korean": "쉬다",
@@ -3035,7 +3724,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 16,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "cinnabar_island",
+        "indigo_plateau",
+        "saffron_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28425,
+        "score": 0
+      }
     },
     {
       "korean": "나오다",
@@ -3087,7 +3786,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 16,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_8",
+      "areasReferenced": [
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_8",
+        "route_9"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28845,
+        "score": 0
+      }
     },
     {
       "korean": "많다",
@@ -3124,7 +3835,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 16,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27865,
+        "score": 33
+      }
     },
     {
       "korean": "가지다",
@@ -3159,7 +3879,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 15,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "resort_gorgeous"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27718,
+        "score": 0
+      }
     },
     {
       "korean": "물",
@@ -3168,7 +3897,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 15,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28038,
+        "score": 34
+      }
     },
     {
       "korean": "싸다",
@@ -3233,7 +3970,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 15,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "cinnabar_island",
+        "indigo_plateau",
+        "one_island",
+        "saffron_city",
+        "two_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 46377,
+        "score": 20
+      }
     },
     {
       "korean": "오",
@@ -3242,7 +3991,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 15,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "참",
@@ -3251,7 +4008,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 15,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33933,
+        "score": 0
+      }
     },
     {
       "korean": "개",
@@ -3260,7 +4044,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 14,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29821,
+        "score": 35
+      }
     },
     {
       "korean": "깨다",
@@ -3399,7 +4191,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 14,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28011,
+        "score": 33
+      }
     },
     {
       "korean": "말",
@@ -3408,7 +4208,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 14,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "발",
@@ -3417,7 +4225,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 14,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "뵈다",
@@ -3492,7 +4308,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 14,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "전부",
@@ -3554,7 +4379,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 14,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "강",
@@ -3563,7 +4396,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 13,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "기술",
@@ -3795,7 +4637,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 13,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30298,
+        "score": 35
+      }
     },
     {
       "korean": "밉다",
@@ -4004,7 +4854,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 12,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city",
+        "lavender_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30363,
+        "score": 25
+      }
     },
     {
       "korean": "두다",
@@ -4013,7 +4872,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 12,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "받다",
@@ -4171,7 +5039,41 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 12,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "indigo_plateau",
+        "lavender_town",
+        "mt_moon",
+        "one_island",
+        "pallet_town",
+        "pewter_city",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_16",
+        "route_18",
+        "route_2",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 39134,
+        "score": 0
+      }
     },
     {
       "korean": "약",
@@ -4180,7 +5082,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 12,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29939,
+        "score": 32
+      }
     },
     {
       "korean": "유리",
@@ -4189,7 +5099,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 12,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30068,
+        "score": 33
+      }
     },
     {
       "korean": "급",
@@ -4198,7 +5116,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 11,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "saffron_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 31548,
+        "score": 19
+      }
     },
     {
       "korean": "누나",
@@ -4207,7 +5133,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 11,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "법",
@@ -4216,7 +5150,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 11,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "살다",
@@ -4279,7 +5222,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 11,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "아프다",
@@ -4360,7 +5311,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 11,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "잊다",
@@ -4466,7 +5425,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 11,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28027,
+        "score": 32
+      }
     },
     {
       "korean": "낫다",
@@ -4595,7 +5562,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 10,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30267,
+        "score": 31
+      }
     },
     {
       "korean": "묻다",
@@ -4695,7 +5670,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 10,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "seven_island",
+      "areasReferenced": [
+        "seven_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 32067,
+        "score": 14
+      }
     },
     {
       "korean": "아주",
@@ -4722,7 +5705,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 10,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_2",
+      "areasReferenced": [
+        "route_2",
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 31696,
+        "score": 31
+      }
     },
     {
       "korean": "움직이다",
@@ -4779,7 +5771,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 10,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29840,
+        "score": 35
+      }
     },
     {
       "korean": "조금",
@@ -4847,7 +5847,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 10,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27963,
+        "score": 0
+      }
     },
     {
       "korean": "풀",
@@ -4856,7 +5865,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 10,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29825,
+        "score": 37
+      }
     },
     {
       "korean": "걸다",
@@ -4981,7 +5998,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 9,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "pallet_town",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27875,
+        "score": 0
+      }
     },
     {
       "korean": "눕다",
@@ -5176,7 +6203,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 9,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "아름답다",
@@ -5353,7 +6388,20 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 8,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_3",
+      "areasReferenced": [
+        "route_11",
+        "route_24",
+        "route_25",
+        "route_3",
+        "route_4",
+        "route_6"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28812,
+        "score": 0
+      }
     },
     {
       "korean": "모습",
@@ -5397,7 +6445,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 8,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "pallet_town",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27874,
+        "score": 0
+      }
     },
     {
       "korean": "옛날",
@@ -5423,7 +6481,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 8,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "좀",
@@ -5432,7 +6499,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 8,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33957,
+        "score": 27
+      }
     },
     {
       "korean": "짧다",
@@ -5517,7 +6611,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "끌다",
@@ -5586,7 +6689,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28671,
+        "score": 35
+      }
     },
     {
       "korean": "나무",
@@ -5595,7 +6706,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28111,
+        "score": 31
+      }
     },
     {
       "korean": "능력",
@@ -5644,7 +6764,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29842,
+        "score": 31
+      }
     },
     {
       "korean": "떡",
@@ -5653,7 +6781,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "cinnabar_island",
+        "fuchsia_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28358,
+        "score": 0
+      }
     },
     {
       "korean": "모으다",
@@ -5706,7 +6843,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 7,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 10065,
+        "score": 0
+      }
     },
     {
       "korean": "밤",
@@ -5715,7 +6861,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 44207,
+        "score": 0
+      }
     },
     {
       "korean": "빨리",
@@ -5808,7 +6962,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "pallet_town",
+        "route_1",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 34110,
+        "score": 21
+      }
     },
     {
       "korean": "속",
@@ -5817,7 +6983,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "약하다",
@@ -5914,7 +7088,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "pallet_town",
+        "route_1",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 34091,
+        "score": 23
+      }
     },
     {
       "korean": "원",
@@ -5923,7 +7109,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28038,
+        "score": 34
+      }
     },
     {
       "korean": "일부",
@@ -5958,7 +7152,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "점",
@@ -5967,7 +7169,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 7,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_1",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "route_1",
+        "seven_island",
+        "six_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28618,
+        "score": 32
+      }
     },
     {
       "korean": "차다",
@@ -6043,7 +7257,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "하하",
@@ -6052,7 +7275,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 7,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "힘",
@@ -6061,7 +7292,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 7,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28038,
+        "score": 34
+      }
     },
     {
       "korean": "글",
@@ -6070,7 +7309,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 6,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 26296,
+        "score": 0
+      }
     },
     {
       "korean": "기초",
@@ -6123,7 +7371,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 6,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "pallet_town",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27873,
+        "score": 0
+      }
     },
     {
       "korean": "나누다",
@@ -6273,7 +7531,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 6,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "보이다",
@@ -6309,7 +7576,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 6,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "cinnabar_island",
+        "indigo_plateau",
+        "one_island",
+        "saffron_city",
+        "two_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 46377,
+        "score": 20
+      }
     },
     {
       "korean": "빵",
@@ -6318,7 +7597,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 6,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27807,
+        "score": 0
+      }
     },
     {
       "korean": "서다",
@@ -6449,7 +7740,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 6,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27865,
+        "score": 33
+      }
     },
     {
       "korean": "이상",
@@ -6533,7 +7833,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 6,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "짓",
@@ -6542,7 +7851,21 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 6,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_1",
+      "areasReferenced": [
+        "five_island",
+        "route_1",
+        "route_2",
+        "route_3",
+        "route_4",
+        "seven_island",
+        "six_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28661,
+        "score": 27
+      }
     },
     {
       "korean": "짓다",
@@ -6605,7 +7928,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 6,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33944,
+        "score": 0
+      }
     },
     {
       "korean": "고기",
@@ -6614,7 +7964,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 5,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 666,
+        "scope": "static"
+      }
     },
     {
       "korean": "곱다",
@@ -6639,7 +7994,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 5,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_13",
+      "areasReferenced": [
+        "route_13",
+        "route_14",
+        "route_15"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28968,
+        "score": 0
+      }
     },
     {
       "korean": "날다",
@@ -7060,7 +8425,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 5,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29823,
+        "score": 37
+      }
     },
     {
       "korean": "빼다",
@@ -7121,7 +8494,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 5,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28104,
+        "score": 0
+      }
     },
     {
       "korean": "선택",
@@ -7146,7 +8528,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 5,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "kindle_road",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33337,
+        "score": 28
+      }
     },
     {
       "korean": "아들",
@@ -7227,7 +8618,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 5,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "saffron_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 21815,
+        "score": 0
+      }
     },
     {
       "korean": "정보",
@@ -7268,7 +8667,15 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 5,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "찌다",
@@ -7294,7 +8701,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 5,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "green_path",
+      "areasReferenced": [
+        "canyon_entrance",
+        "green_path",
+        "ruin_valley",
+        "trainer_tower",
+        "water_path"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 19725,
+        "score": 0
+      }
     },
     {
       "korean": "칼",
@@ -7303,7 +8722,22 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 5,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "kindle_road",
+      "areasReferenced": [
+        "green_path",
+        "kindle_road",
+        "memorial_pillar",
+        "outcast_island",
+        "resort_gorgeous",
+        "treasure_beach",
+        "water_labyrinth",
+        "water_path"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29503,
+        "score": 0
+      }
     },
     {
       "korean": "키우다",
@@ -7393,7 +8827,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 5,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 5049,
+        "scope": "static"
+      }
     },
     {
       "korean": "풀다",
@@ -7498,7 +8937,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30293,
+        "score": 33
+      }
     },
     {
       "korean": "끊다",
@@ -7658,7 +9105,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 4,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29830,
+        "score": 38
+      }
     },
     {
       "korean": "돌아가다",
@@ -7742,7 +9197,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "마시다",
@@ -7876,7 +9339,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29916,
+        "score": 0
+      }
     },
     {
       "korean": "버섯",
@@ -8121,7 +9592,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "월",
@@ -8130,7 +9610,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 897,
+        "scope": "static"
+      }
     },
     {
       "korean": "위하다",
@@ -8217,7 +9702,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 4,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "장소",
@@ -8247,7 +9740,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "점점",
@@ -8274,7 +9775,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 4,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29870,
+        "score": 32
+      }
     },
     {
       "korean": "정도",
@@ -8334,7 +9843,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "treasure_beach",
+      "areasReferenced": [
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 10955,
+        "score": 0
+      }
     },
     {
       "korean": "팀",
@@ -8343,7 +9860,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 4,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4",
+        "route_5",
+        "route_6",
+        "route_7",
+        "route_8"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 25386,
+        "score": 0
+      }
     },
     {
       "korean": "팔다",
@@ -8368,7 +9897,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 4,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 4363,
+        "scope": "static"
+      }
     },
     {
       "korean": "가게",
@@ -8377,7 +9911,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30243,
+        "score": 32
+      }
     },
     {
       "korean": "감다",
@@ -8489,7 +10031,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 38750,
+        "score": 0
+      }
     },
     {
       "korean": "금",
@@ -8498,7 +10048,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30061,
+        "score": 33
+      }
     },
     {
       "korean": "기자",
@@ -8507,7 +10065,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 666,
+        "scope": "static"
+      }
     },
     {
       "korean": "넷",
@@ -8516,7 +10079,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city",
+        "resort_gorgeous",
+        "route_25",
+        "route_5",
+        "seven_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 14701,
+        "score": 0
+      }
     },
     {
       "korean": "노래",
@@ -8623,7 +10198,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "vermilion_city",
+      "areasReferenced": [
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30547,
+        "score": 0
+      }
     },
     {
       "korean": "던지다",
@@ -8718,7 +10301,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27922,
+        "score": 0
+      }
     },
     {
       "korean": "마구",
@@ -8727,7 +10319,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 2093,
+        "scope": "static"
+      }
     },
     {
       "korean": "막",
@@ -8736,7 +10333,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28027,
+        "score": 32
+      }
     },
     {
       "korean": "많이",
@@ -8849,7 +10454,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "반드시",
@@ -8901,7 +10514,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "보호",
@@ -8910,7 +10531,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 4342,
+        "scope": "static"
+      }
     },
     {
       "korean": "복사",
@@ -8936,7 +10562,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 4443,
+        "scope": "static"
+      }
     },
     {
       "korean": "부산",
@@ -8961,7 +10592,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "pallet_town",
+        "route_1",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 34110,
+        "score": 21
+      }
     },
     {
       "korean": "빠르다",
@@ -8990,7 +10633,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 12723,
+        "score": 0
+      }
     },
     {
       "korean": "생기다",
@@ -9112,7 +10763,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30267,
+        "score": 31
+      }
     },
     {
       "korean": "시작",
@@ -9139,7 +10798,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "pallet_town",
+        "route_1",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 34090,
+        "score": 22
+      }
     },
     {
       "korean": "심다",
@@ -9188,7 +10859,21 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "canyon_entrance",
+        "mt_moon",
+        "pewter_city",
+        "ruin_valley",
+        "trainer_tower",
+        "viridian_city",
+        "water_path"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33325,
+        "score": 37
+      }
     },
     {
       "korean": "아",
@@ -9197,7 +10882,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "야구",
@@ -9206,7 +10899,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 10065,
+        "score": 0
+      }
     },
     {
       "korean": "얻다",
@@ -9232,7 +10934,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 188,
+        "scope": "static"
+      }
     },
     {
       "korean": "온통",
@@ -9348,7 +11055,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "이미",
@@ -9357,7 +11073,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "이후",
@@ -9366,7 +11091,18 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "outcast_island",
+      "areasReferenced": [
+        "five_isle_meadow",
+        "green_path",
+        "memorial_pillar",
+        "outcast_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 25544,
+        "score": 29
+      }
     },
     {
       "korean": "장",
@@ -9375,7 +11111,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30295,
+        "score": 35
+      }
     },
     {
       "korean": "전기",
@@ -9475,7 +11219,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 3216,
+        "scope": "static"
+      }
     },
     {
       "korean": "줄다",
@@ -9508,7 +11257,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28027,
+        "score": 32
+      }
     },
     {
       "korean": "지키다",
@@ -9631,7 +11388,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28667,
+        "score": 35
+      }
     },
     {
       "korean": "평소",
@@ -9659,7 +11424,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "route_12",
+        "route_15"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 12794,
+        "score": 23
+      }
     },
     {
       "korean": "하루",
@@ -9668,7 +11442,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 3,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 4540,
+        "scope": "static"
+      }
     },
     {
       "korean": "한",
@@ -9677,7 +11456,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 3,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "힘들다",
@@ -9708,7 +11496,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 1962,
+        "scope": "static"
+      }
     },
     {
       "korean": "가로",
@@ -9717,7 +11510,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "resort_gorgeous",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27777,
+        "score": 8
+      }
     },
     {
       "korean": "가스",
@@ -9726,7 +11531,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 48278,
+        "score": 0
+      }
     },
     {
       "korean": "거",
@@ -9735,7 +11548,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "계속",
@@ -9830,7 +11651,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28027,
+        "score": 32
+      }
     },
     {
       "korean": "귀엽다",
@@ -9966,7 +11795,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28016,
+        "score": 31
+      }
     },
     {
       "korean": "노랗다",
@@ -10112,7 +11949,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 2613,
+        "scope": "static"
+      }
     },
     {
       "korean": "돌다",
@@ -10195,7 +12037,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "등록",
@@ -10237,7 +12087,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 26296,
+        "score": 0
+      }
     },
     {
       "korean": "떨어지다",
@@ -10268,7 +12127,16 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "vermilion_city",
+      "areasReferenced": [
+        "celadon_city",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30582,
+        "score": 0
+      }
     },
     {
       "korean": "만남",
@@ -10363,7 +12231,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30264,
+        "score": 31
+      }
     },
     {
       "korean": "메일",
@@ -10389,7 +12265,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 4648,
+        "scope": "static"
+      }
     },
     {
       "korean": "무겁다",
@@ -10453,7 +12334,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "cinnabar_island",
+        "fuchsia_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28349,
+        "score": 0
+      }
     },
     {
       "korean": "버리다",
@@ -10504,7 +12394,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "vermilion_city",
+      "areasReferenced": [
+        "route_12",
+        "route_15",
+        "route_16",
+        "route_18",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 26596,
+        "score": 0
+      }
     },
     {
       "korean": "볶다",
@@ -10546,7 +12448,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "seven_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28607,
+        "score": 0
+      }
     },
     {
       "korean": "붉다",
@@ -10668,7 +12580,21 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "canyon_entrance",
+        "mt_moon",
+        "pewter_city",
+        "ruin_valley",
+        "trainer_tower",
+        "viridian_city",
+        "water_path"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33325,
+        "score": 37
+      }
     },
     {
       "korean": "숨다",
@@ -10756,7 +12682,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30264,
+        "score": 31
+      }
     },
     {
       "korean": "얼음",
@@ -10823,7 +12757,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "오랫동안",
@@ -10848,7 +12791,18 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "outcast_island",
+      "areasReferenced": [
+        "five_isle_meadow",
+        "green_path",
+        "memorial_pillar",
+        "outcast_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 25544,
+        "score": 29
+      }
     },
     {
       "korean": "올라가다",
@@ -10925,7 +12879,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "green_path",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33957,
+        "score": 27
+      }
     },
     {
       "korean": "인기",
@@ -11011,7 +12992,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "잎",
@@ -11020,7 +13010,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 210,
+        "scope": "static"
+      }
     },
     {
       "korean": "자리",
@@ -11029,7 +13024,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "route_12",
+        "route_16"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 47295,
+        "score": 0
+      }
     },
     {
       "korean": "잘못",
@@ -11056,7 +13060,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 140,
+        "scope": "static"
+      }
     },
     {
       "korean": "젊다",
@@ -11420,7 +13429,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 1435,
+        "scope": "static"
+      }
     },
     {
       "korean": "편하다",
@@ -11477,7 +13491,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 2,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 26135,
+        "score": 0
+      }
     },
     {
       "korean": "푸르다",
@@ -11527,7 +13550,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 2,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 25958,
+        "score": 0
+      }
     },
     {
       "korean": "하얗다",
@@ -11714,7 +13745,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29870,
+        "score": 32
+      }
     },
     {
       "korean": "게다가",
@@ -11820,7 +13859,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 7520,
+        "scope": "static"
+      }
     },
     {
       "korean": "공간",
@@ -12166,7 +14210,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "five_island",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "six_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 38976,
+        "score": 31
+      }
     },
     {
       "korean": "길",
@@ -12175,7 +14229,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "꽃",
@@ -12184,7 +14246,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "route_20",
+      "areasReferenced": [
+        "kindle_road",
+        "resort_gorgeous",
+        "route_20",
+        "route_21",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29381,
+        "score": 0
+      }
     },
     {
       "korean": "꽃잎",
@@ -12291,7 +14365,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "남자",
@@ -12428,7 +14510,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29825,
+        "score": 37
+      }
     },
     {
       "korean": "노란색",
@@ -12579,7 +14669,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_2",
+      "areasReferenced": [
+        "route_2"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 31664,
+        "score": 31
+      }
     },
     {
       "korean": "돌리다",
@@ -12644,7 +14742,19 @@
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "route_1",
+      "areasReferenced": [
+        "five_island",
+        "four_island",
+        "route_1",
+        "seven_island",
+        "six_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28618,
+        "score": 32
+      }
     },
     {
       "korean": "따라가다",
@@ -12704,7 +14814,17 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "resort_gorgeous",
+      "areasReferenced": [
+        "kindle_road",
+        "resort_gorgeous",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 10554,
+        "score": 0
+      }
     },
     {
       "korean": "마을",
@@ -12851,7 +14971,34 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pallet_town",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 32612,
+        "score": 28
+      }
     },
     {
       "korean": "무늬",
@@ -12911,7 +15058,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "one_island",
+      "areasReferenced": [
+        "one_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 25412,
+        "score": 0
+      }
     },
     {
       "korean": "미인",
@@ -13080,7 +15235,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 1677,
+        "scope": "static"
+      }
     },
     {
       "korean": "방금",
@@ -13265,7 +15425,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "불꽃",
@@ -13532,7 +15700,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 44435,
+        "score": 0
+      }
     },
     {
       "korean": "세우다",
@@ -13582,7 +15758,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29831,
+        "score": 24
+      }
     },
     {
       "korean": "속도",
@@ -13623,7 +15807,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "수많다",
@@ -13762,7 +15955,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "아무리",
@@ -13868,7 +16070,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "알리다",
@@ -13920,7 +16131,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "약간",
@@ -14063,7 +16282,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "역할",
@@ -14191,7 +16418,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28103,
+        "score": 0
+      }
     },
     {
       "korean": "와",
@@ -14200,7 +16436,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "우선",
@@ -14242,7 +16486,19 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "resort_gorgeous",
+        "treasure_beach"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27793,
+        "score": 0
+      }
     },
     {
       "korean": "운",
@@ -14251,7 +16507,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "웃다",
@@ -14350,7 +16614,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "이번",
@@ -14378,7 +16651,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "four_island",
+      "areasReferenced": [
+        "four_island",
+        "three_island"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 28579,
+        "score": 0
+      }
     },
     {
       "korean": "이제",
@@ -14387,7 +16669,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29841,
+        "score": 36
+      }
     },
     {
       "korean": "인간",
@@ -14759,7 +17049,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 27924,
+        "score": 37
+      }
     },
     {
       "korean": "좁다",
@@ -14870,7 +17169,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29830,
+        "score": 38
+      }
     },
     {
       "korean": "줄무늬",
@@ -14927,7 +17234,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 38750,
+        "score": 0
+      }
     },
     {
       "korean": "지내다",
@@ -14988,7 +17303,37 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_2",
+        "route_4",
+        "route_6",
+        "route_7",
+        "route_8",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 33781,
+        "score": 0
+      }
     },
     {
       "korean": "지하도",
@@ -14997,7 +17342,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 4403,
+        "scope": "static"
+      }
     },
     {
       "korean": "직접",
@@ -15057,7 +17407,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29834,
+        "score": 33
+      }
     },
     {
       "korean": "처음",
@@ -15105,7 +17463,16 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "lavender_town",
+      "areasReferenced": [
+        "lavender_town",
+        "vermilion_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30488,
+        "score": 0
+      }
     },
     {
       "korean": "추다",
@@ -15146,7 +17513,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 415,
+        "scope": "static"
+      }
     },
     {
       "korean": "충격",
@@ -15232,7 +17604,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 30249,
+        "score": 33
+      }
     },
     {
       "korean": "터널",
@@ -15261,7 +17641,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 3587,
+        "scope": "static"
+      }
     },
     {
       "korean": "털다",
@@ -15341,7 +17726,12 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 8986,
+        "scope": "static"
+      }
     },
     {
       "korean": "파란색",
@@ -15366,7 +17756,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "cerulean_city",
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 12261,
+        "score": 0
+      }
     },
     {
       "korean": "파일",
@@ -15412,7 +17810,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
-      "topikLevel": "A"
+      "topikLevel": "A",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29939,
+        "score": 32
+      }
     },
     {
       "korean": "프로그램",
@@ -15566,7 +17972,15 @@
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 1,
-      "topikLevel": "B"
+      "topikLevel": "B",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "호수",

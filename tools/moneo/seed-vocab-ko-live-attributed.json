@@ -22,8 +22,15 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 30,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city",
+      "filledViaSubstring": {
+        "rec_id": 30057,
+        "score": 40
+      }
     },
     {
       "korean": "보다",
@@ -164,8 +171,23 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 9,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "celadon_city",
+        "mt_moon",
+        "pallet_town",
+        "route_12",
+        "route_16",
+        "route_24",
+        "route_25",
+        "route_3",
+        "route_4",
+        "route_6"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 28687,
+        "score": 0
+      }
     },
     {
       "korean": "등리",
@@ -174,8 +196,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 8,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city",
+      "filledViaSubstring": {
+        "rec_id": 12261,
+        "score": 0
+      }
     },
     {
       "korean": "무차",
@@ -194,8 +222,15 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 8,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "five_island",
+        "four_island"
+      ],
+      "firstAreaEncountered": "five_island",
+      "filledViaSubstring": {
+        "rec_id": 20006,
+        "score": 24
+      }
     },
     {
       "korean": "우딘",
@@ -240,8 +275,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 7,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 29830,
+        "score": 38
+      }
     },
     {
       "korean": "석류",
@@ -274,8 +315,15 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 7,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city",
+      "filledViaSubstring": {
+        "rec_id": 30058,
+        "score": 40
+      }
     },
     {
       "korean": "가지다",
@@ -296,8 +344,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 6,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 29838,
+        "score": 32
+      }
     },
     {
       "korean": "로켓단",
@@ -306,8 +360,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 6,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city",
+      "filledViaSubstring": {
+        "rec_id": 30096,
+        "score": 31
+      }
     },
     {
       "korean": "멀다",
@@ -340,8 +400,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "celadon_city",
+        "fuchsia_city"
+      ],
+      "firstAreaEncountered": "fuchsia_city",
+      "filledViaSubstring": {
+        "rec_id": 28280,
+        "score": 24
+      }
     },
     {
       "korean": "도감",
@@ -374,8 +441,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pewter_city"
+      ],
+      "firstAreaEncountered": "pewter_city",
+      "filledViaSubstring": {
+        "rec_id": 28038,
+        "score": 34
+      }
     },
     {
       "korean": "벨트",
@@ -408,8 +481,15 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 5,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pewter_city",
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city",
+      "filledViaSubstring": {
+        "rec_id": 30062,
+        "score": 33
+      }
     },
     {
       "korean": "없다",
@@ -478,8 +558,15 @@
       "partOfSpeech": "adjective",
       "areaId": "rom_mined",
       "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "도움",
@@ -513,7 +600,11 @@
       "areaId": "rom_mined",
       "frequency": 4,
       "areasReferenced": [],
-      "firstAreaEncountered": null
+      "firstAreaEncountered": "rom_mined",
+      "filledViaSubstring": {
+        "rec_id": 132,
+        "scope": "static"
+      }
     },
     {
       "korean": "여해",
@@ -534,8 +625,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_4"
+      ],
+      "firstAreaEncountered": "route_4",
+      "filledViaSubstring": {
+        "rec_id": 28667,
+        "score": 35
+      }
     },
     {
       "korean": "진화",
@@ -544,8 +641,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "route_2"
+      ],
+      "firstAreaEncountered": "route_2",
+      "filledViaSubstring": {
+        "rec_id": 31665,
+        "score": 32
+      }
     },
     {
       "korean": "최고",
@@ -554,8 +657,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 4,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city",
+      "filledViaSubstring": {
+        "rec_id": 29940,
+        "score": 32
+      }
     },
     {
       "korean": "킹킹",
@@ -576,8 +685,41 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "indigo_plateau",
+        "lavender_town",
+        "mt_moon",
+        "one_island",
+        "pallet_town",
+        "pewter_city",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_16",
+        "route_18",
+        "route_2",
+        "route_3",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "treasure_beach",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 17281,
+        "score": 0
+      }
     },
     {
       "korean": "기다리다",
@@ -610,8 +752,15 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "노르",
@@ -630,8 +779,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 29818,
+        "score": 38
+      }
     },
     {
       "korean": "떠나다",
@@ -674,8 +829,32 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_city",
+        "cinnabar_island",
+        "five_island",
+        "four_island",
+        "fuchsia_city",
+        "indigo_plateau",
+        "lavender_town",
+        "one_island",
+        "pewter_city",
+        "route_10",
+        "route_4",
+        "saffron_city",
+        "seven_island",
+        "six_island",
+        "three_island",
+        "two_island",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "firstAreaEncountered": "viridian_city",
+      "filledViaSubstring": {
+        "rec_id": 19825,
+        "score": 0
+      }
     },
     {
       "korean": "미혼",
@@ -694,8 +873,15 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "green_path",
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 13165,
+        "score": 32
+      }
     },
     {
       "korean": "본부",
@@ -716,8 +902,14 @@
       "partOfSpeech": "noun",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "cerulean_city"
+      ],
+      "firstAreaEncountered": "cerulean_city",
+      "filledViaSubstring": {
+        "rec_id": 12261,
+        "score": 0
+      }
     },
     {
       "korean": "삼본",
@@ -832,8 +1024,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 29823,
+        "score": 37
+      }
     },
     {
       "korean": "캐다",
@@ -854,8 +1052,14 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 3,
-      "areasReferenced": [],
-      "firstAreaEncountered": null
+      "areasReferenced": [
+        "pallet_town"
+      ],
+      "firstAreaEncountered": "pallet_town",
+      "filledViaSubstring": {
+        "rec_id": 29819,
+        "score": 42
+      }
     },
     {
       "korean": "할아버지",
