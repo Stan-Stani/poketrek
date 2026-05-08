@@ -121,6 +121,20 @@ class MovementGate(
     private var prevSnapshot: LeafGreenRam.Snapshot? = null
     private var prevKeys: Int = 0
 
+    /**
+     * Bounce-back state. When the area gate blocks a single direction, we
+     * latch the OPPOSITE direction here for [BOUNCE_FRAMES] frames so the
+     * player visibly steps one tile away from the boundary instead of just
+     * grinding into it. While bouncing, the user's DPAD input is overridden
+     * with [bounceDirBit]; non-DPAD bits pass through.
+     *
+     * Only initiated for unambiguous single-direction blocks — if the gate
+     * blocks multiple directions at once (warp tile), we just mask without
+     * picking a bounce direction.
+     */
+    private var bounceFramesRemaining: Int = 0
+    private var bounceDirBit: Int = 0
+
     fun setEnabled(value: Boolean) {
         budget.setGateEnabled(value)
     }
@@ -154,6 +168,27 @@ class MovementGate(
         val decision = ag.evaluate(masked, current)
         if (decision.shouldBlock && decision.blockedDirMask != 0) {
             masked = masked and decision.blockedDirMask.inv()
+            // Latch a 1-tile bounce in the opposite direction the first frame
+            // we see a single-direction block. Skipped if a bounce is already
+            // in flight (avoids re-triggering frame after frame while the
+            // user keeps holding into the boundary) or if multiple directions
+            // are blocked (e.g. warp tile — no unambiguous "back").
+            if (bounceFramesRemaining == 0) {
+                val opp = oppositeDirBit(decision.blockedDirMask)
+                if (opp != 0) {
+                    bounceDirBit = opp
+                    bounceFramesRemaining = BOUNCE_FRAMES
+                }
+            }
+        }
+
+        // Bounce override: while the countdown is active, replace whatever
+        // DPAD bits remain with the bounce direction so the game commits to
+        // a full 1-tile step away from the boundary.
+        if (bounceFramesRemaining > 0) {
+            masked = (masked and DIR_MASK.inv()) or bounceDirBit
+            bounceFramesRemaining--
+            if (bounceFramesRemaining == 0) bounceDirBit = 0
         }
 
         prevSnapshot = current
@@ -161,7 +196,24 @@ class MovementGate(
         return masked
     }
 
+    private fun oppositeDirBit(mask: Int): Int = when (mask) {
+        GbaKey.UP -> GbaKey.DOWN
+        GbaKey.DOWN -> GbaKey.UP
+        GbaKey.LEFT -> GbaKey.RIGHT
+        GbaKey.RIGHT -> GbaKey.LEFT
+        else -> 0
+    }
+
     companion object {
         const val DIR_MASK = GbaKey.RIGHT or GbaKey.LEFT or GbaKey.UP or GbaKey.DOWN
+
+        /**
+         * Frames the bounce-back override is held for. The GBA Pokémon engine
+         * commits to a full tile of walking once a direction is held for
+         * roughly the duration of one walk-cycle (~16 frames at 59.7 Hz);
+         * keeping the override slightly above that ensures the step actually
+         * lands instead of cancelling mid-animation.
+         */
+        const val BOUNCE_FRAMES = 18
     }
 }

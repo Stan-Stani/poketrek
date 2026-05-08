@@ -314,4 +314,91 @@ class MovementGateTest {
         assertEquals(0, out and GbaKey.UP)
         assertEquals(GbaKey.A, out and GbaKey.A)
     }
+
+    // ---- bounce-back --------------------------------------------------------
+
+    @Test fun `single-dir block injects opposite dir for BOUNCE_FRAMES then resumes`() {
+        val b = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, initialAreaGate = areaGate)
+        val pos = snap(x = 5, y = 0)
+
+        // Trigger frame: UP cleared AND DOWN injected (the override applies
+        // the same frame the bounce latches).
+        val triggerOut = gate.process(GbaKey.UP, pos)
+        assertEquals(0, triggerOut and GbaKey.UP)
+        assertEquals(GbaKey.DOWN, triggerOut and MovementGate.DIR_MASK)
+
+        // Trigger consumed one of the BOUNCE_FRAMES; remaining frames must
+        // also output DOWN regardless of what the user presses (and other
+        // DPAD bits must be cleared so movement is unambiguous).
+        for (frame in 1 until MovementGate.BOUNCE_FRAMES) {
+            val out = gate.process(GbaKey.LEFT or GbaKey.A, pos)
+            assertEquals(
+                "frame $frame: bounce should override DPAD with DOWN",
+                GbaKey.DOWN, out and MovementGate.DIR_MASK,
+            )
+            assertEquals(
+                "frame $frame: A should pass through during bounce",
+                GbaKey.A, out and GbaKey.A,
+            )
+        }
+
+        // After the bounce window, raw input passes through. Move snapshot
+        // a tile so the gate doesn't re-trigger from the same boundary pos.
+        val outAfter = gate.process(GbaKey.LEFT, snap(x = 5, y = 1))
+        assertEquals(GbaKey.LEFT, outAfter and GbaKey.LEFT)
+        assertEquals(0, outAfter and GbaKey.DOWN)
+    }
+
+    @Test fun `multi-dir block (warp) does not trigger bounce`() {
+        // Warp tiles block all four directions — there is no unambiguous
+        // "back" direction, so the gate should mask without latching a bounce.
+        val b = FakeBudget(initialTiles = 10)
+        val allDirs = GbaKey.UP or GbaKey.DOWN or GbaKey.LEFT or GbaKey.RIGHT
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 12, 8),
+            blockedDirMask = allDirs,
+        )
+        val gate = MovementGate(b, initialAreaGate = areaGate)
+        val pos = snap(x = 12, y = 8)
+
+        gate.process(GbaKey.RIGHT, pos)
+        // Next frame: if a bounce had latched, we'd see one of the dirs
+        // injected. Since this was a warp-style multi-dir block, no bounce.
+        val out = gate.process(GbaKey.A, pos)
+        assertEquals(0, out and MovementGate.DIR_MASK)
+        assertEquals(GbaKey.A, out and GbaKey.A)
+    }
+
+    @Test fun `bounce does not retrigger while still in flight`() {
+        // While the bounce countdown is active, the gate keeps evaluating
+        // and may keep returning shouldBlock — but we shouldn't reset the
+        // counter or change direction; one bounce per boundary contact.
+        val b = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(
+            blockOnTile = Triple(0, 5, 0),
+            blockedDirMask = GbaKey.UP,
+        )
+        val gate = MovementGate(b, initialAreaGate = areaGate)
+        val pos = snap(x = 5, y = 0)
+
+        gate.process(GbaKey.UP, pos)
+        // Half-way through the bounce, simulate the user keeping UP held —
+        // the gate should still output DOWN, not flip direction or restart.
+        val midFrame = MovementGate.BOUNCE_FRAMES / 2
+        repeat(midFrame) { gate.process(GbaKey.UP, pos) }
+        // Remaining bounce frames after we already burned (1 + midFrame).
+        val remaining = MovementGate.BOUNCE_FRAMES - 1 - midFrame
+        repeat(remaining) {
+            val out = gate.process(GbaKey.UP, pos)
+            assertEquals(GbaKey.DOWN, out and MovementGate.DIR_MASK)
+        }
+        // After window ends, with snapshot moved off the boundary tile:
+        val outAfter = gate.process(GbaKey.UP, snap(x = 5, y = 1))
+        assertEquals(GbaKey.UP, outAfter and GbaKey.UP)
+    }
 }
