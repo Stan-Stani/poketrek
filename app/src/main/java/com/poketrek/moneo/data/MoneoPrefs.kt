@@ -21,6 +21,7 @@ private val Context.moneoStore by preferencesDataStore("moneo_prefs")
 private val KEY_ENABLED = booleanPreferencesKey("moneo_enabled")
 private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
 private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
+private val KEY_SHOW_SENTENCE_GLOSS = booleanPreferencesKey("moneo_show_sentence_gloss")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
@@ -47,6 +48,14 @@ class MoneoPrefs private constructor(private val context: Context) {
 
     private val _showRomanization = MutableStateFlow(true)
     val showRomanization: StateFlow<Boolean> = _showRomanization.asStateFlow()
+
+    /**
+     * Whether to render the example sentence's English gloss on the back of
+     * the review card. Defaults on; toggleable from the review header next to
+     * the romanization toggle.
+     */
+    private val _showSentenceGloss = MutableStateFlow(true)
+    val showSentenceGloss: StateFlow<Boolean> = _showSentenceGloss.asStateFlow()
 
     /**
      * Toggle for the example-sentence source on the review screen.
@@ -86,6 +95,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _enabled.value = prefs[KEY_ENABLED] ?: false
             _targetAreaId.value = prefs[KEY_TARGET_AREA]
             _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
+            _showSentenceGloss.value = prefs[KEY_SHOW_SENTENCE_GLOSS] ?: true
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
             _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
@@ -114,6 +124,11 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setShowRomanization(value: Boolean) {
         _showRomanization.value = value
         scope.launch { context.moneoStore.edit { it[KEY_SHOW_ROMAJI] = value } }
+    }
+
+    fun setShowSentenceGloss(value: Boolean) {
+        _showSentenceGloss.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_SHOW_SENTENCE_GLOSS] = value } }
     }
 
     fun setVerbatimSentences(value: Boolean) {

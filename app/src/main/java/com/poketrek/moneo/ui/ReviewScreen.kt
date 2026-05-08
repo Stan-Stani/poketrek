@@ -61,6 +61,7 @@ fun ReviewScreen(
 ) {
     val cards by module.repository.cards.collectAsState()
     val showRomanization by module.prefs.showRomanization.collectAsState()
+    val showSentenceGloss by module.prefs.showSentenceGloss.collectAsState()
     var revealed by remember(areaId) { mutableStateOf(false) }
     val verbatim by module.prefs.verbatimSentences.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
@@ -146,6 +147,17 @@ fun ReviewScreen(
                         fontSize = 11.sp,
                     )
                 }
+                Button(
+                    onClick = { module.prefs.setShowSentenceGloss(!showSentenceGloss) },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
+                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+                ) {
+                    Text(
+                        if (showSentenceGloss) "번역 ✓" else "번역 —",
+                        color = Color(0xFF94A3B8),
+                        fontSize = 11.sp,
+                    )
+                }
             }
         }
     }
@@ -215,7 +227,7 @@ fun ReviewScreen(
                             verticalArrangement = Arrangement.spacedBy(12.dp),
                         ) {
                             CardBack(vocab)
-                            sentence?.let { SentenceCard(it, showRomanization) }
+                            sentence?.let { SentenceCard(it, showRomanization, showSentenceGloss) }
                         }
                         ratings()
                     } else {
@@ -235,7 +247,7 @@ fun ReviewScreen(
                 front()
                 if (revealed) {
                     CardBack(vocab)
-                    sentence?.let { SentenceCard(it, showRomanization) }
+                    sentence?.let { SentenceCard(it, showRomanization, showSentenceGloss) }
                     ratings()
                 } else {
                     revealButton()
@@ -345,7 +357,11 @@ private fun CardBack(vocab: VocabEntry) {
 }
 
 @Composable
-private fun SentenceCard(sentence: SentenceEntry, showRomanization: Boolean) {
+private fun SentenceCard(
+    sentence: SentenceEntry,
+    showRomanization: Boolean,
+    showGloss: Boolean,
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -368,7 +384,9 @@ private fun SentenceCard(sentence: SentenceEntry, showRomanization: Boolean) {
                 fontSize = 12.sp,
             )
         }
-        Text(sentence.gloss, color = Color(0xFFCBD5E1), fontSize = 13.sp)
+        if (showGloss) {
+            Text(sentence.gloss, color = Color(0xFFCBD5E1), fontSize = 13.sp)
+        }
     }
 }
 
