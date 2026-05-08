@@ -81,12 +81,18 @@ class MoneoModule private constructor(context: Context) {
         val sentencesEtymology = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-etymology.json")
         }.getOrElse { emptyList() }
+        // Hand-curated themed sentences for vocab whose only sentence sources
+        // are ROM-derived. Joins the spoiler-free corpus so mined/topik/
+        // species/etymology cards still get an example when verbatim is off.
+        val sentencesThemed = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-themed.json")
+        }.getOrElse { emptyList() }
         val allRomSentences = sentencesRom + sentencesMined + sentencesTopik + sentencesSpecies + sentencesEtymology
-        // Spoiler-free corpus: only the hand-curated study sentences. The
-        // mined/topik/species/etymology corpora are all ROM-sourced (or
-        // surface in-game species names) so they leak content when the user
-        // explicitly opts out of spoilers via the verbatim toggle.
-        val allStudySentences = sentencesStudy
+        // Spoiler-free corpus: hand-curated study sentences plus the themed
+        // batch. The mined/topik/species/etymology corpora themselves are all
+        // ROM-sourced (or surface in-game species names) so they leak content
+        // when the user explicitly opts out of spoilers via the verbatim toggle.
+        val allStudySentences = sentencesStudy + sentencesThemed
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,

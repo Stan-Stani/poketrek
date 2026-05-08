@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "sourceTag": "themed-v1",
+  "notes": "Hand-curated 'voice lock-in' batch covering vocab whose only sentence sources are ROM-derived (mined, topik, species, etymology). Korean is original Pokémon-themed everyday-trainer-life writing — no ROM dialog, no plot points — and the gloss is a clean English translation. This is a small sample (5 per corpus); scale up after voice review.",
+  "entries": [
+    {
+      "vocabId": "rom-mine-v2:하다",
+      "korean": "오늘은 어떤 훈련을 할까?",
+      "romanization": "oneul-eun eotteon hullyeon-eul halkka?",
+      "gloss": "What kind of training shall we do today?",
+      "targetForm": "할까",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-mine-v2:타다",
+      "korean": "버스를 타고 다음 도시로 가요.",
+      "romanization": "beoseu-reul tago daeum dosi-ro gayo.",
+      "gloss": "I take the bus to the next city.",
+      "targetForm": "타",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-mine-v2:있다",
+      "korean": "가방 안에 회복약이 다섯 개 있어요.",
+      "romanization": "gabang an-e hoebogyak-i daseot gae isseoyo.",
+      "gloss": "There are five potions in my bag.",
+      "targetForm": "있",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-mine-v2:메다",
+      "korean": "트레이너는 가방을 어깨에 메고 다녀요.",
+      "romanization": "teureineo-neun gabang-eul eokkae-e mego danyeoyo.",
+      "gloss": "The trainer carries a bag slung over their shoulder.",
+      "targetForm": "메",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-mine-v2:회복",
+      "korean": "포켓몬 센터에서 회복을 받았어요.",
+      "romanization": "pokemon senteo-eseo hoebog-eul badasseoyo.",
+      "gloss": "My Pokémon got healed at the Pokémon Center.",
+      "targetForm": "회복",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+
+    {
+      "vocabId": "topik-v2:키",
+      "korean": "내 포켓몬은 키가 작아요.",
+      "romanization": "nae pokemon-eun ki-ga jagayo.",
+      "gloss": "My Pokémon is short.",
+      "targetForm": "키",
+      "areaId": "topik_1",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "topik-v2:끄다",
+      "korean": "트레이너가 컴퓨터를 끄고 길을 떠났어요.",
+      "romanization": "teureineo-ga keompyuteo-reul kkeugo gir-eul tteonasseoyo.",
+      "gloss": "The trainer turned off the computer and set out.",
+      "targetForm": "끄",
+      "areaId": "topik_1",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "topik-v2:깊다",
+      "korean": "이 동굴은 매우 깊어요.",
+      "romanization": "i donggur-eun maeu gipeoyo.",
+      "gloss": "This cave is very deep.",
+      "targetForm": "깊",
+      "areaId": "topik_2",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "topik-v2:가다",
+      "korean": "내일 다음 도시에 가요.",
+      "romanization": "naeil daeum dosi-e gayo.",
+      "gloss": "Tomorrow I'll go to the next city.",
+      "targetForm": "가",
+      "areaId": "topik_1",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "topik-v2:보다",
+      "korean": "트레이너가 시합을 보고 있어요.",
+      "romanization": "teureineo-ga sihab-eul bogo isseoyo.",
+      "gloss": "The trainer is watching the match.",
+      "targetForm": "보",
+      "areaId": "topik_1",
+      "source": "themed-v1"
+    },
+
+    {
+      "vocabId": "rom-species:이상해씨",
+      "korean": "이상해씨는 풀 타입 포켓몬이에요.",
+      "romanization": "isanghaessi-neun pul taip pokemon-i-eyo.",
+      "gloss": "Bulbasaur is a Grass-type Pokémon.",
+      "targetForm": "이상해씨",
+      "areaId": "pallet_town",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 새싹이 자라요.",
+      "romanization": "isanghaepul-ui deung-e-neun saessag-i jarayo.",
+      "gloss": "A sprout grows on Ivysaur's back.",
+      "targetForm": "이상해풀",
+      "areaId": "pallet_town",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-species:이상해꽃",
+      "korean": "이상해꽃은 큰 꽃을 등에 가지고 있어요.",
+      "romanization": "isanghaekkoch-eun keun kkoch-eul deung-e gajigo isseoyo.",
+      "gloss": "Venusaur carries a large flower on its back.",
+      "targetForm": "이상해꽃",
+      "areaId": "pallet_town",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-species:파이리",
+      "korean": "파이리의 꼬리에는 작은 불꽃이 타요.",
+      "romanization": "pairi-ui kkori-e-neun jageun bulkkoch-i tayo.",
+      "gloss": "A small flame burns on Charmander's tail.",
+      "targetForm": "파이리",
+      "areaId": "pallet_town",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "rom-species:리자드",
+      "korean": "리자드는 파이리에서 진화해요.",
+      "romanization": "rijadeu-neun pairi-eseo jinhwahaeyo.",
+      "gloss": "Charmeleon evolves from Charmander.",
+      "targetForm": "리자드",
+      "areaId": "pallet_town",
+      "source": "themed-v1"
+    },
+
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
+      "romanization": "gab-eun geobug deung-kkeopjir-eul tteushaneun yet geulja-yeyo.",
+      "gloss": "갑 is an old word meaning a turtle's shell.",
+      "targetForm": "갑",
+      "areaId": "pewter_city",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "etymology-roots:강철",
+      "korean": "강철은 단단한 금속이에요.",
+      "romanization": "gangcheor-eun dandanhan geumsog-i-eyo.",
+      "gloss": "강철 means hardened steel.",
+      "targetForm": "강철",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "etymology-roots:개구리",
+      "korean": "개구리는 연못 근처에 살아요.",
+      "romanization": "gaeguri-neun yeonmot geuncheo-e sarayo.",
+      "gloss": "Frogs live near ponds.",
+      "targetForm": "개구리",
+      "areaId": "rom_mined",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "etymology-roots:거북",
+      "korean": "거북이는 천천히 걸어요.",
+      "romanization": "geobugi-neun cheoncheonhi georeoyo.",
+      "gloss": "Turtles walk slowly.",
+      "targetForm": "거북",
+      "areaId": "pallet_town",
+      "source": "themed-v1"
+    },
+    {
+      "vocabId": "etymology-roots:고슴도치",
+      "korean": "고슴도치는 등에 가시가 있어요.",
+      "romanization": "goseumdochi-neun deung-e gasi-ga isseoyo.",
+      "gloss": "A hedgehog has spines on its back.",
+      "targetForm": "고슴도치",
+      "areaId": "route_23",
+      "source": "themed-v1"
+    }
+  ]
+}
