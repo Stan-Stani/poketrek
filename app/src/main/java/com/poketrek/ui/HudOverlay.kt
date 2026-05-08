@@ -542,7 +542,10 @@ private fun ToggleRow(
 }
 
 @Composable
-private fun TtsHelpCard(status: com.poketrek.moneo.audio.TtsPlayer.Status) {
+private fun TtsHelpCard(
+    status: com.poketrek.moneo.audio.TtsPlayer.Status,
+    onTurnOff: () -> Unit,
+) {
     val ctx = androidx.compose.ui.platform.LocalContext.current
     val (title, body) = when (status) {
         com.poketrek.moneo.audio.TtsPlayer.Status.MISSING_DATA ->
@@ -592,6 +595,12 @@ private fun TtsHelpCard(status: com.poketrek.moneo.audio.TtsPlayer.Status) {
                 ),
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
             ) { Text("Open TTS settings", fontSize = 12.sp) }
+            TextButton(
+                onClick = onTurnOff,
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
+            ) {
+                Text("Turn off", fontSize = 12.sp, color = Color(0xFF92400E))
+            }
         }
     }
 }
@@ -1005,7 +1014,10 @@ private fun MoneoSection(
             val ttsStatus by moneo.tts.status.collectAsState()
             if (ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.INITIALIZING &&
                 ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.READY) {
-                TtsHelpCard(status = ttsStatus)
+                TtsHelpCard(
+                    status = ttsStatus,
+                    onTurnOff = { moneo.prefs.setTtsEnabled(false) },
+                )
             }
             val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
             ToggleRow(
