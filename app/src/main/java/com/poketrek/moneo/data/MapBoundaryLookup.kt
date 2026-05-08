@@ -25,10 +25,23 @@ data class Boundary(
  * Runtime lookup of map boundaries shipped as `assets/moneo/boundary_tiles.json`.
  *
  * Each map (identified by `bank:mapId`) has a list of [Boundary] entries
- * that lead to another area. The file is built by the tooling and uses
- * the Moneo area id as the destination.
+ * that lead to another area. The file is built from pokefirered's
+ * `data/maps/map_groups.json` so its keys follow that project's numbering.
+ * The Korean LeafGreen patches reorder map_groups, so the runtime
+ * `SaveBlock1.location` reads a *different* (bank, mapId) for the same map
+ * (e.g. Pallet Town outdoor is `1:0` here but `0:3` at runtime on the 2024
+ * KR ROM). [keyRemap] translates runtime keys into boundary-file keys
+ * per-call so a single asset can serve multiple ROM numberings.
  */
-class MapBoundaryLookup(private val byMap: Map<Long, List<Boundary>>) {
+class MapBoundaryLookup(
+    private val byMap: Map<Long, List<Boundary>>,
+    /**
+     * Per-call provider returning a map from runtime `(bank, mapId)` packed
+     * key to boundary-file packed key. Identity (no remap) when empty.
+     * Provider-shaped because the active ROM may change mid-session.
+     */
+    private val keyRemap: () -> Map<Long, Long> = { emptyMap() },
+) {
 
     /** Compose a stable key from bank and mapId. */
     private fun mapKey(bank: Int, mapId: Int): Long =
@@ -38,8 +51,11 @@ class MapBoundaryLookup(private val byMap: Map<Long, List<Boundary>>) {
      * Returns all boundaries defined for the given map.
      * An empty list is returned when the map has no boundary data.
      */
-    fun boundariesFor(bank: Int, mapId: Int): List<Boundary> =
-        byMap[mapKey(bank, mapId)] ?: emptyList()
+    fun boundariesFor(bank: Int, mapId: Int): List<Boundary> {
+        val raw = mapKey(bank, mapId)
+        val effective = keyRemap()[raw] ?: raw
+        return byMap[effective] ?: emptyList()
+    }
 
     /**
      * Returns the first boundary at tile ([x], [y]) that should trigger
@@ -115,13 +131,67 @@ class MapBoundaryLookup(private val byMap: Map<Long, List<Boundary>>) {
          *
          * @param context Application context for asset access.
          * @param path Asset path (defaults to "moneo/boundary_tiles.json").
+         * @param keyRemap Optional provider returning a map from runtime
+         *   `(bank, mapId)` packed key to boundary-file packed key. See the
+         *   class kdoc for why this exists.
          */
         fun loadFromAssets(
             context: Context,
-            path: String = "moneo/boundary_tiles.json"
+            path: String = "moneo/boundary_tiles.json",
+            keyRemap: () -> Map<Long, Long> = { emptyMap() },
         ): MapBoundaryLookup {
             val json = context.assets.open(path).use { it.readBytes() }.toString(Charsets.UTF_8)
-            return parse(json)
+            return parse(json, keyRemap)
+        }
+
+        /** Variant of [parse] that accepts a [keyRemap] provider. */
+        fun parse(json: String, keyRemap: () -> Map<Long, Long>): MapBoundaryLookup =
+            MapBoundaryLookup(parseByMap(json), keyRemap)
+
+        private fun parseByMap(json: String): Map<Long, List<Boundary>> {
+            val parsed = parse(json)
+            return parsed.byMap
+        }
+
+        /**
+         * Parses a `boundary_remap.*.json` payload into a packed key map.
+         * The JSON is shaped:
+         * ```
+         * { "remap": { "0:3": "1:0", ... } }
+         * ```
+         * Both sides are `bank:mapId` strings; banks/mapIds are fit into a
+         * single Long via `(bank shl 8) or mapId`. Malformed entries are
+         * silently skipped.
+         */
+        fun parseRemap(json: String): Map<Long, Long> {
+            val root = JSONObject(json)
+            val obj = root.optJSONObject("remap") ?: return emptyMap()
+            val out = HashMap<Long, Long>()
+            val it = obj.keys()
+            while (it.hasNext()) {
+                val k = it.next()
+                val v = obj.optString(k, "")
+                val from = packKey(k) ?: continue
+                val to = packKey(v) ?: continue
+                out[from] = to
+            }
+            return out
+        }
+
+        /** Loads a boundary-key remap from assets (or returns empty if absent). */
+        fun loadRemapFromAssets(context: Context, path: String): Map<Long, Long> = try {
+            val json = context.assets.open(path).use { it.readBytes() }.toString(Charsets.UTF_8)
+            parseRemap(json)
+        } catch (_: Throwable) {
+            emptyMap()
+        }
+
+        private fun packKey(bankColonMap: String): Long? {
+            val parts = bankColonMap.split(":")
+            if (parts.size != 2) return null
+            val bank = parts[0].toIntOrNull() ?: return null
+            val mapId = parts[1].toIntOrNull() ?: return null
+            return (bank.toLong() and 0xFF) shl 8 or (mapId.toLong() and 0xFF)
         }
     }
 }

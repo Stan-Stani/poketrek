@@ -111,4 +111,63 @@ class MapBoundaryLookupTest {
         assertTrue(lookup.boundariesFor(99, 99).isEmpty())
         assertNull(lookup.boundaryAt(99, 99, 0, 0, "up"))
     }
+
+    @Test
+    fun keyRemapTranslatesRuntimeKeysToBoundaryFileKeys() {
+        // boundary file keys Pallet outdoor as 1:0 (pokefirered convention),
+        // but the KR_2024 ROM's runtime SaveBlock1.location reads (0, 3).
+        // The remap provider plumbed through should translate the lookup.
+        val remap = mapOf((0L shl 8 or 3L) to (1L shl 8 or 0L))
+        val lookup = MapBoundaryLookup.parse(edgeOnlySample, keyRemap = { remap })
+
+        // Without remap, runtime (0, 3) would be empty.
+        // With remap, runtime (0, 3) routes to file's 1:0 entries.
+        val runtimeBoundaries = lookup.boundariesFor(0, 3)
+        assertEquals(1, runtimeBoundaries.size)
+        assertEquals("route_1", runtimeBoundaries[0].destArea)
+
+        // Direct query for the file's own key still works (identity).
+        val directBoundaries = lookup.boundariesFor(1, 0)
+        assertEquals(1, directBoundaries.size)
+
+        // Unmapped runtime keys still resolve to empty.
+        assertTrue(lookup.boundariesFor(7, 7).isEmpty())
+    }
+
+    @Test
+    fun parseRemapReadsStandardJsonShape() {
+        val remapJson = """
+            {
+              "rom": "leafgreen-kr-2024",
+              "remap": {
+                "0:3": "1:0",
+                "5:12": "10:4"
+              }
+            }
+        """.trimIndent()
+        val table = MapBoundaryLookup.parseRemap(remapJson)
+        // 0:3 → 1:0
+        assertEquals(0x0100L, table[(0L shl 8) or 3L])
+        // 5:12 → 10:4
+        assertEquals((10L shl 8) or 4L, table[(5L shl 8) or 12L])
+        assertEquals(2, table.size)
+    }
+
+    @Test
+    fun parseRemapIgnoresMalformedEntries() {
+        val remapJson = """
+            {
+              "remap": {
+                "0:3": "1:0",
+                "bad_key": "1:1",
+                "2:2": "also_bad",
+                "3:3": "4:4"
+              }
+            }
+        """.trimIndent()
+        val table = MapBoundaryLookup.parseRemap(remapJson)
+        assertEquals(2, table.size)
+        assertTrue(table.containsKey((0L shl 8) or 3L))
+        assertTrue(table.containsKey((3L shl 8) or 3L))
+    }
 }
