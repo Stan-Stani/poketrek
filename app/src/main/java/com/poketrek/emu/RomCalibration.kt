@@ -19,16 +19,14 @@ data class RomCalibration(
         )
 
         /**
-         * Hardcoded for the 2024-02-29 Korean patch (CRC 0x4A38A8CB). Null
-         * until harvested — to populate, run the in-app calibration UI once
-         * on a device with this exact ROM, then check logcat for a line like
-         *   `EmulatorRunner: calibrated 0x4A38A8CB: sb1Ptr=0x3005xxx`
-         * and replace null with `RomCalibration(saveBlock1PtrAddr = 0x3005xxx)`.
-         * Once populated, [CalibrationStore.load] returns this for the KR_2024
-         * CRC when no per-device override is stored, so users with this ROM
-         * skip the calibration UI entirely. Other Korean ROM patches (different
-         * CRC) still go through manual calibration.
+         * Hardcoded for the 2024-02-29 Korean patch (CRC 0x4A38A8CB). Harvested
+         * from a device calibration run — sb1Ptr lands at the same IWRAM slot
+         * as US Rev 1, which is unsurprising since the Korean patch didn't
+         * relocate the linker output for SaveBlock1. Other Korean ROM patches
+         * (different CRC) still go through manual calibration.
          */
-        val DEFAULT_KR_2024: RomCalibration? = null
+        val DEFAULT_KR_2024: RomCalibration? = RomCalibration(
+            saveBlock1PtrAddr = 0x03005008,
+        )
     }
 }
