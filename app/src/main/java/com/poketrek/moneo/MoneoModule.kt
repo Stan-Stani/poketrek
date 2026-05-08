@@ -64,8 +64,9 @@ class MoneoModule private constructor(context: Context) {
         val sentencesStudy = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-study.json")
         }.getOrElse { emptyList() }
-        // Mined sentences are used regardless of the verbatim toggle (they're
-        // the only source for mined vocab, and they're always ROM-sourced).
+        // Mined sentences are ROM-sourced — only included in the verbatim
+        // (spoiler-on) corpus. Mined vocab cards therefore have no example
+        // sentence when the user has spoilers off.
         val sentencesMined = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-mined.json")
         }.getOrElse { emptyList() }
@@ -81,7 +82,11 @@ class MoneoModule private constructor(context: Context) {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-etymology.json")
         }.getOrElse { emptyList() }
         val allRomSentences = sentencesRom + sentencesMined + sentencesTopik + sentencesSpecies + sentencesEtymology
-        val allStudySentences = sentencesStudy + sentencesMined + sentencesTopik + sentencesSpecies + sentencesEtymology
+        // Spoiler-free corpus: only the hand-curated study sentences. The
+        // mined/topik/species/etymology corpora are all ROM-sourced (or
+        // surface in-game species names) so they leak content when the user
+        // explicitly opts out of spoilers via the verbatim toggle.
+        val allStudySentences = sentencesStudy
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
