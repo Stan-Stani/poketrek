@@ -1,6 +1,8 @@
 package com.poketrek.emu
 
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 
 /**
  * Minimal surface MovementGate needs from the budget. Letting the gate take
@@ -115,8 +117,22 @@ class MovementGate(
     }
 
     /** Exposed so callers (HUD) can observe the current gate's decisions. */
-    val areaGateDecisions: kotlinx.coroutines.flow.StateFlow<AreaGateDecision>
+    val areaGateDecisions: StateFlow<AreaGateDecision>
         get() = areaGate.lastDecision
+
+    /**
+     * Sticky variant of [areaGateDecisions] for the HUD lock chip. Latches
+     * the most recent blocking decision and keeps it visible across the
+     * bounce-back animation and afterwards, until the player walks off the
+     * post-bounce tile under their own input. Cleared back to
+     * [AreaGateDecision.NONE] only when (a) no bounce is in flight and (b)
+     * the player's snapshot position differs from the anchor recorded at
+     * the moment the bounce ended (or at the moment the block fired, for
+     * multi-direction warp blocks where no bounce runs).
+     */
+    private val _persistentAreaGateDecision = MutableStateFlow(AreaGateDecision.NONE)
+    val persistentAreaGateDecision: StateFlow<AreaGateDecision> =
+        _persistentAreaGateDecision.asStateFlow()
 
     private var prevSnapshot: LeafGreenRam.Snapshot? = null
     private var prevKeys: Int = 0
@@ -134,6 +150,14 @@ class MovementGate(
      */
     private var bounceFramesRemaining: Int = 0
     private var bounceDirBit: Int = 0
+
+    /**
+     * Position the chip-clear check compares against. Set when a block
+     * fires (or when the bounce ends, to capture the post-bounce tile);
+     * cleared along with the persistent decision once the player has
+     * walked off it. Encoded as Triple(packedBankMap, x, y).
+     */
+    private var lockHudAnchor: Triple<Int, Int, Int>? = null
 
     fun setEnabled(value: Boolean) {
         budget.setGateEnabled(value)
@@ -168,12 +192,20 @@ class MovementGate(
         val decision = ag.evaluate(masked, current)
         if (decision.shouldBlock && decision.blockedDirMask != 0) {
             masked = masked and decision.blockedDirMask.inv()
-            // Latch a 1-tile bounce in the opposite direction the first frame
-            // we see a single-direction block. Skipped if a bounce is already
-            // in flight (avoids re-triggering frame after frame while the
-            // user keeps holding into the boundary) or if multiple directions
-            // are blocked (e.g. warp tile — no unambiguous "back").
+            // Latch / refresh the persistent chip decision so the HUD lock
+            // chip stays visible through the upcoming bounce animation and
+            // beyond, until the player manually walks off the boundary.
+            _persistentAreaGateDecision.value = decision
+            // Anchor used by the manual-walk clear check below. Pre-bounce
+            // we anchor at the boundary tile; once the bounce ends we'll
+            // re-anchor at the post-bounce tile so any further movement
+            // counts as a manual walk and dismisses the chip.
             if (bounceFramesRemaining == 0) {
+                lockHudAnchor = anchorOf(current)
+                // Latch a 1-tile bounce in the opposite direction. Skipped
+                // when the gate blocks multiple directions at once (e.g. a
+                // warp tile — no unambiguous "back"); the chip still
+                // latches via the persistent decision above.
                 val opp = oppositeDirBit(decision.blockedDirMask)
                 if (opp != 0) {
                     bounceDirBit = opp
@@ -188,13 +220,34 @@ class MovementGate(
         if (bounceFramesRemaining > 0) {
             masked = (masked and DIR_MASK.inv()) or bounceDirBit
             bounceFramesRemaining--
-            if (bounceFramesRemaining == 0) bounceDirBit = 0
+            if (bounceFramesRemaining == 0) {
+                bounceDirBit = 0
+                // Re-anchor: the chip should now persist until the player
+                // walks off this post-bounce tile under their own input.
+                lockHudAnchor = anchorOf(current)
+            }
+        }
+
+        // Clear the persistent chip when the player has walked off the
+        // anchor under their own input. We only check while no bounce is
+        // in flight so the bounce's own movement doesn't prematurely
+        // dismiss the chip.
+        if (bounceFramesRemaining == 0
+            && _persistentAreaGateDecision.value != AreaGateDecision.NONE) {
+            val anchor = lockHudAnchor
+            if (anchor != null && anchorOf(current) != anchor) {
+                _persistentAreaGateDecision.value = AreaGateDecision.NONE
+                lockHudAnchor = null
+            }
         }
 
         prevSnapshot = current
         prevKeys = masked
         return masked
     }
+
+    private fun anchorOf(s: LeafGreenRam.Snapshot): Triple<Int, Int, Int> =
+        Triple((s.mapBank shl 8) or s.mapId, s.playerX, s.playerY)
 
     private fun oppositeDirBit(mask: Int): Int = when (mask) {
         GbaKey.UP -> GbaKey.DOWN

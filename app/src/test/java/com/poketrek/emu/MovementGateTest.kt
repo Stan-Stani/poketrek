@@ -401,4 +401,64 @@ class MovementGateTest {
         val outAfter = gate.process(GbaKey.UP, snap(x = 5, y = 1))
         assertEquals(GbaKey.UP, outAfter and GbaKey.UP)
     }
+
+    // ---- persistent lock-chip ----------------------------------------------
+
+    @Test fun `persistent chip latches on block and stays through bounce window`() {
+        val budget = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(blockOnTile = Triple(0, 5, 0), blockedDirMask = GbaKey.UP)
+        val gate = MovementGate(budget, areaGate)
+
+        assertEquals(AreaGateDecision.NONE, gate.persistentAreaGateDecision.value)
+
+        gate.process(GbaKey.UP, snap(x = 5, y = 0))
+        assertTrue(gate.persistentAreaGateDecision.value.shouldBlock)
+
+        // Snapshot doesn't change → anchor doesn't move → chip stays
+        // visible across every bounce frame.
+        for (i in 1 until MovementGate.BOUNCE_FRAMES) {
+            gate.process(GbaKey.UP, snap(x = 5, y = 0))
+            assertTrue(
+                "chip should persist through bounce frame $i",
+                gate.persistentAreaGateDecision.value.shouldBlock,
+            )
+        }
+    }
+
+    @Test fun `persistent chip clears once player walks off post-bounce tile`() {
+        val budget = FakeBudget(initialTiles = 10)
+        val areaGate = FakeAreaGate(blockOnTile = Triple(0, 5, 0), blockedDirMask = GbaKey.UP)
+        val gate = MovementGate(budget, areaGate)
+
+        gate.process(GbaKey.UP, snap(x = 5, y = 0))
+        // Let the bounce decrement to completion without re-pressing UP
+        // (keeping UP held would re-trigger the gate every frame).
+        repeat(MovementGate.BOUNCE_FRAMES) {
+            gate.process(0, snap(x = 5, y = 0))
+        }
+        assertTrue(gate.persistentAreaGateDecision.value.shouldBlock)
+
+        // Player steps off the anchor → chip clears.
+        gate.process(0, snap(x = 5, y = 1))
+        assertFalse(gate.persistentAreaGateDecision.value.shouldBlock)
+    }
+
+    @Test fun `persistent chip clears for multi-dir warp block when player steps away`() {
+        val budget = FakeBudget(initialTiles = 10)
+        val allDirs = GbaKey.UP or GbaKey.DOWN or GbaKey.LEFT or GbaKey.RIGHT
+        val areaGate = FakeAreaGate(blockOnTile = Triple(0, 12, 8), blockedDirMask = allDirs)
+        val gate = MovementGate(budget, areaGate)
+
+        // Multi-dir block: no bounce, but chip still latches.
+        gate.process(GbaKey.RIGHT, snap(x = 12, y = 8))
+        assertTrue(gate.persistentAreaGateDecision.value.shouldBlock)
+
+        // Staying in place keeps the chip.
+        gate.process(0, snap(x = 12, y = 8))
+        assertTrue(gate.persistentAreaGateDecision.value.shouldBlock)
+
+        // Walking away clears it.
+        gate.process(GbaKey.LEFT, snap(x = 11, y = 8))
+        assertFalse(gate.persistentAreaGateDecision.value.shouldBlock)
+    }
 }

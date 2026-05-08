@@ -22,12 +22,13 @@ import com.poketrek.moneo.MoneoModule
 import kotlin.math.roundToInt
 
 /**
- * Floating chip that appears when MovementGate's MoneoAreaGate is currently
- * blocking a press. Shows the locked destination area's Korean label plus a
+ * Floating chip that appears when MovementGate's MoneoAreaGate has recently
+ * blocked a press. Shows the locked destination area's Korean label plus a
  * compact 'currentMaturity%/threshold%' progress.
  *
- * Hidden when the gate is disabled, the threshold is met, or the player is
- * not facing a boundary into a not-yet-mature area.
+ * Latches via [MovementGate.persistentAreaGateDecision]: stays visible
+ * across the bounce-back animation and remains up afterwards until the
+ * player walks off the post-bounce tile under their own input.
  */
 @Composable
 fun AreaGateLockChip(
@@ -35,7 +36,7 @@ fun AreaGateLockChip(
     moneo: MoneoModule,
     modifier: Modifier = Modifier,
 ) {
-    val decision by gate.areaGateDecisions.collectAsState()
+    val decision by gate.persistentAreaGateDecision.collectAsState()
     if (!decision.shouldBlock) return
     val areas by moneo.repository.areas.collectAsState()
     val area = areas.firstOrNull { it.id == decision.destArea }
