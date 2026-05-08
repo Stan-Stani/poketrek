@@ -5,6 +5,10 @@
 *.sav
 *.savestate
 
+# Savestate fixtures pulled off-device for instrumentation tests (mirror app's slot_*.bin/.meta naming)
+app/src/androidTest/assets/*.bin
+app/src/androidTest/assets/*.meta
+
 # Android / Gradle
 .gradle/
 build/
