@@ -12,7 +12,8 @@
       "gloss": "A wild Bulbasaur appeared!",
       "targetForm": "이상해씨",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[1]"
+      "source": "gSpeciesNames[1]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:이상해풀",
@@ -21,7 +22,8 @@
       "gloss": "A wild Ivysaur appeared!",
       "targetForm": "이상해풀",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[2]"
+      "source": "gSpeciesNames[2]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:이상해꽃",
@@ -30,7 +32,8 @@
       "gloss": "A wild Venusaur appeared!",
       "targetForm": "이상해꽃",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[3]"
+      "source": "gSpeciesNames[3]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파이리",
@@ -39,7 +42,8 @@
       "gloss": "A wild Charmander appeared!",
       "targetForm": "파이리",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[4]"
+      "source": "gSpeciesNames[4]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:리자드",
@@ -48,7 +52,8 @@
       "gloss": "A wild Charmeleon appeared!",
       "targetForm": "리자드",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[5]"
+      "source": "gSpeciesNames[5]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:리자몽",
@@ -57,7 +62,8 @@
       "gloss": "A wild Charizard appeared!",
       "targetForm": "리자몽",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[6]"
+      "source": "gSpeciesNames[6]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:꼬부기",
@@ -66,7 +72,8 @@
       "gloss": "A wild Squirtle appeared!",
       "targetForm": "꼬부기",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[7]"
+      "source": "gSpeciesNames[7]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:어니부기",
@@ -75,7 +82,8 @@
       "gloss": "A wild Wartortle appeared!",
       "targetForm": "어니부기",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[8]"
+      "source": "gSpeciesNames[8]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:거북왕",
@@ -84,7 +92,8 @@
       "gloss": "A wild Blastoise appeared!",
       "targetForm": "거북왕",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[9]"
+      "source": "gSpeciesNames[9]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:캐터피",
@@ -93,7 +102,8 @@
       "gloss": "A wild Caterpie appeared!",
       "targetForm": "캐터피",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[10]"
+      "source": "gSpeciesNames[10]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:단데기",
@@ -102,7 +112,8 @@
       "gloss": "A wild Metapod appeared!",
       "targetForm": "단데기",
       "areaId": "route_2",
-      "source": "gSpeciesNames[11]"
+      "source": "gSpeciesNames[11]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:버터플",
@@ -111,7 +122,8 @@
       "gloss": "A wild Butterfree appeared!",
       "targetForm": "버터플",
       "areaId": "route_24",
-      "source": "gSpeciesNames[12]"
+      "source": "gSpeciesNames[12]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:뿔충이",
@@ -120,7 +132,8 @@
       "gloss": "A wild Weedle appeared!",
       "targetForm": "뿔충이",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[13]"
+      "source": "gSpeciesNames[13]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:딱충이",
@@ -129,7 +142,8 @@
       "gloss": "A wild Kakuna appeared!",
       "targetForm": "딱충이",
       "areaId": "route_2",
-      "source": "gSpeciesNames[14]"
+      "source": "gSpeciesNames[14]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:독침붕",
@@ -138,7 +152,8 @@
       "gloss": "A wild Beedrill appeared!",
       "targetForm": "독침붕",
       "areaId": "route_24",
-      "source": "gSpeciesNames[15]"
+      "source": "gSpeciesNames[15]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:구구",
@@ -147,7 +162,8 @@
       "gloss": "A wild Pidgey appeared!",
       "targetForm": "구구",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[16]"
+      "source": "gSpeciesNames[16]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:피죤",
@@ -156,7 +172,8 @@
       "gloss": "A wild Pidgeotto appeared!",
       "targetForm": "피죤",
       "areaId": "route_1",
-      "source": "gSpeciesNames[17]"
+      "source": "gSpeciesNames[17]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:피죤투",
@@ -165,7 +182,8 @@
       "gloss": "A wild Pidgeot appeared!",
       "targetForm": "피죤투",
       "areaId": "route_13",
-      "source": "gSpeciesNames[18]"
+      "source": "gSpeciesNames[18]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:꼬렛",
@@ -174,7 +192,8 @@
       "gloss": "A wild Rattata appeared!",
       "targetForm": "꼬렛",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[19]"
+      "source": "gSpeciesNames[19]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:레트라",
@@ -183,7 +202,8 @@
       "gloss": "A wild Raticate appeared!",
       "targetForm": "레트라",
       "areaId": "route_1",
-      "source": "gSpeciesNames[20]"
+      "source": "gSpeciesNames[20]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:깨비참",
@@ -192,7 +212,8 @@
       "gloss": "A wild Spearow appeared!",
       "targetForm": "깨비참",
       "areaId": "route_16",
-      "source": "gSpeciesNames[21]"
+      "source": "gSpeciesNames[21]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:깨비드릴조",
@@ -201,7 +222,8 @@
       "gloss": "A wild Fearow appeared!",
       "targetForm": "깨비드릴조",
       "areaId": "route_3",
-      "source": "gSpeciesNames[22]"
+      "source": "gSpeciesNames[22]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:아보",
@@ -210,7 +232,8 @@
       "gloss": "A wild Ekans appeared!",
       "targetForm": "아보",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[23]"
+      "source": "gSpeciesNames[23]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:아보크",
@@ -219,7 +242,8 @@
       "gloss": "A wild Arbok appeared!",
       "targetForm": "아보크",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[24]"
+      "source": "gSpeciesNames[24]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:피카츄",
@@ -228,7 +252,8 @@
       "gloss": "A wild Pikachu appeared!",
       "targetForm": "피카츄",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[25]"
+      "source": "gSpeciesNames[25]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:라이츄",
@@ -237,7 +262,8 @@
       "gloss": "A wild Raichu appeared!",
       "targetForm": "라이츄",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[26]"
+      "source": "gSpeciesNames[26]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:모래두지",
@@ -246,7 +272,8 @@
       "gloss": "A wild Sandshrew appeared!",
       "targetForm": "모래두지",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[27]"
+      "source": "gSpeciesNames[27]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:고지",
@@ -255,7 +282,8 @@
       "gloss": "A wild Sandslash appeared!",
       "targetForm": "고지",
       "areaId": "route_4",
-      "source": "gSpeciesNames[28]"
+      "source": "gSpeciesNames[28]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:니드리나",
@@ -264,7 +292,8 @@
       "gloss": "A wild Nidorina appeared!",
       "targetForm": "니드리나",
       "areaId": "route_3",
-      "source": "gSpeciesNames[30]"
+      "source": "gSpeciesNames[30]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:니드퀸",
@@ -273,7 +302,8 @@
       "gloss": "A wild Nidoqueen appeared!",
       "targetForm": "니드퀸",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[31]"
+      "source": "gSpeciesNames[31]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:니드리노",
@@ -282,7 +312,8 @@
       "gloss": "A wild Nidorino appeared!",
       "targetForm": "니드리노",
       "areaId": "route_3",
-      "source": "gSpeciesNames[33]"
+      "source": "gSpeciesNames[33]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:니드킹",
@@ -291,7 +322,8 @@
       "gloss": "A wild Nidoking appeared!",
       "targetForm": "니드킹",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[34]"
+      "source": "gSpeciesNames[34]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:삐삐",
@@ -300,7 +332,8 @@
       "gloss": "A wild Clefairy appeared!",
       "targetForm": "삐삐",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[35]"
+      "source": "gSpeciesNames[35]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:픽시",
@@ -309,7 +342,8 @@
       "gloss": "A wild Clefable appeared!",
       "targetForm": "픽시",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[36]"
+      "source": "gSpeciesNames[36]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:식스테일",
@@ -318,7 +352,8 @@
       "gloss": "A wild Vulpix appeared!",
       "targetForm": "식스테일",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[37]"
+      "source": "gSpeciesNames[37]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:나인테일",
@@ -327,7 +362,8 @@
       "gloss": "A wild Ninetales appeared!",
       "targetForm": "나인테일",
       "areaId": "route_7",
-      "source": "gSpeciesNames[38]"
+      "source": "gSpeciesNames[38]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:푸린",
@@ -336,7 +372,8 @@
       "gloss": "A wild Jigglypuff appeared!",
       "targetForm": "푸린",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[39]"
+      "source": "gSpeciesNames[39]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:푸크린",
@@ -345,7 +382,8 @@
       "gloss": "A wild Wigglytuff appeared!",
       "targetForm": "푸크린",
       "areaId": "route_3",
-      "source": "gSpeciesNames[40]"
+      "source": "gSpeciesNames[40]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:주뱃",
@@ -354,7 +392,8 @@
       "gloss": "A wild Zubat appeared!",
       "targetForm": "주뱃",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[41]"
+      "source": "gSpeciesNames[41]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:골뱃",
@@ -363,7 +402,8 @@
       "gloss": "A wild Golbat appeared!",
       "targetForm": "골뱃",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[42]"
+      "source": "gSpeciesNames[42]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:뚜벅쵸",
@@ -372,7 +412,8 @@
       "gloss": "A wild Oddish appeared!",
       "targetForm": "뚜벅쵸",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[43]"
+      "source": "gSpeciesNames[43]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:냄새꼬",
@@ -381,7 +422,8 @@
       "gloss": "A wild Gloom appeared!",
       "targetForm": "냄새꼬",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[44]"
+      "source": "gSpeciesNames[44]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:라플레시아",
@@ -390,7 +432,8 @@
       "gloss": "A wild Vileplume appeared!",
       "targetForm": "라플레시아",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[45]"
+      "source": "gSpeciesNames[45]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파라스",
@@ -399,7 +442,8 @@
       "gloss": "A wild Paras appeared!",
       "targetForm": "파라스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[46]"
+      "source": "gSpeciesNames[46]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파라섹트",
@@ -408,7 +452,8 @@
       "gloss": "A wild Parasect appeared!",
       "targetForm": "파라섹트",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[47]"
+      "source": "gSpeciesNames[47]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:콘팡",
@@ -417,7 +462,8 @@
       "gloss": "A wild Venonat appeared!",
       "targetForm": "콘팡",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[48]"
+      "source": "gSpeciesNames[48]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:도나리",
@@ -426,7 +472,8 @@
       "gloss": "A wild Venomoth appeared!",
       "targetForm": "도나리",
       "areaId": "route_12",
-      "source": "gSpeciesNames[49]"
+      "source": "gSpeciesNames[49]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:디그다",
@@ -435,7 +482,8 @@
       "gloss": "A wild Diglett appeared!",
       "targetForm": "디그다",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[50]"
+      "source": "gSpeciesNames[50]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:닥트리오",
@@ -444,7 +492,8 @@
       "gloss": "A wild Dugtrio appeared!",
       "targetForm": "닥트리오",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[51]"
+      "source": "gSpeciesNames[51]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:나옹",
@@ -453,7 +502,8 @@
       "gloss": "A wild Meowth appeared!",
       "targetForm": "나옹",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[52]"
+      "source": "gSpeciesNames[52]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:페르시온",
@@ -462,7 +512,8 @@
       "gloss": "A wild Persian appeared!",
       "targetForm": "페르시온",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[53]"
+      "source": "gSpeciesNames[53]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:고라파덕",
@@ -471,7 +522,8 @@
       "gloss": "A wild Psyduck appeared!",
       "targetForm": "고라파덕",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[54]"
+      "source": "gSpeciesNames[54]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:골덕",
@@ -480,7 +532,8 @@
       "gloss": "A wild Golduck appeared!",
       "targetForm": "골덕",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[55]"
+      "source": "gSpeciesNames[55]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:망키",
@@ -489,7 +542,8 @@
       "gloss": "A wild Mankey appeared!",
       "targetForm": "망키",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[56]"
+      "source": "gSpeciesNames[56]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:성원숭",
@@ -498,7 +552,8 @@
       "gloss": "A wild Primeape appeared!",
       "targetForm": "성원숭",
       "areaId": "route_3",
-      "source": "gSpeciesNames[57]"
+      "source": "gSpeciesNames[57]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:가디",
@@ -507,7 +562,8 @@
       "gloss": "A wild Growlithe appeared!",
       "targetForm": "가디",
       "areaId": "route_23",
-      "source": "gSpeciesNames[58]"
+      "source": "gSpeciesNames[58]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:윈디",
@@ -516,7 +572,8 @@
       "gloss": "A wild Arcanine appeared!",
       "targetForm": "윈디",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[59]"
+      "source": "gSpeciesNames[59]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:발챙이",
@@ -525,7 +582,8 @@
       "gloss": "A wild Poliwag appeared!",
       "targetForm": "발챙이",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[60]"
+      "source": "gSpeciesNames[60]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:슈륙챙이",
@@ -534,7 +592,8 @@
       "gloss": "A wild Poliwhirl appeared!",
       "targetForm": "슈륙챙이",
       "areaId": "viridian_city",
-      "source": "gSpeciesNames[61]"
+      "source": "gSpeciesNames[61]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:강챙이",
@@ -543,7 +602,8 @@
       "gloss": "A wild Poliwrath appeared!",
       "targetForm": "강챙이",
       "areaId": "viridian_city",
-      "source": "gSpeciesNames[62]"
+      "source": "gSpeciesNames[62]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:캐이시",
@@ -552,7 +612,8 @@
       "gloss": "A wild Abra appeared!",
       "targetForm": "캐이시",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[63]"
+      "source": "gSpeciesNames[63]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:윤겔라",
@@ -561,7 +622,8 @@
       "gloss": "A wild Kadabra appeared!",
       "targetForm": "윤겔라",
       "areaId": "route_24",
-      "source": "gSpeciesNames[64]"
+      "source": "gSpeciesNames[64]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:후딘",
@@ -570,7 +632,8 @@
       "gloss": "A wild Alakazam appeared!",
       "targetForm": "후딘",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[65]"
+      "source": "gSpeciesNames[65]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:알통몬",
@@ -579,7 +642,8 @@
       "gloss": "A wild Machop appeared!",
       "targetForm": "알통몬",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[66]"
+      "source": "gSpeciesNames[66]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:근육몬",
@@ -588,7 +652,8 @@
       "gloss": "A wild Machoke appeared!",
       "targetForm": "근육몬",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[67]"
+      "source": "gSpeciesNames[67]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:괴력몬",
@@ -597,7 +662,8 @@
       "gloss": "A wild Machamp appeared!",
       "targetForm": "괴력몬",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[68]"
+      "source": "gSpeciesNames[68]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:모다피",
@@ -606,7 +672,8 @@
       "gloss": "A wild Bellsprout appeared!",
       "targetForm": "모다피",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[69]"
+      "source": "gSpeciesNames[69]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:우츠동",
@@ -615,7 +682,8 @@
       "gloss": "A wild Weepinbell appeared!",
       "targetForm": "우츠동",
       "areaId": "route_24",
-      "source": "gSpeciesNames[70]"
+      "source": "gSpeciesNames[70]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:우츠보트",
@@ -624,7 +692,8 @@
       "gloss": "A wild Victreebel appeared!",
       "targetForm": "우츠보트",
       "areaId": "route_12",
-      "source": "gSpeciesNames[71]"
+      "source": "gSpeciesNames[71]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:왕눈해",
@@ -633,7 +702,8 @@
       "gloss": "A wild Tentacool appeared!",
       "targetForm": "왕눈해",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[72]"
+      "source": "gSpeciesNames[72]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:독파리",
@@ -642,7 +712,8 @@
       "gloss": "A wild Tentacruel appeared!",
       "targetForm": "독파리",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[73]"
+      "source": "gSpeciesNames[73]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:꼬마돌",
@@ -651,7 +722,8 @@
       "gloss": "A wild Geodude appeared!",
       "targetForm": "꼬마돌",
       "areaId": "mt_moon",
-      "source": "gSpeciesNames[74]"
+      "source": "gSpeciesNames[74]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:데구리",
@@ -660,7 +732,8 @@
       "gloss": "A wild Graveler appeared!",
       "targetForm": "데구리",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[75]"
+      "source": "gSpeciesNames[75]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:딱구리",
@@ -669,7 +742,8 @@
       "gloss": "A wild Golem appeared!",
       "targetForm": "딱구리",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[76]"
+      "source": "gSpeciesNames[76]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:포니타",
@@ -678,7 +752,8 @@
       "gloss": "A wild Ponyta appeared!",
       "targetForm": "포니타",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[77]"
+      "source": "gSpeciesNames[77]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:날쌩마",
@@ -687,7 +762,8 @@
       "gloss": "A wild Rapidash appeared!",
       "targetForm": "날쌩마",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[78]"
+      "source": "gSpeciesNames[78]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:야돈",
@@ -696,7 +772,8 @@
       "gloss": "A wild Slowpoke appeared!",
       "targetForm": "야돈",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[79]"
+      "source": "gSpeciesNames[79]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:야도란",
@@ -705,7 +782,8 @@
       "gloss": "A wild Slowbro appeared!",
       "targetForm": "야도란",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[80]"
+      "source": "gSpeciesNames[80]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:코일",
@@ -714,7 +792,8 @@
       "gloss": "A wild Magnemite appeared!",
       "targetForm": "코일",
       "areaId": "cinnabar_island",
-      "source": "gSpeciesNames[81]"
+      "source": "gSpeciesNames[81]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:레어코일",
@@ -723,7 +802,8 @@
       "gloss": "A wild Magneton appeared!",
       "targetForm": "레어코일",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[82]"
+      "source": "gSpeciesNames[82]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파오리",
@@ -732,7 +812,8 @@
       "gloss": "A wild Farfetch’d appeared!",
       "targetForm": "파오리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[83]"
+      "source": "gSpeciesNames[83]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:두두",
@@ -741,7 +822,8 @@
       "gloss": "A wild Doduo appeared!",
       "targetForm": "두두",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[84]"
+      "source": "gSpeciesNames[84]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:두트리오",
@@ -750,7 +832,8 @@
       "gloss": "A wild Dodrio appeared!",
       "targetForm": "두트리오",
       "areaId": "route_16",
-      "source": "gSpeciesNames[85]"
+      "source": "gSpeciesNames[85]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쥬쥬",
@@ -759,7 +842,8 @@
       "gloss": "A wild Seel appeared!",
       "targetForm": "쥬쥬",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[86]"
+      "source": "gSpeciesNames[86]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쥬레곤",
@@ -768,7 +852,8 @@
       "gloss": "A wild Dewgong appeared!",
       "targetForm": "쥬레곤",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[87]"
+      "source": "gSpeciesNames[87]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:질퍽이",
@@ -777,7 +862,8 @@
       "gloss": "A wild Grimer appeared!",
       "targetForm": "질퍽이",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[88]"
+      "source": "gSpeciesNames[88]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:질뻐기",
@@ -786,7 +872,8 @@
       "gloss": "A wild Muk appeared!",
       "targetForm": "질뻐기",
       "areaId": "celadon_city",
-      "source": "gSpeciesNames[89]"
+      "source": "gSpeciesNames[89]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:셀러",
@@ -795,7 +882,8 @@
       "gloss": "A wild Shellder appeared!",
       "targetForm": "셀러",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[90]"
+      "source": "gSpeciesNames[90]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파르셀",
@@ -804,7 +892,8 @@
       "gloss": "A wild Cloyster appeared!",
       "targetForm": "파르셀",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[91]"
+      "source": "gSpeciesNames[91]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:고오스",
@@ -813,7 +902,8 @@
       "gloss": "A wild Gastly appeared!",
       "targetForm": "고오스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[92]"
+      "source": "gSpeciesNames[92]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:고우스트",
@@ -822,7 +912,8 @@
       "gloss": "A wild Haunter appeared!",
       "targetForm": "고우스트",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[93]"
+      "source": "gSpeciesNames[93]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:팬텀",
@@ -831,7 +922,8 @@
       "gloss": "A wild Gengar appeared!",
       "targetForm": "팬텀",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[94]"
+      "source": "gSpeciesNames[94]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:롱스톤",
@@ -840,7 +932,8 @@
       "gloss": "A wild Onix appeared!",
       "targetForm": "롱스톤",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[95]"
+      "source": "gSpeciesNames[95]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:슬리프",
@@ -849,7 +942,8 @@
       "gloss": "A wild Drowzee appeared!",
       "targetForm": "슬리프",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[96]"
+      "source": "gSpeciesNames[96]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:슬리퍼",
@@ -858,7 +952,8 @@
       "gloss": "A wild Hypno appeared!",
       "targetForm": "슬리퍼",
       "areaId": "route_11",
-      "source": "gSpeciesNames[97]"
+      "source": "gSpeciesNames[97]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:크랩",
@@ -867,7 +962,8 @@
       "gloss": "A wild Krabby appeared!",
       "targetForm": "크랩",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[98]"
+      "source": "gSpeciesNames[98]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:킹크랩",
@@ -876,7 +972,8 @@
       "gloss": "A wild Kingler appeared!",
       "targetForm": "킹크랩",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[99]"
+      "source": "gSpeciesNames[99]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:찌리리공",
@@ -885,7 +982,8 @@
       "gloss": "A wild Voltorb appeared!",
       "targetForm": "찌리리공",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[100]"
+      "source": "gSpeciesNames[100]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:붐볼",
@@ -894,7 +992,8 @@
       "gloss": "A wild Electrode appeared!",
       "targetForm": "붐볼",
       "areaId": "route_10",
-      "source": "gSpeciesNames[101]"
+      "source": "gSpeciesNames[101]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:아라리",
@@ -903,7 +1002,8 @@
       "gloss": "A wild Exeggcute appeared!",
       "targetForm": "아라리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[102]"
+      "source": "gSpeciesNames[102]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:나시",
@@ -912,7 +1012,8 @@
       "gloss": "A wild Exeggutor appeared!",
       "targetForm": "나시",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[103]"
+      "source": "gSpeciesNames[103]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:탕구리",
@@ -921,7 +1022,8 @@
       "gloss": "A wild Cubone appeared!",
       "targetForm": "탕구리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[104]"
+      "source": "gSpeciesNames[104]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:텅구리",
@@ -930,7 +1032,8 @@
       "gloss": "A wild Marowak appeared!",
       "targetForm": "텅구리",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[105]"
+      "source": "gSpeciesNames[105]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:시라소몬",
@@ -939,7 +1042,8 @@
       "gloss": "A wild Hitmonlee appeared!",
       "targetForm": "시라소몬",
       "areaId": "saffron_city",
-      "source": "gSpeciesNames[106]"
+      "source": "gSpeciesNames[106]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:홍수몬",
@@ -948,7 +1052,8 @@
       "gloss": "A wild Hitmonchan appeared!",
       "targetForm": "홍수몬",
       "areaId": "saffron_city",
-      "source": "gSpeciesNames[107]"
+      "source": "gSpeciesNames[107]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:내루미",
@@ -957,7 +1062,8 @@
       "gloss": "A wild Lickitung appeared!",
       "targetForm": "내루미",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[108]"
+      "source": "gSpeciesNames[108]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:또가스",
@@ -966,7 +1072,8 @@
       "gloss": "A wild Koffing appeared!",
       "targetForm": "또가스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[109]"
+      "source": "gSpeciesNames[109]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:또도가스",
@@ -975,7 +1082,8 @@
       "gloss": "A wild Weezing appeared!",
       "targetForm": "또도가스",
       "areaId": "celadon_city",
-      "source": "gSpeciesNames[110]"
+      "source": "gSpeciesNames[110]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:뿔카노",
@@ -984,7 +1092,8 @@
       "gloss": "A wild Rhyhorn appeared!",
       "targetForm": "뿔카노",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[111]"
+      "source": "gSpeciesNames[111]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:코뿌리",
@@ -993,7 +1102,8 @@
       "gloss": "A wild Rhydon appeared!",
       "targetForm": "코뿌리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[112]"
+      "source": "gSpeciesNames[112]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:럭키",
@@ -1002,7 +1112,8 @@
       "gloss": "A wild Chansey appeared!",
       "targetForm": "럭키",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[113]"
+      "source": "gSpeciesNames[113]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:덩쿠리",
@@ -1011,7 +1122,8 @@
       "gloss": "A wild Tangela appeared!",
       "targetForm": "덩쿠리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[114]"
+      "source": "gSpeciesNames[114]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:캥카",
@@ -1020,7 +1132,8 @@
       "gloss": "A wild Kangaskhan appeared!",
       "targetForm": "캥카",
       "areaId": "route_21",
-      "source": "gSpeciesNames[115]"
+      "source": "gSpeciesNames[115]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쏘드라",
@@ -1029,7 +1142,8 @@
       "gloss": "A wild Horsea appeared!",
       "targetForm": "쏘드라",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[116]"
+      "source": "gSpeciesNames[116]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:시드라",
@@ -1038,7 +1152,8 @@
       "gloss": "A wild Seadra appeared!",
       "targetForm": "시드라",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[117]"
+      "source": "gSpeciesNames[117]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:콘치",
@@ -1047,7 +1162,8 @@
       "gloss": "A wild Goldeen appeared!",
       "targetForm": "콘치",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[118]"
+      "source": "gSpeciesNames[118]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:왕콘치",
@@ -1056,7 +1172,8 @@
       "gloss": "A wild Seaking appeared!",
       "targetForm": "왕콘치",
       "areaId": "viridian_city",
-      "source": "gSpeciesNames[119]"
+      "source": "gSpeciesNames[119]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:별가사리",
@@ -1065,7 +1182,8 @@
       "gloss": "A wild Staryu appeared!",
       "targetForm": "별가사리",
       "areaId": "fuchsia_city",
-      "source": "gSpeciesNames[120]"
+      "source": "gSpeciesNames[120]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:아쿠스타",
@@ -1074,7 +1192,8 @@
       "gloss": "A wild Starmie appeared!",
       "targetForm": "아쿠스타",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[121]"
+      "source": "gSpeciesNames[121]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마임맨",
@@ -1083,7 +1202,8 @@
       "gloss": "A wild Mr. Mime appeared!",
       "targetForm": "마임맨",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[122]"
+      "source": "gSpeciesNames[122]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:스라크",
@@ -1092,7 +1212,8 @@
       "gloss": "A wild Scyther appeared!",
       "targetForm": "스라크",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[123]"
+      "source": "gSpeciesNames[123]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:루주라",
@@ -1101,7 +1222,8 @@
       "gloss": "A wild Jynx appeared!",
       "targetForm": "루주라",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[124]"
+      "source": "gSpeciesNames[124]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:에레브",
@@ -1110,7 +1232,8 @@
       "gloss": "A wild Electabuzz appeared!",
       "targetForm": "에레브",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[125]"
+      "source": "gSpeciesNames[125]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마그마",
@@ -1119,7 +1242,8 @@
       "gloss": "A wild Magmar appeared!",
       "targetForm": "마그마",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[126]"
+      "source": "gSpeciesNames[126]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쁘사이저",
@@ -1128,7 +1252,8 @@
       "gloss": "A wild Pinsir appeared!",
       "targetForm": "쁘사이저",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[127]"
+      "source": "gSpeciesNames[127]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:켄타로스",
@@ -1137,7 +1262,8 @@
       "gloss": "A wild Tauros appeared!",
       "targetForm": "켄타로스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[128]"
+      "source": "gSpeciesNames[128]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:잉어킹",
@@ -1146,7 +1272,8 @@
       "gloss": "A wild Magikarp appeared!",
       "targetForm": "잉어킹",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[129]"
+      "source": "gSpeciesNames[129]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:갸라도스",
@@ -1155,7 +1282,8 @@
       "gloss": "A wild Gyarados appeared!",
       "targetForm": "갸라도스",
       "areaId": "pallet_town",
-      "source": "gSpeciesNames[130]"
+      "source": "gSpeciesNames[130]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:라프라스",
@@ -1164,7 +1292,8 @@
       "gloss": "A wild Lapras appeared!",
       "targetForm": "라프라스",
       "areaId": "silph_co",
-      "source": "gSpeciesNames[131]"
+      "source": "gSpeciesNames[131]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:메타몽",
@@ -1173,7 +1302,8 @@
       "gloss": "A wild Ditto appeared!",
       "targetForm": "메타몽",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[132]"
+      "source": "gSpeciesNames[132]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:이브이",
@@ -1182,7 +1312,8 @@
       "gloss": "A wild Eevee appeared!",
       "targetForm": "이브이",
       "areaId": "route_13",
-      "source": "gSpeciesNames[133]"
+      "source": "gSpeciesNames[133]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:샤미드",
@@ -1191,7 +1322,8 @@
       "gloss": "A wild Vaporeon appeared!",
       "targetForm": "샤미드",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[134]"
+      "source": "gSpeciesNames[134]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쥬피썬더",
@@ -1200,7 +1332,8 @@
       "gloss": "A wild Jolteon appeared!",
       "targetForm": "쥬피썬더",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[135]"
+      "source": "gSpeciesNames[135]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:부스터",
@@ -1209,7 +1342,8 @@
       "gloss": "A wild Flareon appeared!",
       "targetForm": "부스터",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[136]"
+      "source": "gSpeciesNames[136]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:폴리곤",
@@ -1218,7 +1352,8 @@
       "gloss": "A wild Porygon appeared!",
       "targetForm": "폴리곤",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[137]"
+      "source": "gSpeciesNames[137]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:암나이트",
@@ -1227,7 +1362,8 @@
       "gloss": "A wild Omanyte appeared!",
       "targetForm": "암나이트",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[138]"
+      "source": "gSpeciesNames[138]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:암스타",
@@ -1236,7 +1372,8 @@
       "gloss": "A wild Omastar appeared!",
       "targetForm": "암스타",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[139]"
+      "source": "gSpeciesNames[139]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:투구",
@@ -1245,7 +1382,8 @@
       "gloss": "A wild Kabuto appeared!",
       "targetForm": "투구",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[140]"
+      "source": "gSpeciesNames[140]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:투구푸스",
@@ -1254,7 +1392,8 @@
       "gloss": "A wild Kabutops appeared!",
       "targetForm": "투구푸스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[141]"
+      "source": "gSpeciesNames[141]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:프테라",
@@ -1263,7 +1402,8 @@
       "gloss": "A wild Aerodactyl appeared!",
       "targetForm": "프테라",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[142]"
+      "source": "gSpeciesNames[142]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:잠만보",
@@ -1272,7 +1412,8 @@
       "gloss": "A wild Snorlax appeared!",
       "targetForm": "잠만보",
       "areaId": "route_12",
-      "source": "gSpeciesNames[143]"
+      "source": "gSpeciesNames[143]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:프리져",
@@ -1281,7 +1422,8 @@
       "gloss": "A wild Articuno appeared!",
       "targetForm": "프리져",
       "areaId": "seafoam_islands",
-      "source": "gSpeciesNames[144]"
+      "source": "gSpeciesNames[144]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:썬더",
@@ -1290,7 +1432,8 @@
       "gloss": "A wild Zapdos appeared!",
       "targetForm": "썬더",
       "areaId": "power_plant",
-      "source": "gSpeciesNames[145]"
+      "source": "gSpeciesNames[145]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파이어",
@@ -1299,7 +1442,8 @@
       "gloss": "A wild Moltres appeared!",
       "targetForm": "파이어",
       "areaId": "route_23",
-      "source": "gSpeciesNames[146]"
+      "source": "gSpeciesNames[146]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:미뇽",
@@ -1308,7 +1452,8 @@
       "gloss": "A wild Dratini appeared!",
       "targetForm": "미뇽",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[147]"
+      "source": "gSpeciesNames[147]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:신뇽",
@@ -1317,7 +1462,8 @@
       "gloss": "A wild Dragonair appeared!",
       "targetForm": "신뇽",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[148]"
+      "source": "gSpeciesNames[148]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:망나뇽",
@@ -1326,7 +1472,8 @@
       "gloss": "A wild Dragonite appeared!",
       "targetForm": "망나뇽",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[149]"
+      "source": "gSpeciesNames[149]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:뮤츠",
@@ -1335,7 +1482,8 @@
       "gloss": "A wild Mewtwo appeared!",
       "targetForm": "뮤츠",
       "areaId": "cerulean_cave",
-      "source": "gSpeciesNames[150]"
+      "source": "gSpeciesNames[150]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:치코리타",
@@ -1344,7 +1492,8 @@
       "gloss": "A wild Chikorita appeared!",
       "targetForm": "치코리타",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[152]"
+      "source": "gSpeciesNames[152]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:베이리프",
@@ -1353,7 +1502,8 @@
       "gloss": "A wild Bayleef appeared!",
       "targetForm": "베이리프",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[153]"
+      "source": "gSpeciesNames[153]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:메가니움",
@@ -1362,7 +1512,8 @@
       "gloss": "A wild Meganium appeared!",
       "targetForm": "메가니움",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[154]"
+      "source": "gSpeciesNames[154]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:브케인",
@@ -1371,7 +1522,8 @@
       "gloss": "A wild Cyndaquil appeared!",
       "targetForm": "브케인",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[155]"
+      "source": "gSpeciesNames[155]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마그케인",
@@ -1380,7 +1532,8 @@
       "gloss": "A wild Quilava appeared!",
       "targetForm": "마그케인",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[156]"
+      "source": "gSpeciesNames[156]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:블레이범",
@@ -1389,7 +1542,8 @@
       "gloss": "A wild Typhlosion appeared!",
       "targetForm": "블레이범",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[157]"
+      "source": "gSpeciesNames[157]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:리아코",
@@ -1398,7 +1552,8 @@
       "gloss": "A wild Totodile appeared!",
       "targetForm": "리아코",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[158]"
+      "source": "gSpeciesNames[158]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:엘리게이",
@@ -1407,7 +1562,8 @@
       "gloss": "A wild Croconaw appeared!",
       "targetForm": "엘리게이",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[159]"
+      "source": "gSpeciesNames[159]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:장크로다일",
@@ -1416,7 +1572,8 @@
       "gloss": "A wild Feraligatr appeared!",
       "targetForm": "장크로다일",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[160]"
+      "source": "gSpeciesNames[160]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:꼬리선",
@@ -1425,7 +1582,8 @@
       "gloss": "A wild Sentret appeared!",
       "targetForm": "꼬리선",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[161]"
+      "source": "gSpeciesNames[161]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:다꼬리",
@@ -1434,7 +1592,8 @@
       "gloss": "A wild Furret appeared!",
       "targetForm": "다꼬리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[162]"
+      "source": "gSpeciesNames[162]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:부우부",
@@ -1443,7 +1602,8 @@
       "gloss": "A wild Hoothoot appeared!",
       "targetForm": "부우부",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[163]"
+      "source": "gSpeciesNames[163]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:야부엉",
@@ -1452,7 +1612,8 @@
       "gloss": "A wild Noctowl appeared!",
       "targetForm": "야부엉",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[164]"
+      "source": "gSpeciesNames[164]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:레디바",
@@ -1461,7 +1622,8 @@
       "gloss": "A wild Ledyba appeared!",
       "targetForm": "레디바",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[165]"
+      "source": "gSpeciesNames[165]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:레디안",
@@ -1470,7 +1632,8 @@
       "gloss": "A wild Ledian appeared!",
       "targetForm": "레디안",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[166]"
+      "source": "gSpeciesNames[166]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:페이검",
@@ -1479,7 +1642,8 @@
       "gloss": "A wild Spinarak appeared!",
       "targetForm": "페이검",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[167]"
+      "source": "gSpeciesNames[167]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:아리아도스",
@@ -1488,7 +1652,8 @@
       "gloss": "A wild Ariados appeared!",
       "targetForm": "아리아도스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[168]"
+      "source": "gSpeciesNames[168]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:크로뱃",
@@ -1497,7 +1662,8 @@
       "gloss": "A wild Crobat appeared!",
       "targetForm": "크로뱃",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[169]"
+      "source": "gSpeciesNames[169]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:초라기",
@@ -1506,7 +1672,8 @@
       "gloss": "A wild Chinchou appeared!",
       "targetForm": "초라기",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[170]"
+      "source": "gSpeciesNames[170]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:랜턴",
@@ -1515,7 +1682,8 @@
       "gloss": "A wild Lanturn appeared!",
       "targetForm": "랜턴",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[171]"
+      "source": "gSpeciesNames[171]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:피츄",
@@ -1524,7 +1692,8 @@
       "gloss": "A wild Pichu appeared!",
       "targetForm": "피츄",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[172]"
+      "source": "gSpeciesNames[172]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:푸푸린",
@@ -1533,7 +1702,8 @@
       "gloss": "A wild Igglybuff appeared!",
       "targetForm": "푸푸린",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[174]"
+      "source": "gSpeciesNames[174]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:토게피",
@@ -1542,7 +1712,8 @@
       "gloss": "A wild Togepi appeared!",
       "targetForm": "토게피",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[175]"
+      "source": "gSpeciesNames[175]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:토게틱",
@@ -1551,7 +1722,8 @@
       "gloss": "A wild Togetic appeared!",
       "targetForm": "토게틱",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[176]"
+      "source": "gSpeciesNames[176]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:네이티",
@@ -1560,7 +1732,8 @@
       "gloss": "A wild Natu appeared!",
       "targetForm": "네이티",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[177]"
+      "source": "gSpeciesNames[177]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:네이티오",
@@ -1569,7 +1742,8 @@
       "gloss": "A wild Xatu appeared!",
       "targetForm": "네이티오",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[178]"
+      "source": "gSpeciesNames[178]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:메리프",
@@ -1578,7 +1752,8 @@
       "gloss": "A wild Mareep appeared!",
       "targetForm": "메리프",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[179]"
+      "source": "gSpeciesNames[179]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:보송송",
@@ -1587,7 +1762,8 @@
       "gloss": "A wild Flaaffy appeared!",
       "targetForm": "보송송",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[180]"
+      "source": "gSpeciesNames[180]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:전룡",
@@ -1596,7 +1772,8 @@
       "gloss": "A wild Ampharos appeared!",
       "targetForm": "전룡",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[181]"
+      "source": "gSpeciesNames[181]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:아르코",
@@ -1605,7 +1782,8 @@
       "gloss": "A wild Bellossom appeared!",
       "targetForm": "아르코",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[182]"
+      "source": "gSpeciesNames[182]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마릴",
@@ -1614,7 +1792,8 @@
       "gloss": "A wild Marill appeared!",
       "targetForm": "마릴",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[183]"
+      "source": "gSpeciesNames[183]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마릴리",
@@ -1623,7 +1802,8 @@
       "gloss": "A wild Azumarill appeared!",
       "targetForm": "마릴리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[184]"
+      "source": "gSpeciesNames[184]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:꼬지모",
@@ -1632,7 +1812,8 @@
       "gloss": "A wild Sudowoodo appeared!",
       "targetForm": "꼬지모",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[185]"
+      "source": "gSpeciesNames[185]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:왕구리",
@@ -1641,7 +1822,8 @@
       "gloss": "A wild Politoed appeared!",
       "targetForm": "왕구리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[186]"
+      "source": "gSpeciesNames[186]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:통통코",
@@ -1650,7 +1832,8 @@
       "gloss": "A wild Hoppip appeared!",
       "targetForm": "통통코",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[187]"
+      "source": "gSpeciesNames[187]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:두코",
@@ -1659,7 +1842,8 @@
       "gloss": "A wild Skiploom appeared!",
       "targetForm": "두코",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[188]"
+      "source": "gSpeciesNames[188]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:솜솜코",
@@ -1668,7 +1852,8 @@
       "gloss": "A wild Jumpluff appeared!",
       "targetForm": "솜솜코",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[189]"
+      "source": "gSpeciesNames[189]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:에이팜",
@@ -1677,7 +1862,8 @@
       "gloss": "A wild Aipom appeared!",
       "targetForm": "에이팜",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[190]"
+      "source": "gSpeciesNames[190]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:해너츠",
@@ -1686,7 +1872,8 @@
       "gloss": "A wild Sunkern appeared!",
       "targetForm": "해너츠",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[191]"
+      "source": "gSpeciesNames[191]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:해루미",
@@ -1695,7 +1882,8 @@
       "gloss": "A wild Sunflora appeared!",
       "targetForm": "해루미",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[192]"
+      "source": "gSpeciesNames[192]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:왕자리",
@@ -1704,7 +1892,8 @@
       "gloss": "A wild Yanma appeared!",
       "targetForm": "왕자리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[193]"
+      "source": "gSpeciesNames[193]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:우파",
@@ -1713,7 +1902,8 @@
       "gloss": "A wild Wooper appeared!",
       "targetForm": "우파",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[194]"
+      "source": "gSpeciesNames[194]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:누오",
@@ -1722,7 +1912,8 @@
       "gloss": "A wild Quagsire appeared!",
       "targetForm": "누오",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[195]"
+      "source": "gSpeciesNames[195]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:에브이",
@@ -1731,7 +1922,8 @@
       "gloss": "A wild Espeon appeared!",
       "targetForm": "에브이",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[196]"
+      "source": "gSpeciesNames[196]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:블래키",
@@ -1740,7 +1932,8 @@
       "gloss": "A wild Umbreon appeared!",
       "targetForm": "블래키",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[197]"
+      "source": "gSpeciesNames[197]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:니로우",
@@ -1749,7 +1942,8 @@
       "gloss": "A wild Murkrow appeared!",
       "targetForm": "니로우",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[198]"
+      "source": "gSpeciesNames[198]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:야도킹",
@@ -1758,7 +1952,8 @@
       "gloss": "A wild Slowking appeared!",
       "targetForm": "야도킹",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[199]"
+      "source": "gSpeciesNames[199]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:무우마",
@@ -1767,7 +1962,8 @@
       "gloss": "A wild Misdreavus appeared!",
       "targetForm": "무우마",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[200]"
+      "source": "gSpeciesNames[200]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:안농",
@@ -1776,7 +1972,8 @@
       "gloss": "A wild Unown appeared!",
       "targetForm": "안농",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[201]"
+      "source": "gSpeciesNames[201]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마자용",
@@ -1785,7 +1982,8 @@
       "gloss": "A wild Wobbuffet appeared!",
       "targetForm": "마자용",
       "areaId": "mt_moon",
-      "source": "gSpeciesNames[202]"
+      "source": "gSpeciesNames[202]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:키링키",
@@ -1794,7 +1992,8 @@
       "gloss": "A wild Girafarig appeared!",
       "targetForm": "키링키",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[203]"
+      "source": "gSpeciesNames[203]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:피콘",
@@ -1803,7 +2002,8 @@
       "gloss": "A wild Pineco appeared!",
       "targetForm": "피콘",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[204]"
+      "source": "gSpeciesNames[204]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쏘콘",
@@ -1812,7 +2012,8 @@
       "gloss": "A wild Forretress appeared!",
       "targetForm": "쏘콘",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[205]"
+      "source": "gSpeciesNames[205]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:노고치",
@@ -1821,7 +2022,8 @@
       "gloss": "A wild Dunsparce appeared!",
       "targetForm": "노고치",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[206]"
+      "source": "gSpeciesNames[206]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:글라이거",
@@ -1830,7 +2032,8 @@
       "gloss": "A wild Gligar appeared!",
       "targetForm": "글라이거",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[207]"
+      "source": "gSpeciesNames[207]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:강철톤",
@@ -1839,7 +2042,8 @@
       "gloss": "A wild Steelix appeared!",
       "targetForm": "강철톤",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[208]"
+      "source": "gSpeciesNames[208]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:블루",
@@ -1848,7 +2052,8 @@
       "gloss": "A wild Snubbull appeared!",
       "targetForm": "블루",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[209]"
+      "source": "gSpeciesNames[209]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:그랑블루",
@@ -1857,7 +2062,8 @@
       "gloss": "A wild Granbull appeared!",
       "targetForm": "그랑블루",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[210]"
+      "source": "gSpeciesNames[210]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:침바루",
@@ -1866,7 +2072,8 @@
       "gloss": "A wild Qwilfish appeared!",
       "targetForm": "침바루",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[211]"
+      "source": "gSpeciesNames[211]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:핫삼",
@@ -1875,7 +2082,8 @@
       "gloss": "A wild Scizor appeared!",
       "targetForm": "핫삼",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[212]"
+      "source": "gSpeciesNames[212]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:단단지",
@@ -1884,7 +2092,8 @@
       "gloss": "A wild Shuckle appeared!",
       "targetForm": "단단지",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[213]"
+      "source": "gSpeciesNames[213]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:헤라크로스",
@@ -1893,7 +2102,8 @@
       "gloss": "A wild Heracross appeared!",
       "targetForm": "헤라크로스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[214]"
+      "source": "gSpeciesNames[214]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:포푸니",
@@ -1902,7 +2112,8 @@
       "gloss": "A wild Sneasel appeared!",
       "targetForm": "포푸니",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[215]"
+      "source": "gSpeciesNames[215]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:깜지곰",
@@ -1911,7 +2122,8 @@
       "gloss": "A wild Teddiursa appeared!",
       "targetForm": "깜지곰",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[216]"
+      "source": "gSpeciesNames[216]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:링곰",
@@ -1920,7 +2132,8 @@
       "gloss": "A wild Ursaring appeared!",
       "targetForm": "링곰",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[217]"
+      "source": "gSpeciesNames[217]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마그마그",
@@ -1929,7 +2142,8 @@
       "gloss": "A wild Slugma appeared!",
       "targetForm": "마그마그",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[218]"
+      "source": "gSpeciesNames[218]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마그카르고",
@@ -1938,7 +2152,8 @@
       "gloss": "A wild Magcargo appeared!",
       "targetForm": "마그카르고",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[219]"
+      "source": "gSpeciesNames[219]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:꾸꾸리",
@@ -1947,7 +2162,8 @@
       "gloss": "A wild Swinub appeared!",
       "targetForm": "꾸꾸리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[220]"
+      "source": "gSpeciesNames[220]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:메꾸리",
@@ -1956,7 +2172,8 @@
       "gloss": "A wild Piloswine appeared!",
       "targetForm": "메꾸리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[221]"
+      "source": "gSpeciesNames[221]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:코산호",
@@ -1965,7 +2182,8 @@
       "gloss": "A wild Corsola appeared!",
       "targetForm": "코산호",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[222]"
+      "source": "gSpeciesNames[222]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:총어",
@@ -1974,7 +2192,8 @@
       "gloss": "A wild Remoraid appeared!",
       "targetForm": "총어",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[223]"
+      "source": "gSpeciesNames[223]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:대포무노",
@@ -1983,7 +2202,8 @@
       "gloss": "A wild Octillery appeared!",
       "targetForm": "대포무노",
       "areaId": "mt_moon",
-      "source": "gSpeciesNames[224]"
+      "source": "gSpeciesNames[224]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:딜리버드",
@@ -1992,7 +2212,8 @@
       "gloss": "A wild Delibird appeared!",
       "targetForm": "딜리버드",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[225]"
+      "source": "gSpeciesNames[225]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:만타인",
@@ -2001,7 +2222,8 @@
       "gloss": "A wild Mantine appeared!",
       "targetForm": "만타인",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[226]"
+      "source": "gSpeciesNames[226]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:무장조",
@@ -2010,7 +2232,8 @@
       "gloss": "A wild Skarmory appeared!",
       "targetForm": "무장조",
       "areaId": "mt_moon",
-      "source": "gSpeciesNames[227]"
+      "source": "gSpeciesNames[227]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:델빌",
@@ -2019,7 +2242,8 @@
       "gloss": "A wild Houndour appeared!",
       "targetForm": "델빌",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[228]"
+      "source": "gSpeciesNames[228]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:헬가",
@@ -2028,7 +2252,8 @@
       "gloss": "A wild Houndoom appeared!",
       "targetForm": "헬가",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[229]"
+      "source": "gSpeciesNames[229]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:킹드라",
@@ -2037,7 +2262,8 @@
       "gloss": "A wild Kingdra appeared!",
       "targetForm": "킹드라",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[230]"
+      "source": "gSpeciesNames[230]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:코코리",
@@ -2046,7 +2272,8 @@
       "gloss": "A wild Phanpy appeared!",
       "targetForm": "코코리",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[231]"
+      "source": "gSpeciesNames[231]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:코리갑",
@@ -2055,7 +2282,8 @@
       "gloss": "A wild Donphan appeared!",
       "targetForm": "코리갑",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[232]"
+      "source": "gSpeciesNames[232]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:노라키",
@@ -2064,7 +2292,8 @@
       "gloss": "A wild Stantler appeared!",
       "targetForm": "노라키",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[234]"
+      "source": "gSpeciesNames[234]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:루브도",
@@ -2073,7 +2302,8 @@
       "gloss": "A wild Smeargle appeared!",
       "targetForm": "루브도",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[235]"
+      "source": "gSpeciesNames[235]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:배루키",
@@ -2082,7 +2312,8 @@
       "gloss": "A wild Tyrogue appeared!",
       "targetForm": "배루키",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[236]"
+      "source": "gSpeciesNames[236]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:카포에라",
@@ -2091,7 +2322,8 @@
       "gloss": "A wild Hitmontop appeared!",
       "targetForm": "카포에라",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[237]"
+      "source": "gSpeciesNames[237]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:뽀뽀라",
@@ -2100,7 +2332,8 @@
       "gloss": "A wild Smoochum appeared!",
       "targetForm": "뽀뽀라",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[238]"
+      "source": "gSpeciesNames[238]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:에레키드",
@@ -2109,7 +2342,8 @@
       "gloss": "A wild Elekid appeared!",
       "targetForm": "에레키드",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[239]"
+      "source": "gSpeciesNames[239]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마그비",
@@ -2118,7 +2352,8 @@
       "gloss": "A wild Magby appeared!",
       "targetForm": "마그비",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[240]"
+      "source": "gSpeciesNames[240]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:밀탱크",
@@ -2127,7 +2362,8 @@
       "gloss": "A wild Miltank appeared!",
       "targetForm": "밀탱크",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[241]"
+      "source": "gSpeciesNames[241]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:해피너스",
@@ -2136,7 +2372,8 @@
       "gloss": "A wild Blissey appeared!",
       "targetForm": "해피너스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[242]"
+      "source": "gSpeciesNames[242]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:라이코",
@@ -2145,7 +2382,8 @@
       "gloss": "A wild Raikou appeared!",
       "targetForm": "라이코",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[243]"
+      "source": "gSpeciesNames[243]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:앤테이",
@@ -2154,7 +2392,8 @@
       "gloss": "A wild Entei appeared!",
       "targetForm": "앤테이",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[244]"
+      "source": "gSpeciesNames[244]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:스이쿤",
@@ -2163,7 +2402,8 @@
       "gloss": "A wild Suicune appeared!",
       "targetForm": "스이쿤",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[245]"
+      "source": "gSpeciesNames[245]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:애버라스",
@@ -2172,7 +2412,8 @@
       "gloss": "A wild Larvitar appeared!",
       "targetForm": "애버라스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[246]"
+      "source": "gSpeciesNames[246]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:데기라스",
@@ -2181,7 +2422,8 @@
       "gloss": "A wild Pupitar appeared!",
       "targetForm": "데기라스",
       "areaId": "pewter_city",
-      "source": "gSpeciesNames[247]"
+      "source": "gSpeciesNames[247]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마기라스",
@@ -2190,7 +2432,8 @@
       "gloss": "A wild Tyranitar appeared!",
       "targetForm": "마기라스",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[248]"
+      "source": "gSpeciesNames[248]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:루기아",
@@ -2199,7 +2442,8 @@
       "gloss": "A wild Lugia appeared!",
       "targetForm": "루기아",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[249]"
+      "source": "gSpeciesNames[249]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:칠색조",
@@ -2208,7 +2452,8 @@
       "gloss": "A wild Ho-Oh appeared!",
       "targetForm": "칠색조",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[250]"
+      "source": "gSpeciesNames[250]",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:세레비",
@@ -2217,7 +2462,8 @@
       "gloss": "A wild Celebi appeared!",
       "targetForm": "세레비",
       "areaId": "rom_mined",
-      "source": "gSpeciesNames[251]"
+      "source": "gSpeciesNames[251]",
+      "generator": "llm-claude-opus-4-7"
     }
   ]
 }
