@@ -62,6 +62,8 @@ fun ReviewScreen(
     val cards by module.repository.cards.collectAsState()
     val showRomanization by module.prefs.showRomanization.collectAsState()
     val showSentenceGloss by module.prefs.showSentenceGloss.collectAsState()
+    val ttsEnabled by module.prefs.ttsEnabled.collectAsState()
+    val ttsAvailable by module.tts.available.collectAsState()
     var revealed by remember(areaId) { mutableStateOf(false) }
     val verbatim by module.prefs.verbatimSentences.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
@@ -227,7 +229,15 @@ fun ReviewScreen(
                             verticalArrangement = Arrangement.spacedBy(12.dp),
                         ) {
                             CardBack(vocab)
-                            sentence?.let { SentenceCard(it, showRomanization, showSentenceGloss) }
+                            sentence?.let {
+                                SentenceCard(
+                                    it,
+                                    showRomanization,
+                                    showSentenceGloss,
+                                    canSpeak = ttsEnabled && ttsAvailable,
+                                    onSpeak = { module.tts.speak(it.korean) },
+                                )
+                            }
                         }
                         ratings()
                     } else {
@@ -247,7 +257,15 @@ fun ReviewScreen(
                 front()
                 if (revealed) {
                     CardBack(vocab)
-                    sentence?.let { SentenceCard(it, showRomanization, showSentenceGloss) }
+                    sentence?.let {
+                        SentenceCard(
+                            it,
+                            showRomanization,
+                            showSentenceGloss,
+                            canSpeak = ttsEnabled && ttsAvailable,
+                            onSpeak = { module.tts.speak(it.korean) },
+                        )
+                    }
                     ratings()
                 } else {
                     revealButton()
@@ -361,6 +379,8 @@ private fun SentenceCard(
     sentence: SentenceEntry,
     showRomanization: Boolean,
     showGloss: Boolean,
+    canSpeak: Boolean,
+    onSpeak: () -> Unit,
 ) {
     Column(
         modifier = Modifier
@@ -384,6 +404,16 @@ private fun SentenceCard(
                     modifier = Modifier
                         .background(Color(0xFF4338CA), shape = RoundedCornerShape(3.dp))
                         .padding(horizontal = 4.dp, vertical = 1.dp),
+                )
+            }
+            if (canSpeak) {
+                Text(
+                    "🔊",
+                    fontSize = 14.sp,
+                    modifier = Modifier
+                        .background(Color(0xFF334155), shape = RoundedCornerShape(4.dp))
+                        .clickable { onSpeak() }
+                        .padding(horizontal = 6.dp, vertical = 2.dp),
                 )
             }
         }

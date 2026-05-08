@@ -22,6 +22,12 @@ import kotlinx.coroutines.launch
 class MoneoModule private constructor(context: Context) {
     val prefs: MoneoPrefs = MoneoPrefs.get(context)
     val repository: MoneoRepository
+    /** Korean TTS engine for the example-sentence speaker button. Lazily
+     *  initialized so process startup doesn't pay for TextToSpeech bind
+     *  unless the user actually opens the review screen. */
+    val tts: com.poketrek.moneo.audio.TtsPlayer by lazy {
+        com.poketrek.moneo.audio.TtsPlayer(context.applicationContext)
+    }
     private val captureDir: File = File(context.filesDir, "moneo")
 
     /**

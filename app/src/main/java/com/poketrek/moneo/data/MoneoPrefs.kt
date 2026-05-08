@@ -22,6 +22,7 @@ private val KEY_ENABLED = booleanPreferencesKey("moneo_enabled")
 private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
 private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
 private val KEY_SHOW_SENTENCE_GLOSS = booleanPreferencesKey("moneo_show_sentence_gloss")
+private val KEY_TTS_ENABLED = booleanPreferencesKey("moneo_tts_enabled")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
@@ -56,6 +57,15 @@ class MoneoPrefs private constructor(private val context: Context) {
      */
     private val _showSentenceGloss = MutableStateFlow(true)
     val showSentenceGloss: StateFlow<Boolean> = _showSentenceGloss.asStateFlow()
+
+    /**
+     * Whether the example-sentence card shows a 🔊 speaker button that
+     * plays the Korean via Android's built-in TTS. Defaults on; the button
+     * is also conditionally hidden when Korean voice data isn't installed
+     * (independent of this flag).
+     */
+    private val _ttsEnabled = MutableStateFlow(true)
+    val ttsEnabled: StateFlow<Boolean> = _ttsEnabled.asStateFlow()
 
     /**
      * Toggle for the example-sentence source on the review screen.
@@ -96,6 +106,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _targetAreaId.value = prefs[KEY_TARGET_AREA]
             _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
             _showSentenceGloss.value = prefs[KEY_SHOW_SENTENCE_GLOSS] ?: true
+            _ttsEnabled.value = prefs[KEY_TTS_ENABLED] ?: true
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
             _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
@@ -129,6 +140,11 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setShowSentenceGloss(value: Boolean) {
         _showSentenceGloss.value = value
         scope.launch { context.moneoStore.edit { it[KEY_SHOW_SENTENCE_GLOSS] = value } }
+    }
+
+    fun setTtsEnabled(value: Boolean) {
+        _ttsEnabled.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_TTS_ENABLED] = value } }
     }
 
     fun setVerbatimSentences(value: Boolean) {

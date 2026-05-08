@@ -933,6 +933,16 @@ private fun MoneoSection(
             checked = verbatimSentences,
             onCheckedChange = { moneo.prefs.setVerbatimSentences(it) },
         )
+        val ttsEnabled by moneo.prefs.ttsEnabled.collectAsState()
+        ToggleRow(
+            label = "Read examples aloud",
+            sublabel = if (ttsEnabled)
+                "Tap 🔊 next to the example to hear it"
+            else
+                "Speaker button hidden",
+            checked = ttsEnabled,
+            onCheckedChange = { moneo.prefs.setTtsEnabled(it) },
+        )
         val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
         ToggleRow(
             label = "Pokémon name cards",
