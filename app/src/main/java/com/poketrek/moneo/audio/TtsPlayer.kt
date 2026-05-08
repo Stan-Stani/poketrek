@@ -16,6 +16,22 @@ import java.util.Locale
  * the engine may not be ready immediately after construction.
  */
 class TtsPlayer(context: Context) {
+    enum class Status {
+        /** Engine init hasn't completed yet — UI should wait, not warn. */
+        INITIALIZING,
+        /** Korean voice loaded, ready to speak. */
+        READY,
+        /** Engine works but Korean voice data isn't installed. */
+        MISSING_DATA,
+        /** Default TTS engine reports Korean as unsupported. */
+        UNSUPPORTED,
+        /** Engine itself failed to start. */
+        ENGINE_FAILED,
+    }
+
+    private val _status = MutableStateFlow(Status.INITIALIZING)
+    val status: StateFlow<Status> = _status.asStateFlow()
+
     private val _available = MutableStateFlow(false)
     val available: StateFlow<Boolean> = _available.asStateFlow()
 
@@ -30,12 +46,18 @@ class TtsPlayer(context: Context) {
             val ok = r == TextToSpeech.LANG_AVAILABLE
                 || r == TextToSpeech.LANG_COUNTRY_AVAILABLE
                 || r == TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
-            if (!ok) Log.w(TAG, "Korean voice data unavailable (setLanguage=$r)")
             tts.setSpeechRate(pendingRate)
             _available.value = ok
+            _status.value = when {
+                ok -> Status.READY
+                r == TextToSpeech.LANG_MISSING_DATA -> Status.MISSING_DATA
+                else -> Status.UNSUPPORTED
+            }
+            if (!ok) Log.w(TAG, "Korean voice unavailable (setLanguage=$r)")
         } else {
             Log.w(TAG, "TTS init failed (status=$status)")
             _available.value = false
+            _status.value = Status.ENGINE_FAILED
         }
     }
 

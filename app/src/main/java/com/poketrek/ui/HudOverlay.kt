@@ -541,6 +541,61 @@ private fun ToggleRow(
     }
 }
 
+@Composable
+private fun TtsHelpCard(status: com.poketrek.moneo.audio.TtsPlayer.Status) {
+    val ctx = androidx.compose.ui.platform.LocalContext.current
+    val (title, body) = when (status) {
+        com.poketrek.moneo.audio.TtsPlayer.Status.MISSING_DATA ->
+            "Korean voice not installed" to
+                "Your TTS engine works, but the Korean (한국어) voice pack hasn't been downloaded yet."
+        com.poketrek.moneo.audio.TtsPlayer.Status.UNSUPPORTED ->
+            "Default TTS engine doesn't speak Korean" to
+                "Switch the preferred engine in TTS settings — Samsung TTS or Google TTS both support Korean."
+        com.poketrek.moneo.audio.TtsPlayer.Status.ENGINE_FAILED ->
+            "TTS engine couldn't start" to
+                "Open TTS settings to pick a preferred engine and check that voice data is installed."
+        else -> return  // INITIALIZING / READY shouldn't render this card
+    }
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color(0xFFFEF3C7), shape = RoundedCornerShape(8.dp))
+            .padding(12.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        Text(title, fontWeight = FontWeight.SemiBold, fontSize = 13.sp, color = Color(0xFF92400E))
+        Text(body, fontSize = 12.sp, color = Color(0xFF92400E))
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            if (status == com.poketrek.moneo.audio.TtsPlayer.Status.MISSING_DATA) {
+                Button(
+                    onClick = {
+                        runCatching {
+                            val i = android.content.Intent(
+                                android.speech.tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA
+                            ).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+                            ctx.startActivity(i)
+                        }.onFailure { android.util.Log.w("TtsHelp", "INSTALL_TTS_DATA failed", it) }
+                    },
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
+                ) { Text("Install Korean voice", fontSize = 12.sp) }
+            }
+            Button(
+                onClick = {
+                    runCatching {
+                        val i = android.content.Intent("com.android.settings.TTS_SETTINGS")
+                            .addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+                        ctx.startActivity(i)
+                    }.onFailure { android.util.Log.w("TtsHelp", "TTS_SETTINGS failed", it) }
+                },
+                colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF92400E),
+                ),
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
+            ) { Text("Open TTS settings", fontSize = 12.sp) }
+        }
+    }
+}
+
 private fun formatSnapshot(s: com.poketrek.emu.LeafGreenRam.Snapshot): String {
     fun hex(v: Int, width: Int) = "0x" + v.toUInt().toString(16).padStart(width, '0').uppercase()
     return "X:${s.playerX} Y:${s.playerY} bank:${s.mapBank}/${s.mapId} mov:${s.movingStatus} sb1=${hex(s.saveBlockPtr, 8)}"
@@ -944,6 +999,14 @@ private fun MoneoSection(
             onCheckedChange = { moneo.prefs.setTtsEnabled(it) },
         )
         if (ttsEnabled) {
+            // Probe the engine state. Surfaces a help card when the user has
+            // TTS turned on but Korean voice data isn't installed (or the
+            // default engine doesn't support Korean).
+            val ttsStatus by moneo.tts.status.collectAsState()
+            if (ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.INITIALIZING &&
+                ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.READY) {
+                TtsHelpCard(status = ttsStatus)
+            }
             val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
             ToggleRow(
                 label = "Auto-play headword",
