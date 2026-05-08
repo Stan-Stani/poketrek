@@ -369,7 +369,24 @@ private fun SentenceCard(
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(4.dp),
     ) {
-        Text("Example", color = Color(0xFF93C5FD), fontSize = 10.sp)
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+        ) {
+            Text("Example", color = Color(0xFF93C5FD), fontSize = 10.sp)
+            if (sentence.generator?.startsWith("llm-") == true) {
+                Text(
+                    "AI",
+                    color = Color(0xFFE0E7FF),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 9.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .background(Color(0xFF4338CA), shape = RoundedCornerShape(3.dp))
+                        .padding(horizontal = 4.dp, vertical = 1.dp),
+                )
+            }
+        }
         Text(
             sentence.korean,
             color = Color.White,
