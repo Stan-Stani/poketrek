@@ -64,6 +64,11 @@ fun ReviewScreen(
     val showSentenceGloss by module.prefs.showSentenceGloss.collectAsState()
     val ttsEnabled by module.prefs.ttsEnabled.collectAsState()
     val ttsAvailable by module.tts.available.collectAsState()
+    val ttsAutoReveal by module.prefs.ttsAutoPlayReveal.collectAsState()
+    val ttsAutoFront by module.prefs.ttsAutoPlayFront.collectAsState()
+    val ttsRatePct by module.prefs.ttsRatePct.collectAsState()
+    val canSpeak = ttsEnabled && ttsAvailable
+    LaunchedEffect(ttsRatePct) { module.tts.setRate(ttsRatePct / 100f) }
     var revealed by remember(areaId) { mutableStateOf(false) }
     val verbatim by module.prefs.verbatimSentences.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
@@ -101,6 +106,19 @@ fun ReviewScreen(
     val sentence = if (revealed) {
         module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)
     } else null
+
+    // Auto-play headword when a new card surfaces (front side). Keys on
+    // vocab.id so it doesn't re-fire on toggle/recompose for the same card.
+    LaunchedEffect(vocab.id, canSpeak, ttsAutoFront) {
+        if (canSpeak && ttsAutoFront && !revealed) module.tts.speak(vocab.korean)
+    }
+    // Auto-play example sentence when the back is revealed. Keyed on
+    // (vocab, revealed) so flipping back never replays.
+    LaunchedEffect(vocab.id, revealed, canSpeak, ttsAutoReveal) {
+        if (canSpeak && ttsAutoReveal && revealed) {
+            sentence?.let { module.tts.speak(it.korean) }
+        }
+    }
 
     val onSuspendCurrent: () -> Unit = {
         // Capture the vocab being suspended so the snackbar text and Undo
@@ -170,6 +188,8 @@ fun ReviewScreen(
             showRomanization = showRomanization,
             revealed = revealed,
             onTapToReveal = { if (!revealed) revealed = true },
+            canSpeak = canSpeak,
+            onSpeak = { module.tts.speak(vocab.korean) },
         )
     }
 
@@ -234,7 +254,7 @@ fun ReviewScreen(
                                     it,
                                     showRomanization,
                                     showSentenceGloss,
-                                    canSpeak = ttsEnabled && ttsAvailable,
+                                    canSpeak = canSpeak,
                                     onSpeak = { module.tts.speak(it.korean) },
                                 )
                             }
@@ -311,6 +331,8 @@ private fun CardFront(
     showRomanization: Boolean,
     revealed: Boolean,
     onTapToReveal: () -> Unit,
+    canSpeak: Boolean,
+    onSpeak: () -> Unit,
 ) {
     val verticalPadding = if (revealed) 12.dp else 24.dp
     val koreanSize = if (revealed) 28.sp else 36.sp
@@ -323,12 +345,27 @@ private fun CardFront(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
-        Text(
-            vocab.korean,
-            color = Color.White,
-            fontWeight = FontWeight.Bold,
-            fontSize = koreanSize,
-        )
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            Text(
+                vocab.korean,
+                color = Color.White,
+                fontWeight = FontWeight.Bold,
+                fontSize = koreanSize,
+            )
+            if (canSpeak) {
+                Text(
+                    "🔊",
+                    fontSize = 16.sp,
+                    modifier = Modifier
+                        .background(Color(0xFF334155), shape = RoundedCornerShape(4.dp))
+                        .clickable { onSpeak() }
+                        .padding(horizontal = 6.dp, vertical = 2.dp),
+                )
+            }
+        }
         if (showRomanization) {
             Text(
                 vocab.romanization,

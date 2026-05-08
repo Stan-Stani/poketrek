@@ -19,6 +19,8 @@ class TtsPlayer(context: Context) {
     private val _available = MutableStateFlow(false)
     val available: StateFlow<Boolean> = _available.asStateFlow()
 
+    @Volatile private var pendingRate: Float = 1f
+
     private val tts: TextToSpeech = TextToSpeech(context.applicationContext) { status ->
         // The init callback fires on the main thread after the constructor
         // returns, so referencing `tts` here is safe even though it's a val
@@ -29,6 +31,7 @@ class TtsPlayer(context: Context) {
                 || r == TextToSpeech.LANG_COUNTRY_AVAILABLE
                 || r == TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
             if (!ok) Log.w(TAG, "Korean voice data unavailable (setLanguage=$r)")
+            tts.setSpeechRate(pendingRate)
             _available.value = ok
         } else {
             Log.w(TAG, "TTS init failed (status=$status)")
@@ -43,6 +46,17 @@ class TtsPlayer(context: Context) {
     fun speak(text: String) {
         if (!_available.value) return
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID)
+    }
+
+    /**
+     * Set the synthesis rate. 1.0 is normal; 0.5 is half-speed, 2.0
+     * double-speed. Safe to call before init completes — the value is
+     * cached and applied once the engine is ready.
+     */
+    fun setRate(rate: Float) {
+        val clamped = rate.coerceIn(0.5f, 2.0f)
+        pendingRate = clamped
+        if (_available.value) tts.setSpeechRate(clamped)
     }
 
     /** Cancel anything currently playing. */

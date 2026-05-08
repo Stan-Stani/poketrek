@@ -23,6 +23,9 @@ private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
 private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
 private val KEY_SHOW_SENTENCE_GLOSS = booleanPreferencesKey("moneo_show_sentence_gloss")
 private val KEY_TTS_ENABLED = booleanPreferencesKey("moneo_tts_enabled")
+private val KEY_TTS_AUTO_REVEAL = booleanPreferencesKey("moneo_tts_auto_reveal")
+private val KEY_TTS_AUTO_FRONT = booleanPreferencesKey("moneo_tts_auto_front")
+private val KEY_TTS_RATE_PCT = intPreferencesKey("moneo_tts_rate_pct")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
@@ -32,6 +35,10 @@ private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_thr
 const val DEFAULT_AREA_GATE_THRESHOLD_PCT = 80
 const val MIN_AREA_GATE_THRESHOLD_PCT = 0
 const val MAX_AREA_GATE_THRESHOLD_PCT = 100
+
+const val DEFAULT_TTS_RATE_PCT = 100
+const val MIN_TTS_RATE_PCT = 50
+const val MAX_TTS_RATE_PCT = 200
 
 /**
  * Moneo's user preferences. Intentionally separate from [MovementBudget]'s
@@ -66,6 +73,18 @@ class MoneoPrefs private constructor(private val context: Context) {
      */
     private val _ttsEnabled = MutableStateFlow(true)
     val ttsEnabled: StateFlow<Boolean> = _ttsEnabled.asStateFlow()
+
+    /** Auto-speak the example sentence when the back of the card is revealed. */
+    private val _ttsAutoPlayReveal = MutableStateFlow(false)
+    val ttsAutoPlayReveal: StateFlow<Boolean> = _ttsAutoPlayReveal.asStateFlow()
+
+    /** Auto-speak the headword when a new card is shown (front side). */
+    private val _ttsAutoPlayFront = MutableStateFlow(false)
+    val ttsAutoPlayFront: StateFlow<Boolean> = _ttsAutoPlayFront.asStateFlow()
+
+    /** Speech rate as percent of normal (50–200; 100 = 1.0x). */
+    private val _ttsRatePct = MutableStateFlow(DEFAULT_TTS_RATE_PCT)
+    val ttsRatePct: StateFlow<Int> = _ttsRatePct.asStateFlow()
 
     /**
      * Toggle for the example-sentence source on the review screen.
@@ -107,6 +126,11 @@ class MoneoPrefs private constructor(private val context: Context) {
             _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
             _showSentenceGloss.value = prefs[KEY_SHOW_SENTENCE_GLOSS] ?: true
             _ttsEnabled.value = prefs[KEY_TTS_ENABLED] ?: true
+            _ttsAutoPlayReveal.value = prefs[KEY_TTS_AUTO_REVEAL] ?: false
+            _ttsAutoPlayFront.value = prefs[KEY_TTS_AUTO_FRONT] ?: false
+            _ttsRatePct.value =
+                (prefs[KEY_TTS_RATE_PCT] ?: DEFAULT_TTS_RATE_PCT)
+                    .coerceIn(MIN_TTS_RATE_PCT, MAX_TTS_RATE_PCT)
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
             _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
@@ -145,6 +169,23 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setTtsEnabled(value: Boolean) {
         _ttsEnabled.value = value
         scope.launch { context.moneoStore.edit { it[KEY_TTS_ENABLED] = value } }
+    }
+
+    fun setTtsAutoPlayReveal(value: Boolean) {
+        _ttsAutoPlayReveal.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_TTS_AUTO_REVEAL] = value } }
+    }
+
+    fun setTtsAutoPlayFront(value: Boolean) {
+        _ttsAutoPlayFront.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_TTS_AUTO_FRONT] = value } }
+    }
+
+    fun setTtsRatePct(value: Int) {
+        val v = value.coerceIn(MIN_TTS_RATE_PCT, MAX_TTS_RATE_PCT)
+        if (v == _ttsRatePct.value) return
+        _ttsRatePct.value = v
+        scope.launch { context.moneoStore.edit { it[KEY_TTS_RATE_PCT] = v } }
     }
 
     fun setVerbatimSentences(value: Boolean) {

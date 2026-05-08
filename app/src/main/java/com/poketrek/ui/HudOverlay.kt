@@ -937,12 +937,48 @@ private fun MoneoSection(
         ToggleRow(
             label = "Read examples aloud",
             sublabel = if (ttsEnabled)
-                "Tap 🔊 next to the example to hear it"
+                "Tap 🔊 next to the headword or example to hear it"
             else
-                "Speaker button hidden",
+                "Speaker buttons hidden",
             checked = ttsEnabled,
             onCheckedChange = { moneo.prefs.setTtsEnabled(it) },
         )
+        if (ttsEnabled) {
+            val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
+            ToggleRow(
+                label = "Auto-play headword",
+                sublabel = if (ttsAutoFront)
+                    "Speak Korean automatically when a new card appears"
+                else
+                    "Front side stays silent until you tap 🔊",
+                checked = ttsAutoFront,
+                onCheckedChange = { moneo.prefs.setTtsAutoPlayFront(it) },
+            )
+            val ttsAutoReveal by moneo.prefs.ttsAutoPlayReveal.collectAsState()
+            ToggleRow(
+                label = "Auto-play example on reveal",
+                sublabel = if (ttsAutoReveal)
+                    "Speak the example sentence as soon as you reveal the back"
+                else
+                    "Example stays silent until you tap 🔊",
+                checked = ttsAutoReveal,
+                onCheckedChange = { moneo.prefs.setTtsAutoPlayReveal(it) },
+            )
+            val ttsRatePct by moneo.prefs.ttsRatePct.collectAsState()
+            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(
+                    "Speech rate: ${"%.2f".format(ttsRatePct / 100f)}×",
+                    fontSize = 12.sp,
+                    color = Color(0xFF374151),
+                )
+                Slider(
+                    value = ttsRatePct.toFloat(),
+                    onValueChange = { moneo.prefs.setTtsRatePct(it.toInt()) },
+                    valueRange = com.poketrek.moneo.data.MIN_TTS_RATE_PCT.toFloat()..
+                        com.poketrek.moneo.data.MAX_TTS_RATE_PCT.toFloat(),
+                )
+            }
+        }
         val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
         ToggleRow(
             label = "Pokémon name cards",
