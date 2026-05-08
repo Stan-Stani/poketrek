@@ -10,7 +10,8 @@
       "gloss": "What kind of training shall we do today?",
       "targetForm": "할까",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:타다",
@@ -19,7 +20,8 @@
       "gloss": "I take the bus to the next city.",
       "targetForm": "타",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:있다",
@@ -28,7 +30,8 @@
       "gloss": "There are five potions in my bag.",
       "targetForm": "있",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:메다",
@@ -37,7 +40,8 @@
       "gloss": "The trainer carries a bag slung over their shoulder.",
       "targetForm": "메",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:회복",
@@ -46,9 +50,9 @@
       "gloss": "My Pokémon got healed at the Pokémon Center.",
       "targetForm": "회복",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
-
     {
       "vocabId": "topik-v2:키",
       "korean": "내 포켓몬은 키가 작아요.",
@@ -56,7 +60,8 @@
       "gloss": "My Pokémon is short.",
       "targetForm": "키",
       "areaId": "topik_1",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:끄다",
@@ -65,7 +70,8 @@
       "gloss": "The trainer turned off the computer and set out.",
       "targetForm": "끄",
       "areaId": "topik_1",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:깊다",
@@ -74,7 +80,8 @@
       "gloss": "This cave is very deep.",
       "targetForm": "깊",
       "areaId": "topik_2",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:가다",
@@ -83,7 +90,8 @@
       "gloss": "Tomorrow I'll go to the next city.",
       "targetForm": "가",
       "areaId": "topik_1",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:보다",
@@ -92,9 +100,9 @@
       "gloss": "The trainer is watching the match.",
       "targetForm": "보",
       "areaId": "topik_1",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
-
     {
       "vocabId": "rom-species:이상해씨",
       "korean": "이상해씨는 풀 타입 포켓몬이에요.",
@@ -102,7 +110,8 @@
       "gloss": "Bulbasaur is a Grass-type Pokémon.",
       "targetForm": "이상해씨",
       "areaId": "pallet_town",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:이상해풀",
@@ -111,7 +120,8 @@
       "gloss": "A sprout grows on Ivysaur's back.",
       "targetForm": "이상해풀",
       "areaId": "pallet_town",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:이상해꽃",
@@ -120,7 +130,8 @@
       "gloss": "Venusaur carries a large flower on its back.",
       "targetForm": "이상해꽃",
       "areaId": "pallet_town",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파이리",
@@ -129,7 +140,8 @@
       "gloss": "A small flame burns on Charmander's tail.",
       "targetForm": "파이리",
       "areaId": "pallet_town",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:리자드",
@@ -138,9 +150,9 @@
       "gloss": "Charmeleon evolves from Charmander.",
       "targetForm": "리자드",
       "areaId": "pallet_town",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
-
     {
       "vocabId": "etymology-roots:갑",
       "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
@@ -148,7 +160,8 @@
       "gloss": "갑 is an old word meaning a turtle's shell.",
       "targetForm": "갑",
       "areaId": "pewter_city",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "etymology-roots:강철",
@@ -157,7 +170,8 @@
       "gloss": "강철 means hardened steel.",
       "targetForm": "강철",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "etymology-roots:개구리",
@@ -166,7 +180,8 @@
       "gloss": "Frogs live near ponds.",
       "targetForm": "개구리",
       "areaId": "rom_mined",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "etymology-roots:거북",
@@ -175,7 +190,8 @@
       "gloss": "Turtles walk slowly.",
       "targetForm": "거북",
       "areaId": "pallet_town",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "etymology-roots:고슴도치",
@@ -184,7 +200,8 @@
       "gloss": "A hedgehog has spines on its back.",
       "targetForm": "고슴도치",
       "areaId": "route_23",
-      "source": "themed-v1"
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7"
     }
   ]
 }
