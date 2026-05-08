@@ -113,6 +113,18 @@ Two parallel sentence sources, runtime-toggled by **Settings → "Verbatim ROM e
 - `MoneoModule.init` loads both JSON files via separate `runCatching { ... }` blocks; either failing silently degrades to empty without crashing the other.
 - `SentenceCorpusTest` validates both files: substring/duplicates/blanks for each, ROM coverage ≥0.50, study coverage =1.00. The original "no-spoiler validator Gradle task" from the early plan never shipped — JUnit covers the same constraints.
 
+### Sentence rotation — what `originalSource` / `rotatedFromArea` mean
+
+The `mined` and `topik` corpora were built by mining each lemma's highest-frequency occurrence anywhere in the static ROM corpus (Pokédex / item descriptions / menu strings / dialog). That's also where `originalKorean` and `originalSource` come from — the *true* origin of the line. But cards also tag a `firstAreaEncountered` (from the live-runtime corpus), and a Pokédex flavor-text example doesn't read like dialog from "Cerulean City" even when the card claims that's where you first saw the word.
+
+`tools/moneo/rotate_sentences_by_area.py` fixes that mismatch: for each card with a `firstAreaEncountered`, it searches the live-corpus records reachable from that area for the highest-quality occurrence of the lemma, and **swaps the displayed `korean`** to that record's text. The original mining attribution is preserved as `originalKorean` / `originalSource`, and the new attribution is recorded as `rotatedFromArea` + `source` (the new live-rec id).
+
+**Why:** card claim and example shouldn't disagree. "First encountered in Cerulean" + a Pokédex example feels disjointed; swapping in an actual Cerulean dialog snippet that contains the lemma gives the deck a "you saw this word *here*" feel.
+
+**Side effect — not a security mechanism:** rotation also weakens the per-vocab → original-game-scene mapping (the `originalSource` is hidden in metadata, only `source` shows in the UI). This is *not* a spoiler control — anyone who recognizes the dialog will recognize it either way. Real spoiler avoidance is the verbatim toggle (which now selects between the rotated rom corpus and the spoiler-free `study`/`themed` corpora).
+
+**Quality scoring:** the script's `quality_score` rejects records dominated by kana-romaji bigrams (untranslated noise) and requires at least one Korean grammar marker — keeps fragmentary or untranslated mid-sentence ROM strings out of the deck.
+
 ---
 
 ## Text & Font Encoding — Complete Technical Analysis
