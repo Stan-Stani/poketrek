@@ -129,7 +129,8 @@ fun EmulatorScreen(
 
         if (pendingBaseline != null && !settingsOpen) {
             CalibrationPendingChip(
-                onOpenSettings = { settingsOpen = true },
+                onCapture = { runner.finishCalibration() },
+                onShowSettings = { settingsOpen = true },
                 modifier = Modifier
                     .align(Alignment.TopCenter)
                     .padding(top = 8.dp),

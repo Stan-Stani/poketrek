@@ -154,12 +154,19 @@ fun HudBadge(
  * Floating reminder rendered while a calibration baseline is captured but not
  * yet completed. The settings sheet is dismissed after baseline capture so the
  * player can walk one tile in the overworld; this chip nudges them back.
+ *
+ * Tapping "Capture" runs the calibration directly. On success the baseline
+ * clears (so this chip disappears on its own); on failure the settings sheet
+ * is opened so the user can see the error message and retry.
  */
 @Composable
 fun CalibrationPendingChip(
-    onOpenSettings: () -> Unit,
+    onCapture: suspend () -> com.poketrek.emu.RomCalibrator.Result,
+    onShowSettings: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    var capturing by remember { mutableStateOf(false) }
+    val scope = rememberCoroutineScope()
     Row(
         modifier = modifier
             .background(Color(0xCC92400E), shape = RoundedCornerShape(10.dp))
@@ -174,11 +181,32 @@ fun CalibrationPendingChip(
             fontSize = 11.sp,
         )
         Button(
-            onClick = onOpenSettings,
+            onClick = {
+                if (capturing) return@Button
+                capturing = true
+                scope.launch {
+                    try {
+                        val result = onCapture()
+                        if (result !is com.poketrek.emu.RomCalibrator.Result.Ok) {
+                            onShowSettings()
+                        }
+                    } finally {
+                        capturing = false
+                    }
+                }
+            },
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF111827)),
             contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
         ) {
-            Text("Capture", color = Color.White, fontSize = 11.sp)
+            if (capturing) {
+                CircularProgressIndicator(
+                    modifier = Modifier.size(14.dp),
+                    strokeWidth = 2.dp,
+                    color = Color.White,
+                )
+            } else {
+                Text("Capture", color = Color.White, fontSize = 11.sp)
+            }
         }
     }
 }
