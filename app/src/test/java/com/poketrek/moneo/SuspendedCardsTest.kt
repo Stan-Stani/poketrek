@@ -33,7 +33,6 @@ class SuspendedCardsTest {
     private fun vocab(id: String, korean: String = "가"): VocabEntry = VocabEntry(
         id = id,
         korean = korean,
-        romanization = "ga",
         gloss = "go",
         partOfSpeech = "verb",
         areaId = "aid",

@@ -20,7 +20,6 @@ private val Context.moneoStore by preferencesDataStore("moneo_prefs")
 
 private val KEY_ENABLED = booleanPreferencesKey("moneo_enabled")
 private val KEY_TARGET_AREA = stringPreferencesKey("moneo_target_area")
-private val KEY_SHOW_ROMAJI = booleanPreferencesKey("moneo_show_romanization")
 private val KEY_SHOW_SENTENCE_GLOSS = booleanPreferencesKey("moneo_show_sentence_gloss")
 private val KEY_TTS_ENABLED = booleanPreferencesKey("moneo_tts_enabled")
 private val KEY_TTS_AUTO_REVEAL = booleanPreferencesKey("moneo_tts_auto_reveal")
@@ -55,13 +54,9 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _targetAreaId = MutableStateFlow<String?>(null)
     val targetAreaId: StateFlow<String?> = _targetAreaId.asStateFlow()
 
-    private val _showRomanization = MutableStateFlow(true)
-    val showRomanization: StateFlow<Boolean> = _showRomanization.asStateFlow()
-
     /**
      * Whether to render the example sentence's English gloss on the back of
-     * the review card. Defaults on; toggleable from the review header next to
-     * the romanization toggle.
+     * the review card. Defaults on; toggleable from the review header.
      */
     private val _showSentenceGloss = MutableStateFlow(true)
     val showSentenceGloss: StateFlow<Boolean> = _showSentenceGloss.asStateFlow()
@@ -132,7 +127,6 @@ class MoneoPrefs private constructor(private val context: Context) {
             val prefs = context.moneoStore.data.first()
             _enabled.value = prefs[KEY_ENABLED] ?: false
             _targetAreaId.value = prefs[KEY_TARGET_AREA]
-            _showRomanization.value = prefs[KEY_SHOW_ROMAJI] ?: true
             _showSentenceGloss.value = prefs[KEY_SHOW_SENTENCE_GLOSS] ?: true
             _ttsEnabled.value = prefs[KEY_TTS_ENABLED] ?: true
             _ttsAutoPlayReveal.value = prefs[KEY_TTS_AUTO_REVEAL] ?: false
@@ -164,11 +158,6 @@ class MoneoPrefs private constructor(private val context: Context) {
                 else prefs[KEY_TARGET_AREA] = areaId
             }
         }
-    }
-
-    fun setShowRomanization(value: Boolean) {
-        _showRomanization.value = value
-        scope.launch { context.moneoStore.edit { it[KEY_SHOW_ROMAJI] = value } }
     }
 
     fun setShowSentenceGloss(value: Boolean) {

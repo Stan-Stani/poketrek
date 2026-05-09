@@ -60,7 +60,6 @@ fun ReviewScreen(
     modifier: Modifier = Modifier,
 ) {
     val cards by module.repository.cards.collectAsState()
-    val showRomanization by module.prefs.showRomanization.collectAsState()
     val showSentenceGloss by module.prefs.showSentenceGloss.collectAsState()
     val ttsEnabled by module.prefs.ttsEnabled.collectAsState()
     val ttsAvailable by module.tts.available.collectAsState()
@@ -145,9 +144,9 @@ fun ReviewScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
         ) {
             StateChip(record.snapshot)
-            // Suspend + romanization toggle live in the header, far from the
-            // grade buttons — Suspend is destructive-ish (removes from review)
-            // so it must not sit alongside Again/Hard/Good/Easy.
+            // Suspend lives in the header, far from the grade buttons —
+            // Suspend is destructive-ish (removes from review) so it must
+            // not sit alongside Again/Hard/Good/Easy.
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 Button(
                     onClick = onSuspendCurrent,
@@ -155,17 +154,6 @@ fun ReviewScreen(
                     contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
                 ) {
                     Text("Suspend", color = Color(0xFF94A3B8), fontSize = 11.sp)
-                }
-                Button(
-                    onClick = { module.prefs.setShowRomanization(!showRomanization) },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
-                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
-                ) {
-                    Text(
-                        if (showRomanization) "발음 ✓" else "발음 —",
-                        color = Color(0xFF94A3B8),
-                        fontSize = 11.sp,
-                    )
                 }
                 Button(
                     onClick = { module.prefs.setShowSentenceGloss(!showSentenceGloss) },
@@ -185,7 +173,6 @@ fun ReviewScreen(
     val front: @Composable () -> Unit = {
         CardFront(
             vocab = vocab,
-            showRomanization = showRomanization,
             revealed = revealed,
             onTapToReveal = { if (!revealed) revealed = true },
             canSpeak = canSpeak,
@@ -252,7 +239,6 @@ fun ReviewScreen(
                             sentence?.let {
                                 SentenceCard(
                                     it,
-                                    showRomanization,
                                     showSentenceGloss,
                                     canSpeak = canSpeak,
                                     onSpeak = { module.tts.speak(it.korean) },
@@ -280,7 +266,6 @@ fun ReviewScreen(
                     sentence?.let {
                         SentenceCard(
                             it,
-                            showRomanization,
                             showSentenceGloss,
                             canSpeak = ttsEnabled && ttsAvailable,
                             onSpeak = { module.tts.speak(it.korean) },
@@ -328,7 +313,6 @@ private fun StateChip(snapshot: CardSnapshot) {
 @Composable
 private fun CardFront(
     vocab: VocabEntry,
-    showRomanization: Boolean,
     revealed: Boolean,
     onTapToReveal: () -> Unit,
     canSpeak: Boolean,
@@ -365,14 +349,6 @@ private fun CardFront(
                         .padding(horizontal = 6.dp, vertical = 2.dp),
                 )
             }
-        }
-        if (showRomanization) {
-            Text(
-                vocab.romanization,
-                color = Color(0xFF9CA3AF),
-                fontFamily = FontFamily.Monospace,
-                fontSize = 14.sp,
-            )
         }
         Text(
             vocab.partOfSpeech,
@@ -414,7 +390,6 @@ private fun CardBack(vocab: VocabEntry) {
 @Composable
 private fun SentenceCard(
     sentence: SentenceEntry,
-    showRomanization: Boolean,
     showGloss: Boolean,
     canSpeak: Boolean,
     onSpeak: () -> Unit,
@@ -460,14 +435,6 @@ private fun SentenceCard(
             fontWeight = FontWeight.Medium,
             fontSize = 18.sp,
         )
-        if (showRomanization) {
-            Text(
-                sentence.romanization,
-                color = Color(0xFF94A3B8),
-                fontFamily = FontFamily.Monospace,
-                fontSize = 12.sp,
-            )
-        }
         if (showGloss) {
             Text(sentence.gloss, color = Color(0xFFCBD5E1), fontSize = 13.sp)
         }

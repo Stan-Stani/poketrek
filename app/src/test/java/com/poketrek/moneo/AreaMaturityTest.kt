@@ -22,7 +22,6 @@ class AreaMaturityTest {
     private fun vocab(id: String, areaId: String): VocabEntry = VocabEntry(
         id = id,
         korean = id,
-        romanization = id,
         gloss = id,
         partOfSpeech = "noun",
         areaId = areaId,

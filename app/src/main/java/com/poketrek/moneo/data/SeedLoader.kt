@@ -40,7 +40,6 @@ object SeedLoader {
             out += VocabEntry(
                 id = "$sourceTag:$korean",
                 korean = korean,
-                romanization = o.getString("romanization"),
                 gloss = o.getString("gloss"),
                 partOfSpeech = o.getString("partOfSpeech"),
                 // Prefer firstAreaEncountered (set by the attribution

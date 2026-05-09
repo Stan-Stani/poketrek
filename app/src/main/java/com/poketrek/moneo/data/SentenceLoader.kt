@@ -14,7 +14,6 @@ import org.json.JSONObject
 data class SentenceEntry(
     val vocabId: String,
     val korean: String,
-    val romanization: String,
     val gloss: String,
     /**
      * Optional override of the substring that proves this sentence exercises
@@ -72,7 +71,6 @@ object SentenceLoader {
             out += SentenceEntry(
                 vocabId = o.getString("vocabId"),
                 korean = o.getString("korean"),
-                romanization = o.getString("romanization"),
                 gloss = o.getString("gloss"),
                 targetForm = o.optString("targetForm").takeIf { it.isNotEmpty() },
                 areaId = o.optString("areaId").takeIf { it.isNotEmpty() },

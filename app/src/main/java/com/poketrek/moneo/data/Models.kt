@@ -12,7 +12,6 @@ data class VocabEntry(
     /** Stable id: `"<sourceTag>:<korean>"`. Survives across seed-file edits. */
     val id: String,
     val korean: String,
-    val romanization: String,
     val gloss: String,
     val partOfSpeech: String,
     val areaId: String,

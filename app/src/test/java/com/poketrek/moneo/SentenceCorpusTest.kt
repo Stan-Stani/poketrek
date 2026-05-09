@@ -103,7 +103,7 @@ class SentenceCorpusTest {
     @Test fun noBlankFieldsRom() {
         val (_, sentences) = load("sentences-ko-rom.json")
         val bad = sentences.filter {
-            it.korean.isBlank() || it.romanization.isBlank() || it.gloss.isBlank()
+            it.korean.isBlank() || it.gloss.isBlank()
         }
         assertTrue("ROM sentences with blank fields: ${bad.map { it.vocabId }}", bad.isEmpty())
     }
@@ -111,7 +111,7 @@ class SentenceCorpusTest {
     @Test fun noBlankFieldsStudy() {
         val (_, sentences) = load("sentences-ko-study.json")
         val bad = sentences.filter {
-            it.korean.isBlank() || it.romanization.isBlank() || it.gloss.isBlank()
+            it.korean.isBlank() || it.gloss.isBlank()
         }
         assertTrue("Study sentences with blank fields: ${bad.map { it.vocabId }}", bad.isEmpty())
     }
