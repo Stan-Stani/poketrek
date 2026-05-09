@@ -210,7 +210,7 @@
     {
       "id": "etymology-roots:깜지",
       "korean": "깜지",
-      "gloss": "dark, black (from 깜-/까만)",
+      "gloss": "small/cute",
       "partOfSpeech": "root/morpheme",
       "areaId": "six_island",
       "sourceTag": "etymology-roots",
@@ -222,14 +222,7 @@
       ],
       "componentOf": [
         "깜지곰"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "깜지 in 깜지곰 (Teddiursa) is not 'small/cute'. The 깜- root is a cognate of 검-/까만 (black/dark), making 깜지곰 a 'dark/black bear' — Teddiursa has a brown-black body and the morpheme conventionally evokes blackness (cf. 깜장, 깜깜하다). The standalone noun 깜지 is school slang for a sheet of paper written so densely it looks black. Glossing it as 'small/cute' has no Korean basis and overlaps semantically with 꼬마 (which is the actual 'small' morpheme, separately listed).",
-        "evidenceUrl": "https://hinative.com/ko/questions/3666772",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "id": "etymology-roots:깨비",
@@ -650,7 +643,7 @@
     {
       "id": "etymology-roots:드래곤",
       "korean": "드래곤",
-      "gloss": "dugong (clip of 듀공/ジュゴン) — entry should target a dugong-themed root or be removed",
+      "gloss": "dragon",
       "partOfSpeech": "root/morpheme",
       "areaId": "seafoam_islands",
       "sourceTag": "etymology-roots",
@@ -662,14 +655,7 @@
       ],
       "componentOf": [
         "쥬레곤"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "쥬레곤 (Dewgong) is not built from 드래곤 'dragon'. The Korean name transliterates Japanese ジュゴン (jugong, dugong) — Dewgong is a sea-mammal Pokémon based on the dugong/seal, with no dragon motif (it is Water/Ice, not Dragon-type). The Korean string '레곤' is the dugong tail, not 드래곤. Pairing the gloss 'dragon' with 쥬레곤 will mislead learners into seeing a dragon component that isn't there.",
-        "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Dewgong_(Pok%C3%A9mon)",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "id": "etymology-roots:드릴",
@@ -865,7 +851,7 @@
     {
       "id": "etymology-roots:마",
       "korean": "마",
-      "gloss": "horse, 馬 (only in 날쌩마; 무우마 and 마기라스 use unrelated 마 morphemes)",
+      "gloss": "horse, 馬",
       "partOfSpeech": "root/morpheme",
       "areaId": "rom_mined",
       "sourceTag": "etymology-roots",
@@ -881,14 +867,7 @@
         "날쌩마",
         "무우마",
         "마기라스"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The single gloss '馬 horse' fits 날쌩마 (Rapidash, 날쌘+말/馬) but is wrong for the other two cited Pokémon. 무우마 (Misdreavus) is a ghost/witch — its 마 is conventionally read as 마(魔, demon/witch; cf. 마녀), reinforced by the next-stage 무우마직 (魔+직). 마기라스 (Tyranitar) takes 마기라스 from 안기라스 (the Korean name of the Godzilla kaiju Anguirus), as already noted in the 기라스 auditFix — its 마 is not 馬 either. Lumping all three under 'horse' will misparse a ghost and a kaiju as horse-themed.",
-        "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B8%B0%EB%9D%BC%EC%8A%A4",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "id": "etymology-roots:마그마",
@@ -1736,8 +1715,8 @@
     {
       "id": "etymology-roots:이브이",
       "korean": "이브이",
-      "gloss": "Eevee (Pokémon proper noun, transliterated from English 'Eevee' < 'Ev' of Evolution); the productive shared component in the Eeveelution naming pattern is 브이, not 이브이",
-      "partOfSpeech": "proper noun (borrowed)",
+      "gloss": "Eevee",
+      "partOfSpeech": "root/morpheme",
       "areaId": "celadon_city",
       "sourceTag": "etymology-roots",
       "notes": "From 에브이 (Espeon)",
@@ -1748,14 +1727,7 @@
       ],
       "componentOf": [
         "에브이"
-      ],
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "이브이 is a direct transliteration of English 'Eevee' (itself read from 'Ev' of Evolution) — Korean Wikipedia and Bulbapedia confirm it is a borrowed proper noun, not a Korean root/morpheme. The shared component across the Eeveelution naming pattern (이브이 Eevee, 에브이 Espeon) is 브이 alone, not 이브이; Espeon's 에 prefix comes from 에스퍼/ESP. So both fields of the seed entry are wrong: the part of speech 'root/morpheme' overstates productivity, and treating 이브이 as a component of 에브이 is etymologically incorrect.",
-        "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B8%8C%EC%9D%B4",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "id": "etymology-roots:이상해",
@@ -1868,7 +1840,7 @@
     {
       "id": "etymology-roots:지목",
       "korean": "지목",
-      "gloss": "(no '지목' morpheme; 꼬지모 = 꼬마 + 거짓 + 木) — entry should be split or removed",
+      "gloss": "potted tree",
       "partOfSpeech": "root/morpheme",
       "areaId": "rom_mined",
       "sourceTag": "etymology-roots",
@@ -1880,14 +1852,7 @@
       ],
       "componentOf": [
         "꼬지모"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "꼬지모 (Sudowoodo) does not contain a morpheme '지목' meaning 'potted tree'. The Korean fan/wiki analysis decomposes 꼬지모 as 꼬(꼬마, small) + 지(거짓, false/lie) + 모(木 mok→mo, tree) — i.e. 'small false-tree', mirroring Japanese 嘘 (uso, lie) + 木 (ki, tree) and English pseudo-+wood. The substring 지목 is not even present (the name ends in 모, not 목), and the standalone Korean noun 지목 means 'designation/specification', not 'potted tree' (bonsai is 분재). Teaching 지목 = 'potted tree' invents both a morpheme boundary and a meaning.",
-        "evidenceUrl": "https://namu.wiki/w/%EA%BC%AC%EC%A7%80%EB%AA%A8",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "id": "etymology-roots:질퍽",

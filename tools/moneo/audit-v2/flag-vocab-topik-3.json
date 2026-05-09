@@ -1,0 +1,33 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [535, 713],
+  "inspected": 178,
+  "flagged": [
+    {
+      "korean": "네",
+      "gloss": "yes; four (counter)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "The parenthetical '(counter)' is misleading. 네 is not itself a counter — it is the modifier/determiner form of the native Korean numeral 넷 ('four'), used immediately before counters (네 사람 'four people', 네 권 'four books'). A learner reading 'four (counter)' could mistakenly assume 네 functions as a counting word like 명/권/장. Better gloss: 'yes; four (before counters)' or 'yes; four (modifier form of 넷)'.",
+      "suggestion": {
+        "gloss": "yes; four (before counters, modifier form of 넷)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/unit-1-lesson-10/",
+      "hadPriorAuditFix": false
+    },
+    {
+      "korean": "않다",
+      "gloss": "not to do",
+      "partOfSpeech": "verb/adj",
+      "verdict": "mistranslation",
+      "issue": "않다 is an auxiliary/negation verb almost exclusively used in the construction V-지 않다 ('does not V' / 'is not Adj'). It inherits verb-or-adjective behavior from the predicate it negates rather than meaning 'to do not' on its own. The bare gloss 'not to do' suggests an active independent verb meaning 'refrain from doing', which obscures its grammaticalised auxiliary role. A learner gloss should signal the auxiliary nature, e.g. '(auxiliary) to not do/be (with -지)'.",
+      "suggestion": {
+        "gloss": "(auxiliary) to not do; to not be (in -지 않다)",
+        "partOfSpeech": "verb/adj"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%95%8A%EB%8B%A4",
+      "hadPriorAuditFix": false
+    }
+  ]
+}

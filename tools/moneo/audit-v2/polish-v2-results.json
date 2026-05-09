@@ -1,0 +1,29 @@
+{
+  "polishedAt": "2026-05-09",
+  "polished": [
+    {
+      "vocabId": "topik-v2:쌀",
+      "korean": "어머니가 쌀로 밥을 지어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Korean sentence is grammatical and idiomatic — 쌀(uncooked rice) + 로(instrumental) + 밥을 짓다(cook rice/make a meal) is the canonical collocation. However, the English gloss 'Mother cooks rice from grains' collapses the very 쌀(uncooked)/밥(cooked) distinction the example sentence exists to teach: a learner cannot tell which Korean word is the headword 쌀, and 'grains' is an unidiomatic stand-in for 'uncooked rice'. Re-gloss to preserve the contrast.",
+      "suggestion": "Mother cooks rice (밥) from raw rice (쌀).",
+      "evidenceUrl": "https://hinative.com/questions/474327",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": null,
+      "korean": "이브이",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "이브이 is a direct transliteration of English 'Eevee' (itself read from 'Ev' of Evolution) — Korean Wikipedia and Bulbapedia confirm it is a borrowed proper noun, not a Korean root/morpheme. The shared component across the Eeveelution naming pattern (이브이 Eevee, 에브이 Espeon) is 브이 alone, not 이브이; Espeon's 에 prefix comes from 에스퍼/ESP. So both fields of the seed entry are wrong: the part of speech 'root/morpheme' overstates productivity, and treating 이브이 as a component of 에브이 is etymologically incorrect.",
+      "suggestion": {
+        "gloss": "Eevee (Pokémon proper noun, transliterated from English 'Eevee' < 'Ev' of Evolution); the productive shared component in the Eeveelution naming pattern is 브이, not 이브이",
+        "partOfSpeech": "proper noun (borrowed)"
+      },
+      "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B8%8C%EC%9D%B4",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    }
+  ],
+  "summary": {"clear": 0, "fix": 2, "flag-only": 0}
+}

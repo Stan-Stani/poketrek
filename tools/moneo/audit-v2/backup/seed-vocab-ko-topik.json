@@ -526,7 +526,7 @@
     },
     {
       "korean": "메다",
-      "gloss": "to carry on the shoulder; to be choked up (목/가슴이 메다)",
+      "gloss": "to carry on the shoulder",
       "partOfSpeech": "verb/adj",
       "areaId": "topik_2",
       "frequency": 115,
@@ -538,13 +538,6 @@
       "filledViaSubstring": {
         "rec_id": 28671,
         "score": 35
-      },
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The gloss covers only one of two everyday senses. 메다 also means 'to be choked up / blocked / clogged' — the standard collocations 목이 메다 (one's throat is choked up, with emotion or food) and 가슴이 메다 (one's chest is choked) are TOPIK-level vocabulary and appear far more often in narrative dialogue than the 'sling on shoulder' sense. A learner reading 가슴이 메다 in-game with only 'to carry on the shoulder' as the gloss would be misled. Mirrors the auditFix style applied to 몰다 (idx 1) where a narrow gloss was widened.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A9%94%EB%8B%A4",
-        "auditedAt": "2026-05-09",
-        "round": 2
       }
     },
     {
@@ -2909,7 +2902,7 @@
     },
     {
       "korean": "지",
-      "gloss": "(time) since (bound noun used in -(으)ㄴ 지 ... 되다)",
+      "gloss": "ago (suffix)",
       "partOfSpeech": "noun/adv",
       "areaId": "topik_2",
       "frequency": 14,
@@ -2921,13 +2914,6 @@
       "filledViaSubstring": {
         "rec_id": 29819,
         "score": 42
-      },
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "'ago' is the wrong English equivalent. 지 is a dependent (bound) noun used in the construction -(으)ㄴ 지 X 되다 to express 'X (time) has passed since (the action)'. It marks the elapsed duration since an event, i.e. 'since', not 'ago'. 'ago' in Korean is 전 (e.g., 3년 전 'three years ago'), and 전 is the structural opposite of this 지. Glossing 지 as 'ago' will cause learners to confuse 지 with 전 and produce ungrammatical sentences like *3년 지 instead of 한국에 온 지 3년 됐다 ('it's been 3 years since I came to Korea'). Also 'suffix' is misleading — 지 is a bound noun, not a suffix.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%80",
-        "auditedAt": "2026-05-09",
-        "round": 2
       }
     },
     {
@@ -9839,8 +9825,8 @@
     },
     {
       "korean": "같이",
-      "gloss": "together (adv); like, as (particle attached to noun)",
-      "partOfSpeech": "adverb/particle",
+      "gloss": "together; like",
+      "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
       "topikLevel": "A",
@@ -9850,14 +9836,7 @@
       ],
       "liveRecIds": [
         4337
-      ],
-      "auditFix": {
-        "verdict": "pos_mismatch",
-        "issue": "같이 functions as an adverb ('together', e.g., 같이 먹다) and as a postpositional particle attached to nouns ('like, as', e.g., 달같이 밝다). It is never a noun. The 'noun' element of 'noun/adv' is incorrect; PoS should be 'adverb' (or 'adverb/particle' to capture both senses cleanly). Mirrors the audited fix for 함께 (idx 491).",
-        "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-13/",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "korean": "거리",
@@ -10501,7 +10480,7 @@
     },
     {
       "korean": "네",
-      "gloss": "yes; four (before counters, modifier form of 넷)",
+      "gloss": "yes; four (counter)",
       "partOfSpeech": "noun/adv",
       "areaId": "topik_1",
       "frequency": 1,
@@ -10513,13 +10492,6 @@
       "filledViaSubstring": {
         "rec_id": 29825,
         "score": 37
-      },
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The parenthetical '(counter)' is misleading. 네 is not itself a counter — it is the modifier/determiner form of the native Korean numeral 넷 ('four'), used immediately before counters (네 사람 'four people', 네 권 'four books'). A learner reading 'four (counter)' could mistakenly assume 네 functions as a counting word like 명/권/장. Better gloss: 'yes; four (before counters)' or 'yes; four (modifier form of 넷)'.",
-        "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/unit-1-lesson-10/",
-        "auditedAt": "2026-05-09",
-        "round": 2
       }
     },
     {
@@ -11695,7 +11667,7 @@
     },
     {
       "korean": "않다",
-      "gloss": "(auxiliary) to not do; to not be (in -지 않다)",
+      "gloss": "not to do",
       "partOfSpeech": "verb/adj",
       "areaId": "topik_1",
       "frequency": 1,
@@ -11706,14 +11678,7 @@
       ],
       "liveRecIds": [
         5695
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "않다 is an auxiliary/negation verb almost exclusively used in the construction V-지 않다 ('does not V' / 'is not Adj'). It inherits verb-or-adjective behavior from the predicate it negates rather than meaning 'to do not' on its own. The bare gloss 'not to do' suggests an active independent verb meaning 'refrain from doing', which obscures its grammaticalised auxiliary role. A learner gloss should signal the auxiliary nature, e.g. '(auxiliary) to not do/be (with -지)'.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%95%8A%EB%8B%A4",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "korean": "알",

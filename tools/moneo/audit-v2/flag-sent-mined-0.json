@@ -1,0 +1,16 @@
+{
+  "shardFile": "sentences-ko-themed-mined.json",
+  "range": [0, 196],
+  "inspected": 196,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:트다",
+      "korean": "트인 들판에서 포켓몬과 놀아요.",
+      "verdict": "mistranslation",
+      "issue": "Target lemma is 트다 (active/transitive: 'to crack, to clear, to open [a passage]', e.g. 입술이 트다, 거래선을 트다). The form 트인 in the sentence is the attributive past of the passive/intransitive 트이다, not 트다. The collocation 탁 트인 들판 is real and natural, but it exemplifies 트이다, not the lemma 트다. Wrong-lemma mismatch (parallel to the entry-30 나다 vs 떠나다 case the prior auditor caught).",
+      "suggestion": "Replace with a sentence that exemplifies 트다 itself, e.g. '겨울이 되어 입술이 텄어요.' (My lips got chapped now that winter came.) or '두 회사는 새로 거래를 텄어요.' (The two companies opened up trade with each other.)",
+      "evidenceUrl": "https://hinative.com/questions/19771329",
+      "hadPriorAuditFix": false
+    }
+  ]
+}

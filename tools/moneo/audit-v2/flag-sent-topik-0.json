@@ -1,0 +1,43 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [0, 236],
+  "inspected": 236,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:떨다",
+      "korean": "추워서 손이 떨려요.",
+      "verdict": "wrong_inflection",
+      "issue": "The headword is 떨다 (transitive: to shake something deliberately), but the sentence uses the intransitive/passive form 떨리다 (떨려요). 떨다 takes an object (다리를 떨다 = to shake one's leg), whereas involuntary trembling from cold uses 떨리다 (손이 떨리다). The example illustrates the wrong lemma; learners studying 떨다 will incorrectly internalize 떨려요 as its conjugation. Replace with a 떨다 example such as '아이가 다리를 떨고 있어요' or change the headword to 떨리다.",
+      "suggestion": "아이가 책상 밑에서 다리를 떨고 있어요.",
+      "evidenceUrl": "https://hinative.com/questions/12080194",
+      "hadPriorAuditFix": false
+    },
+    {
+      "vocabId": "topik-v2:굽다",
+      "korean": "오븐에 빵을 구워요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong locative particle. Korean uses 에서 (not 에) to mark the location where an action takes place; 에 only marks static existence/destination. 굽다 (to bake) is an action verb, so it must be 오븐에서 빵을 구워요. 'Bread is in the oven' would be 빵이 오븐에 있어요, but for the act of baking, 에서 is required.",
+      "suggestion": "오븐에서 빵을 구워요.",
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-12/",
+      "hadPriorAuditFix": false
+    },
+    {
+      "vocabId": "topik-v2:모습",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
+      "verdict": "mistranslation",
+      "issue": "Gloss says 'I saw my friend's face after a long time', but 모습 means 'appearance / figure / sight / image (of a person doing something)', not 'face'. 'Face' in Korean is 얼굴 (and is in fact the headword for entry #229 with the identical English gloss). The Korean sentence is natural, but the English gloss must reflect 모습 — e.g., 'I saw my friend (in person) after a long time' or 'I saw my friend's figure after a long time'.",
+      "suggestion": "Update gloss to: 'I saw my friend after a long time.' (or 'I saw how my friend looked after a long time.')",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%AA%A8%EC%8A%B5",
+      "hadPriorAuditFix": false
+    },
+    {
+      "vocabId": "topik-v2:짓다",
+      "korean": "어머니가 밥을 짓고 계세요.",
+      "verdict": "mistranslation",
+      "issue": "Gloss/Korean mismatch. The Korean subject is 어머니 (mother), but the English gloss still says 'The farmer is cooking rice.' This is leftover stale text from the prior auditFix that swapped 농부 → 어머니 to better match 밥을 짓다 collocation but did not update the gloss. Gloss must read 'Mother is cooking rice.'",
+      "suggestion": "Mother is cooking rice.",
+      "evidenceUrl": "https://hinative.com/questions/23996317",
+      "hadPriorAuditFix": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "shardFile": "seed-vocab-ko-mined.json",
+  "range": [414, 619],
+  "inspected": 205,
+  "flagged": [],
+  "notes": "All 205 entries in this range are ROM-mined Pokemon move names (414-541) and ability names (542-618), each with an explicit '(move)' or '(ability)' tag in the gloss. Per audit calibration, these are intentional and not flaggable. Headwords are official Korean localizations from the LeafGreen Korean ROM and accurately match their English source names."
+}

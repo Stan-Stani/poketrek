@@ -1,0 +1,21 @@
+{
+  "shardFile": "seed-vocab-ko-mined.json",
+  "range": [0, 207],
+  "inspected": 207,
+  "flagged": [
+    {
+      "korean": "달다",
+      "gloss": "sweet; to hang; to weigh",
+      "partOfSpeech": "verb",
+      "verdict": "pos_mismatch",
+      "issue": "달다 is a homonym pair: as adjective it means 'sweet' (food), and as verb it means 'to hang/attach/weigh'. The gloss leads with the adjective sense ('sweet') but partOfSpeech is tagged 'verb'. The dominant first-listed sense is the adjective. Compare entries 23 (세다 'strong; to count' tagged adjective), 78 (싸다 'cheap; to wrap' tagged adjective), 154 (짜다 'salty; to compose' tagged adjective) — all consistently tagged with the dominant adjective sense.",
+      "suggestion": {
+        "gloss": "sweet; to hang; to weigh",
+        "partOfSpeech": "adjective"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%AC%EB%8B%A4",
+      "hadPriorAuditFix": false
+    }
+  ],
+  "notes": "Most entries in [0,207) are well-curated. Range is dominated by hand-glossed mined vocab (0-194) plus ROM-mined Pokemon move names (195-206 and onward, all with explicit '(move)' tag — intentional and not flagged). Several entries with '(unglossed; freq N)' placeholders (168, 170-174, 176, 178-194) are explicitly marked unfilled, not errors. 14 entries already carry auditFix and were not re-flagged. Borderline cases considered but not flagged: 64 영양 (missing 'antelope' sense, but 'nutrition' dominant); 113 낳다 (missing 'to produce/result' sense but 'give birth' dominant); 134 베다 (missing 'to rest head on pillow' sense but 'cut/mow' dominant); 148 잘리다 (missing colloquial 'be fired' sense). These are minor sense-coverage polish, not clear mistranslations."
+}

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "vocabId": "topik-v2:쌀",
+      "korean": "어머니가 쌀로 밥을 지어요.",
+      "verdict": "uncertain",
+      "issue": "Korean is grammatical and idiomatic (밥을 짓다 + 쌀로 collocation is correct), but the English gloss 'Mother cooks rice from grains' is awkward — 쌀 is itself uncooked rice, and rendering it as 'grains' obscures the 쌀(uncooked)/밥(cooked) distinction the sentence is illustrating. A learner reading the gloss won't know which Korean word was the target. Korean side: keep. English side: regloss.",
+      "suggestion": "Regloss to 'Mother cooks rice (밥) from raw rice (쌀).' or 'Mother makes rice from uncooked rice grains.'",
+      "evidenceUrl": "https://hinative.com/questions/5659625",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "korean": "이브이",
+      "gloss": "Eevee",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "에브이 (Espeon) is the Korean rendering of Japanese エーフィー, derived from ESP/에스퍼 (psychic) + the Eevee evo-suffix. The Korean string 에브이 is not literally built from 이브이 (Eevee, 이브이 in Korean) — they share '브이' but begin with different syllables (에 vs 이), and the established etymology is ESP-based, not 'Eevee with a vowel swap'. Listing 이브이 'Eevee' as a component of 에브이 is at minimum imprecise (the shared piece is 브이, not 이브이) and arguably wrong (the productive root is 에스퍼/ESP).",
+      "suggestion": {
+        "gloss": "(component of Eevee-line names is 브이, not 이브이; or root is 에스퍼/ESP)",
+        "partOfSpeech": "root/morpheme"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EC%97%90%EB%B8%8C%EC%9D%B4",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    }
+  ]
+}

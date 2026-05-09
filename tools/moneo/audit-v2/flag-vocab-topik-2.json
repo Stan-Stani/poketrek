@@ -1,0 +1,20 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [357, 535],
+  "inspected": 178,
+  "flagged": [
+    {
+      "korean": "같이",
+      "gloss": "together; like",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "같이 functions as an adverb ('together', e.g., 같이 먹다) and as a postpositional particle attached to nouns ('like, as', e.g., 달같이 밝다). It is never a noun. The 'noun' element of 'noun/adv' is incorrect; PoS should be 'adverb' (or 'adverb/particle' to capture both senses cleanly). Mirrors the audited fix for 함께 (idx 491).",
+      "suggestion": {
+        "gloss": "together (adv); like, as (particle attached to noun)",
+        "partOfSpeech": "adverb/particle"
+      },
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-13/",
+      "hadPriorAuditFix": false
+    }
+  ]
+}

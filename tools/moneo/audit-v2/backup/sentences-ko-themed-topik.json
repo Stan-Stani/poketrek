@@ -362,19 +362,12 @@
     },
     {
       "vocabId": "topik-v2:떨다",
-      "korean": "아이가 책상 밑에서 다리를 떨고 있어요.",
+      "korean": "추워서 손이 떨려요.",
       "gloss": "My hands are shaking from the cold.",
       "targetForm": "떨",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_inflection",
-        "issue": "The headword is 떨다 (transitive: to shake something deliberately), but the sentence uses the intransitive/passive form 떨리다 (떨려요). 떨다 takes an object (다리를 떨다 = to shake one's leg), whereas involuntary trembling from cold uses 떨리다 (손이 떨리다). The example illustrates the wrong lemma; learners studying 떨다 will incorrectly internalize 떨려요 as its conjugation. Replace with a 떨다 example such as '아이가 다리를 떨고 있어요' or change the headword to 떨리다.",
-        "evidenceUrl": "https://hinative.com/questions/12080194",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:멀다",
@@ -1593,19 +1586,12 @@
     },
     {
       "vocabId": "topik-v2:굽다",
-      "korean": "오븐에서 빵을 구워요.",
+      "korean": "오븐에 빵을 구워요.",
       "gloss": "I bake bread in the oven.",
       "targetForm": "구워",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Wrong locative particle. Korean uses 에서 (not 에) to mark the location where an action takes place; 에 only marks static existence/destination. 굽다 (to bake) is an action verb, so it must be 오븐에서 빵을 구워요. 'Bread is in the oven' would be 빵이 오븐에 있어요, but for the act of baking, 에서 is required.",
-        "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-12/",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:꿀",
@@ -1708,19 +1694,12 @@
     },
     {
       "vocabId": "topik-v2:모습",
-      "korean": "Update gloss to: 'I saw my friend after a long time.' (or 'I saw how my friend looked after a long time.')",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
       "gloss": "I saw my friend's face after a long time.",
       "targetForm": "모습",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Gloss says 'I saw my friend's face after a long time', but 모습 means 'appearance / figure / sight / image (of a person doing something)', not 'face'. 'Face' in Korean is 얼굴 (and is in fact the headword for entry #229 with the identical English gloss). The Korean sentence is natural, but the English gloss must reflect 모습 — e.g., 'I saw my friend (in person) after a long time' or 'I saw my friend's figure after a long time'.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%AA%A8%EC%8A%B5",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:믿다",
@@ -2201,24 +2180,17 @@
     },
     {
       "vocabId": "topik-v2:짓다",
-      "korean": "Mother is cooking rice.",
+      "korean": "어머니가 밥을 짓고 계세요.",
       "gloss": "The farmer is cooking rice.",
       "targetForm": "짓",
       "areaId": "topik_2",
       "source": "themed-v1",
       "generator": "llm-claude-opus-4-7",
       "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Gloss/Korean mismatch. The Korean subject is 어머니 (mother), but the English gloss still says 'The farmer is cooking rice.' This is leftover stale text from the prior auditFix that swapped 농부 → 어머니 to better match 밥을 짓다 collocation but did not update the gloss. Gloss must read 'Mother is cooking rice.'",
+        "verdict": "polish:fix",
+        "issue": "Grammatical but pragmatically odd. 밥을 짓다 is correct Korean (HiNative confirms it as the standard, slightly literary expression for cooking rice). However, a 농부 (farmer) prototypically '농사를 짓다' (does farming), not '밥을 짓다' in their professional capacity. Native speakers would naturally pair 밥을 짓다 with 어머니/할머니. Switching to 어머니 keeps the headword 짓다 with its most idiomatic collocation and removes the cognitive friction.",
         "evidenceUrl": "https://hinative.com/questions/23996317",
-        "auditedAt": "2026-05-09",
-        "round": 2,
-        "priorAuditFix": {
-          "verdict": "polish:fix",
-          "issue": "Grammatical but pragmatically odd. 밥을 짓다 is correct Korean (HiNative confirms it as the standard, slightly literary expression for cooking rice). However, a 농부 (farmer) prototypically '농사를 짓다' (does farming), not '밥을 짓다' in their professional capacity. Native speakers would naturally pair 밥을 짓다 with 어머니/할머니. Switching to 어머니 keeps the headword 짓다 with its most idiomatic collocation and removes the cognitive friction.",
-          "evidenceUrl": "https://hinative.com/questions/23996317",
-          "auditedAt": "2026-05-09"
-        }
+        "auditedAt": "2026-05-09"
       }
     },
     {
@@ -2802,19 +2774,12 @@
     },
     {
       "vocabId": "topik-v2:월",
-      "korean": "삼월에 개학해요. (Or: 3월에 학기가 시작돼요.)",
+      "korean": "삼 월에 학교가 시작해요.",
       "gloss": "School starts in March.",
       "targetForm": "월",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Two problems. (1) Spacing: 삼월 (March) is a single dictionary word in 표준국어대사전 — 삼 월 with a space between the number and 월 is non-standard for the month name. (2) Collocation: 학교가 시작하다 is unnatural; native Koreans say 개학하다 (to begin a new term) or 학기/수업이 시작되다. The combination 학교 + 시작하다 reads as a literal calque. Natural form: 삼월에 개학해요 or 3월에 학기가 시작돼요.",
-        "evidenceUrl": "https://migaku.com/blog/korean/korean-months",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:위하다",
@@ -3352,19 +3317,12 @@
     },
     {
       "vocabId": "topik-v2:쌀",
-      "korean": "Mother cooks rice (밥) from raw rice (쌀).",
+      "korean": "어머니가 쌀로 밥을 지어요.",
       "gloss": "Mother cooks rice from grains.",
       "targetForm": "쌀",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Korean sentence is grammatical and idiomatic — 쌀(uncooked rice) + 로(instrumental) + 밥을 짓다(cook rice/make a meal) is the canonical collocation. However, the English gloss 'Mother cooks rice from grains' collapses the very 쌀(uncooked)/밥(cooked) distinction the example sentence exists to teach: a learner cannot tell which Korean word is the headword 쌀, and 'grains' is an unidiomatic stand-in for 'uncooked rice'. Re-gloss to preserve the contrast.",
-        "evidenceUrl": "https://hinative.com/questions/474327",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:아",
@@ -4811,19 +4769,12 @@
     },
     {
       "vocabId": "topik-v2:그만",
-      "korean": "이제 그만하고 좀 쉴까요?",
+      "korean": "이제 그만 쉴까요?",
       "gloss": "Shall we stop now and rest?",
       "targetForm": "그만",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The structure '이제 그만 + V' means 'stop V-ing now', so '이제 그만 쉴까요?' naturally reads as 'Shall we stop resting now?' (i.e., go back to working) — the opposite of the intended gloss 'Shall we stop now and rest?'. To express 'stop and rest', the standard form is '이제 그만하고 쉴까요?' or '이제 (일은) 그만하고 좀 쉴까요?'.",
-        "evidenceUrl": "https://www.howtostudykorean.com/conjugations/66/",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:급하다",

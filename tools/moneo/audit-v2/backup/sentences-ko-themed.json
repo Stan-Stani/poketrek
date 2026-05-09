@@ -116,24 +116,17 @@
     },
     {
       "vocabId": "rom-species:이상해풀",
-      "korean": "Korean unchanged; update gloss to 'A large flower bud grows on Ivysaur's back.'",
+      "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
       "gloss": "A sprout grows on Ivysaur's back.",
       "targetForm": "이상해풀",
       "areaId": "pallet_town",
       "source": "themed-v1",
       "generator": "llm-claude-opus-4-7",
       "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Korean/gloss mismatch introduced by the prior auditFix. The Korean was correctly changed from 새싹 (sprout/seedling) to 꽃봉오리 (flower bud) to match Ivysaur lore, but the English gloss was not updated and still says 'A sprout grows on Ivysaur's back.' 꽃봉오리 means 'flower bud,' not 'sprout' (which would be 새싹). The gloss should be e.g. 'A large flower bud grows on Ivysaur's back.'",
-        "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%83%81%ED%95%B4%ED%92%80_(%ED%8F%AC%EC%BC%93%EB%AA%AC)",
-        "auditedAt": "2026-05-09",
-        "round": 2,
-        "priorAuditFix": {
-          "verdict": "polish:fix",
-          "issue": "Confirmed Pokemon-lore mismatch: Ivysaur's defining feature is the flower BUD (꽃봉오리) on its back, not a 새싹 (sprout/seedling). The bud is a Rafflesia-like flower bud that releases an aroma when ready to bloom. 새싹 is more apt for Bulbasaur (이상해씨); by Ivysaur stage the plant has progressed to a large bud.",
-          "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)",
-          "auditedAt": "2026-05-09"
-        }
+        "verdict": "polish:fix",
+        "issue": "Confirmed Pokemon-lore mismatch: Ivysaur's defining feature is the flower BUD (꽃봉오리) on its back, not a 새싹 (sprout/seedling). The bud is a Rafflesia-like flower bud that releases an aroma when ready to bloom. 새싹 is more apt for Bulbasaur (이상해씨); by Ivysaur stage the plant has progressed to a large bud.",
+        "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)",
+        "auditedAt": "2026-05-09"
       }
     },
     {
@@ -177,24 +170,17 @@
     },
     {
       "vocabId": "etymology-roots:갑",
-      "korean": "갑(甲)은 단단한 껍데기나 갑옷을 본뜬 한자예요.",
+      "korean": "갑(甲)은 거북의 등껍질을 본뜬 한자예요.",
       "gloss": "갑 is an old word meaning a turtle's shell.",
       "targetForm": "갑",
       "areaId": "pewter_city",
       "source": "themed-v1",
       "generator": "llm-claude-opus-4-7",
       "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Etymological inaccuracy that survived the prior auditFix (which only fixed '옛 글자' → '한자'). 甲 is a pictograph of a hard shell/carapace/armor in general (Proto-Sino-Tibetan *krap 'shell; shield'), not specifically a turtle's shell. The 갑 in 갑골문(甲骨文) refers to turtle plastrons because they are one kind of 甲, but the character itself is modeled on the generic concept of armor/shell/scales — Wiktionary and Mandarin etymology sources describe it as depicting a seed coat splitting or a piece of armor, not a turtle shell. A 龜 character is the one specifically modeled on a turtle.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%E7%94%B2",
-        "auditedAt": "2026-05-09",
-        "round": 2,
-        "priorAuditFix": {
-          "verdict": "polish:fix",
-          "issue": "Confirmed terminology error: 갑(甲) is a Sino-Korean 한자 (Chinese character), specifically a 상형문자 (pictograph) modeled on the shape of a turtle's shell. '옛 글자' is misleading because in Korean it commonly evokes 옛한글 (archaic hangul). Naver/나무위키 갑골문자 entries describe 甲 as a 한자 / 상형문자. Adding the 한자 in parentheses also helps disambiguate the homophone.",
-          "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
-          "auditedAt": "2026-05-09"
-        }
+        "verdict": "polish:fix",
+        "issue": "Confirmed terminology error: 갑(甲) is a Sino-Korean 한자 (Chinese character), specifically a 상형문자 (pictograph) modeled on the shape of a turtle's shell. '옛 글자' is misleading because in Korean it commonly evokes 옛한글 (archaic hangul). Naver/나무위키 갑골문자 entries describe 甲 as a 한자 / 상형문자. Adding the 한자 in parentheses also helps disambiguate the homophone.",
+        "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
+        "auditedAt": "2026-05-09"
       }
     },
     {

@@ -1,0 +1,386 @@
+{
+  "auditedAt": "2026-05-09",
+  "auditor": "claude-opus-4-7 (17 parallel general-purpose agents) — round 2",
+  "totalInspected": 3320,
+  "totalFlagged": 24,
+  "byVerdict": {
+    "mistranslation": 14,
+    "unnatural": 2,
+    "ungrammatical": 2,
+    "uncertain": 2,
+    "pos_mismatch": 2,
+    "redundant": 1,
+    "wrong_inflection": 1
+  },
+  "byShard": {
+    "sentences-ko-themed-mined.json [0, 196]": {
+      "inspected": 196,
+      "flagged": 1
+    },
+    "sentences-ko-themed-mined.json [196, 391]": {
+      "inspected": 195,
+      "flagged": 3
+    },
+    "sentences-ko-themed-mined.json [391, 586]": {
+      "inspected": 195,
+      "flagged": 0
+    },
+    "sentences-ko-themed-species.json [0, 241]": {
+      "inspected": 241,
+      "flagged": 0
+    },
+    "sentences-ko-themed.json [0, 20]": {
+      "inspected": 20,
+      "flagged": 2
+    },
+    "sentences-ko-themed-topik.json [0, 236]": {
+      "inspected": 236,
+      "flagged": 4
+    },
+    "sentences-ko-themed-topik.json [236, 472]": {
+      "inspected": 236,
+      "flagged": 2
+    },
+    "sentences-ko-themed-topik.json [472, 708]": {
+      "inspected": 236,
+      "flagged": 1
+    },
+    "seed-vocab-ko-etymology.json [0, 142]": {
+      "inspected": 142,
+      "flagged": 5
+    },
+    "seed-vocab-ko.json [0, 45]": {
+      "inspected": 45,
+      "flagged": 0
+    },
+    "seed-vocab-ko-mined.json [0, 207]": {
+      "inspected": 207,
+      "flagged": 1
+    },
+    "seed-vocab-ko-mined.json [207, 414]": {
+      "inspected": 207,
+      "flagged": 0
+    },
+    "seed-vocab-ko-mined.json [414, 619]": {
+      "inspected": 205,
+      "flagged": 0
+    },
+    "seed-vocab-ko-species.json [0, 246]": {
+      "inspected": 246,
+      "flagged": 0
+    },
+    "seed-vocab-ko-topik.json [0, 178]": {
+      "inspected": 178,
+      "flagged": 2
+    },
+    "seed-vocab-ko-topik.json [178, 357]": {
+      "inspected": 179,
+      "flagged": 0
+    },
+    "seed-vocab-ko-topik.json [357, 535]": {
+      "inspected": 178,
+      "flagged": 1
+    },
+    "seed-vocab-ko-topik.json [535, 713]": {
+      "inspected": 178,
+      "flagged": 2
+    }
+  },
+  "byFileType": {
+    "sentence": {
+      "inspected": 1555,
+      "flagged": 13
+    },
+    "vocab": {
+      "inspected": 1765,
+      "flagged": 11
+    }
+  },
+  "missingSuggestion": 0,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:트다",
+      "korean": "트인 들판에서 포켓몬과 놀아요.",
+      "verdict": "mistranslation",
+      "issue": "Target lemma is 트다 (active/transitive: 'to crack, to clear, to open [a passage]', e.g. 입술이 트다, 거래선을 트다). The form 트인 in the sentence is the attributive past of the passive/intransitive 트이다, not 트다. The collocation 탁 트인 들판 is real and natural, but it exemplifies 트이다, not the lemma 트다. Wrong-lemma mismatch (parallel to the entry-30 나다 vs 떠나다 case the prior auditor caught).",
+      "suggestion": "Replace with a sentence that exemplifies 트다 itself, e.g. '겨울이 되어 입술이 텄어요.' (My lips got chapped now that winter came.) or '두 회사는 새로 거래를 텄어요.' (The two companies opened up trade with each other.)",
+      "evidenceUrl": "https://hinative.com/questions/19771329",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:껍질에숨기",
+      "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요.",
+      "verdict": "unnatural",
+      "issue": "The official Korean move name 껍질에숨기 contains the internal locative particle 에 ('hide IN [the] shell'). When followed by the object marker 를, learners parse the string as '...껍질에 숨기를...' (two competing clausal readings: '...is in shell, learning to hide...' vs '...is learning [the move] Withdraw'). The double-particle stacking inside a single noun phrase is awkward Korean and causes ambiguity for L2 readers. The previous auditor flagged this as 'uncertain' and no fix was applied; the issue persists.",
+      "suggestion": "Reword to disambiguate the move name as a quoted skill: '이 포켓몬은 \"껍질에숨기\"를 익히는 중이에요.' or use a different template that doesn't put 를 directly after the move: '이 포켓몬은 껍질에숨기 기술을 익히는 중이에요.'",
+      "evidenceUrl": null,
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:발버둥",
+      "korean": "체육관 시합에서 발버둥을 사용했어요.",
+      "verdict": "unnatural",
+      "issue": "발버둥 (Struggle) is the auto-triggered fallback move that fires only when a Pokémon has no PP left on any other move. A trainer cannot deliberately '사용하다' Struggle, so '체육관 시합에서 발버둥을 사용했어요' frames an automatic, last-resort move as a chosen tactic. The Korean is grammatical (and 발버둥 also has the everyday meaning 'thrashing/floundering', which makes it superficially read fine), but the in-game collocation is semantically off and atypical of how Korean Pokémon discourse describes Struggle (one would say 발버둥을 쳤어요 / 발버둥치게 됐어요, not 발버둥을 사용했어요).",
+      "suggestion": "체육관 시합에서 PP가 다 떨어져 발버둥을 쳤어요.",
+      "evidenceUrl": "https://namu.wiki/w/%EB%B0%9C%EB%B2%84%EB%91%A5",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:전광석화",
+      "korean": "포켓몬이 전광석화로 재빨리 돌진했어요.",
+      "verdict": "redundant",
+      "issue": "전광석화 (電光石火) is a four-character idiom whose lexical meaning is 'as fast as lightning/flint sparks' — speed is baked into the word. Adding the adverb 재빨리 ('quickly') immediately after produces tautological reinforcement: literally 'charged lightning-fast quickly'. Native Korean usage with 전광석화 typically pairs it with verbs of motion alone (전광석화로 돌진했어요 / 전광석화처럼 달려들었어요) without an additional speed adverb.",
+      "suggestion": "포켓몬이 전광석화로 돌진했어요.",
+      "evidenceUrl": "https://namu.wiki/w/%EC%A0%84%EA%B4%91%EC%84%9D%ED%99%94",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+      "verdict": "mistranslation",
+      "issue": "Korean/gloss mismatch introduced by the prior auditFix. The Korean was correctly changed from 새싹 (sprout/seedling) to 꽃봉오리 (flower bud) to match Ivysaur lore, but the English gloss was not updated and still says 'A sprout grows on Ivysaur's back.' 꽃봉오리 means 'flower bud,' not 'sprout' (which would be 새싹). The gloss should be e.g. 'A large flower bud grows on Ivysaur's back.'",
+      "suggestion": "Korean unchanged; update gloss to 'A large flower bud grows on Ivysaur's back.'",
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%83%81%ED%95%B4%ED%92%80_(%ED%8F%AC%EC%BC%93%EB%AA%AC)",
+      "hadPriorAuditFix": true,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑(甲)은 거북의 등껍질을 본뜬 한자예요.",
+      "verdict": "mistranslation",
+      "issue": "Etymological inaccuracy that survived the prior auditFix (which only fixed '옛 글자' → '한자'). 甲 is a pictograph of a hard shell/carapace/armor in general (Proto-Sino-Tibetan *krap 'shell; shield'), not specifically a turtle's shell. The 갑 in 갑골문(甲骨文) refers to turtle plastrons because they are one kind of 甲, but the character itself is modeled on the generic concept of armor/shell/scales — Wiktionary and Mandarin etymology sources describe it as depicting a seed coat splitting or a piece of armor, not a turtle shell. A 龜 character is the one specifically modeled on a turtle.",
+      "suggestion": "갑(甲)은 단단한 껍데기나 갑옷을 본뜬 한자예요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%E7%94%B2",
+      "hadPriorAuditFix": true,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "topik-v2:떨다",
+      "korean": "추워서 손이 떨려요.",
+      "verdict": "wrong_inflection",
+      "issue": "The headword is 떨다 (transitive: to shake something deliberately), but the sentence uses the intransitive/passive form 떨리다 (떨려요). 떨다 takes an object (다리를 떨다 = to shake one's leg), whereas involuntary trembling from cold uses 떨리다 (손이 떨리다). The example illustrates the wrong lemma; learners studying 떨다 will incorrectly internalize 떨려요 as its conjugation. Replace with a 떨다 example such as '아이가 다리를 떨고 있어요' or change the headword to 떨리다.",
+      "suggestion": "아이가 책상 밑에서 다리를 떨고 있어요.",
+      "evidenceUrl": "https://hinative.com/questions/12080194",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:굽다",
+      "korean": "오븐에 빵을 구워요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong locative particle. Korean uses 에서 (not 에) to mark the location where an action takes place; 에 only marks static existence/destination. 굽다 (to bake) is an action verb, so it must be 오븐에서 빵을 구워요. 'Bread is in the oven' would be 빵이 오븐에 있어요, but for the act of baking, 에서 is required.",
+      "suggestion": "오븐에서 빵을 구워요.",
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-12/",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:모습",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
+      "verdict": "mistranslation",
+      "issue": "Gloss says 'I saw my friend's face after a long time', but 모습 means 'appearance / figure / sight / image (of a person doing something)', not 'face'. 'Face' in Korean is 얼굴 (and is in fact the headword for entry #229 with the identical English gloss). The Korean sentence is natural, but the English gloss must reflect 모습 — e.g., 'I saw my friend (in person) after a long time' or 'I saw my friend's figure after a long time'.",
+      "suggestion": "Update gloss to: 'I saw my friend after a long time.' (or 'I saw how my friend looked after a long time.')",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%AA%A8%EC%8A%B5",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:짓다",
+      "korean": "어머니가 밥을 짓고 계세요.",
+      "verdict": "mistranslation",
+      "issue": "Gloss/Korean mismatch. The Korean subject is 어머니 (mother), but the English gloss still says 'The farmer is cooking rice.' This is leftover stale text from the prior auditFix that swapped 농부 → 어머니 to better match 밥을 짓다 collocation but did not update the gloss. Gloss must read 'Mother is cooking rice.'",
+      "suggestion": "Mother is cooking rice.",
+      "evidenceUrl": "https://hinative.com/questions/23996317",
+      "hadPriorAuditFix": true,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:월",
+      "korean": "삼 월에 학교가 시작해요.",
+      "verdict": "ungrammatical",
+      "issue": "Two problems. (1) Spacing: 삼월 (March) is a single dictionary word in 표준국어대사전 — 삼 월 with a space between the number and 월 is non-standard for the month name. (2) Collocation: 학교가 시작하다 is unnatural; native Koreans say 개학하다 (to begin a new term) or 학기/수업이 시작되다. The combination 학교 + 시작하다 reads as a literal calque. Natural form: 삼월에 개학해요 or 3월에 학기가 시작돼요.",
+      "suggestion": "삼월에 개학해요. (Or: 3월에 학기가 시작돼요.)",
+      "evidenceUrl": "https://migaku.com/blog/korean/korean-months",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:쌀",
+      "korean": "어머니가 쌀로 밥을 지어요.",
+      "verdict": "uncertain",
+      "issue": "Korean is grammatical and idiomatic (밥을 짓다 + 쌀로 collocation is correct), but the English gloss 'Mother cooks rice from grains' is awkward — 쌀 is itself uncooked rice, and rendering it as 'grains' obscures the 쌀(uncooked)/밥(cooked) distinction the sentence is illustrating. A learner reading the gloss won't know which Korean word was the target. Korean side: keep. English side: regloss.",
+      "suggestion": "Regloss to 'Mother cooks rice (밥) from raw rice (쌀).' or 'Mother makes rice from uncooked rice grains.'",
+      "evidenceUrl": "https://hinative.com/questions/5659625",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:그만",
+      "korean": "이제 그만 쉴까요?",
+      "verdict": "mistranslation",
+      "issue": "The structure '이제 그만 + V' means 'stop V-ing now', so '이제 그만 쉴까요?' naturally reads as 'Shall we stop resting now?' (i.e., go back to working) — the opposite of the intended gloss 'Shall we stop now and rest?'. To express 'stop and rest', the standard form is '이제 그만하고 쉴까요?' or '이제 (일은) 그만하고 좀 쉴까요?'.",
+      "suggestion": "이제 그만하고 좀 쉴까요?",
+      "evidenceUrl": "https://www.howtostudykorean.com/conjugations/66/",
+      "hadPriorAuditFix": false,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "korean": "깜지",
+      "gloss": "small/cute",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "깜지 in 깜지곰 (Teddiursa) is not 'small/cute'. The 깜- root is a cognate of 검-/까만 (black/dark), making 깜지곰 a 'dark/black bear' — Teddiursa has a brown-black body and the morpheme conventionally evokes blackness (cf. 깜장, 깜깜하다). The standalone noun 깜지 is school slang for a sheet of paper written so densely it looks black. Glossing it as 'small/cute' has no Korean basis and overlaps semantically with 꼬마 (which is the actual 'small' morpheme, separately listed).",
+      "suggestion": {
+        "gloss": "dark, black (from 깜-/까만)",
+        "partOfSpeech": "root/morpheme"
+      },
+      "evidenceUrl": "https://hinative.com/ko/questions/3666772",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "지목",
+      "gloss": "potted tree",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "꼬지모 (Sudowoodo) does not contain a morpheme '지목' meaning 'potted tree'. The Korean fan/wiki analysis decomposes 꼬지모 as 꼬(꼬마, small) + 지(거짓, false/lie) + 모(木 mok→mo, tree) — i.e. 'small false-tree', mirroring Japanese 嘘 (uso, lie) + 木 (ki, tree) and English pseudo-+wood. The substring 지목 is not even present (the name ends in 모, not 목), and the standalone Korean noun 지목 means 'designation/specification', not 'potted tree' (bonsai is 분재). Teaching 지목 = 'potted tree' invents both a morpheme boundary and a meaning.",
+      "suggestion": {
+        "gloss": "(no '지목' morpheme; 꼬지모 = 꼬마 + 거짓 + 木) — entry should be split or removed",
+        "partOfSpeech": "root/morpheme"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EA%BC%AC%EC%A7%80%EB%AA%A8",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "드래곤",
+      "gloss": "dragon",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "쥬레곤 (Dewgong) is not built from 드래곤 'dragon'. The Korean name transliterates Japanese ジュゴン (jugong, dugong) — Dewgong is a sea-mammal Pokémon based on the dugong/seal, with no dragon motif (it is Water/Ice, not Dragon-type). The Korean string '레곤' is the dugong tail, not 드래곤. Pairing the gloss 'dragon' with 쥬레곤 will mislead learners into seeing a dragon component that isn't there.",
+      "suggestion": {
+        "gloss": "dugong (clip of 듀공/ジュゴン) — entry should target a dugong-themed root or be removed",
+        "partOfSpeech": "root/morpheme"
+      },
+      "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Dewgong_(Pok%C3%A9mon)",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "마",
+      "gloss": "horse, 馬",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "The single gloss '馬 horse' fits 날쌩마 (Rapidash, 날쌘+말/馬) but is wrong for the other two cited Pokémon. 무우마 (Misdreavus) is a ghost/witch — its 마 is conventionally read as 마(魔, demon/witch; cf. 마녀), reinforced by the next-stage 무우마직 (魔+직). 마기라스 (Tyranitar) takes 마기라스 from 안기라스 (the Korean name of the Godzilla kaiju Anguirus), as already noted in the 기라스 auditFix — its 마 is not 馬 either. Lumping all three under 'horse' will misparse a ghost and a kaiju as horse-themed.",
+      "suggestion": {
+        "gloss": "horse, 馬 (only in 날쌩마; 무우마 and 마기라스 use unrelated 마 morphemes)",
+        "partOfSpeech": "root/morpheme"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B8%B0%EB%9D%BC%EC%8A%A4",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "이브이",
+      "gloss": "Eevee",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "에브이 (Espeon) is the Korean rendering of Japanese エーフィー, derived from ESP/에스퍼 (psychic) + the Eevee evo-suffix. The Korean string 에브이 is not literally built from 이브이 (Eevee, 이브이 in Korean) — they share '브이' but begin with different syllables (에 vs 이), and the established etymology is ESP-based, not 'Eevee with a vowel swap'. Listing 이브이 'Eevee' as a component of 에브이 is at minimum imprecise (the shared piece is 브이, not 이브이) and arguably wrong (the productive root is 에스퍼/ESP).",
+      "suggestion": {
+        "gloss": "(component of Eevee-line names is 브이, not 이브이; or root is 에스퍼/ESP)",
+        "partOfSpeech": "root/morpheme"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EC%97%90%EB%B8%8C%EC%9D%B4",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "달다",
+      "gloss": "sweet; to hang; to weigh",
+      "partOfSpeech": "verb",
+      "verdict": "pos_mismatch",
+      "issue": "달다 is a homonym pair: as adjective it means 'sweet' (food), and as verb it means 'to hang/attach/weigh'. The gloss leads with the adjective sense ('sweet') but partOfSpeech is tagged 'verb'. The dominant first-listed sense is the adjective. Compare entries 23 (세다 'strong; to count' tagged adjective), 78 (싸다 'cheap; to wrap' tagged adjective), 154 (짜다 'salty; to compose' tagged adjective) — all consistently tagged with the dominant adjective sense.",
+      "suggestion": {
+        "gloss": "sweet; to hang; to weigh",
+        "partOfSpeech": "adjective"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%AC%EB%8B%A4",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "메다",
+      "gloss": "to carry on the shoulder",
+      "partOfSpeech": "verb/adj",
+      "verdict": "mistranslation",
+      "issue": "The gloss covers only one of two everyday senses. 메다 also means 'to be choked up / blocked / clogged' — the standard collocations 목이 메다 (one's throat is choked up, with emotion or food) and 가슴이 메다 (one's chest is choked) are TOPIK-level vocabulary and appear far more often in narrative dialogue than the 'sling on shoulder' sense. A learner reading 가슴이 메다 in-game with only 'to carry on the shoulder' as the gloss would be misled. Mirrors the auditFix style applied to 몰다 (idx 1) where a narrow gloss was widened.",
+      "suggestion": {
+        "gloss": "to carry on the shoulder; to be choked up (목/가슴이 메다)",
+        "partOfSpeech": "verb/adj"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A9%94%EB%8B%A4",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "지",
+      "gloss": "ago (suffix)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "'ago' is the wrong English equivalent. 지 is a dependent (bound) noun used in the construction -(으)ㄴ 지 X 되다 to express 'X (time) has passed since (the action)'. It marks the elapsed duration since an event, i.e. 'since', not 'ago'. 'ago' in Korean is 전 (e.g., 3년 전 'three years ago'), and 전 is the structural opposite of this 지. Glossing 지 as 'ago' will cause learners to confuse 지 with 전 and produce ungrammatical sentences like *3년 지 instead of 한국에 온 지 3년 됐다 ('it's been 3 years since I came to Korea'). Also 'suffix' is misleading — 지 is a bound noun, not a suffix.",
+      "suggestion": {
+        "gloss": "(time) since (bound noun used in -(으)ㄴ 지 ... 되다)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%80",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "같이",
+      "gloss": "together; like",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "같이 functions as an adverb ('together', e.g., 같이 먹다) and as a postpositional particle attached to nouns ('like, as', e.g., 달같이 밝다). It is never a noun. The 'noun' element of 'noun/adv' is incorrect; PoS should be 'adverb' (or 'adverb/particle' to capture both senses cleanly). Mirrors the audited fix for 함께 (idx 491).",
+      "suggestion": {
+        "gloss": "together (adv); like, as (particle attached to noun)",
+        "partOfSpeech": "adverb/particle"
+      },
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-13/",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "네",
+      "gloss": "yes; four (counter)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "The parenthetical '(counter)' is misleading. 네 is not itself a counter — it is the modifier/determiner form of the native Korean numeral 넷 ('four'), used immediately before counters (네 사람 'four people', 네 권 'four books'). A learner reading 'four (counter)' could mistakenly assume 네 functions as a counting word like 명/권/장. Better gloss: 'yes; four (before counters)' or 'yes; four (modifier form of 넷)'.",
+      "suggestion": {
+        "gloss": "yes; four (before counters, modifier form of 넷)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/unit-1-lesson-10/",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "않다",
+      "gloss": "not to do",
+      "partOfSpeech": "verb/adj",
+      "verdict": "mistranslation",
+      "issue": "않다 is an auxiliary/negation verb almost exclusively used in the construction V-지 않다 ('does not V' / 'is not Adj'). It inherits verb-or-adjective behavior from the predicate it negates rather than meaning 'to do not' on its own. The bare gloss 'not to do' suggests an active independent verb meaning 'refrain from doing', which obscures its grammaticalised auxiliary role. A learner gloss should signal the auxiliary nature, e.g. '(auxiliary) to not do/be (with -지)'.",
+      "suggestion": {
+        "gloss": "(auxiliary) to not do; to not be (in -지 않다)",
+        "partOfSpeech": "verb/adj"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%95%8A%EB%8B%A4",
+      "hadPriorAuditFix": false,
+      "sourceShard": "seed-vocab-ko-topik.json"
+    }
+  ]
+}

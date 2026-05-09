@@ -92,19 +92,12 @@
     },
     {
       "vocabId": "rom-mine-v2:트다",
-      "korean": "Replace with a sentence that exemplifies 트다 itself, e.g. '겨울이 되어 입술이 텄어요.' (My lips got chapped now that winter came.) or '두 회사는 새로 거래를 텄어요.' (The two companies opened up trade with each other.)",
+      "korean": "트인 들판에서 포켓몬과 놀아요.",
       "gloss": "We play with Pokémon on an open field.",
       "targetForm": "트",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Target lemma is 트다 (active/transitive: 'to crack, to clear, to open [a passage]', e.g. 입술이 트다, 거래선을 트다). The form 트인 in the sentence is the attributive past of the passive/intransitive 트이다, not 트다. The collocation 탁 트인 들판 is real and natural, but it exemplifies 트이다, not the lemma 트다. Wrong-lemma mismatch (parallel to the entry-30 나다 vs 떠나다 case the prior auditor caught).",
-        "evidenceUrl": "https://hinative.com/questions/19771329",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:몰다",
@@ -2376,19 +2369,12 @@
     },
     {
       "vocabId": "rom-mine-v2:전광석화",
-      "korean": "포켓몬이 전광석화로 돌진했어요.",
+      "korean": "포켓몬이 전광석화로 재빨리 돌진했어요.",
       "gloss": "The Pokémon charged quickly with Quick Attack.",
       "targetForm": "전광석화",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "redundant",
-        "issue": "전광석화 (電光石火) is a four-character idiom whose lexical meaning is 'as fast as lightning/flint sparks' — speed is baked into the word. Adding the adverb 재빨리 ('quickly') immediately after produces tautological reinforcement: literally 'charged lightning-fast quickly'. Native Korean usage with 전광석화 typically pairs it with verbs of motion alone (전광석화로 돌진했어요 / 전광석화처럼 달려들었어요) without an additional speed adverb.",
-        "evidenceUrl": "https://namu.wiki/w/%EC%A0%84%EA%B4%91%EC%84%9D%ED%99%94",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:분노",
@@ -2482,19 +2468,12 @@
     },
     {
       "vocabId": "rom-mine-v2:껍질에숨기",
-      "korean": "Reword to disambiguate the move name as a quoted skill: '이 포켓몬은 \"껍질에숨기\"를 익히는 중이에요.' or use a different template that doesn't put 를 directly after the move: '이 포켓몬은 껍질에숨기 기술을 익히는 중이에요.'",
+      "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요.",
       "gloss": "This Pokémon is learning Withdraw.",
       "targetForm": "껍질에숨기",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "The official Korean move name 껍질에숨기 contains the internal locative particle 에 ('hide IN [the] shell'). When followed by the object marker 를, learners parse the string as '...껍질에 숨기를...' (two competing clausal readings: '...is in shell, learning to hide...' vs '...is learning [the move] Withdraw'). The double-particle stacking inside a single noun phrase is awkward Korean and causes ambiguity for L2 readers. The previous auditor flagged this as 'uncertain' and no fix was applied; the issue persists.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:웅크리기",
@@ -3014,19 +2993,12 @@
     },
     {
       "vocabId": "rom-mine-v2:발버둥",
-      "korean": "체육관 시합에서 PP가 다 떨어져 발버둥을 쳤어요.",
+      "korean": "체육관 시합에서 발버둥을 사용했어요.",
       "gloss": "I used Struggle in the gym match.",
       "targetForm": "발버둥",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "발버둥 (Struggle) is the auto-triggered fallback move that fires only when a Pokémon has no PP left on any other move. A trainer cannot deliberately '사용하다' Struggle, so '체육관 시합에서 발버둥을 사용했어요' frames an automatic, last-resort move as a chosen tactic. The Korean is grammatical (and 발버둥 also has the everyday meaning 'thrashing/floundering', which makes it superficially read fine), but the in-game collocation is semantically off and atypical of how Korean Pokémon discourse describes Struggle (one would say 발버둥을 쳤어요 / 발버둥치게 됐어요, not 발버둥을 사용했어요).",
-        "evidenceUrl": "https://namu.wiki/w/%EB%B0%9C%EB%B2%84%EB%91%A5",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:스케치",

@@ -1,0 +1,16 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [472, 708],
+  "inspected": 236,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:그만",
+      "korean": "이제 그만 쉴까요?",
+      "verdict": "mistranslation",
+      "issue": "The structure '이제 그만 + V' means 'stop V-ing now', so '이제 그만 쉴까요?' naturally reads as 'Shall we stop resting now?' (i.e., go back to working) — the opposite of the intended gloss 'Shall we stop now and rest?'. To express 'stop and rest', the standard form is '이제 그만하고 쉴까요?' or '이제 (일은) 그만하고 좀 쉴까요?'.",
+      "suggestion": "이제 그만하고 좀 쉴까요?",
+      "evidenceUrl": "https://www.howtostudykorean.com/conjugations/66/",
+      "hadPriorAuditFix": false
+    }
+  ]
+}

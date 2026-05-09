@@ -1,0 +1,25 @@
+{
+  "shardFile": "sentences-ko-themed.json",
+  "range": [0, 20],
+  "inspected": 20,
+  "flagged": [
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+      "verdict": "mistranslation",
+      "issue": "Korean/gloss mismatch introduced by the prior auditFix. The Korean was correctly changed from 새싹 (sprout/seedling) to 꽃봉오리 (flower bud) to match Ivysaur lore, but the English gloss was not updated and still says 'A sprout grows on Ivysaur's back.' 꽃봉오리 means 'flower bud,' not 'sprout' (which would be 새싹). The gloss should be e.g. 'A large flower bud grows on Ivysaur's back.'",
+      "suggestion": "Korean unchanged; update gloss to 'A large flower bud grows on Ivysaur's back.'",
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%83%81%ED%95%B4%ED%92%80_(%ED%8F%AC%EC%BC%93%EB%AA%AC)",
+      "hadPriorAuditFix": true
+    },
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑(甲)은 거북의 등껍질을 본뜬 한자예요.",
+      "verdict": "mistranslation",
+      "issue": "Etymological inaccuracy that survived the prior auditFix (which only fixed '옛 글자' → '한자'). 甲 is a pictograph of a hard shell/carapace/armor in general (Proto-Sino-Tibetan *krap 'shell; shield'), not specifically a turtle's shell. The 갑 in 갑골문(甲骨文) refers to turtle plastrons because they are one kind of 甲, but the character itself is modeled on the generic concept of armor/shell/scales — Wiktionary and Mandarin etymology sources describe it as depicting a seed coat splitting or a piece of armor, not a turtle shell. A 龜 character is the one specifically modeled on a turtle.",
+      "suggestion": "갑(甲)은 단단한 껍데기나 갑옷을 본뜬 한자예요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%E7%94%B2",
+      "hadPriorAuditFix": true
+    }
+  ]
+}

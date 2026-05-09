@@ -1,0 +1,25 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [236, 472],
+  "inspected": 236,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:월",
+      "korean": "삼 월에 학교가 시작해요.",
+      "verdict": "ungrammatical",
+      "issue": "Two problems. (1) Spacing: 삼월 (March) is a single dictionary word in 표준국어대사전 — 삼 월 with a space between the number and 월 is non-standard for the month name. (2) Collocation: 학교가 시작하다 is unnatural; native Koreans say 개학하다 (to begin a new term) or 학기/수업이 시작되다. The combination 학교 + 시작하다 reads as a literal calque. Natural form: 삼월에 개학해요 or 3월에 학기가 시작돼요.",
+      "suggestion": "삼월에 개학해요. (Or: 3월에 학기가 시작돼요.)",
+      "evidenceUrl": "https://migaku.com/blog/korean/korean-months",
+      "hadPriorAuditFix": false
+    },
+    {
+      "vocabId": "topik-v2:쌀",
+      "korean": "어머니가 쌀로 밥을 지어요.",
+      "verdict": "uncertain",
+      "issue": "Korean is grammatical and idiomatic (밥을 짓다 + 쌀로 collocation is correct), but the English gloss 'Mother cooks rice from grains' is awkward — 쌀 is itself uncooked rice, and rendering it as 'grains' obscures the 쌀(uncooked)/밥(cooked) distinction the sentence is illustrating. A learner reading the gloss won't know which Korean word was the target. Korean side: keep. English side: regloss.",
+      "suggestion": "Regloss to 'Mother cooks rice (밥) from raw rice (쌀).' or 'Mother makes rice from uncooked rice grains.'",
+      "evidenceUrl": "https://hinative.com/questions/5659625",
+      "hadPriorAuditFix": false
+    }
+  ]
+}

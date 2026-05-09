@@ -1,0 +1,33 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [0, 178],
+  "inspected": 178,
+  "flagged": [
+    {
+      "korean": "메다",
+      "gloss": "to carry on the shoulder",
+      "partOfSpeech": "verb/adj",
+      "verdict": "mistranslation",
+      "issue": "The gloss covers only one of two everyday senses. 메다 also means 'to be choked up / blocked / clogged' — the standard collocations 목이 메다 (one's throat is choked up, with emotion or food) and 가슴이 메다 (one's chest is choked) are TOPIK-level vocabulary and appear far more often in narrative dialogue than the 'sling on shoulder' sense. A learner reading 가슴이 메다 in-game with only 'to carry on the shoulder' as the gloss would be misled. Mirrors the auditFix style applied to 몰다 (idx 1) where a narrow gloss was widened.",
+      "suggestion": {
+        "gloss": "to carry on the shoulder; to be choked up (목/가슴이 메다)",
+        "partOfSpeech": "verb/adj"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A9%94%EB%8B%A4",
+      "hadPriorAuditFix": false
+    },
+    {
+      "korean": "지",
+      "gloss": "ago (suffix)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "'ago' is the wrong English equivalent. 지 is a dependent (bound) noun used in the construction -(으)ㄴ 지 X 되다 to express 'X (time) has passed since (the action)'. It marks the elapsed duration since an event, i.e. 'since', not 'ago'. 'ago' in Korean is 전 (e.g., 3년 전 'three years ago'), and 전 is the structural opposite of this 지. Glossing 지 as 'ago' will cause learners to confuse 지 with 전 and produce ungrammatical sentences like *3년 지 instead of 한국에 온 지 3년 됐다 ('it's been 3 years since I came to Korea'). Also 'suffix' is misleading — 지 is a bound noun, not a suffix.",
+      "suggestion": {
+        "gloss": "(time) since (bound noun used in -(으)ㄴ 지 ... 되다)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%80",
+      "hadPriorAuditFix": false
+    }
+  ]
+}

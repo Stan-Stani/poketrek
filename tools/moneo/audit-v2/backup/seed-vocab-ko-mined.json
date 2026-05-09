@@ -1060,7 +1060,7 @@
     {
       "korean": "달다",
       "gloss": "sweet; to hang; to weigh",
-      "partOfSpeech": "adjective",
+      "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 8,
       "firstAreaEncountered": "pallet_town",
@@ -1125,14 +1125,7 @@
         10026,
         11293,
         24617
-      ],
-      "auditFix": {
-        "verdict": "pos_mismatch",
-        "issue": "달다 is a homonym pair: as adjective it means 'sweet' (food), and as verb it means 'to hang/attach/weigh'. The gloss leads with the adjective sense ('sweet') but partOfSpeech is tagged 'verb'. The dominant first-listed sense is the adjective. Compare entries 23 (세다 'strong; to count' tagged adjective), 78 (싸다 'cheap; to wrap' tagged adjective), 154 (짜다 'salty; to compose' tagged adjective) — all consistently tagged with the dominant adjective sense.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%AC%EB%8B%A4",
-        "auditedAt": "2026-05-09",
-        "round": 2
-      }
+      ]
     },
     {
       "korean": "같다",

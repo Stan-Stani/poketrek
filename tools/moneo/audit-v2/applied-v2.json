@@ -1,0 +1,330 @@
+{
+  "appliedAt": "2026-05-09",
+  "round": 2,
+  "count": 24,
+  "items": [
+    {
+      "shard": "sentences-ko-themed-mined.json",
+      "key": "rom-mine-v2:트다",
+      "before": {
+        "korean": "트인 들판에서 포켓몬과 놀아요."
+      },
+      "after": {
+        "korean": "Replace with a sentence that exemplifies 트다 itself, e.g. '겨울이 되어 입술이 텄어요.' (My lips got chapped now that winter came.) or '두 회사는 새로 거래를 텄어요.' (The two companies opened up trade with each other.)",
+        "gloss": "We play with Pokémon on an open field.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-mined.json",
+      "key": "rom-mine-v2:껍질에숨기",
+      "before": {
+        "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요."
+      },
+      "after": {
+        "korean": "Reword to disambiguate the move name as a quoted skill: '이 포켓몬은 \"껍질에숨기\"를 익히는 중이에요.' or use a different template that doesn't put 를 directly after the move: '이 포켓몬은 껍질에숨기 기술을 익히는 중이에요.'",
+        "gloss": "This Pokémon is learning Withdraw.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-mined.json",
+      "key": "rom-mine-v2:발버둥",
+      "before": {
+        "korean": "체육관 시합에서 발버둥을 사용했어요."
+      },
+      "after": {
+        "korean": "체육관 시합에서 PP가 다 떨어져 발버둥을 쳤어요.",
+        "gloss": "I used Struggle in the gym match.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-mined.json",
+      "key": "rom-mine-v2:전광석화",
+      "before": {
+        "korean": "포켓몬이 전광석화로 재빨리 돌진했어요."
+      },
+      "after": {
+        "korean": "포켓몬이 전광석화로 돌진했어요.",
+        "gloss": "The Pokémon charged quickly with Quick Attack.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed.json",
+      "key": "rom-species:이상해풀",
+      "before": {
+        "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요."
+      },
+      "after": {
+        "korean": "Korean unchanged; update gloss to 'A large flower bud grows on Ivysaur's back.'",
+        "gloss": "A sprout grows on Ivysaur's back.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": true
+    },
+    {
+      "shard": "sentences-ko-themed.json",
+      "key": "etymology-roots:갑",
+      "before": {
+        "korean": "갑(甲)은 거북의 등껍질을 본뜬 한자예요."
+      },
+      "after": {
+        "korean": "갑(甲)은 단단한 껍데기나 갑옷을 본뜬 한자예요.",
+        "gloss": "갑 is an old word meaning a turtle's shell.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": true
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:떨다",
+      "before": {
+        "korean": "추워서 손이 떨려요."
+      },
+      "after": {
+        "korean": "아이가 책상 밑에서 다리를 떨고 있어요.",
+        "gloss": "My hands are shaking from the cold.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:굽다",
+      "before": {
+        "korean": "오븐에 빵을 구워요."
+      },
+      "after": {
+        "korean": "오븐에서 빵을 구워요.",
+        "gloss": "I bake bread in the oven.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:모습",
+      "before": {
+        "korean": "오랜만에 친구의 모습을 봤어요."
+      },
+      "after": {
+        "korean": "Update gloss to: 'I saw my friend after a long time.' (or 'I saw how my friend looked after a long time.')",
+        "gloss": "I saw my friend's face after a long time.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:짓다",
+      "before": {
+        "korean": "어머니가 밥을 짓고 계세요."
+      },
+      "after": {
+        "korean": "Mother is cooking rice.",
+        "gloss": "The farmer is cooking rice.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": true
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:월",
+      "before": {
+        "korean": "삼 월에 학교가 시작해요."
+      },
+      "after": {
+        "korean": "삼월에 개학해요. (Or: 3월에 학기가 시작돼요.)",
+        "gloss": "School starts in March.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:쌀",
+      "before": {
+        "korean": "어머니가 쌀로 밥을 지어요."
+      },
+      "after": {
+        "korean": "Mother cooks rice (밥) from raw rice (쌀).",
+        "gloss": "Mother cooks rice from grains.",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "sentences-ko-themed-topik.json",
+      "key": "topik-v2:그만",
+      "before": {
+        "korean": "이제 그만 쉴까요?"
+      },
+      "after": {
+        "korean": "이제 그만하고 좀 쉴까요?",
+        "gloss": "Shall we stop now and rest?",
+        "partOfSpeech": null
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "key": "깜지",
+      "before": {
+        "gloss": "small/cute",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "korean": "깜지",
+        "gloss": "dark, black (from 깜-/까만)",
+        "partOfSpeech": "root/morpheme"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "key": "지목",
+      "before": {
+        "gloss": "potted tree",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "korean": "지목",
+        "gloss": "(no '지목' morpheme; 꼬지모 = 꼬마 + 거짓 + 木) — entry should be split or removed",
+        "partOfSpeech": "root/morpheme"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "key": "드래곤",
+      "before": {
+        "gloss": "dragon",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "korean": "드래곤",
+        "gloss": "dugong (clip of 듀공/ジュゴン) — entry should target a dugong-themed root or be removed",
+        "partOfSpeech": "root/morpheme"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "key": "마",
+      "before": {
+        "gloss": "horse, 馬",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "korean": "마",
+        "gloss": "horse, 馬 (only in 날쌩마; 무우마 and 마기라스 use unrelated 마 morphemes)",
+        "partOfSpeech": "root/morpheme"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "key": "이브이",
+      "before": {
+        "gloss": "Eevee",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "korean": "이브이",
+        "gloss": "Eevee (Pokémon proper noun, transliterated from English 'Eevee' < 'Ev' of Evolution); the productive shared component in the Eeveelution naming pattern is 브이, not 이브이",
+        "partOfSpeech": "proper noun (borrowed)"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "key": "달다",
+      "before": {
+        "gloss": "sweet; to hang; to weigh",
+        "partOfSpeech": "verb"
+      },
+      "after": {
+        "korean": "달다",
+        "gloss": "sweet; to hang; to weigh",
+        "partOfSpeech": "adjective"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "key": "메다",
+      "before": {
+        "gloss": "to carry on the shoulder",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "korean": "메다",
+        "gloss": "to carry on the shoulder; to be choked up (목/가슴이 메다)",
+        "partOfSpeech": "verb/adj"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "key": "지",
+      "before": {
+        "gloss": "ago (suffix)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "korean": "지",
+        "gloss": "(time) since (bound noun used in -(으)ㄴ 지 ... 되다)",
+        "partOfSpeech": "noun/adv"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "key": "같이",
+      "before": {
+        "gloss": "together; like",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "korean": "같이",
+        "gloss": "together (adv); like, as (particle attached to noun)",
+        "partOfSpeech": "adverb/particle"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "key": "네",
+      "before": {
+        "gloss": "yes; four (counter)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "korean": "네",
+        "gloss": "yes; four (before counters, modifier form of 넷)",
+        "partOfSpeech": "noun/adv"
+      },
+      "hadPriorFix": false
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "key": "않다",
+      "before": {
+        "gloss": "not to do",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "korean": "않다",
+        "gloss": "(auxiliary) to not do; to not be (in -지 않다)",
+        "partOfSpeech": "verb/adj"
+      },
+      "hadPriorFix": false
+    }
+  ]
+}
