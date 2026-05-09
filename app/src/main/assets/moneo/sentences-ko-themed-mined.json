@@ -92,9 +92,9 @@
     },
     {
       "vocabId": "rom-mine-v2:트다",
-      "korean": "Replace with a sentence that exemplifies 트다 itself, e.g. '겨울이 되어 입술이 텄어요.' (My lips got chapped now that winter came.) or '두 회사는 새로 거래를 텄어요.' (The two companies opened up trade with each other.)",
-      "gloss": "We play with Pokémon on an open field.",
-      "targetForm": "트",
+      "korean": "추운 동굴을 지나 입술이 텄어요.",
+      "gloss": "My lips got chapped after passing through the cold cave.",
+      "targetForm": "텄",
       "areaId": "rom_mined",
       "source": "themed-v1",
       "generator": "llm-claude-opus-4-7",
@@ -2482,7 +2482,7 @@
     },
     {
       "vocabId": "rom-mine-v2:껍질에숨기",
-      "korean": "Reword to disambiguate the move name as a quoted skill: '이 포켓몬은 \"껍질에숨기\"를 익히는 중이에요.' or use a different template that doesn't put 를 directly after the move: '이 포켓몬은 껍질에숨기 기술을 익히는 중이에요.'",
+      "korean": "이 포켓몬은 껍질에숨기 기술을 익히는 중이에요.",
       "gloss": "This Pokémon is learning Withdraw.",
       "targetForm": "껍질에숨기",
       "areaId": "rom_mined",
