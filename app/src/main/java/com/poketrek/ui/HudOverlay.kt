@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -541,6 +542,87 @@ private fun ToggleRow(
     }
 }
 
+/**
+ * Tinted, padded container for a settings section. Title sits at the top with
+ * an optional trailing action (e.g. a small button). Content stacks below
+ * with consistent spacing.
+ */
+@Composable
+private fun SectionCard(
+    title: String,
+    modifier: Modifier = Modifier,
+    trailingAction: (@Composable () -> Unit)? = null,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    Column(
+        modifier = modifier
+            .fillMaxWidth()
+            .background(Color(0xFFF1F5F9), RoundedCornerShape(12.dp))
+            .padding(horizontal = 14.dp, vertical = 12.dp),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            Text(
+                title,
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 14.sp,
+                color = Color(0xFF334155),
+            )
+            trailingAction?.invoke()
+        }
+        content()
+    }
+}
+
+/**
+ * Click-to-expand row used to collapse infrequently-touched controls (custom
+ * ratios, area-gate threshold, dev tools). Defaults to collapsed; pass
+ * `initiallyExpanded = true` to default-open. Optional [summary] shows under
+ * the title only while collapsed, so the resting state still hints at state.
+ */
+@Composable
+private fun Expander(
+    title: String,
+    initiallyExpanded: Boolean = false,
+    summary: String? = null,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    var expanded by remember { mutableStateOf(initiallyExpanded) }
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable { expanded = !expanded }
+                .padding(vertical = 4.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(
+                if (expanded) "▾" else "▸",
+                fontSize = 12.sp,
+                color = Color(0xFF6B7280),
+            )
+            Spacer(Modifier.width(6.dp))
+            Column(Modifier.weight(1f)) {
+                Text(title, fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
+                if (summary != null && !expanded) {
+                    Text(summary, color = Color(0xFF6B7280), fontSize = 11.sp)
+                }
+            }
+        }
+        if (expanded) {
+            Column(
+                modifier = Modifier.padding(start = 14.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp),
+                content = content,
+            )
+        }
+    }
+}
+
 @Composable
 private fun TtsHelpCard(
     status: com.poketrek.moneo.audio.TtsPlayer.Status,
@@ -979,131 +1061,24 @@ private fun MoneoSection(
     @Suppress("UNUSED_VARIABLE") val tick = cards
     val totalDue = moneo.repository.totalDueCount()
 
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text("Moneo · 몬어 (Korean)", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+    val verbatimSentences by moneo.prefs.verbatimSentences.collectAsState()
+    val ttsEnabled by moneo.prefs.ttsEnabled.collectAsState()
+    val ttsStatus by moneo.tts.status.collectAsState()
+    val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
+    val ttsAutoReveal by moneo.prefs.ttsAutoPlayReveal.collectAsState()
+    val ttsRatePct by moneo.prefs.ttsRatePct.collectAsState()
+    val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
+    val includeEtymology by moneo.prefs.includeEtymology.collectAsState()
+    val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
+    val areaGateThresholdPct by moneo.prefs.areaGateThresholdPct.collectAsState()
+
+    SectionCard(title = "Moneo · 몬어 (Korean)") {
         ToggleRow(
             label = "Korean learning mode",
             sublabel = if (enabled) "Review badge visible during play" else "Hidden",
             checked = enabled,
             onCheckedChange = { moneo.prefs.setEnabled(it) },
         )
-        val verbatimSentences by moneo.prefs.verbatimSentences.collectAsState()
-        ToggleRow(
-            label = "Spoilers in examples",
-            sublabel = if (verbatimSentences)
-                "Real game lines — may spoil dialog/Pokédex entries"
-            else
-                "Plain study sentences only — no spoilers",
-            checked = verbatimSentences,
-            onCheckedChange = { moneo.prefs.setVerbatimSentences(it) },
-        )
-        val ttsEnabled by moneo.prefs.ttsEnabled.collectAsState()
-        ToggleRow(
-            label = "Read examples aloud",
-            sublabel = if (ttsEnabled)
-                "Tap 🔊 next to the headword or example to hear it"
-            else
-                "Speaker buttons hidden",
-            checked = ttsEnabled,
-            onCheckedChange = { moneo.prefs.setTtsEnabled(it) },
-        )
-        if (ttsEnabled) {
-            // Probe the engine state. Surfaces a help card when the user has
-            // TTS turned on but Korean voice data isn't installed (or the
-            // default engine doesn't support Korean).
-            val ttsStatus by moneo.tts.status.collectAsState()
-            if (ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.INITIALIZING &&
-                ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.READY) {
-                TtsHelpCard(
-                    status = ttsStatus,
-                    onTurnOff = { moneo.prefs.setTtsEnabled(false) },
-                )
-            }
-            val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
-            ToggleRow(
-                label = "Auto-play headword",
-                sublabel = if (ttsAutoFront)
-                    "Speak Korean automatically when a new card appears"
-                else
-                    "Front side stays silent until you tap 🔊",
-                checked = ttsAutoFront,
-                onCheckedChange = { moneo.prefs.setTtsAutoPlayFront(it) },
-            )
-            val ttsAutoReveal by moneo.prefs.ttsAutoPlayReveal.collectAsState()
-            ToggleRow(
-                label = "Auto-play example on reveal",
-                sublabel = if (ttsAutoReveal)
-                    "Speak the example sentence as soon as you reveal the back"
-                else
-                    "Example stays silent until you tap 🔊",
-                checked = ttsAutoReveal,
-                onCheckedChange = { moneo.prefs.setTtsAutoPlayReveal(it) },
-            )
-            val ttsRatePct by moneo.prefs.ttsRatePct.collectAsState()
-            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                Text(
-                    "Speech rate: ${"%.2f".format(ttsRatePct / 100f)}×",
-                    fontSize = 12.sp,
-                    color = Color(0xFF374151),
-                )
-                Slider(
-                    value = ttsRatePct.toFloat(),
-                    onValueChange = { moneo.prefs.setTtsRatePct(it.toInt()) },
-                    valueRange = com.poketrek.moneo.data.MIN_TTS_RATE_PCT.toFloat()..
-                        com.poketrek.moneo.data.MAX_TTS_RATE_PCT.toFloat(),
-                )
-            }
-        }
-        val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
-        ToggleRow(
-            label = "Pokémon name cards",
-            sublabel = if (includeSpecies)
-                "246 Gen 1+2 species names included in your deck"
-            else
-                "Species names hidden — focus on grammar/vocab only",
-            checked = includeSpecies,
-            onCheckedChange = { moneo.prefs.setIncludeSpecies(it) },
-        )
-        val includeEtymology by moneo.prefs.includeEtymology.collectAsState()
-        ToggleRow(
-            label = "Etymology root cards",
-            sublabel = if (includeEtymology)
-                "142 Korean roots from Pokémon name puns (e.g. 곰 from 링곰)"
-            else
-                "Off — enable to study compound roots tangentially",
-            checked = includeEtymology,
-            onCheckedChange = { moneo.prefs.setIncludeEtymology(it) },
-        )
-        // Hard area-gate: blocks the player from physically entering an area
-        // until they've cleared enough cards anchored to the upstream area.
-        val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
-        ToggleRow(
-            label = "Area gate (block at boundaries)",
-            sublabel = if (areaGateEnabled)
-                "Blocks DPAD at area edges/warps until vocab maturity ≥ threshold"
-            else
-                "Off — area transitions are unrestricted",
-            checked = areaGateEnabled,
-            onCheckedChange = { moneo.prefs.setAreaGateEnabled(it) },
-        )
-        if (areaGateEnabled) {
-            val areaGateThresholdPct by moneo.prefs.areaGateThresholdPct.collectAsState()
-            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                Text(
-                    "Maturity threshold: ${areaGateThresholdPct}%",
-                    fontSize = 12.sp,
-                    color = Color(0xFF374151),
-                )
-                Slider(
-                    value = areaGateThresholdPct.toFloat(),
-                    onValueChange = {
-                        moneo.prefs.setAreaGateThresholdPct(it.toInt())
-                    },
-                    valueRange = 0f..100f,
-                    steps = 9, // 10-percent increments (0, 10, 20, ..., 100)
-                )
-            }
-        }
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
@@ -1127,6 +1102,142 @@ private fun MoneoSection(
                 onClick = onOpenMoneo,
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
             ) { Text("Open", fontSize = 12.sp) }
+        }
+
+        Expander(
+            title = "Card content",
+            summary = buildList {
+                if (verbatimSentences) add("ROM sentences") else add("Study sentences")
+                if (includeSpecies) add("species")
+                if (includeEtymology) add("etymology")
+            }.joinToString(" · "),
+        ) {
+            ToggleRow(
+                label = "Spoilers in examples",
+                sublabel = if (verbatimSentences)
+                    "Real game lines — may spoil dialog/Pokédex entries"
+                else
+                    "Plain study sentences only — no spoilers",
+                checked = verbatimSentences,
+                onCheckedChange = { moneo.prefs.setVerbatimSentences(it) },
+            )
+            ToggleRow(
+                label = "Pokémon name cards",
+                sublabel = if (includeSpecies)
+                    "246 Gen 1+2 species names included in your deck"
+                else
+                    "Species names hidden — focus on grammar/vocab only",
+                checked = includeSpecies,
+                onCheckedChange = { moneo.prefs.setIncludeSpecies(it) },
+            )
+            ToggleRow(
+                label = "Etymology root cards",
+                sublabel = if (includeEtymology)
+                    "142 Korean roots from Pokémon name puns (e.g. 곰 from 링곰)"
+                else
+                    "Off — enable to study compound roots tangentially",
+                checked = includeEtymology,
+                onCheckedChange = { moneo.prefs.setIncludeEtymology(it) },
+            )
+        }
+
+        // Default-open when there's something the user might want to act on:
+        // they've turned TTS on, OR the engine reports a problem worth showing.
+        val ttsHasIssue = ttsEnabled &&
+            ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.INITIALIZING &&
+            ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.READY
+        Expander(
+            title = "Read aloud (TTS)",
+            initiallyExpanded = ttsHasIssue,
+            summary = when {
+                !ttsEnabled -> "Off"
+                ttsHasIssue -> "Needs setup"
+                else -> "On · ${"%.2f".format(ttsRatePct / 100f)}×"
+            },
+        ) {
+            if (ttsHasIssue) {
+                TtsHelpCard(
+                    status = ttsStatus,
+                    onTurnOff = { moneo.prefs.setTtsEnabled(false) },
+                )
+            }
+            ToggleRow(
+                label = "Read examples aloud",
+                sublabel = if (ttsEnabled)
+                    "Tap 🔊 next to the headword or example to hear it"
+                else
+                    "Speaker buttons hidden",
+                checked = ttsEnabled,
+                onCheckedChange = { moneo.prefs.setTtsEnabled(it) },
+            )
+            if (ttsEnabled) {
+                ToggleRow(
+                    label = "Auto-play headword",
+                    sublabel = if (ttsAutoFront)
+                        "Speak Korean automatically when a new card appears"
+                    else
+                        "Front side stays silent until you tap 🔊",
+                    checked = ttsAutoFront,
+                    onCheckedChange = { moneo.prefs.setTtsAutoPlayFront(it) },
+                )
+                ToggleRow(
+                    label = "Auto-play example on reveal",
+                    sublabel = if (ttsAutoReveal)
+                        "Speak the example sentence as soon as you reveal the back"
+                    else
+                        "Example stays silent until you tap 🔊",
+                    checked = ttsAutoReveal,
+                    onCheckedChange = { moneo.prefs.setTtsAutoPlayReveal(it) },
+                )
+                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    Text(
+                        "Speech rate: ${"%.2f".format(ttsRatePct / 100f)}×",
+                        fontSize = 12.sp,
+                        color = Color(0xFF374151),
+                    )
+                    Slider(
+                        value = ttsRatePct.toFloat(),
+                        onValueChange = { moneo.prefs.setTtsRatePct(it.toInt()) },
+                        valueRange = com.poketrek.moneo.data.MIN_TTS_RATE_PCT.toFloat()..
+                            com.poketrek.moneo.data.MAX_TTS_RATE_PCT.toFloat(),
+                    )
+                }
+            }
+        }
+
+        // Hard area-gate: blocks the player from physically entering an area
+        // until they've cleared enough cards anchored to the upstream area.
+        Expander(
+            title = "Area gate",
+            initiallyExpanded = areaGateEnabled,
+            summary = if (areaGateEnabled) "Block at ≥${areaGateThresholdPct}% maturity" else "Off",
+        ) {
+            ToggleRow(
+                label = "Block at boundaries",
+                sublabel = if (areaGateEnabled)
+                    "Blocks DPAD at area edges/warps until vocab maturity ≥ threshold"
+                else
+                    "Off — area transitions are unrestricted",
+                checked = areaGateEnabled,
+                onCheckedChange = { moneo.prefs.setAreaGateEnabled(it) },
+            )
+            if (areaGateEnabled) {
+                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    Text(
+                        "Maturity threshold: ${areaGateThresholdPct}%",
+                        fontSize = 12.sp,
+                        color = Color(0xFF374151),
+                    )
+                    Slider(
+                        value = areaGateThresholdPct.toFloat(),
+                        onValueChange = {
+                            moneo.prefs.setAreaGateThresholdPct(it.toInt())
+                        },
+                        valueRange = 0f..100f,
+                        steps = 9, // 10-percent increments (0, 10, 20, ..., 100)
+                    )
+                }
+            }
         }
 
         // --- Dev: runtime EWRAM text capture (Phase 2 corpus path) -------------
