@@ -10,9 +10,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
@@ -31,6 +34,65 @@ private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
 private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabled")
 private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
+private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
+private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
+
+/**
+ * Which way the flashcards face. Default [KO_TO_EN] preserves the original
+ * Korean-learner-of-Korean experience; [EN_TO_KO] flips the cards so a Korean
+ * speaker can study English using the same vocab/sentence corpus reversed.
+ */
+enum class FlashcardDirection {
+    KO_TO_EN, EN_TO_KO;
+    companion object {
+        fun fromStored(value: String?): FlashcardDirection =
+            entries.firstOrNull { it.name == value } ?: KO_TO_EN
+    }
+}
+
+/**
+ * The TTS voice used when the speaker button is tapped (and for auto-play).
+ * Independent from [FlashcardDirection] so a user can study reversed cards
+ * but still hear the *original* language read aloud.
+ *
+ * [OFF] hides the speaker button and disables all auto-play, replacing the
+ * legacy `tts_enabled = false` boolean.
+ */
+enum class TtsLanguage {
+    KOREAN, ENGLISH, OFF;
+    companion object {
+        fun fromStored(value: String?): TtsLanguage? =
+            value?.let { v -> entries.firstOrNull { it.name == v } }
+
+        fun defaultFor(direction: FlashcardDirection): TtsLanguage = when (direction) {
+            FlashcardDirection.KO_TO_EN -> KOREAN
+            FlashcardDirection.EN_TO_KO -> ENGLISH
+        }
+    }
+}
+
+/**
+ * The effective TTS language: the user's explicit override if set, otherwise
+ * the default for the current direction.
+ */
+fun effectiveTtsLanguage(direction: FlashcardDirection, override: TtsLanguage?): TtsLanguage =
+    override ?: TtsLanguage.defaultFor(direction)
+
+/**
+ * One-shot migration from the legacy `tts_enabled` boolean. Returns the
+ * value that should be stored as [KEY_TTS_LANGUAGE] (or null to leave it
+ * unset and inherit the direction-default).
+ *
+ * Rule: if no explicit override is recorded yet AND the legacy flag was
+ * persisted as `false`, treat it as "user disabled TTS" → [TtsLanguage.OFF].
+ * Any other case (legacy not persisted, legacy true, override already set)
+ * leaves the override as-is.
+ */
+fun migrateTtsLegacy(legacyEnabled: Boolean?, existingOverride: TtsLanguage?): TtsLanguage? {
+    if (existingOverride != null) return existingOverride
+    if (legacyEnabled == false) return TtsLanguage.OFF
+    return null
+}
 
 const val DEFAULT_AREA_GATE_THRESHOLD_PCT = 80
 const val MIN_AREA_GATE_THRESHOLD_PCT = 0
@@ -122,6 +184,24 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _areaGateThresholdPct = MutableStateFlow(DEFAULT_AREA_GATE_THRESHOLD_PCT)
     val areaGateThresholdPct: StateFlow<Int> = _areaGateThresholdPct.asStateFlow()
 
+    /**
+     * Flashcard display direction. KO_TO_EN (default) shows Korean on the
+     * front; EN_TO_KO flips for Korean native speakers learning English.
+     */
+    private val _direction = MutableStateFlow(FlashcardDirection.KO_TO_EN)
+    val direction: StateFlow<FlashcardDirection> = _direction.asStateFlow()
+
+    /**
+     * Explicit TTS-language override. `null` means "follow the direction
+     * default" (KO_TO_EN → KOREAN, EN_TO_KO → ENGLISH). Use
+     * [effectiveTtsLanguage] when consuming.
+     */
+    private val _ttsLanguageOverride = MutableStateFlow<TtsLanguage?>(null)
+    val ttsLanguageOverride: StateFlow<TtsLanguage?> = _ttsLanguageOverride.asStateFlow()
+
+    /** Derived: the actual TTS language that should be used right now. */
+    val effectiveTtsLanguage: StateFlow<TtsLanguage>
+
     init {
         runBlocking {
             val prefs = context.moneoStore.data.first()
@@ -142,7 +222,24 @@ class MoneoPrefs private constructor(private val context: Context) {
             _areaGateThresholdPct.value =
                 (prefs[KEY_AREA_GATE_THRESHOLD_PCT] ?: DEFAULT_AREA_GATE_THRESHOLD_PCT)
                     .coerceIn(MIN_AREA_GATE_THRESHOLD_PCT, MAX_AREA_GATE_THRESHOLD_PCT)
+            _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
+            val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])
+            val migrated = migrateTtsLegacy(prefs[KEY_TTS_ENABLED], storedOverride)
+            _ttsLanguageOverride.value = migrated
+            // Persist the migration so future launches don't reapply the legacy rule.
+            if (migrated != null && storedOverride == null) {
+                scope.launch {
+                    context.moneoStore.edit { it[KEY_TTS_LANGUAGE] = migrated.name }
+                }
+            }
         }
+        effectiveTtsLanguage = combine(_direction, _ttsLanguageOverride) { dir, override ->
+            effectiveTtsLanguage(dir, override)
+        }.stateIn(
+            scope,
+            SharingStarted.Eagerly,
+            effectiveTtsLanguage(_direction.value, _ttsLanguageOverride.value),
+        )
     }
 
     fun setEnabled(value: Boolean) {
@@ -220,6 +317,29 @@ class MoneoPrefs private constructor(private val context: Context) {
         _areaGateThresholdPct.value = v
         scope.launch { context.moneoStore.edit { it[KEY_AREA_GATE_THRESHOLD_PCT] = v } }
     }
+
+    fun setDirection(value: FlashcardDirection) {
+        if (value == _direction.value) return
+        _direction.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_DIRECTION] = value.name } }
+    }
+
+    /**
+     * Pin TTS to a specific language regardless of [direction]. Pass `null`
+     * (or call [clearTtsLanguageOverride]) to revert to the direction default.
+     */
+    fun setTtsLanguage(value: TtsLanguage?) {
+        if (value == _ttsLanguageOverride.value) return
+        _ttsLanguageOverride.value = value
+        scope.launch {
+            context.moneoStore.edit { prefs ->
+                if (value == null) prefs.remove(KEY_TTS_LANGUAGE)
+                else prefs[KEY_TTS_LANGUAGE] = value.name
+            }
+        }
+    }
+
+    fun clearTtsLanguageOverride() = setTtsLanguage(null)
 
     companion object {
         @Volatile private var instance: MoneoPrefs? = null
