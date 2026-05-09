@@ -1,0 +1,322 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [357, 535],
+  "inspected": 178,
+  "flagged": [
+    {
+      "korean": "식",
+      "gloss": "meal; ceremony",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "식 standalone does not mean 'meal'. The 'meal' sense only appears in compounds like 식사, 한식, 양식. Bare 식 means 'ceremony', 'formula' (math), or 'expression/style'. Listing 'meal' as a standalone gloss is misleading for learners.",
+      "suggestion": {"gloss": "ceremony; formula, expression", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://eng.ichacha.net/korean/%EC%8B%9D.html"
+    },
+    {
+      "korean": "한",
+      "gloss": "one; Korean",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "Standalone 한 is the native-Korean numeral determiner 'one' (한 사람 = one person), or a prefix/intensifier ('한가운데' = the very middle). It does not mean 'Korean' on its own; the 'Korean' sense only emerges in Sino-Korean compounds like 한국, 한복, 한식. PoS should be 'determiner' rather than 'noun/adv'.",
+      "suggestion": {"gloss": "one (native numeral, prenominal); the very (intensifier prefix)", "partOfSpeech": "determiner"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%95%9C"
+    },
+    {
+      "korean": "맨",
+      "gloss": "very (most)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "맨 is primarily a prefix meaning 'bare/naked, nothing but' (맨손 'bare hand', 맨발 'bare foot', 맨바닥 'bare ground'). Only as a determiner before nouns of position/order does it intensify to 'the very (most)' (맨 앞, 맨 처음). The current gloss captures only the secondary sense and omits the dominant 'bare' meaning.",
+      "suggestion": {"gloss": "bare, naked (prefix); the very (most), foremost (before position/order nouns)", "partOfSpeech": "prefix/det"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A7%A8"
+    },
+    {
+      "korean": "여",
+      "gloss": "female (prefix)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "The gloss correctly identifies 여 as a prefix (Sino-Korean 女, used in 여학생, 여배우, 여왕). However the partOfSpeech 'noun/adv' contradicts the gloss; it should be 'prefix'. 여 does not function as a standalone noun or adverb.",
+      "suggestion": {"gloss": "female- (prefix)", "partOfSpeech": "prefix"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%97%AC"
+    },
+    {
+      "korean": "기본",
+      "gloss": "basic",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "기본 is a noun meaning 'foundation, basis, fundamentals' (Sino-Korean 基本). 'basic' is an adjective in English, but 기본 itself is a noun (the adjective form is 기본적 or 기본의/기본적인). Glossing as 'basic' invites the learner to use 기본 as an adjective, which is wrong.",
+      "suggestion": {"gloss": "basis, foundation, fundamentals", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B8%B0%EB%B3%B8"
+    },
+    {
+      "korean": "중요",
+      "gloss": "importance",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "중요 is recognized in dictionaries as a noun meaning 'importance', but in actual usage it is overwhelmingly bound: 중요하다 (adj), 중요한 (modifier), 중요성 (the noun 'importance'). Standalone 중요 is rare, and learners may produce ungrammatical sentences. The headword would be more useful as 중요하다.",
+      "suggestion": {"gloss": "important (used in 중요하다)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=57497"
+    },
+    {
+      "korean": "적",
+      "gloss": "enemy; time when",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "적 has multiple unrelated homographs: 적 (敵) 'enemy', 적 (跡/迹) 'time/moment, occasion' (used in 어렸을 적에), and the productive Sino-Korean suffix 적 (的) 'pertaining to' (사회적, 과학적). The gloss 'time when' is awkward English for the temporal sense; the suffix 적(的) sense is also missing. The two listed senses are unrelated lexemes.",
+      "suggestion": {"gloss": "enemy (敵); occasion, time (어렸을 적에); -ic, -al (suffix 的)", "partOfSpeech": "noun/suffix"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%81"
+    },
+    {
+      "korean": "들",
+      "gloss": "plural marker; field",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "Both senses are real (plural particle -들 and noun 들 'field/plain'), but they are different parts of speech: the plural marker is a particle/suffix, while 들 'field' is a noun. PoS 'noun/adv' covers neither cleanly. 들 is also never an adverb.",
+      "suggestion": {"gloss": "field, plain (noun); -들 plural particle (suffix)", "partOfSpeech": "noun/particle"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%93%A4"
+    },
+    {
+      "korean": "장",
+      "gloss": "chapter; sheet (counter)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "Both senses are correct, but 장 is one of the most polysemous Sino-Korean syllables (chapter 章, market 場, sheet-counter 張, intestines 腸, head/chief 長, sauce 醬, etc.). For a learner-facing seed, listing only two arbitrary senses out of many is misleading. Also, 장 as a counter is not an adverb.",
+      "suggestion": {"gloss": "sheet, page (counter for flat objects); chapter (章); market (場)", "partOfSpeech": "noun/counter"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9E%A5"
+    },
+    {
+      "korean": "북",
+      "gloss": "north; drum",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "Both senses exist (drum 북, north 北), but bare 북 for 'north' is mostly bound — natural usage is 북쪽 or 북부. 북 as 'drum' is a pure-Korean noun and is fully standalone. Listing 'north' first as a coequal gloss may lead learners to produce *'북에 있다' instead of '북쪽에 있다'.",
+      "suggestion": {"gloss": "drum (instrument); north (mostly in compounds: 북쪽, 북부)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%81"
+    },
+    {
+      "korean": "이렇다",
+      "gloss": "like this",
+      "partOfSpeech": "verb/adj",
+      "verdict": "uncertain",
+      "issue": "이렇다 is the dictionary form of an adjective meaning 'to be like this, to be such'. The gloss 'like this' reads as the adverbial form 이렇게 ('in this way'). For the headword 이렇다, a more accurate gloss would be 'to be like this; to be this way'.",
+      "suggestion": {"gloss": "to be like this, to be such", "partOfSpeech": "verb/adj"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B4%EB%9F%AC%ED%95%98%EB%8B%A4"
+    },
+    {
+      "korean": "이리",
+      "gloss": "this way",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "이리 in modern Korean is an adverb ('this way, hither, like this'), not a noun. The 'noun' option in 'noun/adv' is wrong. (Historically 이리 also meant 'wolf' but that sense is now obsolete in favor of 늑대.)",
+      "suggestion": {"gloss": "this way, here (toward speaker)", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B4%EB%A6%AC"
+    },
+    {
+      "korean": "딱",
+      "gloss": "exactly; just",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "딱 is an adverb meaning 'exactly, precisely, just right' (딱 맞다, 딱 한 번). It is also a mimetic for snapping/cracking sounds. It is not a noun. The 'noun' element of 'noun/adv' is wrong.",
+      "suggestion": {"gloss": "exactly, precisely, just right", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%94%B1"
+    },
+    {
+      "korean": "제법",
+      "gloss": "quite, fairly",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "제법 in this sense ('quite, considerably, fairly') is an adverb (제법 잘하다, 제법 춥다). The homograph noun 제법 (製法) 'method of manufacture' is unrelated and not the gloss given. PoS 'noun/adv' is misleading for the gloss 'quite, fairly'.",
+      "suggestion": {"gloss": "quite, fairly, considerably", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%9C%EB%B2%95"
+    },
+    {
+      "korean": "주로",
+      "gloss": "mainly",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "주로 is unambiguously an adverb meaning 'mainly, mostly, primarily'. PoS should be 'adverb', not 'noun/adv'. The homograph 주로 (走路) 'racetrack' is a different lexeme not represented by this gloss.",
+      "suggestion": {"gloss": "mainly, mostly, primarily", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A3%BC%EB%A1%9C"
+    },
+    {
+      "korean": "전혀",
+      "gloss": "not at all",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "전혀 is an adverb ('not at all, never', requires negative predicate). PoS 'noun/adv' is incorrect — it is never used as a noun.",
+      "suggestion": {"gloss": "not at all, (not) in the least", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%84%ED%98%80"
+    },
+    {
+      "korean": "온통",
+      "gloss": "entirely",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "온통 is an adverb ('all over, entirely, throughout', as in 온통 빨갛다). PoS should be 'adverb'.",
+      "suggestion": {"gloss": "entirely, all over, throughout", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A8%ED%86%B5"
+    },
+    {
+      "korean": "이미",
+      "gloss": "already",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "이미 is unambiguously an adverb ('already'). It is never used as a noun. PoS should be 'adverb'.",
+      "suggestion": {"gloss": "already", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B4%EB%AF%B8"
+    },
+    {
+      "korean": "대단히",
+      "gloss": "very, extremely",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "대단히 (the -히 form) is unambiguously an adverb ('very, extremely, greatly'). It is never a noun. PoS should be 'adverb'.",
+      "suggestion": {"gloss": "very, extremely, greatly", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8C%80%EB%8B%A8%ED%9E%88"
+    },
+    {
+      "korean": "완전히",
+      "gloss": "completely",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "완전히 (the -히 form) is unambiguously an adverb. PoS should be 'adverb'. (The noun is 완전.)",
+      "suggestion": {"gloss": "completely, entirely", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%99%84%EC%A0%84%ED%9E%88"
+    },
+    {
+      "korean": "함께",
+      "gloss": "together",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "함께 is unambiguously an adverb. PoS should be 'adverb'.",
+      "suggestion": {"gloss": "together", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%95%A8%EA%BB%98"
+    },
+    {
+      "korean": "오랫동안",
+      "gloss": "for a long time",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "오랫동안 functions adverbially ('for a long time'). It is morphologically a noun phrase (오랜 + 동안) but is not used as a standalone noun in modern usage; it occupies an adverbial slot.",
+      "suggestion": {"gloss": "for a long time", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A4%EB%9E%AB%EB%8F%99%EC%95%88"
+    },
+    {
+      "korean": "정말",
+      "gloss": "really",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "정말 is most often used as an adverb ('really'), though it is also a noun ('the truth, real fact'). Tagging 'noun/adv' is technically defensible but for the gloss 'really' specifically, it should be 'adverb'.",
+      "suggestion": {"gloss": "really, truly (adv); the truth, real fact (noun)", "partOfSpeech": "adverb/noun"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%95%EB%A7%90"
+    },
+    {
+      "korean": "지금",
+      "gloss": "now",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "지금 functions as both a noun ('the present (moment)') and an adverb ('now'); the dual tag is reasonable. Including for completeness — no flag needed unless tag granularity matters elsewhere.",
+      "suggestion": {"gloss": "now (adv); the present (noun)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%80%EA%B8%88"
+    },
+    {
+      "korean": "게다가",
+      "gloss": "moreover, on top of that",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "게다가 is a conjunctive adverb ('moreover, in addition, on top of that'). It is never a noun. PoS should be 'adverb' or 'conjunction'.",
+      "suggestion": {"gloss": "moreover, in addition, on top of that", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B2%8C%EB%8B%A4%EA%B0%80"
+    },
+    {
+      "korean": "그대로",
+      "gloss": "as it is",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "그대로 is an adverb ('as it is, just like that, intact'). It can also occupy noun-phrase slots loosely, but is not classified as a noun. PoS should be 'adverb'.",
+      "suggestion": {"gloss": "as it is, just like that, intact", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%8C%80%EB%A1%9C"
+    },
+    {
+      "korean": "가만히",
+      "gloss": "quietly; still",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "가만히 (-히 form) is an adverb ('quietly, still, motionlessly'). It is never a noun. PoS should be 'adverb'.",
+      "suggestion": {"gloss": "quietly, still, motionlessly", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B0%80%EB%A7%8C%ED%9E%88"
+    },
+    {
+      "korean": "없이",
+      "gloss": "without",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "없이 is an adverb ('without'), derived from 없다 + -이. It is never a noun.",
+      "suggestion": {"gloss": "without", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%97%86%EC%9D%B4"
+    },
+    {
+      "korean": "아",
+      "gloss": "ah!",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "아 is an interjection (exclamation). PoS should be 'interjection', not 'noun/adv'. (As a vocative particle 아 is a particle, also not a noun/adv.)",
+      "suggestion": {"gloss": "ah! (exclamation)", "partOfSpeech": "interjection"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%95%84"
+    },
+    {
+      "korean": "그만",
+      "gloss": "stop; that much",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "그만 is primarily an adverb ('that much; stop it; involuntarily/unintentionally'). The gloss 'stop' is misleading because 그만 is not the imperative verb 'stop'; it is the adverbial '(do) no more, enough'. A learner could mistakenly use it as a verb.",
+      "suggestion": {"gloss": "(no/that) much; (do) no more, enough; involuntarily", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%A7%8C"
+    },
+    {
+      "korean": "거",
+      "gloss": "thing (informal)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "거 is the colloquial contracted form of the bound noun 것 ('thing, fact'). It is bound — it cannot stand alone as a free noun. Listing it as 'noun/adv' without indicating its bound status may mislead learners into producing ungrammatical *거가 instead of 게/것이.",
+      "suggestion": {"gloss": "thing, fact (bound noun, colloquial form of 것)", "partOfSpeech": "bound noun"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B1%B0"
+    },
+    {
+      "korean": "년",
+      "gloss": "year",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "년 is a bound counter for years (2024년, 삼 년) — it cannot stand as a free noun meaning 'year' (the free noun is 해). Tagging as 'noun/adv' obscures its counter status.",
+      "suggestion": {"gloss": "year (counter, e.g. 2024년)", "partOfSpeech": "counter"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%85%84"
+    },
+    {
+      "korean": "인분",
+      "gloss": "portion (counter)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "인분 is a counter (Sino-Korean 人分) for food portions (이 인분 = two servings). PoS 'noun/adv' is incorrect; it should be 'counter'. The gloss already correctly identifies it as a counter.",
+      "suggestion": {"gloss": "portion, serving (counter for food)", "partOfSpeech": "counter"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B8%EB%B6%84"
+    },
+    {
+      "korean": "고프다",
+      "gloss": "hungry",
+      "partOfSpeech": "verb/adj",
+      "verdict": "wrong_collocation",
+      "issue": "고프다 is a bound adjective that essentially only collocates with 배 (배(가) 고프다 = 'to be hungry', literally 'stomach is empty/hungry'). It cannot freely mean 'hungry' attached to a person; *나는 고파요 is awkward. Without the 배 collocation note, learners produce ungrammatical sentences.",
+      "suggestion": {"gloss": "(of stomach) to be hungry; used as 배가 고프다", "partOfSpeech": "verb/adj"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B3%A0%ED%94%84%EB%8B%A4"
+    },
+    {
+      "korean": "피시",
+      "gloss": "PC (computer)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "피시 is the Hangulization of 'PC'. While it appears in Korean (especially 피시방 'PC bang'/internet cafe), in everyday writing the Roman letters 'PC' are far more common. As a TOPIK 1+2 headword, 피시방 (PC room) would be more useful than the bare transliteration.",
+      "suggestion": {"gloss": "PC, personal computer (transliteration)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%94%BC%EC%8B%9C"
+    }
+  ]
+}

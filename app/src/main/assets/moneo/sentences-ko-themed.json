@@ -51,9 +51,9 @@
     },
     {
       "vocabId": "rom-mine-v2:회복",
-      "korean": "포켓몬 센터에서 치료를 받았어요. (or: 포켓몬 센터에서 포켓몬을 회복시켰어요.)",
-      "romanization": "pokemon senteo-eseo chiryo-reul badasseoyo. (or: pokemon senteo-eseo pokemon-eul hoeboksikyeosseoyo.)",
-      "gloss": "My Pokémon got healed at the Pokémon Center.",
+      "korean": "포켓몬 센터에서 포켓몬의 체력을 회복시켰어요.",
+      "romanization": "poketmon senteoeseo poketmonui cheryeokeul hoeboksikyeoteoyo",
+      "gloss": "I restored my Pokémon's HP at the Pokémon Center.",
       "targetForm": "회복",
       "areaId": "rom_mined",
       "source": "themed-v1",

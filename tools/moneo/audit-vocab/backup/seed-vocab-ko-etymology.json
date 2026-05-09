@@ -118,8 +118,8 @@
       "id": "etymology-roots:골아파",
       "korean": "골아파",
       "romanization": "golapa",
-      "gloss": "(my) head hurts (phrase: 골+아파)",
-      "partOfSpeech": "phrase",
+      "gloss": "headache",
+      "partOfSpeech": "root/morpheme",
       "areaId": "pallet_town",
       "sourceTag": "etymology-roots",
       "notes": "From 고라파덕 (Psyduck)",
@@ -130,13 +130,7 @@
       ],
       "componentOf": [
         "고라파덕"
-      ],
-      "auditFix": {
-        "verdict": "pos_mismatch",
-        "issue": "골아파 is not a single morpheme or noun meaning 'headache'. 고라파덕's pun decomposes as 골(이) 아파(요) 'my head hurts' — a phrase combining the noun 골 'head' with the predicate 아프다. The standalone Korean noun for headache is 두통. Tagging 골아파 as a 'root/morpheme' meaning 'headache' is a part-of-speech and morphological error.",
-        "evidenceUrl": "https://namu.wiki/w/%EA%B3%A0%EB%9D%BC%ED%8C%8C%EB%8D%95",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:곰",
@@ -198,7 +192,7 @@
       "id": "etymology-roots:기라스",
       "korean": "기라스",
       "romanization": "giraseu",
-      "gloss": "from 안기라스 (Anguirus, Godzilla kaiju)",
+      "gloss": "-tar",
       "partOfSpeech": "root/morpheme",
       "areaId": "rom_mined",
       "sourceTag": "etymology-roots",
@@ -210,13 +204,7 @@
       ],
       "componentOf": [
         "마기라스"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "기라스 in 마기라스 (Tyranitar), 데기라스 (Pupitar), and 애버라스 (Larvitar) is borrowed from 안기라스 — the Korean name of the kaiju Anguirus from the Godzilla franchise, which Tyranitar's line visually references. It is not a transliteration of the English suffix '-tar'. Tying the root to '-tar' obscures the kaiju reference and is etymologically wrong.",
-        "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B8%B0%EB%9D%BC%EC%8A%A4",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:깜지",
@@ -374,7 +362,7 @@
       "id": "etymology-roots:노고",
       "korean": "노고",
       "romanization": "nogo",
-      "gloss": "(no meaningful root; anagram of 츠치노코)",
+      "gloss": "effort",
       "partOfSpeech": "root/morpheme",
       "areaId": "three_island",
       "sourceTag": "etymology-roots",
@@ -386,13 +374,7 @@
       ],
       "componentOf": [
         "노고치"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "노고치 (Dunsparce) is not built from a meaningful 노고 'effort'. The Korean name is a transliteration of the Japanese ノコッチ, which itself is an anagram-style scramble of 츠치노코 (tsuchinoko, the Japanese cryptid the Pokemon is based on). There is no 'effort' morpheme in the etymology — teaching learners that 노고 means 'effort' here invites them to misparse 노고치.",
-        "evidenceUrl": "https://namu.wiki/w/%EB%85%B8%EA%B3%A0%EC%B9%98",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:노루",
@@ -943,7 +925,7 @@
       "id": "etymology-roots:만보",
       "korean": "만보",
       "romanization": "manbo",
-      "gloss": "a great deal (colloquial); also lit. 10,000 steps (萬步)",
+      "gloss": "countless steps",
       "partOfSpeech": "root/morpheme",
       "areaId": "route_12",
       "sourceTag": "etymology-roots",
@@ -955,13 +937,7 @@
       ],
       "componentOf": [
         "잠만보"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "잠만보 (Snorlax) plays on 잠 'sleep' + 만보, but the morphemic punchline is the colloquial 만보 ~ 만큼/매우 'a great deal' (Snorlax sleeps and eats a great deal), reinforced by Japanese カビゴン. The literal Hanja reading 萬步 'ten thousand steps' is a real Korean compound (cf. 만보계 pedometer) but is not what 잠만보 is doing — Snorlax is famously sedentary, not a stepper. 'Countless steps' is the wrong sense.",
-        "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9E%A0%EB%A7%8C%EB%B3%B4",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:망나니",
@@ -1432,7 +1408,7 @@
       "id": "etymology-roots:샤",
       "korean": "샤",
       "romanization": "sya",
-      "gloss": "from 샤워 (shower)",
+      "gloss": "water sound",
       "partOfSpeech": "root/morpheme",
       "areaId": "celadon_city",
       "sourceTag": "etymology-roots",
@@ -1444,13 +1420,7 @@
       ],
       "componentOf": [
         "샤미드"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "샤 in 샤미드 (Vaporeon) is not an onomatopoeic 'water sound'. The widely cited Korean etymology is 샤워 (shower) + 머메이드 (mermaid). 샤 is a clip of 샤워 (English-derived 'shower'), a noun, not a water-sound mimetic. The current gloss invents an onomatopoeic reading.",
-        "evidenceUrl": "https://namu.wiki/w/%EC%83%A4%EB%AF%B8%EB%93%9C",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:선",
@@ -2197,7 +2167,7 @@
       "id": "etymology-roots:케인",
       "korean": "케인",
       "romanization": "kein",
-      "gloss": "from 허리케인 (hurricane)",
+      "gloss": "cane/tail",
       "partOfSpeech": "root/morpheme",
       "areaId": "rom_mined",
       "sourceTag": "etymology-roots",
@@ -2209,19 +2179,13 @@
       ],
       "componentOf": [
         "브케인"
-      ],
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Cyndaquil (브케인) and Quilava (마그케인) are fire/storm hedgehog Pokémon whose Japanese names (ヒノアラシ Hinoarashi 'fire-storm', マグマラシ Magumarashi 'magma-storm') reference 嵐 'storm'. The Korean adaptation borrows from 허리케인 'hurricane' for the 케인 element — the file already contains a separate 허리케인 entry with this analysis. Glossing 케인 as 'cane/tail' contradicts both the Japanese motif (storm) and the established Korean fan analysis. 'Cane' (지팡이) and 'tail' have no support.",
-        "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B7%B8%EC%BC%80%EC%9D%B8(%ED%95%9C%EC%A7%80%EC%9A%B0)",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:코리",
       "korean": "코리",
       "romanization": "kori",
-      "gloss": "elephant (clip of 코끼리)",
+      "gloss": "small",
       "partOfSpeech": "root/morpheme",
       "areaId": "seven_island",
       "sourceTag": "etymology-roots",
@@ -2233,13 +2197,7 @@
       ],
       "componentOf": [
         "코코리"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "코리 in 코코리 (Phanpy) does not mean 'small'. 코코리 is built from 코끼리 (elephant) — the Pokemon is explicitly an elephant calf. The 코 of 코끼리 is doubled and clipped (코+코+리). Glossing the root as 'small' is invented; if anything the morpheme means 'elephant (clip of 코끼리)'.",
-        "evidenceUrl": "https://namu.wiki/w/%EC%BD%94%EB%81%BC%EB%A6%AC",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:코브라",
@@ -2263,7 +2221,7 @@
       "id": "etymology-roots:콘",
       "korean": "콘",
       "romanization": "kon",
-      "gloss": "cone (English) / compound (eye)",
+      "gloss": "cocoon-like body",
       "partOfSpeech": "root/morpheme",
       "areaId": "route_12",
       "sourceTag": "etymology-roots",
@@ -2277,13 +2235,7 @@
       "componentOf": [
         "콘팡",
         "쏘콘"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Neither cited Pokemon supports 'cocoon-like body'. 콘팡 (Venonat) inherits from Japanese コンパン, where コン is from 'compound (eye)' (복안) — Venonat is a compound-eye gnat, not a cocoon. 쏘콘 (Forretress) uses 콘 from English 'cone' (Pineco/pinecone). A single gloss can't cover both, but 'cocoon-like body' fits neither.",
-        "evidenceUrl": "https://namu.wiki/w/%EC%8F%98%EC%BD%98",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:콘치",
@@ -2641,7 +2593,7 @@
       "id": "etymology-roots:해",
       "korean": "해",
       "romanization": "hae",
-      "gloss": "sun (해바라기) / jellyfish (해파리, in 왕눈해)",
+      "gloss": "sun",
       "partOfSpeech": "root/morpheme",
       "areaId": "pallet_town",
       "sourceTag": "etymology-roots",
@@ -2656,13 +2608,7 @@
         "왕눈해",
         "해너츠",
         "해루미"
-      ],
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The single gloss 'sun' fits 해너츠 (Sunkern, from 해바라기 sunflower) and 해루미 (Sunflora) but is wrong for 왕눈해 (Tentacool), where 해 is a clip of 해파리 (jellyfish) — Tentacool is a jellyfish, not a sun. Lumping all three under 'sun' will mislead learners into parsing 왕눈해 as 'big-eye sun'.",
-        "evidenceUrl": "https://namu.wiki/w/%EC%99%95%EB%88%88%ED%95%B4",
-        "auditedAt": "2026-05-09"
-      }
+      ]
     },
     {
       "id": "etymology-roots:허리케인",

@@ -1,0 +1,834 @@
+{
+  "appliedAt": "2026-05-09",
+  "count": 69,
+  "items": [
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "노고",
+      "before": {
+        "gloss": "effort",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "(no meaningful root; anagram of 츠치노코)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "코리",
+      "before": {
+        "gloss": "small",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "elephant (clip of 코끼리)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "콘",
+      "before": {
+        "gloss": "cocoon-like body",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "cone (English) / compound (eye)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "기라스",
+      "before": {
+        "gloss": "-tar",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "from 안기라스 (Anguirus, Godzilla kaiju)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "해",
+      "before": {
+        "gloss": "sun",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "sun (해바라기) / jellyfish (해파리, in 왕눈해)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "샤",
+      "before": {
+        "gloss": "water sound",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "from 샤워 (shower)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "만보",
+      "before": {
+        "gloss": "countless steps",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "a great deal (colloquial); also lit. 10,000 steps (萬步)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "케인",
+      "before": {
+        "gloss": "cane/tail",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "from 허리케인 (hurricane)",
+        "partOfSpeech": "root/morpheme"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-etymology.json",
+      "korean": "골아파",
+      "before": {
+        "gloss": "headache",
+        "partOfSpeech": "root/morpheme"
+      },
+      "after": {
+        "gloss": "(my) head hurts (phrase: 골+아파)",
+        "partOfSpeech": "phrase"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "갈다",
+      "before": {
+        "gloss": "to grind; to plow",
+        "partOfSpeech": "verb"
+      },
+      "after": {
+        "gloss": "to change; to replace; to grind; to sharpen; to plow",
+        "partOfSpeech": "verb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "몰다",
+      "before": {
+        "gloss": "to drive (cattle); to herd",
+        "partOfSpeech": "verb"
+      },
+      "after": {
+        "gloss": "to drive (a vehicle); to herd; to drive into a corner",
+        "partOfSpeech": "verb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "달달",
+      "before": {
+        "gloss": "sweetly; (of trembling) lightly shaking",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "(of trembling/shivering) shaking; (of a rattling sound); (informal) sweetly",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "전부",
+      "before": {
+        "gloss": "all; everything",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "all; everything; the whole",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "부디",
+      "before": {
+        "gloss": "(unglossed; freq 139)",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "please; by all means; I do hope (that)",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "거두다",
+      "before": {
+        "gloss": "(unglossed; freq 51)",
+        "partOfSpeech": "verb"
+      },
+      "after": {
+        "gloss": "to harvest; to reap; to collect; to achieve (results); to withdraw",
+        "partOfSpeech": "verb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "의도",
+      "before": {
+        "gloss": "(unglossed; freq 14)",
+        "partOfSpeech": "noun"
+      },
+      "after": {
+        "gloss": "intention; purpose; aim",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "도움",
+      "before": {
+        "gloss": "(unglossed; freq 13)",
+        "partOfSpeech": "noun"
+      },
+      "after": {
+        "gloss": "help; aid; assistance",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "오래",
+      "before": {
+        "gloss": "(unglossed; freq 7)",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "for a long time; long",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "다소",
+      "before": {
+        "gloss": "(unglossed; freq 5)",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "somewhat; more or less; a little",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "아미",
+      "before": {
+        "gloss": "(unglossed; freq 4)",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "(remove: likely Mecab artifact; literal noun senses are crescent eyebrow / Buddhist Amita)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "조화",
+      "before": {
+        "gloss": "(unglossed; freq 4)",
+        "partOfSpeech": "noun"
+      },
+      "after": {
+        "gloss": "harmony (調和); creation, the workings of nature (造化); artificial flower (造花)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "지레",
+      "before": {
+        "gloss": "(unglossed; freq 4)",
+        "partOfSpeech": "adverb"
+      },
+      "after": {
+        "gloss": "prematurely; beforehand; in advance",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-mined.json",
+      "korean": "소음",
+      "before": {
+        "gloss": "Air Lock (ability)",
+        "partOfSpeech": "noun"
+      },
+      "after": {
+        "gloss": "Cacophony (ability)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "몰다",
+      "before": {
+        "gloss": "to drive (cattle); to herd",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "to drive (a vehicle); to herd; to drive (into)",
+        "partOfSpeech": "verb/adj"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "다",
+      "before": {
+        "gloss": "all",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "all, everything, entirely",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "호",
+      "before": {
+        "gloss": "issue (number); door",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "issue (number); unit (housing counter); lake; pen name",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "단",
+      "before": {
+        "gloss": "sweet (prefix); paragraph",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "platform, tier; bunch, sheaf; rank (dan); section",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "부",
+      "before": {
+        "gloss": "department",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "part, section; counter for copies; (in compounds) wealth; vice-",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "말다",
+      "before": {
+        "gloss": "to roll up; not to (negative imperative)",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "to roll up; (auxiliary, in -지 말다) don't, stop",
+        "partOfSpeech": "verb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "밉다",
+      "before": {
+        "gloss": "to be hateful",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "to be detestable, dislikable; (of a person/behaviour) ugly",
+        "partOfSpeech": "verb/adj"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "바다",
+      "before": {
+        "gloss": "sea",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "sea",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "술잔",
+      "before": {
+        "gloss": "drinking cup",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "wine cup; drinking glass (for alcohol)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "짓",
+      "before": {
+        "gloss": "act, gesture",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "act, deed (usually pejorative)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "고기",
+      "before": {
+        "gloss": "meat; fish",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "meat (also archaic / in compounds: fish, as in 물고기)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "식",
+      "before": {
+        "gloss": "meal; ceremony",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "ceremony; formula, expression",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "한",
+      "before": {
+        "gloss": "one; Korean",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "one (native numeral, prenominal); the very (intensifier prefix)",
+        "partOfSpeech": "determiner"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "맨",
+      "before": {
+        "gloss": "very (most)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "bare, naked (prefix); the very (most), foremost (before position/order nouns)",
+        "partOfSpeech": "prefix/det"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "여",
+      "before": {
+        "gloss": "female (prefix)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "female- (prefix)",
+        "partOfSpeech": "prefix"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "기본",
+      "before": {
+        "gloss": "basic",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "basis, foundation, fundamentals",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "적",
+      "before": {
+        "gloss": "enemy; time when",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "enemy (敵); occasion, time (어렸을 적에); -ic, -al (suffix 的)",
+        "partOfSpeech": "noun/suffix"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "들",
+      "before": {
+        "gloss": "plural marker; field",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "field, plain (noun); -들 plural particle (suffix)",
+        "partOfSpeech": "noun/particle"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "장",
+      "before": {
+        "gloss": "chapter; sheet (counter)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "sheet, page (counter for flat objects); chapter (章); market (場)",
+        "partOfSpeech": "noun/counter"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "북",
+      "before": {
+        "gloss": "north; drum",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "drum (instrument); north (mostly in compounds: 북쪽, 북부)",
+        "partOfSpeech": "noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "이렇다",
+      "before": {
+        "gloss": "like this",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "to be like this; to be such",
+        "partOfSpeech": "verb/adj"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "이리",
+      "before": {
+        "gloss": "this way",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "this way, here (toward speaker)",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "딱",
+      "before": {
+        "gloss": "exactly; just",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "exactly, precisely, just right",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "제법",
+      "before": {
+        "gloss": "quite, fairly",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "quite, fairly, considerably",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "주로",
+      "before": {
+        "gloss": "mainly",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "mainly, mostly, primarily",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "전혀",
+      "before": {
+        "gloss": "not at all",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "not at all, (not) in the least",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "온통",
+      "before": {
+        "gloss": "entirely",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "entirely, all over, throughout",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "이미",
+      "before": {
+        "gloss": "already",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "already",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "대단히",
+      "before": {
+        "gloss": "very, extremely",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "very, extremely, greatly",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "완전히",
+      "before": {
+        "gloss": "completely",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "completely, entirely",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "함께",
+      "before": {
+        "gloss": "together",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "together",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "오랫동안",
+      "before": {
+        "gloss": "for a long time",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "for a long time",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "정말",
+      "before": {
+        "gloss": "really",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "really, truly (adv); the truth, real fact (noun)",
+        "partOfSpeech": "adverb/noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "게다가",
+      "before": {
+        "gloss": "moreover, on top of that",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "moreover, in addition, on top of that",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "그대로",
+      "before": {
+        "gloss": "as it is",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "as it is, just like that, intact",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "가만히",
+      "before": {
+        "gloss": "quietly; still",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "quietly, still, motionlessly",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "없이",
+      "before": {
+        "gloss": "without",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "without",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "아",
+      "before": {
+        "gloss": "ah!",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "ah! (exclamation)",
+        "partOfSpeech": "interjection"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "그만",
+      "before": {
+        "gloss": "stop; that much",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "(no/that) much; (do) no more, enough; involuntarily",
+        "partOfSpeech": "adverb"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "거",
+      "before": {
+        "gloss": "thing (informal)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "thing, fact (bound noun, colloquial form of 것)",
+        "partOfSpeech": "bound noun"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "년",
+      "before": {
+        "gloss": "year",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "year (counter, e.g. 2024년)",
+        "partOfSpeech": "counter"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "인분",
+      "before": {
+        "gloss": "portion (counter)",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "portion, serving (counter for food)",
+        "partOfSpeech": "counter"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "고프다",
+      "before": {
+        "gloss": "hungry",
+        "partOfSpeech": "verb/adj"
+      },
+      "after": {
+        "gloss": "(of stomach) to be hungry; used as 배가 고프다",
+        "partOfSpeech": "verb/adj"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "똑같이",
+      "before": {
+        "gloss": "exactly the same",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "identically; in the same way",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "전자",
+      "before": {
+        "gloss": "electronic",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "electron; the former",
+        "partOfSpeech": "noun/adv"
+      }
+    },
+    {
+      "shard": "seed-vocab-ko-topik.json",
+      "korean": "연기",
+      "before": {
+        "gloss": "smoke; performance",
+        "partOfSpeech": "noun/adv"
+      },
+      "after": {
+        "gloss": "smoke (煙氣); performance, acting (演技); postponement (延期)",
+        "partOfSpeech": "noun"
+      }
+    }
+  ]
+}

@@ -1,0 +1,881 @@
+{
+  "applyList": [
+    {
+      "korean": "노고",
+      "originalGloss": "effort",
+      "originalPos": "root/morpheme",
+      "newGloss": "(no meaningful root; anagram of 츠치노코)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "노고치 (Dunsparce) is not built from a meaningful 노고 'effort'. The Korean name is a transliteration of the Japanese ノコッチ, which itself is an anagram-style scramble of 츠치노코 (tsuchinoko, the Japanese cryptid the Pokemon is based on). There is no 'effort' morpheme in the etymology — teaching learners that 노고 means 'effort' here invites them to misparse 노고치.",
+      "evidenceUrl": "https://namu.wiki/w/%EB%85%B8%EA%B3%A0%EC%B9%98",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "코리",
+      "originalGloss": "small",
+      "originalPos": "root/morpheme",
+      "newGloss": "elephant (clip of 코끼리)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "코리 in 코코리 (Phanpy) does not mean 'small'. 코코리 is built from 코끼리 (elephant) — the Pokemon is explicitly an elephant calf. The 코 of 코끼리 is doubled and clipped (코+코+리). Glossing the root as 'small' is invented; if anything the morpheme means 'elephant (clip of 코끼리)'.",
+      "evidenceUrl": "https://namu.wiki/w/%EC%BD%94%EB%81%BC%EB%A6%AC",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "콘",
+      "originalGloss": "cocoon-like body",
+      "originalPos": "root/morpheme",
+      "newGloss": "cone (English) / compound (eye)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "Neither cited Pokemon supports 'cocoon-like body'. 콘팡 (Venonat) inherits from Japanese コンパン, where コン is from 'compound (eye)' (복안) — Venonat is a compound-eye gnat, not a cocoon. 쏘콘 (Forretress) uses 콘 from English 'cone' (Pineco/pinecone). A single gloss can't cover both, but 'cocoon-like body' fits neither.",
+      "evidenceUrl": "https://namu.wiki/w/%EC%8F%98%EC%BD%98",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "기라스",
+      "originalGloss": "-tar",
+      "originalPos": "root/morpheme",
+      "newGloss": "from 안기라스 (Anguirus, Godzilla kaiju)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "기라스 in 마기라스 (Tyranitar), 데기라스 (Pupitar), and 애버라스 (Larvitar) is borrowed from 안기라스 — the Korean name of the kaiju Anguirus from the Godzilla franchise, which Tyranitar's line visually references. It is not a transliteration of the English suffix '-tar'. Tying the root to '-tar' obscures the kaiju reference and is etymologically wrong.",
+      "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B8%B0%EB%9D%BC%EC%8A%A4",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "해",
+      "originalGloss": "sun",
+      "originalPos": "root/morpheme",
+      "newGloss": "sun (해바라기) / jellyfish (해파리, in 왕눈해)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "The single gloss 'sun' fits 해너츠 (Sunkern, from 해바라기 sunflower) and 해루미 (Sunflora) but is wrong for 왕눈해 (Tentacool), where 해 is a clip of 해파리 (jellyfish) — Tentacool is a jellyfish, not a sun. Lumping all three under 'sun' will mislead learners into parsing 왕눈해 as 'big-eye sun'.",
+      "evidenceUrl": "https://namu.wiki/w/%EC%99%95%EB%88%88%ED%95%B4",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "샤",
+      "originalGloss": "water sound",
+      "originalPos": "root/morpheme",
+      "newGloss": "from 샤워 (shower)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "샤 in 샤미드 (Vaporeon) is not an onomatopoeic 'water sound'. The widely cited Korean etymology is 샤워 (shower) + 머메이드 (mermaid). 샤 is a clip of 샤워 (English-derived 'shower'), a noun, not a water-sound mimetic. The current gloss invents an onomatopoeic reading.",
+      "evidenceUrl": "https://namu.wiki/w/%EC%83%A4%EB%AF%B8%EB%93%9C",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "만보",
+      "originalGloss": "countless steps",
+      "originalPos": "root/morpheme",
+      "newGloss": "a great deal (colloquial); also lit. 10,000 steps (萬步)",
+      "newPos": null,
+      "verdict": "mistranslation",
+      "issue": "잠만보 (Snorlax) plays on 잠 'sleep' + 만보, but the morphemic punchline is the colloquial 만보 ~ 만큼/매우 'a great deal' (Snorlax sleeps and eats a great deal), reinforced by Japanese カビゴン. The literal Hanja reading 萬步 'ten thousand steps' is a real Korean compound (cf. 만보계 pedometer) but is not what 잠만보 is doing — Snorlax is famously sedentary, not a stepper. 'Countless steps' is the wrong sense.",
+      "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9E%A0%EB%A7%8C%EB%B3%B4",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "케인",
+      "originalGloss": "cane/tail",
+      "originalPos": "root/morpheme",
+      "newGloss": "from 허리케인 (hurricane)",
+      "newPos": null,
+      "verdict": "polish:fix",
+      "issue": "Cyndaquil (브케인) and Quilava (마그케인) are fire/storm hedgehog Pokémon whose Japanese names (ヒノアラシ Hinoarashi 'fire-storm', マグマラシ Magumarashi 'magma-storm') reference 嵐 'storm'. The Korean adaptation borrows from 허리케인 'hurricane' for the 케인 element — the file already contains a separate 허리케인 entry with this analysis. Glossing 케인 as 'cane/tail' contradicts both the Japanese motif (storm) and the established Korean fan analysis. 'Cane' (지팡이) and 'tail' have no support.",
+      "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B7%B8%EC%BC%80%EC%9D%B8(%ED%95%9C%EC%A7%80%EC%9A%B0)",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "골아파",
+      "originalGloss": "headache",
+      "originalPos": "root/morpheme",
+      "newGloss": "(my) head hurts (phrase: 골+아파)",
+      "newPos": "phrase",
+      "verdict": "pos_mismatch",
+      "issue": "골아파 is not a single morpheme or noun meaning 'headache'. 고라파덕's pun decomposes as 골(이) 아파(요) 'my head hurts' — a phrase combining the noun 골 'head' with the predicate 아프다. The standalone Korean noun for headache is 두통. Tagging 골아파 as a 'root/morpheme' meaning 'headache' is a part-of-speech and morphological error.",
+      "evidenceUrl": "https://namu.wiki/w/%EA%B3%A0%EB%9D%BC%ED%8C%8C%EB%8D%95",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "갈다",
+      "originalGloss": "to grind; to plow",
+      "originalPos": "verb",
+      "newGloss": "to change; to replace; to grind; to sharpen; to plow",
+      "newPos": "verb",
+      "verdict": "mistranslation",
+      "issue": "Gloss is too narrow. 갈다 is a high-frequency homonym whose dominant modern sense is 'to change/replace' (e.g., 칼을 갈다 'sharpen', 기름을 갈다 'change the oil', 이를 갈다 'gnash teeth'). Omitting the change/replace sense is a major omission for a freq=21 lemma.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B0%88%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "몰다",
+      "originalGloss": "to drive (cattle); to herd",
+      "originalPos": "verb",
+      "newGloss": "to drive (a vehicle); to herd; to drive into a corner",
+      "newPos": "verb",
+      "verdict": "mistranslation",
+      "issue": "Gloss missing the most common modern sense, 'to drive (a vehicle)' (차를 몰다). The cattle/herding sense is correct but secondary in contemporary usage.",
+      "evidenceUrl": "https://x.com/ttmik/status/956406817545842693",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "달달",
+      "originalGloss": "sweetly; (of trembling) lightly shaking",
+      "originalPos": "adverb",
+      "newGloss": "(of trembling/shivering) shaking; (of a rattling sound); (informal) sweetly",
+      "newPos": "adverb",
+      "verdict": "polish:fix",
+      "issue": "The dictionary-priority sense of 달달 is the onomatopoeic 'trembling/shivering' (달달 떨다) and 'rattling sound' (e.g., 달달거리다). The 'sweetly' sense (from 달다 'sweet' / 달달하다) is a recent informal/slang extension. Listing 'sweetly' first inverts dictionary priority and contemporary onomatopoeia references confirm 덜덜/달달 are paired vowel-harmony onomatopoeia for shivering. Both senses should be retained but with the trembling sense first.",
+      "evidenceUrl": "https://satyanghaekorean.org/2022/01/12/%EB%8B%AC%EB%8B%A4-vs-%EB%8B%AC%EC%BD%A4%ED%95%98%EB%8B%A4-vs-%EB%8B%AC%EB%8B%AC%ED%95%98%EB%8B%A4-words-meaning-sweet/",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "전부",
+      "originalGloss": "all; everything",
+      "originalPos": "adverb",
+      "newGloss": "all; everything; the whole",
+      "newPos": "noun",
+      "verdict": "pos_mismatch",
+      "issue": "전부 functions primarily as a noun/pronoun ('the whole; all of it') and only secondarily as an adverb ('altogether'). Tagging only as adverb misses the primary nominal usage.",
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%A0%84%EB%B6%80",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "부디",
+      "originalGloss": "(unglossed; freq 139)",
+      "originalPos": "adverb",
+      "newGloss": "please; by all means; I do hope (that)",
+      "newPos": "adverb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 부디 is a real, common formal adverb meaning 'please; kindly; by all means; I do hope'. Multiple authoritative sources (wordhippo, LingQ, HiNative) corroborate. The placeholder gloss should be filled in.",
+      "evidenceUrl": "https://www.wordhippo.com/what-is/the-meaning-of/korean-word-1d3182f36ea95e52fcaeca169c7e5f97a970177a.html",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "거두다",
+      "originalGloss": "(unglossed; freq 51)",
+      "originalPos": "verb",
+      "newGloss": "to harvest; to reap; to collect; to achieve (results); to withdraw",
+      "newPos": "verb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 거두다 is a real verb meaning 'to harvest; to reap; to gather; to collect; to achieve (results); to withdraw'. wordrow.kr (Korean dictionary mirror) lists multiple senses including agricultural harvesting and abstract achievement.",
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/16280_%EA%B1%B0%EB%91%90%EB%8B%A4/",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "의도",
+      "originalGloss": "(unglossed; freq 14)",
+      "originalPos": "noun",
+      "newGloss": "intention; purpose; aim",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 의도 (意圖) is a common noun meaning 'intention; purpose; aim'. Multiple dictionary sources confirm; this is a normal Sino-Korean word.",
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/24068_%EC%9D%98%EB%8F%84/",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "도움",
+      "originalGloss": "(unglossed; freq 13)",
+      "originalPos": "noun",
+      "newGloss": "help; aid; assistance",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 도움 is a very common noun (nominalized form of 돕다 'to help') meaning 'help; aid; assistance'. Multiple dictionary sources confirm this everyday lemma.",
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EB%8F%84%EC%9B%80",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "오래",
+      "originalGloss": "(unglossed; freq 7)",
+      "originalPos": "adverb",
+      "newGloss": "for a long time; long",
+      "newPos": "adverb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 오래 is a very common adverb meaning 'long; for a long time'. Wiktionary, Collins, and Cambridge all confirm. Standard everyday vocabulary.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A4%EB%9E%98",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "다소",
+      "originalGloss": "(unglossed; freq 5)",
+      "originalPos": "adverb",
+      "newGloss": "somewhat; more or less; a little",
+      "newPos": "adverb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 다소 (多少) is a common Sino-Korean adverb meaning 'somewhat; more or less; a little'. Wiktionary and Collins confirm.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A4%EC%86%8C",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "아미",
+      "originalGloss": "(unglossed; freq 4)",
+      "originalPos": "adverb",
+      "newGloss": "(remove: likely Mecab artifact; literal noun senses are crescent eyebrow / Buddhist Amita)",
+      "newPos": "noun",
+      "verdict": "pos_mismatch",
+      "issue": "아미 is a noun, not an adverb. Possible meanings: 蛾眉 'crescent eyebrow' (poetic/literary), 阿彌 'Amitabha (Buddhist)', or the BTS fandom name. None of these are adverbs. Most likely a Mecab artifact in this Pokemon corpus.",
+      "evidenceUrl": "https://educalingo.com/en/dic-ko/ami",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "조화",
+      "originalGloss": "(unglossed; freq 4)",
+      "originalPos": "noun",
+      "newGloss": "harmony (調和); creation, the workings of nature (造化); artificial flower (造花)",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 조화 has multiple homonyms (調和 'harmony', 造花 'artificial flower', 造化 'creation/the workings of nature'). Wiktionary documents all three. While freq 4 in a Pokémon corpus could partially be Mecab artifact, 조화 is a real, common Korean noun and the gloss is fully recoverable.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A1%B0%ED%99%94",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "지레",
+      "originalGloss": "(unglossed; freq 4)",
+      "originalPos": "adverb",
+      "newGloss": "prematurely; beforehand; in advance",
+      "newPos": "adverb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 지레 as adverb = 'prematurely; beforehand; in advance' (common in 지레 겁먹다). wordrow.kr lists 'ALREADY; BEFOREHAND; IN ADVANCE' as the primary sense.",
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/76940_%EC%A7%80%EB%A0%88/",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "소음",
+      "originalGloss": "Air Lock (ability)",
+      "originalPos": "noun",
+      "newGloss": "Cacophony (ability)",
+      "newPos": "noun",
+      "verdict": "mistranslation",
+      "issue": "The English gloss is wrong. Source is gAbilityNames[76], which in Gen 3 (LeafGreen) is the unused ability Cacophony (Japanese そうおん, lit. 'noise'). The Korean lemma 소음 ('noise') correctly corresponds to Cacophony, not Air Lock. The duplicate Air Lock entry at index 618 (에어록, gAbilityNames[77]) is the actual Air Lock; that one is correct. This entry should read 'Cacophony (ability)'. Confirmed by Bulbapedia: Cacophony is index 76 and Air Lock is index 77 in Gen 3 ability tables.",
+      "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Cacophony_(Ability)",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "몰다",
+      "originalGloss": "to drive (cattle); to herd",
+      "originalPos": "verb/adj",
+      "newGloss": "to drive (a vehicle); to herd; to drive (into)",
+      "newPos": "verb/adj",
+      "verdict": "mistranslation",
+      "issue": "The gloss is too narrow. 몰다 broadly means 'to drive' — its primary modern senses are driving a vehicle (차를 몰다), herding animals, and driving someone into a corner (궁지에 몰다). Restricting it to 'cattle' and 'herd' suggests a rural-only word and misses the everyday vehicle sense that a TOPIK learner is likely to encounter.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%AA%B0%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "다",
+      "originalGloss": "all",
+      "originalPos": "verb/adj",
+      "newGloss": "all, everything, entirely",
+      "newPos": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "다 in the sense 'all/entirely/everything' is an adverb (and sometimes noun), not a verb or adjective. Under the file's convention 'verb/adj' is reserved for predicate stems ending in -다; bare 다 'all' belongs in the 'noun/adv' bucket like 늘, 곧, 모두, etc.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "호",
+      "originalGloss": "issue (number); door",
+      "originalPos": "noun/adv",
+      "newGloss": "issue (number); unit (housing counter); lake; pen name",
+      "newPos": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "The 'door' sense is incorrect — that is 문, not 호. 호 (號) means 'number/issue' (잡지 5월호, 101호) and is a counter for housing units; 호 (湖) means 'lake' (백두산 천지호); 호 (號) can also mean a courtesy/pen name. 'Door' looks like a confusion with the Chinese character 戶 (household), which is not a standalone Korean noun for 'door'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%98%B8",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "단",
+      "originalGloss": "sweet (prefix); paragraph",
+      "originalPos": "noun/adv",
+      "newGloss": "platform, tier; bunch, sheaf; rank (dan); section",
+      "newPos": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "Both senses listed are misleading. 'Sweet (prefix)' is not 단 standalone — it is the attributive form of 달다 (단 호박 = sweet pumpkin), a conjugation, not a lemma. 'Paragraph' is also off; the standalone noun 단 means 'platform/dais; bunch/sheaf (of vegetables); rank/level (martial arts dan); section/tier'. Paragraph in writing is typically 단락 or 문단, not bare 단.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A8",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "부",
+      "originalGloss": "department",
+      "originalPos": "noun/adv",
+      "newGloss": "part, section; counter for copies; (in compounds) wealth; vice-",
+      "newPos": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "The single gloss 'department' is too narrow. 부 (部) primarily means 'part/section/division' and is a counter for copies of a book/newspaper (책 한 부); 부 (副) is the prefix 'vice-/deputy-'; 부 (富) means 'wealth/riches'. 'Department' is one specialised reading (e.g. 인사부) but is not the headword sense.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%80",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "말다",
+      "originalGloss": "to roll up; not to (negative imperative)",
+      "originalPos": "verb/adj",
+      "newGloss": "to roll up; (auxiliary, in -지 말다) don't, stop",
+      "newPos": "verb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 말다 has two homophonous verbs — 말다₁ 'to roll up' (김밥을 말다, 소매를 말다) and 말다₂ the auxiliary verb in -지 말다 negative imperatives. The auditor's suggestion accurately captures both senses including the auxiliary status.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A7%90%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "밉다",
+      "originalGloss": "to be hateful",
+      "originalPos": "verb/adj",
+      "newGloss": "to be detestable, dislikable; (of a person/behaviour) ugly",
+      "newPos": "verb/adj",
+      "verdict": "unnatural",
+      "issue": "'To be hateful' implies the subject is the one feeling hatred, which is the opposite of 밉다's meaning. 밉다 is a descriptive verb meaning the subject is the object of dislike — 'to be disliked, to look unpleasant, to be ugly/loathsome'. A more accurate gloss is 'to be despicable, to be hated/disliked' or 'to be ugly (in behaviour or looks)'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B0%89%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "바다",
+      "originalGloss": "sea",
+      "originalPos": "verb/adj",
+      "newGloss": "sea",
+      "newPos": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "바다 is unambiguously a noun meaning 'sea'. The partOfSpeech tag 'verb/adj' is wrong; it should be 'noun/adv' to match the convention used for the other noun entries in the file. The gloss itself is correct.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B0%94%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "술잔",
+      "originalGloss": "drinking cup",
+      "originalPos": "noun/adv",
+      "newGloss": "wine cup; drinking glass (for alcohol)",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 술잔 (술 'alcohol' + 잔 'cup') specifically denotes a vessel for alcohol — wineglass, shot glass, sake cup. wordrow.kr lists it as 'WINEGLASS; WINE CUP; GOBLET'. The generic 'drinking cup' could mislead learners.",
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/65374_%EC%88%A0%EC%9E%94/",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "짓",
+      "originalGloss": "act, gesture",
+      "originalPos": "noun/adv",
+      "newGloss": "act, deed (usually pejorative)",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 짓 in modern Korean carries strong pejorative connotation (미친 짓, 나쁜 짓, 바보 같은 짓). Wiktionary explicitly notes 'in Modern Korean the word virtually always has a negative connotation.' Neutral 'act, gesture' loses critical semantic information.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%93",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "고기",
+      "originalGloss": "meat; fish",
+      "originalPos": "noun/adv",
+      "newGloss": "meat (also archaic / in compounds: fish, as in 물고기)",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: in modern Korean, 고기 primarily means 'meat'. The 'fish' sense survives only in compounds (물고기 'live fish'). For fish-as-food modern Korean uses 생선 not bare 고기. Listing 'fish' as a coequal gloss misleads learners. Wiktionary corroborates the meat-primary, fish-archaic split.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B3%A0%EA%B8%B0",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "식",
+      "originalGloss": "meal; ceremony",
+      "originalPos": "noun/adv",
+      "newGloss": "ceremony; formula, expression",
+      "newPos": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "식 standalone does not mean 'meal'. The 'meal' sense only appears in compounds like 식사, 한식, 양식. Bare 식 means 'ceremony', 'formula' (math), or 'expression/style'. Listing 'meal' as a standalone gloss is misleading for learners.",
+      "evidenceUrl": "https://eng.ichacha.net/korean/%EC%8B%9D.html",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "한",
+      "originalGloss": "one; Korean",
+      "originalPos": "noun/adv",
+      "newGloss": "one (native numeral, prenominal); the very (intensifier prefix)",
+      "newPos": "determiner",
+      "verdict": "mistranslation",
+      "issue": "Standalone 한 is the native-Korean numeral determiner 'one' (한 사람 = one person), or a prefix/intensifier ('한가운데' = the very middle). It does not mean 'Korean' on its own; the 'Korean' sense only emerges in Sino-Korean compounds like 한국, 한복, 한식. PoS should be 'determiner' rather than 'noun/adv'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%95%9C",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "맨",
+      "originalGloss": "very (most)",
+      "originalPos": "noun/adv",
+      "newGloss": "bare, naked (prefix); the very (most), foremost (before position/order nouns)",
+      "newPos": "prefix/det",
+      "verdict": "mistranslation",
+      "issue": "맨 is primarily a prefix meaning 'bare/naked, nothing but' (맨손 'bare hand', 맨발 'bare foot', 맨바닥 'bare ground'). Only as a determiner before nouns of position/order does it intensify to 'the very (most)' (맨 앞, 맨 처음). The current gloss captures only the secondary sense and omits the dominant 'bare' meaning.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A7%A8",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "여",
+      "originalGloss": "female (prefix)",
+      "originalPos": "noun/adv",
+      "newGloss": "female- (prefix)",
+      "newPos": "prefix",
+      "verdict": "pos_mismatch",
+      "issue": "The gloss correctly identifies 여 as a prefix (Sino-Korean 女, used in 여학생, 여배우, 여왕). However the partOfSpeech 'noun/adv' contradicts the gloss; it should be 'prefix'. 여 does not function as a standalone noun or adverb.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%97%AC",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "기본",
+      "originalGloss": "basic",
+      "originalPos": "noun/adv",
+      "newGloss": "basis, foundation, fundamentals",
+      "newPos": "noun/adv",
+      "verdict": "pos_mismatch",
+      "issue": "기본 is a noun meaning 'foundation, basis, fundamentals' (Sino-Korean 基本). 'basic' is an adjective in English, but 기본 itself is a noun (the adjective form is 기본적 or 기본의/기본적인). Glossing as 'basic' invites the learner to use 기본 as an adjective, which is wrong.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B8%B0%EB%B3%B8",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "적",
+      "originalGloss": "enemy; time when",
+      "originalPos": "noun/adv",
+      "newGloss": "enemy (敵); occasion, time (어렸을 적에); -ic, -al (suffix 的)",
+      "newPos": "noun/suffix",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 적 has at least three unrelated lexemes — 적 (敵) 'enemy', 적 (occasion/time, e.g., 어렸을 적에), and the productive Sino-Korean suffix -적 (的) 'pertaining to' (사회적, 과학적). The current gloss omits the highly productive suffix sense, which is among the most important to a Korean learner. Wiktionary documents all three.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%81",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "들",
+      "originalGloss": "plural marker; field",
+      "originalPos": "noun/adv",
+      "newGloss": "field, plain (noun); -들 plural particle (suffix)",
+      "newPos": "noun/particle",
+      "verdict": "pos_mismatch",
+      "issue": "Both senses are real (plural particle -들 and noun 들 'field/plain'), but they are different parts of speech: the plural marker is a particle/suffix, while 들 'field' is a noun. PoS 'noun/adv' covers neither cleanly. 들 is also never an adverb.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%93%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "장",
+      "originalGloss": "chapter; sheet (counter)",
+      "originalPos": "noun/adv",
+      "newGloss": "sheet, page (counter for flat objects); chapter (章); market (場)",
+      "newPos": "noun/counter",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 장 is one of the most polysemous Sino-Korean syllables (chapter 章, market 場, sheet-counter 張, intestines 腸, head/chief 長, sauce 醬, etc.). The PoS 'noun/adv' is wrong for the counter sense (counters are not adverbs). At minimum, top three senses + correct PoS should be captured.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9E%A5",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "북",
+      "originalGloss": "north; drum",
+      "originalPos": "noun/adv",
+      "newGloss": "drum (instrument); north (mostly in compounds: 북쪽, 북부)",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 북 'drum' (native Korean word) is fully standalone, while 북 'north' (北) is mostly bound — natural everyday usage is 북쪽/북부, not bare 북. Listing 'north' first as coequal misleads learners. Reordering is a defensible fix.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%81",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "이렇다",
+      "originalGloss": "like this",
+      "originalPos": "verb/adj",
+      "newGloss": "to be like this; to be such",
+      "newPos": "verb/adj",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 이렇다 is the dictionary form of an adjective meaning 'to be like this; to be such'. The gloss 'like this' reads as the adverbial form 이렇게. For the headword, 'to be like this' is the accurate gloss. (How to Study Korean and Wiktionary corroborate.)",
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-17-25-2/lesson-23/",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "이리",
+      "originalGloss": "this way",
+      "originalPos": "noun/adv",
+      "newGloss": "this way, here (toward speaker)",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "이리 in modern Korean is an adverb ('this way, hither, like this'), not a noun. The 'noun' option in 'noun/adv' is wrong. (Historically 이리 also meant 'wolf' but that sense is now obsolete in favor of 늑대.)",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B4%EB%A6%AC",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "딱",
+      "originalGloss": "exactly; just",
+      "originalPos": "noun/adv",
+      "newGloss": "exactly, precisely, just right",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "딱 is an adverb meaning 'exactly, precisely, just right' (딱 맞다, 딱 한 번). It is also a mimetic for snapping/cracking sounds. It is not a noun. The 'noun' element of 'noun/adv' is wrong.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%94%B1",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "제법",
+      "originalGloss": "quite, fairly",
+      "originalPos": "noun/adv",
+      "newGloss": "quite, fairly, considerably",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "제법 in this sense ('quite, considerably, fairly') is an adverb (제법 잘하다, 제법 춥다). The homograph noun 제법 (製法) 'method of manufacture' is unrelated and not the gloss given. PoS 'noun/adv' is misleading for the gloss 'quite, fairly'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%9C%EB%B2%95",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "주로",
+      "originalGloss": "mainly",
+      "originalPos": "noun/adv",
+      "newGloss": "mainly, mostly, primarily",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "주로 is unambiguously an adverb meaning 'mainly, mostly, primarily'. PoS should be 'adverb', not 'noun/adv'. The homograph 주로 (走路) 'racetrack' is a different lexeme not represented by this gloss.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A3%BC%EB%A1%9C",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "전혀",
+      "originalGloss": "not at all",
+      "originalPos": "noun/adv",
+      "newGloss": "not at all, (not) in the least",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "전혀 is an adverb ('not at all, never', requires negative predicate). PoS 'noun/adv' is incorrect — it is never used as a noun.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%84%ED%98%80",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "온통",
+      "originalGloss": "entirely",
+      "originalPos": "noun/adv",
+      "newGloss": "entirely, all over, throughout",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "온통 is an adverb ('all over, entirely, throughout', as in 온통 빨갛다). PoS should be 'adverb'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A8%ED%86%B5",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "이미",
+      "originalGloss": "already",
+      "originalPos": "noun/adv",
+      "newGloss": "already",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "이미 is unambiguously an adverb ('already'). It is never used as a noun. PoS should be 'adverb'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B4%EB%AF%B8",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "대단히",
+      "originalGloss": "very, extremely",
+      "originalPos": "noun/adv",
+      "newGloss": "very, extremely, greatly",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "대단히 (the -히 form) is unambiguously an adverb ('very, extremely, greatly'). It is never a noun. PoS should be 'adverb'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8C%80%EB%8B%A8%ED%9E%88",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "완전히",
+      "originalGloss": "completely",
+      "originalPos": "noun/adv",
+      "newGloss": "completely, entirely",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "완전히 (the -히 form) is unambiguously an adverb. PoS should be 'adverb'. (The noun is 완전.)",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%99%84%EC%A0%84%ED%9E%88",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "함께",
+      "originalGloss": "together",
+      "originalPos": "noun/adv",
+      "newGloss": "together",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "함께 is unambiguously an adverb. PoS should be 'adverb'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%95%A8%EA%BB%98",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "오랫동안",
+      "originalGloss": "for a long time",
+      "originalPos": "noun/adv",
+      "newGloss": "for a long time",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "오랫동안 functions adverbially ('for a long time'). It is morphologically a noun phrase (오랜 + 동안) but is not used as a standalone noun in modern usage; it occupies an adverbial slot.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A4%EB%9E%AB%EB%8F%99%EC%95%88",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "정말",
+      "originalGloss": "really",
+      "originalPos": "noun/adv",
+      "newGloss": "really, truly (adv); the truth, real fact (noun)",
+      "newPos": "adverb/noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 정말 is most often used as an adverb 'really, truly' (etymologically 正 'true' + 말 'word'), and is also a noun meaning 'the truth, real fact'. The PoS tag should lead with adverb since the gloss 'really' is the adverbial sense.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%95%EB%A7%90",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "게다가",
+      "originalGloss": "moreover, on top of that",
+      "originalPos": "noun/adv",
+      "newGloss": "moreover, in addition, on top of that",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "게다가 is a conjunctive adverb ('moreover, in addition, on top of that'). It is never a noun. PoS should be 'adverb' or 'conjunction'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B2%8C%EB%8B%A4%EA%B0%80",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "그대로",
+      "originalGloss": "as it is",
+      "originalPos": "noun/adv",
+      "newGloss": "as it is, just like that, intact",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "그대로 is an adverb ('as it is, just like that, intact'). It can also occupy noun-phrase slots loosely, but is not classified as a noun. PoS should be 'adverb'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%8C%80%EB%A1%9C",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "가만히",
+      "originalGloss": "quietly; still",
+      "originalPos": "noun/adv",
+      "newGloss": "quietly, still, motionlessly",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "가만히 (-히 form) is an adverb ('quietly, still, motionlessly'). It is never a noun. PoS should be 'adverb'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B0%80%EB%A7%8C%ED%9E%88",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "없이",
+      "originalGloss": "without",
+      "originalPos": "noun/adv",
+      "newGloss": "without",
+      "newPos": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "없이 is an adverb ('without'), derived from 없다 + -이. It is never a noun.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%97%86%EC%9D%B4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "아",
+      "originalGloss": "ah!",
+      "originalPos": "noun/adv",
+      "newGloss": "ah! (exclamation)",
+      "newPos": "interjection",
+      "verdict": "pos_mismatch",
+      "issue": "아 is an interjection (exclamation). PoS should be 'interjection', not 'noun/adv'. (As a vocative particle 아 is a particle, also not a noun/adv.)",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%95%84",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "그만",
+      "originalGloss": "stop; that much",
+      "originalPos": "noun/adv",
+      "newGloss": "(no/that) much; (do) no more, enough; involuntarily",
+      "newPos": "adverb",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 그만 is primarily an adverb ('that much; no more, enough; involuntarily'), not a verb 'stop'. Wiktionary and language-learning sources all classify it as an adverb/interjection. The verb form is 그만하다/그만두다. Current 'noun/adv' tag is wrong (no noun sense) and the gloss 'stop' invites grammatical errors.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%A7%8C",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "거",
+      "originalGloss": "thing (informal)",
+      "originalPos": "noun/adv",
+      "newGloss": "thing, fact (bound noun, colloquial form of 것)",
+      "newPos": "bound noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 거 is the colloquial contraction of 것, classified as a bound noun (의존명사) — it cannot stand alone, and combines as 게 (것이), 걸 (것을), 건 (것은). Tagging as 'noun/adv' is incorrect (not an adverb) and obscures bound status. Wiktionary corroborates.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B1%B0",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "년",
+      "originalGloss": "year",
+      "originalPos": "noun/adv",
+      "newGloss": "year (counter, e.g. 2024년)",
+      "newPos": "counter",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 년 (年) is a bound counter for years (2024년, 삼 년) requiring Sino-Korean numerals — the free standalone noun for 'year' is 해. Tagging as 'noun/adv' obscures counter status and the obligatory numeric host. Wiktionary classifies as Sino-Korean counter/bound noun.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%85%84",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "인분",
+      "originalGloss": "portion (counter)",
+      "originalPos": "noun/adv",
+      "newGloss": "portion, serving (counter for food)",
+      "newPos": "counter",
+      "verdict": "pos_mismatch",
+      "issue": "인분 is a counter (Sino-Korean 人分) for food portions (이 인분 = two servings). PoS 'noun/adv' is incorrect; it should be 'counter'. The gloss already correctly identifies it as a counter.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B8%EB%B6%84",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "고프다",
+      "originalGloss": "hungry",
+      "originalPos": "verb/adj",
+      "newGloss": "(of stomach) to be hungry; used as 배가 고프다",
+      "newPos": "verb/adj",
+      "verdict": "wrong_collocation",
+      "issue": "고프다 is a bound adjective that essentially only collocates with 배 (배(가) 고프다 = 'to be hungry', literally 'stomach is empty/hungry'). It cannot freely mean 'hungry' attached to a person; *나는 고파요 is awkward. Without the 배 collocation note, learners produce ungrammatical sentences.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B3%A0%ED%94%84%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "똑같이",
+      "originalGloss": "exactly the same",
+      "originalPos": "noun/adv",
+      "newGloss": "identically; in the same way",
+      "newPos": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "똑같이 is an adverb meaning 'identically / in the same way / equally', describing how an action is done. The English gloss 'exactly the same' reads as an adjectival phrase modifying a noun. A learner seeing this gloss could mis-use it as an adjective. Better gloss: 'identically; in the same way; equally'.",
+      "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62076",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "전자",
+      "originalGloss": "electronic",
+      "originalPos": "noun/adv",
+      "newGloss": "electron; the former",
+      "newPos": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "전자 is a noun with two main senses: 電子 'electron' (the physics particle) and 前者 'the former' (in comparisons, opposite of 후자 'the latter'). The current gloss 'electronic' is an English adjective and only loosely covers usage in compounds like 전자제품. Standalone 전자 is not adjectival. Better: 'electron; the former'.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%84%EC%9E%90",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "연기",
+      "originalGloss": "smoke; performance",
+      "originalPos": "noun/adv",
+      "newGloss": "smoke (煙氣); performance, acting (演技); postponement (延期)",
+      "newPos": "noun",
+      "verdict": "polish:fix",
+      "issue": "Confirmed: 연기 has three common Sino-Korean homonyms — 煙氣 'smoke', 演技 'performance/acting', 延期 'postponement'. The third sense (postponement) is genuinely common in everyday Korean (회의를 연기하다 'postpone the meeting'). Wiktionary documents all three; the existing two-sense gloss is incomplete.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%97%B0%EA%B8%B0",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    }
+  ],
+  "skipped": [
+    [
+      "투",
+      "polish:flag-only"
+    ],
+    [
+      "잠자리",
+      "polish:flag-only"
+    ],
+    [
+      "이브이",
+      "polish:flag-only"
+    ],
+    [
+      "크",
+      "polish:flag-only"
+    ],
+    [
+      "고슴도치",
+      "polish:flag-only"
+    ],
+    [
+      "제티",
+      "polish:flag-only"
+    ],
+    [
+      "의제",
+      "polish:flag-only"
+    ],
+    [
+      "조석",
+      "polish:flag-only"
+    ],
+    [
+      "산도",
+      "polish:flag-only"
+    ],
+    [
+      "안무",
+      "polish:flag-only"
+    ],
+    [
+      "에티",
+      "polish:flag-only"
+    ],
+    [
+      "바롯",
+      "polish:flag-only"
+    ],
+    [
+      "진제",
+      "polish:flag-only"
+    ],
+    [
+      "톰보이",
+      "polish:flag-only"
+    ],
+    [
+      "거조",
+      "polish:flag-only"
+    ],
+    [
+      "메주",
+      "polish:flag-only"
+    ],
+    [
+      "시래",
+      "polish:flag-only"
+    ],
+    [
+      "오티",
+      "polish:flag-only"
+    ],
+    [
+      "윈도",
+      "polish:flag-only"
+    ],
+    [
+      "난부",
+      "polish:flag-only"
+    ],
+    [
+      "논제",
+      "polish:flag-only"
+    ],
+    [
+      "두석",
+      "polish:flag-only"
+    ],
+    [
+      "바론",
+      "polish:flag-only"
+    ],
+    [
+      "바움",
+      "polish:flag-only"
+    ],
+    [
+      "시샤",
+      "polish:flag-only"
+    ],
+    [
+      "시티",
+      "polish:flag-only"
+    ],
+    [
+      "중요",
+      "polish:flag-only"
+    ],
+    [
+      "지금",
+      "polish:clear"
+    ],
+    [
+      "피시",
+      "polish:clear"
+    ]
+  ]
+}

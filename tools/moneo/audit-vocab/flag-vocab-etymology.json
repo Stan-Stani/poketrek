@@ -1,0 +1,147 @@
+{
+  "shardFile": "seed-vocab-ko-etymology.json",
+  "range": [0, 142],
+  "inspected": 142,
+  "flagged": [
+    {
+      "id": "etymology-roots:노고",
+      "korean": "노고",
+      "gloss": "effort",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "노고치 (Dunsparce) is not built from a meaningful 노고 'effort'. The Korean name is a transliteration of the Japanese ノコッチ, which itself is an anagram-style scramble of 츠치노코 (tsuchinoko, the Japanese cryptid the Pokemon is based on). There is no 'effort' morpheme in the etymology — teaching learners that 노고 means 'effort' here invites them to misparse 노고치.",
+      "suggestion": {"gloss": "(no meaningful root; anagram of 츠치노코)"},
+      "evidenceUrl": "https://namu.wiki/w/%EB%85%B8%EA%B3%A0%EC%B9%98"
+    },
+    {
+      "id": "etymology-roots:코리",
+      "korean": "코리",
+      "gloss": "small",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "코리 in 코코리 (Phanpy) does not mean 'small'. 코코리 is built from 코끼리 (elephant) — the Pokemon is explicitly an elephant calf. The 코 of 코끼리 is doubled and clipped (코+코+리). Glossing the root as 'small' is invented; if anything the morpheme means 'elephant (clip of 코끼리)'.",
+      "suggestion": {"gloss": "elephant (clip of 코끼리)"},
+      "evidenceUrl": "https://namu.wiki/w/%EC%BD%94%EB%81%BC%EB%A6%AC"
+    },
+    {
+      "id": "etymology-roots:콘",
+      "korean": "콘",
+      "gloss": "cocoon-like body",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "Neither cited Pokemon supports 'cocoon-like body'. 콘팡 (Venonat) inherits from Japanese コンパン, where コン is from 'compound (eye)' (복안) — Venonat is a compound-eye gnat, not a cocoon. 쏘콘 (Forretress) uses 콘 from English 'cone' (Pineco/pinecone). A single gloss can't cover both, but 'cocoon-like body' fits neither.",
+      "suggestion": {"gloss": "cone (English) / compound (eye)"},
+      "evidenceUrl": "https://namu.wiki/w/%EC%8F%98%EC%BD%98"
+    },
+    {
+      "id": "etymology-roots:기라스",
+      "korean": "기라스",
+      "gloss": "-tar",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "기라스 in 마기라스 (Tyranitar), 데기라스 (Pupitar), and 애버라스 (Larvitar) is borrowed from 안기라스 — the Korean name of the kaiju Anguirus from the Godzilla franchise, which Tyranitar's line visually references. It is not a transliteration of the English suffix '-tar'. Tying the root to '-tar' obscures the kaiju reference and is etymologically wrong.",
+      "suggestion": {"gloss": "from 안기라스 (Anguirus, Godzilla kaiju)"},
+      "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B8%B0%EB%9D%BC%EC%8A%A4"
+    },
+    {
+      "id": "etymology-roots:해",
+      "korean": "해",
+      "gloss": "sun",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "The single gloss 'sun' fits 해너츠 (Sunkern, from 해바라기 sunflower) and 해루미 (Sunflora) but is wrong for 왕눈해 (Tentacool), where 해 is a clip of 해파리 (jellyfish) — Tentacool is a jellyfish, not a sun. Lumping all three under 'sun' will mislead learners into parsing 왕눈해 as 'big-eye sun'.",
+      "suggestion": {"gloss": "sun (해바라기) / jellyfish (해파리, in 왕눈해)"},
+      "evidenceUrl": "https://namu.wiki/w/%EC%99%95%EB%88%88%ED%95%B4"
+    },
+    {
+      "id": "etymology-roots:샤",
+      "korean": "샤",
+      "gloss": "water sound",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "샤 in 샤미드 (Vaporeon) is not an onomatopoeic 'water sound'. The widely cited Korean etymology is 샤워 (shower) + 머메이드 (mermaid). 샤 is a clip of 샤워 (English-derived 'shower'), a noun, not a water-sound mimetic. The current gloss invents an onomatopoeic reading.",
+      "suggestion": {"gloss": "from 샤워 (shower)"},
+      "evidenceUrl": "https://namu.wiki/w/%EC%83%A4%EB%AF%B8%EB%93%9C"
+    },
+    {
+      "id": "etymology-roots:만보",
+      "korean": "만보",
+      "gloss": "countless steps",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "mistranslation",
+      "issue": "잠만보 (Snorlax) plays on 잠 'sleep' + 만보, but the morphemic punchline is the colloquial 만보 ~ 만큼/매우 'a great deal' (Snorlax sleeps and eats a great deal), reinforced by Japanese カビゴン. The literal Hanja reading 萬步 'ten thousand steps' is a real Korean compound (cf. 만보계 pedometer) but is not what 잠만보 is doing — Snorlax is famously sedentary, not a stepper. 'Countless steps' is the wrong sense.",
+      "suggestion": {"gloss": "a great deal (colloquial); also lit. 10,000 steps (萬步)"},
+      "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9E%A0%EB%A7%8C%EB%B3%B4"
+    },
+    {
+      "id": "etymology-roots:투",
+      "korean": "투",
+      "gloss": "two/2nd",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "The official etymology of 피죤투 (Japanese ピジョット) is 피죤 (Pigeon) + 제트 'jet' — Pidgeot is a fast-flying jet-bird, not a 'Pidgeon-2'. The 'two' reading is a folk reinterpretation widespread among Korean fans precisely because 투 looks like '2' in Korean Pokemon naming. Glossing 투 as 'two/2nd' here teaches the folk-etymology, not the actual derivation.",
+      "suggestion": {"gloss": "from 제트 (jet); often folk-read as 'two'"},
+      "evidenceUrl": "https://namu.wiki/w/%ED%94%BC%EC%A3%A4%ED%88%AC"
+    },
+    {
+      "id": "etymology-roots:케인",
+      "korean": "케인",
+      "gloss": "cane/tail",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "케인 in 브케인 (Cyndaquil) and 마그케인 (Quilava) is widely analysed as a clip of 허리케인 'hurricane' (the file even has a separate 허리케인 entry citing 마그케인). Cyndaquil/Quilava are fire-storm hedgehog Pokemon; the 'tail' reading has no support, and 'cane' (지팡이) is also unrelated. The current gloss appears made up.",
+      "suggestion": {"gloss": "from 허리케인 (hurricane)"},
+      "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B7%B8%EC%BC%80%EC%9D%B8"
+    },
+    {
+      "id": "etymology-roots:골아파",
+      "korean": "골아파",
+      "gloss": "headache",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "pos_mismatch",
+      "issue": "골아파 is not a single morpheme or noun meaning 'headache'. 고라파덕's pun decomposes as 골(이) 아파(요) 'my head hurts' — a phrase combining the noun 골 'head' with the predicate 아프다. The standalone Korean noun for headache is 두통. Tagging 골아파 as a 'root/morpheme' meaning 'headache' is a part-of-speech and morphological error.",
+      "suggestion": {"gloss": "(my) head hurts (phrase: 골+아파)", "partOfSpeech": "phrase"},
+      "evidenceUrl": "https://namu.wiki/w/%EA%B3%A0%EB%9D%BC%ED%8C%8C%EB%8D%95"
+    },
+    {
+      "id": "etymology-roots:잠자리",
+      "korean": "잠자리",
+      "gloss": "dragonfly",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "The cited Pokemon 왕자리 (Yanma) actually only inherits the suffix -자리, not the full noun 잠자리. The motif word 잠자리 'dragonfly' is the *source* but the realised morpheme in the name is 자리. Listing 잠자리 with componentOf: ['왕자리'] is sloppy because 잠 is dropped — learners will look in vain for 잠자리 inside 왕자리.",
+      "suggestion": {"korean": "자리", "gloss": "dragonfly (clip of 잠자리)"},
+      "evidenceUrl": "https://namu.wiki/w/%EC%99%95%EC%9E%90%EB%A6%AC"
+    },
+    {
+      "id": "etymology-roots:이브이",
+      "korean": "이브이",
+      "gloss": "Eevee",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "Direction is reversed. 이브이 is the Korean name of Eevee itself (the base species). The notes say it is 'From 에브이 (Espeon)', but 에브이 is an Eeveelution name that derives the suffix '브이' from 이브이, not the other way around. The morpheme that propagates across the eeveelutions is '브이', and 이브이 is the source word, not a sub-component of 에브이.",
+      "suggestion": {"korean": "브이", "gloss": "Eevee suffix (clip of 이브이)"},
+      "evidenceUrl": "https://namu.wiki/w/%EC%9D%B4%EB%B8%8C%EC%9D%B4"
+    },
+    {
+      "id": "etymology-roots:크",
+      "korean": "크",
+      "gloss": "intensifier",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "푸크린 (Wigglytuff) is conventionally analysed as 푸린 (Jigglypuff) + an internal infix related to 크다 'to be big' or simply a phonetic expansion to mark evolution — not a free-standing 'intensifier' morpheme that learners can productively reuse. Glossing bare 크 as 'intensifier' overstates productivity; learners taught this will try to glue 크 into other words where it doesn't go.",
+      "suggestion": {"gloss": "from 크다 'to be big' (evolution-marker in 푸크린)"},
+      "evidenceUrl": "https://namu.wiki/w/%ED%91%B8%ED%81%AC%EB%A6%B0"
+    },
+    {
+      "id": "etymology-roots:고슴도치",
+      "korean": "고슴도치",
+      "gloss": "hedgehog",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "The motif of 고지 (Sandslash) is pangolin (천산갑) + hedgehog, but the Korean name 고지 does not actually contain the morpheme 고슴도치. At most, the syllable 고 may be a clip, and even that is contested — many sources analyse 고지 as 고슴도치+두더지 fused, but the full morpheme 고슴도치 does not appear. componentOf: ['고지'] is misleading; the morpheme inside 고지 is just 고 at most.",
+      "suggestion": {"gloss": "hedgehog (motif only; 고지 contains 고- at most)"},
+      "evidenceUrl": "https://namu.wiki/w/%EA%B3%A0%EC%A7%80(%ED%8F%AC%EC%BC%93%EB%AA%AC%EC%8A%A4%ED%84%B0)"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [178, 357],
+  "inspected": 179,
+  "flagged": [
+    {
+      "korean": "바다",
+      "gloss": "sea",
+      "partOfSpeech": "verb/adj",
+      "verdict": "pos_mismatch",
+      "issue": "바다 is unambiguously a noun meaning 'sea'. The partOfSpeech tag 'verb/adj' is wrong; it should be 'noun/adv' to match the convention used for the other noun entries in the file. The gloss itself is correct.",
+      "suggestion": {"gloss": "sea", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B0%94%EB%8B%A4"
+    },
+    {
+      "korean": "술잔",
+      "gloss": "drinking cup",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "술잔 specifically denotes a vessel for alcohol (술 = alcohol + 잔 = cup), e.g. wineglass, shot glass, sake cup. The gloss 'drinking cup' is too generic and could be misread as a water cup. A more precise gloss would specify alcohol.",
+      "suggestion": {"gloss": "wine cup, drinking glass (for alcohol)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/65374_%EC%88%A0%EC%9E%94/"
+    },
+    {
+      "korean": "짓",
+      "gloss": "act, gesture",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "짓 in modern Korean almost always carries a negative or pejorative connotation (e.g. 미친 짓, 나쁜 짓, 바보 같은 짓). The neutral gloss 'act, gesture' loses this nuance and a learner could mistakenly apply it to neutral actions where 행동 would be correct.",
+      "suggestion": {"gloss": "act, deed (often pejorative)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%93"
+    },
+    {
+      "korean": "고기",
+      "gloss": "meat; fish",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "고기 in modern Korean primarily means 'meat'. The 'fish' sense survives only in compounds like 물고기 (live fish) and as an archaic/historical reading; standalone 고기 for fish-as-food is uncommon and 생선/물고기 are used instead. Listing 'fish' as a coequal gloss may mislead learners.",
+      "suggestion": {"gloss": "meat (also archaic/compound: fish, as in 물고기)", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B3%A0%EA%B8%B0"
+    }
+  ]
+}

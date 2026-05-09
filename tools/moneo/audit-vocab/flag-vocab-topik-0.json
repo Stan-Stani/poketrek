@@ -1,0 +1,70 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [0, 178],
+  "inspected": 178,
+  "flagged": [
+    {
+      "korean": "몰다",
+      "gloss": "to drive (cattle); to herd",
+      "partOfSpeech": "verb/adj",
+      "verdict": "mistranslation",
+      "issue": "The gloss is too narrow. 몰다 broadly means 'to drive' — its primary modern senses are driving a vehicle (차를 몰다), herding animals, and driving someone into a corner (궁지에 몰다). Restricting it to 'cattle' and 'herd' suggests a rural-only word and misses the everyday vehicle sense that a TOPIK learner is likely to encounter.",
+      "suggestion": {"gloss": "to drive (a vehicle); to herd; to drive (into)", "partOfSpeech": "verb/adj"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%AA%B0%EB%8B%A4"
+    },
+    {
+      "korean": "다",
+      "gloss": "all",
+      "partOfSpeech": "verb/adj",
+      "verdict": "pos_mismatch",
+      "issue": "다 in the sense 'all/entirely/everything' is an adverb (and sometimes noun), not a verb or adjective. Under the file's convention 'verb/adj' is reserved for predicate stems ending in -다; bare 다 'all' belongs in the 'noun/adv' bucket like 늘, 곧, 모두, etc.",
+      "suggestion": {"gloss": "all, everything, entirely", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A4"
+    },
+    {
+      "korean": "호",
+      "gloss": "issue (number); door",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "The 'door' sense is incorrect — that is 문, not 호. 호 (號) means 'number/issue' (잡지 5월호, 101호) and is a counter for housing units; 호 (湖) means 'lake' (백두산 천지호); 호 (號) can also mean a courtesy/pen name. 'Door' looks like a confusion with the Chinese character 戶 (household), which is not a standalone Korean noun for 'door'.",
+      "suggestion": {"gloss": "issue (number); unit (housing counter); lake; pen name", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%98%B8"
+    },
+    {
+      "korean": "단",
+      "gloss": "sweet (prefix); paragraph",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "Both senses listed are misleading. 'Sweet (prefix)' is not 단 standalone — it is the attributive form of 달다 (단 호박 = sweet pumpkin), a conjugation, not a lemma. 'Paragraph' is also off; the standalone noun 단 means 'platform/dais; bunch/sheaf (of vegetables); rank/level (martial arts dan); section/tier'. Paragraph in writing is typically 단락 or 문단, not bare 단.",
+      "suggestion": {"gloss": "platform, tier; bunch, sheaf; rank (dan); section", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A8"
+    },
+    {
+      "korean": "부",
+      "gloss": "department",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "The single gloss 'department' is too narrow. 부 (部) primarily means 'part/section/division' and is a counter for copies of a book/newspaper (책 한 부); 부 (副) is the prefix 'vice-/deputy-'; 부 (富) means 'wealth/riches'. 'Department' is one specialised reading (e.g. 인사부) but is not the headword sense.",
+      "suggestion": {"gloss": "part, section; counter for copies; (in compounds) wealth; vice-", "partOfSpeech": "noun/adv"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%80"
+    },
+    {
+      "korean": "말다",
+      "gloss": "to roll up; not to (negative imperative)",
+      "partOfSpeech": "verb/adj",
+      "verdict": "uncertain",
+      "issue": "The two senses listed are technically two different (homophonous) verbs. 말다₁ = to roll up (김밥을 말다, 소매를 말다); 말다₂ = the auxiliary verb used in -지 말다 negative imperatives. Combining them in one entry is dictionary-acceptable but the gloss obscures that the negative-imperative use almost never appears as a standalone verb — it is grammaticalised.",
+      "suggestion": {"gloss": "to roll up; (auxiliary, in -지 말다) don't, stop", "partOfSpeech": "verb/adj"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A7%90%EB%8B%A4"
+    },
+    {
+      "korean": "밉다",
+      "gloss": "to be hateful",
+      "partOfSpeech": "verb/adj",
+      "verdict": "unnatural",
+      "issue": "'To be hateful' implies the subject is the one feeling hatred, which is the opposite of 밉다's meaning. 밉다 is a descriptive verb meaning the subject is the object of dislike — 'to be disliked, to look unpleasant, to be ugly/loathsome'. A more accurate gloss is 'to be despicable, to be hated/disliked' or 'to be ugly (in behaviour or looks)'.",
+      "suggestion": {"gloss": "to be detestable, dislikable; (of a person/behaviour) ugly", "partOfSpeech": "verb/adj"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B0%89%EB%8B%A4"
+    }
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "items": [
+    {
+      "id": "etymology-roots:투",
+      "korean": "투",
+      "gloss": "two/2nd",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "The official etymology of 피죤투 (Japanese ピジョット) is 피죤 (Pigeon) + 제트 'jet' — Pidgeot is a fast-flying jet-bird, not a 'Pidgeon-2'. The 'two' reading is a folk reinterpretation widespread among Korean fans precisely because 투 looks like '2' in Korean Pokemon naming. Glossing 투 as 'two/2nd' here teaches the folk-etymology, not the actual derivation.",
+      "suggestion": {
+        "gloss": "from 제트 (jet); often folk-read as 'two'"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%ED%94%BC%EC%A3%A4%ED%88%AC",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "id": "etymology-roots:케인",
+      "korean": "케인",
+      "gloss": "cane/tail",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "케인 in 브케인 (Cyndaquil) and 마그케인 (Quilava) is widely analysed as a clip of 허리케인 'hurricane' (the file even has a separate 허리케인 entry citing 마그케인). Cyndaquil/Quilava are fire-storm hedgehog Pokemon; the 'tail' reading has no support, and 'cane' (지팡이) is also unrelated. The current gloss appears made up.",
+      "suggestion": {
+        "gloss": "from 허리케인 (hurricane)"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EB%A7%88%EA%B7%B8%EC%BC%80%EC%9D%B8",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "id": "etymology-roots:잠자리",
+      "korean": "잠자리",
+      "gloss": "dragonfly",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "The cited Pokemon 왕자리 (Yanma) actually only inherits the suffix -자리, not the full noun 잠자리. The motif word 잠자리 'dragonfly' is the *source* but the realised morpheme in the name is 자리. Listing 잠자리 with componentOf: ['왕자리'] is sloppy because 잠 is dropped — learners will look in vain for 잠자리 inside 왕자리.",
+      "suggestion": {
+        "korean": "자리",
+        "gloss": "dragonfly (clip of 잠자리)"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EC%99%95%EC%9E%90%EB%A6%AC",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "id": "etymology-roots:이브이",
+      "korean": "이브이",
+      "gloss": "Eevee",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "Direction is reversed. 이브이 is the Korean name of Eevee itself (the base species). The notes say it is 'From 에브이 (Espeon)', but 에브이 is an Eeveelution name that derives the suffix '브이' from 이브이, not the other way around. The morpheme that propagates across the eeveelutions is '브이', and 이브이 is the source word, not a sub-component of 에브이.",
+      "suggestion": {
+        "korean": "브이",
+        "gloss": "Eevee suffix (clip of 이브이)"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EC%9D%B4%EB%B8%8C%EC%9D%B4",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "id": "etymology-roots:크",
+      "korean": "크",
+      "gloss": "intensifier",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "푸크린 (Wigglytuff) is conventionally analysed as 푸린 (Jigglypuff) + an internal infix related to 크다 'to be big' or simply a phonetic expansion to mark evolution — not a free-standing 'intensifier' morpheme that learners can productively reuse. Glossing bare 크 as 'intensifier' overstates productivity; learners taught this will try to glue 크 into other words where it doesn't go.",
+      "suggestion": {
+        "gloss": "from 크다 'to be big' (evolution-marker in 푸크린)"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%ED%91%B8%ED%81%AC%EB%A6%B0",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "id": "etymology-roots:고슴도치",
+      "korean": "고슴도치",
+      "gloss": "hedgehog",
+      "partOfSpeech": "root/morpheme",
+      "verdict": "uncertain",
+      "issue": "The motif of 고지 (Sandslash) is pangolin (천산갑) + hedgehog, but the Korean name 고지 does not actually contain the morpheme 고슴도치. At most, the syllable 고 may be a clip, and even that is contested — many sources analyse 고지 as 고슴도치+두더지 fused, but the full morpheme 고슴도치 does not appear. componentOf: ['고지'] is misleading; the morpheme inside 고지 is just 고 at most.",
+      "suggestion": {
+        "gloss": "hedgehog (motif only; 고지 contains 고- at most)"
+      },
+      "evidenceUrl": "https://namu.wiki/w/%EA%B3%A0%EC%A7%80(%ED%8F%AC%EC%BC%93%EB%AA%AC%EC%8A%A4%ED%84%B0)",
+      "sourceShard": "seed-vocab-ko-etymology.json"
+    },
+    {
+      "korean": "달달",
+      "gloss": "sweetly; (of trembling) lightly shaking",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "The traditional/dictionary sense of 달달 is the onomatopoeia for trembling/shivering or a rattling sound (e.g., 달달 떨다). The 'sweetly' sense is recent slang derived from 달다 'sweet' and is informal. Listing 'sweetly' first inverts the dictionary priority.",
+      "suggestion": {
+        "gloss": "(of trembling/shivering) shaking; (of a rattling sound); (slang) sweetly",
+        "partOfSpeech": "adverb"
+      },
+      "evidenceUrl": "https://hinative.com/questions/25601323",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "부디",
+      "gloss": "(unglossed; freq 139)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Highest-frequency unglossed entry (freq 139). 부디 is a real, common adverb meaning 'please; by all means; I beg you'; the placeholder gloss should be filled in. Likely a Pokemon Center / NPC dialog filler in this corpus.",
+      "suggestion": {
+        "gloss": "please; by all means; I do hope (that)",
+        "partOfSpeech": "adverb"
+      },
+      "evidenceUrl": "https://www.wordhippo.com/what-is/the-meaning-of/korean-word-1d3182f36ea95e52fcaeca169c7e5f97a970177a.html",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "거두다",
+      "gloss": "(unglossed; freq 51)",
+      "partOfSpeech": "verb",
+      "verdict": "uncertain",
+      "issue": "High-frequency placeholder gloss. 거두다 is a real verb meaning 'to harvest; to collect; to achieve (results); to withdraw'. Should be properly glossed.",
+      "suggestion": {
+        "gloss": "to harvest; to collect; to achieve; to withdraw",
+        "partOfSpeech": "verb"
+      },
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/16280_%EA%B1%B0%EB%91%90%EB%8B%A4/",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "의도",
+      "gloss": "(unglossed; freq 14)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 의도 (意圖) is a common noun meaning 'intention; purpose'.",
+      "suggestion": {
+        "gloss": "intention; purpose; intent",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "제티",
+      "gloss": "(unglossed; freq 14)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Likely a Mecab over-segmentation artifact (a fragment of a Pokemon name or katakana-romanized token rather than a Korean lemma). Not a standard dictionary word; consider removal rather than glossing.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "도움",
+      "gloss": "(unglossed; freq 13)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss for a very common noun: 도움 = 'help; aid; assistance' (nominalized form of 돕다).",
+      "suggestion": {
+        "gloss": "help; aid; assistance",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EB%8F%84%EC%9B%80",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "의제",
+      "gloss": "(unglossed; freq 12)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 의제 (議題) means 'agenda; topic of discussion'. However, freq 12 in a Pokemon corpus is suspicious — this may be a Mecab segmentation artifact rather than a real occurrence of 의제. Verify in source contexts before glossing.",
+      "suggestion": {
+        "gloss": "agenda; topic of discussion (verify: may be Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%9D%98%EC%A0%9C",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "조석",
+      "gloss": "(unglossed; freq 11)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 조석 has two homonyms: 朝夕 ('morning and evening') and 潮汐 ('tides'). Could also be a fragment. Verify before glossing.",
+      "suggestion": {
+        "gloss": "morning and evening; tides (verify in context)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "산도",
+      "gloss": "(unglossed; freq 8)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 산도 most commonly means 'acidity' (酸度) or 'birth canal' (産道) — neither obviously fits a Pokemon corpus, suggesting this is likely a Mecab artifact (e.g., a fragment of a place name).",
+      "suggestion": {
+        "gloss": "(verify: likely Mecab artifact; literal senses are 'acidity' / 'birth canal')",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "안무",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 안무 (按舞) means 'choreography' — unusual for a Pokemon corpus, suggesting this may be a Mecab artifact.",
+      "suggestion": {
+        "gloss": "choreography (verify: may be Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "에티",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean dictionary word; almost certainly a Mecab over-segmentation artifact (probably a fragment of a Pokemon/character name or katakana romanization).",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "오래",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss for a very common adverb: 오래 = 'for a long time'.",
+      "suggestion": {
+        "gloss": "for a long time; long",
+        "partOfSpeech": "adverb"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A4%EB%9E%98",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "바롯",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean word. Almost certainly a Mecab artifact or proper-noun fragment.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "다소",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 다소 (多少) is a common adverb/noun meaning 'somewhat; more or less; a little'.",
+      "suggestion": {
+        "gloss": "somewhat; more or less; a little",
+        "partOfSpeech": "adverb"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A4%EC%86%8C",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "진제",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a common standalone noun in modern Korean. Likely a Mecab artifact.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "톰보이",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "톰보이 is a Konglish loanword for 'tomboy', but very unlikely in a Pokemon ROM. Probably a Mecab over-segmentation of a katakana-derived token.",
+      "suggestion": {
+        "gloss": "tomboy (verify: likely Mecab artifact in this corpus)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "거조",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a common modern Korean noun. Likely a Mecab artifact.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "메주",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 메주 is a real noun: 'fermented soybean lump (used to make doenjang/ganjang)'. Unusual for a Pokemon corpus though, so verify before glossing.",
+      "suggestion": {
+        "gloss": "fermented soybean block (meju) (verify: may be Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "시래",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standalone noun (시래기 'dried radish greens' is the lemma; 시래 alone is not a word). Likely a Mecab segmentation artifact.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "오티",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean word. Almost certainly a Mecab artifact / katakana fragment.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "윈도",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 윈도 is a Konglish loanword meaning 'window' (esp. computer/UI window). Unusual for a Pokemon corpus, so verify before glossing.",
+      "suggestion": {
+        "gloss": "window (Konglish, esp. computer window) (verify: may be Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "조화",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 조화 has multiple homonyms: 調和 'harmony', 造花 'artificial flower', 造化 'creation/the workings of nature'. Likely 'harmony' or 'creation' in a Pokemon context.",
+      "suggestion": {
+        "gloss": "harmony; creation; (also) artificial flower",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A1%B0%ED%99%94",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "지레",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 지레 as adverb = 'prematurely; in advance; ahead of time' (e.g., 지레 겁먹다 'get scared prematurely'). It is also a noun meaning 'lever' (a separate sense).",
+      "suggestion": {
+        "gloss": "prematurely; in advance; before its time",
+        "partOfSpeech": "adverb"
+      },
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/76940_%EC%A7%80%EB%A0%88/",
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "난부",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean noun. Likely a Mecab artifact.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "논제",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 논제 (論題) is a real but academic noun meaning 'thesis topic; subject of discussion'. Unusual for a Pokemon corpus, suggesting Mecab artifact.",
+      "suggestion": {
+        "gloss": "thesis topic; subject of debate (verify: may be Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "두석",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a common Korean noun. Likely a Mecab artifact.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "바론",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean noun (바론 = Konglish for 'baron' or proper-noun fragment). Likely a Mecab artifact in this corpus.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "바움",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a Korean dictionary word; almost certainly a fragment of a proper noun (e.g., 바움쿠헨 'baumkuchen' or a character name).",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "시샤",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a Korean dictionary word; almost certainly a Mecab over-segmentation of a katakana-romanized token.",
+      "suggestion": {
+        "gloss": "(remove: likely Mecab artifact)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "시티",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "시티 is the Konglish loan 'city' but very unlikely in a Korean Pokemon ROM (which uses 시티 only inside compound place names and 도시 elsewhere). Probably a Mecab artifact / proper-noun fragment.",
+      "suggestion": {
+        "gloss": "city (Konglish) (verify: likely Mecab artifact in this corpus)",
+        "partOfSpeech": "noun"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-mined.json"
+    },
+    {
+      "korean": "말다",
+      "gloss": "to roll up; not to (negative imperative)",
+      "partOfSpeech": "verb/adj",
+      "verdict": "uncertain",
+      "issue": "The two senses listed are technically two different (homophonous) verbs. 말다₁ = to roll up (김밥을 말다, 소매를 말다); 말다₂ = the auxiliary verb used in -지 말다 negative imperatives. Combining them in one entry is dictionary-acceptable but the gloss obscures that the negative-imperative use almost never appears as a standalone verb — it is grammaticalised.",
+      "suggestion": {
+        "gloss": "to roll up; (auxiliary, in -지 말다) don't, stop",
+        "partOfSpeech": "verb/adj"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A7%90%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "술잔",
+      "gloss": "drinking cup",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "술잔 specifically denotes a vessel for alcohol (술 = alcohol + 잔 = cup), e.g. wineglass, shot glass, sake cup. The gloss 'drinking cup' is too generic and could be misread as a water cup. A more precise gloss would specify alcohol.",
+      "suggestion": {
+        "gloss": "wine cup, drinking glass (for alcohol)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/65374_%EC%88%A0%EC%9E%94/",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "짓",
+      "gloss": "act, gesture",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "짓 in modern Korean almost always carries a negative or pejorative connotation (e.g. 미친 짓, 나쁜 짓, 바보 같은 짓). The neutral gloss 'act, gesture' loses this nuance and a learner could mistakenly apply it to neutral actions where 행동 would be correct.",
+      "suggestion": {
+        "gloss": "act, deed (often pejorative)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%93",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "고기",
+      "gloss": "meat; fish",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "고기 in modern Korean primarily means 'meat'. The 'fish' sense survives only in compounds like 물고기 (live fish) and as an archaic/historical reading; standalone 고기 for fish-as-food is uncommon and 생선/물고기 are used instead. Listing 'fish' as a coequal gloss may mislead learners.",
+      "suggestion": {
+        "gloss": "meat (also archaic/compound: fish, as in 물고기)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B3%A0%EA%B8%B0",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "중요",
+      "gloss": "importance",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "중요 is recognized in dictionaries as a noun meaning 'importance', but in actual usage it is overwhelmingly bound: 중요하다 (adj), 중요한 (modifier), 중요성 (the noun 'importance'). Standalone 중요 is rare, and learners may produce ungrammatical sentences. The headword would be more useful as 중요하다.",
+      "suggestion": {
+        "gloss": "important (used in 중요하다)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=57497",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "적",
+      "gloss": "enemy; time when",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "적 has multiple unrelated homographs: 적 (敵) 'enemy', 적 (跡/迹) 'time/moment, occasion' (used in 어렸을 적에), and the productive Sino-Korean suffix 적 (的) 'pertaining to' (사회적, 과학적). The gloss 'time when' is awkward English for the temporal sense; the suffix 적(的) sense is also missing. The two listed senses are unrelated lexemes.",
+      "suggestion": {
+        "gloss": "enemy (敵); occasion, time (어렸을 적에); -ic, -al (suffix 的)",
+        "partOfSpeech": "noun/suffix"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%81",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "장",
+      "gloss": "chapter; sheet (counter)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "Both senses are correct, but 장 is one of the most polysemous Sino-Korean syllables (chapter 章, market 場, sheet-counter 張, intestines 腸, head/chief 長, sauce 醬, etc.). For a learner-facing seed, listing only two arbitrary senses out of many is misleading. Also, 장 as a counter is not an adverb.",
+      "suggestion": {
+        "gloss": "sheet, page (counter for flat objects); chapter (章); market (場)",
+        "partOfSpeech": "noun/counter"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9E%A5",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "북",
+      "gloss": "north; drum",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "Both senses exist (drum 북, north 北), but bare 북 for 'north' is mostly bound — natural usage is 북쪽 or 북부. 북 as 'drum' is a pure-Korean noun and is fully standalone. Listing 'north' first as a coequal gloss may lead learners to produce *'북에 있다' instead of '북쪽에 있다'.",
+      "suggestion": {
+        "gloss": "drum (instrument); north (mostly in compounds: 북쪽, 북부)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%81",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "이렇다",
+      "gloss": "like this",
+      "partOfSpeech": "verb/adj",
+      "verdict": "uncertain",
+      "issue": "이렇다 is the dictionary form of an adjective meaning 'to be like this, to be such'. The gloss 'like this' reads as the adverbial form 이렇게 ('in this way'). For the headword 이렇다, a more accurate gloss would be 'to be like this; to be this way'.",
+      "suggestion": {
+        "gloss": "to be like this, to be such",
+        "partOfSpeech": "verb/adj"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9D%B4%EB%9F%AC%ED%95%98%EB%8B%A4",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "정말",
+      "gloss": "really",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "정말 is most often used as an adverb ('really'), though it is also a noun ('the truth, real fact'). Tagging 'noun/adv' is technically defensible but for the gloss 'really' specifically, it should be 'adverb'.",
+      "suggestion": {
+        "gloss": "really, truly (adv); the truth, real fact (noun)",
+        "partOfSpeech": "adverb/noun"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%95%EB%A7%90",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "지금",
+      "gloss": "now",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "지금 functions as both a noun ('the present (moment)') and an adverb ('now'); the dual tag is reasonable. Including for completeness — no flag needed unless tag granularity matters elsewhere.",
+      "suggestion": {
+        "gloss": "now (adv); the present (noun)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A7%80%EA%B8%88",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "그만",
+      "gloss": "stop; that much",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "그만 is primarily an adverb ('that much; stop it; involuntarily/unintentionally'). The gloss 'stop' is misleading because 그만 is not the imperative verb 'stop'; it is the adverbial '(do) no more, enough'. A learner could mistakenly use it as a verb.",
+      "suggestion": {
+        "gloss": "(no/that) much; (do) no more, enough; involuntarily",
+        "partOfSpeech": "adverb"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%A7%8C",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "거",
+      "gloss": "thing (informal)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "거 is the colloquial contracted form of the bound noun 것 ('thing, fact'). It is bound — it cannot stand alone as a free noun. Listing it as 'noun/adv' without indicating its bound status may mislead learners into producing ungrammatical *거가 instead of 게/것이.",
+      "suggestion": {
+        "gloss": "thing, fact (bound noun, colloquial form of 것)",
+        "partOfSpeech": "bound noun"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B1%B0",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "년",
+      "gloss": "year",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "년 is a bound counter for years (2024년, 삼 년) — it cannot stand as a free noun meaning 'year' (the free noun is 해). Tagging as 'noun/adv' obscures its counter status.",
+      "suggestion": {
+        "gloss": "year (counter, e.g. 2024년)",
+        "partOfSpeech": "counter"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%85%84",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "피시",
+      "gloss": "PC (computer)",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "피시 is the Hangulization of 'PC'. While it appears in Korean (especially 피시방 'PC bang'/internet cafe), in everyday writing the Roman letters 'PC' are far more common. As a TOPIK 1+2 headword, 피시방 (PC room) would be more useful than the bare transliteration.",
+      "suggestion": {
+        "gloss": "PC, personal computer (transliteration)",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%94%BC%EC%8B%9C",
+      "sourceShard": "seed-vocab-ko-topik.json"
+    },
+    {
+      "korean": "연기",
+      "gloss": "smoke; performance",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "연기 has three common homonyms: 煙氣 'smoke', 演技 'acting/performance', and 延期 'postponement'. The third sense (postponement) is arguably the most frequent in everyday written Korean (회의를 연기하다). Listing only two senses is not strictly wrong but is incomplete. Consider adding 'postponement'.",
+      "suggestion": {
+        "gloss": "smoke; performance; postponement",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": null,
+      "sourceShard": "seed-vocab-ko-topik.json"
+    }
+  ]
+}

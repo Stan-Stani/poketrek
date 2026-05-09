@@ -1,0 +1,17 @@
+{
+  "shardFile": "seed-vocab-ko-mined.json",
+  "range": [414, 619],
+  "inspected": 205,
+  "flagged": [
+    {
+      "korean": "소음",
+      "gloss": "Air Lock (ability)",
+      "partOfSpeech": "noun",
+      "verdict": "mistranslation",
+      "issue": "The English gloss is wrong. Source is gAbilityNames[76], which in Gen 3 (LeafGreen) is the unused ability Cacophony (Japanese そうおん, lit. 'noise'). The Korean lemma 소음 ('noise') correctly corresponds to Cacophony, not Air Lock. The duplicate Air Lock entry at index 618 (에어록, gAbilityNames[77]) is the actual Air Lock; that one is correct. This entry should read 'Cacophony (ability)'. Confirmed by Bulbapedia: Cacophony is index 76 and Air Lock is index 77 in Gen 3 ability tables.",
+      "suggestion": {"gloss": "Cacophony (ability)", "partOfSpeech": "noun"},
+      "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Cacophony_(Ability)"
+    }
+  ],
+  "notes": "Range [414, 619) is entirely ROM-mined move/ability names (gMoveNames[227..354] + gAbilityNames[1..77]). Per audit guidelines, '(move)' / '(ability)' gloss entries are intentional and not flagged for the noun PoS even when the underlying Korean is verb-stem-shaped (e.g., 속이다 Fake Out, 깨트리다 Brick Break, 뛰어오르다 Bounce, 탐내다 Covet) — these are proper-noun move names in-game. Korean lemmas were spot-checked against canonical Gen 3 Pokémon localization sources (Pokémon Wiki Fandom, podic.kr, librewiki, namu.wiki); apparent typos like 메지컬리프 (vs canonical 매지컬리프) and 락블레스트 (vs 락블래스트/록블라스트) and 브레이크크루 (vs current 브레이크클로) are either Gen 3-era variants or ROM patch typos preserved as-is from the source ROM and are not flagged. The 정신력 = Inner Focus calibration note does not apply here because 정신력 is the official Korean ability name for Inner Focus in Gen 3 — the gloss is the canonical English ability name, not a generic translation."
+}

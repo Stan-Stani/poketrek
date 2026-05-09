@@ -1,0 +1,314 @@
+{
+  "shardFile": "seed-vocab-ko-mined.json",
+  "range": [0, 207],
+  "inspected": 207,
+  "flagged": [
+    {
+      "korean": "갈다",
+      "gloss": "to grind; to plow",
+      "partOfSpeech": "verb",
+      "verdict": "mistranslation",
+      "issue": "Gloss is too narrow. 갈다 is a high-frequency homonym whose dominant modern sense is 'to change/replace' (e.g., 칼을 갈다 'sharpen', 기름을 갈다 'change the oil', 이를 갈다 'gnash teeth'). Omitting the change/replace sense is a major omission for a freq=21 lemma.",
+      "suggestion": {"gloss": "to change; to replace; to grind; to sharpen; to plow", "partOfSpeech": "verb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EA%B0%88%EB%8B%A4"
+    },
+    {
+      "korean": "몰다",
+      "gloss": "to drive (cattle); to herd",
+      "partOfSpeech": "verb",
+      "verdict": "mistranslation",
+      "issue": "Gloss missing the most common modern sense, 'to drive (a vehicle)' (차를 몰다). The cattle/herding sense is correct but secondary in contemporary usage.",
+      "suggestion": {"gloss": "to drive (a vehicle); to herd; to drive into a corner", "partOfSpeech": "verb"},
+      "evidenceUrl": "https://x.com/ttmik/status/956406817545842693"
+    },
+    {
+      "korean": "달달",
+      "gloss": "sweetly; (of trembling) lightly shaking",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "The traditional/dictionary sense of 달달 is the onomatopoeia for trembling/shivering or a rattling sound (e.g., 달달 떨다). The 'sweetly' sense is recent slang derived from 달다 'sweet' and is informal. Listing 'sweetly' first inverts the dictionary priority.",
+      "suggestion": {"gloss": "(of trembling/shivering) shaking; (of a rattling sound); (slang) sweetly", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://hinative.com/questions/25601323"
+    },
+    {
+      "korean": "전부",
+      "gloss": "all; everything",
+      "partOfSpeech": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "전부 functions primarily as a noun/pronoun ('the whole; all of it') and only secondarily as an adverb ('altogether'). Tagging only as adverb misses the primary nominal usage.",
+      "suggestion": {"gloss": "all; everything; the whole", "partOfSpeech": "noun"},
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%A0%84%EB%B6%80"
+    },
+    {
+      "korean": "부디",
+      "gloss": "(unglossed; freq 139)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Highest-frequency unglossed entry (freq 139). 부디 is a real, common adverb meaning 'please; by all means; I beg you'; the placeholder gloss should be filled in. Likely a Pokemon Center / NPC dialog filler in this corpus.",
+      "suggestion": {"gloss": "please; by all means; I do hope (that)", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://www.wordhippo.com/what-is/the-meaning-of/korean-word-1d3182f36ea95e52fcaeca169c7e5f97a970177a.html"
+    },
+    {
+      "korean": "거두다",
+      "gloss": "(unglossed; freq 51)",
+      "partOfSpeech": "verb",
+      "verdict": "uncertain",
+      "issue": "High-frequency placeholder gloss. 거두다 is a real verb meaning 'to harvest; to collect; to achieve (results); to withdraw'. Should be properly glossed.",
+      "suggestion": {"gloss": "to harvest; to collect; to achieve; to withdraw", "partOfSpeech": "verb"},
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/16280_%EA%B1%B0%EB%91%90%EB%8B%A4/"
+    },
+    {
+      "korean": "의도",
+      "gloss": "(unglossed; freq 14)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 의도 (意圖) is a common noun meaning 'intention; purpose'.",
+      "suggestion": {"gloss": "intention; purpose; intent", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "제티",
+      "gloss": "(unglossed; freq 14)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Likely a Mecab over-segmentation artifact (a fragment of a Pokemon name or katakana-romanized token rather than a Korean lemma). Not a standard dictionary word; consider removal rather than glossing.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "도움",
+      "gloss": "(unglossed; freq 13)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss for a very common noun: 도움 = 'help; aid; assistance' (nominalized form of 돕다).",
+      "suggestion": {"gloss": "help; aid; assistance", "partOfSpeech": "noun"},
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EB%8F%84%EC%9B%80"
+    },
+    {
+      "korean": "의제",
+      "gloss": "(unglossed; freq 12)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 의제 (議題) means 'agenda; topic of discussion'. However, freq 12 in a Pokemon corpus is suspicious — this may be a Mecab segmentation artifact rather than a real occurrence of 의제. Verify in source contexts before glossing.",
+      "suggestion": {"gloss": "agenda; topic of discussion (verify: may be Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%9D%98%EC%A0%9C"
+    },
+    {
+      "korean": "조석",
+      "gloss": "(unglossed; freq 11)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 조석 has two homonyms: 朝夕 ('morning and evening') and 潮汐 ('tides'). Could also be a fragment. Verify before glossing.",
+      "suggestion": {"gloss": "morning and evening; tides (verify in context)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "산도",
+      "gloss": "(unglossed; freq 8)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 산도 most commonly means 'acidity' (酸度) or 'birth canal' (産道) — neither obviously fits a Pokemon corpus, suggesting this is likely a Mecab artifact (e.g., a fragment of a place name).",
+      "suggestion": {"gloss": "(verify: likely Mecab artifact; literal senses are 'acidity' / 'birth canal')", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "안무",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 안무 (按舞) means 'choreography' — unusual for a Pokemon corpus, suggesting this may be a Mecab artifact.",
+      "suggestion": {"gloss": "choreography (verify: may be Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "에티",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean dictionary word; almost certainly a Mecab over-segmentation artifact (probably a fragment of a Pokemon/character name or katakana romanization).",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "오래",
+      "gloss": "(unglossed; freq 7)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss for a very common adverb: 오래 = 'for a long time'.",
+      "suggestion": {"gloss": "for a long time; long", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%98%A4%EB%9E%98"
+    },
+    {
+      "korean": "바롯",
+      "gloss": "(unglossed; freq 6)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean word. Almost certainly a Mecab artifact or proper-noun fragment.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "다소",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 다소 (多少) is a common adverb/noun meaning 'somewhat; more or less; a little'.",
+      "suggestion": {"gloss": "somewhat; more or less; a little", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A4%EC%86%8C"
+    },
+    {
+      "korean": "진제",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a common standalone noun in modern Korean. Likely a Mecab artifact.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "톰보이",
+      "gloss": "(unglossed; freq 5)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "톰보이 is a Konglish loanword for 'tomboy', but very unlikely in a Pokemon ROM. Probably a Mecab over-segmentation of a katakana-derived token.",
+      "suggestion": {"gloss": "tomboy (verify: likely Mecab artifact in this corpus)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "거조",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a common modern Korean noun. Likely a Mecab artifact.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "메주",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 메주 is a real noun: 'fermented soybean lump (used to make doenjang/ganjang)'. Unusual for a Pokemon corpus though, so verify before glossing.",
+      "suggestion": {"gloss": "fermented soybean block (meju) (verify: may be Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "시래",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standalone noun (시래기 'dried radish greens' is the lemma; 시래 alone is not a word). Likely a Mecab segmentation artifact.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "아미",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "adverb",
+      "verdict": "pos_mismatch",
+      "issue": "아미 is a noun, not an adverb. Possible meanings: 蛾眉 'crescent eyebrow' (poetic/literary), 阿彌 'Amitabha (Buddhist)', or the BTS fandom name. None of these are adverbs. Most likely a Mecab artifact in this Pokemon corpus.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact; literal noun senses are crescent eyebrow / Buddhist Amita)", "partOfSpeech": "noun"},
+      "evidenceUrl": "https://educalingo.com/en/dic-ko/ami"
+    },
+    {
+      "korean": "오티",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean word. Almost certainly a Mecab artifact / katakana fragment.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "윈도",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 윈도 is a Konglish loanword meaning 'window' (esp. computer/UI window). Unusual for a Pokemon corpus, so verify before glossing.",
+      "suggestion": {"gloss": "window (Konglish, esp. computer window) (verify: may be Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "조화",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 조화 has multiple homonyms: 調和 'harmony', 造花 'artificial flower', 造化 'creation/the workings of nature'. Likely 'harmony' or 'creation' in a Pokemon context.",
+      "suggestion": {"gloss": "harmony; creation; (also) artificial flower", "partOfSpeech": "noun"},
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A1%B0%ED%99%94"
+    },
+    {
+      "korean": "지레",
+      "gloss": "(unglossed; freq 4)",
+      "partOfSpeech": "adverb",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 지레 as adverb = 'prematurely; in advance; ahead of time' (e.g., 지레 겁먹다 'get scared prematurely'). It is also a noun meaning 'lever' (a separate sense).",
+      "suggestion": {"gloss": "prematurely; in advance; before its time", "partOfSpeech": "adverb"},
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/76940_%EC%A7%80%EB%A0%88/"
+    },
+    {
+      "korean": "난부",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean noun. Likely a Mecab artifact.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "논제",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Placeholder gloss. 논제 (論題) is a real but academic noun meaning 'thesis topic; subject of discussion'. Unusual for a Pokemon corpus, suggesting Mecab artifact.",
+      "suggestion": {"gloss": "thesis topic; subject of debate (verify: may be Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "두석",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a common Korean noun. Likely a Mecab artifact.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "바론",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a standard Korean noun (바론 = Konglish for 'baron' or proper-noun fragment). Likely a Mecab artifact in this corpus.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "바움",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a Korean dictionary word; almost certainly a fragment of a proper noun (e.g., 바움쿠헨 'baumkuchen' or a character name).",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "시샤",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "Not a Korean dictionary word; almost certainly a Mecab over-segmentation of a katakana-romanized token.",
+      "suggestion": {"gloss": "(remove: likely Mecab artifact)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    },
+    {
+      "korean": "시티",
+      "gloss": "(unglossed; freq 3)",
+      "partOfSpeech": "noun",
+      "verdict": "uncertain",
+      "issue": "시티 is the Konglish loan 'city' but very unlikely in a Korean Pokemon ROM (which uses 시티 only inside compound place names and 도시 elsewhere). Probably a Mecab artifact / proper-noun fragment.",
+      "suggestion": {"gloss": "city (Konglish) (verify: likely Mecab artifact in this corpus)", "partOfSpeech": "noun"},
+      "evidenceUrl": null
+    }
+  ],
+  "notes": "Inspected all 207 entries. The first 165 hand-glossed entries are mostly accurate; flagged narrowness on 갈다 / 몰다 / 달달 and a pos_mismatch on 전부. Entries 165-194 are systemic placeholders ('(unglossed; freq N)') and require human triage: roughly half are real Korean lemmas needing proper glosses (부디, 거두다, 의도, 도움, 오래, 다소, 지레, 조화), while the rest are likely Mecab over-segmentation artifacts (제티, 에티, 바롯, 톰보이, 거조, 시래, 오티, 시샤, 두석, 바론, 바움, 난부) and probably should be filtered out at the mining stage rather than glossed. Move-name entries 195-206 follow the intentional '(move name) (move)' convention and are not flagged."
+}

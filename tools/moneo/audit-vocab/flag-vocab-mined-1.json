@@ -1,0 +1,7 @@
+{
+  "shardFile": "seed-vocab-ko-mined.json",
+  "range": [207, 414],
+  "inspected": 207,
+  "flagged": [],
+  "notes": "All 207 entries in this range are ROM-mined Pokémon move names (source: gMoveNames[...]) with the intentional '(move)' gloss convention, which the audit guidelines explicitly state should not be flagged. Spot-checked Korean->English mappings against the official Korean Pokémon localization (e.g., 칼바람=Razor Wind, 괴력=Strength, 염동력=Confusion, 파괴광선=Hyper Beam, 역린=Outrage, 기사회생=Reversal, 길동무=Destiny Bond, 잠꼬대=Sleep Talk) and all are accurate. Korean spellings and PoS (noun) are consistent."
+}

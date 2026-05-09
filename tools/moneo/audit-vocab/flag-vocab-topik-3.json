@@ -1,0 +1,43 @@
+{
+  "shardFile": "seed-vocab-ko-topik.json",
+  "range": [535, 713],
+  "inspected": 178,
+  "flagged": [
+    {
+      "korean": "똑같이",
+      "gloss": "exactly the same",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "똑같이 is an adverb meaning 'identically / in the same way / equally', describing how an action is done. The English gloss 'exactly the same' reads as an adjectival phrase modifying a noun. A learner seeing this gloss could mis-use it as an adjective. Better gloss: 'identically; in the same way; equally'.",
+      "suggestion": {
+        "gloss": "identically; in the same way",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62076"
+    },
+    {
+      "korean": "전자",
+      "gloss": "electronic",
+      "partOfSpeech": "noun/adv",
+      "verdict": "mistranslation",
+      "issue": "전자 is a noun with two main senses: 電子 'electron' (the physics particle) and 前者 'the former' (in comparisons, opposite of 후자 'the latter'). The current gloss 'electronic' is an English adjective and only loosely covers usage in compounds like 전자제품. Standalone 전자 is not adjectival. Better: 'electron; the former'.",
+      "suggestion": {
+        "gloss": "electron; the former",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%A0%84%EC%9E%90"
+    },
+    {
+      "korean": "연기",
+      "gloss": "smoke; performance",
+      "partOfSpeech": "noun/adv",
+      "verdict": "uncertain",
+      "issue": "연기 has three common homonyms: 煙氣 'smoke', 演技 'acting/performance', and 延期 'postponement'. The third sense (postponement) is arguably the most frequent in everyday written Korean (회의를 연기하다). Listing only two senses is not strictly wrong but is incomplete. Consider adding 'postponement'.",
+      "suggestion": {
+        "gloss": "smoke; performance; postponement",
+        "partOfSpeech": "noun/adv"
+      },
+      "evidenceUrl": null
+    }
+  ]
+}
