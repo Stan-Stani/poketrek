@@ -552,6 +552,112 @@ private fun ToggleRow(
 }
 
 /**
+ * Generic 2-or-more-button segmented selector. Selected option gets a
+ * filled chip; the rest are outlined-style. Used for the Moneo direction
+ * picker and the TTS-language picker.
+ */
+@Composable
+private fun <T> SegmentedRow(
+    options: List<Pair<T, String>>,
+    selected: T,
+    onSelect: (T) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        options.forEach { (value, label) ->
+            val isSelected = value == selected
+            val colors = if (isSelected) {
+                ButtonDefaults.buttonColors(containerColor = Color(0xFF1D4ED8))
+            } else {
+                ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFE2E8F0),
+                    contentColor = Color(0xFF334155),
+                )
+            }
+            Button(
+                onClick = { onSelect(value) },
+                colors = colors,
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
+                modifier = Modifier.weight(1f),
+            ) {
+                Text(label, fontSize = 12.sp)
+            }
+        }
+    }
+}
+
+@Composable
+private fun DirectionPicker(
+    current: com.poketrek.moneo.data.FlashcardDirection,
+    onPick: (com.poketrek.moneo.data.FlashcardDirection) -> Unit,
+) {
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(
+            "Card direction",
+            fontWeight = FontWeight.SemiBold,
+            fontSize = 14.sp,
+        )
+        SegmentedRow(
+            options = listOf(
+                com.poketrek.moneo.data.FlashcardDirection.KO_TO_EN to "한국어 → English",
+                com.poketrek.moneo.data.FlashcardDirection.EN_TO_KO to "English → 한국어",
+            ),
+            selected = current,
+            onSelect = onPick,
+        )
+        val sublabel = when (current) {
+            com.poketrek.moneo.data.FlashcardDirection.KO_TO_EN ->
+                "Korean shows on the front; tap to reveal the English meaning"
+            com.poketrek.moneo.data.FlashcardDirection.EN_TO_KO ->
+                "English shows on the front; tap to reveal the Korean translation"
+        }
+        Text(sublabel, color = Color(0xFF6B7280), fontSize = 12.sp)
+    }
+}
+
+@Composable
+private fun TtsLanguagePicker(
+    override: com.poketrek.moneo.data.TtsLanguage?,
+    effective: com.poketrek.moneo.data.TtsLanguage,
+    onPick: (com.poketrek.moneo.data.TtsLanguage?) -> Unit,
+) {
+    // The picker uses a nullable T (null = "Auto / follow direction"). Encode
+    // it as four discrete buttons mapping to {null, KOREAN, ENGLISH, OFF}.
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(
+            "Voice language",
+            fontWeight = FontWeight.SemiBold,
+            fontSize = 14.sp,
+        )
+        SegmentedRow(
+            options = listOf(
+                null to "Auto",
+                com.poketrek.moneo.data.TtsLanguage.KOREAN to "한국어",
+                com.poketrek.moneo.data.TtsLanguage.ENGLISH to "English",
+                com.poketrek.moneo.data.TtsLanguage.OFF to "Off",
+            ),
+            selected = override,
+            onSelect = onPick,
+        )
+        val sublabel = if (override == null) {
+            "Auto · matches card direction (currently ${effective.summaryLabel()})"
+        } else {
+            "Pinned to ${effective.summaryLabel()} regardless of card direction"
+        }
+        Text(sublabel, color = Color(0xFF6B7280), fontSize = 12.sp)
+    }
+}
+
+private fun com.poketrek.moneo.data.TtsLanguage.summaryLabel(): String = when (this) {
+    com.poketrek.moneo.data.TtsLanguage.KOREAN -> "한국어"
+    com.poketrek.moneo.data.TtsLanguage.ENGLISH -> "English"
+    com.poketrek.moneo.data.TtsLanguage.OFF -> "Off"
+}
+
+/**
  * Tinted, padded container for a settings section. Title sits at the top with
  * an optional trailing action (e.g. a small button). Content stacks below
  * with consistent spacing.
@@ -1043,7 +1149,9 @@ private fun MoneoSection(
     val totalDue = moneo.repository.totalDueCount()
 
     val verbatimSentences by moneo.prefs.verbatimSentences.collectAsState()
-    val ttsEnabled by moneo.prefs.ttsEnabled.collectAsState()
+    val direction by moneo.prefs.direction.collectAsState()
+    val ttsLanguageOverride by moneo.prefs.ttsLanguageOverride.collectAsState()
+    val effectiveTtsLanguage by moneo.prefs.effectiveTtsLanguage.collectAsState()
     val ttsStatus by moneo.tts.status.collectAsState()
     val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
     val ttsAutoReveal by moneo.prefs.ttsAutoPlayReveal.collectAsState()
@@ -1053,13 +1161,22 @@ private fun MoneoSection(
     val includeEtymology by moneo.prefs.includeEtymology.collectAsState()
     val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
     val areaGateThresholdPct by moneo.prefs.areaGateThresholdPct.collectAsState()
+    val ttsOn = effectiveTtsLanguage != com.poketrek.moneo.data.TtsLanguage.OFF
 
-    SectionCard(title = "Moneo · 몬어 (Korean)") {
+    val sectionTitle = when (direction) {
+        com.poketrek.moneo.data.FlashcardDirection.KO_TO_EN -> "Moneo · 몬어 (learn Korean)"
+        com.poketrek.moneo.data.FlashcardDirection.EN_TO_KO -> "Moneo · 영어 학습 (learn English)"
+    }
+    SectionCard(title = sectionTitle) {
         ToggleRow(
-            label = "Korean learning mode",
+            label = "Moneo enabled",
             sublabel = if (enabled) "Review badge visible during play" else "Hidden",
             checked = enabled,
             onCheckedChange = { moneo.prefs.setEnabled(it) },
+        )
+        DirectionPicker(
+            current = direction,
+            onPick = { moneo.prefs.setDirection(it) },
         )
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -1135,38 +1252,36 @@ private fun MoneoSection(
 
         // Default-open when there's something the user might want to act on:
         // they've turned TTS on, OR the engine reports a problem worth showing.
-        val ttsHasIssue = ttsEnabled &&
+        val ttsHasIssue = ttsOn &&
             ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.INITIALIZING &&
             ttsStatus != com.poketrek.moneo.audio.TtsPlayer.Status.READY
         Expander(
             title = "Read aloud (TTS)",
             initiallyExpanded = ttsHasIssue,
             summary = when {
-                !ttsEnabled -> "Off"
+                !ttsOn -> "Off"
                 ttsHasIssue -> "Needs setup"
-                else -> "On · ${"%.2f".format(ttsRatePct / 100f)}×"
+                else -> "${effectiveTtsLanguage.summaryLabel()} · ${"%.2f".format(ttsRatePct / 100f)}×"
             },
         ) {
             if (ttsHasIssue) {
                 TtsHelpCard(
                     status = ttsStatus,
-                    onTurnOff = { moneo.prefs.setTtsEnabled(false) },
+                    onTurnOff = {
+                        moneo.prefs.setTtsLanguage(com.poketrek.moneo.data.TtsLanguage.OFF)
+                    },
                 )
             }
-            ToggleRow(
-                label = "Read examples aloud",
-                sublabel = if (ttsEnabled)
-                    "Tap 🔊 next to the headword or example to hear it"
-                else
-                    "Speaker buttons hidden",
-                checked = ttsEnabled,
-                onCheckedChange = { moneo.prefs.setTtsEnabled(it) },
+            TtsLanguagePicker(
+                override = ttsLanguageOverride,
+                effective = effectiveTtsLanguage,
+                onPick = { moneo.prefs.setTtsLanguage(it) },
             )
-            if (ttsEnabled) {
+            if (ttsOn) {
                 ToggleRow(
                     label = "Auto-play headword",
                     sublabel = if (ttsAutoFront)
-                        "Speak Korean automatically when a new card appears"
+                        "Speak the front-side text automatically when a new card appears"
                     else
                         "Front side stays silent until you tap 🔊",
                     checked = ttsAutoFront,

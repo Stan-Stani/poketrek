@@ -41,7 +41,9 @@ import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.data.CardRecord
+import com.poketrek.moneo.data.FlashcardDirection
 import com.poketrek.moneo.data.SentenceEntry
+import com.poketrek.moneo.data.TtsLanguage
 import com.poketrek.moneo.data.VocabEntry
 import com.poketrek.moneo.srs.CardSnapshot
 import com.poketrek.moneo.srs.CardState
@@ -61,12 +63,16 @@ fun ReviewScreen(
 ) {
     val cards by module.repository.cards.collectAsState()
     val showSentenceGloss by module.prefs.showSentenceGloss.collectAsState()
-    val ttsEnabled by module.prefs.ttsEnabled.collectAsState()
-    val ttsAvailable by module.tts.available.collectAsState()
+    val direction by module.prefs.direction.collectAsState()
+    val effectiveTtsLanguage by module.prefs.effectiveTtsLanguage.collectAsState()
+    val availableLangs by module.tts.availableLanguages.collectAsState()
     val ttsAutoReveal by module.prefs.ttsAutoPlayReveal.collectAsState()
     val ttsAutoFront by module.prefs.ttsAutoPlayFront.collectAsState()
     val ttsRatePct by module.prefs.ttsRatePct.collectAsState()
-    val canSpeak = ttsEnabled && ttsAvailable
+    // Speaker button shows iff the current effective language is supported by
+    // the mounted engine. OFF or unavailable → no button, no auto-play.
+    val canSpeak = effectiveTtsLanguage != TtsLanguage.OFF &&
+        effectiveTtsLanguage in availableLangs
     LaunchedEffect(ttsRatePct) { module.tts.setRate(ttsRatePct / 100f) }
     var revealed by remember(areaId) { mutableStateOf(false) }
     val verbatim by module.prefs.verbatimSentences.collectAsState()
@@ -106,16 +112,32 @@ fun ReviewScreen(
         module.repository.sentenceFor(vocab.id, preferAreaId = areaId, verbatim = verbatim)
     } else null
 
+    // Direction-driven sides. KO_TO_EN = original behavior (front is Korean).
+    // EN_TO_KO swaps everything so a Korean speaker drills the English token
+    // and reveals the Korean it maps to.
+    val sides = vocabSidesFor(vocab, direction)
+    val sentenceSides = sentence?.let { sentenceSidesFor(it, direction) }
+    // Pick which language to read aloud, per side. The card front and
+    // sentence-front share a language; the back shares the other. Speaker
+    // buttons sit on the side whose language matches effectiveTtsLanguage —
+    // there's no point putting a Korean speaker next to English text.
+    val frontLang = languageOfFront(direction)
+    val backLang = languageOfBack(direction)
+
     // Auto-play headword when a new card surfaces (front side). Keys on
     // vocab.id so it doesn't re-fire on toggle/recompose for the same card.
-    LaunchedEffect(vocab.id, canSpeak, ttsAutoFront) {
-        if (canSpeak && ttsAutoFront && !revealed) module.tts.speak(vocab.korean)
+    LaunchedEffect(vocab.id, canSpeak, ttsAutoFront, effectiveTtsLanguage) {
+        if (canSpeak && ttsAutoFront && !revealed) {
+            speakSide(module, sides.front, sides.back, frontLang, backLang, effectiveTtsLanguage)
+        }
     }
     // Auto-play example sentence when the back is revealed. Keyed on
     // (vocab, revealed) so flipping back never replays.
-    LaunchedEffect(vocab.id, revealed, canSpeak, ttsAutoReveal) {
+    LaunchedEffect(vocab.id, revealed, canSpeak, ttsAutoReveal, effectiveTtsLanguage) {
         if (canSpeak && ttsAutoReveal && revealed) {
-            sentence?.let { module.tts.speak(it.korean) }
+            sentenceSides?.let {
+                speakSide(module, it.front, it.back, frontLang, backLang, effectiveTtsLanguage)
+            }
         }
     }
 
@@ -123,11 +145,12 @@ fun ReviewScreen(
         // Capture the vocab being suspended so the snackbar text and Undo
         // refer to *this* card, even after the queue advances.
         val suspendedVocab = vocab
+        val suspendedSides = vocabSidesFor(suspendedVocab, direction)
         module.repository.setSuspended(suspendedVocab.id, true)
         revealed = false
         snackbarScope.launch {
             val result = snackbarHostState.showSnackbar(
-                message = "Suspended ${suspendedVocab.korean} / ${suspendedVocab.gloss}",
+                message = "Suspended ${suspendedSides.front} / ${suspendedSides.back}",
                 actionLabel = "Undo",
                 duration = androidx.compose.material3.SnackbarDuration.Long,
             )
@@ -160,23 +183,26 @@ fun ReviewScreen(
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF334155)),
                     contentPadding = PaddingValues(horizontal = 10.dp, vertical = 0.dp),
                 ) {
-                    Text(
-                        if (showSentenceGloss) "번역 ✓" else "번역 —",
-                        color = Color(0xFF94A3B8),
-                        fontSize = 11.sp,
-                    )
+                    val translateLabel = when (direction) {
+                        FlashcardDirection.KO_TO_EN -> if (showSentenceGloss) "번역 ✓" else "번역 —"
+                        FlashcardDirection.EN_TO_KO -> if (showSentenceGloss) "Trans ✓" else "Trans —"
+                    }
+                    Text(translateLabel, color = Color(0xFF94A3B8), fontSize = 11.sp)
                 }
             }
         }
     }
 
+    val frontHasSpeaker = canSpeak && effectiveTtsLanguage == frontLang
+    val backHasSpeaker = canSpeak && effectiveTtsLanguage == backLang
     val front: @Composable () -> Unit = {
         CardFront(
-            vocab = vocab,
+            text = sides.front,
+            partOfSpeech = vocab.partOfSpeech,
             revealed = revealed,
             onTapToReveal = { if (!revealed) revealed = true },
-            canSpeak = canSpeak,
-            onSpeak = { module.tts.speak(vocab.korean) },
+            canSpeak = frontHasSpeaker,
+            onSpeak = { module.tts.speak(sides.front, frontLang) },
         )
     }
 
@@ -235,13 +261,15 @@ fun ReviewScreen(
                                 .verticalScroll(rememberScrollState()),
                             verticalArrangement = Arrangement.spacedBy(12.dp),
                         ) {
-                            CardBack(vocab)
-                            sentence?.let {
+                            CardBack(text = sides.back, notes = vocab.notes, direction = direction)
+                            sentenceSides?.let { ss ->
                                 SentenceCard(
-                                    it,
-                                    showSentenceGloss,
-                                    canSpeak = canSpeak,
-                                    onSpeak = { module.tts.speak(it.korean) },
+                                    frontText = ss.front,
+                                    backText = ss.back,
+                                    showBack = showSentenceGloss,
+                                    generator = sentence?.generator,
+                                    canSpeak = frontHasSpeaker,
+                                    onSpeak = { module.tts.speak(ss.front, frontLang) },
                                 )
                             }
                         }
@@ -262,13 +290,15 @@ fun ReviewScreen(
                 header()
                 front()
                 if (revealed) {
-                    CardBack(vocab)
-                    sentence?.let {
+                    CardBack(text = sides.back, notes = vocab.notes, direction = direction)
+                    sentenceSides?.let { ss ->
                         SentenceCard(
-                            it,
-                            showSentenceGloss,
-                            canSpeak = ttsEnabled && ttsAvailable,
-                            onSpeak = { module.tts.speak(it.korean) },
+                            frontText = ss.front,
+                            backText = ss.back,
+                            showBack = showSentenceGloss,
+                            generator = sentence?.generator,
+                            canSpeak = frontHasSpeaker,
+                            onSpeak = { module.tts.speak(ss.front, frontLang) },
                         )
                     }
                     ratings()
@@ -312,14 +342,15 @@ private fun StateChip(snapshot: CardSnapshot) {
 
 @Composable
 private fun CardFront(
-    vocab: VocabEntry,
+    text: String,
+    partOfSpeech: String,
     revealed: Boolean,
     onTapToReveal: () -> Unit,
     canSpeak: Boolean,
     onSpeak: () -> Unit,
 ) {
     val verticalPadding = if (revealed) 12.dp else 24.dp
-    val koreanSize = if (revealed) 28.sp else 36.sp
+    val frontSize = if (revealed) 28.sp else 36.sp
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -333,12 +364,7 @@ private fun CardFront(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(10.dp),
         ) {
-            Text(
-                vocab.korean,
-                color = Color.White,
-                fontWeight = FontWeight.Bold,
-                fontSize = koreanSize,
-            )
+            Text(text, color = Color.White, fontWeight = FontWeight.Bold, fontSize = frontSize)
             if (canSpeak) {
                 Text(
                     "🔊",
@@ -350,11 +376,7 @@ private fun CardFront(
                 )
             }
         }
-        Text(
-            vocab.partOfSpeech,
-            color = Color(0xFF6B7280),
-            fontSize = 11.sp,
-        )
+        Text(partOfSpeech, color = Color(0xFF6B7280), fontSize = 11.sp)
         if (!revealed) {
             Text(
                 "Tap card or Reveal button",
@@ -366,7 +388,11 @@ private fun CardFront(
 }
 
 @Composable
-private fun CardBack(vocab: VocabEntry) {
+private fun CardBack(text: String, notes: String?, direction: FlashcardDirection) {
+    val label = when (direction) {
+        FlashcardDirection.KO_TO_EN -> "Meaning"
+        FlashcardDirection.EN_TO_KO -> "한국어"
+    }
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -374,14 +400,9 @@ private fun CardBack(vocab: VocabEntry) {
             .padding(20.dp),
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
-        Text("Meaning", color = Color(0xFF6EE7B7), fontSize = 10.sp)
-        Text(
-            vocab.gloss,
-            color = Color.White,
-            fontWeight = FontWeight.SemiBold,
-            fontSize = 18.sp,
-        )
-        vocab.notes?.let {
+        Text(label, color = Color(0xFF6EE7B7), fontSize = 10.sp)
+        Text(text, color = Color.White, fontWeight = FontWeight.SemiBold, fontSize = 18.sp)
+        notes?.let {
             Text(it, color = Color(0xFFA7F3D0), fontSize = 12.sp)
         }
     }
@@ -389,8 +410,10 @@ private fun CardBack(vocab: VocabEntry) {
 
 @Composable
 private fun SentenceCard(
-    sentence: SentenceEntry,
-    showGloss: Boolean,
+    frontText: String,
+    backText: String,
+    showBack: Boolean,
+    generator: String?,
     canSpeak: Boolean,
     onSpeak: () -> Unit,
 ) {
@@ -406,7 +429,7 @@ private fun SentenceCard(
             horizontalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             Text("Example", color = Color(0xFF93C5FD), fontSize = 10.sp)
-            if (sentence.generator?.startsWith("llm-") == true) {
+            if (generator?.startsWith("llm-") == true) {
                 Text(
                     "AI",
                     color = Color(0xFFE0E7FF),
@@ -429,14 +452,9 @@ private fun SentenceCard(
                 )
             }
         }
-        Text(
-            sentence.korean,
-            color = Color.White,
-            fontWeight = FontWeight.Medium,
-            fontSize = 18.sp,
-        )
-        if (showGloss) {
-            Text(sentence.gloss, color = Color(0xFFCBD5E1), fontSize = 13.sp)
+        Text(frontText, color = Color.White, fontWeight = FontWeight.Medium, fontSize = 18.sp)
+        if (showBack) {
+            Text(backText, color = Color(0xFFCBD5E1), fontSize = 13.sp)
         }
     }
 }
@@ -473,3 +491,49 @@ private fun RatingButton(
 
 @Suppress("unused")
 private fun CardRecord.debugLabel(): String = "$vocabId · ${snapshot.state}"
+
+/** Front/back text for a vocab card, given the active direction. */
+private data class TextSides(val front: String, val back: String)
+
+private fun vocabSidesFor(vocab: VocabEntry, direction: FlashcardDirection): TextSides =
+    when (direction) {
+        FlashcardDirection.KO_TO_EN -> TextSides(vocab.korean, vocab.gloss)
+        FlashcardDirection.EN_TO_KO -> TextSides(vocab.gloss, vocab.korean)
+    }
+
+private fun sentenceSidesFor(s: SentenceEntry, direction: FlashcardDirection): TextSides =
+    when (direction) {
+        FlashcardDirection.KO_TO_EN -> TextSides(s.korean, s.gloss)
+        FlashcardDirection.EN_TO_KO -> TextSides(s.gloss, s.korean)
+    }
+
+private fun languageOfFront(direction: FlashcardDirection): TtsLanguage = when (direction) {
+    FlashcardDirection.KO_TO_EN -> TtsLanguage.KOREAN
+    FlashcardDirection.EN_TO_KO -> TtsLanguage.ENGLISH
+}
+
+private fun languageOfBack(direction: FlashcardDirection): TtsLanguage = when (direction) {
+    FlashcardDirection.KO_TO_EN -> TtsLanguage.ENGLISH
+    FlashcardDirection.EN_TO_KO -> TtsLanguage.KOREAN
+}
+
+/**
+ * Speak whichever side matches the user's effective TTS language. Used for
+ * auto-play hooks: the user pinned a voice, so we play the side that's in
+ * that voice. If neither side matches (e.g. an OFF override slipped past
+ * the canSpeak guard), this is a no-op.
+ */
+private fun speakSide(
+    module: MoneoModule,
+    frontText: String,
+    backText: String,
+    frontLang: TtsLanguage,
+    backLang: TtsLanguage,
+    effective: TtsLanguage,
+) {
+    when (effective) {
+        frontLang -> module.tts.speak(frontText, frontLang)
+        backLang -> module.tts.speak(backText, backLang)
+        else -> {}
+    }
+}

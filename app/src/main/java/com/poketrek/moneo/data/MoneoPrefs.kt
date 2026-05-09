@@ -123,15 +123,6 @@ class MoneoPrefs private constructor(private val context: Context) {
     private val _showSentenceGloss = MutableStateFlow(true)
     val showSentenceGloss: StateFlow<Boolean> = _showSentenceGloss.asStateFlow()
 
-    /**
-     * Whether the example-sentence card shows a 🔊 speaker button that
-     * plays the Korean via Android's built-in TTS. Defaults on; the button
-     * is also conditionally hidden when Korean voice data isn't installed
-     * (independent of this flag).
-     */
-    private val _ttsEnabled = MutableStateFlow(true)
-    val ttsEnabled: StateFlow<Boolean> = _ttsEnabled.asStateFlow()
-
     /** Auto-speak the example sentence when the back of the card is revealed. */
     private val _ttsAutoPlayReveal = MutableStateFlow(false)
     val ttsAutoPlayReveal: StateFlow<Boolean> = _ttsAutoPlayReveal.asStateFlow()
@@ -208,7 +199,6 @@ class MoneoPrefs private constructor(private val context: Context) {
             _enabled.value = prefs[KEY_ENABLED] ?: false
             _targetAreaId.value = prefs[KEY_TARGET_AREA]
             _showSentenceGloss.value = prefs[KEY_SHOW_SENTENCE_GLOSS] ?: true
-            _ttsEnabled.value = prefs[KEY_TTS_ENABLED] ?: true
             _ttsAutoPlayReveal.value = prefs[KEY_TTS_AUTO_REVEAL] ?: false
             _ttsAutoPlayFront.value = prefs[KEY_TTS_AUTO_FRONT] ?: false
             _ttsRatePct.value =
@@ -260,11 +250,6 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setShowSentenceGloss(value: Boolean) {
         _showSentenceGloss.value = value
         scope.launch { context.moneoStore.edit { it[KEY_SHOW_SENTENCE_GLOSS] = value } }
-    }
-
-    fun setTtsEnabled(value: Boolean) {
-        _ttsEnabled.value = value
-        scope.launch { context.moneoStore.edit { it[KEY_TTS_ENABLED] = value } }
     }
 
     fun setTtsAutoPlayReveal(value: Boolean) {

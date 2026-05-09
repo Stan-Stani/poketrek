@@ -20,20 +20,30 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.poketrek.moneo.MoneoModule
+import com.poketrek.moneo.data.FlashcardDirection
 import com.poketrek.moneo.gate.MoneoSoftGate
 
 /**
  * Compact "복습 N due / Review N due" badge. Only emits when the gate
- * publishes a non-null Badge; tap opens the Moneo overlay.
+ * publishes a non-null Badge; tap opens the Moneo overlay. Big label is
+ * in the language the user is *learning from* (KO_TO_EN → 복습 / EN_TO_KO
+ * → Review), since that's the language they read fluently.
  */
 @Composable
 fun MoneoHud(
+    moneo: MoneoModule,
     gate: MoneoSoftGate,
     onOpenMoneo: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val badge by gate.badge.collectAsState()
+    val direction by moneo.prefs.direction.collectAsState()
     val b = badge ?: return
+    val (primary, secondary) = when (direction) {
+        FlashcardDirection.KO_TO_EN -> "복습 ${b.dueCount}" to "Review due"
+        FlashcardDirection.EN_TO_KO -> "Review ${b.dueCount}" to "복습"
+    }
     Row(
         modifier = modifier
             .background(Color(0xCC1E3A8A), shape = RoundedCornerShape(10.dp))
@@ -43,17 +53,13 @@ fun MoneoHud(
     ) {
         Column {
             Text(
-                "복습 ${b.dueCount}",
+                primary,
                 color = Color.White,
                 fontFamily = FontFamily.Monospace,
                 fontWeight = FontWeight.Bold,
                 fontSize = 13.sp,
             )
-            Text(
-                "Review due",
-                color = Color(0xFFBFDBFE),
-                fontSize = 9.sp,
-            )
+            Text(secondary, color = Color(0xFFBFDBFE), fontSize = 9.sp)
         }
         Button(
             onClick = onOpenMoneo,

@@ -100,6 +100,7 @@ fun EmulatorScreen(
         )
 
         MoneoHud(
+            moneo = moneo,
             gate = moneoGate,
             onOpenMoneo = { moneoOpen = true },
             modifier = Modifier

@@ -4,31 +4,36 @@ import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
 import android.util.Log
+import com.poketrek.moneo.data.TtsLanguage
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import java.util.Locale
 
 /**
- * Korean Text-to-Speech wrapper for example-sentence playback.
+ * Bilingual (Korean + English) Text-to-Speech wrapper for headword and
+ * example-sentence playback.
  *
  * Many Samsung devices ship with Google TTS as the default engine but
  * Samsung TTS as the only one with Korean voice data installed (or vice
  * versa). Asking the default engine and giving up if it doesn't speak
  * Korean made the warning card appear on perfectly capable phones, so we
- * now probe each installed engine in turn and use the first one that
- * succeeds with `setLanguage(KOREAN)`. Only when *every* engine has
- * declined do we surface the help card.
+ * probe each installed engine in turn and use the first one that supports
+ * at least one of {Korean, English}.
+ *
+ * Once an engine is mounted, [speak] switches the loaded locale lazily on
+ * each call — `TextToSpeech.setLanguage` is synchronous, so flipping
+ * mid-session between Korean and English is cheap.
  */
 class TtsPlayer(context: Context) {
     enum class Status {
         /** Engine init hasn't completed yet — UI should wait, not warn. */
         INITIALIZING,
-        /** Korean voice loaded, ready to speak. */
+        /** Engine ready; at least one of Korean/English is available. */
         READY,
-        /** Engine works but Korean voice data isn't installed. */
+        /** Engine works but neither Korean nor English voice data is installed. */
         MISSING_DATA,
-        /** No installed TTS engine reports Korean support. */
+        /** No installed TTS engine reports Korean *or* English support. */
         UNSUPPORTED,
         /** Engine itself failed to start. */
         ENGINE_FAILED,
@@ -37,6 +42,20 @@ class TtsPlayer(context: Context) {
     private val _status = MutableStateFlow(Status.INITIALIZING)
     val status: StateFlow<Status> = _status.asStateFlow()
 
+    /**
+     * The set of languages the currently-mounted engine can speak. Empty
+     * until init completes (or if init failed). Callers should check this
+     * before showing a speaker button.
+     */
+    private val _availableLanguages = MutableStateFlow<Set<TtsLanguage>>(emptySet())
+    val availableLanguages: StateFlow<Set<TtsLanguage>> = _availableLanguages.asStateFlow()
+
+    /**
+     * Backwards-compat: true iff Korean is available. The original UI
+     * gated the speaker button + warning card on this flag; downstream
+     * call sites can keep using it without worrying about the new
+     * bilingual API.
+     */
     private val _available = MutableStateFlow(false)
     val available: StateFlow<Boolean> = _available.asStateFlow()
 
@@ -63,6 +82,9 @@ class TtsPlayer(context: Context) {
 
     /** The currently-mounted TTS instance. Replaced as we probe engines. */
     @Volatile private var tts: TextToSpeech? = null
+
+    /** Locale currently loaded into [tts] — null before init, switched lazily by [speak]. */
+    @Volatile private var currentLocale: Locale? = null
 
     /** Engine name we asked for in the latest `startEngine` call. Used by
      *  [handleInit] because TextToSpeech.defaultEngine returns the *system*
@@ -115,26 +137,49 @@ class TtsPlayer(context: Context) {
             tryNextEngine(current)
             return
         }
-        val r = current.setLanguage(Locale.KOREAN)
-        val ok = r == TextToSpeech.LANG_AVAILABLE ||
-            r == TextToSpeech.LANG_COUNTRY_AVAILABLE ||
-            r == TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
-        if (ok) {
+        val koreanRes = trySetLanguage(current, Locale.KOREAN)
+        val englishRes = trySetLanguage(current, Locale.ENGLISH)
+        val supported = mutableSetOf<TtsLanguage>()
+        if (isLangOk(koreanRes)) supported += TtsLanguage.KOREAN
+        if (isLangOk(englishRes)) supported += TtsLanguage.ENGLISH
+
+        if (supported.isNotEmpty()) {
+            // Default to Korean if available (preserves prior behavior); otherwise
+            // English. Either way the loaded locale is recorded so [speak] knows
+            // when to switch.
+            val initialLocale = if (TtsLanguage.KOREAN in supported) Locale.KOREAN
+                else Locale.ENGLISH
+            current.setLanguage(initialLocale)
+            currentLocale = initialLocale
             current.setSpeechRate(pendingRate)
             current.setOnUtteranceProgressListener(progressListener)
-            _available.value = true
+            _availableLanguages.value = supported
+            _available.value = TtsLanguage.KOREAN in supported
             _status.value = Status.READY
-            Log.i(TAG, "Korean TTS ready via engine '$engineName'")
+            Log.i(TAG, "TTS ready via engine '$engineName' (langs=$supported)")
             return
         }
-        Log.w(TAG, "Engine '$engineName' doesn't speak Korean (setLanguage=$r)")
+        Log.w(
+            TAG,
+            "Engine '$engineName' speaks neither Korean (=$koreanRes) nor English (=$englishRes)",
+        )
         // MISSING_DATA beats UNSUPPORTED in the displayed warning, since it's
         // the more actionable case — the user can install the voice pack.
-        val mapped = if (r == TextToSpeech.LANG_MISSING_DATA) Status.MISSING_DATA
+        val mapped = if (koreanRes == TextToSpeech.LANG_MISSING_DATA ||
+            englishRes == TextToSpeech.LANG_MISSING_DATA) Status.MISSING_DATA
             else Status.UNSUPPORTED
         if (fallbackStatus != Status.MISSING_DATA) fallbackStatus = mapped
         tryNextEngine(current)
     }
+
+    private fun trySetLanguage(t: TextToSpeech, locale: Locale): Int =
+        runCatching { t.setLanguage(locale) }
+            .getOrElse { TextToSpeech.LANG_NOT_SUPPORTED }
+
+    private fun isLangOk(r: Int): Boolean =
+        r == TextToSpeech.LANG_AVAILABLE ||
+            r == TextToSpeech.LANG_COUNTRY_AVAILABLE ||
+            r == TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
 
     private fun tryNextEngine(current: TextToSpeech) {
         val engines = runCatching { current.engines }.getOrNull() ?: emptyList()
@@ -144,18 +189,37 @@ class TtsPlayer(context: Context) {
             startEngine(candidate.name)
         } else {
             _available.value = false
+            _availableLanguages.value = emptySet()
             _status.value = fallbackStatus
                 ?: if (engines.isEmpty()) Status.ENGINE_FAILED else Status.UNSUPPORTED
         }
     }
 
     /**
-     * Speak [text] in Korean. Replaces any in-flight utterance (rapid
-     * taps don't queue up). No-op until [available] becomes true.
+     * Speak [text] in [language]. Replaces any in-flight utterance (rapid
+     * taps don't queue up). No-op when [language] isn't in
+     * [availableLanguages] or is [TtsLanguage.OFF].
+     *
+     * Switches the underlying [TextToSpeech.setLanguage] lazily — a flip
+     * between Korean and English is a single synchronous engine call, so
+     * mixing languages in the same session is cheap.
      */
-    fun speak(text: String) {
-        if (!_available.value) return
-        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID)
+    fun speak(text: String, language: TtsLanguage = TtsLanguage.KOREAN) {
+        if (language == TtsLanguage.OFF) return
+        if (language !in _availableLanguages.value) return
+        val instance = tts ?: return
+        val target = language.toLocale() ?: return
+        if (currentLocale != target) {
+            instance.setLanguage(target)
+            currentLocale = target
+        }
+        instance.speak(text, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID)
+    }
+
+    private fun TtsLanguage.toLocale(): Locale? = when (this) {
+        TtsLanguage.KOREAN -> Locale.KOREAN
+        TtsLanguage.ENGLISH -> Locale.ENGLISH
+        TtsLanguage.OFF -> null
     }
 
     /**
@@ -184,6 +248,8 @@ class TtsPlayer(context: Context) {
         runCatching { tts?.stop(); tts?.shutdown() }
         tts = null
         _available.value = false
+        _availableLanguages.value = emptySet()
+        currentLocale = null
     }
 
     companion object {
