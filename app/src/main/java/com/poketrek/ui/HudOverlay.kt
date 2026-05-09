@@ -321,134 +321,142 @@ fun SettingsSheet(
             }
 
             var romLibrary by remember { mutableStateOf(getRomLibrary()) }
-            RomLibrarySection(
-                slots = romLibrary,
-                currentCrc32 = currentRomCrc32(),
-                onLoad = { crc -> if (onLoadCachedRom(crc)) onDismiss() },
-                onRemove = { crc ->
-                    onRemoveCachedRom(crc)
-                    romLibrary = getRomLibrary()
-                },
-            )
-
-            ToggleRow(
-                label = "Step gate",
-                sublabel = if (gateOn) "Movement requires real steps" else "Free walking",
-                checked = gateOn,
-                onCheckedChange = { gate.setEnabled(it) },
-            )
-
-            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                val isCustom = !ratioMatchesPreset(ratioNum, ratioDen)
-                Text(
-                    if (isCustom) "Custom: ${describeRatio(ratioNum, ratioDen)}"
-                    else describeRatio(draftNum, draftDen),
-                    fontFamily = FontFamily.Monospace,
-                    fontSize = 14.sp,
-                )
-                Slider(
-                    value = ratioDraft,
-                    onValueChange = { ratioDraft = it },
-                    onValueChangeFinished = {
-                        val (n, d) = RATIO_TABLE[draftIndex]
-                        budget.setRatio(n, d)
+            SectionCard(title = "ROMs") {
+                RomLibrarySection(
+                    slots = romLibrary,
+                    currentCrc32 = currentRomCrc32(),
+                    onLoad = { crc -> if (onLoadCachedRom(crc)) onDismiss() },
+                    onRemove = { crc ->
+                        onRemoveCachedRom(crc)
+                        romLibrary = getRomLibrary()
                     },
-                    valueRange = 0f..(RATIO_TABLE.lastIndex).toFloat(),
-                    steps = RATIO_TABLE.size - 2,
                 )
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                ) {
-                    Text(
-                        "8 steps / tile",
-                        color = Color(0xFF6B7280),
-                        fontSize = 11.sp,
-                    )
-                    Text(
-                        "16 tiles / step",
-                        color = Color(0xFF6B7280),
-                        fontSize = 11.sp,
+                if (romIdentity != null) {
+                    CalibrationSection(
+                        hasCalibration = hasCalibration,
+                        hasPendingBaseline = hasPendingBaseline,
+                        status = calibrationStatus,
+                        romIdentity = romIdentity,
+                        onBeginCalibration = {
+                            if (onBeginCalibration()) onDismiss()
+                        },
+                        onFinishCalibration = onFinishCalibration,
+                        onCancelCalibration = onCancelCalibration,
+                        onClearStatus = onClearCalibrationStatus,
                     )
                 }
             }
 
-            CustomRatioRow(
-                currentNum = ratioNum,
-                currentDen = ratioDen,
-                onApply = { n, d -> budget.setRatio(n, d) },
-            )
+            SectionCard(title = "Movement") {
+                ToggleRow(
+                    label = "Step gate",
+                    sublabel = if (gateOn) "Movement requires real steps" else "Free walking",
+                    checked = gateOn,
+                    onCheckedChange = { gate.setEnabled(it) },
+                )
 
-            Text(
-                "Current budget: $tiles tiles",
-                color = Color(0xFF6B7280),
-                fontFamily = FontFamily.Monospace,
-                fontSize = 12.sp,
-            )
+                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    val isCustom = !ratioMatchesPreset(ratioNum, ratioDen)
+                    Text(
+                        if (isCustom) "Custom: ${describeRatio(ratioNum, ratioDen)}"
+                        else describeRatio(draftNum, draftDen),
+                        fontFamily = FontFamily.Monospace,
+                        fontSize = 14.sp,
+                    )
+                    Slider(
+                        value = ratioDraft,
+                        onValueChange = { ratioDraft = it },
+                        onValueChangeFinished = {
+                            val (n, d) = RATIO_TABLE[draftIndex]
+                            budget.setRatio(n, d)
+                        },
+                        valueRange = 0f..(RATIO_TABLE.lastIndex).toFloat(),
+                        steps = RATIO_TABLE.size - 2,
+                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                    ) {
+                        Text(
+                            "8 steps / tile",
+                            color = Color(0xFF6B7280),
+                            fontSize = 11.sp,
+                        )
+                        Text(
+                            "16 tiles / step",
+                            color = Color(0xFF6B7280),
+                            fontSize = 11.sp,
+                        )
+                    }
+                }
 
-            ToggleRow(
-                label = "Vibrate on step credit",
-                sublabel = "Brief pulse when a real step adds to your tile budget",
-                checked = hapticOn,
-                onCheckedChange = { budget.setHapticOnStep(it) },
-            )
+                Text(
+                    "Current budget: $tiles tiles",
+                    color = Color(0xFF6B7280),
+                    fontFamily = FontFamily.Monospace,
+                    fontSize = 12.sp,
+                )
 
-            ToggleRow(
-                label = "Debug overlay",
-                sublabel = "Shows RAM probe + fake-step button",
-                checked = debugOn,
-                onCheckedChange = { budget.setDebugHudVisible(it) },
-            )
+                Expander(
+                    title = "Custom ratio",
+                    summary = if (ratioMatchesPreset(ratioNum, ratioDen)) "Use preset"
+                    else describeRatio(ratioNum, ratioDen),
+                ) {
+                    CustomRatioRow(
+                        currentNum = ratioNum,
+                        currentDen = ratioDen,
+                        onApply = { n, d -> budget.setRatio(n, d) },
+                    )
+                }
 
-            Spacer(Modifier.height(4.dp))
+                ToggleRow(
+                    label = "Vibrate on step credit",
+                    sublabel = "Brief pulse when a real step adds to your tile budget",
+                    checked = hapticOn,
+                    onCheckedChange = { budget.setHapticOnStep(it) },
+                )
+            }
+
             MoneoSection(
                 moneo = moneo,
                 onOpenMoneo = { onOpenMoneo(); onDismiss() },
             )
 
+            SectionCard(title = "Save states") {
+                var slotsVersion by remember { mutableStateOf(0) }
+                val slots = remember(slotsVersion) { getSaveSlots() }
+                slots.forEach { slot ->
+                    SlotRow(
+                        slot = slot,
+                        currentRomCrc = romIdentity?.crc32,
+                        onSave = {
+                            if (onSaveSlot(slot.index)) slotsVersion++
+                        },
+                        onLoad = {
+                            if (onLoadSlot(slot.index)) onDismiss()
+                        },
+                    )
+                }
+            }
+
             if (romIdentity?.variant == RomVariant.LEAFGREEN_US_REV1) {
-                Spacer(Modifier.height(4.dp))
-                ShopSection(
-                    budget = budget,
-                    onBuyRareCandy = onBuyRareCandy,
-                )
+                SectionCard(title = "Shop") {
+                    ShopSection(
+                        budget = budget,
+                        onBuyRareCandy = onBuyRareCandy,
+                    )
+                }
             }
 
-            if (romIdentity != null) {
-                Spacer(Modifier.height(4.dp))
-                CalibrationSection(
-                    hasCalibration = hasCalibration,
-                    hasPendingBaseline = hasPendingBaseline,
-                    status = calibrationStatus,
-                    romIdentity = romIdentity,
-                    onBeginCalibration = {
-                        if (onBeginCalibration()) onDismiss()
-                    },
-                    onFinishCalibration = onFinishCalibration,
-                    onCancelCalibration = onCancelCalibration,
-                    onClearStatus = onClearCalibrationStatus,
+            SectionCard(title = "Developer") {
+                ToggleRow(
+                    label = "Debug overlay",
+                    sublabel = "Shows RAM probe + fake-step button",
+                    checked = debugOn,
+                    onCheckedChange = { budget.setDebugHudVisible(it) },
                 )
-            }
-
-            Spacer(Modifier.height(4.dp))
-            AdvancedSection(
-                onResetSteps = { budget.resetBudgetAndRebaseSteps() },
-            )
-
-            Spacer(Modifier.height(4.dp))
-            Text("Save states", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
-            var slotsVersion by remember { mutableStateOf(0) }
-            val slots = remember(slotsVersion) { getSaveSlots() }
-            slots.forEach { slot ->
-                SlotRow(
-                    slot = slot,
-                    currentRomCrc = romIdentity?.crc32,
-                    onSave = {
-                        if (onSaveSlot(slot.index)) slotsVersion++
-                    },
-                    onLoad = {
-                        if (onLoadSlot(slot.index)) onDismiss()
-                    },
+                AdvancedSection(
+                    onResetSteps = { budget.resetBudgetAndRebaseSteps() },
                 )
             }
             Spacer(Modifier.height(8.dp))
@@ -746,45 +754,30 @@ private fun CustomRatioRow(
 private fun AdvancedSection(
     onResetSteps: () -> Unit,
 ) {
-    var expanded by remember { mutableStateOf(false) }
     var confirmReset by remember { mutableStateOf(false) }
 
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+    Expander(
+        title = "Reset budget & step baseline",
+        summary = "Zeros tiles + rebases the step counter",
+    ) {
         Row(
-            modifier = Modifier
-                .fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween,
         ) {
-            Text("Advanced", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
-            TextButton(
-                onClick = { expanded = !expanded },
-                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
-            ) {
-                Text(if (expanded) "Hide" else "Show", fontSize = 12.sp)
+            Column(Modifier.weight(1f)) {
+                Text(
+                    "Zeros tiles, clears carry, and rebases the step counter so future steps count from now.",
+                    color = Color(0xFF6B7280),
+                    fontSize = 11.sp,
+                )
             }
-        }
-        if (expanded) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically,
+            Spacer(Modifier.width(8.dp))
+            Button(
+                onClick = { confirmReset = true },
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFB91C1C)),
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
             ) {
-                Column(Modifier.weight(1f)) {
-                    Text("Reset budget & step baseline", fontSize = 13.sp)
-                    Text(
-                        "Zeros tiles, clears carry, and rebases the step counter so future steps count from now.",
-                        color = Color(0xFF6B7280),
-                        fontSize = 11.sp,
-                    )
-                }
-                Spacer(Modifier.width(8.dp))
-                Button(
-                    onClick = { confirmReset = true },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFB91C1C)),
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
-                ) {
-                    Text("Reset", fontSize = 12.sp)
-                }
+                Text("Reset", fontSize = 12.sp)
             }
         }
     }
@@ -824,7 +817,6 @@ private fun ShopSection(
 ) {
     val tiles by budget.budget.collectAsState()
     val cost by budget.rareCandyCost.collectAsState()
-    var expanded by remember { mutableStateOf(false) }
     var costDraft by remember(cost) { mutableStateOf(cost.toString()) }
     var quantity by remember { mutableStateOf(1) }
     var feedback by remember { mutableStateOf<String?>(null) }
@@ -832,27 +824,16 @@ private fun ShopSection(
         ?.takeIf { it in MIN_RARE_CANDY_COST..MAX_RARE_CANDY_COST }
     val totalCost = cost.toLong() * quantity.toLong()
     val canAfford = totalCost <= tiles
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+    Expander(
+        title = "Buy Rare Candies",
+        summary = "$cost tiles each",
+    ) {
+        Text(
+            "Spend tiles for in-game items. Writes directly to the bag's items pocket.",
+            color = Color(0xFF6B7280),
+            fontSize = 11.sp,
+        )
         Row(
-            modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween,
-        ) {
-            Text("Shop", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
-            TextButton(
-                onClick = { expanded = !expanded },
-                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
-            ) {
-                Text(if (expanded) "Hide" else "Show", fontSize = 12.sp)
-            }
-        }
-        if (expanded) {
-            Text(
-                "Spend tiles for in-game items. Writes directly to the bag's items pocket.",
-                color = Color(0xFF6B7280),
-                fontSize = 11.sp,
-            )
-            Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -939,7 +920,6 @@ private fun ShopSection(
                     fontSize = 11.sp,
                 )
             }
-        }
     }
 }
 @Composable
@@ -1355,11 +1335,6 @@ private fun RomLibrarySection(
 ) {
     if (slots.isEmpty()) return
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        Text(
-            "ROM library",
-            color = Color(0xFF6B7280),
-            fontSize = 11.sp,
-        )
         for (slot in slots) {
             val isCurrent = slot.crc32 == currentCrc32
             Row(
