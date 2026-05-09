@@ -1048,6 +1048,7 @@ private fun MoneoSection(
     val ttsAutoFront by moneo.prefs.ttsAutoPlayFront.collectAsState()
     val ttsAutoReveal by moneo.prefs.ttsAutoPlayReveal.collectAsState()
     val ttsRatePct by moneo.prefs.ttsRatePct.collectAsState()
+    val muteInReview by moneo.prefs.muteGameInReview.collectAsState()
     val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
     val includeEtymology by moneo.prefs.includeEtymology.collectAsState()
     val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
@@ -1084,6 +1085,16 @@ private fun MoneoSection(
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
             ) { Text("Open", fontSize = 12.sp) }
         }
+
+        ToggleRow(
+            label = "Mute game audio during review",
+            sublabel = if (muteInReview)
+                "Game silenced while the review overlay is open"
+            else
+                "Game keeps playing under the review overlay",
+            checked = muteInReview,
+            onCheckedChange = { moneo.prefs.setMuteGameInReview(it) },
+        )
 
         Expander(
             title = "Card content",

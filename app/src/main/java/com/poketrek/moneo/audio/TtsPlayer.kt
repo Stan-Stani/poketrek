@@ -2,6 +2,7 @@ package com.poketrek.moneo.audio
 
 import android.content.Context
 import android.speech.tts.TextToSpeech
+import android.speech.tts.UtteranceProgressListener
 import android.util.Log
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -35,6 +36,15 @@ class TtsPlayer(context: Context) {
     private val _available = MutableStateFlow(false)
     val available: StateFlow<Boolean> = _available.asStateFlow()
 
+    /**
+     * True while a Korean utterance is actively being spoken. Driven by
+     * [UtteranceProgressListener]; observers (e.g. [EmulatorScreen]) use
+     * this to duck the game's [AudioTrack] so the spoken Korean isn't
+     * drowned out by the GBA soundtrack.
+     */
+    private val _isSpeaking = MutableStateFlow(false)
+    val isSpeaking: StateFlow<Boolean> = _isSpeaking.asStateFlow()
+
     @Volatile private var pendingRate: Float = 1f
 
     private val tts: TextToSpeech = TextToSpeech(context.applicationContext) { status ->
@@ -47,6 +57,18 @@ class TtsPlayer(context: Context) {
                 || r == TextToSpeech.LANG_COUNTRY_AVAILABLE
                 || r == TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
             tts.setSpeechRate(pendingRate)
+            tts.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
+                override fun onStart(utteranceId: String?) { _isSpeaking.value = true }
+                override fun onDone(utteranceId: String?) { _isSpeaking.value = false }
+                override fun onStop(utteranceId: String?, interrupted: Boolean) {
+                    _isSpeaking.value = false
+                }
+                @Deprecated("Pre-API 21 fallback; the variant with errorCode is preferred.")
+                override fun onError(utteranceId: String?) { _isSpeaking.value = false }
+                override fun onError(utteranceId: String?, errorCode: Int) {
+                    _isSpeaking.value = false
+                }
+            })
             _available.value = ok
             _status.value = when {
                 ok -> Status.READY
@@ -84,6 +106,7 @@ class TtsPlayer(context: Context) {
     /** Cancel anything currently playing. */
     fun stop() {
         tts.stop()
+        _isSpeaking.value = false
     }
 
     /**

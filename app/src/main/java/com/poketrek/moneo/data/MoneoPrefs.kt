@@ -26,6 +26,7 @@ private val KEY_TTS_ENABLED = booleanPreferencesKey("moneo_tts_enabled")
 private val KEY_TTS_AUTO_REVEAL = booleanPreferencesKey("moneo_tts_auto_reveal")
 private val KEY_TTS_AUTO_FRONT = booleanPreferencesKey("moneo_tts_auto_front")
 private val KEY_TTS_RATE_PCT = intPreferencesKey("moneo_tts_rate_pct")
+private val KEY_MUTE_GAME_IN_REVIEW = booleanPreferencesKey("moneo_mute_game_in_review")
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
@@ -87,6 +88,14 @@ class MoneoPrefs private constructor(private val context: Context) {
     val ttsRatePct: StateFlow<Int> = _ttsRatePct.asStateFlow()
 
     /**
+     * When the Moneo review overlay is open, fully mute the game's
+     * AudioTrack. Independent of TTS — the duck-during-TTS behavior is
+     * always-on regardless of this flag.
+     */
+    private val _muteGameInReview = MutableStateFlow(false)
+    val muteGameInReview: StateFlow<Boolean> = _muteGameInReview.asStateFlow()
+
+    /**
      * Toggle for the example-sentence source on the review screen.
      *  - `true`  → ROM verbatim (`sentences-ko-rom.json`); authentic but may spoil dialog/Pokédex.
      *  - `false` → hand-written study sentences (`sentences-ko-study.json`); plain TOPIK-1 phrasing, no plot leaks.
@@ -131,6 +140,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             _ttsRatePct.value =
                 (prefs[KEY_TTS_RATE_PCT] ?: DEFAULT_TTS_RATE_PCT)
                     .coerceIn(MIN_TTS_RATE_PCT, MAX_TTS_RATE_PCT)
+            _muteGameInReview.value = prefs[KEY_MUTE_GAME_IN_REVIEW] ?: false
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
             _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
@@ -186,6 +196,12 @@ class MoneoPrefs private constructor(private val context: Context) {
         if (v == _ttsRatePct.value) return
         _ttsRatePct.value = v
         scope.launch { context.moneoStore.edit { it[KEY_TTS_RATE_PCT] = v } }
+    }
+
+    fun setMuteGameInReview(value: Boolean) {
+        if (value == _muteGameInReview.value) return
+        _muteGameInReview.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_MUTE_GAME_IN_REVIEW] = value } }
     }
 
     fun setVerbatimSentences(value: Boolean) {

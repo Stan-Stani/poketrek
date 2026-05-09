@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -26,6 +27,13 @@ import com.poketrek.moneo.gate.MoneoSoftGate
 import com.poketrek.moneo.ui.MoneoHud
 import com.poketrek.moneo.ui.MoneoOverlay
 import com.poketrek.step.MovementBudget
+
+/**
+ * Game-audio gain applied while Korean TTS is speaking (≈ −12 dB). Quiet
+ * enough to make the synthesized speech easily intelligible, loud enough
+ * to keep the player oriented in the game world.
+ */
+private const val TTS_DUCK_VOLUME = 0.25f
 
 /**
  * Full-screen emulator: framebuffer letterboxed across the entire window,
@@ -59,6 +67,21 @@ fun EmulatorScreen(
     val controlState = rememberControlState()
     var settingsOpen by remember { mutableStateOf(false) }
     var moneoOpen by remember { mutableStateOf(false) }
+
+    // Game-audio ducking. The Korean TTS engine and the GBA AudioTrack share
+    // the speaker; when both play simultaneously the synthesized speech gets
+    // buried in chiptune. This effect computes a single target gain from the
+    // three relevant signals and applies it to the runner.
+    val ttsSpeaking by moneo.tts.isSpeaking.collectAsState()
+    val muteInReview by moneo.prefs.muteGameInReview.collectAsState()
+    LaunchedEffect(ttsSpeaking, moneoOpen, muteInReview) {
+        val volume = when {
+            moneoOpen && muteInReview -> 0f
+            ttsSpeaking -> TTS_DUCK_VOLUME
+            else -> 1f
+        }
+        runner.setMasterVolume(volume)
+    }
 
     Box(modifier = modifier.fillMaxSize().background(Color.Black)) {
         Canvas(modifier = Modifier.fillMaxSize()) {

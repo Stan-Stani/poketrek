@@ -299,6 +299,16 @@ class EmulatorRunner(
         keys.set(mask)
     }
 
+    /**
+     * Sets the AudioTrack output gain in [0f, 1f]. Used to duck game audio
+     * during Korean TTS playback and to mute it entirely when the Moneo
+     * review overlay is open. Safe to call before [loadRom] (no-op) and
+     * concurrently with the frame loop — AudioTrack.setVolume is thread-safe.
+     */
+    fun setMasterVolume(volume: Float) {
+        audioTrack?.setVolume(volume.coerceIn(0f, 1f))
+    }
+
     private fun start() {
         if (running.getAndSet(true)) return
         thread = thread(name = "emulator-runner", isDaemon = true) { runLoop() }
