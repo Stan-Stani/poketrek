@@ -16,14 +16,23 @@ enum class RomVariant(
     val displayName: String,
     val gatingSupported: Boolean,
     /**
-     * Whether the Moneo *area* gate (Korean-only, distinct from the step
-     * gate above) runs on this ROM. boundary_tiles.json is keyed for the
-     * 2024 Korean patch's bank/mapId numbering, so it's the only variant
-     * with this enabled today.
+     * Whether the Moneo *area* gate (distinct from the step gate above)
+     * runs on this ROM. boundary_tiles.json is keyed in pokefirered's
+     * bank/mapId numbering, which matches the US Rev 1 ROM directly; the
+     * 2024 KR patch reorders map_groups and is wired in via a separate
+     * boundary_remap.kr2024.json translation table.
      */
     val areaGateSupported: Boolean = false,
 ) {
-    LEAFGREEN_US_REV1("LeafGreen (USA Rev 1)", gatingSupported = true),
+    LEAFGREEN_US_REV1(
+        "LeafGreen (USA Rev 1)",
+        gatingSupported = true,
+        // boundary_tiles.json is keyed in pokefirered's bank/mapId numbering,
+        // which is the US Rev 1 numbering, so the area gate just works here
+        // without a remap. The KR_2024 patch reorders map_groups and needs a
+        // separate translation table.
+        areaGateSupported = true,
+    ),
     LEAFGREEN_KOREAN("LeafGreen (Korean 2010 fan translation)", gatingSupported = false),
     LEAFGREEN_KR_2024(
         "LeafGreen (Korean 2024-02-29 patch)",
