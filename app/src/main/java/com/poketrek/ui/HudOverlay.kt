@@ -458,6 +458,7 @@ fun SettingsSheet(
                 AdvancedSection(
                     onResetSteps = { budget.resetBudgetAndRebaseSteps() },
                 )
+                RuntimeTextCaptureSection(moneo)
             }
             Spacer(Modifier.height(8.dp))
         }
@@ -1220,104 +1221,115 @@ private fun MoneoSection(
             }
         }
 
-        // --- Dev: runtime EWRAM text capture (Phase 2 corpus path) -------------
-        val capture = moneo.ramCapture
-        if (capture != null) {
-            val captureOn by capture.enabled.collectAsState()
-            val runs by capture.runsCaptured.collectAsState()
-            ToggleRow(
-                label = "Capture runtime text (dev)",
-                sublabel = if (captureOn)
-                    "Sampling EWRAM diffs · $runs run${if (runs == 1) "" else "s"} captured"
-                else
-                    "Records candidate Korean strings to filesDir/moneo/capture.bin",
-                checked = captureOn,
-                onCheckedChange = { capture.setEnabled(it) },
+    }
+}
+
+/**
+ * Dev-only EWRAM text capture controls (Phase 2 corpus path). Surfaced in
+ * the Developer SectionCard, behind an Expander, so it stays out of normal
+ * users' way but is one tap away when probing the Korean charmap.
+ */
+@Composable
+private fun RuntimeTextCaptureSection(moneo: MoneoModule) {
+    val capture = moneo.ramCapture ?: return
+    val captureOn by capture.enabled.collectAsState()
+    val runs by capture.runsCaptured.collectAsState()
+    Expander(
+        title = "Runtime text capture (dev)",
+        summary = if (captureOn) "Sampling · $runs run${if (runs == 1) "" else "s"}" else "Off",
+    ) {
+        ToggleRow(
+            label = "Capture runtime text",
+            sublabel = if (captureOn)
+                "Sampling EWRAM diffs · $runs run${if (runs == 1) "" else "s"} captured"
+            else
+                "Records candidate Korean strings to filesDir/moneo/capture.bin",
+            checked = captureOn,
+            onCheckedChange = { capture.setEnabled(it) },
+        )
+        if (runs > 0) {
+            Text(
+                "Capture file: ${capture.captureSizeBytes()} bytes",
+                color = Color(0xFF6B7280),
+                fontFamily = FontFamily.Monospace,
+                fontSize = 10.sp,
             )
-            if (runs > 0) {
-                Text(
-                    "Capture file: ${capture.captureSizeBytes()} bytes",
-                    color = Color(0xFF6B7280),
-                    fontFamily = FontFamily.Monospace,
-                    fontSize = 10.sp,
-                )
-                TextButton(
-                    onClick = { capture.resetCapture() },
-                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
-                ) { Text("Reset capture", fontSize = 11.sp) }
-            }
-            // Probe button: read gStringVar1-4 synchronously and log to Logcat
-            // tag "MoneoProbe". Take a screenshot at the same time to correlate
-            // hex bytes → on-screen Hangul characters (charmap derivation).
-            var probeResult by remember { mutableStateOf("") }
-            val scope = rememberCoroutineScope()
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Button(
-                    onClick = {
-                        scope.launch(kotlinx.coroutines.Dispatchers.Default) {
-                            val result = capture.probeTextBuffers()
-                            val summary = result.entries.joinToString("\n") { (k, v) ->
-                                "$k: ${v?.take(60) ?: "(null)"}"
-                            }
-                            probeResult = summary
+            TextButton(
+                onClick = { capture.resetCapture() },
+                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            ) { Text("Reset capture", fontSize = 11.sp) }
+        }
+        // Probe button: read gStringVar1-4 synchronously and log to Logcat
+        // tag "MoneoProbe". Take a screenshot at the same time to correlate
+        // hex bytes → on-screen Hangul characters (charmap derivation).
+        var probeResult by remember { mutableStateOf("") }
+        val scope = rememberCoroutineScope()
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Button(
+                onClick = {
+                    scope.launch(kotlinx.coroutines.Dispatchers.Default) {
+                        val result = capture.probeTextBuffers()
+                        val summary = result.entries.joinToString("\n") { (k, v) ->
+                            "$k: ${v?.take(60) ?: "(null)"}"
                         }
-                    },
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
-                ) { Text("Probe gStringVar1-4", fontSize = 11.sp) }
-                Text(
-                    "→ also in Logcat tag MoneoProbe",
-                    color = Color(0xFF6B7280),
-                    fontSize = 10.sp,
-                )
-            }
-            // Decode visible Korean text via VramTextReader + KoreanCharmap.
-            var decodeResult by remember { mutableStateOf("") }
-            val ctx = androidx.compose.ui.platform.LocalContext.current
-            Row(
+                        probeResult = summary
+                    }
+                },
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+            ) { Text("Probe gStringVar1-4", fontSize = 11.sp) }
+            Text(
+                "→ also in Logcat tag MoneoProbe",
+                color = Color(0xFF6B7280),
+                fontSize = 10.sp,
+            )
+        }
+        // Decode visible Korean text via VramTextReader + KoreanCharmap.
+        var decodeResult by remember { mutableStateOf("") }
+        val ctx = androidx.compose.ui.platform.LocalContext.current
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Button(
+                onClick = {
+                    scope.launch(kotlinx.coroutines.Dispatchers.Default) {
+                        val charmap = com.poketrek.moneo.corpus.KoreanCharmap.get(ctx)
+                        val lines = capture.decodeVisibleText(charmap)
+                        decodeResult = if (lines.isEmpty()) "(no text)"
+                        else lines.joinToString("\n")
+                        android.util.Log.i("MoneoProbe", "DecodeKO:\n$decodeResult")
+                    }
+                },
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+            ) { Text("Decode KO", fontSize = 11.sp) }
+            Text(
+                "(${decodeResult.lines().size} lines)",
+                color = Color(0xFF6B7280),
+                fontSize = 10.sp,
+            )
+        }
+        if (decodeResult.isNotEmpty()) {
+            Text(
+                decodeResult,
+                color = Color(0xFFFFE0B0),
+                fontFamily = FontFamily.Monospace,
+                fontSize = 11.sp,
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Button(
-                    onClick = {
-                        scope.launch(kotlinx.coroutines.Dispatchers.Default) {
-                            val charmap = com.poketrek.moneo.corpus.KoreanCharmap.get(ctx)
-                            val lines = capture.decodeVisibleText(charmap)
-                            decodeResult = if (lines.isEmpty()) "(no text)"
-                            else lines.joinToString("\n")
-                            android.util.Log.i("MoneoProbe", "DecodeKO:\n$decodeResult")
-                        }
-                    },
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
-                ) { Text("Decode KO", fontSize = 11.sp) }
-                Text(
-                    "(${decodeResult.lines().size} lines)",
-                    color = Color(0xFF6B7280),
-                    fontSize = 10.sp,
-                )
-            }
-            if (decodeResult.isNotEmpty()) {
-                Text(
-                    decodeResult,
-                    color = Color(0xFFFFE0B0),
-                    fontFamily = FontFamily.Monospace,
-                    fontSize = 11.sp,
-                    modifier = Modifier.fillMaxWidth(),
-                )
-            }
-            if (probeResult.isNotEmpty()) {
-                Text(
-                    probeResult,
-                    color = Color(0xFFE0E0E0),
-                    fontFamily = FontFamily.Monospace,
-                    fontSize = 9.sp,
-                    modifier = Modifier.fillMaxWidth(),
-                )
-            }
+            )
+        }
+        if (probeResult.isNotEmpty()) {
+            Text(
+                probeResult,
+                color = Color(0xFFE0E0E0),
+                fontFamily = FontFamily.Monospace,
+                fontSize = 9.sp,
+                modifier = Modifier.fillMaxWidth(),
+            )
         }
     }
 }
