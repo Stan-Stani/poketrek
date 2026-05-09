@@ -39,7 +39,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
+import com.poketrek.BuildConfig
 import com.poketrek.moneo.MoneoModule
+import com.poketrek.moneo.correction.CorrectionDialog
+import com.poketrek.moneo.correction.CorrectionReport
+import com.poketrek.moneo.correction.CorrectionSubmitter
+import com.poketrek.moneo.correction.DEFAULT_GITHUB_REPO_NAME
+import com.poketrek.moneo.correction.DEFAULT_GITHUB_REPO_OWNER
+import com.poketrek.moneo.correction.GithubIssueSubmitter
+import com.poketrek.moneo.correction.VpsSubmitter
 import com.poketrek.moneo.data.CardRecord
 import com.poketrek.moneo.data.FlashcardDirection
 import com.poketrek.moneo.data.SentenceEntry
@@ -48,6 +56,7 @@ import com.poketrek.moneo.data.VocabEntry
 import com.poketrek.moneo.srs.CardSnapshot
 import com.poketrek.moneo.srs.CardState
 import com.poketrek.moneo.srs.Rating
+import androidx.compose.ui.platform.LocalContext
 
 /**
  * Per-area flashcard review. Shows one card at a time; reveal then grade.
@@ -78,6 +87,20 @@ fun ReviewScreen(
     val verbatim by module.prefs.verbatimSentences.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
     val snackbarScope = rememberCoroutineScope()
+    val correctionVpsUrl by module.prefs.correctionVpsUrl.collectAsState()
+    val context = LocalContext.current
+    var pendingCorrection by remember { mutableStateOf<CorrectionReport?>(null) }
+    val submitters = remember(correctionVpsUrl) {
+        val list = mutableListOf<CorrectionSubmitter>(
+            GithubIssueSubmitter(
+                context = context,
+                owner = DEFAULT_GITHUB_REPO_OWNER,
+                repo = DEFAULT_GITHUB_REPO_NAME,
+            ),
+        )
+        correctionVpsUrl?.let { list += VpsSubmitter(it) }
+        list.toList()
+    }
 
     // Pull the next due card. We re-derive on every recomposition; the cards
     // flow ensures recomposition happens after `grade()`.
@@ -195,6 +218,24 @@ fun ReviewScreen(
 
     val frontHasSpeaker = canSpeak && effectiveTtsLanguage == frontLang
     val backHasSpeaker = canSpeak && effectiveTtsLanguage == backLang
+
+    val onReportSentence: (SentenceEntry) -> Unit = { s ->
+        pendingCorrection = CorrectionReport(
+            vocabId = vocab.id,
+            vocabHeadword = vocab.korean,
+            vocabGloss = vocab.gloss,
+            areaId = s.areaId ?: areaId,
+            currentKorean = s.korean,
+            currentGloss = s.gloss,
+            source = s.source,
+            speaker = s.speaker,
+            generator = s.generator,
+            proposedKorean = null,
+            reason = null,
+            appVersion = BuildConfig.VERSION_NAME,
+            romCrc32 = null,
+        )
+    }
     val front: @Composable () -> Unit = {
         CardFront(
             text = sides.front,
@@ -270,6 +311,7 @@ fun ReviewScreen(
                                     generator = sentence?.generator,
                                     canSpeak = frontHasSpeaker,
                                     onSpeak = { module.tts.speak(ss.front, frontLang) },
+                                    onReport = sentence?.let { s -> { onReportSentence(s) } },
                                 )
                             }
                         }
@@ -299,6 +341,7 @@ fun ReviewScreen(
                             generator = sentence?.generator,
                             canSpeak = frontHasSpeaker,
                             onSpeak = { module.tts.speak(ss.front, frontLang) },
+                            onReport = sentence?.let { s -> { onReportSentence(s) } },
                         )
                     }
                     ratings()
@@ -307,6 +350,25 @@ fun ReviewScreen(
                 }
             }
         }
+    }
+    pendingCorrection?.let { report ->
+        CorrectionDialog(
+            initialReport = report,
+            submitters = submitters,
+            onDismiss = { pendingCorrection = null },
+            onSubmit = { editedReport, submitter ->
+                pendingCorrection = null
+                snackbarScope.launch {
+                    val result = submitter.submit(editedReport)
+                    val msg = if (result.isSuccess) {
+                        "Sent via ${submitter.displayName}. Thank you!"
+                    } else {
+                        "Failed: ${result.exceptionOrNull()?.message ?: "unknown error"}"
+                    }
+                    snackbarHostState.showSnackbar(msg)
+                }
+            },
+        )
     }
         SnackbarHost(
             hostState = snackbarHostState,
@@ -416,7 +478,9 @@ private fun SentenceCard(
     generator: String?,
     canSpeak: Boolean,
     onSpeak: () -> Unit,
+    onReport: (() -> Unit)?,
 ) {
+    val isLlm = generator?.startsWith("llm-") == true
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -429,7 +493,7 @@ private fun SentenceCard(
             horizontalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             Text("Example", color = Color(0xFF93C5FD), fontSize = 10.sp)
-            if (generator?.startsWith("llm-") == true) {
+            if (isLlm) {
                 Text(
                     "AI",
                     color = Color(0xFFE0E7FF),
@@ -448,6 +512,21 @@ private fun SentenceCard(
                     modifier = Modifier
                         .background(Color(0xFF334155), shape = RoundedCornerShape(4.dp))
                         .clickable { onSpeak() }
+                        .padding(horizontal = 6.dp, vertical = 2.dp),
+                )
+            }
+            if (onReport != null) {
+                // Slightly more prominent affordance when the line is LLM-generated:
+                // those are the ones a native speaker is most likely to need to fix.
+                val reportBg = if (isLlm) Color(0xFF7C3AED) else Color(0xFF334155)
+                Text(
+                    "✎ Report",
+                    color = Color.White,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier
+                        .background(reportBg, shape = RoundedCornerShape(4.dp))
+                        .clickable { onReport() }
                         .padding(horizontal = 6.dp, vertical = 2.dp),
                 )
             }

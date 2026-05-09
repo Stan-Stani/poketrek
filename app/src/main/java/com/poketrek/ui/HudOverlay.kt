@@ -1347,6 +1347,50 @@ private fun MoneoSection(
             }
         }
 
+        CorrectionEndpointExpander(moneo)
+    }
+}
+
+/**
+ * Settings row for the optional VPS endpoint that receives in-app
+ * "Send to server" correction submissions. Collapsed by default; the
+ * GitHub-Issue path always works without this configured.
+ */
+@Composable
+private fun CorrectionEndpointExpander(moneo: MoneoModule) {
+    val vpsUrl by moneo.prefs.correctionVpsUrl.collectAsState()
+    var draft by remember(vpsUrl) { mutableStateOf(vpsUrl ?: "") }
+    Expander(
+        title = "Corrections",
+        summary = if (vpsUrl.isNullOrBlank()) "GitHub Issue only" else "GitHub + server",
+    ) {
+        Text(
+            "Korean speakers can tap ✎ Report on any sentence to suggest a fix.",
+            fontSize = 12.sp,
+            color = Color(0xFF6B7280),
+        )
+        OutlinedTextField(
+            value = draft,
+            onValueChange = { draft = it },
+            label = { Text("Server URL (optional)") },
+            placeholder = { Text("https://your-vps.example.com/moneo/corrections") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth(),
+            keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done, keyboardType = KeyboardType.Uri),
+            keyboardActions = KeyboardActions(onDone = { moneo.prefs.setCorrectionVpsUrl(draft) }),
+        )
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(
+                onClick = { moneo.prefs.setCorrectionVpsUrl(draft) },
+                enabled = draft != (vpsUrl ?: ""),
+            ) { Text("Save", fontSize = 12.sp) }
+            if (!vpsUrl.isNullOrBlank()) {
+                TextButton(onClick = {
+                    draft = ""
+                    moneo.prefs.setCorrectionVpsUrl(null)
+                }) { Text("Clear") }
+            }
+        }
     }
 }
 

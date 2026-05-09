@@ -1,0 +1,99 @@
+name: Korean correction
+description: Suggest a fix for an incorrect Korean sentence or translation in the moneo flashcards.
+title: "[moneo] Korean correction: "
+labels: ["moneo", "korean-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve PokéTrek's Korean! Most fields are pre-filled
+        when you arrive here from the in-app **✎ Report** button. If you're
+        opening this manually, fill in whatever you can.
+
+  - type: input
+    id: vocab-id
+    attributes:
+      label: Vocab ID
+      description: Stable identifier of the headword the sentence belongs to (e.g. `seed-v1:포켓몬`). Pre-filled by the app.
+    validations:
+      required: true
+
+  - type: input
+    id: vocab-headword
+    attributes:
+      label: Headword
+      description: Korean / English of the affected vocab card.
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-korean
+    attributes:
+      label: Current Korean
+      description: The Korean text as it currently appears in the bundled JSON.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-korean
+    attributes:
+      label: Proposed Korean
+      description: Your suggested replacement. Leave empty if you're flagging the line without proposing a fix.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: What's wrong?
+      description: Grammar issue, wrong particle, mistranslation, awkward phrasing, … Anything that helps a maintainer triage.
+    validations:
+      required: false
+
+  - type: input
+    id: current-gloss
+    attributes:
+      label: Current English gloss
+      description: The English translation as currently shipped, for context.
+
+  - type: input
+    id: source
+    attributes:
+      label: Source tag
+      description: Provenance from the bundled JSON (e.g. `rom-rec1344`). Helps locate the entry across files.
+
+  - type: input
+    id: speaker
+    attributes:
+      label: Speaker
+      description: NPC name when the line is attributed (e.g. `오키드`).
+
+  - type: input
+    id: generator
+    attributes:
+      label: Generator tag
+      description: |
+        Who wrote the sentence:
+        - `llm-<model>` — produced by an LLM (likely candidate for grammar/translation fixes)
+        - `human` — hand-curated
+        - empty — verbatim from the ROM
+
+  - type: input
+    id: area-id
+    attributes:
+      label: Area
+      description: In-game area where the sentence surfaced (e.g. `pallet_town`).
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: PokéTrek build that produced the report.
+
+  - type: input
+    id: rom-crc32
+    attributes:
+      label: ROM CRC32
+      description: Hex CRC32 of the loaded ROM (e.g. `0xDAFFECEC` for US Rev 1, `0x4A38A8CB` for KR 2024).

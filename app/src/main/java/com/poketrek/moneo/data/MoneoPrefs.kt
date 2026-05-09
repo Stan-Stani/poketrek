@@ -36,6 +36,7 @@ private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabl
 private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
+private val KEY_CORRECTION_VPS_URL = stringPreferencesKey("moneo_correction_vps_url")
 
 /**
  * Which way the flashcards face. Default [KO_TO_EN] preserves the original
@@ -193,6 +194,14 @@ class MoneoPrefs private constructor(private val context: Context) {
     /** Derived: the actual TTS language that should be used right now. */
     val effectiveTtsLanguage: StateFlow<TtsLanguage>
 
+    /**
+     * Optional endpoint to POST [com.poketrek.moneo.correction.CorrectionReport]
+     * JSON to. Blank/null hides the in-app submit-to-server option in the
+     * correction dialog; the GitHub-Issue path is always available.
+     */
+    private val _correctionVpsUrl = MutableStateFlow<String?>(null)
+    val correctionVpsUrl: StateFlow<String?> = _correctionVpsUrl.asStateFlow()
+
     init {
         runBlocking {
             val prefs = context.moneoStore.data.first()
@@ -216,6 +225,7 @@ class MoneoPrefs private constructor(private val context: Context) {
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])
             val migrated = migrateTtsLegacy(prefs[KEY_TTS_ENABLED], storedOverride)
             _ttsLanguageOverride.value = migrated
+            _correctionVpsUrl.value = prefs[KEY_CORRECTION_VPS_URL]?.takeIf { it.isNotBlank() }
             // Persist the migration so future launches don't reapply the legacy rule.
             if (migrated != null && storedOverride == null) {
                 scope.launch {
@@ -325,6 +335,18 @@ class MoneoPrefs private constructor(private val context: Context) {
     }
 
     fun clearTtsLanguageOverride() = setTtsLanguage(null)
+
+    fun setCorrectionVpsUrl(value: String?) {
+        val cleaned = value?.trim().takeUnless { it.isNullOrBlank() }
+        if (cleaned == _correctionVpsUrl.value) return
+        _correctionVpsUrl.value = cleaned
+        scope.launch {
+            context.moneoStore.edit { prefs ->
+                if (cleaned == null) prefs.remove(KEY_CORRECTION_VPS_URL)
+                else prefs[KEY_CORRECTION_VPS_URL] = cleaned
+            }
+        }
+    }
 
     companion object {
         @Volatile private var instance: MoneoPrefs? = null
