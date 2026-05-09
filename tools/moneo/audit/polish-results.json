@@ -1,0 +1,180 @@
+{
+  "polishedAt": "2026-05-09",
+  "polished": [
+    {
+      "vocabId": "rom-mine-v2:주다",
+      "korean": "할아버지가 손녀에게 책을 준다.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Honorific mismatch confirmed: with 할아버지 as subject, standard Korean usage requires honorific verb 주신다 (and ideally honorific particle 께서). 할아버지가 ... 준다 reads as disrespectful in normal usage.",
+      "suggestion": "할아버지께서 손녀에게 책을 주신다.",
+      "evidenceUrl": "https://www.rollingkorea.com/en/k-lab/korean-particle-kkeseo/",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:짜다",
+      "korean": "할머니가 천을 짠다.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Honorific mismatch confirmed: 할머니 as subject normally takes the honorific verb (짜신다) and ideally honorific particle 께서. The plain form 짠다 reads as disrespectful in standard usage.",
+      "suggestion": "할머니께서 천을 짜신다.",
+      "evidenceUrl": "https://www.rollingkorea.com/en/k-lab/korean-particle-kkeseo/",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:껍질에숨기",
+      "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "flag-only",
+      "issue": "The awkwardness of 껍질에숨기를 (move-name with internal 에 directly followed by 를) stems from the ROM-mined proper noun, which must not be altered. The sentence is parseable and the official Korean Pokemon move name is 껍질에숨기 (Withdraw, confirmed on Pokemon Wiki KO). Recommend app-level handling such as quoting the move name or rephrasing the surrounding frame, but do not change the noun itself.",
+      "suggestion": null,
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EA%BB%8D%EC%A7%88%EC%97%90%EC%88%A8%EA%B8%B0",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:매그니튜드",
+      "korean": "매그니튜드가 들판에 울려 퍼졌어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "clear",
+      "issue": "over-flagged: The official Korean Pokemon move 매그니튜드 (Magnitude) is described in-game as '대지의 울림' (resonance/rumble of the earth). Since the move is canonically characterized by 울림 (a rumble/reverberation that is itself a sound-like phenomenon), pairing it with 울려 퍼지다 (to reverberate/echo through) is defensible and matches the move's flavor text. The collocation is borderline but the in-game description supports it.",
+      "suggestion": null,
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EB%A7%A4%EA%B7%B8%EB%8B%88%ED%8A%9C%EB%93%9C",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:깨트리다",
+      "korean": "깨트리다는 트레이너의 자랑이에요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed: attaching the topic particle 는 directly to the dictionary form 깨트리다 produces a parse collision with the quotative reduction -ㄴ다는 / -다는. Korean readers will hear 깨트리다는 as a malformed quotative rather than 'the move 깨트리다'. The fix uses the (이)라는 naming particle which is the standard way to cite a name/term in Korean.",
+      "suggestion": "'깨트리다'라는 기술은 트레이너의 자랑이에요.",
+      "evidenceUrl": "https://123learnkorean.wordpress.com/2009/08/25/%EC%9D%B4%EB%9D%BC%EB%8A%94-called/",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:뛰어오르다",
+      "korean": "뛰어오르다는 트레이너의 자랑이에요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Same parse collision as 깨트리다는: 뛰어오르다 is a verb in dictionary form, and attaching 는 produces what reads as a malformed quotative -다는 rather than topic-marking a noun. Use the (이)라는 naming particle to cite the move name as a name.",
+      "suggestion": "'뛰어오르다'라는 기술은 트레이너의 자랑이에요.",
+      "evidenceUrl": "https://123learnkorean.wordpress.com/2009/08/25/%EC%9D%B4%EB%9D%BC%EB%8A%94-called/",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:탐내다",
+      "korean": "탐내다가 들판에 울려 퍼졌어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed broken: 탐내다가 parses as the connective -다가 ('while coveting...'), giving 'while coveting, it echoed across the field' — nonsensical. The fix cites the move name with the 라는 naming particle and uses 기술이 as the actual subject of 울려 퍼지다.",
+      "suggestion": "'탐내다'라는 기술이 들판에 울려 퍼졌어요.",
+      "evidenceUrl": "https://123learnkorean.wordpress.com/2009/08/25/%EC%9D%B4%EB%9D%BC%EB%8A%94-called/",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-species:피카츄",
+      "korean": "피카츄는 볼에서 전기를 모아요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed particle error: for storage/accumulation in a place, the locative 에 is required. 볼에서 marks the cheeks as the SOURCE from which electricity is gathered, contradicting the Pokemon-canonical description that Pikachu STORES electricity in pouches inside its cheeks (official Korean pokedex: '볼 안쪽의 작은 전기 주머니'). 볼에 전기를 모아요 = stores electricity in its cheeks.",
+      "suggestion": "피카츄는 볼에 전기를 모아요.",
+      "evidenceUrl": "https://pokemonkorea.co.kr/pokedex/view/37",
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:에레키드",
+      "korean": "에레키드는 두 팔에서 전기를 모아요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Same particle error as 피카츄. The intended meaning is 'gathers/accumulates electricity in both arms' (location of storage), which requires the locative 에. 두 팔에서 reads as 'from both arms' (source).",
+      "suggestion": "에레키드는 두 팔에 전기를 모아요.",
+      "evidenceUrl": "https://learnkorean24.com/korean-location-marking-particles/",
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:있다",
+      "korean": "가방 안에 회복약이 다섯 개 있어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "회복약 is real Korean but the canonical Pokemon-game term for Potion in Korean releases is 상처약 (confirmed on Pokemon Wiki KO and 나무위키 회복 도구 page). For a Pokemon-themed deck, the in-game term is more authentic and reinforces vocabulary the player will see in the game.",
+      "suggestion": "가방 안에 상처약이 다섯 개 있어요.",
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 새싹이 자라요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed Pokemon-lore mismatch: Ivysaur's defining feature is the flower BUD (꽃봉오리) on its back, not a 새싹 (sprout/seedling). The bud is a Rafflesia-like flower bud that releases an aroma when ready to bloom. 새싹 is more apt for Bulbasaur (이상해씨); by Ivysaur stage the plant has progressed to a large bud.",
+      "suggestion": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+      "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed terminology error: 갑(甲) is a Sino-Korean 한자 (Chinese character), specifically a 상형문자 (pictograph) modeled on the shape of a turtle's shell. '옛 글자' is misleading because in Korean it commonly evokes 옛한글 (archaic hangul). Naver/나무위키 갑골문자 entries describe 甲 as a 한자 / 상형문자. Adding the 한자 in parentheses also helps disambiguate the homophone.",
+      "suggestion": "갑(甲)은 거북의 등껍질을 본뜬 한자예요.",
+      "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "topik-v2:모습",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "clear",
+      "issue": "over-flagged: The Korean sentence is natural and grammatical — 친구의 모습을 보다 ('see one's friend / one's friend's figure') is a perfectly idiomatic collocation. The auditor's concern was about gloss alignment, not about the Korean. The headword 모습 means appearance/figure (broader than 얼굴), and the example sentence uses it correctly. If the English gloss specifically says 'face', that is a separate gloss-side fix and does not require changing the Korean.",
+      "suggestion": null,
+      "evidenceUrl": "https://hinative.com/questions/16433569",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:짓다",
+      "korean": "농부가 밥을 짓고 있어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Grammatical but pragmatically odd. 밥을 짓다 is correct Korean (HiNative confirms it as the standard, slightly literary expression for cooking rice). However, a 농부 (farmer) prototypically '농사를 짓다' (does farming), not '밥을 짓다' in their professional capacity. Native speakers would naturally pair 밥을 짓다 with 어머니/할머니. Switching to 어머니 keeps the headword 짓다 with its most idiomatic collocation and removes the cognitive friction.",
+      "suggestion": "어머니가 밥을 짓고 계세요.",
+      "evidenceUrl": "https://hinative.com/questions/23996317",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:이렇다",
+      "korean": "오늘 날씨가 이렇네요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "이렇다 is overwhelmingly used either attributively (이런 + noun) or in its 반말/요체 contracted forms (이래/이래요). Standalone 날씨가 이렇네요 is grammatical only as a deictic comment requiring a shared visible referent (gesturing at bad weather), which a flashcard cannot supply. As a textbook sentence it reads as incomplete. Reframing with 이렇다 inside a 이런 ~ 날씨 attributive structure makes the headword's usage pattern clearer and is unambiguously well-formed in isolation.",
+      "suggestion": "이런 날씨는 처음이에요.",
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-17-25-2/lesson-23/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:동물",
+      "korean": "이 동물원에는 호랑이가 있어요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed pedagogical issue: the headword 동물 appears only as a substring of 동물원 (zoo); the standalone word 동물 is never exemplified. For a vocabulary card teaching 동물, the example must contain 동물 as an independent token. The proposed fix keeps the zoo theme but introduces 동물 itself.",
+      "suggestion": "이 동물원에는 여러 동물이 있어요.",
+      "evidenceUrl": "https://www.90daykorean.com/animals-in-korean/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:양쪽",
+      "korean": "양쪽 길이 모두 좋아요.",
+      "originalVerdict": "uncertain",
+      "finalVerdict": "fix",
+      "issue": "Confirmed parse ambiguity: 길이 can be tokenized either as 길+이 (subject-marked 'road') or as 길이 (the noun 'length'). Native readers may briefly garden-path. Korean parsing literature (Eojoel ambiguity) documents this exact class of segmentation problem. Dropping the redundant subject particle (양쪽 길 모두 ...) eliminates the ambiguity and matches the more natural collocation.",
+      "suggestion": "양쪽 길 모두 좋아요.",
+      "evidenceUrl": "https://link.springer.com/article/10.1007/s10936-008-9093-z",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    }
+  ],
+  "summary": {
+    "clear": 2,
+    "fix": 14,
+    "flag-only": 1
+  }
+}

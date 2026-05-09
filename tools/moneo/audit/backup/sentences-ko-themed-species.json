@@ -195,35 +195,23 @@
     },
     {
       "vocabId": "rom-species:피카츄",
-      "korean": "피카츄는 볼에 전기를 모아요.",
-      "romanization": "pikachyu-neun bor-e jeongi-reul moayo.",
+      "korean": "피카츄는 볼에서 전기를 모아요.",
+      "romanization": "pikachyu-neun bol-eseo jeongi-reul moayo.",
       "gloss": "Pikachu stores electricity in its cheeks.",
       "targetForm": "피카츄",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Confirmed particle error: for storage/accumulation in a place, the locative 에 is required. 볼에서 marks the cheeks as the SOURCE from which electricity is gathered, contradicting the Pokemon-canonical description that Pikachu STORES electricity in pouches inside its cheeks (official Korean pokedex: '볼 안쪽의 작은 전기 주머니'). 볼에 전기를 모아요 = stores electricity in its cheeks.",
-        "evidenceUrl": "https://pokemonkorea.co.kr/pokedex/view/37",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:라이츄",
-      "korean": "라이츄는 매우 강한 전기를 방출해요.",
-      "romanization": "raichyu-neun maeu ganghan jeongi-reul bangchulhaeyo.",
+      "korean": "라이츄는 매우 강한 전기를 흘려요.",
+      "romanization": "raichyu-neun maeu ganghan jeongi-reul heullyeoyo.",
       "gloss": "Raichu releases very strong electricity.",
       "targetForm": "라이츄",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "전기를 흘리다 is not a natural Korean collocation. 흘리다 is normally used with liquids/tears/blood, with 'information' (정보를 흘리다 = to leak), or with sweat. For releasing/discharging electricity, native usage employs 방출하다, 발산하다, or 흘려보내다. As-is the sentence reads roughly like 'Raichu drips/leaks very strong electricity', which is unidiomatic.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:모래두지",
@@ -417,19 +405,13 @@
     },
     {
       "vocabId": "rom-species:콘팡",
-      "korean": "콘팡은 큰 눈으로 어둠 속에서도 잘 봐요.",
-      "romanization": "konpang-eun keun nun-euro eodum sog-esedo jal bwayo.",
+      "korean": "콘팡은 큰 눈으로 어둠을 봐요.",
+      "romanization": "konpang-eun keun nun-euro eodum-eul bwayo.",
       "gloss": "Venonat sees in the dark with big eyes.",
       "targetForm": "콘팡",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "어둠을 보다 literally means 'to see darkness' and is only used in metaphorical/literary senses (e.g. seeing the darkness within oneself). The intended meaning per the gloss is 'sees in the dark' / 'sees through the darkness', which in natural Korean is 어둠 속에서도 잘 봐요 or 어두운 곳에서도 잘 봐요. As written, the sentence does not convey night vision and sounds odd.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:도나리",
@@ -493,19 +475,13 @@
     },
     {
       "vocabId": "rom-species:골덕",
-      "korean": "골덕은 강력한 초능력을 사용해요.",
-      "romanization": "goldeog-eun ganglyeokhan choneungnyeog-eul sayonghaeyo.",
+      "korean": "골덕은 강력한 정신력을 사용해요.",
+      "romanization": "goldeok-eun ganglyeokhan jeongsillyeog-eul sayonghaeyo.",
       "gloss": "Golduck uses powerful psychic abilities.",
       "targetForm": "골덕",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The gloss says 'uses powerful psychic abilities', but 정신력 means 'willpower / mental fortitude', not psychic ability. Golduck's psychic powers in Korean Pokédex/wiki are described with 초능력 or 염력 (telekinesis). As written, the sentence says Golduck uses strong willpower, mismatching the gloss. (Same kind of mistranslation appears for 뮤츠 in the rest of the file.)",
-        "evidenceUrl": "https://namu.wiki/w/%EA%B3%A8%EB%8D%95",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:망키",
@@ -719,19 +695,13 @@
     },
     {
       "vocabId": "rom-species:포니타",
-      "korean": "포니타는 갈기에서 불꽃이 타올라요.",
-      "romanization": "ponita-neun galgi-eseo bulkkoch-i taollayo.",
+      "korean": "포니타는 갈기에서 불꽃이 타요.",
+      "romanization": "ponita-neun galgi-eseo bulkkoch-i tayo.",
       "gloss": "Flames burn in Ponyta's mane.",
       "targetForm": "포니타",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "불꽃이 타다 ('flames burn') is semantically redundant — 불꽃 already implies burning. Natural Korean uses 불꽃이 일다, 불꽃이 타오르다, or 불꽃이 피어오르다 for flames rising/blazing from a place. As is, the sentence sounds tautological and slightly off.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:날쌩마",
@@ -1055,19 +1025,13 @@
     },
     {
       "vocabId": "rom-species:또도가스",
-      "korean": "또도가스는 머리가 두 개인 모습으로 진화했어요.",
-      "romanization": "ttodogaseu-neun meori-ga du gae-in moseub-euro jinhwahaesseoyo.",
+      "korean": "또도가스는 머리가 두 개로 진화했어요.",
+      "romanization": "ttodogaseu-neun meori-ga du gae-ro jinhwahaesseoyo.",
       "gloss": "Weezing evolved with two heads.",
       "targetForm": "또도가스",
       "areaId": "celadon_city",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "머리가 두 개로 진화했어요 literally says 'evolved AS [its] heads becoming two', which is structurally awkward — the subject of 진화하다 is the Pokémon, not the heads. Native phrasing would express the result either as '머리가 두 개로 늘었어요' (heads increased to two) or '머리가 두 개인 모습으로 진화했어요' (evolved into a form with two heads).",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:뿔카노",
@@ -1261,19 +1225,13 @@
     },
     {
       "vocabId": "rom-species:갸라도스",
-      "korean": "갸라도스는 무서운 분노에 차 있어요.",
-      "romanization": "gyaradoseu-neun museoun bunno-e cha isseoyo.",
+      "korean": "갸라도스는 무서운 분노를 가졌어요.",
+      "romanization": "gyaradoseu-neun museoun bunno-reul gajyeosseoyo.",
       "gloss": "Gyarados has a terrifying rage.",
       "targetForm": "갸라도스",
       "areaId": "pallet_town",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "'분노를 가지다' (to have/possess anger) is grammatically possible but not a natural Korean collocation. Native speakers would normally say '분노에 차 있다', '몹시 분노한다', or use an adjective like '사납다'. The verb 가지다 is typically used with possessable nouns or stable traits, not transient strong emotions like 분노.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:라프라스",
@@ -1307,19 +1265,13 @@
     },
     {
       "vocabId": "rom-species:샤미드",
-      "korean": "샤미드는 이브이가 물 타입으로 진화한 모습이에요.",
-      "romanization": "syamideu-neun ibeui-ga mul taib-euro jinhwahan moseub-i-eyo.",
+      "korean": "샤미드는 물 타입으로 진화한 이브이예요.",
+      "romanization": "syamideu-neun mul taib-euro jinhwahan ibeui-yeyo.",
       "gloss": "Vaporeon is an Eevee evolved into Water type.",
       "targetForm": "샤미드",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'물 타입으로 진화한 이브이예요' literally says 'It is an Eevee that has evolved into Water type', which is awkward because once Eevee evolves it is no longer an Eevee. More natural Korean phrasing would treat Vaporeon as the result/form of Eevee's evolution rather than describing it as an Eevee.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:쥬피썬더",
@@ -1473,19 +1425,13 @@
     },
     {
       "vocabId": "rom-species:뮤츠",
-      "korean": "뮤츠는 강한 초능력을 가지고 있어요.",
-      "romanization": "myucheu-neun ganghan choneungnyeog-eul gajigo isseoyo.",
+      "korean": "뮤츠는 강한 정신력을 가지고 있어요.",
+      "romanization": "myucheu-neun ganghan jeongsillyeog-eul gajigo isseoyo.",
       "gloss": "Mewtwo has powerful psychic abilities.",
       "targetForm": "뮤츠",
       "areaId": "cerulean_cave",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The gloss says 'powerful psychic abilities', but 정신력 means 'willpower / mental fortitude / resolve', not psychic powers. The correct Korean for 'psychic abilities' is 초능력 (or 사이코파워 in some Pokémon contexts). As written, the Korean describes Mewtwo as having strong willpower, which mistranslates the original.",
-        "evidenceUrl": "https://hinative.com/questions/23343780",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:치코리타",
@@ -1919,19 +1865,13 @@
     },
     {
       "vocabId": "rom-species:에브이",
-      "korean": "에브이는 이브이가 마음의 힘으로 진화한 모습이에요.",
-      "romanization": "ebeui-neun ibeui-ga maeum-ui him-euro jinhwahan moseub-i-eyo.",
+      "korean": "에브이는 마음의 힘으로 진화한 이브이예요.",
+      "romanization": "ebeui-neun maeum-ui him-euro jinhwahan ibeui-yeyo.",
       "gloss": "Espeon is an Eevee evolved by mental power.",
       "targetForm": "에브이",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "Same structural issue as the 샤미드 entry: '진화한 이브이예요' is awkward because Espeon, having evolved, is no longer an Eevee. Korean speakers typically describe an Eeveelution as the evolved 모습/포켓몬 of Eevee, not as an Eevee itself.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:블래키",
@@ -2345,19 +2285,13 @@
     },
     {
       "vocabId": "rom-species:에레키드",
-      "korean": "에레키드는 두 팔에 전기를 모아요.",
-      "romanization": "erekideu-neun du par-e jeongi-reul moayo.",
+      "korean": "에레키드는 두 팔에서 전기를 모아요.",
+      "romanization": "erekideu-neun du par-eseo jeongi-reul moayo.",
       "gloss": "Elekid gathers electricity in both arms.",
       "targetForm": "에레키드",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Same particle error as 피카츄. The intended meaning is 'gathers/accumulates electricity in both arms' (location of storage), which requires the locative 에. 두 팔에서 reads as 'from both arms' (source).",
-        "evidenceUrl": "https://learnkorean24.com/korean-location-marking-particles/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:마그비",
@@ -2461,19 +2395,13 @@
     },
     {
       "vocabId": "rom-species:칠색조",
-      "korean": "칠색조는 일곱 가지 색의 깃털을 가졌어요.",
-      "romanization": "chilsaekjo-neun ilgop gaji saeg-ui gitteor-eul gajyeosseoyo.",
+      "korean": "칠색조는 일곱 가지 빛을 가졌어요.",
+      "romanization": "chilsaekjo-neun ilgop gaji bich-eul gajyeosseoyo.",
       "gloss": "Ho-Oh has feathers of seven colors.",
       "targetForm": "칠색조",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The gloss says 'Ho-Oh has feathers of seven colors', but the Korean translates literally to 'Ho-Oh has seven kinds of light/color' with no mention of 깃털 (feathers). 빛 can poetically mean color, but the gloss's specific reference to feathers is dropped, producing a notable mismatch between the Korean and the English gloss.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:세레비",

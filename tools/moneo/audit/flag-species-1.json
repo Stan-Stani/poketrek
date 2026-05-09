@@ -1,0 +1,55 @@
+{
+  "shardFile": "sentences-ko-themed-species.json",
+  "range": [121, 241],
+  "inspected": 120,
+  "flagged": [
+    {
+      "vocabId": "rom-species:갸라도스",
+      "korean": "갸라도스는 무서운 분노를 가졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "'분노를 가지다' (to have/possess anger) is grammatically possible but not a natural Korean collocation. Native speakers would normally say '분노에 차 있다', '몹시 분노한다', or use an adjective like '사납다'. The verb 가지다 is typically used with possessable nouns or stable traits, not transient strong emotions like 분노.",
+      "suggestion": "갸라도스는 무서운 분노에 차 있어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:샤미드",
+      "korean": "샤미드는 물 타입으로 진화한 이브이예요.",
+      "verdict": "unnatural",
+      "issue": "'물 타입으로 진화한 이브이예요' literally says 'It is an Eevee that has evolved into Water type', which is awkward because once Eevee evolves it is no longer an Eevee. More natural Korean phrasing would treat Vaporeon as the result/form of Eevee's evolution rather than describing it as an Eevee.",
+      "suggestion": "샤미드는 이브이가 물 타입으로 진화한 모습이에요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:뮤츠",
+      "korean": "뮤츠는 강한 정신력을 가지고 있어요.",
+      "verdict": "mistranslation",
+      "issue": "The gloss says 'powerful psychic abilities', but 정신력 means 'willpower / mental fortitude / resolve', not psychic powers. The correct Korean for 'psychic abilities' is 초능력 (or 사이코파워 in some Pokémon contexts). As written, the Korean describes Mewtwo as having strong willpower, which mistranslates the original.",
+      "suggestion": "뮤츠는 강한 초능력을 가지고 있어요.",
+      "evidenceUrl": "https://hinative.com/questions/23343780"
+    },
+    {
+      "vocabId": "rom-species:에브이",
+      "korean": "에브이는 마음의 힘으로 진화한 이브이예요.",
+      "verdict": "unnatural",
+      "issue": "Same structural issue as the 샤미드 entry: '진화한 이브이예요' is awkward because Espeon, having evolved, is no longer an Eevee. Korean speakers typically describe an Eeveelution as the evolved 모습/포켓몬 of Eevee, not as an Eevee itself.",
+      "suggestion": "에브이는 이브이가 마음의 힘으로 진화한 모습이에요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:에레키드",
+      "korean": "에레키드는 두 팔에서 전기를 모아요.",
+      "verdict": "uncertain",
+      "issue": "The gloss is 'gathers electricity in both arms' (location of accumulation), but 두 팔에서 reads as 'from both arms' (source). For 'gather IN both arms', 두 팔에 (locative) is more accurate; 에서 here makes it sound like the arms are the source from which electricity is being collected rather than the place it accumulates.",
+      "suggestion": "에레키드는 두 팔에 전기를 모아요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:칠색조",
+      "korean": "칠색조는 일곱 가지 빛을 가졌어요.",
+      "verdict": "mistranslation",
+      "issue": "The gloss says 'Ho-Oh has feathers of seven colors', but the Korean translates literally to 'Ho-Oh has seven kinds of light/color' with no mention of 깃털 (feathers). 빛 can poetically mean color, but the gloss's specific reference to feathers is dropped, producing a notable mismatch between the Korean and the English gloss.",
+      "suggestion": "칠색조는 일곱 가지 색의 깃털을 가졌어요.",
+      "evidenceUrl": null
+    }
+  ]
+}

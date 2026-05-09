@@ -1,0 +1,154 @@
+{
+  "items": [
+    {
+      "vocabId": "rom-mine-v2:주다",
+      "korean": "할아버지가 손녀에게 책을 준다.",
+      "verdict": "uncertain",
+      "issue": "Honorific mismatch: with 할아버지 as subject, native speakers expect the honorific verb 주신다 (and ideally honorific particle 께서). 할아버지가 ... 준다 reads as disrespectful unless the narrator deliberately speaks of the grandfather without honoring.",
+      "suggestion": "할아버지께서 손녀에게 책을 주신다.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:짜다",
+      "korean": "할머니가 천을 짠다.",
+      "verdict": "uncertain",
+      "issue": "Honorific mismatch: 할머니 as subject normally takes the honorific verb (짜신다) and ideally honorific particle 께서. 할머니가 ... 짠다 reads as disrespectful in standard usage, though it could pass in detached literary narration.",
+      "suggestion": "할머니께서 천을 짜신다.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:껍질에숨기",
+      "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요.",
+      "verdict": "uncertain",
+      "issue": "The move name 껍질에숨기 contains an internal particle 에 ('hide IN shell'). When the whole noun phrase then takes the object particle 를, the sentence reads as a slightly awkward run-on (껍질에숨기를). The mined ROM token may be intended; flag for human review of the ROM string itself.",
+      "suggestion": null,
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:매그니튜드",
+      "korean": "매그니튜드가 들판에 울려 퍼졌어요.",
+      "verdict": "uncertain",
+      "issue": "매그니튜드 (Magnitude) is a ground-shaking move, so a low rumble 'echoing' across the field is more defensible than for purely silent moves — but 울려 퍼지다 still primarily collocates with discrete sounds (cries, songs, voices) rather than tremors. Borderline.",
+      "suggestion": null,
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:깨트리다",
+      "korean": "깨트리다는 트레이너의 자랑이에요.",
+      "verdict": "uncertain",
+      "issue": "Attaches the topic particle 는 directly to the dictionary form of the verb 깨트리다. Although 깨트리다 is the official Korean Pokémon name for Brick Break (a proper noun), '깨트리다는' parses ungrammatically in regular Korean — readers will hear it as a malformed quotative '-ㄴ다는'. Using the move name in quotes (e.g. '깨트리다는 기술은…') would be safer.",
+      "suggestion": "'깨트리다'라는 기술은 트레이너의 자랑이에요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:뛰어오르다",
+      "korean": "뛰어오르다는 트레이너의 자랑이에요.",
+      "verdict": "uncertain",
+      "issue": "Same issue as 깨트리다. 뛰어오르다 is the Korean move name for Bounce, but attaching 는 directly to a dictionary-form verb produces awkward / quasi-quotative grammar. Native readers will likely mishear it as a botched '-ㄴ다는' construction.",
+      "suggestion": "'뛰어오르다'라는 기술은 트레이너의 자랑이에요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:탐내다",
+      "korean": "탐내다가 들판에 울려 퍼졌어요.",
+      "verdict": "uncertain",
+      "issue": "탐내다 is the Korean move name for Covet, but '탐내다가' reads as the connective '-다가' (while doing X), not as a noun + subject particle. The sentence is therefore parsed as 'while coveting, it echoed across the field', which is nonsense.",
+      "suggestion": "'탐내다'라는 기술이 들판에 울려 퍼졌어요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-species:피카츄",
+      "korean": "피카츄는 볼에서 전기를 모아요.",
+      "verdict": "uncertain",
+      "issue": "The gloss says 'stores electricity in its cheeks', but 볼에서 reads as 'from the cheeks' (source) rather than 'in the cheeks' (storage location). For storage/accumulation in a place, the locative particle 에 is more accurate (볼에 전기를 모아요/저장해요). 에서 with 모으다 implies the arms/cheeks are the source from which electricity is gathered, not the destination where it is stored.",
+      "suggestion": "피카츄는 볼에 전기를 모아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:에레키드",
+      "korean": "에레키드는 두 팔에서 전기를 모아요.",
+      "verdict": "uncertain",
+      "issue": "The gloss is 'gathers electricity in both arms' (location of accumulation), but 두 팔에서 reads as 'from both arms' (source). For 'gather IN both arms', 두 팔에 (locative) is more accurate; 에서 here makes it sound like the arms are the source from which electricity is being collected rather than the place it accumulates.",
+      "suggestion": "에레키드는 두 팔에 전기를 모아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:있다",
+      "korean": "가방 안에 회복약이 다섯 개 있어요.",
+      "verdict": "uncertain",
+      "issue": "'회복약' is a real Korean word for 'recovery medicine', but the canonical Pokemon-game term for Potion in Korean releases is '상처약' (and Super Potion = 좋은상처약, etc.). The sentence is grammatical and understandable, but for a Pokemon-themed deck the in-game term would be more authentic. Flagging as uncertain since 회복약 is not actually wrong Korean.",
+      "suggestion": "가방 안에 상처약이 다섯 개 있어요.",
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 새싹이 자라요.",
+      "verdict": "uncertain",
+      "issue": "Ivysaur's back features a flower bud (꽃봉오리), not a 새싹 ('sprout/seedling'). 새싹 is more apt for the Bulbasaur stage's small bulb sprouts. Semantically off but the sentence is grammatical and the gloss does say 'a sprout', so it is internally consistent. Flagging because the Pokemon-lore content is mismatched with Ivysaur specifically.",
+      "suggestion": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
+      "verdict": "uncertain",
+      "issue": "Two minor concerns: (1) 갑(甲) is technically a Sino-Korean morpheme/Chinese character (한자) rather than an 'old letter (옛 글자)'; '옛 한자' or '한자어' would be more accurate. (2) '거북 등껍질' lacks the genitive 의 ('거북의 등껍질') though noun-noun compounds are common in Korean. The romanization 'tteushaneun' is also wrong (should be 'tteuthaneun'), but the Korean itself is OK on that point.",
+      "suggestion": "갑(甲)은 거북의 등껍질을 뜻하는 한자예요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "topik-v2:모습",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
+      "verdict": "uncertain",
+      "issue": "모습 means 'appearance/figure/look', not specifically 'face' (얼굴). The gloss 'I saw my friend's face after a long time' is closer to 친구 얼굴을 봤어요 (used verbatim in entry 229). The Korean is grammatical but mismatched with the English gloss; native speakers would read 모습 as a more general 'sight of my friend'.",
+      "suggestion": "Either reword Korean to 친구 얼굴을 봤어요 or change gloss to 'I saw my friend (their figure) after a long time.'",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:짓다",
+      "korean": "농부가 밥을 짓고 있어요.",
+      "verdict": "uncertain",
+      "issue": "Grammatically and lexically correct (밥을 짓다 = to cook rice). But the subject choice is odd: a 농부 (farmer) prototypically 농사를 짓다 (does farming) or 벼를 재배하다, not 밥을 짓다 in their professional capacity. The sentence reads as if it were trying to evoke the farming sense of 짓다 but accidentally landed on the cooking sense. Native speakers would likely choose 어머니/할머니 as the subject for 밥을 짓다.",
+      "suggestion": "어머니가 밥을 짓고 있어요. (or, if farming is intended: 농부가 농사를 짓고 있어요.)",
+      "evidenceUrl": "https://hinative.com/questions/23996317",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:이렇다",
+      "korean": "오늘 날씨가 이렇네요.",
+      "verdict": "uncertain",
+      "issue": "이렇네요 (declarative -네요 on 이렇다) is unusual standalone — it abruptly ends without a complement. Native usage typically pairs 이렇다 with a content word (e.g. 이런 날씨), or uses 이래요. As a flashcard it sounds incomplete.",
+      "suggestion": "오늘 날씨가 이래요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:동물",
+      "korean": "이 동물원에는 호랑이가 있어요.",
+      "verdict": "uncertain",
+      "issue": "The headword is 동물 (animal) but the sentence only contains it as a substring of 동물원 (zoo). The actual word 동물 is never used independently, which weakens it as an example sentence for the headword.",
+      "suggestion": "이 동물원에는 여러 동물이 있어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:양쪽",
+      "korean": "양쪽 길이 모두 좋아요.",
+      "verdict": "uncertain",
+      "issue": "Genuinely ambiguous: 길이 can be parsed as 길+이 (subject-marked 'road') or as 길이 ('length'). 양쪽 길 is also slightly redundant for 'both roads'. Native speakers would say '양쪽 길 모두 좋아요' or '양쪽 다 좋아요'.",
+      "suggestion": "양쪽 길 모두 좋아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    }
+  ]
+}

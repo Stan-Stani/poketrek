@@ -1,0 +1,56 @@
+{
+  "shardFile": "sentences-ko-themed-mined.json",
+  "range": [391, 586],
+  "inspected": 195,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:깨트리다",
+      "korean": "깨트리다는 트레이너의 자랑이에요.",
+      "verdict": "uncertain",
+      "issue": "Attaches the topic particle 는 directly to the dictionary form of the verb 깨트리다. Although 깨트리다 is the official Korean Pokémon name for Brick Break (a proper noun), '깨트리다는' parses ungrammatically in regular Korean — readers will hear it as a malformed quotative '-ㄴ다는'. Using the move name in quotes (e.g. '깨트리다는 기술은…') would be safer.",
+      "suggestion": "'깨트리다'라는 기술은 트레이너의 자랑이에요."
+    },
+    {
+      "vocabId": "rom-mine-v2:뛰어오르다",
+      "korean": "뛰어오르다는 트레이너의 자랑이에요.",
+      "verdict": "uncertain",
+      "issue": "Same issue as 깨트리다. 뛰어오르다 is the Korean move name for Bounce, but attaching 는 directly to a dictionary-form verb produces awkward / quasi-quotative grammar. Native readers will likely mishear it as a botched '-ㄴ다는' construction.",
+      "suggestion": "'뛰어오르다'라는 기술은 트레이너의 자랑이에요."
+    },
+    {
+      "vocabId": "rom-mine-v2:탐내다",
+      "korean": "탐내다가 들판에 울려 퍼졌어요.",
+      "verdict": "uncertain",
+      "issue": "탐내다 is the Korean move name for Covet, but '탐내다가' reads as the connective '-다가' (while doing X), not as a noun + subject particle. The sentence is therefore parsed as 'while coveting, it echoed across the field', which is nonsense.",
+      "suggestion": "'탐내다'라는 기술이 들판에 울려 퍼졌어요."
+    },
+    {
+      "vocabId": "rom-mine-v2:클리어바디",
+      "korean": "클리어바디 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in the consonant ㅇ (받침), so it must take 이, not 가. '특성가' is ungrammatical.",
+      "suggestion": "클리어바디 특성이 시합에서 큰 도움이 됐어요."
+    },
+    {
+      "vocabId": "rom-mine-v2:천하장사",
+      "korean": "천하장사 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in a consonant (받침 ㅇ) and must take 이. '특성가' is ungrammatical.",
+      "suggestion": "천하장사 특성이 시합에서 큰 도움이 됐어요."
+    },
+    {
+      "vocabId": "rom-mine-v2:탈피",
+      "korean": "탈피 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in a consonant (받침 ㅇ) and must take 이. '특성가' is ungrammatical.",
+      "suggestion": "탈피 특성이 시합에서 큰 도움이 됐어요."
+    },
+    {
+      "vocabId": "rom-mine-v2:돌머리",
+      "korean": "돌머리 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in a consonant (받침 ㅇ) and must take 이. '특성가' is ungrammatical.",
+      "suggestion": "돌머리 특성이 시합에서 큰 도움이 됐어요."
+    }
+  ]
+}

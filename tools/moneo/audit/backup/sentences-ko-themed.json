@@ -25,19 +25,13 @@
     },
     {
       "vocabId": "rom-mine-v2:있다",
-      "korean": "가방 안에 상처약이 다섯 개 있어요.",
-      "romanization": "gabang an-e sangcheoyag-i daseot gae isseoyo.",
+      "korean": "가방 안에 회복약이 다섯 개 있어요.",
+      "romanization": "gabang an-e hoebogyak-i daseot gae isseoyo.",
       "gloss": "There are five potions in my bag.",
       "targetForm": "있",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "회복약 is real Korean but the canonical Pokemon-game term for Potion in Korean releases is 상처약 (confirmed on Pokemon Wiki KO and 나무위키 회복 도구 page). For a Pokemon-themed deck, the in-game term is more authentic and reinforces vocabulary the player will see in the game.",
-        "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-mine-v2:메다",
@@ -51,19 +45,13 @@
     },
     {
       "vocabId": "rom-mine-v2:회복",
-      "korean": "포켓몬 센터에서 치료를 받았어요. (or: 포켓몬 센터에서 포켓몬을 회복시켰어요.)",
-      "romanization": "pokemon senteo-eseo chiryo-reul badasseoyo. (or: pokemon senteo-eseo pokemon-eul hoeboksikyeosseoyo.)",
+      "korean": "포켓몬 센터에서 회복을 받았어요.",
+      "romanization": "pokemon senteo-eseo hoebog-eul badasseoyo.",
       "gloss": "My Pokémon got healed at the Pokémon Center.",
       "targetForm": "회복",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "'회복을 받다' (literally 'to receive recovery') is not a natural Korean collocation. 회복 is something one does or undergoes, not receives. For Pokemon Center healing, native usage would be '치료를 받았어요' (received treatment) or '포켓몬을 회복시켰어요' (had my Pokemon recovered). The targetForm vocab '회복' could still be exercised via 회복하다/회복시키다.",
-        "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%ED%9A%8C%EB%B3%B5%ED%95%98%EB%8B%A4",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:키",
@@ -127,51 +115,33 @@
     },
     {
       "vocabId": "rom-species:이상해풀",
-      "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
-      "romanization": "isanghaepul-ui deung-e-neun keun kkotbongori-ga jarayo.",
+      "korean": "이상해풀의 등에는 새싹이 자라요.",
+      "romanization": "isanghaepul-ui deung-e-neun saessag-i jarayo.",
       "gloss": "A sprout grows on Ivysaur's back.",
       "targetForm": "이상해풀",
       "areaId": "pallet_town",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Confirmed Pokemon-lore mismatch: Ivysaur's defining feature is the flower BUD (꽃봉오리) on its back, not a 새싹 (sprout/seedling). The bud is a Rafflesia-like flower bud that releases an aroma when ready to bloom. 새싹 is more apt for Bulbasaur (이상해씨); by Ivysaur stage the plant has progressed to a large bud.",
-        "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:이상해꽃",
-      "korean": "이상해꽃은 등에 큰 꽃이 피어 있어요.",
-      "romanization": "isanghaekkoch-eun deung-e keun kkoch-i pieo isseoyo.",
+      "korean": "이상해꽃은 큰 꽃을 등에 가지고 있어요.",
+      "romanization": "isanghaekkoch-eun keun kkoch-eul deung-e gajigo isseoyo.",
       "gloss": "Venusaur carries a large flower on its back.",
       "targetForm": "이상해꽃",
       "areaId": "pallet_town",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'꽃을 등에 가지고 있다' (literally 'has a flower on its back') is grammatically valid but unidiomatic in Korean for describing a body feature. Native phrasings would be '등에 큰 꽃이 피어 있어요' (a flower is blooming on its back) or '등에 큰 꽃을 달고 있어요' (carries a flower on its back). The current phrasing reads like a literal English-to-Korean translation.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:파이리",
-      "korean": "파이리의 꼬리에서는 작은 불꽃이 타올라요.",
-      "romanization": "pairi-ui kkori-eseo-neun jageun bulkkoch-i taollayo.",
+      "korean": "파이리의 꼬리에는 작은 불꽃이 타요.",
+      "romanization": "pairi-ui kkori-e-neun jageun bulkkoch-i tayo.",
       "gloss": "A small flame burns on Charmander's tail.",
       "targetForm": "파이리",
       "areaId": "pallet_town",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'불꽃이 타다' is grammatically valid (타다 covers 'for fire/flame to burn') but is awkward as a stand-alone description; Korean more typically uses 불꽃이 타오르다 (flame blazes), 불꽃이 일다 (flame arises), or 불이 타다. For Charmander's tail flame the canonical Korean phrasing is '꼬리에 불이 타고 있다' or '꼬리 끝에서 불꽃이 타올라요'.",
-        "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=91122",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "rom-species:리자드",
@@ -185,35 +155,23 @@
     },
     {
       "vocabId": "etymology-roots:갑",
-      "korean": "갑(甲)은 거북의 등껍질을 본뜬 한자예요.",
-      "romanization": "gab(甲)-eun geobug-ui deungkkeopjir-eul bontteun hanja-yeyo.",
+      "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
+      "romanization": "gab-eun geobug deung-kkeopjir-eul tteushaneun yet geulja-yeyo.",
       "gloss": "갑 is an old word meaning a turtle's shell.",
       "targetForm": "갑",
       "areaId": "pewter_city",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Confirmed terminology error: 갑(甲) is a Sino-Korean 한자 (Chinese character), specifically a 상형문자 (pictograph) modeled on the shape of a turtle's shell. '옛 글자' is misleading because in Korean it commonly evokes 옛한글 (archaic hangul). Naver/나무위키 갑골문자 entries describe 甲 as a 한자 / 상형문자. Adding the 한자 in parentheses also helps disambiguate the homophone.",
-        "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "etymology-roots:강철",
-      "korean": "강철은 '강한 쇠'라는 뜻으로, 단단하게 만든 철을 가리켜요.",
-      "romanization": "gangcheor-eun 'ganghan soe'-raneun tteus-euro, dandanhage mandeun cheor-eul garikyeoyo.",
+      "korean": "강철은 단단한 금속이에요.",
+      "romanization": "gangcheor-eun dandanhan geumsog-i-eyo.",
       "gloss": "강철 means hardened steel.",
       "targetForm": "강철",
       "areaId": "rom_mined",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Gloss says '강철 means hardened steel' (a metalinguistic etymology gloss), but the Korean literally says '강철 is a hard metal'. The Korean omits the etymology framing entirely and just states a fact. For an etymology-roots entry the Korean should reflect the meaning of 강철 as a root ('강' = strong/hard + '철' = iron → steel) rather than a definition of 'steel'. Also 강철 specifically means 'steel', not 'hard metal' generically.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "etymology-roots:개구리",

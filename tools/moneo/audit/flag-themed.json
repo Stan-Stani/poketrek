@@ -1,0 +1,63 @@
+{
+  "shardFile": "sentences-ko-themed.json",
+  "range": [0, 20],
+  "inspected": 20,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:회복",
+      "korean": "포켓몬 센터에서 회복을 받았어요.",
+      "verdict": "wrong_collocation",
+      "issue": "'회복을 받다' (literally 'to receive recovery') is not a natural Korean collocation. 회복 is something one does or undergoes, not receives. For Pokemon Center healing, native usage would be '치료를 받았어요' (received treatment) or '포켓몬을 회복시켰어요' (had my Pokemon recovered). The targetForm vocab '회복' could still be exercised via 회복하다/회복시키다.",
+      "suggestion": "포켓몬 센터에서 치료를 받았어요. (or: 포켓몬 센터에서 포켓몬을 회복시켰어요.)",
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%ED%9A%8C%EB%B3%B5%ED%95%98%EB%8B%A4"
+    },
+    {
+      "vocabId": "rom-mine-v2:있다",
+      "korean": "가방 안에 회복약이 다섯 개 있어요.",
+      "verdict": "uncertain",
+      "issue": "'회복약' is a real Korean word for 'recovery medicine', but the canonical Pokemon-game term for Potion in Korean releases is '상처약' (and Super Potion = 좋은상처약, etc.). The sentence is grammatical and understandable, but for a Pokemon-themed deck the in-game term would be more authentic. Flagging as uncertain since 회복약 is not actually wrong Korean.",
+      "suggestion": "가방 안에 상처약이 다섯 개 있어요.",
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD"
+    },
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 새싹이 자라요.",
+      "verdict": "uncertain",
+      "issue": "Ivysaur's back features a flower bud (꽃봉오리), not a 새싹 ('sprout/seedling'). 새싹 is more apt for the Bulbasaur stage's small bulb sprouts. Semantically off but the sentence is grammatical and the gloss does say 'a sprout', so it is internally consistent. Flagging because the Pokemon-lore content is mismatched with Ivysaur specifically.",
+      "suggestion": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:이상해꽃",
+      "korean": "이상해꽃은 큰 꽃을 등에 가지고 있어요.",
+      "verdict": "unnatural",
+      "issue": "'꽃을 등에 가지고 있다' (literally 'has a flower on its back') is grammatically valid but unidiomatic in Korean for describing a body feature. Native phrasings would be '등에 큰 꽃이 피어 있어요' (a flower is blooming on its back) or '등에 큰 꽃을 달고 있어요' (carries a flower on its back). The current phrasing reads like a literal English-to-Korean translation.",
+      "suggestion": "이상해꽃은 등에 큰 꽃이 피어 있어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:파이리",
+      "korean": "파이리의 꼬리에는 작은 불꽃이 타요.",
+      "verdict": "unnatural",
+      "issue": "'불꽃이 타다' is grammatically valid (타다 covers 'for fire/flame to burn') but is awkward as a stand-alone description; Korean more typically uses 불꽃이 타오르다 (flame blazes), 불꽃이 일다 (flame arises), or 불이 타다. For Charmander's tail flame the canonical Korean phrasing is '꼬리에 불이 타고 있다' or '꼬리 끝에서 불꽃이 타올라요'.",
+      "suggestion": "파이리의 꼬리에서는 작은 불꽃이 타올라요.",
+      "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=91122"
+    },
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
+      "verdict": "uncertain",
+      "issue": "Two minor concerns: (1) 갑(甲) is technically a Sino-Korean morpheme/Chinese character (한자) rather than an 'old letter (옛 글자)'; '옛 한자' or '한자어' would be more accurate. (2) '거북 등껍질' lacks the genitive 의 ('거북의 등껍질') though noun-noun compounds are common in Korean. The romanization 'tteushaneun' is also wrong (should be 'tteuthaneun'), but the Korean itself is OK on that point.",
+      "suggestion": "갑(甲)은 거북의 등껍질을 뜻하는 한자예요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "etymology-roots:강철",
+      "korean": "강철은 단단한 금속이에요.",
+      "verdict": "mistranslation",
+      "issue": "Gloss says '강철 means hardened steel' (a metalinguistic etymology gloss), but the Korean literally says '강철 is a hard metal'. The Korean omits the etymology framing entirely and just states a fact. For an etymology-roots entry the Korean should reflect the meaning of 강철 as a root ('강' = strong/hard + '철' = iron → steel) rather than a definition of 'steel'. Also 강철 specifically means 'steel', not 'hard metal' generically.",
+      "suggestion": "강철은 '강한 쇠'라는 뜻으로, 단단하게 만든 철을 가리켜요.",
+      "evidenceUrl": null
+    }
+  ]
+}

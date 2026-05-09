@@ -1,0 +1,119 @@
+{
+  "shardFile": "sentences-ko-themed-mined.json",
+  "range": [196, 391],
+  "inspected": 195,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:껍질에숨기",
+      "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요.",
+      "verdict": "uncertain",
+      "issue": "The move name 껍질에숨기 contains an internal particle 에 ('hide IN shell'). When the whole noun phrase then takes the object particle 를, the sentence reads as a slightly awkward run-on (껍질에숨기를). The mined ROM token may be intended; flag for human review of the ROM string itself.",
+      "suggestion": null,
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:웅크리기",
+      "korean": "웅크리기가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 means 'to resonate/echo and spread,' used exclusively for sounds. 웅크리기 (Defense Curl) is a silent self-targeting pose, so it cannot 울려 퍼지다. The collocation is unnatural in Korean.",
+      "suggestion": "이 포켓몬은 웅크리기를 잘 써요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:알낳기",
+      "korean": "알낳기가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 is a sound-only verb. 알낳기 (Soft-Boiled) is a silent healing move. Saying it 'echoed across the field' is not idiomatic Korean.",
+      "suggestion": "포켓몬이 알낳기로 체력을 회복했어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:각지기",
+      "korean": "각지기가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 requires a sound subject. 각지기 (Sharpen) is a non-acoustic stat-up move; it cannot resonate or echo across a field.",
+      "suggestion": "포켓몬이 각지기로 공격력을 올렸어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:아침햇살",
+      "korean": "아침햇살이 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 is for sounds. 아침햇살 (Morning Sun) is light/healing — sunlight 비치다/내리쬐다, not 울려 퍼지다. The collocation is wrong.",
+      "suggestion": "아침햇살이 들판에 비쳤어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:본러쉬",
+      "korean": "본러쉬가 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "본러쉬 (Bone Rush) is a physical bone-throwing combo, not a sound. Pairing it with 울려 퍼지다 ('to resonate and spread') is awkward; a physical attack does not echo across a field in Korean.",
+      "suggestion": "친구가 본러쉬를 처음 봤어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:스모그",
+      "korean": "스모그가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "Smog/gas spreads or drifts (퍼지다 is fine alone, but 울려 퍼지다 specifically means sound resonating). Gas does not 울리다, so this is the wrong verb pairing.",
+      "suggestion": "스모그가 들판에 퍼졌어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:천사의키스",
+      "korean": "천사의키스가 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "천사의키스 (Sweet Kiss) is a status move, not a sound. The 울려 퍼지다 collocation requires an audible subject; this pairing is unidiomatic.",
+      "suggestion": "친구가 천사의키스를 처음 봤어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:연속자르기",
+      "korean": "연속자르기가 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "연속자르기 (Fury Cutter) is a series of physical slashes, not a sound. 울려 퍼지다 is reserved for sound; the collocation is off.",
+      "suggestion": "포켓몬이 연속자르기를 보여 줬어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:환상빔",
+      "korean": "환상빔이 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "환상빔 (Psybeam) is a beam of energy, not a sound. 울려 퍼지다 needs an audible subject. A 빔 normally 발사되다 / 뻗어 나가다, not 울려 퍼지다.",
+      "suggestion": "환상빔이 들판에 뻗어 나갔어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:메가드레인",
+      "korean": "메가드레인이 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "메가드레인 (Mega Drain) is an HP-absorbing move, silent and non-acoustic. The 울려 퍼지다 collocation is incorrect; nothing audible is being produced.",
+      "suggestion": "친구의 포켓몬이 메가드레인을 잘 써요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:매그니튜드",
+      "korean": "매그니튜드가 들판에 울려 퍼졌어요.",
+      "verdict": "uncertain",
+      "issue": "매그니튜드 (Magnitude) is a ground-shaking move, so a low rumble 'echoing' across the field is more defensible than for purely silent moves — but 울려 퍼지다 still primarily collocates with discrete sounds (cries, songs, voices) rather than tremors. Borderline.",
+      "suggestion": null,
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:악몽",
+      "korean": "악몽이 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "악몽 (Nightmare) is a mental status condition, not a sound. 울려 퍼지다 requires an audible subject. Even metaphorically, nightmares 'spread' (퍼지다) but do not 울리다.",
+      "suggestion": "악몽이 들판에 퍼졌어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:버섯포자",
+      "korean": "버섯포자가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "버섯포자 (Spore) is airborne particles. Spores 날리다/퍼지다 but never 울리다. 울려 퍼지다 is the wrong verb for a non-sound subject.",
+      "suggestion": "버섯포자가 들판에 퍼졌어요.",
+      "evidenceUrl": null
+    }
+  ]
+}

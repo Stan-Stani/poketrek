@@ -1,0 +1,71 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [177, 354],
+  "inspected": 177,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:육",
+      "korean": "사과 육 개를 샀어요.",
+      "verdict": "ungrammatical",
+      "issue": "Sino-Korean numeral 육 should not be used with the native counter 개. Counting discrete physical objects (apples) requires native numerals: 사과 여섯 개. Mixing 육 + 개 sounds wrong to native speakers.",
+      "suggestion": "사과 여섯 개를 샀어요.",
+      "evidenceUrl": "https://hinative.com/questions/25248476"
+    },
+    {
+      "vocabId": "topik-v2:구",
+      "korean": "여기는 강남 구예요.",
+      "verdict": "ungrammatical",
+      "issue": "Korean orthography rule (한글 맞춤법): administrative-unit suffixes such as 구/시/도/군/동 attach to the place name with no space. Should be 강남구, written as one word.",
+      "suggestion": "여기는 강남구예요.",
+      "evidenceUrl": "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%82%A8%EA%B5%AC"
+    },
+    {
+      "vocabId": "topik-v2:분",
+      "korean": "다섯 분만 기다려 주세요.",
+      "verdict": "wrong_collocation",
+      "issue": "When 분 means 'minutes', it requires Sino-Korean numerals (오 분), not native (다섯). 다섯 분 reads as 'five people (honorific)' — exactly the wrong sense for the gloss 'five minutes'.",
+      "suggestion": "오 분만 기다려 주세요.",
+      "evidenceUrl": "https://en.wikipedia.org/wiki/Korean_numerals"
+    },
+    {
+      "vocabId": "topik-v2:오르다",
+      "korean": "산 위에 천천히 올라요.",
+      "verdict": "unnatural",
+      "issue": "오르다 collocates with 산에/산을, not 산 위에. 산 위에 올라가다/오르다 is a known learner-style overspecification — 위에 redundantly stacks the upward sense already inherent in 오르다, and 위에 normally pairs with stative 있다, not motion 오르다.",
+      "suggestion": "산에 천천히 올라요.",
+      "evidenceUrl": "https://hinative.com/questions/876679"
+    },
+    {
+      "vocabId": "topik-v2:선택",
+      "korean": "이 길과 저 길 중 선택을 해요.",
+      "verdict": "mistranslation",
+      "issue": "The Korean is plain declarative (-아요/-어요), meaning 'I/we choose...', but the English gloss is the imperative 'Choose between this road and that road.' For an imperative the Korean should be 선택하세요 / 선택해요(명령) with appropriate intonation, or be reglossed as a statement.",
+      "suggestion": "이 길과 저 길 중에서 선택하세요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:모습",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
+      "verdict": "uncertain",
+      "issue": "모습 means 'appearance/figure/look', not specifically 'face' (얼굴). The gloss 'I saw my friend's face after a long time' is closer to 친구 얼굴을 봤어요 (used verbatim in entry 229). The Korean is grammatical but mismatched with the English gloss; native speakers would read 모습 as a more general 'sight of my friend'.",
+      "suggestion": "Either reword Korean to 친구 얼굴을 봤어요 or change gloss to 'I saw my friend (their figure) after a long time.'",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:소주",
+      "korean": "어른들이 소주를 한 잔 했어요.",
+      "verdict": "unnatural",
+      "issue": "The fixed expression is 한잔하다 / 소주(를) 한잔하다 — typically written without 를 between 소주 and 한잔, or as 소주 한 잔 했어요 with no object marker. Adding 를 to 소주 here makes 한 잔 하다 read as a literal 'did one glass', breaking the idiom. The natural form is 어른들이 소주를 한잔했어요 or 어른들이 소주 한 잔 하셨어요.",
+      "suggestion": "어른들이 소주 한잔하셨어요.",
+      "evidenceUrl": "https://tomikorean.com/wp-content/uploads/2024/10/TomiKorean-Newsletter-040-Drinking-Expression.pdf"
+    },
+    {
+      "vocabId": "topik-v2:짓다",
+      "korean": "농부가 밥을 짓고 있어요.",
+      "verdict": "uncertain",
+      "issue": "Grammatically and lexically correct (밥을 짓다 = to cook rice). But the subject choice is odd: a 농부 (farmer) prototypically 농사를 짓다 (does farming) or 벼를 재배하다, not 밥을 짓다 in their professional capacity. The sentence reads as if it were trying to evoke the farming sense of 짓다 but accidentally landed on the cooking sense. Native speakers would likely choose 어머니/할머니 as the subject for 밥을 짓다.",
+      "suggestion": "어머니가 밥을 짓고 있어요. (or, if farming is intended: 농부가 농사를 짓고 있어요.)",
+      "evidenceUrl": "https://hinative.com/questions/23996317"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [354, 531],
+  "inspected": 177,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:식",
+      "korean": "이 음식은 한국 식이에요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. The suffix 식 (style) attaches directly to the preceding noun, so it should be written 한국식 as one word (or use 한식). 한국 식 with a space is non-standard.",
+      "suggestion": "이 음식은 한국식이에요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing"
+    },
+    {
+      "vocabId": "topik-v2:가로",
+      "korean": "이 책의 가로가 짧아요.",
+      "verdict": "unnatural",
+      "issue": "Awkward collocation. 가로 means horizontal width, and width is normally described with 좁다 (narrow) rather than 짧다 (short). 가로가 짧다 sounds odd to native ears; 가로 길이가 짧다 or 가로가 좁다 would be more natural.",
+      "suggestion": "이 책은 가로가 좁아요.",
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/62253_%EA%B0%80%EB%A1%9C/"
+    },
+    {
+      "vocabId": "topik-v2:거",
+      "korean": "그 거 한번 보여 주세요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. The bound noun 거 attaches to the demonstrative without a space: standard form is 그거 (or 그것). 그 거 with a space is non-standard orthography.",
+      "suggestion": "그거 한번 보여 주세요.",
+      "evidenceUrl": "https://joy-do.com/2025/11/14/korean-this-that-%EC%9D%B4-%EA%B7%B8-%EC%A0%80/"
+    },
+    {
+      "vocabId": "topik-v2:버리다",
+      "korean": "쓰레기를 통에 버리세요.",
+      "verdict": "unnatural",
+      "issue": "쓰레기통 (trash bin) is a single dictionary word; the sentence splits it as 쓰레기를 ... 통에, where 통에 alone could mean any container. Natural Korean would be 쓰레기통에 버리세요.",
+      "suggestion": "쓰레기를 쓰레기통에 버리세요.",
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%93%B0%EB%A0%88%EA%B8%B0%ED%86%B5"
+    },
+    {
+      "vocabId": "topik-v2:북",
+      "korean": "북 쪽 길은 더 멀어요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 북쪽 is one word in the standard Korean dictionary and must not be split with a space.",
+      "suggestion": "북쪽 길은 더 멀어요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing"
+    },
+    {
+      "vocabId": "topik-v2:여",
+      "korean": "여 학생이 더 많아요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 여 is a bound prefix; 여학생 (female student) is a single dictionary word. 여 학생 with a space is incorrect — 여 cannot stand alone.",
+      "suggestion": "여학생이 더 많아요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing"
+    },
+    {
+      "vocabId": "topik-v2:이렇다",
+      "korean": "오늘 날씨가 이렇네요.",
+      "verdict": "uncertain",
+      "issue": "이렇네요 (declarative -네요 on 이렇다) is unusual standalone — it abruptly ends without a complement. Native usage typically pairs 이렇다 with a content word (e.g. 이런 날씨), or uses 이래요. As a flashcard it sounds incomplete.",
+      "suggestion": "오늘 날씨가 이래요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:피시",
+      "korean": "삼촌은 피시를 잘 잡아요.",
+      "verdict": "wrong_collocation",
+      "issue": "피시 in Korean is overwhelmingly read as PC (personal computer) and is not the standard word for fish. Catching fish uses 물고기 or 생선. 피시를 잡다 is unnatural and confusing — it reads as 'catches PCs well'.",
+      "suggestion": "삼촌은 물고기를 잘 잡아요.",
+      "evidenceUrl": "https://www.koreanstudyjunkie.com/post/%EB%AC%BC%EA%B3%A0%EA%B8%B0-vs-%EC%83%9D%EC%84%A0-how-to-say-fish-in-korean"
+    },
+    {
+      "vocabId": "topik-v2:고속",
+      "korean": "고속 도로가 막혀요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 고속도로 (highway) is a single dictionary entry and should be written as one word. 고속 도로 with a space is non-standard.",
+      "suggestion": "고속도로가 막혀요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing"
+    },
+    {
+      "vocabId": "topik-v2:꽃잎",
+      "korean": "벚 꽃잎이 바람에 날려요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 벚 is a bound morpheme that cannot stand alone; 벚꽃 is the established word for cherry blossom. The sentence should be either 벚꽃잎이... or 벚꽃 잎이... — 벚 꽃잎 splits the wrong morpheme boundary.",
+      "suggestion": "벚꽃잎이 바람에 날려요.",
+      "evidenceUrl": null
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "shardFile": "sentences-ko-themed-species.json",
+  "range": [0, 121],
+  "inspected": 121,
+  "flagged": [
+    {
+      "vocabId": "rom-species:피카츄",
+      "korean": "피카츄는 볼에서 전기를 모아요.",
+      "verdict": "uncertain",
+      "issue": "The gloss says 'stores electricity in its cheeks', but 볼에서 reads as 'from the cheeks' (source) rather than 'in the cheeks' (storage location). For storage/accumulation in a place, the locative particle 에 is more accurate (볼에 전기를 모아요/저장해요). 에서 with 모으다 implies the arms/cheeks are the source from which electricity is gathered, not the destination where it is stored.",
+      "suggestion": "피카츄는 볼에 전기를 모아요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:라이츄",
+      "korean": "라이츄는 매우 강한 전기를 흘려요.",
+      "verdict": "wrong_collocation",
+      "issue": "전기를 흘리다 is not a natural Korean collocation. 흘리다 is normally used with liquids/tears/blood, with 'information' (정보를 흘리다 = to leak), or with sweat. For releasing/discharging electricity, native usage employs 방출하다, 발산하다, or 흘려보내다. As-is the sentence reads roughly like 'Raichu drips/leaks very strong electricity', which is unidiomatic.",
+      "suggestion": "라이츄는 매우 강한 전기를 방출해요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:콘팡",
+      "korean": "콘팡은 큰 눈으로 어둠을 봐요.",
+      "verdict": "mistranslation",
+      "issue": "어둠을 보다 literally means 'to see darkness' and is only used in metaphorical/literary senses (e.g. seeing the darkness within oneself). The intended meaning per the gloss is 'sees in the dark' / 'sees through the darkness', which in natural Korean is 어둠 속에서도 잘 봐요 or 어두운 곳에서도 잘 봐요. As written, the sentence does not convey night vision and sounds odd.",
+      "suggestion": "콘팡은 큰 눈으로 어둠 속에서도 잘 봐요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:골덕",
+      "korean": "골덕은 강력한 정신력을 사용해요.",
+      "verdict": "mistranslation",
+      "issue": "The gloss says 'uses powerful psychic abilities', but 정신력 means 'willpower / mental fortitude', not psychic ability. Golduck's psychic powers in Korean Pokédex/wiki are described with 초능력 or 염력 (telekinesis). As written, the sentence says Golduck uses strong willpower, mismatching the gloss. (Same kind of mistranslation appears for 뮤츠 in the rest of the file.)",
+      "suggestion": "골덕은 강력한 초능력을 사용해요.",
+      "evidenceUrl": "https://namu.wiki/w/%EA%B3%A8%EB%8D%95"
+    },
+    {
+      "vocabId": "rom-species:포니타",
+      "korean": "포니타는 갈기에서 불꽃이 타요.",
+      "verdict": "unnatural",
+      "issue": "불꽃이 타다 ('flames burn') is semantically redundant — 불꽃 already implies burning. Natural Korean uses 불꽃이 일다, 불꽃이 타오르다, or 불꽃이 피어오르다 for flames rising/blazing from a place. As is, the sentence sounds tautological and slightly off.",
+      "suggestion": "포니타는 갈기에서 불꽃이 타올라요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-species:또도가스",
+      "korean": "또도가스는 머리가 두 개로 진화했어요.",
+      "verdict": "unnatural",
+      "issue": "머리가 두 개로 진화했어요 literally says 'evolved AS [its] heads becoming two', which is structurally awkward — the subject of 진화하다 is the Pokémon, not the heads. Native phrasing would express the result either as '머리가 두 개로 늘었어요' (heads increased to two) or '머리가 두 개인 모습으로 진화했어요' (evolved into a form with two heads).",
+      "suggestion": "또도가스는 머리가 두 개인 모습으로 진화했어요.",
+      "evidenceUrl": null
+    }
+  ]
+}

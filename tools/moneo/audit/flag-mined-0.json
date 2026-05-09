@@ -1,0 +1,95 @@
+{
+  "shardFile": "sentences-ko-themed-mined.json",
+  "range": [0, 196],
+  "inspected": 196,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:놓다",
+      "korean": "논 옆 길에서 친구를 만났어요.",
+      "verdict": "mistranslation",
+      "issue": "The vocab item is the verb 놓다 (to place/put), but the sentence uses the noun 논 (rice field) — the targetForm field is even '논'. The sentence is grammatically fine Korean but does not exemplify 놓다 in any form; 논 is an unrelated homograph of the bare stem.",
+      "suggestion": "가방을 책상 위에 놓았어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:굴다",
+      "korean": "동생이 너무 굴게 행동해요.",
+      "verdict": "ungrammatical",
+      "issue": "굴다 takes the [adverb]-게 굴다 pattern (e.g., 무례하게 굴다, 버릇없이 굴다); 굴게 inverts this since 굴다 is not used adverbially. Additionally, 굴다 and 행동하다 are near-synonyms ('to act/behave'), so stacking them is redundant.",
+      "suggestion": "동생이 너무 무례하게 굴어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:주다",
+      "korean": "할아버지가 손녀에게 책을 준다.",
+      "verdict": "uncertain",
+      "issue": "Honorific mismatch: with 할아버지 as subject, native speakers expect the honorific verb 주신다 (and ideally honorific particle 께서). 할아버지가 ... 준다 reads as disrespectful unless the narrator deliberately speaks of the grandfather without honoring.",
+      "suggestion": "할아버지께서 손녀에게 책을 주신다.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:푸다",
+      "korean": "할머니가 국을 그릇에 푸어요.",
+      "verdict": "wrong_inflection",
+      "issue": "푸다 is the only 우-irregular verb in Korean: the stem 푸 + 어 contracts to 퍼, never 푸어. Correct present polite form is 퍼요, not 푸어요.",
+      "suggestion": "할머니가 국을 그릇에 퍼요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%91%B8%EB%8B%A4"
+    },
+    {
+      "vocabId": "rom-mine-v2:끄다",
+      "korean": "잠자기 전에 불을 끔이 좋아요.",
+      "verdict": "unnatural",
+      "issue": "The -(으)ㅁ nominalization 끔 is heavily formal/written and is rarely used as a clausal subject in conversational sentences. Standard natural Korean uses -는 것 here: 끄는 것이 좋아요 / 끄는 게 좋아요. 끔이 좋아요 sounds stilted and machine-translated.",
+      "suggestion": "잠자기 전에 불을 끄는 것이 좋아요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:나다",
+      "korean": "동생이 곧 떠난다고 해요.",
+      "verdict": "mistranslation",
+      "issue": "The vocab item is 나다 (to occur/come out), but the sentence uses 떠나다 (to leave). The targetForm '난다고' is just a substring of 떠난다고. The Korean is fine, but it does not exemplify the lemma 나다.",
+      "suggestion": "동생이 갑자기 열이 났어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:넣다",
+      "korean": "가방에 도시락을 너 두었어요.",
+      "verdict": "wrong_inflection",
+      "issue": "넣다 + -어 두다 should give 넣어 두었어요. The form 너 is wrong — it looks like a truncation/typo of 넣어. The sentence is currently ungrammatical.",
+      "suggestion": "가방에 도시락을 넣어 두었어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:드리다",
+      "korean": "선생님께 선물을 드림이 예의예요.",
+      "verdict": "unnatural",
+      "issue": "The -(으)ㅁ nominalization 드림 as a clausal subject is awkward and overly formal. Native phrasing uses -는 것: 드리는 것이 예의예요. As written, it reads as machine-translated.",
+      "suggestion": "선생님께 선물을 드리는 것이 예의예요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "rom-mine-v2:들치다",
+      "korean": "동생이 모자를 들치고 인사했어요.",
+      "verdict": "wrong_collocation",
+      "issue": "들치다 means to lift/raise the edge or corner of a covering (e.g., 천막을 들치다, 이불을 들치다). For tipping a hat as a greeting Koreans say 모자를 들어 인사하다 (raise the hat) or 모자를 벗어 인사하다 (take it off). 모자를 들치고 인사하다 is an unnatural collocation.",
+      "suggestion": "동생이 모자를 들어 인사했어요.",
+      "evidenceUrl": "https://www.ieka.net/Escribiendo_correctamente_Coreano/74216"
+    },
+    {
+      "vocabId": "rom-mine-v2:떨다",
+      "korean": "추워서 손을 떨고 있어요.",
+      "verdict": "wrong_collocation",
+      "issue": "Involuntary trembling from cold/fear takes the intransitive 떨리다 (손이 떨리다, 손이 떨려요). The transitive 손을 떨다 implies a deliberate, voluntary shaking — pairing it with 추워서 (because it's cold) is unnatural; cold doesn't cause one to shake one's hands on purpose.",
+      "suggestion": "추워서 손이 떨려요.",
+      "evidenceUrl": "https://hinative.com/questions/12080194"
+    },
+    {
+      "vocabId": "rom-mine-v2:짜다",
+      "korean": "할머니가 천을 짠다.",
+      "verdict": "uncertain",
+      "issue": "Honorific mismatch: 할머니 as subject normally takes the honorific verb (짜신다) and ideally honorific particle 께서. 할머니가 ... 짠다 reads as disrespectful in standard usage, though it could pass in detached literary narration.",
+      "suggestion": "할머니께서 천을 짜신다.",
+      "evidenceUrl": null
+    }
+  ]
+}

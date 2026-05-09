@@ -1,0 +1,817 @@
+{
+  "auditedAt": "2026-05-09",
+  "auditor": "claude-opus-4-7 (10 parallel general-purpose agents)",
+  "totalInspected": 1555,
+  "totalFlagged": 85,
+  "byVerdict": {
+    "unnatural": 27,
+    "uncertain": 17,
+    "wrong_collocation": 16,
+    "ungrammatical": 13,
+    "mistranslation": 8,
+    "wrong_inflection": 4
+  },
+  "byShard": {
+    "sentences-ko-themed-mined.json [0, 196]": {
+      "inspected": 196,
+      "flagged": 11
+    },
+    "sentences-ko-themed-mined.json [196, 391]": {
+      "inspected": 195,
+      "flagged": 14
+    },
+    "sentences-ko-themed-mined.json [391, 586]": {
+      "inspected": 195,
+      "flagged": 7
+    },
+    "sentences-ko-themed-species.json [0, 121]": {
+      "inspected": 121,
+      "flagged": 6
+    },
+    "sentences-ko-themed-species.json [121, 241]": {
+      "inspected": 120,
+      "flagged": 6
+    },
+    "sentences-ko-themed.json [0, 20]": {
+      "inspected": 20,
+      "flagged": 7
+    },
+    "sentences-ko-themed-topik.json [0, 177]": {
+      "inspected": 177,
+      "flagged": 7
+    },
+    "sentences-ko-themed-topik.json [177, 354]": {
+      "inspected": 177,
+      "flagged": 8
+    },
+    "sentences-ko-themed-topik.json [354, 531]": {
+      "inspected": 177,
+      "flagged": 10
+    },
+    "sentences-ko-themed-topik.json [531, 708]": {
+      "inspected": 177,
+      "flagged": 9
+    }
+  },
+  "missingSuggestion": 2,
+  "flagged": [
+    {
+      "vocabId": "rom-mine-v2:놓다",
+      "korean": "논 옆 길에서 친구를 만났어요.",
+      "verdict": "mistranslation",
+      "issue": "The vocab item is the verb 놓다 (to place/put), but the sentence uses the noun 논 (rice field) — the targetForm field is even '논'. The sentence is grammatically fine Korean but does not exemplify 놓다 in any form; 논 is an unrelated homograph of the bare stem.",
+      "suggestion": "가방을 책상 위에 놓았어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:굴다",
+      "korean": "동생이 너무 굴게 행동해요.",
+      "verdict": "ungrammatical",
+      "issue": "굴다 takes the [adverb]-게 굴다 pattern (e.g., 무례하게 굴다, 버릇없이 굴다); 굴게 inverts this since 굴다 is not used adverbially. Additionally, 굴다 and 행동하다 are near-synonyms ('to act/behave'), so stacking them is redundant.",
+      "suggestion": "동생이 너무 무례하게 굴어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:주다",
+      "korean": "할아버지가 손녀에게 책을 준다.",
+      "verdict": "uncertain",
+      "issue": "Honorific mismatch: with 할아버지 as subject, native speakers expect the honorific verb 주신다 (and ideally honorific particle 께서). 할아버지가 ... 준다 reads as disrespectful unless the narrator deliberately speaks of the grandfather without honoring.",
+      "suggestion": "할아버지께서 손녀에게 책을 주신다.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:푸다",
+      "korean": "할머니가 국을 그릇에 푸어요.",
+      "verdict": "wrong_inflection",
+      "issue": "푸다 is the only 우-irregular verb in Korean: the stem 푸 + 어 contracts to 퍼, never 푸어. Correct present polite form is 퍼요, not 푸어요.",
+      "suggestion": "할머니가 국을 그릇에 퍼요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%91%B8%EB%8B%A4",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:끄다",
+      "korean": "잠자기 전에 불을 끔이 좋아요.",
+      "verdict": "unnatural",
+      "issue": "The -(으)ㅁ nominalization 끔 is heavily formal/written and is rarely used as a clausal subject in conversational sentences. Standard natural Korean uses -는 것 here: 끄는 것이 좋아요 / 끄는 게 좋아요. 끔이 좋아요 sounds stilted and machine-translated.",
+      "suggestion": "잠자기 전에 불을 끄는 것이 좋아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:나다",
+      "korean": "동생이 곧 떠난다고 해요.",
+      "verdict": "mistranslation",
+      "issue": "The vocab item is 나다 (to occur/come out), but the sentence uses 떠나다 (to leave). The targetForm '난다고' is just a substring of 떠난다고. The Korean is fine, but it does not exemplify the lemma 나다.",
+      "suggestion": "동생이 갑자기 열이 났어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:넣다",
+      "korean": "가방에 도시락을 너 두었어요.",
+      "verdict": "wrong_inflection",
+      "issue": "넣다 + -어 두다 should give 넣어 두었어요. The form 너 is wrong — it looks like a truncation/typo of 넣어. The sentence is currently ungrammatical.",
+      "suggestion": "가방에 도시락을 넣어 두었어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:드리다",
+      "korean": "선생님께 선물을 드림이 예의예요.",
+      "verdict": "unnatural",
+      "issue": "The -(으)ㅁ nominalization 드림 as a clausal subject is awkward and overly formal. Native phrasing uses -는 것: 드리는 것이 예의예요. As written, it reads as machine-translated.",
+      "suggestion": "선생님께 선물을 드리는 것이 예의예요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:들치다",
+      "korean": "동생이 모자를 들치고 인사했어요.",
+      "verdict": "wrong_collocation",
+      "issue": "들치다 means to lift/raise the edge or corner of a covering (e.g., 천막을 들치다, 이불을 들치다). For tipping a hat as a greeting Koreans say 모자를 들어 인사하다 (raise the hat) or 모자를 벗어 인사하다 (take it off). 모자를 들치고 인사하다 is an unnatural collocation.",
+      "suggestion": "동생이 모자를 들어 인사했어요.",
+      "evidenceUrl": "https://www.ieka.net/Escribiendo_correctamente_Coreano/74216",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:떨다",
+      "korean": "추워서 손을 떨고 있어요.",
+      "verdict": "wrong_collocation",
+      "issue": "Involuntary trembling from cold/fear takes the intransitive 떨리다 (손이 떨리다, 손이 떨려요). The transitive 손을 떨다 implies a deliberate, voluntary shaking — pairing it with 추워서 (because it's cold) is unnatural; cold doesn't cause one to shake one's hands on purpose.",
+      "suggestion": "추워서 손이 떨려요.",
+      "evidenceUrl": "https://hinative.com/questions/12080194",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:짜다",
+      "korean": "할머니가 천을 짠다.",
+      "verdict": "uncertain",
+      "issue": "Honorific mismatch: 할머니 as subject normally takes the honorific verb (짜신다) and ideally honorific particle 께서. 할머니가 ... 짠다 reads as disrespectful in standard usage, though it could pass in detached literary narration.",
+      "suggestion": "할머니께서 천을 짜신다.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:껍질에숨기",
+      "korean": "이 포켓몬은 껍질에숨기를 익히는 중이에요.",
+      "verdict": "uncertain",
+      "issue": "The move name 껍질에숨기 contains an internal particle 에 ('hide IN shell'). When the whole noun phrase then takes the object particle 를, the sentence reads as a slightly awkward run-on (껍질에숨기를). The mined ROM token may be intended; flag for human review of the ROM string itself.",
+      "suggestion": null,
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:웅크리기",
+      "korean": "웅크리기가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 means 'to resonate/echo and spread,' used exclusively for sounds. 웅크리기 (Defense Curl) is a silent self-targeting pose, so it cannot 울려 퍼지다. The collocation is unnatural in Korean.",
+      "suggestion": "이 포켓몬은 웅크리기를 잘 써요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:알낳기",
+      "korean": "알낳기가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 is a sound-only verb. 알낳기 (Soft-Boiled) is a silent healing move. Saying it 'echoed across the field' is not idiomatic Korean.",
+      "suggestion": "포켓몬이 알낳기로 체력을 회복했어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:각지기",
+      "korean": "각지기가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 requires a sound subject. 각지기 (Sharpen) is a non-acoustic stat-up move; it cannot resonate or echo across a field.",
+      "suggestion": "포켓몬이 각지기로 공격력을 올렸어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:아침햇살",
+      "korean": "아침햇살이 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "울려 퍼지다 is for sounds. 아침햇살 (Morning Sun) is light/healing — sunlight 비치다/내리쬐다, not 울려 퍼지다. The collocation is wrong.",
+      "suggestion": "아침햇살이 들판에 비쳤어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:본러쉬",
+      "korean": "본러쉬가 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "본러쉬 (Bone Rush) is a physical bone-throwing combo, not a sound. Pairing it with 울려 퍼지다 ('to resonate and spread') is awkward; a physical attack does not echo across a field in Korean.",
+      "suggestion": "친구가 본러쉬를 처음 봤어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:스모그",
+      "korean": "스모그가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "Smog/gas spreads or drifts (퍼지다 is fine alone, but 울려 퍼지다 specifically means sound resonating). Gas does not 울리다, so this is the wrong verb pairing.",
+      "suggestion": "스모그가 들판에 퍼졌어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:천사의키스",
+      "korean": "천사의키스가 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "천사의키스 (Sweet Kiss) is a status move, not a sound. The 울려 퍼지다 collocation requires an audible subject; this pairing is unidiomatic.",
+      "suggestion": "친구가 천사의키스를 처음 봤어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:연속자르기",
+      "korean": "연속자르기가 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "연속자르기 (Fury Cutter) is a series of physical slashes, not a sound. 울려 퍼지다 is reserved for sound; the collocation is off.",
+      "suggestion": "포켓몬이 연속자르기를 보여 줬어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:환상빔",
+      "korean": "환상빔이 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "환상빔 (Psybeam) is a beam of energy, not a sound. 울려 퍼지다 needs an audible subject. A 빔 normally 발사되다 / 뻗어 나가다, not 울려 퍼지다.",
+      "suggestion": "환상빔이 들판에 뻗어 나갔어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:메가드레인",
+      "korean": "메가드레인이 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "메가드레인 (Mega Drain) is an HP-absorbing move, silent and non-acoustic. The 울려 퍼지다 collocation is incorrect; nothing audible is being produced.",
+      "suggestion": "친구의 포켓몬이 메가드레인을 잘 써요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:매그니튜드",
+      "korean": "매그니튜드가 들판에 울려 퍼졌어요.",
+      "verdict": "uncertain",
+      "issue": "매그니튜드 (Magnitude) is a ground-shaking move, so a low rumble 'echoing' across the field is more defensible than for purely silent moves — but 울려 퍼지다 still primarily collocates with discrete sounds (cries, songs, voices) rather than tremors. Borderline.",
+      "suggestion": null,
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:악몽",
+      "korean": "악몽이 들판에 울려 퍼졌어요.",
+      "verdict": "unnatural",
+      "issue": "악몽 (Nightmare) is a mental status condition, not a sound. 울려 퍼지다 requires an audible subject. Even metaphorically, nightmares 'spread' (퍼지다) but do not 울리다.",
+      "suggestion": "악몽이 들판에 퍼졌어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:버섯포자",
+      "korean": "버섯포자가 들판에 울려 퍼졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "버섯포자 (Spore) is airborne particles. Spores 날리다/퍼지다 but never 울리다. 울려 퍼지다 is the wrong verb for a non-sound subject.",
+      "suggestion": "버섯포자가 들판에 퍼졌어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:깨트리다",
+      "korean": "깨트리다는 트레이너의 자랑이에요.",
+      "verdict": "uncertain",
+      "issue": "Attaches the topic particle 는 directly to the dictionary form of the verb 깨트리다. Although 깨트리다 is the official Korean Pokémon name for Brick Break (a proper noun), '깨트리다는' parses ungrammatically in regular Korean — readers will hear it as a malformed quotative '-ㄴ다는'. Using the move name in quotes (e.g. '깨트리다는 기술은…') would be safer.",
+      "suggestion": "'깨트리다'라는 기술은 트레이너의 자랑이에요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:뛰어오르다",
+      "korean": "뛰어오르다는 트레이너의 자랑이에요.",
+      "verdict": "uncertain",
+      "issue": "Same issue as 깨트리다. 뛰어오르다 is the Korean move name for Bounce, but attaching 는 directly to a dictionary-form verb produces awkward / quasi-quotative grammar. Native readers will likely mishear it as a botched '-ㄴ다는' construction.",
+      "suggestion": "'뛰어오르다'라는 기술은 트레이너의 자랑이에요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:탐내다",
+      "korean": "탐내다가 들판에 울려 퍼졌어요.",
+      "verdict": "uncertain",
+      "issue": "탐내다 is the Korean move name for Covet, but '탐내다가' reads as the connective '-다가' (while doing X), not as a noun + subject particle. The sentence is therefore parsed as 'while coveting, it echoed across the field', which is nonsense.",
+      "suggestion": "'탐내다'라는 기술이 들판에 울려 퍼졌어요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:클리어바디",
+      "korean": "클리어바디 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in the consonant ㅇ (받침), so it must take 이, not 가. '특성가' is ungrammatical.",
+      "suggestion": "클리어바디 특성이 시합에서 큰 도움이 됐어요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:천하장사",
+      "korean": "천하장사 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in a consonant (받침 ㅇ) and must take 이. '특성가' is ungrammatical.",
+      "suggestion": "천하장사 특성이 시합에서 큰 도움이 됐어요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:탈피",
+      "korean": "탈피 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in a consonant (받침 ㅇ) and must take 이. '특성가' is ungrammatical.",
+      "suggestion": "탈피 특성이 시합에서 큰 도움이 됐어요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:돌머리",
+      "korean": "돌머리 특성가 시합에서 큰 도움이 됐어요.",
+      "verdict": "ungrammatical",
+      "issue": "Wrong subject particle. 특성 ends in a consonant (받침 ㅇ) and must take 이. '특성가' is ungrammatical.",
+      "suggestion": "돌머리 특성이 시합에서 큰 도움이 됐어요.",
+      "sourceShard": "sentences-ko-themed-mined.json"
+    },
+    {
+      "vocabId": "rom-species:피카츄",
+      "korean": "피카츄는 볼에서 전기를 모아요.",
+      "verdict": "uncertain",
+      "issue": "The gloss says 'stores electricity in its cheeks', but 볼에서 reads as 'from the cheeks' (source) rather than 'in the cheeks' (storage location). For storage/accumulation in a place, the locative particle 에 is more accurate (볼에 전기를 모아요/저장해요). 에서 with 모으다 implies the arms/cheeks are the source from which electricity is gathered, not the destination where it is stored.",
+      "suggestion": "피카츄는 볼에 전기를 모아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:라이츄",
+      "korean": "라이츄는 매우 강한 전기를 흘려요.",
+      "verdict": "wrong_collocation",
+      "issue": "전기를 흘리다 is not a natural Korean collocation. 흘리다 is normally used with liquids/tears/blood, with 'information' (정보를 흘리다 = to leak), or with sweat. For releasing/discharging electricity, native usage employs 방출하다, 발산하다, or 흘려보내다. As-is the sentence reads roughly like 'Raichu drips/leaks very strong electricity', which is unidiomatic.",
+      "suggestion": "라이츄는 매우 강한 전기를 방출해요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:콘팡",
+      "korean": "콘팡은 큰 눈으로 어둠을 봐요.",
+      "verdict": "mistranslation",
+      "issue": "어둠을 보다 literally means 'to see darkness' and is only used in metaphorical/literary senses (e.g. seeing the darkness within oneself). The intended meaning per the gloss is 'sees in the dark' / 'sees through the darkness', which in natural Korean is 어둠 속에서도 잘 봐요 or 어두운 곳에서도 잘 봐요. As written, the sentence does not convey night vision and sounds odd.",
+      "suggestion": "콘팡은 큰 눈으로 어둠 속에서도 잘 봐요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:골덕",
+      "korean": "골덕은 강력한 정신력을 사용해요.",
+      "verdict": "mistranslation",
+      "issue": "The gloss says 'uses powerful psychic abilities', but 정신력 means 'willpower / mental fortitude', not psychic ability. Golduck's psychic powers in Korean Pokédex/wiki are described with 초능력 or 염력 (telekinesis). As written, the sentence says Golduck uses strong willpower, mismatching the gloss. (Same kind of mistranslation appears for 뮤츠 in the rest of the file.)",
+      "suggestion": "골덕은 강력한 초능력을 사용해요.",
+      "evidenceUrl": "https://namu.wiki/w/%EA%B3%A8%EB%8D%95",
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:포니타",
+      "korean": "포니타는 갈기에서 불꽃이 타요.",
+      "verdict": "unnatural",
+      "issue": "불꽃이 타다 ('flames burn') is semantically redundant — 불꽃 already implies burning. Natural Korean uses 불꽃이 일다, 불꽃이 타오르다, or 불꽃이 피어오르다 for flames rising/blazing from a place. As is, the sentence sounds tautological and slightly off.",
+      "suggestion": "포니타는 갈기에서 불꽃이 타올라요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:또도가스",
+      "korean": "또도가스는 머리가 두 개로 진화했어요.",
+      "verdict": "unnatural",
+      "issue": "머리가 두 개로 진화했어요 literally says 'evolved AS [its] heads becoming two', which is structurally awkward — the subject of 진화하다 is the Pokémon, not the heads. Native phrasing would express the result either as '머리가 두 개로 늘었어요' (heads increased to two) or '머리가 두 개인 모습으로 진화했어요' (evolved into a form with two heads).",
+      "suggestion": "또도가스는 머리가 두 개인 모습으로 진화했어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:갸라도스",
+      "korean": "갸라도스는 무서운 분노를 가졌어요.",
+      "verdict": "wrong_collocation",
+      "issue": "'분노를 가지다' (to have/possess anger) is grammatically possible but not a natural Korean collocation. Native speakers would normally say '분노에 차 있다', '몹시 분노한다', or use an adjective like '사납다'. The verb 가지다 is typically used with possessable nouns or stable traits, not transient strong emotions like 분노.",
+      "suggestion": "갸라도스는 무서운 분노에 차 있어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:샤미드",
+      "korean": "샤미드는 물 타입으로 진화한 이브이예요.",
+      "verdict": "unnatural",
+      "issue": "'물 타입으로 진화한 이브이예요' literally says 'It is an Eevee that has evolved into Water type', which is awkward because once Eevee evolves it is no longer an Eevee. More natural Korean phrasing would treat Vaporeon as the result/form of Eevee's evolution rather than describing it as an Eevee.",
+      "suggestion": "샤미드는 이브이가 물 타입으로 진화한 모습이에요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:뮤츠",
+      "korean": "뮤츠는 강한 정신력을 가지고 있어요.",
+      "verdict": "mistranslation",
+      "issue": "The gloss says 'powerful psychic abilities', but 정신력 means 'willpower / mental fortitude / resolve', not psychic powers. The correct Korean for 'psychic abilities' is 초능력 (or 사이코파워 in some Pokémon contexts). As written, the Korean describes Mewtwo as having strong willpower, which mistranslates the original.",
+      "suggestion": "뮤츠는 강한 초능력을 가지고 있어요.",
+      "evidenceUrl": "https://hinative.com/questions/23343780",
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:에브이",
+      "korean": "에브이는 마음의 힘으로 진화한 이브이예요.",
+      "verdict": "unnatural",
+      "issue": "Same structural issue as the 샤미드 entry: '진화한 이브이예요' is awkward because Espeon, having evolved, is no longer an Eevee. Korean speakers typically describe an Eeveelution as the evolved 모습/포켓몬 of Eevee, not as an Eevee itself.",
+      "suggestion": "에브이는 이브이가 마음의 힘으로 진화한 모습이에요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:에레키드",
+      "korean": "에레키드는 두 팔에서 전기를 모아요.",
+      "verdict": "uncertain",
+      "issue": "The gloss is 'gathers electricity in both arms' (location of accumulation), but 두 팔에서 reads as 'from both arms' (source). For 'gather IN both arms', 두 팔에 (locative) is more accurate; 에서 here makes it sound like the arms are the source from which electricity is being collected rather than the place it accumulates.",
+      "suggestion": "에레키드는 두 팔에 전기를 모아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-species:칠색조",
+      "korean": "칠색조는 일곱 가지 빛을 가졌어요.",
+      "verdict": "mistranslation",
+      "issue": "The gloss says 'Ho-Oh has feathers of seven colors', but the Korean translates literally to 'Ho-Oh has seven kinds of light/color' with no mention of 깃털 (feathers). 빛 can poetically mean color, but the gloss's specific reference to feathers is dropped, producing a notable mismatch between the Korean and the English gloss.",
+      "suggestion": "칠색조는 일곱 가지 색의 깃털을 가졌어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-species.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:회복",
+      "korean": "포켓몬 센터에서 회복을 받았어요.",
+      "verdict": "wrong_collocation",
+      "issue": "'회복을 받다' (literally 'to receive recovery') is not a natural Korean collocation. 회복 is something one does or undergoes, not receives. For Pokemon Center healing, native usage would be '치료를 받았어요' (received treatment) or '포켓몬을 회복시켰어요' (had my Pokemon recovered). The targetForm vocab '회복' could still be exercised via 회복하다/회복시키다.",
+      "suggestion": "포켓몬 센터에서 치료를 받았어요. (or: 포켓몬 센터에서 포켓몬을 회복시켰어요.)",
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%ED%9A%8C%EB%B3%B5%ED%95%98%EB%8B%A4",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "rom-mine-v2:있다",
+      "korean": "가방 안에 회복약이 다섯 개 있어요.",
+      "verdict": "uncertain",
+      "issue": "'회복약' is a real Korean word for 'recovery medicine', but the canonical Pokemon-game term for Potion in Korean releases is '상처약' (and Super Potion = 좋은상처약, etc.). The sentence is grammatical and understandable, but for a Pokemon-themed deck the in-game term would be more authentic. Flagging as uncertain since 회복약 is not actually wrong Korean.",
+      "suggestion": "가방 안에 상처약이 다섯 개 있어요.",
+      "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "rom-species:이상해풀",
+      "korean": "이상해풀의 등에는 새싹이 자라요.",
+      "verdict": "uncertain",
+      "issue": "Ivysaur's back features a flower bud (꽃봉오리), not a 새싹 ('sprout/seedling'). 새싹 is more apt for the Bulbasaur stage's small bulb sprouts. Semantically off but the sentence is grammatical and the gloss does say 'a sprout', so it is internally consistent. Flagging because the Pokemon-lore content is mismatched with Ivysaur specifically.",
+      "suggestion": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "rom-species:이상해꽃",
+      "korean": "이상해꽃은 큰 꽃을 등에 가지고 있어요.",
+      "verdict": "unnatural",
+      "issue": "'꽃을 등에 가지고 있다' (literally 'has a flower on its back') is grammatically valid but unidiomatic in Korean for describing a body feature. Native phrasings would be '등에 큰 꽃이 피어 있어요' (a flower is blooming on its back) or '등에 큰 꽃을 달고 있어요' (carries a flower on its back). The current phrasing reads like a literal English-to-Korean translation.",
+      "suggestion": "이상해꽃은 등에 큰 꽃이 피어 있어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "rom-species:파이리",
+      "korean": "파이리의 꼬리에는 작은 불꽃이 타요.",
+      "verdict": "unnatural",
+      "issue": "'불꽃이 타다' is grammatically valid (타다 covers 'for fire/flame to burn') but is awkward as a stand-alone description; Korean more typically uses 불꽃이 타오르다 (flame blazes), 불꽃이 일다 (flame arises), or 불이 타다. For Charmander's tail flame the canonical Korean phrasing is '꼬리에 불이 타고 있다' or '꼬리 끝에서 불꽃이 타올라요'.",
+      "suggestion": "파이리의 꼬리에서는 작은 불꽃이 타올라요.",
+      "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=91122",
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "etymology-roots:갑",
+      "korean": "갑은 거북 등껍질을 뜻하는 옛 글자예요.",
+      "verdict": "uncertain",
+      "issue": "Two minor concerns: (1) 갑(甲) is technically a Sino-Korean morpheme/Chinese character (한자) rather than an 'old letter (옛 글자)'; '옛 한자' or '한자어' would be more accurate. (2) '거북 등껍질' lacks the genitive 의 ('거북의 등껍질') though noun-noun compounds are common in Korean. The romanization 'tteushaneun' is also wrong (should be 'tteuthaneun'), but the Korean itself is OK on that point.",
+      "suggestion": "갑(甲)은 거북의 등껍질을 뜻하는 한자예요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "etymology-roots:강철",
+      "korean": "강철은 단단한 금속이에요.",
+      "verdict": "mistranslation",
+      "issue": "Gloss says '강철 means hardened steel' (a metalinguistic etymology gloss), but the Korean literally says '강철 is a hard metal'. The Korean omits the etymology framing entirely and just states a fact. For an etymology-roots entry the Korean should reflect the meaning of 강철 as a root ('강' = strong/hard + '철' = iron → steel) rather than a definition of 'steel'. Also 강철 specifically means 'steel', not 'hard metal' generically.",
+      "suggestion": "강철은 '강한 쇠'라는 뜻으로, 단단하게 만든 철을 가리켜요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed.json"
+    },
+    {
+      "vocabId": "topik-v2:몰다",
+      "korean": "트레이너가 자전거를 몰고 도시로 가요.",
+      "verdict": "wrong_collocation",
+      "issue": "몰다 means to drive (a car, a herd of animals), not to ride a bicycle. The standard Korean collocation for bicycles is 자전거를 타다. 자전거를 몰다 is unnatural and would strike native speakers as wrong; 몰다 only fits motorized vehicles like 차/오토바이 or animals being driven (소떼를 몰다).",
+      "suggestion": "트레이너가 자전거를 타고 도시로 가요.",
+      "evidenceUrl": "https://x.com/ttmik/status/956406817545842693",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:호",
+      "korean": "이 책은 제 5 호예요.",
+      "verdict": "wrong_collocation",
+      "issue": "호 is the counter for issues of periodicals (magazines, journals, newsletters), not for 책 in the general 'book' sense. Calling a 책 'the 5호' implies it is issue #5 of a serial — odd for a generic book. Standard counter for books is 권. Also 제5호 is conventionally written without an internal space.",
+      "suggestion": "이 잡지는 제5호예요. (or, for a book: 이 책은 제5권이에요.)",
+      "evidenceUrl": "https://www.90daykorean.com/korean-counters/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:가루",
+      "korean": "케이크에 설탕 가루를 뿌려요.",
+      "verdict": "unnatural",
+      "issue": "Word order is reversed. The natural Korean for 'powdered/icing sugar' is 가루 설탕 (modifier-head: powder-form sugar) or 슈가 파우더. 설탕 가루 (sugar's powder) reads as a redundant tautology since 설탕 itself already denotes a granular substance. Native bakers say 가루 설탕을 뿌려요.",
+      "suggestion": "케이크에 가루 설탕을 뿌려요.",
+      "evidenceUrl": "https://eng.ichacha.net/korean/powdered%20sugar.html",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:부",
+      "korean": "두 부의 책을 빌렸어요.",
+      "verdict": "unnatural",
+      "issue": "Two issues. (1) 부 is the counter for printed copies of newspapers/documents/the same-edition reprint of a book; the unmarked counter for books is 권 (책 두 권). (2) The numeral-counter-의-noun structure (두 부의 책) is stilted; native pattern places the counter phrase post-nominally: 책 두 부를 빌렸어요. Combined, the sentence sounds translation-flavored.",
+      "suggestion": "책을 두 권 빌렸어요. (or, if the same-copy sense is intended: 그 책을 두 부 빌렸어요.)",
+      "evidenceUrl": "https://lingomae.com/what-is-the-counter-for-books-in-korean/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:멋",
+      "korean": "그의 옷에는 멋이 있어요.",
+      "verdict": "unnatural",
+      "issue": "While 멋이 있다 is grammatically possible, native speakers overwhelmingly use the contracted adjective 멋있다 to mean 'is stylish/cool'. The decomposed form 멋이 있다 with a topic-marked location (옷에는) reads as a stilted calque ('there is style in his clothes'). Standard: 그의 옷이 멋있어요.",
+      "suggestion": "그의 옷이 멋있어요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A9%8B%EC%9E%88%EB%8B%A4",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:법",
+      "korean": "교통 법을 잘 지켜요.",
+      "verdict": "unnatural",
+      "issue": "The standard term for the body of traffic rules drivers/pedestrians follow is 교통 법규 or 교통 규칙 (or the formal statute name 도로교통법, no internal space). 교통 법 (with a space, just '법') is unidiomatic — 법 alone is the abstract noun 'law' and pairs with major bodies of law (헌법, 형법) rather than with everyday compliance. Native speakers say 교통 법규를 지키다 / 교통 규칙을 지키다.",
+      "suggestion": "교통 법규를 잘 지켜요.",
+      "evidenceUrl": "https://elaw.klri.re.kr/eng_service/lawView.do?hseq=906&lang=ENG",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:묻다",
+      "korean": "선생님께 길을 묻었어요.",
+      "verdict": "wrong_inflection",
+      "issue": "묻다 'to ask' is a ㄷ-irregular verb: ㄷ → ㄹ before a vowel, so the past tense is 물었어요, not 묻었어요. The form 묻었어요 is the regular conjugation of the homonym 묻다 'to bury' — semantically wrong here. Standard form: 선생님께 길을 물었어요.",
+      "suggestion": "선생님께 길을 물었어요.",
+      "evidenceUrl": "https://hinative.com/questions/18683131",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:육",
+      "korean": "사과 육 개를 샀어요.",
+      "verdict": "ungrammatical",
+      "issue": "Sino-Korean numeral 육 should not be used with the native counter 개. Counting discrete physical objects (apples) requires native numerals: 사과 여섯 개. Mixing 육 + 개 sounds wrong to native speakers.",
+      "suggestion": "사과 여섯 개를 샀어요.",
+      "evidenceUrl": "https://hinative.com/questions/25248476",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:구",
+      "korean": "여기는 강남 구예요.",
+      "verdict": "ungrammatical",
+      "issue": "Korean orthography rule (한글 맞춤법): administrative-unit suffixes such as 구/시/도/군/동 attach to the place name with no space. Should be 강남구, written as one word.",
+      "suggestion": "여기는 강남구예요.",
+      "evidenceUrl": "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%82%A8%EA%B5%AC",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:분",
+      "korean": "다섯 분만 기다려 주세요.",
+      "verdict": "wrong_collocation",
+      "issue": "When 분 means 'minutes', it requires Sino-Korean numerals (오 분), not native (다섯). 다섯 분 reads as 'five people (honorific)' — exactly the wrong sense for the gloss 'five minutes'.",
+      "suggestion": "오 분만 기다려 주세요.",
+      "evidenceUrl": "https://en.wikipedia.org/wiki/Korean_numerals",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:오르다",
+      "korean": "산 위에 천천히 올라요.",
+      "verdict": "unnatural",
+      "issue": "오르다 collocates with 산에/산을, not 산 위에. 산 위에 올라가다/오르다 is a known learner-style overspecification — 위에 redundantly stacks the upward sense already inherent in 오르다, and 위에 normally pairs with stative 있다, not motion 오르다.",
+      "suggestion": "산에 천천히 올라요.",
+      "evidenceUrl": "https://hinative.com/questions/876679",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:선택",
+      "korean": "이 길과 저 길 중 선택을 해요.",
+      "verdict": "mistranslation",
+      "issue": "The Korean is plain declarative (-아요/-어요), meaning 'I/we choose...', but the English gloss is the imperative 'Choose between this road and that road.' For an imperative the Korean should be 선택하세요 / 선택해요(명령) with appropriate intonation, or be reglossed as a statement.",
+      "suggestion": "이 길과 저 길 중에서 선택하세요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:모습",
+      "korean": "오랜만에 친구의 모습을 봤어요.",
+      "verdict": "uncertain",
+      "issue": "모습 means 'appearance/figure/look', not specifically 'face' (얼굴). The gloss 'I saw my friend's face after a long time' is closer to 친구 얼굴을 봤어요 (used verbatim in entry 229). The Korean is grammatical but mismatched with the English gloss; native speakers would read 모습 as a more general 'sight of my friend'.",
+      "suggestion": "Either reword Korean to 친구 얼굴을 봤어요 or change gloss to 'I saw my friend (their figure) after a long time.'",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:소주",
+      "korean": "어른들이 소주를 한 잔 했어요.",
+      "verdict": "unnatural",
+      "issue": "The fixed expression is 한잔하다 / 소주(를) 한잔하다 — typically written without 를 between 소주 and 한잔, or as 소주 한 잔 했어요 with no object marker. Adding 를 to 소주 here makes 한 잔 하다 read as a literal 'did one glass', breaking the idiom. The natural form is 어른들이 소주를 한잔했어요 or 어른들이 소주 한 잔 하셨어요.",
+      "suggestion": "어른들이 소주 한잔하셨어요.",
+      "evidenceUrl": "https://tomikorean.com/wp-content/uploads/2024/10/TomiKorean-Newsletter-040-Drinking-Expression.pdf",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:짓다",
+      "korean": "농부가 밥을 짓고 있어요.",
+      "verdict": "uncertain",
+      "issue": "Grammatically and lexically correct (밥을 짓다 = to cook rice). But the subject choice is odd: a 농부 (farmer) prototypically 농사를 짓다 (does farming) or 벼를 재배하다, not 밥을 짓다 in their professional capacity. The sentence reads as if it were trying to evoke the farming sense of 짓다 but accidentally landed on the cooking sense. Native speakers would likely choose 어머니/할머니 as the subject for 밥을 짓다.",
+      "suggestion": "어머니가 밥을 짓고 있어요. (or, if farming is intended: 농부가 농사를 짓고 있어요.)",
+      "evidenceUrl": "https://hinative.com/questions/23996317",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:식",
+      "korean": "이 음식은 한국 식이에요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. The suffix 식 (style) attaches directly to the preceding noun, so it should be written 한국식 as one word (or use 한식). 한국 식 with a space is non-standard.",
+      "suggestion": "이 음식은 한국식이에요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:가로",
+      "korean": "이 책의 가로가 짧아요.",
+      "verdict": "unnatural",
+      "issue": "Awkward collocation. 가로 means horizontal width, and width is normally described with 좁다 (narrow) rather than 짧다 (short). 가로가 짧다 sounds odd to native ears; 가로 길이가 짧다 or 가로가 좁다 would be more natural.",
+      "suggestion": "이 책은 가로가 좁아요.",
+      "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/62253_%EA%B0%80%EB%A1%9C/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:거",
+      "korean": "그 거 한번 보여 주세요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. The bound noun 거 attaches to the demonstrative without a space: standard form is 그거 (or 그것). 그 거 with a space is non-standard orthography.",
+      "suggestion": "그거 한번 보여 주세요.",
+      "evidenceUrl": "https://joy-do.com/2025/11/14/korean-this-that-%EC%9D%B4-%EA%B7%B8-%EC%A0%80/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:버리다",
+      "korean": "쓰레기를 통에 버리세요.",
+      "verdict": "unnatural",
+      "issue": "쓰레기통 (trash bin) is a single dictionary word; the sentence splits it as 쓰레기를 ... 통에, where 통에 alone could mean any container. Natural Korean would be 쓰레기통에 버리세요.",
+      "suggestion": "쓰레기를 쓰레기통에 버리세요.",
+      "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%93%B0%EB%A0%88%EA%B8%B0%ED%86%B5",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:북",
+      "korean": "북 쪽 길은 더 멀어요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 북쪽 is one word in the standard Korean dictionary and must not be split with a space.",
+      "suggestion": "북쪽 길은 더 멀어요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:여",
+      "korean": "여 학생이 더 많아요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 여 is a bound prefix; 여학생 (female student) is a single dictionary word. 여 학생 with a space is incorrect — 여 cannot stand alone.",
+      "suggestion": "여학생이 더 많아요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:이렇다",
+      "korean": "오늘 날씨가 이렇네요.",
+      "verdict": "uncertain",
+      "issue": "이렇네요 (declarative -네요 on 이렇다) is unusual standalone — it abruptly ends without a complement. Native usage typically pairs 이렇다 with a content word (e.g. 이런 날씨), or uses 이래요. As a flashcard it sounds incomplete.",
+      "suggestion": "오늘 날씨가 이래요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:피시",
+      "korean": "삼촌은 피시를 잘 잡아요.",
+      "verdict": "wrong_collocation",
+      "issue": "피시 in Korean is overwhelmingly read as PC (personal computer) and is not the standard word for fish. Catching fish uses 물고기 or 생선. 피시를 잡다 is unnatural and confusing — it reads as 'catches PCs well'.",
+      "suggestion": "삼촌은 물고기를 잘 잡아요.",
+      "evidenceUrl": "https://www.koreanstudyjunkie.com/post/%EB%AC%BC%EA%B3%A0%EA%B8%B0-vs-%EC%83%9D%EC%84%A0-how-to-say-fish-in-korean",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:고속",
+      "korean": "고속 도로가 막혀요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 고속도로 (highway) is a single dictionary entry and should be written as one word. 고속 도로 with a space is non-standard.",
+      "suggestion": "고속도로가 막혀요.",
+      "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:꽃잎",
+      "korean": "벚 꽃잎이 바람에 날려요.",
+      "verdict": "ungrammatical",
+      "issue": "Spacing error. 벚 is a bound morpheme that cannot stand alone; 벚꽃 is the established word for cherry blossom. The sentence should be either 벚꽃잎이... or 벚꽃 잎이... — 벚 꽃잎 splits the wrong morpheme boundary.",
+      "suggestion": "벚꽃잎이 바람에 날려요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:동물",
+      "korean": "이 동물원에는 호랑이가 있어요.",
+      "verdict": "uncertain",
+      "issue": "The headword is 동물 (animal) but the sentence only contains it as a substring of 동물원 (zoo). The actual word 동물 is never used independently, which weakens it as an example sentence for the headword.",
+      "suggestion": "이 동물원에는 여러 동물이 있어요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:맥주",
+      "korean": "퇴근 후에 맥주를 한 잔 해요.",
+      "verdict": "unnatural",
+      "issue": "The collocation '맥주를 한 잔 하다' with the object particle 를 sounds awkward. Native speakers either drop the particle ('맥주 한 잔 해요') or use the verb 마시다 ('맥주를 한 잔 마셔요'). The pattern 'X 한 잔 하다' typically appears without 를.",
+      "suggestion": "퇴근 후에 맥주 한 잔 해요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:불꽃",
+      "korean": "초의 불꽃이 흔들려요.",
+      "verdict": "unnatural",
+      "issue": "'초의 불꽃' is overly literal/stilted. Natives use the compound 촛불 ('candle flame/light'). '초의 불꽃' reads as a translation from English 'the candle's flame'.",
+      "suggestion": "촛불의 불꽃이 흔들려요. (or: 촛불이 흔들려요.)",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:불리다",
+      "korean": "그 사람은 친절하다고 불려요.",
+      "verdict": "wrong_collocation",
+      "issue": "불리다 ('to be called/named') normally takes a noun complement via -(이)라고 불리다 ('is called X-name'), e.g. '천재라고 불려요'. Pairing it with the descriptive clause 친절하다고 ('that he is kind') is unnatural; for being known/described as having a quality, 알려져 있다 or 평가받다 is the right verb.",
+      "suggestion": "그 사람은 친절하다고 알려져 있어요. (or: 그 사람은 친절한 사람으로 불려요.)",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:사용",
+      "korean": "이 기계의 사용이 어렵네요.",
+      "verdict": "unnatural",
+      "issue": "'사용이 어렵다' as a predicate sounds like translationese. Natural Korean prefers a verbal nominalization: '사용하기 어렵다' or the compound '사용법이 어렵다'.",
+      "suggestion": "이 기계는 사용하기 어렵네요. (or: 이 기계의 사용법이 어렵네요.)",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:수",
+      "korean": "이 수가 정확해요.",
+      "verdict": "unnatural",
+      "issue": "수 in the sense of 'a number' is rarely used as a stand-alone count noun in colloquial Korean; native speakers say 숫자 ('이 숫자가 정확해요'). 수 alone reads as bookish/abstract and is hard to parse without context.",
+      "suggestion": "이 숫자가 정확해요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:양쪽",
+      "korean": "양쪽 길이 모두 좋아요.",
+      "verdict": "uncertain",
+      "issue": "Genuinely ambiguous: 길이 can be parsed as 길+이 (subject-marked 'road') or as 길이 ('length'). 양쪽 길 is also slightly redundant for 'both roads'. Native speakers would say '양쪽 길 모두 좋아요' or '양쪽 다 좋아요'.",
+      "suggestion": "양쪽 길 모두 좋아요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:자세히",
+      "korean": "이 그림을 자세히 봐 보세요.",
+      "verdict": "unnatural",
+      "issue": "봐 보세요 stacks 보다 + -아 보다 ('try seeing') with itself, producing an awkward double imperative. The standard form is simply 자세히 보세요 or 자세히 살펴보세요.",
+      "suggestion": "이 그림을 자세히 보세요.",
+      "evidenceUrl": null,
+      "sourceShard": "sentences-ko-themed-topik.json"
+    },
+    {
+      "vocabId": "topik-v2:철",
+      "korean": "이 의자는 철로 만들었어요.",
+      "verdict": "wrong_inflection",
+      "issue": "With the topic-marked subject 이 의자는 and no agent, the active 만들었어요 reads as 'this chair made [something] out of iron'. To say 'this chair is made of iron' Korean requires the passive 만들어졌어요 (or the relative clause 만든).",
+      "suggestion": "이 의자는 철로 만들어졌어요.",
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-14-korean-passive-verbs/",
+      "sourceShard": "sentences-ko-themed-topik.json"
+    }
+  ]
+}

@@ -5,19 +5,13 @@
   "entries": [
     {
       "vocabId": "topik-v2:몰다",
-      "korean": "트레이너가 자전거를 타고 도시로 가요.",
-      "romanization": "teureineo-ga jajeongeo-reul tago dosi-ro gayo.",
+      "korean": "트레이너가 자전거를 몰고 도시로 가요.",
+      "romanization": "teureineo-ga jajeongeo-reul molgo dosi-ro gayo.",
       "gloss": "The trainer rides a bicycle to the city.",
       "targetForm": "몰",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "몰다 means to drive (a car, a herd of animals), not to ride a bicycle. The standard Korean collocation for bicycles is 자전거를 타다. 자전거를 몰다 is unnatural and would strike native speakers as wrong; 몰다 only fits motorized vehicles like 차/오토바이 or animals being driven (소떼를 몰다).",
-        "evidenceUrl": "https://x.com/ttmik/status/956406817545842693",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:술",
@@ -681,19 +675,13 @@
     },
     {
       "vocabId": "topik-v2:부",
-      "korean": "책을 두 권 빌렸어요. (or, if the same-copy sense is intended: 그 책을 두 부 빌렸어요.)",
-      "romanization": "chaeg-eul du gwon billyeosseoyo. (or, if the same-copy sense is intended: geu chaeg-eul du bu billyeosseoyo.)",
+      "korean": "두 부의 책을 빌렸어요.",
+      "romanization": "du bu-ui chaeg-eul billyeosseoyo.",
       "gloss": "I borrowed two copies of the book.",
       "targetForm": "부",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "Two issues. (1) 부 is the counter for printed copies of newspapers/documents/the same-edition reprint of a book; the unmarked counter for books is 권 (책 두 권). (2) The numeral-counter-의-noun structure (두 부의 책) is stilted; native pattern places the counter phrase post-nominally: 책 두 부를 빌렸어요. Combined, the sentence sounds translation-flavored.",
-        "evidenceUrl": "https://lingomae.com/what-is-the-counter-for-books-in-korean/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:먹다",
@@ -787,35 +775,23 @@
     },
     {
       "vocabId": "topik-v2:호",
-      "korean": "이 잡지는 제5호예요. (or, for a book: 이 책은 제5권이에요.)",
-      "romanization": "i japji-neun je-o-ho-yeyo. (or, for a book: i chaeg-eun je-o-gwon-i-eyo.)",
+      "korean": "이 책은 제 5 호예요.",
+      "romanization": "i chaeg-eun je o ho-yeyo.",
       "gloss": "This book is volume number five.",
       "targetForm": "호",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "호 is the counter for issues of periodicals (magazines, journals, newsletters), not for 책 in the general 'book' sense. Calling a 책 'the 5호' implies it is issue #5 of a serial — odd for a generic book. Standard counter for books is 권. Also 제5호 is conventionally written without an internal space.",
-        "evidenceUrl": "https://www.90daykorean.com/korean-counters/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:가루",
-      "korean": "케이크에 가루 설탕을 뿌려요.",
-      "romanization": "keikeu-e garu seoltang-eul ppuryeoyo.",
+      "korean": "케이크에 설탕 가루를 뿌려요.",
+      "romanization": "keikeu-e seoltang garu-reul ppuryeoyo.",
       "gloss": "I sprinkle sugar powder on the cake.",
       "targetForm": "가루",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "Word order is reversed. The natural Korean for 'powdered/icing sugar' is 가루 설탕 (modifier-head: powder-form sugar) or 슈가 파우더. 설탕 가루 (sugar's powder) reads as a redundant tautology since 설탕 itself already denotes a granular substance. Native bakers say 가루 설탕을 뿌려요.",
-        "evidenceUrl": "https://eng.ichacha.net/korean/powdered%20sugar.html",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:단",
@@ -1359,19 +1335,13 @@
     },
     {
       "vocabId": "topik-v2:멋",
-      "korean": "그의 옷이 멋있어요.",
-      "romanization": "geu-ui os-i meosisseoyo.",
+      "korean": "그의 옷에는 멋이 있어요.",
+      "romanization": "geu-ui os-e-neun meos-i isseoyo.",
       "gloss": "His clothes have style.",
       "targetForm": "멋",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "While 멋이 있다 is grammatically possible, native speakers overwhelmingly use the contracted adjective 멋있다 to mean 'is stylish/cool'. The decomposed form 멋이 있다 with a topic-marked location (옷에는) reads as a stilted calque ('there is style in his clothes'). Standard: 그의 옷이 멋있어요.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A9%8B%EC%9E%88%EB%8B%A4",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:밉다",
@@ -1525,19 +1495,13 @@
     },
     {
       "vocabId": "topik-v2:법",
-      "korean": "교통 법규를 잘 지켜요.",
-      "romanization": "gyotong beopgyu-reul jal jikyeoyo.",
+      "korean": "교통 법을 잘 지켜요.",
+      "romanization": "gyotong beob-eul jal jikyeoyo.",
       "gloss": "I follow traffic laws well.",
       "targetForm": "법",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "The standard term for the body of traffic rules drivers/pedestrians follow is 교통 법규 or 교통 규칙 (or the formal statute name 도로교통법, no internal space). 교통 법 (with a space, just '법') is unidiomatic — 법 alone is the abstract noun 'law' and pairs with major bodies of law (헌법, 형법) rather than with everyday compliance. Native speakers say 교통 법규를 지키다 / 교통 규칙을 지키다.",
-        "evidenceUrl": "https://elaw.klri.re.kr/eng_service/lawView.do?hseq=906&lang=ENG",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:살다",
@@ -1641,19 +1605,13 @@
     },
     {
       "vocabId": "topik-v2:묻다",
-      "korean": "선생님께 길을 물었어요.",
-      "romanization": "seonsaengnim-kke gir-eul mureosseoyo.",
+      "korean": "선생님께 길을 묻었어요.",
+      "romanization": "seonsaengnim-kke gir-eul mudeosseoyo.",
       "gloss": "I asked the teacher for directions.",
       "targetForm": "묻",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_inflection",
-        "issue": "묻다 'to ask' is a ㄷ-irregular verb: ㄷ → ㄹ before a vowel, so the past tense is 물었어요, not 묻었어요. The form 묻었어요 is the regular conjugation of the homonym 묻다 'to bury' — semantically wrong here. Standard form: 선생님께 길을 물었어요.",
-        "evidenceUrl": "https://hinative.com/questions/18683131",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:밟다",
@@ -1917,19 +1875,13 @@
     },
     {
       "vocabId": "topik-v2:육",
-      "korean": "사과 여섯 개를 샀어요.",
-      "romanization": "sagwa yeoseot gae-reul sasseoyo.",
+      "korean": "사과 육 개를 샀어요.",
+      "romanization": "sagwa yuk gae-reul sasseoyo.",
       "gloss": "I bought six apples.",
       "targetForm": "육",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Sino-Korean numeral 육 should not be used with the native counter 개. Counting discrete physical objects (apples) requires native numerals: 사과 여섯 개. Mixing 육 + 개 sounds wrong to native speakers.",
-        "evidenceUrl": "https://hinative.com/questions/25248476",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:좀",
@@ -1963,19 +1915,13 @@
     },
     {
       "vocabId": "topik-v2:구",
-      "korean": "여기는 강남구예요.",
-      "romanization": "yeogi-neun gangnamgu-yeyo.",
+      "korean": "여기는 강남 구예요.",
+      "romanization": "yeogi-neun gangnam gu-yeyo.",
       "gloss": "This is Gangnam district.",
       "targetForm": "구",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Korean orthography rule (한글 맞춤법): administrative-unit suffixes such as 구/시/도/군/동 attach to the place name with no space. Should be 강남구, written as one word.",
-        "evidenceUrl": "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%82%A8%EA%B5%AC",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:끌다",
@@ -2119,19 +2065,13 @@
     },
     {
       "vocabId": "topik-v2:오르다",
-      "korean": "산에 천천히 올라요.",
-      "romanization": "san-e cheoncheonhi ollayo.",
+      "korean": "산 위에 천천히 올라요.",
+      "romanization": "san wi-e cheoncheonhi orayo.",
       "gloss": "I slowly climb up the mountain.",
       "targetForm": "올라",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "오르다 collocates with 산에/산을, not 산 위에. 산 위에 올라가다/오르다 is a known learner-style overspecification — 위에 redundantly stacks the upward sense already inherent in 오르다, and 위에 normally pairs with stative 있다, not motion 오르다.",
-        "evidenceUrl": "https://hinative.com/questions/876679",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:요리",
@@ -2415,19 +2355,13 @@
     },
     {
       "vocabId": "topik-v2:짓다",
-      "korean": "어머니가 밥을 짓고 계세요.",
-      "romanization": "eomeoni-ga bab-eul jitgo gyeseyo.",
+      "korean": "농부가 밥을 짓고 있어요.",
+      "romanization": "nongbu-ga bab-eul jitgo isseoyo.",
       "gloss": "The farmer is cooking rice.",
       "targetForm": "짓",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Grammatical but pragmatically odd. 밥을 짓다 is correct Korean (HiNative confirms it as the standard, slightly literary expression for cooking rice). However, a 농부 (farmer) prototypically '농사를 짓다' (does farming), not '밥을 짓다' in their professional capacity. Native speakers would naturally pair 밥을 짓다 with 어머니/할머니. Switching to 어머니 keeps the headword 짓다 with its most idiomatic collocation and removes the cognitive friction.",
-        "evidenceUrl": "https://hinative.com/questions/23996317",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:찾다",
@@ -2601,19 +2535,13 @@
     },
     {
       "vocabId": "topik-v2:분",
-      "korean": "오 분만 기다려 주세요.",
-      "romanization": "o bunman gidaryeo juseyo.",
+      "korean": "다섯 분만 기다려 주세요.",
+      "romanization": "daseot bunman gidaryeo juseyo.",
       "gloss": "Please wait just five minutes.",
       "targetForm": "분",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "When 분 means 'minutes', it requires Sino-Korean numerals (오 분), not native (다섯). 다섯 분 reads as 'five people (honorific)' — exactly the wrong sense for the gloss 'five minutes'.",
-        "evidenceUrl": "https://en.wikipedia.org/wiki/Korean_numerals",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:빼다",
@@ -2637,19 +2565,13 @@
     },
     {
       "vocabId": "topik-v2:선택",
-      "korean": "이 길과 저 길 중에서 선택하세요.",
-      "romanization": "i gilgwa jeo gil jung-eseo seontaekhaseyo.",
+      "korean": "이 길과 저 길 중 선택을 해요.",
+      "romanization": "i gilgwa jeo gil jung seontaeg-eul haeyo.",
       "gloss": "Choose between this road and that road.",
       "targetForm": "선택",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "The Korean is plain declarative (-아요/-어요), meaning 'I/we choose...', but the English gloss is the imperative 'Choose between this road and that road.' For an imperative the Korean should be 선택하세요 / 선택해요(명령) with appropriate intonation, or be reglossed as a statement.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:스타",
@@ -3613,19 +3535,13 @@
     },
     {
       "vocabId": "topik-v2:소주",
-      "korean": "어른들이 소주 한잔하셨어요.",
-      "romanization": "eoreundeur-i soju hanjanhasyeosseoyo.",
+      "korean": "어른들이 소주를 한 잔 했어요.",
+      "romanization": "eoreundeur-i soju-reul han jan haesseoyo.",
       "gloss": "The adults had a glass of soju.",
       "targetForm": "소주",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "The fixed expression is 한잔하다 / 소주(를) 한잔하다 — typically written without 를 between 소주 and 한잔, or as 소주 한 잔 했어요 with no object marker. Adding 를 to 소주 here makes 한 잔 하다 read as a literal 'did one glass', breaking the idiom. The natural form is 어른들이 소주를 한잔했어요 or 어른들이 소주 한 잔 하셨어요.",
-        "evidenceUrl": "https://tomikorean.com/wp-content/uploads/2024/10/TomiKorean-Newsletter-040-Drinking-Expression.pdf",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:숨",
@@ -3649,19 +3565,13 @@
     },
     {
       "vocabId": "topik-v2:식",
-      "korean": "이 음식은 한국식이에요.",
-      "romanization": "i eumsig-eun hangugsig-i-eyo.",
+      "korean": "이 음식은 한국 식이에요.",
+      "romanization": "i eumsig-eun hanguk sig-i-eyo.",
       "gloss": "This food is Korean style.",
       "targetForm": "식",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Spacing error. The suffix 식 (style) attaches directly to the preceding noun, so it should be written 한국식 as one word (or use 한식). 한국 식 with a space is non-standard.",
-        "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:심다",
@@ -3985,19 +3895,13 @@
     },
     {
       "vocabId": "topik-v2:가로",
-      "korean": "이 책은 가로가 좁아요.",
-      "romanization": "i chaeg-eun garo-ga jobayo.",
+      "korean": "이 책의 가로가 짧아요.",
+      "romanization": "i chaeg-ui garo-ga jjalbayo.",
       "gloss": "This book's width is short.",
       "targetForm": "가로",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "Awkward collocation. 가로 means horizontal width, and width is normally described with 좁다 (narrow) rather than 짧다 (short). 가로가 짧다 sounds odd to native ears; 가로 길이가 짧다 or 가로가 좁다 would be more natural.",
-        "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/62253_%EA%B0%80%EB%A1%9C/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:가스",
@@ -4011,19 +3915,13 @@
     },
     {
       "vocabId": "topik-v2:거",
-      "korean": "그거 한번 보여 주세요.",
-      "romanization": "geugeo hanbeon boyeo juseyo.",
+      "korean": "그 거 한번 보여 주세요.",
+      "romanization": "geu geo hanbeon boyeo juseyo.",
       "gloss": "Show me that thing once.",
       "targetForm": "거",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Spacing error. The bound noun 거 attaches to the demonstrative without a space: standard form is 그거 (or 그것). 그 거 with a space is non-standard orthography.",
-        "evidenceUrl": "https://joy-do.com/2025/11/14/korean-this-that-%EC%9D%B4-%EA%B7%B8-%EC%A0%80/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:계속",
@@ -4427,19 +4325,13 @@
     },
     {
       "vocabId": "topik-v2:버리다",
-      "korean": "쓰레기를 쓰레기통에 버리세요.",
-      "romanization": "sseuregi-reul sseuregitong-e beoriseyo.",
+      "korean": "쓰레기를 통에 버리세요.",
+      "romanization": "sseuregi-reul tong-e beoriseyo.",
       "gloss": "Please throw the trash in the bin.",
       "targetForm": "버리",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "쓰레기통 (trash bin) is a single dictionary word; the sentence splits it as 쓰레기를 ... 통에, where 통에 alone could mean any container. Natural Korean would be 쓰레기통에 버리세요.",
-        "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%EC%93%B0%EB%A0%88%EA%B8%B0%ED%86%B5",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:변하다",
@@ -4473,19 +4365,13 @@
     },
     {
       "vocabId": "topik-v2:북",
-      "korean": "북쪽 길은 더 멀어요.",
-      "romanization": "bukjjog gir-eun deo meoreoyo.",
+      "korean": "북 쪽 길은 더 멀어요.",
+      "romanization": "buk jjok gir-eun deo meoreoyo.",
       "gloss": "The northern road is farther.",
       "targetForm": "북",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Spacing error. 북쪽 is one word in the standard Korean dictionary and must not be split with a space.",
-        "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:붉다",
@@ -4619,19 +4505,13 @@
     },
     {
       "vocabId": "topik-v2:여",
-      "korean": "여학생이 더 많아요.",
-      "romanization": "yeohaksaeng-i deo manhayo.",
+      "korean": "여 학생이 더 많아요.",
+      "romanization": "yeo haksaeng-i deo manhayo.",
       "gloss": "There are more female students.",
       "targetForm": "여",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Spacing error. 여 is a bound prefix; 여학생 (female student) is a single dictionary word. 여 학생 with a space is incorrect — 여 cannot stand alone.",
-        "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:오랫동안",
@@ -4675,19 +4555,13 @@
     },
     {
       "vocabId": "topik-v2:이렇다",
-      "korean": "이런 날씨는 처음이에요.",
-      "romanization": "ireon nalssi-neun cheoeum-i-eyo.",
+      "korean": "오늘 날씨가 이렇네요.",
+      "romanization": "oneul nalssi-ga ireohneyo.",
       "gloss": "The weather today is like this.",
       "targetForm": "이렇",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "이렇다 is overwhelmingly used either attributively (이런 + noun) or in its 반말/요체 contracted forms (이래/이래요). Standalone 날씨가 이렇네요 is grammatical only as a deictic comment requiring a shared visible referent (gesturing at bad weather), which a flashcard cannot supply. As a textbook sentence it reads as incomplete. Reframing with 이렇다 inside a 이런 ~ 날씨 attributive structure makes the headword's usage pattern clearer and is unambiguously well-formed in isolation.",
-        "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-17-25-2/lesson-23/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:이름",
@@ -4971,19 +4845,13 @@
     },
     {
       "vocabId": "topik-v2:피시",
-      "korean": "삼촌은 물고기를 잘 잡아요.",
-      "romanization": "samchon-eun mulgogi-reul jal jabayo.",
+      "korean": "삼촌은 피시를 잘 잡아요.",
+      "romanization": "samchon-eun pisi-reul jal jabayo.",
       "gloss": "My uncle catches fish well.",
       "targetForm": "피시",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "피시 in Korean is overwhelmingly read as PC (personal computer) and is not the standard word for fish. Catching fish uses 물고기 or 생선. 피시를 잡다 is unnatural and confusing — it reads as 'catches PCs well'.",
-        "evidenceUrl": "https://www.koreanstudyjunkie.com/post/%EB%AC%BC%EA%B3%A0%EA%B8%B0-vs-%EC%83%9D%EC%84%A0-how-to-say-fish-in-korean",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:하얗다",
@@ -5147,19 +5015,13 @@
     },
     {
       "vocabId": "topik-v2:고속",
-      "korean": "고속도로가 막혀요.",
-      "romanization": "gosokdoro-ga makhyeoyo.",
+      "korean": "고속 도로가 막혀요.",
+      "romanization": "gosog doro-ga makhyeoyo.",
       "gloss": "The highway is congested.",
       "targetForm": "고속",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Spacing error. 고속도로 (highway) is a single dictionary entry and should be written as one word. 고속 도로 with a space is non-standard.",
-        "evidenceUrl": "https://www.koreanwikiproject.com/wiki/Word_spacing",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:고통",
@@ -5363,19 +5225,13 @@
     },
     {
       "vocabId": "topik-v2:꽃잎",
-      "korean": "벚꽃잎이 바람에 날려요.",
-      "romanization": "beotkkochip-i baram-e nallyeoyo.",
+      "korean": "벚 꽃잎이 바람에 날려요.",
+      "romanization": "beot kkoch-ip-i baram-e nallyeoyo.",
       "gloss": "Cherry blossom petals fly in the wind.",
       "targetForm": "꽃잎",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "ungrammatical",
-        "issue": "Spacing error. 벚 is a bound morpheme that cannot stand alone; 벚꽃 is the established word for cherry blossom. The sentence should be either 벚꽃잎이... or 벚꽃 잎이... — 벚 꽃잎 splits the wrong morpheme boundary.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:나쁘다",
@@ -5579,19 +5435,13 @@
     },
     {
       "vocabId": "topik-v2:동물",
-      "korean": "이 동물원에는 여러 동물이 있어요.",
-      "romanization": "i dongmurwon-e-neun yeoreo dongmur-i isseoyo.",
+      "korean": "이 동물원에는 호랑이가 있어요.",
+      "romanization": "i dongmurwon-e-neun horangi-ga isseoyo.",
       "gloss": "There is a tiger at this zoo.",
       "targetForm": "동물",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Confirmed pedagogical issue: the headword 동물 appears only as a substring of 동물원 (zoo); the standalone word 동물 is never exemplified. For a vocabulary card teaching 동물, the example must contain 동물 as an independent token. The proposed fix keeps the zoo theme but introduces 동물 itself.",
-        "evidenceUrl": "https://www.90daykorean.com/animals-in-korean/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:들리다",
@@ -5685,19 +5535,13 @@
     },
     {
       "vocabId": "topik-v2:맥주",
-      "korean": "퇴근 후에 맥주 한 잔 해요.",
-      "romanization": "toegeun hu-e maekju han jan haeyo.",
+      "korean": "퇴근 후에 맥주를 한 잔 해요.",
+      "romanization": "toegeun hu-e maekju-reul han jan haeyo.",
       "gloss": "After work I have a glass of beer.",
       "targetForm": "맥주",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "The collocation '맥주를 한 잔 하다' with the object particle 를 sounds awkward. Native speakers either drop the particle ('맥주 한 잔 해요') or use the verb 마시다 ('맥주를 한 잔 마셔요'). The pattern 'X 한 잔 하다' typically appears without 를.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:메뉴",
@@ -5931,35 +5775,23 @@
     },
     {
       "vocabId": "topik-v2:불꽃",
-      "korean": "촛불의 불꽃이 흔들려요. (or: 촛불이 흔들려요.)",
-      "romanization": "chotbul-ui bulkkoch-i heundeullyeoyo. (or: chotbur-i heundeullyeoyo.)",
+      "korean": "초의 불꽃이 흔들려요.",
+      "romanization": "cho-ui bulkkoch-i heundeullyeoyo.",
       "gloss": "The candle flame flickers.",
       "targetForm": "불꽃",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'초의 불꽃' is overly literal/stilted. Natives use the compound 촛불 ('candle flame/light'). '초의 불꽃' reads as a translation from English 'the candle's flame'.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:불리다",
-      "korean": "그 사람은 친절하다고 알려져 있어요. (or: 그 사람은 친절한 사람으로 불려요.)",
-      "romanization": "geu saram-eun chinjeolhadago allyeojyeo isseoyo. (or: geu saram-eun chinjeolhan saram-euro bullyeoyo.)",
+      "korean": "그 사람은 친절하다고 불려요.",
+      "romanization": "geu saram-eun chinjeolhadago bullyeoyo.",
       "gloss": "That person is called kind.",
       "targetForm": "불려",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "불리다 ('to be called/named') normally takes a noun complement via -(이)라고 불리다 ('is called X-name'), e.g. '천재라고 불려요'. Pairing it with the descriptive clause 친절하다고 ('that he is kind') is unnatural; for being known/described as having a quality, 알려져 있다 or 평가받다 is the right verb.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:비밀",
@@ -5993,19 +5825,13 @@
     },
     {
       "vocabId": "topik-v2:사용",
-      "korean": "이 기계는 사용하기 어렵네요. (or: 이 기계의 사용법이 어렵네요.)",
-      "romanization": "i gigye-neun sayonghagi eoryeomneyo. (or: i gigye-ui sayongbeob-i eoryeomneyo.)",
+      "korean": "이 기계의 사용이 어렵네요.",
+      "romanization": "i gigye-ui sayong-i eoryeobneyo.",
       "gloss": "Using this machine is difficult.",
       "targetForm": "사용",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'사용이 어렵다' as a predicate sounds like translationese. Natural Korean prefers a verbal nominalization: '사용하기 어렵다' or the compound '사용법이 어렵다'.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:사탕",
@@ -6119,19 +5945,13 @@
     },
     {
       "vocabId": "topik-v2:수",
-      "korean": "이 숫자가 정확해요.",
-      "romanization": "i sutja-ga jeonghwakhaeyo.",
+      "korean": "이 수가 정확해요.",
+      "romanization": "i su-ga jeonghwakhaeyo.",
       "gloss": "This number is accurate.",
       "targetForm": "수",
       "areaId": "topik_1",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "수 in the sense of 'a number' is rarely used as a stand-alone count noun in colloquial Korean; native speakers say 숫자 ('이 숫자가 정확해요'). 수 alone reads as bookish/abstract and is hard to parse without context.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:수많다",
@@ -6305,19 +6125,13 @@
     },
     {
       "vocabId": "topik-v2:양쪽",
-      "korean": "양쪽 길 모두 좋아요.",
-      "romanization": "yangjjog gil modu johayo.",
+      "korean": "양쪽 길이 모두 좋아요.",
+      "romanization": "yangjjok gir-i modu johayo.",
       "gloss": "Both roads on either side are good.",
       "targetForm": "양쪽",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "Confirmed parse ambiguity: 길이 can be tokenized either as 길+이 (subject-marked 'road') or as 길이 (the noun 'length'). Native readers may briefly garden-path. Korean parsing literature (Eojoel ambiguity) documents this exact class of segmentation problem. Dropping the redundant subject particle (양쪽 길 모두 ...) eliminates the ambiguity and matches the more natural collocation.",
-        "evidenceUrl": "https://link.springer.com/article/10.1007/s10936-008-9093-z",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:어둡다",
@@ -6601,19 +6415,13 @@
     },
     {
       "vocabId": "topik-v2:자세히",
-      "korean": "이 그림을 자세히 보세요.",
-      "romanization": "i geurim-eul jasehi boseyo.",
+      "korean": "이 그림을 자세히 봐 보세요.",
+      "romanization": "i geurim-eul jasehi bwa boseyo.",
       "gloss": "Look at this picture carefully.",
       "targetForm": "자세히",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "봐 보세요 stacks 보다 + -아 보다 ('try seeing') with itself, producing an awkward double imperative. The standard form is simply 자세히 보세요 or 자세히 살펴보세요.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:자주",
@@ -6947,19 +6755,13 @@
     },
     {
       "vocabId": "topik-v2:철",
-      "korean": "이 의자는 철로 만들어졌어요.",
-      "romanization": "i uija-neun cheollo mandeureojyeosseoyo.",
+      "korean": "이 의자는 철로 만들었어요.",
+      "romanization": "i uija-neun cheollo mandeureosseoyo.",
       "gloss": "This chair is made of iron.",
       "targetForm": "철",
       "areaId": "topik_2",
       "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_inflection",
-        "issue": "With the topic-marked subject 이 의자는 and no agent, the active 만들었어요 reads as 'this chair made [something] out of iron'. To say 'this chair is made of iron' Korean requires the passive 만들어졌어요 (or the relative clause 만든).",
-        "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-14-korean-passive-verbs/",
-        "auditedAt": "2026-05-09"
-      }
+      "generator": "llm-claude-opus-4-7"
     },
     {
       "vocabId": "topik-v2:추다",

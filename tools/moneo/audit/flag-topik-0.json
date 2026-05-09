@@ -1,0 +1,63 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [0, 177],
+  "inspected": 177,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:몰다",
+      "korean": "트레이너가 자전거를 몰고 도시로 가요.",
+      "verdict": "wrong_collocation",
+      "issue": "몰다 means to drive (a car, a herd of animals), not to ride a bicycle. The standard Korean collocation for bicycles is 자전거를 타다. 자전거를 몰다 is unnatural and would strike native speakers as wrong; 몰다 only fits motorized vehicles like 차/오토바이 or animals being driven (소떼를 몰다).",
+      "suggestion": "트레이너가 자전거를 타고 도시로 가요.",
+      "evidenceUrl": "https://x.com/ttmik/status/956406817545842693"
+    },
+    {
+      "vocabId": "topik-v2:호",
+      "korean": "이 책은 제 5 호예요.",
+      "verdict": "wrong_collocation",
+      "issue": "호 is the counter for issues of periodicals (magazines, journals, newsletters), not for 책 in the general 'book' sense. Calling a 책 'the 5호' implies it is issue #5 of a serial — odd for a generic book. Standard counter for books is 권. Also 제5호 is conventionally written without an internal space.",
+      "suggestion": "이 잡지는 제5호예요. (or, for a book: 이 책은 제5권이에요.)",
+      "evidenceUrl": "https://www.90daykorean.com/korean-counters/"
+    },
+    {
+      "vocabId": "topik-v2:가루",
+      "korean": "케이크에 설탕 가루를 뿌려요.",
+      "verdict": "unnatural",
+      "issue": "Word order is reversed. The natural Korean for 'powdered/icing sugar' is 가루 설탕 (modifier-head: powder-form sugar) or 슈가 파우더. 설탕 가루 (sugar's powder) reads as a redundant tautology since 설탕 itself already denotes a granular substance. Native bakers say 가루 설탕을 뿌려요.",
+      "suggestion": "케이크에 가루 설탕을 뿌려요.",
+      "evidenceUrl": "https://eng.ichacha.net/korean/powdered%20sugar.html"
+    },
+    {
+      "vocabId": "topik-v2:부",
+      "korean": "두 부의 책을 빌렸어요.",
+      "verdict": "unnatural",
+      "issue": "Two issues. (1) 부 is the counter for printed copies of newspapers/documents/the same-edition reprint of a book; the unmarked counter for books is 권 (책 두 권). (2) The numeral-counter-의-noun structure (두 부의 책) is stilted; native pattern places the counter phrase post-nominally: 책 두 부를 빌렸어요. Combined, the sentence sounds translation-flavored.",
+      "suggestion": "책을 두 권 빌렸어요. (or, if the same-copy sense is intended: 그 책을 두 부 빌렸어요.)",
+      "evidenceUrl": "https://lingomae.com/what-is-the-counter-for-books-in-korean/"
+    },
+    {
+      "vocabId": "topik-v2:멋",
+      "korean": "그의 옷에는 멋이 있어요.",
+      "verdict": "unnatural",
+      "issue": "While 멋이 있다 is grammatically possible, native speakers overwhelmingly use the contracted adjective 멋있다 to mean 'is stylish/cool'. The decomposed form 멋이 있다 with a topic-marked location (옷에는) reads as a stilted calque ('there is style in his clothes'). Standard: 그의 옷이 멋있어요.",
+      "suggestion": "그의 옷이 멋있어요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A9%8B%EC%9E%88%EB%8B%A4"
+    },
+    {
+      "vocabId": "topik-v2:법",
+      "korean": "교통 법을 잘 지켜요.",
+      "verdict": "unnatural",
+      "issue": "The standard term for the body of traffic rules drivers/pedestrians follow is 교통 법규 or 교통 규칙 (or the formal statute name 도로교통법, no internal space). 교통 법 (with a space, just '법') is unidiomatic — 법 alone is the abstract noun 'law' and pairs with major bodies of law (헌법, 형법) rather than with everyday compliance. Native speakers say 교통 법규를 지키다 / 교통 규칙을 지키다.",
+      "suggestion": "교통 법규를 잘 지켜요.",
+      "evidenceUrl": "https://elaw.klri.re.kr/eng_service/lawView.do?hseq=906&lang=ENG"
+    },
+    {
+      "vocabId": "topik-v2:묻다",
+      "korean": "선생님께 길을 묻었어요.",
+      "verdict": "wrong_inflection",
+      "issue": "묻다 'to ask' is a ㄷ-irregular verb: ㄷ → ㄹ before a vowel, so the past tense is 물었어요, not 묻었어요. The form 묻었어요 is the regular conjugation of the homonym 묻다 'to bury' — semantically wrong here. Standard form: 선생님께 길을 물었어요.",
+      "suggestion": "선생님께 길을 물었어요.",
+      "evidenceUrl": "https://hinative.com/questions/18683131"
+    }
+  ]
+}

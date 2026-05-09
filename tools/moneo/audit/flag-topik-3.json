@@ -1,0 +1,79 @@
+{
+  "shardFile": "sentences-ko-themed-topik.json",
+  "range": [531, 708],
+  "inspected": 177,
+  "flagged": [
+    {
+      "vocabId": "topik-v2:동물",
+      "korean": "이 동물원에는 호랑이가 있어요.",
+      "verdict": "uncertain",
+      "issue": "The headword is 동물 (animal) but the sentence only contains it as a substring of 동물원 (zoo). The actual word 동물 is never used independently, which weakens it as an example sentence for the headword.",
+      "suggestion": "이 동물원에는 여러 동물이 있어요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:맥주",
+      "korean": "퇴근 후에 맥주를 한 잔 해요.",
+      "verdict": "unnatural",
+      "issue": "The collocation '맥주를 한 잔 하다' with the object particle 를 sounds awkward. Native speakers either drop the particle ('맥주 한 잔 해요') or use the verb 마시다 ('맥주를 한 잔 마셔요'). The pattern 'X 한 잔 하다' typically appears without 를.",
+      "suggestion": "퇴근 후에 맥주 한 잔 해요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:불꽃",
+      "korean": "초의 불꽃이 흔들려요.",
+      "verdict": "unnatural",
+      "issue": "'초의 불꽃' is overly literal/stilted. Natives use the compound 촛불 ('candle flame/light'). '초의 불꽃' reads as a translation from English 'the candle's flame'.",
+      "suggestion": "촛불의 불꽃이 흔들려요. (or: 촛불이 흔들려요.)",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:불리다",
+      "korean": "그 사람은 친절하다고 불려요.",
+      "verdict": "wrong_collocation",
+      "issue": "불리다 ('to be called/named') normally takes a noun complement via -(이)라고 불리다 ('is called X-name'), e.g. '천재라고 불려요'. Pairing it with the descriptive clause 친절하다고 ('that he is kind') is unnatural; for being known/described as having a quality, 알려져 있다 or 평가받다 is the right verb.",
+      "suggestion": "그 사람은 친절하다고 알려져 있어요. (or: 그 사람은 친절한 사람으로 불려요.)",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:사용",
+      "korean": "이 기계의 사용이 어렵네요.",
+      "verdict": "unnatural",
+      "issue": "'사용이 어렵다' as a predicate sounds like translationese. Natural Korean prefers a verbal nominalization: '사용하기 어렵다' or the compound '사용법이 어렵다'.",
+      "suggestion": "이 기계는 사용하기 어렵네요. (or: 이 기계의 사용법이 어렵네요.)",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:수",
+      "korean": "이 수가 정확해요.",
+      "verdict": "unnatural",
+      "issue": "수 in the sense of 'a number' is rarely used as a stand-alone count noun in colloquial Korean; native speakers say 숫자 ('이 숫자가 정확해요'). 수 alone reads as bookish/abstract and is hard to parse without context.",
+      "suggestion": "이 숫자가 정확해요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:양쪽",
+      "korean": "양쪽 길이 모두 좋아요.",
+      "verdict": "uncertain",
+      "issue": "Genuinely ambiguous: 길이 can be parsed as 길+이 (subject-marked 'road') or as 길이 ('length'). 양쪽 길 is also slightly redundant for 'both roads'. Native speakers would say '양쪽 길 모두 좋아요' or '양쪽 다 좋아요'.",
+      "suggestion": "양쪽 길 모두 좋아요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:자세히",
+      "korean": "이 그림을 자세히 봐 보세요.",
+      "verdict": "unnatural",
+      "issue": "봐 보세요 stacks 보다 + -아 보다 ('try seeing') with itself, producing an awkward double imperative. The standard form is simply 자세히 보세요 or 자세히 살펴보세요.",
+      "suggestion": "이 그림을 자세히 보세요.",
+      "evidenceUrl": null
+    },
+    {
+      "vocabId": "topik-v2:철",
+      "korean": "이 의자는 철로 만들었어요.",
+      "verdict": "wrong_inflection",
+      "issue": "With the topic-marked subject 이 의자는 and no agent, the active 만들었어요 reads as 'this chair made [something] out of iron'. To say 'this chair is made of iron' Korean requires the passive 만들어졌어요 (or the relative clause 만든).",
+      "suggestion": "이 의자는 철로 만들어졌어요.",
+      "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/lesson-14-korean-passive-verbs/"
+    }
+  ]
+}
