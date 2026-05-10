@@ -650,6 +650,43 @@ directly from the ROM, and OCR can resolve the ~460 still-unknown
 codepoints against a hangul recognition pipeline. This unblocks the
 push from 81% → ~95%+ coverage that was deferred earlier.
 
+## Update 2026-05-10 (storage→atlas codepoint translator)
+
+The dispatcher at `0x080057a4` does NOT pass the raw 16-bit BE storage
+codepoint directly to the atlas indexer. The text-stream reader at
+`0x08005854` reads one byte at a time and tail-calls into a translator
+at `0x0872ba00` (file offset `0x72ba00`). That translator does:
+
+```
+storage_high = byte[0]                    # in 0x37..0x40 (or 0x41 special)
+storage_low  = byte[1]
+internal_cp  = ((storage_high - 0x35) << 8) | storage_low
+```
+
+The internal codepoint lands in roughly `0x200..0xBFF`, which is exactly
+the index range of atlas 1 (font_base `0x08f18800`, ~3,584 slots).
+Verified empirically: rendering `font_base + internal_cp * 64` for the
+13 manually-checked anchors (가/각/간/강/개/거/결/고/관/권/그/글) produces
+pixel-perfect glyphs (`verify_atlas_indexing.py`).
+
+So the full lookup is:
+
+```
+storage_cp 0x3701  →  internal_cp 0x201  →  atlas index 513  →  가
+storage_cp 0x3795  →  internal_cp 0x295  →  atlas index 661  →  그
+storage_cp 0x3E22  →  internal_cp 0x922  →  atlas index 2338 →  ?
+```
+
+OCR experiments (`ocr_atlas_v3.py`, exploratory tooling) showed that
+PIL system-font hangul renders don't pixel-align with the GBA bitmap
+font well enough to OCR unmapped codepoints reliably; many existing
+codepoint_map anchors also turn out to break monotonicity in Unicode
+collation order, so they're triangulation errors rather than ground
+truth. A future pass should use the GBA atlas glyphs themselves as
+templates plus interactive labelling of a few hundred high-frequency
+unmapped codepoints to grow `codepoint_map.json` past the current 539
+entries.
+
 ### Files added in this update
 
 - `trace_glyph_writes.lua` — runtime single-step tracer with cache
