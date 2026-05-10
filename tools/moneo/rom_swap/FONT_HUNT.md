@@ -223,3 +223,56 @@ the per-glyph rendering function. The most-referenced patched-region
 pointers from there — `0x8eae3dc`, `0x8ead7bc`, `0x8ece486`,
 `0x8ecb1d6` — are leading candidates for either font_base or the
 codepoint-→-glyph translation table.
+
+## Update 2026-05-10 (runtime VRAM trace, partial)
+
+Stood up the runtime trace path. Tooling now in this dir:
+
+- `dump_vram.lua` — mGBA Lua script that holds START/A through the
+  GameFreak intro and dumps VRAM/EWRAM/palette/OAM to /tmp at a
+  configurable frame. Run with `mgba --script dump_vram.lua leafgreen_J-K_2024.gba`.
+  Confirmed working: 96 KB VRAM + 256 KB EWRAM + palette + OAM all
+  pulled in under a second of script time. The Qt mGBA's GDB stub
+  (`-g`) does not survive a single connect/disconnect cycle on macOS,
+  so Lua is the supported path here.
+- `find_font_via_vram.py` — searches ROM for byte-for-byte 32-byte
+  4bpp VRAM tiles. Returned 0 hits → font is not stored in 4bpp.
+- `find_font_via_vram_1bpp.py` / `find_font_encoding.py` — encoders for
+  1bpp forward, 1bpp bit-reversed, 2bpp linear, 2bpp Game-Boy-style.
+  1bpp_rev gave 27 unique-tile hits in the patched region; the others
+  ≤ 16. None produced a stride run (consecutive VRAM tile → consecutive
+  ROM offset), and on inspection the apparent dense cluster around
+  ROM 0xe9c000 was repetitive low-entropy data that random-matches
+  many tile signatures by coincidence.
+
+### What we learned
+
+The dump was taken on the **title screen**, where the visible Korean
+text is the stylized "리프그린버전" *logo* — that's custom sprite
+artwork, not the dialog font. Searching for it byte-wise in ROM finds
+its source in pre-rendered form, but reveals nothing about the dialog
+font (which is what we need for codepoint→glyph mapping). The dialog
+font only appears when the engine actually renders text via
+`DecompressGlyph_*` — i.e., at the New-Game / Continue menu, or in
+Professor Oak's intro dialog.
+
+### Concrete unblocker for next session
+
+Capture VRAM at a screen that uses the **dialog font**. Two ways:
+
+1. (Easiest) Manually drive the 2024 ROM in mGBA past the title until
+   the New Game / Continue menu is visible. Save state. Save the
+   `.ss0` file alongside the ROM, named e.g. `2024_dialog.ss0`. Then
+   modify `dump_vram.lua` to `emu:loadStateFile("2024_dialog.ss0")`
+   on first frame and dump immediately. The VRAM tiles for menu
+   labels will be byte-identical to font bytes in ROM, give or take
+   one of the encodings already enumerated in `find_font_encoding.py`.
+
+2. Extend `dump_vram.lua` to keep stepping past START → past
+   "PRESS START" → into the menu, and dump VRAM at each of those
+   frames. The first time the dialog font appears, encoding-search
+   will land us on font_base.
+
+The existing 5 save states (`*.ss0` under repo root) appear to be from
+the **2010** Korean ROM, not the 2024 ROM — different ROM, save states
+are not portable. So a fresh save state is needed.
