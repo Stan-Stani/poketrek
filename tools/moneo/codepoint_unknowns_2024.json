@@ -1,0 +1,2842 @@
+{
+ "rom": "leafgreen_J-K_2024.gba",
+ "n_distinct_unknowns": 709,
+ "unknowns": [
+  {
+   "codepoint": "0x3F0F",
+   "occurrences": 972
+  },
+  {
+   "codepoint": "0x3D7C",
+   "occurrences": 873
+  },
+  {
+   "codepoint": "0x3A29",
+   "occurrences": 805
+  },
+  {
+   "codepoint": "0x3C00",
+   "occurrences": 417
+  },
+  {
+   "codepoint": "0x3A37",
+   "occurrences": 331
+  },
+  {
+   "codepoint": "0x3B38",
+   "occurrences": 313
+  },
+  {
+   "codepoint": "0x3A3C",
+   "occurrences": 275
+  },
+  {
+   "codepoint": "0x3CD1",
+   "occurrences": 248
+  },
+  {
+   "codepoint": "0x3E3D",
+   "occurrences": 203
+  },
+  {
+   "codepoint": "0x372D",
+   "occurrences": 190
+  },
+  {
+   "codepoint": "0x3D00",
+   "occurrences": 177
+  },
+  {
+   "codepoint": "0x3DC5",
+   "occurrences": 177
+  },
+  {
+   "codepoint": "0x404A",
+   "occurrences": 168
+  },
+  {
+   "codepoint": "0x3C3D",
+   "occurrences": 160
+  },
+  {
+   "codepoint": "0x3CA3",
+   "occurrences": 160
+  },
+  {
+   "codepoint": "0x391F",
+   "occurrences": 155
+  },
+  {
+   "codepoint": "0x3710",
+   "occurrences": 153
+  },
+  {
+   "codepoint": "0x3CD3",
+   "occurrences": 151
+  },
+  {
+   "codepoint": "0x3727",
+   "occurrences": 140
+  },
+  {
+   "codepoint": "0x3D15",
+   "occurrences": 139
+  },
+  {
+   "codepoint": "0x3E3F",
+   "occurrences": 135
+  },
+  {
+   "codepoint": "0x373A",
+   "occurrences": 133
+  },
+  {
+   "codepoint": "0x3E00",
+   "occurrences": 129
+  },
+  {
+   "codepoint": "0x3E8D",
+   "occurrences": 129
+  },
+  {
+   "codepoint": "0x3B39",
+   "occurrences": 113
+  },
+  {
+   "codepoint": "0x3FAE",
+   "occurrences": 110
+  },
+  {
+   "codepoint": "0x3D88",
+   "occurrences": 105
+  },
+  {
+   "codepoint": "0x375A",
+   "occurrences": 104
+  },
+  {
+   "codepoint": "0x4038",
+   "occurrences": 103
+  },
+  {
+   "codepoint": "0x3CAB",
+   "occurrences": 102
+  },
+  {
+   "codepoint": "0x39C7",
+   "occurrences": 98
+  },
+  {
+   "codepoint": "0x393F",
+   "occurrences": 94
+  },
+  {
+   "codepoint": "0x3D0B",
+   "occurrences": 90
+  },
+  {
+   "codepoint": "0x3D85",
+   "occurrences": 85
+  },
+  {
+   "codepoint": "0x3B00",
+   "occurrences": 84
+  },
+  {
+   "codepoint": "0x3E37",
+   "occurrences": 84
+  },
+  {
+   "codepoint": "0x3DDD",
+   "occurrences": 83
+  },
+  {
+   "codepoint": "0x3C48",
+   "occurrences": 80
+  },
+  {
+   "codepoint": "0x38BD",
+   "occurrences": 80
+  },
+  {
+   "codepoint": "0x3D3B",
+   "occurrences": 75
+  },
+  {
+   "codepoint": "0x3ED2",
+   "occurrences": 73
+  },
+  {
+   "codepoint": "0x3D3C",
+   "occurrences": 73
+  },
+  {
+   "codepoint": "0x3DB7",
+   "occurrences": 73
+  },
+  {
+   "codepoint": "0x3705",
+   "occurrences": 72
+  },
+  {
+   "codepoint": "0x3A45",
+   "occurrences": 72
+  },
+  {
+   "codepoint": "0x383D",
+   "occurrences": 71
+  },
+  {
+   "codepoint": "0x38A9",
+   "occurrences": 70
+  },
+  {
+   "codepoint": "0x3BC2",
+   "occurrences": 70
+  },
+  {
+   "codepoint": "0x393A",
+   "occurrences": 65
+  },
+  {
+   "codepoint": "0x3A9A",
+   "occurrences": 64
+  },
+  {
+   "codepoint": "0x3FAB",
+   "occurrences": 64
+  },
+  {
+   "codepoint": "0x3BFE",
+   "occurrences": 63
+  },
+  {
+   "codepoint": "0x3D39",
+   "occurrences": 62
+  },
+  {
+   "codepoint": "0x3C45",
+   "occurrences": 62
+  },
+  {
+   "codepoint": "0x3746",
+   "occurrences": 62
+  },
+  {
+   "codepoint": "0x3748",
+   "occurrences": 61
+  },
+  {
+   "codepoint": "0x3C8B",
+   "occurrences": 60
+  },
+  {
+   "codepoint": "0x3D1C",
+   "occurrences": 60
+  },
+  {
+   "codepoint": "0x386B",
+   "occurrences": 59
+  },
+  {
+   "codepoint": "0x3CB9",
+   "occurrences": 57
+  },
+  {
+   "codepoint": "0x39C5",
+   "occurrences": 57
+  },
+  {
+   "codepoint": "0x373C",
+   "occurrences": 57
+  },
+  {
+   "codepoint": "0x3920",
+   "occurrences": 57
+  },
+  {
+   "codepoint": "0x3A3D",
+   "occurrences": 56
+  },
+  {
+   "codepoint": "0x3E39",
+   "occurrences": 56
+  },
+  {
+   "codepoint": "0x3E40",
+   "occurrences": 52
+  },
+  {
+   "codepoint": "0x3A7B",
+   "occurrences": 51
+  },
+  {
+   "codepoint": "0x3B4C",
+   "occurrences": 51
+  },
+  {
+   "codepoint": "0x4000",
+   "occurrences": 50
+  },
+  {
+   "codepoint": "0x39DC",
+   "occurrences": 50
+  },
+  {
+   "codepoint": "0x3B11",
+   "occurrences": 50
+  },
+  {
+   "codepoint": "0x39D7",
+   "occurrences": 50
+  },
+  {
+   "codepoint": "0x3A58",
+   "occurrences": 50
+  },
+  {
+   "codepoint": "0x39CC",
+   "occurrences": 49
+  },
+  {
+   "codepoint": "0x3995",
+   "occurrences": 49
+  },
+  {
+   "codepoint": "0x3757",
+   "occurrences": 48
+  },
+  {
+   "codepoint": "0x3E38",
+   "occurrences": 48
+  },
+  {
+   "codepoint": "0x3DDC",
+   "occurrences": 47
+  },
+  {
+   "codepoint": "0x406E",
+   "occurrences": 47
+  },
+  {
+   "codepoint": "0x3A28",
+   "occurrences": 46
+  },
+  {
+   "codepoint": "0x3CFE",
+   "occurrences": 46
+  },
+  {
+   "codepoint": "0x3DBF",
+   "occurrences": 44
+  },
+  {
+   "codepoint": "0x3DE4",
+   "occurrences": 43
+  },
+  {
+   "codepoint": "0x3E74",
+   "occurrences": 42
+  },
+  {
+   "codepoint": "0x3800",
+   "occurrences": 42
+  },
+  {
+   "codepoint": "0x4053",
+   "occurrences": 42
+  },
+  {
+   "codepoint": "0x3DC2",
+   "occurrences": 41
+  },
+  {
+   "codepoint": "0x3837",
+   "occurrences": 41
+  },
+  {
+   "codepoint": "0x404B",
+   "occurrences": 40
+  },
+  {
+   "codepoint": "0x3A00",
+   "occurrences": 40
+  },
+  {
+   "codepoint": "0x3700",
+   "occurrences": 40
+  },
+  {
+   "codepoint": "0x3FAC",
+   "occurrences": 40
+  },
+  {
+   "codepoint": "0x393E",
+   "occurrences": 38
+  },
+  {
+   "codepoint": "0x3ADE",
+   "occurrences": 38
+  },
+  {
+   "codepoint": "0x3CEB",
+   "occurrences": 37
+  },
+  {
+   "codepoint": "0x3D38",
+   "occurrences": 37
+  },
+  {
+   "codepoint": "0x3A46",
+   "occurrences": 37
+  },
+  {
+   "codepoint": "0x3F00",
+   "occurrences": 36
+  },
+  {
+   "codepoint": "0x4088",
+   "occurrences": 36
+  },
+  {
+   "codepoint": "0x3F11",
+   "occurrences": 36
+  },
+  {
+   "codepoint": "0x38B2",
+   "occurrences": 36
+  },
+  {
+   "codepoint": "0x3B4F",
+   "occurrences": 35
+  },
+  {
+   "codepoint": "0x391E",
+   "occurrences": 35
+  },
+  {
+   "codepoint": "0x3C8E",
+   "occurrences": 35
+  },
+  {
+   "codepoint": "0x4037",
+   "occurrences": 35
+  },
+  {
+   "codepoint": "0x3F49",
+   "occurrences": 35
+  },
+  {
+   "codepoint": "0x3A40",
+   "occurrences": 34
+  },
+  {
+   "codepoint": "0x391D",
+   "occurrences": 34
+  },
+  {
+   "codepoint": "0x3FE9",
+   "occurrences": 34
+  },
+  {
+   "codepoint": "0x405F",
+   "occurrences": 34
+  },
+  {
+   "codepoint": "0x370E",
+   "occurrences": 33
+  },
+  {
+   "codepoint": "0x3F40",
+   "occurrences": 32
+  },
+  {
+   "codepoint": "0x3B3F",
+   "occurrences": 32
+  },
+  {
+   "codepoint": "0x4067",
+   "occurrences": 32
+  },
+  {
+   "codepoint": "0x38BA",
+   "occurrences": 31
+  },
+  {
+   "codepoint": "0x3C1E",
+   "occurrences": 31
+  },
+  {
+   "codepoint": "0x384F",
+   "occurrences": 30
+  },
+  {
+   "codepoint": "0x3BBF",
+   "occurrences": 30
+  },
+  {
+   "codepoint": "0x3E3A",
+   "occurrences": 30
+  },
+  {
+   "codepoint": "0x4039",
+   "occurrences": 29
+  },
+  {
+   "codepoint": "0x387F",
+   "occurrences": 29
+  },
+  {
+   "codepoint": "0x3945",
+   "occurrences": 29
+  },
+  {
+   "codepoint": "0x3A6A",
+   "occurrences": 29
+  },
+  {
+   "codepoint": "0x373F",
+   "occurrences": 28
+  },
+  {
+   "codepoint": "0x39D9",
+   "occurrences": 28
+  },
+  {
+   "codepoint": "0x382C",
+   "occurrences": 28
+  },
+  {
+   "codepoint": "0x3CAA",
+   "occurrences": 28
+  },
+  {
+   "codepoint": "0x3DBB",
+   "occurrences": 28
+  },
+  {
+   "codepoint": "0x3968",
+   "occurrences": 27
+  },
+  {
+   "codepoint": "0x3B13",
+   "occurrences": 27
+  },
+  {
+   "codepoint": "0x3938",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3A5D",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3E3E",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3D3F",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3EEE",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3828",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3872",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x393B",
+   "occurrences": 26
+  },
+  {
+   "codepoint": "0x3F38",
+   "occurrences": 25
+  },
+  {
+   "codepoint": "0x3861",
+   "occurrences": 25
+  },
+  {
+   "codepoint": "0x38A3",
+   "occurrences": 25
+  },
+  {
+   "codepoint": "0x37A2",
+   "occurrences": 24
+  },
+  {
+   "codepoint": "0x3DBC",
+   "occurrences": 24
+  },
+  {
+   "codepoint": "0x3840",
+   "occurrences": 24
+  },
+  {
+   "codepoint": "0x3F37",
+   "occurrences": 24
+  },
+  {
+   "codepoint": "0x3770",
+   "occurrences": 24
+  },
+  {
+   "codepoint": "0x3C98",
+   "occurrences": 23
+  },
+  {
+   "codepoint": "0x3A9B",
+   "occurrences": 23
+  },
+  {
+   "codepoint": "0x3921",
+   "occurrences": 23
+  },
+  {
+   "codepoint": "0x3F77",
+   "occurrences": 23
+  },
+  {
+   "codepoint": "0x3839",
+   "occurrences": 22
+  },
+  {
+   "codepoint": "0x38CD",
+   "occurrences": 22
+  },
+  {
+   "codepoint": "0x385C",
+   "occurrences": 22
+  },
+  {
+   "codepoint": "0x3C2C",
+   "occurrences": 22
+  },
+  {
+   "codepoint": "0x3848",
+   "occurrences": 22
+  },
+  {
+   "codepoint": "0x3D17",
+   "occurrences": 21
+  },
+  {
+   "codepoint": "0x3D83",
+   "occurrences": 21
+  },
+  {
+   "codepoint": "0x3745",
+   "occurrences": 21
+  },
+  {
+   "codepoint": "0x3929",
+   "occurrences": 21
+  },
+  {
+   "codepoint": "0x3E06",
+   "occurrences": 21
+  },
+  {
+   "codepoint": "0x4079",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3F4B",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3ECF",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3C5C",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3A71",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3BAD",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3B29",
+   "occurrences": 20
+  },
+  {
+   "codepoint": "0x3AE6",
+   "occurrences": 19
+  },
+  {
+   "codepoint": "0x39DD",
+   "occurrences": 19
+  },
+  {
+   "codepoint": "0x3EFE",
+   "occurrences": 19
+  },
+  {
+   "codepoint": "0x3B81",
+   "occurrences": 19
+  },
+  {
+   "codepoint": "0x3BFA",
+   "occurrences": 19
+  },
+  {
+   "codepoint": "0x3A21",
+   "occurrences": 19
+  },
+  {
+   "codepoint": "0x4010",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x37CE",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x3BCA",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x370C",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x3937",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x3D7E",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x4077",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x39C8",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x3D76",
+   "occurrences": 18
+  },
+  {
+   "codepoint": "0x3C08",
+   "occurrences": 17
+  },
+  {
+   "codepoint": "0x3777",
+   "occurrences": 17
+  },
+  {
+   "codepoint": "0x3C3A",
+   "occurrences": 17
+  },
+  {
+   "codepoint": "0x393C",
+   "occurrences": 17
+  },
+  {
+   "codepoint": "0x3BD8",
+   "occurrences": 17
+  },
+  {
+   "codepoint": "0x3D66",
+   "occurrences": 17
+  },
+  {
+   "codepoint": "0x3D24",
+   "occurrences": 16
+  },
+  {
+   "codepoint": "0x3E18",
+   "occurrences": 16
+  },
+  {
+   "codepoint": "0x3E6D",
+   "occurrences": 16
+  },
+  {
+   "codepoint": "0x3966",
+   "occurrences": 16
+  },
+  {
+   "codepoint": "0x3B40",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3E73",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3E97",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3EDC",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3821",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x37AF",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3ABC",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3764",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3971",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3FFF",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x406D",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3C8D",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x40AE",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3923",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3932",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3940",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x39CF",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3C10",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3CC3",
+   "occurrences": 14
+  },
+  {
+   "codepoint": "0x3EAB",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3E3B",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x37EB",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x407B",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3FBF",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3C37",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3FCC",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3CDA",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3D44",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x3C51",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x383F",
+   "occurrences": 13
+  },
+  {
+   "codepoint": "0x403B",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3F87",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3F3E",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3A43",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3B89",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3F39",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3CAC",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3D1E",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3AAF",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3942",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3E0A",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x3CD2",
+   "occurrences": 12
+  },
+  {
+   "codepoint": "0x408C",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x3880",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x4061",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x4090",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x3A25",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x3AA8",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x3FFE",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x3A36",
+   "occurrences": 11
+  },
+  {
+   "codepoint": "0x3854",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x40A1",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x386D",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x37AB",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x385B",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3E07",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3ACA",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x40C2",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3BD3",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x38BB",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3897",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3C3C",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3D06",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x39E7",
+   "occurrences": 10
+  },
+  {
+   "codepoint": "0x3A42",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3AC1",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3AAB",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3B3C",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3D7B",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3A77",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3858",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3EAD",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3FEE",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x38CC",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3A10",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3943",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x3B0E",
+   "occurrences": 9
+  },
+  {
+   "codepoint": "0x39CB",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3B3E",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3FAD",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3DE5",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3728",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3896",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x39DA",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x39D8",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3F30",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3CFA",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x40B3",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3AB0",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3E19",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x40B5",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3DC6",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3F50",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3952",
+   "occurrences": 8
+  },
+  {
+   "codepoint": "0x3C05",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3F3C",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x38C6",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3E6C",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3DE1",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3E64",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3756",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x408F",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3AEC",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3B57",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3A90",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x397E",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x38AD",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x40FE",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x389B",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3E9C",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x3AC4",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x40B9",
+   "occurrences": 7
+  },
+  {
+   "codepoint": "0x40B8",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3A0F",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x37AE",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x383C",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3939",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3C39",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3D41",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3957",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3735",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3D20",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3DA4",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x37DC",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3E72",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3C46",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x38E6",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3A4D",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x40C3",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x40A4",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3CBD",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x383B",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3A5B",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3842",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x38D9",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3EB2",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x38EB",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3D58",
+   "occurrences": 6
+  },
+  {
+   "codepoint": "0x3DD6",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3740",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x404E",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x400A",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x398C",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3B8C",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3C63",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3BC3",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x39B0",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3E6E",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x38C9",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3DCF",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3CCB",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3FEA",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x39C6",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3A87",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x392E",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3D11",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3D73",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x399C",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3FFB",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x38B5",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3ED1",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3D35",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x383E",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x39AE",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3E52",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3DBD",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x39BB",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x39E8",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3E14",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3F17",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x392B",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3AB9",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x384D",
+   "occurrences": 5
+  },
+  {
+   "codepoint": "0x3DFE",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x37C0",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x40BE",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3750",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3996",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3A3F",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3EFB",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3900",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3DFF",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3EE6",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3BFB",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x37C6",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3F5C",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3796",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3B23",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x4092",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x40A3",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3B7D",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3CC1",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3BFF",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x381C",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x374E",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3A69",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3D26",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3BA0",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x37E4",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3792",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3956",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3C91",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3EB8",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3BCE",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x37B3",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3EDE",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3823",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x3A65",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x4017",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x405B",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x378C",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3B3B",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x37E3",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3808",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3A14",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x40A7",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3D5F",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3951",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3EFA",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3A9C",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3E30",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3D78",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x39BC",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3F48",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3AFE",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3849",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3967",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3EFF",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3716",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x37E1",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3737",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3B37",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x373B",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x38E3",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3C65",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x39BE",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x4016",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3FB0",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3E2F",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x407F",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x39FE",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x379D",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x38D3",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3E76",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3F04",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x39E4",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3A0D",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x37A7",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3E11",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x40A0",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3E9D",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3D64",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x39B9",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3F79",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3EB9",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3B34",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x39B4",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x384B",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x382A",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3F64",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3885",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3E85",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3955",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x40FC",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3B96",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3CFF",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3825",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3FA0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x400D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x40F9",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3784",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x4083",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x40D0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x37BE",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3981",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3998",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3D47",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x400E",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3836",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x39B3",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E93",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3D53",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x39BF",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3726",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E04",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B8B",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3A2B",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3779",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3C1F",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3712",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x38B3",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3EC9",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E31",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B05",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3DFA",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x38C0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B7E",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3CEA",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x39CA",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x396F",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3731",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3988",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x38CE",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3A27",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3999",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F5E",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x37C8",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x40AB",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x38FA",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B9F",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B01",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x37E0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F01",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x39F0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3A41",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3CEE",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3FEF",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3BBB",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E32",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3DE0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B42",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x4097",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3C99",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x373E",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3739",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E34",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3A8D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3AB6",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F78",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x4026",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F4D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F53",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B0D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3831",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3936",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x37B0",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3FC1",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3944",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3AB7",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3A11",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E8A",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3D0D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3E1D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3A96",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3824",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3871",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3CA2",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F6C",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F3A",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3810",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3F5D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3997",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3863",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x389C",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x40B2",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x3B4D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x39A2",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x40F0",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3FF0",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38E0",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C82",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F14",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4045",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4048",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x404C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x401C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x401D",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x404F",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4055",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4056",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4027",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x402D",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4030",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x405C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x405D",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4063",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4069",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x381B",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B84",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4085",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CBE",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3782",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x388C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x40CF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F8C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3D1B",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E51",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3FC9",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C14",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3AA5",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F9A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A75",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3ED9",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x370B",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B7A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38AF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3BCC",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3BAE",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C93",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F34",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E78",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3704",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3972",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3AD2",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x39FF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3822",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38DB",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3FE1",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C5F",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CBF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x37C1",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x37B7",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3717",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CDF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x405E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B43",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B65",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A47",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B54",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E2A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F07",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C52",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C9D",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x40AC",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x395C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x395F",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3BEE",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CB2",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x39E6",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C50",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3FBA",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E89",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3820",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3BD4",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A49",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x392F",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x39E5",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x37FE",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x40A2",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x37E7",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4066",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EE4",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x387B",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x37D4",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EB5",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B9C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3AB8",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x370A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x386C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3867",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3884",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x399D",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x40FF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3ADF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C92",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x39DB",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4086",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4093",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3864",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C1A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3DAB",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EEB",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3915",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x380C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A7A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E7C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x39AF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3793",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3706",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3ACC",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C2A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CC2",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E08",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B4E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C9C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3FBC",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EE0",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x377F",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38C8",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A4E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CDE",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3922",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E44",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3D95",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3857",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E10",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F8E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3BA5",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3747",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A0E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3898",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B80",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F7A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F20",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E4B",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3AC8",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B48",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B8A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3A51",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3FA4",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E9E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38BE",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3AFF",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3ACB",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3BFC",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3991",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3CCD",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38EA",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x39C2",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x379A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B64",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C6C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EE7",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C31",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C72",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3D50",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x38FE",
+   "occurrences": 1
+  }
+ ]
+}
