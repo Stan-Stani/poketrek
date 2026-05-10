@@ -390,6 +390,52 @@ storage. Capstone can do this; the rank-3 patch contains the code; the
 167 + 382 patched-region pointers found earlier in `find_lz77_callers.py`
 output cover most of the candidates.
 
+## Update 2026-05-10 (composer search narrowed, jamo atlas not yet)
+
+`find_glyph_composer.py` scanned all rewritten code for u32 literals
+in the EWRAM glyph-cache range 0x02007000..0x02009000. Findings:
+
+- 151 such literals across the rewritten regions, 50 distinct values.
+- The most-referenced cache addresses are: `0x02007890` (24×),
+  `0x020078d0` (11×), `0x02007888` (10×), `0x02007808` (8×),
+  `0x02007880` (8×), `0x02007800` (7×), `0x02007990` (7×).
+  These are specific glyph-tile slots (each 16-byte stride apart).
+- A function array at file `0xc79ac..0xc9528` (rank-16 patch) contains
+  the EWRAM→VRAM DMA helpers — multiple ~0x54-byte functions, each
+  loads `0x02007890` and `0x06007910` (VRAM target) and copies tile
+  bytes from cache to display.
+- Function at file `0x11a966` (rank-4 patch) is a text-format helper:
+  reads bytes from a script struct, calls `bl 0x8d98` (probably
+  `strcpy`-style) with src in patched ROM (0x8edd5c0, etc.) → looks
+  like localized format strings, not glyph data.
+- Function at file `0x11a494` is a 7-way jump table that sets text
+  formatting flags (color/font/alignment).
+- Searches for u32 literal `0x3700` / `0x3701` / `0x40FF` (codepoint
+  range constants): **0 hits** in the rewritten code. The composer
+  uses immediate-value arithmetic for codepoint decomposition rather
+  than a literal-pool constant, which leaves no fingerprint to search.
+
+**Bottom line:** the path to the jamo atlas requires interactive
+disassembly (Ghidra/IDA). Capstone-based static analysis has
+fingerprinted the surrounding text-engine machinery (DMA helpers,
+formatters, jump tables) but the codepoint-decomposition logic
+itself uses arithmetic that doesn't surface in the literal pool, and
+the actual jamo bitmap data has resisted every byte-pattern search
+under every encoding tried.
+
+Continuing past 81% codepoint coverage on this ROM is firmly in the
+"diminishing returns vs. effort" zone. The codepoints we have
+support the dialog corpus rebuild; the unknowns are concentrated
+in low-frequency syllables that triangulation doesn't reach.
+
+### Files added in this update
+
+- `find_glyph_composer.py` — scans for EWRAM-glyph-cache literals
+  in the rewritten code regions, lists candidate composer anchors
+  with their nearby patched-ROM literals.
+- `extract_jamo_layers.py` — empirically verifies the jamo
+  decomposition hypothesis from the EWRAM glyph cache.
+
 ### Files added in this session
 
 - `find_lz77_sites.py`        — capstone scan of every Thumb SVC #0x12/0x11
