@@ -1,9 +1,26 @@
-# 2024 ROM font location — open question
+# 2024 ROM font location — RESOLVED
 
-**Status (2026-05-10, late):** still unresolved, but the static path is now
-exhausted — the font is **not** stored as a single LZ77 block, and **not**
-in any code area we can statically locate from the call graph.
-See "Update 2026-05-10 (capstone disassembly attack)" below.
+**Status (2026-05-10, end-of-day):** font_base, dispatcher, row blitter,
+and decoder all identified via runtime single-step tracing (no Ghidra
+needed). See "Update 2026-05-10 (single-step trace)" at bottom for the
+live findings. Earlier sections record the dead-end paths.
+
+**Quick reference:**
+
+| Component | Address (GBA) | File offset | Notes |
+|-----------|---------------|-------------|-------|
+| Glyph atlas 0 (font_base) | `0x08edf800` | `0xedf800` | 64-byte stride per glyph; only first 32 bytes used |
+| Width table 0 | `0x08f17800` | `0xf17800` | u8 per glyph |
+| Glyph atlas 1 | `0x08f18800` | `0xf18800` | second hangul atlas (different style) |
+| Width table 1 | `0x08f50800` | `0xf50800` | |
+| Glyph atlas 2 | `0x08f51800` | `0xf51800` | third hangul atlas |
+| Width table 2 | `0x08f89800` | `0xf89800` | |
+| Composer / dispatcher entry | `0x080057a4` | `0x57a4` | reads `[r6+0x1c]` mode byte → 7-way jump table |
+| Row blitter (cache writer) | `0x08003028` | `0x3028` | per-pixel 4bpp OR-merge into EWRAM `0x02007800..0x02009000` |
+| Glyph decoder (LUT-driven) | `0x08002fa0` | `0x2fa0` | byte → ROM LUT @ `0x081ea090` → IWRAM LUT @ `0x03000a40` (populated at boot) |
+| Per-handler call sites | `0x800645c`, `0x8006504`, `0x80065cc`, `0x8006738`, `0x8006800`, `0x800696c` | | 6 jamo / mode handlers; each loads `font_base + cp*64` |
+| Glyph cache (EWRAM staging) | `0x02007800..0x02009000` | — | the 4bpp composition buffer |
+| IWRAM glyph staging | `0x03003da0` | — | between decoder and row blitter |
 
 **Earlier status:** Coverage capped at 81.3% (539/~1000 codepoints).
 
@@ -502,3 +519,150 @@ decomposition by its arithmetic fingerprint (constant divisors of
 Generated artifacts (gitignored): `lz77_callers_2024.json`,
 `lz77_sites_2024.json`, `patched_lz77_blocks.csv`,
 `diff_runs_2024.txt`, `lz77_candidates_2024/`, `lz77_renders/`.
+
+## Update 2026-05-10 (single-step trace — RESOLVED)
+
+The earlier static-analysis path correctly identified that the composer
+uses immediate-value arithmetic with no literal-pool fingerprint, so
+the byte-pattern hunt had no anchor. Switching to **runtime single-step
+tracing** with mGBA's Lua scripting (no GDB stub) located the entire
+text-rendering pipeline within minutes once the trace was driven into
+an active typewriter frame.
+
+### Tooling
+
+- `trace_glyph_writes.lua` — drives the 2024 ROM into Oak's intro
+  dialog, detects the first frame whose EWRAM glyph cache hash differs
+  from the prior frame (= typewriter ticked), then enters single-step
+  mode. Each step samples the cache via `emu:readRange`; on any change
+  it dumps PC + r0..r12 + cpsr + the byte deltas to JSONL. Captured 374
+  events in 5M instruction window.
+- `analyze_glyph_trace.py` — clusters events by PC, distributions of LR
+  (caller return), cache addresses written, and ROM-pointer-looking
+  registers. Shows disasm window around each hot PC.
+- `disasm_around.py` — small capstone Thumb disassembler with
+  literal-pool resolution (`ldr Rd, [pc, #imm]` → resolved value).
+- `extract_jamo_handler_pools.py` — walks each of the 6 jamo handlers
+  identified by the dispatcher and extracts every PC-relative LDR's
+  resolved value, flagging entries in the patched region.
+
+### What the trace revealed
+
+**370 of 374 events** have `lr = 0x08005c09`, meaning the writes happen
+inside a function that is called from `bl #0x8003028` at site
+`0x08005c04`. That call site is itself inside a 7-way jump-table
+dispatcher whose entry is at **`0x080057a4`** — the rendering function
+for one text-window mode (mode byte at `[r6+0x1c]`, with `r6` =
+rendering-context struct, observed runtime value `0x02020010`).
+
+**Pipeline:**
+
+```
+Text source byte
+    ↓ (dispatcher 0x080057a4 chooses jamo handler 0..5 by [r6+0x1c])
+Jamo handler @ {0x800645c, 0x8006504, 0x80065cc, 0x8006738, 0x8006800, 0x800696c}
+    ↓ (loads font_base + cp*64; calls decoder twice)
+Glyph decoder 0x08002fa0 (LUT-driven)
+    ↓ (writes 32 bytes per call into IWRAM staging at 0x03003da0)
+IWRAM staging 0x03003da0
+    ↓ (row blitter 0x08003028 reads, OR-merges 4bpp pixels)
+EWRAM glyph cache 0x02007800..0x02009000
+    ↓ (later DMA helper at file 0xc79ac..0xc9528)
+VRAM tiles 0x06007910...
+    ↓
+Visible dialog text
+```
+
+The two-write-per-cache-byte pattern (`00 → 01 → 21`, `00 → 02 → 22`)
+that we predicted theoretically (jamo composition: each pixel byte
+holds two layered jamo strokes via 4bpp OR-merge) is now confirmed at
+the assembly level — it falls out naturally from the row blitter's
+`andimm-orr-strb` sequence at `0x0800342a..0x0800342e`.
+
+### Patched-region literal addresses (the actual font data)
+
+Every jamo handler has a fast path (`r1 == 1`) using a vanilla-region
+font (Japanese kana fallback) and a slow/main path using a
+patched-region font. Distinct pairs found:
+
+| atlas | font_base | width_table | gap | likely role |
+|-------|-----------|-------------|-----|-------------|
+| 0     | `0x08edf800` | `0x08f17800` | `0x38000` | hangul, primary |
+| 1     | `0x08f18800` | `0x08f50800` | `0x38000` | hangul, secondary |
+| 2     | `0x08f51800` | `0x08f89800` | `0x38000` | hangul, tertiary |
+
+Each glyph is 64 bytes in the atlas, only first 32 used. The other 32
+may be a different rendering size (small/large) or unused padding.
+
+### Exact encoding (verified by rendering)
+
+After dumping the ROM LUT @ `0x081ea090` (256 bytes) and the IWRAM LUT
+@ `0x03000a40` (512 bytes; populated at boot — pulled at frame 700 via
+`dump_luts.lua`), the decoder behaviour is fully reduced:
+
+- **Pixel format:** 2 bits per pixel, **MSB-first** within each byte.
+  - pixel 0 (leftmost in 4-pixel run) = bits 6-7
+  - pixel 1 = bits 4-5
+  - pixel 2 = bits 2-3
+  - pixel 3 = bits 0-1
+- **Byte order per row:** stored as 16-bit big-endian halfwords. The
+  decoder loop at `0x08002faa..0x8002fd6` reads `byte[+1]` (high byte
+  of the BE halfword) before `byte[+0]`, so for a row of 8 pixels the
+  `+1` byte holds the LEFT 4 pixels and the `+0` byte holds the right
+  4 pixels.
+- **Tile organisation:** **8x8 2bpp tiles**, 16 bytes per tile (8 rows
+  × 2 bytes/row).
+- **Glyph layout:**
+  - Atlas 0 (`0x08edf800`): 2 tiles per glyph laid out side-by-side =
+    **16x8** strip — these are *jamo half-cells*. Used by handler 0
+    when the engine is composing syllables jamo-by-jamo.
+  - Atlas 1 (`0x08f18800`) and Atlas 2 (`0x08f51800`): **4 tiles in
+    GBA reading order** (top-left, top-right, bottom-left,
+    bottom-right) = **16x16** glyphs. These hold full pre-composed
+    hangul syllables plus ASCII (`0-9`, `!?A-Za-z`), accented Latin
+    (Ä, Ö, Ü, ñ, é, etc.), arrows, brackets, and Pokémon-specific
+    indicators.
+- **Color remap** (via the two LUTs — verified empirically by walking
+  every input byte through both):
+  - raw 2bpp 0 → 4bpp 0 (transparent / paper)
+  - raw 2bpp 1 → 4bpp 2 (foreground color A)
+  - raw 2bpp 2 → 4bpp 3 (foreground color B — used for the gray
+    arrow indicators; almost all hangul uses only color A)
+  - raw 2bpp 3 → 4bpp 0 (treated as transparent; unused in real data)
+- **Per-glyph width:** `width_table[cp]` gives the advance in pixels
+  (typically 5 for narrow ASCII, 6 for hangul/wide-Latin).
+- **Atlas slot stride:** 64 bytes per glyph in *every* atlas. Atlas 0
+  uses only 32; the other 32 are padding (or a higher-resolution
+  variant the renderer doesn't currently sample).
+
+`render_jamo_atlas.py` implements this exactly. Calling it with the
+default flags writes 4x-zoomed PNGs of the first 256 entries of each
+atlas to `/tmp/poketrek_trace/atlas_render/`. The atlas-1 sheet shows
+clean, readable hangul (e.g., 아 르 레 이 니 소 조 사 터 리 보 스 카
+치 마 지 나 제 례 케 에 시 개 ...) plus the full ASCII range.
+
+### Implications for codepoint coverage
+
+The dialog corpus's BE codepoints in `0x3700..0x40FF` index into
+**atlas 1 or 2** (the dispatcher routes by `[r6+0x1c]` mode byte).
+With the renderer above, every codepoint can now be visualised
+directly from the ROM, and OCR can resolve the ~460 still-unknown
+codepoints against a hangul recognition pipeline. This unblocks the
+push from 81% → ~95%+ coverage that was deferred earlier.
+
+### Files added in this update
+
+- `trace_glyph_writes.lua` — runtime single-step tracer with cache
+  hash detection and per-step register capture.
+- `analyze_glyph_trace.py` — clusters JSONL events by PC, finds caller
+  patterns via LR distribution.
+- `disasm_around.py` — quick Thumb disassembly with literal pool
+  resolution.
+- `extract_jamo_handler_pools.py` — extracts patched/vanilla atlas
+  pointers from each of the 6 dispatcher handlers.
+- `dump_luts.lua` — drives ROM into a known-stable frame and captures
+  ROM LUT (`0x081ea090`, 256 B), IWRAM LUT (`0x03000a40`, 512 B), and
+  the post-init IWRAM staging buffer.
+- `render_jamo_atlas.py` — exact-encoding renderer that decodes any
+  glyph slot to a PIL `Image`. Validated against atlas 1 (full hangul
+  + ASCII visible).
