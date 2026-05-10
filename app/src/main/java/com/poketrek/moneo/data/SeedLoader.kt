@@ -37,6 +37,15 @@ object SeedLoader {
         for (i in 0 until arr.length()) {
             val o = arr.getJSONObject(i)
             val korean = o.getString("korean")
+            val areasRefArr = o.optJSONArray("areasReferenced")
+            val areasReferenced: List<String> = if (areasRefArr != null) {
+                buildList(areasRefArr.length()) {
+                    for (j in 0 until areasRefArr.length()) {
+                        val a = areasRefArr.optString(j)
+                        if (a.isNotEmpty()) add(a)
+                    }
+                }
+            } else emptyList()
             out += VocabEntry(
                 id = "$sourceTag:$korean",
                 korean = korean,
@@ -50,6 +59,7 @@ object SeedLoader {
                     ?: o.getString("areaId"),
                 sourceTag = sourceTag,
                 notes = o.optString("notes").takeIf { it.isNotEmpty() },
+                areasReferenced = areasReferenced,
             )
         }
         return out

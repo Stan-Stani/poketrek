@@ -84,10 +84,25 @@ class MoneoRepository(
         _cards.value = store.all().associateBy { it.vocabId }
     }
 
+    /**
+     * Vocab visible while the player is in [areaId].
+     *
+     * Matches a card if EITHER:
+     *  - its primary [VocabEntry.areaId] equals the queried area (the
+     *    canonical "home area" — typically firstAreaEncountered), OR
+     *  - the queried area appears in [VocabEntry.areasReferenced] (the
+     *    full set of canonical areas where the lemma surfaces in ROM
+     *    dialog/script). Cards shipped before the attribution pipeline
+     *    have an empty list, so the second clause is a no-op for them.
+     *
+     * Filters out cards whose [VocabEntry.sourceTag] is in
+     * [excludedSourceTags] (e.g. user opted out of Pokémon-name cards).
+     */
     fun vocabForArea(areaId: String): List<VocabEntry> {
         val excluded = _excludedSourceTags.value
         return _vocab.value.values.filter {
-            it.areaId == areaId && it.sourceTag !in excluded
+            (it.areaId == areaId || areaId in it.areasReferenced) &&
+                it.sourceTag !in excluded
         }
     }
 

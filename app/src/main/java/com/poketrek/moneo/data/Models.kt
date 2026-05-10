@@ -14,9 +14,23 @@ data class VocabEntry(
     val korean: String,
     val gloss: String,
     val partOfSpeech: String,
+    /**
+     * Primary area for this card — typically the area where the player first
+     * encounters it (`firstAreaEncountered`) or, for hand-curated decks, the
+     * `areaId` field. Used as the canonical "home area" for sorting.
+     */
     val areaId: String,
     val sourceTag: String,
     val notes: String? = null,
+    /**
+     * Every canonical area where the lemma appears in ROM script/dialog.
+     * Empty for hand-curated decks (use [areaId] alone). Populated by the
+     * attribution pipeline (`tools/moneo/attribute_existing_decks.py`).
+     * Repository queries broaden card visibility through this set so the
+     * player sees a card in *every* area where it surfaces, not only the
+     * first-encountered area.
+     */
+    val areasReferenced: List<String> = emptyList(),
 )
 
 /**
