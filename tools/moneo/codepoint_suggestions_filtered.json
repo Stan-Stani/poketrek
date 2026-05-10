@@ -1,0 +1,496 @@
+{
+  "version": 1,
+  "method": "n-gram triangulation filtered by LIS bracket constraint",
+  "stats": {
+    "total_suggestions": 23,
+    "validated": 3,
+    "rejected": 20
+  },
+  "validated": [
+    {
+      "codepoint": "0x372D",
+      "predicted": "것",
+      "confidence": "high",
+      "margin": 1.0,
+      "contexts": 3,
+      "occurrences": 189,
+      "runner_up": null,
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+AC82",
+      "hi_uni": "U+AC8B",
+      "prev_anchor": [
+        "0x372C",
+        "겁"
+      ],
+      "next_anchor": [
+        "0x3734",
+        "게"
+      ],
+      "bracket_size": 10
+    },
+    {
+      "codepoint": "0x391F",
+      "predicted": "된",
+      "confidence": "high",
+      "margin": 0.77,
+      "contexts": 10,
+      "occurrences": 154,
+      "runner_up": "힌",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B3DA",
+      "hi_uni": "U+B44F",
+      "prev_anchor": [
+        "0x3917",
+        "동"
+      ],
+      "next_anchor": [
+        "0x3926",
+        "두"
+      ],
+      "bracket_size": 118
+    },
+    {
+      "codepoint": "0x3A29",
+      "predicted": "를",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 3,
+      "occurrences": 805,
+      "runner_up": "넨",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B975",
+      "hi_uni": "U+B983",
+      "prev_anchor": [
+        "0x3A26",
+        "르"
+      ],
+      "next_anchor": [
+        "0x3A2A",
+        "름"
+      ],
+      "bracket_size": 15
+    }
+  ],
+  "rejected": [
+    {
+      "codepoint": "0x39CC",
+      "predicted": "깝",
+      "confidence": "high",
+      "margin": 1.0,
+      "contexts": 6,
+      "occurrences": 47,
+      "runner_up": null,
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B7EE",
+      "hi_uni": "U+B807",
+      "prev_anchor": [
+        "0x39C4",
+        "럭"
+      ],
+      "next_anchor": [
+        "0x39CD",
+        "레"
+      ],
+      "bracket_size": 26
+    },
+    {
+      "codepoint": "0x3D00",
+      "predicted": "덴",
+      "confidence": "high",
+      "margin": 1.0,
+      "contexts": 3,
+      "occurrences": 179,
+      "runner_up": null,
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C602",
+      "hi_uni": "U+C607",
+      "prev_anchor": [
+        "0x3CEC",
+        "영"
+      ],
+      "next_anchor": [
+        "0x3D01",
+        "예"
+      ],
+      "bracket_size": 6
+    },
+    {
+      "codepoint": "0x3ADE",
+      "predicted": "밧",
+      "confidence": "high",
+      "margin": 1.0,
+      "contexts": 3,
+      "occurrences": 38,
+      "runner_up": null,
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+BC95",
+      "hi_uni": "U+BC9F",
+      "prev_anchor": [
+        "0x3ADD",
+        "범"
+      ],
+      "next_anchor": [
+        "0x3AE2",
+        "베"
+      ],
+      "bracket_size": 11
+    },
+    {
+      "codepoint": "0x3E8D",
+      "predicted": "을",
+      "confidence": "high",
+      "margin": 0.77,
+      "contexts": 18,
+      "occurrences": 127,
+      "runner_up": "눑",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+CCAE",
+      "hi_uni": "U+CCCF",
+      "prev_anchor": [
+        "0x3E8C",
+        "청"
+      ],
+      "next_anchor": [
+        "0x3E95",
+        "쳐"
+      ],
+      "bracket_size": 34
+    },
+    {
+      "codepoint": "0x3FAE",
+      "predicted": "샵",
+      "confidence": "high",
+      "margin": 0.6,
+      "contexts": 7,
+      "occurrences": 109,
+      "runner_up": "짝",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+D2B9",
+      "hi_uni": "U+D2EF",
+      "prev_anchor": [
+        "0x3FAA",
+        "트"
+      ],
+      "next_anchor": [
+        "0x3FB8",
+        "티"
+      ],
+      "bracket_size": 55
+    },
+    {
+      "codepoint": "0x3DB7",
+      "predicted": "있",
+      "confidence": "high",
+      "margin": 0.5,
+      "contexts": 15,
+      "occurrences": 72,
+      "runner_up": "졌",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C839",
+      "hi_uni": "U+C86F",
+      "prev_anchor": [
+        "0x3DB2",
+        "져"
+      ],
+      "next_anchor": [
+        "0x3DBA",
+        "조"
+      ],
+      "bracket_size": 55
+    },
+    {
+      "codepoint": "0x3D1C",
+      "predicted": "있",
+      "confidence": "high",
+      "margin": 0.5,
+      "contexts": 5,
+      "occurrences": 60,
+      "runner_up": "쓴",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C63A",
+      "hi_uni": "U+C654",
+      "prev_anchor": [
+        "0x3D13",
+        "옹"
+      ],
+      "next_anchor": [
+        "0x3D1D",
+        "왕"
+      ],
+      "bracket_size": 27
+    },
+    {
+      "codepoint": "0x3995",
+      "predicted": "빨",
+      "confidence": "high",
+      "margin": 0.5,
+      "contexts": 5,
+      "occurrences": 49,
+      "runner_up": "뜨",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B6F1",
+      "hi_uni": "U+B77B",
+      "prev_anchor": [
+        "0x398F",
+        "뛰"
+      ],
+      "next_anchor": [
+        "0x39A9",
+        "라"
+      ],
+      "bracket_size": 139
+    },
+    {
+      "codepoint": "0x39DD",
+      "predicted": "닌",
+      "confidence": "high",
+      "margin": 0.5,
+      "contexts": 5,
+      "occurrences": 19,
+      "runner_up": "킨",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B826",
+      "hi_uni": "U+B83F",
+      "prev_anchor": [
+        "0x39D6",
+        "력"
+      ],
+      "next_anchor": [
+        "0x39DE",
+        "례"
+      ],
+      "bracket_size": 26
+    },
+    {
+      "codepoint": "0x3745",
+      "predicted": "있",
+      "confidence": "high",
+      "margin": 0.5,
+      "contexts": 4,
+      "occurrences": 21,
+      "runner_up": "쓴",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+ACB1",
+      "hi_uni": "U+ACDF",
+      "prev_anchor": [
+        "0x3741",
+        "결"
+      ],
+      "next_anchor": [
+        "0x374D",
+        "고"
+      ],
+      "bracket_size": 47
+    },
+    {
+      "codepoint": "0x3DBB",
+      "predicted": "듯",
+      "confidence": "high",
+      "margin": 0.4,
+      "contexts": 6,
+      "occurrences": 28,
+      "runner_up": "능",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C871",
+      "hi_uni": "U+C8E3",
+      "prev_anchor": [
+        "0x3DBA",
+        "조"
+      ],
+      "next_anchor": [
+        "0x3DD8",
+        "죤"
+      ],
+      "bracket_size": 115
+    },
+    {
+      "codepoint": "0x3CAB",
+      "predicted": "믥",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 26,
+      "occurrences": 105,
+      "runner_up": "닫",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C556",
+      "hi_uni": "U+C55D",
+      "prev_anchor": [
+        "0x3CA9",
+        "압"
+      ],
+      "next_anchor": [
+        "0x3CAE",
+        "앞"
+      ],
+      "bracket_size": 8
+    },
+    {
+      "codepoint": "0x39DC",
+      "predicted": "믥",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 15,
+      "occurrences": 49,
+      "runner_up": "닫",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B826",
+      "hi_uni": "U+B83F",
+      "prev_anchor": [
+        "0x39D6",
+        "력"
+      ],
+      "next_anchor": [
+        "0x39DE",
+        "례"
+      ],
+      "bracket_size": 26
+    },
+    {
+      "codepoint": "0x373A",
+      "predicted": "믥",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 10,
+      "occurrences": 136,
+      "runner_up": "닫",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+AC95",
+      "hi_uni": "U+ACA8",
+      "prev_anchor": [
+        "0x3736",
+        "겔"
+      ],
+      "next_anchor": [
+        "0x373D",
+        "격"
+      ],
+      "bracket_size": 20
+    },
+    {
+      "codepoint": "0x3D0B",
+      "predicted": "쌀",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 8,
+      "occurrences": 91,
+      "runner_up": "올",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C629",
+      "hi_uni": "U+C636",
+      "prev_anchor": [
+        "0x3D0A",
+        "온"
+      ],
+      "next_anchor": [
+        "0x3D12",
+        "옷"
+      ],
+      "bracket_size": 14
+    },
+    {
+      "codepoint": "0x393E",
+      "predicted": "렬",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 8,
+      "occurrences": 38,
+      "runner_up": "끈",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B4DD",
+      "hi_uni": "U+B4E3",
+      "prev_anchor": [
+        "0x393D",
+        "드"
+      ],
+      "next_anchor": [
+        "0x3941",
+        "들"
+      ],
+      "bracket_size": 7
+    },
+    {
+      "codepoint": "0x3778",
+      "predicted": "큐",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 5,
+      "occurrences": 59,
+      "runner_up": "짜",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+AD6D",
+      "hi_uni": "U+AD73",
+      "prev_anchor": [
+        "0x3776",
+        "구"
+      ],
+      "next_anchor": [
+        "0x377A",
+        "굴"
+      ],
+      "bracket_size": 7
+    },
+    {
+      "codepoint": "0x3D7A",
+      "predicted": "완",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 4,
+      "occurrences": 157,
+      "runner_up": "것",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C785",
+      "hi_uni": "U+C788",
+      "prev_anchor": [
+        "0x3D79",
+        "임"
+      ],
+      "next_anchor": [
+        "0x3D7D",
+        "잉"
+      ],
+      "bracket_size": 4
+    },
+    {
+      "codepoint": "0x384D",
+      "predicted": "믥",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 4,
+      "occurrences": 5,
+      "runner_up": "닫",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+B0C5",
+      "hi_uni": "U+B0C8",
+      "prev_anchor": [
+        "0x384A",
+        "냄"
+      ],
+      "next_anchor": [
+        "0x384E",
+        "냉"
+      ],
+      "bracket_size": 4
+    },
+    {
+      "codepoint": "0x3C1E",
+      "predicted": "완",
+      "confidence": "low",
+      "margin": 0.0,
+      "contexts": 3,
+      "occurrences": 31,
+      "runner_up": "것",
+      "notes": "n-gram triangulation against 2010 corpus; manual review required",
+      "lo_uni": "U+C22E",
+      "hi_uni": "U+C26B",
+      "prev_anchor": [
+        "0x3C1B",
+        "숭"
+      ],
+      "next_anchor": [
+        "0x3C27",
+        "쉬"
+      ],
+      "bracket_size": 62
+    }
+  ]
+}

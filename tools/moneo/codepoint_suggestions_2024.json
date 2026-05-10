@@ -6,8 +6,8 @@
   "min_occurrences": 5
  },
  "stats": {
-  "suggestions_total": 21,
-  "high_confidence": 10,
+  "suggestions_total": 23,
+  "high_confidence": 13,
   "medium_confidence": 0,
   "skipped_low_frequency": 343
  },
@@ -17,18 +17,18 @@
    "predicted": "깝",
    "confidence": "high",
    "margin": 1.0,
-   "contexts": 7,
-   "occurrences": 49,
+   "contexts": 6,
+   "occurrences": 47,
    "runner_up": null,
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
-   "codepoint": "0x3D15",
-   "predicted": "늬",
+   "codepoint": "0x372D",
+   "predicted": "것",
    "confidence": "high",
    "margin": 1.0,
-   "contexts": 5,
-   "occurrences": 139,
+   "contexts": 3,
+   "occurrences": 189,
    "runner_up": null,
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
@@ -38,17 +38,17 @@
    "confidence": "high",
    "margin": 1.0,
    "contexts": 3,
-   "occurrences": 178,
+   "occurrences": 179,
    "runner_up": null,
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
-   "codepoint": "0x3A21",
-   "predicted": "을",
+   "codepoint": "0x3ADE",
+   "predicted": "밧",
    "confidence": "high",
    "margin": 1.0,
    "contexts": 3,
-   "occurrences": 19,
+   "occurrences": 38,
    "runner_up": null,
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
@@ -56,9 +56,9 @@
    "codepoint": "0x3E8D",
    "predicted": "을",
    "confidence": "high",
-   "margin": 0.79,
-   "contexts": 15,
-   "occurrences": 129,
+   "margin": 0.77,
+   "contexts": 18,
+   "occurrences": 127,
    "runner_up": "눑",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
@@ -66,9 +66,9 @@
    "codepoint": "0x391F",
    "predicted": "된",
    "confidence": "high",
-   "margin": 0.75,
-   "contexts": 7,
-   "occurrences": 155,
+   "margin": 0.77,
+   "contexts": 10,
+   "occurrences": 154,
    "runner_up": "힌",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
@@ -77,14 +77,24 @@
    "predicted": "샵",
    "confidence": "high",
    "margin": 0.6,
-   "contexts": 8,
-   "occurrences": 110,
+   "contexts": 7,
+   "occurrences": 109,
    "runner_up": "짝",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
+   "codepoint": "0x3DB7",
+   "predicted": "있",
+   "confidence": "high",
+   "margin": 0.5,
+   "contexts": 15,
+   "occurrences": 72,
+   "runner_up": "졌",
+   "notes": "n-gram triangulation against 2010 corpus; manual review required"
+  },
+  {
    "codepoint": "0x3D1C",
-   "predicted": "없",
+   "predicted": "있",
    "confidence": "high",
    "margin": 0.5,
    "contexts": 5,
@@ -93,13 +103,13 @@
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
-   "codepoint": "0x3B29",
-   "predicted": "붙",
+   "codepoint": "0x3995",
+   "predicted": "빨",
    "confidence": "high",
    "margin": 0.5,
-   "contexts": 3,
-   "occurrences": 20,
-   "runner_up": "찾",
+   "contexts": 5,
+   "occurrences": 49,
+   "runner_up": "뜨",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
@@ -107,9 +117,29 @@
    "predicted": "닌",
    "confidence": "high",
    "margin": 0.5,
-   "contexts": 3,
+   "contexts": 5,
    "occurrences": 19,
    "runner_up": "킨",
+   "notes": "n-gram triangulation against 2010 corpus; manual review required"
+  },
+  {
+   "codepoint": "0x3745",
+   "predicted": "있",
+   "confidence": "high",
+   "margin": 0.5,
+   "contexts": 4,
+   "occurrences": 21,
+   "runner_up": "쓴",
+   "notes": "n-gram triangulation against 2010 corpus; manual review required"
+  },
+  {
+   "codepoint": "0x3DBB",
+   "predicted": "듯",
+   "confidence": "high",
+   "margin": 0.4,
+   "contexts": 6,
+   "occurrences": 28,
+   "runner_up": "능",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
@@ -117,8 +147,8 @@
    "predicted": "믥",
    "confidence": "low",
    "margin": 0.0,
-   "contexts": 22,
-   "occurrences": 103,
+   "contexts": 26,
+   "occurrences": 105,
    "runner_up": "닫",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
@@ -127,8 +157,8 @@
    "predicted": "믥",
    "confidence": "low",
    "margin": 0.0,
-   "contexts": 16,
-   "occurrences": 50,
+   "contexts": 15,
+   "occurrences": 49,
    "runner_up": "닫",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
@@ -137,19 +167,19 @@
    "predicted": "믥",
    "confidence": "low",
    "margin": 0.0,
-   "contexts": 14,
+   "contexts": 10,
    "occurrences": 136,
    "runner_up": "닫",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
    "codepoint": "0x3D0B",
-   "predicted": "잘",
+   "predicted": "쌀",
    "confidence": "low",
    "margin": 0.0,
    "contexts": 8,
-   "occurrences": 90,
-   "runner_up": "쌀",
+   "occurrences": 91,
+   "runner_up": "올",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
@@ -163,43 +193,23 @@
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
-   "codepoint": "0x3CD3",
-   "predicted": "되",
-   "confidence": "low",
-   "margin": 0.0,
-   "contexts": 6,
-   "occurrences": 151,
-   "runner_up": "뇨",
-   "notes": "n-gram triangulation against 2010 corpus; manual review required"
-  },
-  {
-   "codepoint": "0x3995",
-   "predicted": "빨",
+   "codepoint": "0x3778",
+   "predicted": "큐",
    "confidence": "low",
    "margin": 0.0,
    "contexts": 5,
-   "occurrences": 49,
-   "runner_up": "잘",
+   "occurrences": 59,
+   "runner_up": "짜",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
-   "codepoint": "0x3CEB",
-   "predicted": "되",
+   "codepoint": "0x3D7A",
+   "predicted": "완",
    "confidence": "low",
    "margin": 0.0,
-   "contexts": 5,
-   "occurrences": 37,
-   "runner_up": "뇨",
-   "notes": "n-gram triangulation against 2010 corpus; manual review required"
-  },
-  {
-   "codepoint": "0x3745",
-   "predicted": "쓴",
-   "confidence": "low",
-   "margin": 0.0,
-   "contexts": 5,
-   "occurrences": 21,
-   "runner_up": "춘",
+   "contexts": 4,
+   "occurrences": 157,
+   "runner_up": "것",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
@@ -210,6 +220,16 @@
    "contexts": 4,
    "occurrences": 5,
    "runner_up": "닫",
+   "notes": "n-gram triangulation against 2010 corpus; manual review required"
+  },
+  {
+   "codepoint": "0x3A29",
+   "predicted": "를",
+   "confidence": "low",
+   "margin": 0.0,
+   "contexts": 3,
+   "occurrences": 805,
+   "runner_up": "넨",
    "notes": "n-gram triangulation against 2010 corpus; manual review required"
   },
   {
