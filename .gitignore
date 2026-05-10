@@ -32,3 +32,11 @@ third_party/mgba/build/
 # Python venvs (mining/tooling)
 .venv*/
 __pycache__/
+
+# Generated artifacts from font-hunt static analysis (large, regenerable)
+tools/moneo/rom_swap/lz77_candidates_2024/
+tools/moneo/rom_swap/lz77_renders/
+tools/moneo/rom_swap/lz77_callers_2024.json
+tools/moneo/rom_swap/lz77_sites_2024.json
+tools/moneo/rom_swap/patched_lz77_blocks.csv
+tools/moneo/rom_swap/diff_runs_2024.txt

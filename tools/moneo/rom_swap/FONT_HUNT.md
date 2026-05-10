@@ -1,6 +1,11 @@
 # 2024 ROM font location — open question
 
-**Status (2026-05-10):** unresolved. Coverage capped at 81.3% (539/~1000 codepoints).
+**Status (2026-05-10, late):** still unresolved, but the static path is now
+exhausted — the font is **not** stored as a single LZ77 block, and **not**
+in any code area we can statically locate from the call graph.
+See "Update 2026-05-10 (capstone disassembly attack)" below.
+
+**Earlier status:** Coverage capped at 81.3% (539/~1000 codepoints).
 
 ## What we know
 
@@ -128,3 +133,93 @@ with cross-references) or runtime trace from mGBA's debugger.
 The dialog corpus rebuild at the parent level
 (`tools/moneo/scan_rom_2024.py`) is unblocked and works fine at the
 current coverage. Extending to ~95% requires the disassembly route.
+
+## Update 2026-05-10 (capstone disassembly attack)
+
+Without Ghidra, we used capstone (Thumb mode) to do equivalent static
+analysis. New tools in this dir:
+
+- `find_lz77_sites.py` — every Thumb `SVC #0x12` / `#0x11` instruction in
+  the ROM, with disassembly context. Note: Thumb halfwords are LE, so SVC
+  imm bytes are `[imm, 0xDF]` not `[0xDF, imm]` (a previous brute-force
+  search had this reversed).
+- `find_lz77_callers.py` — locates the BIOS LZ77 wrappers (`LZ77UnCompVram`
+  @ 0x081e3bb8 and `LZ77UnCompWram` @ 0x081e3bbc) by byte signature
+  (`12 df 70 47`), then scans for every Thumb `BL` whose 22-bit signed
+  offset resolves to one of those wrappers. For each caller, walks back
+  ~80 instructions and resolves the most recent `LDR Rd, [PC, #imm]` into
+  r0 (compressed source) and r1 (destination) via literal-pool
+  arithmetic. Output: `lz77_callers_2024.json`.
+- `inspect_lz77_candidates.py` — pure-Python GBA LZ77 type-0x10
+  decompressor. Dumps each candidate's uncompressed bytes plus tile
+  density / variance.
+- `scan_patched_lz77.py` — brute-force every `byte == 0x10` in the
+  patched region (0xD00000..0xFFFFFF), attempt LZ77 decompress, score
+  for "looks like hangul tile data" (mid density, high variance, glyph
+  pair-match ratio). Output: `patched_lz77_blocks.csv`.
+- `render_lz77_candidates.py` — render any candidate as a tile-grid PNG
+  (8x8, 16x8, 16x16 layouts) for visual inspection. Outputs in
+  `lz77_renders/`.
+- `diff_vanilla.py` — byte-diff the 2024 Korean ROM against the vanilla
+  Japanese base (`1362 - Pokemon Leaf Green (J)(Cezar).gba`,
+  md5 138a71a5be83f3f3d7af3d31916a5fc7). Output: `diff_runs_2024.txt`.
+
+### Findings
+
+1. The 2024 Korean patch does *massive* in-place rewrites of the vanilla
+   code/data region. Top patches:
+   - rank 1: file 0x5613c4..0x717700 (1.79 MB) — bulk text/script data
+   - rank 2: file 0x4b7c1b..0x5613bb (694 KB) — more data
+   - rank 3: file 0x6ccd2..0xb2e68 (287 KB) — **contains the rewritten
+     text engine**, including the 0x9f850 BL site we identified
+   - rank 4: file 0xdc1fc..0x120089 (278 KB) — also code/data
+   - rank 16: file 0xc432c..0xdc1ee (98 KB) — more code
+
+2. **No new code in the patched region** (≥ 0xD00000). All the SVC `#0x12`
+   bytes there fail the "coherent Thumb context" check (capstone produces
+   ARMv7-T2 instructions like `mcr2 p5, ...` and `vhadd.u8` that the GBA
+   ARM7TDMI cannot run). And there are zero `BL` instructions in vanilla
+   code that target the patched region. So the rewritten text engine
+   lives entirely inside vanilla code addresses; the patched region is
+   data only.
+
+3. **The font is not stored as an LZ77 block**, or at least not via any
+   path we can find statically. We located 15 BL-callers of LZ77 wrappers
+   that have a source pointer in the patched region. After decompressing
+   and rendering all 15:
+   - 0x8e98164 → 1.5 KB icons (UI/Pokémon Center)
+   - 0x8e9b464, 0x8e9b52c → ~384 B each, dialog textbox borders
+   - 0x8e9cb60 → 528 B tilemap
+   - 0x8eb0e24 → 200 B tilemap
+   - 0x8eb8854 → 1024 B sprite
+   - The remaining 8KB-class blocks elsewhere in the patched region are
+     vanilla Japanese assets (battle UI, contest portraits, kana text)
+     that the patch left untouched but which still appear in the bulk
+     diff because they got moved/copied.
+
+4. **The font must be uncompressed**, somewhere in the patched data region,
+   and the rewritten renderer dereferences it directly via a literal-pool
+   pointer that we have not yet identified. Candidates: 151 unique
+   patched-region pointers in rank-3, 382 in rank-4, etc. (see
+   `find_lz77_callers.py` style sweep but for plain u32 reads).
+
+### Recommended next step
+
+Switch to **runtime tracing via mGBA's GDB stub** (the original suggestion
+#2). `tools/moneo/gdb_client.py` already speaks the protocol. Procedure:
+
+1. Boot the 2024 ROM in `mgba -g leafgreen_J-K_2024.gba`.
+2. Drive the game past the title screen until Korean text is on screen
+   (a save state with text mid-render is ideal).
+3. Use the GDB client to dump VRAM 0x06000000..0x06010000 and search
+   the ROM file for matching tile bytes — the offset is font_base.
+4. Or set HW execution breakpoints on every BL into a glyph-copy
+   helper (the rewritten function inside rank-3 region) and capture
+   r0/r1/r2 for each glyph render, which directly gives the font_base
+   + per-glyph offset.
+
+Code regions inside the rewritten text engine (rank 3) likely contain
+the per-glyph rendering function. The most-referenced patched-region
+pointers from there — `0x8eae3dc`, `0x8ead7bc`, `0x8ece486`,
+`0x8ecb1d6` — are leading candidates for either font_base or the
+codepoint-→-glyph translation table.
