@@ -276,3 +276,77 @@ Capture VRAM at a screen that uses the **dialog font**. Two ways:
 The existing 5 save states (`*.ss0` under repo root) appear to be from
 the **2010** Korean ROM, not the 2024 ROM — different ROM, save states
 are not portable. So a fresh save state is needed.
+
+## Update 2026-05-10 (drove the game to a dialog screen)
+
+Stopped depending on save states. New tool `drive_to_dialog.lua` scripts
+input directly: holds A/START past the GameFreak intro, the title screen,
+and into Professor Oak's "Welcome to the Pokémon world" intro speech.
+Snapshots VRAM/EWRAM/palette + a PNG screenshot every 30 frames, into
+`/tmp/poketrek_drive/`. Snapshots 010 (frame 630) through 014 (frame 750)
+all show full dialog text on screen.
+
+### Result of byte-search against the dialog VRAM
+
+Every encoding still fails to produce a stride run:
+
+- **4bpp (raw 32-byte VRAM tile)** — 1 unique patched-region match.
+- **1bpp_fwd** — 38 patched matches, top 4KB bucket = 0xe9d000 (18).
+- **1bpp_rev** — 37 patched matches, top 4KB bucket = 0xe9d000 (19).
+- **2bpp linear / GB-style** — fewer than 6 each.
+
+When restricted to "VRAM tiles that *just appeared* between frame 570
+and 630" (i.e., literally the dialog tiles), the top buckets shift to
+the vanilla ROM region: 0x476000 (19 hits, 1bpp_fwd), 0x4a0000–0x522000.
+But rendering those regions as 1bpp shows high-density noise, not
+glyphs. No encoding produces a clean stride run; the apparent buckets
+are statistical artifacts of common 8-byte patterns in dense data.
+
+A separate angle — searching for verbatim ROM-byte chunks inside the
+dialog-frame **EWRAM** dump — found a 9-element stride run at
+EWRAM 0x37218..0x37258 ↔ ROM 0x45db90..0x45dbd0 (8B stride,
+byte-for-byte). The ROM bytes there *are* patched (94.6% differ from
+vanilla in the surrounding 12 KB), but rendering the bytes as 1bpp,
+2bpp, or 4bpp produces noise — they are *not* glyph bitmaps. The
+match is real but the bytes are some other rewritten data structure
+(state, table, or compressed payload) that happens to be copied to
+EWRAM at boot.
+
+### Working hypothesis: jamo-decomposed rendering
+
+Hangul has structural decomposition: every syllable is 2 or 3 *jamo*
+(initial consonant + medial vowel + optional final consonant). The
+canonical engineering approach for a Korean GBA font in a
+storage-constrained ROM hack is to store ~70 jamo bitmaps and
+compose syllable glyphs at runtime. That would explain why no single
+VRAM 16x16 glyph byte-matches anywhere in the ROM in any pixel format:
+the bytes in VRAM are the **OR of 2–3 source bitmaps**, none of
+which appears intact at any ROM offset.
+
+Confirming this requires runtime instrumentation that either
+(a) breaks on writes to a specific dialog-tile VRAM address and
+captures the source pointer at the time of the write, or (b) traces
+the rewritten renderer (the rank-3 patch at file 0x6ccd2..0xb2e68
+contains it) instruction-by-instruction.
+
+mGBA's Qt GDB stub on macOS won't survive a single
+connect/disconnect, but the Lua API exposes `emu.memory.<region>:set8`
+hooks that can serve as runtime watches. Continuing this hunt is
+worthwhile **only** if ~95%+ codepoint coverage is needed — current
+coverage at 81% supports the dialog corpus rebuild adequately.
+
+### Files added in this session
+
+- `find_lz77_sites.py`        — capstone scan of every Thumb SVC #0x12/0x11
+- `find_lz77_callers.py`      — every BL caller of the BIOS LZ77 wrappers, with literal-pool resolution
+- `inspect_lz77_candidates.py`— pure-Python GBA LZ77 type-0x10 decompressor
+- `scan_patched_lz77.py`      — every LZ77 block in the patched region, scored for tile-likeness
+- `render_lz77_candidates.py` — render any LZ77 block as 8x8/16x8/16x16 PNG
+- `diff_vanilla.py`           — byte-diff 2024 ROM vs vanilla Japanese FRLG
+- `dump_vram.lua`             — mGBA Lua: dump VRAM/EWRAM/palette/OAM at frame N
+- `drive_to_dialog.lua`       — mGBA Lua: scripts START/A inputs past intro+title into Oak's dialog, snapshots every 30 frames
+- `find_font_via_vram.py` / `_1bpp.py` / `find_font_encoding.py` — per-encoding signature search
+
+Generated artifacts (gitignored): `lz77_callers_2024.json`,
+`lz77_sites_2024.json`, `patched_lz77_blocks.csv`,
+`diff_runs_2024.txt`, `lz77_candidates_2024/`, `lz77_renders/`.
