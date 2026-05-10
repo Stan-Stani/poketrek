@@ -436,6 +436,57 @@ in low-frequency syllables that triangulation doesn't reach.
 - `extract_jamo_layers.py` — empirically verifies the jamo
   decomposition hypothesis from the EWRAM glyph cache.
 
+## Update 2026-05-10 (call-graph walk; engine task system identified)
+
+`walk_call_graph.py` — minimal Ghidra-substitute. Given a file offset,
+it (a) finds the nearest preceding `push {... lr}` that's a coherent
+function start, (b) walks forward to the matching `pop {... pc}` /
+`bx lr`, (c) collects every BL caller of that function, (d) finds
+function-pointer references in u32 literals (Thumb LSB convention),
+and (e) recursively walks up the call chain.
+
+Walking from the BL LZ77UnCompWram site at file 0x9f850:
+
+```
+FUNC 0x9f844..0xa0844  (the LZ77 caller — loads icon graphics 0x8e98164)
+  callers: 1 BL  →  installed via callback at 0x9d9a0
+FUNC 0x9d23c..0x9d9ae  (the parent state handler)
+  → uses `bl 0x558` to install the next-state callback
+FUNC 0x558..0x568  ; ldr r1, [pc, #c]; str r0, [r1, #4]; bx lr
+  ; this is `SetTaskFunc(slot, fn)` — pokefirered's task system
+```
+
+So the "callback installation" pattern (`bl 0x558`) is the **engine-wide
+task scheduler**, not specific to text rendering. We found **127 unique
+task handlers** installed this way across the ROM. That's the entire
+game's task system, far too broad to be useful as a discriminator.
+
+### Where the search stops
+
+The font hunt is now blocked on something static analysis can't answer
+in reasonable time without an interactive disassembler:
+
+- The composer's codepoint decomposition uses immediate arithmetic
+  (no literal-pool fingerprint).
+- The jamo bitmap encoding is non-trivial (no byte pattern matches at
+  any 1bpp/2bpp/4bpp interpretation).
+- The renderer is woven into the engine task system, so its callers
+  aren't directly identifiable from BL site analysis alone.
+- The glyph cache at EWRAM 0x02007800..0x02009000 is the proven
+  composition target, but the function(s) that *write* into it are
+  hidden behind multi-step task-handler chains.
+
+What's needed to unblock: load the ROM into Ghidra (or IDA Free), set
+0x9f844 as the entry point, and use cross-references to walk up the
+graph interactively. With Ghidra one can also identify the codepoint
+decomposition by its arithmetic fingerprint (constant divisors of
+21*28 = 588 and 28, characteristic of Korean syllable indexing).
+
+### Files added in this update
+
+- `walk_call_graph.py` — recursive call-graph walker for capstone
+  (handles BL callers + function-pointer table refs).
+
 ### Files added in this session
 
 - `find_lz77_sites.py`        — capstone scan of every Thumb SVC #0x12/0x11
