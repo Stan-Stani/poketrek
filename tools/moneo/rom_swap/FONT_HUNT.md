@@ -335,6 +335,61 @@ hooks that can serve as runtime watches. Continuing this hunt is
 worthwhile **only** if ~95%+ codepoint coverage is needed — current
 coverage at 81% supports the dialog corpus rebuild adequately.
 
+## Update 2026-05-10 (jamo decomposition CONFIRMED)
+
+The jamo-decomposition hypothesis is now empirically verified.
+
+**Where:** EWRAM 0x02007000..0x02009000 (= dump offset 0x7000..0x9000).
+This is the rendered-glyph cache where the renderer lays out 4bpp 8x8
+tiles before they get DMA'd to VRAM.
+
+**Palette:** {0, 2, 3}. Index 0 = transparent. Indices 2 and 3 are two
+distinct foreground colors used per-tile.
+
+**Decomposition test** (`extract_jamo_layers.py`):
+- 146 two-color glyph-cache tiles examined.
+- Shadow-shift hypothesis (color 2 = color 3 shifted): only 5/146
+  match `shift(m3, -1, 0)`, no other shift hits more than 1.
+- Containment: `m2 ⊆ m3` and `m3 ⊆ m2` both = 0/146.
+- → Color 2 and color 3 are **independent layers**. Not a glyph + its
+  shadow, but two separate jamo bitmaps composited into the same cell.
+
+**Visual confirmation** (`jamo_color2_layer.png`, `jamo_color3_layer.png`):
+each layer in isolation shows clean hangul jamo strokes — verticals
+(ㅣ), horizontals (ㅡ), small squares (ㅁ), and consonant shapes
+(ㄴ, ㄹ, ㅂ, ㄷ). Combined (`jamo_combined.png`) reproduces the
+visible dialog-frame syllables.
+
+### What we still don't have
+
+Searching the ROM byte-for-byte for these layer masks (1bpp_fwd /
+1bpp_rev / 4bpp-equivalent / 2bpp / column-major / horizontal-doubled)
+returns no real font_base. Some buckets at 0x476800, 0x4b9400, 0x4f0400
+have several "matches", but inspecting them shows the hits are all the
+trivial mask `0101010100000000` (4 pixels at left edge) hitting against
+incidental tilemap data. No real jamo source has been located by static
+byte search.
+
+The jamo bitmaps are stored in the patched ROM in some encoded form
+the static search hasn't covered:
+- Bit-packed at sub-byte granularity (each jamo using `n` bits, not
+  multiples of 8)
+- Run-length / stroke-encoded (the renderer interprets stroke
+  primitives, not pixel data)
+- Indirect through a small table that the renderer addresses via a
+  decomposed-codepoint formula (initial_idx, medial_idx, final_idx
+  are computed from the BE codepoint)
+
+### Recommended next attack
+
+Inspect the rewritten renderer in vanilla code at file 0x9f850 (the BL
+LZ77UnCompWram site we located statically). Read backward from there to
+find the dispatch function that fetches a jamo bitmap given a
+codepoint. The literal pool of THAT function points at the jamo
+storage. Capstone can do this; the rank-3 patch contains the code; the
+167 + 382 patched-region pointers found earlier in `find_lz77_callers.py`
+output cover most of the candidates.
+
 ### Files added in this session
 
 - `find_lz77_sites.py`        — capstone scan of every Thumb SVC #0x12/0x11
