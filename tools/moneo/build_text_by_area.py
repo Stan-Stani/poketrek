@@ -51,8 +51,11 @@ def main():
     dialog_by_mapsec = mapsec_dialog["mapsecs"]
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    # Wipe old per-area markdown so stale files don't linger.
+    # Wipe old per-area markdown so stale files don't linger. Don't touch
+    # README.md or other top-level docs.
     for p in OUT_DIR.glob("**/*.md"):
+        if p.parent == OUT_DIR and p.name == "README.md":
+            continue
         p.unlink()
     for p in sorted(OUT_DIR.glob("*"), reverse=True):
         if p.is_dir():

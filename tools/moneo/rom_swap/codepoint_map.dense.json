@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "method": "dense gap fill: between LIS anchors where cp_gap == unicode_gap, intermediate cps map 1:1 to syllables in collation order. Deterministic (no OCR).",
+  "stats": {
+    "lis_size": 519,
+    "dense_pairs": 11,
+    "new_mappings": 19,
+    "corrections": 1
+  },
+  "mappings": {
+    "370A": "값",
+    "370B": "갓",
+    "3712": "갛",
+    "3A8D": "묵",
+    "3ABC": "밖",
+    "3ABD": "밗",
+    "3AC1": "밝",
+    "3AC2": "밞",
+    "3B4A": "빚",
+    "3BBB": "섞",
+    "3BBC": "섟",
+    "3BC5": "섰",
+    "3CA2": "앉",
+    "3CD1": "없",
+    "3CD2": "엇",
+    "3CD3": "었",
+    "3CE9": "엾",
+    "3CEA": "엿",
+    "3CEB": "였"
+  },
+  "corrections": {
+    "370C": "갔"
+  },
+  "details": {
+    "fills": {
+      "370A": {
+        "match": "값",
+        "anchor_a": "0x3709=갑",
+        "anchor_b": "0x370D=강",
+        "method": "dense_gap_fill"
+      },
+      "370B": {
+        "match": "갓",
+        "anchor_a": "0x3709=갑",
+        "anchor_b": "0x370D=강",
+        "method": "dense_gap_fill"
+      },
+      "3712": {
+        "match": "갛",
+        "anchor_a": "0x3711=갚",
+        "anchor_b": "0x3713=개",
+        "method": "dense_gap_fill"
+      },
+      "3A8D": {
+        "match": "묵",
+        "anchor_a": "0x3A8C=무",
+        "anchor_b": "0x3A8E=묶",
+        "method": "dense_gap_fill"
+      },
+      "3ABC": {
+        "match": "밖",
+        "anchor_a": "0x3ABB=박",
+        "anchor_b": "0x3ABE=반",
+        "method": "dense_gap_fill"
+      },
+      "3ABD": {
+        "match": "밗",
+        "anchor_a": "0x3ABB=박",
+        "anchor_b": "0x3ABE=반",
+        "method": "dense_gap_fill"
+      },
+      "3AC1": {
+        "match": "밝",
+        "anchor_a": "0x3AC0=발",
+        "anchor_b": "0x3AC3=밟",
+        "method": "dense_gap_fill"
+      },
+      "3AC2": {
+        "match": "밞",
+        "anchor_a": "0x3AC0=발",
+        "anchor_b": "0x3AC3=밟",
+        "method": "dense_gap_fill"
+      },
+      "3B4A": {
+        "match": "빚",
+        "anchor_a": "0x3B49=빙",
+        "anchor_b": "0x3B4B=빛",
+        "method": "dense_gap_fill"
+      },
+      "3BBB": {
+        "match": "섞",
+        "anchor_a": "0x3BBA=석",
+        "anchor_b": "0x3BBD=선",
+        "method": "dense_gap_fill"
+      },
+      "3BBC": {
+        "match": "섟",
+        "anchor_a": "0x3BBA=석",
+        "anchor_b": "0x3BBD=선",
+        "method": "dense_gap_fill"
+      },
+      "3BC5": {
+        "match": "섰",
+        "anchor_a": "0x3BC4=섯",
+        "anchor_b": "0x3BC6=성",
+        "method": "dense_gap_fill"
+      },
+      "3CA2": {
+        "match": "앉",
+        "anchor_a": "0x3CA1=안",
+        "anchor_b": "0x3CA3=않",
+        "method": "dense_gap_fill"
+      },
+      "3CD1": {
+        "match": "없",
+        "anchor_a": "0x3CD0=업",
+        "anchor_b": "0x3CD4=엉",
+        "method": "dense_gap_fill"
+      },
+      "3CD2": {
+        "match": "엇",
+        "anchor_a": "0x3CD0=업",
+        "anchor_b": "0x3CD4=엉",
+        "method": "dense_gap_fill"
+      },
+      "3CD3": {
+        "match": "었",
+        "anchor_a": "0x3CD0=업",
+        "anchor_b": "0x3CD4=엉",
+        "method": "dense_gap_fill"
+      },
+      "3CE9": {
+        "match": "엾",
+        "anchor_a": "0x3CE8=엽",
+        "anchor_b": "0x3CEC=영",
+        "method": "dense_gap_fill"
+      },
+      "3CEA": {
+        "match": "엿",
+        "anchor_a": "0x3CE8=엽",
+        "anchor_b": "0x3CEC=영",
+        "method": "dense_gap_fill"
+      },
+      "3CEB": {
+        "match": "였",
+        "anchor_a": "0x3CE8=엽",
+        "anchor_b": "0x3CEC=영",
+        "method": "dense_gap_fill"
+      }
+    },
+    "corrections": {
+      "370C": {
+        "raw": "졌",
+        "corrected_to": "갔",
+        "anchor_a": "0x3709=갑",
+        "anchor_b": "0x370D=강",
+        "method": "dense_gap_correction"
+      }
+    }
+  }
+}
