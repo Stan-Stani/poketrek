@@ -1,14 +1,10 @@
 {
  "rom": "leafgreen_J-K_2024.gba",
- "n_distinct_unknowns": 709,
+ "n_distinct_unknowns": 708,
  "unknowns": [
   {
-   "codepoint": "0x3F0F",
-   "occurrences": 972
-  },
-  {
    "codepoint": "0x3D7C",
-   "occurrences": 873
+   "occurrences": 875
   },
   {
    "codepoint": "0x3A29",
@@ -16,7 +12,7 @@
   },
   {
    "codepoint": "0x3C00",
-   "occurrences": 417
+   "occurrences": 420
   },
   {
    "codepoint": "0x3A37",
@@ -24,11 +20,11 @@
   },
   {
    "codepoint": "0x3B38",
-   "occurrences": 313
+   "occurrences": 314
   },
   {
    "codepoint": "0x3A3C",
-   "occurrences": 275
+   "occurrences": 276
   },
   {
    "codepoint": "0x3CD1",
@@ -43,12 +39,12 @@
    "occurrences": 190
   },
   {
-   "codepoint": "0x3D00",
-   "occurrences": 177
+   "codepoint": "0x3DC5",
+   "occurrences": 180
   },
   {
-   "codepoint": "0x3DC5",
-   "occurrences": 177
+   "codepoint": "0x3D00",
+   "occurrences": 178
   },
   {
    "codepoint": "0x404A",
@@ -83,12 +79,12 @@
    "occurrences": 139
   },
   {
-   "codepoint": "0x3E3F",
-   "occurrences": 135
+   "codepoint": "0x373A",
+   "occurrences": 136
   },
   {
-   "codepoint": "0x373A",
-   "occurrences": 133
+   "codepoint": "0x3E3F",
+   "occurrences": 135
   },
   {
    "codepoint": "0x3E00",
@@ -112,15 +108,15 @@
   },
   {
    "codepoint": "0x375A",
-   "occurrences": 104
+   "occurrences": 105
+  },
+  {
+   "codepoint": "0x3CAB",
+   "occurrences": 103
   },
   {
    "codepoint": "0x4038",
    "occurrences": 103
-  },
-  {
-   "codepoint": "0x3CAB",
-   "occurrences": 102
   },
   {
    "codepoint": "0x39C7",
@@ -128,7 +124,7 @@
   },
   {
    "codepoint": "0x393F",
-   "occurrences": 94
+   "occurrences": 95
   },
   {
    "codepoint": "0x3D0B",
@@ -319,11 +315,11 @@
    "occurrences": 47
   },
   {
-   "codepoint": "0x3A28",
-   "occurrences": 46
+   "codepoint": "0x3CFE",
+   "occurrences": 47
   },
   {
-   "codepoint": "0x3CFE",
+   "codepoint": "0x3A28",
    "occurrences": 46
   },
   {
@@ -603,6 +599,10 @@
    "occurrences": 23
   },
   {
+   "codepoint": "0x3C2C",
+   "occurrences": 23
+  },
+  {
    "codepoint": "0x3839",
    "occurrences": 22
   },
@@ -612,10 +612,6 @@
   },
   {
    "codepoint": "0x385C",
-   "occurrences": 22
-  },
-  {
-   "codepoint": "0x3C2C",
    "occurrences": 22
   },
   {
@@ -675,6 +671,10 @@
    "occurrences": 19
   },
   {
+   "codepoint": "0x3BCA",
+   "occurrences": 19
+  },
+  {
    "codepoint": "0x39DD",
    "occurrences": 19
   },
@@ -700,10 +700,6 @@
   },
   {
    "codepoint": "0x37CE",
-   "occurrences": 18
-  },
-  {
-   "codepoint": "0x3BCA",
    "occurrences": 18
   },
   {
@@ -743,6 +739,10 @@
    "occurrences": 17
   },
   {
+   "codepoint": "0x3E73",
+   "occurrences": 17
+  },
+  {
    "codepoint": "0x393C",
    "occurrences": 17
   },
@@ -775,7 +775,11 @@
    "occurrences": 15
   },
   {
-   "codepoint": "0x3E73",
+   "codepoint": "0x3971",
+   "occurrences": 15
+  },
+  {
+   "codepoint": "0x3FFF",
    "occurrences": 15
   },
   {
@@ -800,14 +804,6 @@
   },
   {
    "codepoint": "0x3764",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3971",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3FFF",
    "occurrences": 14
   },
   {
@@ -951,6 +947,10 @@
    "occurrences": 11
   },
   {
+   "codepoint": "0x3C3C",
+   "occurrences": 11
+  },
+  {
    "codepoint": "0x4090",
    "occurrences": 11
   },
@@ -1012,10 +1012,6 @@
   },
   {
    "codepoint": "0x3897",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x3C3C",
    "occurrences": 10
   },
   {
@@ -1363,6 +1359,10 @@
    "occurrences": 5
   },
   {
+   "codepoint": "0x3996",
+   "occurrences": 5
+  },
+  {
    "codepoint": "0x38C9",
    "occurrences": 5
   },
@@ -1476,10 +1476,6 @@
   },
   {
    "codepoint": "0x3750",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3996",
    "occurrences": 4
   },
   {
