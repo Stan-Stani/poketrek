@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import com.poketrek.emu.EmulatorRunner
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.gate.MoneoSoftGate
+import com.poketrek.moneo.ui.DirectionSuggestionDialog
 import com.poketrek.moneo.ui.MoneoHud
 import com.poketrek.moneo.ui.MoneoOverlay
 import com.poketrek.step.MovementBudget
@@ -195,6 +196,8 @@ fun EmulatorScreen(
                 modifier = Modifier.fillMaxSize(),
             )
         }
+
+        DirectionSuggestionDialog(moneo = moneo, romIdentity = romIdentity)
     }
 }
 

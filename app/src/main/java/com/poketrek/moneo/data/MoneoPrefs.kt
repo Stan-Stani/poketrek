@@ -35,6 +35,7 @@ private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymolo
 private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabled")
 private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
+private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
 private val KEY_CORRECTION_VPS_URL = stringPreferencesKey("moneo_correction_vps_url")
 
@@ -184,6 +185,15 @@ class MoneoPrefs private constructor(private val context: Context) {
     val direction: StateFlow<FlashcardDirection> = _direction.asStateFlow()
 
     /**
+     * One-way "user has made a direction choice" flag. Set by [setDirection]
+     * (any explicit toggle) and by [acknowledgeDirectionSuggestion] (the
+     * accept/decline dialog). Once true, the auto-suggestion never reappears
+     * — even after a ROM swap that would otherwise re-trigger it.
+     */
+    private val _directionWasManuallySet = MutableStateFlow(false)
+    val directionWasManuallySet: StateFlow<Boolean> = _directionWasManuallySet.asStateFlow()
+
+    /**
      * Explicit TTS-language override. `null` means "follow the direction
      * default" (KO_TO_EN → KOREAN, EN_TO_KO → ENGLISH). Use
      * [effectiveTtsLanguage] when consuming.
@@ -222,6 +232,7 @@ class MoneoPrefs private constructor(private val context: Context) {
                 (prefs[KEY_AREA_GATE_THRESHOLD_PCT] ?: DEFAULT_AREA_GATE_THRESHOLD_PCT)
                     .coerceIn(MIN_AREA_GATE_THRESHOLD_PCT, MAX_AREA_GATE_THRESHOLD_PCT)
             _direction.value = FlashcardDirection.fromStored(prefs[KEY_DIRECTION])
+            _directionWasManuallySet.value = prefs[KEY_DIRECTION_MANUAL] ?: false
             val storedOverride = TtsLanguage.fromStored(prefs[KEY_TTS_LANGUAGE])
             val migrated = migrateTtsLegacy(prefs[KEY_TTS_ENABLED], storedOverride)
             _ttsLanguageOverride.value = migrated
@@ -314,9 +325,26 @@ class MoneoPrefs private constructor(private val context: Context) {
     }
 
     fun setDirection(value: FlashcardDirection) {
+        markDirectionManual()
         if (value == _direction.value) return
         _direction.value = value
         scope.launch { context.moneoStore.edit { it[KEY_DIRECTION] = value.name } }
+    }
+
+    /**
+     * Called by the auto-suggestion dialog after the user accepts or
+     * declines. Marks the direction-set flag without touching [direction]
+     * itself, so a "no thanks, keep the default" decision is enough to
+     * silence future suggestions.
+     */
+    fun acknowledgeDirectionSuggestion() {
+        markDirectionManual()
+    }
+
+    private fun markDirectionManual() {
+        if (_directionWasManuallySet.value) return
+        _directionWasManuallySet.value = true
+        scope.launch { context.moneoStore.edit { it[KEY_DIRECTION_MANUAL] = true } }
     }
 
     /**
