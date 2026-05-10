@@ -8,6 +8,7 @@
     "Attributed area data from lemma_area_index.json; 146 attributed, 19 unattributed.",
     "Attributed area data from lemma_area_index.json; 146 attributed, 19 unattributed.",
     "Merged 424 new cards from gMoveNames + gAbilityNames in the 2024 patched ROM (426 candidates after dedup against existing 195 entries).",
+    "Attributed area data from lemma_area_index.json; 179 attributed, 440 unattributed.",
     "Attributed area data from lemma_area_index.json; 179 attributed, 440 unattributed."
   ],
   "entries": [
@@ -49,12 +50,39 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 41,
-      "firstAreaEncountered": "rom_mined",
+      "firstAreaEncountered": "pewter_city",
       "areasReferenced": [
-        "rom_mined"
+        "pewter_city",
+        "route_3",
+        "route_4",
+        "cerulean_city",
+        "route_24",
+        "route_25",
+        "route_6",
+        "saffron_city",
+        "route_8",
+        "route_10",
+        "route_11",
+        "route_12",
+        "route_16",
+        "route_17",
+        "route_18",
+        "route_19",
+        "route_20",
+        "cinnabar_island",
+        "celadon_city",
+        "route_9",
+        "indigo_plateau",
+        "rom_mined",
+        "one_island",
+        "two_island"
       ],
       "liveRecIds": [
-        132
+        1176,
+        1182,
+        1213,
+        1423,
+        2000
       ]
     },
     {
@@ -98,16 +126,16 @@
         "indigo_plateau",
         "rom_mined",
         "seven_island",
-        "two_island",
+        "six_island",
         "four_island",
-        "one_island",
         "three_island",
+        "one_island",
         "five_island",
-        "six_island"
+        "two_island"
       ],
       "liveRecIds": [
-        2851,
-        3604
+        2887,
+        3642
       ]
     },
     {
@@ -153,29 +181,29 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
+        "resort_gorgeous",
+        "trainer_tower",
         "five_isle_meadow",
         "treasure_beach",
         "one_island",
+        "five_island",
+        "memorial_pillar",
+        "two_island",
+        "ruin_valley",
+        "water_path",
+        "outcast_island",
+        "four_island",
         "three_island",
         "green_path",
-        "water_path",
-        "trainer_tower",
-        "five_island",
-        "two_island",
-        "resort_gorgeous",
-        "canyon_entrance",
-        "memorial_pillar",
-        "four_island",
         "kindle_road",
-        "ruin_valley",
-        "outcast_island"
+        "canyon_entrance"
       ],
       "liveRecIds": [
-        763,
-        969,
-        1570,
-        1736,
-        2087
+        780,
+        986,
+        1600,
+        1766,
+        2118
       ]
     },
     {
@@ -196,17 +224,17 @@
         "vermilion_city",
         "celadon_city",
         "rom_mined",
-        "one_island",
-        "seven_island",
         "treasure_beach",
-        "kindle_road"
+        "one_island",
+        "kindle_road",
+        "seven_island"
       ],
       "liveRecIds": [
-        753,
-        799,
-        1812,
-        1827,
-        1879
+        770,
+        816,
+        1842,
+        1857,
+        1909
       ]
     },
     {
@@ -229,8 +257,8 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2099,
-        2587
+        2130,
+        2621
       ]
     },
     {
@@ -295,7 +323,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2064
+        2095
       ]
     },
     {
@@ -340,7 +368,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        844
+        861
       ],
       "auditFix": {
         "verdict": "mistranslation",
@@ -360,15 +388,15 @@
         "pewter_city",
         "mt_moon",
         "rom_mined",
+        "green_path",
+        "canyon_entrance",
         "ruin_valley",
         "outcast_island",
-        "green_path",
-        "water_path",
         "trainer_tower",
-        "canyon_entrance"
+        "water_path"
       ],
       "liveRecIds": [
-        1735
+        1765
       ]
     },
     {
@@ -461,20 +489,23 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "canyon_entrance",
-        "kindle_road",
-        "ruin_valley",
         "outcast_island",
-        "green_path",
         "trainer_tower",
+        "three_island",
+        "one_island",
+        "green_path",
+        "kindle_road",
+        "two_island",
+        "canyon_entrance",
+        "ruin_valley",
         "water_path"
       ],
       "liveRecIds": [
-        709,
-        768,
-        1727,
-        2129,
-        2453
+        726,
+        785,
+        1003,
+        1757,
+        2160
       ]
     },
     {
@@ -539,14 +570,14 @@
         "indigo_plateau",
         "rom_mined",
         "seven_island",
+        "six_island",
         "four_island",
         "three_island",
-        "five_island",
-        "six_island"
+        "five_island"
       ],
       "liveRecIds": [
-        922,
-        1175
+        939,
+        1195
       ]
     },
     {
@@ -658,10 +689,10 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1277,
-        2149,
-        2163,
-        2251
+        1301,
+        2180,
+        2194,
+        2283
       ],
       "auditFix": {
         "verdict": "pos_mismatch",
@@ -696,13 +727,13 @@
         "viridian_city",
         "pewter_city",
         "rom_mined",
-        "outcast_island",
-        "trainer_tower",
+        "kindle_road",
         "canyon_entrance",
-        "kindle_road"
+        "outcast_island",
+        "trainer_tower"
       ],
       "liveRecIds": [
-        1919
+        1949
       ],
       "auditFix": {
         "verdict": "pos_mismatch",
@@ -768,7 +799,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2473
+        2507
       ]
     },
     {
@@ -815,29 +846,29 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "one_island",
-        "trainer_tower",
-        "green_path",
-        "three_island",
-        "water_path",
-        "five_island",
-        "six_island",
-        "seven_island",
-        "two_island",
         "resort_gorgeous",
-        "water_labyrinth",
-        "canyon_entrance",
+        "six_island",
+        "trainer_tower",
+        "one_island",
+        "five_island",
         "memorial_pillar",
-        "four_island",
+        "two_island",
         "ruin_valley",
-        "outcast_island"
+        "water_path",
+        "seven_island",
+        "water_labyrinth",
+        "outcast_island",
+        "four_island",
+        "three_island",
+        "green_path",
+        "canyon_entrance"
       ],
       "liveRecIds": [
-        722,
-        1115,
-        1132,
-        1336,
-        1456
+        739,
+        1133,
+        1150,
+        1361,
+        1484
       ]
     },
     {
@@ -944,9 +975,9 @@
         "kindle_road"
       ],
       "liveRecIds": [
-        731,
-        745,
-        2025
+        748,
+        762,
+        2056
       ]
     },
     {
@@ -973,18 +1004,18 @@
       "areasReferenced": [
         "saffron_city",
         "rom_mined",
-        "outcast_island",
         "resort_gorgeous",
-        "green_path",
         "treasure_beach",
-        "water_labyrinth",
-        "water_path",
+        "green_path",
+        "kindle_road",
         "memorial_pillar",
-        "kindle_road"
+        "water_labyrinth",
+        "outcast_island",
+        "water_path"
       ],
       "liveRecIds": [
-        1647,
-        2476
+        1677,
+        2510
       ]
     },
     {
@@ -1021,15 +1052,23 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
+        "resort_gorgeous",
         "seven_island",
-        "four_island"
+        "water_labyrinth",
+        "outcast_island",
+        "four_island",
+        "green_path",
+        "kindle_road",
+        "memorial_pillar",
+        "ruin_valley",
+        "water_path"
       ],
       "liveRecIds": [
-        717,
-        887,
-        1838,
-        1948,
-        1950
+        734,
+        904,
+        1700,
+        1868,
+        1978
       ]
     },
     {
@@ -1052,10 +1091,10 @@
         "seven_island"
       ],
       "liveRecIds": [
-        1964,
-        1970,
-        2473,
-        2635
+        1994,
+        2001,
+        2507,
+        2669
       ]
     },
     {
@@ -1131,21 +1170,21 @@
         "celadon_city",
         "rom_mined",
         "resort_gorgeous",
-        "treasure_beach",
-        "canyon_entrance",
-        "kindle_road",
-        "ruin_valley",
         "outcast_island",
+        "trainer_tower",
+        "treasure_beach",
         "green_path",
-        "water_path",
-        "trainer_tower"
+        "kindle_road",
+        "canyon_entrance",
+        "ruin_valley",
+        "water_path"
       ],
       "liveRecIds": [
-        1563,
-        1740,
-        2282,
-        3608,
-        3853
+        1593,
+        1770,
+        2314,
+        3646,
+        3894
       ]
     },
     {
@@ -1197,10 +1236,10 @@
         "kindle_road"
       ],
       "liveRecIds": [
-        1509,
-        1799,
-        2042,
-        2497
+        1539,
+        1829,
+        2073,
+        2531
       ]
     },
     {
@@ -1256,21 +1295,21 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "one_island",
-        "three_island",
-        "five_island",
         "six_island",
-        "seven_island",
+        "one_island",
+        "five_island",
         "two_island",
+        "seven_island",
         "four_island",
+        "three_island",
         "kindle_road"
       ],
       "liveRecIds": [
-        776,
-        1515,
-        3512,
-        3793,
-        3794
+        793,
+        1545,
+        3550,
+        3834,
+        3835
       ]
     },
     {
@@ -1287,7 +1326,7 @@
         "seven_island"
       ],
       "liveRecIds": [
-        2649
+        2683
       ]
     },
     {
@@ -1317,25 +1356,25 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "one_island",
-        "trainer_tower",
-        "green_path",
-        "three_island",
-        "water_path",
-        "five_island",
         "six_island",
-        "seven_island",
+        "trainer_tower",
+        "one_island",
+        "five_island",
         "two_island",
-        "canyon_entrance",
+        "ruin_valley",
+        "water_path",
+        "seven_island",
         "four_island",
-        "ruin_valley"
+        "three_island",
+        "green_path",
+        "canyon_entrance"
       ],
       "liveRecIds": [
-        1435,
-        1783,
-        1844,
-        1922,
-        1971
+        1462,
+        1813,
+        1874,
+        1952,
+        2002
       ]
     },
     {
@@ -1399,20 +1438,20 @@
         "indigo_plateau",
         "rom_mined",
         "seven_island",
-        "two_island",
-        "treasure_beach",
+        "six_island",
         "four_island",
-        "one_island",
+        "treasure_beach",
         "three_island",
+        "one_island",
         "five_island",
-        "six_island"
+        "two_island"
       ],
       "liveRecIds": [
-        1174,
-        1879,
-        1953,
-        1964,
-        2128
+        1194,
+        1909,
+        1983,
+        1994,
+        2159
       ]
     },
     {
@@ -1442,8 +1481,8 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1869,
-        1871
+        1899,
+        1901
       ]
     },
     {
@@ -1502,20 +1541,20 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "one_island",
-        "three_island",
-        "five_island",
         "six_island",
-        "seven_island",
+        "one_island",
+        "five_island",
         "two_island",
-        "four_island"
+        "seven_island",
+        "four_island",
+        "three_island"
       ],
       "liveRecIds": [
-        801,
-        814,
-        1813,
-        2150,
-        2552
+        818,
+        831,
+        1843,
+        2181,
+        2586
       ]
     },
     {
@@ -1529,20 +1568,20 @@
         "cerulean_city",
         "lavender_town",
         "rom_mined",
-        "one_island",
-        "seven_island",
-        "two_island",
-        "three_island",
         "resort_gorgeous",
         "treasure_beach",
+        "three_island",
+        "one_island",
         "five_island",
+        "two_island",
+        "seven_island",
         "six_island",
         "four_island"
       ],
       "liveRecIds": [
-        2016,
-        2668,
-        2772
+        2047,
+        2702,
+        2806
       ]
     },
     {
@@ -1558,7 +1597,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2289
+        2321
       ]
     },
     {
@@ -1614,23 +1653,23 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
+        "resort_gorgeous",
         "treasure_beach",
         "one_island",
-        "green_path",
-        "water_path",
-        "two_island",
-        "resort_gorgeous",
-        "water_labyrinth",
         "memorial_pillar",
-        "kindle_road",
-        "outcast_island"
+        "two_island",
+        "water_path",
+        "water_labyrinth",
+        "outcast_island",
+        "green_path",
+        "kindle_road"
       ],
       "liveRecIds": [
-        763,
-        887,
-        1262,
-        1647,
-        2031
+        780,
+        904,
+        1286,
+        1677,
+        2062
       ]
     },
     {
@@ -1646,7 +1685,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1889
+        1919
       ]
     },
     {
@@ -1676,7 +1715,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2130
+        2161
       ]
     },
     {
@@ -1693,7 +1732,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1928
+        1958
       ]
     },
     {
@@ -1727,8 +1766,8 @@
         "kindle_road"
       ],
       "liveRecIds": [
-        772,
-        2446
+        789,
+        2480
       ]
     },
     {
@@ -1765,7 +1804,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2577
+        2611
       ]
     },
     {
@@ -1793,8 +1832,8 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        933,
-        2593
+        950,
+        2627
       ]
     },
     {
@@ -1823,20 +1862,20 @@
         "route_20",
         "celadon_city",
         "rom_mined",
-        "two_island",
-        "canyon_entrance",
-        "four_island",
-        "ruin_valley",
         "trainer_tower",
-        "water_path",
+        "four_island",
         "three_island",
-        "five_island"
+        "five_island",
+        "canyon_entrance",
+        "two_island",
+        "ruin_valley",
+        "water_path"
       ],
       "liveRecIds": [
-        484,
-        996,
-        1308,
-        1394
+        498,
+        1013,
+        1332,
+        1420
       ]
     },
     {
@@ -1888,17 +1927,17 @@
         "route_22",
         "rom_mined",
         "seven_island",
-        "two_island",
+        "six_island",
         "four_island",
         "three_island",
         "five_island",
-        "six_island"
+        "two_island"
       ],
       "liveRecIds": [
-        990,
-        1448,
-        1840,
-        2284
+        1007,
+        1476,
+        1870,
+        2316
       ]
     },
     {
@@ -1938,9 +1977,9 @@
         "one_island"
       ],
       "liveRecIds": [
-        945,
-        1321,
-        1865
+        962,
+        1345,
+        1895
       ]
     },
     {
@@ -1985,7 +2024,7 @@
         "kindle_road"
       ],
       "liveRecIds": [
-        772
+        789
       ]
     },
     {
@@ -2001,7 +2040,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1944
+        1974
       ]
     },
     {
@@ -2016,7 +2055,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2378
+        2410
       ]
     },
     {
@@ -2071,16 +2110,16 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "two_island",
         "five_isle_meadow",
         "four_island",
+        "three_island",
         "kindle_road",
-        "ruin_valley",
-        "three_island"
+        "two_island",
+        "ruin_valley"
       ],
       "liveRecIds": [
-        1953,
-        3548
+        1983,
+        3586
       ]
     },
     {
@@ -2117,16 +2156,16 @@
         "celadon_city",
         "route_9",
         "rom_mined",
+        "three_island",
         "one_island",
-        "two_island",
-        "three_island"
+        "two_island"
       ],
       "liveRecIds": [
-        868,
-        987,
-        1091,
-        2347,
-        2361
+        885,
+        1004,
+        1109,
+        2379,
+        2393
       ]
     },
     {
@@ -2223,14 +2262,14 @@
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [
         "rom_mined",
-        "seven_island",
-        "two_island",
-        "five_island",
         "three_island",
+        "two_island",
+        "seven_island",
+        "five_island",
         "four_island"
       ],
       "liveRecIds": [
-        1003
+        1020
       ]
     },
     {
@@ -2261,7 +2300,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2399
+        2431
       ]
     },
     {
@@ -2276,14 +2315,14 @@
         "cinnabar_island",
         "indigo_plateau",
         "rom_mined",
+        "three_island",
         "two_island",
         "five_island",
-        "three_island",
         "four_island"
       ],
       "liveRecIds": [
-        997,
-        2388
+        1014,
+        2420
       ]
     },
     {
@@ -2339,19 +2378,19 @@
         "rom_mined",
         "five_isle_meadow",
         "one_island",
-        "three_island",
-        "seven_island",
         "two_island",
+        "ruin_valley",
+        "seven_island",
         "four_island",
-        "kindle_road",
-        "ruin_valley"
+        "three_island",
+        "kindle_road"
       ],
       "liveRecIds": [
-        772,
-        872,
-        880,
-        1187,
-        1234
+        789,
+        889,
+        897,
+        1207,
+        1256
       ]
     },
     {
@@ -2416,26 +2455,12 @@
       "partOfSpeech": "verb",
       "areaId": "rom_mined",
       "frequency": 2,
-      "firstAreaEncountered": "pallet_town",
+      "firstAreaEncountered": "rom_mined",
       "areasReferenced": [
-        "pallet_town",
-        "viridian_city",
-        "route_2",
-        "pewter_city",
-        "route_4",
-        "cerulean_city",
-        "route_5",
-        "route_6",
-        "saffron_city",
-        "route_7",
-        "route_8",
-        "route_10",
         "rom_mined"
       ],
       "liveRecIds": [
-        1781,
-        1960,
-        2552
+        519
       ]
     },
     {
@@ -2451,7 +2476,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        2121
+        2152
       ]
     },
     {
@@ -2528,9 +2553,9 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1267,
-        2457,
-        3713
+        1291,
+        2491,
+        3752
       ]
     },
     {
@@ -2594,17 +2619,17 @@
         "route_8",
         "route_10",
         "rom_mined",
+        "outcast_island",
+        "trainer_tower",
+        "green_path",
         "canyon_entrance",
         "ruin_valley",
-        "outcast_island",
-        "green_path",
-        "water_path",
-        "trainer_tower"
+        "water_path"
       ],
       "liveRecIds": [
-        1737,
-        2552,
-        3852
+        1767,
+        2586,
+        3893
       ]
     },
     {
@@ -2709,32 +2734,32 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
+        "resort_gorgeous",
+        "six_island",
         "five_isle_meadow",
+        "trainer_tower",
         "treasure_beach",
         "one_island",
-        "trainer_tower",
-        "green_path",
-        "three_island",
-        "water_path",
         "five_island",
-        "six_island",
-        "seven_island",
-        "two_island",
-        "resort_gorgeous",
-        "water_labyrinth",
-        "canyon_entrance",
         "memorial_pillar",
-        "four_island",
-        "kindle_road",
+        "two_island",
         "ruin_valley",
-        "outcast_island"
+        "water_path",
+        "seven_island",
+        "water_labyrinth",
+        "outcast_island",
+        "four_island",
+        "three_island",
+        "green_path",
+        "kindle_road",
+        "canyon_entrance"
       ],
       "liveRecIds": [
-        1455,
-        1582,
-        1584,
-        1617,
-        1717
+        1483,
+        1612,
+        1614,
+        1647,
+        1747
       ]
     },
     {
@@ -2752,7 +2777,7 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        1332
+        1356
       ]
     },
     {
@@ -2768,17 +2793,17 @@
         "pewter_city",
         "celadon_city",
         "rom_mined",
-        "ruin_valley",
-        "trainer_tower",
-        "outcast_island",
         "green_path",
-        "water_path",
-        "canyon_entrance"
+        "canyon_entrance",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower",
+        "water_path"
       ],
       "liveRecIds": [
-        1725,
-        1862,
-        2225
+        1755,
+        1892,
+        2257
       ]
     },
     {
@@ -2861,9 +2886,9 @@
         "two_island"
       ],
       "liveRecIds": [
-        888,
-        1412,
-        2728
+        905,
+        1439,
+        2762
       ]
     },
     {
@@ -3134,7 +3159,7 @@
         "seven_island"
       ],
       "liveRecIds": [
-        2628
+        2662
       ]
     },
     {
@@ -3258,11 +3283,11 @@
         "rom_mined"
       ],
       "liveRecIds": [
-        933,
-        1880,
-        1944,
-        2319,
-        2341
+        950,
+        1910,
+        1974,
+        2351,
+        2373
       ]
     },
     {
@@ -3359,7 +3384,7 @@
         "auditedAt": "2026-05-09"
       },
       "liveRecIds": [
-        2021
+        2052
       ]
     },
     {
@@ -3374,10 +3399,10 @@
         "route_15",
         "route_20",
         "celadon_city",
-        "outcast_island",
-        "trainer_tower",
+        "kindle_road",
         "canyon_entrance",
-        "kindle_road"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "route_8",
       "liveRecIds": []
@@ -3463,7 +3488,7 @@
         "auditedAt": "2026-05-09"
       },
       "liveRecIds": [
-        2280
+        2312
       ]
     },
     {
@@ -3848,12 +3873,12 @@
         "celadon_city",
         "route_9",
         "indigo_plateau",
-        "three_island",
-        "five_island",
         "six_island",
-        "seven_island",
+        "five_island",
         "two_island",
-        "four_island"
+        "seven_island",
+        "four_island",
+        "three_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "filledViaSubstring": {
@@ -3861,11 +3886,11 @@
         "score": 0
       },
       "liveRecIds": [
-        779,
-        791,
-        894,
-        919,
-        925
+        796,
+        808,
+        911,
+        936,
+        942
       ]
     },
     {
@@ -4586,7 +4611,7 @@
       ],
       "source": "gMoveNames[68]",
       "liveRecIds": [
-        2119
+        2150
       ]
     },
     {
@@ -4651,19 +4676,19 @@
       "areasReferenced": [
         "pewter_city",
         "rom_mined",
-        "ruin_valley",
-        "outcast_island",
         "resort_gorgeous",
         "green_path",
-        "water_path",
-        "water_labyrinth",
-        "trainer_tower",
+        "memorial_pillar",
         "canyon_entrance",
-        "memorial_pillar"
+        "ruin_valley",
+        "water_labyrinth",
+        "outcast_island",
+        "trainer_tower",
+        "water_path"
       ],
       "source": "gMoveNames[74]",
       "liveRecIds": [
-        1712
+        1742
       ]
     },
     {
@@ -4854,7 +4879,7 @@
       ],
       "source": "gMoveNames[92]",
       "liveRecIds": [
-        2267
+        2299
       ]
     },
     {
@@ -5436,7 +5461,7 @@
       ],
       "source": "gMoveNames[148]",
       "liveRecIds": [
-        1919
+        1949
       ]
     },
     {
@@ -6659,16 +6684,16 @@
         "celadon_city",
         "indigo_plateau",
         "seven_island",
-        "two_island",
+        "six_island",
         "four_island",
-        "one_island",
         "three_island",
+        "one_island",
         "five_island",
-        "six_island"
+        "two_island"
       ],
       "source": "gMoveNames[268]",
       "liveRecIds": [
-        2049
+        2080
       ]
     },
     {
@@ -6706,7 +6731,7 @@
       ],
       "source": "gMoveNames[271]",
       "liveRecIds": [
-        2073
+        2104
       ]
     },
     {
@@ -6754,8 +6779,8 @@
       ],
       "source": "gMoveNames[274]",
       "liveRecIds": [
-        1821,
-        2549
+        1851,
+        2583
       ]
     },
     {
