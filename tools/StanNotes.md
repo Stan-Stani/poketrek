@@ -6,35 +6,30 @@ Rom examples in flash cards should have english translation, but all english tra
 
 No spoilers is set but still seeing rom example sometimes
 
-## TODO: wire up browser-automation MCP
+## TODO (USER ACTION): activate browser-automation MCP
 
-Need a browser-MCP server so Claude can read auth-gated Korean sites
-(cafe.naver.com/hansicgu, namu.wiki) for FRLG 2024 patch internals.
+Playwright MCP is wired up in `.mcp.json` (project scope) using CDP
+attach. To turn it on:
 
-Pick one:
-- `@playwright/mcp` (Microsoft) — connect to a running Chrome via
-  `--connect-url ws://localhost:9222`, preserves Naver login. Best fit.
-- `chrome-devtools-mcp` (Google) — same shape, also attaches to running
-  Chrome.
-- `@modelcontextprotocol/server-puppeteer` — spawns its own browser,
-  loses your login. Avoid.
+```
+# 1. In one terminal, launch the dedicated Chrome instance:
+tools/browser-mcp-chrome.sh
 
-Setup sketch:
-1. Start Chrome with `--remote-debugging-port=9222 --user-data-dir=...`
-   (clone profile or run a separate Chrome instance pointing at your
-   normal cookies — DO NOT share the live profile, Chrome locks the
-   profile dir).
-2. Add to `~/.claude.json` or project `.mcp.json`:
-   ```
-   "playwright": { "command": "npx",
-       "args": ["@playwright/mcp@latest", "--connect-url",
-                "http://localhost:9222"] }
-   ```
-3. Restart Claude Code, verify with `claude mcp list`.
+# 2. In the Chrome window that opens, log in to cafe.naver.com once.
+#    (Cookies persist in ~/.poketrek-browser-profile across runs.)
 
-Purpose: pull the 2024 patch's encoding table / build scripts / font
-binary if the authors posted any of it in 한식구 cafe — would replace
-the slow context-triangulation rounds.
+# 3. Restart Claude Code in the poketrek directory. It will pick up
+#    .mcp.json and the playwright tools will be available.
+#    Verify with:  claude mcp list
+```
+
+After that, Claude can navigate cafe.naver.com/hansicgu (and any other
+auth-gated Korean site) directly. The script uses a separate profile
+dir, so your main Chrome stays untouched.
+
+Goal: pull the 2024 patch's encoding table / build scripts / font
+binary if the authors posted any of it in 한식구 cafe — would
+short-circuit the remaining context-triangulation work.
 
 ## TODO: LIS anchor reconciliation
 
