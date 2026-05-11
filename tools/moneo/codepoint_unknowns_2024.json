@@ -1,65 +1,49 @@
 {
  "rom": "leafgreen_J-K_2024.gba",
- "n_distinct_unknowns": 627,
+ "n_distinct_unknowns": 354,
  "unknowns": [
   {
    "codepoint": "0x3A37",
-   "occurrences": 337
+   "occurrences": 339
   },
   {
    "codepoint": "0x3B38",
-   "occurrences": 332
+   "occurrences": 339
   },
   {
    "codepoint": "0x3E3D",
-   "occurrences": 206
+   "occurrences": 213
   },
   {
    "codepoint": "0x3B39",
-   "occurrences": 117
+   "occurrences": 119
   },
   {
    "codepoint": "0x4038",
-   "occurrences": 107
+   "occurrences": 111
   },
   {
    "codepoint": "0x3E37",
-   "occurrences": 85
+   "occurrences": 87
   },
   {
    "codepoint": "0x3D3C",
    "occurrences": 76
   },
   {
-   "codepoint": "0x38A9",
-   "occurrences": 72
-  },
-  {
-   "codepoint": "0x3A9A",
-   "occurrences": 66
+   "codepoint": "0x3D39",
+   "occurrences": 67
   },
   {
    "codepoint": "0x393A",
-   "occurrences": 66
-  },
-  {
-   "codepoint": "0x3748",
-   "occurrences": 64
+   "occurrences": 67
   },
   {
    "codepoint": "0x3BFE",
    "occurrences": 64
   },
   {
-   "codepoint": "0x3746",
-   "occurrences": 64
-  },
-  {
-   "codepoint": "0x3D39",
-   "occurrences": 63
-  },
-  {
-   "codepoint": "0x3C8B",
+   "codepoint": "0x3E40",
    "occurrences": 61
   },
   {
@@ -67,16 +51,12 @@
    "occurrences": 59
   },
   {
-   "codepoint": "0x3920",
+   "codepoint": "0x3A3D",
    "occurrences": 58
   },
   {
-   "codepoint": "0x3A3D",
-   "occurrences": 57
-  },
-  {
-   "codepoint": "0x3E40",
-   "occurrences": 54
+   "codepoint": "0x3920",
+   "occurrences": 58
   },
   {
    "codepoint": "0x3E38",
@@ -87,24 +67,12 @@
    "occurrences": 47
   },
   {
-   "codepoint": "0x3DE4",
-   "occurrences": 44
+   "codepoint": "0x3D38",
+   "occurrences": 39
   },
   {
    "codepoint": "0x3A40",
-   "occurrences": 37
-  },
-  {
-   "codepoint": "0x3D38",
-   "occurrences": 37
-  },
-  {
-   "codepoint": "0x3B4F",
-   "occurrences": 36
-  },
-  {
-   "codepoint": "0x391D",
-   "occurrences": 36
+   "occurrences": 38
   },
   {
    "codepoint": "0x4037",
@@ -119,18 +87,6 @@
    "occurrences": 32
   },
   {
-   "codepoint": "0x3C1E",
-   "occurrences": 31
-  },
-  {
-   "codepoint": "0x384F",
-   "occurrences": 30
-  },
-  {
-   "codepoint": "0x382C",
-   "occurrences": 30
-  },
-  {
    "codepoint": "0x3E3A",
    "occurrences": 30
   },
@@ -139,23 +95,7 @@
    "occurrences": 29
   },
   {
-   "codepoint": "0x387F",
-   "occurrences": 29
-  },
-  {
-   "codepoint": "0x3945",
-   "occurrences": 29
-  },
-  {
-   "codepoint": "0x38A3",
-   "occurrences": 29
-  },
-  {
-   "codepoint": "0x3B13",
-   "occurrences": 28
-  },
-  {
-   "codepoint": "0x3872",
+   "codepoint": "0x3E3E",
    "occurrences": 27
   },
   {
@@ -167,15 +107,7 @@
    "occurrences": 26
   },
   {
-   "codepoint": "0x3E3E",
-   "occurrences": 26
-  },
-  {
    "codepoint": "0x3D3F",
-   "occurrences": 26
-  },
-  {
-   "codepoint": "0x3EEE",
    "occurrences": 26
   },
   {
@@ -187,31 +119,7 @@
    "occurrences": 25
   },
   {
-   "codepoint": "0x37A2",
-   "occurrences": 24
-  },
-  {
-   "codepoint": "0x3A9B",
-   "occurrences": 24
-  },
-  {
-   "codepoint": "0x3DBC",
-   "occurrences": 24
-  },
-  {
-   "codepoint": "0x3840",
-   "occurrences": 24
-  },
-  {
    "codepoint": "0x3F37",
-   "occurrences": 24
-  },
-  {
-   "codepoint": "0x3921",
-   "occurrences": 24
-  },
-  {
-   "codepoint": "0x3C2C",
    "occurrences": 24
   },
   {
@@ -219,91 +127,15 @@
    "occurrences": 23
   },
   {
-   "codepoint": "0x385C",
-   "occurrences": 23
-  },
-  {
-   "codepoint": "0x3D83",
-   "occurrences": 23
-  },
-  {
-   "codepoint": "0x3F77",
-   "occurrences": 23
-  },
-  {
    "codepoint": "0x3839",
    "occurrences": 22
-  },
-  {
-   "codepoint": "0x38CD",
-   "occurrences": 22
-  },
-  {
-   "codepoint": "0x3848",
-   "occurrences": 22
-  },
-  {
-   "codepoint": "0x3B29",
-   "occurrences": 22
-  },
-  {
-   "codepoint": "0x3D17",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x3AE6",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x3C5C",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x3A71",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x3745",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x3929",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x3E06",
-   "occurrences": 21
-  },
-  {
-   "codepoint": "0x4079",
-   "occurrences": 20
-  },
-  {
-   "codepoint": "0x3F4B",
-   "occurrences": 20
-  },
-  {
-   "codepoint": "0x3ECF",
-   "occurrences": 20
-  },
-  {
-   "codepoint": "0x39DD",
-   "occurrences": 20
   },
   {
    "codepoint": "0x3BAD",
    "occurrences": 20
   },
   {
-   "codepoint": "0x3777",
-   "occurrences": 19
-  },
-  {
-   "codepoint": "0x3BCA",
-   "occurrences": 19
-  },
-  {
-   "codepoint": "0x3D7E",
+   "codepoint": "0x3971",
    "occurrences": 19
   },
   {
@@ -311,36 +143,8 @@
    "occurrences": 19
   },
   {
-   "codepoint": "0x3B81",
-   "occurrences": 19
-  },
-  {
    "codepoint": "0x3BFA",
    "occurrences": 19
-  },
-  {
-   "codepoint": "0x39C8",
-   "occurrences": 19
-  },
-  {
-   "codepoint": "0x3A21",
-   "occurrences": 19
-  },
-  {
-   "codepoint": "0x3D76",
-   "occurrences": 19
-  },
-  {
-   "codepoint": "0x4010",
-   "occurrences": 18
-  },
-  {
-   "codepoint": "0x37CE",
-   "occurrences": 18
-  },
-  {
-   "codepoint": "0x3971",
-   "occurrences": 18
   },
   {
    "codepoint": "0x393C",
@@ -351,12 +155,8 @@
    "occurrences": 18
   },
   {
-   "codepoint": "0x4077",
-   "occurrences": 18
-  },
-  {
-   "codepoint": "0x3D66",
-   "occurrences": 18
+   "codepoint": "0x4018",
+   "occurrences": 17
   },
   {
    "codepoint": "0x3C08",
@@ -367,31 +167,7 @@
    "occurrences": 17
   },
   {
-   "codepoint": "0x3E73",
-   "occurrences": 17
-  },
-  {
-   "codepoint": "0x3BD8",
-   "occurrences": 17
-  },
-  {
-   "codepoint": "0x3D24",
-   "occurrences": 16
-  },
-  {
-   "codepoint": "0x3E18",
-   "occurrences": 16
-  },
-  {
-   "codepoint": "0x3E6D",
-   "occurrences": 16
-  },
-  {
-   "codepoint": "0x3821",
-   "occurrences": 16
-  },
-  {
-   "codepoint": "0x3966",
+   "codepoint": "0x3B40",
    "occurrences": 16
   },
   {
@@ -399,59 +175,15 @@
    "occurrences": 16
   },
   {
-   "codepoint": "0x3940",
-   "occurrences": 16
-  },
-  {
-   "codepoint": "0x37AF",
-   "occurrences": 16
-  },
-  {
-   "codepoint": "0x3B40",
-   "occurrences": 15
-  },
-  {
    "codepoint": "0x3FFF",
    "occurrences": 15
   },
   {
-   "codepoint": "0x3E97",
-   "occurrences": 15
-  },
-  {
-   "codepoint": "0x3C37",
-   "occurrences": 15
-  },
-  {
-   "codepoint": "0x3FCC",
-   "occurrences": 15
-  },
-  {
-   "codepoint": "0x3764",
+   "codepoint": "0x3EAB",
    "occurrences": 14
   },
   {
-   "codepoint": "0x407B",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3B89",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x406D",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3C8D",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x40AE",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3923",
+   "codepoint": "0x3E3B",
    "occurrences": 14
   },
   {
@@ -459,79 +191,15 @@
    "occurrences": 14
   },
   {
-   "codepoint": "0x39CF",
-   "occurrences": 14
-  },
-  {
    "codepoint": "0x3942",
    "occurrences": 14
-  },
-  {
-   "codepoint": "0x3C10",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3CC3",
-   "occurrences": 14
-  },
-  {
-   "codepoint": "0x3EAB",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3880",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3A43",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3E3B",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x37EB",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3FBF",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3D1E",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3CDA",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3D44",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3AA8",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x3C51",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x383F",
-   "occurrences": 13
-  },
-  {
-   "codepoint": "0x4018",
-   "occurrences": 12
   },
   {
    "codepoint": "0x403B",
    "occurrences": 12
   },
   {
-   "codepoint": "0x3F87",
+   "codepoint": "0x408C",
    "occurrences": 12
   },
   {
@@ -539,43 +207,11 @@
    "occurrences": 12
   },
   {
-   "codepoint": "0x4061",
-   "occurrences": 12
-  },
-  {
    "codepoint": "0x3F39",
    "occurrences": 12
   },
   {
-   "codepoint": "0x3CAC",
-   "occurrences": 12
-  },
-  {
-   "codepoint": "0x3AAF",
-   "occurrences": 12
-  },
-  {
-   "codepoint": "0x3E0A",
-   "occurrences": 12
-  },
-  {
-   "codepoint": "0x408C",
-   "occurrences": 11
-  },
-  {
    "codepoint": "0x385B",
-   "occurrences": 11
-  },
-  {
-   "codepoint": "0x3C3C",
-   "occurrences": 11
-  },
-  {
-   "codepoint": "0x4090",
-   "occurrences": 11
-  },
-  {
-   "codepoint": "0x3A25",
    "occurrences": 11
   },
   {
@@ -587,11 +223,7 @@
    "occurrences": 11
   },
   {
-   "codepoint": "0x3A36",
-   "occurrences": 11
-  },
-  {
-   "codepoint": "0x3854",
+   "codepoint": "0x3998",
    "occurrences": 10
   },
   {
@@ -599,35 +231,7 @@
    "occurrences": 10
   },
   {
-   "codepoint": "0x386D",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x37AB",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x3E07",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x3ACA",
-   "occurrences": 10
-  },
-  {
    "codepoint": "0x3AAB",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x40C2",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x3BD3",
-   "occurrences": 10
-  },
-  {
-   "codepoint": "0x38BB",
    "occurrences": 10
   },
   {
@@ -635,8 +239,8 @@
    "occurrences": 10
   },
   {
-   "codepoint": "0x39E7",
-   "occurrences": 10
+   "codepoint": "0x3868",
+   "occurrences": 9
   },
   {
    "codepoint": "0x3737",
@@ -647,23 +251,7 @@
    "occurrences": 9
   },
   {
-   "codepoint": "0x3A42",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x3AEC",
-   "occurrences": 9
-  },
-  {
    "codepoint": "0x3B3C",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x3A77",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x3858",
    "occurrences": 9
   },
   {
@@ -671,75 +259,11 @@
    "occurrences": 9
   },
   {
-   "codepoint": "0x3FEE",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x40B5",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x38CC",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x3A10",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x3943",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x3B0E",
-   "occurrences": 9
-  },
-  {
-   "codepoint": "0x39CB",
-   "occurrences": 8
-  },
-  {
    "codepoint": "0x3B3E",
    "occurrences": 8
   },
   {
-   "codepoint": "0x40B8",
-   "occurrences": 8
-  },
-  {
    "codepoint": "0x3FAD",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3C05",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3DE5",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3728",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3E6C",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3896",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x39DA",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x39D8",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x38E6",
    "occurrences": 8
   },
   {
@@ -751,71 +275,7 @@
    "occurrences": 8
   },
   {
-   "codepoint": "0x40B3",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3AB0",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3E19",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3EDE",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3DC6",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3F50",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x3952",
-   "occurrences": 8
-  },
-  {
-   "codepoint": "0x37AE",
-   "occurrences": 7
-  },
-  {
    "codepoint": "0x3F3C",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x38C6",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3DE1",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3E64",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3756",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x408F",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3B57",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3A90",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x397E",
    "occurrences": 7
   },
   {
@@ -827,43 +287,11 @@
    "occurrences": 7
   },
   {
-   "codepoint": "0x389B",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3E9C",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3AC4",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x40B9",
-   "occurrences": 7
-  },
-  {
-   "codepoint": "0x3ED1",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3C63",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3BC3",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3A0F",
+   "codepoint": "0x398C",
    "occurrences": 6
   },
   {
    "codepoint": "0x383C",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3CCB",
    "occurrences": 6
   },
   {
@@ -875,99 +303,7 @@
    "occurrences": 6
   },
   {
-   "codepoint": "0x3D41",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3957",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3735",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3D20",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3DA4",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x37DC",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3E72",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3C46",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x383E",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3DBD",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3A4D",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x40C3",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x40A4",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3CBD",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x39E8",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x383B",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3A5B",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3842",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x38D9",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3EB2",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x38EB",
-   "occurrences": 6
-  },
-  {
-   "codepoint": "0x3D58",
-   "occurrences": 6
-  },
-  {
    "codepoint": "0x3978",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3DD6",
    "occurrences": 5
   },
   {
@@ -979,11 +315,11 @@
    "occurrences": 5
   },
   {
-   "codepoint": "0x400A",
+   "codepoint": "0x3C04",
    "occurrences": 5
   },
   {
-   "codepoint": "0x398C",
+   "codepoint": "0x400A",
    "occurrences": 5
   },
   {
@@ -991,35 +327,7 @@
    "occurrences": 5
   },
   {
-   "codepoint": "0x39B0",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3E6E",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3996",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x38C9",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3DCF",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3FEA",
-   "occurrences": 5
-  },
-  {
    "codepoint": "0x3DFF",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x39C6",
    "occurrences": 5
   },
   {
@@ -1027,27 +335,7 @@
    "occurrences": 5
   },
   {
-   "codepoint": "0x3A87",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x392E",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3D11",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3D73",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x399C",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3CC1",
+   "codepoint": "0x3716",
    "occurrences": 5
   },
   {
@@ -1055,51 +343,7 @@
    "occurrences": 5
   },
   {
-   "codepoint": "0x38B5",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3D35",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x39AE",
-   "occurrences": 5
-  },
-  {
    "codepoint": "0x3E52",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3E85",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x39BB",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3E14",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3F17",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x392B",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3F64",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x3AB9",
-   "occurrences": 5
-  },
-  {
-   "codepoint": "0x384D",
    "occurrences": 5
   },
   {
@@ -1111,6 +355,10 @@
    "occurrences": 4
   },
   {
+   "codepoint": "0x3F3A",
+   "occurrences": 4
+  },
+  {
    "codepoint": "0x37C0",
    "occurrences": 4
   },
@@ -1119,11 +367,15 @@
    "occurrences": 4
   },
   {
-   "codepoint": "0x39AC",
+   "codepoint": "0x39A0",
    "occurrences": 4
   },
   {
-   "codepoint": "0x3750",
+   "codepoint": "0x3BB0",
+   "occurrences": 4
+  },
+  {
+   "codepoint": "0x39AC",
    "occurrences": 4
   },
   {
@@ -1131,19 +383,7 @@
    "occurrences": 4
   },
   {
-   "codepoint": "0x3A3F",
-   "occurrences": 4
-  },
-  {
    "codepoint": "0x3EFB",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3D78",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3EE6",
    "occurrences": 4
   },
   {
@@ -1151,35 +391,7 @@
    "occurrences": 4
   },
   {
-   "codepoint": "0x37C6",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3F5C",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3796",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3B23",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x4092",
-   "occurrences": 4
-  },
-  {
    "codepoint": "0x40A3",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3716",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3B7D",
    "occurrences": 4
   },
   {
@@ -1187,83 +399,19 @@
    "occurrences": 4
   },
   {
-   "codepoint": "0x381C",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3825",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x374E",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3A69",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3D26",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3BA0",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x37E4",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3792",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3956",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3C91",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3EB8",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3BCE",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x37B3",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3DAD",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3823",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x3A65",
-   "occurrences": 4
-  },
-  {
-   "codepoint": "0x4017",
+   "codepoint": "0x3FA0",
    "occurrences": 3
   },
   {
-   "codepoint": "0x405B",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3998",
+   "codepoint": "0x3E98",
    "occurrences": 3
   },
   {
    "codepoint": "0x378C",
+   "occurrences": 3
+  },
+  {
+   "codepoint": "0x3D1B",
    "occurrences": 3
   },
   {
@@ -1272,34 +420,6 @@
   },
   {
    "codepoint": "0x37E3",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3808",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3A14",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x37DF",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x39BF",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x40A7",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3D5F",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3951",
    "occurrences": 3
   },
   {
@@ -1315,7 +435,7 @@
    "occurrences": 3
   },
   {
-   "codepoint": "0x39BC",
+   "codepoint": "0x373E",
    "occurrences": 3
   },
   {
@@ -1327,27 +447,11 @@
    "occurrences": 3
   },
   {
-   "codepoint": "0x3849",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3967",
-   "occurrences": 3
-  },
-  {
    "codepoint": "0x3EFF",
    "occurrences": 3
   },
   {
-   "codepoint": "0x37E1",
-   "occurrences": 3
-  },
-  {
    "codepoint": "0x3B37",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3E22",
    "occurrences": 3
   },
   {
@@ -1359,19 +463,7 @@
    "occurrences": 3
   },
   {
-   "codepoint": "0x3C65",
-   "occurrences": 3
-  },
-  {
    "codepoint": "0x39BE",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x4016",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3FB0",
    "occurrences": 3
   },
   {
@@ -1379,23 +471,7 @@
    "occurrences": 3
   },
   {
-   "codepoint": "0x407F",
-   "occurrences": 3
-  },
-  {
    "codepoint": "0x379D",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x38D3",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3E76",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3F04",
    "occurrences": 3
   },
   {
@@ -1403,63 +479,7 @@
    "occurrences": 3
   },
   {
-   "codepoint": "0x39E4",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3A0D",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x37A7",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3E11",
-   "occurrences": 3
-  },
-  {
    "codepoint": "0x40A0",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3E9D",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3D64",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x39B9",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3F79",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3EB9",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3B34",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x39B4",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x384B",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x382A",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3885",
    "occurrences": 3
   },
   {
@@ -1468,14 +488,6 @@
   },
   {
    "codepoint": "0x40FC",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x3B96",
-   "occurrences": 3
-  },
-  {
-   "codepoint": "0x39BD",
    "occurrences": 3
   },
   {
@@ -1491,15 +503,23 @@
    "occurrences": 2
   },
   {
+   "codepoint": "0x4020",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x402D",
+   "occurrences": 2
+  },
+  {
+   "codepoint": "0x4030",
+   "occurrences": 2
+  },
+  {
    "codepoint": "0x3E10",
    "occurrences": 2
   },
   {
    "codepoint": "0x405D",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3FA0",
    "occurrences": 2
   },
   {
@@ -1527,15 +547,11 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3981",
+   "codepoint": "0x40FF",
    "occurrences": 2
   },
   {
-   "codepoint": "0x3D1B",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3D47",
+   "codepoint": "0x388C",
    "occurrences": 2
   },
   {
@@ -1543,23 +559,11 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3836",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x39B3",
    "occurrences": 2
   },
   {
-   "codepoint": "0x3C14",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3D53",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3726",
    "occurrences": 2
   },
   {
@@ -1571,23 +575,7 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3A2B",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3779",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3C1F",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x38B3",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3EC9",
    "occurrences": 2
   },
   {
@@ -1595,15 +583,7 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3B05",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3DFA",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x38C0",
    "occurrences": 2
   },
   {
@@ -1615,27 +595,7 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x396F",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3731",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x38CE",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3A27",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3999",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3F5E",
    "occurrences": 2
   },
   {
@@ -1659,47 +619,15 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x37E0",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3F01",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x39F0",
    "occurrences": 2
   },
   {
-   "codepoint": "0x3A41",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3CEE",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3FEF",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3DE0",
+   "codepoint": "0x3C50",
    "occurrences": 2
   },
   {
    "codepoint": "0x3B42",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x4097",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3C99",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x373E",
    "occurrences": 2
   },
   {
@@ -1715,23 +643,7 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3F78",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x4026",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3F4D",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3F53",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3B0D",
    "occurrences": 2
   },
   {
@@ -1739,19 +651,7 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3936",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x37B0",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3FC1",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3944",
    "occurrences": 2
   },
   {
@@ -1759,55 +659,11 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x3A11",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3E8A",
    "occurrences": 2
   },
   {
-   "codepoint": "0x3D0D",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3B48",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3E1D",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3A96",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3824",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3871",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3F6C",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3F3A",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3810",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x3F5D",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3997",
    "occurrences": 2
   },
   {
@@ -1819,15 +675,7 @@
    "occurrences": 2
   },
   {
-   "codepoint": "0x389C",
-   "occurrences": 2
-  },
-  {
    "codepoint": "0x40B2",
-   "occurrences": 2
-  },
-  {
-   "codepoint": "0x3B4D",
    "occurrences": 2
   },
   {
@@ -1843,6 +691,30 @@
    "occurrences": 1
   },
   {
+   "codepoint": "0x3749",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4002",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B21",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3C21",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3D21",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E21",
+   "occurrences": 1
+  },
+  {
    "codepoint": "0x394D",
    "occurrences": 1
   },
@@ -1852,6 +724,10 @@
   },
   {
    "codepoint": "0x3C06",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E33",
    "occurrences": 1
   },
   {
@@ -1915,14 +791,6 @@
    "occurrences": 1
   },
   {
-   "codepoint": "0x402D",
-   "occurrences": 1
-  },
-  {
-   "codepoint": "0x4030",
-   "occurrences": 1
-  },
-  {
    "codepoint": "0x405C",
    "occurrences": 1
   },
@@ -1943,11 +811,35 @@
    "occurrences": 1
   },
   {
+   "codepoint": "0x3F3F",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x398A",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3F42",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3B50",
+   "occurrences": 1
+  },
+  {
    "codepoint": "0x3FD1",
    "occurrences": 1
   },
   {
    "codepoint": "0x40D1",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EF3",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3EE3",
    "occurrences": 1
   },
   {
@@ -1967,7 +859,27 @@
    "occurrences": 1
   },
   {
-   "codepoint": "0x388C",
+   "codepoint": "0x3A98",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3798",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x40D2",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3D70",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3D8C",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x4098",
    "occurrences": 1
   },
   {
@@ -2159,10 +1071,6 @@
    "occurrences": 1
   },
   {
-   "codepoint": "0x3C50",
-   "occurrences": 1
-  },
-  {
    "codepoint": "0x3FBA",
    "occurrences": 1
   },
@@ -2248,10 +1156,6 @@
   },
   {
    "codepoint": "0x399D",
-   "occurrences": 1
-  },
-  {
-   "codepoint": "0x40FF",
    "occurrences": 1
   },
   {
@@ -2444,6 +1348,10 @@
   },
   {
    "codepoint": "0x3E9E",
+   "occurrences": 1
+  },
+  {
+   "codepoint": "0x3E1A",
    "occurrences": 1
   },
   {
