@@ -1,22 +1,10 @@
 {
  "rom": "leafgreen_J-K_2024.gba",
- "n_distinct_unknowns": 275,
+ "n_distinct_unknowns": 270,
  "unknowns": [
-  {
-   "codepoint": "0x3A37",
-   "occurrences": 339
-  },
-  {
-   "codepoint": "0x3B38",
-   "occurrences": 339
-  },
   {
    "codepoint": "0x3E3D",
    "occurrences": 213
-  },
-  {
-   "codepoint": "0x3B39",
-   "occurrences": 119
   },
   {
    "codepoint": "0x4038",
@@ -24,7 +12,7 @@
   },
   {
    "codepoint": "0x3E37",
-   "occurrences": 87
+   "occurrences": 88
   },
   {
    "codepoint": "0x3D3C",
@@ -52,10 +40,6 @@
   },
   {
    "codepoint": "0x3A3D",
-   "occurrences": 58
-  },
-  {
-   "codepoint": "0x3920",
    "occurrences": 58
   },
   {
@@ -123,20 +107,16 @@
    "occurrences": 24
   },
   {
-   "codepoint": "0x3F37",
-   "occurrences": 24
-  },
-  {
    "codepoint": "0x3839",
    "occurrences": 22
   },
   {
-   "codepoint": "0x3BAD",
-   "occurrences": 20
+   "codepoint": "0x3971",
+   "occurrences": 21
   },
   {
-   "codepoint": "0x3971",
-   "occurrences": 19
+   "codepoint": "0x3BAD",
+   "occurrences": 20
   },
   {
    "codepoint": "0x3EFE",
