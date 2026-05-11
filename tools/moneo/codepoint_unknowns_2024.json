@@ -1,18 +1,10 @@
 {
  "rom": "leafgreen_J-K_2024.gba",
- "n_distinct_unknowns": 218,
+ "n_distinct_unknowns": 215,
  "unknowns": [
   {
    "codepoint": "0x4038",
    "occurrences": 111
-  },
-  {
-   "codepoint": "0x3E37",
-   "occurrences": 88
-  },
-  {
-   "codepoint": "0x3D3C",
-   "occurrences": 76
   },
   {
    "codepoint": "0x393A",
@@ -81,10 +73,6 @@
   {
    "codepoint": "0x3D3F",
    "occurrences": 26
-  },
-  {
-   "codepoint": "0x3F38",
-   "occurrences": 25
   },
   {
    "codepoint": "0x3839",

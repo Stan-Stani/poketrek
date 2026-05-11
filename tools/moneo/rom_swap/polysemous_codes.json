@@ -1,0 +1,245 @@
+{
+  "3A3D": {
+    "occurrences": 58,
+    "candidates": ["맏", "또(alt)", "한번", "왔(alt)", "맞"],
+    "competing_contexts": [
+      "'휴식·[3A3D]····휴식' → 또 (again) makes sense",
+      "'얼굴은····제법··[3A3D]··' → 자랐어/잘되/괜찮 (grown well) — different syllable",
+      "'선원에게·[3A3D]·당연한···해볼까' → particle '도' (also) or '인사' (greeting)",
+      "'·[3A3D]·포켓몬·웃··하자' → '한 포켓몬' (one pokemon) or '내 포켓몬'",
+      "'씨갤럽·[3A3D]·정은··출항합니다' → '호의 [정원이]' (boat's [crew is])"
+    ]
+  },
+  "3CFE": {
+    "occurrences": 47,
+    "candidates": ["매우(2syl)", "정말(2syl)", "그", "한", "막"],
+    "competing_contexts": [
+      "'친구와 [3CFE]좋아하는 승부' → 가장 (most favorite friend)",
+      "'촉감이 [3CFE]붉고 모래' → 매우 / 정말 (very red sand)",
+      "'[3CFE]엄청난 상대' → 정말 (truly amazing opponent)",
+      "'[3CFE]신뢰' → 굳은/큰 (firm/big trust)",
+      "'[3CFE]동안에는 포켓몬은 말 않게' → 그 (during that time) OR 한 (for a while)"
+    ]
+  },
+  "3E40": {
+    "occurrences": 60,
+    "candidates": ["맡", "받(alt)", "찾(alt)", "특(alt)", "MENU CONTROL"],
+    "competing_contexts": [
+      "'짐이··[3E40]링·' repeated 5x identical — fixed menu prompt 'bag is full'?",
+      "'운을 [3E40] 볼까' → '시험해' (try one's luck) — 2-syl",
+      "'[3E40] 룰' → '특' (special rule) but 특=3FAB",
+      "'명령을 [3E40]' → '받는다' (receive command) or '내린다' (issue)",
+      "'포켓몬이 [3E40]하·' → verb-stem + 하다 indicates Sino-Korean noun"
+    ]
+  },
+  "3E39": {
+    "occurrences": 56,
+    "candidates": ["문제", "걱정", "이유", "쉽게", "한"],
+    "competing_contexts": [
+      "'자네는 아무 [3E39] 없이' → '걱정 없이' (without worry) or '문제 없이'",
+      "'아라리는 [3E39] 진화하지' → '쉽게' (easily evolves) — 2-syl",
+      "'마지막 [3E39]······든' → '문' (door/problem) but 문=3A9D? unclear",
+      "'[3E39] 안··' = sentence-end 'isn't X'",
+      "'카나·쌍둥이··[3E39]·놀래켜줄' → 'twins X surprise' → '같이' (together)"
+    ]
+  },
+  "3E38": {
+    "occurrences": 45,
+    "candidates": ["보(alt)", "둡(보다)", "둬", "두", "주(alt)"],
+    "competing_contexts": [
+      "'사이좋게 [3E38]·' → '지내' (get along) — 2-syl",
+      "'사용하면 [3E38]·' → '됩니다' (works) or '주세요'",
+      "'쓰면 [3E38]·' → '됩니다' (it works) or '봅니다'",
+      "'한 [3E38]·' → '번' (once) — 번=3B14",
+      "Many sentence-final after verb stem — likely polite ending or '둬요'/'봐요'"
+    ]
+  },
+  "3E3A": {
+    "occurrences": 30,
+    "candidates": ["낚(2nd encoding)", "사(part of 사천왕)", "정말", "한"],
+    "competing_contexts": [
+      "'사천왕 [3E3A]·' → connector or '의' (possessive)? 의=395B",
+      "'겨[3E3A] 좋아하나' / '겨[3E3A] 하지' → 겨X = verb '겨루다'? '겨우' (barely)?",
+      "'슈퍼 [3E3A] 받아' → '볼/봉/특훈' — gift item",
+      "'[3E3A]·발휘하게' → '힘' (force) or '제대로'",
+      "Likely part of compound 겨X (겨루다=compete or 겨울=winter) — depends on partner"
+    ]
+  },
+  "3E3B": {
+    "occurrences": 14,
+    "candidates": ["곧", "빠", "쉽", "조"],
+    "competing_contexts": [
+      "'좀 [3E3B]·떨어져' → 멀리 (far away)",
+      "'정말 식히지 못해 [3E3B]·' — sentence-end 'is/was'",
+      "'단단하고 껍질에 턴 상대를 [3E3B]·공격한다' → '꽉/세게' (firmly)",
+      "'화나게 손쓸 수 없다 모든 발톱으로 불꽃으로 [3E3B]·파괴한다' → '확/완전히' (completely)",
+      "'꼬리를 [3E3B]·조금이라도' → '조금/약간' (a bit) — 조=3DC9"
+    ]
+  },
+  "3E3E": {
+    "occurrences": 27,
+    "candidates": ["그런", "같은", "꼭", "참"],
+    "competing_contexts": [
+      "'[3E3E]·탑입니다' → '큰/그런' (such tower)",
+      "'기술이 확률을 높을수록 명중하기 [3E3E]···' → '쉽다' (easier)",
+      "'[3E3E]·' sentence-final after demonstrative — like '그래'/'그렇다'",
+      "'잡기 [3E3E] 매우 볼' → '쉽다' / '어렵다' (hard/easy)",
+      "'데미지가 [3E3E]·' → '커진다' / '커' (gets bigger)"
+    ]
+  },
+  "3B3F": {
+    "occurrences": 32,
+    "candidates": ["반", "꽤", "다", "양", "전(alt)"],
+    "competing_contexts": [
+      "'를 [3B3F] 회복한다' (move desc) — 'HP를 다/반/완전히 회복한다' — 다 already",
+      "'데미지의 [3B3F]·를 슬' — fractional amount (절반/약간)",
+      "'재료가 한 [3B3F] 있으려나' → '개' or '번' (one piece)",
+      "'도감을 [3B3F] 완성했으니' → '다/막/방금' (just completed)",
+      "'쇠고기 재료가 한 [3B3F] 있으려나' → '봉지/개' (one bag)"
+    ]
+  },
+  "3B40": {
+    "occurrences": 16,
+    "candidates": ["가까이", "수영", "은밀", "곧", "참"],
+    "competing_contexts": [
+      "'놀이는 [3B40]하·하지' → '그만/실컷' (enough) or '잘'",
+      "'[3B40]·있으면 간다고' → '곧/곧잘' (soon if I have X)",
+      "'트레이너들이 [3B40]·마·오는' → '자주' (often come)",
+      "'그늘에서 [3B40]·있는다' → '조용히/숨어' (quietly stay)",
+      "'눈빛으로 [3B40]·응시하여' → '깊이/날카롭게' (deeply gaze)"
+    ]
+  },
+  "3839": {
+    "occurrences": 22,
+    "candidates": ["올라", "위", "있", "잘"],
+    "competing_contexts": [
+      "'폭포를 [3839]·올라간다' → directional '잘/타고' (climbs well)",
+      "'동굴을 [3839]····있어' → '안에' (inside) — 안 already",
+      "'[3839]· 게임은' → '이/그/저' demonstrative",
+      "'[3839]···돈을 써버렸다' → '엄청/막' (a lot of money)",
+      "'난동부려서 [3839]···뒤에는' → time marker"
+    ]
+  },
+  "3F39": {
+    "occurrences": 10,
+    "candidates": ["둘", "찍", "쓱", "푹"],
+    "competing_contexts": [
+      "'사진이 [3F39]·· 있다' → 'photographed' / '찍혀 있다' — 찍 not in map?",
+      "'관동지방에서는 [3F39]·적···희귀한·····차례로··[3F39]··있더구나' — comes-and-goes pattern",
+      "'[3F39]·[3F39]···해선 도달할 수 없을걸' — emphatic doubling",
+      "'빨갛게 [3F39]·· 있다' → '빛나' (glow red)? or 'attached'",
+      "'근성의 [3F39]···' → '몰아치는' / '꽉찬' (stuffed)"
+    ]
+  },
+  "3FFE": {
+    "occurrences": 11,
+    "candidates": ["많", "꽉", "찬", "한"],
+    "competing_contexts": [
+      "'배틀 [3FFE]많은····됐어 고마워' → '에서/덕분에' (thanks-from)",
+      "'천장에서든 [3FFE]지치는··없이' → '도/조차' (even ceiling)",
+      "'가끔 [3FFE]지닌···' → '강한 무기 지닌' or particle",
+      "'[3FFE]포켓몬을 ...상태로 만[3F38]' → ALL or numeric",
+      "'블렌더로 만[3FFE]포켓몬스[3863]' → past-form participle"
+    ]
+  },
+  "3EAB": {
+    "occurrences": 14,
+    "candidates": ["요", "야", "다", "네", "뭐"],
+    "competing_contexts": [
+      "'고맙다 드[3EAB]' → '드네' (informal-polite ending)",
+      "'덕분에 드[3EAB]' → '드네/드세요'",
+      "'엄청 [3EAB]······' → '하네' / '나' (interjection)",
+      "'벌레포켓몬은 빨라서 [3EAB]' → '어렵다' (hard) or '귀찮네'",
+      "Likely a sentence-final polite-informal ending"
+    ]
+  },
+  "3EFE": {
+    "occurrences": 19,
+    "candidates": ["오히려", "역시", "엄청", "정말", "어떻"],
+    "competing_contexts": [
+      "'난 ····장남 조류는 [3EFE]그····좋단·곳' → '정말/역시' (still really)",
+      "'드[3EFE]그나저나' → '드리네/드림' polite filler",
+      "'[3EFE]너무해' → exclamation 'too cruel'",
+      "'역시 [3EFE]트레이너는' → adverb/intensifier",
+      "Both adverb and verb-form contexts compete"
+    ]
+  },
+  "3BFA": {
+    "occurrences": 19,
+    "candidates": ["맞", "그러", "지", "참"],
+    "competing_contexts": [
+      "'/그럼 [3BFA] 그럼 난 갈게' → '글쎄' / '그러면' (so)",
+      "'멋있는 [3BFA] 보여줘' → '거 / 것 / 모습' (cool thing show me)",
+      "'유명하면 [3BFA] 표적이' → 'X 표적' (X target)",
+      "'유적은 개 [3BFA] 먼··만··존재했던' → '몇' (a few)",
+      "'언제나 거길·····걸·[3BFA]이제야' → '그래 / 그런데'"
+    ]
+  },
+  "3BAD": {
+    "occurrences": 20,
+    "candidates": ["많", "더", "잘", "그래"],
+    "competing_contexts": [
+      "'공부도 [3BAD]·' → '잘/많이' (study well)",
+      "'배틀해도 [3BAD]·근처에는' → '안돼/소용없'",
+      "'큰····[3BAD]·기술로 수····' → '강한/멋진' (big strong tech)",
+      "'쓰긴 [3BAD]·' → '한다/하지만' (uses but)",
+      "'아저씨 꼬마야 [3BAD]·특별히' → '잘 들어' / '들어 봐' (listen up)"
+    ]
+  },
+  "3BFE": {
+    "occurrences": 62,
+    "candidates": ["꼭", "참", "정말", "더", "잘"],
+    "competing_contexts": [
+      "'정말 [3BFE]그' → emphatic 'truly' redundant",
+      "'독이 [3BFE]뿔충이는 있어' → '강한 / 센' (strong poison)",
+      "'세계를 [3BFE]잠만' → '한 잠' (one sleep) or '쭉'",
+      "'마시면 [3BFE]됐단다' → '꼭 / 푹' (if drink, fine)",
+      "'멀리 [3BFE]홍련마을' → '있는 / 멀리' (faraway X red town)",
+      "'어째선지 [3BFE]낚여' → '잘 / 푹' (somehow X hooked)"
+    ]
+  },
+  "3F40": {
+    "occurrences": 32,
+    "candidates": ["실(alt)", "본", "그", "이"],
+    "competing_contexts": [
+      "'[3F40]·· 본사' repeated 8+ identical times — likely first syllable of brand name like '실프/관동/실'",
+      "'[3F40]블 했니' → '러블/투블' — game-coin?",
+      "'루비를 [3F40]·' → '얻었어 / 받았어' (got ruby)",
+      "'박물관 [3F40] 블 했니' → '관 / 람' (museum visit)",
+      "'머리를 [3F40]·' → 'X head' style action"
+    ]
+  },
+  "4037": {
+    "occurrences": 35,
+    "candidates": ["옛", "한(alt)", "큰", "이", "신"],
+    "competing_contexts": [
+      "'[4037]··들여다봤다' repeated 6x identical — fixed phrase like '한 번 들여다봤다'",
+      "'섬에는 [4037]· 돌이 전해진다' → '신성한 / 큰 / 옛' (sacred/big/old stone)",
+      "'굴에는 [4037]· 힘이' → '큰/신비한' (mysterious power)",
+      "'일에 [4037]·쓰면' → '함께/잘' (use together/well)",
+      "'들여다봤다' contexts could be 'X 들여다봤다' adverb fixed phrase"
+    ]
+  },
+  "393B": {
+    "occurrences": 27,
+    "candidates": ["독", "마비", "status-marker", "한"],
+    "competing_contexts": [
+      "'잠듦··화상·[393B]··' — listed with status conditions → '마비' (paralysis)",
+      "'[393B] 상태로 만 때가' (move desc) → status keyword '마비' or '잠듦'",
+      "'독이나 [393B] 같은' → another status word",
+      "'풀렸다' = released — connects with previous",
+      "Likely a fixed STATUS-EFFECT keyword. '마비' is the only common status not yet in map."
+    ]
+  },
+  "3937": {
+    "occurrences": 17,
+    "candidates": ["막", "확", "잘", "한"],
+    "competing_contexts": [
+      "'태워버리는' / '난동부려서' / '이겼구나' — all verb prefixes meaning 'completely/just'",
+      "'당신의·[3937]·당신을' → demonstrative '이/그/네'",
+      "'등을 [3937]·샀다' → '한 켤레/한번' (bought one)",
+      "'[3937]·낚시하렴' → '잘/막' (fish well)",
+      "Most fit '막' (just/randomly) but already exists at 3A3A"
+    ]
+  }
+}
