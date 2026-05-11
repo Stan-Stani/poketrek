@@ -55,6 +55,10 @@ unknowns that survive all context rounds:
 - **0x3C98 / 0x3828 (씩/까)** — appear adjacent in the same word;
   "하나씩" works but "가까이" requires both glyphs outside their
   brackets → joint anchor reset needed.
+- **0x3CFA / 0x3CFE** — bracket = {옇} alone (squeezed by round 9's
+  0x3CEE=옆 + 0x3D01=예). Context wants "순" (0x3CFE=순격투/순데이트),
+  "신/현" (0x3CFA=신챔피언/현챔피언). Could mean either 0x3CEE=옆 is
+  itself wrong, OR ROM cp ordering near 옆 deviates from Unicode.
 
 Approach when picking this up: rather than another round of label_X.py,
 write a *reconcile* tool that lets the user point at a suspect anchor,
