@@ -31,6 +31,48 @@ Goal: pull the 2024 patch's encoding table / build scripts / font
 binary if the authors posted any of it in 한식구 cafe — would
 short-circuit the remaining context-triangulation work.
 
+## Codepoint map session summary (as of last regen)
+
+Map size: **1112 anchors**. Remaining unknowns: **194 cps / 835
+occurrences** of which:
+- **6 cps / 104 occ** = confirmed CONTROL bytes (see
+  `tools/moneo/rom_swap/control_codes.json`): 0x3FFF (dialog
+  terminator), 0x40A1 (HM/TM icon), 0x3C08/4018/408C/398C (binary
+  table bytes outside dialog).
+- **188 cps / 731 occ** = genuine unknowns.
+
+Of those 731 unknown occurrences:
+- ~250 occ in a handful of cluster cps (0x393A/3938/393C in the
+  "마비/잘잠/마비치료" verb-stem cluster, 0x3A40 in "맙소사" cluster,
+  0x3D3F adjacent to 0x3D3C=더).
+- ~120 occ on 0x4038 alone — almost certainly a sentence-final
+  particle/control marker (appears as `오신 것을 [4038]` etc., but
+  doesn't fit 환영 cleanly across all 107 contexts). Treat as suspected
+  control byte until proven otherwise.
+- ~360 occ across 180 long-tail cps with 1-3 occurrences each. Most
+  need either an anchor reconciliation tool, an OCR/visual sweep with
+  better candidate generation than PIL provides, or the patch sources
+  themselves via the browser-MCP path.
+
+What worked best this session (in order of impact-per-effort):
+
+1. **LIS-override context-only labeling** (reconcile r1/r2/r3) —
+   recovered 1,550+ occurrences across 21 cps by trusting context over
+   broken LIS brackets. Insight: high-freq Korean morphemes (하/있/만/
+   곳/그/이/더/요) are pulled into a contiguous mid-range cp block
+   regardless of Unicode collation.
+2. **Three parallel context agents** (round 9) — 299 labels in a
+   single batch.
+3. **Polysemous majority-rule pass** — 22 labels, 672 occ, accepting
+   ~30% imprecision on alt-encoded syllables.
+
+What didn't yield well (≤25 labels per batch despite real effort):
+
+- PIL-OCR top-N visual picker (visual r1): PIL's candidate ranking is
+  too noisy; the right syllable family is often missing from top-8.
+- Jamo-structure picker: better, but still capped by ROM-glyph
+  ambiguity at 16×16 resolution.
+
 ## TODO: LIS anchor reconciliation
 
 Round-9 agents (chunk 1 & chunk 3 reports) independently flagged the
