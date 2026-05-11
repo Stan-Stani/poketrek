@@ -2,31 +2,189 @@
   "3FFF": {
     "role": "CONTROL",
     "hypothesis": "Dialog/sentence terminator glyph. Always sentence-final. Appears doubled ('앞으로 명·· [3FFF] 앞으로 명·· [3FFF]'). Follows complete clauses with no syllable role. Likely a punctuation glyph or end-of-paragraph marker.",
-    "evidence_records": [596, 599, 607, 980, 1212, 2489, 3099, 3244, 6840, 6842]
+    "evidence_records": [
+      596,
+      599,
+      607,
+      980,
+      1212,
+      2489,
+      3099,
+      3244,
+      6840,
+      6842
+    ]
   },
   "40A1": {
     "role": "CONTROL",
     "hypothesis": "HM/TM icon glyph (Hidden Machine indicator). Always followed by '·· <movename>' or '··받았다'. Patterns: '[40A1]··받았다' (received HM), '[40A1]··공중날기' (HM Fly), '[40A1]··명상' (Meditate), '[40A1]··물의파동' (Water Pulse), '[40A1]··파도타기' (Surf). The two spaces after suggest icon width.",
-    "evidence_records": [277, 626, 2209, 2540, 2541, 2705, 2789, 2791, 2883]
+    "evidence_records": [
+      277,
+      626,
+      2209,
+      2540,
+      2541,
+      2705,
+      2789,
+      2791,
+      2883
+    ]
   },
   "3C08": {
     "role": "CONTROL",
     "hypothesis": "Binary padding/data byte. Only appears in record 81 (0x3D28BC) as long repeated sequence '[3C08][3C08]·[3C08]·...'. Outside the main dialog text region. Likely non-text data being misinterpreted by the scanner.",
-    "evidence_records": [81]
+    "evidence_records": [
+      81
+    ]
   },
   "4018": {
     "role": "CONTROL",
     "hypothesis": "Binary/script bytecode marker. All occurrences in low addresses (0x012A00-0x0A9C64), outside main dialog. Repeated in regular intervals ('디 [4018]···디 [4018]'). Appears in script tables/lookup data, not natural text.",
-    "evidence_records": [2, 3, 4, 6, 7, 8, 9, 15]
+    "evidence_records": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      15
+    ]
   },
   "408C": {
-    "role": "CONTROL",
-    "hypothesis": "Binary data byte. All occurrences at addresses 0x6BDCE8-0x6F7D58 (graphics/glyph tables area), not main dialog. Appears in patterns with other unlabeled cps as if part of a binary table.",
-    "evidence_records": [152, 156, 157, 159, 165, 171]
+    "role": "CONTROL_ALIAS",
+    "cp": "408C",
+    "hypothesis": "Byte-identical glyph to 0x4093=훗. All occurrences in 0x6BDCE8-0x6F7D58 graphics-table range, not dialog."
   },
   "398C": {
     "role": "CONTROL",
     "hypothesis": "Binary data byte, same region as 408C. Addresses 0x6DAAA6-0x6EACA6. Appears in repeating sequences with [378C], [3B8C], [408C] — likely table indices or graphics codes.",
-    "evidence_records": [157, 158, 159, 161, 165]
+    "evidence_records": [
+      157,
+      158,
+      159,
+      161,
+      165
+    ]
+  },
+  "4038": {
+    "role": "CONTROL",
+    "hypothesis": "Ambiguous — glyph is 핏 but 47% sentence-final + greeting/closer contexts (받으세요, 감사합니다) suggest a polite-marker / pause role using a shared glyph slot. Leaning CONTROL.",
+    "evidence_records": []
+  },
+  "3DFE": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3EFB": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3BFB": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "39FE": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3EFA": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3AFE": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3EFF": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "40FC": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3CFF": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "40F9": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "40FF": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3DFA": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "38FA": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "39F0": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3FF0": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3EF3": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "40CF": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "39FF": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "37FE": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3DFD": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3AFF": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "3BFC": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
+  },
+  "38FE": {
+    "role": "CONTROL",
+    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
+    "evidence_records": []
   }
 }
