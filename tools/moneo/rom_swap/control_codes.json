@@ -186,5 +186,137 @@
     "role": "CONTROL",
     "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
     "evidence_records": []
+  },
+  "3749": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3735",
+    "glyph_syllable": "겐",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "388C": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3877",
+    "glyph_syllable": "녹",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3978": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "39BB",
+    "glyph_syllable": "랫",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "397F": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3997",
+    "glyph_syllable": "뜬",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "398A": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3911",
+    "glyph_syllable": "돌",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3A4C": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "39B9",
+    "glyph_syllable": "램",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3AD1": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "39BD",
+    "glyph_syllable": "랭",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3B8C": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3B7A",
+    "glyph_syllable": "뽑",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3C7F": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3C8C",
+    "glyph_syllable": "쓱",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3C82": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3C91",
+    "glyph_syllable": "씀",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3D6F": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3D50",
+    "glyph_syllable": "윌",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3E98": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3E8D",
+    "glyph_syllable": "체",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3F14": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3F04",
+    "glyph_syllable": "컴",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "3F83": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "39E3",
+    "glyph_syllable": "록",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "401A": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3942",
+    "glyph_syllable": "듦",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "402D": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3DBC",
+    "glyph_syllable": "존",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "4045": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3CB1",
+    "glyph_syllable": "앤",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "4046": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3CB2",
+    "glyph_syllable": "앨",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "405C": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "4048",
+    "glyph_syllable": "햅",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "405D": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3CDE",
+    "glyph_syllable": "엣",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "4069": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3CB1",
+    "glyph_syllable": "앤",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
+  },
+  "4083": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "40BB",
+    "glyph_syllable": "흰",
+    "hypothesis": "Exact pixel match to labeled cp; corpus occurrences only in binary tables (offset < 0x700000), not dialog."
   }
 }
