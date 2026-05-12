@@ -141,3 +141,62 @@ significant analysis for ≤1 occurrence of payoff. The structural
 unblocker is the bracket-reconcile tool in the TODO above — without
 it, the LIS-misanchored cluster (which contains the highest-value
 remaining cps) can't be cracked from context alone.
+
+## Codepoint map session summary (post glyph-dup r2/r3)
+
+Map size: **1184 anchors**. Remaining unknowns: **130 cps / 537 occ**
+of which:
+- **121 cps / 514 occ** = classified CONTROL bytes in
+  `control_codes.json`.
+- **9 cps / 23 occ** = genuine unknowns.
+
+Two breakthroughs this session:
+
+1. **Pixel-distance scan with looser threshold (≤8)** unlocked the
+   single-occurrence long-tail. Most cps that didn't match at the
+   strict ≤4 threshold still pixel-match within ≤8 with high
+   confidence (multiple ties at d=2 produced pixel-perfect alt-
+   encoding labels: 0x4001=젤, 0x38D8=탬, 0x3E4B=죄).
+
+2. **Blank-glyph CONTROL detection** — `scan_glyph_duplicates`
+   already skips blank glyphs, but I hadn't realized this is the
+   signature for the StanNotes-flagged LIS-misanchored cluster.
+   0x3CFA, 0x40FE, 0x3FFB all have near-empty atlas slots; they
+   can't be syllables. These are text-formatting markers (color/
+   emphasis/font-switch) appearing mid-word before adjectives/
+   nouns. This single observation resolves 3 of the 6 high-value
+   "LIS-misanchored common short word" candidates flagged in the
+   previous session's TODO.
+
+This session (`apply_glyph_id_r2.py` + `apply_glyph_dup_r2.py` +
+`apply_glyph_dup_r3.py`) added 24 alt-encoding labels + 13 control
+classifications. Reduction in truly-unknown:
+
+  Start of session:  39 cps / 102 occ
+  After glyph-id r2: 36 cps / 87 occ   (-3 cps, -15 occ)
+  After glyph-dup r2: 18 cps / 55 occ  (-18 cps, -32 occ)
+  After glyph-dup r3:  9 cps / 23 occ  (-9 cps, -32 occ)
+
+Total: **77% reduction in both distinct cps and occurrences**.
+
+## Final 9 truly-unknown codepoints (post-session)
+
+All have weak pixel-match (d≥5) and limited corpus context. Next
+steps require either the bracket-reconcile tool or patch-source
+confirmation:
+
+- 0x3F3C (7 occ) — likely TM-icon CONTROL (parallel to 0x40A1 HM
+  icon); pixel d=8 to any syllable rules out syllable role. Pokédex
+  contexts at recs 5140/5141 muddy this.
+- 0x3F3A (4 occ) — ambiguous syllable, multiple d=5 ties (램/랭/맹/
+  멤/멩); LIS bracket extremely wide (75 candidates → misanchored).
+- 0x3FA0 (3 occ) — pixel d=8 best; appears in font-dump records.
+- 0x373E (3 occ) — pixel d=8 to all 거-family syllables; bracket
+  is 격-견 with only 2 candidates.
+- 0x3786 (2 occ), 0x3C93 (1 occ), 0x3820 (1 occ), 0x3884 (1 occ),
+  0x3C6C (1 occ) — single-occurrence with weak pixel match.
+
+The structural blocker (bracket-reconcile tool) is still the
+right next move for cracking 0x3F3A and 0x373E, but it's no longer
+worth blocking on for any single cp — yield-per-effort below
+break-even given how rare these are in the corpus.
