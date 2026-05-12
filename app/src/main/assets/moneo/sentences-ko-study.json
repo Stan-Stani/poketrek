@@ -4,7 +4,7 @@
  "notes": "Hand-written TOPIK-1/2 study sentences. Each one was crafted after looking at how the target vocab actually appears in corpus.ko.json (the Phase-2 ROM rip) — the patterns and contexts are real-Korean-usage informed, but no game dialog or plot points are quoted. Use when 'Verbatim ROM examples' is OFF. `inspiredBy` notes which ROM record(s) informed the construction; absence means no corpus match (vocab is taught with a generic textbook pattern).",
  "entries": [
   {
-   "vocabId": "seed-v1:포켓몬",
+   "vocabId": "rom-mine-v2:포켓몬",
    "korean": "포켓몬을 좋아해요.",
    "gloss": "I like Pokémon.",
    "inspiredBy": "rom-rec1344",
@@ -84,7 +84,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:마을",
+   "vocabId": "rom-mine-v2:마을",
    "korean": "이 마을은 조용해요.",
    "gloss": "This town is quiet.",
    "inspiredBy": "rom-rec4453",
@@ -123,7 +123,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:박사",
+   "vocabId": "rom-mine-v2:박사",
    "korean": "박사님은 친절해요.",
    "gloss": "The professor is kind.",
    "generator": "llm-claude-opus-4-7",
@@ -155,14 +155,14 @@
    ]
   },
   {
-   "vocabId": "seed-v1:나",
+   "vocabId": "rom-mine-v2:나",
    "korean": "나는 학생이에요.",
    "gloss": "I am a student.",
    "inspiredBy": "rom-rec4412",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:이름",
+   "vocabId": "rom-mine-v2:이름",
    "korean": "이름이 뭐예요?",
    "gloss": "What is your name?",
    "inspiredBy": "rom-rec3532",
@@ -193,7 +193,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:안녕",
+   "vocabId": "rom-mine-v2:안녕",
    "korean": "안녕! 잘 지냈어?",
    "gloss": "Hi! How have you been?",
    "generator": "llm-claude-opus-4-7",
@@ -242,7 +242,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:가다",
+   "vocabId": "rom-mine-v2:가다",
    "korean": "학교에 가요.",
    "gloss": "I go to school.",
    "generator": "llm-claude-opus-4-7",
@@ -319,7 +319,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:오다",
+   "vocabId": "rom-mine-v2:오다",
    "korean": "친구가 와요.",
    "gloss": "My friend is coming.",
    "targetForm": "와",
@@ -399,26 +399,26 @@
    ]
   },
   {
-   "vocabId": "seed-v1:집",
+   "vocabId": "rom-mine-v2:집",
    "korean": "집에 갈 시간이에요.",
    "gloss": "It's time to go home.",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:길",
+   "vocabId": "rom-mine-v2:길",
    "korean": "이 길로 가세요.",
    "gloss": "Please take this road.",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:풀",
+   "vocabId": "rom-mine-v2:풀",
    "korean": "풀이 길어요.",
    "gloss": "The grass is long.",
    "inspiredBy": "rom-rec4344",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:야생",
+   "vocabId": "rom-mine-v2:야생",
    "korean": "야생 포켓몬을 봤어요.",
    "gloss": "I saw a wild Pokémon.",
    "inspiredBy": "rom-rec135",
@@ -455,7 +455,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:나타나다",
+   "vocabId": "rom-mine-v2:나타나다",
    "korean": "포켓몬이 나타나요.",
    "gloss": "A Pokémon appears.",
    "targetForm": "나타나",
@@ -481,7 +481,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:싸우다",
+   "vocabId": "rom-mine-v2:싸우다",
    "korean": "싸우지 마세요.",
    "gloss": "Please don't fight.",
    "targetForm": "싸우",
@@ -535,7 +535,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:잡다",
+   "vocabId": "rom-mine-v2:잡다",
    "korean": "포켓몬을 잡았어요.",
    "gloss": "I caught a Pokémon.",
    "targetForm": "잡",
@@ -603,27 +603,27 @@
    ]
   },
   {
-   "vocabId": "seed-v1:새",
+   "vocabId": "rom-mine-v2:새",
    "korean": "새가 하늘을 날아요.",
    "gloss": "The bird flies in the sky.",
    "inspiredBy": "rom-rec4474",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:쥐",
+   "vocabId": "rom-mine-v2:쥐",
    "korean": "쥐는 작아요.",
    "gloss": "Mice are small.",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:도시",
+   "vocabId": "rom-mine-v2:도시",
    "korean": "이 도시는 커요.",
    "gloss": "This city is big.",
    "inspiredBy": "rom-rec2613",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:사람",
+   "vocabId": "rom-mine-v2:사람",
    "korean": "사람이 많아요.",
    "gloss": "There are many people.",
    "inspiredBy": "rom-rec4432",
@@ -690,13 +690,13 @@
    ]
   },
   {
-   "vocabId": "seed-v1:가게",
+   "vocabId": "rom-mine-v2:가게",
    "korean": "가게에서 빵을 사요.",
    "gloss": "I buy bread at the shop.",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:사다",
+   "vocabId": "rom-mine-v2:사다",
    "korean": "물을 사고 싶어요.",
    "gloss": "I want to buy water.",
    "targetForm": "사",
@@ -737,7 +737,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:팔다",
+   "vocabId": "rom-mine-v2:팔다",
    "korean": "몬스터볼을 팔아요.",
    "gloss": "They sell Poké Balls.",
    "targetForm": "팔",
@@ -756,7 +756,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:체육관",
+   "vocabId": "rom-mine-v2:체육관",
    "korean": "체육관은 어디예요?",
    "gloss": "Where is the gym?",
    "generator": "llm-claude-opus-4-7",
@@ -797,7 +797,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:관장",
+   "vocabId": "rom-mine-v2:관장",
    "korean": "관장님은 강해요.",
    "gloss": "The gym leader is strong.",
    "generator": "llm-claude-opus-4-7",
@@ -836,31 +836,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:북쪽",
-   "korean": "북쪽으로 가요.",
-   "gloss": "I go north.",
-   "generator": "llm-claude-opus-4-7"
-  },
-  {
-   "vocabId": "seed-v1:남쪽",
-   "korean": "집은 남쪽에 있어요.",
-   "gloss": "Home is to the south.",
-   "generator": "llm-claude-opus-4-7"
-  },
-  {
-   "vocabId": "seed-v1:동쪽",
-   "korean": "동쪽에 산이 있어요.",
-   "gloss": "There's a mountain to the east.",
-   "generator": "llm-claude-opus-4-7"
-  },
-  {
-   "vocabId": "seed-v1:서쪽",
-   "korean": "서쪽 하늘이 빨개요.",
-   "gloss": "The western sky is red.",
-   "generator": "llm-claude-opus-4-7"
-  },
-  {
-   "vocabId": "seed-v1:지나가다",
+   "vocabId": "rom-mine-v2:지나가다",
    "korean": "마을을 지나가요.",
    "gloss": "I pass through the town.",
    "targetForm": "지나가",
@@ -882,7 +858,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:입구",
+   "vocabId": "rom-mine-v2:입구",
    "korean": "입구가 어디예요?",
    "gloss": "Where is the entrance?",
    "generator": "llm-claude-opus-4-7",
@@ -899,7 +875,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:출구",
+   "vocabId": "rom-mine-v2:출구",
    "korean": "출구는 저쪽이에요.",
    "gloss": "The exit is over there.",
    "generator": "llm-claude-opus-4-7",
@@ -916,21 +892,21 @@
    ]
   },
   {
-   "vocabId": "seed-v1:숲",
+   "vocabId": "rom-mine-v2:숲",
    "korean": "숲이 넓어요.",
    "gloss": "The forest is wide.",
    "inspiredBy": "rom-rec4341",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:나무",
+   "vocabId": "rom-mine-v2:나무",
    "korean": "나무가 커요.",
    "gloss": "The tree is big.",
    "inspiredBy": "rom-rec4378",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:벌레",
+   "vocabId": "rom-mine-v2:벌레",
    "korean": "벌레가 무서워요.",
    "gloss": "Bugs are scary.",
    "inspiredBy": "rom-rec4349",
@@ -962,7 +938,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:어둡다",
+   "vocabId": "rom-mine-v2:어둡다",
    "korean": "방이 어두워요.",
    "gloss": "The room is dark.",
    "targetForm": "어두",
@@ -984,7 +960,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:깊다",
+   "vocabId": "rom-mine-v2:깊다",
    "korean": "물이 깊어요.",
    "gloss": "The water is deep.",
    "targetForm": "깊",
@@ -1037,7 +1013,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:조심하다",
+   "vocabId": "rom-mine-v2:조심하다",
    "korean": "조심하세요!",
    "gloss": "Please be careful!",
    "targetForm": "조심하",
@@ -1045,7 +1021,7 @@
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:회색",
+   "vocabId": "rom-mine-v2:회색",
    "korean": "회색 옷을 입었어요.",
    "gloss": "I wore grey clothes.",
    "generator": "llm-claude-opus-4-7",
@@ -1068,7 +1044,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:바위",
+   "vocabId": "rom-mine-v2:바위",
    "korean": "바위가 커요.",
    "gloss": "The boulder is big.",
    "generator": "llm-claude-opus-4-7",
@@ -1092,13 +1068,13 @@
    ]
   },
   {
-   "vocabId": "seed-v1:첫",
+   "vocabId": "rom-mine-v2:첫",
    "korean": "오늘이 첫날이에요.",
    "gloss": "Today is the first day.",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:배지",
+   "vocabId": "rom-mine-v2:배지",
    "korean": "배지를 받았어요!",
    "gloss": "I got a badge!",
    "inspiredBy": "rom-rec3710",
@@ -1152,14 +1128,14 @@
    ]
   },
   {
-   "vocabId": "seed-v1:도전하다",
+   "vocabId": "rom-mine-v2:도전하다",
    "korean": "관장님께 도전해요.",
    "gloss": "I challenge the gym leader.",
    "targetForm": "도전",
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "seed-v1:이기다",
+   "vocabId": "rom-mine-v2:이기다",
    "korean": "친구를 이겼어요.",
    "gloss": "I beat my friend.",
    "targetForm": "이겼",
@@ -1208,7 +1184,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:지다",
+   "vocabId": "rom-mine-v2:지다",
    "korean": "오늘은 졌어요.",
    "gloss": "Today I lost.",
    "targetForm": "졌",
@@ -1263,7 +1239,7 @@
    ]
   },
   {
-   "vocabId": "seed-v1:박물관",
+   "vocabId": "rom-mine-v2:박물관",
    "korean": "박물관에 가고 싶어요.",
    "gloss": "I want to go to the museum.",
    "inspiredBy": "rom-rec3862",

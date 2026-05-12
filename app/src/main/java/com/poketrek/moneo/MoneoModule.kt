@@ -41,7 +41,11 @@ class MoneoModule private constructor(context: Context) {
     init {
         val store = MoneoCardStore.forContext(context)
         val areas = runCatching { AreaCatalog.loadFromAssets(context) }.getOrElse { emptyList() }
-        val vocabSeed = runCatching { SeedLoader.loadFromAssets(context) }.getOrElse { emptyList() }
+        // seed-vocab-ko.json retired 2026-05-12 — its 45 entries were
+        // hand-curated MVP placeholders, now migrated into seed-vocab-
+        // ko-mined.json with rom-mine-v2 ids. SeedLoader is still used
+        // for the larger mined/topik/species/etymology decks below.
+        val vocabSeed = emptyList<com.poketrek.moneo.data.VocabEntry>()
         // Auto-mined vocab from corpus.ko.json. Optional — if the file is
         // absent or fails to parse, fall back to seed-only.
         val vocabMined = runCatching {

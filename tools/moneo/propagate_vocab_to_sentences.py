@@ -23,7 +23,8 @@ ASSETS = ROOT / "app/src/main/assets/moneo"
 
 # vocabId namespaces in this codebase (id prefix -> deck file)
 NAMESPACES = [
-    ("seed-v1",     ASSETS / "seed-vocab-ko.json"),
+    # seed-v1 namespace was retired 2026-05-12 (file deleted; entries migrated
+    # into seed-vocab-ko-mined.json under rom-mine-v2 ids). Kept here as a note.
     ("rom-mine-v2", ASSETS / "seed-vocab-ko-mined.json"),
     ("topik-v2",    ASSETS / "seed-vocab-ko-topik.json"),
     ("rom-species", ASSETS / "seed-vocab-ko-species.json"),
@@ -50,22 +51,8 @@ ATTRIB_FIELDS = (
 
 
 def fill_seed_v1(lemma_idx: dict) -> None:
-    """The tiny curated seed deck never got lemma-index attribution."""
-    path = ASSETS / "seed-vocab-ko.json"
-    data = json.loads(path.read_text())
-    filled = 0
-    for e in data["entries"]:
-        info = lemma_idx.get(e.get("korean"))
-        if not info: continue
-        e.setdefault("firstAreaEncountered", info.get("first_area"))
-        e.setdefault("areasReferenced", info.get("areas", []))
-        if info.get("source_types"):
-            e.setdefault("sourceTypes", info["source_types"])
-            e.setdefault("primarySourceType", info.get("primary_source_type", ""))
-        e.setdefault("liveRecIds", info.get("rec_ids", []))
-        filled += 1
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1))
-    print(f"seed-vocab-ko.json: filled {filled}/{len(data['entries'])} entries from lemma_index")
+    """No-op: seed-vocab-ko.json was retired 2026-05-12."""
+    pass
 
 
 def build_vocab_index() -> dict:

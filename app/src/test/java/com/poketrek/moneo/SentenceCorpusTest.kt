@@ -59,7 +59,7 @@ class SentenceCorpusTest {
     // ---- substring match ----
 
     @Test fun everySentenceContainsTargetKoreanSubstringRom() {
-        val seedJson = File(assetsDir, "seed-vocab-ko.json").readText()
+        val seedJson = File(assetsDir, "seed-vocab-ko-mined.json").readText()
         val vocab = SeedLoader.parse(seedJson).associateBy { it.id }
         val sentences = SentenceLoader.parse(
             File(assetsDir, "sentences-ko-rom.json").readText()
@@ -79,7 +79,7 @@ class SentenceCorpusTest {
     }
 
     @Test fun everySentenceContainsTargetKoreanSubstringStudy() {
-        val seedJson = File(assetsDir, "seed-vocab-ko.json").readText()
+        val seedJson = File(assetsDir, "seed-vocab-ko-mined.json").readText()
         val vocab = SeedLoader.parse(seedJson).associateBy { it.id }
         val sentences = SentenceLoader.parse(
             File(assetsDir, "sentences-ko-study.json").readText()
@@ -137,39 +137,28 @@ class SentenceCorpusTest {
     @Test fun coverageReportRom() {
         val (vocabIds, sentences) = load("sentences-ko-rom.json")
         val covered = sentences.map { it.vocabId }.toSet()
-        val uncovered = vocabIds - covered
-        // Don't require 100% coverage, just print the gap so it's visible.
+        // After seed-vocab-ko.json was retired (2026-05-12), ROM sentences
+        // cover the ~41 migrated seed-v1 entries inside the 860-card mined
+        // deck. Numeric coverage % is no longer meaningful at the deck level —
+        // assert structural soundness instead (every ROM sentence resolves to
+        // a known vocab id) and print the gap for visibility.
         println("ROM sentence coverage: ${covered.size}/${vocabIds.size} vocab entries")
-        if (uncovered.isNotEmpty()) {
-            println("Uncovered vocab in rom corpus: $uncovered")
-        }
-        // Soft threshold: 50% coverage. The corpus is sourced from the actual
-        // ROM (corpus.ko.json), so coverage is bounded by which seed words
-        // happen to occur in decoded dialog/Pokédex/item text. Many vocab
-        // (e.g. 박사, 안녕, 체육관, directions) simply don't appear in the
-        // ripped text region, and we deliberately don't fabricate examples.
-        val pct = covered.size.toDouble() / vocabIds.size
-        assertTrue("ROM sentence coverage too low: $pct (want >= 0.50)", pct >= 0.50)
+        val orphans = covered - vocabIds
+        assertTrue("ROM sentences reference unknown vocabIds: $orphans", orphans.isEmpty())
     }
 
     @Test fun coverageReportStudy() {
         val (vocabIds, sentences) = load("sentences-ko-study.json")
         val covered = sentences.map { it.vocabId }.toSet()
-        val uncovered = vocabIds - covered
         println("Study sentence coverage: ${covered.size}/${vocabIds.size} vocab entries")
-        if (uncovered.isNotEmpty()) {
-            println("Uncovered vocab in study corpus: $uncovered")
-        }
-        // Study sentences are hand-crafted to cover every seed entry, so
-        // we require 100% coverage.
-        val pct = covered.size.toDouble() / vocabIds.size
-        assertTrue("Study sentence coverage must be 100%: $pct (want 1.00)", pct >= 1.00)
+        val orphans = covered - vocabIds
+        assertTrue("Study sentences reference unknown vocabIds: $orphans", orphans.isEmpty())
     }
 
     // ---- helper ----
 
     private fun load(sentencesFilename: String): Pair<Set<String>, List<com.poketrek.moneo.data.SentenceEntry>> {
-        val vocab = SeedLoader.parse(File(assetsDir, "seed-vocab-ko.json").readText())
+        val vocab = SeedLoader.parse(File(assetsDir, "seed-vocab-ko-mined.json").readText())
         val sentences = SentenceLoader.parse(File(assetsDir, sentencesFilename).readText())
         return vocab.map { it.id }.toSet() to sentences
     }
