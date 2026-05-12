@@ -619,6 +619,37 @@ private fun DirectionPicker(
 }
 
 @Composable
+private fun SourceTypeModePicker(
+    label: String,
+    current: com.poketrek.moneo.data.SourceTypeMode,
+    onPick: (com.poketrek.moneo.data.SourceTypeMode) -> Unit,
+    separateLabel: String,
+    cardCount: Int,
+) {
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(label, fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+        SegmentedRow(
+            options = listOf(
+                com.poketrek.moneo.data.SourceTypeMode.OFF to "Off",
+                com.poketrek.moneo.data.SourceTypeMode.MERGED to "Merged",
+                com.poketrek.moneo.data.SourceTypeMode.SEPARATE to "Separate",
+            ),
+            selected = current,
+            onSelect = onPick,
+        )
+        val sublabel = when (current) {
+            com.poketrek.moneo.data.SourceTypeMode.OFF ->
+                "$cardCount cards hidden from every review queue"
+            com.poketrek.moneo.data.SourceTypeMode.MERGED ->
+                "Mixed into each area's queue alongside dialog vocab"
+            com.poketrek.moneo.data.SourceTypeMode.SEPARATE ->
+                "Split into a separate area sibling — e.g. $separateLabel"
+        }
+        Text(sublabel, color = Color(0xFF6B7280), fontSize = 12.sp)
+    }
+}
+
+@Composable
 private fun TtsLanguagePicker(
     override: com.poketrek.moneo.data.TtsLanguage?,
     effective: com.poketrek.moneo.data.TtsLanguage,
@@ -1159,6 +1190,8 @@ private fun MoneoSection(
     val muteInReview by moneo.prefs.muteGameInReview.collectAsState()
     val includeSpecies by moneo.prefs.includeSpecies.collectAsState()
     val includeEtymology by moneo.prefs.includeEtymology.collectAsState()
+    val movesMode by moneo.prefs.movesMode.collectAsState()
+    val abilitiesMode by moneo.prefs.abilitiesMode.collectAsState()
     val areaGateEnabled by moneo.prefs.areaGateEnabled.collectAsState()
     val areaGateThresholdPct by moneo.prefs.areaGateThresholdPct.collectAsState()
     val ttsOn = effectiveTtsLanguage != com.poketrek.moneo.data.TtsLanguage.OFF
@@ -1219,6 +1252,8 @@ private fun MoneoSection(
                 if (verbatimSentences) add("ROM sentences") else add("Study sentences")
                 if (includeSpecies) add("species")
                 if (includeEtymology) add("etymology")
+                if (movesMode != com.poketrek.moneo.data.SourceTypeMode.OFF) add("moves")
+                if (abilitiesMode != com.poketrek.moneo.data.SourceTypeMode.OFF) add("abilities")
             }.joinToString(" · "),
         ) {
             ToggleRow(
@@ -1247,6 +1282,20 @@ private fun MoneoSection(
                     "Off — enable to study compound roots tangentially",
                 checked = includeEtymology,
                 onCheckedChange = { moneo.prefs.setIncludeEtymology(it) },
+            )
+            SourceTypeModePicker(
+                label = "Pokémon moves (기술)",
+                current = movesMode,
+                onPick = { moneo.prefs.setMovesMode(it) },
+                separateLabel = "Route N · 기술",
+                cardCount = 349,
+            )
+            SourceTypeModePicker(
+                label = "Pokémon abilities (특성)",
+                current = abilitiesMode,
+                onPick = { moneo.prefs.setAbilitiesMode(it) },
+                separateLabel = "Route N · 특성",
+                cardCount = 77,
             )
         }
 

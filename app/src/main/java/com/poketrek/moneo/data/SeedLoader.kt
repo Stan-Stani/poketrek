@@ -60,6 +60,7 @@ object SeedLoader {
                 sourceTag = sourceTag,
                 notes = o.optString("notes").takeIf { it.isNotEmpty() },
                 areasReferenced = areasReferenced,
+                primarySourceType = o.optString("primarySourceType").takeIf { it.isNotEmpty() },
             )
         }
         return out

@@ -32,12 +32,37 @@ private val KEY_MUTE_GAME_IN_REVIEW = booleanPreferencesKey("moneo_mute_game_in_
 private val KEY_VERBATIM_SENTENCES = booleanPreferencesKey("moneo_verbatim_sentences")
 private val KEY_INCLUDE_SPECIES = booleanPreferencesKey("moneo_include_species")
 private val KEY_INCLUDE_ETYMOLOGY = booleanPreferencesKey("moneo_include_etymology")
+private val KEY_MOVES_MODE = stringPreferencesKey("moneo_moves_mode")
+private val KEY_ABILITIES_MODE = stringPreferencesKey("moneo_abilities_mode")
 private val KEY_AREA_GATE_ENABLED = booleanPreferencesKey("moneo_area_gate_enabled")
 private val KEY_AREA_GATE_THRESHOLD_PCT = intPreferencesKey("moneo_area_gate_threshold_pct")
 private val KEY_DIRECTION = stringPreferencesKey("moneo_direction")
 private val KEY_DIRECTION_MANUAL = booleanPreferencesKey("moneo_direction_manual")
 private val KEY_TTS_LANGUAGE = stringPreferencesKey("moneo_tts_language")
 private val KEY_CORRECTION_VPS_URL = stringPreferencesKey("moneo_correction_vps_url")
+
+/**
+ * How a particular Pokémon-derived `primarySourceType` (currently moves and
+ * abilities) is treated in the area review queues.
+ *
+ *  - [OFF]      — cards are filtered out everywhere; they never show up in any
+ *                 area, not even in the global due count.
+ *  - [MERGED]   — cards live alongside the dialog/vocab cards inside each area
+ *                 they were attributed to (e.g. Route 1 contains both 야생 and
+ *                 막치기).
+ *  - [SEPARATE] — cards are split into a synthesized pseudo-area sibling. The
+ *                 base area (e.g. "Route 1") contains only non-matching cards;
+ *                 a pseudo-area like "Route 1 · 기술" contains only the moves
+ *                 attributed to Route 1. Pseudo-area ids carry a "#<type>"
+ *                 suffix so the repository can distinguish them.
+ */
+enum class SourceTypeMode {
+    OFF, MERGED, SEPARATE;
+    companion object {
+        fun fromStored(value: String?): SourceTypeMode =
+            entries.firstOrNull { it.name == value } ?: OFF
+    }
+}
 
 /**
  * Which way the flashcards face. Default [KO_TO_EN] preserves the original
@@ -166,6 +191,20 @@ class MoneoPrefs private constructor(private val context: Context) {
     val includeEtymology: StateFlow<Boolean> = _includeEtymology.asStateFlow()
 
     /**
+     * How `primarySourceType == "pokemon_move"` cards (the move-name deck
+     * attributed to areas via PokeAPI learnsets) are surfaced in review.
+     * Defaults to [SourceTypeMode.OFF]: a fresh install sees only Korean
+     * dialog/topik vocab in area queues. The user opts in to MERGED or
+     * SEPARATE from the Settings sheet.
+     */
+    private val _movesMode = MutableStateFlow(SourceTypeMode.OFF)
+    val movesMode: StateFlow<SourceTypeMode> = _movesMode.asStateFlow()
+
+    /** Same Off/Merged/Separate model as [movesMode] but for `pokemon_ability`. */
+    private val _abilitiesMode = MutableStateFlow(SourceTypeMode.OFF)
+    val abilitiesMode: StateFlow<SourceTypeMode> = _abilitiesMode.asStateFlow()
+
+    /**
      * Hard area gate: when on, MovementGate refuses to enter a downstream area
      * until the upstream area's review maturity meets [areaGateThresholdPct].
      * Default off — the player should opt in once they've built up some review
@@ -227,6 +266,8 @@ class MoneoPrefs private constructor(private val context: Context) {
             _verbatimSentences.value = prefs[KEY_VERBATIM_SENTENCES] ?: true
             _includeSpecies.value = prefs[KEY_INCLUDE_SPECIES] ?: true
             _includeEtymology.value = prefs[KEY_INCLUDE_ETYMOLOGY] ?: false
+            _movesMode.value = SourceTypeMode.fromStored(prefs[KEY_MOVES_MODE])
+            _abilitiesMode.value = SourceTypeMode.fromStored(prefs[KEY_ABILITIES_MODE])
             _areaGateEnabled.value = prefs[KEY_AREA_GATE_ENABLED] ?: false
             _areaGateThresholdPct.value =
                 (prefs[KEY_AREA_GATE_THRESHOLD_PCT] ?: DEFAULT_AREA_GATE_THRESHOLD_PCT)
@@ -309,6 +350,18 @@ class MoneoPrefs private constructor(private val context: Context) {
     fun setIncludeEtymology(value: Boolean) {
         _includeEtymology.value = value
         scope.launch { context.moneoStore.edit { it[KEY_INCLUDE_ETYMOLOGY] = value } }
+    }
+
+    fun setMovesMode(value: SourceTypeMode) {
+        if (value == _movesMode.value) return
+        _movesMode.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_MOVES_MODE] = value.name } }
+    }
+
+    fun setAbilitiesMode(value: SourceTypeMode) {
+        if (value == _abilitiesMode.value) return
+        _abilitiesMode.value = value
+        scope.launch { context.moneoStore.edit { it[KEY_ABILITIES_MODE] = value.name } }
     }
 
     fun setAreaGateEnabled(value: Boolean) {

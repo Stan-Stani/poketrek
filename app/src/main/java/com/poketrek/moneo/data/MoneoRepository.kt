@@ -53,6 +53,50 @@ class MoneoRepository(
         _excludedSourceTags.value = tags
     }
 
+    /**
+     * `primarySourceType` values whose cards should be hidden from every
+     * area review queue (and the global due count). Parallel to
+     * [_excludedSourceTags] but keyed by [VocabEntry.primarySourceType]
+     * — e.g. `{"pokemon_move"}` hides the entire move-name corpus.
+     */
+    private val _excludedSourceTypes = MutableStateFlow<Set<String>>(emptySet())
+    val excludedSourceTypes: StateFlow<Set<String>> = _excludedSourceTypes.asStateFlow()
+
+    fun setExcludedSourceTypes(types: Set<String>) {
+        _excludedSourceTypes.value = types
+    }
+
+    /**
+     * `primarySourceType` values whose cards should NOT appear in their
+     * regular base area, but instead in a synthesized sibling pseudo-area
+     * whose id is `"<baseAreaId>#<primarySourceType>"`. UI in
+     * [com.poketrek.moneo.MoneoModule] synthesizes matching [Area] objects
+     * so the picker renders them. Mutually exclusive with
+     * [excludedSourceTypes] per type; the filter pass treats "excluded"
+     * as taking precedence.
+     */
+    private val _separatedSourceTypes = MutableStateFlow<Set<String>>(emptySet())
+    val separatedSourceTypes: StateFlow<Set<String>> = _separatedSourceTypes.asStateFlow()
+
+    fun setSeparatedSourceTypes(types: Set<String>) {
+        _separatedSourceTypes.value = types
+    }
+
+    /** Allow [com.poketrek.moneo.MoneoModule] to update the area list when prefs change. */
+    fun setAreas(areas: List<Area>) {
+        _areas.value = areas
+    }
+
+    /**
+     * Parse a pseudo-area id of the form `"<baseAreaId>#<primarySourceType>"`
+     * into its components, or return null if [areaId] is a plain area id.
+     */
+    fun splitPseudoAreaId(areaId: String): Pair<String, String>? {
+        val hash = areaId.indexOf('#')
+        if (hash < 0) return null
+        return areaId.substring(0, hash) to areaId.substring(hash + 1)
+    }
+
     /** Sentences indexed by [SentenceEntry.vocabId]; multiple per vocab allowed. */
     private val sentencesRomByVocab: Map<String, List<SentenceEntry>> = initialSentencesRom.groupBy { it.vocabId }
     private val sentencesStudyByVocab: Map<String, List<SentenceEntry>> = initialSentencesStudy.groupBy { it.vocabId }
@@ -87,30 +131,55 @@ class MoneoRepository(
     /**
      * Vocab visible while the player is in [areaId].
      *
-     * Matches a card if EITHER:
-     *  - its primary [VocabEntry.areaId] equals the queried area (the
-     *    canonical "home area" — typically firstAreaEncountered), OR
-     *  - the queried area appears in [VocabEntry.areasReferenced] (the
-     *    full set of canonical areas where the lemma surfaces in ROM
-     *    dialog/script). Cards shipped before the attribution pipeline
-     *    have an empty list, so the second clause is a no-op for them.
+     * [areaId] may be either:
+     *  - a regular area id (e.g. `"route_1"`), in which case the result is
+     *    cards whose primary [VocabEntry.areaId] matches OR that appear in
+     *    [VocabEntry.areasReferenced], minus any cards whose
+     *    [VocabEntry.primarySourceType] is in [separatedSourceTypes] (those
+     *    live in their pseudo-area sibling instead).
+     *  - a pseudo-area id of the form `"<baseAreaId>#<primarySourceType>"`,
+     *    in which case the result is cards in baseArea whose
+     *    `primarySourceType` matches the suffix.
      *
      * Filters out cards whose [VocabEntry.sourceTag] is in
-     * [excludedSourceTags] (e.g. user opted out of Pokémon-name cards).
+     * [excludedSourceTags] (deck-level opt-out) or whose
+     * [VocabEntry.primarySourceType] is in [excludedSourceTypes] (per-type
+     * opt-out).
      */
     fun vocabForArea(areaId: String): List<VocabEntry> {
-        val excluded = _excludedSourceTags.value
-        return _vocab.value.values.filter {
-            (it.areaId == areaId || areaId in it.areasReferenced) &&
-                it.sourceTag !in excluded
+        val excludedTags = _excludedSourceTags.value
+        val excludedTypes = _excludedSourceTypes.value
+        val separatedTypes = _separatedSourceTypes.value
+        val pseudo = splitPseudoAreaId(areaId)
+        val (baseAreaId, requiredType) = pseudo ?: (areaId to null)
+        return _vocab.value.values.filter { v ->
+            if (v.sourceTag in excludedTags) return@filter false
+            val type = v.primarySourceType
+            if (type != null && type in excludedTypes) return@filter false
+            val matchesArea = v.areaId == baseAreaId || baseAreaId in v.areasReferenced
+            if (!matchesArea) return@filter false
+            if (requiredType != null) {
+                // Pseudo-area: only cards of the requested source type.
+                type == requiredType
+            } else {
+                // Regular area: drop cards that have been separated out.
+                type == null || type !in separatedTypes
+            }
         }
     }
 
-    /** Vocab IDs visible after applying [excludedSourceTags]. Used by due-count helpers. */
+    /** Vocab IDs visible after applying all opt-out filters. Used by due-count helpers. */
     private fun visibleVocabIds(): Set<String> {
-        val excluded = _excludedSourceTags.value
-        if (excluded.isEmpty()) return _vocab.value.keys
-        return _vocab.value.values.filter { it.sourceTag !in excluded }.map { it.id }.toSet()
+        val excludedTags = _excludedSourceTags.value
+        val excludedTypes = _excludedSourceTypes.value
+        if (excludedTags.isEmpty() && excludedTypes.isEmpty()) return _vocab.value.keys
+        return _vocab.value.values
+            .filter { v ->
+                v.sourceTag !in excludedTags &&
+                    (v.primarySourceType == null || v.primarySourceType !in excludedTypes)
+            }
+            .map { it.id }
+            .toSet()
     }
 
     fun areaProgress(areaId: String): StateFlow<AreaProgress> {

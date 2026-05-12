@@ -2,11 +2,13 @@ package com.poketrek.moneo
 
 import android.content.Context
 import com.poketrek.moneo.corpus.RamCapture
+import com.poketrek.moneo.data.Area
 import com.poketrek.moneo.data.AreaCatalog
 import com.poketrek.moneo.data.MoneoCardStore
 import com.poketrek.moneo.data.MoneoPrefs
 import com.poketrek.moneo.data.MoneoRepository
 import com.poketrek.moneo.data.SeedLoader
+import com.poketrek.moneo.data.SourceTypeMode
 import java.io.File
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -141,6 +143,65 @@ class MoneoModule private constructor(context: Context) {
                 tags.toSet()
             }.collect { repository.setExcludedSourceTags(it) }
         }
+        // Per-source-type opt-out + separation (moves, abilities). Recomputes
+        // the area list whenever either pref changes so pseudo-areas appear
+        // or disappear without an app restart.
+        GlobalScope.launch {
+            kotlinx.coroutines.flow.combine(prefs.movesMode, prefs.abilitiesMode) { moves, abil ->
+                moves to abil
+            }.collect { (moves, abil) ->
+                val excluded = mutableSetOf<String>()
+                val separated = mutableSetOf<String>()
+                if (moves == SourceTypeMode.OFF) excluded.add(SOURCE_TYPE_MOVE)
+                if (moves == SourceTypeMode.SEPARATE) separated.add(SOURCE_TYPE_MOVE)
+                if (abil == SourceTypeMode.OFF) excluded.add(SOURCE_TYPE_ABILITY)
+                if (abil == SourceTypeMode.SEPARATE) separated.add(SOURCE_TYPE_ABILITY)
+                repository.setExcludedSourceTypes(excluded)
+                repository.setSeparatedSourceTypes(separated)
+                repository.setAreas(buildAreaList(areas, separated))
+            }
+        }
+    }
+
+    /**
+     * Produce the area list including any pseudo-areas synthesized for
+     * source types in [separated]. Each base area that actually contains
+     * at least one matching card gets a sibling entry rendered just after
+     * it in the picker.
+     */
+    private fun buildAreaList(base: List<Area>, separated: Set<String>): List<Area> {
+        if (separated.isEmpty()) return base
+        val out = ArrayList<Area>(base.size + base.size * separated.size)
+        // Insert each pseudo-area right after its parent so the picker
+        // groups them visually without us needing a custom row renderer.
+        // The ordinal mirrors the parent so existing sort-by-ordinal stays
+        // correct; ties break alphabetically by id.
+        for (area in base) {
+            out += area
+            for (type in separated.sorted()) {
+                if (!repositoryHasAreaTypeCards(area.id, type)) continue
+                out += Area(
+                    id = "${area.id}#$type",
+                    englishName = "${area.englishName} · ${labelFor(type, english = true)}",
+                    koreanLabel = "${area.koreanLabel} · ${labelFor(type, english = false)}",
+                    ordinal = area.ordinal,
+                )
+            }
+        }
+        return out
+    }
+
+    /** Whether [areaId] has at least one card whose primarySourceType is [type]. */
+    private fun repositoryHasAreaTypeCards(areaId: String, type: String): Boolean =
+        repository.vocab.value.values.any { v ->
+            v.primarySourceType == type &&
+                (v.areaId == areaId || areaId in v.areasReferenced)
+        }
+
+    private fun labelFor(type: String, english: Boolean): String = when (type) {
+        SOURCE_TYPE_MOVE -> if (english) "Moves" else "기술"
+        SOURCE_TYPE_ABILITY -> if (english) "Abilities" else "특성"
+        else -> type
     }
 
     /** Wire up the optional runtime EWRAM capture once the runner exists. */
@@ -155,5 +216,8 @@ class MoneoModule private constructor(context: Context) {
         fun get(context: Context): MoneoModule = instance ?: synchronized(this) {
             instance ?: MoneoModule(context.applicationContext).also { instance = it }
         }
+
+        const val SOURCE_TYPE_MOVE = "pokemon_move"
+        const val SOURCE_TYPE_ABILITY = "pokemon_ability"
     }
 }

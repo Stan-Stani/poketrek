@@ -31,6 +31,14 @@ data class VocabEntry(
      * first-encountered area.
      */
     val areasReferenced: List<String> = emptyList(),
+    /**
+     * Coarse provenance tag (e.g. `pokemon_move`, `pokemon_ability`,
+     * `pokedex_entry`, `npc_dialog`, `system_text`, `item_description`,
+     * `pokemon_species`). Used by the repository to opt out of, or split
+     * out, specific kinds of cards into pseudo-areas. Null on decks that
+     * don't carry the field.
+     */
+    val primarySourceType: String? = null,
 )
 
 /**
