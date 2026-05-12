@@ -4,7 +4,7 @@
  "notes": "Sentences extracted verbatim from corpus.ko.json (2024 Korean LeafGreen decode). Each entry's `source` field references a record id in that corpus. Replaces the 2010-vintage file which used 오키드/도장 (Japanese-romanized localization) instead of 오박사/체육관.",
  "entries": [
   {
-   "vocabId": "rom-mine-v2:포켓몬",
+   "vocabId": "rom-mine-v3:포켓몬",
    "korean": "그럼 어드바이스해주마 포켓몬을",
    "gloss": "(Pokémon)",
    "areaId": "pallet_town",
@@ -84,7 +84,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:마을",
+   "vocabId": "topik-v2:마을",
    "korean": "묘지로 마을이야 키우던",
    "gloss": "(town, village)",
    "areaId": "route_1",
@@ -123,7 +123,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:박사",
+   "vocabId": "rom-mine-v3:박사",
    "korean": "권위자란다 박사님을 링 포켓몬",
    "gloss": "(professor, doctor (PhD))",
    "areaId": "pallet_town",
@@ -157,7 +157,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:나",
+   "vocabId": "rom-mine-v3:나",
    "korean": "채우러 할 때와 막 늠름해졌구나",
    "gloss": "(I, me (informal))",
    "areaId": "rom_mined",
@@ -219,7 +219,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:이름",
+   "vocabId": "topik-v2:이름",
    "korean": "이름 친근한 웅 인기 블 말 느린",
    "gloss": "(name)",
    "areaId": "cerulean_city",
@@ -250,7 +250,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:안녕",
+   "vocabId": "rom-mine-v3:안녕",
    "korean": "안녕하세요 트레이너들이",
    "gloss": "(hi / hey (casual))",
    "areaId": "pallet_town",
@@ -300,7 +300,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:가다",
+   "vocabId": "topik-v2:가다",
    "korean": "일이었으니 이번엔 내주마 나가면",
    "gloss": "(to go)",
    "areaId": "rom_mined",
@@ -380,7 +380,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:오다",
+   "vocabId": "topik-v2:오다",
    "korean": "오박사 {var:06} 아쉽구나 네가",
    "gloss": "(to come)",
    "areaId": "rom_mined",
@@ -462,7 +462,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:집",
+   "vocabId": "rom-mine-v3:집",
    "korean": "거기 웅 집 한 들어오지 란 응 나",
    "gloss": "(house, home)",
    "areaId": "rom_mined",
@@ -537,7 +537,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:길",
+   "vocabId": "topik-v2:길",
    "korean": "잡았다고 길을 링 다르",
    "gloss": "(road, path)",
    "areaId": "rom_mined",
@@ -614,7 +614,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:풀",
+   "vocabId": "topik-v2:풀",
    "korean": "약해져서 하고 않을 풀숲을",
    "gloss": "(grass)",
    "areaId": "rom_mined",
@@ -644,7 +644,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:야생",
+   "vocabId": "rom-mine-v3:야생",
    "korean": "오박사 그래 야생",
    "gloss": "(wild (e.g. wild Pokémon))",
    "areaId": "pallet_town",
@@ -682,7 +682,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:나타나다",
+   "vocabId": "topik-v2:나타나다",
    "korean": "동료로 사람 나타나지 느끼면 도망가는 하다",
    "gloss": "(to appear)",
    "areaId": "saffron_city",
@@ -708,7 +708,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:싸우다",
+   "vocabId": "topik-v2:싸우다",
    "korean": "싸우게 키우려무나",
    "gloss": "(to fight)",
    "areaId": "pallet_town",
@@ -763,7 +763,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:잡다",
+   "vocabId": "topik-v2:잡다",
    "korean": "잡은 {var:03} 오오 상태라면 하",
    "gloss": "(to catch, to grab)",
    "areaId": "pallet_town",
@@ -831,7 +831,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:새",
+   "vocabId": "rom-mine-v3:새",
    "korean": "했는데 새포켓몬이 보여",
    "gloss": "(bird)",
    "areaId": "rom_mined",
@@ -882,7 +882,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:쥐",
+   "vocabId": "rom-mine-v3:쥐",
    "korean": "이런 생쥐 특",
    "gloss": "(rat / mouse)",
    "areaId": "rom_mined",
@@ -899,7 +899,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:도시",
+   "vocabId": "topik-v2:도시",
    "korean": "정말 도시라고 저도",
    "gloss": "(city)",
    "areaId": "rom_mined",
@@ -926,7 +926,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:사람",
+   "vocabId": "topik-v2:사람",
    "korean": "있네 뭔가 포켓몬마니아라는 사람과 사이라고",
    "gloss": "(person)",
    "areaId": "pallet_town",
@@ -993,7 +993,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:가게",
+   "vocabId": "topik-v2:가게",
    "korean": "가게는 개업했어요 아직은",
    "gloss": "(shop, store)",
    "areaId": "rom_mined",
@@ -1025,7 +1025,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:사다",
+   "vocabId": "topik-v2:사다",
    "korean": "본부입니다 오박사님도 잘 보러 곳",
    "gloss": "(to buy)",
    "areaId": "rom_mined",
@@ -1068,7 +1068,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:팔다",
+   "vocabId": "topik-v2:팔다",
    "korean": "팔아 거니 뭐 생각이라고",
    "gloss": "(to sell)",
    "areaId": "rom_mined",
@@ -1087,7 +1087,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:체육관",
+   "vocabId": "rom-mine-v3:체육관",
    "korean": "녀석들뿐이야 하지만 쪽 포켓몬체육관의 웅 다르다고",
    "gloss": "(gym)",
    "areaId": "pallet_town",
@@ -1129,7 +1129,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:관장",
+   "vocabId": "rom-mine-v3:관장",
    "korean": "관장 독에 것이라면",
    "gloss": "(leader, director (gym leader))",
    "areaId": "viridian_city",
@@ -1169,7 +1169,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:지나가다",
+   "vocabId": "topik-v2:지나가다",
    "korean": "그것은 {var:02}배지 지나가셔도 있",
    "gloss": "(to pass through)",
    "areaId": "route_2",
@@ -1192,7 +1192,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:입구",
+   "vocabId": "rom-mine-v3:입구",
    "korean": "입구를 열쇠 빨갛게 찍 있다",
    "gloss": "(entrance)",
    "areaId": "rom_mined",
@@ -1210,7 +1210,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:출구",
+   "vocabId": "rom-mine-v3:출구",
    "korean": "출구 앞은 쪽",
    "gloss": "(exit)",
    "areaId": "rom_mined",
@@ -1228,7 +1228,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:숲",
+   "vocabId": "topik-v2:숲",
    "korean": "약해져서 하고 않을 풀숲을",
    "gloss": "(forest)",
    "areaId": "rom_mined",
@@ -1300,7 +1300,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:나무",
+   "vocabId": "topik-v2:나무",
    "korean": "쓰레기통에 나무열매가 있었는데",
    "gloss": "(tree)",
    "areaId": "rom_mined",
@@ -1374,7 +1374,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:벌레",
+   "vocabId": "topik-v2:벌레",
    "korean": "이봐 벌레포켓몬이나",
    "gloss": "(bug, insect)",
    "areaId": "pallet_town",
@@ -1406,7 +1406,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:어둡다",
+   "vocabId": "topik-v2:어둡다",
    "korean": "어둡고 들어가지 포켓몬이 위험한",
    "gloss": "(to be dark)",
    "areaId": "fuchsia_city",
@@ -1428,7 +1428,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:깊다",
+   "vocabId": "topik-v2:깊다",
    "korean": "크게 이 하고는 깊은",
    "gloss": "(to be deep)",
    "areaId": "route_1",
@@ -1481,7 +1481,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:조심하다",
+   "vocabId": "rom-mine-v3:조심하다",
    "korean": "쏘이지 조심하면서",
    "gloss": "(to be careful)",
    "areaId": "rom_mined",
@@ -1518,7 +1518,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:회색",
+   "vocabId": "rom-mine-v3:회색",
    "korean": "여기는 쪽 회색은 바위의",
    "gloss": "(grey (the color))",
    "areaId": "viridian_city",
@@ -1542,7 +1542,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:바위",
+   "vocabId": "rom-mine-v3:바위",
    "korean": "여기는 쪽 회색은 바위의",
    "gloss": "(rock, boulder)",
    "areaId": "viridian_city",
@@ -1567,7 +1567,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:첫",
+   "vocabId": "rom-mine-v3:첫",
    "korean": "두 방이 있 첫",
    "gloss": "(first (modifier))",
    "areaId": "rom_mined",
@@ -1584,7 +1584,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:배지",
+   "vocabId": "rom-mine-v3:배지",
    "korean": "포켓몬리그에 거냐 배지도 모았구나 아",
    "gloss": "(badge)",
    "areaId": "route_1",
@@ -1639,7 +1639,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:도전하다",
+   "vocabId": "rom-mine-v3:도전하다",
    "korean": "여긴 온 든 도전하려 링",
    "gloss": "(to challenge)",
    "areaId": "rom_mined",
@@ -1662,7 +1662,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:이기다",
+   "vocabId": "topik-v2:이기다",
    "korean": "앗 좋은 타고 이기면 식 줘",
    "gloss": "(to win, to defeat)",
    "areaId": "pallet_town",
@@ -1712,7 +1712,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:지다",
+   "vocabId": "topik-v2:지다",
    "korean": "이미 있지만 번이고 싶어서 곳",
    "gloss": "(to lose)",
    "areaId": "rom_mined",
@@ -1769,7 +1769,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:박물관",
+   "vocabId": "topik-v2:박물관",
    "korean": "회색시티 박물관",
    "gloss": "(museum)",
    "areaId": "viridian_city",

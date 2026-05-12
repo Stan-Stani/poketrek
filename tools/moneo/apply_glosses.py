@@ -37,7 +37,7 @@ def main() -> int:
         entries_out.append(e)
         # Reconstruct the same vocabId the miner emitted so we can filter
         # sentences in lockstep.
-        kept_ids.add(f"rom-mine-v2:{ko}")
+        kept_ids.add(f"rom-mine-v3:{ko}")
 
     vocab_doc["entries"] = entries_out
     vocab_doc.setdefault("notes", "")

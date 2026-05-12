@@ -61,7 +61,7 @@ def merge_sentences(existing_path: Path, additions_path: Path, out_path: Path,
     notes.append(f"Merged {added} new ROM-name sentences.")
     out = {
         "version": existing.get("version", 1),
-        "sourceTag": existing.get("sourceTag", "rom-mine-v2"),
+        "sourceTag": existing.get("sourceTag", "rom-mine-v3"),
         "notes": notes,
         "entries": new_entries,
     }

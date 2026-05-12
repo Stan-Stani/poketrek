@@ -159,7 +159,7 @@ def main() -> int:
 
     OUT_VOCAB.write_text(json.dumps({
         "version": 2,
-        "source": SOURCE_TAG,
+        "sourceTag": SOURCE_TAG,
         "notes": (
             "TOPIK Level 1+2 vocabulary that occurs in the Korean LeafGreen ROM "
             "dialogue corpus. Level A → topik_1 area, Level B → topik_2 area. "
@@ -170,7 +170,7 @@ def main() -> int:
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     OUT_SENTS.write_text(json.dumps({
         "version": 1,
-        "source": SOURCE_TAG,
+        "sourceTag": SOURCE_TAG,
         "entries": sent_entries,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"vocab: {len(vocab_entries)} entries -> {OUT_VOCAB}")

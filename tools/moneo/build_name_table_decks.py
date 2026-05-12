@@ -300,7 +300,7 @@ def main():
         }
         move_cards.append(card)
         move_sentences.append({
-            "vocabId": f"rom-mine-v2:{text}",
+            "vocabId": f"rom-mine-v3:{text}",
             "korean": f"{text}을(를) 사용했다.",
             "romanization": f"{romanize(text)}eul/leul sayonghaessda.",
             "gloss": f"Used {en_clean}.",
@@ -348,7 +348,7 @@ def main():
         }
         ability_cards.append(card)
         ability_sentences.append({
-            "vocabId": f"rom-mine-v2:{text}",
+            "vocabId": f"rom-mine-v3:{text}",
             "korean": f"{text}의 효과로 적이 약해졌다.",
             "romanization": f"{romanize(text)}ui hyogwaro jeogi yakhaejyeossda.",
             "gloss": f"The opponent was weakened by {en_clean}.",
@@ -419,7 +419,7 @@ def main():
         }
         species_cards.append(card)
         species_sentences.append({
-            "vocabId": f"rom-species:{text}",
+            "vocabId": f"rom-species-2024:{text}",
             "korean": f"{text}이(가) 나타났다!",
             "romanization": f"{romanize(text)}i/ga natanassda!",
             "gloss": f"A wild {en} appeared!" if en else f"A wild Pokemon appeared!",

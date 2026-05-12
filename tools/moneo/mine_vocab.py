@@ -38,7 +38,7 @@ SEED = ROOT / "app/src/main/assets/moneo/seed-vocab-ko.json"
 OUT_VOCAB = ROOT / "app/src/main/assets/moneo/seed-vocab-ko-mined.json"
 OUT_SENTS = ROOT / "app/src/main/assets/moneo/sentences-ko-mined.json"
 
-SOURCE_TAG = "rom-mine-v2"
+SOURCE_TAG = "rom-mine-v3"
 AREA_ID = "rom_mined"
 
 # ---------------------------------------------------------------------------

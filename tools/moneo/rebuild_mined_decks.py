@@ -101,18 +101,27 @@ def main():
     print(f"  attributed via lemma_index: {attributed}")
 
     # Sentences: dedupe by (vocabId, korean); same source preference.
+    # Remap any stale rom-mine-v2 prefix from older intermediate files to the
+    # current rom-mine-v3 namespace before deduping — the shipped seed bumped
+    # to v3 and the SeedLoader only resolves matching prefixes.
+    def _v3(s):
+        vid = s.get("vocabId", "")
+        if vid.startswith("rom-mine-v2:"):
+            s["vocabId"] = "rom-mine-v3:" + vid.split(":", 1)[1]
+        return s
     seen: set = set()
     sent_entries: list = []
     for s in sents_names:
+        s = _v3(dict(s))
         key = (s.get("vocabId"), s.get("korean"))
         if key in seen: continue
         seen.add(key)
-        sent_entries.append(dict(s))
+        sent_entries.append(s)
     for s in sents_live:
-        key = (s.get("vocabId"), s.get("korean"))
+        s2 = _v3(dict(s))
+        key = (s2.get("vocabId"), s2.get("korean"))
         if key in seen: continue
         seen.add(key)
-        s2 = dict(s)
         # Attribute via lemma index using target lemma extracted from vocabId
         vid = s2.get("vocabId", "")
         lemma = vid.split(":", 1)[1] if ":" in vid else s2.get("targetForm")

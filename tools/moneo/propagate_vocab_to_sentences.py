@@ -24,10 +24,10 @@ ASSETS = ROOT / "app/src/main/assets/moneo"
 # vocabId namespaces in this codebase (id prefix -> deck file)
 NAMESPACES = [
     # seed-v1 namespace was retired 2026-05-12 (file deleted; entries migrated
-    # into seed-vocab-ko-mined.json under rom-mine-v2 ids). Kept here as a note.
-    ("rom-mine-v2", ASSETS / "seed-vocab-ko-mined.json"),
+    # into seed-vocab-ko-mined.json under rom-mine-v3 ids). Kept here as a note.
+    ("rom-mine-v3", ASSETS / "seed-vocab-ko-mined.json"),
     ("topik-v2",    ASSETS / "seed-vocab-ko-topik.json"),
-    ("rom-species", ASSETS / "seed-vocab-ko-species.json"),
+    ("rom-species-2024", ASSETS / "seed-vocab-ko-species.json"),
     ("etymology-roots", ASSETS / "seed-vocab-ko-etymology.json"),
 ]
 SENT_FILES = [

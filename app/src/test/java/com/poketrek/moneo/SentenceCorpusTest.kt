@@ -59,8 +59,9 @@ class SentenceCorpusTest {
     // ---- substring match ----
 
     @Test fun everySentenceContainsTargetKoreanSubstringRom() {
-        val seedJson = File(assetsDir, "seed-vocab-ko-mined.json").readText()
-        val vocab = SeedLoader.parse(seedJson).associateBy { it.id }
+        val vocab = vocabFiles
+            .flatMap { SeedLoader.parse(File(assetsDir, it).readText()) }
+            .associateBy { it.id }
         val sentences = SentenceLoader.parse(
             File(assetsDir, "sentences-ko-rom.json").readText()
         )
@@ -79,8 +80,9 @@ class SentenceCorpusTest {
     }
 
     @Test fun everySentenceContainsTargetKoreanSubstringStudy() {
-        val seedJson = File(assetsDir, "seed-vocab-ko-mined.json").readText()
-        val vocab = SeedLoader.parse(seedJson).associateBy { it.id }
+        val vocab = vocabFiles
+            .flatMap { SeedLoader.parse(File(assetsDir, it).readText()) }
+            .associateBy { it.id }
         val sentences = SentenceLoader.parse(
             File(assetsDir, "sentences-ko-study.json").readText()
         )
@@ -157,8 +159,15 @@ class SentenceCorpusTest {
 
     // ---- helper ----
 
+    private val vocabFiles = listOf(
+        "seed-vocab-ko-mined.json",
+        "seed-vocab-ko-topik.json",
+        "seed-vocab-ko-species.json",
+        "seed-vocab-ko-etymology.json",
+    )
+
     private fun load(sentencesFilename: String): Pair<Set<String>, List<com.poketrek.moneo.data.SentenceEntry>> {
-        val vocab = SeedLoader.parse(File(assetsDir, "seed-vocab-ko-mined.json").readText())
+        val vocab = vocabFiles.flatMap { SeedLoader.parse(File(assetsDir, it).readText()) }
         val sentences = SentenceLoader.parse(File(assetsDir, sentencesFilename).readText())
         return vocab.map { it.id }.toSet() to sentences
     }

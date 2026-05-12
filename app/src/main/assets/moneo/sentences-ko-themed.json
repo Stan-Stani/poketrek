@@ -8,7 +8,7 @@
  ],
  "entries": [
   {
-   "vocabId": "rom-mine-v2:하다",
+   "vocabId": "rom-mine-v3:하다",
    "korean": "오늘은 어떤 훈련을 할까?",
    "gloss": "What kind of training shall we do today?",
    "targetForm": "할까",
@@ -93,7 +93,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:타다",
+   "vocabId": "rom-mine-v3:타다",
    "korean": "버스를 타고 다음 도시로 가요.",
    "gloss": "I take the bus to the next city.",
    "targetForm": "타",
@@ -102,7 +102,7 @@
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "rom-mine-v2:있다",
+   "vocabId": "rom-mine-v3:있다",
    "korean": "가방 안에 상처약이 다섯 개 있어요.",
    "gloss": "There are five potions in my bag.",
    "targetForm": "있",
@@ -191,7 +191,7 @@
    ]
   },
   {
-   "vocabId": "rom-mine-v2:메다",
+   "vocabId": "rom-mine-v3:메다",
    "korean": "트레이너는 가방을 어깨에 메고 다녀요.",
    "gloss": "The trainer carries a bag slung over their shoulder.",
    "targetForm": "메",
@@ -200,7 +200,7 @@
    "generator": "llm-claude-opus-4-7"
   },
   {
-   "vocabId": "rom-mine-v2:회복",
+   "vocabId": "rom-mine-v3:회복",
    "korean": "포켓몬 센터에서 포켓몬의 체력을 회복시켰어요.",
    "gloss": "I restored my Pokémon's HP at the Pokémon Center.",
    "targetForm": "회복",
@@ -515,7 +515,7 @@
    ]
   },
   {
-   "vocabId": "rom-species:이상해씨",
+   "vocabId": "rom-species-2024:이상해씨",
    "korean": "이상해씨는 풀 타입 포켓몬이에요.",
    "gloss": "Bulbasaur is a Grass-type Pokémon.",
    "targetForm": "이상해씨",
@@ -532,7 +532,7 @@
    "primarySourceType": "pokemon_species"
   },
   {
-   "vocabId": "rom-species:이상해풀",
+   "vocabId": "rom-species-2024:이상해풀",
    "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
    "gloss": "A large flower bud grows on Ivysaur's back.",
    "targetForm": "이상해풀",
@@ -562,7 +562,7 @@
    "primarySourceType": "pokemon_species"
   },
   {
-   "vocabId": "rom-species:이상해꽃",
+   "vocabId": "rom-species-2024:이상해꽃",
    "korean": "이상해꽃은 등에 큰 꽃이 피어 있어요.",
    "gloss": "Venusaur carries a large flower on its back.",
    "targetForm": "이상해꽃",
@@ -585,7 +585,7 @@
    "primarySourceType": "pokemon_species"
   },
   {
-   "vocabId": "rom-species:파이리",
+   "vocabId": "rom-species-2024:파이리",
    "korean": "파이리의 꼬리에서는 작은 불꽃이 타올라요.",
    "gloss": "A small flame burns on Charmander's tail.",
    "targetForm": "파이리",
@@ -608,7 +608,7 @@
    "primarySourceType": "pokemon_species"
   },
   {
-   "vocabId": "rom-species:리자드",
+   "vocabId": "rom-species-2024:리자드",
    "korean": "리자드는 파이리에서 진화해요.",
    "gloss": "Charmeleon evolves from Charmander.",
    "targetForm": "리자드",

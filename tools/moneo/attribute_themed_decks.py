@@ -7,9 +7,9 @@ contain ROM-extracted text; we just need to match each sentence's vocabId
 to the corresponding base vocab card and copy the attribution fields.
 
 Inputs:
-  app/src/main/assets/moneo/seed-vocab-ko-mined.json   (rom-mine-v2:lemma)
+  app/src/main/assets/moneo/seed-vocab-ko-mined.json   (rom-mine-v3:lemma)
   app/src/main/assets/moneo/seed-vocab-ko-topik.json   (topik-v2:lemma)
-  app/src/main/assets/moneo/seed-vocab-ko-species.json (rom-species:name)
+  app/src/main/assets/moneo/seed-vocab-ko-species.json (rom-species-2024:name)
   + matching sentences-ko-themed-{mined,topik,species,themed}.json files
 
 Outputs: rewrites the themed files in place with attribution merged in.
@@ -23,9 +23,9 @@ ASSETS = ROOT / "app/src/main/assets/moneo"
 
 # Map base deck path -> id_namespace (used to look up vocabId -> entry)
 BASES = [
-    (ASSETS / "seed-vocab-ko-mined.json",   "rom-mine-v2"),
+    (ASSETS / "seed-vocab-ko-mined.json",   "rom-mine-v3"),
     (ASSETS / "seed-vocab-ko-topik.json",   "topik-v2"),
-    (ASSETS / "seed-vocab-ko-species.json", "rom-species"),
+    (ASSETS / "seed-vocab-ko-species.json", "rom-species-2024"),
     (ASSETS / "seed-vocab-ko.json",         "seed-v1"),
 ]
 

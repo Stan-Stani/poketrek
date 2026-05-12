@@ -213,8 +213,8 @@ def main() -> int:
 
     # Annotate vocab entries. The vocab entries don't have an explicit
     # vocabId field — they're keyed by korean. The matching sentences use
-    # vocabId = f"rom-mine-v2:{korean}". Cross-reference.
-    source_tag = vocab.get("sourceTag", "rom-mine-v2")
+    # vocabId = f"rom-mine-v3:{korean}". Cross-reference.
+    source_tag = vocab.get("sourceTag", "rom-mine-v3")
     for v in vocab["entries"]:
         vid = f"{source_tag}:{v['korean']}"
         v["areasReferenced"] = sorted(vocab_areas.get(vid, set()))

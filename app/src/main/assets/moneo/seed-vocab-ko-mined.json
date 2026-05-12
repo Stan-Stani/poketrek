@@ -6,7 +6,8 @@
   "Total entries: 718. Lemma-index-attributed: 415.",
   "promote_generic_attribution: 30 cards moved from generic bucket → specific story area via corpus-stem search.",
   "attribute_moves_via_learnsets: +196 moves, +56 abilities promoted to specific story-area via PokeAPI learnset (LG vg=7) chain.",
-  "apply_glosses_nondestructive: upgraded 294 glosses from manual_glosses.json (397 curated translations). 0 cards remain on placeholder glosses (not yet hand-translated)."
+  "apply_glosses_nondestructive: upgraded 294 glosses from manual_glosses.json (397 curated translations). 0 cards remain on placeholder glosses (not yet hand-translated).",
+  "2026-05-12: re-injected 18 seed-v1-retired survivors (포켓몬, 박사, 나, 안녕, 집, 야생, 새, 쥐, 체육관, 관장, 입구, 출구, 조심하다, 회색, 바위, 첫, 배지, 도전하다) so sentences-ko-rom/study.json resolve. Dropped accidentally in e1e7c17 when rebuild_mined_decks replaced the deck from intermediate files."
  ],
  "entries": [
   {
@@ -20056,6 +20057,724 @@
     "system_text"
    ],
    "primarySourceType": "npc_dialog"
+  },
+  {
+   "korean": "포켓몬",
+   "gloss": "Pokémon",
+   "partOfSpeech": "noun",
+   "areaId": "pallet_town",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "memorial_pillar",
+    "four_island",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "five_island",
+    "ruin_valley",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "outcast_island",
+    "trainer_tower",
+    "green_path",
+    "seven_island",
+    "water_path",
+    "three_island",
+    "five_isle_meadow"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description",
+   "liveRecIds": [
+    551,
+    924,
+    927,
+    931,
+    940
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "박사",
+   "gloss": "professor, doctor (PhD)",
+   "partOfSpeech": "noun",
+   "areaId": "pallet_town",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_2",
+    "route_4",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "cinnabar_island",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    2084,
+    2656,
+    2859,
+    2865
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "나",
+   "gloss": "I, me (informal)",
+   "partOfSpeech": "pronoun",
+   "areaId": "pallet_town",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "indigo_plateau",
+    "treasure_beach",
+    "resort_gorgeous",
+    "kindle_road",
+    "one_island",
+    "three_island",
+    "two_island",
+    "four_island",
+    "five_island",
+    "seven_island",
+    "six_island"
+   ],
+   "liveRecIds": [
+    92,
+    104,
+    144,
+    192,
+    194
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "frequency": 1
+  },
+  {
+   "korean": "안녕",
+   "gloss": "hi / hey (casual)",
+   "partOfSpeech": "interj",
+   "areaId": "pallet_town",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_6",
+    "saffron_city",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "four_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "one_island",
+    "six_island",
+    "five_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    879,
+    1352,
+    2250,
+    2491,
+    2548
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "집",
+   "gloss": "house, home",
+   "partOfSpeech": "noun",
+   "areaId": "pallet_town",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "kindle_road",
+    "four_island",
+    "three_island",
+    "two_island",
+    "five_island",
+    "seven_island",
+    "six_island",
+    "resort_gorgeous",
+    "treasure_beach",
+    "five_isle_meadow",
+    "canyon_entrance",
+    "water_labyrinth",
+    "outcast_island",
+    "water_path",
+    "green_path",
+    "ruin_valley",
+    "trainer_tower",
+    "memorial_pillar"
+   ],
+   "liveRecIds": [
+    592,
+    695,
+    925,
+    984,
+    994
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "frequency": 1
+  },
+  {
+   "korean": "야생",
+   "gloss": "wild (e.g. wild Pokémon)",
+   "partOfSpeech": "noun",
+   "areaId": "route_1",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "cerulean_city",
+    "saffron_city",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "kindle_road",
+    "six_island",
+    "seven_island",
+    "four_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description",
+   "liveRecIds": [
+    921,
+    2053,
+    2066
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "새",
+   "gloss": "bird",
+   "partOfSpeech": "noun",
+   "areaId": "route_1",
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4",
+    "cerulean_city",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "resort_gorgeous",
+    "treasure_beach",
+    "kindle_road",
+    "water_labyrinth",
+    "memorial_pillar",
+    "four_island",
+    "three_island",
+    "two_island"
+   ],
+   "liveRecIds": [
+    333,
+    608,
+    1003,
+    1068,
+    1409
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "frequency": 1
+  },
+  {
+   "korean": "쥐",
+   "gloss": "rat / mouse",
+   "partOfSpeech": "noun",
+   "areaId": "route_1",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "liveRecIds": [
+    526,
+    5694
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "frequency": 1
+  },
+  {
+   "korean": "체육관",
+   "gloss": "gym",
+   "partOfSpeech": "noun",
+   "areaId": "viridian_city",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "saffron_city",
+    "vermilion_city",
+    "fuchsia_city",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "four_island",
+    "ruin_valley",
+    "water_path",
+    "canyon_entrance",
+    "trainer_tower"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    956,
+    2102,
+    2117,
+    2126,
+    2181
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "관장",
+   "gloss": "leader, director (gym leader)",
+   "partOfSpeech": "noun",
+   "areaId": "viridian_city",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "rom_mined",
+    "four_island",
+    "ruin_valley",
+    "water_path",
+    "canyon_entrance",
+    "trainer_tower"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    638,
+    1075,
+    2462,
+    2577,
+    2635
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "입구",
+   "gloss": "entrance",
+   "partOfSpeech": "noun",
+   "areaId": "route_2",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    6825
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "출구",
+   "gloss": "exit",
+   "partOfSpeech": "noun",
+   "areaId": "route_2",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    219
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "조심하다",
+   "gloss": "to be careful",
+   "partOfSpeech": "verb",
+   "areaId": "viridian_forest",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_24",
+    "route_25",
+    "route_22",
+    "route_23",
+    "resort_gorgeous",
+    "five_isle_meadow",
+    "canyon_entrance",
+    "water_labyrinth",
+    "outcast_island",
+    "water_path",
+    "green_path",
+    "treasure_beach",
+    "ruin_valley",
+    "trainer_tower",
+    "kindle_road",
+    "memorial_pillar"
+   ],
+   "liveRecIds": [
+    1584,
+    2003
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "frequency": 1
+  },
+  {
+   "korean": "회색",
+   "gloss": "grey (the color)",
+   "partOfSpeech": "noun",
+   "areaId": "pewter_city",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    956,
+    968,
+    970,
+    2197
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "바위",
+   "gloss": "rock, boulder",
+   "partOfSpeech": "noun",
+   "areaId": "pewter_city",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    970,
+    1039
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "첫",
+   "gloss": "first (modifier)",
+   "partOfSpeech": "modifier",
+   "areaId": "pewter_city",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "liveRecIds": [
+    3920,
+    6483
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "frequency": 1
+  },
+  {
+   "korean": "배지",
+   "gloss": "badge",
+   "partOfSpeech": "noun",
+   "areaId": "pewter_city",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "rom_mined",
+    "six_island",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1674,
+    2231,
+    2558,
+    2560,
+    2618
+   ],
+   "sourceTag": "seed-v1-retired",
+   "frequency": 1
+  },
+  {
+   "korean": "도전하다",
+   "gloss": "to challenge",
+   "partOfSpeech": "verb",
+   "areaId": "pewter_city",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city"
+   ],
+   "liveRecIds": [
+    2188,
+    3585,
+    4992
+   ],
+   "sourceTag": "seed-v1-retired-handattr",
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "frequency": 1
   }
  ]
 }
