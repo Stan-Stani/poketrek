@@ -1,312 +1,1287 @@
 {
-  "version": 2,
-  "sourceTag": "study-v1",
-  "notes": "Hand-written TOPIK-1/2 study sentences. Each one was crafted after looking at how the target vocab actually appears in corpus.ko.json (the Phase-2 ROM rip) — the patterns and contexts are real-Korean-usage informed, but no game dialog or plot points are quoted. Use when 'Verbatim ROM examples' is OFF. `inspiredBy` notes which ROM record(s) informed the construction; absence means no corpus match (vocab is taught with a generic textbook pattern).",
-  "entries": [
-    {
-      "vocabId": "seed-v1:포켓몬",
-      "korean": "포켓몬을 좋아해요.",
-      "gloss": "I like Pokémon.",
-      "inspiredBy": "rom-rec1344",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:마을",
-      "korean": "이 마을은 조용해요.",
-      "gloss": "This town is quiet.",
-      "inspiredBy": "rom-rec4453",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:박사",
-      "korean": "박사님은 친절해요.",
-      "gloss": "The professor is kind.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:나",
-      "korean": "나는 학생이에요.",
-      "gloss": "I am a student.",
-      "inspiredBy": "rom-rec4412",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:이름",
-      "korean": "이름이 뭐예요?",
-      "gloss": "What is your name?",
-      "inspiredBy": "rom-rec3532",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:안녕",
-      "korean": "안녕! 잘 지냈어?",
-      "gloss": "Hi! How have you been?",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:가다",
-      "korean": "학교에 가요.",
-      "gloss": "I go to school.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:오다",
-      "korean": "친구가 와요.",
-      "gloss": "My friend is coming.",
-      "targetForm": "와",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:집",
-      "korean": "집에 갈 시간이에요.",
-      "gloss": "It's time to go home.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:길",
-      "korean": "이 길로 가세요.",
-      "gloss": "Please take this road.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:풀",
-      "korean": "풀이 길어요.",
-      "gloss": "The grass is long.",
-      "inspiredBy": "rom-rec4344",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:야생",
-      "korean": "야생 포켓몬을 봤어요.",
-      "gloss": "I saw a wild Pokémon.",
-      "inspiredBy": "rom-rec135",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:나타나다",
-      "korean": "포켓몬이 나타나요.",
-      "gloss": "A Pokémon appears.",
-      "targetForm": "나타나",
-      "inspiredBy": "rom-rec4347",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:싸우다",
-      "korean": "싸우지 마세요.",
-      "gloss": "Please don't fight.",
-      "targetForm": "싸우",
-      "inspiredBy": "rom-rec4361",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:잡다",
-      "korean": "포켓몬을 잡았어요.",
-      "gloss": "I caught a Pokémon.",
-      "targetForm": "잡",
-      "inspiredBy": "rom-rec135",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:새",
-      "korean": "새가 하늘을 날아요.",
-      "gloss": "The bird flies in the sky.",
-      "inspiredBy": "rom-rec4474",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:쥐",
-      "korean": "쥐는 작아요.",
-      "gloss": "Mice are small.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:도시",
-      "korean": "이 도시는 커요.",
-      "gloss": "This city is big.",
-      "inspiredBy": "rom-rec2613",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:사람",
-      "korean": "사람이 많아요.",
-      "gloss": "There are many people.",
-      "inspiredBy": "rom-rec4432",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:가게",
-      "korean": "가게에서 빵을 사요.",
-      "gloss": "I buy bread at the shop.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:사다",
-      "korean": "물을 사고 싶어요.",
-      "gloss": "I want to buy water.",
-      "targetForm": "사",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:팔다",
-      "korean": "몬스터볼을 팔아요.",
-      "gloss": "They sell Poké Balls.",
-      "targetForm": "팔",
-      "inspiredBy": "rom-rec213",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:체육관",
-      "korean": "체육관은 어디예요?",
-      "gloss": "Where is the gym?",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:관장",
-      "korean": "관장님은 강해요.",
-      "gloss": "The gym leader is strong.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:북쪽",
-      "korean": "북쪽으로 가요.",
-      "gloss": "I go north.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:남쪽",
-      "korean": "집은 남쪽에 있어요.",
-      "gloss": "Home is to the south.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:동쪽",
-      "korean": "동쪽에 산이 있어요.",
-      "gloss": "There's a mountain to the east.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:서쪽",
-      "korean": "서쪽 하늘이 빨개요.",
-      "gloss": "The western sky is red.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:지나가다",
-      "korean": "마을을 지나가요.",
-      "gloss": "I pass through the town.",
-      "targetForm": "지나가",
-      "inspiredBy": "rom-rec4412",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:입구",
-      "korean": "입구가 어디예요?",
-      "gloss": "Where is the entrance?",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:출구",
-      "korean": "출구는 저쪽이에요.",
-      "gloss": "The exit is over there.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:숲",
-      "korean": "숲이 넓어요.",
-      "gloss": "The forest is wide.",
-      "inspiredBy": "rom-rec4341",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:나무",
-      "korean": "나무가 커요.",
-      "gloss": "The tree is big.",
-      "inspiredBy": "rom-rec4378",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:벌레",
-      "korean": "벌레가 무서워요.",
-      "gloss": "Bugs are scary.",
-      "inspiredBy": "rom-rec4349",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:어둡다",
-      "korean": "방이 어두워요.",
-      "gloss": "The room is dark.",
-      "targetForm": "어두",
-      "inspiredBy": "rom-rec4369",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:깊다",
-      "korean": "물이 깊어요.",
-      "gloss": "The water is deep.",
-      "targetForm": "깊",
-      "inspiredBy": "rom-rec138",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:조심하다",
-      "korean": "조심하세요!",
-      "gloss": "Please be careful!",
-      "targetForm": "조심하",
-      "inspiredBy": "rom-rec4435",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:회색",
-      "korean": "회색 옷을 입었어요.",
-      "gloss": "I wore grey clothes.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:바위",
-      "korean": "바위가 커요.",
-      "gloss": "The boulder is big.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:첫",
-      "korean": "오늘이 첫날이에요.",
-      "gloss": "Today is the first day.",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:배지",
-      "korean": "배지를 받았어요!",
-      "gloss": "I got a badge!",
-      "inspiredBy": "rom-rec3710",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:도전하다",
-      "korean": "관장님께 도전해요.",
-      "gloss": "I challenge the gym leader.",
-      "targetForm": "도전",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:이기다",
-      "korean": "친구를 이겼어요.",
-      "gloss": "I beat my friend.",
-      "targetForm": "이겼",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:지다",
-      "korean": "오늘은 졌어요.",
-      "gloss": "Today I lost.",
-      "targetForm": "졌",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "seed-v1:박물관",
-      "korean": "박물관에 가고 싶어요.",
-      "gloss": "I want to go to the museum.",
-      "inspiredBy": "rom-rec3862",
-      "generator": "llm-claude-opus-4-7"
-    }
-  ]
+ "version": 2,
+ "sourceTag": "study-v1",
+ "notes": "Hand-written TOPIK-1/2 study sentences. Each one was crafted after looking at how the target vocab actually appears in corpus.ko.json (the Phase-2 ROM rip) — the patterns and contexts are real-Korean-usage informed, but no game dialog or plot points are quoted. Use when 'Verbatim ROM examples' is OFF. `inspiredBy` notes which ROM record(s) informed the construction; absence means no corpus match (vocab is taught with a generic textbook pattern).",
+ "entries": [
+  {
+   "vocabId": "seed-v1:포켓몬",
+   "korean": "포켓몬을 좋아해요.",
+   "gloss": "I like Pokémon.",
+   "inspiredBy": "rom-rec1344",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "memorial_pillar",
+    "four_island",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "five_island",
+    "ruin_valley",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "outcast_island",
+    "trainer_tower",
+    "green_path",
+    "seven_island",
+    "water_path",
+    "three_island",
+    "five_isle_meadow"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description",
+   "liveRecIds": [
+    551,
+    924,
+    927,
+    931,
+    940
+   ]
+  },
+  {
+   "vocabId": "seed-v1:마을",
+   "korean": "이 마을은 조용해요.",
+   "gloss": "This town is quiet.",
+   "inspiredBy": "rom-rec4453",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1",
+    "pewter_city",
+    "cerulean_city",
+    "saffron_city",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "six_island",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1013,
+    1100,
+    1198,
+    1199,
+    2534
+   ]
+  },
+  {
+   "vocabId": "seed-v1:박사",
+   "korean": "박사님은 친절해요.",
+   "gloss": "The professor is kind.",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_2",
+    "route_4",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "cinnabar_island",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    2084,
+    2656,
+    2859,
+    2865
+   ]
+  },
+  {
+   "vocabId": "seed-v1:나",
+   "korean": "나는 학생이에요.",
+   "gloss": "I am a student.",
+   "inspiredBy": "rom-rec4412",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:이름",
+   "korean": "이름이 뭐예요?",
+   "gloss": "What is your name?",
+   "inspiredBy": "rom-rec3532",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_city",
+   "areasReferenced": [
+    "cerulean_city",
+    "saffron_city",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1076,
+    1077,
+    1078,
+    1079,
+    1081
+   ]
+  },
+  {
+   "vocabId": "seed-v1:안녕",
+   "korean": "안녕! 잘 지냈어?",
+   "gloss": "Hi! How have you been?",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_6",
+    "saffron_city",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "four_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "one_island",
+    "six_island",
+    "five_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    879,
+    1352,
+    2250,
+    2491,
+    2548
+   ]
+  },
+  {
+   "vocabId": "seed-v1:가다",
+   "korean": "학교에 가요.",
+   "gloss": "I go to school.",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "trainer_tower",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "water_labyrinth",
+    "memorial_pillar",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "seven_island",
+    "three_island",
+    "five_isle_meadow",
+    "water_path",
+    "green_path",
+    "outcast_island",
+    "two_island",
+    "ruin_valley",
+    "five_island",
+    "four_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    912,
+    980,
+    988,
+    1051,
+    1198
+   ]
+  },
+  {
+   "vocabId": "seed-v1:오다",
+   "korean": "친구가 와요.",
+   "gloss": "My friend is coming.",
+   "targetForm": "와",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "trainer_tower",
+    "kindle_road",
+    "six_island",
+    "seven_island",
+    "three_island",
+    "one_island",
+    "water_path",
+    "water_labyrinth",
+    "green_path",
+    "outcast_island",
+    "memorial_pillar",
+    "two_island",
+    "ruin_valley",
+    "treasure_beach",
+    "resort_gorgeous",
+    "five_island",
+    "four_island",
+    "canyon_entrance"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text",
+    "trainer_class_name"
+   ],
+   "primarySourceType": "trainer_class_name",
+   "liveRecIds": [
+    885,
+    891,
+    1097,
+    1130,
+    1152
+   ]
+  },
+  {
+   "vocabId": "seed-v1:집",
+   "korean": "집에 갈 시간이에요.",
+   "gloss": "It's time to go home.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:길",
+   "korean": "이 길로 가세요.",
+   "gloss": "Please take this road.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:풀",
+   "korean": "풀이 길어요.",
+   "gloss": "The grass is long.",
+   "inspiredBy": "rom-rec4344",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:야생",
+   "korean": "야생 포켓몬을 봤어요.",
+   "gloss": "I saw a wild Pokémon.",
+   "inspiredBy": "rom-rec135",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "cerulean_city",
+    "saffron_city",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "kindle_road",
+    "six_island",
+    "seven_island",
+    "four_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description",
+   "liveRecIds": [
+    921,
+    2053,
+    2066
+   ]
+  },
+  {
+   "vocabId": "seed-v1:나타나다",
+   "korean": "포켓몬이 나타나요.",
+   "gloss": "A Pokémon appears.",
+   "targetForm": "나타나",
+   "inspiredBy": "rom-rec4347",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "saffron_city",
+   "areasReferenced": [
+    "saffron_city",
+    "route_10",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry",
+   "liveRecIds": [
+    2768
+   ]
+  },
+  {
+   "vocabId": "seed-v1:싸우다",
+   "korean": "싸우지 마세요.",
+   "gloss": "Please don't fight.",
+   "targetForm": "싸우",
+   "inspiredBy": "rom-rec4361",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_4",
+    "cerulean_city",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_15",
+    "fuchsia_city",
+    "route_18",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "kindle_road",
+    "two_island",
+    "one_island",
+    "six_island",
+    "four_island",
+    "five_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    921,
+    2054,
+    2132,
+    2324,
+    2756
+   ]
+  },
+  {
+   "vocabId": "seed-v1:잡다",
+   "korean": "포켓몬을 잡았어요.",
+   "gloss": "I caught a Pokémon.",
+   "targetForm": "잡",
+   "inspiredBy": "rom-rec135",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "memorial_pillar",
+    "treasure_beach",
+    "four_island",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "outcast_island",
+    "kindle_road",
+    "one_island",
+    "six_island",
+    "five_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry",
+   "liveRecIds": [
+    929,
+    1045,
+    1067,
+    1068,
+    1076
+   ]
+  },
+  {
+   "vocabId": "seed-v1:새",
+   "korean": "새가 하늘을 날아요.",
+   "gloss": "The bird flies in the sky.",
+   "inspiredBy": "rom-rec4474",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:쥐",
+   "korean": "쥐는 작아요.",
+   "gloss": "Mice are small.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:도시",
+   "korean": "이 도시는 커요.",
+   "gloss": "This city is big.",
+   "inspiredBy": "rom-rec2613",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:사람",
+   "korean": "사람이 많아요.",
+   "gloss": "There are many people.",
+   "inspiredBy": "rom-rec4432",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "saffron_city",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "memorial_pillar",
+    "treasure_beach",
+    "ruin_valley",
+    "four_island",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "outcast_island",
+    "trainer_tower",
+    "green_path",
+    "kindle_road",
+    "one_island",
+    "six_island",
+    "five_island",
+    "seven_island",
+    "water_path",
+    "three_island",
+    "five_isle_meadow"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry",
+   "liveRecIds": [
+    967,
+    1011,
+    1108,
+    1125,
+    1744
+   ]
+  },
+  {
+   "vocabId": "seed-v1:가게",
+   "korean": "가게에서 빵을 사요.",
+   "gloss": "I buy bread at the shop.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:사다",
+   "korean": "물을 사고 싶어요.",
+   "gloss": "I want to buy water.",
+   "targetForm": "사",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city",
+    "cerulean_city",
+    "route_25",
+    "saffron_city",
+    "route_8",
+    "route_10",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_18",
+    "cinnabar_island",
+    "celadon_city",
+    "route_22",
+    "indigo_plateau",
+    "rom_mined",
+    "seven_island",
+    "three_island",
+    "one_island",
+    "two_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1141,
+    2241,
+    2400,
+    2954,
+    3054
+   ]
+  },
+  {
+   "vocabId": "seed-v1:팔다",
+   "korean": "몬스터볼을 팔아요.",
+   "gloss": "They sell Poké Balls.",
+   "targetForm": "팔",
+   "inspiredBy": "rom-rec213",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    823
+   ]
+  },
+  {
+   "vocabId": "seed-v1:체육관",
+   "korean": "체육관은 어디예요?",
+   "gloss": "Where is the gym?",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "saffron_city",
+    "vermilion_city",
+    "fuchsia_city",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "four_island",
+    "ruin_valley",
+    "water_path",
+    "canyon_entrance",
+    "trainer_tower"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    956,
+    2102,
+    2117,
+    2126,
+    2181
+   ]
+  },
+  {
+   "vocabId": "seed-v1:관장",
+   "korean": "관장님은 강해요.",
+   "gloss": "The gym leader is strong.",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "rom_mined",
+    "four_island",
+    "ruin_valley",
+    "water_path",
+    "canyon_entrance",
+    "trainer_tower"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    638,
+    1075,
+    2462,
+    2577,
+    2635
+   ]
+  },
+  {
+   "vocabId": "seed-v1:북쪽",
+   "korean": "북쪽으로 가요.",
+   "gloss": "I go north.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:남쪽",
+   "korean": "집은 남쪽에 있어요.",
+   "gloss": "Home is to the south.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:동쪽",
+   "korean": "동쪽에 산이 있어요.",
+   "gloss": "There's a mountain to the east.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:서쪽",
+   "korean": "서쪽 하늘이 빨개요.",
+   "gloss": "The western sky is red.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:지나가다",
+   "korean": "마을을 지나가요.",
+   "gloss": "I pass through the town.",
+   "targetForm": "지나가",
+   "inspiredBy": "rom-rec4412",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2",
+    "saffron_city",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    2816
+   ]
+  },
+  {
+   "vocabId": "seed-v1:입구",
+   "korean": "입구가 어디예요?",
+   "gloss": "Where is the entrance?",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    6825
+   ]
+  },
+  {
+   "vocabId": "seed-v1:출구",
+   "korean": "출구는 저쪽이에요.",
+   "gloss": "The exit is over there.",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    219
+   ]
+  },
+  {
+   "vocabId": "seed-v1:숲",
+   "korean": "숲이 넓어요.",
+   "gloss": "The forest is wide.",
+   "inspiredBy": "rom-rec4341",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:나무",
+   "korean": "나무가 커요.",
+   "gloss": "The tree is big.",
+   "inspiredBy": "rom-rec4378",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:벌레",
+   "korean": "벌레가 무서워요.",
+   "gloss": "Bugs are scary.",
+   "inspiredBy": "rom-rec4349",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_3",
+    "route_4",
+    "route_24",
+    "route_25",
+    "route_6",
+    "route_11",
+    "route_12",
+    "celadon_city",
+    "route_9",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry",
+   "liveRecIds": [
+    1321,
+    2511,
+    4055
+   ]
+  },
+  {
+   "vocabId": "seed-v1:어둡다",
+   "korean": "방이 어두워요.",
+   "gloss": "The room is dark.",
+   "targetForm": "어두",
+   "inspiredBy": "rom-rec4369",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city",
+    "cinnabar_island",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    2635
+   ]
+  },
+  {
+   "vocabId": "seed-v1:깊다",
+   "korean": "물이 깊어요.",
+   "gloss": "The water is deep.",
+   "targetForm": "깊",
+   "inspiredBy": "rom-rec138",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "celadon_city",
+    "route_9",
+    "rom_mined",
+    "two_island",
+    "four_island",
+    "ruin_valley",
+    "kindle_road",
+    "six_island",
+    "five_island",
+    "seven_island",
+    "three_island",
+    "five_isle_meadow"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1376,
+    3938
+   ]
+  },
+  {
+   "vocabId": "seed-v1:조심하다",
+   "korean": "조심하세요!",
+   "gloss": "Please be careful!",
+   "targetForm": "조심하",
+   "inspiredBy": "rom-rec4435",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:회색",
+   "korean": "회색 옷을 입었어요.",
+   "gloss": "I wore grey clothes.",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    956,
+    968,
+    970,
+    2197
+   ]
+  },
+  {
+   "vocabId": "seed-v1:바위",
+   "korean": "바위가 커요.",
+   "gloss": "The boulder is big.",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    970,
+    1039
+   ]
+  },
+  {
+   "vocabId": "seed-v1:첫",
+   "korean": "오늘이 첫날이에요.",
+   "gloss": "Today is the first day.",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:배지",
+   "korean": "배지를 받았어요!",
+   "gloss": "I got a badge!",
+   "inspiredBy": "rom-rec3710",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "rom_mined",
+    "six_island",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1674,
+    2231,
+    2558,
+    2560,
+    2618
+   ]
+  },
+  {
+   "vocabId": "seed-v1:도전하다",
+   "korean": "관장님께 도전해요.",
+   "gloss": "I challenge the gym leader.",
+   "targetForm": "도전",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "seed-v1:이기다",
+   "korean": "친구를 이겼어요.",
+   "gloss": "I beat my friend.",
+   "targetForm": "이겼",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "route_24",
+    "route_25",
+    "route_6",
+    "saffron_city",
+    "route_8",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "route_9",
+    "indigo_plateau",
+    "rom_mined",
+    "kindle_road",
+    "treasure_beach"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1300,
+    1406,
+    1488,
+    1595,
+    1783
+   ]
+  },
+  {
+   "vocabId": "seed-v1:지다",
+   "korean": "오늘은 졌어요.",
+   "gloss": "Today I lost.",
+   "targetForm": "졌",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_6",
+    "saffron_city",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "route_12",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "route_9",
+    "indigo_plateau",
+    "rom_mined",
+    "green_path",
+    "trainer_tower",
+    "outcast_island",
+    "memorial_pillar",
+    "two_island",
+    "ruin_valley",
+    "one_island",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "canyon_entrance",
+    "water_path"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1304,
+    1320,
+    1356,
+    1362,
+    1396
+   ]
+  },
+  {
+   "vocabId": "seed-v1:박물관",
+   "korean": "박물관에 가고 싶어요.",
+   "gloss": "I want to go to the museum.",
+   "inspiredBy": "rom-rec3862",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    968
+   ]
+  }
+ ]
 }

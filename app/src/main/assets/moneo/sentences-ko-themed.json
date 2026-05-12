@@ -3,6 +3,7 @@
  "sourceTag": "themed-v1",
  "notes": [
   "Hand-curated 'voice lock-in' batch covering vocab whose only sentence sources are ROM-derived (mined, topik, species, etymology). Korean is original Pokémon-themed everyday-trainer-life writing — no ROM dialog, no plot points — and the gloss is a clean English translation. This is a small sample (5 per corpus); scale up after voice review.",
+  "Attribution propagated from base decks; 13 matched, 7 unmatched of 20.",
   "Attribution propagated from base decks; 13 matched, 7 unmatched of 20."
  ],
  "entries": [
@@ -13,7 +14,82 @@
    "targetForm": "할까",
    "areaId": "rom_mined",
    "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7"
+   "generator": "llm-claude-opus-4-7",
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text",
+    "trainer_class_name"
+   ],
+   "primarySourceType": "trainer_class_name",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "trainer_tower",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "water_labyrinth",
+    "memorial_pillar",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "seven_island",
+    "three_island",
+    "five_isle_meadow",
+    "water_path",
+    "green_path",
+    "outcast_island",
+    "two_island",
+    "ruin_valley",
+    "five_island",
+    "four_island"
+   ],
+   "liveRecIds": [
+    638,
+    919,
+    963,
+    965,
+    1019
+   ]
   },
   {
    "vocabId": "rom-mine-v2:타다",
@@ -78,25 +154,25 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "two_island",
-    "memorial_pillar",
-    "four_island",
-    "treasure_beach",
-    "water_labyrinth",
-    "kindle_road",
-    "one_island",
-    "six_island",
-    "five_island",
-    "ruin_valley",
-    "canyon_entrance",
-    "resort_gorgeous",
-    "outcast_island",
     "trainer_tower",
-    "green_path",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "water_labyrinth",
+    "memorial_pillar",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
     "seven_island",
-    "water_path",
     "three_island",
-    "five_isle_meadow"
+    "five_isle_meadow",
+    "water_path",
+    "green_path",
+    "outcast_island",
+    "two_island",
+    "ruin_valley",
+    "five_island",
+    "four_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -104,7 +180,14 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "liveRecIds": [
+    241,
+    638,
+    881,
+    893,
+    896
+   ]
   },
   {
    "vocabId": "rom-mine-v2:메다",
@@ -148,20 +231,24 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "two_island",
-    "one_island",
     "six_island",
-    "four_island",
-    "five_island",
+    "two_island",
     "seven_island",
-    "three_island"
+    "three_island",
+    "one_island",
+    "five_island",
+    "four_island"
    ],
    "sourceTypes": [
     "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "liveRecIds": [
+    3187,
+    3996
+   ]
   },
   {
    "vocabId": "topik-v2:키",
@@ -198,7 +285,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    4070
+   ]
   },
   {
    "vocabId": "topik-v2:깊다",
@@ -234,21 +324,25 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "two_island",
-    "four_island",
-    "ruin_valley",
     "kindle_road",
     "six_island",
-    "five_island",
     "seven_island",
     "three_island",
-    "five_isle_meadow"
+    "five_isle_meadow",
+    "two_island",
+    "ruin_valley",
+    "five_island",
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1376,
+    3938
+   ]
   },
   {
    "vocabId": "topik-v2:가다",
@@ -260,7 +354,74 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "pallet_town"
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "trainer_tower",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "water_labyrinth",
+    "memorial_pillar",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "seven_island",
+    "three_island",
+    "five_isle_meadow",
+    "water_path",
+    "green_path",
+    "outcast_island",
+    "two_island",
+    "ruin_valley",
+    "five_island",
+    "four_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    912,
+    980,
+    988,
+    1051,
+    1198
    ]
   },
   {
@@ -271,9 +432,79 @@
    "areaId": "topik_1",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "cerulean_city",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "cerulean_city"
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "trainer_tower",
+    "kindle_road",
+    "six_island",
+    "one_island",
+    "water_labyrinth",
+    "memorial_pillar",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "seven_island",
+    "three_island",
+    "five_isle_meadow",
+    "water_path",
+    "green_path",
+    "outcast_island",
+    "two_island",
+    "ruin_valley",
+    "five_island",
+    "four_island"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text",
+    "trainer_class_name"
+   ],
+   "primarySourceType": "trainer_class_name",
+   "liveRecIds": [
+    912,
+    930,
+    959,
+    980,
+    1014
    ]
   },
   {
@@ -406,7 +637,11 @@
      "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
      "auditedAt": "2026-05-09"
     }
-   }
+   },
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "etymology-roots:강철",
@@ -421,7 +656,11 @@
     "issue": "Gloss says '강철 means hardened steel' (a metalinguistic etymology gloss), but the Korean literally says '강철 is a hard metal'. The Korean omits the etymology framing entirely and just states a fact. For an etymology-roots entry the Korean should reflect the meaning of 강철 as a root ('강' = strong/hard + '철' = iron → steel) rather than a definition of 'steel'. Also 강철 specifically means 'steel', not 'hard metal' generically.",
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
-   }
+   },
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
   },
   {
    "vocabId": "etymology-roots:개구리",
@@ -430,7 +669,11 @@
    "targetForm": "개구리",
    "areaId": "rom_mined",
    "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7"
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
   },
   {
    "vocabId": "etymology-roots:거북",
@@ -439,7 +682,11 @@
    "targetForm": "거북",
    "areaId": "pallet_town",
    "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7"
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "etymology-roots:고슴도치",
@@ -448,7 +695,11 @@
    "targetForm": "고슴도치",
    "areaId": "route_23",
    "source": "themed-v1",
-   "generator": "llm-claude-opus-4-7"
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_23",
+   "areasReferenced": [
+    "route_23"
+   ]
   }
  ]
 }

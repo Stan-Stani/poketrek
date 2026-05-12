@@ -1,1284 +1,1887 @@
 {
-  "version": 1,
-  "notes": "Example: a species name containing the root.",
-  "entries": [
-    {
-      "vocabId": "etymology-roots:갑",
-      "korean": "코리갑",
-      "gloss": "Donphan — contains the root '갑'",
-      "targetForm": "갑",
-      "areaId": "pewter_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:강철",
-      "korean": "강철톤",
-      "gloss": "Steelix — contains the root '강철'",
-      "targetForm": "강철",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:개구리",
-      "korean": "왕구리",
-      "gloss": "Politoed — contains the root '개구리'",
-      "targetForm": "개구리",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:거북",
-      "korean": "꼬부기",
-      "gloss": "Squirtle — contains the root '거북'",
-      "targetForm": "거북",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:고슴도치",
-      "korean": "고지",
-      "gloss": "Sandslash — contains the root '고슴도치'",
-      "targetForm": "고슴도치",
-      "areaId": "route_23",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:골",
-      "korean": "골뱃",
-      "gloss": "Golbat — contains the root '골'",
-      "targetForm": "골",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:골아파",
-      "korean": "고라파덕",
-      "gloss": "Psyduck — contains the root '골아파'",
-      "targetForm": "골아파",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:곰",
-      "korean": "깜지곰",
-      "gloss": "Teddiursa — contains the root '곰'",
-      "targetForm": "곰",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:구리",
-      "korean": "딱구리",
-      "gloss": "Golem — contains the root '구리'",
-      "targetForm": "구리",
-      "areaId": "pewter_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:근육",
-      "korean": "근육몬",
-      "gloss": "Machoke — contains the root '근육'",
-      "targetForm": "근육",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:기라스",
-      "korean": "마기라스",
-      "gloss": "Tyranitar — contains the root '기라스'",
-      "targetForm": "기라스",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:깜지",
-      "korean": "깜지곰",
-      "gloss": "Teddiursa — contains the root '깜지'",
-      "targetForm": "깜지",
-      "areaId": "six_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:깨비",
-      "korean": "깨비드릴조",
-      "gloss": "Fearow — contains the root '깨비'",
-      "targetForm": "깨비",
-      "areaId": "route_17",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:꼬마",
-      "korean": "꼬부기",
-      "gloss": "Squirtle — contains the root '꼬마'",
-      "targetForm": "꼬마",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:꿀꿀",
-      "korean": "꾸꾸리",
-      "gloss": "Swinub — contains the root '꿀꿀'",
-      "targetForm": "꿀꿀",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:날쌘",
-      "korean": "날쌩마",
-      "gloss": "Rapidash — contains the root '날쌘'",
-      "targetForm": "날쌘",
-      "areaId": "kindle_road",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:냄새",
-      "korean": "냄새꼬",
-      "gloss": "Gloom — contains the root '냄새'",
-      "targetForm": "냄새",
-      "areaId": "route_12",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:너츠",
-      "korean": "해너츠",
-      "gloss": "Sunkern — contains the root '너츠'",
-      "targetForm": "너츠",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:네이티",
-      "korean": "네이티오",
-      "gloss": "Xatu — contains the root '네이티'",
-      "targetForm": "네이티",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:노고",
-      "korean": "노고치",
-      "gloss": "Dunsparce — contains the root '노고'",
-      "targetForm": "노고",
-      "areaId": "three_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:노루",
-      "korean": "노라키",
-      "gloss": "Stantler — contains the root '노루'",
-      "targetForm": "노루",
-      "areaId": "six_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:뇽",
-      "korean": "신뇽",
-      "gloss": "Dragonair — contains the root '뇽'",
-      "targetForm": "뇽",
-      "areaId": "fuchsia_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:니드",
-      "korean": "니드퀸",
-      "gloss": "Nidoqueen — contains the root '니드'",
-      "targetForm": "니드",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:닥",
-      "korean": "닥트리오",
-      "gloss": "Dugtrio — contains the root '닥'",
-      "targetForm": "닥",
-      "areaId": "digletts_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:단단",
-      "korean": "단단지",
-      "gloss": "Shuckle — contains the root '단단'",
-      "targetForm": "단단",
-      "areaId": "six_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:대포",
-      "korean": "대포무노",
-      "gloss": "Octillery — contains the root '대포'",
-      "targetForm": "대포",
-      "areaId": "mt_moon",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:덕",
-      "korean": "고라파덕",
-      "gloss": "Psyduck — contains the root '덕'",
-      "targetForm": "덕",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:덩굴",
-      "korean": "덩쿠리",
-      "gloss": "Tangela — contains the root '덩굴'",
-      "targetForm": "덩굴",
-      "areaId": "route_21",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:데굴데굴",
-      "korean": "데구리",
-      "gloss": "Graveler — contains the root '데굴데굴'",
-      "targetForm": "데굴데굴",
-      "areaId": "rock_tunnel",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:도깨비",
-      "korean": "깨비참",
-      "gloss": "Spearow — contains the root '도깨비'",
-      "targetForm": "도깨비",
-      "areaId": "route_3",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:독",
-      "korean": "도나리",
-      "gloss": "Venomoth — contains the root '독'",
-      "targetForm": "독",
-      "areaId": "fuchsia_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:두",
-      "korean": "두두",
-      "gloss": "Doduo — contains the root '두'",
-      "targetForm": "두",
-      "areaId": "fuchsia_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:두더지",
-      "korean": "모래두지",
-      "gloss": "Sandshrew — contains the root '두더지'",
-      "targetForm": "두더지",
-      "areaId": "route_4",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:두둥실",
-      "korean": "두코",
-      "gloss": "Skiploom — contains the root '두둥실'",
-      "targetForm": "두둥실",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:드라",
-      "korean": "쏘드라",
-      "gloss": "Horsea — contains the root '드라'",
-      "targetForm": "드라",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:드래곤",
-      "korean": "쥬레곤",
-      "gloss": "Dewgong — contains the root '드래곤'",
-      "targetForm": "드래곤",
-      "areaId": "seafoam_islands",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:드릴",
-      "korean": "깨비드릴조",
-      "gloss": "Fearow — contains the root '드릴'",
-      "targetForm": "드릴",
-      "areaId": "route_17",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:딱딱",
-      "korean": "딱충이",
-      "gloss": "Kakuna — contains the root '딱딱'",
-      "targetForm": "딱딱",
-      "areaId": "viridian_forest",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:또",
-      "korean": "또가스",
-      "gloss": "Koffing — contains the root '또'",
-      "targetForm": "또",
-      "areaId": "cinnabar_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:뚜벅뚜벅",
-      "korean": "뚜벅쵸",
-      "gloss": "Oddish — contains the root '뚜벅뚜벅'",
-      "targetForm": "뚜벅뚜벅",
-      "areaId": "route_24",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:라이",
-      "korean": "라이츄",
-      "gloss": "Raichu — contains the root '라이'",
-      "targetForm": "라이",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:렛",
-      "korean": "꼬렛",
-      "gloss": "Rattata — contains the root '렛'",
-      "targetForm": "렛",
-      "areaId": "route_1",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:룡",
-      "korean": "전룡",
-      "gloss": "Ampharos — contains the root '룡'",
-      "targetForm": "룡",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:루미",
-      "korean": "해루미",
-      "gloss": "Sunflora — contains the root '루미'",
-      "targetForm": "루미",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:루키",
-      "korean": "배루키",
-      "gloss": "Tyrogue — contains the root '루키'",
-      "targetForm": "루키",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:리자드",
-      "korean": "리자몽",
-      "gloss": "Charizard — contains the root '리자드'",
-      "targetForm": "리자드",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:링",
-      "korean": "링곰",
-      "gloss": "Ursaring — contains the root '링'",
-      "targetForm": "링",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:마",
-      "korean": "날쌩마",
-      "gloss": "Rapidash — contains the root '마'",
-      "targetForm": "마",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:마그마",
-      "korean": "마그마",
-      "gloss": "Magmar — contains the root '마그마'",
-      "targetForm": "마그마",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:만보",
-      "korean": "잠만보",
-      "gloss": "Snorlax — contains the root '만보'",
-      "targetForm": "만보",
-      "areaId": "route_12",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:망나니",
-      "korean": "망나뇽",
-      "gloss": "Dragonite — contains the root '망나니'",
-      "targetForm": "망나니",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:맞아요",
-      "korean": "마자용",
-      "gloss": "Wobbuffet — contains the root '맞아요'",
-      "targetForm": "맞아요",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:메",
-      "korean": "메꾸리",
-      "gloss": "Piloswine — contains the root '메'",
-      "targetForm": "메",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:메타",
-      "korean": "메타몽",
-      "gloss": "Ditto — contains the root '메타'",
-      "targetForm": "메타",
-      "areaId": "route_13",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:몬",
-      "korean": "알통몬",
-      "gloss": "Machop — contains the root '몬'",
-      "targetForm": "몬",
-      "areaId": "saffron_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:몽",
-      "korean": "리자몽",
-      "gloss": "Charizard — contains the root '몽'",
-      "targetForm": "몽",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:무서운",
-      "korean": "무우마",
-      "gloss": "Misdreavus — contains the root '무서운'",
-      "targetForm": "무서운",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:무장",
-      "korean": "무장조",
-      "gloss": "Skarmory — contains the root '무장'",
-      "targetForm": "무장",
-      "areaId": "seven_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:뮤",
-      "korean": "뮤츠",
-      "gloss": "Mewtwo — contains the root '뮤'",
-      "targetForm": "뮤",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:바루",
-      "korean": "침바루",
-      "gloss": "Qwilfish — contains the root '바루'",
-      "targetForm": "바루",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:배",
-      "korean": "배루키",
-      "gloss": "Tyrogue — contains the root '배'",
-      "targetForm": "배",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:뱃",
-      "korean": "주뱃",
-      "gloss": "Zubat — contains the root '뱃'",
-      "targetForm": "뱃",
-      "areaId": "mt_moon",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:번데기",
-      "korean": "단데기",
-      "gloss": "Metapod — contains the root '번데기'",
-      "targetForm": "번데기",
-      "areaId": "viridian_forest",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:별",
-      "korean": "별가사리",
-      "gloss": "Staryu — contains the root '별'",
-      "targetForm": "별",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:보송보송",
-      "korean": "보송송",
-      "gloss": "Flaaffy — contains the root '보송보송'",
-      "targetForm": "보송보송",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:보아",
-      "korean": "아보",
-      "gloss": "Ekans — contains the root '보아'",
-      "targetForm": "보아",
-      "areaId": "route_4",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:볼",
-      "korean": "붐볼",
-      "gloss": "Electrode — contains the root '볼'",
-      "targetForm": "볼",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:부엉부엉",
-      "korean": "부우부",
-      "gloss": "Hoothoot — contains the root '부엉부엉'",
-      "targetForm": "부엉부엉",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:부엉이",
-      "korean": "야부엉",
-      "gloss": "Noctowl — contains the root '부엉이'",
-      "targetForm": "부엉이",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:불가사리",
-      "korean": "별가사리",
-      "gloss": "Staryu — contains the root '불가사리'",
-      "targetForm": "불가사리",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:붐",
-      "korean": "붐볼",
-      "gloss": "Electrode — contains the root '붐'",
-      "targetForm": "붐",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:붕",
-      "korean": "독침붕",
-      "gloss": "Beedrill — contains the root '붕'",
-      "targetForm": "붕",
-      "areaId": "route_24",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:뽀뽀",
-      "korean": "뽀뽀라",
-      "gloss": "Smoochum — contains the root '뽀뽀'",
-      "targetForm": "뽀뽀",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:뿔",
-      "korean": "뿔충이",
-      "gloss": "Weedle — contains the root '뿔'",
-      "targetForm": "뿔",
-      "areaId": "route_2",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:산호",
-      "korean": "코산호",
-      "gloss": "Corsola — contains the root '산호'",
-      "targetForm": "산호",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:샤",
-      "korean": "샤미드",
-      "gloss": "Vaporeon — contains the root '샤'",
-      "targetForm": "샤",
-      "areaId": "celadon_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:선",
-      "korean": "꼬리선",
-      "gloss": "Sentret — contains the root '선'",
-      "targetForm": "선",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:성난",
-      "korean": "성원숭",
-      "gloss": "Primeape — contains the root '성난'",
-      "targetForm": "성난",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:솜",
-      "korean": "솜솜코",
-      "gloss": "Jumpluff — contains the root '솜'",
-      "targetForm": "솜",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:수륙",
-      "korean": "슈륙챙이",
-      "gloss": "Poliwhirl — contains the root '수륙'",
-      "targetForm": "수륙",
-      "areaId": "viridian_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:시라소니",
-      "korean": "시라소몬",
-      "gloss": "Hitmonlee — contains the root '시라소니'",
-      "targetForm": "시라소니",
-      "areaId": "saffron_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:썬더",
-      "korean": "쥬피썬더",
-      "gloss": "Jolteon — contains the root '썬더'",
-      "targetForm": "썬더",
-      "areaId": "celadon_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:쏘다",
-      "korean": "쏘드라",
-      "gloss": "Horsea — contains the root '쏘다'",
-      "targetForm": "쏘다",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:씨",
-      "korean": "이상해씨",
-      "gloss": "Bulbasaur — contains the root '씨'",
-      "targetForm": "씨",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:알알이",
-      "korean": "아라리",
-      "gloss": "Exeggcute — contains the root '알알이'",
-      "targetForm": "알알이",
-      "areaId": "fuchsia_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:알통",
-      "korean": "알통몬",
-      "gloss": "Machop — contains the root '알통'",
-      "targetForm": "알통",
-      "areaId": "rock_tunnel",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:암모",
-      "korean": "암스타",
-      "gloss": "Omastar — contains the root '암모'",
-      "targetForm": "암모",
-      "areaId": "cinnabar_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:야돈",
-      "korean": "야도란",
-      "gloss": "Slowbro — contains the root '야돈'",
-      "targetForm": "야돈",
-      "areaId": "cinnabar_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:어",
-      "korean": "총어",
-      "gloss": "Remoraid — contains the root '어'",
-      "targetForm": "어",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:어른",
-      "korean": "어니부기",
-      "gloss": "Wartortle — contains the root '어른'",
-      "targetForm": "어른",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:에레키",
-      "korean": "에레키드",
-      "gloss": "Elekid — contains the root '에레키'",
-      "targetForm": "에레키",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:올챙이",
-      "korean": "발챙이",
-      "gloss": "Poliwag — contains the root '올챙이'",
-      "targetForm": "올챙이",
-      "areaId": "viridian_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:왕",
-      "korean": "거북왕",
-      "gloss": "Blastoise — contains the root '왕'",
-      "targetForm": "왕",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:울트라",
-      "korean": "레트라",
-      "gloss": "Raticate — contains the root '울트라'",
-      "targetForm": "울트라",
-      "areaId": "route_16",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:원숭이",
-      "korean": "성원숭",
-      "gloss": "Primeape — contains the root '원숭이'",
-      "targetForm": "원숭이",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:이브이",
-      "korean": "에브이",
-      "gloss": "Espeon — contains the root '이브이'",
-      "targetForm": "이브이",
-      "areaId": "celadon_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:이상해",
-      "korean": "이상해씨",
-      "gloss": "Bulbasaur — contains the root '이상해'",
-      "targetForm": "이상해",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:잉어",
-      "korean": "잉어킹",
-      "gloss": "Magikarp — contains the root '잉어'",
-      "targetForm": "잉어",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:잠자리",
-      "korean": "왕자리",
-      "gloss": "Yanma — contains the root '잠자리'",
-      "targetForm": "잠자리",
-      "areaId": "six_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:조",
-      "korean": "깨비드릴조",
-      "gloss": "Fearow — contains the root '조'",
-      "targetForm": "조",
-      "areaId": "route_17",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:쥬",
-      "korean": "쥬레곤",
-      "gloss": "Dewgong — contains the root '쥬'",
-      "targetForm": "쥬",
-      "areaId": "seafoam_islands",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:쥬피터",
-      "korean": "쥬피썬더",
-      "gloss": "Jolteon — contains the root '쥬피터'",
-      "targetForm": "쥬피터",
-      "areaId": "celadon_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:지목",
-      "korean": "꼬지모",
-      "gloss": "Sudowoodo — contains the root '지목'",
-      "targetForm": "지목",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:질퍽",
-      "korean": "질퍽이",
-      "gloss": "Grimer — contains the root '질퍽'",
-      "targetForm": "질퍽",
-      "areaId": "cinnabar_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:찌릿찌릿",
-      "korean": "찌리리공",
-      "gloss": "Voltorb — contains the root '찌릿찌릿'",
-      "targetForm": "찌릿찌릿",
-      "areaId": "route_10",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:참새",
-      "korean": "깨비참",
-      "gloss": "Spearow — contains the root '참새'",
-      "targetForm": "참새",
-      "areaId": "route_3",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:초롱",
-      "korean": "초라기",
-      "gloss": "Chinchou — contains the root '초롱'",
-      "targetForm": "초롱",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:총",
-      "korean": "총어",
-      "gloss": "Remoraid — contains the root '총'",
-      "targetForm": "총",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:쵸",
-      "korean": "뚜벅쵸",
-      "gloss": "Oddish — contains the root '쵸'",
-      "targetForm": "쵸",
-      "areaId": "route_24",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:충",
-      "korean": "뿔충이",
-      "gloss": "Weedle — contains the root '충'",
-      "targetForm": "충",
-      "areaId": "route_2",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:츄",
-      "korean": "라이츄",
-      "gloss": "Raichu — contains the root '츄'",
-      "targetForm": "츄",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:츠",
-      "korean": "뮤츠",
-      "gloss": "Mewtwo — contains the root '츠'",
-      "targetForm": "츠",
-      "areaId": "cerulean_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:칠색",
-      "korean": "칠색조",
-      "gloss": "Ho-Oh — contains the root '칠색'",
-      "targetForm": "칠색",
-      "areaId": "navel_rock",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:침",
-      "korean": "침바루",
-      "gloss": "Qwilfish — contains the root '침'",
-      "targetForm": "침",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:카노",
-      "korean": "뿔카노",
-      "gloss": "Rhyhorn — contains the root '카노'",
-      "targetForm": "카노",
-      "areaId": "fuchsia_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:카르고",
-      "korean": "마그카르고",
-      "gloss": "Magcargo — contains the root '카르고'",
-      "targetForm": "카르고",
-      "areaId": "one_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:케인",
-      "korean": "브케인",
-      "gloss": "Cyndaquil — contains the root '케인'",
-      "targetForm": "케인",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:코리",
-      "korean": "코코리",
-      "gloss": "Phanpy — contains the root '코리'",
-      "targetForm": "코리",
-      "areaId": "seven_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:코브라",
-      "korean": "아보크",
-      "gloss": "Arbok — contains the root '코브라'",
-      "targetForm": "코브라",
-      "areaId": "route_23",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:콘",
-      "korean": "콘팡",
-      "gloss": "Venonat — contains the root '콘'",
-      "targetForm": "콘",
-      "areaId": "route_12",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:콘치",
-      "korean": "왕콘치",
-      "gloss": "Seaking — contains the root '콘치'",
-      "targetForm": "콘치",
-      "areaId": "fuchsia_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:퀸",
-      "korean": "니드퀸",
-      "gloss": "Nidoqueen — contains the root '퀸'",
-      "targetForm": "퀸",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:크",
-      "korean": "푸크린",
-      "gloss": "Wigglytuff — contains the root '크'",
-      "targetForm": "크",
-      "areaId": "route_3",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:크랩",
-      "korean": "킹크랩",
-      "gloss": "Kingler — contains the root '크랩'",
-      "targetForm": "크랩",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:크로커다일",
-      "korean": "장크로다일",
-      "gloss": "Feraligatr — contains the root '크로커다일'",
-      "targetForm": "크로커다일",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:키드",
-      "korean": "에레키드",
-      "gloss": "Elekid — contains the root '키드'",
-      "targetForm": "키드",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:키린",
-      "korean": "키링키",
-      "gloss": "Girafarig — contains the root '키린'",
-      "targetForm": "키린",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:킹",
-      "korean": "니드킹",
-      "gloss": "Nidoking — contains the root '킹'",
-      "targetForm": "킹",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:탕",
-      "korean": "탕구리",
-      "gloss": "Cubone — contains the root '탕'",
-      "targetForm": "탕",
-      "areaId": "pokemon_tower",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:토게",
-      "korean": "토게틱",
-      "gloss": "Togetic — contains the root '토게'",
-      "targetForm": "토게",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:통통",
-      "korean": "통통코",
-      "gloss": "Hoppip — contains the root '통통'",
-      "targetForm": "통통",
-      "areaId": "five_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:투",
-      "korean": "피죤투",
-      "gloss": "Pidgeot — contains the root '투'",
-      "targetForm": "투",
-      "areaId": "route_13",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:투구",
-      "korean": "투구",
-      "gloss": "Kabuto — contains the root '투구'",
-      "targetForm": "투구",
-      "areaId": "cinnabar_island",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:트리오",
-      "korean": "닥트리오",
-      "gloss": "Dugtrio — contains the root '트리오'",
-      "targetForm": "트리오",
-      "areaId": "digletts_cave",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:파이어",
-      "korean": "파이리",
-      "gloss": "Charmander — contains the root '파이어'",
-      "targetForm": "파이어",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:팡",
-      "korean": "콘팡",
-      "gloss": "Venonat — contains the root '팡'",
-      "targetForm": "팡",
-      "areaId": "route_12",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:푸린",
-      "korean": "푸크린",
-      "gloss": "Wigglytuff — contains the root '푸린'",
-      "targetForm": "푸린",
-      "areaId": "route_3",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:피죤",
-      "korean": "피죤투",
-      "gloss": "Pidgeot — contains the root '피죤'",
-      "targetForm": "피죤",
-      "areaId": "route_13",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:피카츄",
-      "korean": "피츄",
-      "gloss": "Pichu — contains the root '피카츄'",
-      "targetForm": "피카츄",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:해",
-      "korean": "왕눈해",
-      "gloss": "Tentacool — contains the root '해'",
-      "targetForm": "해",
-      "areaId": "pallet_town",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:허리케인",
-      "korean": "마그케인",
-      "gloss": "Quilava — contains the root '허리케인'",
-      "targetForm": "허리케인",
-      "areaId": "rom_mined",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:홍수",
-      "korean": "홍수몬",
-      "gloss": "Hitmonchan — contains the root '홍수'",
-      "targetForm": "홍수",
-      "areaId": "saffron_city",
-      "source": "etymology",
-      "generator": "llm-claude-opus-4-7"
-    }
-  ]
+ "version": 1,
+ "notes": "Example: a species name containing the root.",
+ "entries": [
+  {
+   "vocabId": "etymology-roots:갑",
+   "korean": "코리갑",
+   "gloss": "Donphan — contains the root '갑'",
+   "targetForm": "갑",
+   "areaId": "pewter_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:강철",
+   "korean": "강철톤",
+   "gloss": "Steelix — contains the root '강철'",
+   "targetForm": "강철",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:개구리",
+   "korean": "왕구리",
+   "gloss": "Politoed — contains the root '개구리'",
+   "targetForm": "개구리",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:거북",
+   "korean": "꼬부기",
+   "gloss": "Squirtle — contains the root '거북'",
+   "targetForm": "거북",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:고슴도치",
+   "korean": "고지",
+   "gloss": "Sandslash — contains the root '고슴도치'",
+   "targetForm": "고슴도치",
+   "areaId": "route_23",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_23",
+   "areasReferenced": [
+    "route_23"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:골",
+   "korean": "골뱃",
+   "gloss": "Golbat — contains the root '골'",
+   "targetForm": "골",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:골아파",
+   "korean": "고라파덕",
+   "gloss": "Psyduck — contains the root '골아파'",
+   "targetForm": "골아파",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:곰",
+   "korean": "깜지곰",
+   "gloss": "Teddiursa — contains the root '곰'",
+   "targetForm": "곰",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined",
+    "six_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:구리",
+   "korean": "딱구리",
+   "gloss": "Golem — contains the root '구리'",
+   "targetForm": "구리",
+   "areaId": "pewter_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:근육",
+   "korean": "근육몬",
+   "gloss": "Machoke — contains the root '근육'",
+   "targetForm": "근육",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:기라스",
+   "korean": "마기라스",
+   "gloss": "Tyranitar — contains the root '기라스'",
+   "targetForm": "기라스",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:깜지",
+   "korean": "깜지곰",
+   "gloss": "Teddiursa — contains the root '깜지'",
+   "targetForm": "깜지",
+   "areaId": "six_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "six_island",
+   "areasReferenced": [
+    "six_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:깨비",
+   "korean": "깨비드릴조",
+   "gloss": "Fearow — contains the root '깨비'",
+   "targetForm": "깨비",
+   "areaId": "route_17",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_17",
+   "areasReferenced": [
+    "route_17"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:꼬마",
+   "korean": "꼬부기",
+   "gloss": "Squirtle — contains the root '꼬마'",
+   "targetForm": "꼬마",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "rom_mined",
+    "route_1"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:꿀꿀",
+   "korean": "꾸꾸리",
+   "gloss": "Swinub — contains the root '꿀꿀'",
+   "targetForm": "꿀꿀",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "four_island",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:날쌘",
+   "korean": "날쌩마",
+   "gloss": "Rapidash — contains the root '날쌘'",
+   "targetForm": "날쌘",
+   "areaId": "kindle_road",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "kindle_road",
+   "areasReferenced": [
+    "kindle_road"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:냄새",
+   "korean": "냄새꼬",
+   "gloss": "Gloom — contains the root '냄새'",
+   "targetForm": "냄새",
+   "areaId": "route_12",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:너츠",
+   "korean": "해너츠",
+   "gloss": "Sunkern — contains the root '너츠'",
+   "targetForm": "너츠",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:네이티",
+   "korean": "네이티오",
+   "gloss": "Xatu — contains the root '네이티'",
+   "targetForm": "네이티",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:노고",
+   "korean": "노고치",
+   "gloss": "Dunsparce — contains the root '노고'",
+   "targetForm": "노고",
+   "areaId": "three_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "three_island",
+   "areasReferenced": [
+    "three_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:노루",
+   "korean": "노라키",
+   "gloss": "Stantler — contains the root '노루'",
+   "targetForm": "노루",
+   "areaId": "six_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "six_island",
+   "areasReferenced": [
+    "six_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:뇽",
+   "korean": "신뇽",
+   "gloss": "Dragonair — contains the root '뇽'",
+   "targetForm": "뇽",
+   "areaId": "fuchsia_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:니드",
+   "korean": "니드퀸",
+   "gloss": "Nidoqueen — contains the root '니드'",
+   "targetForm": "니드",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:닥",
+   "korean": "닥트리오",
+   "gloss": "Dugtrio — contains the root '닥'",
+   "targetForm": "닥",
+   "areaId": "digletts_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "digletts_cave",
+   "areasReferenced": [
+    "digletts_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:단단",
+   "korean": "단단지",
+   "gloss": "Shuckle — contains the root '단단'",
+   "targetForm": "단단",
+   "areaId": "six_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "six_island",
+   "areasReferenced": [
+    "six_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:대포",
+   "korean": "대포무노",
+   "gloss": "Octillery — contains the root '대포'",
+   "targetForm": "대포",
+   "areaId": "mt_moon",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:덕",
+   "korean": "고라파덕",
+   "gloss": "Psyduck — contains the root '덕'",
+   "targetForm": "덕",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "cerulean_cave",
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:덩굴",
+   "korean": "덩쿠리",
+   "gloss": "Tangela — contains the root '덩굴'",
+   "targetForm": "덩굴",
+   "areaId": "route_21",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_21",
+   "areasReferenced": [
+    "route_21"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:데굴데굴",
+   "korean": "데구리",
+   "gloss": "Graveler — contains the root '데굴데굴'",
+   "targetForm": "데굴데굴",
+   "areaId": "rock_tunnel",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rock_tunnel",
+   "areasReferenced": [
+    "rock_tunnel"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:도깨비",
+   "korean": "깨비참",
+   "gloss": "Spearow — contains the root '도깨비'",
+   "targetForm": "도깨비",
+   "areaId": "route_3",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:독",
+   "korean": "도나리",
+   "gloss": "Venomoth — contains the root '독'",
+   "targetForm": "독",
+   "areaId": "fuchsia_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "five_island",
+    "fuchsia_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:두",
+   "korean": "두두",
+   "gloss": "Doduo — contains the root '두'",
+   "targetForm": "두",
+   "areaId": "fuchsia_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city",
+    "route_16"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:두더지",
+   "korean": "모래두지",
+   "gloss": "Sandshrew — contains the root '두더지'",
+   "targetForm": "두더지",
+   "areaId": "route_4",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:두둥실",
+   "korean": "두코",
+   "gloss": "Skiploom — contains the root '두둥실'",
+   "targetForm": "두둥실",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:드라",
+   "korean": "쏘드라",
+   "gloss": "Horsea — contains the root '드라'",
+   "targetForm": "드라",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:드래곤",
+   "korean": "쥬레곤",
+   "gloss": "Dewgong — contains the root '드래곤'",
+   "targetForm": "드래곤",
+   "areaId": "seafoam_islands",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:드릴",
+   "korean": "깨비드릴조",
+   "gloss": "Fearow — contains the root '드릴'",
+   "targetForm": "드릴",
+   "areaId": "route_17",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_17",
+   "areasReferenced": [
+    "route_17"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:딱딱",
+   "korean": "딱충이",
+   "gloss": "Kakuna — contains the root '딱딱'",
+   "targetForm": "딱딱",
+   "areaId": "viridian_forest",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_forest",
+   "areasReferenced": [
+    "pewter_city",
+    "viridian_forest"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:또",
+   "korean": "또가스",
+   "gloss": "Koffing — contains the root '또'",
+   "targetForm": "또",
+   "areaId": "cinnabar_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:뚜벅뚜벅",
+   "korean": "뚜벅쵸",
+   "gloss": "Oddish — contains the root '뚜벅뚜벅'",
+   "targetForm": "뚜벅뚜벅",
+   "areaId": "route_24",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:라이",
+   "korean": "라이츄",
+   "gloss": "Raichu — contains the root '라이'",
+   "targetForm": "라이",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:렛",
+   "korean": "꼬렛",
+   "gloss": "Rattata — contains the root '렛'",
+   "targetForm": "렛",
+   "areaId": "route_1",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1",
+    "route_16"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:룡",
+   "korean": "전룡",
+   "gloss": "Ampharos — contains the root '룡'",
+   "targetForm": "룡",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:루미",
+   "korean": "해루미",
+   "gloss": "Sunflora — contains the root '루미'",
+   "targetForm": "루미",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:루키",
+   "korean": "배루키",
+   "gloss": "Tyrogue — contains the root '루키'",
+   "targetForm": "루키",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:리자드",
+   "korean": "리자몽",
+   "gloss": "Charizard — contains the root '리자드'",
+   "targetForm": "리자드",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:링",
+   "korean": "링곰",
+   "gloss": "Ursaring — contains the root '링'",
+   "targetForm": "링",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:마",
+   "korean": "날쌩마",
+   "gloss": "Rapidash — contains the root '마'",
+   "targetForm": "마",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "five_island",
+    "kindle_road",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:마그마",
+   "korean": "마그마",
+   "gloss": "Magmar — contains the root '마그마'",
+   "targetForm": "마그마",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "one_island",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:만보",
+   "korean": "잠만보",
+   "gloss": "Snorlax — contains the root '만보'",
+   "targetForm": "만보",
+   "areaId": "route_12",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:망나니",
+   "korean": "망나뇽",
+   "gloss": "Dragonite — contains the root '망나니'",
+   "targetForm": "망나니",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:맞아요",
+   "korean": "마자용",
+   "gloss": "Wobbuffet — contains the root '맞아요'",
+   "targetForm": "맞아요",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:메",
+   "korean": "메꾸리",
+   "gloss": "Piloswine — contains the root '메'",
+   "targetForm": "메",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:메타",
+   "korean": "메타몽",
+   "gloss": "Ditto — contains the root '메타'",
+   "targetForm": "메타",
+   "areaId": "route_13",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:몬",
+   "korean": "알통몬",
+   "gloss": "Machop — contains the root '몬'",
+   "targetForm": "몬",
+   "areaId": "saffron_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "saffron_city",
+   "areasReferenced": [
+    "cerulean_cave",
+    "rock_tunnel",
+    "rom_mined",
+    "saffron_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:몽",
+   "korean": "리자몽",
+   "gloss": "Charizard — contains the root '몽'",
+   "targetForm": "몽",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_13"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:무서운",
+   "korean": "무우마",
+   "gloss": "Misdreavus — contains the root '무서운'",
+   "targetForm": "무서운",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:무장",
+   "korean": "무장조",
+   "gloss": "Skarmory — contains the root '무장'",
+   "targetForm": "무장",
+   "areaId": "seven_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "seven_island",
+   "areasReferenced": [
+    "seven_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:뮤",
+   "korean": "뮤츠",
+   "gloss": "Mewtwo — contains the root '뮤'",
+   "targetForm": "뮤",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:바루",
+   "korean": "침바루",
+   "gloss": "Qwilfish — contains the root '바루'",
+   "targetForm": "바루",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:배",
+   "korean": "배루키",
+   "gloss": "Tyrogue — contains the root '배'",
+   "targetForm": "배",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:뱃",
+   "korean": "주뱃",
+   "gloss": "Zubat — contains the root '뱃'",
+   "targetForm": "뱃",
+   "areaId": "mt_moon",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "cerulean_cave",
+    "mt_moon"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:번데기",
+   "korean": "단데기",
+   "gloss": "Metapod — contains the root '번데기'",
+   "targetForm": "번데기",
+   "areaId": "viridian_forest",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_forest",
+   "areasReferenced": [
+    "pewter_city",
+    "viridian_forest"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:별",
+   "korean": "별가사리",
+   "gloss": "Staryu — contains the root '별'",
+   "targetForm": "별",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:보송보송",
+   "korean": "보송송",
+   "gloss": "Flaaffy — contains the root '보송보송'",
+   "targetForm": "보송보송",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:보아",
+   "korean": "아보",
+   "gloss": "Ekans — contains the root '보아'",
+   "targetForm": "보아",
+   "areaId": "route_4",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:볼",
+   "korean": "붐볼",
+   "gloss": "Electrode — contains the root '볼'",
+   "targetForm": "볼",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:부엉부엉",
+   "korean": "부우부",
+   "gloss": "Hoothoot — contains the root '부엉부엉'",
+   "targetForm": "부엉부엉",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:부엉이",
+   "korean": "야부엉",
+   "gloss": "Noctowl — contains the root '부엉이'",
+   "targetForm": "부엉이",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:불가사리",
+   "korean": "별가사리",
+   "gloss": "Staryu — contains the root '불가사리'",
+   "targetForm": "불가사리",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:붐",
+   "korean": "붐볼",
+   "gloss": "Electrode — contains the root '붐'",
+   "targetForm": "붐",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:붕",
+   "korean": "독침붕",
+   "gloss": "Beedrill — contains the root '붕'",
+   "targetForm": "붕",
+   "areaId": "route_24",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:뽀뽀",
+   "korean": "뽀뽀라",
+   "gloss": "Smoochum — contains the root '뽀뽀'",
+   "targetForm": "뽀뽀",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:뿔",
+   "korean": "뿔충이",
+   "gloss": "Weedle — contains the root '뿔'",
+   "targetForm": "뿔",
+   "areaId": "route_2",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "fuchsia_city",
+    "route_2"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:산호",
+   "korean": "코산호",
+   "gloss": "Corsola — contains the root '산호'",
+   "targetForm": "산호",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:샤",
+   "korean": "샤미드",
+   "gloss": "Vaporeon — contains the root '샤'",
+   "targetForm": "샤",
+   "areaId": "celadon_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "celadon_city",
+   "areasReferenced": [
+    "celadon_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:선",
+   "korean": "꼬리선",
+   "gloss": "Sentret — contains the root '선'",
+   "targetForm": "선",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:성난",
+   "korean": "성원숭",
+   "gloss": "Primeape — contains the root '성난'",
+   "targetForm": "성난",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:솜",
+   "korean": "솜솜코",
+   "gloss": "Jumpluff — contains the root '솜'",
+   "targetForm": "솜",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:수륙",
+   "korean": "슈륙챙이",
+   "gloss": "Poliwhirl — contains the root '수륙'",
+   "targetForm": "수륙",
+   "areaId": "viridian_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:시라소니",
+   "korean": "시라소몬",
+   "gloss": "Hitmonlee — contains the root '시라소니'",
+   "targetForm": "시라소니",
+   "areaId": "saffron_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "saffron_city",
+   "areasReferenced": [
+    "saffron_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:썬더",
+   "korean": "쥬피썬더",
+   "gloss": "Jolteon — contains the root '썬더'",
+   "targetForm": "썬더",
+   "areaId": "celadon_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "celadon_city",
+   "areasReferenced": [
+    "celadon_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:쏘다",
+   "korean": "쏘드라",
+   "gloss": "Horsea — contains the root '쏘다'",
+   "targetForm": "쏘다",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:씨",
+   "korean": "이상해씨",
+   "gloss": "Bulbasaur — contains the root '씨'",
+   "targetForm": "씨",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:알알이",
+   "korean": "아라리",
+   "gloss": "Exeggcute — contains the root '알알이'",
+   "targetForm": "알알이",
+   "areaId": "fuchsia_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:알통",
+   "korean": "알통몬",
+   "gloss": "Machop — contains the root '알통'",
+   "targetForm": "알통",
+   "areaId": "rock_tunnel",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rock_tunnel",
+   "areasReferenced": [
+    "rock_tunnel"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:암모",
+   "korean": "암스타",
+   "gloss": "Omastar — contains the root '암모'",
+   "targetForm": "암모",
+   "areaId": "cinnabar_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:야돈",
+   "korean": "야도란",
+   "gloss": "Slowbro — contains the root '야돈'",
+   "targetForm": "야돈",
+   "areaId": "cinnabar_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:어",
+   "korean": "총어",
+   "gloss": "Remoraid — contains the root '어'",
+   "targetForm": "어",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:어른",
+   "korean": "어니부기",
+   "gloss": "Wartortle — contains the root '어른'",
+   "targetForm": "어른",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:에레키",
+   "korean": "에레키드",
+   "gloss": "Elekid — contains the root '에레키'",
+   "targetForm": "에레키",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:올챙이",
+   "korean": "발챙이",
+   "gloss": "Poliwag — contains the root '올챙이'",
+   "targetForm": "올챙이",
+   "areaId": "viridian_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:왕",
+   "korean": "거북왕",
+   "gloss": "Blastoise — contains the root '왕'",
+   "targetForm": "왕",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town",
+    "rom_mined",
+    "six_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:울트라",
+   "korean": "레트라",
+   "gloss": "Raticate — contains the root '울트라'",
+   "targetForm": "울트라",
+   "areaId": "route_16",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_16",
+   "areasReferenced": [
+    "route_16"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:원숭이",
+   "korean": "성원숭",
+   "gloss": "Primeape — contains the root '원숭이'",
+   "targetForm": "원숭이",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:이브이",
+   "korean": "에브이",
+   "gloss": "Espeon — contains the root '이브이'",
+   "targetForm": "이브이",
+   "areaId": "celadon_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "celadon_city",
+   "areasReferenced": [
+    "celadon_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:이상해",
+   "korean": "이상해씨",
+   "gloss": "Bulbasaur — contains the root '이상해'",
+   "targetForm": "이상해",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:잉어",
+   "korean": "잉어킹",
+   "gloss": "Magikarp — contains the root '잉어'",
+   "targetForm": "잉어",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:잠자리",
+   "korean": "왕자리",
+   "gloss": "Yanma — contains the root '잠자리'",
+   "targetForm": "잠자리",
+   "areaId": "six_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "six_island",
+   "areasReferenced": [
+    "six_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:조",
+   "korean": "깨비드릴조",
+   "gloss": "Fearow — contains the root '조'",
+   "targetForm": "조",
+   "areaId": "route_17",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_17",
+   "areasReferenced": [
+    "navel_rock",
+    "route_17",
+    "seven_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:쥬",
+   "korean": "쥬레곤",
+   "gloss": "Dewgong — contains the root '쥬'",
+   "targetForm": "쥬",
+   "areaId": "seafoam_islands",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:쥬피터",
+   "korean": "쥬피썬더",
+   "gloss": "Jolteon — contains the root '쥬피터'",
+   "targetForm": "쥬피터",
+   "areaId": "celadon_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "celadon_city",
+   "areasReferenced": [
+    "celadon_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:지목",
+   "korean": "꼬지모",
+   "gloss": "Sudowoodo — contains the root '지목'",
+   "targetForm": "지목",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:질퍽",
+   "korean": "질퍽이",
+   "gloss": "Grimer — contains the root '질퍽'",
+   "targetForm": "질퍽",
+   "areaId": "cinnabar_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:찌릿찌릿",
+   "korean": "찌리리공",
+   "gloss": "Voltorb — contains the root '찌릿찌릿'",
+   "targetForm": "찌릿찌릿",
+   "areaId": "route_10",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_10",
+   "areasReferenced": [
+    "route_10"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:참새",
+   "korean": "깨비참",
+   "gloss": "Spearow — contains the root '참새'",
+   "targetForm": "참새",
+   "areaId": "route_3",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:초롱",
+   "korean": "초라기",
+   "gloss": "Chinchou — contains the root '초롱'",
+   "targetForm": "초롱",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:총",
+   "korean": "총어",
+   "gloss": "Remoraid — contains the root '총'",
+   "targetForm": "총",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:쵸",
+   "korean": "뚜벅쵸",
+   "gloss": "Oddish — contains the root '쵸'",
+   "targetForm": "쵸",
+   "areaId": "route_24",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:충",
+   "korean": "뿔충이",
+   "gloss": "Weedle — contains the root '충'",
+   "targetForm": "충",
+   "areaId": "route_2",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2",
+    "viridian_forest"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:츄",
+   "korean": "라이츄",
+   "gloss": "Raichu — contains the root '츄'",
+   "targetForm": "츄",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:츠",
+   "korean": "뮤츠",
+   "gloss": "Mewtwo — contains the root '츠'",
+   "targetForm": "츠",
+   "areaId": "cerulean_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:칠색",
+   "korean": "칠색조",
+   "gloss": "Ho-Oh — contains the root '칠색'",
+   "targetForm": "칠색",
+   "areaId": "navel_rock",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "navel_rock",
+   "areasReferenced": [
+    "navel_rock"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:침",
+   "korean": "침바루",
+   "gloss": "Qwilfish — contains the root '침'",
+   "targetForm": "침",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:카노",
+   "korean": "뿔카노",
+   "gloss": "Rhyhorn — contains the root '카노'",
+   "targetForm": "카노",
+   "areaId": "fuchsia_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:카르고",
+   "korean": "마그카르고",
+   "gloss": "Magcargo — contains the root '카르고'",
+   "targetForm": "카르고",
+   "areaId": "one_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "one_island",
+   "areasReferenced": [
+    "one_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:케인",
+   "korean": "브케인",
+   "gloss": "Cyndaquil — contains the root '케인'",
+   "targetForm": "케인",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:코리",
+   "korean": "코코리",
+   "gloss": "Phanpy — contains the root '코리'",
+   "targetForm": "코리",
+   "areaId": "seven_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "seven_island",
+   "areasReferenced": [
+    "seven_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:코브라",
+   "korean": "아보크",
+   "gloss": "Arbok — contains the root '코브라'",
+   "targetForm": "코브라",
+   "areaId": "route_23",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_23",
+   "areasReferenced": [
+    "route_23"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:콘",
+   "korean": "콘팡",
+   "gloss": "Venonat — contains the root '콘'",
+   "targetForm": "콘",
+   "areaId": "route_12",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "rom_mined",
+    "route_12"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:콘치",
+   "korean": "왕콘치",
+   "gloss": "Seaking — contains the root '콘치'",
+   "targetForm": "콘치",
+   "areaId": "fuchsia_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:퀸",
+   "korean": "니드퀸",
+   "gloss": "Nidoqueen — contains the root '퀸'",
+   "targetForm": "퀸",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:크",
+   "korean": "푸크린",
+   "gloss": "Wigglytuff — contains the root '크'",
+   "targetForm": "크",
+   "areaId": "route_3",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:크랩",
+   "korean": "킹크랩",
+   "gloss": "Kingler — contains the root '크랩'",
+   "targetForm": "크랩",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:크로커다일",
+   "korean": "장크로다일",
+   "gloss": "Feraligatr — contains the root '크로커다일'",
+   "targetForm": "크로커다일",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:키드",
+   "korean": "에레키드",
+   "gloss": "Elekid — contains the root '키드'",
+   "targetForm": "키드",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:키린",
+   "korean": "키링키",
+   "gloss": "Girafarig — contains the root '키린'",
+   "targetForm": "키린",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:킹",
+   "korean": "니드킹",
+   "gloss": "Nidoking — contains the root '킹'",
+   "targetForm": "킹",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:탕",
+   "korean": "탕구리",
+   "gloss": "Cubone — contains the root '탕'",
+   "targetForm": "탕",
+   "areaId": "pokemon_tower",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pokemon_tower",
+   "areasReferenced": [
+    "pokemon_tower"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:토게",
+   "korean": "토게틱",
+   "gloss": "Togetic — contains the root '토게'",
+   "targetForm": "토게",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:통통",
+   "korean": "통통코",
+   "gloss": "Hoppip — contains the root '통통'",
+   "targetForm": "통통",
+   "areaId": "five_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "five_island",
+   "areasReferenced": [
+    "five_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:투",
+   "korean": "피죤투",
+   "gloss": "Pidgeot — contains the root '투'",
+   "targetForm": "투",
+   "areaId": "route_13",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:투구",
+   "korean": "투구",
+   "gloss": "Kabuto — contains the root '투구'",
+   "targetForm": "투구",
+   "areaId": "cinnabar_island",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:트리오",
+   "korean": "닥트리오",
+   "gloss": "Dugtrio — contains the root '트리오'",
+   "targetForm": "트리오",
+   "areaId": "digletts_cave",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "digletts_cave",
+   "areasReferenced": [
+    "digletts_cave",
+    "route_16"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:파이어",
+   "korean": "파이리",
+   "gloss": "Charmander — contains the root '파이어'",
+   "targetForm": "파이어",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:팡",
+   "korean": "콘팡",
+   "gloss": "Venonat — contains the root '팡'",
+   "targetForm": "팡",
+   "areaId": "route_12",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:푸린",
+   "korean": "푸크린",
+   "gloss": "Wigglytuff — contains the root '푸린'",
+   "targetForm": "푸린",
+   "areaId": "route_3",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "rom_mined",
+    "route_3"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:피죤",
+   "korean": "피죤투",
+   "gloss": "Pidgeot — contains the root '피죤'",
+   "targetForm": "피죤",
+   "areaId": "route_13",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:피카츄",
+   "korean": "피츄",
+   "gloss": "Pichu — contains the root '피카츄'",
+   "targetForm": "피카츄",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:해",
+   "korean": "왕눈해",
+   "gloss": "Tentacool — contains the root '해'",
+   "targetForm": "해",
+   "areaId": "pallet_town",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:허리케인",
+   "korean": "마그케인",
+   "gloss": "Quilava — contains the root '허리케인'",
+   "targetForm": "허리케인",
+   "areaId": "rom_mined",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "rom_mined"
+   ]
+  },
+  {
+   "vocabId": "etymology-roots:홍수",
+   "korean": "홍수몬",
+   "gloss": "Hitmonchan — contains the root '홍수'",
+   "targetForm": "홍수",
+   "areaId": "saffron_city",
+   "source": "etymology",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "saffron_city",
+   "areasReferenced": [
+    "saffron_city"
+   ]
+  }
+ ]
 }

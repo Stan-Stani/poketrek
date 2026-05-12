@@ -101,7 +101,10 @@ def main():
                 continue
             if is_phonetic_noise(lemma):
                 continue
-            if is_kana_shape_token(lemma):
+            # kana-shape filter only for nouns. Native Korean 2-syllable
+            # verbs (하다/가다/오다/보다 etc.) happen to share open-syllable
+            # shape with Japanese romanization and would otherwise be rejected.
+            if pos == "noun" and is_kana_shape_token(lemma):
                 continue
             if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                 continue
@@ -137,7 +140,10 @@ def main():
                 continue
             if is_phonetic_noise(lemma):
                 continue
-            if is_kana_shape_token(lemma):
+            # kana-shape filter only for nouns. Native Korean 2-syllable
+            # verbs (하다/가다/오다/보다 etc.) happen to share open-syllable
+            # shape with Japanese romanization and would otherwise be rejected.
+            if pos == "noun" and is_kana_shape_token(lemma):
                 continue
             if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                 continue
@@ -196,7 +202,7 @@ def main():
                     continue
                 if is_phonetic_noise(lemma):
                     continue
-                if is_kana_shape_token(lemma):
+                if pos == "noun" and is_kana_shape_token(lemma):
                     continue
                 if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                     continue
@@ -235,7 +241,7 @@ def main():
                         continue
                     if is_phonetic_noise(lemma):
                         continue
-                    if is_kana_shape_token(lemma):
+                    if pos == "noun" and is_kana_shape_token(lemma):
                         continue
                     if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                         continue
@@ -274,7 +280,7 @@ def main():
                         continue
                     if is_phonetic_noise(lemma):
                         continue
-                    if is_kana_shape_token(lemma):
+                    if pos == "noun" and is_kana_shape_token(lemma):
                         continue
                     if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                         continue
@@ -314,7 +320,7 @@ def main():
                         continue
                     if is_phonetic_noise(lemma):
                         continue
-                    if is_kana_shape_token(lemma):
+                    if pos == "noun" and is_kana_shape_token(lemma):
                         continue
                     if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                         continue
@@ -339,7 +345,7 @@ def main():
                     continue
                 if is_phonetic_noise(lemma):
                     continue
-                if is_kana_shape_token(lemma):
+                if pos == "noun" and is_kana_shape_token(lemma):
                     continue
                 if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                     continue

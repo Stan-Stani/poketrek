@@ -16,7 +16,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[1]"
+   "source": "gSpeciesNames[1]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:이상해풀",
@@ -29,7 +33,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[2]"
+   "source": "gSpeciesNames[2]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:이상해꽃",
@@ -42,7 +50,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[3]"
+   "source": "gSpeciesNames[3]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:파이리",
@@ -55,7 +67,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[4]"
+   "source": "gSpeciesNames[4]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:리자드",
@@ -68,7 +84,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[5]"
+   "source": "gSpeciesNames[5]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:리자몽",
@@ -81,7 +101,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[6]"
+   "source": "gSpeciesNames[6]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:꼬부기",
@@ -94,7 +118,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[7]"
+   "source": "gSpeciesNames[7]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:어니부기",
@@ -107,7 +135,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[8]"
+   "source": "gSpeciesNames[8]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:거북왕",
@@ -120,7 +152,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[9]"
+   "source": "gSpeciesNames[9]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:캐터피",
@@ -133,7 +169,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[10]"
+   "source": "gSpeciesNames[10]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:단데기",
@@ -146,7 +184,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[11]"
+   "source": "gSpeciesNames[11]",
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-species:버터플",
@@ -159,7 +201,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[12]"
+   "source": "gSpeciesNames[12]",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-species:뿔충이",
@@ -172,7 +218,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[13]"
+   "source": "gSpeciesNames[13]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:딱충이",
@@ -185,7 +233,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[14]"
+   "source": "gSpeciesNames[14]",
+   "firstAreaEncountered": "route_2",
+   "areasReferenced": [
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-species:독침붕",
@@ -198,7 +250,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[15]"
+   "source": "gSpeciesNames[15]",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-species:구구",
@@ -211,7 +267,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[16]"
+   "source": "gSpeciesNames[16]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:피죤",
@@ -224,7 +282,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[17]"
+   "source": "gSpeciesNames[17]",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1"
+   ]
   },
   {
    "vocabId": "rom-species:피죤투",
@@ -237,7 +299,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[18]"
+   "source": "gSpeciesNames[18]",
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ]
   },
   {
    "vocabId": "rom-species:꼬렛",
@@ -250,7 +316,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[19]"
+   "source": "gSpeciesNames[19]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:레트라",
@@ -263,7 +331,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[20]"
+   "source": "gSpeciesNames[20]",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1"
+   ]
   },
   {
    "vocabId": "rom-species:깨비참",
@@ -276,7 +348,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[21]"
+   "source": "gSpeciesNames[21]",
+   "firstAreaEncountered": "route_16",
+   "areasReferenced": [
+    "route_16"
+   ]
   },
   {
    "vocabId": "rom-species:깨비드릴조",
@@ -289,7 +365,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[22]"
+   "source": "gSpeciesNames[22]",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-species:아보",
@@ -302,7 +382,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[23]"
+   "source": "gSpeciesNames[23]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:아보크",
@@ -315,7 +399,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[24]"
+   "source": "gSpeciesNames[24]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:피카츄",
@@ -328,7 +414,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[25]"
+   "source": "gSpeciesNames[25]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:라이츄",
@@ -341,7 +429,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[26]"
+   "source": "gSpeciesNames[26]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:모래두지",
@@ -354,7 +444,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[27]"
+   "source": "gSpeciesNames[27]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:고지",
@@ -367,7 +459,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[28]"
+   "source": "gSpeciesNames[28]",
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4"
+   ]
   },
   {
    "vocabId": "rom-species:니드리나",
@@ -380,7 +476,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[30]"
+   "source": "gSpeciesNames[30]",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-species:니드퀸",
@@ -393,7 +493,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[31]"
+   "source": "gSpeciesNames[31]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:니드리노",
@@ -406,7 +508,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[33]"
+   "source": "gSpeciesNames[33]",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-species:니드킹",
@@ -419,7 +525,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[34]"
+   "source": "gSpeciesNames[34]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:삐삐",
@@ -432,7 +540,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[35]"
+   "source": "gSpeciesNames[35]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:픽시",
@@ -445,7 +555,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[36]"
+   "source": "gSpeciesNames[36]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:식스테일",
@@ -458,7 +570,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[37]"
+   "source": "gSpeciesNames[37]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:나인테일",
@@ -471,7 +585,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[38]"
+   "source": "gSpeciesNames[38]",
+   "firstAreaEncountered": "route_7",
+   "areasReferenced": [
+    "route_7"
+   ]
   },
   {
    "vocabId": "rom-species:푸린",
@@ -484,7 +602,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[39]"
+   "source": "gSpeciesNames[39]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:푸크린",
@@ -497,7 +617,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[40]"
+   "source": "gSpeciesNames[40]",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-species:주뱃",
@@ -510,7 +634,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[41]"
+   "source": "gSpeciesNames[41]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:골뱃",
@@ -523,7 +649,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[42]"
+   "source": "gSpeciesNames[42]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:뚜벅쵸",
@@ -536,7 +664,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[43]"
+   "source": "gSpeciesNames[43]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:냄새꼬",
@@ -549,7 +679,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[44]"
+   "source": "gSpeciesNames[44]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:라플레시아",
@@ -562,7 +694,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[45]"
+   "source": "gSpeciesNames[45]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:파라스",
@@ -575,7 +709,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[46]"
+   "source": "gSpeciesNames[46]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:파라섹트",
@@ -588,7 +724,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[47]"
+   "source": "gSpeciesNames[47]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:콘팡",
@@ -601,7 +739,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[48]"
+   "source": "gSpeciesNames[48]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:도나리",
@@ -614,7 +754,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[49]"
+   "source": "gSpeciesNames[49]",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-species:디그다",
@@ -627,7 +771,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[50]"
+   "source": "gSpeciesNames[50]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:닥트리오",
@@ -640,7 +786,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[51]"
+   "source": "gSpeciesNames[51]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:나옹",
@@ -653,7 +801,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[52]"
+   "source": "gSpeciesNames[52]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:페르시온",
@@ -666,7 +816,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[53]"
+   "source": "gSpeciesNames[53]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:고라파덕",
@@ -679,7 +833,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[54]"
+   "source": "gSpeciesNames[54]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:골덕",
@@ -692,7 +850,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[55]"
+   "source": "gSpeciesNames[55]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:망키",
@@ -705,7 +865,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[56]"
+   "source": "gSpeciesNames[56]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:성원숭",
@@ -718,7 +880,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[57]"
+   "source": "gSpeciesNames[57]",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-species:가디",
@@ -731,7 +897,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[58]"
+   "source": "gSpeciesNames[58]",
+   "firstAreaEncountered": "route_23",
+   "areasReferenced": [
+    "route_23"
+   ]
   },
   {
    "vocabId": "rom-species:윈디",
@@ -744,7 +914,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[59]"
+   "source": "gSpeciesNames[59]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:발챙이",
@@ -757,7 +929,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[60]"
+   "source": "gSpeciesNames[60]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:슈륙챙이",
@@ -770,7 +944,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[61]"
+   "source": "gSpeciesNames[61]",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species:강챙이",
@@ -783,7 +961,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[62]"
+   "source": "gSpeciesNames[62]",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species:캐이시",
@@ -796,7 +978,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[63]"
+   "source": "gSpeciesNames[63]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:윤겔라",
@@ -809,7 +993,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[64]"
+   "source": "gSpeciesNames[64]",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-species:후딘",
@@ -822,7 +1010,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[65]"
+   "source": "gSpeciesNames[65]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:알통몬",
@@ -835,7 +1025,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[66]"
+   "source": "gSpeciesNames[66]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:근육몬",
@@ -848,7 +1040,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[67]"
+   "source": "gSpeciesNames[67]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:괴력몬",
@@ -861,7 +1055,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[68]"
+   "source": "gSpeciesNames[68]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:모다피",
@@ -874,7 +1070,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[69]"
+   "source": "gSpeciesNames[69]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:우츠동",
@@ -887,7 +1085,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[70]"
+   "source": "gSpeciesNames[70]",
+   "firstAreaEncountered": "route_24",
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-species:우츠보트",
@@ -900,7 +1102,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[71]"
+   "source": "gSpeciesNames[71]",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-species:왕눈해",
@@ -913,7 +1119,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[72]"
+   "source": "gSpeciesNames[72]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:독파리",
@@ -926,7 +1134,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[73]"
+   "source": "gSpeciesNames[73]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:꼬마돌",
@@ -939,7 +1151,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[74]"
+   "source": "gSpeciesNames[74]",
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-species:데구리",
@@ -952,7 +1168,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[75]"
+   "source": "gSpeciesNames[75]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:딱구리",
@@ -965,7 +1185,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[76]"
+   "source": "gSpeciesNames[76]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:포니타",
@@ -978,7 +1202,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[77]"
+   "source": "gSpeciesNames[77]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:날쌩마",
@@ -991,7 +1217,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[78]"
+   "source": "gSpeciesNames[78]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:야돈",
@@ -1004,7 +1232,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[79]"
+   "source": "gSpeciesNames[79]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:야도란",
@@ -1017,7 +1247,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[80]"
+   "source": "gSpeciesNames[80]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:코일",
@@ -1030,7 +1264,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[81]"
+   "source": "gSpeciesNames[81]",
+   "firstAreaEncountered": "cinnabar_island",
+   "areasReferenced": [
+    "cinnabar_island"
+   ]
   },
   {
    "vocabId": "rom-species:레어코일",
@@ -1043,7 +1281,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[82]"
+   "source": "gSpeciesNames[82]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:파오리",
@@ -1056,7 +1296,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[83]"
+   "source": "gSpeciesNames[83]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:두두",
@@ -1069,7 +1311,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[84]"
+   "source": "gSpeciesNames[84]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:두트리오",
@@ -1082,7 +1326,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[85]"
+   "source": "gSpeciesNames[85]",
+   "firstAreaEncountered": "route_16",
+   "areasReferenced": [
+    "route_16"
+   ]
   },
   {
    "vocabId": "rom-species:쥬쥬",
@@ -1095,7 +1343,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[86]"
+   "source": "gSpeciesNames[86]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:쥬레곤",
@@ -1108,7 +1358,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[87]"
+   "source": "gSpeciesNames[87]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:질퍽이",
@@ -1121,7 +1373,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[88]"
+   "source": "gSpeciesNames[88]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:질뻐기",
@@ -1134,7 +1388,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[89]"
+   "source": "gSpeciesNames[89]",
+   "firstAreaEncountered": "celadon_city",
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-species:셀러",
@@ -1147,7 +1405,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[90]"
+   "source": "gSpeciesNames[90]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:파르셀",
@@ -1160,7 +1420,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[91]"
+   "source": "gSpeciesNames[91]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:고오스",
@@ -1173,7 +1435,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[92]"
+   "source": "gSpeciesNames[92]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:고우스트",
@@ -1186,7 +1450,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[93]"
+   "source": "gSpeciesNames[93]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:팬텀",
@@ -1199,7 +1465,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[94]"
+   "source": "gSpeciesNames[94]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:롱스톤",
@@ -1212,7 +1480,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[95]"
+   "source": "gSpeciesNames[95]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:슬리프",
@@ -1225,7 +1495,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[96]"
+   "source": "gSpeciesNames[96]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:슬리퍼",
@@ -1238,7 +1512,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[97]"
+   "source": "gSpeciesNames[97]",
+   "firstAreaEncountered": "route_11",
+   "areasReferenced": [
+    "route_11"
+   ]
   },
   {
    "vocabId": "rom-species:크랩",
@@ -1251,7 +1529,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[98]"
+   "source": "gSpeciesNames[98]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:킹크랩",
@@ -1264,7 +1544,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[99]"
+   "source": "gSpeciesNames[99]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:찌리리공",
@@ -1277,7 +1561,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[100]"
+   "source": "gSpeciesNames[100]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:붐볼",
@@ -1290,7 +1578,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[101]"
+   "source": "gSpeciesNames[101]",
+   "firstAreaEncountered": "route_10",
+   "areasReferenced": [
+    "route_10"
+   ]
   },
   {
    "vocabId": "rom-species:아라리",
@@ -1303,7 +1595,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[102]"
+   "source": "gSpeciesNames[102]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:나시",
@@ -1316,7 +1610,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[103]"
+   "source": "gSpeciesNames[103]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:탕구리",
@@ -1329,7 +1625,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[104]"
+   "source": "gSpeciesNames[104]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:텅구리",
@@ -1342,7 +1640,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[105]"
+   "source": "gSpeciesNames[105]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:시라소몬",
@@ -1355,7 +1657,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[106]"
+   "source": "gSpeciesNames[106]",
+   "firstAreaEncountered": "saffron_city",
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-species:홍수몬",
@@ -1368,7 +1674,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[107]"
+   "source": "gSpeciesNames[107]",
+   "firstAreaEncountered": "saffron_city",
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-species:내루미",
@@ -1381,7 +1691,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[108]"
+   "source": "gSpeciesNames[108]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:또가스",
@@ -1394,7 +1706,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[109]"
+   "source": "gSpeciesNames[109]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:또도가스",
@@ -1407,7 +1721,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[110]"
+   "source": "gSpeciesNames[110]",
+   "firstAreaEncountered": "celadon_city",
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-species:뿔카노",
@@ -1420,7 +1738,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[111]"
+   "source": "gSpeciesNames[111]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:코뿌리",
@@ -1433,7 +1753,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[112]"
+   "source": "gSpeciesNames[112]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:럭키",
@@ -1446,7 +1768,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[113]"
+   "source": "gSpeciesNames[113]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:덩쿠리",
@@ -1459,7 +1783,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[114]"
+   "source": "gSpeciesNames[114]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:캥카",
@@ -1472,7 +1798,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[115]"
+   "source": "gSpeciesNames[115]",
+   "firstAreaEncountered": "route_21",
+   "areasReferenced": [
+    "route_21"
+   ]
   },
   {
    "vocabId": "rom-species:쏘드라",
@@ -1485,7 +1815,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[116]"
+   "source": "gSpeciesNames[116]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:시드라",
@@ -1498,7 +1830,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[117]"
+   "source": "gSpeciesNames[117]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:콘치",
@@ -1511,7 +1847,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[118]"
+   "source": "gSpeciesNames[118]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:왕콘치",
@@ -1524,7 +1862,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[119]"
+   "source": "gSpeciesNames[119]",
+   "firstAreaEncountered": "viridian_city",
+   "areasReferenced": [
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-species:별가사리",
@@ -1537,7 +1879,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[120]"
+   "source": "gSpeciesNames[120]",
+   "firstAreaEncountered": "fuchsia_city",
+   "areasReferenced": [
+    "fuchsia_city"
+   ]
   },
   {
    "vocabId": "rom-species:아쿠스타",
@@ -1550,7 +1896,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[121]"
+   "source": "gSpeciesNames[121]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:마임맨",
@@ -1563,7 +1913,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[122]"
+   "source": "gSpeciesNames[122]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:스라크",
@@ -1576,7 +1928,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[123]"
+   "source": "gSpeciesNames[123]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:루주라",
@@ -1589,7 +1943,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[124]"
+   "source": "gSpeciesNames[124]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:에레브",
@@ -1602,7 +1958,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[125]"
+   "source": "gSpeciesNames[125]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마그마",
@@ -1615,7 +1973,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[126]"
+   "source": "gSpeciesNames[126]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:쁘사이저",
@@ -1628,7 +1988,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[127]"
+   "source": "gSpeciesNames[127]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:켄타로스",
@@ -1641,7 +2003,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[128]"
+   "source": "gSpeciesNames[128]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:잉어킹",
@@ -1654,7 +2018,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[129]"
+   "source": "gSpeciesNames[129]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:갸라도스",
@@ -1667,7 +2033,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[130]"
+   "source": "gSpeciesNames[130]",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-species:라프라스",
@@ -1680,7 +2050,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[131]"
+   "source": "gSpeciesNames[131]",
+   "firstAreaEncountered": "silph_co",
+   "areasReferenced": [
+    "silph_co"
+   ]
   },
   {
    "vocabId": "rom-species:메타몽",
@@ -1693,7 +2067,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[132]"
+   "source": "gSpeciesNames[132]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:이브이",
@@ -1706,7 +2082,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[133]"
+   "source": "gSpeciesNames[133]",
+   "firstAreaEncountered": "route_13",
+   "areasReferenced": [
+    "route_13"
+   ]
   },
   {
    "vocabId": "rom-species:샤미드",
@@ -1719,7 +2099,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[134]"
+   "source": "gSpeciesNames[134]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:쥬피썬더",
@@ -1732,7 +2114,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[135]"
+   "source": "gSpeciesNames[135]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:부스터",
@@ -1745,7 +2129,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[136]"
+   "source": "gSpeciesNames[136]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:폴리곤",
@@ -1758,7 +2144,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[137]"
+   "source": "gSpeciesNames[137]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:암나이트",
@@ -1771,7 +2159,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[138]"
+   "source": "gSpeciesNames[138]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:암스타",
@@ -1784,7 +2174,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[139]"
+   "source": "gSpeciesNames[139]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:투구",
@@ -1797,7 +2189,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[140]"
+   "source": "gSpeciesNames[140]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:투구푸스",
@@ -1810,7 +2204,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[141]"
+   "source": "gSpeciesNames[141]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:프테라",
@@ -1823,7 +2219,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[142]"
+   "source": "gSpeciesNames[142]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:잠만보",
@@ -1836,7 +2236,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[143]"
+   "source": "gSpeciesNames[143]",
+   "firstAreaEncountered": "route_12",
+   "areasReferenced": [
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-species:프리져",
@@ -1849,7 +2253,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[144]"
+   "source": "gSpeciesNames[144]",
+   "firstAreaEncountered": "seafoam_islands",
+   "areasReferenced": [
+    "seafoam_islands"
+   ]
   },
   {
    "vocabId": "rom-species:썬더",
@@ -1862,7 +2270,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[145]"
+   "source": "gSpeciesNames[145]",
+   "firstAreaEncountered": "power_plant",
+   "areasReferenced": [
+    "power_plant"
+   ]
   },
   {
    "vocabId": "rom-species:파이어",
@@ -1875,7 +2287,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[146]"
+   "source": "gSpeciesNames[146]",
+   "firstAreaEncountered": "route_23",
+   "areasReferenced": [
+    "route_23"
+   ]
   },
   {
    "vocabId": "rom-species:미뇽",
@@ -1888,7 +2304,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[147]"
+   "source": "gSpeciesNames[147]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:신뇽",
@@ -1901,7 +2319,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[148]"
+   "source": "gSpeciesNames[148]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:망나뇽",
@@ -1914,7 +2334,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[149]"
+   "source": "gSpeciesNames[149]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:뮤츠",
@@ -1927,7 +2349,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[150]"
+   "source": "gSpeciesNames[150]",
+   "firstAreaEncountered": "cerulean_cave",
+   "areasReferenced": [
+    "cerulean_cave"
+   ]
   },
   {
    "vocabId": "rom-species:치코리타",
@@ -1940,7 +2366,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[152]"
+   "source": "gSpeciesNames[152]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:베이리프",
@@ -1953,7 +2381,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[153]"
+   "source": "gSpeciesNames[153]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:메가니움",
@@ -1966,7 +2396,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[154]"
+   "source": "gSpeciesNames[154]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:브케인",
@@ -1979,7 +2411,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[155]"
+   "source": "gSpeciesNames[155]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마그케인",
@@ -1992,7 +2426,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[156]"
+   "source": "gSpeciesNames[156]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:블레이범",
@@ -2005,7 +2441,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[157]"
+   "source": "gSpeciesNames[157]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:리아코",
@@ -2018,7 +2456,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[158]"
+   "source": "gSpeciesNames[158]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:엘리게이",
@@ -2031,7 +2471,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[159]"
+   "source": "gSpeciesNames[159]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:장크로다일",
@@ -2044,7 +2486,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[160]"
+   "source": "gSpeciesNames[160]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:꼬리선",
@@ -2057,7 +2501,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[161]"
+   "source": "gSpeciesNames[161]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:다꼬리",
@@ -2070,7 +2516,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[162]"
+   "source": "gSpeciesNames[162]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:부우부",
@@ -2083,7 +2531,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[163]"
+   "source": "gSpeciesNames[163]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:야부엉",
@@ -2096,7 +2546,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[164]"
+   "source": "gSpeciesNames[164]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:레디바",
@@ -2109,7 +2561,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[165]"
+   "source": "gSpeciesNames[165]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:레디안",
@@ -2122,7 +2576,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[166]"
+   "source": "gSpeciesNames[166]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:페이검",
@@ -2135,7 +2591,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[167]"
+   "source": "gSpeciesNames[167]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:아리아도스",
@@ -2148,7 +2606,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[168]"
+   "source": "gSpeciesNames[168]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:크로뱃",
@@ -2161,7 +2621,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[169]"
+   "source": "gSpeciesNames[169]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:초라기",
@@ -2174,7 +2636,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[170]"
+   "source": "gSpeciesNames[170]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:랜턴",
@@ -2187,7 +2651,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[171]"
+   "source": "gSpeciesNames[171]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:피츄",
@@ -2200,7 +2666,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[172]"
+   "source": "gSpeciesNames[172]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:푸푸린",
@@ -2213,7 +2681,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[174]"
+   "source": "gSpeciesNames[174]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:토게피",
@@ -2226,7 +2696,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[175]"
+   "source": "gSpeciesNames[175]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:토게틱",
@@ -2239,7 +2711,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[176]"
+   "source": "gSpeciesNames[176]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:네이티",
@@ -2252,7 +2726,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[177]"
+   "source": "gSpeciesNames[177]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:네이티오",
@@ -2265,7 +2741,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[178]"
+   "source": "gSpeciesNames[178]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:메리프",
@@ -2278,7 +2756,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[179]"
+   "source": "gSpeciesNames[179]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:보송송",
@@ -2291,7 +2771,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[180]"
+   "source": "gSpeciesNames[180]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:전룡",
@@ -2304,7 +2786,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[181]"
+   "source": "gSpeciesNames[181]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:아르코",
@@ -2317,7 +2801,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[182]"
+   "source": "gSpeciesNames[182]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마릴",
@@ -2330,7 +2816,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[183]"
+   "source": "gSpeciesNames[183]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마릴리",
@@ -2343,7 +2831,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[184]"
+   "source": "gSpeciesNames[184]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:꼬지모",
@@ -2356,7 +2846,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[185]"
+   "source": "gSpeciesNames[185]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:왕구리",
@@ -2369,7 +2861,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[186]"
+   "source": "gSpeciesNames[186]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:통통코",
@@ -2382,7 +2876,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[187]"
+   "source": "gSpeciesNames[187]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:두코",
@@ -2395,7 +2891,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[188]"
+   "source": "gSpeciesNames[188]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:솜솜코",
@@ -2408,7 +2906,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[189]"
+   "source": "gSpeciesNames[189]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:에이팜",
@@ -2421,7 +2921,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[190]"
+   "source": "gSpeciesNames[190]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:해너츠",
@@ -2434,7 +2936,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[191]"
+   "source": "gSpeciesNames[191]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:해루미",
@@ -2447,7 +2951,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[192]"
+   "source": "gSpeciesNames[192]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:왕자리",
@@ -2460,7 +2966,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[193]"
+   "source": "gSpeciesNames[193]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:우파",
@@ -2473,7 +2981,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[194]"
+   "source": "gSpeciesNames[194]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:누오",
@@ -2486,7 +2996,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[195]"
+   "source": "gSpeciesNames[195]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:에브이",
@@ -2499,7 +3011,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[196]"
+   "source": "gSpeciesNames[196]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:블래키",
@@ -2512,7 +3026,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[197]"
+   "source": "gSpeciesNames[197]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:니로우",
@@ -2525,7 +3041,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[198]"
+   "source": "gSpeciesNames[198]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:야도킹",
@@ -2538,7 +3056,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[199]"
+   "source": "gSpeciesNames[199]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:무우마",
@@ -2551,7 +3071,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[200]"
+   "source": "gSpeciesNames[200]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:안농",
@@ -2564,7 +3086,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[201]"
+   "source": "gSpeciesNames[201]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마자용",
@@ -2577,7 +3101,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[202]"
+   "source": "gSpeciesNames[202]",
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-species:키링키",
@@ -2590,7 +3118,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[203]"
+   "source": "gSpeciesNames[203]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:피콘",
@@ -2603,7 +3133,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[204]"
+   "source": "gSpeciesNames[204]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:쏘콘",
@@ -2616,7 +3148,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[205]"
+   "source": "gSpeciesNames[205]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:노고치",
@@ -2629,7 +3163,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[206]"
+   "source": "gSpeciesNames[206]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:글라이거",
@@ -2642,7 +3178,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[207]"
+   "source": "gSpeciesNames[207]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:강철톤",
@@ -2655,7 +3193,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[208]"
+   "source": "gSpeciesNames[208]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:블루",
@@ -2668,7 +3208,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[209]"
+   "source": "gSpeciesNames[209]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:그랑블루",
@@ -2681,7 +3223,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[210]"
+   "source": "gSpeciesNames[210]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:침바루",
@@ -2694,7 +3238,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[211]"
+   "source": "gSpeciesNames[211]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:핫삼",
@@ -2707,7 +3253,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[212]"
+   "source": "gSpeciesNames[212]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:단단지",
@@ -2720,7 +3268,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[213]"
+   "source": "gSpeciesNames[213]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:헤라크로스",
@@ -2733,7 +3283,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[214]"
+   "source": "gSpeciesNames[214]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:포푸니",
@@ -2746,7 +3298,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[215]"
+   "source": "gSpeciesNames[215]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:깜지곰",
@@ -2759,7 +3313,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[216]"
+   "source": "gSpeciesNames[216]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:링곰",
@@ -2772,7 +3328,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[217]"
+   "source": "gSpeciesNames[217]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마그마그",
@@ -2785,7 +3343,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[218]"
+   "source": "gSpeciesNames[218]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마그카르고",
@@ -2798,7 +3358,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[219]"
+   "source": "gSpeciesNames[219]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:꾸꾸리",
@@ -2811,7 +3373,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[220]"
+   "source": "gSpeciesNames[220]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:메꾸리",
@@ -2824,7 +3388,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[221]"
+   "source": "gSpeciesNames[221]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:코산호",
@@ -2837,7 +3403,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[222]"
+   "source": "gSpeciesNames[222]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:총어",
@@ -2850,7 +3418,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[223]"
+   "source": "gSpeciesNames[223]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:대포무노",
@@ -2863,7 +3433,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[224]"
+   "source": "gSpeciesNames[224]",
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-species:딜리버드",
@@ -2876,7 +3450,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[225]"
+   "source": "gSpeciesNames[225]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:만타인",
@@ -2889,7 +3465,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[226]"
+   "source": "gSpeciesNames[226]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:무장조",
@@ -2902,7 +3480,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[227]"
+   "source": "gSpeciesNames[227]",
+   "firstAreaEncountered": "mt_moon",
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-species:델빌",
@@ -2915,7 +3497,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[228]"
+   "source": "gSpeciesNames[228]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:헬가",
@@ -2928,7 +3512,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[229]"
+   "source": "gSpeciesNames[229]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:킹드라",
@@ -2941,7 +3527,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[230]"
+   "source": "gSpeciesNames[230]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:코코리",
@@ -2954,7 +3542,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[231]"
+   "source": "gSpeciesNames[231]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:코리갑",
@@ -2967,7 +3557,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[232]"
+   "source": "gSpeciesNames[232]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:노라키",
@@ -2980,7 +3574,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[234]"
+   "source": "gSpeciesNames[234]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:루브도",
@@ -2993,7 +3589,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[235]"
+   "source": "gSpeciesNames[235]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:배루키",
@@ -3006,7 +3604,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[236]"
+   "source": "gSpeciesNames[236]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:카포에라",
@@ -3019,7 +3619,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[237]"
+   "source": "gSpeciesNames[237]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:뽀뽀라",
@@ -3032,7 +3634,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[238]"
+   "source": "gSpeciesNames[238]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:에레키드",
@@ -3045,7 +3649,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[239]"
+   "source": "gSpeciesNames[239]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마그비",
@@ -3058,7 +3664,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[240]"
+   "source": "gSpeciesNames[240]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:밀탱크",
@@ -3071,7 +3679,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[241]"
+   "source": "gSpeciesNames[241]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:해피너스",
@@ -3084,7 +3694,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[242]"
+   "source": "gSpeciesNames[242]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:라이코",
@@ -3097,7 +3709,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[243]"
+   "source": "gSpeciesNames[243]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:앤테이",
@@ -3110,7 +3724,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[244]"
+   "source": "gSpeciesNames[244]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:스이쿤",
@@ -3123,7 +3739,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[245]"
+   "source": "gSpeciesNames[245]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:애버라스",
@@ -3136,7 +3754,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[246]"
+   "source": "gSpeciesNames[246]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:데기라스",
@@ -3149,7 +3769,11 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[247]"
+   "source": "gSpeciesNames[247]",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-species:마기라스",
@@ -3162,7 +3786,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[248]"
+   "source": "gSpeciesNames[248]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:루기아",
@@ -3175,7 +3801,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[249]"
+   "source": "gSpeciesNames[249]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:칠색조",
@@ -3188,7 +3816,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[250]"
+   "source": "gSpeciesNames[250]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:세레비",
@@ -3201,7 +3831,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[251]"
+   "source": "gSpeciesNames[251]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:나무지기",
@@ -3214,7 +3846,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[277]"
+   "source": "gSpeciesNames[277]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:나무돌이",
@@ -3227,7 +3861,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[278]"
+   "source": "gSpeciesNames[278]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:나무킹",
@@ -3240,7 +3876,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[279]"
+   "source": "gSpeciesNames[279]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:아차모",
@@ -3253,7 +3891,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[280]"
+   "source": "gSpeciesNames[280]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:영치코",
@@ -3266,7 +3906,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[281]"
+   "source": "gSpeciesNames[281]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:번치코",
@@ -3279,7 +3921,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[282]"
+   "source": "gSpeciesNames[282]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:물짱이",
@@ -3292,7 +3936,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[283]"
+   "source": "gSpeciesNames[283]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:대짱이",
@@ -3305,7 +3951,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[285]"
+   "source": "gSpeciesNames[285]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:그라에나",
@@ -3318,7 +3966,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[287]"
+   "source": "gSpeciesNames[287]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:지그제구리",
@@ -3331,7 +3981,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[288]"
+   "source": "gSpeciesNames[288]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:직구리",
@@ -3344,7 +3996,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[289]"
+   "source": "gSpeciesNames[289]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:개무소",
@@ -3357,7 +4011,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[290]"
+   "source": "gSpeciesNames[290]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:실쿤",
@@ -3370,7 +4026,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[291]"
+   "source": "gSpeciesNames[291]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:뷰티플라이",
@@ -3383,7 +4041,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[292]"
+   "source": "gSpeciesNames[292]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:카스쿤",
@@ -3396,7 +4056,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[293]"
+   "source": "gSpeciesNames[293]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:독케일",
@@ -3409,7 +4071,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[294]"
+   "source": "gSpeciesNames[294]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:연꽃몬",
@@ -3422,7 +4086,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[295]"
+   "source": "gSpeciesNames[295]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:로토스",
@@ -3435,7 +4101,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[296]"
+   "source": "gSpeciesNames[296]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:로파파",
@@ -3448,7 +4116,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[297]"
+   "source": "gSpeciesNames[297]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:도토링",
@@ -3461,7 +4131,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[298]"
+   "source": "gSpeciesNames[298]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:잎새코",
@@ -3474,7 +4146,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[299]"
+   "source": "gSpeciesNames[299]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:다탱구",
@@ -3487,7 +4161,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[300]"
+   "source": "gSpeciesNames[300]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:토중몬",
@@ -3500,7 +4176,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[301]"
+   "source": "gSpeciesNames[301]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:아이스크",
@@ -3513,7 +4191,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[302]"
+   "source": "gSpeciesNames[302]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:껍질몬",
@@ -3526,7 +4206,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[303]"
+   "source": "gSpeciesNames[303]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:테일로",
@@ -3539,7 +4221,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[304]"
+   "source": "gSpeciesNames[304]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:버섯꼬",
@@ -3552,7 +4236,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[306]"
+   "source": "gSpeciesNames[306]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:버섯모",
@@ -3565,7 +4251,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[307]"
+   "source": "gSpeciesNames[307]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:얼루기",
@@ -3578,7 +4266,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[308]"
+   "source": "gSpeciesNames[308]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:갈모매",
@@ -3591,7 +4281,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[309]"
+   "source": "gSpeciesNames[309]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:패리퍼",
@@ -3604,7 +4296,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[310]"
+   "source": "gSpeciesNames[310]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:비구술",
@@ -3617,7 +4311,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[311]"
+   "source": "gSpeciesNames[311]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:비나방",
@@ -3630,7 +4326,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[312]"
+   "source": "gSpeciesNames[312]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:고래왕자",
@@ -3643,7 +4341,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[313]"
+   "source": "gSpeciesNames[313]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:고래왕",
@@ -3656,7 +4356,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[314]"
+   "source": "gSpeciesNames[314]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:에나비",
@@ -3669,7 +4371,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[315]"
+   "source": "gSpeciesNames[315]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:델케티",
@@ -3682,7 +4386,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[316]"
+   "source": "gSpeciesNames[316]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:오똑군",
@@ -3695,7 +4401,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[318]"
+   "source": "gSpeciesNames[318]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:점토도리",
@@ -3708,7 +4416,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[319]"
+   "source": "gSpeciesNames[319]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:코코파스",
@@ -3721,7 +4431,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[320]"
+   "source": "gSpeciesNames[320]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:코터스",
@@ -3734,7 +4446,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[321]"
+   "source": "gSpeciesNames[321]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:깜까미",
@@ -3747,7 +4461,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[322]"
+   "source": "gSpeciesNames[322]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:미꾸리",
@@ -3760,7 +4476,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[323]"
+   "source": "gSpeciesNames[323]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:사랑동이",
@@ -3773,7 +4491,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[325]"
+   "source": "gSpeciesNames[325]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:가재군",
@@ -3786,7 +4506,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[326]"
+   "source": "gSpeciesNames[326]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:가재장군",
@@ -3799,7 +4521,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[327]"
+   "source": "gSpeciesNames[327]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:빈티나",
@@ -3812,7 +4536,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[328]"
+   "source": "gSpeciesNames[328]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:밀로틱",
@@ -3825,7 +4551,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[329]"
+   "source": "gSpeciesNames[329]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:샤프니아",
@@ -3838,7 +4566,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[330]"
+   "source": "gSpeciesNames[330]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:샤크니아",
@@ -3851,7 +4581,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[331]"
+   "source": "gSpeciesNames[331]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:톱치",
@@ -3864,7 +4596,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[332]"
+   "source": "gSpeciesNames[332]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:비브라바",
@@ -3877,7 +4611,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[333]"
+   "source": "gSpeciesNames[333]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:플라이곤",
@@ -3890,7 +4626,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[334]"
+   "source": "gSpeciesNames[334]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마크탕",
@@ -3903,7 +4641,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[335]"
+   "source": "gSpeciesNames[335]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:하리뭉",
@@ -3916,7 +4656,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[336]"
+   "source": "gSpeciesNames[336]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:썬더라이",
@@ -3929,7 +4671,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[337]"
+   "source": "gSpeciesNames[337]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:썬더볼트",
@@ -3942,7 +4686,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[338]"
+   "source": "gSpeciesNames[338]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:둔타",
@@ -3955,7 +4701,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[339]"
+   "source": "gSpeciesNames[339]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:폭타",
@@ -3968,7 +4716,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[340]"
+   "source": "gSpeciesNames[340]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:대굴레오",
@@ -3981,7 +4731,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[341]"
+   "source": "gSpeciesNames[341]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:씨레오",
@@ -3994,7 +4746,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[342]"
+   "source": "gSpeciesNames[342]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:씨카이저",
@@ -4007,7 +4761,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[343]"
+   "source": "gSpeciesNames[343]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:선인왕",
@@ -4020,7 +4776,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[344]"
+   "source": "gSpeciesNames[344]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:밤선인",
@@ -4033,7 +4791,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[345]"
+   "source": "gSpeciesNames[345]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:눈꼬마",
@@ -4046,7 +4806,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[346]"
+   "source": "gSpeciesNames[346]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:얼음귀신",
@@ -4059,7 +4821,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[347]"
+   "source": "gSpeciesNames[347]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:루나톤",
@@ -4072,7 +4836,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[348]"
+   "source": "gSpeciesNames[348]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:솔록",
@@ -4085,7 +4851,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[349]"
+   "source": "gSpeciesNames[349]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:루리리",
@@ -4098,7 +4866,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[350]"
+   "source": "gSpeciesNames[350]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:피그점프",
@@ -4111,7 +4881,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[351]"
+   "source": "gSpeciesNames[351]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:피그킹",
@@ -4124,7 +4896,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[352]"
+   "source": "gSpeciesNames[352]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:플러시",
@@ -4137,7 +4911,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[353]"
+   "source": "gSpeciesNames[353]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마이농",
@@ -4150,7 +4926,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[354]"
+   "source": "gSpeciesNames[354]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:입치트",
@@ -4163,7 +4941,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[355]"
+   "source": "gSpeciesNames[355]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:요가랑",
@@ -4176,7 +4956,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[356]"
+   "source": "gSpeciesNames[356]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:요가램",
@@ -4189,7 +4971,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[357]"
+   "source": "gSpeciesNames[357]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:파비코",
@@ -4202,7 +4986,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[358]"
+   "source": "gSpeciesNames[358]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:파비코리",
@@ -4215,7 +5001,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[359]"
+   "source": "gSpeciesNames[359]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:마자",
@@ -4228,7 +5016,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[360]"
+   "source": "gSpeciesNames[360]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:해골몽",
@@ -4241,7 +5031,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[361]"
+   "source": "gSpeciesNames[361]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:미라몽",
@@ -4254,7 +5046,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[362]"
+   "source": "gSpeciesNames[362]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:로젤리아",
@@ -4267,7 +5061,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[363]"
+   "source": "gSpeciesNames[363]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:게을로",
@@ -4280,7 +5076,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[364]"
+   "source": "gSpeciesNames[364]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:발바로",
@@ -4293,7 +5091,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[365]"
+   "source": "gSpeciesNames[365]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:게을킹",
@@ -4306,7 +5106,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[366]"
+   "source": "gSpeciesNames[366]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:꿀꺽몬",
@@ -4319,7 +5121,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[368]"
+   "source": "gSpeciesNames[368]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:트로피우스",
@@ -4332,7 +5136,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[369]"
+   "source": "gSpeciesNames[369]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:소곤룡",
@@ -4345,7 +5151,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[370]"
+   "source": "gSpeciesNames[370]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:노공룡",
@@ -4358,7 +5166,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[371]"
+   "source": "gSpeciesNames[371]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:폭음룡",
@@ -4371,7 +5181,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[372]"
+   "source": "gSpeciesNames[372]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:진주몽",
@@ -4384,7 +5196,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[373]"
+   "source": "gSpeciesNames[373]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:분홍장이",
@@ -4397,7 +5211,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[375]"
+   "source": "gSpeciesNames[375]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:세비퍼",
@@ -4410,7 +5226,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[379]"
+   "source": "gSpeciesNames[379]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:시라칸",
@@ -4423,7 +5241,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[381]"
+   "source": "gSpeciesNames[381]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:가보리",
@@ -4436,7 +5256,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[382]"
+   "source": "gSpeciesNames[382]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:갱도라",
@@ -4449,7 +5271,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[383]"
+   "source": "gSpeciesNames[383]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:보스로라",
@@ -4462,7 +5286,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[384]"
+   "source": "gSpeciesNames[384]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:캐스폼",
@@ -4475,7 +5301,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[385]"
+   "source": "gSpeciesNames[385]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:볼비트",
@@ -4488,7 +5316,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[386]"
+   "source": "gSpeciesNames[386]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:네오비트",
@@ -4501,7 +5331,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[387]"
+   "source": "gSpeciesNames[387]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:릴링",
@@ -4514,7 +5346,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[388]"
+   "source": "gSpeciesNames[388]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:릴리요",
@@ -4527,7 +5361,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[389]"
+   "source": "gSpeciesNames[389]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:아말도",
@@ -4540,7 +5376,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[391]"
+   "source": "gSpeciesNames[391]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:랄토스",
@@ -4553,7 +5391,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[392]"
+   "source": "gSpeciesNames[392]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:킬리아",
@@ -4566,7 +5406,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[393]"
+   "source": "gSpeciesNames[393]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:가디안",
@@ -4579,7 +5421,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[394]"
+   "source": "gSpeciesNames[394]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:아공이",
@@ -4592,7 +5436,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[395]"
+   "source": "gSpeciesNames[395]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:보만다",
@@ -4605,7 +5451,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[397]"
+   "source": "gSpeciesNames[397]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:메탕",
@@ -4618,7 +5466,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[398]"
+   "source": "gSpeciesNames[398]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:메탕구",
@@ -4631,7 +5481,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[399]"
+   "source": "gSpeciesNames[399]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:메타그로스",
@@ -4644,7 +5496,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[400]"
+   "source": "gSpeciesNames[400]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:레지락",
@@ -4657,7 +5511,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[401]"
+   "source": "gSpeciesNames[401]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:레지아이스",
@@ -4670,7 +5526,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[402]"
+   "source": "gSpeciesNames[402]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:가이오가",
@@ -4683,7 +5541,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[404]"
+   "source": "gSpeciesNames[404]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:그란돈",
@@ -4696,7 +5556,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[405]"
+   "source": "gSpeciesNames[405]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:라티아스",
@@ -4709,7 +5571,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[407]"
+   "source": "gSpeciesNames[407]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:라티오스",
@@ -4722,7 +5586,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[408]"
+   "source": "gSpeciesNames[408]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:지라치",
@@ -4735,7 +5601,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[409]"
+   "source": "gSpeciesNames[409]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:테오키스",
@@ -4748,7 +5616,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[410]"
+   "source": "gSpeciesNames[410]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   },
   {
    "vocabId": "rom-species:치렁",
@@ -4761,7 +5631,9 @@
     "pokemon_species"
    ],
    "primarySourceType": "pokemon_species",
-   "source": "gSpeciesNames[411]"
+   "source": "gSpeciesNames[411]",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": []
   }
  ]
 }
