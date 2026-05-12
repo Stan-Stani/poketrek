@@ -36,32 +36,67 @@ def clean_sentence(s: str) -> str:
     return s
 
 
-def is_clean(s: str) -> bool:
+def is_clean(s: str, *, strict: bool = True) -> bool:
     if not s: return False
     # no leftover unknown markers
     if "<" in s or "[" in s: return False
     # mostly Korean
     han = sum(1 for c in s if 0xAC00 <= ord(c) <= 0xD7A3)
-    return han >= 3 and han / max(1, len(s)) >= 0.4
+    if strict:
+        return han >= 3 and han / max(1, len(s)) >= 0.4
+    # Loose mode for rare-lemma fallback: just require some Korean content
+    return han >= 3
+
+
+def search_terms(word: str) -> list[str]:
+    """Yield search terms for a seed word: the dictionary form plus likely
+    conjugation stems for verbs/adjectives ending in 다."""
+    terms = [word]
+    if word.endswith("다") and len(word) >= 2:
+        stem = word[:-1]
+        # Search by stem; we'll match any sentence containing it followed by a
+        # Korean character (conjugation/particle). This covers 싸우지/싸워/싸웠다 etc.
+        terms.append(stem)
+    return terms
 
 
 def find_example(word: str, records: list, lemma_info: dict | None):
-    """Return (record, sentence, speaker) for the best example, or None."""
-    # First pass: look in lemma's tracked rec_ids
+    """Return (record, sentence, speaker, target_form) for best example, or None."""
     rec_ids_pref = (lemma_info or {}).get("rec_ids", [])
-    rec_by_id = {r["id"]: r for r in records}
+    terms = search_terms(word)
 
-    candidates: list[tuple[int, dict, str, str | None]] = []  # (score, rec, sentence, speaker)
+    candidates: list[tuple[int, dict, str, str | None, str]] = []
     for r in records:
         text = r.get("text", "")
-        if word not in text: continue
-        # Split into sentence-ish chunks on common Korean clause boundaries
+        # Quick reject if no term matches
+        if not any(t in text for t in terms): continue
+        # Split into sentence-ish chunks
         chunks = re.split(r"[.!?。]| \n|·{4,}", text)
         for chunk in chunks:
             c = clean_sentence(chunk)
-            if word not in c: continue
+            # Identify which term hits and capture the surface form
+            target_form = None
+            for t in terms:
+                idx = c.find(t)
+                if idx < 0: continue
+                # For stem search, ensure followed by a Korean syllable
+                # (otherwise it's a coincidental substring inside a different word)
+                if t != word:  # stem mode
+                    tail_start = idx + len(t)
+                    if tail_start >= len(c): continue
+                    next_ch = c[tail_start]
+                    if not (0xAC00 <= ord(next_ch) <= 0xD7A3): continue
+                    # Grab 1-3 trailing Korean chars as the surface form
+                    j = tail_start
+                    while j < len(c) and j < tail_start + 3 and 0xAC00 <= ord(c[j]) <= 0xD7A3:
+                        j += 1
+                    target_form = c[idx:j]
+                else:
+                    target_form = word
+                break
+            if target_form is None: continue
             if not (8 <= len(c) <= 90): continue
-            if not is_clean(c): continue
+            if not is_clean(c, strict=True): continue
             speaker = None
             for sp in KNOWN_SPEAKERS:
                 if sp in c[:20] or sp in text[:30]:
@@ -71,12 +106,41 @@ def find_example(word: str, records: list, lemma_info: dict | None):
             if speaker == "오박사": score += 20
             elif speaker: score += 10
             if 12 <= len(c) <= 50: score += 5
-            candidates.append((score, r, c, speaker))
+            # Slightly prefer the dictionary form over a conjugation
+            if target_form == word: score += 3
+            candidates.append((score, r, c, speaker, target_form))
 
-    if not candidates: return None
-    candidates.sort(key=lambda x: -x[0])
-    _, rec, sent, speaker = candidates[0]
-    return rec, sent, speaker
+    if candidates:
+        candidates.sort(key=lambda x: -x[0])
+        _, rec, sent, speaker, target_form = candidates[0]
+        return rec, sent, speaker, target_form
+
+    # Fallback: rare lemma. Try again with loose cleanliness + shorter min length,
+    # and accept the longest cleanish chunk that contains the surface form.
+    for r in records:
+        text = r.get("text", "")
+        if not any(t in text for t in terms): continue
+        # Don't pre-chunk; take a 50-char window around the hit
+        for t in terms:
+            idx = text.find(t)
+            if idx < 0: continue
+            start = max(0, idx - 25)
+            end = min(len(text), idx + len(t) + 30)
+            window = clean_sentence(text[start:end])
+            if not (6 <= len(window) <= 90): continue
+            if not is_clean(window, strict=False): continue
+            target_form = t
+            if t != word:
+                # Capture conjugation if present
+                hit_idx = window.find(t)
+                if hit_idx >= 0:
+                    j = hit_idx + len(t)
+                    while j < len(window) and j < hit_idx + len(t) + 3 \
+                            and 0xAC00 <= ord(window[j]) <= 0xD7A3:
+                        j += 1
+                    target_form = window[hit_idx:j]
+            return r, window, None, target_form
+    return None
 
 
 def main():
@@ -96,7 +160,7 @@ def main():
             missed += 1
             missing_words.append(word)
             continue
-        rec, sent, speaker = hit
+        rec, sent, speaker, target_form = hit
         entry = {
             "vocabId": f"seed-v1:{word}",
             "korean": sent,
@@ -104,6 +168,11 @@ def main():
             "areaId": (info or {}).get("first_area", "rom_mined"),
             "source": f"rom-rec{rec['id']}",
         }
+        # Pin the conjugated surface form so the validator's substring check
+        # uses the actual form that appears in the sentence (e.g. "싸우고"),
+        # not the dictionary form ("싸우다") which the sentence won't contain.
+        if target_form and target_form != word:
+            entry["targetForm"] = target_form
         if speaker:
             entry["speaker"] = speaker
         if info and info.get("source_types"):

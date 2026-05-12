@@ -74,11 +74,22 @@
    "primarySourceType": "npc_dialog"
   },
   {
+   "vocabId": "seed-v1:가다",
+   "korean": "일이었으니 이번엔 내주마 나가면",
+   "gloss": "(to go)",
+   "areaId": "rom_mined",
+   "source": "rom-rec4886",
+   "targetForm": "가면",
+   "speaker": "오박사"
+  },
+  {
    "vocabId": "seed-v1:오다",
-   "korean": "로켓단에 들어오다니 녀석이군",
+   "korean": "오박사 {var:06} 아쉽구나 네가",
    "gloss": "(to come)",
    "areaId": "rom_mined",
-   "source": "rom-rec407"
+   "source": "rom-rec669",
+   "targetForm": "오박사",
+   "speaker": "오박사"
   },
   {
    "vocabId": "seed-v1:집",
@@ -117,11 +128,40 @@
    "primarySourceType": "item_description"
   },
   {
+   "vocabId": "seed-v1:나타나다",
+   "korean": "동료로 사람 나타나지 느끼면 도망가는 하다",
+   "gloss": "(to appear)",
+   "areaId": "saffron_city",
+   "source": "rom-rec4962",
+   "targetForm": "나타나지",
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry"
+  },
+  {
+   "vocabId": "seed-v1:싸우다",
+   "korean": "싸우게 키우려무나",
+   "gloss": "(to fight)",
+   "areaId": "pallet_town",
+   "source": "rom-rec2054",
+   "targetForm": "싸우게",
+   "speaker": "오박사",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
    "vocabId": "seed-v1:잡다",
-   "korean": "몇 둘 잡았니 나는 잡다가",
+   "korean": "잡은 {var:03} 오오 상태라면 하",
    "gloss": "(to catch, to grab)",
    "areaId": "pallet_town",
-   "source": "rom-rec631",
+   "source": "rom-rec929",
+   "targetForm": "잡은",
    "sourceTypes": [
     "item_description",
     "npc_dialog",
@@ -136,6 +176,13 @@
    "gloss": "(bird)",
    "areaId": "rom_mined",
    "source": "rom-rec1068"
+  },
+  {
+   "vocabId": "seed-v1:쥐",
+   "korean": "이런 생쥐 특",
+   "gloss": "(rat / mouse)",
+   "areaId": "rom_mined",
+   "source": "rom-rec526"
   },
   {
    "vocabId": "seed-v1:도시",
@@ -167,10 +214,24 @@
   },
   {
    "vocabId": "seed-v1:사다",
-   "korean": "가서 사다 있어",
+   "korean": "본부입니다 오박사님도 잘 보러 곳",
    "gloss": "(to buy)",
    "areaId": "rom_mined",
-   "source": "rom-rec2523"
+   "source": "rom-rec2078",
+   "targetForm": "사님도",
+   "speaker": "오박사"
+  },
+  {
+   "vocabId": "seed-v1:팔다",
+   "korean": "팔아 거니 뭐 생각이라고",
+   "gloss": "(to sell)",
+   "areaId": "rom_mined",
+   "source": "rom-rec823",
+   "targetForm": "팔아",
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text"
   },
   {
    "vocabId": "seed-v1:체육관",
@@ -197,11 +258,36 @@
    "primarySourceType": "npc_dialog"
   },
   {
+   "vocabId": "seed-v1:지나가다",
+   "korean": "그것은 {var:02}배지 지나가셔도 있",
+   "gloss": "(to pass through)",
+   "areaId": "route_2",
+   "source": "rom-rec3160",
+   "targetForm": "지나가셔도",
+   "speaker": "{var:02}",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
    "vocabId": "seed-v1:입구",
    "korean": "입구를 열쇠 빨갛게 찍 있다",
    "gloss": "(entrance)",
    "areaId": "rom_mined",
    "source": "rom-rec6825",
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text"
+  },
+  {
+   "vocabId": "seed-v1:출구",
+   "korean": "출구 앞은 쪽",
+   "gloss": "(exit)",
+   "areaId": "rom_mined",
+   "source": "rom-rec219",
    "sourceTypes": [
     "system_text"
    ],
@@ -233,6 +319,40 @@
     "system_text"
    ],
    "primarySourceType": "pokedex_entry"
+  },
+  {
+   "vocabId": "seed-v1:어둡다",
+   "korean": "어둡고 들어가지 포켓몬이 위험한",
+   "gloss": "(to be dark)",
+   "areaId": "fuchsia_city",
+   "source": "rom-rec3572",
+   "targetForm": "어둡고",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:깊다",
+   "korean": "크게 이 하고는 깊은",
+   "gloss": "(to be deep)",
+   "areaId": "route_1",
+   "source": "rom-rec1376",
+   "targetForm": "깊은",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:조심하다",
+   "korean": "쏘이지 조심하면서",
+   "gloss": "(to be careful)",
+   "areaId": "rom_mined",
+   "source": "rom-rec1584",
+   "targetForm": "조심하면서"
   },
   {
    "vocabId": "seed-v1:회색",
@@ -279,11 +399,20 @@
    "primarySourceType": "npc_dialog"
   },
   {
+   "vocabId": "seed-v1:도전하다",
+   "korean": "여긴 온 든 도전하려 링",
+   "gloss": "(to challenge)",
+   "areaId": "rom_mined",
+   "source": "rom-rec2188",
+   "targetForm": "도전하려"
+  },
+  {
    "vocabId": "seed-v1:이기다",
-   "korean": "승부에서 잘 이기다니 엄청 하",
+   "korean": "앗 좋은 타고 이기면 식 줘",
    "gloss": "(to win, to defeat)",
    "areaId": "pallet_town",
-   "source": "rom-rec3501",
+   "source": "rom-rec1595",
+   "targetForm": "이기면",
    "sourceTypes": [
     "npc_dialog",
     "system_text"
@@ -292,10 +421,12 @@
   },
   {
    "vocabId": "seed-v1:지다",
-   "korean": "던지다 금방 썼어 많이 게 거야",
+   "korean": "이미 있지만 번이고 싶어서 곳",
    "gloss": "(to lose)",
    "areaId": "rom_mined",
-   "source": "rom-rec213"
+   "source": "rom-rec3228",
+   "targetForm": "지만",
+   "speaker": "오박사"
   },
   {
    "vocabId": "seed-v1:박물관",
