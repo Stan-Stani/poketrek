@@ -269,7 +269,19 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[16]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city",
+    "lavender_town",
+    "vermilion_city",
+    "cinnabar_island",
+    "indigo_plateau"
+   ],
+   "liveRecIds": [
+    2374,
+    2376,
+    2752,
+    4947
+   ]
   },
   {
    "vocabId": "rom-species:피죤",
@@ -318,7 +330,22 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[19]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_2",
+    "route_25",
+    "route_6",
+    "saffron_city",
+    "route_8",
+    "route_10",
+    "route_11",
+    "route_9"
+   ],
+   "liveRecIds": [
+    1277,
+    2807,
+    4309,
+    4313
+   ]
   },
   {
    "vocabId": "rom-species:레트라",
@@ -416,7 +443,24 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[25]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "cerulean_city",
+    "route_25",
+    "lavender_town",
+    "vermilion_city",
+    "route_18",
+    "route_22",
+    "seven_island"
+   ],
+   "liveRecIds": [
+    2177,
+    2178,
+    2205,
+    2327,
+    2331
+   ]
   },
   {
    "vocabId": "rom-species:라이츄",
@@ -542,7 +586,24 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[35]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_6",
+    "saffron_city",
+    "route_8",
+    "route_10",
+    "route_11",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "indigo_plateau"
+   ],
+   "liveRecIds": [
+    703,
+    1285,
+    1286,
+    2425,
+    2695
+   ]
   },
   {
    "vocabId": "rom-species:픽시",
@@ -773,7 +834,31 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[50]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_2",
+    "route_3",
+    "route_4",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "route_9",
+    "six_island",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "three_island"
+   ],
+   "liveRecIds": [
+    1373,
+    4377,
+    4977,
+    5790,
+    5966
+   ]
   },
   {
    "vocabId": "rom-species:닥트리오",
@@ -803,7 +888,19 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[52]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_6",
+    "route_8",
+    "route_10",
+    "route_11",
+    "celadon_city",
+    "route_9"
+   ],
+   "liveRecIds": [
+    2420,
+    2423,
+    4039
+   ]
   },
   {
    "vocabId": "rom-species:페르시온",
@@ -867,7 +964,14 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[56]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "viridian_city",
+    "pewter_city",
+    "cerulean_city"
+   ],
+   "liveRecIds": [
+    2220
+   ]
   },
   {
    "vocabId": "rom-species:성원숭",
@@ -980,7 +1084,14 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[63]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_25",
+    "seven_island",
+    "one_island"
+   ],
+   "liveRecIds": [
+    3005
+   ]
   },
   {
    "vocabId": "rom-species:윤겔라",
@@ -1027,7 +1138,14 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[66]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city"
+   ],
+   "liveRecIds": [
+    1024
+   ]
   },
   {
    "vocabId": "rom-species:근육몬",
@@ -1219,7 +1337,13 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[78]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "cinnabar_island"
+   ],
+   "liveRecIds": [
+    2637
+   ]
   },
   {
    "vocabId": "rom-species:야돈",
@@ -1234,7 +1358,12 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[79]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island"
+   ],
+   "liveRecIds": [
+    5006
+   ]
   },
   {
    "vocabId": "rom-species:야도란",
@@ -1452,7 +1581,14 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[93]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "vermilion_city",
+    "celadon_city"
+   ],
+   "liveRecIds": [
+    2383,
+    2384
+   ]
   },
   {
    "vocabId": "rom-species:팬텀",
@@ -1627,7 +1763,16 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[104]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "lavender_town"
+   ],
+   "liveRecIds": [
+    766,
+    767,
+    2282,
+    6778
+   ]
   },
   {
    "vocabId": "rom-species:텅구리",
@@ -1770,7 +1915,27 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[113]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "celadon_city",
+    "resort_gorgeous",
+    "water_path",
+    "six_island",
+    "five_island",
+    "treasure_beach",
+    "four_island"
+   ],
+   "liveRecIds": [
+    632,
+    1063,
+    1076,
+    3122,
+    3124
+   ]
   },
   {
    "vocabId": "rom-species:덩쿠리",
@@ -2020,7 +2185,16 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[129]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_2",
+    "route_4",
+    "saffron_city"
+   ],
+   "liveRecIds": [
+    1399,
+    2820,
+    4942
+   ]
   },
   {
    "vocabId": "rom-species:갸라도스",
@@ -2146,7 +2320,12 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[137]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city"
+   ],
+   "liveRecIds": [
+    2483
+   ]
   },
   {
    "vocabId": "rom-species:암나이트",
@@ -3210,7 +3389,50 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[209]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_9",
+    "route_22",
+    "route_23",
+    "six_island",
+    "five_island",
+    "four_island",
+    "seven_island",
+    "three_island"
+   ],
+   "liveRecIds": [
+    237,
+    692,
+    1006,
+    1232,
+    1323
+   ]
   },
   {
    "vocabId": "rom-species:그랑블루",
@@ -3420,7 +3642,12 @@
    "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[223]",
    "firstAreaEncountered": "rom_mined",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon"
+   ],
+   "liveRecIds": [
+    5154
+   ]
   },
   {
    "vocabId": "rom-species:대포무노",

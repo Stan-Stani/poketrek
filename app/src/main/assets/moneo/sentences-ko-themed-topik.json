@@ -7998,7 +7998,11 @@
    ],
    "liveRecIds": [
     409
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:밑",
@@ -8264,7 +8268,22 @@
     "auditedAt": "2026-05-09",
     "round": 2
    },
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "saffron_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "one_island"
+   ],
+   "liveRecIds": [
+    113,
+    601,
+    602,
+    608,
+    613
+   ]
   },
   {
    "vocabId": "topik-v2:위하다",
@@ -8619,7 +8638,25 @@
    "areaId": "topik_2",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "saffron_city",
+    "water_labyrinth",
+    "outcast_island",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "water_path",
+    "kindle_road",
+    "treasure_beach",
+    "green_path"
+   ],
+   "liveRecIds": [
+    1122,
+    1894,
+    1941,
+    1942,
+    2778
+   ]
   },
   {
    "vocabId": "topik-v2:가게",
@@ -9972,7 +10009,19 @@
    "areaId": "topik_2",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pewter_city",
+    "cerulean_city",
+    "lavender_town"
+   ],
+   "liveRecIds": [
+    725,
+    770,
+    1013,
+    2297,
+    2314
+   ]
   },
   {
    "vocabId": "topik-v2:줄다",
@@ -10911,7 +10960,24 @@
    "areaId": "topik_1",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pallet_town",
+    "route_25",
+    "route_15",
+    "route_16",
+    "seven_island",
+    "one_island",
+    "two_island",
+    "three_island"
+   ],
+   "liveRecIds": [
+    1047,
+    3006,
+    3019,
+    3048,
+    3062
+   ]
   },
   {
    "vocabId": "topik-v2:돌다",
@@ -12121,7 +12187,11 @@
    ],
    "liveRecIds": [
     4340
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:인삼",
@@ -12161,7 +12231,17 @@
    "areaId": "topik_1",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "route_2"
+   ],
+   "liveRecIds": [
+    177,
+    4937,
+    4971,
+    5080,
+    5120
+   ]
   },
   {
    "vocabId": "topik-v2:자리",
@@ -12205,7 +12285,65 @@
    "areaId": "topik_2",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_18",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "outcast_island",
+    "memorial_pillar",
+    "water_path",
+    "kindle_road",
+    "ruin_valley",
+    "green_path",
+    "canyon_entrance",
+    "five_island",
+    "trainer_tower",
+    "four_island",
+    "five_isle_meadow",
+    "seven_island",
+    "three_island",
+    "one_island",
+    "six_island",
+    "two_island",
+    "treasure_beach"
+   ],
+   "liveRecIds": [
+    331,
+    412,
+    508,
+    646,
+    832
+   ]
   },
   {
    "vocabId": "topik-v2:젊다",
@@ -12694,7 +12832,44 @@
    "areaId": "topik_2",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_24",
+    "route_25",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "route_22",
+    "route_23",
+    "water_labyrinth",
+    "resort_gorgeous",
+    "kindle_road",
+    "treasure_beach",
+    "memorial_pillar",
+    "outcast_island",
+    "water_path",
+    "canyon_entrance",
+    "ruin_valley",
+    "five_isle_meadow",
+    "green_path",
+    "trainer_tower"
+   ],
+   "liveRecIds": [
+    1827,
+    1851,
+    2018,
+    2022,
+    2081
+   ]
   },
   {
    "vocabId": "topik-v2:편하다",
@@ -14346,7 +14521,11 @@
    ],
    "liveRecIds": [
     4406
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:똑같이",
@@ -17124,7 +17303,11 @@
    ],
    "liveRecIds": [
     9137
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:정하다",
@@ -17714,7 +17897,24 @@
    "areaId": "topik_1",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pewter_city",
+    "saffron_city",
+    "resort_gorgeous",
+    "water_path",
+    "six_island",
+    "five_island",
+    "treasure_beach",
+    "four_island"
+   ],
+   "liveRecIds": [
+    2776,
+    3122,
+    5110,
+    5211,
+    6584
+   ]
   },
   {
    "vocabId": "topik-v2:충격",
@@ -18019,7 +18219,25 @@
    "areaId": "topik_2",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "two_island",
+    "three_island",
+    "one_island"
+   ],
+   "liveRecIds": [
+    644,
+    1133,
+    1619,
+    3051,
+    4149
+   ]
   },
   {
    "vocabId": "topik-v2:파란색",

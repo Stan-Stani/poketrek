@@ -3,7 +3,7 @@
   "sourceTag": "rom-mine-v3",
   "notes": [
     "Regenerated from 2024 Korean patch decode. Sentences come from mine_vocab (one example per dialog lemma) + name-table decks (one templated sentence per move/ability).",
-    "Sentence attribution via vocab map; 344 attributed, 376 unattributed."
+    "Sentence attribution via vocab map; 417 attributed, 303 unattributed."
   ],
   "entries": [
     {
@@ -16,8 +16,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[1]"
+      "primarySourceType": "",
+      "source": "gMoveNames[1]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:태권당수",
@@ -172,8 +176,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[13]"
+      "primarySourceType": "",
+      "source": "gMoveNames[13]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:칼춤",
@@ -185,8 +193,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[14]"
+      "primarySourceType": "",
+      "source": "gMoveNames[14]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:풀베기",
@@ -196,6 +208,7 @@
       "targetForm": "풀베기",
       "areaId": "ss_anne",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -382,6 +395,7 @@
       "targetForm": "박치기",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -477,6 +491,7 @@
       "targetForm": "돌진",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -533,6 +548,8 @@
       "targetForm": "독침",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -590,6 +607,7 @@
       "areaId": "rom_mined",
       "sourceTypes": [
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry",
@@ -647,6 +665,7 @@
       "targetForm": "초음파",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -666,8 +685,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[49]"
+      "primarySourceType": "",
+      "source": "gMoveNames[49]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:사슬묶기",
@@ -692,8 +715,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[51]"
+      "primarySourceType": "",
+      "source": "gMoveNames[51]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:불꽃세례",
@@ -744,8 +771,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[55]"
+      "primarySourceType": "",
+      "source": "gMoveNames[55]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:하이드로펌프",
@@ -794,6 +825,7 @@
       "targetForm": "눈보라",
       "areaId": "celadon_city",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -916,6 +948,7 @@
       "areaId": "rom_mined",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog",
@@ -952,6 +985,8 @@
       "targetForm": "괴력",
       "areaId": "saffron_city",
       "sourceTypes": [
+        "pokemon_ability",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -969,6 +1004,7 @@
       "targetForm": "흡수",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1014,6 +1050,7 @@
       "sourceTypes": [
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry",
@@ -1023,15 +1060,15 @@
         "pewter_city",
         "route_7",
         "rom_mined",
-        "resort_gorgeous",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "memorial_pillar",
-        "canyon_entrance",
         "ruin_valley",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "water_labyrinth",
+        "memorial_pillar",
+        "outcast_island",
         "water_path",
-        "water_labyrinth"
+        "trainer_tower"
       ]
     },
     {
@@ -1185,6 +1222,7 @@
       "targetForm": "번개",
       "areaId": "power_plant",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1215,6 +1253,7 @@
       "targetForm": "지진",
       "areaId": "viridian_city",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1260,6 +1299,7 @@
       "sourceTypes": [
         "item_description",
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description",
@@ -1292,6 +1332,7 @@
       "targetForm": "최면술",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1337,8 +1378,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[98]"
+      "primarySourceType": "",
+      "source": "gMoveNames[98]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:분노",
@@ -1350,8 +1395,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[99]"
+      "primarySourceType": "",
+      "source": "gMoveNames[99]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:순간이동",
@@ -1460,8 +1509,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[108]"
+      "primarySourceType": "",
+      "source": "gMoveNames[108]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:이상한빛",
@@ -1550,6 +1603,7 @@
       "areaId": "saffron_city",
       "sourceTypes": [
         "item_description",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description",
@@ -1581,6 +1635,7 @@
       "targetForm": "참기",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1624,6 +1679,7 @@
       "targetForm": "자폭",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1875,6 +1931,7 @@
       "targetForm": "독가스",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1905,6 +1962,7 @@
       "targetForm": "흡혈",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -1937,8 +1995,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[143]"
+      "primarySourceType": "",
+      "source": "gMoveNames[143]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:변신",
@@ -1949,6 +2011,7 @@
       "areaId": "rom_mined",
       "sourceTypes": [
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry",
@@ -1969,8 +2032,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[145]"
+      "primarySourceType": "",
+      "source": "gMoveNames[145]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:잼잼펀치",
@@ -2055,8 +2122,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[151]"
+      "primarySourceType": "",
+      "source": "gMoveNames[151]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:찝게햄머",
@@ -2159,8 +2230,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[159]"
+      "primarySourceType": "",
+      "source": "gMoveNames[159]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:텍스처",
@@ -2172,8 +2247,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[160]"
+      "primarySourceType": "",
+      "source": "gMoveNames[160]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:트라이어택",
@@ -2235,6 +2314,7 @@
       "targetForm": "발버둥",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -2293,8 +2373,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[169]"
+      "primarySourceType": "",
+      "source": "gMoveNames[169]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:마음의눈",
@@ -2317,6 +2401,7 @@
       "targetForm": "악몽",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -2360,9 +2445,11 @@
       "targetForm": "저주",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "item_description",
+        "pokemon_move",
         "system_text"
       ],
-      "primarySourceType": "system_text",
+      "primarySourceType": "item_description",
       "source": "gMoveNames[174]",
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [
@@ -2379,8 +2466,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[175]"
+      "primarySourceType": "",
+      "source": "gMoveNames[175]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:목화포자",
@@ -2405,8 +2496,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[179]"
+      "primarySourceType": "",
+      "source": "gMoveNames[179]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:원한",
@@ -2435,8 +2530,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[181]"
+      "primarySourceType": "",
+      "source": "gMoveNames[181]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:방어",
@@ -2447,6 +2546,7 @@
       "areaId": "fuchsia_city",
       "sourceTypes": [
         "item_description",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description",
@@ -2609,6 +2709,7 @@
       "targetForm": "길동무",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -2654,8 +2755,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[197]"
+      "primarySourceType": "",
+      "source": "gMoveNames[197]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:본러쉬",
@@ -2693,8 +2798,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[200]"
+      "primarySourceType": "",
+      "source": "gMoveNames[200]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:모래바람",
@@ -2704,6 +2813,7 @@
       "targetForm": "모래바람",
       "areaId": "fuchsia_city",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -2879,8 +2989,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[214]"
+      "primarySourceType": "",
+      "source": "gMoveNames[214]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:치료방울",
@@ -2918,8 +3032,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[217]"
+      "primarySourceType": "",
+      "source": "gMoveNames[217]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:화풀이",
@@ -2931,8 +3049,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[218]"
+      "primarySourceType": "",
+      "source": "gMoveNames[218]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:신비의부적",
@@ -3009,8 +3131,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[224]"
+      "primarySourceType": "",
+      "source": "gMoveNames[224]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:용의숨결",
@@ -3152,8 +3278,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[235]"
+      "primarySourceType": "",
+      "source": "gMoveNames[235]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:달의불빛",
@@ -3282,8 +3412,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[245]"
+      "primarySourceType": "",
+      "source": "gMoveNames[245]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:원시의힘",
@@ -3373,8 +3507,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[252]"
+      "primarySourceType": "",
+      "source": "gMoveNames[252]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:소란피기",
@@ -3423,6 +3561,8 @@
       "targetForm": "꿀꺽",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3442,8 +3582,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[257]"
+      "primarySourceType": "",
+      "source": "gMoveNames[257]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:싸라기눈",
@@ -3453,6 +3597,7 @@
       "targetForm": "싸라기눈",
       "areaId": "seafoam_islands",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3470,6 +3615,7 @@
       "targetForm": "트집",
       "areaId": "lavender_town",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3502,8 +3648,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[261]"
+      "primarySourceType": "",
+      "source": "gMoveNames[261]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:추억의선물",
@@ -3528,8 +3678,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[263]"
+      "primarySourceType": "",
+      "source": "gMoveNames[263]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:힘껏펀치",
@@ -3592,6 +3746,7 @@
       "areaId": "rom_mined",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog",
@@ -3614,13 +3769,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ]
     },
     {
@@ -3631,6 +3786,7 @@
       "targetForm": "도발",
       "areaId": "lavender_town",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3662,6 +3818,7 @@
       "areaId": "rom_mined",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog",
@@ -3681,6 +3838,7 @@
       "targetForm": "역할",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3712,6 +3870,7 @@
       "areaId": "rom_mined",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog",
@@ -3792,8 +3951,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[279]"
+      "primarySourceType": "",
+      "source": "gMoveNames[279]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:깨트리다",
@@ -3805,8 +3968,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[280]"
+      "primarySourceType": "",
+      "source": "gMoveNames[280]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:하품",
@@ -3816,6 +3983,7 @@
       "targetForm": "하품",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3859,6 +4027,7 @@
       "targetForm": "분화",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3889,6 +4058,7 @@
       "targetForm": "봉인",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3919,6 +4089,7 @@
       "targetForm": "원념",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3962,6 +4133,7 @@
       "targetForm": "다이빙",
       "areaId": "seafoam_islands",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -3994,8 +4166,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[293]"
+      "primarySourceType": "",
+      "source": "gMoveNames[293]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:반딧불",
@@ -4007,8 +4183,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[294]"
+      "primarySourceType": "",
+      "source": "gMoveNames[294]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:라스트버지",
@@ -4332,8 +4512,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[319]"
+      "primarySourceType": "",
+      "source": "gMoveNames[319]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:풀피리",
@@ -4343,6 +4527,7 @@
       "targetForm": "풀피리",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -4388,8 +4573,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[323]"
+      "primarySourceType": "",
+      "source": "gMoveNames[323]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:시그널빔",
@@ -4427,8 +4616,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[326]"
+      "primarySourceType": "",
+      "source": "gMoveNames[326]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:스카이업퍼",
@@ -4479,8 +4672,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[330]"
+      "primarySourceType": "",
+      "source": "gMoveNames[330]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:기관총",
@@ -4492,8 +4689,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[331]"
+      "primarySourceType": "",
+      "source": "gMoveNames[331]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:제비반환",
@@ -4531,8 +4732,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[334]"
+      "primarySourceType": "",
+      "source": "gMoveNames[334]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:블록",
@@ -4544,8 +4749,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[335]"
+      "primarySourceType": "",
+      "source": "gMoveNames[335]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:멀리짖음",
@@ -4607,6 +4816,7 @@
       "targetForm": "뛰어오르다",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -4652,8 +4862,12 @@
       "sourceTypes": [
         "pokemon_move"
       ],
-      "primarySourceType": "pokemon_move",
-      "source": "gMoveNames[343]"
+      "primarySourceType": "",
+      "source": "gMoveNames[343]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:볼트태클",
@@ -4689,6 +4903,7 @@
       "targetForm": "물놀이",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -4706,6 +4921,7 @@
       "targetForm": "명상",
       "areaId": "saffron_city",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -4814,6 +5030,7 @@
       "targetForm": "악취",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -4833,8 +5050,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[2]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[2]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:가속",
@@ -4846,8 +5067,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[3]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[3]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:전투무장",
@@ -4885,8 +5110,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[6]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[6]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:유연",
@@ -4922,6 +5151,7 @@
       "targetForm": "정전기",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -4941,8 +5171,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[10]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[10]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:저수",
@@ -4954,8 +5188,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[11]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[11]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:둔감",
@@ -4967,8 +5205,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[12]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[12]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:날씨부정",
@@ -4993,8 +5235,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[14]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[14]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:불면",
@@ -5019,8 +5265,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[16]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[16]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:면역",
@@ -5032,8 +5282,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[17]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[17]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:타오르는불꽃",
@@ -5058,8 +5312,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[19]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[19]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:마이페이스",
@@ -5084,8 +5342,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[21]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[21]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:위협",
@@ -5095,6 +5357,7 @@
       "targetForm": "위협",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5114,8 +5377,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[23]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[23]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:까칠한피부",
@@ -5179,8 +5446,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[28]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[28]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:클리어바디",
@@ -5218,8 +5489,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[31]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[31]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:하늘의은총",
@@ -5244,8 +5519,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[33]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[33]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:엽록소",
@@ -5257,8 +5536,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[34]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[34]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:발광",
@@ -5270,8 +5553,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[35]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[35]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:트레이스",
@@ -5294,6 +5581,7 @@
       "targetForm": "천하장사",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5324,6 +5612,7 @@
       "targetForm": "정신력",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5367,6 +5656,7 @@
       "targetForm": "자력",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5386,8 +5676,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[43]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[43]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:젖은접시",
@@ -5477,8 +5771,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[50]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[50]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:날카로운눈",
@@ -5516,8 +5814,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[53]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[53]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:게으름",
@@ -5527,6 +5829,7 @@
       "targetForm": "게으름",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5570,9 +5873,11 @@
       "targetForm": "플러스",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "item_description",
+        "pokemon_ability",
         "system_text"
       ],
-      "primarySourceType": "system_text",
+      "primarySourceType": "item_description",
       "source": "gAbilityNames[57]",
       "firstAreaEncountered": "rom_mined",
       "areasReferenced": [
@@ -5600,6 +5905,7 @@
       "targetForm": "기분파",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5619,8 +5925,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[60]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[60]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:탈피",
@@ -5632,8 +5942,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[61]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[61]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:근성",
@@ -5643,6 +5957,7 @@
       "targetForm": "근성",
       "areaId": "rom_mined",
       "sourceTypes": [
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "system_text",
@@ -5688,8 +6003,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[65]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[65]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:맹화",
@@ -5701,8 +6020,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[66]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[66]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:급류",
@@ -5714,8 +6037,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[67]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[67]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:벌레의알림",
@@ -5740,8 +6067,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[69]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[69]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:가뭄",
@@ -5753,8 +6084,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[70]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[70]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:개미지옥",
@@ -5766,8 +6101,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[71]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[71]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:의기양양",
@@ -5779,8 +6118,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[72]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[72]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:하얀연기",
@@ -5831,8 +6174,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[76]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[76]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:에어록",
@@ -5844,8 +6191,12 @@
       "sourceTypes": [
         "pokemon_ability"
       ],
-      "primarySourceType": "pokemon_ability",
-      "source": "gAbilityNames[77]"
+      "primarySourceType": "",
+      "source": "gAbilityNames[77]",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ]
     },
     {
       "vocabId": "rom-mine-v2:있다",
@@ -5894,25 +6245,25 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "one_island",
-        "water_labyrinth",
-        "memorial_pillar",
-        "treasure_beach",
-        "resort_gorgeous",
         "canyon_entrance",
         "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
         "five_island",
-        "four_island"
+        "trainer_tower",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "six_island",
+        "ruin_valley",
+        "four_island",
+        "one_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -5970,31 +6321,32 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "one_island",
-        "water_labyrinth",
-        "memorial_pillar",
-        "treasure_beach",
-        "resort_gorgeous",
         "canyon_entrance",
         "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
         "five_island",
-        "four_island"
+        "trainer_tower",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "six_island",
+        "ruin_valley",
+        "four_island",
+        "one_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
         "system_text",
         "trainer_class_name"
       ],
@@ -6029,21 +6381,22 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
+        "treasure_beach",
         "seven_island",
+        "six_island",
         "three_island",
         "ruin_valley",
-        "treasure_beach",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -6079,18 +6432,18 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
+        "canyon_entrance",
         "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "green_path",
         "two_island",
+        "green_path",
+        "water_path",
+        "six_island",
+        "three_island",
         "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6146,25 +6499,25 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6213,13 +6566,13 @@
         "route_22",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
         "seven_island",
-        "three_island",
         "five_isle_meadow",
-        "one_island",
         "two_island",
+        "kindle_road",
+        "three_island",
         "ruin_valley",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -6274,25 +6627,25 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6348,30 +6701,31 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -6422,25 +6776,25 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "one_island",
-        "water_labyrinth",
-        "memorial_pillar",
-        "treasure_beach",
-        "resort_gorgeous",
         "canyon_entrance",
         "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
         "five_island",
-        "four_island"
+        "trainer_tower",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "six_island",
+        "ruin_valley",
+        "four_island",
+        "one_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6497,25 +6851,25 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "one_island",
-        "water_labyrinth",
-        "memorial_pillar",
-        "treasure_beach",
-        "resort_gorgeous",
         "canyon_entrance",
         "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
         "five_island",
-        "four_island"
+        "trainer_tower",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "six_island",
+        "ruin_valley",
+        "four_island",
+        "one_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6557,22 +6911,22 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6608,18 +6962,20 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
+        "pokemon_ability",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description"
@@ -6669,25 +7025,25 @@
         "route_22",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "one_island",
-        "water_labyrinth",
-        "memorial_pillar",
-        "treasure_beach",
-        "resort_gorgeous",
         "canyon_entrance",
         "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
         "five_island",
-        "four_island"
+        "trainer_tower",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "six_island",
+        "ruin_valley",
+        "one_island",
+        "four_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6761,16 +7117,16 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
         "seven_island",
-        "three_island",
         "five_isle_meadow",
-        "one_island",
         "two_island",
-        "ruin_valley",
         "treasure_beach",
+        "kindle_road",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -6820,21 +7176,21 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
+        "canyon_entrance",
         "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "green_path",
         "treasure_beach",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -6880,32 +7236,33 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
-        "system_text"
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "item_description"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:보다",
@@ -6953,31 +7310,33 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "one_island",
-        "water_labyrinth",
-        "memorial_pillar",
-        "treasure_beach",
-        "resort_gorgeous",
         "canyon_entrance",
         "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "green_path",
-        "outcast_island",
         "two_island",
-        "ruin_valley",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
         "five_island",
-        "four_island"
+        "trainer_tower",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "six_island",
+        "ruin_valley",
+        "one_island",
+        "four_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
+        "pokemon_species",
         "system_text",
         "trainer_class_name"
       ],
@@ -7021,10 +7380,11 @@
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:강하다",
@@ -7065,24 +7425,24 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7132,16 +7492,16 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
+        "resort_gorgeous",
         "memorial_pillar",
         "two_island",
+        "green_path",
         "treasure_beach",
-        "resort_gorgeous"
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "one_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7190,25 +7550,25 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7246,20 +7606,20 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
         "resort_gorgeous",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7291,12 +7651,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -7326,12 +7686,12 @@
         "vermilion_city",
         "celadon_city",
         "rom_mined",
-        "kindle_road",
-        "two_island",
-        "seven_island",
-        "five_isle_meadow",
         "treasure_beach",
-        "one_island"
+        "kindle_road",
+        "one_island",
+        "five_isle_meadow",
+        "seven_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7369,24 +7729,24 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
@@ -7440,12 +7800,12 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -7492,17 +7852,17 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
         "seven_island",
-        "three_island",
-        "one_island",
-        "water_labyrinth",
         "two_island",
         "treasure_beach",
-        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "six_island",
+        "three_island",
         "five_island",
-        "four_island"
+        "four_island",
+        "one_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7552,23 +7912,23 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7607,12 +7967,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -7654,20 +8014,20 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
+        "canyon_entrance",
         "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "green_path",
         "two_island",
-        "ruin_valley",
+        "green_path",
         "treasure_beach",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -7766,12 +8126,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -7819,23 +8179,24 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "five_isle_meadow",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
-        "canyon_entrance"
+        "canyon_entrance",
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description"
@@ -7858,6 +8219,7 @@
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -7896,12 +8258,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -7949,19 +8311,19 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "treasure_beach",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
-        "four_island"
+        "four_island",
+        "one_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8020,9 +8382,9 @@
         "route_21",
         "celadon_city",
         "rom_mined",
+        "treasure_beach",
         "resort_gorgeous",
-        "kindle_road",
-        "treasure_beach"
+        "kindle_road"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8058,20 +8420,20 @@
         "route_9",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "six_island",
-        "two_island",
+        "treasure_beach",
+        "canyon_entrance",
+        "resort_gorgeous",
+        "water_path",
         "seven_island",
         "three_island",
+        "six_island",
         "ruin_valley",
-        "treasure_beach",
-        "one_island",
-        "resort_gorgeous",
         "five_island",
         "four_island",
-        "canyon_entrance",
-        "water_path"
+        "one_island",
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8103,19 +8465,19 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "resort_gorgeous",
+        "canyon_entrance",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "seven_island",
         "three_island",
         "ruin_valley",
-        "one_island",
-        "resort_gorgeous",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance",
-        "water_path"
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8138,6 +8500,7 @@
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "system_text"
@@ -8176,19 +8539,19 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
         "seven_island",
         "five_isle_meadow",
-        "water_path",
-        "water_labyrinth",
         "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "ruin_valley",
         "treasure_beach",
-        "resort_gorgeous",
-        "canyon_entrance"
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8238,14 +8601,14 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
         "treasure_beach",
+        "three_island",
+        "six_island",
         "five_island",
-        "four_island"
+        "four_island",
+        "one_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8275,9 +8638,9 @@
         "celadon_city",
         "route_9",
         "rom_mined",
+        "one_island",
         "two_island",
-        "three_island",
-        "one_island"
+        "three_island"
       ],
       "firstAreaEncountered": "cerulean_city",
       "sourceTypes": [
@@ -8356,19 +8719,20 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "seven_island",
         "resort_gorgeous",
+        "canyon_entrance",
+        "seven_island",
+        "six_island",
         "five_island",
-        "four_island",
-        "canyon_entrance"
+        "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
-        "system_text"
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:주마",
@@ -8402,13 +8766,16 @@
       "source": "rom-rec5111",
       "areasReferenced": [
         "rom_mined",
+        "ruin_valley",
         "five_isle_meadow",
-        "treasure_beach",
-        "ruin_valley"
+        "treasure_beach"
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "item_description",
         "pokedex_entry",
+        "pokemon_move",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -8428,6 +8795,7 @@
       "firstAreaEncountered": "route_2",
       "sourceTypes": [
         "pokedex_entry",
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -8463,21 +8831,23 @@
         "route_9",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "kindle_road",
-        "memorial_pillar",
-        "ruin_valley",
         "treasure_beach",
         "canyon_entrance",
-        "water_path"
+        "kindle_road",
+        "memorial_pillar",
+        "water_path",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:시작",
@@ -8503,23 +8873,23 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "outcast_island",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "two_island",
-        "memorial_pillar",
-        "seven_island",
-        "ruin_valley",
-        "five_isle_meadow",
         "treasure_beach",
-        "one_island",
         "resort_gorgeous",
-        "five_island",
-        "four_island",
-        "water_labyrinth",
         "canyon_entrance",
-        "water_path"
+        "water_labyrinth",
+        "kindle_road",
+        "memorial_pillar",
+        "water_path",
+        "seven_island",
+        "six_island",
+        "ruin_valley",
+        "five_island",
+        "five_isle_meadow",
+        "one_island",
+        "four_island",
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8544,9 +8914,9 @@
         "route_11",
         "route_9",
         "rom_mined",
-        "two_island",
         "three_island",
-        "four_island"
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "route_6",
       "sourceTypes": [
@@ -8583,22 +8953,22 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "water_labyrinth",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -8636,17 +9006,17 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
-        "trainer_tower",
         "green_path",
-        "outcast_island",
+        "canyon_entrance",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
+        "water_path",
         "ruin_valley",
-        "resort_gorgeous",
         "four_island",
-        "water_labyrinth",
-        "canyon_entrance",
-        "water_path"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8682,12 +9052,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -8730,20 +9100,20 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
         "resort_gorgeous",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -8767,11 +9137,11 @@
         "cinnabar_island",
         "indigo_plateau",
         "rom_mined",
+        "three_island",
         "four_island",
-        "six_island",
-        "two_island",
         "seven_island",
-        "three_island"
+        "two_island",
+        "six_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8821,20 +9191,20 @@
         "route_9",
         "route_22",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
+        "canyon_entrance",
         "memorial_pillar",
+        "seven_island",
+        "green_path",
+        "water_labyrinth",
+        "water_path",
+        "six_island",
+        "three_island",
         "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8866,8 +9236,8 @@
         "indigo_plateau",
         "rom_mined",
         "resort_gorgeous",
-        "four_island",
-        "one_island"
+        "one_island",
+        "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -8902,13 +9272,14 @@
         "celadon_city",
         "route_22",
         "rom_mined",
-        "two_island",
-        "one_island"
+        "one_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -8946,22 +9317,22 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "green_path",
-        "outcast_island",
+        "canyon_entrance",
         "memorial_pillar",
+        "seven_island",
         "two_island",
-        "ruin_valley",
+        "green_path",
         "treasure_beach",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9029,25 +9400,25 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9097,24 +9468,24 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9221,11 +9592,11 @@
         "route_19",
         "celadon_city",
         "rom_mined",
-        "two_island",
         "seven_island",
         "three_island",
         "one_island",
-        "four_island"
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -9265,12 +9636,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -9304,20 +9675,20 @@
         "route_9",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "treasure_beach",
+        "canyon_entrance",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "three_island",
         "ruin_valley",
         "five_isle_meadow",
-        "treasure_beach",
-        "resort_gorgeous",
         "four_island",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9344,23 +9715,23 @@
         "route_23",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "seven_island",
         "three_island",
         "ruin_valley",
-        "five_isle_meadow",
-        "treasure_beach",
-        "one_island",
-        "resort_gorgeous",
         "five_island",
+        "five_isle_meadow",
+        "one_island",
         "four_island",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9386,14 +9757,14 @@
         "celadon_city",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "kindle_road",
-        "ruin_valley",
         "treasure_beach",
         "resort_gorgeous",
         "canyon_entrance",
-        "water_path"
+        "kindle_road",
+        "water_path",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9424,12 +9795,12 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
-        "trainer_tower",
-        "ruin_valley",
         "resort_gorgeous",
+        "canyon_entrance",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -9458,10 +9829,10 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
+        "three_island",
         "four_island",
-        "six_island",
         "seven_island",
-        "three_island"
+        "six_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9564,13 +9935,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -9604,20 +9975,20 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "six_island",
-        "two_island",
-        "seven_island",
-        "three_island",
-        "treasure_beach",
-        "one_island",
-        "resort_gorgeous",
-        "five_island",
-        "four_island",
         "water_path",
-        "water_labyrinth"
+        "seven_island",
+        "six_island",
+        "three_island",
+        "five_island",
+        "one_island",
+        "four_island",
+        "outcast_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9641,23 +10012,24 @@
         "saffron_city",
         "celadon_city",
         "rom_mined",
-        "resort_gorgeous",
         "green_path",
-        "outcast_island",
-        "four_island",
-        "kindle_road",
-        "memorial_pillar",
-        "two_island",
-        "three_island",
         "ruin_valley",
         "treasure_beach",
+        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "four_island",
+        "memorial_pillar",
+        "outcast_island",
         "water_path",
-        "water_labyrinth"
+        "two_island",
+        "three_island"
       ],
       "firstAreaEncountered": "route_2",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description"
@@ -9730,9 +10102,9 @@
         "indigo_plateau",
         "rom_mined",
         "four_island",
+        "one_island",
         "two_island",
-        "three_island",
-        "one_island"
+        "three_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -9765,6 +10137,7 @@
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -9791,9 +10164,10 @@
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
-        "system_text"
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:친구",
@@ -9834,15 +10208,15 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
         "treasure_beach",
-        "resort_gorgeous",
+        "kindle_road",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -9924,13 +10298,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
         "treasure_beach",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -9962,17 +10336,17 @@
         "celadon_city",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "canyon_entrance",
+        "water_labyrinth",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "three_island",
         "ruin_valley",
-        "one_island",
         "four_island",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "one_island",
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
@@ -10003,8 +10377,8 @@
         "rom_mined",
         "five_island",
         "four_island",
-        "two_island",
         "seven_island",
+        "two_island",
         "three_island"
       ],
       "firstAreaEncountered": "viridian_city",
@@ -10028,10 +10402,10 @@
         "cinnabar_island",
         "indigo_plateau",
         "rom_mined",
-        "three_island",
         "five_island",
-        "four_island",
-        "two_island"
+        "two_island",
+        "three_island",
+        "four_island"
       ],
       "firstAreaEncountered": "saffron_city",
       "sourceTypes": [
@@ -10083,18 +10457,18 @@
         "route_9",
         "rom_mined",
         "green_path",
-        "trainer_tower",
+        "treasure_beach",
+        "canyon_entrance",
+        "resort_gorgeous",
         "kindle_road",
+        "water_path",
         "six_island",
-        "two_island",
         "three_island",
         "ruin_valley",
-        "treasure_beach",
-        "resort_gorgeous",
         "five_island",
         "four_island",
-        "canyon_entrance",
-        "water_path"
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -10120,10 +10494,10 @@
         "route_18",
         "route_22",
         "rom_mined",
-        "two_island",
+        "one_island",
         "seven_island",
-        "three_island",
-        "one_island"
+        "two_island",
+        "three_island"
       ],
       "firstAreaEncountered": "cerulean_city",
       "sourceTypes": [
@@ -10150,20 +10524,21 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "outcast_island",
+        "resort_gorgeous",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "three_island",
         "ruin_valley",
         "five_isle_meadow",
-        "resort_gorgeous",
         "four_island",
-        "water_path"
+        "outcast_island",
+        "two_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -10184,6 +10559,7 @@
       "firstAreaEncountered": "route_3",
       "sourceTypes": [
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -10204,10 +10580,11 @@
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:놀다",
@@ -10246,14 +10623,14 @@
         "celadon_city",
         "route_23",
         "rom_mined",
-        "trainer_tower",
-        "three_island",
-        "water_path",
+        "canyon_entrance",
         "two_island",
+        "water_path",
+        "three_island",
         "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -10281,6 +10658,7 @@
       "sourceTypes": [
         "npc_dialog",
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -10309,15 +10687,15 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
         "treasure_beach",
-        "resort_gorgeous",
+        "kindle_road",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -10361,12 +10739,12 @@
         "route_22",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
         "five_island",
-        "four_island"
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "route_1",
       "sourceTypes": [
@@ -10396,12 +10774,12 @@
         "pewter_city",
         "rom_mined",
         "green_path",
-        "outcast_island",
-        "kindle_road",
-        "memorial_pillar",
         "treasure_beach",
         "resort_gorgeous",
-        "water_labyrinth"
+        "water_labyrinth",
+        "kindle_road",
+        "memorial_pillar",
+        "outcast_island"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
@@ -10425,16 +10803,17 @@
         "rom_mined",
         "four_island",
         "five_island",
+        "two_island",
         "three_island",
-        "six_island",
-        "two_island"
+        "six_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:모두",
@@ -10461,13 +10840,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -10509,9 +10888,10 @@
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "item_description",
         "system_text"
       ],
-      "primarySourceType": "system_text"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:변화",
@@ -10546,10 +10926,13 @@
       ],
       "firstAreaEncountered": "fuchsia_city",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
+        "pokemon_ability",
+        "pokemon_move",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:비축",
@@ -10564,6 +10947,7 @@
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text"
@@ -10615,20 +10999,21 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
-        "seven_island",
         "resort_gorgeous",
+        "canyon_entrance",
+        "seven_island",
+        "six_island",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
         "npc_dialog",
-        "system_text"
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:시간",
@@ -10647,14 +11032,14 @@
         "route_20",
         "route_21",
         "rom_mined",
-        "resort_gorgeous",
         "green_path",
-        "outcast_island",
-        "kindle_road",
-        "memorial_pillar",
-        "water_labyrinth",
         "ruin_valley",
         "treasure_beach",
+        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "memorial_pillar",
+        "outcast_island",
         "water_path"
       ],
       "firstAreaEncountered": "pewter_city",
@@ -10730,10 +11115,13 @@
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
-        "system_text"
+        "pokemon_move",
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:전혀",
@@ -10760,20 +11148,20 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "water_labyrinth",
         "memorial_pillar",
-        "two_island",
-        "six_island",
+        "water_path",
         "seven_island",
         "three_island",
+        "six_island",
         "ruin_valley",
         "one_island",
-        "resort_gorgeous",
         "four_island",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -10800,6 +11188,7 @@
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -10838,8 +11227,8 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "six_island",
         "seven_island",
+        "six_island",
         "five_island",
         "four_island"
       ],
@@ -10889,16 +11278,16 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
         "seven_island",
-        "three_island",
-        "one_island",
-        "water_labyrinth",
         "two_island",
         "treasure_beach",
-        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -10919,14 +11308,14 @@
       "areasReferenced": [
         "route_12",
         "rom_mined",
-        "resort_gorgeous",
         "green_path",
-        "outcast_island",
+        "ruin_valley",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "ruin_valley",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "water_path"
       ],
       "firstAreaEncountered": "route_12",
       "sourceTypes": [
@@ -10998,14 +11387,14 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
+        "resort_gorgeous",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
         "treasure_beach",
-        "resort_gorgeous",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -11038,13 +11427,13 @@
         "route_16",
         "celadon_city",
         "rom_mined",
-        "six_island",
-        "two_island",
-        "seven_island",
         "treasure_beach",
-        "one_island",
+        "seven_island",
+        "six_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11079,21 +11468,21 @@
         "route_23",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "canyon_entrance",
         "kindle_road",
-        "six_island",
-        "two_island",
+        "water_path",
         "seven_island",
+        "six_island",
         "three_island",
         "ruin_valley",
-        "treasure_beach",
-        "one_island",
-        "resort_gorgeous",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance",
-        "water_path"
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
@@ -11175,24 +11564,24 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
         "seven_island",
         "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
         "two_island",
-        "ruin_valley",
+        "green_path",
         "treasure_beach",
-        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11222,15 +11611,15 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "outcast_island",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
+        "water_path",
         "seven_island",
         "ruin_valley",
         "one_island",
-        "resort_gorgeous",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11266,19 +11655,20 @@
         "route_22",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "memorial_pillar",
-        "seven_island",
-        "ruin_valley",
         "resort_gorgeous",
         "canyon_entrance",
+        "water_labyrinth",
+        "memorial_pillar",
         "water_path",
-        "water_labyrinth"
+        "seven_island",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -11350,6 +11740,7 @@
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -11378,24 +11769,25 @@
         "route_21",
         "celadon_city",
         "rom_mined",
+        "treasure_beach",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
-        "six_island",
-        "two_island",
         "memorial_pillar",
         "seven_island",
-        "treasure_beach",
-        "one_island",
-        "resort_gorgeous",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island",
-        "water_labyrinth"
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
-        "system_text"
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:내다",
@@ -11443,10 +11835,11 @@
       ],
       "firstAreaEncountered": "saffron_city",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:노인",
@@ -11542,14 +11935,14 @@
         "route_20",
         "route_21",
         "rom_mined",
-        "trainer_tower",
+        "canyon_entrance",
         "kindle_road",
+        "water_path",
         "seven_island",
         "ruin_valley",
-        "one_island",
         "four_island",
-        "canyon_entrance",
-        "water_path"
+        "one_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -11575,10 +11968,11 @@
       ],
       "firstAreaEncountered": "route_8",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:된다",
@@ -11606,20 +12000,20 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
+        "water_path",
         "seven_island",
         "ruin_valley",
         "five_isle_meadow",
-        "treasure_beach",
         "one_island",
-        "resort_gorgeous",
         "four_island",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11666,24 +12060,24 @@
         "route_9",
         "route_22",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11733,15 +12127,15 @@
         "pewter_city",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
+        "ruin_valley",
         "canyon_entrance",
         "three_island",
-        "ruin_valley",
+        "one_island",
+        "memorial_pillar",
+        "outcast_island",
         "water_path",
-        "one_island"
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
@@ -11763,15 +12157,15 @@
         "saffron_city",
         "fuchsia_city",
         "rom_mined",
-        "resort_gorgeous",
         "green_path",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
+        "outcast_island",
         "water_path",
-        "six_island",
-        "treasure_beach",
-        "water_labyrinth"
+        "six_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11805,11 +12199,11 @@
         "route_10",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "ruin_valley",
         "canyon_entrance",
-        "water_path"
+        "water_path",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -11838,10 +12232,11 @@
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:발견",
@@ -11871,13 +12266,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -11962,11 +12357,11 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "one_island",
         "two_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "route_1",
@@ -12075,10 +12470,10 @@
         "celadon_city",
         "rom_mined",
         "resort_gorgeous",
-        "two_island",
+        "one_island",
         "seven_island",
-        "three_island",
-        "one_island"
+        "two_island",
+        "three_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12141,13 +12536,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12200,22 +12595,23 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
         "treasure_beach",
+        "kindle_road",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:오늘",
@@ -12242,19 +12638,19 @@
         "route_9",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "kindle_road",
-        "memorial_pillar",
-        "two_island",
-        "three_island",
-        "ruin_valley",
         "treasure_beach",
-        "one_island",
+        "canyon_entrance",
         "resort_gorgeous",
         "water_labyrinth",
-        "canyon_entrance",
-        "water_path"
+        "kindle_road",
+        "memorial_pillar",
+        "water_path",
+        "three_island",
+        "ruin_valley",
+        "one_island",
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12328,22 +12724,25 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "outcast_island",
+        "resort_gorgeous",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "six_island",
+        "water_path",
         "seven_island",
+        "six_island",
         "three_island",
         "ruin_valley",
-        "resort_gorgeous",
         "four_island",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "item_description",
         "npc_dialog",
+        "pokemon_ability",
+        "pokemon_move",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "item_description"
@@ -12359,15 +12758,17 @@
       "areasReferenced": [
         "celadon_city",
         "rom_mined",
-        "seven_island",
-        "three_island",
         "five_island",
-        "four_island",
-        "two_island"
+        "seven_island",
+        "two_island",
+        "three_island",
+        "four_island"
       ],
       "firstAreaEncountered": "celadon_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_ability",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -12417,23 +12818,23 @@
         "route_22",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12472,8 +12873,8 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "six_island",
         "seven_island",
+        "six_island",
         "three_island",
         "five_island",
         "four_island"
@@ -12552,15 +12953,16 @@
         "fuchsia_city",
         "celadon_city",
         "rom_mined",
-        "two_island",
-        "one_island"
+        "one_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:정말",
@@ -12601,24 +13003,24 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
         "seven_island",
         "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
         "two_island",
-        "ruin_valley",
+        "green_path",
         "treasure_beach",
-        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12653,11 +13055,11 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "kindle_road",
-        "seven_island",
         "treasure_beach",
         "resort_gorgeous",
-        "water_labyrinth"
+        "water_labyrinth",
+        "kindle_road",
+        "seven_island"
       ],
       "firstAreaEncountered": "cerulean_city",
       "sourceTypes": [
@@ -12718,15 +13120,15 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
-        "two_island",
-        "seven_island",
-        "three_island",
         "treasure_beach",
-        "one_island",
+        "kindle_road",
+        "seven_island",
+        "six_island",
+        "three_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12757,12 +13159,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "viridian_city",
@@ -12795,13 +13197,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12850,10 +13252,12 @@
       ],
       "firstAreaEncountered": "route_4",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:포켓",
@@ -12904,22 +13308,23 @@
         "viridian_city",
         "pewter_city",
         "rom_mined",
-        "resort_gorgeous",
         "green_path",
         "ruin_valley",
         "five_island",
-        "outcast_island",
-        "four_island",
-        "kindle_road",
-        "six_island",
-        "memorial_pillar",
         "treasure_beach",
+        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "four_island",
+        "memorial_pillar",
         "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "six_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -12947,14 +13352,14 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
         "ruin_valley",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -12985,17 +13390,18 @@
         "celadon_city",
         "rom_mined",
         "ruin_valley",
-        "trainer_tower",
-        "four_island",
         "canyon_entrance",
-        "water_path"
+        "four_island",
+        "water_path",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:확률",
@@ -13105,8 +13511,8 @@
         "route_22",
         "indigo_plateau",
         "rom_mined",
-        "two_island",
-        "one_island"
+        "one_island",
+        "two_island"
       ],
       "firstAreaEncountered": "route_2",
       "sourceTypes": [
@@ -13138,12 +13544,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "ruin_valley",
         "resort_gorgeous",
+        "canyon_entrance",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -13185,18 +13591,18 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "five_isle_meadow",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "ruin_valley",
-        "treasure_beach",
+        "canyon_entrance",
         "resort_gorgeous",
-        "canyon_entrance"
+        "memorial_pillar",
+        "five_isle_meadow",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "ruin_valley",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -13219,9 +13625,9 @@
         "fuchsia_city",
         "cinnabar_island",
         "rom_mined",
-        "four_island",
+        "two_island",
         "three_island",
-        "two_island"
+        "four_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -13264,9 +13670,10 @@
       "sourceTypes": [
         "npc_dialog",
         "pokedex_entry",
-        "system_text"
+        "system_text",
+        "trainer_class_name"
       ],
-      "primarySourceType": "pokedex_entry"
+      "primarySourceType": "trainer_class_name"
     },
     {
       "vocabId": "rom-mine-v2:날아가다",
@@ -13326,22 +13733,22 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "water_labyrinth",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -13408,23 +13815,23 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island",
-        "canyon_entrance"
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -13476,16 +13883,16 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "outcast_island",
+        "resort_gorgeous",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "three_island",
         "ruin_valley",
         "five_isle_meadow",
-        "resort_gorgeous",
         "four_island",
-        "water_path"
+        "outcast_island",
+        "two_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -13504,14 +13911,15 @@
       "source": "rom-rec2934",
       "areasReferenced": [
         "rom_mined",
-        "four_island",
         "one_island",
+        "four_island",
         "two_island",
         "three_island"
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -13539,12 +13947,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -13628,20 +14036,20 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
+        "resort_gorgeous",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
         "kindle_road",
         "six_island",
-        "seven_island",
         "three_island",
-        "one_island",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "treasure_beach",
-        "resort_gorgeous",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "outcast_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -13693,20 +14101,21 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:들어오다",
@@ -13750,14 +14159,14 @@
         "route_22",
         "route_23",
         "rom_mined",
+        "resort_gorgeous",
+        "five_isle_meadow",
+        "two_island",
+        "treasure_beach",
         "kindle_road",
         "six_island",
         "three_island",
-        "five_isle_meadow",
-        "two_island",
         "ruin_valley",
-        "treasure_beach",
-        "resort_gorgeous",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -13874,16 +14283,16 @@
         "route_23",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
+        "resort_gorgeous",
         "seven_island",
-        "three_island",
-        "one_island",
-        "water_labyrinth",
         "two_island",
         "treasure_beach",
-        "resort_gorgeous",
+        "water_labyrinth",
+        "kindle_road",
+        "three_island",
+        "six_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -13915,12 +14324,13 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
-        "seven_island",
-        "one_island"
+        "one_island",
+        "seven_island"
       ],
       "firstAreaEncountered": "cerulean_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -13964,8 +14374,8 @@
         "indigo_plateau",
         "rom_mined",
         "kindle_road",
-        "two_island",
-        "seven_island"
+        "seven_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -13993,6 +14403,7 @@
       "firstAreaEncountered": "cerulean_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_species",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -14020,12 +14431,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -14066,17 +14477,17 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "seven_island",
+        "two_island",
         "kindle_road",
         "six_island",
-        "seven_island",
         "three_island",
-        "two_island",
         "ruin_valley",
-        "resort_gorgeous",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "route_1",
       "sourceTypes": [
@@ -14116,9 +14527,10 @@
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "item_description",
         "system_text"
       ],
-      "primarySourceType": "system_text"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:발휘",
@@ -14152,11 +14564,11 @@
         "celadon_city",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "canyon_entrance",
         "ruin_valley",
-        "water_path"
+        "canyon_entrance",
+        "outcast_island",
+        "water_path",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14181,6 +14593,7 @@
       "firstAreaEncountered": "saffron_city",
       "sourceTypes": [
         "item_description",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "item_description"
@@ -14275,10 +14688,11 @@
       ],
       "firstAreaEncountered": "route_2",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:뿌리",
@@ -14293,9 +14707,11 @@
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "item_description",
+        "pokemon_species",
         "system_text"
       ],
-      "primarySourceType": "system_text"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:서다",
@@ -14339,13 +14755,13 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
-        "two_island",
         "seven_island",
+        "six_island",
         "three_island",
-        "one_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -14448,17 +14864,17 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "outcast_island",
+        "resort_gorgeous",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "seven_island",
         "three_island",
         "ruin_valley",
         "five_isle_meadow",
-        "resort_gorgeous",
         "four_island",
-        "water_path"
+        "outcast_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14494,13 +14910,13 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "ruin_valley",
         "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "kindle_road",
+        "ruin_valley",
         "four_island",
-        "canyon_entrance"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14543,10 +14959,12 @@
       ],
       "firstAreaEncountered": "vermilion_city",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:아빠",
@@ -14571,13 +14989,13 @@
         "route_20",
         "celadon_city",
         "rom_mined",
-        "six_island",
-        "two_island",
-        "seven_island",
         "treasure_beach",
-        "one_island",
+        "seven_island",
+        "six_island",
         "five_island",
-        "four_island"
+        "one_island",
+        "four_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14613,12 +15031,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -14654,23 +15072,23 @@
         "celadon_city",
         "rom_mined",
         "green_path",
-        "outcast_island",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "two_island",
-        "memorial_pillar",
-        "seven_island",
-        "ruin_valley",
-        "five_isle_meadow",
         "treasure_beach",
-        "one_island",
         "resort_gorgeous",
-        "five_island",
-        "four_island",
-        "water_labyrinth",
         "canyon_entrance",
-        "water_path"
+        "water_labyrinth",
+        "kindle_road",
+        "memorial_pillar",
+        "water_path",
+        "seven_island",
+        "six_island",
+        "ruin_valley",
+        "five_island",
+        "five_isle_meadow",
+        "one_island",
+        "four_island",
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14723,11 +15141,11 @@
         "route_4",
         "celadon_city",
         "rom_mined",
+        "treasure_beach",
         "resort_gorgeous",
         "kindle_road",
-        "seven_island",
-        "treasure_beach",
-        "one_island"
+        "one_island",
+        "seven_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14749,6 +15167,7 @@
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "system_text"
@@ -14780,17 +15199,17 @@
         "route_23",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "kindle_road",
-        "memorial_pillar",
-        "ruin_valley",
-        "five_isle_meadow",
         "treasure_beach",
         "resort_gorgeous",
         "canyon_entrance",
+        "water_labyrinth",
+        "kindle_road",
+        "memorial_pillar",
         "water_path",
-        "water_labyrinth"
+        "ruin_valley",
+        "five_isle_meadow",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -14831,8 +15250,8 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "six_island",
         "seven_island",
+        "six_island",
         "three_island",
         "five_island",
         "four_island"
@@ -14906,15 +15325,15 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "kindle_road",
-        "six_island",
         "seven_island",
-        "three_island",
         "five_isle_meadow",
-        "one_island",
         "two_island",
         "treasure_beach",
+        "kindle_road",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -14963,24 +15382,24 @@
         "route_22",
         "indigo_plateau",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "green_path",
-        "outcast_island",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "two_island",
+        "green_path",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "six_island",
+        "three_island",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -15038,12 +15457,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -15107,8 +15526,8 @@
         "route_16",
         "route_9",
         "rom_mined",
-        "six_island",
         "seven_island",
+        "six_island",
         "three_island",
         "five_island",
         "four_island"
@@ -15144,11 +15563,11 @@
         "route_20",
         "celadon_city",
         "rom_mined",
-        "trainer_tower",
+        "canyon_entrance",
+        "water_path",
         "ruin_valley",
         "four_island",
-        "canyon_entrance",
-        "water_path"
+        "trainer_tower"
       ],
       "firstAreaEncountered": "viridian_city",
       "sourceTypes": [
@@ -15171,6 +15590,7 @@
       ],
       "firstAreaEncountered": "route_3",
       "sourceTypes": [
+        "item_description",
         "pokedex_entry",
         "system_text"
       ],
@@ -15192,6 +15612,7 @@
       "firstAreaEncountered": "vermilion_city",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -15215,9 +15636,9 @@
         "cinnabar_island",
         "celadon_city",
         "rom_mined",
+        "treasure_beach",
         "kindle_road",
         "seven_island",
-        "treasure_beach",
         "four_island"
       ],
       "firstAreaEncountered": "viridian_city",
@@ -15294,8 +15715,8 @@
         "rom_mined",
         "five_island",
         "four_island",
-        "two_island",
         "seven_island",
+        "two_island",
         "three_island"
       ],
       "firstAreaEncountered": "route_8",
@@ -15321,17 +15742,17 @@
         "route_23",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
-        "kindle_road",
-        "memorial_pillar",
-        "ruin_valley",
-        "five_isle_meadow",
         "treasure_beach",
         "resort_gorgeous",
         "canyon_entrance",
+        "water_labyrinth",
+        "kindle_road",
+        "memorial_pillar",
         "water_path",
-        "water_labyrinth"
+        "ruin_valley",
+        "five_isle_meadow",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -15444,11 +15865,11 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "kindle_road",
-        "two_island",
-        "three_island",
         "treasure_beach",
-        "one_island"
+        "kindle_road",
+        "three_island",
+        "one_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pewter_city",
       "sourceTypes": [
@@ -15494,24 +15915,25 @@
         "indigo_plateau",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "seven_island",
         "ruin_valley",
         "five_isle_meadow",
-        "treasure_beach",
         "one_island",
-        "resort_gorgeous",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -15531,6 +15953,7 @@
       "firstAreaEncountered": "route_13",
       "sourceTypes": [
         "pokedex_entry",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "pokedex_entry"
@@ -15577,16 +16000,16 @@
         "celadon_city",
         "route_9",
         "rom_mined",
-        "outcast_island",
+        "resort_gorgeous",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "three_island",
         "ruin_valley",
         "five_isle_meadow",
-        "resort_gorgeous",
         "four_island",
-        "water_path"
+        "outcast_island",
+        "two_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -15610,10 +16033,10 @@
         "rom_mined",
         "five_island",
         "four_island",
-        "two_island",
+        "one_island",
         "seven_island",
-        "three_island",
-        "one_island"
+        "two_island",
+        "three_island"
       ],
       "firstAreaEncountered": "saffron_city",
       "sourceTypes": [
@@ -15655,13 +16078,14 @@
         "pallet_town",
         "viridian_city",
         "rom_mined",
-        "three_island",
+        "one_island",
         "two_island",
-        "one_island"
+        "three_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
         "npc_dialog",
+        "pokemon_move",
         "system_text"
       ],
       "primarySourceType": "npc_dialog"
@@ -15700,27 +16124,28 @@
         "route_9",
         "indigo_plateau",
         "rom_mined",
-        "kindle_road",
-        "six_island",
-        "seven_island",
-        "three_island",
-        "five_isle_meadow",
-        "one_island",
-        "water_path",
-        "water_labyrinth",
-        "memorial_pillar",
-        "two_island",
-        "ruin_valley",
         "resort_gorgeous",
+        "memorial_pillar",
+        "seven_island",
+        "five_isle_meadow",
+        "two_island",
+        "water_labyrinth",
+        "kindle_road",
+        "water_path",
+        "three_island",
+        "six_island",
+        "ruin_valley",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
+        "item_description",
         "npc_dialog",
         "system_text"
       ],
-      "primarySourceType": "npc_dialog"
+      "primarySourceType": "item_description"
     },
     {
       "vocabId": "rom-mine-v2:칸나",
@@ -15732,9 +16157,9 @@
       "source": "rom-rec3291",
       "areasReferenced": [
         "rom_mined",
+        "two_island",
         "three_island",
-        "four_island",
-        "two_island"
+        "four_island"
       ],
       "firstAreaEncountered": "rom_mined",
       "sourceTypes": [
@@ -15806,12 +16231,12 @@
         "celadon_city",
         "indigo_plateau",
         "rom_mined",
-        "six_island",
         "seven_island",
-        "three_island",
-        "one_island",
         "two_island",
+        "six_island",
+        "three_island",
         "five_island",
+        "one_island",
         "four_island"
       ],
       "firstAreaEncountered": "pallet_town",
@@ -15886,6 +16311,7 @@
       "sourceTypes": [
         "item_description",
         "npc_dialog",
+        "pokemon_ability",
         "system_text"
       ],
       "primarySourceType": "item_description"
@@ -15926,21 +16352,21 @@
         "route_25",
         "rom_mined",
         "green_path",
-        "trainer_tower",
-        "outcast_island",
+        "treasure_beach",
+        "resort_gorgeous",
+        "canyon_entrance",
+        "water_labyrinth",
         "kindle_road",
         "memorial_pillar",
-        "two_island",
+        "water_path",
         "three_island",
         "ruin_valley",
         "five_isle_meadow",
-        "treasure_beach",
-        "one_island",
-        "resort_gorgeous",
         "four_island",
-        "canyon_entrance",
-        "water_path",
-        "water_labyrinth"
+        "one_island",
+        "outcast_island",
+        "two_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "pallet_town",
       "sourceTypes": [
@@ -16031,19 +16457,19 @@
         "route_22",
         "route_23",
         "rom_mined",
-        "trainer_tower",
-        "kindle_road",
-        "seven_island",
-        "one_island",
-        "water_labyrinth",
-        "outcast_island",
-        "memorial_pillar",
-        "ruin_valley",
-        "treasure_beach",
         "resort_gorgeous",
+        "canyon_entrance",
+        "memorial_pillar",
+        "seven_island",
+        "treasure_beach",
+        "water_labyrinth",
+        "kindle_road",
+        "ruin_valley",
         "five_island",
         "four_island",
-        "canyon_entrance"
+        "one_island",
+        "outcast_island",
+        "trainer_tower"
       ],
       "firstAreaEncountered": "route_1",
       "sourceTypes": [

@@ -28,18 +28,34 @@ def attribute_vocab(vocab_path, lemma_index):
     area_counter = Counter()
     attributed = 0
     unattributed = 0
+    GENERIC = {"rom_mined", "trainer_dialog", "topik_1", "topik_2", "etymology"}
     for entry in entries:
         lemma = entry.get('korean')
         if lemma and lemma in lemma_index['lemmas']:
             info = lemma_index['lemmas'][lemma]
-            entry['firstAreaEncountered'] = info['first_area']
-            entry['areasReferenced'] = info['areas']
+            # Only overwrite firstAreaEncountered if the new attribution is
+            # MORE specific than the existing one. This preserves the
+            # build_name_table_decks attribution (which uses TM canonical
+            # areas / wild-encounter areas) when lemma_index has a generic
+            # rom_mined for the same lemma.
+            existing_fa = entry.get('firstAreaEncountered')
+            new_fa = info.get('first_area', '')
+            if not existing_fa or existing_fa in GENERIC:
+                entry['firstAreaEncountered'] = new_fa
+            # Always union the areasReferenced set
+            existing_areas = set(entry.get('areasReferenced') or [])
+            existing_areas.update(info.get('areas', []))
+            entry['areasReferenced'] = sorted(existing_areas)
             entry['liveRecIds'] = info['rec_ids']
             if 'source_types' in info:
-                entry['sourceTypes'] = info['source_types']
-                entry['primarySourceType'] = info['primary_source_type']
+                # Union the source-types sets too
+                existing_st = set(entry.get('sourceTypes') or [])
+                existing_st.update(info['source_types'])
+                entry['sourceTypes'] = sorted(existing_st)
+                if not entry.get('primarySourceType') or entry.get('primarySourceType') in GENERIC:
+                    entry['primarySourceType'] = info['primary_source_type']
             attributed += 1
-            area_counter[info['first_area']] += 1
+            area_counter[entry.get('firstAreaEncountered','?')] += 1
             # Build map for sentence lookup using vocab id if present, else korean
             key = entry.get('id') if 'id' in entry else entry.get('korean')
             if key:

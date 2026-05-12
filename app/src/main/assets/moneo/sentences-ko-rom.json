@@ -162,7 +162,61 @@
    "gloss": "(I, me (informal))",
    "areaId": "rom_mined",
    "source": "rom-rec668",
-   "speaker": "오박사"
+   "speaker": "오박사",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "indigo_plateau",
+    "treasure_beach",
+    "resort_gorgeous",
+    "kindle_road",
+    "one_island",
+    "three_island",
+    "two_island",
+    "four_island",
+    "five_island",
+    "seven_island",
+    "six_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    92,
+    104,
+    144,
+    192,
+    194
+   ]
   },
   {
    "vocabId": "rom-mine-v2:이름",
@@ -412,7 +466,75 @@
    "korean": "거기 웅 집 한 들어오지 란 응 나",
    "gloss": "(house, home)",
    "areaId": "rom_mined",
-   "source": "rom-rec984"
+   "source": "rom-rec984",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "kindle_road",
+    "four_island",
+    "three_island",
+    "two_island",
+    "five_island",
+    "seven_island",
+    "six_island",
+    "resort_gorgeous",
+    "treasure_beach",
+    "five_isle_meadow",
+    "canyon_entrance",
+    "water_labyrinth",
+    "outcast_island",
+    "water_path",
+    "green_path",
+    "ruin_valley",
+    "trainer_tower",
+    "memorial_pillar"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    592,
+    695,
+    925,
+    984,
+    994
+   ]
   },
   {
    "vocabId": "rom-mine-v2:길",
@@ -420,14 +542,106 @@
    "gloss": "(road, path)",
    "areaId": "rom_mined",
    "source": "rom-rec266",
-   "speaker": "{var:01}"
+   "speaker": "{var:01}",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "kindle_road",
+    "five_island",
+    "two_island",
+    "six_island",
+    "three_island",
+    "four_island",
+    "seven_island",
+    "treasure_beach",
+    "one_island",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "canyon_entrance",
+    "outcast_island",
+    "green_path",
+    "water_path",
+    "trainer_tower",
+    "ruin_valley",
+    "five_isle_meadow",
+    "memorial_pillar"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    266,
+    414,
+    558,
+    653,
+    675
+   ]
   },
   {
    "vocabId": "rom-mine-v2:풀",
    "korean": "약해져서 하고 않을 풀숲을",
    "gloss": "(grass)",
    "areaId": "rom_mined",
-   "source": "rom-rec214"
+   "source": "rom-rec214",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city",
+    "cerulean_city",
+    "lavender_town",
+    "vermilion_city",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    5,
+    6,
+    10,
+    11,
+    17
+   ]
   },
   {
    "vocabId": "rom-mine-v2:야생",
@@ -621,14 +835,68 @@
    "korean": "했는데 새포켓몬이 보여",
    "gloss": "(bird)",
    "areaId": "rom_mined",
-   "source": "rom-rec1068"
+   "source": "rom-rec1068",
+   "firstAreaEncountered": "route_4",
+   "areasReferenced": [
+    "route_4",
+    "cerulean_city",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "resort_gorgeous",
+    "treasure_beach",
+    "kindle_road",
+    "water_labyrinth",
+    "memorial_pillar",
+    "four_island",
+    "three_island",
+    "two_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    333,
+    608,
+    1003,
+    1068,
+    1409
+   ]
   },
   {
    "vocabId": "rom-mine-v2:쥐",
    "korean": "이런 생쥐 특",
    "gloss": "(rat / mouse)",
    "areaId": "rom_mined",
-   "source": "rom-rec526"
+   "source": "rom-rec526",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    526,
+    5694
+   ]
   },
   {
    "vocabId": "rom-mine-v2:도시",
@@ -636,7 +904,26 @@
    "gloss": "(city)",
    "areaId": "rom_mined",
    "source": "rom-rec3006",
-   "speaker": "{var:01}"
+   "speaker": "{var:01}",
+   "firstAreaEncountered": "route_25",
+   "areasReferenced": [
+    "route_25",
+    "one_island",
+    "seven_island",
+    "two_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1047,
+    3006,
+    3019,
+    3048,
+    3062
+   ]
   },
   {
    "vocabId": "rom-mine-v2:사람",
@@ -710,7 +997,32 @@
    "korean": "가게는 개업했어요 아직은",
    "gloss": "(shop, store)",
    "areaId": "rom_mined",
-   "source": "rom-rec1134"
+   "source": "rom-rec1134",
+   "firstAreaEncountered": "pewter_city",
+   "areasReferenced": [
+    "pewter_city",
+    "cerulean_city",
+    "saffron_city",
+    "lavender_town",
+    "vermilion_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "one_island",
+    "two_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1044,
+    1095,
+    1134,
+    1139,
+    2253
+   ]
   },
   {
    "vocabId": "rom-mine-v2:사다",
@@ -920,14 +1232,146 @@
    "korean": "약해져서 하고 않을 풀숲을",
    "gloss": "(forest)",
    "areaId": "rom_mined",
-   "source": "rom-rec214"
+   "source": "rom-rec214",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "kindle_road",
+    "one_island",
+    "three_island",
+    "two_island",
+    "five_island",
+    "seven_island",
+    "six_island",
+    "treasure_beach",
+    "four_island",
+    "resort_gorgeous",
+    "five_isle_meadow",
+    "water_labyrinth",
+    "outcast_island",
+    "green_path",
+    "memorial_pillar"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    214,
+    805,
+    852,
+    938,
+    1008
+   ]
   },
   {
    "vocabId": "rom-mine-v2:나무",
    "korean": "쓰레기통에 나무열매가 있었는데",
    "gloss": "(tree)",
    "areaId": "rom_mined",
-   "source": "rom-rec282"
+   "source": "rom-rec282",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "one_island",
+    "three_island",
+    "two_island",
+    "treasure_beach",
+    "kindle_road",
+    "resort_gorgeous",
+    "five_isle_meadow",
+    "canyon_entrance",
+    "water_labyrinth",
+    "outcast_island",
+    "water_path",
+    "green_path",
+    "trainer_tower",
+    "memorial_pillar",
+    "ruin_valley",
+    "five_island",
+    "seven_island",
+    "six_island",
+    "four_island"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    282,
+    775,
+    802,
+    804,
+    805
+   ]
   },
   {
    "vocabId": "rom-mine-v2:벌레",
@@ -1042,7 +1486,36 @@
    "gloss": "(to be careful)",
    "areaId": "rom_mined",
    "source": "rom-rec1584",
-   "targetForm": "조심하면서"
+   "targetForm": "조심하면서",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_24",
+    "route_25",
+    "route_22",
+    "route_23",
+    "resort_gorgeous",
+    "five_isle_meadow",
+    "canyon_entrance",
+    "water_labyrinth",
+    "outcast_island",
+    "water_path",
+    "green_path",
+    "treasure_beach",
+    "ruin_valley",
+    "trainer_tower",
+    "kindle_road",
+    "memorial_pillar"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    1584,
+    2003
+   ]
   },
   {
    "vocabId": "rom-mine-v2:회색",
@@ -1098,7 +1571,17 @@
    "korean": "두 방이 있 첫",
    "gloss": "(first (modifier))",
    "areaId": "rom_mined",
-   "source": "rom-rec3920"
+   "source": "rom-rec3920",
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text",
+   "liveRecIds": [
+    3920,
+    6483
+   ]
   },
   {
    "vocabId": "rom-mine-v2:배지",
@@ -1161,7 +1644,22 @@
    "gloss": "(to challenge)",
    "areaId": "rom_mined",
    "source": "rom-rec2188",
-   "targetForm": "도전하려"
+   "targetForm": "도전하려",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "pewter_city"
+   ],
+   "sourceTypes": [
+    "npc_dialog"
+   ],
+   "primarySourceType": "npc_dialog",
+   "liveRecIds": [
+    2188,
+    3585,
+    4992
+   ]
   },
   {
    "vocabId": "rom-mine-v2:이기다",

@@ -124,11 +124,28 @@ def main():
     # game's text somewhere" attribution.
     static_corpus = load_json(STATIC_CORPUS_PATH)
     static_records_tokenized = 0
+    # Per-source-type tagging for the new name-table records added by
+    # extend_corpus_with_name_tables.py. Records carry a `source` field
+    # like "gMoveNames[3]" / "gSpeciesNames[8]" / "gItems[10].name" etc.
+    NAME_TABLE_TAGS = {
+        "gMoveNames":         "pokemon_move",
+        "gAbilityNames":      "pokemon_ability",
+        "gSpeciesNames":      "pokemon_species",
+        "gTrainerClassNames": "trainer_class_name",
+        "gItems":             "item_description",
+    }
     for rec in static_corpus["records"]:
         text = rec.get("text", "")
         if not text or rec.get("unknown", 0) > 1:
             continue
         static_records_tokenized += 1
+        # Identify name-table source for sourceTypes tagging
+        rec_source = rec.get("source", "")
+        rec_tag = "system_text"
+        for prefix, tag in NAME_TABLE_TAGS.items():
+            if rec_source.startswith(prefix):
+                rec_tag = tag
+                break
         try:
             tokens = mecab_lemmatize(text)
         except Exception:
@@ -148,7 +165,7 @@ def main():
             if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                 continue
             lemma_areas[lemma].add(STATIC_ONLY_AREA_ID)
-            lemma_source_types[lemma].add("system_text")
+            lemma_source_types[lemma].add(rec_tag)
             # Don't override live-region rec_ids; only attach static rec_id
             # if there are no live records for this lemma yet.
             if not lemma_rec_ids[lemma] and len(lemma_rec_ids[lemma]) < 5:

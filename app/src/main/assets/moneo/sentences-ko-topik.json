@@ -33,6 +33,7 @@
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_species",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -99,12 +100,12 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "kindle_road",
-    "six_island",
     "seven_island",
-    "three_island",
     "five_isle_meadow",
     "two_island",
+    "kindle_road",
+    "six_island",
+    "three_island",
     "ruin_valley",
     "five_island",
     "four_island"
@@ -197,28 +198,29 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text",
     "trainer_class_name"
    ],
@@ -362,30 +364,31 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "four_island",
+    "one_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "item_description",
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text",
     "trainer_class_name"
    ],
@@ -442,25 +445,25 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "밀밟간같",
    "originalSource": "rom-rec2560",
@@ -542,25 +545,25 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "four_island",
+    "one_island",
+    "outcast_island"
    ],
    "originalKorean": "팬이있다",
    "originalSource": "rom-rec4363",
@@ -614,13 +617,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
     "treasure_beach",
+    "six_island",
+    "three_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -721,7 +724,9 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -775,31 +780,33 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "four_island",
+    "one_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "pokemon_species",
+    "system_text",
+    "trainer_class_name"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "trainer_class_name",
    "liveRecIds": [
     912,
     980,
@@ -876,8 +883,8 @@
     "rom_mined",
     "five_island",
     "four_island",
-    "two_island",
     "seven_island",
+    "two_island",
     "three_island"
    ],
    "sourceTypes": [
@@ -985,30 +992,32 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "one_island",
+    "four_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "item_description",
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
+    "pokemon_species",
     "system_text",
     "trainer_class_name"
    ],
@@ -1045,14 +1054,15 @@
    "areasReferenced": [
     "route_3",
     "rom_mined",
+    "ruin_valley",
     "four_island",
     "two_island",
-    "three_island",
-    "ruin_valley"
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -1149,25 +1159,25 @@
     "route_22",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "one_island",
+    "four_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1253,21 +1263,21 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
+    "canyon_entrance",
     "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "green_path",
     "treasure_beach",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1310,15 +1320,16 @@
     "indigo_plateau",
     "rom_mined",
     "seven_island",
+    "two_island",
     "three_island",
-    "one_island",
-    "two_island"
+    "one_island"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     1141,
     2241,
@@ -1351,22 +1362,22 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "water_labyrinth",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -1422,9 +1433,11 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
+    "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "system_text",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     2484
    ]
@@ -1524,20 +1537,20 @@
     "route_9",
     "route_22",
     "rom_mined",
-    "trainer_tower",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
+    "canyon_entrance",
     "memorial_pillar",
+    "seven_island",
+    "green_path",
+    "water_labyrinth",
+    "water_path",
+    "six_island",
+    "three_island",
     "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1714,19 +1727,19 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "treasure_beach",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
-    "four_island"
+    "four_island",
+    "one_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -1771,10 +1784,10 @@
     "viridian_city",
     "pewter_city",
     "rom_mined",
-    "trainer_tower",
-    "outcast_island",
+    "canyon_entrance",
     "kindle_road",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -1814,8 +1827,8 @@
     "route_16",
     "route_9",
     "rom_mined",
-    "six_island",
     "seven_island",
+    "six_island",
     "three_island",
     "five_island",
     "four_island"
@@ -1886,22 +1899,22 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -2070,18 +2083,19 @@
     "route_22",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "memorial_pillar",
-    "seven_island",
-    "ruin_valley",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "seven_island",
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_species",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -2168,18 +2182,20 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
+    "seven_island",
+    "two_island",
     "kindle_road",
     "six_island",
-    "seven_island",
     "three_island",
-    "one_island",
-    "two_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -2347,16 +2363,16 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
     "seven_island",
-    "three_island",
     "five_isle_meadow",
-    "one_island",
     "two_island",
-    "ruin_valley",
     "treasure_beach",
+    "kindle_road",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -2541,23 +2557,23 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -2619,25 +2635,25 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "four_island",
+    "one_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -2702,6 +2718,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -2927,19 +2944,19 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_labyrinth",
-    "outcast_island",
+    "resort_gorgeous",
     "memorial_pillar",
+    "seven_island",
     "two_island",
     "treasure_beach",
-    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "three_island",
+    "six_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -3011,17 +3028,17 @@
     "route_23",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "five_isle_meadow",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3083,13 +3100,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
     "treasure_beach",
+    "six_island",
+    "three_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -3136,9 +3153,9 @@
     "route_21",
     "celadon_city",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
-    "kindle_road",
-    "treasure_beach"
+    "kindle_road"
    ],
    "sourceTypes": [
     "item_description",
@@ -3216,25 +3233,25 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -3300,13 +3317,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
     "treasure_beach",
+    "three_island",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -3466,10 +3483,13 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
+    "pokemon_move",
+    "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     1116,
     2906
@@ -3667,13 +3687,13 @@
     "route_22",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
     "seven_island",
-    "three_island",
     "five_isle_meadow",
-    "one_island",
     "two_island",
+    "kindle_road",
+    "three_island",
     "ruin_valley",
+    "one_island",
     "four_island"
    ],
    "originalKorean": "기술꼬신",
@@ -3718,12 +3738,12 @@
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "rom_mined",
-    "resort_gorgeous",
-    "outcast_island",
-    "kindle_road",
-    "treasure_beach",
     "memorial_pillar",
-    "water_labyrinth"
+    "outcast_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3836,17 +3856,17 @@
     "route_23",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "five_isle_meadow",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3924,12 +3944,12 @@
     "route_15",
     "route_9",
     "rom_mined",
-    "six_island",
+    "canyon_entrance",
     "seven_island",
+    "six_island",
     "three_island",
     "five_island",
-    "four_island",
-    "canyon_entrance"
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -3987,29 +4007,30 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -4033,9 +4054,9 @@
     "route_20",
     "route_21",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
-    "kindle_road",
-    "treasure_beach"
+    "kindle_road"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -4077,18 +4098,18 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "six_island",
+    "canyon_entrance",
     "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "green_path",
     "two_island",
+    "green_path",
+    "water_path",
+    "six_island",
+    "three_island",
     "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -4248,12 +4269,13 @@
     "celadon_city",
     "route_22",
     "rom_mined",
-    "two_island",
-    "one_island"
+    "one_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -4357,6 +4379,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "pokedex_entry",
     "system_text"
    ],
@@ -4396,10 +4419,10 @@
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
+    "three_island",
     "four_island",
-    "six_island",
     "seven_island",
-    "three_island"
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -4425,11 +4448,11 @@
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
+    "three_island",
     "four_island",
-    "six_island",
-    "two_island",
     "seven_island",
-    "three_island"
+    "two_island",
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -4621,25 +4644,25 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "조금물속에",
    "originalSource": "rom-rec4476",
@@ -4763,9 +4786,10 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "system_text"
    ],
-   "primarySourceType": "system_text",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     784
    ]
@@ -4796,17 +4820,17 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "outcast_island",
+    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "seven_island",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "resort_gorgeous",
     "four_island",
-    "water_path"
+    "outcast_island",
+    "two_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -4907,25 +4931,25 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "one_island",
-    "water_labyrinth",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "canyon_entrance",
     "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "green_path",
-    "outcast_island",
     "two_island",
-    "ruin_valley",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
     "five_island",
-    "four_island"
+    "trainer_tower",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "six_island",
+    "ruin_valley",
+    "four_island",
+    "one_island",
+    "outcast_island"
    ],
    "originalKorean": "다당없끓",
    "originalSource": "rom-rec1332",
@@ -4998,14 +5022,14 @@
     "celadon_city",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "ruin_valley",
     "treasure_beach",
     "resort_gorgeous",
     "canyon_entrance",
-    "water_path"
+    "kindle_road",
+    "water_path",
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5076,15 +5100,15 @@
     "saffron_city",
     "fuchsia_city",
     "rom_mined",
-    "resort_gorgeous",
     "green_path",
-    "outcast_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
+    "outcast_island",
     "water_path",
-    "six_island",
-    "treasure_beach",
-    "water_labyrinth"
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -5214,9 +5238,10 @@
    ],
    "sourceTypes": [
     "pokedex_entry",
-    "system_text"
+    "system_text",
+    "trainer_class_name"
    ],
-   "primarySourceType": "pokedex_entry",
+   "primarySourceType": "trainer_class_name",
    "liveRecIds": [
     4934
    ]
@@ -5260,24 +5285,24 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5441,11 +5466,11 @@
     "route_9",
     "route_22",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
     "treasure_beach",
+    "kindle_road",
+    "seven_island",
+    "six_island",
+    "three_island",
     "five_island",
     "four_island"
    ],
@@ -5547,25 +5572,25 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "모습을본사람은",
    "originalSource": "rom-rec4480",
@@ -5669,15 +5694,16 @@
     "route_9",
     "rom_mined",
     "kindle_road",
-    "two_island",
     "three_island",
-    "five_isle_meadow",
     "ruin_valley",
-    "four_island"
+    "five_isle_meadow",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -5785,20 +5811,20 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "treasure_beach",
     "one_island",
-    "resort_gorgeous",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -5938,19 +5964,20 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "outcast_island",
+    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "resort_gorgeous",
     "four_island",
-    "water_path"
+    "outcast_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -5978,18 +6005,19 @@
     "route_10",
     "route_11",
     "rom_mined",
-    "six_island",
-    "two_island",
-    "seven_island",
-    "three_island",
     "treasure_beach",
-    "one_island",
     "resort_gorgeous",
+    "seven_island",
+    "six_island",
+    "three_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_species",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -6022,8 +6050,8 @@
     "indigo_plateau",
     "rom_mined",
     "resort_gorgeous",
-    "four_island",
-    "one_island"
+    "one_island",
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6092,16 +6120,16 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
+    "resort_gorgeous",
     "memorial_pillar",
     "two_island",
+    "green_path",
     "treasure_beach",
-    "resort_gorgeous"
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "one_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6219,24 +6247,24 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -6278,25 +6306,26 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "kindle_road",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
-    "four_island"
+    "memorial_pillar",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "ruin_valley",
+    "four_island",
+    "outcast_island"
    ],
    "originalKorean": "낮에는얼굴을콤은채",
    "originalSource": "rom-rec4371",
    "rotatedFromArea": "viridian_city",
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -6345,21 +6374,24 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "outcast_island",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "six_island",
+    "water_path",
     "seven_island",
+    "six_island",
     "three_island",
     "ruin_valley",
-    "resort_gorgeous",
     "four_island",
-    "water_path",
-    "water_labyrinth"
+    "outcast_island"
    ],
    "sourceTypes": [
     "item_description",
     "npc_dialog",
+    "pokemon_ability",
+    "pokemon_move",
+    "pokemon_species",
     "system_text"
    ],
    "primarySourceType": "item_description",
@@ -6395,8 +6427,8 @@
     "route_19",
     "route_20",
     "rom_mined",
-    "resort_gorgeous",
-    "ruin_valley"
+    "ruin_valley",
+    "resort_gorgeous"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6499,24 +6531,24 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6684,14 +6716,14 @@
     "celadon_city",
     "route_23",
     "rom_mined",
-    "trainer_tower",
-    "three_island",
-    "water_path",
+    "canyon_entrance",
     "two_island",
+    "water_path",
+    "three_island",
     "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -6753,8 +6785,8 @@
     "saffron_city",
     "route_20",
     "rom_mined",
-    "trainer_tower",
-    "ruin_valley"
+    "ruin_valley",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "system_text",
@@ -6785,10 +6817,10 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
+    "three_island",
     "four_island",
-    "six_island",
     "seven_island",
-    "three_island"
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -6852,24 +6884,24 @@
     "route_9",
     "route_22",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -6907,11 +6939,11 @@
     "route_10",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "ruin_valley",
     "canyon_entrance",
-    "water_path"
+    "water_path",
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "번개모양이있다",
    "originalSource": "rom-rec208",
@@ -6958,14 +6990,14 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
+    "treasure_beach",
     "seven_island",
     "three_island",
-    "treasure_beach",
-    "one_island",
+    "six_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7074,20 +7106,20 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
     "resort_gorgeous",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7233,16 +7265,16 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "ruin_valley",
     "one_island",
-    "resort_gorgeous",
-    "water_labyrinth",
-    "canyon_entrance",
-    "water_path"
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7354,16 +7386,16 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
+    "resort_gorgeous",
     "seven_island",
-    "three_island",
-    "one_island",
-    "water_labyrinth",
     "two_island",
     "treasure_beach",
-    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "three_island",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -7457,17 +7489,17 @@
     "cinnabar_island",
     "celadon_city",
     "rom_mined",
-    "trainer_tower",
     "green_path",
-    "outcast_island",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
+    "water_path",
     "ruin_valley",
-    "resort_gorgeous",
     "four_island",
-    "water_labyrinth",
-    "canyon_entrance",
-    "water_path"
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "가끔물속에서",
    "originalSource": "rom-rec4336",
@@ -7514,11 +7546,11 @@
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "rom_mined",
-    "seven_island",
-    "three_island",
     "five_island",
-    "four_island",
-    "two_island"
+    "seven_island",
+    "two_island",
+    "three_island",
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7575,6 +7607,7 @@
    ],
    "sourceTypes": [
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -7610,19 +7643,19 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "three_island",
-    "one_island",
     "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
+    "memorial_pillar",
+    "water_path",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "one_island",
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7654,8 +7687,8 @@
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
-    "two_island",
-    "one_island"
+    "one_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7723,17 +7756,17 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
+    "resort_gorgeous",
     "seven_island",
-    "three_island",
-    "one_island",
-    "water_labyrinth",
     "two_island",
     "treasure_beach",
-    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "six_island",
+    "three_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "one_island"
    ],
    "originalKorean": "다음뒤로",
    "originalSource": "rom-rec2591",
@@ -7803,20 +7836,20 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
     "kindle_road",
     "six_island",
-    "seven_island",
     "three_island",
-    "one_island",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "treasure_beach",
-    "resort_gorgeous",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -7846,12 +7879,12 @@
     "cerulean_city",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "memorial_pillar",
-    "canyon_entrance",
     "ruin_valley",
-    "water_path"
+    "canyon_entrance",
+    "memorial_pillar",
+    "outcast_island",
+    "water_path",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7895,17 +7928,17 @@
     "route_23",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "five_isle_meadow",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -7979,20 +8012,20 @@
     "route_9",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "six_island",
-    "two_island",
+    "treasure_beach",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "water_path",
     "seven_island",
     "three_island",
+    "six_island",
     "ruin_valley",
-    "treasure_beach",
-    "one_island",
-    "resort_gorgeous",
     "five_island",
     "four_island",
-    "canyon_entrance",
-    "water_path"
+    "one_island",
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8020,7 +8053,11 @@
    ],
    "liveRecIds": [
     409
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:밑",
@@ -8051,19 +8088,22 @@
     "route_16",
     "celadon_city",
     "rom_mined",
-    "six_island",
-    "two_island",
-    "seven_island",
     "treasure_beach",
-    "one_island",
+    "seven_island",
+    "six_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
+    "pokemon_move",
+    "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     3044,
     4028
@@ -8168,10 +8208,10 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
+    "three_island",
     "four_island",
-    "six_island",
     "seven_island",
-    "three_island"
+    "six_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -8216,13 +8256,13 @@
     "indigo_plateau",
     "rom_mined",
     "kindle_road",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8272,7 +8312,22 @@
    "targetForm": "월",
    "areaId": "topik_1",
    "source": "rom-rec5704",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "saffron_city",
+    "fuchsia_city",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "one_island"
+   ],
+   "liveRecIds": [
+    113,
+    601,
+    602,
+    608,
+    613
+   ]
   },
   {
    "vocabId": "topik-v2:위하다",
@@ -8404,8 +8459,8 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "six_island",
     "seven_island",
+    "six_island",
     "three_island",
     "five_island",
     "four_island"
@@ -8484,9 +8539,9 @@
     "indigo_plateau",
     "rom_mined",
     "four_island",
+    "one_island",
     "two_island",
-    "three_island",
-    "one_island"
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8534,11 +8589,11 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "kindle_road",
-    "two_island",
-    "three_island",
     "treasure_beach",
-    "one_island"
+    "kindle_road",
+    "three_island",
+    "one_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -8621,7 +8676,25 @@
    "targetForm": "팬",
    "areaId": "topik_2",
    "source": "rom-rec4363",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "saffron_city",
+    "water_labyrinth",
+    "outcast_island",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "water_path",
+    "kindle_road",
+    "treasure_beach",
+    "green_path"
+   ],
+   "liveRecIds": [
+    1122,
+    1894,
+    1941,
+    1942,
+    2778
+   ]
   },
   {
    "vocabId": "topik-v2:가게",
@@ -8777,6 +8850,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -8875,12 +8949,12 @@
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
     "kindle_road",
+    "one_island",
     "two_island",
-    "three_island",
-    "treasure_beach",
-    "one_island"
+    "three_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -8924,6 +8998,7 @@
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -8987,16 +9062,17 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "ruin_valley",
     "resort_gorgeous",
+    "canyon_entrance",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -9051,20 +9127,20 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
+    "canyon_entrance",
     "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "green_path",
     "two_island",
-    "ruin_valley",
+    "green_path",
     "treasure_beach",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "originalKorean": "많이기르지만곤잘",
    "originalSource": "rom-rec4381",
@@ -9114,7 +9190,11 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "pokedex_entry",
+    "pokemon_ability",
+    "pokemon_move",
+    "pokemon_species",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -9190,13 +9270,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "originalKorean": "이겨서받거나발견해서",
    "originalSource": "rom-rec3709",
@@ -9398,13 +9478,13 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
+    "resort_gorgeous",
+    "canyon_entrance",
     "seven_island",
     "ruin_valley",
-    "resort_gorgeous",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9427,23 +9507,24 @@
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "rom_mined",
-    "resort_gorgeous",
     "green_path",
-    "outcast_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "water_path",
-    "treasure_beach",
-    "water_labyrinth"
+    "outcast_island",
+    "water_path"
    ],
    "originalKorean": "세소년석Ä",
    "originalSource": "rom-rec9838",
    "rotatedFromArea": "pewter_city",
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "trainer_class_name"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "trainer_class_name",
    "liveRecIds": [
     1894
    ]
@@ -9499,23 +9580,23 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "outcast_island",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "two_island",
-    "memorial_pillar",
-    "seven_island",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
-    "one_island",
     "resort_gorgeous",
-    "five_island",
-    "four_island",
-    "water_labyrinth",
     "canyon_entrance",
-    "water_path"
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
+    "water_path",
+    "seven_island",
+    "six_island",
+    "ruin_valley",
+    "five_island",
+    "five_isle_meadow",
+    "one_island",
+    "four_island",
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9700,8 +9781,8 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "treasure_beach"
+    "treasure_beach",
+    "kindle_road"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -9811,10 +9892,13 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
-    "system_text"
+    "pokemon_move",
+    "system_text",
+    "trainer_class_name"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "trainer_class_name",
    "liveRecIds": [
     1352,
     1369,
@@ -9847,20 +9931,20 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
     "memorial_pillar",
-    "two_island",
-    "six_island",
+    "water_path",
     "seven_island",
     "three_island",
+    "six_island",
     "ruin_valley",
     "one_island",
-    "resort_gorgeous",
     "four_island",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "originalKorean": "전혀나오지않게된다",
    "originalSource": "rom-rec201",
@@ -9916,7 +10000,19 @@
    "targetForm": "죽",
    "areaId": "topik_2",
    "source": "rom-rec5754",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pewter_city",
+    "cerulean_city",
+    "lavender_town"
+   ],
+   "liveRecIds": [
+    725,
+    770,
+    1013,
+    2297,
+    2314
+   ]
   },
   {
    "vocabId": "topik-v2:줄다",
@@ -9961,13 +10057,13 @@
     "pewter_city",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "memorial_pillar",
-    "canyon_entrance",
     "ruin_valley",
+    "canyon_entrance",
+    "water_labyrinth",
+    "memorial_pillar",
+    "outcast_island",
     "water_path",
-    "water_labyrinth"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10048,9 +10144,10 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "system_text"
    ],
-   "primarySourceType": "system_text",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     5008
    ]
@@ -10187,17 +10284,17 @@
     "route_20",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "five_isle_meadow",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10288,20 +10385,20 @@
     "route_9",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "treasure_beach",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "treasure_beach",
-    "resort_gorgeous",
     "four_island",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10379,6 +10476,7 @@
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -10431,18 +10529,18 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "five_isle_meadow",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "ruin_valley",
-    "treasure_beach",
+    "canyon_entrance",
     "resort_gorgeous",
-    "canyon_entrance"
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10470,10 +10568,10 @@
     "cinnabar_island",
     "indigo_plateau",
     "rom_mined",
-    "three_island",
     "five_island",
-    "four_island",
-    "two_island"
+    "two_island",
+    "three_island",
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10516,17 +10614,17 @@
     "route_21",
     "route_9",
     "rom_mined",
+    "resort_gorgeous",
+    "memorial_pillar",
+    "seven_island",
+    "treasure_beach",
+    "water_labyrinth",
     "kindle_road",
     "six_island",
-    "seven_island",
     "three_island",
-    "water_labyrinth",
-    "outcast_island",
-    "memorial_pillar",
-    "treasure_beach",
-    "resort_gorgeous",
     "five_island",
-    "four_island"
+    "four_island",
+    "outcast_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10556,8 +10654,11 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_move",
+    "pokemon_species",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -10582,10 +10683,10 @@
     "route_18",
     "route_22",
     "rom_mined",
-    "two_island",
+    "one_island",
     "seven_island",
-    "three_island",
-    "one_island"
+    "two_island",
+    "three_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10815,7 +10916,24 @@
    "targetForm": "도시",
    "areaId": "topik_1",
    "source": "rom-rec2613",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pallet_town",
+    "route_25",
+    "route_15",
+    "route_16",
+    "seven_island",
+    "one_island",
+    "two_island",
+    "three_island"
+   ],
+   "liveRecIds": [
+    1047,
+    3006,
+    3019,
+    3048,
+    3062
+   ]
   },
   {
    "vocabId": "topik-v2:돌다",
@@ -10866,14 +10984,14 @@
     "route_20",
     "route_21",
     "rom_mined",
-    "trainer_tower",
+    "canyon_entrance",
     "kindle_road",
+    "water_path",
     "seven_island",
     "ruin_valley",
-    "one_island",
     "four_island",
-    "canyon_entrance",
-    "water_path"
+    "one_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -10987,22 +11105,23 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "five_isle_meadow",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
-    "canyon_entrance"
+    "canyon_entrance",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "item_description",
@@ -11050,13 +11169,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11162,13 +11281,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11205,18 +11324,19 @@
     "rom_mined",
     "four_island",
     "five_island",
+    "two_island",
     "three_island",
-    "six_island",
-    "two_island"
+    "six_island"
    ],
    "originalKorean": "메일박스",
    "originalSource": "rom-rec3022",
    "rotatedFromArea": "pallet_town",
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     2078,
     2662,
@@ -11284,17 +11404,17 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "seven_island",
+    "two_island",
     "kindle_road",
     "six_island",
-    "seven_island",
     "three_island",
-    "two_island",
     "ruin_valley",
-    "resort_gorgeous",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11470,9 +11590,11 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
+    "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "system_text",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     4665
    ]
@@ -11492,6 +11614,7 @@
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -11573,6 +11696,8 @@
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
+    "pokemon_ability",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -11807,9 +11932,9 @@
     "pewter_city",
     "mt_moon",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
-    "kindle_road",
-    "treasure_beach"
+    "kindle_road"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11845,11 +11970,11 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "kindle_road",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
-    "water_labyrinth"
+    "water_labyrinth",
+    "kindle_road",
+    "five_isle_meadow"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -11968,7 +12093,11 @@
    ],
    "liveRecIds": [
     4340
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:인삼",
@@ -12005,7 +12134,17 @@
    "targetForm": "잎",
    "areaId": "topik_1",
    "source": "rom-rec5666",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "route_2"
+   ],
+   "liveRecIds": [
+    177,
+    4937,
+    4971,
+    5080,
+    5120
+   ]
   },
   {
    "vocabId": "topik-v2:자리",
@@ -12046,7 +12185,65 @@
    "targetForm": "적",
    "areaId": "topik_2",
    "source": "rom-rec199",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_18",
+    "route_20",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "outcast_island",
+    "memorial_pillar",
+    "water_path",
+    "kindle_road",
+    "ruin_valley",
+    "green_path",
+    "canyon_entrance",
+    "five_island",
+    "trainer_tower",
+    "four_island",
+    "five_isle_meadow",
+    "seven_island",
+    "three_island",
+    "one_island",
+    "six_island",
+    "two_island",
+    "treasure_beach"
+   ],
+   "liveRecIds": [
+    331,
+    412,
+    508,
+    646,
+    832
+   ]
   },
   {
    "vocabId": "topik-v2:젊다",
@@ -12109,24 +12306,24 @@
     "cinnabar_island",
     "celadon_city",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
     "seven_island",
     "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
     "two_island",
-    "ruin_valley",
+    "green_path",
     "treasure_beach",
-    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance"
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "정말찾기힘들게된다",
    "originalSource": "rom-rec4454",
@@ -12201,12 +12398,12 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
+    "six_island",
+    "three_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -12253,6 +12450,7 @@
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -12313,12 +12511,12 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
+    "three_island",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -12391,14 +12589,14 @@
     "route_9",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "memorial_pillar",
-    "ruin_valley",
-    "resort_gorgeous",
     "canyon_entrance",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "최고성능의볼",
    "originalSource": "rom-rec132",
@@ -12453,15 +12651,15 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
+    "resort_gorgeous",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
     "treasure_beach",
-    "resort_gorgeous",
+    "kindle_road",
+    "six_island",
+    "three_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -12529,7 +12727,44 @@
    "targetForm": "털",
    "areaId": "topik_2",
    "source": "rom-rec4381",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_24",
+    "route_25",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "route_22",
+    "route_23",
+    "water_labyrinth",
+    "resort_gorgeous",
+    "kindle_road",
+    "treasure_beach",
+    "memorial_pillar",
+    "outcast_island",
+    "water_path",
+    "canyon_entrance",
+    "ruin_valley",
+    "five_isle_meadow",
+    "green_path",
+    "trainer_tower"
+   ],
+   "liveRecIds": [
+    1827,
+    1851,
+    2018,
+    2022,
+    2081
+   ]
   },
   {
    "vocabId": "topik-v2:편하다",
@@ -12561,13 +12796,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
     "treasure_beach",
+    "three_island",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -12616,13 +12851,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12661,6 +12896,7 @@
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_ability",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -12682,11 +12918,11 @@
     "celadon_city",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "canyon_entrance",
     "ruin_valley",
-    "water_path"
+    "canyon_entrance",
+    "outcast_island",
+    "water_path",
+    "trainer_tower"
    ],
    "originalKorean": "함께모험할때",
    "originalSource": "rom-rec3708",
@@ -12740,12 +12976,12 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "ruin_valley",
     "resort_gorgeous",
+    "canyon_entrance",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "originalKorean": "효과는부족한듯",
    "originalSource": "rom-rec1092",
@@ -12809,12 +13045,12 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
+    "three_island",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -12839,16 +13075,16 @@
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [
     "rom_mined",
-    "resort_gorgeous",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "ruin_valley",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "canyon_entrance",
-    "ruin_valley",
+    "outcast_island",
     "water_path",
-    "water_labyrinth"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12882,14 +13118,14 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "two_island",
-    "three_island",
     "treasure_beach",
     "resort_gorgeous",
+    "kindle_road",
+    "six_island",
+    "three_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -12924,17 +13160,17 @@
     "celadon_city",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "canyon_entrance",
+    "water_labyrinth",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
-    "one_island",
     "four_island",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "one_island",
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "originalKorean": "마치로켓발사와같이",
    "originalSource": "rom-rec4337",
@@ -13014,12 +13250,12 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "ruin_valley",
     "resort_gorgeous",
+    "canyon_entrance",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13082,12 +13318,12 @@
    "areasReferenced": [
     "pewter_city",
     "rom_mined",
-    "ruin_valley",
     "green_path",
-    "trainer_tower",
+    "ruin_valley",
     "outcast_island",
+    "water_path",
     "canyon_entrance",
-    "water_path"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13127,6 +13363,7 @@
    ],
    "sourceTypes": [
     "pokedex_entry",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "pokedex_entry",
@@ -13422,17 +13659,17 @@
     "route_21",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
-    "water_labyrinth",
     "canyon_entrance",
-    "water_path"
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
+    "water_path",
+    "ruin_valley",
+    "five_isle_meadow",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13540,6 +13777,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -13638,9 +13876,10 @@
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
-    "system_text"
+    "system_text",
+    "trainer_class_name"
    ],
-   "primarySourceType": "pokedex_entry",
+   "primarySourceType": "trainer_class_name",
    "liveRecIds": [
     2317,
     2602,
@@ -13661,6 +13900,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_ability",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -13723,26 +13963,27 @@
     "route_21",
     "celadon_city",
     "rom_mined",
+    "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
-    "six_island",
-    "two_island",
     "memorial_pillar",
     "seven_island",
-    "treasure_beach",
-    "one_island",
-    "resort_gorgeous",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island",
-    "water_labyrinth"
+    "two_island"
    ],
    "originalKorean": "남자아이",
    "originalSource": "rom-rec2597",
    "rotatedFromArea": "pallet_town",
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "trainer_class_name"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "trainer_class_name",
    "liveRecIds": [
     1631,
     1647,
@@ -13799,13 +14040,13 @@
     "route_16",
     "celadon_city",
     "rom_mined",
-    "six_island",
-    "two_island",
-    "seven_island",
     "treasure_beach",
-    "one_island",
+    "seven_island",
+    "six_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -13996,8 +14237,8 @@
     "route_17",
     "route_9",
     "rom_mined",
-    "six_island",
     "seven_island",
+    "six_island",
     "three_island",
     "five_island",
     "four_island"
@@ -14025,6 +14266,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -14109,7 +14351,11 @@
    ],
    "liveRecIds": [
     4406
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:똑같이",
@@ -14187,12 +14433,12 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
     "three_island",
+    "six_island",
     "five_island",
-    "four_island"
+    "four_island",
+    "two_island"
    ],
    "originalKorean": "모습을감추면마을에",
    "originalSource": "rom-rec4453",
@@ -14272,16 +14518,16 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
+    "resort_gorgeous",
     "seven_island",
-    "three_island",
-    "one_island",
-    "water_labyrinth",
     "two_island",
     "treasure_beach",
-    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "three_island",
+    "six_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
@@ -14389,13 +14635,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "item_description",
@@ -14451,10 +14697,11 @@
    "originalSource": "rom-rec4411",
    "rotatedFromArea": "pewter_city",
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     2056,
     2146,
@@ -14546,13 +14793,14 @@
     "route_21",
     "route_22",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
     "kindle_road",
-    "seven_island",
-    "treasure_beach"
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -14584,13 +14832,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14652,14 +14900,14 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
+    "treasure_beach",
     "seven_island",
     "three_island",
-    "treasure_beach",
-    "one_island",
+    "six_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "originalKorean": "메일박스",
    "originalSource": "rom-rec3022",
@@ -14719,13 +14967,13 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
-    "two_island",
     "seven_island",
+    "six_island",
     "three_island",
-    "one_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "originalKorean": "버튼모드",
    "originalSource": "rom-rec3677",
@@ -14804,20 +15052,20 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "outcast_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "six_island",
-    "two_island",
-    "seven_island",
-    "three_island",
-    "treasure_beach",
-    "one_island",
-    "resort_gorgeous",
-    "five_island",
-    "four_island",
     "water_path",
-    "water_labyrinth"
+    "seven_island",
+    "six_island",
+    "three_island",
+    "five_island",
+    "one_island",
+    "four_island",
+    "outcast_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -14933,10 +15181,13 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
+    "pokemon_ability",
+    "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     2617,
     2622,
@@ -14980,18 +15231,18 @@
     "saffron_city",
     "celadon_city",
     "rom_mined",
-    "resort_gorgeous",
     "green_path",
-    "outcast_island",
-    "four_island",
-    "kindle_road",
-    "memorial_pillar",
-    "two_island",
-    "three_island",
     "ruin_valley",
     "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "four_island",
+    "memorial_pillar",
+    "outcast_island",
     "water_path",
-    "water_labyrinth"
+    "two_island",
+    "three_island"
    ],
    "originalKorean": "포켓몬의비밀이기록되는도구",
    "originalSource": "rom-rec3707",
@@ -14999,6 +15250,7 @@
    "sourceTypes": [
     "item_description",
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "item_description",
@@ -15086,12 +15338,12 @@
     "route_23",
     "indigo_plateau",
     "rom_mined",
-    "six_island",
     "seven_island",
-    "three_island",
-    "one_island",
     "two_island",
+    "six_island",
+    "three_island",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "originalKorean": "사용하면포켓몬1마리의",
@@ -15125,10 +15377,11 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     2257
    ]
@@ -15255,9 +15508,10 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "system_text"
    ],
-   "primarySourceType": "system_text",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     6635
    ]
@@ -15305,6 +15559,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -15410,14 +15665,14 @@
     "route_20",
     "route_21",
     "rom_mined",
-    "resort_gorgeous",
     "green_path",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "water_labyrinth",
     "ruin_valley",
     "treasure_beach",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
+    "outcast_island",
     "water_path"
    ],
    "originalKorean": "플레이시간",
@@ -15539,14 +15794,14 @@
     "route_23",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "memorial_pillar",
-    "ruin_valley",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -15635,25 +15890,25 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "item_description",
@@ -15749,17 +16004,17 @@
     "route_23",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "kindle_road",
-    "memorial_pillar",
-    "ruin_valley",
-    "five_isle_meadow",
     "treasure_beach",
     "resort_gorgeous",
     "canyon_entrance",
+    "water_labyrinth",
+    "kindle_road",
+    "memorial_pillar",
     "water_path",
-    "water_labyrinth"
+    "ruin_valley",
+    "five_isle_meadow",
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "가지고있으며약간의",
    "originalSource": "rom-rec4429",
@@ -15898,18 +16153,18 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "five_isle_meadow",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
-    "canyon_entrance"
+    "canyon_entrance",
+    "memorial_pillar",
+    "five_isle_meadow",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "ruin_valley",
+    "outcast_island",
+    "trainer_tower"
    ],
    "originalKorean": "여자아이",
    "originalSource": "rom-rec2598",
@@ -15951,6 +16206,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -16000,6 +16256,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_ability",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -16049,10 +16306,11 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     1026
    ]
@@ -16151,16 +16409,16 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "outcast_island",
+    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "resort_gorgeous",
     "four_island",
-    "water_path"
+    "outcast_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16255,24 +16513,24 @@
     "route_22",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16398,23 +16656,23 @@
     "indigo_plateau",
     "rom_mined",
     "green_path",
-    "outcast_island",
-    "trainer_tower",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
     "kindle_road",
-    "six_island",
-    "two_island",
     "memorial_pillar",
+    "water_path",
     "seven_island",
     "three_island",
+    "six_island",
     "ruin_valley",
-    "treasure_beach",
-    "one_island",
-    "resort_gorgeous",
     "five_island",
+    "one_island",
     "four_island",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16475,6 +16733,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -16521,11 +16780,11 @@
     "route_20",
     "celadon_city",
     "rom_mined",
-    "trainer_tower",
+    "canyon_entrance",
+    "water_path",
     "ruin_valley",
     "four_island",
-    "canyon_entrance",
-    "water_path"
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16598,23 +16857,23 @@
     "route_22",
     "indigo_plateau",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "one_island",
-    "water_path",
-    "green_path",
-    "outcast_island",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "two_island",
+    "green_path",
+    "treasure_beach",
+    "kindle_road",
+    "water_path",
+    "six_island",
+    "three_island",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16641,10 +16900,10 @@
     "pallet_town",
     "viridian_city",
     "rom_mined",
-    "three_island",
     "five_island",
-    "four_island",
-    "two_island"
+    "two_island",
+    "three_island",
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16693,11 +16952,11 @@
     "mt_moon",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
-    "canyon_entrance",
     "ruin_valley",
-    "water_path"
+    "canyon_entrance",
+    "outcast_island",
+    "water_path",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -16740,14 +16999,15 @@
     "fuchsia_city",
     "celadon_city",
     "rom_mined",
-    "two_island",
-    "one_island"
+    "one_island",
+    "two_island"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     2055,
     2056,
@@ -16787,7 +17047,11 @@
    ],
    "liveRecIds": [
     9137
-   ]
+   ],
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": ""
   },
   {
    "vocabId": "topik-v2:정하다",
@@ -16839,6 +17103,7 @@
     "rom_mined"
    ],
    "sourceTypes": [
+    "pokemon_ability",
     "system_text"
    ],
    "primarySourceType": "system_text",
@@ -17140,15 +17405,15 @@
     "celadon_city",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "two_island",
-    "seven_island",
-    "three_island",
     "treasure_beach",
-    "one_island",
+    "kindle_road",
+    "seven_island",
+    "six_island",
+    "three_island",
     "five_island",
-    "four_island"
+    "one_island",
+    "four_island",
+    "two_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17181,11 +17446,11 @@
     "route_22",
     "route_23",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
-    "kindle_road",
     "water_labyrinth",
-    "five_isle_meadow",
-    "treasure_beach"
+    "kindle_road",
+    "five_isle_meadow"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17209,12 +17474,13 @@
     "pewter_city",
     "mt_moon",
     "rom_mined",
+    "treasure_beach",
     "resort_gorgeous",
-    "kindle_road",
-    "treasure_beach"
+    "kindle_road"
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -17259,16 +17525,16 @@
     "celadon_city",
     "route_9",
     "rom_mined",
-    "outcast_island",
+    "resort_gorgeous",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "resort_gorgeous",
     "four_island",
-    "water_path"
+    "outcast_island",
+    "two_island"
    ],
    "originalKorean": "처음이지",
    "originalSource": "rom-rec1335",
@@ -17308,12 +17574,12 @@
    "areasReferenced": [
     "pewter_city",
     "rom_mined",
-    "resort_gorgeous",
-    "five_island",
-    "four_island",
     "water_path",
+    "five_island",
+    "treasure_beach",
+    "resort_gorgeous",
     "six_island",
-    "treasure_beach"
+    "four_island"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -17350,7 +17616,24 @@
    "targetForm": "춤",
    "areaId": "topik_1",
    "source": "rom-rec4452",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "pewter_city",
+    "saffron_city",
+    "resort_gorgeous",
+    "water_path",
+    "six_island",
+    "five_island",
+    "treasure_beach",
+    "four_island"
+   ],
+   "liveRecIds": [
+    2776,
+    3122,
+    5110,
+    5211,
+    6584
+   ]
   },
   {
    "vocabId": "topik-v2:충격",
@@ -17431,26 +17714,27 @@
     "route_9",
     "indigo_plateau",
     "rom_mined",
-    "kindle_road",
-    "six_island",
-    "seven_island",
-    "three_island",
-    "five_isle_meadow",
-    "one_island",
-    "water_path",
-    "water_labyrinth",
-    "memorial_pillar",
-    "two_island",
-    "ruin_valley",
     "resort_gorgeous",
+    "memorial_pillar",
+    "seven_island",
+    "five_isle_meadow",
+    "two_island",
+    "water_labyrinth",
+    "kindle_road",
+    "water_path",
+    "three_island",
+    "six_island",
+    "ruin_valley",
     "five_island",
+    "one_island",
     "four_island"
    ],
    "sourceTypes": [
+    "item_description",
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
+   "primarySourceType": "item_description",
    "liveRecIds": [
     3177,
     3878
@@ -17646,7 +17930,25 @@
    "targetForm": "파도",
    "areaId": "topik_2",
    "source": "rom-rec8986",
-   "firstAreaEncountered": "rom_mined"
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [
+    "route_15",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "two_island",
+    "three_island",
+    "one_island"
+   ],
+   "liveRecIds": [
+    644,
+    1133,
+    1619,
+    3051,
+    4149
+   ]
   },
   {
    "vocabId": "topik-v2:파란색",
@@ -17814,6 +18116,7 @@
    "sourceTypes": [
     "item_description",
     "npc_dialog",
+    "pokemon_ability",
     "system_text"
    ],
    "primarySourceType": "item_description",
@@ -17852,21 +18155,21 @@
     "route_25",
     "rom_mined",
     "green_path",
-    "trainer_tower",
-    "outcast_island",
+    "treasure_beach",
+    "resort_gorgeous",
+    "canyon_entrance",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "two_island",
+    "water_path",
     "three_island",
     "ruin_valley",
     "five_isle_meadow",
-    "treasure_beach",
-    "one_island",
-    "resort_gorgeous",
     "four_island",
-    "canyon_entrance",
-    "water_path",
-    "water_labyrinth"
+    "one_island",
+    "outcast_island",
+    "two_island",
+    "trainer_tower"
    ],
    "originalKorean": "할아버지는",
    "originalSource": "rom-rec1274",
@@ -17894,14 +18197,14 @@
    "areasReferenced": [
     "route_12",
     "rom_mined",
-    "resort_gorgeous",
     "green_path",
-    "outcast_island",
+    "ruin_valley",
+    "resort_gorgeous",
+    "water_labyrinth",
     "kindle_road",
     "memorial_pillar",
-    "ruin_valley",
-    "water_path",
-    "water_labyrinth"
+    "outcast_island",
+    "water_path"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18009,19 +18312,19 @@
     "route_22",
     "route_23",
     "rom_mined",
-    "trainer_tower",
-    "kindle_road",
-    "seven_island",
-    "one_island",
-    "water_labyrinth",
-    "outcast_island",
-    "memorial_pillar",
-    "ruin_valley",
-    "treasure_beach",
     "resort_gorgeous",
+    "canyon_entrance",
+    "memorial_pillar",
+    "seven_island",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "ruin_valley",
     "five_island",
     "four_island",
-    "canyon_entrance"
+    "one_island",
+    "outcast_island",
+    "trainer_tower"
    ],
    "sourceTypes": [
     "npc_dialog",
@@ -18073,12 +18376,13 @@
     "cinnabar_island",
     "celadon_city",
     "rom_mined",
+    "treasure_beach",
     "kindle_road",
-    "seven_island",
-    "treasure_beach"
+    "seven_island"
    ],
    "sourceTypes": [
     "npc_dialog",
+    "pokemon_move",
     "system_text"
    ],
    "primarySourceType": "npc_dialog",
@@ -18095,6 +18399,7 @@
   "Sentence attribution via vocab map; 454 attributed, 259 unattributed.",
   "Sentence attribution via vocab map; 454 attributed, 259 unattributed.",
   "Sentence attribution via vocab map; 383 attributed, 330 unattributed.",
-  "Sentence attribution via vocab map; 405 attributed, 308 unattributed."
+  "Sentence attribution via vocab map; 405 attributed, 308 unattributed.",
+  "Sentence attribution via vocab map; 409 attributed, 304 unattributed."
  ]
 }
