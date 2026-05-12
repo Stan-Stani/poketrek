@@ -12,6 +12,10 @@
    "gloss": "Used Pound.",
    "targetForm": "막치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[1]"
   },
   {
@@ -21,6 +25,10 @@
    "gloss": "Used Karate Chop.",
    "targetForm": "태권당수",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[2]"
   },
   {
@@ -30,6 +38,10 @@
    "gloss": "Used Double Slap.",
    "targetForm": "연속뺨치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[3]"
   },
   {
@@ -39,6 +51,10 @@
    "gloss": "Used Comet Punch.",
    "targetForm": "연속펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[4]"
   },
   {
@@ -48,6 +64,10 @@
    "gloss": "Used Mega Punch.",
    "targetForm": "메가톤펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[5]"
   },
   {
@@ -57,6 +77,10 @@
    "gloss": "Used Pay Day.",
    "targetForm": "고양이돈받기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[6]"
   },
   {
@@ -66,6 +90,10 @@
    "gloss": "Used Fire Punch.",
    "targetForm": "불꽃펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[7]"
   },
   {
@@ -75,6 +103,10 @@
    "gloss": "Used Ice Punch.",
    "targetForm": "냉동펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[8]"
   },
   {
@@ -84,6 +116,10 @@
    "gloss": "Used Thunder Punch.",
    "targetForm": "번개펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[9]"
   },
   {
@@ -93,6 +129,10 @@
    "gloss": "Used Scratch.",
    "targetForm": "할퀴기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[10]"
   },
   {
@@ -102,6 +142,10 @@
    "gloss": "Used Vise Grip.",
    "targetForm": "찝기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[11]"
   },
   {
@@ -111,6 +155,10 @@
    "gloss": "Used Guillotine.",
    "targetForm": "가위자르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[12]"
   },
   {
@@ -120,6 +168,10 @@
    "gloss": "Used Razor Wind.",
    "targetForm": "칼바람",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[13]"
   },
   {
@@ -129,6 +181,10 @@
    "gloss": "Used Swords Dance.",
    "targetForm": "칼춤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[14]"
   },
   {
@@ -138,6 +194,10 @@
    "gloss": "Used Cut.",
    "targetForm": "풀베기",
    "areaId": "ss_anne",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[15]"
   },
   {
@@ -147,6 +207,10 @@
    "gloss": "Used Gust.",
    "targetForm": "바람일으키기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[16]"
   },
   {
@@ -156,6 +220,10 @@
    "gloss": "Used Wing Attack.",
    "targetForm": "날개치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[17]"
   },
   {
@@ -165,6 +233,10 @@
    "gloss": "Used Whirlwind.",
    "targetForm": "날려버리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[18]"
   },
   {
@@ -174,6 +246,10 @@
    "gloss": "Used Fly.",
    "targetForm": "공중날기",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[19]"
   },
   {
@@ -183,6 +259,10 @@
    "gloss": "Used Bind.",
    "targetForm": "조이기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[20]"
   },
   {
@@ -192,6 +272,10 @@
    "gloss": "Used Slam.",
    "targetForm": "힘껏치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[21]"
   },
   {
@@ -201,6 +285,10 @@
    "gloss": "Used Vine Whip.",
    "targetForm": "덩굴채찍",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[22]"
   },
   {
@@ -210,6 +298,10 @@
    "gloss": "Used Stomp.",
    "targetForm": "짓밟기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[23]"
   },
   {
@@ -219,6 +311,10 @@
    "gloss": "Used Double Kick.",
    "targetForm": "두번치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[24]"
   },
   {
@@ -228,6 +324,10 @@
    "gloss": "Used Mega Kick.",
    "targetForm": "메가톤킥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[25]"
   },
   {
@@ -237,6 +337,10 @@
    "gloss": "Used Jump Kick.",
    "targetForm": "점프킥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[26]"
   },
   {
@@ -246,6 +350,10 @@
    "gloss": "Used Rolling Kick.",
    "targetForm": "돌려차기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[27]"
   },
   {
@@ -255,6 +363,10 @@
    "gloss": "Used Sand Attack.",
    "targetForm": "모래뿌리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[28]"
   },
   {
@@ -264,6 +376,10 @@
    "gloss": "Used Headbutt.",
    "targetForm": "박치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[29]"
   },
   {
@@ -273,6 +389,10 @@
    "gloss": "Used Horn Attack.",
    "targetForm": "뿔찌르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[30]"
   },
   {
@@ -282,6 +402,10 @@
    "gloss": "Used Fury Attack.",
    "targetForm": "마구찌르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[31]"
   },
   {
@@ -291,6 +415,10 @@
    "gloss": "Used Horn Drill.",
    "targetForm": "뿔드릴",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[32]"
   },
   {
@@ -300,6 +428,10 @@
    "gloss": "Used Tackle.",
    "targetForm": "몸통박치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[33]"
   },
   {
@@ -309,6 +441,10 @@
    "gloss": "Used Body Slam.",
    "targetForm": "누르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[34]"
   },
   {
@@ -318,6 +454,10 @@
    "gloss": "Used Wrap.",
    "targetForm": "김밥말이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[35]"
   },
   {
@@ -327,6 +467,10 @@
    "gloss": "Used Take Down.",
    "targetForm": "돌진",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[36]"
   },
   {
@@ -336,6 +480,10 @@
    "gloss": "Used Thrash.",
    "targetForm": "난동부리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[37]"
   },
   {
@@ -345,6 +493,10 @@
    "gloss": "Used Double Edge.",
    "targetForm": "이판사판태클",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[38]"
   },
   {
@@ -354,6 +506,10 @@
    "gloss": "Used Tail Whip.",
    "targetForm": "꼬리흔들기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[39]"
   },
   {
@@ -363,6 +519,10 @@
    "gloss": "Used Poison Sting.",
    "targetForm": "독침",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[40]"
   },
   {
@@ -372,6 +532,10 @@
    "gloss": "Used Twineedle.",
    "targetForm": "더블니들",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[41]"
   },
   {
@@ -381,6 +545,10 @@
    "gloss": "Used Pin Missile.",
    "targetForm": "바늘미사일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[42]"
   },
   {
@@ -390,6 +558,10 @@
    "gloss": "Used Leer.",
    "targetForm": "째려보기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[43]"
   },
   {
@@ -399,6 +571,10 @@
    "gloss": "Used Bite.",
    "targetForm": "물기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[44]"
   },
   {
@@ -408,6 +584,10 @@
    "gloss": "Used Growl.",
    "targetForm": "울음소리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[45]"
   },
   {
@@ -417,6 +597,10 @@
    "gloss": "Used Roar.",
    "targetForm": "울부짖기",
    "areaId": "route_23",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[46]"
   },
   {
@@ -426,6 +610,10 @@
    "gloss": "Used Sing.",
    "targetForm": "노래하기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[47]"
   },
   {
@@ -435,6 +623,10 @@
    "gloss": "Used Supersonic.",
    "targetForm": "초음파",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[48]"
   },
   {
@@ -444,6 +636,10 @@
    "gloss": "Used Sonic Boom.",
    "targetForm": "소닉붐",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[49]"
   },
   {
@@ -453,6 +649,10 @@
    "gloss": "Used Disable.",
    "targetForm": "사슬묶기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[50]"
   },
   {
@@ -462,6 +662,10 @@
    "gloss": "Used Acid.",
    "targetForm": "용해액",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[51]"
   },
   {
@@ -471,6 +675,10 @@
    "gloss": "Used Ember.",
    "targetForm": "불꽃세례",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[52]"
   },
   {
@@ -480,6 +688,10 @@
    "gloss": "Used Flamethrower.",
    "targetForm": "화염방사",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[53]"
   },
   {
@@ -489,6 +701,10 @@
    "gloss": "Used Mist.",
    "targetForm": "흰안개",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[54]"
   },
   {
@@ -498,6 +714,10 @@
    "gloss": "Used Water Gun.",
    "targetForm": "물대포",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[55]"
   },
   {
@@ -507,6 +727,10 @@
    "gloss": "Used Hydro Pump.",
    "targetForm": "하이드로펌프",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[56]"
   },
   {
@@ -516,6 +740,10 @@
    "gloss": "Used Surf.",
    "targetForm": "파도타기",
    "areaId": "safari_zone",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[57]"
   },
   {
@@ -525,6 +753,10 @@
    "gloss": "Used Ice Beam.",
    "targetForm": "냉동빔",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[58]"
   },
   {
@@ -534,6 +766,10 @@
    "gloss": "Used Blizzard.",
    "targetForm": "눈보라",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[59]"
   },
   {
@@ -543,6 +779,10 @@
    "gloss": "Used Psybeam.",
    "targetForm": "환상빔",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[60]"
   },
   {
@@ -552,6 +792,10 @@
    "gloss": "Used Bubble Beam.",
    "targetForm": "거품광선",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[61]"
   },
   {
@@ -561,6 +805,10 @@
    "gloss": "Used Aurora Beam.",
    "targetForm": "오로라빔",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[62]"
   },
   {
@@ -570,6 +818,10 @@
    "gloss": "Used Hyper Beam.",
    "targetForm": "파괴광선",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[63]"
   },
   {
@@ -579,6 +831,10 @@
    "gloss": "Used Peck.",
    "targetForm": "쪼기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[64]"
   },
   {
@@ -588,6 +844,10 @@
    "gloss": "Used Drill Peck.",
    "targetForm": "회전부리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[65]"
   },
   {
@@ -597,6 +857,10 @@
    "gloss": "Used Submission.",
    "targetForm": "지옥의바퀴",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[66]"
   },
   {
@@ -606,6 +870,10 @@
    "gloss": "Used Low Kick.",
    "targetForm": "안다리걸기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[67]"
   },
   {
@@ -615,6 +883,10 @@
    "gloss": "Used Counter.",
    "targetForm": "카운터",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[68]"
   },
   {
@@ -624,6 +896,10 @@
    "gloss": "Used Seismic Toss.",
    "targetForm": "지구던지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[69]"
   },
   {
@@ -633,6 +909,10 @@
    "gloss": "Used Strength.",
    "targetForm": "괴력",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[70]"
   },
   {
@@ -642,6 +922,10 @@
    "gloss": "Used Absorb.",
    "targetForm": "흡수",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[71]"
   },
   {
@@ -651,6 +935,10 @@
    "gloss": "Used Mega Drain.",
    "targetForm": "메가드레인",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[72]"
   },
   {
@@ -660,6 +948,10 @@
    "gloss": "Used Leech Seed.",
    "targetForm": "씨뿌리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[73]"
   },
   {
@@ -669,6 +961,10 @@
    "gloss": "Used Growth.",
    "targetForm": "성장",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[74]"
   },
   {
@@ -678,6 +974,10 @@
    "gloss": "Used Razor Leaf.",
    "targetForm": "잎날가르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[75]"
   },
   {
@@ -687,6 +987,10 @@
    "gloss": "Used Solar Beam.",
    "targetForm": "솔라빔",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[76]"
   },
   {
@@ -696,6 +1000,10 @@
    "gloss": "Used Poison Powder.",
    "targetForm": "독가루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[77]"
   },
   {
@@ -705,6 +1013,10 @@
    "gloss": "Used Stun Spore.",
    "targetForm": "저리가루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[78]"
   },
   {
@@ -714,6 +1026,10 @@
    "gloss": "Used Sleep Powder.",
    "targetForm": "수면가루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[79]"
   },
   {
@@ -723,6 +1039,10 @@
    "gloss": "Used Petal Dance.",
    "targetForm": "꽃잎댄스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[80]"
   },
   {
@@ -732,6 +1052,10 @@
    "gloss": "Used String Shot.",
    "targetForm": "실뿜기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[81]"
   },
   {
@@ -741,6 +1065,10 @@
    "gloss": "Used Dragon Rage.",
    "targetForm": "용의분노",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[82]"
   },
   {
@@ -750,6 +1078,10 @@
    "gloss": "Used Fire Spin.",
    "targetForm": "회오리불꽃",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[83]"
   },
   {
@@ -759,6 +1091,10 @@
    "gloss": "Used Thunder Shock.",
    "targetForm": "전기쇼크",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[84]"
   },
   {
@@ -768,6 +1104,10 @@
    "gloss": "Used Thunder Wave.",
    "targetForm": "전기자석파",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[86]"
   },
   {
@@ -777,6 +1117,10 @@
    "gloss": "Used Thunder.",
    "targetForm": "번개",
    "areaId": "power_plant",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[87]"
   },
   {
@@ -786,6 +1130,10 @@
    "gloss": "Used Rock Throw.",
    "targetForm": "돌떨구기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[88]"
   },
   {
@@ -795,6 +1143,10 @@
    "gloss": "Used Earthquake.",
    "targetForm": "지진",
    "areaId": "viridian_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[89]"
   },
   {
@@ -804,6 +1156,10 @@
    "gloss": "Used Fissure.",
    "targetForm": "땅가르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[90]"
   },
   {
@@ -813,6 +1169,10 @@
    "gloss": "Used Dig.",
    "targetForm": "구멍파기",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[91]"
   },
   {
@@ -822,6 +1182,10 @@
    "gloss": "Used Toxic.",
    "targetForm": "맹독",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[92]"
   },
   {
@@ -831,6 +1195,10 @@
    "gloss": "Used Confusion.",
    "targetForm": "염동력",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[93]"
   },
   {
@@ -840,6 +1208,10 @@
    "gloss": "Used Hypnosis.",
    "targetForm": "최면술",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[95]"
   },
   {
@@ -849,6 +1221,10 @@
    "gloss": "Used Meditate.",
    "targetForm": "요가포즈",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[96]"
   },
   {
@@ -858,6 +1234,10 @@
    "gloss": "Used Agility.",
    "targetForm": "고속이동",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[97]"
   },
   {
@@ -867,6 +1247,10 @@
    "gloss": "Used Quick Attack.",
    "targetForm": "전광석화",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[98]"
   },
   {
@@ -876,6 +1260,10 @@
    "gloss": "Used Rage.",
    "targetForm": "분노",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[99]"
   },
   {
@@ -885,6 +1273,10 @@
    "gloss": "Used Teleport.",
    "targetForm": "순간이동",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[100]"
   },
   {
@@ -894,6 +1286,10 @@
    "gloss": "Used Night Shade.",
    "targetForm": "나이트헤드",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[101]"
   },
   {
@@ -903,6 +1299,10 @@
    "gloss": "Used Mimic.",
    "targetForm": "흉내내기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[102]"
   },
   {
@@ -912,6 +1312,10 @@
    "gloss": "Used Screech.",
    "targetForm": "싫은소리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[103]"
   },
   {
@@ -921,6 +1325,10 @@
    "gloss": "Used Double Team.",
    "targetForm": "그림자분신",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[104]"
   },
   {
@@ -930,6 +1338,10 @@
    "gloss": "Used Harden.",
    "targetForm": "단단해지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[106]"
   },
   {
@@ -939,6 +1351,10 @@
    "gloss": "Used Minimize.",
    "targetForm": "작아지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[107]"
   },
   {
@@ -948,6 +1364,10 @@
    "gloss": "Used Smokescreen.",
    "targetForm": "연막",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[108]"
   },
   {
@@ -957,6 +1377,10 @@
    "gloss": "Used Confuse Ray.",
    "targetForm": "이상한빛",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[109]"
   },
   {
@@ -966,6 +1390,10 @@
    "gloss": "Used Withdraw.",
    "targetForm": "껍질에숨기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[110]"
   },
   {
@@ -975,6 +1403,10 @@
    "gloss": "Used Defense Curl.",
    "targetForm": "웅크리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[111]"
   },
   {
@@ -984,6 +1416,10 @@
    "gloss": "Used Barrier.",
    "targetForm": "배리어",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[112]"
   },
   {
@@ -993,6 +1429,10 @@
    "gloss": "Used Light Screen.",
    "targetForm": "빛의장막",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[113]"
   },
   {
@@ -1002,6 +1442,10 @@
    "gloss": "Used Haze.",
    "targetForm": "흑안개",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[114]"
   },
   {
@@ -1011,6 +1455,10 @@
    "gloss": "Used Reflect.",
    "targetForm": "리플렉터",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[115]"
   },
   {
@@ -1020,6 +1468,10 @@
    "gloss": "Used Focus Energy.",
    "targetForm": "기충전",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[116]"
   },
   {
@@ -1029,6 +1481,10 @@
    "gloss": "Used Bide.",
    "targetForm": "참기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[117]"
   },
   {
@@ -1038,6 +1494,10 @@
    "gloss": "Used Metronome.",
    "targetForm": "손가락흔들기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[118]"
   },
   {
@@ -1047,6 +1507,10 @@
    "gloss": "Used Mirror Move.",
    "targetForm": "따라하기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[119]"
   },
   {
@@ -1056,6 +1520,10 @@
    "gloss": "Used Self Destruct.",
    "targetForm": "자폭",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[120]"
   },
   {
@@ -1065,6 +1533,10 @@
    "gloss": "Used Egg Bomb.",
    "targetForm": "알폭탄",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[121]"
   },
   {
@@ -1074,6 +1546,10 @@
    "gloss": "Used Lick.",
    "targetForm": "핥기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[122]"
   },
   {
@@ -1083,6 +1559,10 @@
    "gloss": "Used Smog.",
    "targetForm": "스모그",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[123]"
   },
   {
@@ -1092,6 +1572,10 @@
    "gloss": "Used Sludge.",
    "targetForm": "오물공격",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[124]"
   },
   {
@@ -1101,6 +1585,10 @@
    "gloss": "Used Bone Club.",
    "targetForm": "뼈다귀치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[125]"
   },
   {
@@ -1110,6 +1598,10 @@
    "gloss": "Used Fire Blast.",
    "targetForm": "불대문자",
    "areaId": "cinnabar_island",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[126]"
   },
   {
@@ -1119,6 +1611,10 @@
    "gloss": "Used Waterfall.",
    "targetForm": "폭포오르기",
    "areaId": "cerulean_cave",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[127]"
   },
   {
@@ -1128,6 +1624,10 @@
    "gloss": "Used Clamp.",
    "targetForm": "껍질끼우기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[128]"
   },
   {
@@ -1137,6 +1637,10 @@
    "gloss": "Used Swift.",
    "targetForm": "스피드스타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[129]"
   },
   {
@@ -1146,6 +1650,10 @@
    "gloss": "Used Skull Bash.",
    "targetForm": "로케트박치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[130]"
   },
   {
@@ -1155,6 +1663,10 @@
    "gloss": "Used Spike Cannon.",
    "targetForm": "가시대포",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[131]"
   },
   {
@@ -1164,6 +1676,10 @@
    "gloss": "Used Constrict.",
    "targetForm": "휘감기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[132]"
   },
   {
@@ -1173,6 +1689,10 @@
    "gloss": "Used Amnesia.",
    "targetForm": "망각술",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[133]"
   },
   {
@@ -1182,6 +1702,10 @@
    "gloss": "Used Kinesis.",
    "targetForm": "숟가락휘기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[134]"
   },
   {
@@ -1191,6 +1715,10 @@
    "gloss": "Used Soft Boiled.",
    "targetForm": "알낳기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[135]"
   },
   {
@@ -1200,6 +1728,10 @@
    "gloss": "Used High Jump Kick.",
    "targetForm": "무릎차기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[136]"
   },
   {
@@ -1209,6 +1741,10 @@
    "gloss": "Used Glare.",
    "targetForm": "뱀눈초리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[137]"
   },
   {
@@ -1218,6 +1754,10 @@
    "gloss": "Used Dream Eater.",
    "targetForm": "꿈먹기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[138]"
   },
   {
@@ -1227,6 +1767,10 @@
    "gloss": "Used Poison Gas.",
    "targetForm": "독가스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[139]"
   },
   {
@@ -1236,6 +1780,10 @@
    "gloss": "Used Barrage.",
    "targetForm": "구슬던지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[140]"
   },
   {
@@ -1245,6 +1793,10 @@
    "gloss": "Used Leech Life.",
    "targetForm": "흡혈",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[141]"
   },
   {
@@ -1254,6 +1806,10 @@
    "gloss": "Used Lovely Kiss.",
    "targetForm": "악마의키스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[142]"
   },
   {
@@ -1263,6 +1819,10 @@
    "gloss": "Used Sky Attack.",
    "targetForm": "불새",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[143]"
   },
   {
@@ -1272,6 +1832,10 @@
    "gloss": "Used Transform.",
    "targetForm": "변신",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[144]"
   },
   {
@@ -1281,6 +1845,10 @@
    "gloss": "Used Bubble.",
    "targetForm": "거품",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[145]"
   },
   {
@@ -1290,6 +1858,10 @@
    "gloss": "Used Dizzy Punch.",
    "targetForm": "잼잼펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[146]"
   },
   {
@@ -1299,6 +1871,10 @@
    "gloss": "Used Spore.",
    "targetForm": "버섯포자",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[147]"
   },
   {
@@ -1308,6 +1884,10 @@
    "gloss": "Used Flash.",
    "targetForm": "플래시",
    "areaId": "rock_tunnel",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[148]"
   },
   {
@@ -1317,6 +1897,10 @@
    "gloss": "Used Psywave.",
    "targetForm": "사이코웨이브",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[149]"
   },
   {
@@ -1326,6 +1910,10 @@
    "gloss": "Used Splash.",
    "targetForm": "튀어오르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[150]"
   },
   {
@@ -1335,6 +1923,10 @@
    "gloss": "Used Acid Armor.",
    "targetForm": "녹기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[151]"
   },
   {
@@ -1344,6 +1936,10 @@
    "gloss": "Used Crabhammer.",
    "targetForm": "찝게햄머",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[152]"
   },
   {
@@ -1353,6 +1949,10 @@
    "gloss": "Used Explosion.",
    "targetForm": "대폭발",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[153]"
   },
   {
@@ -1362,6 +1962,10 @@
    "gloss": "Used Fury Swipes.",
    "targetForm": "마구할퀴기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[154]"
   },
   {
@@ -1371,6 +1975,10 @@
    "gloss": "Used Bonemerang.",
    "targetForm": "뼈다귀부메랑",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[155]"
   },
   {
@@ -1380,6 +1988,10 @@
    "gloss": "Used Rest.",
    "targetForm": "잠자기",
    "areaId": "pokemon_mansion",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[156]"
   },
   {
@@ -1389,6 +2001,10 @@
    "gloss": "Used Rock Slide.",
    "targetForm": "스톤샤워",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[157]"
   },
   {
@@ -1398,6 +2014,10 @@
    "gloss": "Used Hyper Fang.",
    "targetForm": "필살앞니",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[158]"
   },
   {
@@ -1407,6 +2027,10 @@
    "gloss": "Used Sharpen.",
    "targetForm": "각지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[159]"
   },
   {
@@ -1416,6 +2040,10 @@
    "gloss": "Used Conversion.",
    "targetForm": "텍스처",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[160]"
   },
   {
@@ -1425,6 +2053,10 @@
    "gloss": "Used Tri Attack.",
    "targetForm": "트라이어택",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[161]"
   },
   {
@@ -1434,6 +2066,10 @@
    "gloss": "Used Super Fang.",
    "targetForm": "분노의앞니",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[162]"
   },
   {
@@ -1443,6 +2079,10 @@
    "gloss": "Used Slash.",
    "targetForm": "베어가르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[163]"
   },
   {
@@ -1452,6 +2092,10 @@
    "gloss": "Used Substitute.",
    "targetForm": "대타출동",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[164]"
   },
   {
@@ -1461,6 +2105,10 @@
    "gloss": "Used Struggle.",
    "targetForm": "발버둥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[165]"
   },
   {
@@ -1470,6 +2118,10 @@
    "gloss": "Used Sketch.",
    "targetForm": "스케치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[166]"
   },
   {
@@ -1479,6 +2131,10 @@
    "gloss": "Used Triple Kick.",
    "targetForm": "트리플킥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[167]"
   },
   {
@@ -1488,6 +2144,10 @@
    "gloss": "Used Thief.",
    "targetForm": "도둑질",
    "areaId": "rocket_hideout",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[168]"
   },
   {
@@ -1497,6 +2157,10 @@
    "gloss": "Used Spider Web.",
    "targetForm": "거미집",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[169]"
   },
   {
@@ -1506,6 +2170,10 @@
    "gloss": "Used Mind Reader.",
    "targetForm": "마음의눈",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[170]"
   },
   {
@@ -1515,6 +2183,10 @@
    "gloss": "Used Nightmare.",
    "targetForm": "악몽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[171]"
   },
   {
@@ -1524,6 +2196,10 @@
    "gloss": "Used Flame Wheel.",
    "targetForm": "화염자동차",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[172]"
   },
   {
@@ -1533,6 +2209,10 @@
    "gloss": "Used Snore.",
    "targetForm": "코골기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[173]"
   },
   {
@@ -1542,6 +2222,10 @@
    "gloss": "Used Curse.",
    "targetForm": "저주",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[174]"
   },
   {
@@ -1551,6 +2235,10 @@
    "gloss": "Used Flail.",
    "targetForm": "바둥바둥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[175]"
   },
   {
@@ -1560,6 +2248,10 @@
    "gloss": "Used Cotton Spore.",
    "targetForm": "목화포자",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[178]"
   },
   {
@@ -1569,6 +2261,10 @@
    "gloss": "Used Reversal.",
    "targetForm": "기사회생",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[179]"
   },
   {
@@ -1578,6 +2274,10 @@
    "gloss": "Used Spite.",
    "targetForm": "원한",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[180]"
   },
   {
@@ -1587,6 +2287,10 @@
    "gloss": "Used Powder Snow.",
    "targetForm": "눈싸라기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[181]"
   },
   {
@@ -1596,6 +2300,10 @@
    "gloss": "Used Protect.",
    "targetForm": "방어",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[182]"
   },
   {
@@ -1605,6 +2313,10 @@
    "gloss": "Used Mach Punch.",
    "targetForm": "마하펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[183]"
   },
   {
@@ -1614,6 +2326,10 @@
    "gloss": "Used Scary Face.",
    "targetForm": "겁나는얼굴",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[184]"
   },
   {
@@ -1623,6 +2339,10 @@
    "gloss": "Used Feint Attack.",
    "targetForm": "속여때리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[185]"
   },
   {
@@ -1632,6 +2352,10 @@
    "gloss": "Used Sweet Kiss.",
    "targetForm": "천사의키스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[186]"
   },
   {
@@ -1641,6 +2365,10 @@
    "gloss": "Used Belly Drum.",
    "targetForm": "배북",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[187]"
   },
   {
@@ -1650,6 +2378,10 @@
    "gloss": "Used Sludge Bomb.",
    "targetForm": "오물폭탄",
    "areaId": "rocket_hideout",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[188]"
   },
   {
@@ -1659,6 +2391,10 @@
    "gloss": "Used Mud Slap.",
    "targetForm": "진흙뿌리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[189]"
   },
   {
@@ -1668,6 +2404,10 @@
    "gloss": "Used Octazooka.",
    "targetForm": "대포무노포",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[190]"
   },
   {
@@ -1677,6 +2417,10 @@
    "gloss": "Used Spikes.",
    "targetForm": "압정뿌리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[191]"
   },
   {
@@ -1686,6 +2430,10 @@
    "gloss": "Used Zap Cannon.",
    "targetForm": "전자포",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[192]"
   },
   {
@@ -1695,6 +2443,10 @@
    "gloss": "Used Foresight.",
    "targetForm": "꿰뚫어보기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[193]"
   },
   {
@@ -1704,6 +2456,10 @@
    "gloss": "Used Destiny Bond.",
    "targetForm": "길동무",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[194]"
   },
   {
@@ -1713,6 +2469,10 @@
    "gloss": "Used Perish Song.",
    "targetForm": "멸망의노래",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[195]"
   },
   {
@@ -1722,6 +2482,10 @@
    "gloss": "Used Icy Wind.",
    "targetForm": "얼다바람",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[196]"
   },
   {
@@ -1731,6 +2495,10 @@
    "gloss": "Used Detect.",
    "targetForm": "판별",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[197]"
   },
   {
@@ -1740,6 +2508,10 @@
    "gloss": "Used Bone Rush.",
    "targetForm": "본러쉬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[198]"
   },
   {
@@ -1749,6 +2521,10 @@
    "gloss": "Used Lock On.",
    "targetForm": "록온",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[199]"
   },
   {
@@ -1758,6 +2534,10 @@
    "gloss": "Used Outrage.",
    "targetForm": "역린",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[200]"
   },
   {
@@ -1767,6 +2547,10 @@
    "gloss": "Used Sandstorm.",
    "targetForm": "모래바람",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[201]"
   },
   {
@@ -1776,6 +2560,10 @@
    "gloss": "Used Giga Drain.",
    "targetForm": "기가드레인",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[202]"
   },
   {
@@ -1785,6 +2573,10 @@
    "gloss": "Used Endure.",
    "targetForm": "버티기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[203]"
   },
   {
@@ -1794,6 +2586,10 @@
    "gloss": "Used Charm.",
    "targetForm": "애교부리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[204]"
   },
   {
@@ -1803,6 +2599,10 @@
    "gloss": "Used Rollout.",
    "targetForm": "구르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[205]"
   },
   {
@@ -1812,6 +2612,10 @@
    "gloss": "Used False Swipe.",
    "targetForm": "칼등치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[206]"
   },
   {
@@ -1821,6 +2625,10 @@
    "gloss": "Used Swagger.",
    "targetForm": "뽐내기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[207]"
   },
   {
@@ -1830,6 +2638,10 @@
    "gloss": "Used Milk Drink.",
    "targetForm": "우유마시기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[208]"
   },
   {
@@ -1839,6 +2651,10 @@
    "gloss": "Used Spark.",
    "targetForm": "스파크",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[209]"
   },
   {
@@ -1848,6 +2664,10 @@
    "gloss": "Used Fury Cutter.",
    "targetForm": "연속자르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[210]"
   },
   {
@@ -1857,6 +2677,10 @@
    "gloss": "Used Steel Wing.",
    "targetForm": "강철날개",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[211]"
   },
   {
@@ -1866,6 +2690,10 @@
    "gloss": "Used Mean Look.",
    "targetForm": "검은눈빛",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[212]"
   },
   {
@@ -1875,6 +2703,10 @@
    "gloss": "Used Attract.",
    "targetForm": "헤롱헤롱",
    "areaId": "rocket_hideout",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[213]"
   },
   {
@@ -1884,6 +2716,10 @@
    "gloss": "Used Sleep Talk.",
    "targetForm": "잠꼬대",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[214]"
   },
   {
@@ -1893,6 +2729,10 @@
    "gloss": "Used Heal Bell.",
    "targetForm": "치료방울",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[215]"
   },
   {
@@ -1902,6 +2742,10 @@
    "gloss": "Used Return.",
    "targetForm": "은혜갚기",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[216]"
   },
   {
@@ -1911,6 +2755,10 @@
    "gloss": "Used Present.",
    "targetForm": "프레젠트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[217]"
   },
   {
@@ -1920,6 +2768,10 @@
    "gloss": "Used Frustration.",
    "targetForm": "화풀이",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[218]"
   },
   {
@@ -1929,6 +2781,10 @@
    "gloss": "Used Safeguard.",
    "targetForm": "신비의부적",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[219]"
   },
   {
@@ -1938,6 +2794,10 @@
    "gloss": "Used Pain Split.",
    "targetForm": "아픔나누기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[220]"
   },
   {
@@ -1947,6 +2807,10 @@
    "gloss": "Used Sacred Fire.",
    "targetForm": "성스러운불꽃",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[221]"
   },
   {
@@ -1956,6 +2820,10 @@
    "gloss": "Used Magnitude.",
    "targetForm": "매그니튜드",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[222]"
   },
   {
@@ -1965,6 +2833,10 @@
    "gloss": "Used Dynamic Punch.",
    "targetForm": "폭발펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[223]"
   },
   {
@@ -1974,6 +2846,10 @@
    "gloss": "Used Megahorn.",
    "targetForm": "메가폰",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[224]"
   },
   {
@@ -1983,6 +2859,10 @@
    "gloss": "Used Dragon Breath.",
    "targetForm": "용의숨결",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[225]"
   },
   {
@@ -1992,6 +2872,10 @@
    "gloss": "Used Baton Pass.",
    "targetForm": "바톤터치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[226]"
   },
   {
@@ -2001,6 +2885,10 @@
    "gloss": "Used Encore.",
    "targetForm": "앵콜",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[227]"
   },
   {
@@ -2010,6 +2898,10 @@
    "gloss": "Used Pursuit.",
    "targetForm": "따라가때리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[228]"
   },
   {
@@ -2019,6 +2911,10 @@
    "gloss": "Used Rapid Spin.",
    "targetForm": "고속스핀",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[229]"
   },
   {
@@ -2028,6 +2924,10 @@
    "gloss": "Used Sweet Scent.",
    "targetForm": "달콤한향기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[230]"
   },
   {
@@ -2037,6 +2937,10 @@
    "gloss": "Used Iron Tail.",
    "targetForm": "아이언테일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[231]"
   },
   {
@@ -2046,6 +2950,10 @@
    "gloss": "Used Metal Claw.",
    "targetForm": "메탈크로우",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[232]"
   },
   {
@@ -2055,6 +2963,10 @@
    "gloss": "Used Vital Throw.",
    "targetForm": "받아던지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[233]"
   },
   {
@@ -2064,6 +2976,10 @@
    "gloss": "Used Morning Sun.",
    "targetForm": "아침햇살",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[234]"
   },
   {
@@ -2073,6 +2989,10 @@
    "gloss": "Used Synthesis.",
    "targetForm": "광합성",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[235]"
   },
   {
@@ -2082,6 +3002,10 @@
    "gloss": "Used Moonlight.",
    "targetForm": "달의불빛",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[236]"
   },
   {
@@ -2091,6 +3015,10 @@
    "gloss": "Used Hidden Power.",
    "targetForm": "잠재파워",
    "areaId": "rock_tunnel",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[237]"
   },
   {
@@ -2100,6 +3028,10 @@
    "gloss": "Used Cross Chop.",
    "targetForm": "크로스촙",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[238]"
   },
   {
@@ -2109,6 +3041,10 @@
    "gloss": "Used Twister.",
    "targetForm": "회오리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[239]"
   },
   {
@@ -2118,6 +3054,10 @@
    "gloss": "Used Rain Dance.",
    "targetForm": "비바라기",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[240]"
   },
   {
@@ -2127,6 +3067,10 @@
    "gloss": "Used Sunny Day.",
    "targetForm": "쾌청",
    "areaId": "route_12",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[241]"
   },
   {
@@ -2136,6 +3080,10 @@
    "gloss": "Used Crunch.",
    "targetForm": "깨물어부수기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[242]"
   },
   {
@@ -2145,6 +3093,10 @@
    "gloss": "Used Mirror Coat.",
    "targetForm": "미러코트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[243]"
   },
   {
@@ -2154,6 +3106,10 @@
    "gloss": "Used Psych Up.",
    "targetForm": "자기암시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[244]"
   },
   {
@@ -2163,6 +3119,10 @@
    "gloss": "Used Extreme Speed.",
    "targetForm": "신속",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[245]"
   },
   {
@@ -2172,6 +3132,10 @@
    "gloss": "Used Ancient Power.",
    "targetForm": "원시의힘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[246]"
   },
   {
@@ -2181,6 +3145,10 @@
    "gloss": "Used Shadow Ball.",
    "targetForm": "섀도볼",
    "areaId": "pokemon_tower",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[247]"
   },
   {
@@ -2190,6 +3158,10 @@
    "gloss": "Used Future Sight.",
    "targetForm": "미래예지",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[248]"
   },
   {
@@ -2199,6 +3171,10 @@
    "gloss": "Used Rock Smash.",
    "targetForm": "바위깨기",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[249]"
   },
   {
@@ -2208,6 +3184,10 @@
    "gloss": "Used Whirlpool.",
    "targetForm": "바다회오리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[250]"
   },
   {
@@ -2217,6 +3197,10 @@
    "gloss": "Used Beat Up.",
    "targetForm": "집단구타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[251]"
   },
   {
@@ -2226,6 +3210,10 @@
    "gloss": "Used Fake Out.",
    "targetForm": "속이다",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[252]"
   },
   {
@@ -2235,6 +3223,10 @@
    "gloss": "Used Uproar.",
    "targetForm": "소란피기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[253]"
   },
   {
@@ -2244,6 +3236,10 @@
    "gloss": "Used Stockpile.",
    "targetForm": "비축하기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[254]"
   },
   {
@@ -2253,6 +3249,10 @@
    "gloss": "Used Spit Up.",
    "targetForm": "토해내기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[255]"
   },
   {
@@ -2262,6 +3262,10 @@
    "gloss": "Used Swallow.",
    "targetForm": "꿀꺽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[256]"
   },
   {
@@ -2271,6 +3275,10 @@
    "gloss": "Used Heat Wave.",
    "targetForm": "열풍",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[257]"
   },
   {
@@ -2280,6 +3288,10 @@
    "gloss": "Used Hail.",
    "targetForm": "싸라기눈",
    "areaId": "seafoam_islands",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[258]"
   },
   {
@@ -2289,6 +3301,10 @@
    "gloss": "Used Torment.",
    "targetForm": "트집",
    "areaId": "lavender_town",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[259]"
   },
   {
@@ -2298,6 +3314,10 @@
    "gloss": "Used Flatter.",
    "targetForm": "부추기기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[260]"
   },
   {
@@ -2307,6 +3327,10 @@
    "gloss": "Used Will O Wisp.",
    "targetForm": "도깨비불",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[261]"
   },
   {
@@ -2316,6 +3340,10 @@
    "gloss": "Used Memento.",
    "targetForm": "추억의선물",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[262]"
   },
   {
@@ -2325,6 +3353,10 @@
    "gloss": "Used Facade.",
    "targetForm": "객기",
    "areaId": "lavender_town",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[263]"
   },
   {
@@ -2334,6 +3366,10 @@
    "gloss": "Used Focus Punch.",
    "targetForm": "힘껏펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[264]"
   },
   {
@@ -2343,6 +3379,10 @@
    "gloss": "Used Smelling Salts.",
    "targetForm": "정신차리기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[265]"
   },
   {
@@ -2352,6 +3392,10 @@
    "gloss": "Used Follow Me.",
    "targetForm": "날따름",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[266]"
   },
   {
@@ -2361,6 +3405,10 @@
    "gloss": "Used Nature Power.",
    "targetForm": "자연의힘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[267]"
   },
   {
@@ -2370,6 +3418,10 @@
    "gloss": "Used Charge.",
    "targetForm": "충전",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[268]"
   },
   {
@@ -2379,6 +3431,10 @@
    "gloss": "Used Taunt.",
    "targetForm": "도발",
    "areaId": "lavender_town",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[269]"
   },
   {
@@ -2388,6 +3444,10 @@
    "gloss": "Used Helping Hand.",
    "targetForm": "도우미",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[270]"
   },
   {
@@ -2397,6 +3457,10 @@
    "gloss": "Used Trick.",
    "targetForm": "트릭",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[271]"
   },
   {
@@ -2406,6 +3470,10 @@
    "gloss": "Used Role Play.",
    "targetForm": "역할",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[272]"
   },
   {
@@ -2415,6 +3483,10 @@
    "gloss": "Used Wish.",
    "targetForm": "희망사항",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[273]"
   },
   {
@@ -2424,6 +3496,10 @@
    "gloss": "Used Assist.",
    "targetForm": "조수",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[274]"
   },
   {
@@ -2433,6 +3509,10 @@
    "gloss": "Used Ingrain.",
    "targetForm": "뿌리박기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[275]"
   },
   {
@@ -2442,6 +3522,10 @@
    "gloss": "Used Superpower.",
    "targetForm": "엄청난힘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[276]"
   },
   {
@@ -2451,6 +3535,10 @@
    "gloss": "Used Magic Coat.",
    "targetForm": "매직코트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[277]"
   },
   {
@@ -2460,6 +3548,10 @@
    "gloss": "Used Recycle.",
    "targetForm": "리사이클",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[278]"
   },
   {
@@ -2469,6 +3561,10 @@
    "gloss": "Used Revenge.",
    "targetForm": "리벤지",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[279]"
   },
   {
@@ -2478,6 +3574,10 @@
    "gloss": "Used Brick Break.",
    "targetForm": "깨트리다",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[280]"
   },
   {
@@ -2487,6 +3587,10 @@
    "gloss": "Used Yawn.",
    "targetForm": "하품",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[281]"
   },
   {
@@ -2496,6 +3600,10 @@
    "gloss": "Used Knock Off.",
    "targetForm": "탁쳐서떨구기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[282]"
   },
   {
@@ -2505,6 +3613,10 @@
    "gloss": "Used Endeavor.",
    "targetForm": "죽기살기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[283]"
   },
   {
@@ -2514,6 +3626,10 @@
    "gloss": "Used Eruption.",
    "targetForm": "분화",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[284]"
   },
   {
@@ -2523,6 +3639,10 @@
    "gloss": "Used Skill Swap.",
    "targetForm": "스킬스웹",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[285]"
   },
   {
@@ -2532,6 +3652,10 @@
    "gloss": "Used Imprison.",
    "targetForm": "봉인",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[286]"
   },
   {
@@ -2541,6 +3665,10 @@
    "gloss": "Used Refresh.",
    "targetForm": "리프레쉬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[287]"
   },
   {
@@ -2550,6 +3678,10 @@
    "gloss": "Used Grudge.",
    "targetForm": "원념",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[288]"
   },
   {
@@ -2559,6 +3691,10 @@
    "gloss": "Used Snatch.",
    "targetForm": "가로챔",
    "areaId": "rocket_hideout",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[289]"
   },
   {
@@ -2568,6 +3704,10 @@
    "gloss": "Used Secret Power.",
    "targetForm": "비밀의힘",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[290]"
   },
   {
@@ -2577,6 +3717,10 @@
    "gloss": "Used Dive.",
    "targetForm": "다이빙",
    "areaId": "seafoam_islands",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[291]"
   },
   {
@@ -2586,6 +3730,10 @@
    "gloss": "Used Arm Thrust.",
    "targetForm": "손바닥치기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[292]"
   },
   {
@@ -2595,6 +3743,10 @@
    "gloss": "Used Camouflage.",
    "targetForm": "보호색",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[293]"
   },
   {
@@ -2604,6 +3756,10 @@
    "gloss": "Used Tail Glow.",
    "targetForm": "반딧불",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[294]"
   },
   {
@@ -2613,6 +3769,10 @@
    "gloss": "Used Luster Purge.",
    "targetForm": "라스트버지",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[295]"
   },
   {
@@ -2622,6 +3782,10 @@
    "gloss": "Used Mist Ball.",
    "targetForm": "미스트볼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[296]"
   },
   {
@@ -2631,6 +3795,10 @@
    "gloss": "Used Feather Dance.",
    "targetForm": "깃털댄스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[297]"
   },
   {
@@ -2640,6 +3808,10 @@
    "gloss": "Used Teeter Dance.",
    "targetForm": "흔들흔들댄스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[298]"
   },
   {
@@ -2649,6 +3821,10 @@
    "gloss": "Used Blaze Kick.",
    "targetForm": "브레이즈킥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[299]"
   },
   {
@@ -2658,6 +3834,10 @@
    "gloss": "Used Mud Sport.",
    "targetForm": "흙놀이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[300]"
   },
   {
@@ -2667,6 +3847,10 @@
    "gloss": "Used Ice Ball.",
    "targetForm": "아이스볼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[301]"
   },
   {
@@ -2676,6 +3860,10 @@
    "gloss": "Used Needle Arm.",
    "targetForm": "바늘팔",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[302]"
   },
   {
@@ -2685,6 +3873,10 @@
    "gloss": "Used Slack Off.",
    "targetForm": "태만함",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[303]"
   },
   {
@@ -2694,6 +3886,10 @@
    "gloss": "Used Hyper Voice.",
    "targetForm": "하이퍼보이스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[304]"
   },
   {
@@ -2703,6 +3899,10 @@
    "gloss": "Used Poison Fang.",
    "targetForm": "독엄니",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[305]"
   },
   {
@@ -2712,6 +3912,10 @@
    "gloss": "Used Crush Claw.",
    "targetForm": "브레이크크루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[306]"
   },
   {
@@ -2721,6 +3925,10 @@
    "gloss": "Used Blast Burn.",
    "targetForm": "블러스트번",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[307]"
   },
   {
@@ -2730,6 +3938,10 @@
    "gloss": "Used Hydro Cannon.",
    "targetForm": "하이드로캐논",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[308]"
   },
   {
@@ -2739,6 +3951,10 @@
    "gloss": "Used Meteor Mash.",
    "targetForm": "코멧펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[309]"
   },
   {
@@ -2748,6 +3964,10 @@
    "gloss": "Used Astonish.",
    "targetForm": "놀래키기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[310]"
   },
   {
@@ -2757,6 +3977,10 @@
    "gloss": "Used Weather Ball.",
    "targetForm": "웨더볼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[311]"
   },
   {
@@ -2766,6 +3990,10 @@
    "gloss": "Used Aromatherapy.",
    "targetForm": "아로마테라피",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[312]"
   },
   {
@@ -2775,6 +4003,10 @@
    "gloss": "Used Fake Tears.",
    "targetForm": "거짓울음",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[313]"
   },
   {
@@ -2784,6 +4016,10 @@
    "gloss": "Used Air Cutter.",
    "targetForm": "에어컷터",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[314]"
   },
   {
@@ -2793,6 +4029,10 @@
    "gloss": "Used Overheat.",
    "targetForm": "오버히트",
    "areaId": "rocket_hideout",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[315]"
   },
   {
@@ -2802,6 +4042,10 @@
    "gloss": "Used Odor Sleuth.",
    "targetForm": "냄새구별",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[316]"
   },
   {
@@ -2811,6 +4055,10 @@
    "gloss": "Used Rock Tomb.",
    "targetForm": "암석봉인",
    "areaId": "mt_moon",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[317]"
   },
   {
@@ -2820,6 +4068,10 @@
    "gloss": "Used Silver Wind.",
    "targetForm": "은빛바람",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[318]"
   },
   {
@@ -2829,6 +4081,10 @@
    "gloss": "Used Metal Sound.",
    "targetForm": "금속음",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[319]"
   },
   {
@@ -2838,6 +4094,10 @@
    "gloss": "Used Grass Whistle.",
    "targetForm": "풀피리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[320]"
   },
   {
@@ -2847,6 +4107,10 @@
    "gloss": "Used Tickle.",
    "targetForm": "간지르기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[321]"
   },
   {
@@ -2856,6 +4120,10 @@
    "gloss": "Used Cosmic Power.",
    "targetForm": "코스믹파워",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[322]"
   },
   {
@@ -2865,6 +4133,10 @@
    "gloss": "Used Water Spout.",
    "targetForm": "바지락조개",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[323]"
   },
   {
@@ -2874,6 +4146,10 @@
    "gloss": "Used Signal Beam.",
    "targetForm": "시그널빔",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[324]"
   },
   {
@@ -2883,6 +4159,10 @@
    "gloss": "Used Shadow Punch.",
    "targetForm": "섀도펀치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[325]"
   },
   {
@@ -2892,6 +4172,10 @@
    "gloss": "Used Extrasensory.",
    "targetForm": "신통력",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[326]"
   },
   {
@@ -2901,6 +4185,10 @@
    "gloss": "Used Sky Uppercut.",
    "targetForm": "스카이업퍼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[327]"
   },
   {
@@ -2910,6 +4198,10 @@
    "gloss": "Used Sand Tomb.",
    "targetForm": "모래지옥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[328]"
   },
   {
@@ -2919,6 +4211,10 @@
    "gloss": "Used Sheer Cold.",
    "targetForm": "절대영도",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[329]"
   },
   {
@@ -2928,6 +4224,10 @@
    "gloss": "Used Muddy Water.",
    "targetForm": "탁류",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[330]"
   },
   {
@@ -2937,6 +4237,10 @@
    "gloss": "Used Bullet Seed.",
    "targetForm": "기관총",
    "areaId": "cerulean_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[331]"
   },
   {
@@ -2946,6 +4250,10 @@
    "gloss": "Used Aerial Ace.",
    "targetForm": "제비반환",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[332]"
   },
   {
@@ -2955,6 +4263,10 @@
    "gloss": "Used Icicle Spear.",
    "targetForm": "고드름침",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[333]"
   },
   {
@@ -2964,6 +4276,10 @@
    "gloss": "Used Iron Defense.",
    "targetForm": "철벽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[334]"
   },
   {
@@ -2973,6 +4289,10 @@
    "gloss": "Used Block.",
    "targetForm": "블록",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[335]"
   },
   {
@@ -2982,6 +4302,10 @@
    "gloss": "Used Howl.",
    "targetForm": "멀리짖음",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[336]"
   },
   {
@@ -2991,6 +4315,10 @@
    "gloss": "Used Dragon Claw.",
    "targetForm": "드래곤크루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[337]"
   },
   {
@@ -3000,6 +4328,10 @@
    "gloss": "Used Frenzy Plant.",
    "targetForm": "하드플랜트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[338]"
   },
   {
@@ -3009,6 +4341,10 @@
    "gloss": "Used Bulk Up.",
    "targetForm": "벌크업",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[339]"
   },
   {
@@ -3018,6 +4354,10 @@
    "gloss": "Used Bounce.",
    "targetForm": "뛰어오르다",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[340]"
   },
   {
@@ -3027,6 +4367,10 @@
    "gloss": "Used Mud Shot.",
    "targetForm": "머드숏",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[341]"
   },
   {
@@ -3036,6 +4380,10 @@
    "gloss": "Used Poison Tail.",
    "targetForm": "포이즌테일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[342]"
   },
   {
@@ -3045,6 +4393,10 @@
    "gloss": "Used Covet.",
    "targetForm": "탐내다",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[343]"
   },
   {
@@ -3054,6 +4406,10 @@
    "gloss": "Used Volt Tackle.",
    "targetForm": "볼트태클",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[344]"
   },
   {
@@ -3063,6 +4419,10 @@
    "gloss": "Used Magical Leaf.",
    "targetForm": "메지컬리프",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[345]"
   },
   {
@@ -3072,6 +4432,10 @@
    "gloss": "Used Water Sport.",
    "targetForm": "물놀이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[346]"
   },
   {
@@ -3081,6 +4445,10 @@
    "gloss": "Used Calm Mind.",
    "targetForm": "명상",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[347]"
   },
   {
@@ -3090,6 +4458,10 @@
    "gloss": "Used Leaf Blade.",
    "targetForm": "리프블레이드",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[348]"
   },
   {
@@ -3099,6 +4471,10 @@
    "gloss": "Used Dragon Dance.",
    "targetForm": "용의춤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[349]"
   },
   {
@@ -3108,6 +4484,10 @@
    "gloss": "Used Rock Blast.",
    "targetForm": "락블레스트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[350]"
   },
   {
@@ -3117,6 +4497,10 @@
    "gloss": "Used Shock Wave.",
    "targetForm": "전격파",
    "areaId": "rocket_hideout",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[351]"
   },
   {
@@ -3126,6 +4510,10 @@
    "gloss": "Used Water Pulse.",
    "targetForm": "물의파동",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[352]"
   },
   {
@@ -3135,6 +4523,10 @@
    "gloss": "Used Doom Desire.",
    "targetForm": "파멸의소원",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[353]"
   },
   {
@@ -3144,6 +4536,10 @@
    "gloss": "Used Psycho Boost.",
    "targetForm": "사이코부스트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_move"
+   ],
+   "primarySourceType": "pokemon_move",
    "source": "gMoveNames[354]"
   },
   {
@@ -3153,6 +4549,10 @@
    "gloss": "The opponent was weakened by Stench.",
    "targetForm": "악취",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[1]"
   },
   {
@@ -3162,6 +4562,10 @@
    "gloss": "The opponent was weakened by Drizzle.",
    "targetForm": "잔비",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[2]"
   },
   {
@@ -3171,6 +4575,10 @@
    "gloss": "The opponent was weakened by Speed Boost.",
    "targetForm": "가속",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[3]"
   },
   {
@@ -3180,6 +4588,10 @@
    "gloss": "The opponent was weakened by Battle Armor.",
    "targetForm": "전투무장",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[4]"
   },
   {
@@ -3189,6 +4601,10 @@
    "gloss": "The opponent was weakened by Sturdy.",
    "targetForm": "옹골참",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[5]"
   },
   {
@@ -3198,6 +4614,10 @@
    "gloss": "The opponent was weakened by Damp.",
    "targetForm": "습기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[6]"
   },
   {
@@ -3207,6 +4627,10 @@
    "gloss": "The opponent was weakened by Limber.",
    "targetForm": "유연",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[7]"
   },
   {
@@ -3216,6 +4640,10 @@
    "gloss": "The opponent was weakened by Sand Veil.",
    "targetForm": "모래숨기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[8]"
   },
   {
@@ -3225,6 +4653,10 @@
    "gloss": "The opponent was weakened by Static.",
    "targetForm": "정전기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[9]"
   },
   {
@@ -3234,6 +4666,10 @@
    "gloss": "The opponent was weakened by Volt Absorb.",
    "targetForm": "축전",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[10]"
   },
   {
@@ -3243,6 +4679,10 @@
    "gloss": "The opponent was weakened by Water Absorb.",
    "targetForm": "저수",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[11]"
   },
   {
@@ -3252,6 +4692,10 @@
    "gloss": "The opponent was weakened by Oblivious.",
    "targetForm": "둔감",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[12]"
   },
   {
@@ -3261,6 +4705,10 @@
    "gloss": "The opponent was weakened by Cloud Nine.",
    "targetForm": "날씨부정",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[13]"
   },
   {
@@ -3270,6 +4718,10 @@
    "gloss": "The opponent was weakened by Compound Eyes.",
    "targetForm": "복안",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[14]"
   },
   {
@@ -3279,6 +4731,10 @@
    "gloss": "The opponent was weakened by Insomnia.",
    "targetForm": "불면",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[15]"
   },
   {
@@ -3288,6 +4744,10 @@
    "gloss": "The opponent was weakened by Color Change.",
    "targetForm": "변색",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[16]"
   },
   {
@@ -3297,6 +4757,10 @@
    "gloss": "The opponent was weakened by Immunity.",
    "targetForm": "면역",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[17]"
   },
   {
@@ -3306,6 +4770,10 @@
    "gloss": "The opponent was weakened by Flash Fire.",
    "targetForm": "타오르는불꽃",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[18]"
   },
   {
@@ -3315,6 +4783,10 @@
    "gloss": "The opponent was weakened by Shield Dust.",
    "targetForm": "인분",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[19]"
   },
   {
@@ -3324,6 +4796,10 @@
    "gloss": "The opponent was weakened by Own Tempo.",
    "targetForm": "마이페이스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[20]"
   },
   {
@@ -3333,6 +4809,10 @@
    "gloss": "The opponent was weakened by Suction Cups.",
    "targetForm": "흡반",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[21]"
   },
   {
@@ -3342,6 +4822,10 @@
    "gloss": "The opponent was weakened by Intimidate.",
    "targetForm": "위협",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[22]"
   },
   {
@@ -3351,6 +4835,10 @@
    "gloss": "The opponent was weakened by Shadow Tag.",
    "targetForm": "그림자밟기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[23]"
   },
   {
@@ -3360,6 +4848,10 @@
    "gloss": "The opponent was weakened by Rough Skin.",
    "targetForm": "까칠한피부",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[24]"
   },
   {
@@ -3369,6 +4861,10 @@
    "gloss": "The opponent was weakened by Wonder Guard.",
    "targetForm": "불가사의부적",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[25]"
   },
   {
@@ -3378,6 +4874,10 @@
    "gloss": "The opponent was weakened by Levitate.",
    "targetForm": "부유",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[26]"
   },
   {
@@ -3387,6 +4887,10 @@
    "gloss": "The opponent was weakened by Effect Spore.",
    "targetForm": "포자",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[27]"
   },
   {
@@ -3396,6 +4900,10 @@
    "gloss": "The opponent was weakened by Synchronize.",
    "targetForm": "싱크로",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[28]"
   },
   {
@@ -3405,6 +4913,10 @@
    "gloss": "The opponent was weakened by Clear Body.",
    "targetForm": "클리어바디",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[29]"
   },
   {
@@ -3414,6 +4926,10 @@
    "gloss": "The opponent was weakened by Natural Cure.",
    "targetForm": "자연회복",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[30]"
   },
   {
@@ -3423,6 +4939,10 @@
    "gloss": "The opponent was weakened by Lightning Rod.",
    "targetForm": "피뢰침",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[31]"
   },
   {
@@ -3432,6 +4952,10 @@
    "gloss": "The opponent was weakened by Serene Grace.",
    "targetForm": "하늘의은총",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[32]"
   },
   {
@@ -3441,6 +4965,10 @@
    "gloss": "The opponent was weakened by Swift Swim.",
    "targetForm": "쓱쓱",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[33]"
   },
   {
@@ -3450,6 +4978,10 @@
    "gloss": "The opponent was weakened by Chlorophyll.",
    "targetForm": "엽록소",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[34]"
   },
   {
@@ -3459,6 +4991,10 @@
    "gloss": "The opponent was weakened by Illuminate.",
    "targetForm": "발광",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[35]"
   },
   {
@@ -3468,6 +5004,10 @@
    "gloss": "The opponent was weakened by Trace.",
    "targetForm": "트레이스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[36]"
   },
   {
@@ -3477,6 +5017,10 @@
    "gloss": "The opponent was weakened by Huge Power.",
    "targetForm": "천하장사",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[37]"
   },
   {
@@ -3486,6 +5030,10 @@
    "gloss": "The opponent was weakened by Poison Point.",
    "targetForm": "독가시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[38]"
   },
   {
@@ -3495,6 +5043,10 @@
    "gloss": "The opponent was weakened by Inner Focus.",
    "targetForm": "정신력",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[39]"
   },
   {
@@ -3504,6 +5056,10 @@
    "gloss": "The opponent was weakened by Magma Armor.",
    "targetForm": "마그마의무장",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[40]"
   },
   {
@@ -3513,6 +5069,10 @@
    "gloss": "The opponent was weakened by Water Veil.",
    "targetForm": "수의베일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[41]"
   },
   {
@@ -3522,6 +5082,10 @@
    "gloss": "The opponent was weakened by Magnet Pull.",
    "targetForm": "자력",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[42]"
   },
   {
@@ -3531,6 +5095,10 @@
    "gloss": "The opponent was weakened by Soundproof.",
    "targetForm": "방음",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[43]"
   },
   {
@@ -3540,6 +5108,10 @@
    "gloss": "The opponent was weakened by Rain Dish.",
    "targetForm": "젖은접시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[44]"
   },
   {
@@ -3549,6 +5121,10 @@
    "gloss": "The opponent was weakened by Sand Stream.",
    "targetForm": "모래날림",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[45]"
   },
   {
@@ -3558,6 +5134,10 @@
    "gloss": "The opponent was weakened by Pressure.",
    "targetForm": "프레셔",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[46]"
   },
   {
@@ -3567,6 +5147,10 @@
    "gloss": "The opponent was weakened by Thick Fat.",
    "targetForm": "두꺼운지방",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[47]"
   },
   {
@@ -3576,6 +5160,10 @@
    "gloss": "The opponent was weakened by Early Bird.",
    "targetForm": "일찍기상",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[48]"
   },
   {
@@ -3585,6 +5173,10 @@
    "gloss": "The opponent was weakened by Flame Body.",
    "targetForm": "불꽃몸",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[49]"
   },
   {
@@ -3594,6 +5186,10 @@
    "gloss": "The opponent was weakened by Run Away.",
    "targetForm": "도주",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[50]"
   },
   {
@@ -3603,6 +5199,10 @@
    "gloss": "The opponent was weakened by Keen Eye.",
    "targetForm": "날카로운눈",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[51]"
   },
   {
@@ -3612,6 +5212,10 @@
    "gloss": "The opponent was weakened by Hyper Cutter.",
    "targetForm": "괴력집게",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[52]"
   },
   {
@@ -3621,6 +5225,10 @@
    "gloss": "The opponent was weakened by Pickup.",
    "targetForm": "픽업",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[53]"
   },
   {
@@ -3630,6 +5238,10 @@
    "gloss": "The opponent was weakened by Truant.",
    "targetForm": "게으름",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[54]"
   },
   {
@@ -3639,6 +5251,10 @@
    "gloss": "The opponent was weakened by Hustle.",
    "targetForm": "의욕",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[55]"
   },
   {
@@ -3648,6 +5264,10 @@
    "gloss": "The opponent was weakened by Cute Charm.",
    "targetForm": "헤롱헤롱바디",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[56]"
   },
   {
@@ -3657,6 +5277,10 @@
    "gloss": "The opponent was weakened by Plus.",
    "targetForm": "플러스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[57]"
   },
   {
@@ -3666,6 +5290,10 @@
    "gloss": "The opponent was weakened by Minus.",
    "targetForm": "마이너스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[58]"
   },
   {
@@ -3675,6 +5303,10 @@
    "gloss": "The opponent was weakened by Forecast.",
    "targetForm": "기분파",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[59]"
   },
   {
@@ -3684,6 +5316,10 @@
    "gloss": "The opponent was weakened by Sticky Hold.",
    "targetForm": "점착",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[60]"
   },
   {
@@ -3693,6 +5329,10 @@
    "gloss": "The opponent was weakened by Shed Skin.",
    "targetForm": "탈피",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[61]"
   },
   {
@@ -3702,6 +5342,10 @@
    "gloss": "The opponent was weakened by Guts.",
    "targetForm": "근성",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[62]"
   },
   {
@@ -3711,6 +5355,10 @@
    "gloss": "The opponent was weakened by Marvel Scale.",
    "targetForm": "이상한비늘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[63]"
   },
   {
@@ -3720,6 +5368,10 @@
    "gloss": "The opponent was weakened by Liquid Ooze.",
    "targetForm": "해감액",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[64]"
   },
   {
@@ -3729,6 +5381,10 @@
    "gloss": "The opponent was weakened by Overgrow.",
    "targetForm": "심록",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[65]"
   },
   {
@@ -3738,6 +5394,10 @@
    "gloss": "The opponent was weakened by Blaze.",
    "targetForm": "맹화",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[66]"
   },
   {
@@ -3747,6 +5407,10 @@
    "gloss": "The opponent was weakened by Torrent.",
    "targetForm": "급류",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[67]"
   },
   {
@@ -3756,6 +5420,10 @@
    "gloss": "The opponent was weakened by Swarm.",
    "targetForm": "벌레의알림",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[68]"
   },
   {
@@ -3765,6 +5433,10 @@
    "gloss": "The opponent was weakened by Rock Head.",
    "targetForm": "돌머리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[69]"
   },
   {
@@ -3774,6 +5446,10 @@
    "gloss": "The opponent was weakened by Drought.",
    "targetForm": "가뭄",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[70]"
   },
   {
@@ -3783,6 +5459,10 @@
    "gloss": "The opponent was weakened by Arena Trap.",
    "targetForm": "개미지옥",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[71]"
   },
   {
@@ -3792,6 +5472,10 @@
    "gloss": "The opponent was weakened by Vital Spirit.",
    "targetForm": "의기양양",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[72]"
   },
   {
@@ -3801,6 +5485,10 @@
    "gloss": "The opponent was weakened by White Smoke.",
    "targetForm": "하얀연기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[73]"
   },
   {
@@ -3810,6 +5498,10 @@
    "gloss": "The opponent was weakened by Pure Power.",
    "targetForm": "순수한힘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[74]"
   },
   {
@@ -3819,6 +5511,10 @@
    "gloss": "The opponent was weakened by Shell Armor.",
    "targetForm": "조가비갑옷",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[75]"
   },
   {
@@ -3828,6 +5524,10 @@
    "gloss": "The opponent was weakened by Air Lock.",
    "targetForm": "소음",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[76]"
   },
   {
@@ -3837,6 +5537,10 @@
    "gloss": "The opponent was weakened by Air Lock.",
    "targetForm": "에어록",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_ability"
+   ],
+   "primarySourceType": "pokemon_ability",
    "source": "gAbilityNames[77]"
   }
  ]

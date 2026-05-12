@@ -72,6 +72,10 @@ def main():
     # Accumulate lemma data
     lemma_areas = defaultdict(set)       # lemma -> set of area_id
     lemma_rec_ids = defaultdict(list)    # lemma -> list of rec_id (max 5)
+    lemma_source_types = defaultdict(set)  # lemma -> set of source type tags
+                                          # ("npc_dialog", "system_text",
+                                          #  "trainer_dialog", "item_description",
+                                          #  "pokedex_entry", "trainer_class_name")
 
     records_tokenized = 0
     for rid in sorted(reachable_rec_ids):
@@ -103,6 +107,7 @@ def main():
                 continue
 
             lemma_areas[lemma].update(areas_for_rec)
+            lemma_source_types[lemma].add("npc_dialog")
             if len(lemma_rec_ids[lemma]) < 5 and rid not in lemma_rec_ids[lemma]:
                 lemma_rec_ids[lemma].append(rid)
 
@@ -137,6 +142,7 @@ def main():
             if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                 continue
             lemma_areas[lemma].add(STATIC_ONLY_AREA_ID)
+            lemma_source_types[lemma].add("system_text")
             # Don't override live-region rec_ids; only attach static rec_id
             # if there are no live records for this lemma yet.
             if not lemma_rec_ids[lemma] and len(lemma_rec_ids[lemma]) < 5:
@@ -195,6 +201,7 @@ def main():
                 if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                     continue
                 lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
+                lemma_source_types[lemma].add("trainer_dialog")
 
     # Fourth pass: items obtained per area (from gItems table walk +
     # pokemart/giveitem opcode scan). For each (area, item_rec_id) entry
@@ -233,6 +240,7 @@ def main():
                     if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                         continue
                     lemma_areas[lemma].add(area)
+                    lemma_source_types[lemma].add("item_description")
                 n_item_recs += 1
         print(f"  item-obtain attributions: {n_item_recs}")
 
@@ -271,6 +279,7 @@ def main():
                     if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                         continue
                     lemma_areas[lemma].add(area)
+                    lemma_source_types[lemma].add("pokedex_entry")
                 n_pokedex_recs += 1
         print(f"  pokedex-entry attributions: {n_pokedex_recs}")
 
@@ -310,6 +319,7 @@ def main():
                     if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                         continue
                     lemma_areas[lemma].add(area)
+                    lemma_source_types[lemma].add("trainer_class_name")
                 n_class_attributions += 1
 
     # Fallback: any class names not seen in the per-NPC walk -> trainer_dialog
@@ -334,6 +344,7 @@ def main():
                 if pos == "noun" and len(lemma) >= 3 and has_no_batchim(lemma):
                     continue
                 lemma_areas[lemma].add(TRAINER_DIALOG_AREA_ID)
+                lemma_source_types[lemma].add("trainer_class_name")
             n_class_fallback += 1
     print(f"  trainer-class per-NPC attributions: {n_class_attributions} (fallback: {n_class_fallback})")
 
@@ -369,12 +380,30 @@ def main():
         o = area_ordinals.get(a, 999999)
         return o if o >= 0 else 999999
 
+    # Priority order for `primary_source_type` when a lemma has multiple sources.
+    # Roughly canonical-first: trainer-class > pokedex > item > NPC dialog >
+    # trainer dialog > system text. (Pokedex/item have specific story-progression
+    # semantics; NPC dialog is the player's primary text exposure; system text is
+    # generic menu/help.)
+    SOURCE_TYPE_PRIORITY = [
+        "trainer_class_name", "pokedex_entry", "item_description",
+        "npc_dialog", "trainer_dialog", "system_text",
+    ]
+    def primary_source(types: set) -> str:
+        for t in SOURCE_TYPE_PRIORITY:
+            if t in types:
+                return t
+        return ""
+
     for lemma, area_set in lemma_areas.items():
         sorted_areas = sorted(area_set, key=rank)
         first_area = sorted_areas[0] if sorted_areas else ""
+        types = lemma_source_types.get(lemma, set())
         output["lemmas"][lemma] = {
             "first_area": first_area,
             "areas": sorted_areas,
+            "source_types": sorted(types),
+            "primary_source_type": primary_source(types),
             "rec_ids": lemma_rec_ids[lemma][:5],
         }
 

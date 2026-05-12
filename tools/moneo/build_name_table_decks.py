@@ -294,6 +294,8 @@ def main():
             "frequency": freq,
             "firstAreaEncountered": first_area,
             "areasReferenced": [first_area] if first_area != "rom_mined" else [],
+            "sourceTypes": ["pokemon_move"],
+            "primarySourceType": "pokemon_move",
             "source": f"gMoveNames[{i}]",
         }
         move_cards.append(card)
@@ -304,6 +306,8 @@ def main():
             "gloss": f"Used {en_clean}.",
             "targetForm": text,
             "areaId": first_area,
+            "sourceTypes": ["pokemon_move"],
+            "primarySourceType": "pokemon_move",
             "source": f"gMoveNames[{i}]",
         })
 
@@ -338,6 +342,8 @@ def main():
             "frequency": freq,
             "firstAreaEncountered": "rom_mined",
             "areasReferenced": [],
+            "sourceTypes": ["pokemon_ability"],
+            "primarySourceType": "pokemon_ability",
             "source": f"gAbilityNames[{i}]",
         }
         ability_cards.append(card)
@@ -348,6 +354,8 @@ def main():
             "gloss": f"The opponent was weakened by {en_clean}.",
             "targetForm": text,
             "areaId": "rom_mined",
+            "sourceTypes": ["pokemon_ability"],
+            "primarySourceType": "pokemon_ability",
             "source": f"gAbilityNames[{i}]",
         })
 
@@ -405,6 +413,8 @@ def main():
             "frequency": freq,
             "firstAreaEncountered": first_area,
             "areasReferenced": ref_areas,
+            "sourceTypes": ["pokemon_species"],
+            "primarySourceType": "pokemon_species",
             "source": f"gSpeciesNames[{i}]",
         }
         species_cards.append(card)
@@ -415,6 +425,8 @@ def main():
             "gloss": f"A wild {en} appeared!" if en else f"A wild Pokemon appeared!",
             "targetForm": text,
             "areaId": first_area,
+            "sourceTypes": ["pokemon_species"],
+            "primarySourceType": "pokemon_species",
             "source": f"gSpeciesNames[{i}]",
         })
 

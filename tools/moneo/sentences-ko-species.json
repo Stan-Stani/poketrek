@@ -12,6 +12,10 @@
    "gloss": "A wild Bulbasaur appeared!",
    "targetForm": "이상해씨",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[1]"
   },
   {
@@ -21,6 +25,10 @@
    "gloss": "A wild Ivysaur appeared!",
    "targetForm": "이상해풀",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[2]"
   },
   {
@@ -30,6 +38,10 @@
    "gloss": "A wild Venusaur appeared!",
    "targetForm": "이상해꽃",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[3]"
   },
   {
@@ -39,6 +51,10 @@
    "gloss": "A wild Charmander appeared!",
    "targetForm": "파이리",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[4]"
   },
   {
@@ -48,6 +64,10 @@
    "gloss": "A wild Charmeleon appeared!",
    "targetForm": "리자드",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[5]"
   },
   {
@@ -57,6 +77,10 @@
    "gloss": "A wild Charizard appeared!",
    "targetForm": "리자몽",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[6]"
   },
   {
@@ -66,6 +90,10 @@
    "gloss": "A wild Squirtle appeared!",
    "targetForm": "꼬부기",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[7]"
   },
   {
@@ -75,6 +103,10 @@
    "gloss": "A wild Wartortle appeared!",
    "targetForm": "어니부기",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[8]"
   },
   {
@@ -84,6 +116,10 @@
    "gloss": "A wild Blastoise appeared!",
    "targetForm": "거북왕",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[9]"
   },
   {
@@ -93,6 +129,10 @@
    "gloss": "A wild Caterpie appeared!",
    "targetForm": "캐터피",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[10]"
   },
   {
@@ -102,6 +142,10 @@
    "gloss": "A wild Metapod appeared!",
    "targetForm": "단데기",
    "areaId": "route_2",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[11]"
   },
   {
@@ -111,6 +155,10 @@
    "gloss": "A wild Butterfree appeared!",
    "targetForm": "버터플",
    "areaId": "route_24",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[12]"
   },
   {
@@ -120,6 +168,10 @@
    "gloss": "A wild Weedle appeared!",
    "targetForm": "뿔충이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[13]"
   },
   {
@@ -129,6 +181,10 @@
    "gloss": "A wild Kakuna appeared!",
    "targetForm": "딱충이",
    "areaId": "route_2",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[14]"
   },
   {
@@ -138,6 +194,10 @@
    "gloss": "A wild Beedrill appeared!",
    "targetForm": "독침붕",
    "areaId": "route_24",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[15]"
   },
   {
@@ -147,6 +207,10 @@
    "gloss": "A wild Pidgey appeared!",
    "targetForm": "구구",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[16]"
   },
   {
@@ -156,6 +220,10 @@
    "gloss": "A wild Pidgeotto appeared!",
    "targetForm": "피죤",
    "areaId": "route_1",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[17]"
   },
   {
@@ -165,6 +233,10 @@
    "gloss": "A wild Pidgeot appeared!",
    "targetForm": "피죤투",
    "areaId": "route_13",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[18]"
   },
   {
@@ -174,6 +246,10 @@
    "gloss": "A wild Rattata appeared!",
    "targetForm": "꼬렛",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[19]"
   },
   {
@@ -183,6 +259,10 @@
    "gloss": "A wild Raticate appeared!",
    "targetForm": "레트라",
    "areaId": "route_1",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[20]"
   },
   {
@@ -192,6 +272,10 @@
    "gloss": "A wild Spearow appeared!",
    "targetForm": "깨비참",
    "areaId": "route_16",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[21]"
   },
   {
@@ -201,6 +285,10 @@
    "gloss": "A wild Fearow appeared!",
    "targetForm": "깨비드릴조",
    "areaId": "route_3",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[22]"
   },
   {
@@ -210,6 +298,10 @@
    "gloss": "A wild Ekans appeared!",
    "targetForm": "아보",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[23]"
   },
   {
@@ -219,6 +311,10 @@
    "gloss": "A wild Arbok appeared!",
    "targetForm": "아보크",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[24]"
   },
   {
@@ -228,6 +324,10 @@
    "gloss": "A wild Pikachu appeared!",
    "targetForm": "피카츄",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[25]"
   },
   {
@@ -237,6 +337,10 @@
    "gloss": "A wild Raichu appeared!",
    "targetForm": "라이츄",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[26]"
   },
   {
@@ -246,6 +350,10 @@
    "gloss": "A wild Sandshrew appeared!",
    "targetForm": "모래두지",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[27]"
   },
   {
@@ -255,6 +363,10 @@
    "gloss": "A wild Sandslash appeared!",
    "targetForm": "고지",
    "areaId": "route_4",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[28]"
   },
   {
@@ -264,6 +376,10 @@
    "gloss": "A wild Nidorina appeared!",
    "targetForm": "니드리나",
    "areaId": "route_3",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[30]"
   },
   {
@@ -273,6 +389,10 @@
    "gloss": "A wild Nidoqueen appeared!",
    "targetForm": "니드퀸",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[31]"
   },
   {
@@ -282,6 +402,10 @@
    "gloss": "A wild Nidorino appeared!",
    "targetForm": "니드리노",
    "areaId": "route_3",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[33]"
   },
   {
@@ -291,6 +415,10 @@
    "gloss": "A wild Nidoking appeared!",
    "targetForm": "니드킹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[34]"
   },
   {
@@ -300,6 +428,10 @@
    "gloss": "A wild Clefairy appeared!",
    "targetForm": "삐삐",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[35]"
   },
   {
@@ -309,6 +441,10 @@
    "gloss": "A wild Clefable appeared!",
    "targetForm": "픽시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[36]"
   },
   {
@@ -318,6 +454,10 @@
    "gloss": "A wild Vulpix appeared!",
    "targetForm": "식스테일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[37]"
   },
   {
@@ -327,6 +467,10 @@
    "gloss": "A wild Ninetales appeared!",
    "targetForm": "나인테일",
    "areaId": "route_7",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[38]"
   },
   {
@@ -336,6 +480,10 @@
    "gloss": "A wild Jigglypuff appeared!",
    "targetForm": "푸린",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[39]"
   },
   {
@@ -345,6 +493,10 @@
    "gloss": "A wild Wigglytuff appeared!",
    "targetForm": "푸크린",
    "areaId": "route_3",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[40]"
   },
   {
@@ -354,6 +506,10 @@
    "gloss": "A wild Zubat appeared!",
    "targetForm": "주뱃",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[41]"
   },
   {
@@ -363,6 +519,10 @@
    "gloss": "A wild Golbat appeared!",
    "targetForm": "골뱃",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[42]"
   },
   {
@@ -372,6 +532,10 @@
    "gloss": "A wild Oddish appeared!",
    "targetForm": "뚜벅쵸",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[43]"
   },
   {
@@ -381,6 +545,10 @@
    "gloss": "A wild Gloom appeared!",
    "targetForm": "냄새꼬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[44]"
   },
   {
@@ -390,6 +558,10 @@
    "gloss": "A wild Vileplume appeared!",
    "targetForm": "라플레시아",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[45]"
   },
   {
@@ -399,6 +571,10 @@
    "gloss": "A wild Paras appeared!",
    "targetForm": "파라스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[46]"
   },
   {
@@ -408,6 +584,10 @@
    "gloss": "A wild Parasect appeared!",
    "targetForm": "파라섹트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[47]"
   },
   {
@@ -417,6 +597,10 @@
    "gloss": "A wild Venonat appeared!",
    "targetForm": "콘팡",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[48]"
   },
   {
@@ -426,6 +610,10 @@
    "gloss": "A wild Venomoth appeared!",
    "targetForm": "도나리",
    "areaId": "route_12",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[49]"
   },
   {
@@ -435,6 +623,10 @@
    "gloss": "A wild Diglett appeared!",
    "targetForm": "디그다",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[50]"
   },
   {
@@ -444,6 +636,10 @@
    "gloss": "A wild Dugtrio appeared!",
    "targetForm": "닥트리오",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[51]"
   },
   {
@@ -453,6 +649,10 @@
    "gloss": "A wild Meowth appeared!",
    "targetForm": "나옹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[52]"
   },
   {
@@ -462,6 +662,10 @@
    "gloss": "A wild Persian appeared!",
    "targetForm": "페르시온",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[53]"
   },
   {
@@ -471,6 +675,10 @@
    "gloss": "A wild Psyduck appeared!",
    "targetForm": "고라파덕",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[54]"
   },
   {
@@ -480,6 +688,10 @@
    "gloss": "A wild Golduck appeared!",
    "targetForm": "골덕",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[55]"
   },
   {
@@ -489,6 +701,10 @@
    "gloss": "A wild Mankey appeared!",
    "targetForm": "망키",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[56]"
   },
   {
@@ -498,6 +714,10 @@
    "gloss": "A wild Primeape appeared!",
    "targetForm": "성원숭",
    "areaId": "route_3",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[57]"
   },
   {
@@ -507,6 +727,10 @@
    "gloss": "A wild Growlithe appeared!",
    "targetForm": "가디",
    "areaId": "route_23",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[58]"
   },
   {
@@ -516,6 +740,10 @@
    "gloss": "A wild Arcanine appeared!",
    "targetForm": "윈디",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[59]"
   },
   {
@@ -525,6 +753,10 @@
    "gloss": "A wild Poliwag appeared!",
    "targetForm": "발챙이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[60]"
   },
   {
@@ -534,6 +766,10 @@
    "gloss": "A wild Poliwhirl appeared!",
    "targetForm": "슈륙챙이",
    "areaId": "viridian_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[61]"
   },
   {
@@ -543,6 +779,10 @@
    "gloss": "A wild Poliwrath appeared!",
    "targetForm": "강챙이",
    "areaId": "viridian_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[62]"
   },
   {
@@ -552,6 +792,10 @@
    "gloss": "A wild Abra appeared!",
    "targetForm": "캐이시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[63]"
   },
   {
@@ -561,6 +805,10 @@
    "gloss": "A wild Kadabra appeared!",
    "targetForm": "윤겔라",
    "areaId": "route_24",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[64]"
   },
   {
@@ -570,6 +818,10 @@
    "gloss": "A wild Alakazam appeared!",
    "targetForm": "후딘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[65]"
   },
   {
@@ -579,6 +831,10 @@
    "gloss": "A wild Machop appeared!",
    "targetForm": "알통몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[66]"
   },
   {
@@ -588,6 +844,10 @@
    "gloss": "A wild Machoke appeared!",
    "targetForm": "근육몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[67]"
   },
   {
@@ -597,6 +857,10 @@
    "gloss": "A wild Machamp appeared!",
    "targetForm": "괴력몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[68]"
   },
   {
@@ -606,6 +870,10 @@
    "gloss": "A wild Bellsprout appeared!",
    "targetForm": "모다피",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[69]"
   },
   {
@@ -615,6 +883,10 @@
    "gloss": "A wild Weepinbell appeared!",
    "targetForm": "우츠동",
    "areaId": "route_24",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[70]"
   },
   {
@@ -624,6 +896,10 @@
    "gloss": "A wild Victreebel appeared!",
    "targetForm": "우츠보트",
    "areaId": "route_12",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[71]"
   },
   {
@@ -633,6 +909,10 @@
    "gloss": "A wild Tentacool appeared!",
    "targetForm": "왕눈해",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[72]"
   },
   {
@@ -642,6 +922,10 @@
    "gloss": "A wild Tentacruel appeared!",
    "targetForm": "독파리",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[73]"
   },
   {
@@ -651,6 +935,10 @@
    "gloss": "A wild Geodude appeared!",
    "targetForm": "꼬마돌",
    "areaId": "mt_moon",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[74]"
   },
   {
@@ -660,6 +948,10 @@
    "gloss": "A wild Graveler appeared!",
    "targetForm": "데구리",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[75]"
   },
   {
@@ -669,6 +961,10 @@
    "gloss": "A wild Golem appeared!",
    "targetForm": "딱구리",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[76]"
   },
   {
@@ -678,6 +974,10 @@
    "gloss": "A wild Ponyta appeared!",
    "targetForm": "포니타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[77]"
   },
   {
@@ -687,6 +987,10 @@
    "gloss": "A wild Rapidash appeared!",
    "targetForm": "날쌩마",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[78]"
   },
   {
@@ -696,6 +1000,10 @@
    "gloss": "A wild Slowpoke appeared!",
    "targetForm": "야돈",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[79]"
   },
   {
@@ -705,6 +1013,10 @@
    "gloss": "A wild Slowbro appeared!",
    "targetForm": "야도란",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[80]"
   },
   {
@@ -714,6 +1026,10 @@
    "gloss": "A wild Magnemite appeared!",
    "targetForm": "코일",
    "areaId": "cinnabar_island",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[81]"
   },
   {
@@ -723,6 +1039,10 @@
    "gloss": "A wild Magneton appeared!",
    "targetForm": "레어코일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[82]"
   },
   {
@@ -732,6 +1052,10 @@
    "gloss": "A wild Farfetch’d appeared!",
    "targetForm": "파오리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[83]"
   },
   {
@@ -741,6 +1065,10 @@
    "gloss": "A wild Doduo appeared!",
    "targetForm": "두두",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[84]"
   },
   {
@@ -750,6 +1078,10 @@
    "gloss": "A wild Dodrio appeared!",
    "targetForm": "두트리오",
    "areaId": "route_16",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[85]"
   },
   {
@@ -759,6 +1091,10 @@
    "gloss": "A wild Seel appeared!",
    "targetForm": "쥬쥬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[86]"
   },
   {
@@ -768,6 +1104,10 @@
    "gloss": "A wild Dewgong appeared!",
    "targetForm": "쥬레곤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[87]"
   },
   {
@@ -777,6 +1117,10 @@
    "gloss": "A wild Grimer appeared!",
    "targetForm": "질퍽이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[88]"
   },
   {
@@ -786,6 +1130,10 @@
    "gloss": "A wild Muk appeared!",
    "targetForm": "질뻐기",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[89]"
   },
   {
@@ -795,6 +1143,10 @@
    "gloss": "A wild Shellder appeared!",
    "targetForm": "셀러",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[90]"
   },
   {
@@ -804,6 +1156,10 @@
    "gloss": "A wild Cloyster appeared!",
    "targetForm": "파르셀",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[91]"
   },
   {
@@ -813,6 +1169,10 @@
    "gloss": "A wild Gastly appeared!",
    "targetForm": "고오스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[92]"
   },
   {
@@ -822,6 +1182,10 @@
    "gloss": "A wild Haunter appeared!",
    "targetForm": "고우스트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[93]"
   },
   {
@@ -831,6 +1195,10 @@
    "gloss": "A wild Gengar appeared!",
    "targetForm": "팬텀",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[94]"
   },
   {
@@ -840,6 +1208,10 @@
    "gloss": "A wild Onix appeared!",
    "targetForm": "롱스톤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[95]"
   },
   {
@@ -849,6 +1221,10 @@
    "gloss": "A wild Drowzee appeared!",
    "targetForm": "슬리프",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[96]"
   },
   {
@@ -858,6 +1234,10 @@
    "gloss": "A wild Hypno appeared!",
    "targetForm": "슬리퍼",
    "areaId": "route_11",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[97]"
   },
   {
@@ -867,6 +1247,10 @@
    "gloss": "A wild Krabby appeared!",
    "targetForm": "크랩",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[98]"
   },
   {
@@ -876,6 +1260,10 @@
    "gloss": "A wild Kingler appeared!",
    "targetForm": "킹크랩",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[99]"
   },
   {
@@ -885,6 +1273,10 @@
    "gloss": "A wild Voltorb appeared!",
    "targetForm": "찌리리공",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[100]"
   },
   {
@@ -894,6 +1286,10 @@
    "gloss": "A wild Electrode appeared!",
    "targetForm": "붐볼",
    "areaId": "route_10",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[101]"
   },
   {
@@ -903,6 +1299,10 @@
    "gloss": "A wild Exeggcute appeared!",
    "targetForm": "아라리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[102]"
   },
   {
@@ -912,6 +1312,10 @@
    "gloss": "A wild Exeggutor appeared!",
    "targetForm": "나시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[103]"
   },
   {
@@ -921,6 +1325,10 @@
    "gloss": "A wild Cubone appeared!",
    "targetForm": "탕구리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[104]"
   },
   {
@@ -930,6 +1338,10 @@
    "gloss": "A wild Marowak appeared!",
    "targetForm": "텅구리",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[105]"
   },
   {
@@ -939,6 +1351,10 @@
    "gloss": "A wild Hitmonlee appeared!",
    "targetForm": "시라소몬",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[106]"
   },
   {
@@ -948,6 +1364,10 @@
    "gloss": "A wild Hitmonchan appeared!",
    "targetForm": "홍수몬",
    "areaId": "saffron_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[107]"
   },
   {
@@ -957,6 +1377,10 @@
    "gloss": "A wild Lickitung appeared!",
    "targetForm": "내루미",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[108]"
   },
   {
@@ -966,6 +1390,10 @@
    "gloss": "A wild Koffing appeared!",
    "targetForm": "또가스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[109]"
   },
   {
@@ -975,6 +1403,10 @@
    "gloss": "A wild Weezing appeared!",
    "targetForm": "또도가스",
    "areaId": "celadon_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[110]"
   },
   {
@@ -984,6 +1416,10 @@
    "gloss": "A wild Rhyhorn appeared!",
    "targetForm": "뿔카노",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[111]"
   },
   {
@@ -993,6 +1429,10 @@
    "gloss": "A wild Rhydon appeared!",
    "targetForm": "코뿌리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[112]"
   },
   {
@@ -1002,6 +1442,10 @@
    "gloss": "A wild Chansey appeared!",
    "targetForm": "럭키",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[113]"
   },
   {
@@ -1011,6 +1455,10 @@
    "gloss": "A wild Tangela appeared!",
    "targetForm": "덩쿠리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[114]"
   },
   {
@@ -1020,6 +1468,10 @@
    "gloss": "A wild Kangaskhan appeared!",
    "targetForm": "캥카",
    "areaId": "route_21",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[115]"
   },
   {
@@ -1029,6 +1481,10 @@
    "gloss": "A wild Horsea appeared!",
    "targetForm": "쏘드라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[116]"
   },
   {
@@ -1038,6 +1494,10 @@
    "gloss": "A wild Seadra appeared!",
    "targetForm": "시드라",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[117]"
   },
   {
@@ -1047,6 +1507,10 @@
    "gloss": "A wild Goldeen appeared!",
    "targetForm": "콘치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[118]"
   },
   {
@@ -1056,6 +1520,10 @@
    "gloss": "A wild Seaking appeared!",
    "targetForm": "왕콘치",
    "areaId": "viridian_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[119]"
   },
   {
@@ -1065,6 +1533,10 @@
    "gloss": "A wild Staryu appeared!",
    "targetForm": "별가사리",
    "areaId": "fuchsia_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[120]"
   },
   {
@@ -1074,6 +1546,10 @@
    "gloss": "A wild Starmie appeared!",
    "targetForm": "아쿠스타",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[121]"
   },
   {
@@ -1083,6 +1559,10 @@
    "gloss": "A wild Mr. Mime appeared!",
    "targetForm": "마임맨",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[122]"
   },
   {
@@ -1092,6 +1572,10 @@
    "gloss": "A wild Scyther appeared!",
    "targetForm": "스라크",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[123]"
   },
   {
@@ -1101,6 +1585,10 @@
    "gloss": "A wild Jynx appeared!",
    "targetForm": "루주라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[124]"
   },
   {
@@ -1110,6 +1598,10 @@
    "gloss": "A wild Electabuzz appeared!",
    "targetForm": "에레브",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[125]"
   },
   {
@@ -1119,6 +1611,10 @@
    "gloss": "A wild Magmar appeared!",
    "targetForm": "마그마",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[126]"
   },
   {
@@ -1128,6 +1624,10 @@
    "gloss": "A wild Pinsir appeared!",
    "targetForm": "쁘사이저",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[127]"
   },
   {
@@ -1137,6 +1637,10 @@
    "gloss": "A wild Tauros appeared!",
    "targetForm": "켄타로스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[128]"
   },
   {
@@ -1146,6 +1650,10 @@
    "gloss": "A wild Magikarp appeared!",
    "targetForm": "잉어킹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[129]"
   },
   {
@@ -1155,6 +1663,10 @@
    "gloss": "A wild Gyarados appeared!",
    "targetForm": "갸라도스",
    "areaId": "pallet_town",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[130]"
   },
   {
@@ -1164,6 +1676,10 @@
    "gloss": "A wild Lapras appeared!",
    "targetForm": "라프라스",
    "areaId": "silph_co",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[131]"
   },
   {
@@ -1173,6 +1689,10 @@
    "gloss": "A wild Ditto appeared!",
    "targetForm": "메타몽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[132]"
   },
   {
@@ -1182,6 +1702,10 @@
    "gloss": "A wild Eevee appeared!",
    "targetForm": "이브이",
    "areaId": "route_13",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[133]"
   },
   {
@@ -1191,6 +1715,10 @@
    "gloss": "A wild Vaporeon appeared!",
    "targetForm": "샤미드",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[134]"
   },
   {
@@ -1200,6 +1728,10 @@
    "gloss": "A wild Jolteon appeared!",
    "targetForm": "쥬피썬더",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[135]"
   },
   {
@@ -1209,6 +1741,10 @@
    "gloss": "A wild Flareon appeared!",
    "targetForm": "부스터",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[136]"
   },
   {
@@ -1218,6 +1754,10 @@
    "gloss": "A wild Porygon appeared!",
    "targetForm": "폴리곤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[137]"
   },
   {
@@ -1227,6 +1767,10 @@
    "gloss": "A wild Omanyte appeared!",
    "targetForm": "암나이트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[138]"
   },
   {
@@ -1236,6 +1780,10 @@
    "gloss": "A wild Omastar appeared!",
    "targetForm": "암스타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[139]"
   },
   {
@@ -1245,6 +1793,10 @@
    "gloss": "A wild Kabuto appeared!",
    "targetForm": "투구",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[140]"
   },
   {
@@ -1254,6 +1806,10 @@
    "gloss": "A wild Kabutops appeared!",
    "targetForm": "투구푸스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[141]"
   },
   {
@@ -1263,6 +1819,10 @@
    "gloss": "A wild Aerodactyl appeared!",
    "targetForm": "프테라",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[142]"
   },
   {
@@ -1272,6 +1832,10 @@
    "gloss": "A wild Snorlax appeared!",
    "targetForm": "잠만보",
    "areaId": "route_12",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[143]"
   },
   {
@@ -1281,6 +1845,10 @@
    "gloss": "A wild Articuno appeared!",
    "targetForm": "프리져",
    "areaId": "seafoam_islands",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[144]"
   },
   {
@@ -1290,6 +1858,10 @@
    "gloss": "A wild Zapdos appeared!",
    "targetForm": "썬더",
    "areaId": "power_plant",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[145]"
   },
   {
@@ -1299,6 +1871,10 @@
    "gloss": "A wild Moltres appeared!",
    "targetForm": "파이어",
    "areaId": "route_23",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[146]"
   },
   {
@@ -1308,6 +1884,10 @@
    "gloss": "A wild Dratini appeared!",
    "targetForm": "미뇽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[147]"
   },
   {
@@ -1317,6 +1897,10 @@
    "gloss": "A wild Dragonair appeared!",
    "targetForm": "신뇽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[148]"
   },
   {
@@ -1326,6 +1910,10 @@
    "gloss": "A wild Dragonite appeared!",
    "targetForm": "망나뇽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[149]"
   },
   {
@@ -1335,6 +1923,10 @@
    "gloss": "A wild Mewtwo appeared!",
    "targetForm": "뮤츠",
    "areaId": "cerulean_cave",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[150]"
   },
   {
@@ -1344,6 +1936,10 @@
    "gloss": "A wild Chikorita appeared!",
    "targetForm": "치코리타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[152]"
   },
   {
@@ -1353,6 +1949,10 @@
    "gloss": "A wild Bayleef appeared!",
    "targetForm": "베이리프",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[153]"
   },
   {
@@ -1362,6 +1962,10 @@
    "gloss": "A wild Meganium appeared!",
    "targetForm": "메가니움",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[154]"
   },
   {
@@ -1371,6 +1975,10 @@
    "gloss": "A wild Cyndaquil appeared!",
    "targetForm": "브케인",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[155]"
   },
   {
@@ -1380,6 +1988,10 @@
    "gloss": "A wild Quilava appeared!",
    "targetForm": "마그케인",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[156]"
   },
   {
@@ -1389,6 +2001,10 @@
    "gloss": "A wild Typhlosion appeared!",
    "targetForm": "블레이범",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[157]"
   },
   {
@@ -1398,6 +2014,10 @@
    "gloss": "A wild Totodile appeared!",
    "targetForm": "리아코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[158]"
   },
   {
@@ -1407,6 +2027,10 @@
    "gloss": "A wild Croconaw appeared!",
    "targetForm": "엘리게이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[159]"
   },
   {
@@ -1416,6 +2040,10 @@
    "gloss": "A wild Feraligatr appeared!",
    "targetForm": "장크로다일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[160]"
   },
   {
@@ -1425,6 +2053,10 @@
    "gloss": "A wild Sentret appeared!",
    "targetForm": "꼬리선",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[161]"
   },
   {
@@ -1434,6 +2066,10 @@
    "gloss": "A wild Furret appeared!",
    "targetForm": "다꼬리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[162]"
   },
   {
@@ -1443,6 +2079,10 @@
    "gloss": "A wild Hoothoot appeared!",
    "targetForm": "부우부",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[163]"
   },
   {
@@ -1452,6 +2092,10 @@
    "gloss": "A wild Noctowl appeared!",
    "targetForm": "야부엉",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[164]"
   },
   {
@@ -1461,6 +2105,10 @@
    "gloss": "A wild Ledyba appeared!",
    "targetForm": "레디바",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[165]"
   },
   {
@@ -1470,6 +2118,10 @@
    "gloss": "A wild Ledian appeared!",
    "targetForm": "레디안",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[166]"
   },
   {
@@ -1479,6 +2131,10 @@
    "gloss": "A wild Spinarak appeared!",
    "targetForm": "페이검",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[167]"
   },
   {
@@ -1488,6 +2144,10 @@
    "gloss": "A wild Ariados appeared!",
    "targetForm": "아리아도스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[168]"
   },
   {
@@ -1497,6 +2157,10 @@
    "gloss": "A wild Crobat appeared!",
    "targetForm": "크로뱃",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[169]"
   },
   {
@@ -1506,6 +2170,10 @@
    "gloss": "A wild Chinchou appeared!",
    "targetForm": "초라기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[170]"
   },
   {
@@ -1515,6 +2183,10 @@
    "gloss": "A wild Lanturn appeared!",
    "targetForm": "랜턴",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[171]"
   },
   {
@@ -1524,6 +2196,10 @@
    "gloss": "A wild Pichu appeared!",
    "targetForm": "피츄",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[172]"
   },
   {
@@ -1533,6 +2209,10 @@
    "gloss": "A wild Igglybuff appeared!",
    "targetForm": "푸푸린",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[174]"
   },
   {
@@ -1542,6 +2222,10 @@
    "gloss": "A wild Togepi appeared!",
    "targetForm": "토게피",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[175]"
   },
   {
@@ -1551,6 +2235,10 @@
    "gloss": "A wild Togetic appeared!",
    "targetForm": "토게틱",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[176]"
   },
   {
@@ -1560,6 +2248,10 @@
    "gloss": "A wild Natu appeared!",
    "targetForm": "네이티",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[177]"
   },
   {
@@ -1569,6 +2261,10 @@
    "gloss": "A wild Xatu appeared!",
    "targetForm": "네이티오",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[178]"
   },
   {
@@ -1578,6 +2274,10 @@
    "gloss": "A wild Mareep appeared!",
    "targetForm": "메리프",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[179]"
   },
   {
@@ -1587,6 +2287,10 @@
    "gloss": "A wild Flaaffy appeared!",
    "targetForm": "보송송",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[180]"
   },
   {
@@ -1596,6 +2300,10 @@
    "gloss": "A wild Ampharos appeared!",
    "targetForm": "전룡",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[181]"
   },
   {
@@ -1605,6 +2313,10 @@
    "gloss": "A wild Bellossom appeared!",
    "targetForm": "아르코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[182]"
   },
   {
@@ -1614,6 +2326,10 @@
    "gloss": "A wild Marill appeared!",
    "targetForm": "마릴",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[183]"
   },
   {
@@ -1623,6 +2339,10 @@
    "gloss": "A wild Azumarill appeared!",
    "targetForm": "마릴리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[184]"
   },
   {
@@ -1632,6 +2352,10 @@
    "gloss": "A wild Sudowoodo appeared!",
    "targetForm": "꼬지모",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[185]"
   },
   {
@@ -1641,6 +2365,10 @@
    "gloss": "A wild Politoed appeared!",
    "targetForm": "왕구리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[186]"
   },
   {
@@ -1650,6 +2378,10 @@
    "gloss": "A wild Hoppip appeared!",
    "targetForm": "통통코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[187]"
   },
   {
@@ -1659,6 +2391,10 @@
    "gloss": "A wild Skiploom appeared!",
    "targetForm": "두코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[188]"
   },
   {
@@ -1668,6 +2404,10 @@
    "gloss": "A wild Jumpluff appeared!",
    "targetForm": "솜솜코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[189]"
   },
   {
@@ -1677,6 +2417,10 @@
    "gloss": "A wild Aipom appeared!",
    "targetForm": "에이팜",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[190]"
   },
   {
@@ -1686,6 +2430,10 @@
    "gloss": "A wild Sunkern appeared!",
    "targetForm": "해너츠",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[191]"
   },
   {
@@ -1695,6 +2443,10 @@
    "gloss": "A wild Sunflora appeared!",
    "targetForm": "해루미",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[192]"
   },
   {
@@ -1704,6 +2456,10 @@
    "gloss": "A wild Yanma appeared!",
    "targetForm": "왕자리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[193]"
   },
   {
@@ -1713,6 +2469,10 @@
    "gloss": "A wild Wooper appeared!",
    "targetForm": "우파",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[194]"
   },
   {
@@ -1722,6 +2482,10 @@
    "gloss": "A wild Quagsire appeared!",
    "targetForm": "누오",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[195]"
   },
   {
@@ -1731,6 +2495,10 @@
    "gloss": "A wild Espeon appeared!",
    "targetForm": "에브이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[196]"
   },
   {
@@ -1740,6 +2508,10 @@
    "gloss": "A wild Umbreon appeared!",
    "targetForm": "블래키",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[197]"
   },
   {
@@ -1749,6 +2521,10 @@
    "gloss": "A wild Murkrow appeared!",
    "targetForm": "니로우",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[198]"
   },
   {
@@ -1758,6 +2534,10 @@
    "gloss": "A wild Slowking appeared!",
    "targetForm": "야도킹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[199]"
   },
   {
@@ -1767,6 +2547,10 @@
    "gloss": "A wild Misdreavus appeared!",
    "targetForm": "무우마",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[200]"
   },
   {
@@ -1776,6 +2560,10 @@
    "gloss": "A wild Unown appeared!",
    "targetForm": "안농",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[201]"
   },
   {
@@ -1785,6 +2573,10 @@
    "gloss": "A wild Wobbuffet appeared!",
    "targetForm": "마자용",
    "areaId": "mt_moon",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[202]"
   },
   {
@@ -1794,6 +2586,10 @@
    "gloss": "A wild Girafarig appeared!",
    "targetForm": "키링키",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[203]"
   },
   {
@@ -1803,6 +2599,10 @@
    "gloss": "A wild Pineco appeared!",
    "targetForm": "피콘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[204]"
   },
   {
@@ -1812,6 +2612,10 @@
    "gloss": "A wild Forretress appeared!",
    "targetForm": "쏘콘",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[205]"
   },
   {
@@ -1821,6 +2625,10 @@
    "gloss": "A wild Dunsparce appeared!",
    "targetForm": "노고치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[206]"
   },
   {
@@ -1830,6 +2638,10 @@
    "gloss": "A wild Gligar appeared!",
    "targetForm": "글라이거",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[207]"
   },
   {
@@ -1839,6 +2651,10 @@
    "gloss": "A wild Steelix appeared!",
    "targetForm": "강철톤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[208]"
   },
   {
@@ -1848,6 +2664,10 @@
    "gloss": "A wild Snubbull appeared!",
    "targetForm": "블루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[209]"
   },
   {
@@ -1857,6 +2677,10 @@
    "gloss": "A wild Granbull appeared!",
    "targetForm": "그랑블루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[210]"
   },
   {
@@ -1866,6 +2690,10 @@
    "gloss": "A wild Qwilfish appeared!",
    "targetForm": "침바루",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[211]"
   },
   {
@@ -1875,6 +2703,10 @@
    "gloss": "A wild Scizor appeared!",
    "targetForm": "핫삼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[212]"
   },
   {
@@ -1884,6 +2716,10 @@
    "gloss": "A wild Shuckle appeared!",
    "targetForm": "단단지",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[213]"
   },
   {
@@ -1893,6 +2729,10 @@
    "gloss": "A wild Heracross appeared!",
    "targetForm": "헤라크로스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[214]"
   },
   {
@@ -1902,6 +2742,10 @@
    "gloss": "A wild Sneasel appeared!",
    "targetForm": "포푸니",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[215]"
   },
   {
@@ -1911,6 +2755,10 @@
    "gloss": "A wild Teddiursa appeared!",
    "targetForm": "깜지곰",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[216]"
   },
   {
@@ -1920,6 +2768,10 @@
    "gloss": "A wild Ursaring appeared!",
    "targetForm": "링곰",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[217]"
   },
   {
@@ -1929,6 +2781,10 @@
    "gloss": "A wild Slugma appeared!",
    "targetForm": "마그마그",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[218]"
   },
   {
@@ -1938,6 +2794,10 @@
    "gloss": "A wild Magcargo appeared!",
    "targetForm": "마그카르고",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[219]"
   },
   {
@@ -1947,6 +2807,10 @@
    "gloss": "A wild Swinub appeared!",
    "targetForm": "꾸꾸리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[220]"
   },
   {
@@ -1956,6 +2820,10 @@
    "gloss": "A wild Piloswine appeared!",
    "targetForm": "메꾸리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[221]"
   },
   {
@@ -1965,6 +2833,10 @@
    "gloss": "A wild Corsola appeared!",
    "targetForm": "코산호",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[222]"
   },
   {
@@ -1974,6 +2846,10 @@
    "gloss": "A wild Remoraid appeared!",
    "targetForm": "총어",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[223]"
   },
   {
@@ -1983,6 +2859,10 @@
    "gloss": "A wild Octillery appeared!",
    "targetForm": "대포무노",
    "areaId": "mt_moon",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[224]"
   },
   {
@@ -1992,6 +2872,10 @@
    "gloss": "A wild Delibird appeared!",
    "targetForm": "딜리버드",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[225]"
   },
   {
@@ -2001,6 +2885,10 @@
    "gloss": "A wild Mantine appeared!",
    "targetForm": "만타인",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[226]"
   },
   {
@@ -2010,6 +2898,10 @@
    "gloss": "A wild Skarmory appeared!",
    "targetForm": "무장조",
    "areaId": "mt_moon",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[227]"
   },
   {
@@ -2019,6 +2911,10 @@
    "gloss": "A wild Houndour appeared!",
    "targetForm": "델빌",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[228]"
   },
   {
@@ -2028,6 +2924,10 @@
    "gloss": "A wild Houndoom appeared!",
    "targetForm": "헬가",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[229]"
   },
   {
@@ -2037,6 +2937,10 @@
    "gloss": "A wild Kingdra appeared!",
    "targetForm": "킹드라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[230]"
   },
   {
@@ -2046,6 +2950,10 @@
    "gloss": "A wild Phanpy appeared!",
    "targetForm": "코코리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[231]"
   },
   {
@@ -2055,6 +2963,10 @@
    "gloss": "A wild Donphan appeared!",
    "targetForm": "코리갑",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[232]"
   },
   {
@@ -2064,6 +2976,10 @@
    "gloss": "A wild Stantler appeared!",
    "targetForm": "노라키",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[234]"
   },
   {
@@ -2073,6 +2989,10 @@
    "gloss": "A wild Smeargle appeared!",
    "targetForm": "루브도",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[235]"
   },
   {
@@ -2082,6 +3002,10 @@
    "gloss": "A wild Tyrogue appeared!",
    "targetForm": "배루키",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[236]"
   },
   {
@@ -2091,6 +3015,10 @@
    "gloss": "A wild Hitmontop appeared!",
    "targetForm": "카포에라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[237]"
   },
   {
@@ -2100,6 +3028,10 @@
    "gloss": "A wild Smoochum appeared!",
    "targetForm": "뽀뽀라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[238]"
   },
   {
@@ -2109,6 +3041,10 @@
    "gloss": "A wild Elekid appeared!",
    "targetForm": "에레키드",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[239]"
   },
   {
@@ -2118,6 +3054,10 @@
    "gloss": "A wild Magby appeared!",
    "targetForm": "마그비",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[240]"
   },
   {
@@ -2127,6 +3067,10 @@
    "gloss": "A wild Miltank appeared!",
    "targetForm": "밀탱크",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[241]"
   },
   {
@@ -2136,6 +3080,10 @@
    "gloss": "A wild Blissey appeared!",
    "targetForm": "해피너스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[242]"
   },
   {
@@ -2145,6 +3093,10 @@
    "gloss": "A wild Raikou appeared!",
    "targetForm": "라이코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[243]"
   },
   {
@@ -2154,6 +3106,10 @@
    "gloss": "A wild Entei appeared!",
    "targetForm": "앤테이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[244]"
   },
   {
@@ -2163,6 +3119,10 @@
    "gloss": "A wild Suicune appeared!",
    "targetForm": "스이쿤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[245]"
   },
   {
@@ -2172,6 +3132,10 @@
    "gloss": "A wild Larvitar appeared!",
    "targetForm": "애버라스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[246]"
   },
   {
@@ -2181,6 +3145,10 @@
    "gloss": "A wild Pupitar appeared!",
    "targetForm": "데기라스",
    "areaId": "pewter_city",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[247]"
   },
   {
@@ -2190,6 +3158,10 @@
    "gloss": "A wild Tyranitar appeared!",
    "targetForm": "마기라스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[248]"
   },
   {
@@ -2199,6 +3171,10 @@
    "gloss": "A wild Lugia appeared!",
    "targetForm": "루기아",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[249]"
   },
   {
@@ -2208,6 +3184,10 @@
    "gloss": "A wild Ho-Oh appeared!",
    "targetForm": "칠색조",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[250]"
   },
   {
@@ -2217,6 +3197,10 @@
    "gloss": "A wild Celebi appeared!",
    "targetForm": "세레비",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[251]"
   },
   {
@@ -2226,6 +3210,10 @@
    "gloss": "A wild Treecko appeared!",
    "targetForm": "나무지기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[277]"
   },
   {
@@ -2235,6 +3223,10 @@
    "gloss": "A wild Grovyle appeared!",
    "targetForm": "나무돌이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[278]"
   },
   {
@@ -2244,6 +3236,10 @@
    "gloss": "A wild Sceptile appeared!",
    "targetForm": "나무킹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[279]"
   },
   {
@@ -2253,6 +3249,10 @@
    "gloss": "A wild Torchic appeared!",
    "targetForm": "아차모",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[280]"
   },
   {
@@ -2262,6 +3262,10 @@
    "gloss": "A wild Combusken appeared!",
    "targetForm": "영치코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[281]"
   },
   {
@@ -2271,43 +3275,37 @@
    "gloss": "A wild Blaziken appeared!",
    "targetForm": "번치코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[282]"
   },
   {
-   "vocabId": "rom-species:물구이",
-   "korean": "물구이이(가) 나타났다!",
-   "romanization": "mulguii/ga natanassda!",
-   "gloss": "A wild Surskit appeared!",
-   "targetForm": "물구이",
+   "vocabId": "rom-species:물짱이",
+   "korean": "물짱이이(가) 나타났다!",
+   "romanization": "muljjangii/ga natanassda!",
+   "gloss": "A wild Mudkip appeared!",
+   "targetForm": "물짱이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[283]"
   },
   {
-   "vocabId": "rom-species:비구이",
-   "korean": "비구이이(가) 나타났다!",
-   "romanization": "biguii/ga natanassda!",
-   "gloss": "A wild Masquerain appeared!",
-   "targetForm": "비구이",
+   "vocabId": "rom-species:대짱이",
+   "korean": "대짱이이(가) 나타났다!",
+   "romanization": "daejjangii/ga natanassda!",
+   "gloss": "A wild Swampert appeared!",
+   "targetForm": "대짱이",
    "areaId": "rom_mined",
-   "source": "gSpeciesNames[284]"
-  },
-  {
-   "vocabId": "rom-species:대구이",
-   "korean": "대구이이(가) 나타났다!",
-   "romanization": "daeguii/ga natanassda!",
-   "gloss": "A wild Shroomish appeared!",
-   "targetForm": "대구이",
-   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[285]"
-  },
-  {
-   "vocabId": "rom-species:포섯나",
-   "korean": "포섯나이(가) 나타났다!",
-   "romanization": "poseotnai/ga natanassda!",
-   "gloss": "A wild Breloom appeared!",
-   "targetForm": "포섯나",
-   "areaId": "rom_mined",
-   "source": "gSpeciesNames[286]"
   },
   {
    "vocabId": "rom-species:그라에나",
@@ -2316,6 +3314,10 @@
    "gloss": "A wild Mightyena appeared!",
    "targetForm": "그라에나",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[287]"
   },
   {
@@ -2325,6 +3327,10 @@
    "gloss": "A wild Zigzagoon appeared!",
    "targetForm": "지그제구리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[288]"
   },
   {
@@ -2334,6 +3340,10 @@
    "gloss": "A wild Linoone appeared!",
    "targetForm": "직구리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[289]"
   },
   {
@@ -2343,6 +3353,10 @@
    "gloss": "A wild Wurmple appeared!",
    "targetForm": "개무소",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[290]"
   },
   {
@@ -2352,7 +3366,24 @@
    "gloss": "A wild Silcoon appeared!",
    "targetForm": "실쿤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[291]"
+  },
+  {
+   "vocabId": "rom-species:뷰티플라이",
+   "korean": "뷰티플라이이(가) 나타났다!",
+   "romanization": "byutipeulraii/ga natanassda!",
+   "gloss": "A wild Beautifly appeared!",
+   "targetForm": "뷰티플라이",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[292]"
   },
   {
    "vocabId": "rom-species:카스쿤",
@@ -2361,6 +3392,10 @@
    "gloss": "A wild Cascoon appeared!",
    "targetForm": "카스쿤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[293]"
   },
   {
@@ -2370,6 +3405,10 @@
    "gloss": "A wild Dustox appeared!",
    "targetForm": "독케일",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[294]"
   },
   {
@@ -2379,6 +3418,10 @@
    "gloss": "A wild Lotad appeared!",
    "targetForm": "연꽃몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[295]"
   },
   {
@@ -2388,6 +3431,10 @@
    "gloss": "A wild Lombre appeared!",
    "targetForm": "로토스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[296]"
   },
   {
@@ -2397,6 +3444,10 @@
    "gloss": "A wild Ludicolo appeared!",
    "targetForm": "로파파",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[297]"
   },
   {
@@ -2406,6 +3457,10 @@
    "gloss": "A wild Seedot appeared!",
    "targetForm": "도토링",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[298]"
   },
   {
@@ -2415,6 +3470,10 @@
    "gloss": "A wild Nuzleaf appeared!",
    "targetForm": "잎새코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[299]"
   },
   {
@@ -2424,6 +3483,10 @@
    "gloss": "A wild Shiftry appeared!",
    "targetForm": "다탱구",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[300]"
   },
   {
@@ -2433,6 +3496,10 @@
    "gloss": "A wild Nincada appeared!",
    "targetForm": "토중몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[301]"
   },
   {
@@ -2442,6 +3509,10 @@
    "gloss": "A wild Ninjask appeared!",
    "targetForm": "아이스크",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[302]"
   },
   {
@@ -2451,6 +3522,10 @@
    "gloss": "A wild Shedinja appeared!",
    "targetForm": "껍질몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[303]"
   },
   {
@@ -2460,16 +3535,11 @@
    "gloss": "A wild Taillow appeared!",
    "targetForm": "테일로",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[304]"
-  },
-  {
-   "vocabId": "rom-species:스도로",
-   "korean": "스도로이(가) 나타났다!",
-   "romanization": "seudoroi/ga natanassda!",
-   "gloss": "A wild Lairon appeared!",
-   "targetForm": "스도로",
-   "areaId": "rom_mined",
-   "source": "gSpeciesNames[305]"
   },
   {
    "vocabId": "rom-species:버섯꼬",
@@ -2478,6 +3548,10 @@
    "gloss": "A wild Shroomish appeared!",
    "targetForm": "버섯꼬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[306]"
   },
   {
@@ -2487,6 +3561,10 @@
    "gloss": "A wild Breloom appeared!",
    "targetForm": "버섯모",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[307]"
   },
   {
@@ -2496,7 +3574,37 @@
    "gloss": "A wild Spinda appeared!",
    "targetForm": "얼루기",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[308]"
+  },
+  {
+   "vocabId": "rom-species:갈모매",
+   "korean": "갈모매이(가) 나타났다!",
+   "romanization": "galmomaei/ga natanassda!",
+   "gloss": "A wild Wingull appeared!",
+   "targetForm": "갈모매",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[309]"
+  },
+  {
+   "vocabId": "rom-species:패리퍼",
+   "korean": "패리퍼이(가) 나타났다!",
+   "romanization": "paeripeoi/ga natanassda!",
+   "gloss": "A wild Pelipper appeared!",
+   "targetForm": "패리퍼",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[310]"
   },
   {
    "vocabId": "rom-species:비구술",
@@ -2505,6 +3613,10 @@
    "gloss": "A wild Surskit appeared!",
    "targetForm": "비구술",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[311]"
   },
   {
@@ -2514,6 +3626,10 @@
    "gloss": "A wild Masquerain appeared!",
    "targetForm": "비나방",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[312]"
   },
   {
@@ -2523,6 +3639,10 @@
    "gloss": "A wild Wailmer appeared!",
    "targetForm": "고래왕자",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[313]"
   },
   {
@@ -2532,6 +3652,10 @@
    "gloss": "A wild Wailord appeared!",
    "targetForm": "고래왕",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[314]"
   },
   {
@@ -2541,6 +3665,10 @@
    "gloss": "A wild Skitty appeared!",
    "targetForm": "에나비",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[315]"
   },
   {
@@ -2550,16 +3678,24 @@
    "gloss": "A wild Delcatty appeared!",
    "targetForm": "델케티",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[316]"
   },
   {
-   "vocabId": "rom-species:꿀리몬",
-   "korean": "꿀리몬이(가) 나타났다!",
-   "romanization": "kkulrimoni/ga natanassda!",
-   "gloss": "A wild Swalot appeared!",
-   "targetForm": "꿀리몬",
+   "vocabId": "rom-species:오똑군",
+   "korean": "오똑군이(가) 나타났다!",
+   "romanization": "ottokguni/ga natanassda!",
+   "gloss": "A wild Carvanha appeared!",
+   "targetForm": "오똑군",
    "areaId": "rom_mined",
-   "source": "gSpeciesNames[317]"
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[318]"
   },
   {
    "vocabId": "rom-species:점토도리",
@@ -2568,6 +3704,10 @@
    "gloss": "A wild Claydol appeared!",
    "targetForm": "점토도리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[319]"
   },
   {
@@ -2577,6 +3717,10 @@
    "gloss": "A wild Nosepass appeared!",
    "targetForm": "코코파스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[320]"
   },
   {
@@ -2586,6 +3730,10 @@
    "gloss": "A wild Torkoal appeared!",
    "targetForm": "코터스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[321]"
   },
   {
@@ -2595,6 +3743,10 @@
    "gloss": "A wild Sableye appeared!",
    "targetForm": "깜까미",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[322]"
   },
   {
@@ -2604,6 +3756,10 @@
    "gloss": "A wild Barboach appeared!",
    "targetForm": "미꾸리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[323]"
   },
   {
@@ -2613,25 +3769,50 @@
    "gloss": "A wild Luvdisc appeared!",
    "targetForm": "사랑동이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[325]"
   },
   {
-   "vocabId": "rom-species:가재킹",
-   "korean": "가재킹이(가) 나타났다!",
-   "romanization": "gajaekingi/ga natanassda!",
-   "gloss": "A wild Grumpig appeared!",
-   "targetForm": "가재킹",
+   "vocabId": "rom-species:가재군",
+   "korean": "가재군이(가) 나타났다!",
+   "romanization": "gajaeguni/ga natanassda!",
+   "gloss": "A wild Corphish appeared!",
+   "targetForm": "가재군",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[326]"
   },
   {
-   "vocabId": "rom-species:가재장킹",
-   "korean": "가재장킹이(가) 나타났다!",
-   "romanization": "gajaejangkingi/ga natanassda!",
-   "gloss": "A wild Spinda appeared!",
-   "targetForm": "가재장킹",
+   "vocabId": "rom-species:가재장군",
+   "korean": "가재장군이(가) 나타났다!",
+   "romanization": "gajaejangguni/ga natanassda!",
+   "gloss": "A wild Crawdaunt appeared!",
+   "targetForm": "가재장군",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[327]"
+  },
+  {
+   "vocabId": "rom-species:빈티나",
+   "korean": "빈티나이(가) 나타났다!",
+   "romanization": "bintinai/ga natanassda!",
+   "gloss": "A wild Feebas appeared!",
+   "targetForm": "빈티나",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[328]"
   },
   {
    "vocabId": "rom-species:밀로틱",
@@ -2640,6 +3821,10 @@
    "gloss": "A wild Milotic appeared!",
    "targetForm": "밀로틱",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[329]"
   },
   {
@@ -2649,6 +3834,10 @@
    "gloss": "A wild Carvanha appeared!",
    "targetForm": "샤프니아",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[330]"
   },
   {
@@ -2658,7 +3847,24 @@
    "gloss": "A wild Sharpedo appeared!",
    "targetForm": "샤크니아",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[331]"
+  },
+  {
+   "vocabId": "rom-species:톱치",
+   "korean": "톱치이(가) 나타났다!",
+   "romanization": "topchii/ga natanassda!",
+   "gloss": "A wild Trapinch appeared!",
+   "targetForm": "톱치",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[332]"
   },
   {
    "vocabId": "rom-species:비브라바",
@@ -2667,6 +3873,10 @@
    "gloss": "A wild Vibrava appeared!",
    "targetForm": "비브라바",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[333]"
   },
   {
@@ -2676,6 +3886,10 @@
    "gloss": "A wild Flygon appeared!",
    "targetForm": "플라이곤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[334]"
   },
   {
@@ -2685,15 +3899,23 @@
    "gloss": "A wild Makuhita appeared!",
    "targetForm": "마크탕",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[335]"
   },
   {
-   "vocabId": "rom-species:하리퍼",
-   "korean": "하리퍼이(가) 나타났다!",
-   "romanization": "haripeoi/ga natanassda!",
-   "gloss": "A wild Seviper appeared!",
-   "targetForm": "하리퍼",
+   "vocabId": "rom-species:하리뭉",
+   "korean": "하리뭉이(가) 나타났다!",
+   "romanization": "harimungi/ga natanassda!",
+   "gloss": "A wild Hariyama appeared!",
+   "targetForm": "하리뭉",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[336]"
   },
   {
@@ -2703,6 +3925,10 @@
    "gloss": "A wild Electrike appeared!",
    "targetForm": "썬더라이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[337]"
   },
   {
@@ -2712,6 +3938,10 @@
    "gloss": "A wild Manectric appeared!",
    "targetForm": "썬더볼트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[338]"
   },
   {
@@ -2721,6 +3951,10 @@
    "gloss": "A wild Numel appeared!",
    "targetForm": "둔타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[339]"
   },
   {
@@ -2730,6 +3964,10 @@
    "gloss": "A wild Camerupt appeared!",
    "targetForm": "폭타",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[340]"
   },
   {
@@ -2739,6 +3977,10 @@
    "gloss": "A wild Spheal appeared!",
    "targetForm": "대굴레오",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[341]"
   },
   {
@@ -2748,6 +3990,10 @@
    "gloss": "A wild Sealeo appeared!",
    "targetForm": "씨레오",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[342]"
   },
   {
@@ -2757,6 +4003,10 @@
    "gloss": "A wild Walrein appeared!",
    "targetForm": "씨카이저",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[343]"
   },
   {
@@ -2766,7 +4016,24 @@
    "gloss": "A wild Cacnea appeared!",
    "targetForm": "선인왕",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[344]"
+  },
+  {
+   "vocabId": "rom-species:밤선인",
+   "korean": "밤선인이(가) 나타났다!",
+   "romanization": "bamseonini/ga natanassda!",
+   "gloss": "A wild Cacturne appeared!",
+   "targetForm": "밤선인",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[345]"
   },
   {
    "vocabId": "rom-species:눈꼬마",
@@ -2775,6 +4042,10 @@
    "gloss": "A wild Snorunt appeared!",
    "targetForm": "눈꼬마",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[346]"
   },
   {
@@ -2784,6 +4055,10 @@
    "gloss": "A wild Glalie appeared!",
    "targetForm": "얼음귀신",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[347]"
   },
   {
@@ -2793,6 +4068,10 @@
    "gloss": "A wild Lunatone appeared!",
    "targetForm": "루나톤",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[348]"
   },
   {
@@ -2802,6 +4081,10 @@
    "gloss": "A wild Solrock appeared!",
    "targetForm": "솔록",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[349]"
   },
   {
@@ -2811,6 +4094,10 @@
    "gloss": "A wild Azurill appeared!",
    "targetForm": "루리리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[350]"
   },
   {
@@ -2820,6 +4107,10 @@
    "gloss": "A wild Spoink appeared!",
    "targetForm": "피그점프",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[351]"
   },
   {
@@ -2829,6 +4120,10 @@
    "gloss": "A wild Grumpig appeared!",
    "targetForm": "피그킹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[352]"
   },
   {
@@ -2838,6 +4133,10 @@
    "gloss": "A wild Plusle appeared!",
    "targetForm": "플러시",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[353]"
   },
   {
@@ -2847,15 +4146,23 @@
    "gloss": "A wild Minun appeared!",
    "targetForm": "마이농",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[354]"
   },
   {
-   "vocabId": "rom-species:해치트",
-   "korean": "해치트이(가) 나타났다!",
-   "romanization": "haechiteui/ga natanassda!",
-   "gloss": "A wild Duskull appeared!",
-   "targetForm": "해치트",
+   "vocabId": "rom-species:입치트",
+   "korean": "입치트이(가) 나타났다!",
+   "romanization": "ipchiteui/ga natanassda!",
+   "gloss": "A wild Mawile appeared!",
+   "targetForm": "입치트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[355]"
   },
   {
@@ -2865,7 +4172,24 @@
    "gloss": "A wild Meditite appeared!",
    "targetForm": "요가랑",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[356]"
+  },
+  {
+   "vocabId": "rom-species:요가램",
+   "korean": "요가램이(가) 나타났다!",
+   "romanization": "yogaraemi/ga natanassda!",
+   "gloss": "A wild Medicham appeared!",
+   "targetForm": "요가램",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[357]"
   },
   {
    "vocabId": "rom-species:파비코",
@@ -2874,6 +4198,10 @@
    "gloss": "A wild Swablu appeared!",
    "targetForm": "파비코",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[358]"
   },
   {
@@ -2883,6 +4211,10 @@
    "gloss": "A wild Altaria appeared!",
    "targetForm": "파비코리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[359]"
   },
   {
@@ -2892,6 +4224,10 @@
    "gloss": "A wild Wynaut appeared!",
    "targetForm": "마자",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[360]"
   },
   {
@@ -2901,6 +4237,10 @@
    "gloss": "A wild Duskull appeared!",
    "targetForm": "해골몽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[361]"
   },
   {
@@ -2910,24 +4250,36 @@
    "gloss": "A wild Dusclops appeared!",
    "targetForm": "미라몽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[362]"
   },
   {
-   "vocabId": "rom-species:로굴리아",
-   "korean": "로굴리아이(가) 나타났다!",
-   "romanization": "rogulriai/ga natanassda!",
-   "gloss": "A wild Spheal appeared!",
-   "targetForm": "로굴리아",
+   "vocabId": "rom-species:로젤리아",
+   "korean": "로젤리아이(가) 나타났다!",
+   "romanization": "rojelriai/ga natanassda!",
+   "gloss": "A wild Roselia appeared!",
+   "targetForm": "로젤리아",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[363]"
   },
   {
-   "vocabId": "rom-species:게레로",
-   "korean": "게레로이(가) 나타났다!",
-   "romanization": "gereroi/ga natanassda!",
-   "gloss": "A wild Sealeo appeared!",
-   "targetForm": "게레로",
+   "vocabId": "rom-species:게을로",
+   "korean": "게을로이(가) 나타났다!",
+   "romanization": "geeulroi/ga natanassda!",
+   "gloss": "A wild Slakoth appeared!",
+   "targetForm": "게을로",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[364]"
   },
   {
@@ -2937,25 +4289,24 @@
    "gloss": "A wild Vigoroth appeared!",
    "targetForm": "발바로",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[365]"
   },
   {
-   "vocabId": "rom-species:게레킹",
-   "korean": "게레킹이(가) 나타났다!",
-   "romanization": "gerekingi/ga natanassda!",
-   "gloss": "A wild Clamperl appeared!",
-   "targetForm": "게레킹",
+   "vocabId": "rom-species:게을킹",
+   "korean": "게을킹이(가) 나타났다!",
+   "romanization": "geeulkingi/ga natanassda!",
+   "gloss": "A wild Slaking appeared!",
+   "targetForm": "게을킹",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[366]"
-  },
-  {
-   "vocabId": "rom-species:헌테몬",
-   "korean": "헌테몬이(가) 나타났다!",
-   "romanization": "heontemoni/ga natanassda!",
-   "gloss": "A wild Huntail appeared!",
-   "targetForm": "헌테몬",
-   "areaId": "rom_mined",
-   "source": "gSpeciesNames[367]"
   },
   {
    "vocabId": "rom-species:꿀꺽몬",
@@ -2964,6 +4315,10 @@
    "gloss": "A wild Swalot appeared!",
    "targetForm": "꿀꺽몬",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[368]"
   },
   {
@@ -2973,6 +4328,10 @@
    "gloss": "A wild Tropius appeared!",
    "targetForm": "트로피우스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[369]"
   },
   {
@@ -2982,6 +4341,10 @@
    "gloss": "A wild Whismur appeared!",
    "targetForm": "소곤룡",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[370]"
   },
   {
@@ -2991,6 +4354,10 @@
    "gloss": "A wild Loudred appeared!",
    "targetForm": "노공룡",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[371]"
   },
   {
@@ -3000,6 +4367,10 @@
    "gloss": "A wild Exploud appeared!",
    "targetForm": "폭음룡",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[372]"
   },
   {
@@ -3009,6 +4380,10 @@
    "gloss": "A wild Clamperl appeared!",
    "targetForm": "진주몽",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[373]"
   },
   {
@@ -3018,6 +4393,10 @@
    "gloss": "A wild Gorebyss appeared!",
    "targetForm": "분홍장이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[375]"
   },
   {
@@ -3027,7 +4406,24 @@
    "gloss": "A wild Seviper appeared!",
    "targetForm": "세비퍼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[379]"
+  },
+  {
+   "vocabId": "rom-species:시라칸",
+   "korean": "시라칸이(가) 나타났다!",
+   "romanization": "sirakani/ga natanassda!",
+   "gloss": "A wild Relicanth appeared!",
+   "targetForm": "시라칸",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[381]"
   },
   {
    "vocabId": "rom-species:가보리",
@@ -3036,15 +4432,23 @@
    "gloss": "A wild Aron appeared!",
    "targetForm": "가보리",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[382]"
   },
   {
-   "vocabId": "rom-species:그도라",
-   "korean": "그도라이(가) 나타났다!",
-   "romanization": "geudorai/ga natanassda!",
-   "gloss": "A wild Groudon appeared!",
-   "targetForm": "그도라",
+   "vocabId": "rom-species:갱도라",
+   "korean": "갱도라이(가) 나타났다!",
+   "romanization": "gaengdorai/ga natanassda!",
+   "gloss": "A wild Lairon appeared!",
+   "targetForm": "갱도라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[383]"
   },
   {
@@ -3054,15 +4458,23 @@
    "gloss": "A wild Aggron appeared!",
    "targetForm": "보스로라",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[384]"
   },
   {
-   "vocabId": "rom-species:캐스치",
-   "korean": "캐스치이(가) 나타났다!",
-   "romanization": "kaeseuchii/ga natanassda!",
+   "vocabId": "rom-species:캐스폼",
+   "korean": "캐스폼이(가) 나타났다!",
+   "romanization": "kaeseupomi/ga natanassda!",
    "gloss": "A wild Jirachi appeared!",
-   "targetForm": "캐스치",
+   "targetForm": "캐스폼",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[385]"
   },
   {
@@ -3072,6 +4484,10 @@
    "gloss": "A wild Volbeat appeared!",
    "targetForm": "볼비트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[386]"
   },
   {
@@ -3081,6 +4497,10 @@
    "gloss": "A wild Illumise appeared!",
    "targetForm": "네오비트",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[387]"
   },
   {
@@ -3090,6 +4510,10 @@
    "gloss": "A wild Lileep appeared!",
    "targetForm": "릴링",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[388]"
   },
   {
@@ -3099,16 +4523,11 @@
    "gloss": "A wild Cradily appeared!",
    "targetForm": "릴리요",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[389]"
-  },
-  {
-   "vocabId": "rom-species:아노숭스",
-   "korean": "아노숭스이(가) 나타났다!",
-   "romanization": "anosungseui/ga natanassda!",
-   "gloss": "A wild Chimchar appeared!",
-   "targetForm": "아노숭스",
-   "areaId": "rom_mined",
-   "source": "gSpeciesNames[390]"
   },
   {
    "vocabId": "rom-species:아말도",
@@ -3117,15 +4536,23 @@
    "gloss": "A wild Armaldo appeared!",
    "targetForm": "아말도",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[391]"
   },
   {
-   "vocabId": "rom-species:초토스",
-   "korean": "초토스이(가) 나타났다!",
-   "romanization": "chotoseui/ga natanassda!",
-   "gloss": "A wild Infernape appeared!",
-   "targetForm": "초토스",
+   "vocabId": "rom-species:랄토스",
+   "korean": "랄토스이(가) 나타났다!",
+   "romanization": "raltoseui/ga natanassda!",
+   "gloss": "A wild Ralts appeared!",
+   "targetForm": "랄토스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[392]"
   },
   {
@@ -3135,6 +4562,10 @@
    "gloss": "A wild Kirlia appeared!",
    "targetForm": "킬리아",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[393]"
   },
   {
@@ -3144,6 +4575,10 @@
    "gloss": "A wild Gardevoir appeared!",
    "targetForm": "가디안",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[394]"
   },
   {
@@ -3153,6 +4588,10 @@
    "gloss": "A wild Bagon appeared!",
    "targetForm": "아공이",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[395]"
   },
   {
@@ -3162,6 +4601,10 @@
    "gloss": "A wild Salamence appeared!",
    "targetForm": "보만다",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[397]"
   },
   {
@@ -3171,6 +4614,10 @@
    "gloss": "A wild Beldum appeared!",
    "targetForm": "메탕",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[398]"
   },
   {
@@ -3180,6 +4627,10 @@
    "gloss": "A wild Metang appeared!",
    "targetForm": "메탕구",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[399]"
   },
   {
@@ -3189,6 +4640,10 @@
    "gloss": "A wild Metagross appeared!",
    "targetForm": "메타그로스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[400]"
   },
   {
@@ -3198,6 +4653,10 @@
    "gloss": "A wild Regirock appeared!",
    "targetForm": "레지락",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[401]"
   },
   {
@@ -3207,6 +4666,10 @@
    "gloss": "A wild Regice appeared!",
    "targetForm": "레지아이스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[402]"
   },
   {
@@ -3216,6 +4679,10 @@
    "gloss": "A wild Kyogre appeared!",
    "targetForm": "가이오가",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[404]"
   },
   {
@@ -3225,16 +4692,11 @@
    "gloss": "A wild Groudon appeared!",
    "targetForm": "그란돈",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[405]"
-  },
-  {
-   "vocabId": "rom-species:레쿠울",
-   "korean": "레쿠울이(가) 나타났다!",
-   "romanization": "rekuuli/ga natanassda!",
-   "gloss": "A wild Budew appeared!",
-   "targetForm": "레쿠울",
-   "areaId": "rom_mined",
-   "source": "gSpeciesNames[406]"
   },
   {
    "vocabId": "rom-species:라티아스",
@@ -3243,6 +4705,10 @@
    "gloss": "A wild Latias appeared!",
    "targetForm": "라티아스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[407]"
   },
   {
@@ -3252,6 +4718,10 @@
    "gloss": "A wild Latios appeared!",
    "targetForm": "라티오스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[408]"
   },
   {
@@ -3261,6 +4731,10 @@
    "gloss": "A wild Jirachi appeared!",
    "targetForm": "지라치",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[409]"
   },
   {
@@ -3270,7 +4744,24 @@
    "gloss": "A wild Deoxys appeared!",
    "targetForm": "테오키스",
    "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[410]"
+  },
+  {
+   "vocabId": "rom-species:치렁",
+   "korean": "치렁이(가) 나타났다!",
+   "romanization": "chireongi/ga natanassda!",
+   "gloss": "A wild Chimecho appeared!",
+   "targetForm": "치렁",
+   "areaId": "rom_mined",
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[411]"
   }
  ]
 }

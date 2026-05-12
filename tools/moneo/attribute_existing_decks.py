@@ -35,6 +35,9 @@ def attribute_vocab(vocab_path, lemma_index):
             entry['firstAreaEncountered'] = info['first_area']
             entry['areasReferenced'] = info['areas']
             entry['liveRecIds'] = info['rec_ids']
+            if 'source_types' in info:
+                entry['sourceTypes'] = info['source_types']
+                entry['primarySourceType'] = info['primary_source_type']
             attributed += 1
             area_counter[info['first_area']] += 1
             # Build map for sentence lookup using vocab id if present, else korean
@@ -43,7 +46,9 @@ def attribute_vocab(vocab_path, lemma_index):
                 attrib_map[key] = {
                     'firstAreaEncountered': info['first_area'],
                     'areasReferenced': info['areas'],
-                    'liveRecIds': info['rec_ids']
+                    'liveRecIds': info['rec_ids'],
+                    'sourceTypes': info.get('source_types', []),
+                    'primarySourceType': info.get('primary_source_type', ''),
                 }
         else:
             unattributed += 1
@@ -75,6 +80,9 @@ def attribute_sentences(sent_path, attrib_map):
         if matched_key:
             sent['firstAreaEncountered'] = attrib_map[matched_key]['firstAreaEncountered']
             sent['areasReferenced'] = attrib_map[matched_key].get('areasReferenced', [])
+            if 'sourceTypes' in attrib_map[matched_key]:
+                sent['sourceTypes'] = attrib_map[matched_key]['sourceTypes']
+                sent['primarySourceType'] = attrib_map[matched_key].get('primarySourceType', '')
             attributed += 1
         else:
             unattributed += 1

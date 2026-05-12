@@ -3,7 +3,7 @@
  "sourceTag": "rom-species-2024",
  "notes": [
   "Korean species names extracted from gSpeciesNames @ 0x245F2C in the 2024 patched ROM. Each card represents one Pokemon species.",
-  "Species cards: 363.",
+  "Species cards: 366.",
   "firstAreaEncountered set from wild-encounter pokedex_obtain_index where available; starters -> pallet_town; legendaries / given Pokemon use canonical FRLG areas.",
   "This deck is a separate study mode (proper-noun corpus) and is not currently loaded by the app."
  ],
@@ -19,6 +19,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[1]"
   },
   {
@@ -32,6 +36,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[2]"
   },
   {
@@ -45,6 +53,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[3]"
   },
   {
@@ -58,6 +70,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[4]"
   },
   {
@@ -71,6 +87,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[5]"
   },
   {
@@ -84,6 +104,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[6]"
   },
   {
@@ -97,6 +121,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[7]"
   },
   {
@@ -110,6 +138,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[8]"
   },
   {
@@ -123,6 +155,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[9]"
   },
   {
@@ -134,6 +170,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[10]"
   },
   {
@@ -147,6 +187,10 @@
    "areasReferenced": [
     "route_2"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[11]"
   },
   {
@@ -160,6 +204,10 @@
    "areasReferenced": [
     "route_24"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[12]"
   },
   {
@@ -171,6 +219,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[13]"
   },
   {
@@ -184,6 +236,10 @@
    "areasReferenced": [
     "route_2"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[14]"
   },
   {
@@ -197,6 +253,10 @@
    "areasReferenced": [
     "route_24"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[15]"
   },
   {
@@ -208,6 +268,10 @@
    "frequency": 11,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[16]"
   },
   {
@@ -221,6 +285,10 @@
    "areasReferenced": [
     "route_1"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[17]"
   },
   {
@@ -234,6 +302,10 @@
    "areasReferenced": [
     "route_13"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[18]"
   },
   {
@@ -245,6 +317,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[19]"
   },
   {
@@ -258,6 +334,10 @@
    "areasReferenced": [
     "route_1"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[20]"
   },
   {
@@ -271,6 +351,10 @@
    "areasReferenced": [
     "route_16"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[21]"
   },
   {
@@ -284,6 +368,10 @@
    "areasReferenced": [
     "route_3"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[22]"
   },
   {
@@ -297,6 +385,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[23]"
   },
   {
@@ -308,6 +400,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[24]"
   },
   {
@@ -319,6 +415,10 @@
    "frequency": 15,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[25]"
   },
   {
@@ -330,6 +430,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[26]"
   },
   {
@@ -341,6 +445,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[27]"
   },
   {
@@ -354,6 +462,10 @@
    "areasReferenced": [
     "route_4"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[28]"
   },
   {
@@ -367,6 +479,10 @@
    "areasReferenced": [
     "route_3"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[30]"
   },
   {
@@ -378,6 +494,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[31]"
   },
   {
@@ -391,6 +511,10 @@
    "areasReferenced": [
     "route_3"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[33]"
   },
   {
@@ -402,6 +526,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[34]"
   },
   {
@@ -413,6 +541,10 @@
    "frequency": 23,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[35]"
   },
   {
@@ -424,6 +556,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[36]"
   },
   {
@@ -435,6 +571,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[37]"
   },
   {
@@ -448,6 +588,10 @@
    "areasReferenced": [
     "route_7"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[38]"
   },
   {
@@ -459,6 +603,10 @@
    "frequency": 11,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[39]"
   },
   {
@@ -472,6 +620,10 @@
    "areasReferenced": [
     "route_3"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[40]"
   },
   {
@@ -483,6 +635,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[41]"
   },
   {
@@ -494,6 +650,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[42]"
   },
   {
@@ -505,6 +665,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[43]"
   },
   {
@@ -516,6 +680,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[44]"
   },
   {
@@ -527,6 +695,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[45]"
   },
   {
@@ -538,6 +710,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[46]"
   },
   {
@@ -549,6 +725,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[47]"
   },
   {
@@ -560,6 +740,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[48]"
   },
   {
@@ -573,6 +757,10 @@
    "areasReferenced": [
     "route_12"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[49]"
   },
   {
@@ -584,6 +772,10 @@
    "frequency": 9,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[50]"
   },
   {
@@ -595,6 +787,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[51]"
   },
   {
@@ -606,6 +802,10 @@
    "frequency": 7,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[52]"
   },
   {
@@ -619,6 +819,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[53]"
   },
   {
@@ -632,6 +836,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[54]"
   },
   {
@@ -643,6 +851,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[55]"
   },
   {
@@ -654,6 +866,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[56]"
   },
   {
@@ -667,6 +883,10 @@
    "areasReferenced": [
     "route_3"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[57]"
   },
   {
@@ -680,6 +900,10 @@
    "areasReferenced": [
     "route_23"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[58]"
   },
   {
@@ -691,6 +915,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[59]"
   },
   {
@@ -702,6 +930,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[60]"
   },
   {
@@ -715,6 +947,10 @@
    "areasReferenced": [
     "viridian_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[61]"
   },
   {
@@ -728,6 +964,10 @@
    "areasReferenced": [
     "viridian_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[62]"
   },
   {
@@ -739,6 +979,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[63]"
   },
   {
@@ -752,6 +996,10 @@
    "areasReferenced": [
     "route_24"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[64]"
   },
   {
@@ -763,6 +1011,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[65]"
   },
   {
@@ -774,6 +1026,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[66]"
   },
   {
@@ -785,6 +1041,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[67]"
   },
   {
@@ -796,6 +1056,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[68]"
   },
   {
@@ -807,6 +1071,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[69]"
   },
   {
@@ -820,6 +1088,10 @@
    "areasReferenced": [
     "route_24"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[70]"
   },
   {
@@ -833,6 +1105,10 @@
    "areasReferenced": [
     "route_12"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[71]"
   },
   {
@@ -844,6 +1120,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[72]"
   },
   {
@@ -857,6 +1137,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[73]"
   },
   {
@@ -870,6 +1154,10 @@
    "areasReferenced": [
     "mt_moon"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[74]"
   },
   {
@@ -883,6 +1171,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[75]"
   },
   {
@@ -896,6 +1188,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[76]"
   },
   {
@@ -907,6 +1203,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[77]"
   },
   {
@@ -918,6 +1218,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[78]"
   },
   {
@@ -929,6 +1233,10 @@
    "frequency": 9,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[79]"
   },
   {
@@ -942,6 +1250,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[80]"
   },
   {
@@ -955,6 +1267,10 @@
    "areasReferenced": [
     "cinnabar_island"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[81]"
   },
   {
@@ -966,6 +1282,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[82]"
   },
   {
@@ -977,6 +1297,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[83]"
   },
   {
@@ -988,6 +1312,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[84]"
   },
   {
@@ -1001,6 +1329,10 @@
    "areasReferenced": [
     "route_16"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[85]"
   },
   {
@@ -1012,6 +1344,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[86]"
   },
   {
@@ -1023,6 +1359,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[87]"
   },
   {
@@ -1034,6 +1374,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[88]"
   },
   {
@@ -1047,6 +1391,10 @@
    "areasReferenced": [
     "celadon_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[89]"
   },
   {
@@ -1058,6 +1406,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[90]"
   },
   {
@@ -1069,6 +1421,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[91]"
   },
   {
@@ -1080,6 +1436,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[92]"
   },
   {
@@ -1091,6 +1451,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[93]"
   },
   {
@@ -1102,6 +1466,10 @@
    "frequency": 7,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[94]"
   },
   {
@@ -1113,6 +1481,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[95]"
   },
   {
@@ -1126,6 +1498,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[96]"
   },
   {
@@ -1139,6 +1515,10 @@
    "areasReferenced": [
     "route_11"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[97]"
   },
   {
@@ -1150,6 +1530,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[98]"
   },
   {
@@ -1163,6 +1547,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[99]"
   },
   {
@@ -1176,6 +1564,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[100]"
   },
   {
@@ -1189,6 +1581,10 @@
    "areasReferenced": [
     "route_10"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[101]"
   },
   {
@@ -1200,6 +1596,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[102]"
   },
   {
@@ -1211,6 +1611,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[103]"
   },
   {
@@ -1222,6 +1626,10 @@
    "frequency": 10,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[104]"
   },
   {
@@ -1235,6 +1643,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[105]"
   },
   {
@@ -1248,6 +1660,10 @@
    "areasReferenced": [
     "saffron_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[106]"
   },
   {
@@ -1261,6 +1677,10 @@
    "areasReferenced": [
     "saffron_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[107]"
   },
   {
@@ -1272,6 +1692,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[108]"
   },
   {
@@ -1283,6 +1707,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[109]"
   },
   {
@@ -1296,6 +1724,10 @@
    "areasReferenced": [
     "celadon_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[110]"
   },
   {
@@ -1307,6 +1739,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[111]"
   },
   {
@@ -1318,6 +1754,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[112]"
   },
   {
@@ -1329,6 +1769,10 @@
    "frequency": 19,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[113]"
   },
   {
@@ -1340,6 +1784,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[114]"
   },
   {
@@ -1353,6 +1801,10 @@
    "areasReferenced": [
     "route_21"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[115]"
   },
   {
@@ -1364,6 +1816,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[116]"
   },
   {
@@ -1377,6 +1833,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[117]"
   },
   {
@@ -1388,6 +1848,10 @@
    "frequency": 7,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[118]"
   },
   {
@@ -1401,6 +1865,10 @@
    "areasReferenced": [
     "viridian_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[119]"
   },
   {
@@ -1414,6 +1882,10 @@
    "areasReferenced": [
     "fuchsia_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[120]"
   },
   {
@@ -1427,6 +1899,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[121]"
   },
   {
@@ -1438,6 +1914,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[122]"
   },
   {
@@ -1449,6 +1929,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[123]"
   },
   {
@@ -1460,6 +1944,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[124]"
   },
   {
@@ -1471,6 +1959,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[125]"
   },
   {
@@ -1482,6 +1974,10 @@
    "frequency": 14,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[126]"
   },
   {
@@ -1493,6 +1989,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[127]"
   },
   {
@@ -1504,6 +2004,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[128]"
   },
   {
@@ -1515,6 +2019,10 @@
    "frequency": 18,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[129]"
   },
   {
@@ -1528,6 +2036,10 @@
    "areasReferenced": [
     "pallet_town"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[130]"
   },
   {
@@ -1541,6 +2053,10 @@
    "areasReferenced": [
     "silph_co"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[131]"
   },
   {
@@ -1552,6 +2068,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[132]"
   },
   {
@@ -1565,6 +2085,10 @@
    "areasReferenced": [
     "route_13"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[133]"
   },
   {
@@ -1576,6 +2100,10 @@
    "frequency": 7,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[134]"
   },
   {
@@ -1587,6 +2115,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[135]"
   },
   {
@@ -1598,6 +2130,10 @@
    "frequency": 7,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[136]"
   },
   {
@@ -1609,6 +2145,10 @@
    "frequency": 12,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[137]"
   },
   {
@@ -1620,6 +2160,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[138]"
   },
   {
@@ -1631,6 +2175,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[139]"
   },
   {
@@ -1642,6 +2190,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[140]"
   },
   {
@@ -1653,6 +2205,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[141]"
   },
   {
@@ -1666,6 +2222,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[142]"
   },
   {
@@ -1679,6 +2239,10 @@
    "areasReferenced": [
     "route_12"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[143]"
   },
   {
@@ -1692,6 +2256,10 @@
    "areasReferenced": [
     "seafoam_islands"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[144]"
   },
   {
@@ -1705,6 +2273,10 @@
    "areasReferenced": [
     "power_plant"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[145]"
   },
   {
@@ -1718,6 +2290,10 @@
    "areasReferenced": [
     "route_23"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[146]"
   },
   {
@@ -1729,6 +2305,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[147]"
   },
   {
@@ -1740,6 +2320,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[148]"
   },
   {
@@ -1751,6 +2335,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[149]"
   },
   {
@@ -1764,6 +2352,10 @@
    "areasReferenced": [
     "cerulean_cave"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[150]"
   },
   {
@@ -1775,6 +2367,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[152]"
   },
   {
@@ -1786,6 +2382,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[153]"
   },
   {
@@ -1797,6 +2397,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[154]"
   },
   {
@@ -1808,6 +2412,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[155]"
   },
   {
@@ -1819,6 +2427,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[156]"
   },
   {
@@ -1830,6 +2442,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[157]"
   },
   {
@@ -1841,6 +2457,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[158]"
   },
   {
@@ -1852,6 +2472,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[159]"
   },
   {
@@ -1863,6 +2487,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[160]"
   },
   {
@@ -1874,6 +2502,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[161]"
   },
   {
@@ -1885,6 +2517,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[162]"
   },
   {
@@ -1896,6 +2532,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[163]"
   },
   {
@@ -1907,6 +2547,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[164]"
   },
   {
@@ -1918,6 +2562,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[165]"
   },
   {
@@ -1929,6 +2577,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[166]"
   },
   {
@@ -1940,6 +2592,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[167]"
   },
   {
@@ -1951,6 +2607,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[168]"
   },
   {
@@ -1962,6 +2622,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[169]"
   },
   {
@@ -1973,6 +2637,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[170]"
   },
   {
@@ -1984,6 +2652,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[171]"
   },
   {
@@ -1995,6 +2667,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[172]"
   },
   {
@@ -2006,6 +2682,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[174]"
   },
   {
@@ -2017,6 +2697,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[175]"
   },
   {
@@ -2028,6 +2712,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[176]"
   },
   {
@@ -2039,6 +2727,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[177]"
   },
   {
@@ -2050,6 +2742,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[178]"
   },
   {
@@ -2061,6 +2757,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[179]"
   },
   {
@@ -2072,6 +2772,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[180]"
   },
   {
@@ -2083,6 +2787,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[181]"
   },
   {
@@ -2094,6 +2802,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[182]"
   },
   {
@@ -2105,6 +2817,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[183]"
   },
   {
@@ -2116,6 +2832,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[184]"
   },
   {
@@ -2127,6 +2847,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[185]"
   },
   {
@@ -2138,6 +2862,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[186]"
   },
   {
@@ -2149,6 +2877,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[187]"
   },
   {
@@ -2160,6 +2892,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[188]"
   },
   {
@@ -2171,6 +2907,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[189]"
   },
   {
@@ -2182,6 +2922,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[190]"
   },
   {
@@ -2193,6 +2937,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[191]"
   },
   {
@@ -2204,6 +2952,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[192]"
   },
   {
@@ -2215,6 +2967,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[193]"
   },
   {
@@ -2226,6 +2982,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[194]"
   },
   {
@@ -2237,6 +2997,10 @@
    "frequency": 6,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[195]"
   },
   {
@@ -2248,6 +3012,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[196]"
   },
   {
@@ -2259,6 +3027,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[197]"
   },
   {
@@ -2270,6 +3042,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[198]"
   },
   {
@@ -2281,6 +3057,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[199]"
   },
   {
@@ -2292,6 +3072,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[200]"
   },
   {
@@ -2303,6 +3087,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[201]"
   },
   {
@@ -2316,6 +3104,10 @@
    "areasReferenced": [
     "mt_moon"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[202]"
   },
   {
@@ -2327,6 +3119,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[203]"
   },
   {
@@ -2338,6 +3134,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[204]"
   },
   {
@@ -2349,6 +3149,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[205]"
   },
   {
@@ -2360,6 +3164,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[206]"
   },
   {
@@ -2371,6 +3179,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[207]"
   },
   {
@@ -2382,6 +3194,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[208]"
   },
   {
@@ -2393,6 +3209,10 @@
    "frequency": 47,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[209]"
   },
   {
@@ -2404,6 +3224,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[210]"
   },
   {
@@ -2415,6 +3239,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[211]"
   },
   {
@@ -2426,6 +3254,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[212]"
   },
   {
@@ -2437,6 +3269,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[213]"
   },
   {
@@ -2448,6 +3284,10 @@
    "frequency": 12,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[214]"
   },
   {
@@ -2459,6 +3299,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[215]"
   },
   {
@@ -2470,6 +3314,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[216]"
   },
   {
@@ -2481,6 +3329,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[217]"
   },
   {
@@ -2492,6 +3344,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[218]"
   },
   {
@@ -2503,6 +3359,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[219]"
   },
   {
@@ -2514,6 +3374,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[220]"
   },
   {
@@ -2525,6 +3389,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[221]"
   },
   {
@@ -2536,6 +3404,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[222]"
   },
   {
@@ -2547,6 +3419,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[223]"
   },
   {
@@ -2560,6 +3436,10 @@
    "areasReferenced": [
     "mt_moon"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[224]"
   },
   {
@@ -2571,6 +3451,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[225]"
   },
   {
@@ -2582,6 +3466,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[226]"
   },
   {
@@ -2595,6 +3483,10 @@
    "areasReferenced": [
     "mt_moon"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[227]"
   },
   {
@@ -2606,6 +3498,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[228]"
   },
   {
@@ -2617,6 +3513,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[229]"
   },
   {
@@ -2628,6 +3528,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[230]"
   },
   {
@@ -2639,6 +3543,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[231]"
   },
   {
@@ -2652,6 +3560,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[232]"
   },
   {
@@ -2663,6 +3575,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[234]"
   },
   {
@@ -2674,6 +3590,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[235]"
   },
   {
@@ -2685,6 +3605,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[236]"
   },
   {
@@ -2696,6 +3620,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[237]"
   },
   {
@@ -2707,6 +3635,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[238]"
   },
   {
@@ -2718,6 +3650,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[239]"
   },
   {
@@ -2729,6 +3665,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[240]"
   },
   {
@@ -2740,6 +3680,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[241]"
   },
   {
@@ -2751,6 +3695,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[242]"
   },
   {
@@ -2762,6 +3710,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[243]"
   },
   {
@@ -2773,6 +3725,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[244]"
   },
   {
@@ -2784,6 +3740,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[245]"
   },
   {
@@ -2795,6 +3755,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[246]"
   },
   {
@@ -2808,6 +3772,10 @@
    "areasReferenced": [
     "pewter_city"
    ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[247]"
   },
   {
@@ -2819,6 +3787,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[248]"
   },
   {
@@ -2830,6 +3802,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[249]"
   },
   {
@@ -2841,6 +3817,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[250]"
   },
   {
@@ -2852,6 +3832,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[251]"
   },
   {
@@ -2863,6 +3847,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[277]"
   },
   {
@@ -2874,6 +3862,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[278]"
   },
   {
@@ -2885,6 +3877,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[279]"
   },
   {
@@ -2896,6 +3892,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[280]"
   },
   {
@@ -2907,6 +3907,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[281]"
   },
   {
@@ -2918,51 +3922,41 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[282]"
   },
   {
-   "korean": "물구이",
-   "romanization": "mulgui",
-   "gloss": "Surskit (Pokemon)",
+   "korean": "물짱이",
+   "romanization": "muljjangi",
+   "gloss": "Mudkip (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[283]"
   },
   {
-   "korean": "비구이",
-   "romanization": "bigui",
-   "gloss": "Masquerain (Pokemon)",
+   "korean": "대짱이",
+   "romanization": "daejjangi",
+   "gloss": "Swampert (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
-   "source": "gSpeciesNames[284]"
-  },
-  {
-   "korean": "대구이",
-   "romanization": "daegui",
-   "gloss": "Shroomish (Pokemon)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[285]"
-  },
-  {
-   "korean": "포섯나",
-   "romanization": "poseotna",
-   "gloss": "Breloom (Pokemon)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
-   "source": "gSpeciesNames[286]"
   },
   {
    "korean": "그라에나",
@@ -2973,6 +3967,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[287]"
   },
   {
@@ -2984,6 +3982,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[288]"
   },
   {
@@ -2995,6 +3997,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[289]"
   },
   {
@@ -3006,6 +4012,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[290]"
   },
   {
@@ -3017,7 +4027,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[291]"
+  },
+  {
+   "korean": "뷰티플라이",
+   "romanization": "byutipeulrai",
+   "gloss": "Beautifly (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[292]"
   },
   {
    "korean": "카스쿤",
@@ -3028,6 +4057,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[293]"
   },
   {
@@ -3039,6 +4072,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[294]"
   },
   {
@@ -3050,6 +4087,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[295]"
   },
   {
@@ -3061,6 +4102,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[296]"
   },
   {
@@ -3072,6 +4117,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[297]"
   },
   {
@@ -3083,6 +4132,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[298]"
   },
   {
@@ -3094,6 +4147,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[299]"
   },
   {
@@ -3105,6 +4162,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[300]"
   },
   {
@@ -3116,6 +4177,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[301]"
   },
   {
@@ -3127,6 +4192,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[302]"
   },
   {
@@ -3138,6 +4207,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[303]"
   },
   {
@@ -3149,18 +4222,11 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[304]"
-  },
-  {
-   "korean": "스도로",
-   "romanization": "seudoro",
-   "gloss": "Lairon (Pokemon)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
-   "source": "gSpeciesNames[305]"
   },
   {
    "korean": "버섯꼬",
@@ -3171,6 +4237,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[306]"
   },
   {
@@ -3182,6 +4252,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[307]"
   },
   {
@@ -3193,7 +4267,41 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[308]"
+  },
+  {
+   "korean": "갈모매",
+   "romanization": "galmomae",
+   "gloss": "Wingull (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 2,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[309]"
+  },
+  {
+   "korean": "패리퍼",
+   "romanization": "paeripeo",
+   "gloss": "Pelipper (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[310]"
   },
   {
    "korean": "비구술",
@@ -3204,6 +4312,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[311]"
   },
   {
@@ -3215,6 +4327,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[312]"
   },
   {
@@ -3226,6 +4342,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[313]"
   },
   {
@@ -3237,6 +4357,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[314]"
   },
   {
@@ -3248,6 +4372,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[315]"
   },
   {
@@ -3259,18 +4387,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[316]"
   },
   {
-   "korean": "꿀리몬",
-   "romanization": "kkulrimon",
-   "gloss": "Swalot (Pokemon)",
+   "korean": "오똑군",
+   "romanization": "ottokgun",
+   "gloss": "Carvanha (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
-   "source": "gSpeciesNames[317]"
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[318]"
   },
   {
    "korean": "점토도리",
@@ -3281,6 +4417,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[319]"
   },
   {
@@ -3292,6 +4432,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[320]"
   },
   {
@@ -3303,6 +4447,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[321]"
   },
   {
@@ -3314,6 +4462,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[322]"
   },
   {
@@ -3325,6 +4477,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[323]"
   },
   {
@@ -3336,29 +4492,56 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[325]"
   },
   {
-   "korean": "가재킹",
-   "romanization": "gajaeking",
-   "gloss": "Grumpig (Pokemon)",
+   "korean": "가재군",
+   "romanization": "gajaegun",
+   "gloss": "Corphish (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[326]"
   },
   {
-   "korean": "가재장킹",
-   "romanization": "gajaejangking",
-   "gloss": "Spinda (Pokemon)",
+   "korean": "가재장군",
+   "romanization": "gajaejanggun",
+   "gloss": "Crawdaunt (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[327]"
+  },
+  {
+   "korean": "빈티나",
+   "romanization": "bintina",
+   "gloss": "Feebas (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[328]"
   },
   {
    "korean": "밀로틱",
@@ -3369,6 +4552,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[329]"
   },
   {
@@ -3380,6 +4567,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[330]"
   },
   {
@@ -3391,7 +4582,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[331]"
+  },
+  {
+   "korean": "톱치",
+   "romanization": "topchi",
+   "gloss": "Trapinch (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[332]"
   },
   {
    "korean": "비브라바",
@@ -3402,6 +4612,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[333]"
   },
   {
@@ -3413,6 +4627,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[334]"
   },
   {
@@ -3424,17 +4642,25 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[335]"
   },
   {
-   "korean": "하리퍼",
-   "romanization": "haripeo",
-   "gloss": "Seviper (Pokemon)",
+   "korean": "하리뭉",
+   "romanization": "harimung",
+   "gloss": "Hariyama (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[336]"
   },
   {
@@ -3446,6 +4672,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[337]"
   },
   {
@@ -3457,6 +4687,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[338]"
   },
   {
@@ -3468,6 +4702,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[339]"
   },
   {
@@ -3479,6 +4717,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[340]"
   },
   {
@@ -3490,6 +4732,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[341]"
   },
   {
@@ -3501,6 +4747,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[342]"
   },
   {
@@ -3512,6 +4762,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[343]"
   },
   {
@@ -3523,7 +4777,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[344]"
+  },
+  {
+   "korean": "밤선인",
+   "romanization": "bamseonin",
+   "gloss": "Cacturne (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[345]"
   },
   {
    "korean": "눈꼬마",
@@ -3534,6 +4807,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[346]"
   },
   {
@@ -3545,6 +4822,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[347]"
   },
   {
@@ -3556,6 +4837,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[348]"
   },
   {
@@ -3567,6 +4852,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[349]"
   },
   {
@@ -3578,6 +4867,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[350]"
   },
   {
@@ -3589,6 +4882,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[351]"
   },
   {
@@ -3600,6 +4897,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[352]"
   },
   {
@@ -3611,6 +4912,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[353]"
   },
   {
@@ -3622,17 +4927,25 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[354]"
   },
   {
-   "korean": "해치트",
-   "romanization": "haechiteu",
-   "gloss": "Duskull (Pokemon)",
+   "korean": "입치트",
+   "romanization": "ipchiteu",
+   "gloss": "Mawile (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[355]"
   },
   {
@@ -3644,7 +4957,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[356]"
+  },
+  {
+   "korean": "요가램",
+   "romanization": "yogaraem",
+   "gloss": "Medicham (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[357]"
   },
   {
    "korean": "파비코",
@@ -3655,6 +4987,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[358]"
   },
   {
@@ -3666,6 +5002,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[359]"
   },
   {
@@ -3677,6 +5017,10 @@
    "frequency": 5,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[360]"
   },
   {
@@ -3688,6 +5032,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[361]"
   },
   {
@@ -3699,28 +5047,40 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[362]"
   },
   {
-   "korean": "로굴리아",
-   "romanization": "rogulria",
-   "gloss": "Spheal (Pokemon)",
+   "korean": "로젤리아",
+   "romanization": "rojelria",
+   "gloss": "Roselia (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[363]"
   },
   {
-   "korean": "게레로",
-   "romanization": "gerero",
-   "gloss": "Sealeo (Pokemon)",
+   "korean": "게을로",
+   "romanization": "geeulro",
+   "gloss": "Slakoth (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[364]"
   },
   {
@@ -3732,29 +5092,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[365]"
   },
   {
-   "korean": "게레킹",
-   "romanization": "gereking",
-   "gloss": "Clamperl (Pokemon)",
+   "korean": "게을킹",
+   "romanization": "geeulking",
+   "gloss": "Slaking (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[366]"
-  },
-  {
-   "korean": "헌테몬",
-   "romanization": "heontemon",
-   "gloss": "Huntail (Pokemon)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
-   "source": "gSpeciesNames[367]"
   },
   {
    "korean": "꿀꺽몬",
@@ -3765,6 +5122,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[368]"
   },
   {
@@ -3776,6 +5137,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[369]"
   },
   {
@@ -3787,6 +5152,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[370]"
   },
   {
@@ -3798,6 +5167,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[371]"
   },
   {
@@ -3809,6 +5182,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[372]"
   },
   {
@@ -3820,6 +5197,10 @@
    "frequency": 4,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[373]"
   },
   {
@@ -3831,6 +5212,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[375]"
   },
   {
@@ -3842,7 +5227,26 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[379]"
+  },
+  {
+   "korean": "시라칸",
+   "romanization": "sirakan",
+   "gloss": "Relicanth (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[381]"
   },
   {
    "korean": "가보리",
@@ -3853,17 +5257,25 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[382]"
   },
   {
-   "korean": "그도라",
-   "romanization": "geudora",
-   "gloss": "Groudon (Pokemon)",
+   "korean": "갱도라",
+   "romanization": "gaengdora",
+   "gloss": "Lairon (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[383]"
   },
   {
@@ -3875,17 +5287,25 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[384]"
   },
   {
-   "korean": "캐스치",
-   "romanization": "kaeseuchi",
+   "korean": "캐스폼",
+   "romanization": "kaeseupom",
    "gloss": "Jirachi (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[385]"
   },
   {
@@ -3897,6 +5317,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[386]"
   },
   {
@@ -3908,6 +5332,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[387]"
   },
   {
@@ -3919,6 +5347,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[388]"
   },
   {
@@ -3930,18 +5362,11 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[389]"
-  },
-  {
-   "korean": "아노숭스",
-   "romanization": "anosungseu",
-   "gloss": "Chimchar (Pokemon)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
-   "source": "gSpeciesNames[390]"
   },
   {
    "korean": "아말도",
@@ -3952,17 +5377,25 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[391]"
   },
   {
-   "korean": "초토스",
-   "romanization": "chotoseu",
-   "gloss": "Infernape (Pokemon)",
+   "korean": "랄토스",
+   "romanization": "raltoseu",
+   "gloss": "Ralts (Pokemon)",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[392]"
   },
   {
@@ -3974,6 +5407,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[393]"
   },
   {
@@ -3985,6 +5422,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[394]"
   },
   {
@@ -3996,6 +5437,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[395]"
   },
   {
@@ -4007,6 +5452,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[397]"
   },
   {
@@ -4018,6 +5467,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[398]"
   },
   {
@@ -4029,6 +5482,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[399]"
   },
   {
@@ -4040,6 +5497,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[400]"
   },
   {
@@ -4051,6 +5512,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[401]"
   },
   {
@@ -4062,6 +5527,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[402]"
   },
   {
@@ -4073,6 +5542,10 @@
    "frequency": 3,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[404]"
   },
   {
@@ -4084,18 +5557,11 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[405]"
-  },
-  {
-   "korean": "레쿠울",
-   "romanization": "rekuul",
-   "gloss": "Budew (Pokemon)",
-   "partOfSpeech": "noun",
-   "areaId": "rom_mined",
-   "frequency": 1,
-   "firstAreaEncountered": "rom_mined",
-   "areasReferenced": [],
-   "source": "gSpeciesNames[406]"
   },
   {
    "korean": "라티아스",
@@ -4106,6 +5572,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[407]"
   },
   {
@@ -4117,6 +5587,10 @@
    "frequency": 2,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[408]"
   },
   {
@@ -4128,6 +5602,10 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[409]"
   },
   {
@@ -4139,7 +5617,26 @@
    "frequency": 1,
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
    "source": "gSpeciesNames[410]"
+  },
+  {
+   "korean": "치렁",
+   "romanization": "chireong",
+   "gloss": "Chimecho (Pokemon)",
+   "partOfSpeech": "noun",
+   "areaId": "rom_mined",
+   "frequency": 1,
+   "firstAreaEncountered": "rom_mined",
+   "areasReferenced": [],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species",
+   "source": "gSpeciesNames[411]"
   }
  ]
 }

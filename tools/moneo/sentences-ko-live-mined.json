@@ -4,2200 +4,2650 @@
   "notes": "One ROM sentence per mined lemma; targetForm pins the surface form.",
   "entries": [
     {
-      "vocabId": "rom-mine-v2:디그",
-      "korean": "부에비소디그",
-      "romanization": "buebisodigeu",
-      "gloss": "(ROM example, rec51290)",
-      "targetForm": "디그",
-      "areaId": "rom_mined",
-      "source": "rom-rec51290"
-    },
-    {
-      "vocabId": "rom-mine-v2:블다",
-      "korean": "다누제블다",
-      "romanization": "danujebeulda",
-      "gloss": "(ROM example, rec51047)",
-      "targetForm": "블",
-      "areaId": "rom_mined",
-      "source": "rom-rec51047"
-    },
-    {
-      "vocabId": "rom-mine-v2:부디",
-      "korean": "데의부디부베",
-      "romanization": "deuibudibube",
-      "gloss": "(ROM example, rec41274)",
-      "targetForm": "부디",
-      "areaId": "rom_mined",
-      "source": "rom-rec41274"
-    },
-    {
-      "vocabId": "rom-mine-v2:도론",
-      "korean": "부에비소디그도론",
-      "romanization": "buebisodigeudoron",
-      "gloss": "(ROM example, rec43855)",
-      "targetForm": "도론",
-      "areaId": "rom_mined",
-      "source": "rom-rec43855"
-    },
-    {
-      "vocabId": "rom-mine-v2:다달",
-      "korean": "제본다달도바",
-      "romanization": "jebondadaldoba",
-      "gloss": "(ROM example, rec41445)",
-      "targetForm": "다달",
-      "areaId": "rom_mined",
-      "source": "rom-rec41445"
-    },
-    {
-      "vocabId": "rom-mine-v2:제르",
-      "korean": "제르다8두은",
-      "romanization": "jereuda8dueun",
-      "gloss": "(ROM example, rec41134)",
-      "targetForm": "제르",
-      "areaId": "rom_mined",
-      "source": "rom-rec41134"
-    },
-    {
-      "vocabId": "rom-mine-v2:두다",
-      "korean": "제블다ㅎ두은",
-      "romanization": "jebeuldaㅎdueun",
-      "gloss": "(ROM example, rec43078)",
-      "targetForm": "두",
-      "areaId": "rom_mined",
-      "source": "rom-rec43078"
-    },
-    {
-      "vocabId": "rom-mine-v2:타다",
-      "korean": "제프도탄부파-",
-      "romanization": "jepeudotanbupa-",
-      "gloss": "(ROM example, rec41576)",
-      "targetForm": "탄",
-      "areaId": "rom_mined",
-      "source": "rom-rec41576"
-    },
-    {
-      "vocabId": "rom-mine-v2:도큐",
-      "korean": "도큐도냐",
-      "romanization": "dokyudonya",
-      "gloss": "(ROM example, rec43553)",
-      "targetForm": "도큐",
-      "areaId": "rom_mined",
-      "source": "rom-rec43553"
-    },
-    {
       "vocabId": "rom-mine-v2:있다",
-      "korean": "제이부있데M",
-      "romanization": "jeibuissdeM",
-      "gloss": "(ROM example, rec41116)",
+      "korean": "있었는데",
+      "romanization": "isseossneunde",
+      "gloss": "(ROM example, rec282)",
       "targetForm": "있",
       "areaId": "rom_mined",
-      "source": "rom-rec41116"
-    },
-    {
-      "vocabId": "rom-mine-v2:도켄",
-      "korean": "조도도켄",
-      "romanization": "jododoken",
-      "gloss": "(ROM example, rec43375)",
-      "targetForm": "도켄",
-      "areaId": "rom_mined",
-      "source": "rom-rec43375"
-    },
-    {
-      "vocabId": "rom-mine-v2:몰다",
-      "korean": "이」몬바쿠이에",
-      "romanization": "i」monbakuie",
-      "gloss": "(ROM example, rec27531)",
-      "targetForm": "몬",
-      "areaId": "rom_mined",
-      "source": "rom-rec27531"
-    },
-    {
-      "vocabId": "rom-mine-v2:거두다",
-      "korean": "두H데거두은",
-      "romanization": "duHdegeodueun",
-      "gloss": "(ROM example, rec43850)",
-      "targetForm": "거두",
-      "areaId": "rom_mined",
-      "source": "rom-rec43850"
-    },
-    {
-      "vocabId": "rom-mine-v2:데다",
-      "korean": "부에데지비딘조",
-      "romanization": "buedejibidinjo",
-      "gloss": "(ROM example, rec43288)",
-      "targetForm": "데",
-      "areaId": "rom_mined",
-      "source": "rom-rec43288"
-    },
-    {
-      "vocabId": "rom-mine-v2:디다",
-      "korean": "디구다도디",
-      "romanization": "digudadodi",
-      "gloss": "(ROM example, rec52887)",
-      "targetForm": "디",
-      "areaId": "rom_mined",
-      "source": "rom-rec52887"
+      "source": "rom-rec282"
     },
     {
       "vocabId": "rom-mine-v2:하다",
-      "korean": "부했두케도섹",
-      "romanization": "buhaessdukedoseg",
-      "gloss": "(ROM example, rec51124)",
-      "targetForm": "케도",
+      "korean": "땅을하고",
+      "romanization": "ttangeulhago",
+      "gloss": "(ROM example, rec1022)",
+      "targetForm": "하",
       "areaId": "rom_mined",
-      "source": "rom-rec51124"
+      "source": "rom-rec1022"
     },
     {
-      "vocabId": "rom-mine-v2:다뇨",
-      "korean": "다뇨 두블다",
-      "romanization": "danyo dubeulda",
-      "gloss": "(ROM example, rec44133)",
-      "targetForm": "다뇨",
+      "vocabId": "rom-mine-v2:공격",
+      "korean": "공격한다",
+      "romanization": "gonggyeoghanda",
+      "gloss": "(ROM example, rec6261)",
+      "targetForm": "공격",
       "areaId": "rom_mined",
-      "source": "rom-rec44133"
+      "source": "rom-rec6261"
     },
     {
-      "vocabId": "rom-mine-v2:도온",
-      "korean": "도톤제루 도온디다",
-      "romanization": "dotonjeru doondida",
-      "gloss": "(ROM example, rec41571)",
-      "targetForm": "도온",
+      "vocabId": "rom-mine-v2:상대",
+      "korean": "상대를쪽",
+      "romanization": "sangdaereuljjog",
+      "gloss": "(ROM example, rec5259)",
+      "targetForm": "상대",
       "areaId": "rom_mined",
-      "source": "rom-rec41571"
+      "source": "rom-rec5259"
     },
     {
-      "vocabId": "rom-mine-v2:세다",
-      "korean": "디센데두도섹",
-      "romanization": "disendedudoseg",
-      "gloss": "(ROM example, rec51063)",
-      "targetForm": "센데",
+      "vocabId": "rom-mine-v2:많다",
+      "korean": "많은주마",
+      "romanization": "manheunjuma",
+      "gloss": "(ROM example, rec2260)",
+      "targetForm": "많",
       "areaId": "rom_mined",
-      "source": "rom-rec51063"
+      "source": "rom-rec2260"
     },
     {
-      "vocabId": "rom-mine-v2:도탄",
-      "korean": "도탄디완도섹",
-      "romanization": "dotandiwandoseg",
-      "gloss": "(ROM example, rec43542)",
-      "targetForm": "도탄",
+      "vocabId": "rom-mine-v2:기술",
+      "korean": "한기술을",
+      "romanization": "hangisuleul",
+      "gloss": "(ROM example, rec6750)",
+      "targetForm": "기술",
       "areaId": "rom_mined",
-      "source": "rom-rec43542"
+      "source": "rom-rec6750"
     },
     {
-      "vocabId": "rom-mine-v2:제트",
-      "korean": "제트도섹",
-      "romanization": "jeteudoseg",
-      "gloss": "(ROM example, rec53343)",
-      "targetForm": "제트",
+      "vocabId": "rom-mine-v2:같다",
+      "korean": "있는같네요",
+      "romanization": "issneungatneyo",
+      "gloss": "(ROM example, rec881)",
+      "targetForm": "같",
       "areaId": "rom_mined",
-      "source": "rom-rec53343"
+      "source": "rom-rec881"
     },
     {
-      "vocabId": "rom-mine-v2:제팡",
-      "korean": "제팡제도부데조H",
-      "romanization": "jepangjedobudejoH",
-      "gloss": "(ROM example, rec52751)",
-      "targetForm": "제팡",
+      "vocabId": "rom-mine-v2:받다",
+      "korean": "겨받았다",
+      "romanization": "gyeobadassda",
+      "gloss": "(ROM example, rec2604)",
+      "targetForm": "받",
       "areaId": "rom_mined",
-      "source": "rom-rec52751"
+      "source": "rom-rec2604"
     },
     {
-      "vocabId": "rom-mine-v2:낫다",
-      "korean": "카후츠래  에헤이이기낫아즈투페힌것",
-      "romanization": "kahucheurae  eheiiginasajeutupehingeos",
-      "gloss": "(ROM example, rec10554)",
-      "targetForm": "낫",
+      "vocabId": "rom-mine-v2:없다",
+      "korean": "오늘은없어",
+      "romanization": "oneuleuneobseo",
+      "gloss": "(ROM example, rec1267)",
+      "targetForm": "없",
       "areaId": "rom_mined",
-      "source": "rom-rec10554"
+      "source": "rom-rec1267"
     },
     {
-      "vocabId": "rom-mine-v2:바덴",
-      "korean": "디힌도겐도론 도7바덴조",
-      "romanization": "dihindogendoron do7badenjo",
-      "gloss": "(ROM example, rec41651)",
-      "targetForm": "바덴",
+      "vocabId": "rom-mine-v2:좋다",
+      "korean": "힘을시좋을",
+      "romanization": "himeulsijoheul",
+      "gloss": "(ROM example, rec2186)",
+      "targetForm": "좋",
       "areaId": "rom_mined",
-      "source": "rom-rec41651"
+      "source": "rom-rec2186"
     },
     {
-      "vocabId": "rom-mine-v2:거제",
-      "korean": "도0데거제자 두호다는바블",
-      "romanization": "do0degeojeja duhodaneunbabeul",
-      "gloss": "(ROM example, rec52796)",
-      "targetForm": "거제",
+      "vocabId": "rom-mine-v2:만들다",
+      "korean": "만든있다",
+      "romanization": "mandeunissda",
+      "gloss": "(ROM example, rec2663)",
+      "targetForm": "만든",
       "areaId": "rom_mined",
-      "source": "rom-rec52796"
+      "source": "rom-rec2663"
     },
     {
-      "vocabId": "rom-mine-v2:크다",
-      "korean": "제루 도크바사 디다",
-      "romanization": "jeru dokeubasa dida",
-      "gloss": "(ROM example, rec52401)",
-      "targetForm": "크",
+      "vocabId": "rom-mine-v2:회복",
+      "korean": "회복한다",
+      "romanization": "hoeboghanda",
+      "gloss": "(ROM example, rec6301)",
+      "targetForm": "회복",
       "areaId": "rom_mined",
-      "source": "rom-rec52401"
+      "source": "rom-rec6301"
     },
     {
-      "vocabId": "rom-mine-v2:보다",
-      "korean": "제본다닌도톤다",
-      "romanization": "jebondanindotonda",
-      "gloss": "(ROM example, rec43250)",
-      "targetForm": "본다",
+      "vocabId": "rom-mine-v2:되다",
+      "korean": "꼴을이될",
+      "romanization": "kkoleulidoel",
+      "gloss": "(ROM example, rec425)",
+      "targetForm": "될",
       "areaId": "rom_mined",
-      "source": "rom-rec43250"
+      "source": "rom-rec425"
     },
     {
-      "vocabId": "rom-mine-v2:트다",
-      "korean": "준니쿠딘이터",
-      "romanization": "junnikudiniteo",
-      "gloss": "(ROM example, rec26247)",
-      "targetForm": "터",
+      "vocabId": "rom-mine-v2:자신",
+      "korean": "자신의만들있다",
+      "romanization": "jasinuimandeulissda",
+      "gloss": "(ROM example, rec6331)",
+      "targetForm": "자신",
       "areaId": "rom_mined",
-      "source": "rom-rec26247"
+      "source": "rom-rec6331"
     },
     {
-      "vocabId": "rom-mine-v2:돕다",
-      "korean": "제자도와",
-      "romanization": "jejadowa",
-      "gloss": "(ROM example, rec43762)",
-      "targetForm": "도와",
+      "vocabId": "rom-mine-v2:쓰다",
+      "korean": "마쓰고도구를",
+      "romanization": "masseugodogureul",
+      "gloss": "(ROM example, rec3643)",
+      "targetForm": "쓰",
       "areaId": "rom_mined",
-      "source": "rom-rec43762"
-    },
-    {
-      "vocabId": "rom-mine-v2:다드",
-      "korean": "데3다드 도온디다",
-      "romanization": "de3dadeu doondida",
-      "gloss": "(ROM example, rec43515)",
-      "targetForm": "다드",
-      "areaId": "rom_mined",
-      "source": "rom-rec43515"
-    },
-    {
-      "vocabId": "rom-mine-v2:메다",
-      "korean": "카 세이투N메프",
-      "romanization": "ka seituNmepeu",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "메",
-      "areaId": "rom_mined",
-      "source": "rom-rec11262"
-    },
-    {
-      "vocabId": "rom-mine-v2:캐다",
-      "korean": "ㅎ에후0뇨쿠낫아구0밧잔세에티오투등캐",
-      "romanization": "ㅎehu0nyokunasagu0basjanseetiotudeungkae",
-      "gloss": "(ROM example, rec19975)",
-      "targetForm": "캐",
-      "areaId": "rom_mined",
-      "source": "rom-rec19975"
-    },
-    {
-      "vocabId": "rom-mine-v2:비딘",
-      "korean": "부에데지비딘조",
-      "romanization": "buedejibidinjo",
-      "gloss": "(ROM example, rec43288)",
-      "targetForm": "비딘",
-      "areaId": "rom_mined",
-      "source": "rom-rec43288"
-    },
-    {
-      "vocabId": "rom-mine-v2:다니다",
-      "korean": "조』다닌도섹 제아도엔조H",
-      "romanization": "jo』danindoseg jeadoenjoH",
-      "gloss": "(ROM example, rec51290)",
-      "targetForm": "다닌",
-      "areaId": "rom_mined",
-      "source": "rom-rec51290"
-    },
-    {
-      "vocabId": "rom-mine-v2:티다",
-      "korean": "우이에티아뇨쿠훈아기쿠켄아미이…타B이B쿠포데",
-      "romanization": "uietianyokuhunagikukenamii…taBiBkupode",
-      "gloss": "(ROM example, rec21041)",
-      "targetForm": "티",
-      "areaId": "rom_mined",
-      "source": "rom-rec21041"
-    },
-    {
-      "vocabId": "rom-mine-v2:데잔",
-      "korean": "제픽도탄 제스데잔",
-      "romanization": "jepigdotan jeseudejan",
-      "gloss": "(ROM example, rec44113)",
-      "targetForm": "데잔",
-      "areaId": "rom_mined",
-      "source": "rom-rec44113"
-    },
-    {
-      "vocabId": "rom-mine-v2:카다",
-      "korean": "데래제1 비캐도자디",
-      "romanization": "deraeje1 bikaedojadi",
-      "gloss": "(ROM example, rec43601)",
-      "targetForm": "캐도",
-      "areaId": "rom_mined",
-      "source": "rom-rec43601"
-    },
-    {
-      "vocabId": "rom-mine-v2:파다",
-      "korean": "무×굴이파모메주주×",
-      "romanization": "mu×gulipamomejuju×",
-      "gloss": "(ROM example, rec39845)",
-      "targetForm": "파",
-      "areaId": "rom_mined",
-      "source": "rom-rec39845"
-    },
-    {
-      "vocabId": "rom-mine-v2:도훈",
-      "korean": "도훈도밧 두블다",
-      "romanization": "dohundobas dubeulda",
-      "gloss": "(ROM example, rec43131)",
-      "targetForm": "도훈",
-      "areaId": "rom_mined",
-      "source": "rom-rec43131"
-    },
-    {
-      "vocabId": "rom-mine-v2:달다",
-      "korean": "도밧 데단부호도톤 다마데Y조H",
-      "romanization": "dobas dedanbuhodoton damadeYjoH",
-      "gloss": "(ROM example, rec50805)",
-      "targetForm": "단",
-      "areaId": "rom_mined",
-      "source": "rom-rec50805"
-    },
-    {
-      "vocabId": "rom-mine-v2:디프",
-      "korean": "두은데비바사 두메디프",
-      "romanization": "dueundebibasa dumedipeu",
-      "gloss": "(ROM example, rec51506)",
-      "targetForm": "디프",
-      "areaId": "rom_mined",
-      "source": "rom-rec51506"
-    },
-    {
-      "vocabId": "rom-mine-v2:도다",
-      "korean": "도겐부윈도섹",
-      "romanization": "dogenbuwindoseg",
-      "gloss": "(ROM example, rec44124)",
-      "targetForm": "도",
-      "areaId": "rom_mined",
-      "source": "rom-rec44124"
-    },
-    {
-      "vocabId": "rom-mine-v2:무류",
-      "korean": "미 무류:모래  T두이이와부이이비이이에부이이데비 우안비 우소티훈투",
-      "romanization": "mi muryu:morae  Tduiiwabuiibiiiebuiidebi uanbi usotihuntu",
-      "gloss": "(ROM example, rec15713)",
-      "targetForm": "무류",
-      "areaId": "rom_mined",
-      "source": "rom-rec15713"
-    },
-    {
-      "vocabId": "rom-mine-v2:의도",
-      "korean": "조디데의도쿠조",
-      "romanization": "jodideuidokujo",
-      "gloss": "(ROM example, rec45083)",
-      "targetForm": "의도",
-      "areaId": "rom_mined",
-      "source": "rom-rec45083"
-    },
-    {
-      "vocabId": "rom-mine-v2:제티",
-      "korean": "두N제티 제이바사도론",
-      "romanization": "duNjeti jeibasadoron",
-      "gloss": "(ROM example, rec40861)",
-      "targetForm": "제티",
-      "areaId": "rom_mined",
-      "source": "rom-rec40861"
-    },
-    {
-      "vocabId": "rom-mine-v2:조다",
-      "korean": "두솔조은두유",
-      "romanization": "dusoljoeunduyu",
-      "gloss": "(ROM example, rec41652)",
-      "targetForm": "조",
-      "areaId": "rom_mined",
-      "source": "rom-rec41652"
-    },
-    {
-      "vocabId": "rom-mine-v2:도몬",
-      "korean": "비츄도몬 도랍다",
-      "romanization": "bichyudomon dorabda",
-      "gloss": "(ROM example, rec44751)",
-      "targetForm": "도몬",
-      "areaId": "rom_mined",
-      "source": "rom-rec44751"
-    },
-    {
-      "vocabId": "rom-mine-v2:도움",
-      "korean": "2제테도론 도움제차도탄바V조",
-      "romanization": "2jetedoron doumjechadotanbaVjo",
-      "gloss": "(ROM example, rec43111)",
-      "targetForm": "도움",
-      "areaId": "rom_mined",
-      "source": "rom-rec43111"
-    },
-    {
-      "vocabId": "rom-mine-v2:모래",
-      "korean": "미 무류:모래  T두이이와부이이비이이에부이이데비 우안비 우소티훈투",
-      "romanization": "mi muryu:morae  Tduiiwabuiibiiiebuiidebi uanbi usotihuntu",
-      "gloss": "(ROM example, rec15713)",
-      "targetForm": "모래",
-      "areaId": "rom_mined",
-      "source": "rom-rec15713"
-    },
-    {
-      "vocabId": "rom-mine-v2:요프",
-      "korean": "CH 미 누후야카야세미터밧 F노 훈안요프파호멕부노사무N케아후케에케시미후C난",
-      "romanization": "CH mi nuhuyakayasemiteobas Fno hunanyopeupahomegbunosamuNkeahukeekesimihuCnan",
-      "gloss": "(ROM example, rec15725)",
-      "targetForm": "요프",
-      "areaId": "rom_mined",
-      "source": "rom-rec15725"
-    },
-    {
-      "vocabId": "rom-mine-v2:우안",
-      "korean": "미 무류:모래  T두이이와부이이비이이에부이이데비 우안비 우소티훈투",
-      "romanization": "mi muryu:morae  Tduiiwabuiibiiiebuiidebi uanbi usotihuntu",
-      "gloss": "(ROM example, rec15713)",
-      "targetForm": "우안",
-      "areaId": "rom_mined",
-      "source": "rom-rec15713"
-    },
-    {
-      "vocabId": "rom-mine-v2:이프",
-      "korean": "오투투래  B베이이네무이이프",
-      "romanization": "otuturae  Bbeiinemuiipeu",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "이프",
-      "areaId": "rom_mined",
-      "source": "rom-rec11262"
-    },
-    {
-      "vocabId": "rom-mine-v2:제차",
-      "korean": "바「도몬 제차바사다",
-      "romanization": "ba「domon jechabasada",
-      "gloss": "(ROM example, rec41773)",
-      "targetForm": "제차",
-      "areaId": "rom_mined",
-      "source": "rom-rec41773"
-    },
-    {
-      "vocabId": "rom-mine-v2:부그",
-      "korean": "제픽도탄 디,부그",
-      "romanization": "jepigdotan di,bugeu",
-      "gloss": "(ROM example, rec44094)",
-      "targetForm": "부그",
-      "areaId": "rom_mined",
-      "source": "rom-rec44094"
-    },
-    {
-      "vocabId": "rom-mine-v2:의제",
-      "korean": "제넨디다 데의제아데핫",
-      "romanization": "jenendida deuijeadehas",
-      "gloss": "(ROM example, rec43355)",
-      "targetForm": "의제",
-      "areaId": "rom_mined",
-      "source": "rom-rec43355"
-    },
-    {
-      "vocabId": "rom-mine-v2:이브",
-      "korean": "카 세』훈켄네스래  이브우이하브우이니돈미낫 무I움",
-      "romanization": "ka se』hunkenneseurae  ibeuuihabeuuinidonminas muIum",
-      "gloss": "(ROM example, rec18346)",
-      "targetForm": "이브",
-      "areaId": "rom_mined",
-      "source": "rom-rec18346"
-    },
-    {
-      "vocabId": "rom-mine-v2:노다",
-      "korean": "아자이와복힌리뇨D야안  노 뇨퀸핏",
-      "romanization": "ajaiwaboghinrinyoDyaan  no nyokwinpis",
-      "gloss": "(ROM example, rec18017)",
-      "targetForm": "노",
-      "areaId": "rom_mined",
-      "source": "rom-rec18017"
-    },
-    {
-      "vocabId": "rom-mine-v2:비다",
-      "korean": "다8비있두블도톤비있다달",
-      "romanization": "da8biissdubeuldotonbiissdadal",
-      "gloss": "(ROM example, rec53335)",
-      "targetForm": "비",
-      "areaId": "rom_mined",
-      "source": "rom-rec53335"
-    },
-    {
-      "vocabId": "rom-mine-v2:아다",
-      "korean": "다소 도1두호 다요제멕 제아다",
-      "romanization": "daso do1duho dayojemeg jeada",
-      "gloss": "(ROM example, rec42184)",
-      "targetForm": "아",
-      "areaId": "rom_mined",
-      "source": "rom-rec42184"
-    },
-    {
-      "vocabId": "rom-mine-v2:이미",
-      "korean": "겐래이미 :마",
-      "romanization": "genraeimi :ma",
-      "gloss": "(ROM example, rec15713)",
-      "targetForm": "이미",
-      "areaId": "rom_mined",
-      "source": "rom-rec15713"
-    },
-    {
-      "vocabId": "rom-mine-v2:조석",
-      "korean": "도1데거 두맛조석 두블다",
-      "romanization": "do1degeo dumasjoseog dubeulda",
-      "gloss": "(ROM example, rec41236)",
-      "targetForm": "조석",
-      "areaId": "rom_mined",
-      "source": "rom-rec41236"
-    },
-    {
-      "vocabId": "rom-mine-v2:기뇨",
-      "korean": "스티트네리후탕□기뇨이기기밧코티야네야에야시미후",
-      "romanization": "seutiteunerihutang□ginyoigigibaskotiyaneyaeyasimihu",
-      "gloss": "(ROM example, rec15566)",
-      "targetForm": "기뇨",
-      "areaId": "rom_mined",
-      "source": "rom-rec15566"
-    },
-    {
-      "vocabId": "rom-mine-v2:도르",
-      "korean": "도르 데다스다",
-      "romanization": "doreu dedaseuda",
-      "gloss": "(ROM example, rec41649)",
-      "targetForm": "도르",
-      "areaId": "rom_mined",
-      "source": "rom-rec41649"
-    },
-    {
-      "vocabId": "rom-mine-v2:우티",
-      "korean": "우티에투케뇨에있일네무낀",
-      "romanization": "utietukenyoeissilnemukkin",
-      "gloss": "(ROM example, rec19045)",
-      "targetForm": "우티",
-      "areaId": "rom_mined",
-      "source": "rom-rec19045"
-    },
-    {
-      "vocabId": "rom-mine-v2:울다",
-      "korean": "아이에쿠타미부켄 아이우오   에아",
-      "romanization": "aiekutamibuken aiuo   ea",
-      "gloss": "(ROM example, rec37747)",
-      "targetForm": "우",
-      "areaId": "rom_mined",
-      "source": "rom-rec37747"
-    },
-    {
-      "vocabId": "rom-mine-v2:투도",
-      "korean": "데투도자제멕 데티제낫",
-      "romanization": "detudojajemeg detijenas",
-      "gloss": "(ROM example, rec41036)",
-      "targetForm": "투도",
-      "areaId": "rom_mined",
-      "source": "rom-rec41036"
-    },
-    {
-      "vocabId": "rom-mine-v2:후비다",
-      "korean": "헤우이세있조뇨얀기아낫쿠아부네켄 샤네쿠후비기 낫F카 리 넨킹달쿠후ㅎ시",
-      "romanization": "heuiseissjonyoyangianaskuabuneken syanekuhubigi nasFka ri nenkingdalkuhuㅎsi",
-      "gloss": "(ROM example, rec13886)",
-      "targetForm": "후비",
-      "areaId": "rom_mined",
-      "source": "rom-rec13886"
-    },
-    {
-      "vocabId": "rom-mine-v2:굴다",
-      "korean": "도자디구 데굴데석도톤조H",
-      "romanization": "dojadigu deguldeseogdotonjoH",
-      "gloss": "(ROM example, rec42271)",
-      "targetForm": "굴",
-      "areaId": "rom_mined",
-      "source": "rom-rec42271"
-    },
-    {
-      "vocabId": "rom-mine-v2:낫우다",
-      "korean": "굴 카 리메W스멕게낫쿤이뇨후쿠네우낫7후쿠네에낫우지투노쿠낫 이에파 콧타후치후",
-      "romanization": "gul ka rimeWseumeggenaskuninyohukuneunas7hukuneenasujitunokunas iepa kostahuchihu",
-      "gloss": "(ROM example, rec12809)",
-      "targetForm": "낫우",
-      "areaId": "rom_mined",
-      "source": "rom-rec12809"
-    },
-    {
-      "vocabId": "rom-mine-v2:도잔",
-      "korean": "도잔도톤다",
-      "romanization": "dojandotonda",
-      "gloss": "(ROM example, rec42360)",
-      "targetForm": "도잔",
-      "areaId": "rom_mined",
-      "source": "rom-rec42360"
-    },
-    {
-      "vocabId": "rom-mine-v2:무투",
-      "korean": "S무투 훈보우V 미기래돈로이이구후라구리후 메",
-      "romanization": "Smutu hunbouV migiraedonroiiguhuragurihu me",
-      "gloss": "(ROM example, rec13312)",
-      "targetForm": "무투",
-      "areaId": "rom_mined",
-      "source": "rom-rec13312"
-    },
-    {
-      "vocabId": "rom-mine-v2:부리다",
-      "korean": "두호다는부린 조지제아조",
-      "romanization": "duhodaneunburin jojijeajo",
-      "gloss": "(ROM example, rec43723)",
-      "targetForm": "부린",
-      "areaId": "rom_mined",
-      "source": "rom-rec43723"
-    },
-    {
-      "vocabId": "rom-mine-v2:부샤",
-      "korean": "부샤도탄도밧 조지도랍두N",
-      "romanization": "busyadotandobas jojidorabduN",
-      "gloss": "(ROM example, rec43078)",
-      "targetForm": "부샤",
-      "areaId": "rom_mined",
-      "source": "rom-rec43078"
-    },
-    {
-      "vocabId": "rom-mine-v2:아랍",
-      "korean": "소 나아랍쿠케에완이이플히쿠에데』히쿠아뮤』히쿠우우』히쿠 에력히쿠이에",
-      "romanization": "so naarabkukeewaniipeulhikuede』hikuamyu』hikuuu』hiku eryeoghikuie",
-      "gloss": "(ROM example, rec26407)",
-      "targetForm": "아랍",
-      "areaId": "rom_mined",
-      "source": "rom-rec26407"
-    },
-    {
-      "vocabId": "rom-mine-v2:완두",
-      "korean": "도섹 디푸도큐디완두은",
-      "romanization": "doseg dipudokyudiwandueun",
-      "gloss": "(ROM example, rec42535)",
-      "targetForm": "완두",
-      "areaId": "rom_mined",
-      "source": "rom-rec42535"
-    },
-    {
-      "vocabId": "rom-mine-v2:자다",
-      "korean": "데래제1 비캐도자디",
-      "romanization": "deraeje1 bikaedojadi",
-      "gloss": "(ROM example, rec43601)",
-      "targetForm": "자",
-      "areaId": "rom_mined",
-      "source": "rom-rec43601"
-    },
-    {
-      "vocabId": "rom-mine-v2:제탄",
-      "korean": "제탄바론데의두은데",
-      "romanization": "jetanbarondeuidueunde",
-      "gloss": "(ROM example, rec41329)",
-      "targetForm": "제탄",
-      "areaId": "rom_mined",
-      "source": "rom-rec41329"
-    },
-    {
-      "vocabId": "rom-mine-v2:조딘",
-      "korean": "조딘두/다베두샤도톤데",
-      "romanization": "jodindu/dabedusyadotonde",
-      "gloss": "(ROM example, rec44075)",
-      "targetForm": "조딘",
-      "areaId": "rom_mined",
-      "source": "rom-rec44075"
-    },
-    {
-      "vocabId": "rom-mine-v2:치다",
-      "korean": "토딘보…쿤파센 우오얀 픽르치그보 9오푸 키키랐부타로밧치부페",
-      "romanization": "todinbo…kunpasen uoyan pigreuchigeubo 9opu kikirassbutarobaschibupe",
-      "gloss": "(ROM example, rec45880)",
-      "targetForm": "치",
-      "areaId": "rom_mined",
-      "source": "rom-rec45880"
-    },
-    {
-      "vocabId": "rom-mine-v2:코티",
-      "korean": "스티트네리후탕□기뇨이기기밧코티야네야에야시미후",
-      "romanization": "seutiteunerihutang□ginyoigigibaskotiyaneyaeyasimihu",
-      "gloss": "(ROM example, rec15566)",
-      "targetForm": "코티",
-      "areaId": "rom_mined",
-      "source": "rom-rec15566"
-    },
-    {
-      "vocabId": "rom-mine-v2:키다",
-      "korean": "로에키아 요니쿠무뇨부아 키아",
-      "romanization": "roekia yonikumunyobua kia",
-      "gloss": "(ROM example, rec24846)",
-      "targetForm": "키",
-      "areaId": "rom_mined",
-      "source": "rom-rec24846"
-    },
-    {
-      "vocabId": "rom-mine-v2:톤디",
-      "korean": "다소디넨도톤디루 부디조",
-      "romanization": "dasodinendotondiru budijo",
-      "gloss": "(ROM example, rec44162)",
-      "targetForm": "톤디",
-      "areaId": "rom_mined",
-      "source": "rom-rec44162"
-    },
-    {
-      "vocabId": "rom-mine-v2:투부",
-      "korean": "ㅎ사티아훈안미티파코투부네코있이무냐×혼",
-      "romanization": "ㅎsatiahunanmitipakotubunekoissimunya×hon",
-      "gloss": "(ROM example, rec13382)",
-      "targetForm": "투부",
-      "areaId": "rom_mined",
-      "source": "rom-rec13382"
-    },
-    {
-      "vocabId": "rom-mine-v2:다솔",
-      "korean": "도부도탄: 데보다솔부있조폰",
-      "romanization": "dobudotan: debodasolbuissjopon",
-      "gloss": "(ROM example, rec43354)",
-      "targetForm": "다솔",
-      "areaId": "rom_mined",
-      "source": "rom-rec43354"
-    },
-    {
-      "vocabId": "rom-mine-v2:다치다",
-      "korean": "도94두H데거 다치데의도쿠디완",
-      "romanization": "do94duHdegeo dachideuidokudiwan",
-      "gloss": "(ROM example, rec44124)",
-      "targetForm": "다치",
-      "areaId": "rom_mined",
-      "source": "rom-rec44124"
-    },
-    {
-      "vocabId": "rom-mine-v2:바차",
-      "korean": "바차다갓도론 부에비소디그도밧",
-      "romanization": "bachadagasdoron buebisodigeudobas",
-      "gloss": "(ROM example, rec43519)",
-      "targetForm": "바차",
-      "areaId": "rom_mined",
-      "source": "rom-rec43519"
-    },
-    {
-      "vocabId": "rom-mine-v2:산도",
-      "korean": "디산도진제쿠도톤 다무 제유데",
-      "romanization": "disandojinjekudoton damu jeyude",
-      "gloss": "(ROM example, rec43519)",
-      "targetForm": "산도",
-      "areaId": "rom_mined",
-      "source": "rom-rec43519"
-    },
-    {
-      "vocabId": "rom-mine-v2:우투",
-      "korean": "리뇨Y기아낫쿠아부네켄  노이무우투",
-      "romanization": "rinyoYgianaskuabuneken  noimuutu",
-      "gloss": "(ROM example, rec13895)",
-      "targetForm": "우투",
-      "areaId": "rom_mined",
-      "source": "rom-rec13895"
-    },
-    {
-      "vocabId": "rom-mine-v2:키티",
-      "korean": "4키투아미티쥬카투키티쿠밧이야0페탕달단두이이딘도이이",
-      "romanization": "4kituamitijyukatukitikubasiya0petangdaldanduiidindoii",
-      "gloss": "(ROM example, rec11568)",
-      "targetForm": "키티",
-      "areaId": "rom_mined",
-      "source": "rom-rec11568"
-    },
-    {
-      "vocabId": "rom-mine-v2:투아",
-      "korean": "4키투아미티쥬카투키티쿠밧이야0페탕달단두이이딘도이이",
-      "romanization": "4kituamitijyukatukitikubasiya0petangdaldanduiidindoii",
-      "gloss": "(ROM example, rec11568)",
-      "targetForm": "투아",
-      "areaId": "rom_mined",
-      "source": "rom-rec11568"
-    },
-    {
-      "vocabId": "rom-mine-v2:티파",
-      "korean": "코야트래  단두이이완도이이케있코티아낫팡미티파켄네 훈나:산",
-      "romanization": "koyateurae  danduiiwandoiikeisskotianaspangmitipakenne hunna:san",
-      "gloss": "(ROM example, rec12183)",
-      "targetForm": "티파",
-      "areaId": "rom_mined",
-      "source": "rom-rec12183"
-    },
-    {
-      "vocabId": "rom-mine-v2:날다",
-      "korean": "두0조디루 부날다",
-      "romanization": "du0jodiru bunalda",
-      "gloss": "(ROM example, rec52787)",
-      "targetForm": "날",
-      "areaId": "rom_mined",
-      "source": "rom-rec52787"
-    },
-    {
-      "vocabId": "rom-mine-v2:물다",
-      "korean": "로에키아 요니쿠무뇨부아 키아",
-      "romanization": "roekia yonikumunyobua kia",
-      "gloss": "(ROM example, rec24846)",
-      "targetForm": "무",
-      "areaId": "rom_mined",
-      "source": "rom-rec24846"
-    },
-    {
-      "vocabId": "rom-mine-v2:세투",
-      "korean": "ㅎ 카에세세투세티 낫부 부네이훈안미란파시투부네시투케훈츠카츠세 모의3",
-      "romanization": "ㅎ kaesesetuseti nasbu buneihunanmiranpasitubunesitukehuncheukacheuse moui3",
-      "gloss": "(ROM example, rec17755)",
-      "targetForm": "세투",
-      "areaId": "rom_mined",
-      "source": "rom-rec17755"
-    },
-    {
-      "vocabId": "rom-mine-v2:안무",
-      "korean": "츠있쥬 일네케훈투 케노 리 온우기켄타쿠네루후화구케낫티파안무의납기 에에시리후",
-      "romanization": "cheuissjyu ilnekehuntu keno ri onugikentakuneruhuhwagukenastipaanmuuinabgi eesirihu",
-      "gloss": "(ROM example, rec13312)",
-      "targetForm": "안무",
-      "areaId": "rom_mined",
-      "source": "rom-rec13312"
-    },
-    {
-      "vocabId": "rom-mine-v2:어보",
-      "korean": "했달데카이이다뇨코후양게테훈우티어보카거네후자기타켄케래",
-      "romanization": "haessdaldekaiidanyokohuyanggetehunutieobokageonehujagitakenkerae",
-      "gloss": "(ROM example, rec13886)",
-      "targetForm": "어보",
-      "areaId": "rom_mined",
-      "source": "rom-rec13886"
-    },
-    {
-      "vocabId": "rom-mine-v2:에티",
-      "korean": "에티루이에있일네N메드꽃",
-      "romanization": "etiruieissilneNmedeukkoch",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "에티",
-      "areaId": "rom_mined",
-      "source": "rom-rec11262"
-    },
-    {
-      "vocabId": "rom-mine-v2:엔조",
-      "korean": "데거 두돈도엔조H",
-      "romanization": "degeo dudondoenjoH",
-      "gloss": "(ROM example, rec50565)",
-      "targetForm": "엔조",
-      "areaId": "rom_mined",
-      "source": "rom-rec50565"
-    },
-    {
-      "vocabId": "rom-mine-v2:오래",
-      "korean": "야케래이야키래아야오래우야우래",
-      "romanization": "yakeraeiyakiraeayaoraeuyaurae",
-      "gloss": "(ROM example, rec18610)",
-      "targetForm": "오래",
-      "areaId": "rom_mined",
-      "source": "rom-rec18610"
-    },
-    {
-      "vocabId": "rom-mine-v2:이투",
-      "korean": "카 세이투N메프",
-      "romanization": "ka seituNmepeu",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "이투",
-      "areaId": "rom_mined",
-      "source": "rom-rec11262"
-    },
-    {
-      "vocabId": "rom-mine-v2:제산",
-      "korean": "도톤제산도르제산데거두은",
-      "romanization": "dotonjesandoreujesandegeodueun",
-      "gloss": "(ROM example, rec43661)",
-      "targetForm": "제산",
-      "areaId": "rom_mined",
-      "source": "rom-rec43661"
-    },
-    {
-      "vocabId": "rom-mine-v2:투쿠",
-      "korean": "래톤니티타뇨파니쿠우니투쿠:이의",
-      "romanization": "raetonnititanyopanikuunituku:iui",
-      "gloss": "(ROM example, rec40707)",
-      "targetForm": "투쿠",
-      "areaId": "rom_mined",
-      "source": "rom-rec40707"
-    },
-    {
-      "vocabId": "rom-mine-v2:후양",
-      "korean": "했달데카이이다뇨코후양게테훈우티어보카거네후자기타켄케래",
-      "romanization": "haessdaldekaiidanyokohuyanggetehunutieobokageonehujagitakenkerae",
-      "gloss": "(ROM example, rec13886)",
-      "targetForm": "후양",
-      "areaId": "rom_mined",
-      "source": "rom-rec13886"
-    },
-    {
-      "vocabId": "rom-mine-v2:납기",
-      "korean": "츠있쥬 일네케훈투 케노 리 온우기켄타쿠네루후화구케낫티파안무의납기 에에시리후",
-      "romanization": "cheuissjyu ilnekehuntu keno ri onugikentakuneruhuhwagukenastipaanmuuinabgi eesirihu",
-      "gloss": "(ROM example, rec13312)",
-      "targetForm": "납기",
-      "areaId": "rom_mined",
-      "source": "rom-rec13312"
-    },
-    {
-      "vocabId": "rom-mine-v2:달비",
-      "korean": "다달비소조K도톤 두솔다",
-      "romanization": "dadalbisojoKdoton dusolda",
-      "gloss": "(ROM example, rec41089)",
-      "targetForm": "달비",
-      "areaId": "rom_mined",
-      "source": "rom-rec41089"
-    },
-    {
-      "vocabId": "rom-mine-v2:도르다",
-      "korean": "에이우데의도르데핫조",
-      "romanization": "eiudeuidoreudehasjo",
-      "gloss": "(ROM example, rec44077)",
-      "targetForm": "도르",
-      "areaId": "rom_mined",
-      "source": "rom-rec44077"
-    },
-    {
-      "vocabId": "rom-mine-v2:두거",
-      "korean": "데R제몬도섹 부디제멕 제티두거데M",
-      "romanization": "deRjemondoseg budijemeg jetidugeodeM",
-      "gloss": "(ROM example, rec40934)",
-      "targetForm": "두거",
-      "areaId": "rom_mined",
-      "source": "rom-rec40934"
-    },
-    {
-      "vocabId": "rom-mine-v2:두록",
-      "korean": "두록도섹",
-      "romanization": "durogdoseg",
-      "gloss": "(ROM example, rec53316)",
-      "targetForm": "두록",
-      "areaId": "rom_mined",
-      "source": "rom-rec53316"
-    },
-    {
-      "vocabId": "rom-mine-v2:드다",
-      "korean": "드네T다는있닌킹킹딘네모킹로탕고솔두",
-      "romanization": "deuneTdaneunissninkingkingdinnemokingrotanggosoldu",
-      "gloss": "(ROM example, rec35315)",
-      "targetForm": "드",
-      "areaId": "rom_mined",
-      "source": "rom-rec35315"
-    },
-    {
-      "vocabId": "rom-mine-v2:만코리",
-      "korean": "헤우이다뇨티날아기티만코리이W시티호:마",
-      "romanization": "heuidanyotinalagitimankoriiWsitiho:ma",
-      "gloss": "(ROM example, rec13965)",
-      "targetForm": "만코리",
-      "areaId": "rom_mined",
-      "source": "rom-rec13965"
-    },
-    {
-      "vocabId": "rom-mine-v2:미훈",
-      "korean": "자이지미훈보술W뇨 켄노아훈오티샤보타V키티본후투 일노케훈아켄시래탓쿠유쿠",
-      "romanization": "jaijimihunbosulWnyo kennoahunotisyabotaVkitibonhutu ilnokehunakensiraetaskuyuku",
-      "gloss": "(ROM example, rec12151)",
-      "targetForm": "미훈",
-      "areaId": "rom_mined",
-      "source": "rom-rec12151"
-    },
-    {
-      "vocabId": "rom-mine-v2:바롯",
-      "korean": "바롯제아부도 데테 도탓조",
-      "romanization": "barosjeabudo dete dotasjo",
-      "gloss": "(ROM example, rec44880)",
-      "targetForm": "바롯",
-      "areaId": "rom_mined",
-      "source": "rom-rec44880"
-    },
-    {
-      "vocabId": "rom-mine-v2:세신",
-      "korean": "타미   세신브윈힌있다디 롯루진센큐일도 뉴크Y닷등쿤헤게 리블후",
-      "romanization": "tami   sesinbeuwinhinissdadi rosrujinsenkyuildo nyukeuYdasdeungkunhege ribeulhu",
-      "gloss": "(ROM example, rec49439)",
-      "targetForm": "세신",
-      "areaId": "rom_mined",
-      "source": "rom-rec49439"
-    },
-    {
-      "vocabId": "rom-mine-v2:세티",
-      "korean": "ㅎ츠캐기뇨베후구밧피낫티낫 이에파통 세티리네탕거",
-      "romanization": "ㅎcheukaeginyobehugubaspinastinas iepatong setirinetanggeo",
-      "gloss": "(ROM example, rec15569)",
-      "targetForm": "세티",
-      "areaId": "rom_mined",
-      "source": "rom-rec15569"
-    },
-    {
-      "vocabId": "rom-mine-v2:소캐",
-      "korean": "타B아B 포J두이이데카이이피도이이J로이이프ㅎ샤…소캐기낫",
-      "romanization": "taBaB poJduiidekaiipidoiiJroiipeuㅎsya…sokaeginas",
-      "gloss": "(ROM example, rec12809)",
-      "targetForm": "소캐",
-      "areaId": "rom_mined",
-      "source": "rom-rec12809"
-    },
-    {
-      "vocabId": "rom-mine-v2:스티",
-      "korean": "스티트네리후탕□기뇨이기기밧코티야네야에야시미후",
-      "romanization": "seutiteunerihutang□ginyoigigibaskotiyaneyaeyasimihu",
-      "gloss": "(ROM example, rec15566)",
-      "targetForm": "스티",
-      "areaId": "rom_mined",
-      "source": "rom-rec15566"
-    },
-    {
-      "vocabId": "rom-mine-v2:아낫",
-      "korean": "코야트래  단두이이완도이이케있코티아낫팡미티파켄네 훈나:산",
-      "romanization": "koyateurae  danduiiwandoiikeisskotianaspangmitipakenne hunna:san",
-      "gloss": "(ROM example, rec12183)",
-      "targetForm": "아낫",
-      "areaId": "rom_mined",
-      "source": "rom-rec12183"
-    },
-    {
-      "vocabId": "rom-mine-v2:아훈",
-      "korean": "ㅎ사티아훈안미티파코투부네코있이무냐×혼",
-      "romanization": "ㅎsatiahunanmitipakotubunekoissimunya×hon",
-      "gloss": "(ROM example, rec13382)",
-      "targetForm": "아훈",
-      "areaId": "rom_mined",
-      "source": "rom-rec13382"
-    },
-    {
-      "vocabId": "rom-mine-v2:이칙",
-      "korean": "에이오이카이야이유이요이들아키이칙아",
-      "romanization": "eioikaiyaiyuiyoideulakiichiga",
-      "gloss": "(ROM example, rec37335)",
-      "targetForm": "이칙",
-      "areaId": "rom_mined",
-      "source": "rom-rec37335"
-    },
-    {
-      "vocabId": "rom-mine-v2:잔도",
-      "korean": "조도1 도잔도겐 두블다",
-      "romanization": "jodo1 dojandogen dubeulda",
-      "gloss": "(ROM example, rec52648)",
-      "targetForm": "잔도",
-      "areaId": "rom_mined",
-      "source": "rom-rec52648"
-    },
-    {
-      "vocabId": "rom-mine-v2:제프",
-      "korean": "제프도탄부파-",
-      "romanization": "jepeudotanbupa-",
-      "gloss": "(ROM example, rec41576)",
-      "targetForm": "제프",
-      "areaId": "rom_mined",
-      "source": "rom-rec41576"
-    },
-    {
-      "vocabId": "rom-mine-v2:조그",
-      "korean": "조지다스 조그다닌부도 제유다",
-      "romanization": "jojidaseu jogeudaninbudo jeyuda",
-      "gloss": "(ROM example, rec43864)",
-      "targetForm": "조그",
-      "areaId": "rom_mined",
-      "source": "rom-rec43864"
-    },
-    {
-      "vocabId": "rom-mine-v2:조솔",
-      "korean": "도E 조솔 데은부데 두블다",
-      "romanization": "doE josol deeunbude dubeulda",
-      "gloss": "(ROM example, rec42190)",
-      "targetForm": "조솔",
-      "areaId": "rom_mined",
-      "source": "rom-rec42190"
-    },
-    {
-      "vocabId": "rom-mine-v2:하브",
-      "korean": "카 리카V 무케래  하브우이히브우이기낫블의",
-      "romanization": "ka rikaV mukerae  habeuuihibeuuiginasbeului",
-      "gloss": "(ROM example, rec20126)",
-      "targetForm": "하브",
-      "areaId": "rom_mined",
-      "source": "rom-rec20126"
-    },
-    {
-      "vocabId": "rom-mine-v2:화구",
-      "korean": "츠있쥬 일네케훈투 케노 리 온우기켄타쿠네루후화구케낫티파안무의납기 에에시리후",
-      "romanization": "cheuissjyu ilnekehuntu keno ri onugikentakuneruhuhwagukenastipaanmuuinabgi eesirihu",
-      "gloss": "(ROM example, rec13312)",
-      "targetForm": "화구",
-      "areaId": "rom_mined",
-      "source": "rom-rec13312"
-    },
-    {
-      "vocabId": "rom-mine-v2:히브",
-      "korean": "카 리카V 무케래  하브우이히브우이기낫블의",
-      "romanization": "ka rikaV mukerae  habeuuihibeuuiginasbeului",
-      "gloss": "(ROM example, rec20126)",
-      "targetForm": "히브",
-      "areaId": "rom_mined",
-      "source": "rom-rec20126"
-    },
-    {
-      "vocabId": "rom-mine-v2:다소",
-      "korean": "다소디넨도톤디루 부디조",
-      "romanization": "dasodinendotondiru budijo",
-      "gloss": "(ROM example, rec44162)",
-      "targetForm": "다소",
-      "areaId": "rom_mined",
-      "source": "rom-rec44162"
-    },
-    {
-      "vocabId": "rom-mine-v2:디디다",
-      "korean": "두호비산부디디다",
-      "romanization": "duhobisanbudidida",
-      "gloss": "(ROM example, rec43802)",
-      "targetForm": "디디",
-      "areaId": "rom_mined",
-      "source": "rom-rec43802"
-    },
-    {
-      "vocabId": "rom-mine-v2:딘도",
-      "korean": "티이래딘도이이에티 낫탕안",
-      "romanization": "tiiraedindoiieti nastangan",
-      "gloss": "(ROM example, rec19922)",
-      "targetForm": "딘도",
-      "areaId": "rom_mined",
-      "source": "rom-rec19922"
-    },
-    {
-      "vocabId": "rom-mine-v2:미뇨",
-      "korean": "카 리오V미뇨부 우무섹과",
-      "romanization": "ka rioVminyobu umuseggwa",
-      "gloss": "(ROM example, rec16495)",
-      "targetForm": "미뇨",
-      "areaId": "rom_mined",
-      "source": "rom-rec16495"
-    },
-    {
-      "vocabId": "rom-mine-v2:미티",
-      "korean": "ㅎ사티아훈안미티파코투부네코있이무냐×혼",
-      "romanization": "ㅎsatiahunanmitipakotubunekoissimunya×hon",
-      "gloss": "(ROM example, rec13382)",
-      "targetForm": "미티",
-      "areaId": "rom_mined",
-      "source": "rom-rec13382"
-    },
-    {
-      "vocabId": "rom-mine-v2:바딘",
-      "korean": "제블제라 바딘제이도톤다",
-      "romanization": "jebeuljera badinjeidotonda",
-      "gloss": "(ROM example, rec43377)",
-      "targetForm": "바딘",
-      "areaId": "rom_mined",
-      "source": "rom-rec43377"
-    },
-    {
-      "vocabId": "rom-mine-v2:바준",
-      "korean": "두블바뮤도헤 바준조지",
-      "romanization": "dubeulbamyudohe bajunjoji",
-      "gloss": "(ROM example, rec41274)",
-      "targetForm": "바준",
-      "areaId": "rom_mined",
-      "source": "rom-rec41274"
-    },
-    {
-      "vocabId": "rom-mine-v2:부다",
-      "korean": "조데부 도톤제루 도온디다",
-      "romanization": "jodebu dotonjeru doondida",
-      "gloss": "(ROM example, rec40889)",
-      "targetForm": "부",
-      "areaId": "rom_mined",
-      "source": "rom-rec40889"
-    },
-    {
-      "vocabId": "rom-mine-v2:비래",
-      "korean": "1비래도톤바사",
-      "romanization": "1biraedotonbasa",
-      "gloss": "(ROM example, rec42873)",
-      "targetForm": "비래",
-      "areaId": "rom_mined",
-      "source": "rom-rec42873"
-    },
-    {
-      "vocabId": "rom-mine-v2:빨다",
-      "korean": "우이탓훈켄유론  와니V하터바후아미미부 리케V』훈는오X세빨핏에핏시리후타무유",
-      "romanization": "uitashunkenyuron  waniVhateobahuamimibu rikeV』hunneunoXseppalpisepissirihutamuyu",
-      "gloss": "(ROM example, rec15520)",
-      "targetForm": "빨",
-      "areaId": "rom_mined",
-      "source": "rom-rec15520"
-    },
-    {
-      "vocabId": "rom-mine-v2:샤타",
-      "korean": "산즈닷E겐티칙G반킹,YD완P통넨크복샤타쿠아난고하메4츄와포엔랍바안O탕부덴넨E는-주온안Q",
-      "romanization": "sanjeudasEgentichigGbanking,YDwanPtongnenkeubogsyatakuanangohame4chyuwapoenrabbaanOtangbudennenEneun-juonanQ",
-      "gloss": "(ROM example, rec30452)",
-      "targetForm": "샤타",
-      "areaId": "rom_mined",
-      "source": "rom-rec30452"
-    },
-    {
-      "vocabId": "rom-mine-v2:센디",
-      "korean": "디센디요조지",
-      "romanization": "disendiyojoji",
-      "gloss": "(ROM example, rec43033)",
-      "targetForm": "센디",
-      "areaId": "rom_mined",
-      "source": "rom-rec43033"
-    },
-    {
-      "vocabId": "rom-mine-v2:아단",
-      "korean": "J아K아L아M아R아W아닌아갓아거아릿아단아통아렛아아아아에이오이카이야이유이요이들아키이칙아",
-      "romanization": "JaKaLaMaRaWaninagasageoarisadanatongaresaaaaeioikaiyaiyuiyoideulakiichiga",
-      "gloss": "(ROM example, rec37334)",
-      "targetForm": "아단",
-      "areaId": "rom_mined",
-      "source": "rom-rec37334"
-    },
-    {
-      "vocabId": "rom-mine-v2:아켄",
-      "korean": "자이지미훈보술W뇨 켄노아훈오티샤보타V키티본후투 일노케훈아켄시래탓쿠유쿠",
-      "romanization": "jaijimihunbosulWnyo kennoahunotisyabotaVkitibonhutu ilnokehunakensiraetaskuyuku",
-      "gloss": "(ROM example, rec12151)",
-      "targetForm": "아켄",
-      "areaId": "rom_mined",
-      "source": "rom-rec12151"
-    },
-    {
-      "vocabId": "rom-mine-v2:유론",
-      "korean": "우이탓훈켄유론  와니V하터바후아미미부 리케V』훈는오X세빨핏에핏시리후타무유",
-      "romanization": "uitashunkenyuron  waniVhateobahuamimibu rikeV』hunneunoXseppalpisepissirihutamuyu",
-      "gloss": "(ROM example, rec15520)",
-      "targetForm": "유론",
-      "areaId": "rom_mined",
-      "source": "rom-rec15520"
-    },
-    {
-      "vocabId": "rom-mine-v2:제본",
-      "korean": "제본다달도바",
-      "romanization": "jebondadaldoba",
-      "gloss": "(ROM example, rec41445)",
-      "targetForm": "제본",
-      "areaId": "rom_mined",
-      "source": "rom-rec41445"
-    },
-    {
-      "vocabId": "rom-mine-v2:제통",
-      "korean": "두메제통도론 제스다스다달",
-      "romanization": "dumejetongdoron jeseudaseudadal",
-      "gloss": "(ROM example, rec51324)",
-      "targetForm": "제통",
-      "areaId": "rom_mined",
-      "source": "rom-rec51324"
-    },
-    {
-      "vocabId": "rom-mine-v2:조지다",
-      "korean": "비투 조지디칙 디은데거 두맛디윤",
-      "romanization": "bitu jojidichig dieundegeo dumasdiyun",
-      "gloss": "(ROM example, rec51056)",
-      "targetForm": "조지",
-      "areaId": "rom_mined",
-      "source": "rom-rec51056"
-    },
-    {
-      "vocabId": "rom-mine-v2:조혼",
-      "korean": "조혼다8도즈 도랍도톤바사",
-      "romanization": "johonda8dojeu dorabdotonbasa",
-      "gloss": "(ROM example, rec40964)",
-      "targetForm": "조혼",
-      "areaId": "rom_mined",
-      "source": "rom-rec40964"
+      "source": "rom-rec3643"
     },
     {
       "vocabId": "rom-mine-v2:주다",
-      "korean": "네헤이이유모주쿠",
-      "romanization": "neheiiyumojuku",
-      "gloss": "(ROM example, rec13854)",
-      "targetForm": "주",
+      "korean": "운석을줘",
+      "romanization": "unseogeuljwo",
+      "gloss": "(ROM example, rec2967)",
+      "targetForm": "줘",
       "areaId": "rom_mined",
-      "source": "rom-rec13854"
+      "source": "rom-rec2967"
     },
     {
-      "vocabId": "rom-mine-v2:진제",
-      "korean": "디산도진제쿠도톤 다무 제유데",
-      "romanization": "disandojinjekudoton damu jeyude",
-      "gloss": "(ROM example, rec43519)",
-      "targetForm": "진제",
+      "vocabId": "rom-mine-v2:배틀",
+      "korean": "야생배틀을만",
+      "romanization": "yasaengbaeteuleulman",
+      "gloss": "(ROM example, rec6329)",
+      "targetForm": "배틀",
       "areaId": "rom_mined",
-      "source": "rom-rec43519"
+      "source": "rom-rec6329"
     },
     {
-      "vocabId": "rom-mine-v2:차다",
-      "korean": "비밧바차디다도섹-",
-      "romanization": "bibasbachadidadoseg-",
-      "gloss": "(ROM example, rec43785)",
-      "targetForm": "차",
+      "vocabId": "rom-mine-v2:보다",
+      "korean": "봤었는데",
+      "romanization": "bwasseossneunde",
+      "gloss": "(ROM example, rec1203)",
+      "targetForm": "봤었",
       "areaId": "rom_mined",
-      "source": "rom-rec43785"
+      "source": "rom-rec1203"
     },
     {
-      "vocabId": "rom-mine-v2:톰보이",
-      "korean": "카이세 레테V키있쿠했미후이무윈:타토래  T두이이에부이이톰보이이기",
-      "romanization": "kaise reteVkiisskuhaessmihuimuwin:tatorae  Tduiiebuiitomboiigi",
-      "gloss": "(ROM example, rec17754)",
-      "targetForm": "톰보이",
+      "vocabId": "rom-mine-v2:머신",
+      "korean": "기술머신은",
+      "romanization": "gisulmeosineun",
+      "gloss": "(ROM example, rec2102)",
+      "targetForm": "머신",
       "areaId": "rom_mined",
-      "source": "rom-rec17754"
+      "source": "rom-rec2102"
     },
     {
-      "vocabId": "rom-mine-v2:통아",
-      "korean": "J아K아L아M아R아W아닌아갓아거아릿아단아통아렛아아아아에이오이카이야이유이요이들아키이칙아",
-      "romanization": "JaKaLaMaRaWaninagasageoarisadanatongaresaaaaeioikaiyaiyuiyoideulakiichiga",
-      "gloss": "(ROM example, rec37334)",
-      "targetForm": "통아",
+      "vocabId": "rom-mine-v2:강하다",
+      "korean": "턴잘강한내려서",
+      "romanization": "teonjalganghannaeryeoseo",
+      "gloss": "(ROM example, rec6814)",
+      "targetForm": "강한",
       "areaId": "rom_mined",
-      "source": "rom-rec37334"
+      "source": "rom-rec6814"
     },
     {
-      "vocabId": "rom-mine-v2:하터",
-      "korean": "우이탓훈켄유론  와니V하터바후아미미부 리케V』훈는오X세빨핏에핏시리후타무유",
-      "romanization": "uitashunkenyuron  waniVhateobahuamimibu rikeV』hunneunoXseppalpisepissirihutamuyu",
-      "gloss": "(ROM example, rec15520)",
-      "targetForm": "하터",
+      "vocabId": "rom-mine-v2:보이다",
+      "korean": "멋있는그보여줘",
+      "romanization": "meosissneungeuboyeojwo",
+      "gloss": "(ROM example, rec3036)",
+      "targetForm": "보여줘",
       "areaId": "rom_mined",
-      "source": "rom-rec15520"
+      "source": "rom-rec3036"
     },
     {
-      "vocabId": "rom-mine-v2:혀다",
-      "korean": "도자도히",
-      "romanization": "dojadohi",
-      "gloss": "(ROM example, rec40823)",
-      "targetForm": "히",
+      "vocabId": "rom-mine-v2:않다",
+      "korean": "눈에않는",
+      "romanization": "nuneanhneun",
+      "gloss": "(ROM example, rec6412)",
+      "targetForm": "않",
       "areaId": "rom_mined",
-      "source": "rom-rec40823"
+      "source": "rom-rec6412"
     },
     {
-      "vocabId": "rom-mine-v2:거조",
-      "korean": "제블도잔데거조",
-      "romanization": "jebeuldojandegeojo",
-      "gloss": "(ROM example, rec44541)",
-      "targetForm": "거조",
+      "vocabId": "rom-mine-v2:선택",
+      "korean": "선택받은",
+      "romanization": "seontaegbadeun",
+      "gloss": "(ROM example, rec2723)",
+      "targetForm": "선택",
       "areaId": "rom_mined",
-      "source": "rom-rec44541"
+      "source": "rom-rec2723"
     },
     {
-      "vocabId": "rom-mine-v2:겐조",
-      "korean": "도톤 두쿠도겐조H",
-      "romanization": "doton dukudogenjoH",
-      "gloss": "(ROM example, rec43700)",
-      "targetForm": "겐조",
+      "vocabId": "rom-mine-v2:게임",
+      "korean": "게임이다",
+      "romanization": "geimida",
+      "gloss": "(ROM example, rec2389)",
+      "targetForm": "게임",
       "areaId": "rom_mined",
-      "source": "rom-rec43700"
+      "source": "rom-rec2389"
     },
     {
-      "vocabId": "rom-mine-v2:놓다",
-      "korean": "부그두/도섹 데잔두록도큐다달 부논바V조",
-      "romanization": "bugeudu/doseg dejandurogdokyudadal bunonbaVjo",
-      "gloss": "(ROM example, rec41623)",
-      "targetForm": "논",
+      "vocabId": "rom-mine-v2:상태",
+      "korean": "상태는이미",
+      "romanization": "sangtaeneunimi",
+      "gloss": "(ROM example, rec2070)",
+      "targetForm": "상태",
       "areaId": "rom_mined",
-      "source": "rom-rec41623"
-    },
-    {
-      "vocabId": "rom-mine-v2:다디다",
-      "korean": "부에비소디그 1디다디구도론",
-      "romanization": "buebisodigeu 1didadigudoron",
-      "gloss": "(ROM example, rec53140)",
-      "targetForm": "다디",
-      "areaId": "rom_mined",
-      "source": "rom-rec53140"
-    },
-    {
-      "vocabId": "rom-mine-v2:도단",
-      "korean": "데라제자 부파도단",
-      "romanization": "derajeja bupadodan",
-      "gloss": "(ROM example, rec42749)",
-      "targetForm": "도단",
-      "areaId": "rom_mined",
-      "source": "rom-rec42749"
-    },
-    {
-      "vocabId": "rom-mine-v2:도혼",
-      "korean": "제블제라 디칙바그도혼부데",
-      "romanization": "jebeuljera dichigbageudohonbude",
-      "gloss": "(ROM example, rec43850)",
-      "targetForm": "도혼",
-      "areaId": "rom_mined",
-      "source": "rom-rec43850"
-    },
-    {
-      "vocabId": "rom-mine-v2:란시",
-      "korean": "단유쿠삼도이이란시유쿠",
-      "romanization": "danyukusamdoiiransiyuku",
-      "gloss": "(ROM example, rec11517)",
-      "targetForm": "란시",
-      "areaId": "rom_mined",
-      "source": "rom-rec11517"
-    },
-    {
-      "vocabId": "rom-mine-v2:메드",
-      "korean": "에티루이에있일네N메드꽃",
-      "romanization": "etiruieissilneNmedeukkoch",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "메드",
-      "areaId": "rom_mined",
-      "source": "rom-rec11262"
-    },
-    {
-      "vocabId": "rom-mine-v2:메주",
-      "korean": "무×굴이파모메주주×",
-      "romanization": "mu×gulipamomejuju×",
-      "gloss": "(ROM example, rec39845)",
-      "targetForm": "메주",
-      "areaId": "rom_mined",
-      "source": "rom-rec39845"
-    },
-    {
-      "vocabId": "rom-mine-v2:무란",
-      "korean": "아밧톰달  쿠U요쿠데카이이□에쿠키티낫무란메 모ㅎ』오있치뇨얀구쿠프타뇨콧기게무아켄날달  켄U요쿠",
-      "romanization": "abastomdal  kuUyokudekaii□ekukitinasmuranme moㅎ』oisschinyoyangukupeutanyokosgigemuakennaldal  kenUyoku",
-      "gloss": "(ROM example, rec13890)",
-      "targetForm": "무란",
-      "areaId": "rom_mined",
-      "source": "rom-rec13890"
-    },
-    {
-      "vocabId": "rom-mine-v2:부신",
-      "korean": "데바부신 두반데의",
-      "romanization": "debabusin dubandeui",
-      "gloss": "(ROM example, rec40891)",
-      "targetForm": "부신",
-      "areaId": "rom_mined",
-      "source": "rom-rec40891"
-    },
-    {
-      "vocabId": "rom-mine-v2:블디디",
-      "korean": "두블디디데거 두은데비",
-      "romanization": "dubeuldididegeo dueundebi",
-      "gloss": "(ROM example, rec51351)",
-      "targetForm": "블디디",
-      "areaId": "rom_mined",
-      "source": "rom-rec51351"
-    },
-    {
-      "vocabId": "rom-mine-v2:사티",
-      "korean": "ㅎ사티아훈안미티파코투부네코있이무냐×혼",
-      "romanization": "ㅎsatiahunanmitipakotubunekoissimunya×hon",
-      "gloss": "(ROM example, rec13382)",
-      "targetForm": "사티",
-      "areaId": "rom_mined",
-      "source": "rom-rec13382"
-    },
-    {
-      "vocabId": "rom-mine-v2:시래",
-      "korean": "자이지미훈보술W뇨 켄노아훈오티샤보타V키티본후투 일노케훈아켄시래탓쿠유쿠",
-      "romanization": "jaijimihunbosulWnyo kennoahunotisyabotaVkitibonhutu ilnokehunakensiraetaskuyuku",
-      "gloss": "(ROM example, rec12151)",
-      "targetForm": "시래",
-      "areaId": "rom_mined",
-      "source": "rom-rec12151"
-    },
-    {
-      "vocabId": "rom-mine-v2:아미",
-      "korean": "이:U에 시K리포V에후팡데야에야시아미 무에:쿤리뇨메투부네아무아켄모티3 야네야뇨미후화빛",
-      "romanization": "i:Ue siKripoVehupangdeyaeyasiami mue:kunrinyometubuneamuakenmoti3 yaneyanyomihuhwabich",
-      "gloss": "(ROM example, rec18936)",
-      "targetForm": "아미",
-      "areaId": "rom_mined",
-      "source": "rom-rec18936"
+      "source": "rom-rec2070"
     },
     {
       "vocabId": "rom-mine-v2:알다",
-      "korean": "조K두은조지 도7두쿠디루 디센도안데바조H",
-      "romanization": "joKdueunjoji do7dukudiru disendoandebajoH",
-      "gloss": "(ROM example, rec45289)",
-      "targetForm": "안",
+      "korean": "이런알고",
+      "romanization": "ireonalgo",
+      "gloss": "(ROM example, rec2740)",
+      "targetForm": "알",
       "areaId": "rom_mined",
-      "source": "rom-rec45289"
+      "source": "rom-rec2740"
     },
     {
-      "vocabId": "rom-mine-v2:얀다",
-      "korean": "디얀다베도섹 디바부디디윤",
-      "romanization": "diyandabedoseg dibabudidiyun",
-      "gloss": "(ROM example, rec44733)",
-      "targetForm": "얀다",
+      "vocabId": "rom-mine-v2:사용",
+      "korean": "할사용하는데",
+      "romanization": "halsayonghaneunde",
+      "gloss": "(ROM example, rec3783)",
+      "targetForm": "사용",
       "areaId": "rom_mined",
-      "source": "rom-rec44733"
+      "source": "rom-rec3783"
     },
     {
-      "vocabId": "rom-mine-v2:오티",
-      "korean": "ㅎ 카에세오티 낫랑블",
-      "romanization": "ㅎ kaeseoti nasrangbeul",
-      "gloss": "(ROM example, rec20076)",
-      "targetForm": "오티",
+      "vocabId": "rom-mine-v2:다음",
+      "korean": "다음에그링",
+      "romanization": "daeumegeuring",
+      "gloss": "(ROM example, rec3163)",
+      "targetForm": "다음",
       "areaId": "rom_mined",
-      "source": "rom-rec20076"
+      "source": "rom-rec3163"
     },
     {
-      "vocabId": "rom-mine-v2:온조",
-      "korean": "도4바블도온조",
-      "romanization": "do4babeuldoonjo",
-      "gloss": "(ROM example, rec43639)",
-      "targetForm": "온조",
+      "vocabId": "rom-mine-v2:들다",
+      "korean": "들어옛날엔잘나가는",
+      "romanization": "deuleoyesnalenjalnaganeun",
+      "gloss": "(ROM example, rec2044)",
+      "targetForm": "들",
       "areaId": "rom_mined",
-      "source": "rom-rec43639"
+      "source": "rom-rec2044"
     },
     {
-      "vocabId": "rom-mine-v2:완부",
-      "korean": "다요비딘도즈 바사디M도톤 디혼도섹 두쿠부완부데조H",
-      "romanization": "dayobidindojeu basadiMdoton dihondoseg dukubuwanbudejoH",
-      "gloss": "(ROM example, rec51384)",
-      "targetForm": "완부",
+      "vocabId": "rom-mine-v2:도감",
+      "korean": "도감을있다면",
+      "romanization": "dogameulissdamyeon",
+      "gloss": "(ROM example, rec2590)",
+      "targetForm": "도감",
       "areaId": "rom_mined",
-      "source": "rom-rec51384"
+      "source": "rom-rec2590"
     },
     {
-      "vocabId": "rom-mine-v2:요그",
-      "korean": "다뇨스후래지리훈이기리켄 에 토한요그 …보 준단달등켄",
-      "romanization": "danyoseuhuraejirihunigiriken e tohanyogeu …bo jundandaldeungken",
-      "gloss": "(ROM example, rec13886)",
-      "targetForm": "요그",
+      "vocabId": "rom-mine-v2:많이",
+      "korean": "많이있어",
+      "romanization": "manhiisseo",
+      "gloss": "(ROM example, rec938)",
+      "targetForm": "많이",
       "areaId": "rom_mined",
-      "source": "rom-rec13886"
+      "source": "rom-rec938"
     },
     {
-      "vocabId": "rom-mine-v2:윈도",
-      "korean": "도겐부윈도섹",
-      "romanization": "dogenbuwindoseg",
-      "gloss": "(ROM example, rec44124)",
-      "targetForm": "윈도",
+      "vocabId": "rom-mine-v2:말다",
+      "korean": "마있는 진정한또것을주마",
+      "romanization": "maissneun jinjeonghanttogeoseuljuma",
+      "gloss": "(ROM example, rec654)",
+      "targetForm": "마",
       "areaId": "rom_mined",
-      "source": "rom-rec44124"
+      "source": "rom-rec654"
     },
     {
-      "vocabId": "rom-mine-v2:잘다",
-      "korean": "도7디바 두솔도잔부디제자",
-      "romanization": "do7diba dusoldojanbudijeja",
-      "gloss": "(ROM example, rec41036)",
-      "targetForm": "잔",
+      "vocabId": "rom-mine-v2:움직이다",
+      "korean": "움직이지된면",
+      "romanization": "umjigijidoenmyeon",
+      "gloss": "(ROM example, rec4969)",
+      "targetForm": "움직이",
       "areaId": "rom_mined",
-      "source": "rom-rec41036"
+      "source": "rom-rec4969"
     },
     {
-      "vocabId": "rom-mine-v2:제탄부",
-      "korean": "부/제탄부데 부윈비밧도론",
-      "romanization": "bu/jetanbude buwinbibasdoron",
-      "gloss": "(ROM example, rec44511)",
-      "targetForm": "제탄부",
+      "vocabId": "rom-mine-v2:지금",
+      "korean": "지금교환을하있어",
+      "romanization": "jigeumgyohwaneulhaisseo",
+      "gloss": "(ROM example, rec6961)",
+      "targetForm": "지금",
       "areaId": "rom_mined",
-      "source": "rom-rec44511"
+      "source": "rom-rec6961"
     },
     {
-      "vocabId": "rom-mine-v2:제터",
-      "korean": "도7디바 제터다",
-      "romanization": "do7diba jeteoda",
-      "gloss": "(ROM example, rec41651)",
-      "targetForm": "제터",
+      "vocabId": "rom-mine-v2:따르다",
+      "korean": "포켓몬은따라",
+      "romanization": "pokesmoneunttara",
+      "gloss": "(ROM example, rec2856)",
+      "targetForm": "따라",
       "areaId": "rom_mined",
-      "source": "rom-rec41651"
+      "source": "rom-rec2856"
     },
     {
-      "vocabId": "rom-mine-v2:조티",
-      "korean": "데잔데도도섹 부파조티 조랐조",
-      "romanization": "dejandedodoseg bupajoti jorassjo",
-      "gloss": "(ROM example, rec45160)",
-      "targetForm": "조티",
+      "vocabId": "rom-mine-v2:연속",
+      "korean": "공격한다연속으로",
+      "romanization": "gonggyeoghandayeonsogeuro",
+      "gloss": "(ROM example, rec6813)",
+      "targetForm": "연속",
       "areaId": "rom_mined",
-      "source": "rom-rec45160"
+      "source": "rom-rec6813"
     },
     {
-      "vocabId": "rom-mine-v2:조화",
-      "korean": "제블조화 바사조지제아조석 두블다",
-      "romanization": "jebeuljohwa basajojijeajoseog dubeulda",
-      "gloss": "(ROM example, rec41641)",
-      "targetForm": "조화",
+      "vocabId": "rom-mine-v2:종류",
+      "korean": "드디어종류를",
+      "romanization": "deudieojongryureul",
+      "gloss": "(ROM example, rec3217)",
+      "targetForm": "종류",
       "areaId": "rom_mined",
-      "source": "rom-rec41641"
+      "source": "rom-rec3217"
     },
     {
-      "vocabId": "rom-mine-v2:지레",
-      "korean": "타미  이다산보쿠마탓기아사 무톤루지레후제의에파난는비헤타치",
-      "romanization": "tami  idasanbokumatasgiasa mutonrujirehujeuiepananneunbihetachi",
-      "gloss": "(ROM example, rec47581)",
-      "targetForm": "지레",
+      "vocabId": "rom-mine-v2:크다",
+      "korean": "커서움직이지",
+      "romanization": "keoseoumjigiji",
+      "gloss": "(ROM example, rec5026)",
+      "targetForm": "커서",
       "areaId": "rom_mined",
-      "source": "rom-rec47581"
+      "source": "rom-rec5026"
     },
     {
-      "vocabId": "rom-mine-v2:쿠프",
-      "korean": "ㅎ샤… 카카세야티린8본페쿠프아야메티오후리히 에 시린움윤페치노쿠프아자이와좋켄미켄아퀸혼",
-      "romanization": "ㅎsya… kakaseyatirin8bonpekupeuayametiohurihi e sirinumyunpechinokupeuajaiwajohkenmikenakwinhon",
-      "gloss": "(ROM example, rec18017)",
-      "targetForm": "쿠프",
+      "vocabId": "rom-mine-v2:타입",
+      "korean": "풀타입뿐이에요",
+      "romanization": "pultaibppunieyo",
+      "gloss": "(ROM example, rec3264)",
+      "targetForm": "타입",
       "areaId": "rom_mined",
-      "source": "rom-rec18017"
+      "source": "rom-rec3264"
     },
     {
-      "vocabId": "rom-mine-v2:킹킹",
-      "korean": "드네T다는있닌킹킹딘네모킹로탕고솔두",
-      "romanization": "deuneTdaneunissninkingkingdinnemokingrotanggosoldu",
-      "gloss": "(ROM example, rec35315)",
-      "targetForm": "킹킹",
+      "vocabId": "rom-mine-v2:나오다",
+      "korean": "나오겠다모처럼했는데",
+      "romanization": "naogessdamocheoreomhaessneunde",
+      "gloss": "(ROM example, rec729)",
+      "targetForm": "나오",
       "areaId": "rom_mined",
-      "source": "rom-rec35315"
+      "source": "rom-rec729"
     },
     {
-      "vocabId": "rom-mine-v2:탄도",
-      "korean": "데테데굴도탄도겐 제라제아",
-      "romanization": "detedeguldotandogen jerajea",
-      "gloss": "(ROM example, rec42368)",
-      "targetForm": "탄도",
+      "vocabId": "rom-mine-v2:모르다",
+      "korean": "모르겠다",
+      "romanization": "moreugessda",
+      "gloss": "(ROM example, rec835)",
+      "targetForm": "모르",
       "areaId": "rom_mined",
-      "source": "rom-rec42368"
+      "source": "rom-rec835"
     },
     {
-      "vocabId": "rom-mine-v2:톤제",
-      "korean": "도톤제그조지",
-      "romanization": "dotonjegeujoji",
-      "gloss": "(ROM example, rec42463)",
-      "targetForm": "톤제",
+      "vocabId": "rom-mine-v2:생각",
+      "korean": "링생각이특",
+      "romanization": "ringsaenggagiteug",
+      "gloss": "(ROM example, rec538)",
+      "targetForm": "생각",
       "areaId": "rom_mined",
-      "source": "rom-rec42463"
+      "source": "rom-rec538"
     },
     {
-      "vocabId": "rom-mine-v2:티샤",
-      "korean": "자이지미훈보술W뇨 켄노아훈오티샤보타V키티본후투 일노케훈아켄시래탓쿠유쿠",
-      "romanization": "jaijimihunbosulWnyo kennoahunotisyabotaVkitibonhutu ilnokehunakensiraetaskuyuku",
-      "gloss": "(ROM example, rec12151)",
-      "targetForm": "티샤",
+      "vocabId": "rom-mine-v2:스다",
+      "korean": "교환을슬",
+      "romanization": "gyohwaneulseul",
+      "gloss": "(ROM example, rec2436)",
+      "targetForm": "슬",
       "areaId": "rom_mined",
-      "source": "rom-rec12151"
+      "source": "rom-rec2436"
     },
     {
-      "vocabId": "rom-mine-v2:파통",
-      "korean": "ㅎ츠캐기뇨베후구밧피낫티낫 이에파통 세티리네탕거",
-      "romanization": "ㅎcheukaeginyobehugubaspinastinas iepatong setirinetanggeo",
-      "gloss": "(ROM example, rec15569)",
-      "targetForm": "파통",
+      "vocabId": "rom-mine-v2:승부",
+      "korean": "있다네물론승부를",
+      "romanization": "issdanemulronseungbureul",
+      "gloss": "(ROM example, rec2942)",
+      "targetForm": "승부",
       "areaId": "rom_mined",
-      "source": "rom-rec15569"
-    },
-    {
-      "vocabId": "rom-mine-v2:혼도",
-      "korean": "도톤 디혼도밧 조H디리 두블다",
-      "romanization": "doton dihondobas joHdiri dubeulda",
-      "gloss": "(ROM example, rec41640)",
-      "targetForm": "혼도",
-      "areaId": "rom_mined",
-      "source": "rom-rec41640"
-    },
-    {
-      "vocabId": "rom-mine-v2:후론",
-      "korean": "카후론페이지미후구후윤페로후 :탕",
-      "romanization": "kahuronpeijimihuguhuyunperohu :tang",
-      "gloss": "(ROM example, rec14648)",
-      "targetForm": "후론",
-      "areaId": "rom_mined",
-      "source": "rom-rec14648"
-    },
-    {
-      "vocabId": "rom-mine-v2:후윤",
-      "korean": "카후론페이지미후구후윤페로후 :탕",
-      "romanization": "kahuronpeijimihuguhuyunperohu :tang",
-      "gloss": "(ROM example, rec14648)",
-      "targetForm": "후윤",
-      "areaId": "rom_mined",
-      "source": "rom-rec14648"
-    },
-    {
-      "vocabId": "rom-mine-v2:고다",
-      "korean": "누코우시시쿠노/ 비이리뇨바쿠곤 에코이」몬바쿠이에□",
-      "romanization": "nukousisikuno/ biirinyobakugon ekoi」monbakuie□",
-      "gloss": "(ROM example, rec28111)",
-      "targetForm": "곤",
-      "areaId": "rom_mined",
-      "source": "rom-rec28111"
-    },
-    {
-      "vocabId": "rom-mine-v2:난고",
-      "korean": "산즈닷E겐티칙G반킹,YD완P통넨크복샤타쿠아난고하메4츄와포엔랍바안O탕부덴넨E는-주온안Q",
-      "romanization": "sanjeudasEgentichigGbanking,YDwanPtongnenkeubogsyatakuanangohame4chyuwapoenrabbaanOtangbudennenEneun-juonanQ",
-      "gloss": "(ROM example, rec30452)",
-      "targetForm": "난고",
-      "areaId": "rom_mined",
-      "source": "rom-rec30452"
-    },
-    {
-      "vocabId": "rom-mine-v2:난부",
-      "korean": "제도비난부에비소디그도밧",
-      "romanization": "jedobinanbuebisodigeudobas",
-      "gloss": "(ROM example, rec43519)",
-      "targetForm": "난부",
-      "areaId": "rom_mined",
-      "source": "rom-rec43519"
-    },
-    {
-      "vocabId": "rom-mine-v2:논제",
-      "korean": "조V데부도밧 조논제그데버도닌",
-      "romanization": "joVdebudobas jononjegeudebeodonin",
-      "gloss": "(ROM example, rec43553)",
-      "targetForm": "논제",
-      "areaId": "rom_mined",
-      "source": "rom-rec43553"
-    },
-    {
-      "vocabId": "rom-mine-v2:눕다",
-      "korean": "이켄론바쿠이에누     아 에카이켄론바쿠이에마",
-      "romanization": "ikenronbakuienu     a ekaikenronbakuiema",
-      "gloss": "(ROM example, rec27825)",
-      "targetForm": "누",
-      "areaId": "rom_mined",
-      "source": "rom-rec27825"
-    },
-    {
-      "vocabId": "rom-mine-v2:다킨",
-      "korean": "다킨 데M다있제아데거두은",
-      "romanization": "dakin deMdaissjeadegeodueun",
-      "gloss": "(ROM example, rec41036)",
-      "targetForm": "다킨",
-      "areaId": "rom_mined",
-      "source": "rom-rec41036"
-    },
-    {
-      "vocabId": "rom-mine-v2:다트",
-      "korean": "다트 데바조무다N제자 부파두은",
-      "romanization": "dateu debajomudaNjeja bupadueun",
-      "gloss": "(ROM example, rec44157)",
-      "targetForm": "다트",
-      "areaId": "rom_mined",
-      "source": "rom-rec44157"
-    },
-    {
-      "vocabId": "rom-mine-v2:데버",
-      "korean": "데의도톤데버바사",
-      "romanization": "deuidotondebeobasa",
-      "gloss": "(ROM example, rec44152)",
-      "targetForm": "데버",
-      "areaId": "rom_mined",
-      "source": "rom-rec44152"
-    },
-    {
-      "vocabId": "rom-mine-v2:도만",
-      "korean": "도만디센 디M디솔도밧",
-      "romanization": "domandisen diMdisoldobas",
-      "gloss": "(ROM example, rec44158)",
-      "targetForm": "도만",
-      "areaId": "rom_mined",
-      "source": "rom-rec44158"
-    },
-    {
-      "vocabId": "rom-mine-v2:도준",
-      "korean": "도멕제르데거두은 제그부파 도준",
-      "romanization": "domegjereudegeodueun jegeubupa dojun",
-      "gloss": "(ROM example, rec41196)",
-      "targetForm": "도준",
-      "areaId": "rom_mined",
-      "source": "rom-rec41196"
-    },
-    {
-      "vocabId": "rom-mine-v2:두석",
-      "korean": "조페 두석도온다8조폰",
-      "romanization": "jope duseogdoonda8jopon",
-      "gloss": "(ROM example, rec44152)",
-      "targetForm": "두석",
-      "areaId": "rom_mined",
-      "source": "rom-rec44152"
-    },
-    {
-      "vocabId": "rom-mine-v2:만기",
-      "korean": "뇨훈섹칙부네밧톰오티래섹오투미후랑만기B아B 포  이브우이샤터키쿠랐라키쿠기ㅎ에후등무밧큐 리루W미후랑오",
-      "romanization": "nyohunsegchigbunebastomotiraesegotumihurangmangiBaB po  ibeuuisyateokikurassrakikugiㅎehudeungmubaskyu riruWmihurango",
-      "gloss": "(ROM example, rec20071)",
-      "targetForm": "만기",
-      "areaId": "rom_mined",
-      "source": "rom-rec20071"
-    },
-    {
-      "vocabId": "rom-mine-v2:멕스",
-      "korean": "ㅎ샤…시멕스캐게낫쿤이뇨후쿠네우낫7후쿠네에낫우지투노쿠낫 이에파 콧타후치후티호",
-      "romanization": "ㅎsya…simegseukaegenaskuninyohukuneunas7hukuneenasujitunokunas iepa kostahuchihutiho",
-      "gloss": "(ROM example, rec20658)",
-      "targetForm": "멕스",
-      "areaId": "rom_mined",
-      "source": "rom-rec20658"
-    },
-    {
-      "vocabId": "rom-mine-v2:무훈",
-      "korean": "무훈 에 시샤보에거에자이지미훈보술W뇨 켄노아훈오티샤보타V키티본후투 일노케훈아켄시래탓쿠유쿠",
-      "romanization": "muhun e sisyaboegeoejaijimihunbosulWnyo kennoahunotisyabotaVkitibonhutu ilnokehunakensiraetaskuyuku",
-      "gloss": "(ROM example, rec12148)",
-      "targetForm": "무훈",
-      "areaId": "rom_mined",
-      "source": "rom-rec12148"
-    },
-    {
-      "vocabId": "rom-mine-v2:미몬",
-      "korean": "0면츠미몬요",
-      "romanization": "0myeoncheumimonyo",
-      "gloss": "(ROM example, rec16738)",
-      "targetForm": "미몬",
-      "areaId": "rom_mined",
-      "source": "rom-rec16738"
-    },
-    {
-      "vocabId": "rom-mine-v2:바겐",
-      "korean": "바겐제멕 제티데바도닌",
-      "romanization": "bagenjemeg jetidebadonin",
-      "gloss": "(ROM example, rec43780)",
-      "targetForm": "바겐",
-      "areaId": "rom_mined",
-      "source": "rom-rec43780"
-    },
-    {
-      "vocabId": "rom-mine-v2:바론",
-      "korean": "제탄바론데의두은데",
-      "romanization": "jetanbarondeuidueunde",
-      "gloss": "(ROM example, rec41329)",
-      "targetForm": "바론",
-      "areaId": "rom_mined",
-      "source": "rom-rec41329"
-    },
-    {
-      "vocabId": "rom-mine-v2:바움",
-      "korean": "제스바움도론 조디제테디루",
-      "romanization": "jeseubaumdoron jodijetediru",
-      "gloss": "(ROM example, rec52953)",
-      "targetForm": "바움",
-      "areaId": "rom_mined",
-      "source": "rom-rec52953"
-    },
-    {
-      "vocabId": "rom-mine-v2:반제",
-      "korean": "두블도멕다달 두반제멕 데티도섹 도7다스데",
-      "romanization": "dubeuldomegdadal dubanjemeg detidoseg do7daseude",
-      "gloss": "(ROM example, rec41789)",
-      "targetForm": "반제",
-      "areaId": "rom_mined",
-      "source": "rom-rec41789"
-    },
-    {
-      "vocabId": "rom-mine-v2:벌다",
-      "korean": "무이트이투이니이트쿠투세니토멕호터호했와렛디있는버윤돈곤",
-      "romanization": "muiteuituiniiteukutusenitomeghoteohohaesswaresdiissneunbeoyundongon",
-      "gloss": "(ROM example, rec30022)",
-      "targetForm": "버",
-      "areaId": "rom_mined",
-      "source": "rom-rec30022"
-    },
-    {
-      "vocabId": "rom-mine-v2:베다",
-      "korean": "오투투래  B베이이네무이이프",
-      "romanization": "otuturae  Bbeiinemuiipeu",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "베",
-      "areaId": "rom_mined",
-      "source": "rom-rec11262"
-    },
-    {
-      "vocabId": "rom-mine-v2:사투",
-      "korean": "ㅎ시캐기낫부이사투푸네사티 뇨난무O 쿠부 리킹V솟:Y",
-      "romanization": "ㅎsikaeginasbuisatupunesati nyonanmuO kubu rikingVsos:Y",
-      "gloss": "(ROM example, rec12785)",
-      "targetForm": "사투",
-      "areaId": "rom_mined",
-      "source": "rom-rec12785"
-    },
-    {
-      "vocabId": "rom-mine-v2:산즈",
-      "korean": "산즈닷E겐티칙G반킹,YD완P통넨크복샤타쿠아난고하메4츄와포엔랍바안O탕부덴넨E는-주온안Q",
-      "romanization": "sanjeudasEgentichigGbanking,YDwanPtongnenkeubogsyatakuanangohame4chyuwapoenrabbaanOtangbudennenEneun-juonanQ",
-      "gloss": "(ROM example, rec30452)",
-      "targetForm": "산즈",
-      "areaId": "rom_mined",
-      "source": "rom-rec30452"
-    },
-    {
-      "vocabId": "rom-mine-v2:삼도",
-      "korean": "단유쿠삼도이이란시유쿠",
-      "romanization": "danyukusamdoiiransiyuku",
-      "gloss": "(ROM example, rec11517)",
-      "targetForm": "삼도",
-      "areaId": "rom_mined",
-      "source": "rom-rec11517"
-    },
-    {
-      "vocabId": "rom-mine-v2:샤터",
-      "korean": "뇨훈섹칙부네밧톰오티래섹오투미후랑만기B아B 포  이브우이샤터키쿠랐라키쿠기ㅎ에후등무밧큐 리루W미후랑오",
-      "romanization": "nyohunsegchigbunebastomotiraesegotumihurangmangiBaB po  ibeuuisyateokikurassrakikugiㅎehudeungmubaskyu riruWmihurango",
-      "gloss": "(ROM example, rec20071)",
-      "targetForm": "샤터",
-      "areaId": "rom_mined",
-      "source": "rom-rec20071"
-    },
-    {
-      "vocabId": "rom-mine-v2:소티",
-      "korean": "카아세타티이뇨훈 에게츠네세투소티 낫부네아낫O이타뇨부네 뉴시있에깎 뉴켄메츠아뇨페파일아미무켄",
-      "romanization": "kaasetatiinyohun egecheunesetusoti nasbuneanasOitanyobune nyusiissekkakk nyukenmecheuanyopepailamimuken",
-      "gloss": "(ROM example, rec20126)",
-      "targetForm": "소티",
-      "areaId": "rom_mined",
-      "source": "rom-rec20126"
-    },
-    {
-      "vocabId": "rom-mine-v2:시샤",
-      "korean": "무훈 에 시샤보에거에자이지미훈보술W뇨 켄노아훈오티샤보타V키티본후투 일노케훈아켄시래탓쿠유쿠",
-      "romanization": "muhun e sisyaboegeoejaijimihunbosulWnyo kennoahunotisyabotaVkitibonhutu ilnokehunakensiraetaskuyuku",
-      "gloss": "(ROM example, rec12148)",
-      "targetForm": "시샤",
-      "areaId": "rom_mined",
-      "source": "rom-rec12148"
+      "source": "rom-rec2942"
     },
     {
       "vocabId": "rom-mine-v2:시티",
-      "korean": "헤우이다뇨티날아기티만코리이W시티호:마",
-      "romanization": "heuidanyotinalagitimankoriiWsitiho:ma",
-      "gloss": "(ROM example, rec13965)",
+      "korean": "회색시티는",
+      "romanization": "hoesaegsitineun",
+      "gloss": "(ROM example, rec956)",
       "targetForm": "시티",
       "areaId": "rom_mined",
-      "source": "rom-rec13965"
+      "source": "rom-rec956"
     },
     {
-      "vocabId": "rom-mine-v2:아얀",
-      "korean": "멕달쿠티아무 얀세무아얀 무이얀우무 메이모로:엔",
-      "romanization": "megdalkutiamu yansemuayan muiyanumu meimoro:en",
-      "gloss": "(ROM example, rec20405)",
-      "targetForm": "아얀",
+      "vocabId": "rom-mine-v2:진화",
+      "korean": "종류의진화할있어",
+      "romanization": "jongryuuijinhwahalisseo",
+      "gloss": "(ROM example, rec2661)",
+      "targetForm": "진화",
       "areaId": "rom_mined",
-      "source": "rom-rec20405"
+      "source": "rom-rec2661"
     },
     {
-      "vocabId": "rom-mine-v2:아투",
-      "korean": "아투1래돈파이이곤바이이/",
-      "romanization": "atu1raedonpaiigonbaii/",
-      "gloss": "(ROM example, rec11262)",
-      "targetForm": "아투",
+      "vocabId": "rom-mine-v2:떨어뜨리다",
+      "korean": "한다상대의떨어뜨리기도슬",
+      "romanization": "handasangdaeuitteoleotteurigidoseul",
+      "gloss": "(ROM example, rec6817)",
+      "targetForm": "떨어뜨리",
       "areaId": "rom_mined",
-      "source": "rom-rec11262"
+      "source": "rom-rec6817"
     },
     {
-      "vocabId": "rom-mine-v2:아팜",
-      "korean": "팜키티아팜우미쿤페레후모후츄:톰기래  겐세 우톰보이이에헤이이ㅎ톤에쿠아미부보 무 얀 메타모리:1",
-      "romanization": "pamkitiapamumikunperehumohuchyu:tomgirae  gense utomboiieheiiㅎtonekuamibubo mu yan metamori:1",
-      "gloss": "(ROM example, rec13402)",
-      "targetForm": "아팜",
+      "vocabId": "rom-mine-v2:로켓단",
+      "korean": "오우로켓단도전할자슬",
+      "romanization": "ourokesdandojeonhaljaseul",
+      "gloss": "(ROM example, rec539)",
+      "targetForm": "로켓단",
       "areaId": "rom_mined",
-      "source": "rom-rec13402"
+      "source": "rom-rec539"
     },
     {
-      "vocabId": "rom-mine-v2:아프다",
-      "korean": "오있타뇨오했F네아무아프치뇨쿠낫아기화달  」9우이린이   :단",
-      "romanization": "oisstanyoohaessFneamuapeuchinyokunasagihwadal  」9uirini   :dan",
-      "gloss": "(ROM example, rec20405)",
-      "targetForm": "아프",
+      "vocabId": "rom-mine-v2:주마",
+      "korean": "많은주마",
+      "romanization": "manheunjuma",
+      "gloss": "(ROM example, rec2260)",
+      "targetForm": "주마",
       "areaId": "rom_mined",
-      "source": "rom-rec20405"
+      "source": "rom-rec2260"
     },
     {
-      "vocabId": "rom-mine-v2:온제",
-      "korean": "두베도온제르다8조",
-      "romanization": "dubedoonjereuda8jo",
-      "gloss": "(ROM example, rec41489)",
-      "targetForm": "온제",
+      "vocabId": "rom-mine-v2:꼬리",
+      "korean": "꼬리물보다도",
+      "romanization": "kkorimulbodado",
+      "gloss": "(ROM example, rec5111)",
+      "targetForm": "꼬리",
       "areaId": "rom_mined",
-      "source": "rom-rec41489"
+      "source": "rom-rec5111"
     },
     {
-      "vocabId": "rom-mine-v2:완이",
-      "korean": "소 나아랍쿠케에완이이플히쿠에데』히쿠아뮤』히쿠우우』히쿠 에력히쿠이에",
-      "romanization": "so naarabkukeewaniipeulhikuede』hikuamyu』hikuuu』hiku eryeoghikuie",
-      "gloss": "(ROM example, rec26407)",
-      "targetForm": "완이",
+      "vocabId": "rom-mine-v2:날카롭다",
+      "korean": "날카로운상대에게공격한다연속으로",
+      "romanization": "nalkarounsangdaeegegonggyeoghandayeonsogeuro",
+      "gloss": "(ROM example, rec6360)",
+      "targetForm": "날카로운",
       "areaId": "rom_mined",
-      "source": "rom-rec26407"
+      "source": "rom-rec6360"
     },
     {
-      "vocabId": "rom-mine-v2:완제",
-      "korean": "부에비소디그데,부완제아비있다N",
-      "romanization": "buebisodigeude,buwanjeabiissdaN",
-      "gloss": "(ROM example, rec52302)",
-      "targetForm": "완제",
+      "vocabId": "rom-mine-v2:듯하다",
+      "korean": "모두듯하다",
+      "romanization": "modudeushada",
+      "gloss": "(ROM example, rec819)",
+      "targetForm": "듯하",
       "areaId": "rom_mined",
-      "source": "rom-rec52302"
+      "source": "rom-rec819"
     },
     {
-      "vocabId": "rom-mine-v2:우래",
-      "korean": "야케래이야키래아야오래우야우래",
-      "romanization": "yakeraeiyakiraeayaoraeuyaurae",
-      "gloss": "(ROM example, rec18610)",
-      "targetForm": "우래",
+      "vocabId": "rom-mine-v2:마음",
+      "korean": "할마음에든윈도우를",
+      "romanization": "halmaeumedeunwindoureul",
+      "gloss": "(ROM example, rec3748)",
+      "targetForm": "마음",
       "areaId": "rom_mined",
-      "source": "rom-rec18610"
+      "source": "rom-rec3748"
     },
     {
-      "vocabId": "rom-mine-v2:우석",
-      "korean": "우석일케쿠이오아 우   카 아 노브 비오사아스쿠이」몬바쿠이에",
-      "romanization": "useogilkekuioa u   ka a nobeu biosaaseukui」monbakuie",
-      "gloss": "(ROM example, rec27530)",
-      "targetForm": "우석",
+      "vocabId": "rom-mine-v2:시작",
+      "korean": "보이고시작한다",
+      "romanization": "boigosijaghanda",
+      "gloss": "(ROM example, rec5134)",
+      "targetForm": "시작",
       "areaId": "rom_mined",
-      "source": "rom-rec27530"
+      "source": "rom-rec5134"
     },
     {
-      "vocabId": "rom-mine-v2:윤소",
-      "korean": "드네T다는있닌킹킹딘누픽퀸안차완힌겐마킨S윤소센쿤진난브드브",
-      "romanization": "deuneTdaneunissninkingkingdinnupigkwinanchawanhingenmakinSyunsosenkunjinnanbeudeubeu",
-      "gloss": "(ROM example, rec35311)",
-      "targetForm": "윤소",
+      "vocabId": "rom-mine-v2:저널",
+      "korean": "진화한다고저널에서",
+      "romanization": "jinhwahandagojeoneoleseo",
+      "gloss": "(ROM example, rec1286)",
+      "targetForm": "저널",
       "areaId": "rom_mined",
-      "source": "rom-rec35311"
+      "source": "rom-rec1286"
     },
     {
-      "vocabId": "rom-mine-v2:윤제",
-      "korean": "제도다거부데 디F바윤제르",
-      "romanization": "jedodageobude diFbayunjereu",
-      "gloss": "(ROM example, rec41903)",
-      "targetForm": "윤제",
+      "vocabId": "rom-mine-v2:지니다",
+      "korean": "지니게하있는",
+      "romanization": "jinigehaissneun",
+      "gloss": "(ROM example, rec6735)",
+      "targetForm": "지니",
       "areaId": "rom_mined",
-      "source": "rom-rec41903"
+      "source": "rom-rec6735"
     },
     {
-      "vocabId": "rom-mine-v2:은도",
-      "korean": "두은도랐두/도톤다8조",
-      "romanization": "dueundorassdu/dotonda8jo",
-      "gloss": "(ROM example, rec41787)",
-      "targetForm": "은도",
+      "vocabId": "rom-mine-v2:가끔",
+      "korean": "가끔씩해주시니까하놀있는",
+      "romanization": "gakkeumssighaejusinikkahanolissneun",
+      "gloss": "(ROM example, rec638)",
+      "targetForm": "가끔",
       "areaId": "rom_mined",
-      "source": "rom-rec41787"
+      "source": "rom-rec638"
     },
     {
-      "vocabId": "rom-mine-v2:은아",
-      "korean": "5아엔아아은아J아K아L아M아R아W아닌아갓아거아릿아단아통아렛아아아아에이오이카이야이유이요이들아키이칙아",
-      "romanization": "5aenaaeunaJaKaLaMaRaWaninagasageoarisadanatongaresaaaaeioikaiyaiyuiyoideulakiichiga",
-      "gloss": "(ROM example, rec37332)",
-      "targetForm": "은아",
+      "vocabId": "rom-mine-v2:교환",
+      "korean": "교환을슬",
+      "romanization": "gyohwaneulseul",
+      "gloss": "(ROM example, rec2436)",
+      "targetForm": "교환",
       "areaId": "rom_mined",
-      "source": "rom-rec37332"
+      "source": "rom-rec2436"
     },
     {
-      "vocabId": "rom-mine-v2:이날",
-      "korean": "딘도이이완도이이프도이이날도이이밧이에투부네노후쿠구게후갓끗",
-      "romanization": "dindoiiwandoiipeudoiinaldoiibasietubunenohukugugehugaskkeus",
-      "gloss": "(ROM example, rec11010)",
-      "targetForm": "이날",
+      "vocabId": "rom-mine-v2:맞다",
+      "korean": "기술을맞지한다",
+      "romanization": "gisuleulmajjihanda",
+      "gloss": "(ROM example, rec4492)",
+      "targetForm": "맞",
       "areaId": "rom_mined",
-      "source": "rom-rec11010"
+      "source": "rom-rec4492"
     },
     {
-      "vocabId": "rom-mine-v2:일부",
-      "korean": "디바도톤 비일부디조",
-      "romanization": "dibadoton biilbudijo",
-      "gloss": "(ROM example, rec41784)",
-      "targetForm": "일부",
+      "vocabId": "rom-mine-v2:매우",
+      "korean": "매우움머리하나가",
+      "romanization": "maeuummeorihanaga",
+      "gloss": "(ROM example, rec5030)",
+      "targetForm": "매우",
       "areaId": "rom_mined",
-      "source": "rom-rec41784"
+      "source": "rom-rec5030"
     },
     {
-      "vocabId": "rom-mine-v2:제류",
-      "korean": "부에비소디그제티도론 제류도멕도켄다",
-      "romanization": "buebisodigeujetidoron jeryudomegdokenda",
-      "gloss": "(ROM example, rec42821)",
-      "targetForm": "제류",
+      "vocabId": "rom-mine-v2:멀다",
+      "korean": "멀었어한몫을슬말슬",
+      "romanization": "meoleosseohanmogseulseulmalseul",
+      "gloss": "(ROM example, rec539)",
+      "targetForm": "멀",
       "areaId": "rom_mined",
-      "source": "rom-rec42821"
+      "source": "rom-rec539"
     },
     {
-      "vocabId": "rom-mine-v2:제탕",
-      "korean": "제탕두솔데거 디푸도섹",
-      "romanization": "jetangdusoldegeo dipudoseg",
-      "gloss": "(ROM example, rec52751)",
-      "targetForm": "제탕",
+      "vocabId": "rom-mine-v2:모이다",
+      "korean": "잘또모이면",
+      "romanization": "jalttomoimyeon",
+      "gloss": "(ROM example, rec1048)",
+      "targetForm": "모이",
       "areaId": "rom_mined",
-      "source": "rom-rec52751"
+      "source": "rom-rec1048"
     },
     {
-      "vocabId": "rom-mine-v2:조록",
-      "korean": "제그부파도온데부 조록두미데거",
-      "romanization": "jegeubupadoondebu jorogdumidegeo",
-      "gloss": "(ROM example, rec41797)",
-      "targetForm": "조록",
+      "vocabId": "rom-mine-v2:살다",
+      "korean": "수지만산다는",
+      "romanization": "sujimansandaneun",
+      "gloss": "(ROM example, rec5075)",
+      "targetForm": "산다는",
       "areaId": "rom_mined",
-      "source": "rom-rec41797"
+      "source": "rom-rec5075"
     },
     {
-      "vocabId": "rom-mine-v2:조복",
-      "korean": "데조복도톤데거 도탓조",
-      "romanization": "dejobogdotondegeo dotasjo",
-      "gloss": "(ROM example, rec51020)",
-      "targetForm": "조복",
+      "vocabId": "rom-mine-v2:오박사",
+      "korean": "오박사에게서",
+      "romanization": "obagsaegeseo",
+      "gloss": "(ROM example, rec2052)",
+      "targetForm": "오박사",
       "areaId": "rom_mined",
-      "source": "rom-rec51020"
+      "source": "rom-rec2052"
     },
     {
-      "vocabId": "rom-mine-v2:주온",
-      "korean": "산즈닷E겐티칙G반킹,YD완P통넨크복샤타쿠아난고하메4츄와포엔랍바안O탕부덴넨E는-주온안Q",
-      "romanization": "sanjeudasEgentichigGbanking,YDwanPtongnenkeubogsyatakuanangohame4chyuwapoenrabbaanOtangbudennenEneun-juonanQ",
-      "gloss": "(ROM example, rec30452)",
-      "targetForm": "주온",
+      "vocabId": "rom-mine-v2:이동",
+      "korean": "이동할있는",
+      "romanization": "idonghalissneun",
+      "gloss": "(ROM example, rec6843)",
+      "targetForm": "이동",
       "areaId": "rom_mined",
-      "source": "rom-rec30452"
+      "source": "rom-rec6843"
     },
     {
-      "vocabId": "rom-mine-v2:진난",
-      "korean": "드네T다는있닌킹킹딘누픽퀸안차완힌겐마킨S윤소센쿤진난브드브",
-      "romanization": "deuneTdaneunissninkingkingdinnupigkwinanchawanhingenmakinSyunsosenkunjinnanbeudeubeu",
-      "gloss": "(ROM example, rec35311)",
-      "targetForm": "진난",
+      "vocabId": "rom-mine-v2:조금",
+      "korean": "꼬리를쭉조금이라도",
+      "romanization": "kkorireuljjugjogeumirado",
+      "gloss": "(ROM example, rec5089)",
+      "targetForm": "조금",
       "areaId": "rom_mined",
-      "source": "rom-rec35311"
+      "source": "rom-rec5089"
     },
     {
-      "vocabId": "rom-mine-v2:켄도",
-      "korean": "론도H 바시도1데거 조켄도톤제자 다마데Y조H",
-      "romanization": "rondoH basido1degeo jokendotonjeja damadeYjoH",
-      "gloss": "(ROM example, rec51143)",
-      "targetForm": "켄도",
+      "vocabId": "rom-mine-v2:찾다",
+      "korean": "찾아옵니다 방이",
+      "romanization": "chajaobnida bangi",
+      "gloss": "(ROM example, rec881)",
+      "targetForm": "찾",
       "areaId": "rom_mined",
-      "source": "rom-rec51143"
+      "source": "rom-rec881"
     },
     {
-      "vocabId": "rom-mine-v2:쿠크",
-      "korean": "록디쿠크우이래크우이석크우이프ㅎ츠캐기뇨베후구밧피낫티낫 이에파통 세티리네탕거",
-      "romanization": "rogdikukeuuiraekeuuiseogkeuuipeuㅎcheukaeginyobehugubaspinastinas iepatong setirinetanggeo",
-      "gloss": "(ROM example, rec15566)",
-      "targetForm": "쿠크",
+      "vocabId": "rom-mine-v2:필요",
+      "korean": "식줄게놀필요",
+      "romanization": "sigjulgenolpilyo",
+      "gloss": "(ROM example, rec2873)",
+      "targetForm": "필요",
       "areaId": "rom_mined",
-      "source": "rom-rec15566"
+      "source": "rom-rec2873"
     },
     {
-      "vocabId": "rom-mine-v2:타톤",
-      "korean": "석몬우이오있치몬브미쿠부타톤아미부보 무 얀타메 모E석몬우이1무투아 미",
-      "romanization": "seogmonuioisschimonbeumikubutatonamibubo mu yantame moEseogmonui1mutua mi",
-      "gloss": "(ROM example, rec13956)",
-      "targetForm": "타톤",
+      "vocabId": "rom-mine-v2:화상",
+      "korean": "둘화상회복한다",
+      "romanization": "dulhwasanghoeboghanda",
+      "gloss": "(ROM example, rec6604)",
+      "targetForm": "화상",
       "areaId": "rom_mined",
-      "source": "rom-rec13956"
+      "source": "rom-rec6604"
     },
     {
-      "vocabId": "rom-mine-v2:탄제",
-      "korean": "데탄제멕 도탓데M두은",
-      "romanization": "detanjemeg dotasdeMdueun",
-      "gloss": "(ROM example, rec51114)",
-      "targetForm": "탄제",
+      "vocabId": "rom-mine-v2:가르치다",
+      "korean": "알았어가르쳐줄게바로",
+      "romanization": "alasseogareuchyeojulgebaro",
+      "gloss": "(ROM example, rec663)",
+      "targetForm": "가르쳐",
       "areaId": "rom_mined",
-      "source": "rom-rec51114"
+      "source": "rom-rec663"
     },
     {
-      "vocabId": "rom-mine-v2:탕부",
-      "korean": "산즈닷E겐티칙G반킹,YD완P통넨크복샤타쿠아난고하메4츄와포엔랍바안O탕부덴넨E는-주온안Q",
-      "romanization": "sanjeudasEgentichigGbanking,YDwanPtongnenkeubogsyatakuanangohame4chyuwapoenrabbaanOtangbudennenEneun-juonanQ",
-      "gloss": "(ROM example, rec30452)",
-      "targetForm": "탕부",
+      "vocabId": "rom-mine-v2:가방",
+      "korean": "받은가방에",
+      "romanization": "badeungabange",
+      "gloss": "(ROM example, rec3569)",
+      "targetForm": "가방",
       "areaId": "rom_mined",
-      "source": "rom-rec30452"
+      "source": "rom-rec3569"
     },
     {
-      "vocabId": "rom-mine-v2:페달",
-      "korean": "헤우이다뇨티날아기티만코리 V칙달랐달다뇨스후래지리훈아기리켄 에 토-요그 …보 준크달등켄페달키티낫무란메 모「어",
-      "romanization": "heuidanyotinalagitimankori Vchigdalrassdaldanyoseuhuraejirihunagiriken e to-yogeu …bo junkeudaldeungkenpedalkitinasmuranme mo「eo",
-      "gloss": "(ROM example, rec13946)",
-      "targetForm": "페달",
+      "vocabId": "rom-mine-v2:계속",
+      "korean": "계속있다",
+      "romanization": "gyesogissda",
+      "gloss": "(ROM example, rec4774)",
+      "targetForm": "계속",
       "areaId": "rom_mined",
-      "source": "rom-rec13946"
+      "source": "rom-rec4774"
+    },
+    {
+      "vocabId": "rom-mine-v2:그러다",
+      "korean": "그러고 님은",
+      "romanization": "geureogo nimeun",
+      "gloss": "(ROM example, rec3006)",
+      "targetForm": "그러",
+      "areaId": "rom_mined",
+      "source": "rom-rec3006"
+    },
+    {
+      "vocabId": "rom-mine-v2:그림",
+      "korean": "있는그림",
+      "romanization": "issneungeurim",
+      "gloss": "(ROM example, rec2579)",
+      "targetForm": "그림",
+      "areaId": "rom_mined",
+      "source": "rom-rec2579"
+    },
+    {
+      "vocabId": "rom-mine-v2:동료",
+      "korean": "동료를합슬",
+      "romanization": "dongryoreulhabseul",
+      "gloss": "(ROM example, rec5244)",
+      "targetForm": "동료",
+      "areaId": "rom_mined",
+      "source": "rom-rec5244"
+    },
+    {
+      "vocabId": "rom-mine-v2:동안",
+      "korean": "만한다동안만",
+      "romanization": "manhandadonganman",
+      "gloss": "(ROM example, rec6817)",
+      "targetForm": "동안",
+      "areaId": "rom_mined",
+      "source": "rom-rec6817"
+    },
+    {
+      "vocabId": "rom-mine-v2:막다",
+      "korean": "배운을막기술의볼있습니다",
+      "romanization": "baeuneulmaggisuluibolissseubnida",
+      "gloss": "(ROM example, rec3589)",
+      "targetForm": "막",
+      "areaId": "rom_mined",
+      "source": "rom-rec3589"
+    },
+    {
+      "vocabId": "rom-mine-v2:먹이",
+      "korean": "먹이를슬",
+      "romanization": "meogireulseul",
+      "gloss": "(ROM example, rec5153)",
+      "targetForm": "먹이",
+      "areaId": "rom_mined",
+      "source": "rom-rec5153"
+    },
+    {
+      "vocabId": "rom-mine-v2:바로",
+      "korean": "알았어가르쳐줄게바로",
+      "romanization": "alasseogareuchyeojulgebaro",
+      "gloss": "(ROM example, rec663)",
+      "targetForm": "바로",
+      "areaId": "rom_mined",
+      "source": "rom-rec663"
+    },
+    {
+      "vocabId": "rom-mine-v2:버튼",
+      "korean": "버튼으로",
+      "romanization": "beoteuneuro",
+      "gloss": "(ROM example, rec3857)",
+      "targetForm": "버튼",
+      "areaId": "rom_mined",
+      "source": "rom-rec3857"
+    },
+    {
+      "vocabId": "rom-mine-v2:부르다",
+      "korean": "불러내요",
+      "romanization": "bulreonaeyo",
+      "gloss": "(ROM example, rec3517)",
+      "targetForm": "불러",
+      "areaId": "rom_mined",
+      "source": "rom-rec3517"
+    },
+    {
+      "vocabId": "rom-mine-v2:비밀",
+      "korean": "이비밀이있다",
+      "romanization": "ibimiliissda",
+      "gloss": "(ROM example, rec4236)",
+      "targetForm": "비밀",
+      "areaId": "rom_mined",
+      "source": "rom-rec4236"
+    },
+    {
+      "vocabId": "rom-mine-v2:식의",
+      "korean": "스프레이식의",
+      "romanization": "seupeureisigui",
+      "gloss": "(ROM example, rec6603)",
+      "targetForm": "식의",
+      "areaId": "rom_mined",
+      "source": "rom-rec6603"
+    },
+    {
+      "vocabId": "rom-mine-v2:신의",
+      "korean": "많자신의",
+      "romanization": "manhjasinui",
+      "gloss": "(ROM example, rec6301)",
+      "targetForm": "신의",
+      "areaId": "rom_mined",
+      "source": "rom-rec6301"
+    },
+    {
+      "vocabId": "rom-mine-v2:얼음",
+      "korean": "둘얼음회복한다",
+      "romanization": "duleoleumhoeboghanda",
+      "gloss": "(ROM example, rec6605)",
+      "targetForm": "얼음",
+      "areaId": "rom_mined",
+      "source": "rom-rec6605"
+    },
+    {
+      "vocabId": "rom-mine-v2:정도",
+      "korean": "정도는있다고",
+      "romanization": "jeongdoneunissdago",
+      "gloss": "(ROM example, rec340)",
+      "targetForm": "정도",
+      "areaId": "rom_mined",
+      "source": "rom-rec340"
+    },
+    {
+      "vocabId": "rom-mine-v2:조수",
+      "korean": "조수에게서",
+      "romanization": "josuegeseo",
+      "gloss": "(ROM example, rec2812)",
+      "targetForm": "조수",
+      "areaId": "rom_mined",
+      "source": "rom-rec2812"
+    },
+    {
+      "vocabId": "rom-mine-v2:챔피언",
+      "korean": "포켓몬리그의챔피언이야",
+      "romanization": "pokesmonrigeuuichaempieoniya",
+      "gloss": "(ROM example, rec665)",
+      "targetForm": "챔피언",
+      "areaId": "rom_mined",
+      "source": "rom-rec665"
+    },
+    {
+      "vocabId": "rom-mine-v2:친구",
+      "korean": "섬이라는섬이친구가가게같이",
+      "romanization": "seomiraneunseomichingugagagegati",
+      "gloss": "(ROM example, rec1095)",
+      "targetForm": "친구",
+      "areaId": "rom_mined",
+      "source": "rom-rec1095"
+    },
+    {
+      "vocabId": "rom-mine-v2:혼란",
+      "korean": "혼란에있다",
+      "romanization": "honraneissda",
+      "gloss": "(ROM example, rec4552)",
+      "targetForm": "혼란",
+      "areaId": "rom_mined",
+      "source": "rom-rec4552"
+    },
+    {
+      "vocabId": "rom-mine-v2:가족",
+      "korean": "가족이나등나무노인의",
+      "romanization": "gajoginadeungnamunoinui",
+      "gloss": "(ROM example, rec3286)",
+      "targetForm": "가족",
+      "areaId": "rom_mined",
+      "source": "rom-rec3286"
+    },
+    {
+      "vocabId": "rom-mine-v2:가지다",
+      "korean": "말이야이런가지고는",
+      "romanization": "maliyaireongajigoneun",
+      "gloss": "(ROM example, rec539)",
+      "targetForm": "가지",
+      "areaId": "rom_mined",
+      "source": "rom-rec539"
+    },
+    {
+      "vocabId": "rom-mine-v2:같이",
+      "korean": "나랑쭉같이있어",
+      "romanization": "narangjjuggatiisseo",
+      "gloss": "(ROM example, rec307)",
+      "targetForm": "같이",
+      "areaId": "rom_mined",
+      "source": "rom-rec307"
+    },
+    {
+      "vocabId": "rom-mine-v2:걷다",
+      "korean": "걷지슬헤엄치는더모양이다",
+      "romanization": "geodjiseulheeomchineundeomoyangida",
+      "gloss": "(ROM example, rec4986)",
+      "targetForm": "걷",
+      "areaId": "rom_mined",
+      "source": "rom-rec4986"
+    },
+    {
+      "vocabId": "rom-mine-v2:근처",
+      "korean": "룸근처에서",
+      "romanization": "rumgeuncheoeseo",
+      "gloss": "(ROM example, rec3922)",
+      "targetForm": "근처",
+      "areaId": "rom_mined",
+      "source": "rom-rec3922"
+    },
+    {
+      "vocabId": "rom-mine-v2:급소",
+      "korean": "힘껏공격한다급소에확률이",
+      "romanization": "himkkeosgonggyeoghandageubsoehwagryuli",
+      "gloss": "(ROM example, rec6467)",
+      "targetForm": "급소",
+      "areaId": "rom_mined",
+      "source": "rom-rec6467"
+    },
+    {
+      "vocabId": "rom-mine-v2:기다리다",
+      "korean": "상대의기다리고있",
+      "romanization": "sangdaeuigidarigoiss",
+      "gloss": "(ROM example, rec6906)",
+      "targetForm": "기다리",
+      "areaId": "rom_mined",
+      "source": "rom-rec6906"
+    },
+    {
+      "vocabId": "rom-mine-v2:나가다",
+      "korean": "나갈있어요",
+      "romanization": "nagalisseoyo",
+      "gloss": "(ROM example, rec5545)",
+      "targetForm": "나갈",
+      "areaId": "rom_mined",
+      "source": "rom-rec5545"
+    },
+    {
+      "vocabId": "rom-mine-v2:나누다",
+      "korean": "나누어말한다",
+      "romanization": "nanueomalhanda",
+      "gloss": "(ROM example, rec5103)",
+      "targetForm": "나누",
+      "areaId": "rom_mined",
+      "source": "rom-rec5103"
+    },
+    {
+      "vocabId": "rom-mine-v2:날개",
+      "korean": "날개는보이지만",
+      "romanization": "nalgaeneunboijiman",
+      "gloss": "(ROM example, rec5155)",
+      "targetForm": "날개",
+      "areaId": "rom_mined",
+      "source": "rom-rec5155"
+    },
+    {
+      "vocabId": "rom-mine-v2:남다",
+      "korean": "더 절남도록",
+      "romanization": "deo jeolnamdorog",
+      "gloss": "(ROM example, rec6435)",
+      "targetForm": "남",
+      "areaId": "rom_mined",
+      "source": "rom-rec6435"
+    },
+    {
+      "vocabId": "rom-mine-v2:놀다",
+      "korean": "파티는안대신놀다",
+      "romanization": "patineunandaesinnolda",
+      "gloss": "(ROM example, rec2934)",
+      "targetForm": "놀",
+      "areaId": "rom_mined",
+      "source": "rom-rec2934"
+    },
+    {
+      "vocabId": "rom-mine-v2:던지다",
+      "korean": "내던지면됩니다던져도건",
+      "romanization": "naedeonjimyeondoebnidadeonjyeodogeon",
+      "gloss": "(ROM example, rec2171)",
+      "targetForm": "던져",
+      "areaId": "rom_mined",
+      "source": "rom-rec2171"
+    },
+    {
+      "vocabId": "rom-mine-v2:들어가다",
+      "korean": "수있어느들어가겠습니까",
+      "romanization": "suisseoneudeuleogagessseubnikka",
+      "gloss": "(ROM example, rec3907)",
+      "targetForm": "들어가",
+      "areaId": "rom_mined",
+      "source": "rom-rec3907"
+    },
+    {
+      "vocabId": "rom-mine-v2:리그",
+      "korean": "포켓몬리그의챔피언이야",
+      "romanization": "pokesmonrigeuuichaempieoniya",
+      "gloss": "(ROM example, rec665)",
+      "targetForm": "리그",
+      "areaId": "rom_mined",
+      "source": "rom-rec665"
+    },
+    {
+      "vocabId": "rom-mine-v2:만한",
+      "korean": "만한다동안만",
+      "romanization": "manhandadonganman",
+      "gloss": "(ROM example, rec6817)",
+      "targetForm": "만한",
+      "areaId": "rom_mined",
+      "source": "rom-rec6817"
+    },
+    {
+      "vocabId": "rom-mine-v2:머리",
+      "korean": "머리에뿔은",
+      "romanization": "meorieppuleun",
+      "gloss": "(ROM example, rec5012)",
+      "targetForm": "머리",
+      "areaId": "rom_mined",
+      "source": "rom-rec5012"
+    },
+    {
+      "vocabId": "rom-mine-v2:메일",
+      "korean": "메일을여기로",
+      "romanization": "meileulyeogiro",
+      "gloss": "(ROM example, rec3666)",
+      "targetForm": "메일",
+      "areaId": "rom_mined",
+      "source": "rom-rec3666"
+    },
+    {
+      "vocabId": "rom-mine-v2:모두",
+      "korean": "모두듯하다",
+      "romanization": "modudeushada",
+      "gloss": "(ROM example, rec819)",
+      "targetForm": "모두",
+      "areaId": "rom_mined",
+      "source": "rom-rec819"
+    },
+    {
+      "vocabId": "rom-mine-v2:무겁다",
+      "korean": "공격한다무거운밀있다",
+      "romanization": "gonggyeoghandamugeounmilissda",
+      "gloss": "(ROM example, rec6298)",
+      "targetForm": "무거운",
+      "areaId": "rom_mined",
+      "source": "rom-rec6298"
+    },
+    {
+      "vocabId": "rom-mine-v2:물다",
+      "korean": "문든있어번째는어디고번째는",
+      "romanization": "mundeunisseobeonjjaeneuneodigobeonjjaeneun",
+      "gloss": "(ROM example, rec784)",
+      "targetForm": "문",
+      "areaId": "rom_mined",
+      "source": "rom-rec784"
+    },
+    {
+      "vocabId": "rom-mine-v2:변화",
+      "korean": "전원의변화를",
+      "romanization": "jeonwonuibyeonhwareul",
+      "gloss": "(ROM example, rec6343)",
+      "targetForm": "변화",
+      "areaId": "rom_mined",
+      "source": "rom-rec6343"
+    },
+    {
+      "vocabId": "rom-mine-v2:불꽃",
+      "korean": "불꽃을펀치로",
+      "romanization": "bulkkocheulpeonchiro",
+      "gloss": "(ROM example, rec6235)",
+      "targetForm": "불꽃",
+      "areaId": "rom_mined",
+      "source": "rom-rec6235"
+    },
+    {
+      "vocabId": "rom-mine-v2:비축",
+      "korean": "비축할있다",
+      "romanization": "bichughalissda",
+      "gloss": "(ROM example, rec6485)",
+      "targetForm": "비축",
+      "areaId": "rom_mined",
+      "source": "rom-rec6485"
+    },
+    {
+      "vocabId": "rom-mine-v2:빠르다",
+      "korean": "빨라서잘않는다",
+      "romanization": "ppalraseojalanhneunda",
+      "gloss": "(ROM example, rec5091)",
+      "targetForm": "빨라서",
+      "areaId": "rom_mined",
+      "source": "rom-rec5091"
+    },
+    {
+      "vocabId": "rom-mine-v2:사천왕",
+      "korean": "사천왕오박사아끼는영감많강하고",
+      "romanization": "sacheonwangobagsaakkineunyeonggammanhganghago",
+      "gloss": "(ROM example, rec654)",
+      "targetForm": "사천왕",
+      "areaId": "rom_mined",
+      "source": "rom-rec654"
+    },
+    {
+      "vocabId": "rom-mine-v2:시간",
+      "korean": "시간을테니",
+      "romanization": "siganeulteni",
+      "gloss": "(ROM example, rec883)",
+      "targetForm": "시간",
+      "areaId": "rom_mined",
+      "source": "rom-rec883"
+    },
+    {
+      "vocabId": "rom-mine-v2:싶다",
+      "korean": "건물을싶어요",
+      "romanization": "geonmuleulsipeoyo",
+      "gloss": "(ROM example, rec1995)",
+      "targetForm": "싶",
+      "areaId": "rom_mined",
+      "source": "rom-rec1995"
+    },
+    {
+      "vocabId": "rom-mine-v2:알리다",
+      "korean": "심오함을알려",
+      "romanization": "simohameulalryeo",
+      "gloss": "(ROM example, rec2564)",
+      "targetForm": "알려",
+      "areaId": "rom_mined",
+      "source": "rom-rec2564"
+    },
+    {
+      "vocabId": "rom-mine-v2:전기",
+      "korean": "전기를회복한다",
+      "romanization": "jeongireulhoeboghanda",
+      "gloss": "(ROM example, rec4424)",
+      "targetForm": "전기",
+      "areaId": "rom_mined",
+      "source": "rom-rec4424"
+    },
+    {
+      "vocabId": "rom-mine-v2:전혀",
+      "korean": "속에전혀안",
+      "romanization": "sogejeonhyeoan",
+      "gloss": "(ROM example, rec5053)",
+      "targetForm": "전혀",
+      "areaId": "rom_mined",
+      "source": "rom-rec5053"
+    },
+    {
+      "vocabId": "rom-mine-v2:죽다",
+      "korean": "몸을쪽킥을공격한다상대를죽게",
+      "romanization": "momeuljjogkigeulgonggyeoghandasangdaereuljugge",
+      "gloss": "(ROM example, rec6255)",
+      "targetForm": "죽",
+      "areaId": "rom_mined",
+      "source": "rom-rec6255"
+    },
+    {
+      "vocabId": "rom-mine-v2:축하",
+      "korean": "축하한다",
+      "romanization": "chughahanda",
+      "gloss": "(ROM example, rec3222)",
+      "targetForm": "축하",
+      "areaId": "rom_mined",
+      "source": "rom-rec3222"
+    },
+    {
+      "vocabId": "rom-mine-v2:키우다",
+      "korean": "둘키워텐가",
+      "romanization": "dulkiwotenga",
+      "gloss": "(ROM example, rec3970)",
+      "targetForm": "키워",
+      "areaId": "rom_mined",
+      "source": "rom-rec3970"
+    },
+    {
+      "vocabId": "rom-mine-v2:향하다",
+      "korean": "하다음향했다",
+      "romanization": "hadaeumhyanghaessda",
+      "gloss": "(ROM example, rec5891)",
+      "targetForm": "향했",
+      "areaId": "rom_mined",
+      "source": "rom-rec5891"
+    },
+    {
+      "vocabId": "rom-mine-v2:홍련",
+      "korean": "홍련섬에서",
+      "romanization": "hongryeonseomeseo",
+      "gloss": "(ROM example, rec1634)",
+      "targetForm": "홍련",
+      "areaId": "rom_mined",
+      "source": "rom-rec1634"
+    },
+    {
+      "vocabId": "rom-mine-v2:가득",
+      "korean": "가득이다",
+      "romanization": "gadeugida",
+      "gloss": "(ROM example, rec2766)",
+      "targetForm": "가득",
+      "areaId": "rom_mined",
+      "source": "rom-rec2766"
+    },
+    {
+      "vocabId": "rom-mine-v2:갈색",
+      "korean": "갈색시티있는",
+      "romanization": "galsaegsitiissneun",
+      "gloss": "(ROM example, rec4176)",
+      "targetForm": "갈색",
+      "areaId": "rom_mined",
+      "source": "rom-rec4176"
+    },
+    {
+      "vocabId": "rom-mine-v2:감사",
+      "korean": "감사합니다",
+      "romanization": "gamsahabnida",
+      "gloss": "(ROM example, rec2156)",
+      "targetForm": "감사",
+      "areaId": "rom_mined",
+      "source": "rom-rec2156"
+    },
+    {
+      "vocabId": "rom-mine-v2:게막",
+      "korean": "지니게막스스로",
+      "romanization": "jinigemagseuseuro",
+      "gloss": "(ROM example, rec6689)",
+      "targetForm": "게막",
+      "areaId": "rom_mined",
+      "source": "rom-rec6689"
+    },
+    {
+      "vocabId": "rom-mine-v2:경우",
+      "korean": "만든경우가",
+      "romanization": "mandeungyeonguga",
+      "gloss": "(ROM example, rec6255)",
+      "targetForm": "경우",
+      "areaId": "rom_mined",
+      "source": "rom-rec6255"
+    },
+    {
+      "vocabId": "rom-mine-v2:교체",
+      "korean": "교체한다",
+      "romanization": "gyochehanda",
+      "gloss": "(ROM example, rec5460)",
+      "targetForm": "교체",
+      "areaId": "rom_mined",
+      "source": "rom-rec5460"
+    },
+    {
+      "vocabId": "rom-mine-v2:그렇게",
+      "korean": "어그렇게나승알을",
+      "romanization": "eogeureohgenaseungaleul",
+      "gloss": "(ROM example, rec3494)",
+      "targetForm": "그렇게",
+      "areaId": "rom_mined",
+      "source": "rom-rec3494"
+    },
+    {
+      "vocabId": "rom-mine-v2:그렇다",
+      "korean": "말하기그렇지만그렇게",
+      "romanization": "malhagigeureohjimangeureohge",
+      "gloss": "(ROM example, rec2030)",
+      "targetForm": "그렇",
+      "areaId": "rom_mined",
+      "source": "rom-rec2030"
+    },
+    {
+      "vocabId": "rom-mine-v2:나다",
+      "korean": "이다있끝났습니다",
+      "romanization": "idaisskkeutnassseubnida",
+      "gloss": "(ROM example, rec3987)",
+      "targetForm": "났",
+      "areaId": "rom_mined",
+      "source": "rom-rec3987"
+    },
+    {
+      "vocabId": "rom-mine-v2:나아가다",
+      "korean": "나아가기",
+      "romanization": "naagagi",
+      "gloss": "(ROM example, rec598)",
+      "targetForm": "나아가",
+      "areaId": "rom_mined",
+      "source": "rom-rec598"
+    },
+    {
+      "vocabId": "rom-mine-v2:낚다",
+      "korean": "대어또승낚았는데그",
+      "romanization": "daeeottoseungnakkassneundegeu",
+      "gloss": "(ROM example, rec4166)",
+      "targetForm": "낚",
+      "areaId": "rom_mined",
+      "source": "rom-rec4166"
+    },
+    {
+      "vocabId": "rom-mine-v2:날리다",
+      "korean": "속도로날려서더역선제공격한다",
+      "romanization": "sogdoronalryeoseodeoyeogseonjegonggyeoghanda",
+      "gloss": "(ROM example, rec6412)",
+      "targetForm": "날려서",
+      "areaId": "rom_mined",
+      "source": "rom-rec6412"
+    },
+    {
+      "vocabId": "rom-mine-v2:남자",
+      "korean": "바다는남자의",
+      "romanization": "badaneunnamjaui",
+      "gloss": "(ROM example, rec1647)",
+      "targetForm": "남자",
+      "areaId": "rom_mined",
+      "source": "rom-rec1647"
+    },
+    {
+      "vocabId": "rom-mine-v2:내다",
+      "korean": "대담한내보낸다",
+      "romanization": "daedamhannaebonaenda",
+      "gloss": "(ROM example, rec4957)",
+      "targetForm": "낸다",
+      "areaId": "rom_mined",
+      "source": "rom-rec4957"
+    },
+    {
+      "vocabId": "rom-mine-v2:노랑",
+      "korean": "노랑시티에는개의있었다시합에서곳이",
+      "romanization": "norangsitieneungaeuiisseossdasihabeseogosi",
+      "gloss": "(ROM example, rec2743)",
+      "targetForm": "노랑",
+      "areaId": "rom_mined",
+      "source": "rom-rec2743"
+    },
+    {
+      "vocabId": "rom-mine-v2:노인",
+      "korean": "등나무노인에게서",
+      "romanization": "deungnamunoinegeseo",
+      "gloss": "(ROM example, rec2291)",
+      "targetForm": "노인",
+      "areaId": "rom_mined",
+      "source": "rom-rec2291"
+    },
+    {
+      "vocabId": "rom-mine-v2:능력",
+      "korean": "그래이것이능력이다",
+      "romanization": "geuraeigeosineungryeogida",
+      "gloss": "(ROM example, rec2740)",
+      "targetForm": "능력",
+      "areaId": "rom_mined",
+      "source": "rom-rec2740"
+    },
+    {
+      "vocabId": "rom-mine-v2:대의",
+      "korean": "쪼상대의",
+      "romanization": "jjosangdaeui",
+      "gloss": "(ROM example, rec6817)",
+      "targetForm": "대의",
+      "areaId": "rom_mined",
+      "source": "rom-rec6817"
+    },
+    {
+      "vocabId": "rom-mine-v2:도움",
+      "korean": "도움말버튼을막곳부르는도감이나",
+      "romanization": "doummalbeoteuneulmaggosbureuneundogamina",
+      "gloss": "(ROM example, rec3747)",
+      "targetForm": "도움",
+      "areaId": "rom_mined",
+      "source": "rom-rec3747"
+    },
+    {
+      "vocabId": "rom-mine-v2:돕다",
+      "korean": "할도와드리는",
+      "romanization": "haldowadeurineun",
+      "gloss": "(ROM example, rec3517)",
+      "targetForm": "도와",
+      "areaId": "rom_mined",
+      "source": "rom-rec3517"
+    },
+    {
+      "vocabId": "rom-mine-v2:동굴",
+      "korean": "동굴이라고",
+      "romanization": "donggulirago",
+      "gloss": "(ROM example, rec5810)",
+      "targetForm": "동굴",
+      "areaId": "rom_mined",
+      "source": "rom-rec5810"
+    },
+    {
+      "vocabId": "rom-mine-v2:된다",
+      "korean": "움직이지된면",
+      "romanization": "umjigijidoenmyeon",
+      "gloss": "(ROM example, rec4969)",
+      "targetForm": "된",
+      "areaId": "rom_mined",
+      "source": "rom-rec4969"
+    },
+    {
+      "vocabId": "rom-mine-v2:만나다",
+      "korean": "못하면만나",
+      "romanization": "moshamyeonmanna",
+      "gloss": "(ROM example, rec2581)",
+      "targetForm": "만나",
+      "areaId": "rom_mined",
+      "source": "rom-rec2581"
+    },
+    {
+      "vocabId": "rom-mine-v2:말씀",
+      "korean": "것 주라고말씀하셨어요그럼  잡은 종류보다승",
+      "romanization": "geos juragomalsseumhasyeosseoyogeureom  jabeun jongryubodaseung",
+      "gloss": "(ROM example, rec2896)",
+      "targetForm": "말씀",
+      "areaId": "rom_mined",
+      "source": "rom-rec2896"
+    },
+    {
+      "vocabId": "rom-mine-v2:멋있다",
+      "korean": "그하멋있다",
+      "romanization": "geuhameosissda",
+      "gloss": "(ROM example, rec1967)",
+      "targetForm": "멋있",
+      "areaId": "rom_mined",
+      "source": "rom-rec1967"
+    },
+    {
+      "vocabId": "rom-mine-v2:모습",
+      "korean": "모습이안",
+      "romanization": "moseubian",
+      "gloss": "(ROM example, rec5018)",
+      "targetForm": "모습",
+      "areaId": "rom_mined",
+      "source": "rom-rec5018"
+    },
+    {
+      "vocabId": "rom-mine-v2:모양",
+      "korean": "시 모양이군요",
+      "romanization": "si moyangigunyo",
+      "gloss": "(ROM example, rec2862)",
+      "targetForm": "모양",
+      "areaId": "rom_mined",
+      "source": "rom-rec2862"
+    },
+    {
+      "vocabId": "rom-mine-v2:물건",
+      "korean": "하고갈있는가보렴 물건을수",
+      "romanization": "hagogalissneungaboryeom mulgeoneulsu",
+      "gloss": "(ROM example, rec2556)",
+      "targetForm": "물건",
+      "areaId": "rom_mined",
+      "source": "rom-rec2556"
+    },
+    {
+      "vocabId": "rom-mine-v2:발견",
+      "korean": "발견된고된살아날있다",
+      "romanization": "balgyeondoengodoensalanalissda",
+      "gloss": "(ROM example, rec5066)",
+      "targetForm": "발견",
+      "areaId": "rom_mined",
+      "source": "rom-rec5066"
+    },
+    {
+      "vocabId": "rom-mine-v2:부활",
+      "korean": "발견한다부활시키면돈벌이가",
+      "romanization": "balgyeonhandabuhwalsikimyeondonbeoliga",
+      "gloss": "(ROM example, rec247)",
+      "targetForm": "부활",
+      "areaId": "rom_mined",
+      "source": "rom-rec247"
+    },
+    {
+      "vocabId": "rom-mine-v2:사실",
+      "korean": "이몇크다는사실이야",
+      "romanization": "imyeochkeudaneunsasiliya",
+      "gloss": "(ROM example, rec3053)",
+      "targetForm": "사실",
+      "areaId": "rom_mined",
+      "source": "rom-rec3053"
+    },
+    {
+      "vocabId": "rom-mine-v2:상품",
+      "korean": "상품을수",
+      "romanization": "sangpumeulsu",
+      "gloss": "(ROM example, rec2295)",
+      "targetForm": "상품",
+      "areaId": "rom_mined",
+      "source": "rom-rec2295"
+    },
+    {
+      "vocabId": "rom-mine-v2:선장",
+      "korean": "선장에게",
+      "romanization": "seonjangege",
+      "gloss": "(ROM example, rec294)",
+      "targetForm": "선장",
+      "areaId": "rom_mined",
+      "source": "rom-rec294"
+    },
+    {
+      "vocabId": "rom-mine-v2:세계",
+      "korean": "이세계에선",
+      "romanization": "isegyeeseon",
+      "gloss": "(ROM example, rec2186)",
+      "targetForm": "세계",
+      "areaId": "rom_mined",
+      "source": "rom-rec2186"
+    },
+    {
+      "vocabId": "rom-mine-v2:소문",
+      "korean": "소문도형은도저히",
+      "romanization": "somundohyeongeundojeohi",
+      "gloss": "(ROM example, rec3321)",
+      "targetForm": "소문",
+      "areaId": "rom_mined",
+      "source": "rom-rec3321"
+    },
+    {
+      "vocabId": "rom-mine-v2:수재",
+      "korean": "좋아하는수재마니아라서",
+      "romanization": "johahaneunsujaemaniaraseo",
+      "gloss": "(ROM example, rec3319)",
+      "targetForm": "수재",
+      "areaId": "rom_mined",
+      "source": "rom-rec3319"
+    },
+    {
+      "vocabId": "rom-mine-v2:아까",
+      "korean": "안녕아까는",
+      "romanization": "annyeongakkaneun",
+      "gloss": "(ROM example, rec2697)",
+      "targetForm": "아까",
+      "areaId": "rom_mined",
+      "source": "rom-rec2697"
+    },
+    {
+      "vocabId": "rom-mine-v2:약하다",
+      "korean": "약하게만든",
+      "romanization": "yaghagemandeun",
+      "gloss": "(ROM example, rec6817)",
+      "targetForm": "약하",
+      "areaId": "rom_mined",
+      "source": "rom-rec6817"
+    },
+    {
+      "vocabId": "rom-mine-v2:어떻다",
+      "korean": "말이야이런어떠니",
+      "romanization": "maliyaireoneotteoni",
+      "gloss": "(ROM example, rec576)",
+      "targetForm": "어떠",
+      "areaId": "rom_mined",
+      "source": "rom-rec576"
+    },
+    {
+      "vocabId": "rom-mine-v2:열매",
+      "korean": "쓰레기통에 나무열매가",
+      "romanization": "sseuregitonge namuyeolmaega",
+      "gloss": "(ROM example, rec282)",
+      "targetForm": "열매",
+      "areaId": "rom_mined",
+      "source": "rom-rec282"
+    },
+    {
+      "vocabId": "rom-mine-v2:오늘",
+      "korean": "오늘은없어",
+      "romanization": "oneuleuneobseo",
+      "gloss": "(ROM example, rec1267)",
+      "targetForm": "오늘",
+      "areaId": "rom_mined",
+      "source": "rom-rec1267"
+    },
+    {
+      "vocabId": "rom-mine-v2:올라가다",
+      "korean": "폭포를잘올라간다",
+      "romanization": "pogporeuljalolraganda",
+      "gloss": "(ROM example, rec5557)",
+      "targetForm": "올라간다",
+      "areaId": "rom_mined",
+      "source": "rom-rec5557"
+    },
+    {
+      "vocabId": "rom-mine-v2:완성",
+      "korean": "네트워크머신을하있어요할완성된면",
+      "romanization": "neteuwokeumeosineulhaisseoyohalwanseongdoenmyeon",
+      "gloss": "(ROM example, rec2985)",
+      "targetForm": "완성",
+      "areaId": "rom_mined",
+      "source": "rom-rec2985"
+    },
+    {
+      "vocabId": "rom-mine-v2:이상",
+      "korean": "하루에이이상을",
+      "romanization": "harueiisangeul",
+      "gloss": "(ROM example, rec5217)",
+      "targetForm": "이상",
+      "areaId": "rom_mined",
+      "source": "rom-rec5217"
+    },
+    {
+      "vocabId": "rom-mine-v2:자연",
+      "korean": "자연을잘자연이지키고하지",
+      "romanization": "jayeoneuljaljayeonijikigohaji",
+      "gloss": "(ROM example, rec1964)",
+      "targetForm": "자연",
+      "areaId": "rom_mined",
+      "source": "rom-rec1964"
+    },
+    {
+      "vocabId": "rom-mine-v2:잠깐",
+      "korean": "불렀구나잠깐포켓몬이",
+      "romanization": "bulreossgunajamkkanpokesmoni",
+      "gloss": "(ROM example, rec2044)",
+      "targetForm": "잠깐",
+      "areaId": "rom_mined",
+      "source": "rom-rec2044"
+    },
+    {
+      "vocabId": "rom-mine-v2:장소",
+      "korean": "장소에서넣은",
+      "romanization": "jangsoeseoneoheun",
+      "gloss": "(ROM example, rec5817)",
+      "targetForm": "장소",
+      "areaId": "rom_mined",
+      "source": "rom-rec5817"
+    },
+    {
+      "vocabId": "rom-mine-v2:재빠르다",
+      "korean": "힘을재빠르게상대를원슬",
+      "romanization": "himeuljaeppareugesangdaereulwonseul",
+      "gloss": "(ROM example, rec6813)",
+      "targetForm": "재빠르",
+      "areaId": "rom_mined",
+      "source": "rom-rec6813"
+    },
+    {
+      "vocabId": "rom-mine-v2:적다",
+      "korean": "블본적지만",
+      "romanization": "beulbonjeogjiman",
+      "gloss": "(ROM example, rec5077)",
+      "targetForm": "적",
+      "areaId": "rom_mined",
+      "source": "rom-rec5077"
+    },
+    {
+      "vocabId": "rom-mine-v2:전하다",
+      "korean": "있구나전해줄있다고",
+      "romanization": "issgunajeonhaejulissdago",
+      "gloss": "(ROM example, rec2055)",
+      "targetForm": "전해",
+      "areaId": "rom_mined",
+      "source": "rom-rec2055"
+    },
+    {
+      "vocabId": "rom-mine-v2:정말",
+      "korean": "포켓몬을정말환경이야",
+      "romanization": "pokesmoneuljeongmalhwangyeongiya",
+      "gloss": "(ROM example, rec1828)",
+      "targetForm": "정말",
+      "areaId": "rom_mined",
+      "source": "rom-rec1828"
+    },
+    {
+      "vocabId": "rom-mine-v2:정말로",
+      "korean": "포켓몬도구사라집니다정말로",
+      "romanization": "pokesmondogusarajibnidajeongmalro",
+      "gloss": "(ROM example, rec4267)",
+      "targetForm": "정말로",
+      "areaId": "rom_mined",
+      "source": "rom-rec4267"
+    },
+    {
+      "vocabId": "rom-mine-v2:즐겁다",
+      "korean": "있다어깨동무를하즐거운더고",
+      "romanization": "issdaeokkaedongmureulhajeulgeoundeogo",
+      "gloss": "(ROM example, rec3286)",
+      "targetForm": "즐거운",
+      "areaId": "rom_mined",
+      "source": "rom-rec3286"
+    },
+    {
+      "vocabId": "rom-mine-v2:직접",
+      "korean": "도구포켓에직접지니게",
+      "romanization": "dogupokesejigjeobjinige",
+      "gloss": "(ROM example, rec3677)",
+      "targetForm": "직접",
+      "areaId": "rom_mined",
+      "source": "rom-rec3677"
+    },
+    {
+      "vocabId": "rom-mine-v2:참가",
+      "korean": "참가한다",
+      "romanization": "chamgahanda",
+      "gloss": "(ROM example, rec5462)",
+      "targetForm": "참가",
+      "areaId": "rom_mined",
+      "source": "rom-rec5462"
+    },
+    {
+      "vocabId": "rom-mine-v2:코너",
+      "korean": "쪽게임코너가말이야참낚",
+      "romanization": "jjoggeimkoneogamaliyachamnakk",
+      "gloss": "(ROM example, rec1047)",
+      "targetForm": "코너",
+      "areaId": "rom_mined",
+      "source": "rom-rec1047"
+    },
+    {
+      "vocabId": "rom-mine-v2:특수",
+      "korean": "한다특수한루상대에게자신과특성을",
+      "romanization": "handateugsuhanrusangdaeegejasingwateugseongeul",
+      "gloss": "(ROM example, rec6818)",
+      "targetForm": "특수",
+      "areaId": "rom_mined",
+      "source": "rom-rec6818"
+    },
+    {
+      "vocabId": "rom-mine-v2:펀치",
+      "korean": "불꽃을펀치로",
+      "romanization": "bulkkocheulpeonchiro",
+      "gloss": "(ROM example, rec6235)",
+      "targetForm": "펀치",
+      "areaId": "rom_mined",
+      "source": "rom-rec6235"
+    },
+    {
+      "vocabId": "rom-mine-v2:포켓",
+      "korean": "도구포켓에직접지니게",
+      "romanization": "dogupokesejigjeobjinige",
+      "gloss": "(ROM example, rec3677)",
+      "targetForm": "포켓",
+      "areaId": "rom_mined",
+      "source": "rom-rec3677"
+    },
+    {
+      "vocabId": "rom-mine-v2:피하다",
+      "korean": "재빠른말상대를공격한다상대는피할없다",
+      "romanization": "jaeppareunmalsangdaereulgonggyeoghandasangdaeneunpihaleobsda",
+      "gloss": "(ROM example, rec6567)",
+      "targetForm": "피할",
+      "areaId": "rom_mined",
+      "source": "rom-rec6567"
+    },
+    {
+      "vocabId": "rom-mine-v2:핥다",
+      "korean": "없는하는곳안핥 있었어도",
+      "romanization": "eobsneunhaneungosanhalt isseosseodo",
+      "gloss": "(ROM example, rec2202)",
+      "targetForm": "핥",
+      "areaId": "rom_mined",
+      "source": "rom-rec2202"
+    },
+    {
+      "vocabId": "rom-mine-v2:항상",
+      "korean": "항상않으면",
+      "romanization": "hangsanganheumyeon",
+      "gloss": "(ROM example, rec5257)",
+      "targetForm": "항상",
+      "areaId": "rom_mined",
+      "source": "rom-rec5257"
+    },
+    {
+      "vocabId": "rom-mine-v2:화석",
+      "korean": "아저씨는화석을",
+      "romanization": "ajeossineunhwaseogeul",
+      "gloss": "(ROM example, rec241)",
+      "targetForm": "화석",
+      "areaId": "rom_mined",
+      "source": "rom-rec241"
+    },
+    {
+      "vocabId": "rom-mine-v2:확률",
+      "korean": "힘껏공격한다급소에확률이",
+      "romanization": "himkkeosgonggyeoghandageubsoehwagryuli",
+      "gloss": "(ROM example, rec6467)",
+      "targetForm": "확률",
+      "areaId": "rom_mined",
+      "source": "rom-rec6467"
+    },
+    {
+      "vocabId": "rom-mine-v2:가장",
+      "korean": "가장더있는",
+      "romanization": "gajangdeoissneun",
+      "gloss": "(ROM example, rec642)",
+      "targetForm": "가장",
+      "areaId": "rom_mined",
+      "source": "rom-rec642"
+    },
+    {
+      "vocabId": "rom-mine-v2:거지",
+      "korean": "진화해버렸어하지만곳은울됐는데왜거지",
+      "romanization": "jinhwahaebeoryeosseohajimangoseunuldwaessneundewaegeoji",
+      "gloss": "(ROM example, rec637)",
+      "targetForm": "거지",
+      "areaId": "rom_mined",
+      "source": "rom-rec637"
+    },
+    {
+      "vocabId": "rom-mine-v2:걸다",
+      "korean": "드걸것뿐이지",
+      "romanization": "deugeolgeosppuniji",
+      "gloss": "(ROM example, rec3109)",
+      "targetForm": "걸",
+      "areaId": "rom_mined",
+      "source": "rom-rec3109"
+    },
+    {
+      "vocabId": "rom-mine-v2:고맙다",
+      "korean": "선장후우고맙다",
+      "romanization": "seonjanghuugomabda",
+      "gloss": "(ROM example, rec293)",
+      "targetForm": "고맙",
+      "areaId": "rom_mined",
+      "source": "rom-rec293"
+    },
+    {
+      "vocabId": "rom-mine-v2:국화",
+      "korean": "나는국화너는영감이",
+      "romanization": "naneungughwaneoneunyeonggami",
+      "gloss": "(ROM example, rec655)",
+      "targetForm": "국화",
+      "areaId": "rom_mined",
+      "source": "rom-rec655"
+    },
+    {
+      "vocabId": "rom-mine-v2:귀엽다",
+      "korean": "귀여운많이있어분해",
+      "romanization": "gwiyeounmanhiisseobunhae",
+      "gloss": "(ROM example, rec4180)",
+      "targetForm": "귀여운",
+      "areaId": "rom_mined",
+      "source": "rom-rec4180"
+    },
+    {
+      "vocabId": "rom-mine-v2:그냥",
+      "korean": "될지는이그냥할있는할래",
+      "romanization": "doeljineunigeunyanghalissneunhalrae",
+      "gloss": "(ROM example, rec3075)",
+      "targetForm": "그냥",
+      "areaId": "rom_mined",
+      "source": "rom-rec3075"
+    },
+    {
+      "vocabId": "rom-mine-v2:낚시",
+      "korean": "낚시야말로",
+      "romanization": "nakksiyamalro",
+      "gloss": "(ROM example, rec2317)",
+      "targetForm": "낚시",
+      "areaId": "rom_mined",
+      "source": "rom-rec2317"
+    },
+    {
+      "vocabId": "rom-mine-v2:날아가다",
+      "korean": "있는드날아간다",
+      "romanization": "issneundeunalaganda",
+      "gloss": "(ROM example, rec5552)",
+      "targetForm": "날아간다",
+      "areaId": "rom_mined",
+      "source": "rom-rec5552"
+    },
+    {
+      "vocabId": "rom-mine-v2:내던지다",
+      "korean": "내던져서",
+      "romanization": "naedeonjyeoseo",
+      "gloss": "(ROM example, rec6234)",
+      "targetForm": "내던져서",
+      "areaId": "rom_mined",
+      "source": "rom-rec6234"
+    },
+    {
+      "vocabId": "rom-mine-v2:넣다",
+      "korean": "장소에서넣은",
+      "romanization": "jangsoeseoneoheun",
+      "gloss": "(ROM example, rec5817)",
+      "targetForm": "넣",
+      "areaId": "rom_mined",
+      "source": "rom-rec5817"
+    },
+    {
+      "vocabId": "rom-mine-v2:다르다",
+      "korean": "웅다르다고",
+      "romanization": "ungdareudago",
+      "gloss": "(ROM example, rec956)",
+      "targetForm": "다르",
+      "areaId": "rom_mined",
+      "source": "rom-rec956"
+    },
+    {
+      "vocabId": "rom-mine-v2:다시",
+      "korean": "있을이다시",
+      "romanization": "isseulidasi",
+      "gloss": "(ROM example, rec3341)",
+      "targetForm": "다시",
+      "areaId": "rom_mined",
+      "source": "rom-rec3341"
+    },
+    {
+      "vocabId": "rom-mine-v2:단련",
+      "korean": "못하말나는단련시키면서",
+      "romanization": "moshamalnaneundanryeonsikimyeonseo",
+      "gloss": "(ROM example, rec3085)",
+      "targetForm": "단련",
+      "areaId": "rom_mined",
+      "source": "rom-rec3085"
+    },
+    {
+      "vocabId": "rom-mine-v2:단어",
+      "korean": "프로필은단어를",
+      "romanization": "peuropileundaneoreul",
+      "gloss": "(ROM example, rec3946)",
+      "targetForm": "단어",
+      "areaId": "rom_mined",
+      "source": "rom-rec3946"
+    },
+    {
+      "vocabId": "rom-mine-v2:대신",
+      "korean": "파티는안대신놀다",
+      "romanization": "patineunandaesinnolda",
+      "gloss": "(ROM example, rec2934)",
+      "targetForm": "대신",
+      "areaId": "rom_mined",
+      "source": "rom-rec2934"
+    },
+    {
+      "vocabId": "rom-mine-v2:대전",
+      "korean": "대전게임이다어려워",
+      "romanization": "daejeongeimidaeoryeowo",
+      "gloss": "(ROM example, rec2390)",
+      "targetForm": "대전",
+      "areaId": "rom_mined",
+      "source": "rom-rec2390"
+    },
+    {
+      "vocabId": "rom-mine-v2:대화",
+      "korean": "파장으로대화한다몸의전부가된어",
+      "romanization": "pajangeurodaehwahandamomuijeonbugadoeneo",
+      "gloss": "(ROM example, rec5306)",
+      "targetForm": "대화",
+      "areaId": "rom_mined",
+      "source": "rom-rec5306"
+    },
+    {
+      "vocabId": "rom-mine-v2:도망",
+      "korean": "더 도망칠있다",
+      "romanization": "deo domangchilissda",
+      "gloss": "(ROM example, rec6657)",
+      "targetForm": "도망",
+      "areaId": "rom_mined",
+      "source": "rom-rec6657"
+    },
+    {
+      "vocabId": "rom-mine-v2:돌아가다",
+      "korean": "공기는맛있어서돌아가",
+      "romanization": "gonggineunmasisseoseodolaga",
+      "gloss": "(ROM example, rec4060)",
+      "targetForm": "돌아가",
+      "areaId": "rom_mined",
+      "source": "rom-rec4060"
+    },
+    {
+      "vocabId": "rom-mine-v2:동시",
+      "korean": "울동시에",
+      "romanization": "uldongsie",
+      "gloss": "(ROM example, rec6818)",
+      "targetForm": "동시",
+      "areaId": "rom_mined",
+      "source": "rom-rec6818"
+    },
+    {
+      "vocabId": "rom-mine-v2:동전",
+      "korean": "동전받았다",
+      "romanization": "dongjeonbadassda",
+      "gloss": "(ROM example, rec2458)",
+      "targetForm": "동전",
+      "areaId": "rom_mined",
+      "source": "rom-rec2458"
+    },
+    {
+      "vocabId": "rom-mine-v2:들어오다",
+      "korean": "잠깐그림을있어쪼들어오지쪼",
+      "romanization": "jamkkangeurimeulisseojjodeuleoojijjo",
+      "gloss": "(ROM example, rec1802)",
+      "targetForm": "들어오",
+      "areaId": "rom_mined",
+      "source": "rom-rec1802"
+    },
+    {
+      "vocabId": "rom-mine-v2:등나무",
+      "korean": "등나무노인에게서",
+      "romanization": "deungnamunoinegeseo",
+      "gloss": "(ROM example, rec2291)",
+      "targetForm": "등나무",
+      "areaId": "rom_mined",
+      "source": "rom-rec2291"
+    },
+    {
+      "vocabId": "rom-mine-v2:만드다",
+      "korean": "풀이만드는있다",
+      "romanization": "pulimandeuneunissda",
+      "gloss": "(ROM example, rec6257)",
+      "targetForm": "만드",
+      "areaId": "rom_mined",
+      "source": "rom-rec6257"
+    },
+    {
+      "vocabId": "rom-mine-v2:만약",
+      "korean": "블루배지가레벨포켓몬은말을만약",
+      "romanization": "beulrubaejigarebelpokesmoneunmaleulmanyag",
+      "gloss": "(ROM example, rec2231)",
+      "targetForm": "만약",
+      "areaId": "rom_mined",
+      "source": "rom-rec2231"
+    },
+    {
+      "vocabId": "rom-mine-v2:맡기다",
+      "korean": "하아많미련은자네에맡겼으니곳남은할아범이",
+      "romanization": "haamanhmiryeoneunjaneematgyeosseunigosnameunhalabeomi",
+      "gloss": "(ROM example, rec3109)",
+      "targetForm": "맡겼으니",
+      "areaId": "rom_mined",
+      "source": "rom-rec3109"
+    },
+    {
+      "vocabId": "rom-mine-v2:멀리",
+      "korean": "인연이겠지잠깐안워 멀리곳에",
+      "romanization": "inyeonigessjijamkkananwo meolrigose",
+      "gloss": "(ROM example, rec1095)",
+      "targetForm": "멀리",
+      "areaId": "rom_mined",
+      "source": "rom-rec1095"
+    },
+    {
+      "vocabId": "rom-mine-v2:모험",
+      "korean": "계속한다모험을 리포트가있습니다그곳에서모험이나",
+      "romanization": "gyesoghandamoheomeul ripoteugaissseubnidageugoseseomoheomina",
+      "gloss": "(ROM example, rec4267)",
+      "targetForm": "모험",
+      "areaId": "rom_mined",
+      "source": "rom-rec4267"
+    },
+    {
+      "vocabId": "rom-mine-v2:몬스터",
+      "korean": "몬스터볼이다",
+      "romanization": "monseuteobolida",
+      "gloss": "(ROM example, rec2073)",
+      "targetForm": "몬스터",
+      "areaId": "rom_mined",
+      "source": "rom-rec2073"
+    },
+    {
+      "vocabId": "rom-mine-v2:몰다",
+      "korean": "알통몬은땅을있다",
+      "romanization": "altongmoneunttangeulissda",
+      "gloss": "(ROM example, rec1024)",
+      "targetForm": "몬",
+      "areaId": "rom_mined",
+      "source": "rom-rec1024"
+    },
+    {
+      "vocabId": "rom-mine-v2:무선",
+      "korean": "주세요무선어댑터가",
+      "romanization": "juseyomuseoneodaebteoga",
+      "gloss": "(ROM example, rec3922)",
+      "targetForm": "무선",
+      "areaId": "rom_mined",
+      "source": "rom-rec3922"
+    },
+    {
+      "vocabId": "rom-mine-v2:무섭다",
+      "korean": "무서우니까",
+      "romanization": "museounikka",
+      "gloss": "(ROM example, rec803)",
+      "targetForm": "무서우",
+      "areaId": "rom_mined",
+      "source": "rom-rec803"
+    },
+    {
+      "vocabId": "rom-mine-v2:반응",
+      "korean": "반응하고도구가있어",
+      "romanization": "baneunghagodogugaisseo",
+      "gloss": "(ROM example, rec5433)",
+      "targetForm": "반응",
+      "areaId": "rom_mined",
+      "source": "rom-rec5433"
+    },
+    {
+      "vocabId": "rom-mine-v2:발톱",
+      "korean": "발톱으로",
+      "romanization": "baltobeuro",
+      "gloss": "(ROM example, rec6461)",
+      "targetForm": "발톱",
+      "areaId": "rom_mined",
+      "source": "rom-rec6461"
+    },
+    {
+      "vocabId": "rom-mine-v2:발휘",
+      "korean": "사람칸나는발휘해서",
+      "romanization": "saramkannaneunbalhwihaeseo",
+      "gloss": "(ROM example, rec3291)",
+      "targetForm": "발휘",
+      "areaId": "rom_mined",
+      "source": "rom-rec3291"
+    },
+    {
+      "vocabId": "rom-mine-v2:방심",
+      "korean": "방심시키고",
+      "romanization": "bangsimsikigo",
+      "gloss": "(ROM example, rec6414)",
+      "targetForm": "방심",
+      "areaId": "rom_mined",
+      "source": "rom-rec6414"
+    },
+    {
+      "vocabId": "rom-mine-v2:방어",
+      "korean": "할방어가",
+      "romanization": "halbangeoga",
+      "gloss": "(ROM example, rec6818)",
+      "targetForm": "방어",
+      "areaId": "rom_mined",
+      "source": "rom-rec6818"
+    },
+    {
+      "vocabId": "rom-mine-v2:배우다",
+      "korean": "배울있다",
+      "romanization": "baeulissda",
+      "gloss": "(ROM example, rec5546)",
+      "targetForm": "배울",
+      "areaId": "rom_mined",
+      "source": "rom-rec5546"
+    },
+    {
+      "vocabId": "rom-mine-v2:버리다",
+      "korean": "있는마그마가버리면동굴이",
+      "romanization": "issneunmageumagabeorimyeondongguli",
+      "gloss": "(ROM example, rec795)",
+      "targetForm": "버리",
+      "areaId": "rom_mined",
+      "source": "rom-rec795"
+    },
+    {
+      "vocabId": "rom-mine-v2:변하다",
+      "korean": "다른블변한다",
+      "romanization": "dareunbeulbyeonhanda",
+      "gloss": "(ROM example, rec5313)",
+      "targetForm": "변한다",
+      "areaId": "rom_mined",
+      "source": "rom-rec5313"
+    },
+    {
+      "vocabId": "rom-mine-v2:비전",
+      "korean": "할켰다비전머신을",
+      "romanization": "halkyeossdabijeonmeosineul",
+      "gloss": "(ROM example, rec5435)",
+      "targetForm": "비전",
+      "areaId": "rom_mined",
+      "source": "rom-rec5435"
+    },
+    {
+      "vocabId": "rom-mine-v2:뿌리",
+      "korean": "뿌리를움직이지",
+      "romanization": "ppurireulumjigiji",
+      "gloss": "(ROM example, rec4665)",
+      "targetForm": "뿌리",
+      "areaId": "rom_mined",
+      "source": "rom-rec4665"
+    },
+    {
+      "vocabId": "rom-mine-v2:서다",
+      "korean": "헤헤 이수재가서",
+      "romanization": "hehe isujaegaseo",
+      "gloss": "(ROM example, rec980)",
+      "targetForm": "서",
+      "areaId": "rom_mined",
+      "source": "rom-rec980"
+    },
+    {
+      "vocabId": "rom-mine-v2:서로",
+      "korean": "움서로있어",
+      "romanization": "umseoroisseo",
+      "gloss": "(ROM example, rec6957)",
+      "targetForm": "서로",
+      "areaId": "rom_mined",
+      "source": "rom-rec6957"
+    },
+    {
+      "vocabId": "rom-mine-v2:세차다",
+      "korean": "만한다세찬상대를원슬",
+      "romanization": "manhandasechansangdaereulwonseul",
+      "gloss": "(ROM example, rec6814)",
+      "targetForm": "세찬",
+      "areaId": "rom_mined",
+      "source": "rom-rec6814"
+    },
+    {
+      "vocabId": "rom-mine-v2:손녀",
+      "korean": "가족이나손녀든손자셋이서있다는링",
+      "romanization": "gajoginasonnyeodeunsonjasesiseoissdaneunring",
+      "gloss": "(ROM example, rec3232)",
+      "targetForm": "손녀",
+      "areaId": "rom_mined",
+      "source": "rom-rec3232"
+    },
+    {
+      "vocabId": "rom-mine-v2:손자",
+      "korean": "가족이나손녀든손자셋이서있다는링",
+      "romanization": "gajoginasonnyeodeunsonjasesiseoissdaneunring",
+      "gloss": "(ROM example, rec3232)",
+      "targetForm": "손자",
+      "areaId": "rom_mined",
+      "source": "rom-rec3232"
+    },
+    {
+      "vocabId": "rom-mine-v2:순서",
+      "korean": "막순서를수있",
+      "romanization": "magsunseoreulsuiss",
+      "gloss": "(ROM example, rec3640)",
+      "targetForm": "순서",
+      "areaId": "rom_mined",
+      "source": "rom-rec3640"
+    },
+    {
+      "vocabId": "rom-mine-v2:쉽다",
+      "korean": "승있어당신이쉽게",
+      "romanization": "seungisseodangsiniswibge",
+      "gloss": "(ROM example, rec3946)",
+      "targetForm": "쉽",
+      "areaId": "rom_mined",
+      "source": "rom-rec3946"
+    },
+    {
+      "vocabId": "rom-mine-v2:슬다",
+      "korean": "듯이슨있다",
+      "romanization": "deusiseunissda",
+      "gloss": "(ROM example, rec2654)",
+      "targetForm": "슨",
+      "areaId": "rom_mined",
+      "source": "rom-rec2654"
+    },
+    {
+      "vocabId": "rom-mine-v2:시험",
+      "korean": "시험해요",
+      "romanization": "siheomhaeyo",
+      "gloss": "(ROM example, rec1117)",
+      "targetForm": "시험",
+      "areaId": "rom_mined",
+      "source": "rom-rec1117"
+    },
+    {
+      "vocabId": "rom-mine-v2:신비",
+      "korean": "갈필요한티켓신비하게있다",
+      "romanization": "galpilyohantikessinbihageissda",
+      "gloss": "(ROM example, rec6846)",
+      "targetForm": "신비",
+      "areaId": "rom_mined",
+      "source": "rom-rec6846"
+    },
+    {
+      "vocabId": "rom-mine-v2:아빠",
+      "korean": "하는아빠랑왔어",
+      "romanization": "haneunapparangwasseo",
+      "gloss": "(ROM example, rec4176)",
+      "targetForm": "아빠",
+      "areaId": "rom_mined",
+      "source": "rom-rec4176"
+    },
+    {
+      "vocabId": "rom-mine-v2:아쉽다",
+      "korean": "아쉽다조금만막잡을있었는데",
+      "romanization": "aswibdajogeummanmagjabeulisseossneunde",
+      "gloss": "(ROM example, rec4849)",
+      "targetForm": "아쉽",
+      "areaId": "rom_mined",
+      "source": "rom-rec4849"
+    },
+    {
+      "vocabId": "rom-mine-v2:아직",
+      "korean": "아직막참이라서",
+      "romanization": "ajigmagchamiraseo",
+      "gloss": "(ROM example, rec4986)",
+      "targetForm": "아직",
+      "areaId": "rom_mined",
+      "source": "rom-rec4986"
+    },
+    {
+      "vocabId": "rom-mine-v2:어렵다",
+      "korean": "대전게임이다어려워",
+      "romanization": "daejeongeimidaeoryeowo",
+      "gloss": "(ROM example, rec2390)",
+      "targetForm": "어려워",
+      "areaId": "rom_mined",
+      "source": "rom-rec2390"
+    },
+    {
+      "vocabId": "rom-mine-v2:언제나",
+      "korean": "있는살고할머니언제나웅포켓몬을",
+      "romanization": "issneunsalgohalmeonieonjenaungpokesmoneul",
+      "gloss": "(ROM example, rec1142)",
+      "targetForm": "언제나",
+      "areaId": "rom_mined",
+      "source": "rom-rec1142"
+    },
+    {
+      "vocabId": "rom-mine-v2:엄청나다",
+      "korean": "엄청난발휘하여공격한다자",
+      "romanization": "eomcheongnanbalhwihayeogonggyeoghandaja",
+      "gloss": "(ROM example, rec6509)",
+      "targetForm": "엄청난",
+      "areaId": "rom_mined",
+      "source": "rom-rec6509"
+    },
+    {
+      "vocabId": "rom-mine-v2:여행",
+      "korean": "여행하는받은",
+      "romanization": "yeohaenghaneunbadeun",
+      "gloss": "(ROM example, rec5816)",
+      "targetForm": "여행",
+      "areaId": "rom_mined",
+      "source": "rom-rec5816"
+    },
+    {
+      "vocabId": "rom-mine-v2:연분홍",
+      "korean": "먼같은데연분홍시티로싶다",
+      "romanization": "meongateundeyeonbunhongsitirosipda",
+      "gloss": "(ROM example, rec1598)",
+      "targetForm": "연분홍",
+      "areaId": "rom_mined",
+      "source": "rom-rec1598"
+    },
+    {
+      "vocabId": "rom-mine-v2:영감",
+      "korean": "나는국화너는영감이",
+      "romanization": "naneungughwaneoneunyeonggami",
+      "gloss": "(ROM example, rec655)",
+      "targetForm": "영감",
+      "areaId": "rom_mined",
+      "source": "rom-rec655"
+    },
+    {
+      "vocabId": "rom-mine-v2:완벽",
+      "korean": "맛이나니까곳도감을완벽한찾았어여러포켓몬에게",
+      "romanization": "masinanikkagosdogameulwanbyeoghanchajasseoyeoreopokesmonege",
+      "gloss": "(ROM example, rec663)",
+      "targetForm": "완벽",
+      "areaId": "rom_mined",
+      "source": "rom-rec663"
+    },
+    {
+      "vocabId": "rom-mine-v2:왜지",
+      "korean": "있다왜지 보인다",
+      "romanization": "issdawaeji boinda",
+      "gloss": "(ROM example, rec4016)",
+      "targetForm": "왜지",
+      "areaId": "rom_mined",
+      "source": "rom-rec4016"
+    },
+    {
+      "vocabId": "rom-mine-v2:웃다",
+      "korean": "마했는데웃마",
+      "romanization": "mahaessneundeusma",
+      "gloss": "(ROM example, rec1738)",
+      "targetForm": "웃",
+      "areaId": "rom_mined",
+      "source": "rom-rec1738"
+    },
+    {
+      "vocabId": "rom-mine-v2:원래",
+      "korean": "원래대로",
+      "romanization": "wonraedaero",
+      "gloss": "(ROM example, rec5762)",
+      "targetForm": "원래",
+      "areaId": "rom_mined",
+      "source": "rom-rec5762"
+    },
+    {
+      "vocabId": "rom-mine-v2:유니언",
+      "korean": "무선유니언무선어댑터가",
+      "romanization": "museonyunieonmuseoneodaebteoga",
+      "gloss": "(ROM example, rec3892)",
+      "targetForm": "유니언",
+      "areaId": "rom_mined",
+      "source": "rom-rec3892"
+    },
+    {
+      "vocabId": "rom-mine-v2:이미",
+      "korean": "상태는이미",
+      "romanization": "sangtaeneunimi",
+      "gloss": "(ROM example, rec2070)",
+      "targetForm": "이미",
+      "areaId": "rom_mined",
+      "source": "rom-rec2070"
+    },
+    {
+      "vocabId": "rom-mine-v2:자다",
+      "korean": "이런젊었을오박사와강함을잘듯하다",
+      "romanization": "ireonjeolmeosseulobagsawaganghameuljaldeushada",
+      "gloss": "(ROM example, rec3305)",
+      "targetForm": "잘",
+      "areaId": "rom_mined",
+      "source": "rom-rec3305"
+    },
+    {
+      "vocabId": "rom-mine-v2:자주",
+      "korean": "집에서포켓몬체력이링자주가서사다있어",
+      "romanization": "jibeseopokesmoncheryeogiringjajugaseosadaisseo",
+      "gloss": "(ROM example, rec2523)",
+      "targetForm": "자주",
+      "areaId": "rom_mined",
+      "source": "rom-rec2523"
+    },
+    {
+      "vocabId": "rom-mine-v2:작다",
+      "korean": "작다고봐주는사양이야",
+      "romanization": "jagdagobwajuneunsayangiya",
+      "gloss": "(ROM example, rec209)",
+      "targetForm": "작",
+      "areaId": "rom_mined",
+      "source": "rom-rec209"
+    },
+    {
+      "vocabId": "rom-mine-v2:장막",
+      "korean": "장막으로",
+      "romanization": "jangmageuro",
+      "gloss": "(ROM example, rec6342)",
+      "targetForm": "장막",
+      "areaId": "rom_mined",
+      "source": "rom-rec6342"
+    },
+    {
+      "vocabId": "rom-mine-v2:재밌다",
+      "korean": "재미있는데",
+      "romanization": "jaemiissneunde",
+      "gloss": "(ROM example, rec1084)",
+      "targetForm": "재미있",
+      "areaId": "rom_mined",
+      "source": "rom-rec1084"
+    },
+    {
+      "vocabId": "rom-mine-v2:저택",
+      "korean": "저택은있어서",
+      "romanization": "jeotaegeunisseoseo",
+      "gloss": "(ROM example, rec598)",
+      "targetForm": "저택",
+      "areaId": "rom_mined",
+      "source": "rom-rec598"
+    },
+    {
+      "vocabId": "rom-mine-v2:전부",
+      "korean": "어이지면있는전부두고많",
+      "romanization": "eoijimyeonissneunjeonbudugomanh",
+      "gloss": "(ROM example, rec1493)",
+      "targetForm": "전부",
+      "areaId": "rom_mined",
+      "source": "rom-rec1493"
+    },
+    {
+      "vocabId": "rom-mine-v2:전설",
+      "korean": "위에서정벼락을나타난다전설의포켓몬이다",
+      "romanization": "wieseojeongbyeorageulnatanandajeonseoluipokesmonida",
+      "gloss": "(ROM example, rec5073)",
+      "targetForm": "전설",
+      "areaId": "rom_mined",
+      "source": "rom-rec5073"
+    },
+    {
+      "vocabId": "rom-mine-v2:전원",
+      "korean": "전원의변화를",
+      "romanization": "jeonwonuibyeonhwareul",
+      "gloss": "(ROM example, rec6343)",
+      "targetForm": "전원",
+      "areaId": "rom_mined",
+      "source": "rom-rec6343"
+    },
+    {
+      "vocabId": "rom-mine-v2:젊다",
+      "korean": "이런젊었을오박사와강함을잘듯하다",
+      "romanization": "ireonjeolmeosseulobagsawaganghameuljaldeushada",
+      "gloss": "(ROM example, rec3305)",
+      "targetForm": "젊",
+      "areaId": "rom_mined",
+      "source": "rom-rec3305"
+    },
+    {
+      "vocabId": "rom-mine-v2:정보",
+      "korean": "같이하있는정보를하볼있다",
+      "romanization": "gatihaissneunjeongboreulhabolissda",
+      "gloss": "(ROM example, rec5865)",
+      "targetForm": "정보",
+      "areaId": "rom_mined",
+      "source": "rom-rec5865"
+    },
+    {
+      "vocabId": "rom-mine-v2:정하다",
+      "korean": "따라정한쓰면할없어집니다",
+      "romanization": "ttarajeonghansseumyeonhaleobseojibnida",
+      "gloss": "(ROM example, rec3750)",
+      "targetForm": "정한",
+      "areaId": "rom_mined",
+      "source": "rom-rec3750"
+    },
+    {
+      "vocabId": "rom-mine-v2:제일",
+      "korean": "제일의 모인",
+      "romanization": "jeilui moin",
+      "gloss": "(ROM example, rec5220)",
+      "targetForm": "제일",
+      "areaId": "rom_mined",
+      "source": "rom-rec5220"
+    },
+    {
+      "vocabId": "rom-mine-v2:줍다",
+      "korean": "주워모아서",
+      "romanization": "juwomoaseo",
+      "gloss": "(ROM example, rec4978)",
+      "targetForm": "주워모",
+      "areaId": "rom_mined",
+      "source": "rom-rec4978"
+    },
+    {
+      "vocabId": "rom-mine-v2:중요",
+      "korean": "중요한넣는달려있다",
+      "romanization": "jungyohanneohneundalryeoissda",
+      "gloss": "(ROM example, rec6840)",
+      "targetForm": "중요",
+      "areaId": "rom_mined",
+      "source": "rom-rec6840"
+    },
+    {
+      "vocabId": "rom-mine-v2:지방",
+      "korean": "지방이보호한다",
+      "romanization": "jibangibohohanda",
+      "gloss": "(ROM example, rec5297)",
+      "targetForm": "지방",
+      "areaId": "rom_mined",
+      "source": "rom-rec5297"
+    },
+    {
+      "vocabId": "rom-mine-v2:쪼다",
+      "korean": "하쪼아버린다",
+      "romanization": "hajjoabeorinda",
+      "gloss": "(ROM example, rec4941)",
+      "targetForm": "쪼",
+      "areaId": "rom_mined",
+      "source": "rom-rec4941"
+    },
+    {
+      "vocabId": "rom-mine-v2:차갑다",
+      "korean": "다차가운상대를원슬",
+      "romanization": "dachagaunsangdaereulwonseul",
+      "gloss": "(ROM example, rec6814)",
+      "targetForm": "차가운",
+      "areaId": "rom_mined",
+      "source": "rom-rec6814"
+    },
+    {
+      "vocabId": "rom-mine-v2:처음",
+      "korean": "이런처음이야이거링",
+      "romanization": "ireoncheoeumiyaigeoring",
+      "gloss": "(ROM example, rec3113)",
+      "targetForm": "처음",
+      "areaId": "rom_mined",
+      "source": "rom-rec3113"
+    },
+    {
+      "vocabId": "rom-mine-v2:최근",
+      "korean": "이런남최근에",
+      "romanization": "ireonnamchoegeune",
+      "gloss": "(ROM example, rec3253)",
+      "targetForm": "최근",
+      "areaId": "rom_mined",
+      "source": "rom-rec3253"
+    },
+    {
+      "vocabId": "rom-mine-v2:충격",
+      "korean": "충격으로",
+      "romanization": "chunggyeogeuro",
+      "gloss": "(ROM example, rec6815)",
+      "targetForm": "충격",
+      "areaId": "rom_mined",
+      "source": "rom-rec6815"
+    },
+    {
+      "vocabId": "rom-mine-v2:치료",
+      "korean": "이런약에도많포켓몬이입으면약을만치료한다는링",
+      "romanization": "ireonyagedomanhpokesmoniibeumyeonyageulmanchiryohandaneunring",
+      "gloss": "(ROM example, rec3273)",
+      "targetForm": "치료",
+      "areaId": "rom_mined",
+      "source": "rom-rec3273"
+    },
+    {
+      "vocabId": "rom-mine-v2:카드",
+      "korean": "있는 카드를",
+      "romanization": "issneun kadeureul",
+      "gloss": "(ROM example, rec6173)",
+      "targetForm": "카드",
+      "areaId": "rom_mined",
+      "source": "rom-rec6173"
+    },
+    {
+      "vocabId": "rom-mine-v2:칸나",
+      "korean": "사람칸나는발휘해서",
+      "romanization": "saramkannaneunbalhwihaeseo",
+      "gloss": "(ROM example, rec3291)",
+      "targetForm": "칸나",
+      "areaId": "rom_mined",
+      "source": "rom-rec3291"
+    },
+    {
+      "vocabId": "rom-mine-v2:타워",
+      "korean": "포켓몬타워에있어기술머신",
+      "romanization": "pokesmontawoeisseogisulmeosin",
+      "gloss": "(ROM example, rec2873)",
+      "targetForm": "타워",
+      "areaId": "rom_mined",
+      "source": "rom-rec2873"
+    },
+    {
+      "vocabId": "rom-mine-v2:털다",
+      "korean": "턴상대를",
+      "romanization": "teonsangdaereul",
+      "gloss": "(ROM example, rec6311)",
+      "targetForm": "턴",
+      "areaId": "rom_mined",
+      "source": "rom-rec6311"
+    },
+    {
+      "vocabId": "rom-mine-v2:통신",
+      "korean": "다만통신이된려면",
+      "romanization": "damantongsinidoenryeomyeon",
+      "gloss": "(ROM example, rec2988)",
+      "targetForm": "통신",
+      "areaId": "rom_mined",
+      "source": "rom-rec2988"
+    },
+    {
+      "vocabId": "rom-mine-v2:통하다",
+      "korean": "문인간과통하게슬굴절시키는",
+      "romanization": "muningangwatonghageseulguljeolsikineun",
+      "gloss": "(ROM example, rec5313)",
+      "targetForm": "통하",
+      "areaId": "rom_mined",
+      "source": "rom-rec5313"
+    },
+    {
+      "vocabId": "rom-mine-v2:티켓",
+      "korean": "갈필요한티켓신비하게있다",
+      "romanization": "galpilyohantikessinbihageissda",
+      "gloss": "(ROM example, rec6846)",
+      "targetForm": "티켓",
+      "areaId": "rom_mined",
+      "source": "rom-rec6846"
+    },
+    {
+      "vocabId": "rom-mine-v2:하늘",
+      "korean": "비어있어서자유롭게하늘을많",
+      "romanization": "bieoisseoseojayurobgehaneuleulmanh",
+      "gloss": "(ROM example, rec5155)",
+      "targetForm": "하늘",
+      "areaId": "rom_mined",
+      "source": "rom-rec5155"
+    },
+    {
+      "vocabId": "rom-mine-v2:하말",
+      "korean": "하말이야",
+      "romanization": "hamaliya",
+      "gloss": "(ROM example, rec1162)",
+      "targetForm": "하말",
+      "areaId": "rom_mined",
+      "source": "rom-rec1162"
+    },
+    {
+      "vocabId": "rom-mine-v2:할아버지",
+      "korean": "할아버지에게서",
+      "romanization": "halabeojiegeseo",
+      "gloss": "(ROM example, rec3963)",
+      "targetForm": "할아버지",
+      "areaId": "rom_mined",
+      "source": "rom-rec3963"
+    },
+    {
+      "vocabId": "rom-mine-v2:헤엄치다",
+      "korean": "걷지슬헤엄치는더모양이다",
+      "romanization": "geodjiseulheeomchineundeomoyangida",
+      "gloss": "(ROM example, rec4986)",
+      "targetForm": "헤엄치",
+      "areaId": "rom_mined",
+      "source": "rom-rec4986"
+    },
+    {
+      "vocabId": "rom-mine-v2:혼신",
+      "korean": "혼신의상대를",
+      "romanization": "honsinuisangdaereul",
+      "gloss": "(ROM example, rec6298)",
+      "targetForm": "혼신",
+      "areaId": "rom_mined",
+      "source": "rom-rec6298"
+    },
+    {
+      "vocabId": "rom-mine-v2:혼자",
+      "korean": "혼자포켓몬을있어",
+      "romanization": "honjapokesmoneulisseo",
+      "gloss": "(ROM example, rec1487)",
+      "targetForm": "혼자",
+      "areaId": "rom_mined",
+      "source": "rom-rec1487"
+    },
+    {
+      "vocabId": "rom-mine-v2:화나다",
+      "korean": "화나면마그마를",
+      "romanization": "hwanamyeonmageumareul",
+      "gloss": "(ROM example, rec5255)",
+      "targetForm": "화나",
+      "areaId": "rom_mined",
+      "source": "rom-rec5255"
     }
   ]
 }
