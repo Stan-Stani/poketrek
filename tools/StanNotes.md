@@ -102,3 +102,42 @@ write a *reconcile* tool that lets the user point at a suspect anchor,
 tries pulling it out, and reports which downstream proposals become
 internally consistent. The structural problem is that one bad anchor
 poisons the LIS bracket for every cp in its neighborhood.
+
+## Codepoint map session summary (post glyph-id round 2)
+
+Map size: **1161 anchors**. Remaining unknowns: **151 cps / 569 occ**
+of which:
+- **115 cps / 482 occ** = classified CONTROL bytes in
+  `control_codes.json`.
+- **36 cps / 87 occ** = genuine unknowns.
+
+Of those 36:
+- **6 cps / 42 occ** are the suspected LIS-misanchored alt-encodings
+  flagged above (0x3EAD, 0x3CFA, 0x3F3C, 0x40FE, 0x383C, 0x3FFB):
+  - 0x3CFA likely 신 or 현 (champion-modifier), 8 occ
+  - 0x383C likely 자 (interjection) or 막 (just), 6 occ — fits 4/6
+  - 0x3FFB likely 또 or 참 (modifier), 5 occ — fits 5/5 but 또/참
+    ambiguous
+  - 0x3F3C, 0x40FE, 0x3EAD remain murky even with full sentence
+    contexts; will require visual triangulation or patch-source
+    confirmation.
+- **30 cps / 45 occ** = single-occurrence long-tail. Most need either
+  a pixel diff against labeled cps (glyph-dup r2 with larger
+  candidate pool) or the 2024 patch's encoding table.
+
+This round (`apply_glyph_id_r2.py`) added:
+- 0x400A = 틱 (confirmed via 4× "조이스틱의/과의/을/으로부터의" in
+  wireless-adapter strings; bracket says 폴-폼 but the contexts
+  are unambiguous, classic alt-encoding pattern)
+- 0x3DFF, 0x3BFF, 0x3CFF → CONTROL (sentence terminators, no
+  syllable role)
+- 0x40FC → CONTROL (inventory-quantity glyph in
+  "{item} [40FC] 개" pattern)
+- 0x3CFF and 0x40FC upgraded from generic "atlas-hole" placeholder
+  to evidence-based hypotheses.
+
+Diminishing returns observation: each remaining unknown now requires
+significant analysis for ≤1 occurrence of payoff. The structural
+unblocker is the bracket-reconcile tool in the TODO above — without
+it, the LIS-misanchored cluster (which contains the highest-value
+remaining cps) can't be cracked from context alone.
