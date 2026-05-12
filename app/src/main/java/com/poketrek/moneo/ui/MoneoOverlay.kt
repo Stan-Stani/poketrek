@@ -35,12 +35,17 @@ import com.poketrek.moneo.MoneoModule
 /**
  * Full-screen Moneo overlay. Currently has two sub-screens: an area picker
  * and a per-area review screen. No NavHost — a local state enum is enough.
+ *
+ * [romCrc32Hex] is the loaded ROM's CRC32 in `0xXXXXXXXX` form, forwarded
+ * into the correction-report flow so reported sentences carry ROM context
+ * without the moneo module having to know about the emulator runner.
  */
 @Composable
 fun MoneoOverlay(
     module: MoneoModule,
     onClose: () -> Unit,
     modifier: Modifier = Modifier,
+    romCrc32Hex: String? = null,
 ) {
     var selectedArea by remember { mutableStateOf<String?>(null) }
 
@@ -108,6 +113,7 @@ fun MoneoOverlay(
                     areaId = area,
                     onDone = { selectedArea = null },
                     modifier = Modifier.fillMaxSize(),
+                    romCrc32Hex = romCrc32Hex,
                 )
             }
         }

@@ -194,6 +194,7 @@ fun EmulatorScreen(
                 module = moneo,
                 onClose = { moneoOpen = false },
                 modifier = Modifier.fillMaxSize(),
+                romCrc32Hex = romIdentity?.crc32Hex,
             )
         }
 

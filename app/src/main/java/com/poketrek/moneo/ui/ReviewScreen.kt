@@ -69,6 +69,7 @@ fun ReviewScreen(
     areaId: String,
     onDone: () -> Unit,
     modifier: Modifier = Modifier,
+    romCrc32Hex: String? = null,
 ) {
     val cards by module.repository.cards.collectAsState()
     val showSentenceGloss by module.prefs.showSentenceGloss.collectAsState()
@@ -235,7 +236,7 @@ fun ReviewScreen(
             proposedKorean = null,
             reason = null,
             appVersion = BuildConfig.VERSION_NAME,
-            romCrc32 = null,
+            romCrc32 = romCrc32Hex,
         )
     }
     val front: @Composable () -> Unit = {
