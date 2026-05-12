@@ -110,12 +110,20 @@
   "40FC": {
     "role": "CONTROL",
     "hypothesis": "Inventory-quantity glyph (multiplication/counter separator). 3/3 corpus occurrences in inventory-display pattern '{item} [40FC] ··· 개': '기술머신 [40FC] 개' (x2), '삐삐 [40FC] 개'.",
-    "evidence_records": [5604, 5605, 5628]
+    "evidence_records": [
+      5604,
+      5605,
+      5628
+    ]
   },
   "3CFF": {
     "role": "CONTROL",
     "hypothesis": "Sentence/dialog terminator. All 3 corpus occurrences are sentence-final with no following text ('취소된었습니다 [3CFF]', '대전을 [3CFF]', '곳 또 [3CFF]'). Sits in the misanchored 옆-예 LIS window (alongside 0x3CFA/0x3CFE family) but evidence-based control role.",
-    "evidence_records": [6159, 6919, 6921]
+    "evidence_records": [
+      6159,
+      6919,
+      6921
+    ]
   },
   "40F9": {
     "role": "CONTROL",
@@ -645,5 +653,23 @@
       2184,
       2673
     ]
+  },
+  "3A78": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3942",
+    "glyph_syllable": "듦",
+    "hypothesis": "Glyph byte-identical to labeled 0x3942=듦 (≤4 pixel diff). Sole corpus occurrence in binary-table region (offset < 0x700000), not dialog."
+  },
+  "3B78": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "3911",
+    "glyph_syllable": "돌",
+    "hypothesis": "Glyph byte-identical to labeled 0x3911=돌 (≤4 pixel diff). Sole corpus occurrence in binary-table region (offset < 0x700000), not dialog."
+  },
+  "3783": {
+    "role": "CONTROL_ALIAS",
+    "aliased_cp": "378B",
+    "glyph_syllable": "귀",
+    "hypothesis": "Glyph byte-identical to labeled 0x378B=귀 (≤4 pixel diff). Sole corpus occurrence in binary-table region (offset < 0x700000), not dialog."
   }
 }
