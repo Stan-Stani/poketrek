@@ -102,10 +102,12 @@ fun ReviewScreen(
         list.toList()
     }
 
-    // Pull the next due card. We re-derive on every recomposition; the cards
-    // flow ensures recomposition happens after `grade()`.
-    @Suppress("UNUSED_VARIABLE") val tick = cards
-    val nextPair = module.repository.nextDueCard(areaId)
+    // Pin the chosen card to the current `cards` snapshot so it only re-derives
+    // when grade/suspend actually mutates state. Without this, a LEARNING card
+    // whose `dueAt` elapses mid-session would preempt a NEW card on the next
+    // recomposition (e.g. when the user taps Reveal), and because `revealed`
+    // survives the swap the user sees a different card's definition.
+    val nextPair = remember(cards, areaId) { module.repository.nextDueCard(areaId) }
 
     if (nextPair == null) {
         Box(modifier = modifier.padding(24.dp), contentAlignment = Alignment.Center) {
