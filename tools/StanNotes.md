@@ -200,3 +200,25 @@ The structural blocker (bracket-reconcile tool) is still the
 right next move for cracking 0x3F3A and 0x373E, but it's no longer
 worth blocking on for any single cp — yield-per-effort below
 break-even given how rare these are in the corpus.
+
+## Codepoint map: 100% syllable coverage achieved
+
+Stan eyeballed the rendered atlas glyphs for the final 9 unknowns
+and labeled them directly:
+
+  0x3F3C = 퀵, 0x3F3A = 퀭, 0x3FA0 = 튄, 0x373E = 겪,
+  0x3786 = 궐, 0x3C93 = 씌, 0x3820 = 뀨, 0x3884 = 놨,
+  0x3C6C = 쏟
+
+Map size: **1193 anchors**. Truly-unknown codepoints in dialog
+region: **0**. All 121 remaining "unknown" entries in
+`codepoint_unknowns_2024.json` are confirmed CONTROL bytes
+(formatting, icons, terminators, padding).
+
+Final lesson: the very last mile (9 cps, mostly single-occurrence
+syllables with weak corpus context) yielded almost instantly to a
+human-in-the-loop visual pass with the labeled neighbors rendered
+alongside. The reconcile tool wasn't needed in the end — a side-
+by-side glyph grid was more effective. Worth remembering for
+future calibration projects: invest in glyph visualization before
+overengineering inference.
