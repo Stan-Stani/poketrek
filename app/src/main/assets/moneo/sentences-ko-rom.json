@@ -1,232 +1,313 @@
 {
-  "version": 2,
-  "sourceTag": "rom-v1",
-  "notes": "Sentences extracted verbatim from corpus.ko.json (decoded Korean LeafGreen ROM dialog). Each entry's `source` field references its corpus record id. Word-spacing has been added for readability; the underlying ROM stores text without spaces. Korean glyphs may reflect minor OCR ambiguities from the charmap (rounds 1-16). areaId pins each line to the area it would naturally surface in (Pokédex entries for early-route Pokémon, system/item lines without a clear area = null).",
-  "entries": [
-    {
-      "vocabId": "seed-v1:포켓몬",
-      "korean": "포켓몬도 강해져 간다!",
-      "gloss": "Pokémon also grow stronger!",
-      "areaId": "pallet_town",
-      "speaker": "오키드",
-      "source": "rom-rec1344"
-    },
-    {
-      "vocabId": "seed-v1:이름",
-      "korean": "너의 이름은?",
-      "gloss": "What is your name?",
-      "areaId": "pallet_town",
-      "speaker": "오키드",
-      "source": "rom-rec3532"
-    },
-    {
-      "vocabId": "seed-v1:이름",
-      "korean": "라이벌의 이름은?",
-      "gloss": "What is your rival's name?",
-      "areaId": "pallet_town",
-      "speaker": "오키드",
-      "source": "rom-rec3536"
-    },
-    {
-      "vocabId": "seed-v1:가다",
-      "korean": "포켓몬을 단련시켜 가는 거야!",
-      "gloss": "You go on training your Pokémon!",
-      "targetForm": "가",
-      "areaId": "pallet_town",
-      "speaker": "오키드",
-      "source": "rom-rec1344"
-    },
-    {
-      "vocabId": "seed-v1:나",
-      "korean": "이번엔 내가 내 주도록 하마",
-      "gloss": "This time I'll pay it for you.",
-      "targetForm": "내",
-      "areaId": "pallet_town",
-      "speaker": "오키드",
-      "source": "rom-rec1345"
-    },
-    {
-      "vocabId": "seed-v1:야생",
-      "korean": "야생 포켓몬에게 던져서 잡기 위한 볼",
-      "gloss": "A ball thrown at wild Pokémon to catch them.",
-      "areaId": "route_1",
-      "source": "rom-rec135"
-    },
-    {
-      "vocabId": "seed-v1:잡다",
-      "korean": "야생 포켓몬에게 던져서 잡기 위한 볼",
-      "gloss": "A ball thrown at wild Pokémon to catch them.",
-      "targetForm": "잡",
-      "areaId": "route_1",
-      "source": "rom-rec135"
-    },
-    {
-      "vocabId": "seed-v1:나타나다",
-      "korean": "많은 곳에서 나타난다.",
-      "gloss": "It appears in many places.",
-      "targetForm": "나타난",
-      "areaId": "route_1",
-      "source": "rom-rec4347"
-    },
-    {
-      "vocabId": "seed-v1:풀",
-      "korean": "주로 숲이나 수풀에 분포.",
-      "gloss": "Mostly distributed in forests or grasslands.",
-      "areaId": "route_1",
-      "source": "rom-rec4344"
-    },
-    {
-      "vocabId": "seed-v1:나",
-      "korean": "나는 건 서투르지만 달릴 땐 큰 발자국을 남기며 대지를 쓸고 지나간다.",
-      "gloss": "It's clumsy at flying, but when running it leaves huge footprints and sweeps over the land.",
-      "areaId": "route_1",
-      "source": "rom-rec4412"
-    },
-    {
-      "vocabId": "seed-v1:지나가다",
-      "korean": "대지를 쓸고 지나간다.",
-      "gloss": "It sweeps over the land as it passes.",
-      "targetForm": "지나간",
-      "areaId": "route_1",
-      "source": "rom-rec4412"
-    },
-    {
-      "vocabId": "seed-v1:새",
-      "korean": "전설의 새 포켓몬이다.",
-      "gloss": "It is a legendary bird Pokémon.",
-      "areaId": "route_1",
-      "source": "rom-rec4474"
-    },
-    {
-      "vocabId": "seed-v1:길",
-      "korean": "길고 튼튼한 끈",
-      "gloss": "A long, sturdy rope. (Note: 길 here is the stem of 길다 \"to be long,\" not the noun \"road.\")",
-      "areaId": "route_1",
-      "source": "rom-rec203"
-    },
-    {
-      "vocabId": "seed-v1:포켓몬",
-      "korean": "도시의 포켓몬",
-      "gloss": "City Pokémon (Pokédex habitat category).",
-      "areaId": "viridian_city",
-      "source": "rom-rec2613"
-    },
-    {
-      "vocabId": "seed-v1:도시",
-      "korean": "도시의 포켓몬",
-      "gloss": "City Pokémon (Pokédex habitat category).",
-      "areaId": "viridian_city",
-      "source": "rom-rec2613"
-    },
-    {
-      "vocabId": "seed-v1:사람",
-      "korean": "얼굴을 본 사람은 없다.",
-      "gloss": "No one has seen its face.",
-      "areaId": "viridian_city",
-      "source": "rom-rec4432"
-    },
-    {
-      "vocabId": "seed-v1:팔다",
-      "korean": "샵에서 싸게 팔린다",
-      "gloss": "Sold cheaply at the shop.",
-      "targetForm": "팔",
-      "areaId": "viridian_city",
-      "source": "rom-rec213"
-    },
-    {
-      "vocabId": "seed-v1:마을",
-      "korean": "모습을 감추면 마을에 대정전이 난다고 한다.",
-      "gloss": "When it hides, a great blackout is said to hit the town.",
-      "areaId": "viridian_city",
-      "source": "rom-rec4453"
-    },
-    {
-      "vocabId": "seed-v1:숲",
-      "korean": "숲의 커다란 잎을 먹는다.",
-      "gloss": "It eats the large leaves of the forest.",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4341"
-    },
-    {
-      "vocabId": "seed-v1:벌레",
-      "korean": "풀숲의 벌레를 먹는다.",
-      "gloss": "It eats the bugs in the tall grass.",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4349"
-    },
-    {
-      "vocabId": "seed-v1:나무",
-      "korean": "나무뿌리를 먹고 산다.",
-      "gloss": "It lives off tree roots.",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4378"
-    },
-    {
-      "vocabId": "seed-v1:어둡다",
-      "korean": "어두운 곳에 집단으로 서식한다.",
-      "gloss": "It lives in groups in dark places.",
-      "targetForm": "어두",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4369"
-    },
-    {
-      "vocabId": "seed-v1:싸우다",
-      "korean": "뭐든지 화가 나서 싸우려고 한다.",
-      "gloss": "It gets angry at anything and tries to fight.",
-      "targetForm": "싸우",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4361"
-    },
-    {
-      "vocabId": "seed-v1:오다",
-      "korean": "강한 독이 나온다.",
-      "gloss": "Strong poison comes out.",
-      "targetForm": "온",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4361"
-    },
-    {
-      "vocabId": "seed-v1:조심하다",
-      "korean": "보이지 않는 스피드로 펀치를 날리기 때문에 조심해라.",
-      "gloss": "Be careful — it throws punches at invisible speed.",
-      "targetForm": "조심",
-      "areaId": "viridian_forest",
-      "source": "rom-rec4435"
-    },
-    {
-      "vocabId": "seed-v1:박물관",
-      "korean": "니비박물관",
-      "gloss": "Pewter Museum (니비 = Pewter City in the Korean fan translation).",
-      "areaId": "pewter_city",
-      "source": "rom-rec3862"
-    },
-    {
-      "vocabId": "seed-v1:배지",
-      "korean": "지금 당신이 가지고 있는 뱃지나 플레이 정보를 알 수 있다",
-      "gloss": "Shows the badges you have and your play info. (ROM uses 뱃지 spelling; standard form is 배지.)",
-      "targetForm": "뱃지",
-      "areaId": "pewter_city",
-      "source": "rom-rec3710"
-    },
-    {
-      "vocabId": "seed-v1:잡다",
-      "korean": "포켓몬을 잡기 쉽게 만들어진 매우 좋은 볼",
-      "gloss": "A very good ball, made to make Pokémon easier to catch. (Ultra Ball.)",
-      "targetForm": "잡",
-      "source": "rom-rec133"
-    },
-    {
-      "vocabId": "seed-v1:깊다",
-      "korean": "깊은 물 속에 있는 포켓몬을 잡기 쉽다",
-      "gloss": "Easier to catch Pokémon that live deep in the water. (Net Ball.)",
-      "targetForm": "깊",
-      "source": "rom-rec138"
-    },
-    {
-      "vocabId": "seed-v1:포켓몬",
-      "korean": "전투 중인 포켓몬의 공격을 높이는 도구",
-      "gloss": "An item that raises the attack of a Pokémon in battle.",
-      "source": "rom-rec194"
-    }
-  ]
+ "version": 2,
+ "sourceTag": "rom-v2",
+ "notes": "Sentences extracted verbatim from corpus.ko.json (2024 Korean LeafGreen decode). Each entry's `source` field references a record id in that corpus. Replaces the 2010-vintage file which used 오키드/도장 (Japanese-romanized localization) instead of 오박사/체육관.",
+ "entries": [
+  {
+   "vocabId": "seed-v1:포켓몬",
+   "korean": "그럼 어드바이스해주마 포켓몬을",
+   "gloss": "(Pokémon)",
+   "areaId": "pallet_town",
+   "source": "rom-rec940",
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description"
+  },
+  {
+   "vocabId": "seed-v1:마을",
+   "korean": "묘지로 마을이야 키우던",
+   "gloss": "(town, village)",
+   "areaId": "route_1",
+   "source": "rom-rec1013",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:박사",
+   "korean": "권위자란다 박사님을 링 포켓몬",
+   "gloss": "(professor, doctor (PhD))",
+   "areaId": "pallet_town",
+   "source": "rom-rec2084",
+   "speaker": "오박사",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:나",
+   "korean": "채우러 할 때와 막 늠름해졌구나",
+   "gloss": "(I, me (informal))",
+   "areaId": "rom_mined",
+   "source": "rom-rec668",
+   "speaker": "오박사"
+  },
+  {
+   "vocabId": "seed-v1:이름",
+   "korean": "이름 친근한 웅 인기 블 말 느린",
+   "gloss": "(name)",
+   "areaId": "cerulean_city",
+   "source": "rom-rec1079",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:안녕",
+   "korean": "안녕하세요 트레이너들이",
+   "gloss": "(hi / hey (casual))",
+   "areaId": "pallet_town",
+   "source": "rom-rec879",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:오다",
+   "korean": "로켓단에 들어오다니 녀석이군",
+   "gloss": "(to come)",
+   "areaId": "rom_mined",
+   "source": "rom-rec407"
+  },
+  {
+   "vocabId": "seed-v1:집",
+   "korean": "거기 웅 집 한 들어오지 란 응 나",
+   "gloss": "(house, home)",
+   "areaId": "rom_mined",
+   "source": "rom-rec984"
+  },
+  {
+   "vocabId": "seed-v1:길",
+   "korean": "잡았다고 길을 링 다르",
+   "gloss": "(road, path)",
+   "areaId": "rom_mined",
+   "source": "rom-rec266",
+   "speaker": "{var:01}"
+  },
+  {
+   "vocabId": "seed-v1:풀",
+   "korean": "약해져서 하고 않을 풀숲을",
+   "gloss": "(grass)",
+   "areaId": "rom_mined",
+   "source": "rom-rec214"
+  },
+  {
+   "vocabId": "seed-v1:야생",
+   "korean": "오박사 그래 야생",
+   "gloss": "(wild (e.g. wild Pokémon))",
+   "areaId": "pallet_town",
+   "source": "rom-rec2053",
+   "speaker": "오박사",
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description"
+  },
+  {
+   "vocabId": "seed-v1:잡다",
+   "korean": "몇 둘 잡았니 나는 잡다가",
+   "gloss": "(to catch, to grab)",
+   "areaId": "pallet_town",
+   "source": "rom-rec631",
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry"
+  },
+  {
+   "vocabId": "seed-v1:새",
+   "korean": "했는데 새포켓몬이 보여",
+   "gloss": "(bird)",
+   "areaId": "rom_mined",
+   "source": "rom-rec1068"
+  },
+  {
+   "vocabId": "seed-v1:도시",
+   "korean": "정말 도시라고 저도",
+   "gloss": "(city)",
+   "areaId": "rom_mined",
+   "source": "rom-rec3006",
+   "speaker": "{var:01}"
+  },
+  {
+   "vocabId": "seed-v1:사람",
+   "korean": "있네 뭔가 포켓몬마니아라는 사람과 사이라고",
+   "gloss": "(person)",
+   "areaId": "pallet_town",
+   "source": "rom-rec1125",
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry"
+  },
+  {
+   "vocabId": "seed-v1:가게",
+   "korean": "가게는 개업했어요 아직은",
+   "gloss": "(shop, store)",
+   "areaId": "rom_mined",
+   "source": "rom-rec1134"
+  },
+  {
+   "vocabId": "seed-v1:사다",
+   "korean": "가서 사다 있어",
+   "gloss": "(to buy)",
+   "areaId": "rom_mined",
+   "source": "rom-rec2523"
+  },
+  {
+   "vocabId": "seed-v1:체육관",
+   "korean": "녀석들뿐이야 하지만 쪽 포켓몬체육관의 웅 다르다고",
+   "gloss": "(gym)",
+   "areaId": "pallet_town",
+   "source": "rom-rec956",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:관장",
+   "korean": "관장 독에 것이라면",
+   "gloss": "(leader, director (gym leader))",
+   "areaId": "viridian_city",
+   "source": "rom-rec1075",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:입구",
+   "korean": "입구를 열쇠 빨갛게 찍 있다",
+   "gloss": "(entrance)",
+   "areaId": "rom_mined",
+   "source": "rom-rec6825",
+   "sourceTypes": [
+    "system_text"
+   ],
+   "primarySourceType": "system_text"
+  },
+  {
+   "vocabId": "seed-v1:숲",
+   "korean": "약해져서 하고 않을 풀숲을",
+   "gloss": "(forest)",
+   "areaId": "rom_mined",
+   "source": "rom-rec214"
+  },
+  {
+   "vocabId": "seed-v1:나무",
+   "korean": "쓰레기통에 나무열매가 있었는데",
+   "gloss": "(tree)",
+   "areaId": "rom_mined",
+   "source": "rom-rec282"
+  },
+  {
+   "vocabId": "seed-v1:벌레",
+   "korean": "이봐 벌레포켓몬이나",
+   "gloss": "(bug, insect)",
+   "areaId": "pallet_town",
+   "source": "rom-rec2511",
+   "sourceTypes": [
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry"
+  },
+  {
+   "vocabId": "seed-v1:회색",
+   "korean": "여기는 쪽 회색은 바위의",
+   "gloss": "(grey (the color))",
+   "areaId": "viridian_city",
+   "source": "rom-rec970",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:바위",
+   "korean": "여기는 쪽 회색은 바위의",
+   "gloss": "(rock, boulder)",
+   "areaId": "viridian_city",
+   "source": "rom-rec970",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:첫",
+   "korean": "두 방이 있 첫",
+   "gloss": "(first (modifier))",
+   "areaId": "rom_mined",
+   "source": "rom-rec3920"
+  },
+  {
+   "vocabId": "seed-v1:배지",
+   "korean": "포켓몬리그에 거냐 배지도 모았구나 아",
+   "gloss": "(badge)",
+   "areaId": "route_1",
+   "source": "rom-rec1674",
+   "speaker": "{var:01}",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:이기다",
+   "korean": "승부에서 잘 이기다니 엄청 하",
+   "gloss": "(to win, to defeat)",
+   "areaId": "pallet_town",
+   "source": "rom-rec3501",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "seed-v1:지다",
+   "korean": "던지다 금방 썼어 많이 게 거야",
+   "gloss": "(to lose)",
+   "areaId": "rom_mined",
+   "source": "rom-rec213"
+  },
+  {
+   "vocabId": "seed-v1:박물관",
+   "korean": "회색시티 박물관",
+   "gloss": "(museum)",
+   "areaId": "viridian_city",
+   "source": "rom-rec968",
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  }
+ ]
 }

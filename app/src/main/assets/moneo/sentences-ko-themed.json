@@ -1,243 +1,454 @@
 {
-  "version": 1,
-  "sourceTag": "themed-v1",
-  "notes": "Hand-curated 'voice lock-in' batch covering vocab whose only sentence sources are ROM-derived (mined, topik, species, etymology). Korean is original Pokémon-themed everyday-trainer-life writing — no ROM dialog, no plot points — and the gloss is a clean English translation. This is a small sample (5 per corpus); scale up after voice review.",
-  "entries": [
-    {
-      "vocabId": "rom-mine-v2:하다",
-      "korean": "오늘은 어떤 훈련을 할까?",
-      "gloss": "What kind of training shall we do today?",
-      "targetForm": "할까",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "rom-mine-v2:타다",
-      "korean": "버스를 타고 다음 도시로 가요.",
-      "gloss": "I take the bus to the next city.",
-      "targetForm": "타",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "rom-mine-v2:있다",
-      "korean": "가방 안에 상처약이 다섯 개 있어요.",
-      "gloss": "There are five potions in my bag.",
-      "targetForm": "있",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "polish:fix",
-        "issue": "회복약 is real Korean but the canonical Pokemon-game term for Potion in Korean releases is 상처약 (confirmed on Pokemon Wiki KO and 나무위키 회복 도구 page). For a Pokemon-themed deck, the in-game term is more authentic and reinforces vocabulary the player will see in the game.",
-        "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD",
-        "auditedAt": "2026-05-09"
-      }
-    },
-    {
-      "vocabId": "rom-mine-v2:메다",
-      "korean": "트레이너는 가방을 어깨에 메고 다녀요.",
-      "gloss": "The trainer carries a bag slung over their shoulder.",
-      "targetForm": "메",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "rom-mine-v2:회복",
-      "korean": "포켓몬 센터에서 포켓몬의 체력을 회복시켰어요.",
-      "gloss": "I restored my Pokémon's HP at the Pokémon Center.",
-      "targetForm": "회복",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "wrong_collocation",
-        "issue": "'회복을 받다' (literally 'to receive recovery') is not a natural Korean collocation. 회복 is something one does or undergoes, not receives. For Pokemon Center healing, native usage would be '치료를 받았어요' (received treatment) or '포켓몬을 회복시켰어요' (had my Pokemon recovered). The targetForm vocab '회복' could still be exercised via 회복하다/회복시키다.",
-        "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%ED%9A%8C%EB%B3%B5%ED%95%98%EB%8B%A4",
-        "auditedAt": "2026-05-09"
-      }
-    },
-    {
-      "vocabId": "topik-v2:키",
-      "korean": "내 포켓몬은 키가 작아요.",
-      "gloss": "My Pokémon is short.",
-      "targetForm": "키",
-      "areaId": "topik_1",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "topik-v2:끄다",
-      "korean": "트레이너가 컴퓨터를 끄고 길을 떠났어요.",
-      "gloss": "The trainer turned off the computer and set out.",
-      "targetForm": "끄",
-      "areaId": "topik_1",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "topik-v2:깊다",
-      "korean": "이 동굴은 매우 깊어요.",
-      "gloss": "This cave is very deep.",
-      "targetForm": "깊",
-      "areaId": "topik_2",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "topik-v2:가다",
-      "korean": "내일 다음 도시에 가요.",
-      "gloss": "Tomorrow I'll go to the next city.",
-      "targetForm": "가",
-      "areaId": "topik_1",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "topik-v2:보다",
-      "korean": "트레이너가 시합을 보고 있어요.",
-      "gloss": "The trainer is watching the match.",
-      "targetForm": "보",
-      "areaId": "topik_1",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "rom-species:이상해씨",
-      "korean": "이상해씨는 풀 타입 포켓몬이에요.",
-      "gloss": "Bulbasaur is a Grass-type Pokémon.",
-      "targetForm": "이상해씨",
-      "areaId": "pallet_town",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "rom-species:이상해풀",
-      "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
-      "gloss": "A large flower bud grows on Ivysaur's back.",
-      "targetForm": "이상해풀",
-      "areaId": "pallet_town",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Korean/gloss mismatch introduced by the prior auditFix. The Korean was correctly changed from 새싹 (sprout/seedling) to 꽃봉오리 (flower bud) to match Ivysaur lore, but the English gloss was not updated and still says 'A sprout grows on Ivysaur's back.' 꽃봉오리 means 'flower bud,' not 'sprout' (which would be 새싹). The gloss should be e.g. 'A large flower bud grows on Ivysaur's back.'",
-        "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%83%81%ED%95%B4%ED%92%80_(%ED%8F%AC%EC%BC%93%EB%AA%AC)",
-        "auditedAt": "2026-05-09",
-        "round": 2,
-        "priorAuditFix": {
-          "verdict": "polish:fix",
-          "issue": "Confirmed Pokemon-lore mismatch: Ivysaur's defining feature is the flower BUD (꽃봉오리) on its back, not a 새싹 (sprout/seedling). The bud is a Rafflesia-like flower bud that releases an aroma when ready to bloom. 새싹 is more apt for Bulbasaur (이상해씨); by Ivysaur stage the plant has progressed to a large bud.",
-          "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)",
-          "auditedAt": "2026-05-09"
-        }
-      }
-    },
-    {
-      "vocabId": "rom-species:이상해꽃",
-      "korean": "이상해꽃은 등에 큰 꽃이 피어 있어요.",
-      "gloss": "Venusaur carries a large flower on its back.",
-      "targetForm": "이상해꽃",
-      "areaId": "pallet_town",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'꽃을 등에 가지고 있다' (literally 'has a flower on its back') is grammatically valid but unidiomatic in Korean for describing a body feature. Native phrasings would be '등에 큰 꽃이 피어 있어요' (a flower is blooming on its back) or '등에 큰 꽃을 달고 있어요' (carries a flower on its back). The current phrasing reads like a literal English-to-Korean translation.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
-    },
-    {
-      "vocabId": "rom-species:파이리",
-      "korean": "파이리의 꼬리에서는 작은 불꽃이 타올라요.",
-      "gloss": "A small flame burns on Charmander's tail.",
-      "targetForm": "파이리",
-      "areaId": "pallet_town",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "unnatural",
-        "issue": "'불꽃이 타다' is grammatically valid (타다 covers 'for fire/flame to burn') but is awkward as a stand-alone description; Korean more typically uses 불꽃이 타오르다 (flame blazes), 불꽃이 일다 (flame arises), or 불이 타다. For Charmander's tail flame the canonical Korean phrasing is '꼬리에 불이 타고 있다' or '꼬리 끝에서 불꽃이 타올라요'.",
-        "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=91122",
-        "auditedAt": "2026-05-09"
-      }
-    },
-    {
-      "vocabId": "rom-species:리자드",
-      "korean": "리자드는 파이리에서 진화해요.",
-      "gloss": "Charmeleon evolves from Charmander.",
-      "targetForm": "리자드",
-      "areaId": "pallet_town",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:갑",
-      "korean": "갑(甲)은 단단한 껍데기나 갑옷을 본뜬 한자예요.",
-      "gloss": "갑 is an old word meaning a turtle's shell.",
-      "targetForm": "갑",
-      "areaId": "pewter_city",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Etymological inaccuracy that survived the prior auditFix (which only fixed '옛 글자' → '한자'). 甲 is a pictograph of a hard shell/carapace/armor in general (Proto-Sino-Tibetan *krap 'shell; shield'), not specifically a turtle's shell. The 갑 in 갑골문(甲骨文) refers to turtle plastrons because they are one kind of 甲, but the character itself is modeled on the generic concept of armor/shell/scales — Wiktionary and Mandarin etymology sources describe it as depicting a seed coat splitting or a piece of armor, not a turtle shell. A 龜 character is the one specifically modeled on a turtle.",
-        "evidenceUrl": "https://en.wiktionary.org/wiki/%E7%94%B2",
-        "auditedAt": "2026-05-09",
-        "round": 2,
-        "priorAuditFix": {
-          "verdict": "polish:fix",
-          "issue": "Confirmed terminology error: 갑(甲) is a Sino-Korean 한자 (Chinese character), specifically a 상형문자 (pictograph) modeled on the shape of a turtle's shell. '옛 글자' is misleading because in Korean it commonly evokes 옛한글 (archaic hangul). Naver/나무위키 갑골문자 entries describe 甲 as a 한자 / 상형문자. Adding the 한자 in parentheses also helps disambiguate the homophone.",
-          "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
-          "auditedAt": "2026-05-09"
-        }
-      }
-    },
-    {
-      "vocabId": "etymology-roots:강철",
-      "korean": "강철은 '강한 쇠'라는 뜻으로, 단단하게 만든 철을 가리켜요.",
-      "gloss": "강철 means hardened steel.",
-      "targetForm": "강철",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7",
-      "auditFix": {
-        "verdict": "mistranslation",
-        "issue": "Gloss says '강철 means hardened steel' (a metalinguistic etymology gloss), but the Korean literally says '강철 is a hard metal'. The Korean omits the etymology framing entirely and just states a fact. For an etymology-roots entry the Korean should reflect the meaning of 강철 as a root ('강' = strong/hard + '철' = iron → steel) rather than a definition of 'steel'. Also 강철 specifically means 'steel', not 'hard metal' generically.",
-        "evidenceUrl": null,
-        "auditedAt": "2026-05-09"
-      }
-    },
-    {
-      "vocabId": "etymology-roots:개구리",
-      "korean": "개구리는 연못 근처에 살아요.",
-      "gloss": "Frogs live near ponds.",
-      "targetForm": "개구리",
-      "areaId": "rom_mined",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:거북",
-      "korean": "거북이는 천천히 걸어요.",
-      "gloss": "Turtles walk slowly.",
-      "targetForm": "거북",
-      "areaId": "pallet_town",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
-    },
-    {
-      "vocabId": "etymology-roots:고슴도치",
-      "korean": "고슴도치는 등에 가시가 있어요.",
-      "gloss": "A hedgehog has spines on its back.",
-      "targetForm": "고슴도치",
-      "areaId": "route_23",
-      "source": "themed-v1",
-      "generator": "llm-claude-opus-4-7"
+ "version": 1,
+ "sourceTag": "themed-v1",
+ "notes": [
+  "Hand-curated 'voice lock-in' batch covering vocab whose only sentence sources are ROM-derived (mined, topik, species, etymology). Korean is original Pokémon-themed everyday-trainer-life writing — no ROM dialog, no plot points — and the gloss is a clean English translation. This is a small sample (5 per corpus); scale up after voice review.",
+  "Attribution propagated from base decks; 13 matched, 7 unmatched of 20."
+ ],
+ "entries": [
+  {
+   "vocabId": "rom-mine-v2:하다",
+   "korean": "오늘은 어떤 훈련을 할까?",
+   "gloss": "What kind of training shall we do today?",
+   "targetForm": "할까",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "rom-mine-v2:타다",
+   "korean": "버스를 타고 다음 도시로 가요.",
+   "gloss": "I take the bus to the next city.",
+   "targetForm": "타",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "rom-mine-v2:있다",
+   "korean": "가방 안에 상처약이 다섯 개 있어요.",
+   "gloss": "There are five potions in my bag.",
+   "targetForm": "있",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "polish:fix",
+    "issue": "회복약 is real Korean but the canonical Pokemon-game term for Potion in Korean releases is 상처약 (confirmed on Pokemon Wiki KO and 나무위키 회복 도구 page). For a Pokemon-themed deck, the in-game term is more authentic and reinforces vocabulary the player will see in the game.",
+    "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%83%81%EC%B2%98%EC%95%BD",
+    "auditedAt": "2026-05-09"
+   },
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "memorial_pillar",
+    "four_island",
+    "treasure_beach",
+    "water_labyrinth",
+    "kindle_road",
+    "one_island",
+    "six_island",
+    "five_island",
+    "ruin_valley",
+    "canyon_entrance",
+    "resort_gorgeous",
+    "outcast_island",
+    "trainer_tower",
+    "green_path",
+    "seven_island",
+    "water_path",
+    "three_island",
+    "five_isle_meadow"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "pokedex_entry",
+    "system_text"
+   ],
+   "primarySourceType": "pokedex_entry"
+  },
+  {
+   "vocabId": "rom-mine-v2:메다",
+   "korean": "트레이너는 가방을 어깨에 메고 다녀요.",
+   "gloss": "The trainer carries a bag slung over their shoulder.",
+   "targetForm": "메",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "rom-mine-v2:회복",
+   "korean": "포켓몬 센터에서 포켓몬의 체력을 회복시켰어요.",
+   "gloss": "I restored my Pokémon's HP at the Pokémon Center.",
+   "targetForm": "회복",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "wrong_collocation",
+    "issue": "'회복을 받다' (literally 'to receive recovery') is not a natural Korean collocation. 회복 is something one does or undergoes, not receives. For Pokemon Center healing, native usage would be '치료를 받았어요' (received treatment) or '포켓몬을 회복시켰어요' (had my Pokemon recovered). The targetForm vocab '회복' could still be exercised via 회복하다/회복시키다.",
+    "evidenceUrl": "https://www.collinsdictionary.com/dictionary/korean-english/%ED%9A%8C%EB%B3%B5%ED%95%98%EB%8B%A4",
+    "auditedAt": "2026-05-09"
+   },
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_4",
+    "cerulean_city",
+    "saffron_city",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "fuchsia_city",
+    "route_18",
+    "cinnabar_island",
+    "celadon_city",
+    "indigo_plateau",
+    "rom_mined",
+    "two_island",
+    "one_island",
+    "six_island",
+    "four_island",
+    "five_island",
+    "seven_island",
+    "three_island"
+   ],
+   "sourceTypes": [
+    "item_description",
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "item_description"
+  },
+  {
+   "vocabId": "topik-v2:키",
+   "korean": "내 포켓몬은 키가 작아요.",
+   "gloss": "My Pokémon is short.",
+   "targetForm": "키",
+   "areaId": "topik_1",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "topik-v2:끄다",
+   "korean": "트레이너가 컴퓨터를 끄고 길을 떠났어요.",
+   "gloss": "The trainer turned off the computer and set out.",
+   "targetForm": "끄",
+   "areaId": "topik_1",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_3",
+   "areasReferenced": [
+    "route_3",
+    "route_4",
+    "route_24",
+    "route_25",
+    "route_6",
+    "route_11",
+    "rom_mined"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "topik-v2:깊다",
+   "korean": "이 동굴은 매우 깊어요.",
+   "gloss": "This cave is very deep.",
+   "targetForm": "깊",
+   "areaId": "topik_2",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "route_1",
+   "areasReferenced": [
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "route_5",
+    "route_6",
+    "route_7",
+    "route_8",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "celadon_city",
+    "route_9",
+    "rom_mined",
+    "two_island",
+    "four_island",
+    "ruin_valley",
+    "kindle_road",
+    "six_island",
+    "five_island",
+    "seven_island",
+    "three_island",
+    "five_isle_meadow"
+   ],
+   "sourceTypes": [
+    "npc_dialog",
+    "system_text"
+   ],
+   "primarySourceType": "npc_dialog"
+  },
+  {
+   "vocabId": "topik-v2:가다",
+   "korean": "내일 다음 도시에 가요.",
+   "gloss": "Tomorrow I'll go to the next city.",
+   "targetForm": "가",
+   "areaId": "topik_1",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ]
+  },
+  {
+   "vocabId": "topik-v2:보다",
+   "korean": "트레이너가 시합을 보고 있어요.",
+   "gloss": "The trainer is watching the match.",
+   "targetForm": "보",
+   "areaId": "topik_1",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "cerulean_city",
+   "areasReferenced": [
+    "cerulean_city"
+   ]
+  },
+  {
+   "vocabId": "rom-species:이상해씨",
+   "korean": "이상해씨는 풀 타입 포켓몬이에요.",
+   "gloss": "Bulbasaur is a Grass-type Pokémon.",
+   "targetForm": "이상해씨",
+   "areaId": "pallet_town",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species"
+  },
+  {
+   "vocabId": "rom-species:이상해풀",
+   "korean": "이상해풀의 등에는 큰 꽃봉오리가 자라요.",
+   "gloss": "A large flower bud grows on Ivysaur's back.",
+   "targetForm": "이상해풀",
+   "areaId": "pallet_town",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "mistranslation",
+    "issue": "Korean/gloss mismatch introduced by the prior auditFix. The Korean was correctly changed from 새싹 (sprout/seedling) to 꽃봉오리 (flower bud) to match Ivysaur lore, but the English gloss was not updated and still says 'A sprout grows on Ivysaur's back.' 꽃봉오리 means 'flower bud,' not 'sprout' (which would be 새싹). The gloss should be e.g. 'A large flower bud grows on Ivysaur's back.'",
+    "evidenceUrl": "https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%83%81%ED%95%B4%ED%92%80_(%ED%8F%AC%EC%BC%93%EB%AA%AC)",
+    "auditedAt": "2026-05-09",
+    "round": 2,
+    "priorAuditFix": {
+     "verdict": "polish:fix",
+     "issue": "Confirmed Pokemon-lore mismatch: Ivysaur's defining feature is the flower BUD (꽃봉오리) on its back, not a 새싹 (sprout/seedling). The bud is a Rafflesia-like flower bud that releases an aroma when ready to bloom. 새싹 is more apt for Bulbasaur (이상해씨); by Ivysaur stage the plant has progressed to a large bud.",
+     "evidenceUrl": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)",
+     "auditedAt": "2026-05-09"
     }
-  ]
+   },
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species"
+  },
+  {
+   "vocabId": "rom-species:이상해꽃",
+   "korean": "이상해꽃은 등에 큰 꽃이 피어 있어요.",
+   "gloss": "Venusaur carries a large flower on its back.",
+   "targetForm": "이상해꽃",
+   "areaId": "pallet_town",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "unnatural",
+    "issue": "'꽃을 등에 가지고 있다' (literally 'has a flower on its back') is grammatically valid but unidiomatic in Korean for describing a body feature. Native phrasings would be '등에 큰 꽃이 피어 있어요' (a flower is blooming on its back) or '등에 큰 꽃을 달고 있어요' (carries a flower on its back). The current phrasing reads like a literal English-to-Korean translation.",
+    "evidenceUrl": null,
+    "auditedAt": "2026-05-09"
+   },
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species"
+  },
+  {
+   "vocabId": "rom-species:파이리",
+   "korean": "파이리의 꼬리에서는 작은 불꽃이 타올라요.",
+   "gloss": "A small flame burns on Charmander's tail.",
+   "targetForm": "파이리",
+   "areaId": "pallet_town",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "unnatural",
+    "issue": "'불꽃이 타다' is grammatically valid (타다 covers 'for fire/flame to burn') but is awkward as a stand-alone description; Korean more typically uses 불꽃이 타오르다 (flame blazes), 불꽃이 일다 (flame arises), or 불이 타다. For Charmander's tail flame the canonical Korean phrasing is '꼬리에 불이 타고 있다' or '꼬리 끝에서 불꽃이 타올라요'.",
+    "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=91122",
+    "auditedAt": "2026-05-09"
+   },
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species"
+  },
+  {
+   "vocabId": "rom-species:리자드",
+   "korean": "리자드는 파이리에서 진화해요.",
+   "gloss": "Charmeleon evolves from Charmander.",
+   "targetForm": "리자드",
+   "areaId": "pallet_town",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "firstAreaEncountered": "pallet_town",
+   "areasReferenced": [
+    "pallet_town"
+   ],
+   "sourceTypes": [
+    "pokemon_species"
+   ],
+   "primarySourceType": "pokemon_species"
+  },
+  {
+   "vocabId": "etymology-roots:갑",
+   "korean": "갑(甲)은 단단한 껍데기나 갑옷을 본뜬 한자예요.",
+   "gloss": "갑 is an old word meaning a turtle's shell.",
+   "targetForm": "갑",
+   "areaId": "pewter_city",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "mistranslation",
+    "issue": "Etymological inaccuracy that survived the prior auditFix (which only fixed '옛 글자' → '한자'). 甲 is a pictograph of a hard shell/carapace/armor in general (Proto-Sino-Tibetan *krap 'shell; shield'), not specifically a turtle's shell. The 갑 in 갑골문(甲骨文) refers to turtle plastrons because they are one kind of 甲, but the character itself is modeled on the generic concept of armor/shell/scales — Wiktionary and Mandarin etymology sources describe it as depicting a seed coat splitting or a piece of armor, not a turtle shell. A 龜 character is the one specifically modeled on a turtle.",
+    "evidenceUrl": "https://en.wiktionary.org/wiki/%E7%94%B2",
+    "auditedAt": "2026-05-09",
+    "round": 2,
+    "priorAuditFix": {
+     "verdict": "polish:fix",
+     "issue": "Confirmed terminology error: 갑(甲) is a Sino-Korean 한자 (Chinese character), specifically a 상형문자 (pictograph) modeled on the shape of a turtle's shell. '옛 글자' is misleading because in Korean it commonly evokes 옛한글 (archaic hangul). Naver/나무위키 갑골문자 entries describe 甲 as a 한자 / 상형문자. Adding the 한자 in parentheses also helps disambiguate the homophone.",
+     "evidenceUrl": "https://namu.wiki/w/%EA%B0%91%EA%B3%A8%20%EB%AC%B8%EC%9E%90",
+     "auditedAt": "2026-05-09"
+    }
+   }
+  },
+  {
+   "vocabId": "etymology-roots:강철",
+   "korean": "강철은 '강한 쇠'라는 뜻으로, 단단하게 만든 철을 가리켜요.",
+   "gloss": "강철 means hardened steel.",
+   "targetForm": "강철",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "mistranslation",
+    "issue": "Gloss says '강철 means hardened steel' (a metalinguistic etymology gloss), but the Korean literally says '강철 is a hard metal'. The Korean omits the etymology framing entirely and just states a fact. For an etymology-roots entry the Korean should reflect the meaning of 강철 as a root ('강' = strong/hard + '철' = iron → steel) rather than a definition of 'steel'. Also 강철 specifically means 'steel', not 'hard metal' generically.",
+    "evidenceUrl": null,
+    "auditedAt": "2026-05-09"
+   }
+  },
+  {
+   "vocabId": "etymology-roots:개구리",
+   "korean": "개구리는 연못 근처에 살아요.",
+   "gloss": "Frogs live near ponds.",
+   "targetForm": "개구리",
+   "areaId": "rom_mined",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "etymology-roots:거북",
+   "korean": "거북이는 천천히 걸어요.",
+   "gloss": "Turtles walk slowly.",
+   "targetForm": "거북",
+   "areaId": "pallet_town",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7"
+  },
+  {
+   "vocabId": "etymology-roots:고슴도치",
+   "korean": "고슴도치는 등에 가시가 있어요.",
+   "gloss": "A hedgehog has spines on its back.",
+   "targetForm": "고슴도치",
+   "areaId": "route_23",
+   "source": "themed-v1",
+   "generator": "llm-claude-opus-4-7"
+  }
+ ]
 }
