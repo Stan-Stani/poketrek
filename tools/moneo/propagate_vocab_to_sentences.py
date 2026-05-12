@@ -48,6 +48,7 @@ ATTRIB_FIELDS = (
     "firstAreaEncountered", "areasReferenced",
     "sourceTypes", "primarySourceType", "liveRecIds",
 )
+GENERIC_AREAS = {"rom_mined", "trainer_dialog", "topik_1", "topik_2", "etymology"}
 
 
 def fill_seed_v1(lemma_idx: dict) -> None:
@@ -85,8 +86,20 @@ def propagate_to_sentences(vocab_idx: dict) -> None:
             for fld in ATTRIB_FIELDS:
                 val = base.get(fld)
                 if val is None: continue
-                if e.get(fld) is None or e.get(fld) == "" or e.get(fld) == []:
+                cur = e.get(fld)
+                # Always fill if blank
+                if cur is None or cur == "" or cur == []:
                     e[fld] = val
+                    continue
+                # Upgrade firstAreaEncountered / primarySourceType from
+                # generic bucket → specific when the base has a specific value
+                if fld in ("firstAreaEncountered", "primarySourceType"):
+                    if cur in GENERIC_AREAS and val and val not in GENERIC_AREAS:
+                        e[fld] = val
+                # Union areasReferenced / sourceTypes
+                elif fld in ("areasReferenced", "sourceTypes") and isinstance(cur, list) and isinstance(val, list):
+                    merged = list(dict.fromkeys((cur or []) + (val or [])))
+                    e[fld] = merged
             n_attrib += 1
         p.write_text(json.dumps(data, ensure_ascii=False, indent=1))
         print(f"{p.name}: filled {n_attrib}/{len(entries)} entries from vocab map "

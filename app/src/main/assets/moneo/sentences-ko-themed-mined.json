@@ -436,7 +436,8 @@
    ],
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "pokemon_species"
    ],
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
@@ -689,7 +690,9 @@
     "npc_dialog",
     "pokedex_entry",
     "system_text",
-    "trainer_class_name"
+    "trainer_class_name",
+    "pokemon_move",
+    "pokemon_species"
    ],
    "primarySourceType": "trainer_class_name",
    "firstAreaEncountered": "pallet_town",
@@ -1159,7 +1162,8 @@
    },
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "pokemon_species"
    ],
    "primarySourceType": "npc_dialog",
    "firstAreaEncountered": "pallet_town",
@@ -1458,16 +1462,20 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
     "rom_mined",
     "five_isle_meadow",
     "treasure_beach",
-    "ruin_valley"
+    "ruin_valley",
+    "viridian_city"
    ],
    "sourceTypes": [
     "pokedex_entry",
-    "system_text"
+    "system_text",
+    "item_description",
+    "pokemon_move",
+    "pokemon_species"
    ],
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
@@ -1638,7 +1646,10 @@
    "sourceTypes": [
     "item_description",
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "pokemon_ability",
+    "pokemon_move",
+    "pokemon_species"
    ],
    "primarySourceType": "item_description",
    "liveRecIds": [
@@ -2363,7 +2374,8 @@
     "item_description",
     "npc_dialog",
     "pokedex_entry",
-    "system_text"
+    "system_text",
+    "pokemon_move"
    ],
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
@@ -2824,7 +2836,9 @@
    ],
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "item_description",
+    "pokemon_move"
    ],
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
@@ -3775,9 +3789,60 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "indigo_plateau",
+    "treasure_beach",
+    "kindle_road",
+    "resort_gorgeous",
+    "water_labyrinth",
+    "memorial_pillar",
+    "water_path",
+    "trainer_tower",
+    "canyon_entrance",
+    "ruin_valley",
+    "outcast_island",
+    "green_path",
+    "three_island",
+    "seven_island",
+    "two_island",
+    "five_island",
+    "four_island",
+    "six_island",
+    "one_island"
    ],
    "sourceTypes": [
     "system_text"
@@ -3954,7 +4019,8 @@
    ],
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "pokemon_move"
    ],
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
@@ -4107,9 +4173,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city",
+    "route_13",
+    "route_23"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -4394,12 +4465,68 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "route_1",
+    "viridian_city",
+    "route_2",
+    "pewter_city",
+    "route_3",
+    "mt_moon",
+    "route_4",
+    "cerulean_city",
+    "route_24",
+    "route_25",
+    "route_5",
+    "route_6",
+    "saffron_city",
+    "route_7",
+    "route_8",
+    "lavender_town",
+    "route_10",
+    "route_11",
+    "vermilion_city",
+    "route_12",
+    "route_13",
+    "route_14",
+    "route_15",
+    "fuchsia_city",
+    "route_16",
+    "route_17",
+    "route_18",
+    "route_19",
+    "route_20",
+    "route_21",
+    "cinnabar_island",
+    "celadon_city",
+    "route_9",
+    "route_22",
+    "route_23",
+    "indigo_plateau",
+    "seven_island",
+    "five_island",
+    "six_island",
+    "four_island",
+    "treasure_beach",
+    "one_island",
+    "two_island",
+    "kindle_road",
+    "resort_gorgeous",
+    "water_path",
+    "trainer_tower",
+    "canyon_entrance",
+    "water_labyrinth",
+    "ruin_valley",
+    "memorial_pillar",
+    "outcast_island",
+    "green_path",
+    "three_island"
    ],
    "sourceTypes": [
-    "system_text"
+    "system_text",
+    "item_description"
    ],
    "primarySourceType": "system_text",
    "liveRecIds": [
@@ -4488,7 +4615,8 @@
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
-    "system_text"
+    "system_text",
+    "pokemon_move"
    ],
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
@@ -4662,7 +4790,8 @@
    "sourceTypes": [
     "npc_dialog",
     "pokedex_entry",
-    "system_text"
+    "system_text",
+    "pokemon_move"
    ],
    "primarySourceType": "pokedex_entry",
    "liveRecIds": [
@@ -5190,13 +5319,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city",
+    "pewter_city",
+    "route_11",
+    "route_6"
    ],
    "liveRecIds": [
     7015
@@ -5210,12 +5343,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:연속뺨치기",
@@ -5225,12 +5362,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_3",
+    "route_6",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:연속펀치",
@@ -5240,12 +5382,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_21",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:메가톤펀치",
@@ -5255,7 +5400,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_4",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -5276,12 +5421,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:불꽃펀치",
@@ -5291,12 +5439,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:냉동펀치",
@@ -5306,12 +5456,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:번개펀치",
@@ -5321,12 +5473,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:할퀴기",
@@ -5336,12 +5490,20 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_1",
+    "route_3",
+    "route_4",
+    "route_6",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:찝기",
@@ -5366,12 +5528,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:칼바람",
@@ -5443,12 +5607,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_12",
+    "route_13",
+    "route_24",
+    "saffron_city",
+    "seafoam_islands"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:날개치기",
@@ -5458,12 +5629,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_1",
+    "route_13",
+    "route_23",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:날려버리기",
@@ -5473,12 +5651,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_13",
+    "route_24",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:공중날기",
@@ -5520,12 +5703,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_24",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:덩굴채찍",
@@ -5535,12 +5721,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:짓밟기",
@@ -5550,12 +5740,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:두번치기",
@@ -5565,12 +5758,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_3",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:메가톤킥",
@@ -5580,12 +5776,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:점프킥",
@@ -5595,12 +5793,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:돌려차기",
@@ -5610,12 +5810,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:모래뿌리기",
@@ -5625,12 +5827,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "route_1",
+    "route_13",
+    "route_4",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:박치기",
@@ -5640,9 +5848,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_city",
+    "cinnabar_island",
+    "pallet_town",
+    "pewter_city",
+    "route_11",
+    "route_12"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -5661,12 +5875,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:마구찌르기",
@@ -5676,12 +5894,20 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "mt_moon",
+    "pewter_city",
+    "route_16",
+    "route_24",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:뿔드릴",
@@ -5691,12 +5917,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:몸통박치기",
@@ -5706,12 +5935,25 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "fuchsia_city",
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "route_1",
+    "route_10",
+    "route_12",
+    "route_13",
+    "route_2",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:누르기",
@@ -5721,7 +5963,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "four_island",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -5743,12 +5985,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:난동부리기",
@@ -5758,12 +6004,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pallet_town",
+    "pewter_city",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:이판사판태클",
@@ -5773,12 +6025,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "mt_moon",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:꼬리흔들기",
@@ -5788,12 +6044,23 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city",
+    "route_1",
+    "route_13",
+    "route_2",
+    "route_21",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:독침",
@@ -5803,13 +6070,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "pewter_city",
+    "route_3",
+    "route_4"
    ],
    "sourceTypes": [
     "pokemon_move",
-    "system_text"
+    "system_text",
+    "pokemon_species"
    ],
    "primarySourceType": "pokemon_move",
    "liveRecIds": [
@@ -5824,12 +6096,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:바늘미사일",
@@ -5839,12 +6113,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:째려보기",
@@ -5854,12 +6130,22 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "route_16",
+    "route_21",
+    "route_23",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:물기",
@@ -5892,12 +6178,25 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "cinnabar_island",
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city",
+    "route_1",
+    "route_13",
+    "route_16",
+    "route_3",
+    "route_6",
+    "silph_co",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:울부짖기",
@@ -5924,12 +6223,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_3",
+    "route_6",
+    "silph_co"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:초음파",
@@ -5939,9 +6243,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "pallet_town",
+    "pewter_city",
+    "route_12",
+    "route_24",
+    "viridian_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -5960,13 +6270,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "pallet_town",
+    "route_10"
    ],
    "liveRecIds": [
     7063
@@ -5980,12 +6293,22 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "cerulean_cave",
+    "cinnabar_island",
+    "pallet_town",
+    "pewter_city",
+    "route_11",
+    "route_12",
+    "route_24",
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:용해액",
@@ -5995,13 +6318,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "pewter_city",
+    "route_24"
    ],
    "liveRecIds": [
     7065
@@ -6015,12 +6341,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town",
+    "route_23",
+    "route_7"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:화염방사",
@@ -6047,12 +6378,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "silph_co",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "seafoam_islands",
+    "silph_co"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:물대포",
@@ -6062,13 +6397,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "fuchsia_city",
+    "mt_moon",
+    "pallet_town",
+    "silph_co",
+    "viridian_city"
    ],
    "liveRecIds": [
     7069
@@ -6082,12 +6423,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city",
+    "silph_co",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:파도타기",
@@ -6159,12 +6506,17 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "mt_moon",
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:거품광선",
@@ -6174,12 +6526,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "mt_moon",
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:오로라빔",
@@ -6189,12 +6545,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:파괴광선",
@@ -6221,12 +6579,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "power_plant",
+    "route_16",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:회전부리",
@@ -6236,12 +6600,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "power_plant",
+    "route_16",
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:지옥의바퀴",
@@ -6251,12 +6619,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:안다리걸기",
@@ -6266,12 +6637,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:카운터",
@@ -6309,12 +6684,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:괴력",
@@ -6331,7 +6710,9 @@
    ],
    "sourceTypes": [
     "pokemon_move",
-    "system_text"
+    "system_text",
+    "pokemon_ability",
+    "pokemon_species"
    ],
    "primarySourceType": "pokemon_move",
    "liveRecIds": [
@@ -6388,12 +6769,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:성장",
@@ -6437,12 +6820,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:솔라빔",
@@ -6469,7 +6856,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -6489,12 +6876,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:수면가루",
@@ -6504,12 +6894,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:꽃잎댄스",
@@ -6549,12 +6943,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:회오리불꽃",
@@ -6564,12 +6960,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town",
+    "route_23",
+    "route_7"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:전기쇼크",
@@ -6579,12 +6980,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island",
+    "power_plant",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:전기자석파",
@@ -6594,12 +6999,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island",
+    "power_plant",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:번개",
@@ -6631,12 +7040,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:지진",
@@ -6668,12 +7080,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:구멍파기",
@@ -6725,7 +7139,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -6748,9 +7162,13 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pewter_city",
+    "route_11",
+    "vermilion_city",
+    "viridian_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -6769,12 +7187,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_11",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:고속이동",
@@ -6784,12 +7206,28 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "fuchsia_city",
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "power_plant",
+    "route_1",
+    "route_13",
+    "route_16",
+    "route_23",
+    "route_24",
+    "route_3",
+    "saffron_city",
+    "seafoam_islands",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:전광석화",
@@ -6806,13 +7244,20 @@
     "auditedAt": "2026-05-09",
     "round": 2
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city",
+    "route_1",
+    "route_13",
+    "route_2",
+    "route_7",
+    "saffron_city",
+    "viridian_city"
    ],
    "liveRecIds": [
     7111
@@ -6826,13 +7271,20 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_city",
+    "pallet_town",
+    "pewter_city",
+    "route_16",
+    "route_21",
+    "route_24",
+    "route_3"
    ],
    "liveRecIds": [
     7095
@@ -6869,12 +7321,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "vermilion_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "vermilion_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:흉내내기",
@@ -6884,7 +7338,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -6909,12 +7363,21 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_3",
+    "route_6",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:그림자분신",
@@ -6941,12 +7404,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "fuchsia_city",
+    "pallet_town",
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:작아지기",
@@ -6956,12 +7424,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "fuchsia_city",
+    "pewter_city",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:연막",
@@ -6971,13 +7444,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city",
+    "pallet_town"
    ],
    "liveRecIds": [
     7120
@@ -6991,12 +7466,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_7",
+    "silph_co",
+    "vermilion_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:껍질에숨기",
@@ -7013,7 +7493,7 @@
     "auditedAt": "2026-05-09",
     "round": 2
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -7040,12 +7520,19 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pewter_city",
+    "route_12",
+    "route_3",
+    "route_4",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:배리어",
@@ -7055,12 +7542,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:빛의장막",
@@ -7087,12 +7577,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:리플렉터",
@@ -7126,12 +7619,21 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "mt_moon",
+    "pewter_city",
+    "route_2",
+    "route_24",
+    "route_3",
+    "saffron_city",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:참기",
@@ -7162,7 +7664,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -7188,12 +7690,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_13",
+    "route_16",
+    "route_3",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:자폭",
@@ -7203,9 +7711,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city",
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "route_10"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -7224,12 +7737,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:핥기",
@@ -7239,12 +7754,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "vermilion_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:스모그",
@@ -7260,12 +7778,14 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:오물공격",
@@ -7275,12 +7795,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:뼈다귀치기",
@@ -7290,12 +7812,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:불대문자",
@@ -7354,12 +7879,20 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "cinnabar_island",
+    "fuchsia_city",
+    "mt_moon",
+    "pallet_town",
+    "route_10",
+    "route_4"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:로케트박치기",
@@ -7369,12 +7902,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:가시대포",
@@ -7399,12 +7934,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:망각술",
@@ -7414,12 +7952,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "cinnabar_island",
+    "pallet_town",
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:숟가락휘기",
@@ -7429,12 +7972,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:알낳기",
@@ -7450,12 +7995,14 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:무릎차기",
@@ -7465,12 +8012,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:뱀눈초리",
@@ -7480,12 +8029,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:꿈먹기",
@@ -7495,7 +8046,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -7516,9 +8067,12 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city",
+    "pewter_city",
+    "route_11"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -7552,9 +8106,10 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_12"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -7588,13 +8143,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_23",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_23"
    ],
    "liveRecIds": [
     7155
@@ -7631,13 +8187,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "viridian_city"
    ],
    "liveRecIds": [
     7075
@@ -7651,12 +8209,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_21",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_21"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:버섯포자",
@@ -7728,12 +8288,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_2",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:녹기",
@@ -7743,13 +8305,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city"
    ],
    "liveRecIds": [
     7162
@@ -7763,12 +8326,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:대폭발",
@@ -7778,12 +8343,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "route_10"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:마구할퀴기",
@@ -7793,12 +8364,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_1",
+    "route_3",
+    "route_4",
+    "route_6",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:뼈다귀부메랑",
@@ -7808,12 +8386,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:잠자기",
@@ -7840,12 +8421,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:필살앞니",
@@ -7855,12 +8438,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:각지기",
@@ -7876,13 +8462,14 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city"
    ],
    "liveRecIds": [
     7170
@@ -7896,13 +8483,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city"
    ],
    "liveRecIds": [
     7171
@@ -7916,12 +8504,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_16",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "route_16"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:분노의앞니",
@@ -7931,12 +8522,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_2"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:베어가르기",
@@ -7946,12 +8540,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_1",
+    "route_4",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:대타출동",
@@ -7961,7 +8561,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -8079,12 +8679,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city",
+    "seafoam_islands",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:악몽",
@@ -8100,9 +8704,11 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_11",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_11",
+    "vermilion_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -8121,12 +8727,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_23",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_23"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:코골기",
@@ -8136,12 +8744,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:저주",
@@ -8151,13 +8761,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "pallet_town",
+    "vermilion_city"
    ],
    "sourceTypes": [
     "pokemon_move",
-    "system_text"
+    "system_text",
+    "item_description"
    ],
    "primarySourceType": "pokemon_move",
    "liveRecIds": [
@@ -8172,13 +8786,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "pewter_city",
+    "route_2",
+    "viridian_city"
    ],
    "liveRecIds": [
     7186
@@ -8207,13 +8825,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_21",
+    "saffron_city"
    ],
    "liveRecIds": [
     7190
@@ -8227,9 +8847,10 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "vermilion_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "vermilion_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -8248,13 +8869,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "seafoam_islands",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "seafoam_islands"
    ],
    "liveRecIds": [
     7192
@@ -8268,12 +8890,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:겁나는얼굴",
@@ -8283,12 +8907,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pallet_town",
+    "pewter_city",
+    "route_1"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:속여때리기",
@@ -8298,12 +8927,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:천사의키스",
@@ -8334,12 +8966,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_12",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:오물폭탄",
@@ -8366,12 +9001,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:대포무노포",
@@ -8381,12 +9018,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:압정뿌리기",
@@ -8396,12 +9035,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:전자포",
@@ -8411,12 +9052,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cinnabar_island",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:꿰뚫어보기",
@@ -8426,12 +9070,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "route_12",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:길동무",
@@ -8441,9 +9089,12 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city",
+    "mt_moon",
+    "vermilion_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -8462,12 +9113,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "silph_co",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "silph_co"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:얼다바람",
@@ -8492,13 +9145,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "power_plant",
+    "saffron_city"
    ],
    "liveRecIds": [
     7208
@@ -8518,12 +9173,15 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:록온",
@@ -8533,12 +9191,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "cinnabar_island",
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:역린",
@@ -8607,12 +9269,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_21",
+    "route_23",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:애교부리기",
@@ -8622,12 +9288,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:구르기",
@@ -8637,12 +9305,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "pewter_city",
+    "route_10",
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:칼등치기",
@@ -8652,12 +9326,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:뽐내기",
@@ -8667,12 +9344,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_11",
+    "route_3",
+    "route_6",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:우유마시기",
@@ -8697,12 +9380,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island",
+    "pallet_town",
+    "route_10"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:연속자르기",
@@ -8750,12 +9437,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "vermilion_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "vermilion_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:헤롱헤롱",
@@ -8782,13 +9471,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_12"
    ],
    "liveRecIds": [
     7224
@@ -8856,7 +9546,8 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "fuchsia_city",
    "areasReferenced": [
-    "fuchsia_city"
+    "fuchsia_city",
+    "rom_mined"
    ],
    "sourceTypes": [
     "pokemon_move"
@@ -8921,12 +9612,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pewter_city",
+    "route_1"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:폭발펀치",
@@ -8936,12 +9631,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:메가폰",
@@ -8951,13 +9648,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "viridian_city"
    ],
    "liveRecIds": [
     7234
@@ -8986,12 +9684,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_13",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_13"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:앵콜",
@@ -9001,12 +9701,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_6",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:따라가때리기",
@@ -9016,12 +9718,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_16",
+    "route_2",
+    "route_24",
+    "route_3",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:고속스핀",
@@ -9031,12 +9740,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:달콤한향기",
@@ -9046,12 +9759,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:아이언테일",
@@ -9076,12 +9793,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:받아던지기",
@@ -9091,12 +9810,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:아침햇살",
@@ -9127,13 +9848,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town"
    ],
    "liveRecIds": [
     7244
@@ -9147,12 +9869,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_6",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:잠재파워",
@@ -9179,12 +9903,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "route_3",
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:회오리",
@@ -9194,12 +9922,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:비바라기",
@@ -9243,12 +9973,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "pewter_city",
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:미러코트",
@@ -9258,12 +9992,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pallet_town",
+    "route_10"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:자기암시",
@@ -9273,12 +10011,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "cinnabar_island",
+    "pallet_town",
+    "pewter_city",
+    "route_11"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:신속",
@@ -9308,12 +10052,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:섀도볼",
@@ -9340,12 +10086,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "pewter_city",
+    "route_11",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:바위깨기",
@@ -9402,12 +10153,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_16",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_16"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:비축하기",
@@ -9417,12 +10170,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:토해내기",
@@ -9432,12 +10188,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:꿀꺽",
@@ -9447,13 +10206,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pewter_city",
+    "route_12"
    ],
    "sourceTypes": [
     "pokemon_move",
-    "system_text"
+    "system_text",
+    "pokemon_species"
    ],
    "primarySourceType": "pokemon_move",
    "liveRecIds": [
@@ -9468,13 +10230,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "route_23"
    ],
    "liveRecIds": [
     7266
@@ -9532,12 +10296,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:도깨비불",
@@ -9567,12 +10333,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:객기",
@@ -9584,7 +10352,8 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "lavender_town",
    "areasReferenced": [
-    "lavender_town"
+    "lavender_town",
+    "rom_mined"
    ],
    "sourceTypes": [
     "pokemon_move"
@@ -9632,12 +10401,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_6",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:자연의힘",
@@ -9728,12 +10499,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_13",
+    "route_23",
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:트릭",
@@ -9767,9 +10542,10 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_24"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -9880,12 +10656,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:리벤지",
@@ -9895,13 +10673,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cerulean_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_city",
+    "saffron_city"
    ],
    "liveRecIds": [
     7288
@@ -9923,7 +10703,8 @@
    },
    "firstAreaEncountered": "celadon_city",
    "areasReferenced": [
-    "celadon_city"
+    "celadon_city",
+    "rom_mined"
    ],
    "sourceTypes": [
     "pokemon_move"
@@ -9941,9 +10722,12 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "pallet_town",
+    "route_12"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -9977,12 +10761,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_2",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:분화",
@@ -10051,12 +10839,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:원념",
@@ -10158,13 +10948,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "fuchsia_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city"
    ],
    "liveRecIds": [
     7302
@@ -10228,12 +11019,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_1",
+    "route_13",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:흔들흔들댄스",
@@ -10273,12 +11068,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:아이스볼",
@@ -10408,12 +11206,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_6",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:놀래키기",
@@ -10483,12 +11283,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:오버히트",
@@ -10515,12 +11317,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city",
+    "route_23"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:암석봉인",
@@ -10547,12 +11352,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_12",
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:금속음",
@@ -10562,13 +11370,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "mt_moon"
    ],
    "liveRecIds": [
     7328
@@ -10618,12 +11428,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_6",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:바지락조개",
@@ -10668,12 +11481,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "vermilion_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "vermilion_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:신통력",
@@ -10703,12 +11518,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "saffron_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:모래지옥",
@@ -10718,12 +11535,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_4",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_4"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:절대영도",
@@ -10733,12 +11552,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "silph_co",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "seafoam_islands",
+    "silph_co"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:탁류",
@@ -10770,7 +11592,8 @@
    "generator": "llm-claude-opus-4-7",
    "firstAreaEncountered": "cerulean_city",
    "areasReferenced": [
-    "cerulean_city"
+    "cerulean_city",
+    "rom_mined"
    ],
    "sourceTypes": [
     "pokemon_move"
@@ -10840,13 +11663,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_12"
    ],
    "liveRecIds": [
     7344
@@ -10926,9 +11750,10 @@
     "evidenceUrl": "https://123learnkorean.wordpress.com/2009/08/25/%EC%9D%B4%EB%9D%BC%EB%8A%94-called/",
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "fuchsia_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -10947,12 +11772,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:포이즌테일",
@@ -10983,13 +11810,14 @@
     "evidenceUrl": "https://123learnkorean.wordpress.com/2009/08/25/%EC%9D%B4%EB%9D%BC%EB%8A%94-called/",
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_12"
    ],
    "liveRecIds": [
     7351
@@ -11033,9 +11861,11 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pewter_city",
+    "viridian_city"
    ],
    "sourceTypes": [
     "pokemon_move",
@@ -11091,12 +11921,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:락블레스트",
@@ -11106,12 +11938,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_move"
    ],
    "primarySourceType": "pokemon_move",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:전격파",
@@ -11185,9 +12020,10 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -11246,12 +12082,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_city",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:옹골참",
@@ -11261,12 +12100,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island",
+    "mt_moon",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:습기",
@@ -11276,13 +12119,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "pewter_city",
+    "viridian_city"
    ],
    "liveRecIds": [
     7368
@@ -11296,7 +12142,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_ability"
    ],
@@ -11316,12 +12162,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "pewter_city",
+    "route_1",
+    "route_4"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:정전기",
@@ -11331,9 +12182,13 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "power_plant",
+    "route_10",
+    "viridian_city"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -11372,13 +12227,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "silph_co",
+    "viridian_city"
    ],
    "liveRecIds": [
     7373
@@ -11392,13 +12249,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island",
+    "pallet_town"
    ],
    "liveRecIds": [
     7374
@@ -11412,12 +12271,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:복안",
@@ -11427,13 +12288,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_24"
    ],
    "liveRecIds": [
     7376
@@ -11447,7 +12309,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "lavender_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
@@ -11494,13 +12356,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_12"
    ],
    "liveRecIds": [
     7379
@@ -11514,12 +12377,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_7",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "route_23",
+    "route_7"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:인분",
@@ -11529,13 +12396,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_12"
    ],
    "liveRecIds": [
     7381
@@ -11549,12 +12417,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cinnabar_island",
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:흡반",
@@ -11564,13 +12435,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon"
    ],
    "liveRecIds": [
     7383
@@ -11584,9 +12456,12 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "pewter_city",
+    "route_23"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -11605,13 +12480,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "mt_moon",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "mt_moon"
    ],
    "liveRecIds": [
     7385
@@ -11655,12 +12531,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "vermilion_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city",
+    "vermilion_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:포자",
@@ -11685,13 +12564,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_24",
+    "route_25"
    ],
    "liveRecIds": [
     7390
@@ -11711,12 +12592,14 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:자연회복",
@@ -11726,12 +12609,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:피뢰침",
@@ -11741,13 +12628,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_city",
+    "pewter_city",
+    "viridian_city"
    ],
    "liveRecIds": [
     7393
@@ -11761,12 +12651,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pewter_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:쓱쓱",
@@ -11776,13 +12668,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pewter_city",
+    "route_2",
+    "viridian_city"
    ],
    "liveRecIds": [
     7395
@@ -11796,13 +12691,16 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "route_12",
+    "route_24"
    ],
    "liveRecIds": [
     7396
@@ -11816,13 +12714,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city",
+    "pallet_town"
    ],
    "liveRecIds": [
     7397
@@ -11836,12 +12736,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "celadon_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:천하장사",
@@ -11878,12 +12780,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:정신력",
@@ -11893,9 +12798,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pewter_city",
+    "route_11",
+    "route_21",
+    "route_24",
+    "route_25",
+    "saffron_city"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -11929,12 +12840,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "viridian_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:자력",
@@ -11944,9 +12857,10 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "cinnabar_island",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cinnabar_island"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -11965,13 +12879,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town",
+    "route_10"
    ],
    "liveRecIds": [
     7405
@@ -11985,12 +12901,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:모래날림",
@@ -12015,12 +12933,18 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "cerulean_cave",
+    "pewter_city",
+    "power_plant",
+    "route_23",
+    "seafoam_islands"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:두꺼운지방",
@@ -12030,12 +12954,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_12",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_12"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:일찍기상",
@@ -12045,12 +12971,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_16",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_16",
+    "route_21"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:불꽃몸",
@@ -12060,12 +12989,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "fuchsia_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "fuchsia_city",
+    "route_23"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:도주",
@@ -12075,13 +13007,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city",
+    "pallet_town",
+    "route_1",
+    "route_13",
+    "route_16",
+    "route_2"
    ],
    "liveRecIds": [
     7412
@@ -12095,12 +13033,19 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "route_1",
+    "route_13",
+    "route_16",
+    "route_3",
+    "saffron_city"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:괴력집게",
@@ -12110,12 +13055,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:픽업",
@@ -12125,13 +13072,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_6",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_6"
    ],
    "liveRecIds": [
     7415
@@ -12166,12 +13114,17 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "mt_moon",
+    "route_1",
+    "route_2",
+    "route_3"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:헤롱헤롱바디",
@@ -12181,12 +13134,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_3",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_3",
+    "route_6"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:플러스",
@@ -12202,7 +13158,8 @@
    ],
    "sourceTypes": [
     "pokemon_ability",
-    "system_text"
+    "system_text",
+    "item_description"
    ],
    "primarySourceType": "pokemon_ability",
    "liveRecIds": [
@@ -12253,13 +13210,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "celadon_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "celadon_city"
    ],
    "liveRecIds": [
     7422
@@ -12279,13 +13237,15 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_2",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pewter_city",
+    "route_2"
    ],
    "liveRecIds": [
     7423
@@ -12299,9 +13259,12 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_city",
+    "route_1",
+    "route_2"
    ],
    "sourceTypes": [
     "pokemon_ability",
@@ -12335,12 +13298,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:심록",
@@ -12350,13 +13315,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town"
    ],
    "liveRecIds": [
     7427
@@ -12370,13 +13336,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town"
    ],
    "liveRecIds": [
     7428
@@ -12390,13 +13357,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "pallet_town"
    ],
    "liveRecIds": [
     7429
@@ -12410,12 +13378,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "route_24"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:돌머리",
@@ -12431,13 +13401,16 @@
     "evidenceUrl": null,
     "auditedAt": "2026-05-09"
    },
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pewter_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "cerulean_city",
+    "mt_moon",
+    "pewter_city"
    ],
    "liveRecIds": [
     7430
@@ -12451,13 +13424,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_7",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_7"
    ],
    "liveRecIds": [
     7431
@@ -12471,13 +13445,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_1",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_1"
    ],
    "liveRecIds": [
     7432
@@ -12491,13 +13466,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "viridian_city",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "route_3",
+    "viridian_city"
    ],
    "liveRecIds": [
     7433
@@ -12541,12 +13518,15 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "sourceTypes": [
     "pokemon_ability"
    ],
    "primarySourceType": "pokemon_ability",
-   "areasReferenced": []
+   "areasReferenced": [
+    "pallet_town",
+    "silph_co"
+   ]
   },
   {
    "vocabId": "rom-mine-v2:소음",
@@ -12596,7 +13576,7 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "route_24",
    "sourceTypes": [
     "pokemon_move"
    ],
@@ -12608,7 +13588,8 @@
     "fuchsia_city",
     "cinnabar_island",
     "celadon_city",
-    "indigo_plateau"
+    "indigo_plateau",
+    "rom_mined"
    ],
    "liveRecIds": [
     1103,
@@ -12624,9 +13605,14 @@
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
-   "firstAreaEncountered": "rom_mined",
+   "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
-    "rom_mined"
+    "rom_mined",
+    "fuchsia_city",
+    "pallet_town",
+    "pewter_city",
+    "route_13",
+    "route_23"
    ],
    "sourceTypes": [
     "pokemon_move",

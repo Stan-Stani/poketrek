@@ -20,7 +20,8 @@
     "npc_dialog",
     "pokedex_entry",
     "system_text",
-    "trainer_class_name"
+    "trainer_class_name",
+    "pokemon_move"
    ],
    "primarySourceType": "trainer_class_name",
    "firstAreaEncountered": "pallet_town",
@@ -242,7 +243,9 @@
    "sourceTypes": [
     "item_description",
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "pokemon_ability",
+    "pokemon_move"
    ],
    "primarySourceType": "item_description",
    "liveRecIds": [
@@ -413,7 +416,9 @@
    ],
    "sourceTypes": [
     "npc_dialog",
-    "system_text"
+    "system_text",
+    "pokemon_species",
+    "trainer_class_name"
    ],
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
@@ -496,7 +501,9 @@
     "npc_dialog",
     "pokedex_entry",
     "system_text",
-    "trainer_class_name"
+    "trainer_class_name",
+    "pokemon_move",
+    "pokemon_species"
    ],
    "primarySourceType": "trainer_class_name",
    "liveRecIds": [
