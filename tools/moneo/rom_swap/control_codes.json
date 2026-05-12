@@ -671,5 +671,43 @@
     "aliased_cp": "378B",
     "glyph_syllable": "귀",
     "hypothesis": "Glyph byte-identical to labeled 0x378B=귀 (≤4 pixel diff). Sole corpus occurrence in binary-table region (offset < 0x700000), not dialog."
+  },
+  "3CFA": {
+    "role": "CONTROL",
+    "hypothesis": "Text-formatting marker (blank atlas glyph, mid-word position). 8 occurrences all immediately precede an adjective/noun ('[3CFA]희귀한', '[3CFA]많은', '[3CFA]완벽한', '[3CFA]챔피언이'). Sits in misanchored 옆-예 LIS window but is not a syllable — blank glyph rules it out.",
+    "evidence_records": [
+      999,
+      1075,
+      1699,
+      2061,
+      3152,
+      3916,
+      4067,
+      4212
+    ]
+  },
+  "40FE": {
+    "role": "CONTROL",
+    "hypothesis": "Text-formatting marker (blank atlas glyph, mid-word position). 7 occurrences all immediately precede a noun ('[40FE]각도', '[40FE]통신', '[40FE]다른', '[40FE]공격', '[40FE]하아'). Blank glyph rules out any syllable role.",
+    "evidence_records": [
+      2836,
+      2839,
+      2846,
+      3007,
+      4210,
+      5486,
+      6430
+    ]
+  },
+  "3FFB": {
+    "role": "CONTROL",
+    "hypothesis": "Text-formatting marker (blank atlas glyph, mid-word position). 5 occurrences mid-sentence preceding nouns/adjectives ('[3FFB]네', '[3FFB]심호흡', '[3FFB]어머', '[3FFB]희귀한', '[3FFB]그건'). Blank glyph rules out any syllable role.",
+    "evidence_records": [
+      1162,
+      1969,
+      2011,
+      2961,
+      3067
+    ]
   }
 }
