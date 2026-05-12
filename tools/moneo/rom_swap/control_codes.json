@@ -109,13 +109,13 @@
   },
   "40FC": {
     "role": "CONTROL",
-    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
-    "evidence_records": []
+    "hypothesis": "Inventory-quantity glyph (multiplication/counter separator). 3/3 corpus occurrences in inventory-display pattern '{item} [40FC] ··· 개': '기술머신 [40FC] 개' (x2), '삐삐 [40FC] 개'.",
+    "evidence_records": [5604, 5605, 5628]
   },
   "3CFF": {
     "role": "CONTROL",
-    "hypothesis": "Blank/near-blank ROM glyph + zero PIL scores. Pattern: xxFE/xxFF/xxFC/xxF0/xxF9/xxFA/xxFB ranges (atlas-hole region).",
-    "evidence_records": []
+    "hypothesis": "Sentence/dialog terminator. All 3 corpus occurrences are sentence-final with no following text ('취소된었습니다 [3CFF]', '대전을 [3CFF]', '곳 또 [3CFF]'). Sits in the misanchored 옆-예 LIS window (alongside 0x3CFA/0x3CFE family) but evidence-based control role.",
+    "evidence_records": [6159, 6919, 6921]
   },
   "40F9": {
     "role": "CONTROL",
@@ -623,5 +623,27 @@
     "role": "CONTROL",
     "hypothesis": "Co-located with confirmed CONTROL cps in non-dialog regions (graphics tables 0x6Bxxxx-0x700000 or script-table region 0x010000-0x500000). Never appears in main dialog (0x720000-0x780000, 0xEB0000-0xEE0000).",
     "evidence_records": []
+  },
+  "3DFF": {
+    "role": "CONTROL",
+    "hypothesis": "Sentence/dialog terminator. All 5 occurrences are sentence-final with no following text ('아우 [3DFF]', '버튼 [3DFF]', '이상한 [3DFF]', '아이템 [3DFF]', '말똑을 두고 [3DFF]').",
+    "evidence_records": [
+      563,
+      1430,
+      5847,
+      6994,
+      7000
+    ]
+  },
+  "3BFF": {
+    "role": "CONTROL",
+    "hypothesis": "Sentence/dialog terminator. All 5 occurrences are sentence-final with no following text ('하 싶진 [3BFF]', '녀석들은 [3BFF]', '배짱이 [3BFF]', '웅님만큼은 [3BFF]', '있다고 슬 [3BFF]').",
+    "evidence_records": [
+      660,
+      1167,
+      1542,
+      2184,
+      2673
+    ]
   }
 }
