@@ -47,6 +47,14 @@ def main():
     records = corpus_data["records"]
     id_to_record = {r["id"]: r for r in records}
 
+    # Also index the static corpus by id so map-walker-reached rec_ids
+    # (which now come from the 2024 comprehensive static corpus) can be
+    # looked up in the per-area pass below. Prior to the 2024 swap, all
+    # walker hits were live-only; now they're static.
+    static_corpus_for_lookup = load_json(STATIC_CORPUS_PATH)
+    for r in static_corpus_for_lookup["records"]:
+        id_to_record.setdefault(r["id"], r)
+
     map_data = load_json(MAP_AREA_PATH)
     resolved_areas = map_data["resolved_areas"]
 
