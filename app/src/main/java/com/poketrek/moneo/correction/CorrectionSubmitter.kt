@@ -6,7 +6,7 @@ package com.poketrek.moneo.correction
  * [GithubIssueSubmitter]'s URL builder.
  */
 const val DEFAULT_GITHUB_REPO_OWNER = "Stan-Stani"
-const val DEFAULT_GITHUB_REPO_NAME = "poketrek"
+const val DEFAULT_GITHUB_REPO_NAME = "moneo"
 
 /**
  * One way to ship a [CorrectionReport] off to a maintainer. Implementations

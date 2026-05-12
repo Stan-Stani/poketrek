@@ -120,7 +120,7 @@ class StepCounterService : Service() {
             PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT,
         )
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("PokéTrek")
+            .setContentTitle("Moneo")
             .setContentText("Counting steps")
             .setSmallIcon(android.R.drawable.ic_menu_compass)
             .setOngoing(true)

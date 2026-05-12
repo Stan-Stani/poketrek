@@ -324,7 +324,7 @@ private fun AppRoot(
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
-                    Text("PokéTrek", style = MaterialTheme.typography.headlineMedium)
+                    Text("Moneo", style = MaterialTheme.typography.headlineMedium)
                     Text("Pick a LeafGreen ROM (.gba) to begin")
                     Button(onClick = onPickRom) { Text("Choose ROM") }
                 }

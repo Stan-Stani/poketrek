@@ -15,7 +15,7 @@
     <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true" />
 
     <application
-        android:label="PokéTrek"
+        android:label="Moneo"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.NoActionBar"
         android:allowBackup="false">

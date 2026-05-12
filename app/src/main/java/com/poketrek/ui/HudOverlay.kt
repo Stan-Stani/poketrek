@@ -311,7 +311,7 @@ fun SettingsSheet(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween,
             ) {
-                Text("PokéTrek settings", fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                Text("Moneo settings", fontWeight = FontWeight.Bold, fontSize = 18.sp)
                 Button(
                     onClick = { onPickRom(); onDismiss() },
                     contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
