@@ -1,20 +1,24 @@
-name: Korean correction
-description: Suggest a fix for an incorrect Korean sentence or translation in the moneo flashcards.
-title: "[moneo] Korean correction: "
-labels: ["moneo", "korean-correction"]
+name: Moneo correction
+description: Suggest a fix for an incorrect Korean or English string in a moneo flashcard.
+title: "[moneo] Correction: "
+labels: ["moneo", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve PokéTrek's Korean! Most fields are pre-filled
-        when you arrive here from the in-app **✎ Report** button. If you're
-        opening this manually, fill in whatever you can.
+        Thanks for helping improve PokéTrek's bilingual decks. Most fields
+        are pre-filled when you arrive here from the in-app **✎ Report**
+        button. Edit whichever side is wrong (Korean, English, or both)
+        and leave the rest as-is.
+
+        After review the maintainer will relabel this as `ko-fix` or
+        `en-fix` depending on which side needed correcting.
 
   - type: input
     id: vocab-id
     attributes:
       label: Vocab ID
-      description: Stable identifier of the headword the sentence belongs to (e.g. `seed-v1:포켓몬`). Pre-filled by the app.
+      description: Stable identifier of the headword the sentence belongs to (e.g. `rom-mine-v3:포켓몬`). Pre-filled by the app.
     validations:
       required: true
 
@@ -36,10 +40,28 @@ body:
       required: true
 
   - type: textarea
+    id: current-gloss
+    attributes:
+      label: Current English
+      description: The English text (vocab gloss or sentence translation) as currently shipped.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
     id: proposed-korean
     attributes:
       label: Proposed Korean
-      description: Your suggested replacement. Leave empty if you're flagging the line without proposing a fix.
+      description: Your suggested replacement Korean. Leave empty if the Korean side is fine.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed-gloss
+    attributes:
+      label: Proposed English
+      description: Your suggested replacement English. Leave empty if the English side is fine.
       render: text
     validations:
       required: false
@@ -53,16 +75,10 @@ body:
       required: false
 
   - type: input
-    id: current-gloss
-    attributes:
-      label: Current English gloss
-      description: The English translation as currently shipped, for context.
-
-  - type: input
     id: source
     attributes:
       label: Source tag
-      description: Provenance from the bundled JSON (e.g. `rom-rec1344`). Helps locate the entry across files.
+      description: Provenance from the bundled JSON (e.g. `rom-rec1344`, `gMoveNames[1]`). Helps locate the entry across files.
 
   - type: input
     id: speaker
@@ -75,7 +91,7 @@ body:
     attributes:
       label: Generator tag
       description: |
-        Who wrote the sentence:
+        Who wrote the line:
         - `llm-<model>` — produced by an LLM (likely candidate for grammar/translation fixes)
         - `human` — hand-curated
         - empty — verbatim from the ROM

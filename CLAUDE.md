@@ -95,6 +95,19 @@ The "direction held last frame" guard is what keeps cutscenes, ledge hops, ice t
 
 ROMs are gitignored (`*.gba`, `*.sav`, `*.savestate`). At runtime the user picks via Storage Access Framework (`OpenDocument`) and the URI permission is persisted. The two `.gba` files at the repo root are dev convenience copies, not committed. For `connectedAndroidTest`, drop `app/src/androidTest/assets/leafgreen.gba` manually.
 
+The moneo gloss pipeline reads two ROMs at the repo root:
+- `Pokemon - LeafGreen Version (USA, Europe) (Rev 1).gba` — canonical EN
+  (CRC `0xDAFFECEC`). Consumed by `tools/moneo/scan_rom_en.py` and
+  `tools/moneo/build_name_table_decks_en.py`. Offsets live in
+  `tools/moneo/rom_config_en.py`; verify with `find_offsets_en.py`.
+- `tools/moneo/rom_swap/leafgreen_J-K_2024.gba` — Korean 2024 patch
+  (CRC `0x4A38A8CB`). The KR scanner is `scan_rom_2024.py`.
+
+After running the EN extractor, `tools/moneo/restructure_glosses.py`
+pairs ROM-anchored Korean cards with the canonical EN headword and
+splits semicolon-delimited senses into a `senses[]` field. The rebuild
+is idempotent — re-running with no changes leaves the assets identical.
+
 ## Conventions worth knowing
 
 - Java 17 / Kotlin 2.1 / Compose BOM 2026.03 / AGP 9.1 / NDK `27.2.12479018` / minSdk 26 / targetSdk 35. ABIs: `arm64-v8a`, `x86_64`.

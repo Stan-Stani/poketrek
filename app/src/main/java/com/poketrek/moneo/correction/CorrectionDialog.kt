@@ -15,7 +15,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -37,7 +36,8 @@ fun CorrectionDialog(
     onDismiss: () -> Unit,
     onSubmit: (CorrectionReport, CorrectionSubmitter) -> Unit,
 ) {
-    var proposed by remember { mutableStateOf(initialReport.currentKorean) }
+    var proposedKo by remember { mutableStateOf(initialReport.currentKorean) }
+    var proposedEn by remember { mutableStateOf(initialReport.currentGloss) }
     var reason by remember { mutableStateOf("") }
 
     AlertDialog(
@@ -50,14 +50,22 @@ fun CorrectionDialog(
                     fontSize = 12.sp,
                     color = Color(0xFF6B7280),
                 )
-                Text("Current Korean", fontWeight = FontWeight.SemiBold, fontSize = 12.sp)
-                Text(initialReport.currentKorean, fontSize = 14.sp)
-                Text("Current English", fontWeight = FontWeight.SemiBold, fontSize = 12.sp)
-                Text(initialReport.currentGloss, fontSize = 13.sp, color = Color(0xFF374151))
+                Text(
+                    "Edit either side. Leave a field unchanged if it's already correct.",
+                    fontSize = 11.sp,
+                    color = Color(0xFF6B7280),
+                )
                 OutlinedTextField(
-                    value = proposed,
-                    onValueChange = { proposed = it },
-                    label = { Text("Proposed Korean") },
+                    value = proposedKo,
+                    onValueChange = { proposedKo = it },
+                    label = { Text("Korean") },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = false,
+                )
+                OutlinedTextField(
+                    value = proposedEn,
+                    onValueChange = { proposedEn = it },
+                    label = { Text("English") },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = false,
                 )
@@ -82,12 +90,15 @@ fun CorrectionDialog(
                 submitters.forEach { submitter ->
                     Button(
                         onClick = {
-                            val cleanProposed = proposed
+                            val cleanKo = proposedKo
                                 .takeIf { it.isNotBlank() && it != initialReport.currentKorean }
+                            val cleanEn = proposedEn
+                                .takeIf { it.isNotBlank() && it != initialReport.currentGloss }
                             val cleanReason = reason.takeIf { it.isNotBlank() }
                             onSubmit(
                                 initialReport.copy(
-                                    proposedKorean = cleanProposed,
+                                    proposedKorean = cleanKo,
+                                    proposedGloss = cleanEn,
                                     reason = cleanReason,
                                 ),
                                 submitter,

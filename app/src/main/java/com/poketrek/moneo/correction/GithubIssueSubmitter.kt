@@ -8,9 +8,10 @@ import java.net.URLEncoder
 /**
  * Opens a pre-filled GitHub Issue Form in the device browser.
  *
- * The form's field IDs (`vocab-id`, `current-korean`, `proposed-korean`,
- * `reason`, `app-version`, `rom-crc32`, `source`, `generator`) MUST match
- * the `id:` values in `.github/ISSUE_TEMPLATE/korean-correction.yml`.
+ * The form's field IDs (`vocab-id`, `current-korean`, `current-gloss`,
+ * `proposed-korean`, `proposed-gloss`, `reason`, `app-version`,
+ * `rom-crc32`, `source`, `generator`) MUST match the `id:` values in
+ * `.github/ISSUE_TEMPLATE/moneo-correction.yml`.
  * GitHub Issue Forms read URL query params and pre-populate fields by
  * matching `id`.
  *
@@ -38,13 +39,14 @@ class GithubIssueSubmitter(
 
 internal fun buildIssueUrl(owner: String, repo: String, report: CorrectionReport): String {
     val params = listOf(
-        "template" to "korean-correction.yml",
-        "title" to "[moneo] Korean correction: ${report.vocabHeadword}",
+        "template" to "moneo-correction.yml",
+        "title" to "[moneo] Correction: ${report.vocabHeadword}",
         "vocab-id" to report.vocabId,
         "vocab-headword" to "${report.vocabHeadword} / ${report.vocabGloss}",
         "current-korean" to report.currentKorean,
         "current-gloss" to report.currentGloss,
         "proposed-korean" to (report.proposedKorean ?: ""),
+        "proposed-gloss" to (report.proposedGloss ?: ""),
         "reason" to (report.reason ?: ""),
         "source" to (report.source ?: ""),
         "speaker" to (report.speaker ?: ""),

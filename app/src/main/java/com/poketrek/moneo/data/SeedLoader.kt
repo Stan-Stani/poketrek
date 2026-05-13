@@ -46,10 +46,20 @@ object SeedLoader {
                     }
                 }
             } else emptyList()
+            val sensesArr = o.optJSONArray("senses")
+            val senses: List<String> = if (sensesArr != null) {
+                buildList(sensesArr.length()) {
+                    for (j in 0 until sensesArr.length()) {
+                        val s = sensesArr.optString(j)
+                        if (s.isNotEmpty()) add(s)
+                    }
+                }
+            } else emptyList()
             out += VocabEntry(
                 id = "$sourceTag:$korean",
                 korean = korean,
                 gloss = o.getString("gloss"),
+                senses = senses,
                 partOfSpeech = o.getString("partOfSpeech"),
                 // Prefer firstAreaEncountered (set by the attribution
                 // pipeline) so per-area review queues include species/mined/

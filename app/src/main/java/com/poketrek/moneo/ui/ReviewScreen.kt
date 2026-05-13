@@ -234,6 +234,7 @@ fun ReviewScreen(
             speaker = s.speaker,
             generator = s.generator,
             proposedKorean = null,
+            proposedGloss = null,
             reason = null,
             appVersion = BuildConfig.VERSION_NAME,
             romCrc32 = romCrc32Hex,
@@ -305,7 +306,12 @@ fun ReviewScreen(
                                 .verticalScroll(rememberScrollState()),
                             verticalArrangement = Arrangement.spacedBy(12.dp),
                         ) {
-                            CardBack(text = sides.back, notes = vocab.notes, direction = direction)
+                            CardBack(
+                                text = sides.back,
+                                notes = vocab.notes,
+                                direction = direction,
+                                senses = sensesForBack(vocab, direction),
+                            )
                             sentenceSides?.let { ss ->
                                 SentenceCard(
                                     frontText = ss.front,
@@ -335,7 +341,12 @@ fun ReviewScreen(
                 header()
                 front()
                 if (revealed) {
-                    CardBack(text = sides.back, notes = vocab.notes, direction = direction)
+                    CardBack(
+                        text = sides.back,
+                        notes = vocab.notes,
+                        direction = direction,
+                        senses = sensesForBack(vocab, direction),
+                    )
                     sentenceSides?.let { ss ->
                         SentenceCard(
                             frontText = ss.front,
@@ -453,7 +464,12 @@ private fun CardFront(
 }
 
 @Composable
-private fun CardBack(text: String, notes: String?, direction: FlashcardDirection) {
+private fun CardBack(
+    text: String,
+    notes: String?,
+    direction: FlashcardDirection,
+    senses: List<String> = emptyList(),
+) {
     val label = when (direction) {
         FlashcardDirection.KO_TO_EN -> "Meaning"
         FlashcardDirection.EN_TO_KO -> "한국어"
@@ -467,6 +483,16 @@ private fun CardBack(text: String, notes: String?, direction: FlashcardDirection
     ) {
         Text(label, color = Color(0xFF6EE7B7), fontSize = 10.sp)
         Text(text, color = Color.White, fontWeight = FontWeight.SemiBold, fontSize = 18.sp)
+        // Secondary senses sit directly below the primary gloss. Single
+        // muted line, dot-separated, so the canonical headword stays
+        // dominant and the grade buttons don't get pushed off-screen.
+        if (senses.isNotEmpty()) {
+            Text(
+                senses.joinToString(" · "),
+                color = Color(0xFFA7F3D0),
+                fontSize = 11.sp,
+            )
+        }
         notes?.let {
             Text(it, color = Color(0xFFA7F3D0), fontSize = 12.sp)
         }
@@ -581,6 +607,18 @@ private fun vocabSidesFor(vocab: VocabEntry, direction: FlashcardDirection): Tex
     when (direction) {
         FlashcardDirection.KO_TO_EN -> TextSides(vocab.korean, vocab.gloss)
         FlashcardDirection.EN_TO_KO -> TextSides(vocab.gloss, vocab.korean)
+    }
+
+/**
+ * Senses to show on the back of the card. Only meaningful in KO_TO_EN
+ * (English secondary senses surface under the English headword). In
+ * EN_TO_KO the back is Korean and we don't have ranked Korean senses,
+ * so render nothing.
+ */
+private fun sensesForBack(vocab: VocabEntry, direction: FlashcardDirection): List<String> =
+    when (direction) {
+        FlashcardDirection.KO_TO_EN -> vocab.senses
+        FlashcardDirection.EN_TO_KO -> emptyList()
     }
 
 private fun sentenceSidesFor(s: SentenceEntry, direction: FlashcardDirection): TextSides =

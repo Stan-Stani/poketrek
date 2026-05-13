@@ -40,6 +40,14 @@ data class CorrectionReport(
     val generator: String?,
     /** User's proposed replacement Korean. Null when the user is just flagging. */
     val proposedKorean: String?,
+    /**
+     * User's proposed replacement English gloss (or sentence translation
+     * when reporting on a sentence). Null when unchanged. Either side may
+     * be edited in a single report — the maintainer reads which one
+     * differs from the corresponding `current*` field to triage as
+     * `ko-fix` or `en-fix`.
+     */
+    val proposedGloss: String?,
     /** Free-text "why is this wrong" explanation. Optional. */
     val reason: String?,
     /** App build for context. */
@@ -58,6 +66,7 @@ data class CorrectionReport(
         put("speaker", speaker ?: JSONObject.NULL)
         put("generator", generator ?: JSONObject.NULL)
         put("proposed_korean", proposedKorean ?: JSONObject.NULL)
+        put("proposed_gloss", proposedGloss ?: JSONObject.NULL)
         put("reason", reason ?: JSONObject.NULL)
         put("app_version", appVersion)
         put("rom_crc32", romCrc32 ?: JSONObject.NULL)

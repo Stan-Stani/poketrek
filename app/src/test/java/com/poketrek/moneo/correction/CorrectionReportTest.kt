@@ -11,6 +11,7 @@ class CorrectionReportTest {
 
     private fun report(
         proposed: String? = "포켓몬은 친구입니다.",
+        proposedGloss: String? = null,
         reason: String? = "particle should be 은 not 는",
         generator: String? = "llm-claude-opus-4-7",
     ) = CorrectionReport(
@@ -24,6 +25,7 @@ class CorrectionReportTest {
         speaker = "오키드",
         generator = generator,
         proposedKorean = proposed,
+        proposedGloss = proposedGloss,
         reason = reason,
         appVersion = "0.1.0",
         romCrc32 = "0xDAFFECEC",
@@ -42,6 +44,14 @@ class CorrectionReportTest {
         assertEquals(r.speaker, parsed.getString("speaker"))
         assertEquals(r.generator, parsed.getString("generator"))
         assertEquals(r.proposedKorean, parsed.getString("proposed_korean"))
+        // proposed_gloss serializes to null when unset; round-trip the
+        // populated path through copy() so the assertion runs against a
+        // non-null value too.
+        val withGloss = r.copy(proposedGloss = "Pokémon ARE friends.")
+        assertEquals(
+            "Pokémon ARE friends.",
+            JSONObject(withGloss.toJson()).getString("proposed_gloss"),
+        )
         assertEquals(r.reason, parsed.getString("reason"))
         assertEquals(r.appVersion, parsed.getString("app_version"))
         assertEquals(r.romCrc32, parsed.getString("rom_crc32"))
@@ -54,7 +64,7 @@ class CorrectionReportTest {
         // JSONObject.NULL serializes to JSON `null`; consumer-side `isNull` works
         listOf(
             "area_id", "source", "speaker", "generator",
-            "proposed_korean", "reason", "rom_crc32",
+            "proposed_korean", "proposed_gloss", "reason", "rom_crc32",
         ).forEach { key ->
             assertTrue("expected JSON null for $key", parsed.isNull(key))
         }
@@ -65,7 +75,7 @@ class CorrectionReportTest {
         val url = buildIssueUrl("Stan-Stani", "poketrek", r)
 
         assertTrue(url.startsWith("https://github.com/Stan-Stani/poketrek/issues/new?"))
-        assertTrue("must reference template", url.contains("template=korean-correction.yml"))
+        assertTrue("must reference template", url.contains("template=moneo-correction.yml"))
 
         // Decode each query value and confirm key fields survived encoding.
         val query = url.substringAfter("?")
@@ -76,6 +86,9 @@ class CorrectionReportTest {
         assertEquals(r.vocabId, params["vocab-id"])
         assertEquals(r.currentKorean, params["current-korean"])
         assertEquals(r.proposedKorean, params["proposed-korean"])
+        // proposed-gloss is empty when the user didn't edit the English side
+        // but the form field still appears so GitHub's prefill works.
+        assertEquals("", params["proposed-gloss"])
         assertEquals(r.reason, params["reason"])
         assertEquals(r.generator, params["generator"])
         assertEquals(r.romCrc32, params["rom-crc32"])
@@ -92,8 +105,19 @@ class CorrectionReportTest {
         // Empty values should still be present (form fields stay empty rather
         // than disappearing) — this keeps the issue template predictable.
         assertTrue(url.contains("proposed-korean="))
+        assertTrue(url.contains("proposed-gloss="))
         assertTrue(url.contains("reason="))
         assertTrue(url.contains("generator="))
+    }
+
+    @Test fun proposedGlossSurvivesUrlEncoding() {
+        val r = report(proposedGloss = "Pokémon are friends!")
+        val url = buildIssueUrl("Stan-Stani", "poketrek", r)
+        val params = url.substringAfter("?").split("&").associate { kv ->
+            val eq = kv.indexOf('=')
+            kv.substring(0, eq) to URLDecoder.decode(kv.substring(eq + 1), "UTF-8")
+        }
+        assertEquals("Pokémon are friends!", params["proposed-gloss"])
     }
 
     @Test fun githubUrlStaysWellUnderBrowserLimits() {

@@ -12,6 +12,12 @@ data class VocabEntry(
     /** Stable id: `"<sourceTag>:<korean>"`. Survives across seed-file edits. */
     val id: String,
     val korean: String,
+    /**
+     * Primary English headword — one word or short phrase, no semicolons.
+     * For ROM-table-anchored entries this is the canonical in-game English
+     * extracted by `tools/moneo/build_name_table_decks_en.py` and pinned
+     * into the asset by `restructure_glosses.py`.
+     */
     val gloss: String,
     val partOfSpeech: String,
     /**
@@ -39,6 +45,14 @@ data class VocabEntry(
      * don't carry the field.
      */
     val primarySourceType: String? = null,
+    /**
+     * Secondary senses surfaced under [gloss] on the card back. Populated
+     * from semicolon-split manual glosses (for dialog lemmas) or from
+     * `dialog_map_en.json` (curated overrides). Empty for most ROM-anchored
+     * entries — one canonical name is unambiguous. Last in the parameter
+     * list so existing positional callers stay source-compatible.
+     */
+    val senses: List<String> = emptyList(),
 )
 
 /**
