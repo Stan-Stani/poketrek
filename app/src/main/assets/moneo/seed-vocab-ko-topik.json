@@ -16,7 +16,9 @@
   "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search.",
   "restructure_glosses 2026-05-13: 132 entries updated; rom-table=0 dialog-map=0 split=132 noop=581",
   "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=132 noop=581",
-  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=132 noop=581"
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=132 noop=581",
+  "restructure_glosses 2026-05-13: 40 entries updated; rom-table=0 dialog-map=45 split=131 noop=537",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=45 split=131 noop=537"
  ],
  "entries": [
   {
@@ -1368,7 +1370,7 @@
   },
   {
    "korean": "주다",
-   "gloss": "to give",
+   "gloss": "give",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 54,
@@ -1432,7 +1434,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to give"
+   ]
   },
   {
    "korean": "사다",
@@ -2706,7 +2711,7 @@
   },
   {
    "korean": "산",
-   "gloss": "mountain",
+   "gloss": "Mountain",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 27,
@@ -2718,7 +2723,10 @@
    "filledViaSubstring": {
     "rec_id": 28011,
     "score": 33
-   }
+   },
+   "senses": [
+    "mountain"
+   ]
   },
   {
    "korean": "쓰다",
@@ -3507,7 +3515,7 @@
   },
   {
    "korean": "잡다",
-   "gloss": "to catch, hold",
+   "gloss": "catch",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 19,
@@ -3571,7 +3579,11 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to catch",
+    "to hold"
+   ]
   },
   {
    "korean": "낡다",
@@ -3912,7 +3924,7 @@
   },
   {
    "korean": "숲",
-   "gloss": "forest",
+   "gloss": "Forest",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 16,
@@ -3925,7 +3937,10 @@
    "filledViaSubstring": {
     "rec_id": 27865,
     "score": 33
-   }
+   },
+   "senses": [
+    "woods"
+   ]
   },
   {
    "korean": "가지다",
@@ -4392,7 +4407,7 @@
   },
   {
    "korean": "강",
-   "gloss": "river",
+   "gloss": "River",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 13,
@@ -4405,11 +4420,14 @@
    "filledViaSubstring": {
     "rec_id": 30058,
     "score": 40
-   }
+   },
+   "senses": [
+    "river"
+   ]
   },
   {
    "korean": "기술",
-   "gloss": "technology, technique",
+   "gloss": "move",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 13,
@@ -4466,7 +4484,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "technique",
+    "skill"
+   ]
   },
   {
    "korean": "낮다",
@@ -4670,7 +4692,7 @@
   },
   {
    "korean": "노트",
-   "gloss": "notebook",
+   "gloss": "Note",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 12,
@@ -4689,7 +4711,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "notebook"
+   ]
   },
   {
    "korean": "덜",
@@ -4760,7 +4785,7 @@
   },
   {
    "korean": "받다",
-   "gloss": "to receive",
+   "gloss": "receive",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 12,
@@ -4836,7 +4861,11 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to receive",
+    "to obtain"
+   ]
   },
   {
    "korean": "빨다",
@@ -4868,7 +4897,7 @@
   },
   {
    "korean": "상대",
-   "gloss": "opponent, counterpart",
+   "gloss": "opponent",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 12,
@@ -4923,7 +4952,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "counterpart"
+   ]
   },
   {
    "korean": "스스로",
@@ -5381,7 +5413,7 @@
   },
   {
    "korean": "섬",
-   "gloss": "island",
+   "gloss": "Island",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 10,
@@ -5393,7 +5425,10 @@
    "filledViaSubstring": {
     "rec_id": 32067,
     "score": 14
-   }
+   },
+   "senses": [
+    "island"
+   ]
   },
   {
    "korean": "아주",
@@ -6286,7 +6321,7 @@
   },
   {
    "korean": "강하다",
-   "gloss": "to be strong",
+   "gloss": "strong",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 7,
@@ -6454,7 +6489,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "Ability"
+   ]
   },
   {
    "korean": "다리",
@@ -6714,7 +6752,7 @@
   },
   {
    "korean": "약하다",
-   "gloss": "to be weak",
+   "gloss": "weak",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 7,
@@ -6741,7 +6779,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to be weak"
+   ]
   },
   {
    "korean": "오르다",
@@ -7190,7 +7231,7 @@
   },
   {
    "korean": "바다",
-   "gloss": "sea",
+   "gloss": "Sea",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 6,
@@ -7209,7 +7250,11 @@
     "issue": "바다 is unambiguously a noun meaning 'sea'. The partOfSpeech tag 'verb/adj' is wrong; it should be 'noun/adv' to match the convention used for the other noun entries in the file. The gloss itself is correct.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B0%94%EB%8B%A4",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "ocean",
+    "sea"
+   ]
   },
   {
    "korean": "보이다",
@@ -7661,7 +7706,7 @@
   },
   {
    "korean": "찾다",
-   "gloss": "to find",
+   "gloss": "find",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 6,
@@ -7728,7 +7773,12 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to find",
+    "to look for",
+    "search"
+   ]
   },
   {
    "korean": "치즈",
@@ -8055,7 +8105,7 @@
   },
   {
    "korean": "만나다",
-   "gloss": "to meet",
+   "gloss": "meet",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 5,
@@ -8121,7 +8171,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to meet",
+    "encounter"
+   ]
   },
   {
    "korean": "모양",
@@ -8344,7 +8398,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "selection"
+   ]
   },
   {
    "korean": "스타",
@@ -8455,7 +8512,7 @@
   },
   {
    "korean": "지다",
-   "gloss": "to lose",
+   "gloss": "lose",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 5,
@@ -8513,7 +8570,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "(of sun) to set"
+    "to lose"
    ]
   },
   {
@@ -9395,7 +9452,7 @@
   },
   {
    "korean": "벌레",
-   "gloss": "bug, insect",
+   "gloss": "Bug",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 4,
@@ -9424,7 +9481,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "insect"
+   ]
   },
   {
    "korean": "비싸다",
@@ -9662,7 +9722,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "risk"
+   ]
   },
   {
    "korean": "이동",
@@ -9684,7 +9747,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "relocation"
+   ]
   },
   {
    "korean": "자",
@@ -10636,7 +10702,7 @@
   },
   {
    "korean": "발견",
-   "gloss": "discovery",
+   "gloss": "found",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 3,
@@ -10678,7 +10744,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "discovery"
+   ]
   },
   {
    "korean": "벽",
@@ -11242,7 +11311,7 @@
   },
   {
    "korean": "이기다",
-   "gloss": "to win",
+   "gloss": "win",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 3,
@@ -11288,7 +11357,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to win",
+    "to beat"
+   ]
   },
   {
    "korean": "이리",
@@ -11401,7 +11474,7 @@
   },
   {
    "korean": "전기",
-   "gloss": "electricity",
+   "gloss": "Electric",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 3,
@@ -11435,7 +11508,11 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "electricity",
+    "biography"
+   ]
   },
   {
    "korean": "전혀",
@@ -12595,7 +12672,7 @@
   },
   {
    "korean": "도망가다",
-   "gloss": "to run away",
+   "gloss": "flee",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -12612,7 +12689,10 @@
     "item_description",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to run away"
+   ]
   },
   {
    "korean": "도시",
@@ -12642,6 +12722,9 @@
     3019,
     3048,
     3062
+   ],
+   "senses": [
+    "town"
    ]
   },
   {
@@ -13064,7 +13147,7 @@
   },
   {
    "korean": "메일",
-   "gloss": "email",
+   "gloss": "Mail",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 2,
@@ -13251,7 +13334,7 @@
   },
   {
    "korean": "변하다",
-   "gloss": "to change",
+   "gloss": "change",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -13574,7 +13657,7 @@
   },
   {
    "korean": "얼음",
-   "gloss": "ice",
+   "gloss": "Ice",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 2,
@@ -13599,7 +13682,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "ice"
+   ]
   },
   {
    "korean": "없이",
@@ -15978,7 +16064,10 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "male"
+   ]
   },
   {
    "korean": "내려오다",
@@ -16432,7 +16521,7 @@
   },
   {
    "korean": "마을",
-   "gloss": "village",
+   "gloss": "town",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -16468,11 +16557,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "village"
+   ]
   },
   {
    "korean": "막다",
-   "gloss": "to block",
+   "gloss": "block",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -16490,7 +16582,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to block",
+    "to stop"
+   ]
   },
   {
    "korean": "맡기다",
@@ -16970,7 +17066,7 @@
   },
   {
    "korean": "버튼",
-   "gloss": "button",
+   "gloss": "Button",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -17201,7 +17297,7 @@
   },
   {
    "korean": "불꽃",
-   "gloss": "flame, spark",
+   "gloss": "Fire",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -17227,7 +17323,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "flame"
+   ]
   },
   {
    "korean": "불리다",
@@ -17388,7 +17487,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "usage"
+   ]
   },
   {
    "korean": "사탕",
@@ -18296,7 +18398,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "female"
+   ]
   },
   {
    "korean": "역",
@@ -19042,7 +19147,7 @@
   },
   {
    "korean": "잡히다",
-   "gloss": "to be caught",
+   "gloss": "caught",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -19066,7 +19171,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to be caught"
+   ]
   },
   {
    "korean": "적다",
@@ -19834,7 +19942,7 @@
   },
   {
    "korean": "충격",
-   "gloss": "shock, impact",
+   "gloss": "shock",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -19853,7 +19961,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "impact"
+   ]
   },
   {
    "korean": "취소",
@@ -19876,7 +19987,7 @@
   },
   {
    "korean": "카드",
-   "gloss": "card",
+   "gloss": "Card",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -20404,7 +20515,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "old man"
+   ]
   },
   {
    "korean": "향하다",

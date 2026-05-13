@@ -86,24 +86,25 @@ def restructure_entry(e: dict, tables: dict[str, dict[str, str]],
     old_gloss = (e.get("gloss") or "").strip()
     old_senses = list(e.get("senses") or [])
 
-    # dialog_map_en.json beats every other source — it's curated and
-    # can override even a ROM-table mismatch (e.g. when the user prefers
-    # a different rendering of a Pokémon name on the card).
+    # ROM-table canonical wins for ROM-anchored entries. The same Korean
+    # surface can be both a move name and a common noun (방어 = the move
+    # Protect at gMoveNames[182] AND the stat Defense in dialog), and the
+    # source-tagged card is *always* about the move. dialog_map only
+    # applies to dialog/text-mined lemmas.
     rom_gloss = rom_table_gloss(e.get("source"), tables)
-    if ko and ko in dialog_map:
-        m = dialog_map[ko]
-        primary = m["gloss"].strip()
-        leftover_pool = list(m.get("senses", []))
-        reason = "dialog-map"
-    elif rom_gloss:
+    if rom_gloss:
         primary = rom_gloss
         # Discard the old gloss entirely for ROM-table entries: stale
         # PokeAPI mappings sometimes pointed at the wrong species, and
         # carrying those into senses would teach a wrong pair next to
-        # the right one. Curated senses for ROM-table entries go in
-        # dialog_map_en.json.
+        # the right one.
         leftover_pool = []
         reason = "rom-table"
+    elif ko and ko in dialog_map:
+        m = dialog_map[ko]
+        primary = m["gloss"].strip()
+        leftover_pool = list(m.get("senses", []))
+        reason = "dialog-map"
     else:
         senses = split_senses(old_gloss)
         if not senses:

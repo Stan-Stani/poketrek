@@ -7,7 +7,9 @@
   "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search.",
   "restructure_glosses 2026-05-13: 2 entries updated; rom-table=0 dialog-map=0 split=2 noop=140",
   "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=2 noop=140",
-  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=2 noop=140"
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=2 noop=140",
+  "restructure_glosses 2026-05-13: 3 entries updated; rom-table=0 dialog-map=3 split=2 noop=137",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=3 split=2 noop=137"
  ],
  "entries": [
   {
@@ -30,7 +32,7 @@
   {
    "id": "etymology-roots:강철",
    "korean": "강철",
-   "gloss": "steel",
+   "gloss": "Steel",
    "partOfSpeech": "root/morpheme",
    "areaId": "rom_mined",
    "sourceTag": "etymology-roots",
@@ -575,7 +577,7 @@
   {
    "id": "etymology-roots:독",
    "korean": "독",
-   "gloss": "poison",
+   "gloss": "Poison",
    "partOfSpeech": "root/morpheme",
    "areaId": "fuchsia_city",
    "sourceTag": "etymology-roots",
@@ -589,6 +591,9 @@
    "componentOf": [
     "도나리",
     "독파리"
+   ],
+   "senses": [
+    "poison"
    ]
   },
   {
@@ -666,7 +671,7 @@
   {
    "id": "etymology-roots:드래곤",
    "korean": "드래곤",
-   "gloss": "dugong (clip of 듀공/ジュゴン) — entry should target a dugong-themed root or be removed",
+   "gloss": "Dragon",
    "partOfSpeech": "root/morpheme",
    "areaId": "seafoam_islands",
    "sourceTag": "etymology-roots",

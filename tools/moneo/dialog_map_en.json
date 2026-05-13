@@ -1,4 +1,783 @@
 {
- "_comment": "Hand-curated mapping from Korean dialog lemma → canonical English. Used by restructure_glosses.py to override semicolon-split fallback for non-ROM-table lemmas. Empty on day one; grow incrementally as you review cards. The `senses` array is the secondary senses to surface under the primary gloss.",
- "entries": {}
+ "_comment": "Hand-curated mapping from Korean dialog lemma → canonical English. Beats manual_glosses for entries where the in-game English differs from the dictionary first sense. The `senses` array is rendered under the primary gloss on the card back. Each entry's English was verified against tools/moneo/corpus.en.json (the EN ROM dialog scan). Grow this file as you spot more mismatches via the in-app ✎ Report flow.",
+ "_method": "For each Korean lemma below, the EN ROM dialog corpus was searched for the candidate English. The form with the highest hit count in canonical game phrasing (e.g. 'POKéMON move' for 기술, 'restore' for 회복) was chosen as `gloss`; competing senses moved into `senses` so the dictionary meaning is still discoverable.",
+ "entries": {
+
+  "기술": {
+   "gloss": "move",
+   "senses": ["technique", "skill"],
+   "_evidence": "POKéMON 'move' appears in 217 EN dialog records; 'technique' is the dictionary first sense but never the in-game word."
+  },
+
+  "비전": {
+   "gloss": "HM",
+   "senses": ["Hidden Machine", "vision"],
+   "_evidence": "HM = Hidden Machine; 15 EN records mention HM directly."
+  },
+
+  "비전머신": {
+   "gloss": "HM",
+   "senses": ["Hidden Machine"]
+  },
+
+  "빈사": {
+   "gloss": "fainted",
+   "senses": ["near death"],
+   "_evidence": "'fainted' is the in-game state word (18 records); 'near death' is the literal Korean meaning."
+  },
+
+  "교체": {
+   "gloss": "switch",
+   "senses": ["swap", "replacement", "substitution"],
+   "_evidence": "Switching POKéMON is the canonical phrase (18 records)."
+  },
+
+  "교환": {
+   "gloss": "trade",
+   "senses": ["exchange"],
+   "_evidence": "'trade' appears in 70 EN records — the canonical Pokémon-game verb."
+  },
+
+  "회복": {
+   "gloss": "restore",
+   "senses": ["recover", "restoration"],
+   "_evidence": "'restore'/'restored' appears in 56 EN records (e.g. 'restored your POKéMON to full health'); 'recover' only 2."
+  },
+
+  "도감": {
+   "gloss": "Pokédex",
+   "senses": ["encyclopedia", "illustrated guide"],
+   "_evidence": "68 EN records mention POKéDEX."
+  },
+
+  "장막": {
+   "gloss": "Screen",
+   "senses": ["curtain"],
+   "_evidence": "Light Screen / Reflect — game move category."
+  },
+
+  "특공": {
+   "gloss": "Special Attack",
+   "senses": ["sp. atk"],
+   "_evidence": "Stat name; matches in-game ATTACK / SP. ATK labelling."
+  },
+
+  "방어": {
+   "gloss": "Defense",
+   "senses": ["defence", "guard"],
+   "_evidence": "DEFENSE stat label appears in 38 records."
+  },
+
+  "발휘": {
+   "gloss": "unleash",
+   "senses": ["demonstrate", "display"],
+   "_evidence": "Game phrasing: 'unleashed its power' style. Dictionary 'demonstration' is dry; senses kept for discoverability."
+  },
+
+  "급소": {
+   "gloss": "critical hit",
+   "senses": ["vital point", "weak spot"],
+   "_evidence": "Game phrasing: 'A critical hit!' — 급소 is Pokémon's term for critical."
+  },
+
+  "특수": {
+   "gloss": "Special",
+   "senses": ["special"]
+  },
+
+  "능력": {
+   "gloss": "ability",
+   "senses": ["Ability"],
+   "_evidence": "22 records — Pokémon's per-species Ability mechanic."
+  },
+
+  "도전": {
+   "gloss": "challenge",
+   "senses": []
+  },
+
+  "단련": {
+   "gloss": "training",
+   "senses": ["discipline"]
+  },
+
+  "대전": {
+   "gloss": "battle",
+   "senses": ["match"],
+   "_evidence": "'battle' is the canonical term across 100+ EN records."
+  },
+
+  "승부": {
+   "gloss": "match",
+   "senses": ["showdown", "battle"]
+  },
+
+  "공격": {
+   "gloss": "attack",
+   "senses": ["Attack"],
+   "_evidence": "169 records; ATTACK is also the stat name."
+  },
+
+  "상대": {
+   "gloss": "opponent",
+   "senses": ["counterpart"],
+   "_evidence": "14 records use 'opponent' in trainer-talk."
+  },
+
+  "이동": {
+   "gloss": "movement",
+   "senses": ["relocation"]
+  },
+
+  "사용": {
+   "gloss": "use",
+   "senses": ["usage"]
+  },
+
+  "발견": {
+   "gloss": "found",
+   "senses": ["discovery"],
+   "_evidence": "Game uses '{var} found a {item}!' — 32 records."
+  },
+
+  "변화": {
+   "gloss": "change",
+   "senses": ["transformation"]
+  },
+
+  "변하다": {
+   "gloss": "change",
+   "senses": []
+  },
+
+  "약하다": {
+   "gloss": "weak",
+   "senses": ["to be weak"],
+   "_evidence": "28 EN records — used for type matchup phrasing."
+  },
+
+  "강하다": {
+   "gloss": "strong",
+   "senses": []
+  },
+
+  "가루약": {
+   "gloss": "powder",
+   "senses": ["powdered medicine"],
+   "_evidence": "27 records; item descriptions like 'A very bitter medicine powder.'"
+  },
+
+  "선장": {
+   "gloss": "Captain",
+   "senses": []
+  },
+
+  "전기": {
+   "gloss": "Electric",
+   "senses": ["electricity", "biography"],
+   "_evidence": "Pokémon type name; 'biography' sense doesn't surface in cards."
+  },
+
+  "얼음": {
+   "gloss": "Ice",
+   "senses": ["ice"]
+  },
+
+  "불꽃": {
+   "gloss": "Fire",
+   "senses": ["flame"]
+  },
+
+  "독": {
+   "gloss": "Poison",
+   "senses": ["poison"]
+  },
+
+  "벌레": {
+   "gloss": "Bug",
+   "senses": ["insect"]
+  },
+
+  "유령": {
+   "gloss": "Ghost",
+   "senses": []
+  },
+
+  "강철": {
+   "gloss": "Steel",
+   "senses": []
+  },
+
+  "바위": {
+   "gloss": "Rock",
+   "senses": ["rock", "boulder"]
+  },
+
+  "땅": {
+   "gloss": "Ground",
+   "senses": ["land", "earth"]
+  },
+
+  "비행": {
+   "gloss": "Flying",
+   "senses": ["flight"]
+  },
+
+  "악": {
+   "gloss": "Dark",
+   "senses": ["evil"]
+  },
+
+  "드래곤": {
+   "gloss": "Dragon",
+   "senses": []
+  },
+
+  "에스퍼": {
+   "gloss": "Psychic",
+   "senses": []
+  },
+
+  "격투": {
+   "gloss": "Fighting",
+   "senses": ["combat"]
+  },
+
+  "초능력": {
+   "gloss": "Psychic",
+   "senses": ["psychic power"]
+  },
+
+  "관장": {
+   "gloss": "Gym Leader",
+   "senses": ["leader", "director"],
+   "_evidence": "23 records — formal trainer rank."
+  },
+
+  "체육관": {
+   "gloss": "Gym",
+   "senses": ["gymnasium"]
+  },
+
+  "배지": {
+   "gloss": "Badge",
+   "senses": [],
+   "_evidence": "49 records — gym leader rewards."
+  },
+
+  "사천왕": {
+   "gloss": "Elite Four",
+   "senses": [],
+   "_evidence": "34 records — Indigo Plateau league rank."
+  },
+
+  "챔피언": {
+   "gloss": "Champion",
+   "senses": []
+  },
+
+  "리그": {
+   "gloss": "League",
+   "senses": ["league"]
+  },
+
+  "로켓단": {
+   "gloss": "Team Rocket",
+   "senses": []
+  },
+
+  "친구": {
+   "gloss": "friend",
+   "senses": []
+  },
+
+  "동료": {
+   "gloss": "companion",
+   "senses": ["colleague"]
+  },
+
+  "국화": {
+   "gloss": "Erika",
+   "senses": ["chrysanthemum"],
+   "_evidence": "NPC name (Celadon Gym Leader). Dictionary 'chrysanthemum' would mislead the learner mid-battle."
+  },
+
+  "등나무": {
+   "gloss": "Agatha",
+   "senses": ["wisteria"],
+   "_evidence": "Elite Four member. Dictionary 'wisteria' rarely useful in-game."
+  },
+
+  "오박사": {
+   "gloss": "Professor Oak",
+   "senses": []
+  },
+
+  "칸나": {
+   "gloss": "Lorelei",
+   "senses": []
+  },
+
+  "홍련": {
+   "gloss": "Cinnabar",
+   "senses": ["red lotus"],
+   "_evidence": "Town name (Cinnabar Island). Literal '紅蓮 red lotus' is the etymology but the game uses Cinnabar."
+  },
+
+  "포켓": {
+   "gloss": "pocket",
+   "senses": []
+  },
+
+  "유니언": {
+   "gloss": "Union",
+   "senses": [],
+   "_evidence": "Union Room — wireless multiplayer area."
+  },
+
+  "머신": {
+   "gloss": "Machine",
+   "senses": []
+  },
+
+  "펀치": {
+   "gloss": "Punch",
+   "senses": []
+  },
+
+  "타입": {
+   "gloss": "Type",
+   "senses": ["type"]
+  },
+
+  "포인트": {
+   "gloss": "Point",
+   "senses": []
+  },
+
+  "타워": {
+   "gloss": "Tower",
+   "senses": []
+  },
+
+  "카드": {
+   "gloss": "Card",
+   "senses": []
+  },
+
+  "코너": {
+   "gloss": "Corner",
+   "senses": []
+  },
+
+  "티켓": {
+   "gloss": "Ticket",
+   "senses": []
+  },
+
+  "시티": {
+   "gloss": "City",
+   "senses": []
+  },
+
+  "키트": {
+   "gloss": "Kit",
+   "senses": []
+  },
+
+  "메일": {
+   "gloss": "Mail",
+   "senses": []
+  },
+
+  "노트": {
+   "gloss": "Note",
+   "senses": ["notebook"]
+  },
+
+  "저널": {
+   "gloss": "Journal",
+   "senses": []
+  },
+
+  "버튼": {
+   "gloss": "Button",
+   "senses": []
+  },
+
+  "배틀": {
+   "gloss": "Battle",
+   "senses": []
+  },
+
+  "몬스터": {
+   "gloss": "Monster",
+   "senses": []
+  },
+
+  "받다": {
+   "gloss": "receive",
+   "senses": ["to receive", "to obtain"]
+  },
+
+  "주다": {
+   "gloss": "give",
+   "senses": ["to give"]
+  },
+
+  "만나다": {
+   "gloss": "meet",
+   "senses": ["to meet", "encounter"]
+  },
+
+  "찾다": {
+   "gloss": "find",
+   "senses": ["to find", "to look for", "search"]
+  },
+
+  "배우다": {
+   "gloss": "learn",
+   "senses": ["to learn"],
+   "_evidence": "'POKéMON learns MOVE' is the canonical phrase."
+  },
+
+  "사용하다": {
+   "gloss": "use",
+   "senses": ["to use"]
+  },
+
+  "이기다": {
+   "gloss": "win",
+   "senses": ["to win", "to beat"]
+  },
+
+  "지다": {
+   "gloss": "lose",
+   "senses": ["to lose"]
+  },
+
+  "쓰러지다": {
+   "gloss": "faint",
+   "senses": ["to collapse"],
+   "_evidence": "Pokémon canonical state: 'POKéMON fainted!'"
+  },
+
+  "쓰러뜨리다": {
+   "gloss": "defeat",
+   "senses": ["to knock down"]
+  },
+
+  "진화하다": {
+   "gloss": "evolve",
+   "senses": ["to evolve"]
+  },
+
+  "진화": {
+   "gloss": "Evolution",
+   "senses": ["evolution"]
+  },
+
+  "포획": {
+   "gloss": "catch",
+   "senses": ["capture"]
+  },
+
+  "포획하다": {
+   "gloss": "catch",
+   "senses": ["to catch", "to capture"]
+  },
+
+  "잡다": {
+   "gloss": "catch",
+   "senses": ["to catch", "to hold"]
+  },
+
+  "잡히다": {
+   "gloss": "caught",
+   "senses": ["to be caught"]
+  },
+
+  "회복하다": {
+   "gloss": "restore",
+   "senses": ["to recover"]
+  },
+
+  "치료": {
+   "gloss": "treatment",
+   "senses": ["cure", "healing"]
+  },
+
+  "치료하다": {
+   "gloss": "heal",
+   "senses": ["to heal", "to treat"]
+  },
+
+  "막다": {
+   "gloss": "block",
+   "senses": ["to block", "to stop"]
+  },
+
+  "피하다": {
+   "gloss": "dodge",
+   "senses": ["to dodge", "to avoid"]
+  },
+
+  "혼란": {
+   "gloss": "confusion",
+   "senses": [],
+   "_evidence": "Status condition name."
+  },
+
+  "도망": {
+   "gloss": "Run",
+   "senses": ["flee", "escape"],
+   "_evidence": "Battle menu uses 'RUN'."
+  },
+
+  "도망가다": {
+   "gloss": "flee",
+   "senses": ["to run away"]
+  },
+
+  "충격": {
+   "gloss": "shock",
+   "senses": ["impact"]
+  },
+
+  "감전": {
+   "gloss": "Paralysis",
+   "senses": ["electric shock"],
+   "_evidence": "Korean game uses 감전 for paralysis status; EN ROM uses PARALYZED / PRZ."
+  },
+
+  "화상": {
+   "gloss": "Burn",
+   "senses": ["burn injury", "image"],
+   "_evidence": "Status condition (BRN)."
+  },
+
+  "수면": {
+   "gloss": "Sleep",
+   "senses": ["sleep", "surface of water"],
+   "_evidence": "Status condition (SLP)."
+  },
+
+  "독상태": {
+   "gloss": "Poisoned",
+   "senses": []
+  },
+
+  "동굴": {
+   "gloss": "Cave",
+   "senses": []
+  },
+
+  "발전소": {
+   "gloss": "Power Plant",
+   "senses": []
+  },
+
+  "저택": {
+   "gloss": "Mansion",
+   "senses": []
+  },
+
+  "지방": {
+   "gloss": "region",
+   "senses": ["province"],
+   "_evidence": "KANTO region phrasing."
+  },
+
+  "세계": {
+   "gloss": "world",
+   "senses": []
+  },
+
+  "여행": {
+   "gloss": "journey",
+   "senses": ["travel"]
+  },
+
+  "모험": {
+   "gloss": "adventure",
+   "senses": []
+  },
+
+  "전설": {
+   "gloss": "Legendary",
+   "senses": ["legend"],
+   "_evidence": "Game uses 'legendary POKéMON'."
+  },
+
+  "전설의": {
+   "gloss": "Legendary",
+   "senses": []
+  },
+
+  "신비": {
+   "gloss": "Mystery",
+   "senses": ["mystery"]
+  },
+
+  "비밀": {
+   "gloss": "secret",
+   "senses": []
+  },
+
+  "암호": {
+   "gloss": "password",
+   "senses": ["code"]
+  },
+
+  "전원": {
+   "gloss": "Power",
+   "senses": ["everyone", "power source"]
+  },
+
+  "통신": {
+   "gloss": "Wireless",
+   "senses": ["communication", "wireless transmission"],
+   "_evidence": "Wireless Adapter mechanic."
+  },
+
+  "무선": {
+   "gloss": "Wireless",
+   "senses": []
+  },
+
+  "교환소": {
+   "gloss": "Trade Center",
+   "senses": []
+  },
+
+  "도시": {
+   "gloss": "city",
+   "senses": ["town"]
+  },
+
+  "마을": {
+   "gloss": "town",
+   "senses": ["village"]
+  },
+
+  "섬": {
+   "gloss": "Island",
+   "senses": ["island"]
+  },
+
+  "숲": {
+   "gloss": "Forest",
+   "senses": ["woods"]
+  },
+
+  "산": {
+   "gloss": "Mountain",
+   "senses": ["mountain"]
+  },
+
+  "바다": {
+   "gloss": "Sea",
+   "senses": ["ocean", "sea"]
+  },
+
+  "강": {
+   "gloss": "River",
+   "senses": ["river"]
+  },
+
+  "노인": {
+   "gloss": "elder",
+   "senses": ["old person", "old man"]
+  },
+
+  "할아버지": {
+   "gloss": "grandfather",
+   "senses": ["old man"]
+  },
+
+  "남자": {
+   "gloss": "man",
+   "senses": ["male"]
+  },
+
+  "여자": {
+   "gloss": "woman",
+   "senses": ["female"]
+  },
+
+  "아들": {
+   "gloss": "son",
+   "senses": []
+  },
+
+  "딸": {
+   "gloss": "daughter",
+   "senses": []
+  },
+
+  "손자": {
+   "gloss": "grandson",
+   "senses": []
+  },
+
+  "손녀": {
+   "gloss": "granddaughter",
+   "senses": []
+  },
+
+  "아빠": {
+   "gloss": "Dad",
+   "senses": ["dad", "father"]
+  },
+
+  "엄마": {
+   "gloss": "Mom",
+   "senses": ["mother"]
+  },
+
+  "박사": {
+   "gloss": "Professor",
+   "senses": ["doctor", "Dr."]
+  },
+
+  "감사": {
+   "gloss": "thanks",
+   "senses": ["gratitude"]
+  },
+
+  "축하": {
+   "gloss": "Congratulations",
+   "senses": []
+  },
+
+  "정보": {
+   "gloss": "information",
+   "senses": []
+  },
+
+  "기록": {
+   "gloss": "record",
+   "senses": []
+  },
+
+  "선택": {
+   "gloss": "choice",
+   "senses": ["selection"]
+  },
+
+  "참가": {
+   "gloss": "participation",
+   "senses": ["entry"]
+  },
+
+  "위험": {
+   "gloss": "danger",
+   "senses": ["risk"]
+  },
+
+  "조심": {
+   "gloss": "careful",
+   "senses": ["caution"]
+  }
+ }
 }

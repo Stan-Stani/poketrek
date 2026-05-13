@@ -10,7 +10,9 @@
   "2026-05-12: re-injected 18 seed-v1-retired survivors (포켓몬, 박사, 나, 안녕, 집, 야생, 새, 쥐, 체육관, 관장, 입구, 출구, 조심하다, 회색, 바위, 첫, 배지, 도전하다) so sentences-ko-rom/study.json resolve. Dropped accidentally in e1e7c17 when rebuild_mined_decks replaced the deck from intermediate files.",
   "restructure_glosses 2026-05-13: 587 entries updated; rom-table=426 dialog-map=0 split=161 noop=149",
   "restructure_glosses 2026-05-13: 29 entries updated; rom-table=426 dialog-map=0 split=161 noop=149",
-  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=426 dialog-map=0 split=161 noop=149"
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=426 dialog-map=0 split=161 noop=149",
+  "restructure_glosses 2026-05-13: 72 entries updated; rom-table=425 dialog-map=95 split=124 noop=92",
+  "restructure_glosses 2026-05-13: 1 entries updated; rom-table=426 dialog-map=94 split=124 noop=92"
  ],
  "entries": [
   {
@@ -8446,7 +8448,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "Attack"
+   ]
   },
   {
    "korean": "상대",
@@ -8596,7 +8601,7 @@
   {
    "korean": "기술",
    "romanization": "gisul",
-   "gloss": "technique",
+   "gloss": "move",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 40,
@@ -8654,8 +8659,8 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
-    "skill",
-    "(Pokémon) move"
+    "technique",
+    "skill"
    ]
   },
   {
@@ -8743,7 +8748,7 @@
   {
    "korean": "받다",
    "romanization": "badda",
-   "gloss": "to receive",
+   "gloss": "receive",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 37,
@@ -8818,7 +8823,11 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to receive",
+    "to obtain"
+   ]
   },
   {
    "korean": "없다",
@@ -9053,7 +9062,7 @@
   {
    "korean": "회복",
    "romanization": "hoebog",
-   "gloss": "recovery",
+   "gloss": "restore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 33,
@@ -9097,6 +9106,7 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
+    "recover",
     "restoration"
    ]
   },
@@ -9284,7 +9294,7 @@
   {
    "korean": "주다",
    "romanization": "juda",
-   "gloss": "to give",
+   "gloss": "give",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 22,
@@ -9347,12 +9357,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to give"
+   ]
   },
   {
    "korean": "배틀",
    "romanization": "baeteul",
-   "gloss": "battle (loan word)",
+   "gloss": "Battle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 21,
@@ -9510,7 +9523,7 @@
   {
    "korean": "머신",
    "romanization": "meosin",
-   "gloss": "machine (loan word)",
+   "gloss": "Machine",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 20,
@@ -10185,7 +10198,7 @@
   {
    "korean": "도감",
    "romanization": "dogam",
-   "gloss": "encyclopedia",
+   "gloss": "Pokédex",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -10232,6 +10245,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
+    "encyclopedia",
     "illustrated guide"
    ]
   },
@@ -10648,7 +10662,7 @@
   {
    "korean": "타입",
    "romanization": "taib",
-   "gloss": "type (loan word)",
+   "gloss": "Type",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -10678,7 +10692,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "type"
+   ]
   },
   {
    "korean": "나오다",
@@ -10953,13 +10970,14 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "showdown"
+    "showdown",
+    "battle"
    ]
   },
   {
    "korean": "시티",
    "romanization": "siti",
-   "gloss": "city (loan word, in place names)",
+   "gloss": "City",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -11022,7 +11040,7 @@
   {
    "korean": "진화",
    "romanization": "jinhwa",
-   "gloss": "evolution",
+   "gloss": "Evolution",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -11056,7 +11074,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "evolution"
+   ]
   },
   {
    "korean": "떨어뜨리다",
@@ -11386,7 +11407,7 @@
   {
    "korean": "저널",
    "romanization": "jeoneol",
-   "gloss": "journal (loan word)",
+   "gloss": "Journal",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -11533,7 +11554,7 @@
   {
    "korean": "교환",
    "romanization": "gyohwan",
-   "gloss": "exchange",
+   "gloss": "trade",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11579,7 +11600,7 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
-    "trade"
+    "exchange"
    ]
   },
   {
@@ -11995,7 +12016,7 @@
   {
    "korean": "찾다",
    "romanization": "chajda",
-   "gloss": "to find",
+   "gloss": "find",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -12063,7 +12084,9 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "to look for"
+    "to find",
+    "to look for",
+    "search"
    ]
   },
   {
@@ -12121,7 +12144,7 @@
   {
    "korean": "화상",
    "romanization": "hwasang",
-   "gloss": "burn injury",
+   "gloss": "Burn",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -12154,6 +12177,7 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
+    "burn injury",
     "image"
    ]
   },
@@ -12482,7 +12506,7 @@
   {
    "korean": "막다",
    "romanization": "magda",
-   "gloss": "to block",
+   "gloss": "block",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12501,6 +12525,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
+    "to block",
     "to stop"
    ]
   },
@@ -12573,7 +12598,7 @@
   {
    "korean": "버튼",
    "romanization": "beoteun",
-   "gloss": "button (loan word)",
+   "gloss": "Button",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12764,7 +12789,7 @@
   {
    "korean": "얼음",
    "romanization": "eoleum",
-   "gloss": "ice",
+   "gloss": "Ice",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12788,7 +12813,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "ice"
+   ]
   },
   {
    "korean": "정도",
@@ -12828,7 +12856,7 @@
   {
    "korean": "챔피언",
    "romanization": "chaempieon",
-   "gloss": "champion (loan word)",
+   "gloss": "Champion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -13144,7 +13172,7 @@
   {
    "korean": "급소",
    "romanization": "geubso",
-   "gloss": "vital point",
+   "gloss": "critical hit",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13160,6 +13188,7 @@
    ],
    "primarySourceType": "system_text",
    "senses": [
+    "vital point",
     "weak spot"
    ]
   },
@@ -13480,7 +13509,7 @@
   {
    "korean": "리그",
    "romanization": "rigeu",
-   "gloss": "league",
+   "gloss": "League",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13528,7 +13557,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "league"
+   ]
   },
   {
    "korean": "만한",
@@ -13578,7 +13610,7 @@
   {
    "korean": "메일",
    "romanization": "meil",
-   "gloss": "mail (loan word)",
+   "gloss": "Mail",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13774,7 +13806,7 @@
   {
    "korean": "불꽃",
    "romanization": "bulkkoch",
-   "gloss": "flame",
+   "gloss": "Fire",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13801,7 +13833,7 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
-    "fire"
+    "flame"
    ]
   },
   {
@@ -14056,7 +14088,7 @@
   {
    "korean": "전기",
    "romanization": "jeongi",
-   "gloss": "electricity",
+   "gloss": "Electric",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -14091,6 +14123,7 @@
    ],
    "primarySourceType": "trainer_class_name",
    "senses": [
+    "electricity",
     "biography"
    ]
   },
@@ -14178,7 +14211,7 @@
   {
    "korean": "축하",
    "romanization": "chugha",
-   "gloss": "congratulations",
+   "gloss": "Congratulations",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -14328,7 +14361,7 @@
   {
    "korean": "홍련",
    "romanization": "hongryeon",
-   "gloss": "Cinnabar (홍련도 = Cinnabar Island)",
+   "gloss": "Cinnabar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -14356,7 +14389,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "red lotus"
+   ]
   },
   {
    "korean": "가득",
@@ -14557,7 +14593,7 @@
   {
    "korean": "교체",
    "romanization": "gyoche",
-   "gloss": "replacement",
+   "gloss": "switch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14573,6 +14609,8 @@
    ],
    "primarySourceType": "system_text",
    "senses": [
+    "swap",
+    "replacement",
     "substitution"
    ]
   },
@@ -14949,7 +14987,7 @@
   {
    "korean": "노인",
    "romanization": "noin",
-   "gloss": "old person",
+   "gloss": "elder",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14969,7 +15007,8 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "elder"
+    "old person",
+    "old man"
    ]
   },
   {
@@ -14997,7 +15036,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "Ability"
+   ]
   },
   {
    "korean": "대의",
@@ -15116,7 +15158,7 @@
   {
    "korean": "동굴",
    "romanization": "donggul",
-   "gloss": "cave",
+   "gloss": "Cave",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15198,7 +15240,7 @@
   {
    "korean": "만나다",
    "romanization": "mannada",
-   "gloss": "to meet",
+   "gloss": "meet",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15263,7 +15305,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to meet",
+    "encounter"
+   ]
   },
   {
    "korean": "말씀",
@@ -15451,7 +15497,7 @@
   {
    "korean": "발견",
    "romanization": "balgyeon",
-   "gloss": "discovery",
+   "gloss": "found",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15494,7 +15540,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "finding"
+    "discovery"
    ]
   },
   {
@@ -15609,7 +15655,7 @@
   {
    "korean": "선장",
    "romanization": "seonjang",
-   "gloss": "captain (of a ship)",
+   "gloss": "Captain",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15737,7 +15783,7 @@
   {
    "korean": "약하다",
    "romanization": "yaghada",
-   "gloss": "to be weak",
+   "gloss": "weak",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15763,7 +15809,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to be weak"
+   ]
   },
   {
    "korean": "어떻다",
@@ -16545,12 +16594,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "entry"
+   ]
   },
   {
    "korean": "코너",
    "romanization": "koneo",
-   "gloss": "corner (loan)",
+   "gloss": "Corner",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16595,7 +16647,7 @@
   {
    "korean": "특수",
    "romanization": "teugsu",
-   "gloss": "special",
+   "gloss": "Special",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16618,12 +16670,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "special"
+   ]
   },
   {
    "korean": "펀치",
    "romanization": "peonchi",
-   "gloss": "punch (loan word)",
+   "gloss": "Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16646,7 +16701,7 @@
   {
    "korean": "포켓",
    "romanization": "pokes",
-   "gloss": "pocket (loan; as in 포켓몬)",
+   "gloss": "pocket",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16721,7 +16776,7 @@
   {
    "korean": "피하다",
    "romanization": "pihada",
-   "gloss": "to avoid",
+   "gloss": "dodge",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16739,7 +16794,8 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
-    "to dodge"
+    "to dodge",
+    "to avoid"
    ]
   },
   {
@@ -17061,7 +17117,7 @@
   {
    "korean": "국화",
    "romanization": "gughwa",
-   "gloss": "chrysanthemum",
+   "gloss": "Erika",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17097,7 +17153,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "(NPC name) Erika the Celadon Gym Leader"
+    "chrysanthemum"
    ]
   },
   {
@@ -17527,7 +17583,7 @@
   {
    "korean": "대전",
    "romanization": "daejeon",
-   "gloss": "match",
+   "gloss": "battle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17565,7 +17621,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "battle (formal)"
+    "match"
    ]
   },
   {
@@ -17593,7 +17649,7 @@
   {
    "korean": "도망",
    "romanization": "domang",
-   "gloss": "escape",
+   "gloss": "Run",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17613,7 +17669,8 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
-    "running away"
+    "flee",
+    "escape"
    ]
   },
   {
@@ -17821,7 +17878,7 @@
   {
    "korean": "등나무",
    "romanization": "deungnamu",
-   "gloss": "wisteria",
+   "gloss": "Agatha",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17844,7 +17901,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "(NPC name) Agatha"
+    "wisteria"
    ]
   },
   {
@@ -18028,7 +18085,7 @@
   {
    "korean": "몬스터",
    "romanization": "monseuteo",
-   "gloss": "monster (loan word)",
+   "gloss": "Monster",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18094,7 +18151,7 @@
   {
    "korean": "무선",
    "romanization": "museon",
-   "gloss": "wireless",
+   "gloss": "Wireless",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18242,7 +18299,7 @@
   {
    "korean": "발휘",
    "romanization": "balhwi",
-   "gloss": "demonstration (of skill/power)",
+   "gloss": "unleash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18256,7 +18313,11 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "demonstrate",
+    "display"
+   ]
   },
   {
    "korean": "방심",
@@ -18296,7 +18357,7 @@
   {
    "korean": "배우다",
    "romanization": "baeuda",
-   "gloss": "to learn",
+   "gloss": "learn",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18318,7 +18379,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to learn"
+   ]
   },
   {
    "korean": "버리다",
@@ -18353,7 +18417,7 @@
   {
    "korean": "변하다",
    "romanization": "byeonhada",
-   "gloss": "to change",
+   "gloss": "change",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18374,7 +18438,7 @@
   {
    "korean": "비전",
    "romanization": "bijeon",
-   "gloss": "vision",
+   "gloss": "HM",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18405,7 +18469,8 @@
    ],
    "primarySourceType": "item_description",
    "senses": [
-    "(Pokémon) HM (Hidden Machine)"
+    "Hidden Machine",
+    "vision"
    ]
   },
   {
@@ -18707,7 +18772,7 @@
   {
    "korean": "신비",
    "romanization": "sinbi",
-   "gloss": "mystery",
+   "gloss": "Mystery",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18726,12 +18791,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "mystery"
+   ]
   },
   {
    "korean": "아빠",
    "romanization": "appa",
-   "gloss": "dad",
+   "gloss": "Dad",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18769,7 +18837,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "dad",
+    "father"
+   ]
   },
   {
    "korean": "아쉽다",
@@ -18972,7 +19044,7 @@
   {
    "korean": "여행",
    "romanization": "yeohaeng",
-   "gloss": "travel",
+   "gloss": "journey",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19019,7 +19091,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "journey"
+    "travel"
    ]
   },
   {
@@ -19272,7 +19344,7 @@
   {
    "korean": "유니언",
    "romanization": "yunieon",
-   "gloss": "union (loan; Union Room)",
+   "gloss": "Union",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19454,7 +19526,7 @@
   {
    "korean": "장막",
    "romanization": "jangmag",
-   "gloss": "screen",
+   "gloss": "Screen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19474,7 +19546,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "curtain (e.g., Light Screen)"
+    "curtain"
    ]
   },
   {
@@ -19519,7 +19591,7 @@
   {
    "korean": "저택",
    "romanization": "jeotaeg",
-   "gloss": "mansion",
+   "gloss": "Mansion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19543,10 +19615,7 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog",
-   "senses": [
-    "estate"
-   ]
+   "primarySourceType": "npc_dialog"
   },
   {
    "korean": "전부",
@@ -19583,7 +19652,7 @@
   {
    "korean": "전설",
    "romanization": "jeonseol",
-   "gloss": "legend",
+   "gloss": "Legendary",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19610,12 +19679,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "legend"
+   ]
   },
   {
    "korean": "전원",
    "romanization": "jeonwon",
-   "gloss": "power source",
+   "gloss": "Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19649,7 +19721,8 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "everyone"
+    "everyone",
+    "power source"
    ]
   },
   {
@@ -20042,13 +20115,14 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
-    "cure"
+    "cure",
+    "healing"
    ]
   },
   {
    "korean": "카드",
    "romanization": "kadeu",
-   "gloss": "card",
+   "gloss": "Card",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -20108,7 +20182,7 @@
   {
    "korean": "칸나",
    "romanization": "kanna",
-   "gloss": "Lorelei (Elite Four)",
+   "gloss": "Lorelei",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -20134,7 +20208,7 @@
   {
    "korean": "타워",
    "romanization": "tawo",
-   "gloss": "tower (loan word)",
+   "gloss": "Tower",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -20223,7 +20297,7 @@
   {
    "korean": "통신",
    "romanization": "tongsin",
-   "gloss": "communication",
+   "gloss": "Wireless",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -20264,6 +20338,7 @@
    ],
    "primarySourceType": "npc_dialog",
    "senses": [
+    "communication",
     "wireless transmission"
    ]
   },
@@ -20294,7 +20369,7 @@
   {
    "korean": "티켓",
    "romanization": "tikes",
-   "gloss": "ticket (loan word)",
+   "gloss": "Ticket",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -20411,7 +20486,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "old man"
+   ]
   },
   {
    "korean": "헤엄치다",
@@ -20636,7 +20714,7 @@
   },
   {
    "korean": "박사",
-   "gloss": "professor, doctor (PhD)",
+   "gloss": "Professor",
    "partOfSpeech": "noun",
    "areaId": "pallet_town",
    "firstAreaEncountered": "pallet_town",
@@ -20666,7 +20744,11 @@
     2865
    ],
    "sourceTag": "seed-v1-retired",
-   "frequency": 1
+   "frequency": 1,
+   "senses": [
+    "doctor",
+    "Dr."
+   ]
   },
   {
    "korean": "나",
@@ -20967,7 +21049,7 @@
   },
   {
    "korean": "체육관",
-   "gloss": "gym",
+   "gloss": "Gym",
    "partOfSpeech": "noun",
    "areaId": "viridian_city",
    "firstAreaEncountered": "pallet_town",
@@ -21006,11 +21088,14 @@
     2181
    ],
    "sourceTag": "seed-v1-retired",
-   "frequency": 1
+   "frequency": 1,
+   "senses": [
+    "gymnasium"
+   ]
   },
   {
    "korean": "관장",
-   "gloss": "leader, director (gym leader)",
+   "gloss": "Gym Leader",
    "partOfSpeech": "noun",
    "areaId": "viridian_city",
    "firstAreaEncountered": "viridian_city",
@@ -21047,7 +21132,11 @@
     2635
    ],
    "sourceTag": "seed-v1-retired",
-   "frequency": 1
+   "frequency": 1,
+   "senses": [
+    "leader",
+    "director"
+   ]
   },
   {
    "korean": "입구",
@@ -21151,7 +21240,7 @@
   },
   {
    "korean": "바위",
-   "gloss": "rock, boulder",
+   "gloss": "Rock",
    "partOfSpeech": "noun",
    "areaId": "pewter_city",
    "firstAreaEncountered": "viridian_city",
@@ -21173,7 +21262,11 @@
     1039
    ],
    "sourceTag": "seed-v1-retired",
-   "frequency": 1
+   "frequency": 1,
+   "senses": [
+    "rock",
+    "boulder"
+   ]
   },
   {
    "korean": "첫",
@@ -21195,7 +21288,7 @@
   },
   {
    "korean": "배지",
-   "gloss": "badge",
+   "gloss": "Badge",
    "partOfSpeech": "noun",
    "areaId": "pewter_city",
    "firstAreaEncountered": "route_1",
