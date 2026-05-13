@@ -7,13 +7,16 @@
   "firstAreaEncountered set from wild-encounter pokedex_obtain_index where available; starters -> pallet_town; legendaries / given Pokemon use canonical FRLG areas.",
   "This deck is a separate study mode (proper-noun corpus) and is not currently loaded by the app.",
   "promote_generic_attribution: 18 cards moved from generic bucket → specific story area via corpus-stem search.",
-  "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search."
+  "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search.",
+  "restructure_glosses 2026-05-13: 366 entries updated; rom-table=366 dialog-map=0 split=0 noop=0",
+  "restructure_glosses 2026-05-13: 3 entries updated; rom-table=366 dialog-map=0 split=0 noop=0",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=366 dialog-map=0 split=0 noop=0"
  ],
  "entries": [
   {
    "korean": "이상해씨",
    "romanization": "isanghaessi",
-   "gloss": "Bulbasaur (Pokemon)",
+   "gloss": "Bulbasaur",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -30,7 +33,7 @@
   {
    "korean": "이상해풀",
    "romanization": "isanghaepul",
-   "gloss": "Ivysaur (Pokemon)",
+   "gloss": "Ivysaur",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -47,7 +50,7 @@
   {
    "korean": "이상해꽃",
    "romanization": "isanghaekkoch",
-   "gloss": "Venusaur (Pokemon)",
+   "gloss": "Venusaur",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -64,7 +67,7 @@
   {
    "korean": "파이리",
    "romanization": "pairi",
-   "gloss": "Charmander (Pokemon)",
+   "gloss": "Charmander",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -81,7 +84,7 @@
   {
    "korean": "리자드",
    "romanization": "rijadeu",
-   "gloss": "Charmeleon (Pokemon)",
+   "gloss": "Charmeleon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -98,7 +101,7 @@
   {
    "korean": "리자몽",
    "romanization": "rijamong",
-   "gloss": "Charizard (Pokemon)",
+   "gloss": "Charizard",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -115,7 +118,7 @@
   {
    "korean": "꼬부기",
    "romanization": "kkobugi",
-   "gloss": "Squirtle (Pokemon)",
+   "gloss": "Squirtle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -132,7 +135,7 @@
   {
    "korean": "어니부기",
    "romanization": "eonibugi",
-   "gloss": "Wartortle (Pokemon)",
+   "gloss": "Wartortle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -149,7 +152,7 @@
   {
    "korean": "거북왕",
    "romanization": "geobukwang",
-   "gloss": "Blastoise (Pokemon)",
+   "gloss": "Blastoise",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -166,7 +169,7 @@
   {
    "korean": "캐터피",
    "romanization": "kaeteopi",
-   "gloss": "Caterpie (Pokemon)",
+   "gloss": "Caterpie",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -181,7 +184,7 @@
   {
    "korean": "단데기",
    "romanization": "dandegi",
-   "gloss": "Metapod (Pokemon)",
+   "gloss": "Metapod",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -198,7 +201,7 @@
   {
    "korean": "버터플",
    "romanization": "beoteopeul",
-   "gloss": "Butterfree (Pokemon)",
+   "gloss": "Butterfree",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -215,7 +218,7 @@
   {
    "korean": "뿔충이",
    "romanization": "ppulchungi",
-   "gloss": "Weedle (Pokemon)",
+   "gloss": "Weedle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -230,7 +233,7 @@
   {
    "korean": "딱충이",
    "romanization": "ttakchungi",
-   "gloss": "Kakuna (Pokemon)",
+   "gloss": "Kakuna",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -247,7 +250,7 @@
   {
    "korean": "독침붕",
    "romanization": "dokchimbung",
-   "gloss": "Beedrill (Pokemon)",
+   "gloss": "Beedrill",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -264,7 +267,7 @@
   {
    "korean": "구구",
    "romanization": "gugu",
-   "gloss": "Pidgey (Pokemon)",
+   "gloss": "Pidgey",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -291,7 +294,7 @@
   {
    "korean": "피죤",
    "romanization": "pijyon",
-   "gloss": "Pidgeotto (Pokemon)",
+   "gloss": "Pidgeotto",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -308,7 +311,7 @@
   {
    "korean": "피죤투",
    "romanization": "pijyontu",
-   "gloss": "Pidgeot (Pokemon)",
+   "gloss": "Pidgeot",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -325,7 +328,7 @@
   {
    "korean": "꼬렛",
    "romanization": "kkoret",
-   "gloss": "Rattata (Pokemon)",
+   "gloss": "Rattata",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -355,7 +358,7 @@
   {
    "korean": "레트라",
    "romanization": "reteura",
-   "gloss": "Raticate (Pokemon)",
+   "gloss": "Raticate",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -372,7 +375,7 @@
   {
    "korean": "깨비참",
    "romanization": "kkaebicham",
-   "gloss": "Spearow (Pokemon)",
+   "gloss": "Spearow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -389,7 +392,7 @@
   {
    "korean": "깨비드릴조",
    "romanization": "kkaebideuriljo",
-   "gloss": "Fearow (Pokemon)",
+   "gloss": "Fearow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -406,7 +409,7 @@
   {
    "korean": "아보",
    "romanization": "abo",
-   "gloss": "Ekans (Pokemon)",
+   "gloss": "Ekans",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 15,
@@ -423,7 +426,7 @@
   {
    "korean": "아보크",
    "romanization": "abokeu",
-   "gloss": "Arbok (Pokemon)",
+   "gloss": "Arbok",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -438,7 +441,7 @@
   {
    "korean": "피카츄",
    "romanization": "pikachyu",
-   "gloss": "Pikachu (Pokemon)",
+   "gloss": "Pikachu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 15,
@@ -470,7 +473,7 @@
   {
    "korean": "라이츄",
    "romanization": "raichyu",
-   "gloss": "Raichu (Pokemon)",
+   "gloss": "Raichu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -485,7 +488,7 @@
   {
    "korean": "모래두지",
    "romanization": "moraeduji",
-   "gloss": "Sandshrew (Pokemon)",
+   "gloss": "Sandshrew",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -500,7 +503,7 @@
   {
    "korean": "고지",
    "romanization": "goji",
-   "gloss": "Sandslash (Pokemon)",
+   "gloss": "Sandslash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -517,7 +520,7 @@
   {
    "korean": "니드리나",
    "romanization": "nideurina",
-   "gloss": "Nidorina (Pokemon)",
+   "gloss": "Nidorina",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -534,7 +537,7 @@
   {
    "korean": "니드퀸",
    "romanization": "nideukwin",
-   "gloss": "Nidoqueen (Pokemon)",
+   "gloss": "Nidoqueen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -549,7 +552,7 @@
   {
    "korean": "니드리노",
    "romanization": "nideurino",
-   "gloss": "Nidorino (Pokemon)",
+   "gloss": "Nidorino",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -566,7 +569,7 @@
   {
    "korean": "니드킹",
    "romanization": "nideuking",
-   "gloss": "Nidoking (Pokemon)",
+   "gloss": "Nidoking",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -581,7 +584,7 @@
   {
    "korean": "삐삐",
    "romanization": "ppippi",
-   "gloss": "Clefairy (Pokemon)",
+   "gloss": "Clefairy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 23,
@@ -613,7 +616,7 @@
   {
    "korean": "픽시",
    "romanization": "piksi",
-   "gloss": "Clefable (Pokemon)",
+   "gloss": "Clefable",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -628,7 +631,7 @@
   {
    "korean": "식스테일",
    "romanization": "sikseuteil",
-   "gloss": "Vulpix (Pokemon)",
+   "gloss": "Vulpix",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -643,7 +646,7 @@
   {
    "korean": "나인테일",
    "romanization": "nainteil",
-   "gloss": "Ninetales (Pokemon)",
+   "gloss": "Ninetales",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -660,7 +663,7 @@
   {
    "korean": "푸린",
    "romanization": "purin",
-   "gloss": "Jigglypuff (Pokemon)",
+   "gloss": "Jigglypuff",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -675,7 +678,7 @@
   {
    "korean": "푸크린",
    "romanization": "pukeurin",
-   "gloss": "Wigglytuff (Pokemon)",
+   "gloss": "Wigglytuff",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -692,7 +695,7 @@
   {
    "korean": "주뱃",
    "romanization": "jubaet",
-   "gloss": "Zubat (Pokemon)",
+   "gloss": "Zubat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -707,7 +710,7 @@
   {
    "korean": "골뱃",
    "romanization": "golbaet",
-   "gloss": "Golbat (Pokemon)",
+   "gloss": "Golbat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -722,7 +725,7 @@
   {
    "korean": "뚜벅쵸",
    "romanization": "ttubeokchyo",
-   "gloss": "Oddish (Pokemon)",
+   "gloss": "Oddish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -737,7 +740,7 @@
   {
    "korean": "냄새꼬",
    "romanization": "naemsaekko",
-   "gloss": "Gloom (Pokemon)",
+   "gloss": "Gloom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -752,7 +755,7 @@
   {
    "korean": "라플레시아",
    "romanization": "rapeulresia",
-   "gloss": "Vileplume (Pokemon)",
+   "gloss": "Vileplume",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -767,7 +770,7 @@
   {
    "korean": "파라스",
    "romanization": "paraseu",
-   "gloss": "Paras (Pokemon)",
+   "gloss": "Paras",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -782,7 +785,7 @@
   {
    "korean": "파라섹트",
    "romanization": "parasekteu",
-   "gloss": "Parasect (Pokemon)",
+   "gloss": "Parasect",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -797,7 +800,7 @@
   {
    "korean": "콘팡",
    "romanization": "konpang",
-   "gloss": "Venonat (Pokemon)",
+   "gloss": "Venonat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -812,7 +815,7 @@
   {
    "korean": "도나리",
    "romanization": "donari",
-   "gloss": "Venomoth (Pokemon)",
+   "gloss": "Venomoth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -829,7 +832,7 @@
   {
    "korean": "디그다",
    "romanization": "digeuda",
-   "gloss": "Diglett (Pokemon)",
+   "gloss": "Diglett",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
@@ -868,7 +871,7 @@
   {
    "korean": "닥트리오",
    "romanization": "dakteurio",
-   "gloss": "Dugtrio (Pokemon)",
+   "gloss": "Dugtrio",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -883,7 +886,7 @@
   {
    "korean": "나옹",
    "romanization": "naong",
-   "gloss": "Meowth (Pokemon)",
+   "gloss": "Meowth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -910,7 +913,7 @@
   {
    "korean": "페르시온",
    "romanization": "pereusion",
-   "gloss": "Persian (Pokemon)",
+   "gloss": "Persian",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -927,7 +930,7 @@
   {
    "korean": "고라파덕",
    "romanization": "gorapadeok",
-   "gloss": "Psyduck (Pokemon)",
+   "gloss": "Psyduck",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -944,7 +947,7 @@
   {
    "korean": "골덕",
    "romanization": "goldeok",
-   "gloss": "Golduck (Pokemon)",
+   "gloss": "Golduck",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -959,7 +962,7 @@
   {
    "korean": "망키",
    "romanization": "mangki",
-   "gloss": "Mankey (Pokemon)",
+   "gloss": "Mankey",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -981,7 +984,7 @@
   {
    "korean": "성원숭",
    "romanization": "seongwonsung",
-   "gloss": "Primeape (Pokemon)",
+   "gloss": "Primeape",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -998,7 +1001,7 @@
   {
    "korean": "가디",
    "romanization": "gadi",
-   "gloss": "Growlithe (Pokemon)",
+   "gloss": "Growlithe",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1015,7 +1018,7 @@
   {
    "korean": "윈디",
    "romanization": "windi",
-   "gloss": "Arcanine (Pokemon)",
+   "gloss": "Arcanine",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1030,7 +1033,7 @@
   {
    "korean": "발챙이",
    "romanization": "balchaengi",
-   "gloss": "Poliwag (Pokemon)",
+   "gloss": "Poliwag",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1045,7 +1048,7 @@
   {
    "korean": "슈륙챙이",
    "romanization": "syuryukchaengi",
-   "gloss": "Poliwhirl (Pokemon)",
+   "gloss": "Poliwhirl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1062,7 +1065,7 @@
   {
    "korean": "강챙이",
    "romanization": "gangchaengi",
-   "gloss": "Poliwrath (Pokemon)",
+   "gloss": "Poliwrath",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -1079,7 +1082,7 @@
   {
    "korean": "캐이시",
    "romanization": "kaeisi",
-   "gloss": "Abra (Pokemon)",
+   "gloss": "Abra",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1101,7 +1104,7 @@
   {
    "korean": "윤겔라",
    "romanization": "yungelra",
-   "gloss": "Kadabra (Pokemon)",
+   "gloss": "Kadabra",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1118,7 +1121,7 @@
   {
    "korean": "후딘",
    "romanization": "hudin",
-   "gloss": "Alakazam (Pokemon)",
+   "gloss": "Alakazam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1133,7 +1136,7 @@
   {
    "korean": "알통몬",
    "romanization": "altongmon",
-   "gloss": "Machop (Pokemon)",
+   "gloss": "Machop",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1155,7 +1158,7 @@
   {
    "korean": "근육몬",
    "romanization": "geunyukmon",
-   "gloss": "Machoke (Pokemon)",
+   "gloss": "Machoke",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1170,7 +1173,7 @@
   {
    "korean": "괴력몬",
    "romanization": "goeryeokmon",
-   "gloss": "Machamp (Pokemon)",
+   "gloss": "Machamp",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1185,7 +1188,7 @@
   {
    "korean": "모다피",
    "romanization": "modapi",
-   "gloss": "Bellsprout (Pokemon)",
+   "gloss": "Bellsprout",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1200,7 +1203,7 @@
   {
    "korean": "우츠동",
    "romanization": "ucheudong",
-   "gloss": "Weepinbell (Pokemon)",
+   "gloss": "Weepinbell",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1217,7 +1220,7 @@
   {
    "korean": "우츠보트",
    "romanization": "ucheuboteu",
-   "gloss": "Victreebel (Pokemon)",
+   "gloss": "Victreebel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1234,7 +1237,7 @@
   {
    "korean": "왕눈해",
    "romanization": "wangnunhae",
-   "gloss": "Tentacool (Pokemon)",
+   "gloss": "Tentacool",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1249,7 +1252,7 @@
   {
    "korean": "독파리",
    "romanization": "dokpari",
-   "gloss": "Tentacruel (Pokemon)",
+   "gloss": "Tentacruel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1266,7 +1269,7 @@
   {
    "korean": "꼬마돌",
    "romanization": "kkomadol",
-   "gloss": "Geodude (Pokemon)",
+   "gloss": "Geodude",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1283,7 +1286,7 @@
   {
    "korean": "데구리",
    "romanization": "deguri",
-   "gloss": "Graveler (Pokemon)",
+   "gloss": "Graveler",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1300,7 +1303,7 @@
   {
    "korean": "딱구리",
    "romanization": "ttakguri",
-   "gloss": "Golem (Pokemon)",
+   "gloss": "Golem",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1317,7 +1320,7 @@
   {
    "korean": "포니타",
    "romanization": "ponita",
-   "gloss": "Ponyta (Pokemon)",
+   "gloss": "Ponyta",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1332,7 +1335,7 @@
   {
    "korean": "날쌩마",
    "romanization": "nalssaengma",
-   "gloss": "Rapidash (Pokemon)",
+   "gloss": "Rapidash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1353,7 +1356,7 @@
   {
    "korean": "야돈",
    "romanization": "yadon",
-   "gloss": "Slowpoke (Pokemon)",
+   "gloss": "Slowpoke",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
@@ -1373,7 +1376,7 @@
   {
    "korean": "야도란",
    "romanization": "yadoran",
-   "gloss": "Slowbro (Pokemon)",
+   "gloss": "Slowbro",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -1390,7 +1393,7 @@
   {
    "korean": "코일",
    "romanization": "koil",
-   "gloss": "Magnemite (Pokemon)",
+   "gloss": "Magnemite",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -1407,7 +1410,7 @@
   {
    "korean": "레어코일",
    "romanization": "reeokoil",
-   "gloss": "Magneton (Pokemon)",
+   "gloss": "Magneton",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1422,7 +1425,7 @@
   {
    "korean": "파오리",
    "romanization": "paori",
-   "gloss": "Farfetch’d (Pokemon)",
+   "gloss": "Farfetch’d",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1437,7 +1440,7 @@
   {
    "korean": "두두",
    "romanization": "dudu",
-   "gloss": "Doduo (Pokemon)",
+   "gloss": "Doduo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1452,7 +1455,7 @@
   {
    "korean": "두트리오",
    "romanization": "duteurio",
-   "gloss": "Dodrio (Pokemon)",
+   "gloss": "Dodrio",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
@@ -1469,7 +1472,7 @@
   {
    "korean": "쥬쥬",
    "romanization": "jyujyu",
-   "gloss": "Seel (Pokemon)",
+   "gloss": "Seel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1484,7 +1487,7 @@
   {
    "korean": "쥬레곤",
    "romanization": "jyuregon",
-   "gloss": "Dewgong (Pokemon)",
+   "gloss": "Dewgong",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1499,7 +1502,7 @@
   {
    "korean": "질퍽이",
    "romanization": "jilpeoki",
-   "gloss": "Grimer (Pokemon)",
+   "gloss": "Grimer",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1514,7 +1517,7 @@
   {
    "korean": "질뻐기",
    "romanization": "jilppeogi",
-   "gloss": "Muk (Pokemon)",
+   "gloss": "Muk",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1531,7 +1534,7 @@
   {
    "korean": "셀러",
    "romanization": "selreo",
-   "gloss": "Shellder (Pokemon)",
+   "gloss": "Shellder",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1546,7 +1549,7 @@
   {
    "korean": "파르셀",
    "romanization": "pareusel",
-   "gloss": "Cloyster (Pokemon)",
+   "gloss": "Cloyster",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1561,7 +1564,7 @@
   {
    "korean": "고오스",
    "romanization": "gooseu",
-   "gloss": "Gastly (Pokemon)",
+   "gloss": "Gastly",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1576,7 +1579,7 @@
   {
    "korean": "고우스트",
    "romanization": "gouseuteu",
-   "gloss": "Haunter (Pokemon)",
+   "gloss": "Haunter",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1598,7 +1601,7 @@
   {
    "korean": "팬텀",
    "romanization": "paenteom",
-   "gloss": "Gengar (Pokemon)",
+   "gloss": "Gengar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -1613,7 +1616,7 @@
   {
    "korean": "롱스톤",
    "romanization": "rongseuton",
-   "gloss": "Onix (Pokemon)",
+   "gloss": "Onix",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1628,7 +1631,7 @@
   {
    "korean": "슬리프",
    "romanization": "seulripeu",
-   "gloss": "Drowzee (Pokemon)",
+   "gloss": "Drowzee",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1645,7 +1648,7 @@
   {
    "korean": "슬리퍼",
    "romanization": "seulripeo",
-   "gloss": "Hypno (Pokemon)",
+   "gloss": "Hypno",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1662,7 +1665,7 @@
   {
    "korean": "크랩",
    "romanization": "keuraep",
-   "gloss": "Krabby (Pokemon)",
+   "gloss": "Krabby",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1677,7 +1680,7 @@
   {
    "korean": "킹크랩",
    "romanization": "kingkeuraep",
-   "gloss": "Kingler (Pokemon)",
+   "gloss": "Kingler",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1694,7 +1697,7 @@
   {
    "korean": "찌리리공",
    "romanization": "jjiririgong",
-   "gloss": "Voltorb (Pokemon)",
+   "gloss": "Voltorb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1711,7 +1714,7 @@
   {
    "korean": "붐볼",
    "romanization": "bumbol",
-   "gloss": "Electrode (Pokemon)",
+   "gloss": "Electrode",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1728,7 +1731,7 @@
   {
    "korean": "아라리",
    "romanization": "arari",
-   "gloss": "Exeggcute (Pokemon)",
+   "gloss": "Exeggcute",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1743,7 +1746,7 @@
   {
    "korean": "나시",
    "romanization": "nasi",
-   "gloss": "Exeggutor (Pokemon)",
+   "gloss": "Exeggutor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1758,7 +1761,7 @@
   {
    "korean": "탕구리",
    "romanization": "tangguri",
-   "gloss": "Cubone (Pokemon)",
+   "gloss": "Cubone",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -1782,7 +1785,7 @@
   {
    "korean": "텅구리",
    "romanization": "teongguri",
-   "gloss": "Marowak (Pokemon)",
+   "gloss": "Marowak",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -1799,7 +1802,7 @@
   {
    "korean": "시라소몬",
    "romanization": "sirasomon",
-   "gloss": "Hitmonlee (Pokemon)",
+   "gloss": "Hitmonlee",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1816,7 +1819,7 @@
   {
    "korean": "홍수몬",
    "romanization": "hongsumon",
-   "gloss": "Hitmonchan (Pokemon)",
+   "gloss": "Hitmonchan",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1833,7 +1836,7 @@
   {
    "korean": "내루미",
    "romanization": "naerumi",
-   "gloss": "Lickitung (Pokemon)",
+   "gloss": "Lickitung",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1848,7 +1851,7 @@
   {
    "korean": "또가스",
    "romanization": "ttogaseu",
-   "gloss": "Koffing (Pokemon)",
+   "gloss": "Koffing",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1863,7 +1866,7 @@
   {
    "korean": "또도가스",
    "romanization": "ttodogaseu",
-   "gloss": "Weezing (Pokemon)",
+   "gloss": "Weezing",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1880,7 +1883,7 @@
   {
    "korean": "뿔카노",
    "romanization": "ppulkano",
-   "gloss": "Rhyhorn (Pokemon)",
+   "gloss": "Rhyhorn",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1895,7 +1898,7 @@
   {
    "korean": "코뿌리",
    "romanization": "koppuri",
-   "gloss": "Rhydon (Pokemon)",
+   "gloss": "Rhydon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1910,7 +1913,7 @@
   {
    "korean": "럭키",
    "romanization": "reokki",
-   "gloss": "Chansey (Pokemon)",
+   "gloss": "Chansey",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 19,
@@ -1945,7 +1948,7 @@
   {
    "korean": "덩쿠리",
    "romanization": "deongkuri",
-   "gloss": "Tangela (Pokemon)",
+   "gloss": "Tangela",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1960,7 +1963,7 @@
   {
    "korean": "캥카",
    "romanization": "kaengka",
-   "gloss": "Kangaskhan (Pokemon)",
+   "gloss": "Kangaskhan",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
@@ -1977,7 +1980,7 @@
   {
    "korean": "쏘드라",
    "romanization": "ssodeura",
-   "gloss": "Horsea (Pokemon)",
+   "gloss": "Horsea",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1992,7 +1995,7 @@
   {
    "korean": "시드라",
    "romanization": "sideura",
-   "gloss": "Seadra (Pokemon)",
+   "gloss": "Seadra",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2009,7 +2012,7 @@
   {
    "korean": "콘치",
    "romanization": "konchi",
-   "gloss": "Goldeen (Pokemon)",
+   "gloss": "Goldeen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -2024,7 +2027,7 @@
   {
    "korean": "왕콘치",
    "romanization": "wangkonchi",
-   "gloss": "Seaking (Pokemon)",
+   "gloss": "Seaking",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2041,7 +2044,7 @@
   {
    "korean": "별가사리",
    "romanization": "byeolgasari",
-   "gloss": "Staryu (Pokemon)",
+   "gloss": "Staryu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2058,7 +2061,7 @@
   {
    "korean": "아쿠스타",
    "romanization": "akuseuta",
-   "gloss": "Starmie (Pokemon)",
+   "gloss": "Starmie",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2075,7 +2078,7 @@
   {
    "korean": "마임맨",
    "romanization": "maimmaen",
-   "gloss": "Mr. Mime (Pokemon)",
+   "gloss": "Mr. Mime",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2090,7 +2093,7 @@
   {
    "korean": "스라크",
    "romanization": "seurakeu",
-   "gloss": "Scyther (Pokemon)",
+   "gloss": "Scyther",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2105,7 +2108,7 @@
   {
    "korean": "루주라",
    "romanization": "rujura",
-   "gloss": "Jynx (Pokemon)",
+   "gloss": "Jynx",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2120,7 +2123,7 @@
   {
    "korean": "에레브",
    "romanization": "erebeu",
-   "gloss": "Electabuzz (Pokemon)",
+   "gloss": "Electabuzz",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2135,7 +2138,7 @@
   {
    "korean": "마그마",
    "romanization": "mageuma",
-   "gloss": "Magmar (Pokemon)",
+   "gloss": "Magmar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 14,
@@ -2150,7 +2153,7 @@
   {
    "korean": "쁘사이저",
    "romanization": "ppeusaijeo",
-   "gloss": "Pinsir (Pokemon)",
+   "gloss": "Pinsir",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2165,7 +2168,7 @@
   {
    "korean": "켄타로스",
    "romanization": "kentaroseu",
-   "gloss": "Tauros (Pokemon)",
+   "gloss": "Tauros",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2180,7 +2183,7 @@
   {
    "korean": "잉어킹",
    "romanization": "ingeoking",
-   "gloss": "Magikarp (Pokemon)",
+   "gloss": "Magikarp",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 18,
@@ -2204,7 +2207,7 @@
   {
    "korean": "갸라도스",
    "romanization": "gyaradoseu",
-   "gloss": "Gyarados (Pokemon)",
+   "gloss": "Gyarados",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2221,7 +2224,7 @@
   {
    "korean": "라프라스",
    "romanization": "rapeuraseu",
-   "gloss": "Lapras (Pokemon)",
+   "gloss": "Lapras",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 17,
@@ -2238,7 +2241,7 @@
   {
    "korean": "메타몽",
    "romanization": "metamong",
-   "gloss": "Ditto (Pokemon)",
+   "gloss": "Ditto",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2253,7 +2256,7 @@
   {
    "korean": "이브이",
    "romanization": "ibeui",
-   "gloss": "Eevee (Pokemon)",
+   "gloss": "Eevee",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -2270,7 +2273,7 @@
   {
    "korean": "샤미드",
    "romanization": "syamideu",
-   "gloss": "Vaporeon (Pokemon)",
+   "gloss": "Vaporeon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -2285,7 +2288,7 @@
   {
    "korean": "쥬피썬더",
    "romanization": "jyupisseondeo",
-   "gloss": "Jolteon (Pokemon)",
+   "gloss": "Jolteon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2300,7 +2303,7 @@
   {
    "korean": "부스터",
    "romanization": "buseuteo",
-   "gloss": "Flareon (Pokemon)",
+   "gloss": "Flareon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -2315,7 +2318,7 @@
   {
    "korean": "폴리곤",
    "romanization": "polrigon",
-   "gloss": "Porygon (Pokemon)",
+   "gloss": "Porygon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -2335,7 +2338,7 @@
   {
    "korean": "암나이트",
    "romanization": "amnaiteu",
-   "gloss": "Omanyte (Pokemon)",
+   "gloss": "Omanyte",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2350,7 +2353,7 @@
   {
    "korean": "암스타",
    "romanization": "amseuta",
-   "gloss": "Omastar (Pokemon)",
+   "gloss": "Omastar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2365,7 +2368,7 @@
   {
    "korean": "투구",
    "romanization": "tugu",
-   "gloss": "Kabuto (Pokemon)",
+   "gloss": "Kabuto",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2380,7 +2383,7 @@
   {
    "korean": "투구푸스",
    "romanization": "tugupuseu",
-   "gloss": "Kabutops (Pokemon)",
+   "gloss": "Kabutops",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2395,7 +2398,7 @@
   {
    "korean": "프테라",
    "romanization": "peutera",
-   "gloss": "Aerodactyl (Pokemon)",
+   "gloss": "Aerodactyl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2412,7 +2415,7 @@
   {
    "korean": "잠만보",
    "romanization": "jammanbo",
-   "gloss": "Snorlax (Pokemon)",
+   "gloss": "Snorlax",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -2429,7 +2432,7 @@
   {
    "korean": "프리져",
    "romanization": "peurijyeo",
-   "gloss": "Articuno (Pokemon)",
+   "gloss": "Articuno",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2446,7 +2449,7 @@
   {
    "korean": "썬더",
    "romanization": "sseondeo",
-   "gloss": "Zapdos (Pokemon)",
+   "gloss": "Zapdos",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -2463,7 +2466,7 @@
   {
    "korean": "파이어",
    "romanization": "paieo",
-   "gloss": "Moltres (Pokemon)",
+   "gloss": "Moltres",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -2480,7 +2483,7 @@
   {
    "korean": "미뇽",
    "romanization": "minyong",
-   "gloss": "Dratini (Pokemon)",
+   "gloss": "Dratini",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2495,7 +2498,7 @@
   {
    "korean": "신뇽",
    "romanization": "sinnyong",
-   "gloss": "Dragonair (Pokemon)",
+   "gloss": "Dragonair",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2510,7 +2513,7 @@
   {
    "korean": "망나뇽",
    "romanization": "mangnanyong",
-   "gloss": "Dragonite (Pokemon)",
+   "gloss": "Dragonite",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2525,7 +2528,7 @@
   {
    "korean": "뮤츠",
    "romanization": "myucheu",
-   "gloss": "Mewtwo (Pokemon)",
+   "gloss": "Mewtwo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2542,7 +2545,7 @@
   {
    "korean": "치코리타",
    "romanization": "chikorita",
-   "gloss": "Chikorita (Pokemon)",
+   "gloss": "Chikorita",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2557,7 +2560,7 @@
   {
    "korean": "베이리프",
    "romanization": "beiripeu",
-   "gloss": "Bayleef (Pokemon)",
+   "gloss": "Bayleef",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2572,7 +2575,7 @@
   {
    "korean": "메가니움",
    "romanization": "meganium",
-   "gloss": "Meganium (Pokemon)",
+   "gloss": "Meganium",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2587,7 +2590,7 @@
   {
    "korean": "브케인",
    "romanization": "beukein",
-   "gloss": "Cyndaquil (Pokemon)",
+   "gloss": "Cyndaquil",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2602,7 +2605,7 @@
   {
    "korean": "마그케인",
    "romanization": "mageukein",
-   "gloss": "Quilava (Pokemon)",
+   "gloss": "Quilava",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2617,7 +2620,7 @@
   {
    "korean": "블레이범",
    "romanization": "beulreibeom",
-   "gloss": "Typhlosion (Pokemon)",
+   "gloss": "Typhlosion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2632,7 +2635,7 @@
   {
    "korean": "리아코",
    "romanization": "riako",
-   "gloss": "Totodile (Pokemon)",
+   "gloss": "Totodile",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2647,7 +2650,7 @@
   {
    "korean": "엘리게이",
    "romanization": "elrigei",
-   "gloss": "Croconaw (Pokemon)",
+   "gloss": "Croconaw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2662,7 +2665,7 @@
   {
    "korean": "장크로다일",
    "romanization": "jangkeurodail",
-   "gloss": "Feraligatr (Pokemon)",
+   "gloss": "Feraligatr",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2677,7 +2680,7 @@
   {
    "korean": "꼬리선",
    "romanization": "kkoriseon",
-   "gloss": "Sentret (Pokemon)",
+   "gloss": "Sentret",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2692,7 +2695,7 @@
   {
    "korean": "다꼬리",
    "romanization": "dakkori",
-   "gloss": "Furret (Pokemon)",
+   "gloss": "Furret",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2707,7 +2710,7 @@
   {
    "korean": "부우부",
    "romanization": "buubu",
-   "gloss": "Hoothoot (Pokemon)",
+   "gloss": "Hoothoot",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2722,7 +2725,7 @@
   {
    "korean": "야부엉",
    "romanization": "yabueong",
-   "gloss": "Noctowl (Pokemon)",
+   "gloss": "Noctowl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2737,7 +2740,7 @@
   {
    "korean": "레디바",
    "romanization": "rediba",
-   "gloss": "Ledyba (Pokemon)",
+   "gloss": "Ledyba",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2752,7 +2755,7 @@
   {
    "korean": "레디안",
    "romanization": "redian",
-   "gloss": "Ledian (Pokemon)",
+   "gloss": "Ledian",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2767,7 +2770,7 @@
   {
    "korean": "페이검",
    "romanization": "peigeom",
-   "gloss": "Spinarak (Pokemon)",
+   "gloss": "Spinarak",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2782,7 +2785,7 @@
   {
    "korean": "아리아도스",
    "romanization": "ariadoseu",
-   "gloss": "Ariados (Pokemon)",
+   "gloss": "Ariados",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2797,7 +2800,7 @@
   {
    "korean": "크로뱃",
    "romanization": "keurobaet",
-   "gloss": "Crobat (Pokemon)",
+   "gloss": "Crobat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2812,7 +2815,7 @@
   {
    "korean": "초라기",
    "romanization": "choragi",
-   "gloss": "Chinchou (Pokemon)",
+   "gloss": "Chinchou",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2827,7 +2830,7 @@
   {
    "korean": "랜턴",
    "romanization": "raenteon",
-   "gloss": "Lanturn (Pokemon)",
+   "gloss": "Lanturn",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2842,7 +2845,7 @@
   {
    "korean": "피츄",
    "romanization": "pichyu",
-   "gloss": "Pichu (Pokemon)",
+   "gloss": "Pichu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2857,7 +2860,7 @@
   {
    "korean": "푸푸린",
    "romanization": "pupurin",
-   "gloss": "Igglybuff (Pokemon)",
+   "gloss": "Igglybuff",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2872,7 +2875,7 @@
   {
    "korean": "토게피",
    "romanization": "togepi",
-   "gloss": "Togepi (Pokemon)",
+   "gloss": "Togepi",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2887,7 +2890,7 @@
   {
    "korean": "토게틱",
    "romanization": "togetik",
-   "gloss": "Togetic (Pokemon)",
+   "gloss": "Togetic",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -2902,7 +2905,7 @@
   {
    "korean": "네이티",
    "romanization": "neiti",
-   "gloss": "Natu (Pokemon)",
+   "gloss": "Natu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2917,7 +2920,7 @@
   {
    "korean": "네이티오",
    "romanization": "neitio",
-   "gloss": "Xatu (Pokemon)",
+   "gloss": "Xatu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2932,7 +2935,7 @@
   {
    "korean": "메리프",
    "romanization": "meripeu",
-   "gloss": "Mareep (Pokemon)",
+   "gloss": "Mareep",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2947,7 +2950,7 @@
   {
    "korean": "보송송",
    "romanization": "bosongsong",
-   "gloss": "Flaaffy (Pokemon)",
+   "gloss": "Flaaffy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2962,7 +2965,7 @@
   {
    "korean": "전룡",
    "romanization": "jeonryong",
-   "gloss": "Ampharos (Pokemon)",
+   "gloss": "Ampharos",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2977,7 +2980,7 @@
   {
    "korean": "아르코",
    "romanization": "areuko",
-   "gloss": "Bellossom (Pokemon)",
+   "gloss": "Bellossom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2992,7 +2995,7 @@
   {
    "korean": "마릴",
    "romanization": "maril",
-   "gloss": "Marill (Pokemon)",
+   "gloss": "Marill",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3007,7 +3010,7 @@
   {
    "korean": "마릴리",
    "romanization": "marilri",
-   "gloss": "Azumarill (Pokemon)",
+   "gloss": "Azumarill",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3022,7 +3025,7 @@
   {
    "korean": "꼬지모",
    "romanization": "kkojimo",
-   "gloss": "Sudowoodo (Pokemon)",
+   "gloss": "Sudowoodo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3037,7 +3040,7 @@
   {
    "korean": "왕구리",
    "romanization": "wangguri",
-   "gloss": "Politoed (Pokemon)",
+   "gloss": "Politoed",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3052,7 +3055,7 @@
   {
    "korean": "통통코",
    "romanization": "tongtongko",
-   "gloss": "Hoppip (Pokemon)",
+   "gloss": "Hoppip",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3067,7 +3070,7 @@
   {
    "korean": "두코",
    "romanization": "duko",
-   "gloss": "Skiploom (Pokemon)",
+   "gloss": "Skiploom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3082,7 +3085,7 @@
   {
    "korean": "솜솜코",
    "romanization": "somsomko",
-   "gloss": "Jumpluff (Pokemon)",
+   "gloss": "Jumpluff",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3097,7 +3100,7 @@
   {
    "korean": "에이팜",
    "romanization": "eipam",
-   "gloss": "Aipom (Pokemon)",
+   "gloss": "Aipom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3112,7 +3115,7 @@
   {
    "korean": "해너츠",
    "romanization": "haeneocheu",
-   "gloss": "Sunkern (Pokemon)",
+   "gloss": "Sunkern",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3127,7 +3130,7 @@
   {
    "korean": "해루미",
    "romanization": "haerumi",
-   "gloss": "Sunflora (Pokemon)",
+   "gloss": "Sunflora",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3142,7 +3145,7 @@
   {
    "korean": "왕자리",
    "romanization": "wangjari",
-   "gloss": "Yanma (Pokemon)",
+   "gloss": "Yanma",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3157,7 +3160,7 @@
   {
    "korean": "우파",
    "romanization": "upa",
-   "gloss": "Wooper (Pokemon)",
+   "gloss": "Wooper",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3172,7 +3175,7 @@
   {
    "korean": "누오",
    "romanization": "nuo",
-   "gloss": "Quagsire (Pokemon)",
+   "gloss": "Quagsire",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -3187,7 +3190,7 @@
   {
    "korean": "에브이",
    "romanization": "ebeui",
-   "gloss": "Espeon (Pokemon)",
+   "gloss": "Espeon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3202,7 +3205,7 @@
   {
    "korean": "블래키",
    "romanization": "beulraeki",
-   "gloss": "Umbreon (Pokemon)",
+   "gloss": "Umbreon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3217,7 +3220,7 @@
   {
    "korean": "니로우",
    "romanization": "nirou",
-   "gloss": "Murkrow (Pokemon)",
+   "gloss": "Murkrow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3232,7 +3235,7 @@
   {
    "korean": "야도킹",
    "romanization": "yadoking",
-   "gloss": "Slowking (Pokemon)",
+   "gloss": "Slowking",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3247,7 +3250,7 @@
   {
    "korean": "무우마",
    "romanization": "muuma",
-   "gloss": "Misdreavus (Pokemon)",
+   "gloss": "Misdreavus",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3262,7 +3265,7 @@
   {
    "korean": "안농",
    "romanization": "annong",
-   "gloss": "Unown (Pokemon)",
+   "gloss": "Unown",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3277,7 +3280,7 @@
   {
    "korean": "마자용",
    "romanization": "majayong",
-   "gloss": "Wobbuffet (Pokemon)",
+   "gloss": "Wobbuffet",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3294,7 +3297,7 @@
   {
    "korean": "키링키",
    "romanization": "kiringki",
-   "gloss": "Girafarig (Pokemon)",
+   "gloss": "Girafarig",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3309,7 +3312,7 @@
   {
    "korean": "피콘",
    "romanization": "pikon",
-   "gloss": "Pineco (Pokemon)",
+   "gloss": "Pineco",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3324,7 +3327,7 @@
   {
    "korean": "쏘콘",
    "romanization": "ssokon",
-   "gloss": "Forretress (Pokemon)",
+   "gloss": "Forretress",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3339,7 +3342,7 @@
   {
    "korean": "노고치",
    "romanization": "nogochi",
-   "gloss": "Dunsparce (Pokemon)",
+   "gloss": "Dunsparce",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3354,7 +3357,7 @@
   {
    "korean": "글라이거",
    "romanization": "geulraigeo",
-   "gloss": "Gligar (Pokemon)",
+   "gloss": "Gligar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3369,7 +3372,7 @@
   {
    "korean": "강철톤",
    "romanization": "gangcheolton",
-   "gloss": "Steelix (Pokemon)",
+   "gloss": "Steelix",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3384,7 +3387,7 @@
   {
    "korean": "블루",
    "romanization": "beulru",
-   "gloss": "Snubbull (Pokemon)",
+   "gloss": "Snubbull",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 47,
@@ -3442,7 +3445,7 @@
   {
    "korean": "그랑블루",
    "romanization": "geurangbeulru",
-   "gloss": "Granbull (Pokemon)",
+   "gloss": "Granbull",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3457,7 +3460,7 @@
   {
    "korean": "침바루",
    "romanization": "chimbaru",
-   "gloss": "Qwilfish (Pokemon)",
+   "gloss": "Qwilfish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3472,7 +3475,7 @@
   {
    "korean": "핫삼",
    "romanization": "hatsam",
-   "gloss": "Scizor (Pokemon)",
+   "gloss": "Scizor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3487,7 +3490,7 @@
   {
    "korean": "단단지",
    "romanization": "dandanji",
-   "gloss": "Shuckle (Pokemon)",
+   "gloss": "Shuckle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3502,7 +3505,7 @@
   {
    "korean": "헤라크로스",
    "romanization": "herakeuroseu",
-   "gloss": "Heracross (Pokemon)",
+   "gloss": "Heracross",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -3517,7 +3520,7 @@
   {
    "korean": "포푸니",
    "romanization": "popuni",
-   "gloss": "Sneasel (Pokemon)",
+   "gloss": "Sneasel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3532,7 +3535,7 @@
   {
    "korean": "깜지곰",
    "romanization": "kkamjigom",
-   "gloss": "Teddiursa (Pokemon)",
+   "gloss": "Teddiursa",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3547,7 +3550,7 @@
   {
    "korean": "링곰",
    "romanization": "ringgom",
-   "gloss": "Ursaring (Pokemon)",
+   "gloss": "Ursaring",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3562,7 +3565,7 @@
   {
    "korean": "마그마그",
    "romanization": "mageumageu",
-   "gloss": "Slugma (Pokemon)",
+   "gloss": "Slugma",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3577,7 +3580,7 @@
   {
    "korean": "마그카르고",
    "romanization": "mageukareugo",
-   "gloss": "Magcargo (Pokemon)",
+   "gloss": "Magcargo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3592,7 +3595,7 @@
   {
    "korean": "꾸꾸리",
    "romanization": "kkukkuri",
-   "gloss": "Swinub (Pokemon)",
+   "gloss": "Swinub",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3607,7 +3610,7 @@
   {
    "korean": "메꾸리",
    "romanization": "mekkuri",
-   "gloss": "Piloswine (Pokemon)",
+   "gloss": "Piloswine",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3622,7 +3625,7 @@
   {
    "korean": "코산호",
    "romanization": "kosanho",
-   "gloss": "Corsola (Pokemon)",
+   "gloss": "Corsola",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3637,7 +3640,7 @@
   {
    "korean": "총어",
    "romanization": "chongeo",
-   "gloss": "Remoraid (Pokemon)",
+   "gloss": "Remoraid",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3657,7 +3660,7 @@
   {
    "korean": "대포무노",
    "romanization": "daepomuno",
-   "gloss": "Octillery (Pokemon)",
+   "gloss": "Octillery",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3674,7 +3677,7 @@
   {
    "korean": "딜리버드",
    "romanization": "dilribeodeu",
-   "gloss": "Delibird (Pokemon)",
+   "gloss": "Delibird",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3689,7 +3692,7 @@
   {
    "korean": "만타인",
    "romanization": "mantain",
-   "gloss": "Mantine (Pokemon)",
+   "gloss": "Mantine",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -3704,7 +3707,7 @@
   {
    "korean": "무장조",
    "romanization": "mujangjo",
-   "gloss": "Skarmory (Pokemon)",
+   "gloss": "Skarmory",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3721,7 +3724,7 @@
   {
    "korean": "델빌",
    "romanization": "delbil",
-   "gloss": "Houndour (Pokemon)",
+   "gloss": "Houndour",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3736,7 +3739,7 @@
   {
    "korean": "헬가",
    "romanization": "helga",
-   "gloss": "Houndoom (Pokemon)",
+   "gloss": "Houndoom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3751,7 +3754,7 @@
   {
    "korean": "킹드라",
    "romanization": "kingdeura",
-   "gloss": "Kingdra (Pokemon)",
+   "gloss": "Kingdra",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3766,7 +3769,7 @@
   {
    "korean": "코코리",
    "romanization": "kokori",
-   "gloss": "Phanpy (Pokemon)",
+   "gloss": "Phanpy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3781,7 +3784,7 @@
   {
    "korean": "코리갑",
    "romanization": "korigap",
-   "gloss": "Donphan (Pokemon)",
+   "gloss": "Donphan",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3798,7 +3801,7 @@
   {
    "korean": "노라키",
    "romanization": "noraki",
-   "gloss": "Stantler (Pokemon)",
+   "gloss": "Stantler",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3813,7 +3816,7 @@
   {
    "korean": "루브도",
    "romanization": "rubeudo",
-   "gloss": "Smeargle (Pokemon)",
+   "gloss": "Smeargle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3828,7 +3831,7 @@
   {
    "korean": "배루키",
    "romanization": "baeruki",
-   "gloss": "Tyrogue (Pokemon)",
+   "gloss": "Tyrogue",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3843,7 +3846,7 @@
   {
    "korean": "카포에라",
    "romanization": "kapoera",
-   "gloss": "Hitmontop (Pokemon)",
+   "gloss": "Hitmontop",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3858,7 +3861,7 @@
   {
    "korean": "뽀뽀라",
    "romanization": "ppoppora",
-   "gloss": "Smoochum (Pokemon)",
+   "gloss": "Smoochum",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3873,7 +3876,7 @@
   {
    "korean": "에레키드",
    "romanization": "erekideu",
-   "gloss": "Elekid (Pokemon)",
+   "gloss": "Elekid",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3888,7 +3891,7 @@
   {
    "korean": "마그비",
    "romanization": "mageubi",
-   "gloss": "Magby (Pokemon)",
+   "gloss": "Magby",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3903,7 +3906,7 @@
   {
    "korean": "밀탱크",
    "romanization": "miltaengkeu",
-   "gloss": "Miltank (Pokemon)",
+   "gloss": "Miltank",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3918,7 +3921,7 @@
   {
    "korean": "해피너스",
    "romanization": "haepineoseu",
-   "gloss": "Blissey (Pokemon)",
+   "gloss": "Blissey",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -3933,7 +3936,7 @@
   {
    "korean": "라이코",
    "romanization": "raiko",
-   "gloss": "Raikou (Pokemon)",
+   "gloss": "Raikou",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3948,7 +3951,7 @@
   {
    "korean": "앤테이",
    "romanization": "aentei",
-   "gloss": "Entei (Pokemon)",
+   "gloss": "Entei",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3963,7 +3966,7 @@
   {
    "korean": "스이쿤",
    "romanization": "seuikun",
-   "gloss": "Suicune (Pokemon)",
+   "gloss": "Suicune",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3978,7 +3981,7 @@
   {
    "korean": "애버라스",
    "romanization": "aebeoraseu",
-   "gloss": "Larvitar (Pokemon)",
+   "gloss": "Larvitar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3993,7 +3996,7 @@
   {
    "korean": "데기라스",
    "romanization": "degiraseu",
-   "gloss": "Pupitar (Pokemon)",
+   "gloss": "Pupitar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4010,7 +4013,7 @@
   {
    "korean": "마기라스",
    "romanization": "magiraseu",
-   "gloss": "Tyranitar (Pokemon)",
+   "gloss": "Tyranitar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4025,7 +4028,7 @@
   {
    "korean": "루기아",
    "romanization": "rugia",
-   "gloss": "Lugia (Pokemon)",
+   "gloss": "Lugia",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4040,7 +4043,7 @@
   {
    "korean": "칠색조",
    "romanization": "chilsaekjo",
-   "gloss": "Ho-Oh (Pokemon)",
+   "gloss": "Ho-oh",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4055,7 +4058,7 @@
   {
    "korean": "세레비",
    "romanization": "serebi",
-   "gloss": "Celebi (Pokemon)",
+   "gloss": "Celebi",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4070,7 +4073,7 @@
   {
    "korean": "나무지기",
    "romanization": "namujigi",
-   "gloss": "Treecko (Pokemon)",
+   "gloss": "Treecko",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4085,7 +4088,7 @@
   {
    "korean": "나무돌이",
    "romanization": "namudoli",
-   "gloss": "Grovyle (Pokemon)",
+   "gloss": "Grovyle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4100,7 +4103,7 @@
   {
    "korean": "나무킹",
    "romanization": "namuking",
-   "gloss": "Sceptile (Pokemon)",
+   "gloss": "Sceptile",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4115,7 +4118,7 @@
   {
    "korean": "아차모",
    "romanization": "achamo",
-   "gloss": "Torchic (Pokemon)",
+   "gloss": "Torchic",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4130,7 +4133,7 @@
   {
    "korean": "영치코",
    "romanization": "yeongchiko",
-   "gloss": "Combusken (Pokemon)",
+   "gloss": "Combusken",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4145,7 +4148,7 @@
   {
    "korean": "번치코",
    "romanization": "beonchiko",
-   "gloss": "Blaziken (Pokemon)",
+   "gloss": "Blaziken",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4160,7 +4163,7 @@
   {
    "korean": "물짱이",
    "romanization": "muljjangi",
-   "gloss": "Mudkip (Pokemon)",
+   "gloss": "Mudkip",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4175,7 +4178,7 @@
   {
    "korean": "대짱이",
    "romanization": "daejjangi",
-   "gloss": "Swampert (Pokemon)",
+   "gloss": "Swampert",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4190,7 +4193,7 @@
   {
    "korean": "그라에나",
    "romanization": "geuraena",
-   "gloss": "Mightyena (Pokemon)",
+   "gloss": "Mightyena",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4205,7 +4208,7 @@
   {
    "korean": "지그제구리",
    "romanization": "jigeujeguri",
-   "gloss": "Zigzagoon (Pokemon)",
+   "gloss": "Zigzagoon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4220,7 +4223,7 @@
   {
    "korean": "직구리",
    "romanization": "jikguri",
-   "gloss": "Linoone (Pokemon)",
+   "gloss": "Linoone",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4235,7 +4238,7 @@
   {
    "korean": "개무소",
    "romanization": "gaemuso",
-   "gloss": "Wurmple (Pokemon)",
+   "gloss": "Wurmple",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4250,7 +4253,7 @@
   {
    "korean": "실쿤",
    "romanization": "silkun",
-   "gloss": "Silcoon (Pokemon)",
+   "gloss": "Silcoon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4265,7 +4268,7 @@
   {
    "korean": "뷰티플라이",
    "romanization": "byutipeulrai",
-   "gloss": "Beautifly (Pokemon)",
+   "gloss": "Beautifly",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4280,7 +4283,7 @@
   {
    "korean": "카스쿤",
    "romanization": "kaseukun",
-   "gloss": "Cascoon (Pokemon)",
+   "gloss": "Cascoon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4295,7 +4298,7 @@
   {
    "korean": "독케일",
    "romanization": "dokkeil",
-   "gloss": "Dustox (Pokemon)",
+   "gloss": "Dustox",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4310,7 +4313,7 @@
   {
    "korean": "연꽃몬",
    "romanization": "yeonkkochmon",
-   "gloss": "Lotad (Pokemon)",
+   "gloss": "Lotad",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4325,7 +4328,7 @@
   {
    "korean": "로토스",
    "romanization": "rotoseu",
-   "gloss": "Lombre (Pokemon)",
+   "gloss": "Lombre",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4340,7 +4343,7 @@
   {
    "korean": "로파파",
    "romanization": "ropapa",
-   "gloss": "Ludicolo (Pokemon)",
+   "gloss": "Ludicolo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4355,7 +4358,7 @@
   {
    "korean": "도토링",
    "romanization": "dotoring",
-   "gloss": "Seedot (Pokemon)",
+   "gloss": "Seedot",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4370,7 +4373,7 @@
   {
    "korean": "잎새코",
    "romanization": "ipsaeko",
-   "gloss": "Nuzleaf (Pokemon)",
+   "gloss": "Nuzleaf",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4385,7 +4388,7 @@
   {
    "korean": "다탱구",
    "romanization": "dataenggu",
-   "gloss": "Shiftry (Pokemon)",
+   "gloss": "Shiftry",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4400,7 +4403,7 @@
   {
    "korean": "토중몬",
    "romanization": "tojungmon",
-   "gloss": "Nincada (Pokemon)",
+   "gloss": "Nincada",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4415,7 +4418,7 @@
   {
    "korean": "아이스크",
    "romanization": "aiseukeu",
-   "gloss": "Ninjask (Pokemon)",
+   "gloss": "Ninjask",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4430,7 +4433,7 @@
   {
    "korean": "껍질몬",
    "romanization": "kkeopjilmon",
-   "gloss": "Shedinja (Pokemon)",
+   "gloss": "Shedinja",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4445,7 +4448,7 @@
   {
    "korean": "테일로",
    "romanization": "teilro",
-   "gloss": "Taillow (Pokemon)",
+   "gloss": "Taillow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4460,7 +4463,7 @@
   {
    "korean": "버섯꼬",
    "romanization": "beoseotkko",
-   "gloss": "Shroomish (Pokemon)",
+   "gloss": "Shroomish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4475,7 +4478,7 @@
   {
    "korean": "버섯모",
    "romanization": "beoseotmo",
-   "gloss": "Breloom (Pokemon)",
+   "gloss": "Breloom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4490,7 +4493,7 @@
   {
    "korean": "얼루기",
    "romanization": "eolrugi",
-   "gloss": "Spinda (Pokemon)",
+   "gloss": "Spinda",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4505,7 +4508,7 @@
   {
    "korean": "갈모매",
    "romanization": "galmomae",
-   "gloss": "Wingull (Pokemon)",
+   "gloss": "Wingull",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4520,7 +4523,7 @@
   {
    "korean": "패리퍼",
    "romanization": "paeripeo",
-   "gloss": "Pelipper (Pokemon)",
+   "gloss": "Pelipper",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4535,7 +4538,7 @@
   {
    "korean": "비구술",
    "romanization": "bigusul",
-   "gloss": "Surskit (Pokemon)",
+   "gloss": "Surskit",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4550,7 +4553,7 @@
   {
    "korean": "비나방",
    "romanization": "binabang",
-   "gloss": "Masquerain (Pokemon)",
+   "gloss": "Masquerain",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4565,7 +4568,7 @@
   {
    "korean": "고래왕자",
    "romanization": "goraewangja",
-   "gloss": "Wailmer (Pokemon)",
+   "gloss": "Wailmer",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4580,7 +4583,7 @@
   {
    "korean": "고래왕",
    "romanization": "goraewang",
-   "gloss": "Wailord (Pokemon)",
+   "gloss": "Wailord",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -4595,7 +4598,7 @@
   {
    "korean": "에나비",
    "romanization": "enabi",
-   "gloss": "Skitty (Pokemon)",
+   "gloss": "Skitty",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4610,7 +4613,7 @@
   {
    "korean": "델케티",
    "romanization": "delketi",
-   "gloss": "Delcatty (Pokemon)",
+   "gloss": "Delcatty",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4625,7 +4628,7 @@
   {
    "korean": "오똑군",
    "romanization": "ottokgun",
-   "gloss": "Carvanha (Pokemon)",
+   "gloss": "Baltoy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4640,7 +4643,7 @@
   {
    "korean": "점토도리",
    "romanization": "jeomtodori",
-   "gloss": "Claydol (Pokemon)",
+   "gloss": "Claydol",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4655,7 +4658,7 @@
   {
    "korean": "코코파스",
    "romanization": "kokopaseu",
-   "gloss": "Nosepass (Pokemon)",
+   "gloss": "Nosepass",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4670,7 +4673,7 @@
   {
    "korean": "코터스",
    "romanization": "koteoseu",
-   "gloss": "Torkoal (Pokemon)",
+   "gloss": "Torkoal",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4685,7 +4688,7 @@
   {
    "korean": "깜까미",
    "romanization": "kkamkkami",
-   "gloss": "Sableye (Pokemon)",
+   "gloss": "Sableye",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4700,7 +4703,7 @@
   {
    "korean": "미꾸리",
    "romanization": "mikkuri",
-   "gloss": "Barboach (Pokemon)",
+   "gloss": "Barboach",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4715,7 +4718,7 @@
   {
    "korean": "사랑동이",
    "romanization": "sarangdongi",
-   "gloss": "Luvdisc (Pokemon)",
+   "gloss": "Luvdisc",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4730,7 +4733,7 @@
   {
    "korean": "가재군",
    "romanization": "gajaegun",
-   "gloss": "Corphish (Pokemon)",
+   "gloss": "Corphish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4745,7 +4748,7 @@
   {
    "korean": "가재장군",
    "romanization": "gajaejanggun",
-   "gloss": "Crawdaunt (Pokemon)",
+   "gloss": "Crawdaunt",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4760,7 +4763,7 @@
   {
    "korean": "빈티나",
    "romanization": "bintina",
-   "gloss": "Feebas (Pokemon)",
+   "gloss": "Feebas",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4775,7 +4778,7 @@
   {
    "korean": "밀로틱",
    "romanization": "milrotik",
-   "gloss": "Milotic (Pokemon)",
+   "gloss": "Milotic",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4790,7 +4793,7 @@
   {
    "korean": "샤프니아",
    "romanization": "syapeunia",
-   "gloss": "Carvanha (Pokemon)",
+   "gloss": "Carvanha",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4805,7 +4808,7 @@
   {
    "korean": "샤크니아",
    "romanization": "syakeunia",
-   "gloss": "Sharpedo (Pokemon)",
+   "gloss": "Sharpedo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4820,7 +4823,7 @@
   {
    "korean": "톱치",
    "romanization": "topchi",
-   "gloss": "Trapinch (Pokemon)",
+   "gloss": "Trapinch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4835,7 +4838,7 @@
   {
    "korean": "비브라바",
    "romanization": "bibeuraba",
-   "gloss": "Vibrava (Pokemon)",
+   "gloss": "Vibrava",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4850,7 +4853,7 @@
   {
    "korean": "플라이곤",
    "romanization": "peulraigon",
-   "gloss": "Flygon (Pokemon)",
+   "gloss": "Flygon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4865,7 +4868,7 @@
   {
    "korean": "마크탕",
    "romanization": "makeutang",
-   "gloss": "Makuhita (Pokemon)",
+   "gloss": "Makuhita",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4880,7 +4883,7 @@
   {
    "korean": "하리뭉",
    "romanization": "harimung",
-   "gloss": "Hariyama (Pokemon)",
+   "gloss": "Hariyama",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4895,7 +4898,7 @@
   {
    "korean": "썬더라이",
    "romanization": "sseondeorai",
-   "gloss": "Electrike (Pokemon)",
+   "gloss": "Electrike",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4910,7 +4913,7 @@
   {
    "korean": "썬더볼트",
    "romanization": "sseondeobolteu",
-   "gloss": "Manectric (Pokemon)",
+   "gloss": "Manectric",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4925,7 +4928,7 @@
   {
    "korean": "둔타",
    "romanization": "dunta",
-   "gloss": "Numel (Pokemon)",
+   "gloss": "Numel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4940,7 +4943,7 @@
   {
    "korean": "폭타",
    "romanization": "pokta",
-   "gloss": "Camerupt (Pokemon)",
+   "gloss": "Camerupt",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4955,7 +4958,7 @@
   {
    "korean": "대굴레오",
    "romanization": "daegulreo",
-   "gloss": "Spheal (Pokemon)",
+   "gloss": "Spheal",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4970,7 +4973,7 @@
   {
    "korean": "씨레오",
    "romanization": "ssireo",
-   "gloss": "Sealeo (Pokemon)",
+   "gloss": "Sealeo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4985,7 +4988,7 @@
   {
    "korean": "씨카이저",
    "romanization": "ssikaijeo",
-   "gloss": "Walrein (Pokemon)",
+   "gloss": "Walrein",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5000,7 +5003,7 @@
   {
    "korean": "선인왕",
    "romanization": "seoninwang",
-   "gloss": "Cacnea (Pokemon)",
+   "gloss": "Cacnea",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5015,7 +5018,7 @@
   {
    "korean": "밤선인",
    "romanization": "bamseonin",
-   "gloss": "Cacturne (Pokemon)",
+   "gloss": "Cacturne",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5030,7 +5033,7 @@
   {
    "korean": "눈꼬마",
    "romanization": "nunkkoma",
-   "gloss": "Snorunt (Pokemon)",
+   "gloss": "Snorunt",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5045,7 +5048,7 @@
   {
    "korean": "얼음귀신",
    "romanization": "eoleumgwisin",
-   "gloss": "Glalie (Pokemon)",
+   "gloss": "Glalie",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5060,7 +5063,7 @@
   {
    "korean": "루나톤",
    "romanization": "runaton",
-   "gloss": "Lunatone (Pokemon)",
+   "gloss": "Lunatone",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5075,7 +5078,7 @@
   {
    "korean": "솔록",
    "romanization": "solrok",
-   "gloss": "Solrock (Pokemon)",
+   "gloss": "Solrock",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5090,7 +5093,7 @@
   {
    "korean": "루리리",
    "romanization": "ruriri",
-   "gloss": "Azurill (Pokemon)",
+   "gloss": "Azurill",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5105,7 +5108,7 @@
   {
    "korean": "피그점프",
    "romanization": "pigeujeompeu",
-   "gloss": "Spoink (Pokemon)",
+   "gloss": "Spoink",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5120,7 +5123,7 @@
   {
    "korean": "피그킹",
    "romanization": "pigeuking",
-   "gloss": "Grumpig (Pokemon)",
+   "gloss": "Grumpig",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5135,7 +5138,7 @@
   {
    "korean": "플러시",
    "romanization": "peulreosi",
-   "gloss": "Plusle (Pokemon)",
+   "gloss": "Plusle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5150,7 +5153,7 @@
   {
    "korean": "마이농",
    "romanization": "mainong",
-   "gloss": "Minun (Pokemon)",
+   "gloss": "Minun",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5165,7 +5168,7 @@
   {
    "korean": "입치트",
    "romanization": "ipchiteu",
-   "gloss": "Mawile (Pokemon)",
+   "gloss": "Mawile",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5180,7 +5183,7 @@
   {
    "korean": "요가랑",
    "romanization": "yogarang",
-   "gloss": "Meditite (Pokemon)",
+   "gloss": "Meditite",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5195,7 +5198,7 @@
   {
    "korean": "요가램",
    "romanization": "yogaraem",
-   "gloss": "Medicham (Pokemon)",
+   "gloss": "Medicham",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5210,7 +5213,7 @@
   {
    "korean": "파비코",
    "romanization": "pabiko",
-   "gloss": "Swablu (Pokemon)",
+   "gloss": "Swablu",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -5225,7 +5228,7 @@
   {
    "korean": "파비코리",
    "romanization": "pabikori",
-   "gloss": "Altaria (Pokemon)",
+   "gloss": "Altaria",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5240,7 +5243,7 @@
   {
    "korean": "마자",
    "romanization": "maja",
-   "gloss": "Wynaut (Pokemon)",
+   "gloss": "Wynaut",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -5255,7 +5258,7 @@
   {
    "korean": "해골몽",
    "romanization": "haegolmong",
-   "gloss": "Duskull (Pokemon)",
+   "gloss": "Duskull",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5270,7 +5273,7 @@
   {
    "korean": "미라몽",
    "romanization": "miramong",
-   "gloss": "Dusclops (Pokemon)",
+   "gloss": "Dusclops",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5285,7 +5288,7 @@
   {
    "korean": "로젤리아",
    "romanization": "rojelria",
-   "gloss": "Roselia (Pokemon)",
+   "gloss": "Roselia",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5300,7 +5303,7 @@
   {
    "korean": "게을로",
    "romanization": "geeulro",
-   "gloss": "Slakoth (Pokemon)",
+   "gloss": "Slakoth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5315,7 +5318,7 @@
   {
    "korean": "발바로",
    "romanization": "balbaro",
-   "gloss": "Vigoroth (Pokemon)",
+   "gloss": "Vigoroth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5330,7 +5333,7 @@
   {
    "korean": "게을킹",
    "romanization": "geeulking",
-   "gloss": "Slaking (Pokemon)",
+   "gloss": "Slaking",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5345,7 +5348,7 @@
   {
    "korean": "꿀꺽몬",
    "romanization": "kkulkkeokmon",
-   "gloss": "Swalot (Pokemon)",
+   "gloss": "Swalot",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5360,7 +5363,7 @@
   {
    "korean": "트로피우스",
    "romanization": "teuropiuseu",
-   "gloss": "Tropius (Pokemon)",
+   "gloss": "Tropius",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5375,7 +5378,7 @@
   {
    "korean": "소곤룡",
    "romanization": "sogonryong",
-   "gloss": "Whismur (Pokemon)",
+   "gloss": "Whismur",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5390,7 +5393,7 @@
   {
    "korean": "노공룡",
    "romanization": "nogongryong",
-   "gloss": "Loudred (Pokemon)",
+   "gloss": "Loudred",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5405,7 +5408,7 @@
   {
    "korean": "폭음룡",
    "romanization": "pokeumryong",
-   "gloss": "Exploud (Pokemon)",
+   "gloss": "Exploud",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5420,7 +5423,7 @@
   {
    "korean": "진주몽",
    "romanization": "jinjumong",
-   "gloss": "Clamperl (Pokemon)",
+   "gloss": "Clamperl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -5435,7 +5438,7 @@
   {
    "korean": "분홍장이",
    "romanization": "bunhongjangi",
-   "gloss": "Gorebyss (Pokemon)",
+   "gloss": "Gorebyss",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5450,7 +5453,7 @@
   {
    "korean": "세비퍼",
    "romanization": "sebipeo",
-   "gloss": "Seviper (Pokemon)",
+   "gloss": "Seviper",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5465,7 +5468,7 @@
   {
    "korean": "시라칸",
    "romanization": "sirakan",
-   "gloss": "Relicanth (Pokemon)",
+   "gloss": "Relicanth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5480,7 +5483,7 @@
   {
    "korean": "가보리",
    "romanization": "gabori",
-   "gloss": "Aron (Pokemon)",
+   "gloss": "Aron",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5495,7 +5498,7 @@
   {
    "korean": "갱도라",
    "romanization": "gaengdora",
-   "gloss": "Lairon (Pokemon)",
+   "gloss": "Lairon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5510,7 +5513,7 @@
   {
    "korean": "보스로라",
    "romanization": "boseurora",
-   "gloss": "Aggron (Pokemon)",
+   "gloss": "Aggron",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5525,7 +5528,7 @@
   {
    "korean": "캐스폼",
    "romanization": "kaeseupom",
-   "gloss": "Jirachi (Pokemon)",
+   "gloss": "Castform",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5540,7 +5543,7 @@
   {
    "korean": "볼비트",
    "romanization": "bolbiteu",
-   "gloss": "Volbeat (Pokemon)",
+   "gloss": "Volbeat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5555,7 +5558,7 @@
   {
    "korean": "네오비트",
    "romanization": "neobiteu",
-   "gloss": "Illumise (Pokemon)",
+   "gloss": "Illumise",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5570,7 +5573,7 @@
   {
    "korean": "릴링",
    "romanization": "rilring",
-   "gloss": "Lileep (Pokemon)",
+   "gloss": "Lileep",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5585,7 +5588,7 @@
   {
    "korean": "릴리요",
    "romanization": "rilriyo",
-   "gloss": "Cradily (Pokemon)",
+   "gloss": "Cradily",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5600,7 +5603,7 @@
   {
    "korean": "아말도",
    "romanization": "amaldo",
-   "gloss": "Armaldo (Pokemon)",
+   "gloss": "Armaldo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5615,7 +5618,7 @@
   {
    "korean": "랄토스",
    "romanization": "raltoseu",
-   "gloss": "Ralts (Pokemon)",
+   "gloss": "Ralts",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5630,7 +5633,7 @@
   {
    "korean": "킬리아",
    "romanization": "kilria",
-   "gloss": "Kirlia (Pokemon)",
+   "gloss": "Kirlia",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5645,7 +5648,7 @@
   {
    "korean": "가디안",
    "romanization": "gadian",
-   "gloss": "Gardevoir (Pokemon)",
+   "gloss": "Gardevoir",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5660,7 +5663,7 @@
   {
    "korean": "아공이",
    "romanization": "agongi",
-   "gloss": "Bagon (Pokemon)",
+   "gloss": "Bagon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5675,7 +5678,7 @@
   {
    "korean": "보만다",
    "romanization": "bomanda",
-   "gloss": "Salamence (Pokemon)",
+   "gloss": "Salamence",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5690,7 +5693,7 @@
   {
    "korean": "메탕",
    "romanization": "metang",
-   "gloss": "Beldum (Pokemon)",
+   "gloss": "Beldum",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -5705,7 +5708,7 @@
   {
    "korean": "메탕구",
    "romanization": "metanggu",
-   "gloss": "Metang (Pokemon)",
+   "gloss": "Metang",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5720,7 +5723,7 @@
   {
    "korean": "메타그로스",
    "romanization": "metageuroseu",
-   "gloss": "Metagross (Pokemon)",
+   "gloss": "Metagross",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5735,7 +5738,7 @@
   {
    "korean": "레지락",
    "romanization": "rejirak",
-   "gloss": "Regirock (Pokemon)",
+   "gloss": "Regirock",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5750,7 +5753,7 @@
   {
    "korean": "레지아이스",
    "romanization": "rejiaiseu",
-   "gloss": "Regice (Pokemon)",
+   "gloss": "Regice",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5765,7 +5768,7 @@
   {
    "korean": "가이오가",
    "romanization": "gaioga",
-   "gloss": "Kyogre (Pokemon)",
+   "gloss": "Kyogre",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -5780,7 +5783,7 @@
   {
    "korean": "그란돈",
    "romanization": "geurandon",
-   "gloss": "Groudon (Pokemon)",
+   "gloss": "Groudon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5795,7 +5798,7 @@
   {
    "korean": "라티아스",
    "romanization": "ratiaseu",
-   "gloss": "Latias (Pokemon)",
+   "gloss": "Latias",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5810,7 +5813,7 @@
   {
    "korean": "라티오스",
    "romanization": "ratioseu",
-   "gloss": "Latios (Pokemon)",
+   "gloss": "Latios",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5825,7 +5828,7 @@
   {
    "korean": "지라치",
    "romanization": "jirachi",
-   "gloss": "Jirachi (Pokemon)",
+   "gloss": "Jirachi",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5840,7 +5843,7 @@
   {
    "korean": "테오키스",
    "romanization": "teokiseu",
-   "gloss": "Deoxys (Pokemon)",
+   "gloss": "Deoxys",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5855,7 +5858,7 @@
   {
    "korean": "치렁",
    "romanization": "chireong",
-   "gloss": "Chimecho (Pokemon)",
+   "gloss": "Chimecho",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,

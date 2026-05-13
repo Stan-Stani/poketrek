@@ -1,0 +1,4 @@
+{
+ "_comment": "Hand-curated mapping from Korean dialog lemma → canonical English. Used by restructure_glosses.py to override semicolon-split fallback for non-ROM-table lemmas. Empty on day one; grow incrementally as you review cards. The `senses` array is the secondary senses to surface under the primary gloss.",
+ "entries": {}
+}

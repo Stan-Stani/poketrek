@@ -4,7 +4,10 @@
  "notes": [
   "Korean root morphemes harvested from species-name pun etymologies. Each card teaches a Korean root that appears as a component of one or more Pokemon names. Opt-in via Settings > Etymology root cards.",
   "promote_generic_attribution: 9 cards moved from generic bucket → specific story area via corpus-stem search.",
-  "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search."
+  "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search.",
+  "restructure_glosses 2026-05-13: 2 entries updated; rom-table=0 dialog-map=0 split=2 noop=140",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=2 noop=140",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=2 noop=140"
  ],
  "entries": [
   {
@@ -1062,7 +1065,7 @@
   {
    "id": "etymology-roots:만보",
    "korean": "만보",
-   "gloss": "a great deal (colloquial); also lit. 10,000 steps (萬步)",
+   "gloss": "a great deal (colloquial)",
    "partOfSpeech": "root/morpheme",
    "areaId": "route_12",
    "sourceTag": "etymology-roots",
@@ -1080,7 +1083,10 @@
     "issue": "잠만보 (Snorlax) plays on 잠 'sleep' + 만보, but the morphemic punchline is the colloquial 만보 ~ 만큼/매우 'a great deal' (Snorlax sleeps and eats a great deal), reinforced by Japanese カビゴン. The literal Hanja reading 萬步 'ten thousand steps' is a real Korean compound (cf. 만보계 pedometer) but is not what 잠만보 is doing — Snorlax is famously sedentary, not a stepper. 'Countless steps' is the wrong sense.",
     "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9E%A0%EB%A7%8C%EB%B3%B4",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "also lit. 10,000 steps (萬步)"
+   ]
   },
   {
    "id": "etymology-roots:망나니",
@@ -1969,7 +1975,7 @@
   {
    "id": "etymology-roots:이브이",
    "korean": "이브이",
-   "gloss": "Eevee (Pokémon proper noun, transliterated from English 'Eevee' < 'Ev' of Evolution); the productive shared component in the Eeveelution naming pattern is 브이, not 이브이",
+   "gloss": "Eevee (Pokémon proper noun, transliterated from English 'Eevee' < 'Ev' of Evolution)",
    "partOfSpeech": "proper noun (borrowed)",
    "areaId": "celadon_city",
    "sourceTag": "etymology-roots",
@@ -1988,7 +1994,10 @@
     "evidenceUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B8%8C%EC%9D%B4",
     "auditedAt": "2026-05-09",
     "round": 2
-   }
+   },
+   "senses": [
+    "the productive shared component in the Eeveelution naming pattern is 브이, not 이브이"
+   ]
   },
   {
    "id": "etymology-roots:이상해",

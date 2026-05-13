@@ -7,13 +7,16 @@
   "promote_generic_attribution: 30 cards moved from generic bucket → specific story area via corpus-stem search.",
   "attribute_moves_via_learnsets: +196 moves, +56 abilities promoted to specific story-area via PokeAPI learnset (LG vg=7) chain.",
   "apply_glosses_nondestructive: upgraded 294 glosses from manual_glosses.json (397 curated translations). 0 cards remain on placeholder glosses (not yet hand-translated).",
-  "2026-05-12: re-injected 18 seed-v1-retired survivors (포켓몬, 박사, 나, 안녕, 집, 야생, 새, 쥐, 체육관, 관장, 입구, 출구, 조심하다, 회색, 바위, 첫, 배지, 도전하다) so sentences-ko-rom/study.json resolve. Dropped accidentally in e1e7c17 when rebuild_mined_decks replaced the deck from intermediate files."
+  "2026-05-12: re-injected 18 seed-v1-retired survivors (포켓몬, 박사, 나, 안녕, 집, 야생, 새, 쥐, 체육관, 관장, 입구, 출구, 조심하다, 회색, 바위, 첫, 배지, 도전하다) so sentences-ko-rom/study.json resolve. Dropped accidentally in e1e7c17 when rebuild_mined_decks replaced the deck from intermediate files.",
+  "restructure_glosses 2026-05-13: 587 entries updated; rom-table=426 dialog-map=0 split=161 noop=149",
+  "restructure_glosses 2026-05-13: 29 entries updated; rom-table=426 dialog-map=0 split=161 noop=149",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=426 dialog-map=0 split=161 noop=149"
  ],
  "entries": [
   {
    "korean": "막치기",
    "romanization": "makchigi",
-   "gloss": "Pound (move)",
+   "gloss": "Pound",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -37,7 +40,7 @@
   {
    "korean": "태권당수",
    "romanization": "taegwondangsu",
-   "gloss": "Karate Chop (move)",
+   "gloss": "Karate Chop",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -56,7 +59,7 @@
   {
    "korean": "연속뺨치기",
    "romanization": "yeonsokppyamchigi",
-   "gloss": "Double Slap (move)",
+   "gloss": "Doubleslap",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -76,7 +79,7 @@
   {
    "korean": "연속펀치",
    "romanization": "yeonsokpeonchi",
-   "gloss": "Comet Punch (move)",
+   "gloss": "Comet Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -94,7 +97,7 @@
   {
    "korean": "메가톤펀치",
    "romanization": "megatonpeonchi",
-   "gloss": "Mega Punch (move)",
+   "gloss": "Mega Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -116,7 +119,7 @@
   {
    "korean": "고양이돈받기",
    "romanization": "goyangidonbatgi",
-   "gloss": "Pay Day (move)",
+   "gloss": "Pay Day",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -134,7 +137,7 @@
   {
    "korean": "불꽃펀치",
    "romanization": "bulkkochpeonchi",
-   "gloss": "Fire Punch (move)",
+   "gloss": "Fire Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -151,7 +154,7 @@
   {
    "korean": "냉동펀치",
    "romanization": "naengdongpeonchi",
-   "gloss": "Ice Punch (move)",
+   "gloss": "Ice Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -168,7 +171,7 @@
   {
    "korean": "번개펀치",
    "romanization": "beongaepeonchi",
-   "gloss": "Thunder Punch (move)",
+   "gloss": "Thunderpunch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -185,7 +188,7 @@
   {
    "korean": "할퀴기",
    "romanization": "halkwigi",
-   "gloss": "Scratch (move)",
+   "gloss": "Scratch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -208,7 +211,7 @@
   {
    "korean": "찝기",
    "romanization": "jjipgi",
-   "gloss": "Vise Grip (move)",
+   "gloss": "Vicegrip",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -223,7 +226,7 @@
   {
    "korean": "가위자르기",
    "romanization": "gawijareugi",
-   "gloss": "Guillotine (move)",
+   "gloss": "Guillotine",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -240,7 +243,7 @@
   {
    "korean": "칼바람",
    "romanization": "kalbaram",
-   "gloss": "Razor Wind (move)",
+   "gloss": "Razor Wind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -260,7 +263,7 @@
   {
    "korean": "칼춤",
    "romanization": "kalchum",
-   "gloss": "Swords Dance (move)",
+   "gloss": "Swords Dance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -280,7 +283,7 @@
   {
    "korean": "풀베기",
    "romanization": "pulbegi",
-   "gloss": "Cut (move)",
+   "gloss": "Cut",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -302,7 +305,7 @@
   {
    "korean": "바람일으키기",
    "romanization": "baramileukigi",
-   "gloss": "Gust (move)",
+   "gloss": "Gust",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -324,7 +327,7 @@
   {
    "korean": "날개치기",
    "romanization": "nalgaechigi",
-   "gloss": "Wing Attack (move)",
+   "gloss": "Wing Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -346,7 +349,7 @@
   {
    "korean": "날려버리기",
    "romanization": "nalryeobeorigi",
-   "gloss": "Whirlwind (move)",
+   "gloss": "Whirlwind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -366,7 +369,7 @@
   {
    "korean": "공중날기",
    "romanization": "gongjungnalgi",
-   "gloss": "Fly (move)",
+   "gloss": "Fly",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -383,7 +386,7 @@
   {
    "korean": "조이기",
    "romanization": "joigi",
-   "gloss": "Bind (move)",
+   "gloss": "Bind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -398,7 +401,7 @@
   {
    "korean": "힘껏치기",
    "romanization": "himkkeotchigi",
-   "gloss": "Slam (move)",
+   "gloss": "Slam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -416,7 +419,7 @@
   {
    "korean": "덩굴채찍",
    "romanization": "deonggulchaejjik",
-   "gloss": "Vine Whip (move)",
+   "gloss": "Vine Whip",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -435,7 +438,7 @@
   {
    "korean": "짓밟기",
    "romanization": "jitbalbgi",
-   "gloss": "Stomp (move)",
+   "gloss": "Stomp",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -453,7 +456,7 @@
   {
    "korean": "두번치기",
    "romanization": "dubeonchigi",
-   "gloss": "Double Kick (move)",
+   "gloss": "Double Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -471,7 +474,7 @@
   {
    "korean": "메가톤킥",
    "romanization": "megatonkik",
-   "gloss": "Mega Kick (move)",
+   "gloss": "Mega Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -488,7 +491,7 @@
   {
    "korean": "점프킥",
    "romanization": "jeompeukik",
-   "gloss": "Jump Kick (move)",
+   "gloss": "Jump Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -505,7 +508,7 @@
   {
    "korean": "돌려차기",
    "romanization": "dolryeochagi",
-   "gloss": "Rolling Kick (move)",
+   "gloss": "Rolling Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -522,7 +525,7 @@
   {
    "korean": "모래뿌리기",
    "romanization": "moraeppurigi",
-   "gloss": "Sand Attack (move)",
+   "gloss": "Sand-attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -543,7 +546,7 @@
   {
    "korean": "박치기",
    "romanization": "bakchigi",
-   "gloss": "Headbutt (move)",
+   "gloss": "Headbutt",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -570,7 +573,7 @@
   {
    "korean": "뿔찌르기",
    "romanization": "ppuljjireugi",
-   "gloss": "Horn Attack (move)",
+   "gloss": "Horn Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -589,7 +592,7 @@
   {
    "korean": "마구찌르기",
    "romanization": "magujjireugi",
-   "gloss": "Fury Attack (move)",
+   "gloss": "Fury Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -612,7 +615,7 @@
   {
    "korean": "뿔드릴",
    "romanization": "ppuldeuril",
-   "gloss": "Horn Drill (move)",
+   "gloss": "Horn Drill",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -630,7 +633,7 @@
   {
    "korean": "몸통박치기",
    "romanization": "momtongbakchigi",
-   "gloss": "Tackle (move)",
+   "gloss": "Tackle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -658,7 +661,7 @@
   {
    "korean": "누르기",
    "romanization": "nureugi",
-   "gloss": "Body Slam (move)",
+   "gloss": "Body Slam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -681,7 +684,7 @@
   {
    "korean": "김밥말이",
    "romanization": "gimbapmali",
-   "gloss": "Wrap (move)",
+   "gloss": "Wrap",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -700,7 +703,7 @@
   {
    "korean": "돌진",
    "romanization": "doljin",
-   "gloss": "charge; rush",
+   "gloss": "Take Down",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -726,7 +729,7 @@
   {
    "korean": "난동부리기",
    "romanization": "nandongburigi",
-   "gloss": "Thrash (move)",
+   "gloss": "Thrash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -747,7 +750,7 @@
   {
    "korean": "이판사판태클",
    "romanization": "ipansapantaekeul",
-   "gloss": "Double Edge (move)",
+   "gloss": "Double-edge",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -766,7 +769,7 @@
   {
    "korean": "꼬리흔들기",
    "romanization": "kkoriheundeulgi",
-   "gloss": "Tail Whip (move)",
+   "gloss": "Tail Whip",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -792,7 +795,7 @@
   {
    "korean": "독침",
    "romanization": "dokchim",
-   "gloss": "Poison Sting (move)",
+   "gloss": "Poison Sting",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -818,7 +821,7 @@
   {
    "korean": "더블니들",
    "romanization": "deobeulnideul",
-   "gloss": "Twineedle (move)",
+   "gloss": "Twineedle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -835,7 +838,7 @@
   {
    "korean": "바늘미사일",
    "romanization": "baneulmisail",
-   "gloss": "Pin Missile (move)",
+   "gloss": "Pin Missile",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -852,7 +855,7 @@
   {
    "korean": "째려보기",
    "romanization": "jjaeryeobogi",
-   "gloss": "Leer (move)",
+   "gloss": "Leer",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -877,7 +880,7 @@
   {
    "korean": "물기",
    "romanization": "mulgi",
-   "gloss": "Bite (move)",
+   "gloss": "Bite",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -900,7 +903,7 @@
   {
    "korean": "울음소리",
    "romanization": "uleumsori",
-   "gloss": "Growl (move)",
+   "gloss": "Growl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -928,7 +931,7 @@
   {
    "korean": "울부짖기",
    "romanization": "ulbujijgi",
-   "gloss": "Roar (move)",
+   "gloss": "Roar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -945,7 +948,7 @@
   {
    "korean": "노래하기",
    "romanization": "noraehagi",
-   "gloss": "Sing (move)",
+   "gloss": "Sing",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -965,7 +968,7 @@
   {
    "korean": "초음파",
    "romanization": "choeumpa",
-   "gloss": "Supersonic (move)",
+   "gloss": "Supersonic",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -992,7 +995,7 @@
   {
    "korean": "소닉붐",
    "romanization": "sonikbum",
-   "gloss": "Sonic Boom (move)",
+   "gloss": "Sonicboom",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1015,7 +1018,7 @@
   {
    "korean": "사슬묶기",
    "romanization": "saseulmukkgi",
-   "gloss": "Disable (move)",
+   "gloss": "Disable",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1040,7 +1043,7 @@
   {
    "korean": "용해액",
    "romanization": "yonghaeaek",
-   "gloss": "Acid (move)",
+   "gloss": "Acid",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1063,7 +1066,7 @@
   {
    "korean": "불꽃세례",
    "romanization": "bulkkochserye",
-   "gloss": "Ember (move)",
+   "gloss": "Ember",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1083,7 +1086,7 @@
   {
    "korean": "화염방사",
    "romanization": "hwayeombangsa",
-   "gloss": "Flamethrower (move)",
+   "gloss": "Flamethrower",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1100,7 +1103,7 @@
   {
    "korean": "흰안개",
    "romanization": "huinangae",
-   "gloss": "Mist (move)",
+   "gloss": "Mist",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1119,7 +1122,7 @@
   {
    "korean": "물대포",
    "romanization": "muldaepo",
-   "gloss": "Water Gun (move)",
+   "gloss": "Water Gun",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1145,7 +1148,7 @@
   {
    "korean": "하이드로펌프",
    "romanization": "haideuropeompeu",
-   "gloss": "Hydro Pump (move)",
+   "gloss": "Hydro Pump",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1166,7 +1169,7 @@
   {
    "korean": "파도타기",
    "romanization": "padotagi",
-   "gloss": "Surf (move)",
+   "gloss": "Surf",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 14,
@@ -1183,7 +1186,7 @@
   {
    "korean": "냉동빔",
    "romanization": "naengdongbim",
-   "gloss": "Ice Beam (move)",
+   "gloss": "Ice Beam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1200,7 +1203,7 @@
   {
    "korean": "눈보라",
    "romanization": "nunbora",
-   "gloss": "Blizzard (move)",
+   "gloss": "Blizzard",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1222,7 +1225,7 @@
   {
    "korean": "환상빔",
    "romanization": "hwansangbim",
-   "gloss": "Psybeam (move)",
+   "gloss": "Psybeam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1242,7 +1245,7 @@
   {
    "korean": "거품광선",
    "romanization": "geopumgwangseon",
-   "gloss": "Bubble Beam (move)",
+   "gloss": "Bubblebeam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1261,7 +1264,7 @@
   {
    "korean": "오로라빔",
    "romanization": "ororabim",
-   "gloss": "Aurora Beam (move)",
+   "gloss": "Aurora Beam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1278,7 +1281,7 @@
   {
    "korean": "파괴광선",
    "romanization": "pagoegwangseon",
-   "gloss": "Hyper Beam (move)",
+   "gloss": "Hyper Beam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1295,7 +1298,7 @@
   {
    "korean": "쪼기",
    "romanization": "jjogi",
-   "gloss": "Peck (move)",
+   "gloss": "Peck",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1316,7 +1319,7 @@
   {
    "korean": "회전부리",
    "romanization": "hoejeonburi",
-   "gloss": "Drill Peck (move)",
+   "gloss": "Drill Peck",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1335,7 +1338,7 @@
   {
    "korean": "지옥의바퀴",
    "romanization": "jiokuibakwi",
-   "gloss": "Submission (move)",
+   "gloss": "Submission",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1353,7 +1356,7 @@
   {
    "korean": "안다리걸기",
    "romanization": "andarigeolgi",
-   "gloss": "Low Kick (move)",
+   "gloss": "Low Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1372,7 +1375,7 @@
   {
    "korean": "카운터",
    "romanization": "kaunteo",
-   "gloss": "Counter (move)",
+   "gloss": "Counter",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -1400,7 +1403,7 @@
   {
    "korean": "지구던지기",
    "romanization": "jigudeonjigi",
-   "gloss": "Seismic Toss (move)",
+   "gloss": "Seismic Toss",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1419,7 +1422,7 @@
   {
    "korean": "괴력",
    "romanization": "goeryeok",
-   "gloss": "Strength (move)",
+   "gloss": "Strength",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 23,
@@ -1443,7 +1446,7 @@
   {
    "korean": "흡수",
    "romanization": "heupsu",
-   "gloss": "Absorb (move)",
+   "gloss": "Absorb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 18,
@@ -1464,7 +1467,7 @@
   {
    "korean": "메가드레인",
    "romanization": "megadeurein",
-   "gloss": "Mega Drain (move)",
+   "gloss": "Mega Drain",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1479,7 +1482,7 @@
   {
    "korean": "씨뿌리기",
    "romanization": "ssippurigi",
-   "gloss": "Leech Seed (move)",
+   "gloss": "Leech Seed",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -1496,7 +1499,7 @@
   {
    "korean": "성장",
    "romanization": "seongjang",
-   "gloss": "Growth (move)",
+   "gloss": "Growth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 16,
@@ -1530,7 +1533,7 @@
   {
    "korean": "잎날가르기",
    "romanization": "ipnalgareugi",
-   "gloss": "Razor Leaf (move)",
+   "gloss": "Razor Leaf",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1549,7 +1552,7 @@
   {
    "korean": "솔라빔",
    "romanization": "solrabim",
-   "gloss": "Solar Beam (move)",
+   "gloss": "Solarbeam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1566,7 +1569,7 @@
   {
    "korean": "독가루",
    "romanization": "dokgaru",
-   "gloss": "Poison Powder (move)",
+   "gloss": "Poisonpowder",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1587,7 +1590,7 @@
   {
    "korean": "저리가루",
    "romanization": "jeorigaru",
-   "gloss": "Stun Spore (move)",
+   "gloss": "Stun Spore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1605,7 +1608,7 @@
   {
    "korean": "수면가루",
    "romanization": "sumyeongaru",
-   "gloss": "Sleep Powder (move)",
+   "gloss": "Sleep Powder",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1624,7 +1627,7 @@
   {
    "korean": "꽃잎댄스",
    "romanization": "kkochipdaenseu",
-   "gloss": "Petal Dance (move)",
+   "gloss": "Petal Dance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1639,7 +1642,7 @@
   {
    "korean": "실뿜기",
    "romanization": "silppumgi",
-   "gloss": "String Shot (move)",
+   "gloss": "String Shot",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1654,7 +1657,7 @@
   {
    "korean": "용의분노",
    "romanization": "yonguibunno",
-   "gloss": "Dragon Rage (move)",
+   "gloss": "Dragon Rage",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1671,7 +1674,7 @@
   {
    "korean": "회오리불꽃",
    "romanization": "hoeoribulkkoch",
-   "gloss": "Fire Spin (move)",
+   "gloss": "Fire Spin",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1691,7 +1694,7 @@
   {
    "korean": "전기쇼크",
    "romanization": "jeongisyokeu",
-   "gloss": "Thunder Shock (move)",
+   "gloss": "Thundershock",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1710,7 +1713,7 @@
   {
    "korean": "전기자석파",
    "romanization": "jeongijaseokpa",
-   "gloss": "Thunder Wave (move)",
+   "gloss": "Thunder Wave",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1729,7 +1732,7 @@
   {
    "korean": "번개",
    "romanization": "beongae",
-   "gloss": "Thunder (move)",
+   "gloss": "Thunder",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 13,
@@ -1751,7 +1754,7 @@
   {
    "korean": "돌떨구기",
    "romanization": "doltteolgugi",
-   "gloss": "Rock Throw (move)",
+   "gloss": "Rock Throw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1769,7 +1772,7 @@
   {
    "korean": "지진",
    "romanization": "jijin",
-   "gloss": "Earthquake (move)",
+   "gloss": "Earthquake",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -1791,7 +1794,7 @@
   {
    "korean": "땅가르기",
    "romanization": "ttanggareugi",
-   "gloss": "Fissure (move)",
+   "gloss": "Fissure",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1808,7 +1811,7 @@
   {
    "korean": "구멍파기",
    "romanization": "gumeongpagi",
-   "gloss": "Dig (move)",
+   "gloss": "Dig",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -1825,7 +1828,7 @@
   {
    "korean": "맹독",
    "romanization": "maengdok",
-   "gloss": "Toxic (move)",
+   "gloss": "Toxic",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -1850,7 +1853,7 @@
   {
    "korean": "염동력",
    "romanization": "yeomdongryeok",
-   "gloss": "Confusion (move)",
+   "gloss": "Confusion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -1874,7 +1877,7 @@
   {
    "korean": "최면술",
    "romanization": "choemyeonsul",
-   "gloss": "Hypnosis (move)",
+   "gloss": "Hypnosis",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -1899,7 +1902,7 @@
   {
    "korean": "요가포즈",
    "romanization": "yogapojeu",
-   "gloss": "Meditate (move)",
+   "gloss": "Meditate",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1918,7 +1921,7 @@
   {
    "korean": "고속이동",
    "romanization": "gosokidong",
-   "gloss": "Agility (move)",
+   "gloss": "Agility",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1949,7 +1952,7 @@
   {
    "korean": "전광석화",
    "romanization": "jeongwangseokhwa",
-   "gloss": "Quick Attack (move)",
+   "gloss": "Quick Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -1976,7 +1979,7 @@
   {
    "korean": "분노",
    "romanization": "bunno",
-   "gloss": "Rage (move)",
+   "gloss": "Rage",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -2003,7 +2006,7 @@
   {
    "korean": "순간이동",
    "romanization": "sunganidong",
-   "gloss": "Teleport (move)",
+   "gloss": "Teleport",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2026,7 +2029,7 @@
   {
    "korean": "나이트헤드",
    "romanization": "naiteuhedeu",
-   "gloss": "Night Shade (move)",
+   "gloss": "Night Shade",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2043,7 +2046,7 @@
   {
    "korean": "흉내내기",
    "romanization": "hyungnaenaegi",
-   "gloss": "Mimic (move)",
+   "gloss": "Mimic",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 13,
@@ -2069,7 +2072,7 @@
   {
    "korean": "싫은소리",
    "romanization": "silheunsori",
-   "gloss": "Screech (move)",
+   "gloss": "Screech",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2093,7 +2096,7 @@
   {
    "korean": "그림자분신",
    "romanization": "geurimjabunsin",
-   "gloss": "Double Team (move)",
+   "gloss": "Double Team",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2110,7 +2113,7 @@
   {
    "korean": "단단해지기",
    "romanization": "dandanhaejigi",
-   "gloss": "Harden (move)",
+   "gloss": "Harden",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2130,7 +2133,7 @@
   {
    "korean": "작아지기",
    "romanization": "jakajigi",
-   "gloss": "Minimize (move)",
+   "gloss": "Minimize",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2150,7 +2153,7 @@
   {
    "korean": "연막",
    "romanization": "yeonmak",
-   "gloss": "Smokescreen (move)",
+   "gloss": "Smokescreen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2172,7 +2175,7 @@
   {
    "korean": "이상한빛",
    "romanization": "isanghanbich",
-   "gloss": "Confuse Ray (move)",
+   "gloss": "Confuse Ray",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2192,7 +2195,7 @@
   {
    "korean": "껍질에숨기",
    "romanization": "kkeopjilesumgi",
-   "gloss": "Withdraw (move)",
+   "gloss": "Withdraw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2214,7 +2217,7 @@
   {
    "korean": "웅크리기",
    "romanization": "ungkeurigi",
-   "gloss": "Defense Curl (move)",
+   "gloss": "Defense Curl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2236,7 +2239,7 @@
   {
    "korean": "배리어",
    "romanization": "baerieo",
-   "gloss": "Barrier (move)",
+   "gloss": "Barrier",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2254,7 +2257,7 @@
   {
    "korean": "빛의장막",
    "romanization": "bichuijangmak",
-   "gloss": "Light Screen (move)",
+   "gloss": "Light Screen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2271,7 +2274,7 @@
   {
    "korean": "흑안개",
    "romanization": "heukangae",
-   "gloss": "Haze (move)",
+   "gloss": "Haze",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2289,7 +2292,7 @@
   {
    "korean": "리플렉터",
    "romanization": "ripeulrekteo",
-   "gloss": "Reflect (move)",
+   "gloss": "Reflect",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2313,7 +2316,7 @@
   {
    "korean": "기충전",
    "romanization": "gichungjeon",
-   "gloss": "Focus Energy (move)",
+   "gloss": "Focus Energy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2337,7 +2340,7 @@
   {
    "korean": "참기",
    "romanization": "chamgi",
-   "gloss": "Bide (move)",
+   "gloss": "Bide",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -2358,7 +2361,7 @@
   {
    "korean": "손가락흔들기",
    "romanization": "songarakheundeulgi",
-   "gloss": "Metronome (move)",
+   "gloss": "Metronome",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2385,7 +2388,7 @@
   {
    "korean": "따라하기",
    "romanization": "ttarahagi",
-   "gloss": "Mirror Move (move)",
+   "gloss": "Mirror Move",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2406,7 +2409,7 @@
   {
    "korean": "자폭",
    "romanization": "japok",
-   "gloss": "Self Destruct (move)",
+   "gloss": "Selfdestruct",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2432,7 +2435,7 @@
   {
    "korean": "알폭탄",
    "romanization": "alpoktan",
-   "gloss": "Egg Bomb (move)",
+   "gloss": "Egg Bomb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2449,7 +2452,7 @@
   {
    "korean": "핥기",
    "romanization": "haltgi",
-   "gloss": "Lick (move)",
+   "gloss": "Lick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2467,7 +2470,7 @@
   {
    "korean": "스모그",
    "romanization": "seumogeu",
-   "gloss": "Smog (move)",
+   "gloss": "Smog",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2484,7 +2487,7 @@
   {
    "korean": "오물공격",
    "romanization": "omulgonggyeok",
-   "gloss": "Sludge (move)",
+   "gloss": "Sludge",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2501,7 +2504,7 @@
   {
    "korean": "뼈다귀치기",
    "romanization": "ppyeodagwichigi",
-   "gloss": "Bone Club (move)",
+   "gloss": "Bone Club",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2519,7 +2522,7 @@
   {
    "korean": "불대문자",
    "romanization": "buldaemunja",
-   "gloss": "Fire Blast (move)",
+   "gloss": "Fire Blast",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2536,7 +2539,7 @@
   {
    "korean": "폭포오르기",
    "romanization": "pokpooreugi",
-   "gloss": "Waterfall (move)",
+   "gloss": "Waterfall",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2553,7 +2556,7 @@
   {
    "korean": "껍질끼우기",
    "romanization": "kkeopjilkkiugi",
-   "gloss": "Clamp (move)",
+   "gloss": "Clamp",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2568,7 +2571,7 @@
   {
    "korean": "스피드스타",
    "romanization": "seupideuseuta",
-   "gloss": "Swift (move)",
+   "gloss": "Swift",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2591,7 +2594,7 @@
   {
    "korean": "로케트박치기",
    "romanization": "roketeubakchigi",
-   "gloss": "Skull Bash (move)",
+   "gloss": "Skull Bash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2608,7 +2611,7 @@
   {
    "korean": "가시대포",
    "romanization": "gasidaepo",
-   "gloss": "Spike Cannon (move)",
+   "gloss": "Spike Cannon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2623,7 +2626,7 @@
   {
    "korean": "휘감기",
    "romanization": "hwigamgi",
-   "gloss": "Constrict (move)",
+   "gloss": "Constrict",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2641,7 +2644,7 @@
   {
    "korean": "망각술",
    "romanization": "manggaksul",
-   "gloss": "Amnesia (move)",
+   "gloss": "Amnesia",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2661,7 +2664,7 @@
   {
    "korean": "숟가락휘기",
    "romanization": "sutgarakhwigi",
-   "gloss": "Kinesis (move)",
+   "gloss": "Kinesis",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2678,7 +2681,7 @@
   {
    "korean": "알낳기",
    "romanization": "alnahgi",
-   "gloss": "Soft Boiled (move)",
+   "gloss": "Softboiled",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -2695,7 +2698,7 @@
   {
    "korean": "무릎차기",
    "romanization": "mureupchagi",
-   "gloss": "High Jump Kick (move)",
+   "gloss": "Hi Jump Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2712,7 +2715,7 @@
   {
    "korean": "뱀눈초리",
    "romanization": "baemnunchori",
-   "gloss": "Glare (move)",
+   "gloss": "Glare",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2729,7 +2732,7 @@
   {
    "korean": "꿈먹기",
    "romanization": "kkummeokgi",
-   "gloss": "Dream Eater (move)",
+   "gloss": "Dream Eater",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2751,7 +2754,7 @@
   {
    "korean": "독가스",
    "romanization": "dokgaseu",
-   "gloss": "Poison Gas (move)",
+   "gloss": "Poison Gas",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -2775,7 +2778,7 @@
   {
    "korean": "구슬던지기",
    "romanization": "guseuldeonjigi",
-   "gloss": "Barrage (move)",
+   "gloss": "Barrage",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2790,7 +2793,7 @@
   {
    "korean": "흡혈",
    "romanization": "heuphyeol",
-   "gloss": "Leech Life (move)",
+   "gloss": "Leech Life",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2812,7 +2815,7 @@
   {
    "korean": "악마의키스",
    "romanization": "akmauikiseu",
-   "gloss": "Lovely Kiss (move)",
+   "gloss": "Lovely Kiss",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2827,7 +2830,7 @@
   {
    "korean": "불새",
    "romanization": "bulsae",
-   "gloss": "Sky Attack (move)",
+   "gloss": "Sky Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -2848,7 +2851,7 @@
   {
    "korean": "변신",
    "romanization": "byeonsin",
-   "gloss": "Transform (move)",
+   "gloss": "Transform",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -2871,7 +2874,7 @@
   {
    "korean": "거품",
    "romanization": "geopum",
-   "gloss": "Bubble (move)",
+   "gloss": "Bubble",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -2893,7 +2896,7 @@
   {
    "korean": "잼잼펀치",
    "romanization": "jaemjaempeonchi",
-   "gloss": "Dizzy Punch (move)",
+   "gloss": "Dizzy Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2910,7 +2913,7 @@
   {
    "korean": "버섯포자",
    "romanization": "beoseotpoja",
-   "gloss": "Spore (move)",
+   "gloss": "Spore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2925,7 +2928,7 @@
   {
    "korean": "플래시",
    "romanization": "peulraesi",
-   "gloss": "Flash (move)",
+   "gloss": "Flash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -2951,7 +2954,7 @@
   {
    "korean": "사이코웨이브",
    "romanization": "saikoweibeu",
-   "gloss": "Psywave (move)",
+   "gloss": "Psywave",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2966,7 +2969,7 @@
   {
    "korean": "튀어오르기",
    "romanization": "twieooreugi",
-   "gloss": "Splash (move)",
+   "gloss": "Splash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -2983,7 +2986,7 @@
   {
    "korean": "녹기",
    "romanization": "nokgi",
-   "gloss": "Acid Armor (move)",
+   "gloss": "Acid Armor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3004,7 +3007,7 @@
   {
    "korean": "찝게햄머",
    "romanization": "jjipgehaemmeo",
-   "gloss": "Crabhammer (move)",
+   "gloss": "Crabhammer",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3021,7 +3024,7 @@
   {
    "korean": "대폭발",
    "romanization": "daepokbal",
-   "gloss": "Explosion (move)",
+   "gloss": "Explosion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -3042,7 +3045,7 @@
   {
    "korean": "마구할퀴기",
    "romanization": "maguhalkwigi",
-   "gloss": "Fury Swipes (move)",
+   "gloss": "Fury Swipes",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3064,7 +3067,7 @@
   {
    "korean": "뼈다귀부메랑",
    "romanization": "ppyeodagwibumerang",
-   "gloss": "Bonemerang (move)",
+   "gloss": "Bonemerang",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3082,7 +3085,7 @@
   {
    "korean": "잠자기",
    "romanization": "jamjagi",
-   "gloss": "Rest (move)",
+   "gloss": "Rest",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3099,7 +3102,7 @@
   {
    "korean": "스톤샤워",
    "romanization": "seutonsyawo",
-   "gloss": "Rock Slide (move)",
+   "gloss": "Rock Slide",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3116,7 +3119,7 @@
   {
    "korean": "필살앞니",
    "romanization": "pilsalapni",
-   "gloss": "Hyper Fang (move)",
+   "gloss": "Hyper Fang",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3134,7 +3137,7 @@
   {
    "korean": "각지기",
    "romanization": "gakjigi",
-   "gloss": "Sharpen (move)",
+   "gloss": "Sharpen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3155,7 +3158,7 @@
   {
    "korean": "텍스처",
    "romanization": "tekseucheo",
-   "gloss": "Conversion (move)",
+   "gloss": "Conversion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3176,7 +3179,7 @@
   {
    "korean": "트라이어택",
    "romanization": "teuraieotaek",
-   "gloss": "Tri Attack (move)",
+   "gloss": "Tri Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3194,7 +3197,7 @@
   {
    "korean": "분노의앞니",
    "romanization": "bunnouiapni",
-   "gloss": "Super Fang (move)",
+   "gloss": "Super Fang",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3212,7 +3215,7 @@
   {
    "korean": "베어가르기",
    "romanization": "beeogareugi",
-   "gloss": "Slash (move)",
+   "gloss": "Slash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3233,7 +3236,7 @@
   {
    "korean": "대타출동",
    "romanization": "daetachuldong",
-   "gloss": "Substitute (move)",
+   "gloss": "Substitute",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3257,7 +3260,7 @@
   {
    "korean": "발버둥",
    "romanization": "balbeodung",
-   "gloss": "Struggle (move)",
+   "gloss": "Struggle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3278,7 +3281,7 @@
   {
    "korean": "스케치",
    "romanization": "seukechi",
-   "gloss": "Sketch (move)",
+   "gloss": "Sketch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3293,7 +3296,7 @@
   {
    "korean": "트리플킥",
    "romanization": "teuripeulkik",
-   "gloss": "Triple Kick (move)",
+   "gloss": "Triple Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3308,7 +3311,7 @@
   {
    "korean": "도둑질",
    "romanization": "dodukjil",
-   "gloss": "Thief (move)",
+   "gloss": "Thief",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3325,7 +3328,7 @@
   {
    "korean": "거미집",
    "romanization": "geomijip",
-   "gloss": "Spider Web (move)",
+   "gloss": "Spider Web",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3345,7 +3348,7 @@
   {
    "korean": "마음의눈",
    "romanization": "maeumuinun",
-   "gloss": "Mind Reader (move)",
+   "gloss": "Mind Reader",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3364,7 +3367,7 @@
   {
    "korean": "악몽",
    "romanization": "akmong",
-   "gloss": "Nightmare (move)",
+   "gloss": "Nightmare",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3387,7 +3390,7 @@
   {
    "korean": "화염자동차",
    "romanization": "hwayeomjadongcha",
-   "gloss": "Flame Wheel (move)",
+   "gloss": "Flame Wheel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3404,7 +3407,7 @@
   {
    "korean": "코골기",
    "romanization": "kogolgi",
-   "gloss": "Snore (move)",
+   "gloss": "Snore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3421,7 +3424,7 @@
   {
    "korean": "저주",
    "romanization": "jeoju",
-   "gloss": "Curse (move)",
+   "gloss": "Curse",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -3446,7 +3449,7 @@
   {
    "korean": "바둥바둥",
    "romanization": "badungbadung",
-   "gloss": "Flail (move)",
+   "gloss": "Flail",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3470,7 +3473,7 @@
   {
    "korean": "목화포자",
    "romanization": "mokhwapoja",
-   "gloss": "Cotton Spore (move)",
+   "gloss": "Cotton Spore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3485,7 +3488,7 @@
   {
    "korean": "기사회생",
    "romanization": "gisahoesaeng",
-   "gloss": "Reversal (move)",
+   "gloss": "Reversal",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3507,7 +3510,7 @@
   {
    "korean": "원한",
    "romanization": "wonhan",
-   "gloss": "Spite (move)",
+   "gloss": "Spite",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -3529,7 +3532,7 @@
   {
    "korean": "눈싸라기",
    "romanization": "nunssaragi",
-   "gloss": "Powder Snow (move)",
+   "gloss": "Powder Snow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3550,7 +3553,7 @@
   {
    "korean": "방어",
    "romanization": "bangeo",
-   "gloss": "defense",
+   "gloss": "Protect",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 62,
@@ -3575,7 +3578,7 @@
   {
    "korean": "마하펀치",
    "romanization": "mahapeonchi",
-   "gloss": "Mach Punch (move)",
+   "gloss": "Mach Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3592,7 +3595,7 @@
   {
    "korean": "겁나는얼굴",
    "romanization": "geopnaneuneolgul",
-   "gloss": "Scary Face (move)",
+   "gloss": "Scary Face",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3612,7 +3615,7 @@
   {
    "korean": "속여때리기",
    "romanization": "sokyeottaerigi",
-   "gloss": "Feint Attack (move)",
+   "gloss": "Faint Attack",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3630,7 +3633,7 @@
   {
    "korean": "천사의키스",
    "romanization": "cheonsauikiseu",
-   "gloss": "Sweet Kiss (move)",
+   "gloss": "Sweet Kiss",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3645,7 +3648,7 @@
   {
    "korean": "배북",
    "romanization": "baebuk",
-   "gloss": "Belly Drum (move)",
+   "gloss": "Belly Drum",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3663,7 +3666,7 @@
   {
    "korean": "오물폭탄",
    "romanization": "omulpoktan",
-   "gloss": "Sludge Bomb (move)",
+   "gloss": "Sludge Bomb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3680,7 +3683,7 @@
   {
    "korean": "진흙뿌리기",
    "romanization": "jinheulkppurigi",
-   "gloss": "Mud Slap (move)",
+   "gloss": "Mud-slap",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3697,7 +3700,7 @@
   {
    "korean": "대포무노포",
    "romanization": "daepomunopo",
-   "gloss": "Octazooka (move)",
+   "gloss": "Octazooka",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3714,7 +3717,7 @@
   {
    "korean": "압정뿌리기",
    "romanization": "apjeongppurigi",
-   "gloss": "Spikes (move)",
+   "gloss": "Spikes",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3731,7 +3734,7 @@
   {
    "korean": "전자포",
    "romanization": "jeonjapo",
-   "gloss": "Zap Cannon (move)",
+   "gloss": "Zap Cannon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3749,7 +3752,7 @@
   {
    "korean": "꿰뚫어보기",
    "romanization": "kkwettulheobogi",
-   "gloss": "Foresight (move)",
+   "gloss": "Foresight",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3768,7 +3771,7 @@
   {
    "korean": "길동무",
    "romanization": "gildongmu",
-   "gloss": "Destiny Bond (move)",
+   "gloss": "Destiny Bond",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -3792,7 +3795,7 @@
   {
    "korean": "멸망의노래",
    "romanization": "myeolmanguinorae",
-   "gloss": "Perish Song (move)",
+   "gloss": "Perish Song",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3809,7 +3812,7 @@
   {
    "korean": "얼다바람",
    "romanization": "eoldabaram",
-   "gloss": "Icy Wind (move)",
+   "gloss": "Icy Wind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3824,7 +3827,7 @@
   {
    "korean": "판별",
    "romanization": "panbyeol",
-   "gloss": "Detect (move)",
+   "gloss": "Detect",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3846,7 +3849,7 @@
   {
    "korean": "본러쉬",
    "romanization": "bonreoswi",
-   "gloss": "Bone Rush (move)",
+   "gloss": "Bone Rush",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3864,7 +3867,7 @@
   {
    "korean": "록온",
    "romanization": "rokon",
-   "gloss": "Lock On (move)",
+   "gloss": "Lock-on",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3883,7 +3886,7 @@
   {
    "korean": "역린",
    "romanization": "yeokrin",
-   "gloss": "Outrage (move)",
+   "gloss": "Outrage",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3903,7 +3906,7 @@
   {
    "korean": "모래바람",
    "romanization": "moraebaram",
-   "gloss": "Sandstorm (move)",
+   "gloss": "Sandstorm",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -3925,7 +3928,7 @@
   {
    "korean": "기가드레인",
    "romanization": "gigadeurein",
-   "gloss": "Giga Drain (move)",
+   "gloss": "Giga Drain",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -3942,7 +3945,7 @@
   {
    "korean": "버티기",
    "romanization": "beotigi",
-   "gloss": "Endure (move)",
+   "gloss": "Endure",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -3961,7 +3964,7 @@
   {
    "korean": "애교부리기",
    "romanization": "aegyoburigi",
-   "gloss": "Charm (move)",
+   "gloss": "Charm",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3978,7 +3981,7 @@
   {
    "korean": "구르기",
    "romanization": "gureugi",
-   "gloss": "Rollout (move)",
+   "gloss": "Rollout",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -3999,7 +4002,7 @@
   {
    "korean": "칼등치기",
    "romanization": "kaldeungchigi",
-   "gloss": "False Swipe (move)",
+   "gloss": "False Swipe",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4017,7 +4020,7 @@
   {
    "korean": "뽐내기",
    "romanization": "ppomnaegi",
-   "gloss": "Swagger (move)",
+   "gloss": "Swagger",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4038,7 +4041,7 @@
   {
    "korean": "우유마시기",
    "romanization": "uyumasigi",
-   "gloss": "Milk Drink (move)",
+   "gloss": "Milk Drink",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4053,7 +4056,7 @@
   {
    "korean": "스파크",
    "romanization": "seupakeu",
-   "gloss": "Spark (move)",
+   "gloss": "Spark",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -4072,7 +4075,7 @@
   {
    "korean": "연속자르기",
    "romanization": "yeonsokjareugi",
-   "gloss": "Fury Cutter (move)",
+   "gloss": "Fury Cutter",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4087,7 +4090,7 @@
   {
    "korean": "강철날개",
    "romanization": "gangcheolnalgae",
-   "gloss": "Steel Wing (move)",
+   "gloss": "Steel Wing",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4104,7 +4107,7 @@
   {
    "korean": "검은눈빛",
    "romanization": "geomeunnunbich",
-   "gloss": "Mean Look (move)",
+   "gloss": "Mean Look",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4121,7 +4124,7 @@
   {
    "korean": "헤롱헤롱",
    "romanization": "herongherong",
-   "gloss": "Attract (move)",
+   "gloss": "Attract",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 16,
@@ -4138,7 +4141,7 @@
   {
    "korean": "잠꼬대",
    "romanization": "jamkkodae",
-   "gloss": "Sleep Talk (move)",
+   "gloss": "Sleep Talk",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4159,7 +4162,7 @@
   {
    "korean": "치료방울",
    "romanization": "chiryobangul",
-   "gloss": "Heal Bell (move)",
+   "gloss": "Heal Bell",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4174,7 +4177,7 @@
   {
    "korean": "은혜갚기",
    "romanization": "eunhyegapgi",
-   "gloss": "Return (move)",
+   "gloss": "Return",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4191,7 +4194,7 @@
   {
    "korean": "프레젠트",
    "romanization": "peurejenteu",
-   "gloss": "Present (move)",
+   "gloss": "Present",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -4211,7 +4214,7 @@
   {
    "korean": "화풀이",
    "romanization": "hwapuli",
-   "gloss": "Frustration (move)",
+   "gloss": "Frustration",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4232,7 +4235,7 @@
   {
    "korean": "신비의부적",
    "romanization": "sinbiuibujeok",
-   "gloss": "Safeguard (move)",
+   "gloss": "Safeguard",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4249,7 +4252,7 @@
   {
    "korean": "아픔나누기",
    "romanization": "apeumnanugi",
-   "gloss": "Pain Split (move)",
+   "gloss": "Pain Split",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4264,7 +4267,7 @@
   {
    "korean": "성스러운불꽃",
    "romanization": "seongseureounbulkkoch",
-   "gloss": "Sacred Fire (move)",
+   "gloss": "Sacred Fire",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4279,7 +4282,7 @@
   {
    "korean": "매그니튜드",
    "romanization": "maegeunityudeu",
-   "gloss": "Magnitude (move)",
+   "gloss": "Magnitude",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4298,7 +4301,7 @@
   {
    "korean": "폭발펀치",
    "romanization": "pokbalpeonchi",
-   "gloss": "Dynamic Punch (move)",
+   "gloss": "Dynamicpunch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4315,7 +4318,7 @@
   {
    "korean": "메가폰",
    "romanization": "megapon",
-   "gloss": "Megahorn (move)",
+   "gloss": "Megahorn",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4336,7 +4339,7 @@
   {
    "korean": "용의숨결",
    "romanization": "yonguisumgyeol",
-   "gloss": "Dragon Breath (move)",
+   "gloss": "Dragonbreath",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4351,7 +4354,7 @@
   {
    "korean": "바톤터치",
    "romanization": "batonteochi",
-   "gloss": "Baton Pass (move)",
+   "gloss": "Baton Pass",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4368,7 +4371,7 @@
   {
    "korean": "앵콜",
    "romanization": "aengkol",
-   "gloss": "Encore (move)",
+   "gloss": "Encore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -4385,7 +4388,7 @@
   {
    "korean": "따라가때리기",
    "romanization": "ttaragattaerigi",
-   "gloss": "Pursuit (move)",
+   "gloss": "Pursuit",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4407,7 +4410,7 @@
   {
    "korean": "고속스핀",
    "romanization": "gosokseupin",
-   "gloss": "Rapid Spin (move)",
+   "gloss": "Rapid Spin",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4426,7 +4429,7 @@
   {
    "korean": "달콤한향기",
    "romanization": "dalkomhanhyanggi",
-   "gloss": "Sweet Scent (move)",
+   "gloss": "Sweet Scent",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4445,7 +4448,7 @@
   {
    "korean": "아이언테일",
    "romanization": "aieonteil",
-   "gloss": "Iron Tail (move)",
+   "gloss": "Iron Tail",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4460,7 +4463,7 @@
   {
    "korean": "메탈크로우",
    "romanization": "metalkeurou",
-   "gloss": "Metal Claw (move)",
+   "gloss": "Metal Claw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4477,7 +4480,7 @@
   {
    "korean": "받아던지기",
    "romanization": "batadeonjigi",
-   "gloss": "Vital Throw (move)",
+   "gloss": "Vital Throw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4494,7 +4497,7 @@
   {
    "korean": "아침햇살",
    "romanization": "achimhaetsal",
-   "gloss": "Morning Sun (move)",
+   "gloss": "Morning Sun",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4509,7 +4512,7 @@
   {
    "korean": "광합성",
    "romanization": "gwanghapseong",
-   "gloss": "Synthesis (move)",
+   "gloss": "Synthesis",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4530,7 +4533,7 @@
   {
    "korean": "달의불빛",
    "romanization": "daluibulbich",
-   "gloss": "Moonlight (move)",
+   "gloss": "Moonlight",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4547,7 +4550,7 @@
   {
    "korean": "잠재파워",
    "romanization": "jamjaepawo",
-   "gloss": "Hidden Power (move)",
+   "gloss": "Hidden Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4564,7 +4567,7 @@
   {
    "korean": "크로스촙",
    "romanization": "keuroseuchop",
-   "gloss": "Cross Chop (move)",
+   "gloss": "Cross Chop",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4583,7 +4586,7 @@
   {
    "korean": "회오리",
    "romanization": "hoeori",
-   "gloss": "Twister (move)",
+   "gloss": "Twister",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -4600,7 +4603,7 @@
   {
    "korean": "비바라기",
    "romanization": "bibaragi",
-   "gloss": "Rain Dance (move)",
+   "gloss": "Rain Dance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4617,7 +4620,7 @@
   {
    "korean": "쾌청",
    "romanization": "kwaecheong",
-   "gloss": "Sunny Day (move)",
+   "gloss": "Sunny Day",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4634,7 +4637,7 @@
   {
    "korean": "깨물어부수기",
    "romanization": "kkaemuleobusugi",
-   "gloss": "Crunch (move)",
+   "gloss": "Crunch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4653,7 +4656,7 @@
   {
    "korean": "미러코트",
    "romanization": "mireokoteu",
-   "gloss": "Mirror Coat (move)",
+   "gloss": "Mirror Coat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4672,7 +4675,7 @@
   {
    "korean": "자기암시",
    "romanization": "jagiamsi",
-   "gloss": "Psych Up (move)",
+   "gloss": "Psych Up",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4693,7 +4696,7 @@
   {
    "korean": "신속",
    "romanization": "sinsok",
-   "gloss": "Extreme Speed (move)",
+   "gloss": "Extremespeed",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4713,7 +4716,7 @@
   {
    "korean": "원시의힘",
    "romanization": "wonsiuihim",
-   "gloss": "Ancient Power (move)",
+   "gloss": "Ancientpower",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4730,7 +4733,7 @@
   {
    "korean": "섀도볼",
    "romanization": "syaedobol",
-   "gloss": "Shadow Ball (move)",
+   "gloss": "Shadow Ball",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4747,7 +4750,7 @@
   {
    "korean": "미래예지",
    "romanization": "miraeyeji",
-   "gloss": "Future Sight (move)",
+   "gloss": "Future Sight",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4767,7 +4770,7 @@
   {
    "korean": "바위깨기",
    "romanization": "bawikkaegi",
-   "gloss": "Rock Smash (move)",
+   "gloss": "Rock Smash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -4784,7 +4787,7 @@
   {
    "korean": "바다회오리",
    "romanization": "badahoeori",
-   "gloss": "Whirlpool (move)",
+   "gloss": "Whirlpool",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4799,7 +4802,7 @@
   {
    "korean": "집단구타",
    "romanization": "jipdanguta",
-   "gloss": "Beat Up (move)",
+   "gloss": "Beat Up",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4814,7 +4817,7 @@
   {
    "korean": "속이다",
    "romanization": "sokida",
-   "gloss": "Fake Out (move)",
+   "gloss": "Fake Out",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4841,7 +4844,7 @@
   {
    "korean": "소란피기",
    "romanization": "soranpigi",
-   "gloss": "Uproar (move)",
+   "gloss": "Uproar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4858,7 +4861,7 @@
   {
    "korean": "비축하기",
    "romanization": "bichukhagi",
-   "gloss": "Stockpile (move)",
+   "gloss": "Stockpile",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4876,7 +4879,7 @@
   {
    "korean": "토해내기",
    "romanization": "tohaenaegi",
-   "gloss": "Spit Up (move)",
+   "gloss": "Spit Up",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -4894,7 +4897,7 @@
   {
    "korean": "꿀꺽",
    "romanization": "kkulkkeok",
-   "gloss": "Swallow (move)",
+   "gloss": "Swallow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 20,
@@ -4918,7 +4921,7 @@
   {
    "korean": "열풍",
    "romanization": "yeolpung",
-   "gloss": "Heat Wave (move)",
+   "gloss": "Heat Wave",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -4940,7 +4943,7 @@
   {
    "korean": "싸라기눈",
    "romanization": "ssaraginun",
-   "gloss": "Hail (move)",
+   "gloss": "Hail",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -4962,7 +4965,7 @@
   {
    "korean": "트집",
    "romanization": "teujip",
-   "gloss": "Torment (move)",
+   "gloss": "Torment",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -4984,7 +4987,7 @@
   {
    "korean": "부추기기",
    "romanization": "buchugigi",
-   "gloss": "Flatter (move)",
+   "gloss": "Flatter",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5001,7 +5004,7 @@
   {
    "korean": "도깨비불",
    "romanization": "dokkaebibul",
-   "gloss": "Will O Wisp (move)",
+   "gloss": "Will-o-wisp",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5021,7 +5024,7 @@
   {
    "korean": "추억의선물",
    "romanization": "chueokuiseonmul",
-   "gloss": "Memento (move)",
+   "gloss": "Memento",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5038,7 +5041,7 @@
   {
    "korean": "객기",
    "romanization": "gaekgi",
-   "gloss": "Facade (move)",
+   "gloss": "Facade",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5059,7 +5062,7 @@
   {
    "korean": "힘껏펀치",
    "romanization": "himkkeotpeonchi",
-   "gloss": "Focus Punch (move)",
+   "gloss": "Focus Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5074,7 +5077,7 @@
   {
    "korean": "정신차리기",
    "romanization": "jeongsincharigi",
-   "gloss": "Smelling Salts (move)",
+   "gloss": "Smellingsalt",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5089,7 +5092,7 @@
   {
    "korean": "날따름",
    "romanization": "nalttareum",
-   "gloss": "Follow Me (move)",
+   "gloss": "Follow Me",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5106,7 +5109,7 @@
   {
    "korean": "자연의힘",
    "romanization": "jayeonuihim",
-   "gloss": "Nature Power (move)",
+   "gloss": "Nature Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5121,7 +5124,7 @@
   {
    "korean": "충전",
    "romanization": "chungjeon",
-   "gloss": "Charge (move)",
+   "gloss": "Charge",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -5165,7 +5168,7 @@
   {
    "korean": "도발",
    "romanization": "dobal",
-   "gloss": "Taunt (move)",
+   "gloss": "Taunt",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -5187,7 +5190,7 @@
   {
    "korean": "도우미",
    "romanization": "doumi",
-   "gloss": "Helping Hand (move)",
+   "gloss": "Helping Hand",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5206,7 +5209,7 @@
   {
    "korean": "트릭",
    "romanization": "teurik",
-   "gloss": "Trick (move)",
+   "gloss": "Trick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -5230,7 +5233,7 @@
   {
    "korean": "역할",
    "romanization": "yeokhal",
-   "gloss": "Role Play (move)",
+   "gloss": "Role Play",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -5252,7 +5255,7 @@
   {
    "korean": "희망사항",
    "romanization": "huimangsahang",
-   "gloss": "Wish (move)",
+   "gloss": "Wish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -5267,7 +5270,7 @@
   {
    "korean": "조수",
    "romanization": "josu",
-   "gloss": "Assist (move)",
+   "gloss": "Assist",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 23,
@@ -5299,7 +5302,7 @@
   {
    "korean": "뿌리박기",
    "romanization": "ppuribakgi",
-   "gloss": "Ingrain (move)",
+   "gloss": "Ingrain",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5314,7 +5317,7 @@
   {
    "korean": "엄청난힘",
    "romanization": "eomcheongnanhim",
-   "gloss": "Superpower (move)",
+   "gloss": "Superpower",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5329,7 +5332,7 @@
   {
    "korean": "매직코트",
    "romanization": "maejikkoteu",
-   "gloss": "Magic Coat (move)",
+   "gloss": "Magic Coat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -5344,7 +5347,7 @@
   {
    "korean": "리사이클",
    "romanization": "risaikeul",
-   "gloss": "Recycle (move)",
+   "gloss": "Recycle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5361,7 +5364,7 @@
   {
    "korean": "리벤지",
    "romanization": "ribenji",
-   "gloss": "Revenge (move)",
+   "gloss": "Revenge",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5383,7 +5386,7 @@
   {
    "korean": "깨트리다",
    "romanization": "kkaeteurida",
-   "gloss": "Brick Break (move)",
+   "gloss": "Brick Break",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5404,7 +5407,7 @@
   {
    "korean": "하품",
    "romanization": "hapum",
-   "gloss": "Yawn (move)",
+   "gloss": "Yawn",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -5428,7 +5431,7 @@
   {
    "korean": "탁쳐서떨구기",
    "romanization": "takchyeoseotteolgugi",
-   "gloss": "Knock Off (move)",
+   "gloss": "Knock Off",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5443,7 +5446,7 @@
   {
    "korean": "죽기살기",
    "romanization": "jukgisalgi",
-   "gloss": "Endeavor (move)",
+   "gloss": "Endeavor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5462,7 +5465,7 @@
   {
    "korean": "분화",
    "romanization": "bunhwa",
-   "gloss": "Eruption (move)",
+   "gloss": "Eruption",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 9,
@@ -5483,7 +5486,7 @@
   {
    "korean": "스킬스웹",
    "romanization": "seukilseuwep",
-   "gloss": "Skill Swap (move)",
+   "gloss": "Skill Swap",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5500,7 +5503,7 @@
   {
    "korean": "봉인",
    "romanization": "bongin",
-   "gloss": "Imprison (move)",
+   "gloss": "Imprison",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -5521,7 +5524,7 @@
   {
    "korean": "리프레쉬",
    "romanization": "ripeureswi",
-   "gloss": "Refresh (move)",
+   "gloss": "Refresh",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5538,7 +5541,7 @@
   {
    "korean": "원념",
    "romanization": "wonnyeom",
-   "gloss": "Grudge (move)",
+   "gloss": "Grudge",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -5559,7 +5562,7 @@
   {
    "korean": "가로챔",
    "romanization": "garochaem",
-   "gloss": "Snatch (move)",
+   "gloss": "Snatch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5576,7 +5579,7 @@
   {
    "korean": "비밀의힘",
    "romanization": "bimiluihim",
-   "gloss": "Secret Power (move)",
+   "gloss": "Secret Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5593,7 +5596,7 @@
   {
    "korean": "다이빙",
    "romanization": "daibing",
-   "gloss": "Dive (move)",
+   "gloss": "Dive",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -5615,7 +5618,7 @@
   {
    "korean": "손바닥치기",
    "romanization": "sonbadakchigi",
-   "gloss": "Arm Thrust (move)",
+   "gloss": "Arm Thrust",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -5630,7 +5633,7 @@
   {
    "korean": "보호색",
    "romanization": "bohosaek",
-   "gloss": "Camouflage (move)",
+   "gloss": "Camouflage",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5651,7 +5654,7 @@
   {
    "korean": "반딧불",
    "romanization": "banditbul",
-   "gloss": "Tail Glow (move)",
+   "gloss": "Tail Glow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -5671,7 +5674,7 @@
   {
    "korean": "라스트버지",
    "romanization": "raseuteubeoji",
-   "gloss": "Luster Purge (move)",
+   "gloss": "Luster Purge",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5686,7 +5689,7 @@
   {
    "korean": "미스트볼",
    "romanization": "miseuteubol",
-   "gloss": "Mist Ball (move)",
+   "gloss": "Mist Ball",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5701,7 +5704,7 @@
   {
    "korean": "깃털댄스",
    "romanization": "gitteoldaenseu",
-   "gloss": "Feather Dance (move)",
+   "gloss": "Featherdance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5720,7 +5723,7 @@
   {
    "korean": "흔들흔들댄스",
    "romanization": "heundeulheundeuldaenseu",
-   "gloss": "Teeter Dance (move)",
+   "gloss": "Teeter Dance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5735,7 +5738,7 @@
   {
    "korean": "브레이즈킥",
    "romanization": "beureijeukik",
-   "gloss": "Blaze Kick (move)",
+   "gloss": "Blaze Kick",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5750,7 +5753,7 @@
   {
    "korean": "흙놀이",
    "romanization": "heulknoli",
-   "gloss": "Mud Sport (move)",
+   "gloss": "Mud Sport",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5768,7 +5771,7 @@
   {
    "korean": "아이스볼",
    "romanization": "aiseubol",
-   "gloss": "Ice Ball (move)",
+   "gloss": "Ice Ball",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5783,7 +5786,7 @@
   {
    "korean": "바늘팔",
    "romanization": "baneulpal",
-   "gloss": "Needle Arm (move)",
+   "gloss": "Needle Arm",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5798,7 +5801,7 @@
   {
    "korean": "태만함",
    "romanization": "taemanham",
-   "gloss": "Slack Off (move)",
+   "gloss": "Slack Off",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5813,7 +5816,7 @@
   {
    "korean": "하이퍼보이스",
    "romanization": "haipeoboiseu",
-   "gloss": "Hyper Voice (move)",
+   "gloss": "Hyper Voice",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5828,7 +5831,7 @@
   {
    "korean": "독엄니",
    "romanization": "dokeomni",
-   "gloss": "Poison Fang (move)",
+   "gloss": "Poison Fang",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5843,7 +5846,7 @@
   {
    "korean": "브레이크크루",
    "romanization": "beureikeukeuru",
-   "gloss": "Crush Claw (move)",
+   "gloss": "Crush Claw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5858,7 +5861,7 @@
   {
    "korean": "블러스트번",
    "romanization": "beulreoseuteubeon",
-   "gloss": "Blast Burn (move)",
+   "gloss": "Blast Burn",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5873,7 +5876,7 @@
   {
    "korean": "하이드로캐논",
    "romanization": "haideurokaenon",
-   "gloss": "Hydro Cannon (move)",
+   "gloss": "Hydro Cannon",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5888,7 +5891,7 @@
   {
    "korean": "코멧펀치",
    "romanization": "kometpeonchi",
-   "gloss": "Meteor Mash (move)",
+   "gloss": "Meteor Mash",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5905,7 +5908,7 @@
   {
    "korean": "놀래키기",
    "romanization": "nolraekigi",
-   "gloss": "Astonish (move)",
+   "gloss": "Astonish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5920,7 +5923,7 @@
   {
    "korean": "웨더볼",
    "romanization": "wedeobol",
-   "gloss": "Weather Ball (move)",
+   "gloss": "Weather Ball",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5935,7 +5938,7 @@
   {
    "korean": "아로마테라피",
    "romanization": "aromaterapi",
-   "gloss": "Aromatherapy (move)",
+   "gloss": "Aromatherapy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5950,7 +5953,7 @@
   {
    "korean": "거짓울음",
    "romanization": "geojituleum",
-   "gloss": "Fake Tears (move)",
+   "gloss": "Fake Tears",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5965,7 +5968,7 @@
   {
    "korean": "에어컷터",
    "romanization": "eeokeotteo",
-   "gloss": "Air Cutter (move)",
+   "gloss": "Air Cutter",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5982,7 +5985,7 @@
   {
    "korean": "오버히트",
    "romanization": "obeohiteu",
-   "gloss": "Overheat (move)",
+   "gloss": "Overheat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -5999,7 +6002,7 @@
   {
    "korean": "냄새구별",
    "romanization": "naemsaegubyeol",
-   "gloss": "Odor Sleuth (move)",
+   "gloss": "Odor Sleuth",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6017,7 +6020,7 @@
   {
    "korean": "암석봉인",
    "romanization": "amseokbongin",
-   "gloss": "Rock Tomb (move)",
+   "gloss": "Rock Tomb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6034,7 +6037,7 @@
   {
    "korean": "은빛바람",
    "romanization": "eunbichbaram",
-   "gloss": "Silver Wind (move)",
+   "gloss": "Silver Wind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6052,7 +6055,7 @@
   {
    "korean": "금속음",
    "romanization": "geumsokeum",
-   "gloss": "Metal Sound (move)",
+   "gloss": "Metal Sound",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6074,7 +6077,7 @@
   {
    "korean": "풀피리",
    "romanization": "pulpiri",
-   "gloss": "Grass Whistle (move)",
+   "gloss": "Grasswhistle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -6095,7 +6098,7 @@
   {
    "korean": "간지르기",
    "romanization": "ganjireugi",
-   "gloss": "Tickle (move)",
+   "gloss": "Tickle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6110,7 +6113,7 @@
   {
    "korean": "코스믹파워",
    "romanization": "koseumikpawo",
-   "gloss": "Cosmic Power (move)",
+   "gloss": "Cosmic Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6128,7 +6131,7 @@
   {
    "korean": "바지락조개",
    "romanization": "bajirakjogae",
-   "gloss": "Water Spout (move)",
+   "gloss": "Water Spout",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6148,7 +6151,7 @@
   {
    "korean": "시그널빔",
    "romanization": "sigeuneolbim",
-   "gloss": "Signal Beam (move)",
+   "gloss": "Signal Beam",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6163,7 +6166,7 @@
   {
    "korean": "섀도펀치",
    "romanization": "syaedopeonchi",
-   "gloss": "Shadow Punch (move)",
+   "gloss": "Shadow Punch",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6180,7 +6183,7 @@
   {
    "korean": "신통력",
    "romanization": "sintongryeok",
-   "gloss": "Extrasensory (move)",
+   "gloss": "Extrasensory",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6200,7 +6203,7 @@
   {
    "korean": "스카이업퍼",
    "romanization": "seukaieoppeo",
-   "gloss": "Sky Uppercut (move)",
+   "gloss": "Sky Uppercut",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6217,7 +6220,7 @@
   {
    "korean": "모래지옥",
    "romanization": "moraejiok",
-   "gloss": "Sand Tomb (move)",
+   "gloss": "Sand Tomb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6234,7 +6237,7 @@
   {
    "korean": "절대영도",
    "romanization": "jeoldaeyeongdo",
-   "gloss": "Sheer Cold (move)",
+   "gloss": "Sheer Cold",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6252,7 +6255,7 @@
   {
    "korean": "탁류",
    "romanization": "takryu",
-   "gloss": "Muddy Water (move)",
+   "gloss": "Muddy Water",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6272,7 +6275,7 @@
   {
    "korean": "기관총",
    "romanization": "gigwanchong",
-   "gloss": "Bullet Seed (move)",
+   "gloss": "Bullet Seed",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6293,7 +6296,7 @@
   {
    "korean": "제비반환",
    "romanization": "jebibanhwan",
-   "gloss": "Aerial Ace (move)",
+   "gloss": "Aerial Ace",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6310,7 +6313,7 @@
   {
    "korean": "고드름침",
    "romanization": "godeureumchim",
-   "gloss": "Icicle Spear (move)",
+   "gloss": "Icicle Spear",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6325,7 +6328,7 @@
   {
    "korean": "철벽",
    "romanization": "cheolbyeok",
-   "gloss": "Iron Defense (move)",
+   "gloss": "Iron Defense",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6345,7 +6348,7 @@
   {
    "korean": "블록",
    "romanization": "beulrok",
-   "gloss": "Block (move)",
+   "gloss": "Block",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6366,7 +6369,7 @@
   {
    "korean": "멀리짖음",
    "romanization": "meolrijijeum",
-   "gloss": "Howl (move)",
+   "gloss": "Howl",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6381,7 +6384,7 @@
   {
    "korean": "드래곤크루",
    "romanization": "deuraegonkeuru",
-   "gloss": "Dragon Claw (move)",
+   "gloss": "Dragon Claw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6396,7 +6399,7 @@
   {
    "korean": "하드플랜트",
    "romanization": "hadeupeulraenteu",
-   "gloss": "Frenzy Plant (move)",
+   "gloss": "Frenzy Plant",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6411,7 +6414,7 @@
   {
    "korean": "벌크업",
    "romanization": "beolkeueop",
-   "gloss": "Bulk Up (move)",
+   "gloss": "Bulk Up",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6426,7 +6429,7 @@
   {
    "korean": "뛰어오르다",
    "romanization": "ttwieooreuda",
-   "gloss": "Bounce (move)",
+   "gloss": "Bounce",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6448,7 +6451,7 @@
   {
    "korean": "머드숏",
    "romanization": "meodeusyot",
-   "gloss": "Mud Shot (move)",
+   "gloss": "Mud Shot",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6465,7 +6468,7 @@
   {
    "korean": "포이즌테일",
    "romanization": "poijeunteil",
-   "gloss": "Poison Tail (move)",
+   "gloss": "Poison Tail",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6480,7 +6483,7 @@
   {
    "korean": "탐내다",
    "romanization": "tamnaeda",
-   "gloss": "Covet (move)",
+   "gloss": "Covet",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6501,7 +6504,7 @@
   {
    "korean": "볼트태클",
    "romanization": "bolteutaekeul",
-   "gloss": "Volt Tackle (move)",
+   "gloss": "Volt Tackle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6516,7 +6519,7 @@
   {
    "korean": "메지컬리프",
    "romanization": "mejikeolripeu",
-   "gloss": "Magical Leaf (move)",
+   "gloss": "Magical Leaf",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6531,7 +6534,7 @@
   {
    "korean": "물놀이",
    "romanization": "mulnoli",
-   "gloss": "Water Sport (move)",
+   "gloss": "Water Sport",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6554,7 +6557,7 @@
   {
    "korean": "명상",
    "romanization": "myeongsang",
-   "gloss": "Calm Mind (move)",
+   "gloss": "Calm Mind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -6576,7 +6579,7 @@
   {
    "korean": "리프블레이드",
    "romanization": "ripeubeulreideu",
-   "gloss": "Leaf Blade (move)",
+   "gloss": "Leaf Blade",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6591,7 +6594,7 @@
   {
    "korean": "용의춤",
    "romanization": "yonguichum",
-   "gloss": "Dragon Dance (move)",
+   "gloss": "Dragon Dance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6608,7 +6611,7 @@
   {
    "korean": "락블레스트",
    "romanization": "rakbeulreseuteu",
-   "gloss": "Rock Blast (move)",
+   "gloss": "Rock Blast",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6626,7 +6629,7 @@
   {
    "korean": "전격파",
    "romanization": "jeongyeokpa",
-   "gloss": "Shock Wave (move)",
+   "gloss": "Shock Wave",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6643,7 +6646,7 @@
   {
    "korean": "물의파동",
    "romanization": "muluipadong",
-   "gloss": "Water Pulse (move)",
+   "gloss": "Water Pulse",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -6660,7 +6663,7 @@
   {
    "korean": "파멸의소원",
    "romanization": "pamyeoluisowon",
-   "gloss": "Doom Desire (move)",
+   "gloss": "Doom Desire",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6675,7 +6678,7 @@
   {
    "korean": "사이코부스트",
    "romanization": "saikobuseuteu",
-   "gloss": "Psycho Boost (move)",
+   "gloss": "Psycho Boost",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6690,7 +6693,7 @@
   {
    "korean": "악취",
    "romanization": "akchwi",
-   "gloss": "Stench (ability)",
+   "gloss": "Stench",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6712,7 +6715,7 @@
   {
    "korean": "잔비",
    "romanization": "janbi",
-   "gloss": "Drizzle (ability)",
+   "gloss": "Drizzle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6732,7 +6735,7 @@
   {
    "korean": "가속",
    "romanization": "gasok",
-   "gloss": "Speed Boost (ability)",
+   "gloss": "Speed Boost",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6752,7 +6755,7 @@
   {
    "korean": "전투무장",
    "romanization": "jeontumujang",
-   "gloss": "Battle Armor (ability)",
+   "gloss": "Battle Armor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6770,7 +6773,7 @@
   {
    "korean": "옹골참",
    "romanization": "onggolcham",
-   "gloss": "Sturdy (ability)",
+   "gloss": "Sturdy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6789,7 +6792,7 @@
   {
    "korean": "습기",
    "romanization": "seupgi",
-   "gloss": "Damp (ability)",
+   "gloss": "Damp",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6812,7 +6815,7 @@
   {
    "korean": "유연",
    "romanization": "yuyeon",
-   "gloss": "Limber (ability)",
+   "gloss": "Limber",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6833,7 +6836,7 @@
   {
    "korean": "모래숨기",
    "romanization": "moraesumgi",
-   "gloss": "Sand Veil (ability)",
+   "gloss": "Sand Veil",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6853,7 +6856,7 @@
   {
    "korean": "정전기",
    "romanization": "jeongjeongi",
-   "gloss": "Static (ability)",
+   "gloss": "Static",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -6878,7 +6881,7 @@
   {
    "korean": "축전",
    "romanization": "chukjeon",
-   "gloss": "Volt Absorb (ability)",
+   "gloss": "Volt Absorb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6898,7 +6901,7 @@
   {
    "korean": "저수",
    "romanization": "jeosu",
-   "gloss": "Water Absorb (ability)",
+   "gloss": "Water Absorb",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6920,7 +6923,7 @@
   {
    "korean": "둔감",
    "romanization": "dungam",
-   "gloss": "Oblivious (ability)",
+   "gloss": "Oblivious",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -6942,7 +6945,7 @@
   {
    "korean": "날씨부정",
    "romanization": "nalssibujeong",
-   "gloss": "Cloud Nine (ability)",
+   "gloss": "Cloud Nine",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6959,7 +6962,7 @@
   {
    "korean": "복안",
    "romanization": "bokan",
-   "gloss": "Compound Eyes (ability)",
+   "gloss": "Compoundeyes",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -6980,7 +6983,7 @@
   {
    "korean": "불면",
    "romanization": "bulmyeon",
-   "gloss": "Insomnia (ability)",
+   "gloss": "Insomnia",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -7008,7 +7011,7 @@
   {
    "korean": "변색",
    "romanization": "byeonsaek",
-   "gloss": "Color Change (ability)",
+   "gloss": "Color Change",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7028,7 +7031,7 @@
   {
    "korean": "면역",
    "romanization": "myeonyeok",
-   "gloss": "Immunity (ability)",
+   "gloss": "Immunity",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7049,7 +7052,7 @@
   {
    "korean": "타오르는불꽃",
    "romanization": "taoreuneunbulkkoch",
-   "gloss": "Flash Fire (ability)",
+   "gloss": "Flash Fire",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7068,7 +7071,7 @@
   {
    "korean": "인분",
    "romanization": "inbun",
-   "gloss": "Shield Dust (ability)",
+   "gloss": "Shield Dust",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7089,7 +7092,7 @@
   {
    "korean": "마이페이스",
    "romanization": "maipeiseu",
-   "gloss": "Own Tempo (ability)",
+   "gloss": "Own Tempo",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7107,7 +7110,7 @@
   {
    "korean": "흡반",
    "romanization": "heupban",
-   "gloss": "Suction Cups (ability)",
+   "gloss": "Suction Cups",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7128,7 +7131,7 @@
   {
    "korean": "위협",
    "romanization": "wihyeop",
-   "gloss": "Intimidate (ability)",
+   "gloss": "Intimidate",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -7152,7 +7155,7 @@
   {
    "korean": "그림자밟기",
    "romanization": "geurimjabalbgi",
-   "gloss": "Shadow Tag (ability)",
+   "gloss": "Shadow Tag",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7173,7 +7176,7 @@
   {
    "korean": "까칠한피부",
    "romanization": "kkachilhanpibu",
-   "gloss": "Rough Skin (ability)",
+   "gloss": "Rough Skin",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7188,7 +7191,7 @@
   {
    "korean": "불가사의부적",
    "romanization": "bulgasauibujeok",
-   "gloss": "Wonder Guard (ability)",
+   "gloss": "Wonder Guard",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7203,7 +7206,7 @@
   {
    "korean": "부유",
    "romanization": "buyu",
-   "gloss": "Levitate (ability)",
+   "gloss": "Levitate",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7221,7 +7224,7 @@
   {
    "korean": "포자",
    "romanization": "poja",
-   "gloss": "Effect Spore (ability)",
+   "gloss": "Effect Spore",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -7236,7 +7239,7 @@
   {
    "korean": "싱크로",
    "romanization": "singkeuro",
-   "gloss": "Synchronize (ability)",
+   "gloss": "Synchronize",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7258,7 +7261,7 @@
   {
    "korean": "클리어바디",
    "romanization": "keulrieobadi",
-   "gloss": "Clear Body (ability)",
+   "gloss": "Clear Body",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7275,7 +7278,7 @@
   {
    "korean": "자연회복",
    "romanization": "jayeonhoebok",
-   "gloss": "Natural Cure (ability)",
+   "gloss": "Natural Cure",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7294,7 +7297,7 @@
   {
    "korean": "피뢰침",
    "romanization": "piroechim",
-   "gloss": "Lightning Rod (ability)",
+   "gloss": "Lightningrod",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7317,7 +7320,7 @@
   {
    "korean": "하늘의은총",
    "romanization": "haneuluieunchong",
-   "gloss": "Serene Grace (ability)",
+   "gloss": "Serene Grace",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7334,7 +7337,7 @@
   {
    "korean": "쓱쓱",
    "romanization": "sseuksseuk",
-   "gloss": "Swift Swim (ability)",
+   "gloss": "Swift Swim",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -7357,7 +7360,7 @@
   {
    "korean": "엽록소",
    "romanization": "yeoprokso",
-   "gloss": "Chlorophyll (ability)",
+   "gloss": "Chlorophyll",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7380,7 +7383,7 @@
   {
    "korean": "발광",
    "romanization": "balgwang",
-   "gloss": "Illuminate (ability)",
+   "gloss": "Illuminate",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7402,7 +7405,7 @@
   {
    "korean": "트레이스",
    "romanization": "teureiseu",
-   "gloss": "Trace (ability)",
+   "gloss": "Trace",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7419,7 +7422,7 @@
   {
    "korean": "천하장사",
    "romanization": "cheonhajangsa",
-   "gloss": "Huge Power (ability)",
+   "gloss": "Huge Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7440,7 +7443,7 @@
   {
    "korean": "독가시",
    "romanization": "dokgasi",
-   "gloss": "Poison Point (ability)",
+   "gloss": "Poison Point",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7458,7 +7461,7 @@
   {
    "korean": "정신력",
    "romanization": "jeongsinryeok",
-   "gloss": "Inner Focus (ability)",
+   "gloss": "Inner Focus",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -7485,7 +7488,7 @@
   {
    "korean": "마그마의무장",
    "romanization": "mageumauimujang",
-   "gloss": "Magma Armor (ability)",
+   "gloss": "Magma Armor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7500,7 +7503,7 @@
   {
    "korean": "수의베일",
    "romanization": "suuibeil",
-   "gloss": "Water Veil (ability)",
+   "gloss": "Water Veil",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7517,7 +7520,7 @@
   {
    "korean": "자력",
    "romanization": "jaryeok",
-   "gloss": "Magnet Pull (ability)",
+   "gloss": "Magnet Pull",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -7539,7 +7542,7 @@
   {
    "korean": "방음",
    "romanization": "bangeum",
-   "gloss": "Soundproof (ability)",
+   "gloss": "Soundproof",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7561,7 +7564,7 @@
   {
    "korean": "젖은접시",
    "romanization": "jeojeunjeopsi",
-   "gloss": "Rain Dish (ability)",
+   "gloss": "Rain Dish",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7578,7 +7581,7 @@
   {
    "korean": "모래날림",
    "romanization": "moraenalrim",
-   "gloss": "Sand Stream (ability)",
+   "gloss": "Sand Stream",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7593,7 +7596,7 @@
   {
    "korean": "프레셔",
    "romanization": "peuresyeo",
-   "gloss": "Pressure (ability)",
+   "gloss": "Pressure",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7614,7 +7617,7 @@
   {
    "korean": "두꺼운지방",
    "romanization": "dukkeounjibang",
-   "gloss": "Thick Fat (ability)",
+   "gloss": "Thick Fat",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7631,7 +7634,7 @@
   {
    "korean": "일찍기상",
    "romanization": "iljjikgisang",
-   "gloss": "Early Bird (ability)",
+   "gloss": "Early Bird",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7649,7 +7652,7 @@
   {
    "korean": "불꽃몸",
    "romanization": "bulkkochmom",
-   "gloss": "Flame Body (ability)",
+   "gloss": "Flame Body",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7667,7 +7670,7 @@
   {
    "korean": "도주",
    "romanization": "doju",
-   "gloss": "Run Away (ability)",
+   "gloss": "Run Away",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7693,7 +7696,7 @@
   {
    "korean": "날카로운눈",
    "romanization": "nalkarounnun",
-   "gloss": "Keen Eye (ability)",
+   "gloss": "Keen Eye",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7715,7 +7718,7 @@
   {
    "korean": "괴력집게",
    "romanization": "goeryeokjipge",
-   "gloss": "Hyper Cutter (ability)",
+   "gloss": "Hyper Cutter",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7732,7 +7735,7 @@
   {
    "korean": "픽업",
    "romanization": "pikeop",
-   "gloss": "Pickup (ability)",
+   "gloss": "Pickup",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7753,7 +7756,7 @@
   {
    "korean": "게으름",
    "romanization": "geeureum",
-   "gloss": "Truant (ability)",
+   "gloss": "Truant",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -7774,7 +7777,7 @@
   {
    "korean": "의욕",
    "romanization": "uiyok",
-   "gloss": "Hustle (ability)",
+   "gloss": "Hustle",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -7794,7 +7797,7 @@
   {
    "korean": "헤롱헤롱바디",
    "romanization": "herongherongbadi",
-   "gloss": "Cute Charm (ability)",
+   "gloss": "Cute Charm",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7812,7 +7815,7 @@
   {
    "korean": "플러스",
    "romanization": "peulreoseu",
-   "gloss": "Plus (ability)",
+   "gloss": "Plus",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -7834,7 +7837,7 @@
   {
    "korean": "마이너스",
    "romanization": "maineoseu",
-   "gloss": "Minus (ability)",
+   "gloss": "Minus",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -7849,7 +7852,7 @@
   {
    "korean": "기분파",
    "romanization": "gibunpa",
-   "gloss": "Forecast (ability)",
+   "gloss": "Forecast",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7870,7 +7873,7 @@
   {
    "korean": "점착",
    "romanization": "jeomchak",
-   "gloss": "Sticky Hold (ability)",
+   "gloss": "Sticky Hold",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7891,7 +7894,7 @@
   {
    "korean": "탈피",
    "romanization": "talpi",
-   "gloss": "Shed Skin (ability)",
+   "gloss": "Shed Skin",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7913,7 +7916,7 @@
   {
    "korean": "근성",
    "romanization": "geunseong",
-   "gloss": "Guts (ability)",
+   "gloss": "Guts",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -7937,7 +7940,7 @@
   {
    "korean": "이상한비늘",
    "romanization": "isanghanbineul",
-   "gloss": "Marvel Scale (ability)",
+   "gloss": "Marvel Scale",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7952,7 +7955,7 @@
   {
    "korean": "해감액",
    "romanization": "haegamaek",
-   "gloss": "Liquid Ooze (ability)",
+   "gloss": "Liquid Ooze",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -7969,7 +7972,7 @@
   {
    "korean": "심록",
    "romanization": "simrok",
-   "gloss": "Overgrow (ability)",
+   "gloss": "Overgrow",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -7990,7 +7993,7 @@
   {
    "korean": "맹화",
    "romanization": "maenghwa",
-   "gloss": "Blaze (ability)",
+   "gloss": "Blaze",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -8011,7 +8014,7 @@
   {
    "korean": "급류",
    "romanization": "geupryu",
-   "gloss": "Torrent (ability)",
+   "gloss": "Torrent",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8032,7 +8035,7 @@
   {
    "korean": "벌레의알림",
    "romanization": "beolreuialrim",
-   "gloss": "Swarm (ability)",
+   "gloss": "Swarm",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8049,7 +8052,7 @@
   {
    "korean": "돌머리",
    "romanization": "dolmeori",
-   "gloss": "Rock Head (ability)",
+   "gloss": "Rock Head",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -8072,7 +8075,7 @@
   {
    "korean": "가뭄",
    "romanization": "gamum",
-   "gloss": "Drought (ability)",
+   "gloss": "Drought",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8093,7 +8096,7 @@
   {
    "korean": "개미지옥",
    "romanization": "gaemijiok",
-   "gloss": "Arena Trap (ability)",
+   "gloss": "Arena Trap",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -8114,7 +8117,7 @@
   {
    "korean": "의기양양",
    "romanization": "uigiyangyang",
-   "gloss": "Vital Spirit (ability)",
+   "gloss": "Vital Spirit",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8136,7 +8139,7 @@
   {
    "korean": "하얀연기",
    "romanization": "hayanyeongi",
-   "gloss": "White Smoke (ability)",
+   "gloss": "White Smoke",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8151,7 +8154,7 @@
   {
    "korean": "순수한힘",
    "romanization": "sunsuhanhim",
-   "gloss": "Pure Power (ability)",
+   "gloss": "Pure Power",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8166,7 +8169,7 @@
   {
    "korean": "조가비갑옷",
    "romanization": "jogabigapot",
-   "gloss": "Shell Armor (ability)",
+   "gloss": "Shell Armor",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8184,7 +8187,7 @@
   {
    "korean": "소음",
    "romanization": "soeum",
-   "gloss": "Air Lock (ability)",
+   "gloss": "Cacophony",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 2,
@@ -8204,7 +8207,7 @@
   {
    "korean": "에어록",
    "romanization": "eeorok",
-   "gloss": "Air Lock (ability)",
+   "gloss": "Air Lock",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 1,
@@ -8224,7 +8227,7 @@
   {
    "korean": "있다",
    "romanization": "issda",
-   "gloss": "to be; to exist",
+   "gloss": "to be",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 349,
@@ -8301,7 +8304,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to exist"
+   ]
   },
   {
    "korean": "하다",
@@ -8445,7 +8451,7 @@
   {
    "korean": "상대",
    "romanization": "sangdae",
-   "gloss": "opponent; counterpart",
+   "gloss": "opponent",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 107,
@@ -8499,12 +8505,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "counterpart"
+   ]
   },
   {
    "korean": "많다",
    "romanization": "manhda",
-   "gloss": "many; much",
+   "gloss": "many",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 54,
@@ -8579,12 +8588,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "much"
+   ]
   },
   {
    "korean": "기술",
    "romanization": "gisul",
-   "gloss": "technique; skill; (Pokémon) move",
+   "gloss": "technique",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 40,
@@ -8640,12 +8652,16 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "skill",
+    "(Pokémon) move"
+   ]
   },
   {
    "korean": "같다",
    "romanization": "gatda",
-   "gloss": "same; alike",
+   "gloss": "same",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 39,
@@ -8719,7 +8735,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "alike"
+   ]
   },
   {
    "korean": "받다",
@@ -8804,7 +8823,7 @@
   {
    "korean": "없다",
    "romanization": "eobsda",
-   "gloss": "to not exist; to not have",
+   "gloss": "to not exist",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 34,
@@ -8880,12 +8899,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to not have"
+   ]
   },
   {
    "korean": "좋다",
    "romanization": "johda",
-   "gloss": "good; to like",
+   "gloss": "good",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 34,
@@ -8961,7 +8983,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to like"
+   ]
   },
   {
    "korean": "만들다",
@@ -9028,7 +9053,7 @@
   {
    "korean": "회복",
    "romanization": "hoebog",
-   "gloss": "recovery; restoration",
+   "gloss": "recovery",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 33,
@@ -9070,7 +9095,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "restoration"
+   ]
   },
   {
    "korean": "되다",
@@ -9154,7 +9182,7 @@
   {
    "korean": "자신",
    "romanization": "jasin",
-   "gloss": "oneself; confidence",
+   "gloss": "oneself",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 25,
@@ -9182,12 +9210,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "confidence"
+   ]
   },
   {
    "korean": "쓰다",
    "romanization": "sseuda",
-   "gloss": "to write; to use; to be bitter",
+   "gloss": "to write",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 23,
@@ -9244,7 +9275,11 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to use",
+    "to be bitter"
+   ]
   },
   {
    "korean": "주다",
@@ -9388,7 +9423,7 @@
   {
    "korean": "보다",
    "romanization": "boda",
-   "gloss": "to see; to look",
+   "gloss": "to see",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 21,
@@ -9467,7 +9502,10 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "trainer_class_name"
+   "primarySourceType": "trainer_class_name",
+   "senses": [
+    "to look"
+   ]
   },
   {
    "korean": "머신",
@@ -9594,7 +9632,7 @@
   {
    "korean": "보이다",
    "romanization": "boida",
-   "gloss": "to be seen; to show",
+   "gloss": "to be seen",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 18,
@@ -9654,7 +9692,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to show"
+   ]
   },
   {
    "korean": "않다",
@@ -9733,7 +9774,7 @@
   {
    "korean": "선택",
    "romanization": "seontaeg",
-   "gloss": "choice; selection",
+   "gloss": "choice",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 16,
@@ -9780,7 +9821,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "selection"
+   ]
   },
   {
    "korean": "게임",
@@ -9830,7 +9874,7 @@
   {
    "korean": "상태",
    "romanization": "sangtae",
-   "gloss": "state; condition",
+   "gloss": "state",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 15,
@@ -9866,7 +9910,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "condition"
+   ]
   },
   {
    "korean": "알다",
@@ -9931,7 +9978,7 @@
   {
    "korean": "사용",
    "romanization": "sayong",
-   "gloss": "use; usage",
+   "gloss": "use",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 14,
@@ -9992,7 +10039,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "usage"
+   ]
   },
   {
    "korean": "다음",
@@ -10059,7 +10109,7 @@
   {
    "korean": "들다",
    "romanization": "deulda",
-   "gloss": "to lift; to enter; to hold",
+   "gloss": "to lift",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 13,
@@ -10126,12 +10176,16 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to enter",
+    "to hold"
+   ]
   },
   {
    "korean": "도감",
    "romanization": "dogam",
-   "gloss": "encyclopedia; illustrated guide",
+   "gloss": "encyclopedia",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -10176,12 +10230,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "illustrated guide"
+   ]
   },
   {
    "korean": "많이",
    "romanization": "manhi",
-   "gloss": "much; many; a lot",
+   "gloss": "much",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -10236,12 +10293,16 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "many",
+    "a lot"
+   ]
   },
   {
    "korean": "말다",
    "romanization": "malda",
-   "gloss": "to roll up; not to (negative imperative)",
+   "gloss": "to roll up",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 12,
@@ -10275,7 +10336,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "not to (negative imperative)"
+   ]
   },
   {
    "korean": "움직이다",
@@ -10427,7 +10491,7 @@
   {
    "korean": "연속",
    "romanization": "yeonsog",
-   "gloss": "consecutive; series",
+   "gloss": "consecutive",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -10448,12 +10512,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "series"
+   ]
   },
   {
    "korean": "종류",
    "romanization": "jongryu",
-   "gloss": "kind; type",
+   "gloss": "kind",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -10503,12 +10570,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "type"
+   ]
   },
   {
    "korean": "크다",
    "romanization": "keuda",
-   "gloss": "big; large",
+   "gloss": "big",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 11,
@@ -10570,7 +10640,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "large"
+   ]
   },
   {
    "korean": "타입",
@@ -10701,7 +10774,7 @@
   {
    "korean": "생각",
    "romanization": "saenggag",
-   "gloss": "thought; idea",
+   "gloss": "thought",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -10747,12 +10820,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "idea"
+   ]
   },
   {
    "korean": "스다",
    "romanization": "seuda",
-   "gloss": "(mecab artifact, likely 쓰다) to use; to write",
+   "gloss": "(mecab artifact, likely 쓰다) to use",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -10811,12 +10887,15 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to write"
+   ]
   },
   {
    "korean": "승부",
    "romanization": "seungbu",
-   "gloss": "match; showdown",
+   "gloss": "match",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 10,
@@ -10872,7 +10951,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "showdown"
+   ]
   },
   {
    "korean": "시티",
@@ -10979,7 +11061,7 @@
   {
    "korean": "떨어뜨리다",
    "romanization": "tteoleotteurida",
-   "gloss": "to drop; to make fall",
+   "gloss": "to drop",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 9,
@@ -10999,7 +11081,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to make fall"
+   ]
   },
   {
    "korean": "로켓단",
@@ -11145,7 +11230,7 @@
   {
    "korean": "듯하다",
    "romanization": "deushada",
-   "gloss": "seems; appears to be",
+   "gloss": "seems",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -11185,12 +11270,15 @@
     3279,
     3287,
     3291
+   ],
+   "senses": [
+    "appears to be"
    ]
   },
   {
    "korean": "마음",
    "romanization": "maeum",
-   "gloss": "heart; mind",
+   "gloss": "heart",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -11231,12 +11319,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "mind"
+   ]
   },
   {
    "korean": "시작",
    "romanization": "sijag",
-   "gloss": "start; beginning",
+   "gloss": "start",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -11287,7 +11378,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "beginning"
+   ]
   },
   {
    "korean": "저널",
@@ -11321,7 +11415,7 @@
   {
    "korean": "지니다",
    "romanization": "jinida",
-   "gloss": "to carry; to possess",
+   "gloss": "to carry",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 8,
@@ -11375,12 +11469,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to possess"
+   ]
   },
   {
    "korean": "가끔",
    "romanization": "gakkeum",
-   "gloss": "sometimes; occasionally",
+   "gloss": "sometimes",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11428,12 +11525,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "occasionally"
+   ]
   },
   {
    "korean": "교환",
    "romanization": "gyohwan",
-   "gloss": "exchange; trade",
+   "gloss": "exchange",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11477,12 +11577,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "trade"
+   ]
   },
   {
    "korean": "맞다",
    "romanization": "majda",
-   "gloss": "to be right; to fit",
+   "gloss": "to be right",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11538,7 +11641,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to fit"
+   ]
   },
   {
    "korean": "매우",
@@ -11572,7 +11678,7 @@
   {
    "korean": "멀다",
    "romanization": "meolda",
-   "gloss": "far; distant",
+   "gloss": "far",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11637,7 +11743,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "distant"
+   ]
   },
   {
    "korean": "모이다",
@@ -11786,7 +11895,7 @@
   {
    "korean": "이동",
    "romanization": "idong",
-   "gloss": "movement; relocation",
+   "gloss": "movement",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11803,7 +11912,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "relocation"
+   ]
   },
   {
    "korean": "조금",
@@ -11883,7 +11995,7 @@
   {
    "korean": "찾다",
    "romanization": "chajda",
-   "gloss": "to find; to look for",
+   "gloss": "to find",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11949,12 +12061,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to look for"
+   ]
   },
   {
    "korean": "필요",
    "romanization": "pilyo",
-   "gloss": "necessary; necessity",
+   "gloss": "necessary",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -11998,12 +12113,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "necessity"
+   ]
   },
   {
    "korean": "화상",
    "romanization": "hwasang",
-   "gloss": "burn injury; image",
+   "gloss": "burn injury",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 7,
@@ -12034,7 +12152,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "image"
+   ]
   },
   {
    "korean": "가르치다",
@@ -12134,7 +12255,7 @@
   {
    "korean": "계속",
    "romanization": "gyesog",
-   "gloss": "continuing; continuation",
+   "gloss": "continuing",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12182,12 +12303,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "continuation"
+   ]
   },
   {
    "korean": "그러다",
    "romanization": "geureoda",
-   "gloss": "to do so; to be like that",
+   "gloss": "to do so",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12230,12 +12354,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to be like that"
+   ]
   },
   {
    "korean": "그림",
    "romanization": "geurim",
-   "gloss": "picture; drawing",
+   "gloss": "picture",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12269,12 +12396,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "drawing"
+   ]
   },
   {
    "korean": "동료",
    "romanization": "dongryo",
-   "gloss": "companion; colleague",
+   "gloss": "companion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12307,12 +12437,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "colleague"
+   ]
   },
   {
    "korean": "동안",
    "romanization": "dongan",
-   "gloss": "during; while",
+   "gloss": "during",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12341,12 +12474,15 @@
     "item_description",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "while"
+   ]
   },
   {
    "korean": "막다",
    "romanization": "magda",
-   "gloss": "to block; to stop",
+   "gloss": "to block",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12363,12 +12499,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to stop"
+   ]
   },
   {
    "korean": "먹이",
    "romanization": "meogi",
-   "gloss": "food; bait (for animals)",
+   "gloss": "food",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12382,12 +12521,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "bait (for animals)"
+   ]
   },
   {
    "korean": "바로",
    "romanization": "baro",
-   "gloss": "right away; exactly",
+   "gloss": "right away",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12423,7 +12565,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "exactly"
+   ]
   },
   {
    "korean": "버튼",
@@ -12469,7 +12614,7 @@
   {
    "korean": "부르다",
    "romanization": "bureuda",
-   "gloss": "to call; to sing",
+   "gloss": "to call",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12515,7 +12660,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to sing"
+   ]
   },
   {
    "korean": "비밀",
@@ -12645,7 +12793,7 @@
   {
    "korean": "정도",
    "romanization": "jeongdo",
-   "gloss": "degree; extent",
+   "gloss": "degree",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 6,
@@ -12672,7 +12820,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "extent"
+   ]
   },
   {
    "korean": "챔피언",
@@ -12813,7 +12964,7 @@
   {
    "korean": "가지다",
    "romanization": "gajida",
-   "gloss": "to have; to take",
+   "gloss": "to have",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -12866,12 +13017,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to take"
+   ]
   },
   {
    "korean": "같이",
    "romanization": "gati",
-   "gloss": "together; along with",
+   "gloss": "together",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -12912,7 +13066,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "along with"
+   ]
   },
   {
    "korean": "걷다",
@@ -12956,7 +13113,7 @@
   {
    "korean": "근처",
    "romanization": "geuncheo",
-   "gloss": "nearby; vicinity",
+   "gloss": "nearby",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -12979,12 +13136,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "vicinity"
+   ]
   },
   {
    "korean": "급소",
    "romanization": "geubso",
-   "gloss": "vital point; weak spot",
+   "gloss": "vital point",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -12998,7 +13158,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "weak spot"
+   ]
   },
   {
    "korean": "기다리다",
@@ -13088,7 +13251,7 @@
   {
    "korean": "나누다",
    "romanization": "nanuda",
-   "gloss": "to divide; to share",
+   "gloss": "to divide",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13122,7 +13285,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to share"
+   ]
   },
   {
    "korean": "날개",
@@ -13150,7 +13316,7 @@
   {
    "korean": "남다",
    "romanization": "namda",
-   "gloss": "to remain; to be left",
+   "gloss": "to remain",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13170,7 +13336,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to be left"
+   ]
   },
   {
    "korean": "놀다",
@@ -13260,7 +13429,7 @@
   {
    "korean": "들어가다",
    "romanization": "deuleogada",
-   "gloss": "to enter; to go in",
+   "gloss": "to enter",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13303,7 +13472,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to go in"
+   ]
   },
   {
    "korean": "리그",
@@ -13361,17 +13533,20 @@
   {
    "korean": "만한",
    "romanization": "manhan",
-   "gloss": "as much as; equal to",
+   "gloss": "as much as",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
    "sourceTypes": [],
-   "primarySourceType": ""
+   "primarySourceType": "",
+   "senses": [
+    "equal to"
+   ]
   },
   {
    "korean": "머리",
    "romanization": "meori",
-   "gloss": "head; hair",
+   "gloss": "head",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13395,7 +13570,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "hair"
+   ]
   },
   {
    "korean": "메일",
@@ -13430,7 +13608,7 @@
   {
    "korean": "모두",
    "romanization": "modu",
-   "gloss": "all; everyone",
+   "gloss": "all",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13470,7 +13648,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "everyone"
+   ]
   },
   {
    "korean": "무겁다",
@@ -13571,7 +13752,7 @@
   {
    "korean": "변화",
    "romanization": "byeonhwa",
-   "gloss": "change; transformation",
+   "gloss": "change",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13585,12 +13766,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "transformation"
+   ]
   },
   {
    "korean": "불꽃",
    "romanization": "bulkkoch",
-   "gloss": "flame; fire",
+   "gloss": "flame",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13615,12 +13799,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "fire"
+   ]
   },
   {
    "korean": "비축",
    "romanization": "bichug",
-   "gloss": "stockpile; reserve",
+   "gloss": "stockpile",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13635,12 +13822,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "reserve"
+   ]
   },
   {
    "korean": "빠르다",
    "romanization": "ppareuda",
-   "gloss": "fast; quick",
+   "gloss": "fast",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13661,7 +13851,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "quick"
+   ]
   },
   {
    "korean": "사천왕",
@@ -13708,7 +13901,7 @@
   {
    "korean": "시간",
    "romanization": "sigan",
-   "gloss": "time; hour",
+   "gloss": "time",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13741,7 +13934,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "hour"
+   ]
   },
   {
    "korean": "싶다",
@@ -13819,7 +14015,7 @@
   {
    "korean": "알리다",
    "romanization": "alrida",
-   "gloss": "to inform; to let know",
+   "gloss": "to inform",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13852,12 +14048,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to let know"
+   ]
   },
   {
    "korean": "전기",
    "romanization": "jeongi",
-   "gloss": "electricity; biography",
+   "gloss": "electricity",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13890,12 +14089,15 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "trainer_class_name"
+   "primarySourceType": "trainer_class_name",
+   "senses": [
+    "biography"
+   ]
   },
   {
    "korean": "전혀",
    "romanization": "jeonhyeo",
-   "gloss": "(not) at all; completely",
+   "gloss": "(not) at all",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -13944,7 +14146,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "completely"
+   ]
   },
   {
    "korean": "죽다",
@@ -14023,7 +14228,7 @@
   {
    "korean": "키우다",
    "romanization": "kiuda",
-   "gloss": "to raise; to grow",
+   "gloss": "to raise",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -14082,12 +14287,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to grow"
+   ]
   },
   {
    "korean": "향하다",
    "romanization": "hyanghada",
-   "gloss": "to head toward; to face",
+   "gloss": "to head toward",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 5,
@@ -14112,7 +14320,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to face"
+   ]
   },
   {
    "korean": "홍련",
@@ -14150,7 +14361,7 @@
   {
    "korean": "가득",
    "romanization": "gadeug",
-   "gloss": "fully; full of",
+   "gloss": "fully",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14204,7 +14415,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "full of"
+   ]
   },
   {
    "korean": "갈색",
@@ -14251,7 +14465,7 @@
   {
    "korean": "감사",
    "romanization": "gamsa",
-   "gloss": "thanks; gratitude",
+   "gloss": "thanks",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14301,7 +14515,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "gratitude"
+   ]
   },
   {
    "korean": "게막",
@@ -14316,7 +14533,7 @@
   {
    "korean": "경우",
    "romanization": "gyeongu",
-   "gloss": "case; situation",
+   "gloss": "case",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14332,12 +14549,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "situation"
+   ]
   },
   {
    "korean": "교체",
    "romanization": "gyoche",
-   "gloss": "replacement; substitution",
+   "gloss": "replacement",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14351,12 +14571,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "substitution"
+   ]
   },
   {
    "korean": "그렇게",
    "romanization": "geureohge",
-   "gloss": "like that; so",
+   "gloss": "like that",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14411,12 +14634,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "so"
+   ]
   },
   {
    "korean": "그렇다",
    "romanization": "geureohda",
-   "gloss": "to be so; to be that way",
+   "gloss": "to be so",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14455,12 +14681,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to be that way"
+   ]
   },
   {
    "korean": "나다",
    "romanization": "nada",
-   "gloss": "to come out; to grow; to occur",
+   "gloss": "to come out",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14506,12 +14735,16 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to grow",
+    "to occur"
+   ]
   },
   {
    "korean": "나아가다",
    "romanization": "naagada",
-   "gloss": "to advance; to proceed",
+   "gloss": "to advance",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14527,12 +14760,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to proceed"
+   ]
   },
   {
    "korean": "낚다",
    "romanization": "nakkda",
-   "gloss": "to fish; to catch (by hook)",
+   "gloss": "to fish",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14564,12 +14800,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to catch (by hook)"
+   ]
   },
   {
    "korean": "날리다",
    "romanization": "nalrida",
-   "gloss": "to send flying; to lose (something)",
+   "gloss": "to send flying",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14586,12 +14825,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to lose (something)"
+   ]
   },
   {
    "korean": "남자",
    "romanization": "namja",
-   "gloss": "man; male",
+   "gloss": "man",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14636,12 +14878,15 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "trainer_class_name"
+   "primarySourceType": "trainer_class_name",
+   "senses": [
+    "male"
+   ]
   },
   {
    "korean": "내다",
    "romanization": "naeda",
-   "gloss": "to put out; to pay",
+   "gloss": "to put out",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14665,7 +14910,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to pay"
+   ]
   },
   {
    "korean": "노랑",
@@ -14701,7 +14949,7 @@
   {
    "korean": "노인",
    "romanization": "noin",
-   "gloss": "old person; elder",
+   "gloss": "old person",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14719,7 +14967,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "elder"
+   ]
   },
   {
    "korean": "능력",
@@ -14751,7 +15002,7 @@
   {
    "korean": "대의",
    "romanization": "daeui",
-   "gloss": "great cause; principle",
+   "gloss": "great cause",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14790,12 +15041,15 @@
     3881,
     4669,
     4674
+   ],
+   "senses": [
+    "principle"
    ]
   },
   {
    "korean": "도움",
    "romanization": "doum",
-   "gloss": "help; aid",
+   "gloss": "help",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14812,7 +15066,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "aid"
+   ]
   },
   {
    "korean": "돕다",
@@ -14884,7 +15141,7 @@
   {
    "korean": "된다",
    "romanization": "doenda",
-   "gloss": "becomes; works (verb 되다 conjugation)",
+   "gloss": "becomes",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -14933,7 +15190,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "works (verb 되다 conjugation)"
+   ]
   },
   {
    "korean": "만나다",
@@ -15040,7 +15300,7 @@
   {
    "korean": "멋있다",
    "romanization": "meosissda",
-   "gloss": "to be cool; stylish",
+   "gloss": "to be cool",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15068,12 +15328,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "stylish"
+   ]
   },
   {
    "korean": "모습",
    "romanization": "moseub",
-   "gloss": "appearance; figure",
+   "gloss": "appearance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15103,12 +15366,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "figure"
+   ]
   },
   {
    "korean": "모양",
    "romanization": "moyang",
-   "gloss": "shape; appearance",
+   "gloss": "shape",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15144,12 +15410,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "appearance"
+   ]
   },
   {
    "korean": "물건",
    "romanization": "mulgeon",
-   "gloss": "thing; object",
+   "gloss": "thing",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15174,12 +15443,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "object"
+   ]
   },
   {
    "korean": "발견",
    "romanization": "balgyeon",
-   "gloss": "discovery; finding",
+   "gloss": "discovery",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15220,12 +15492,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "finding"
+   ]
   },
   {
    "korean": "부활",
    "romanization": "buhwal",
-   "gloss": "revival; resurrection",
+   "gloss": "revival",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15244,12 +15519,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "resurrection"
+   ]
   },
   {
    "korean": "사실",
    "romanization": "sasil",
-   "gloss": "fact; actually",
+   "gloss": "fact",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15263,12 +15541,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "actually"
+   ]
   },
   {
    "korean": "상품",
    "romanization": "sangpum",
-   "gloss": "product; goods; prize",
+   "gloss": "product",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15319,7 +15600,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "goods",
+    "prize"
+   ]
   },
   {
    "korean": "선장",
@@ -15388,7 +15673,7 @@
   {
    "korean": "수재",
    "romanization": "sujae",
-   "gloss": "prodigy; talented person",
+   "gloss": "prodigy",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15409,7 +15694,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "talented person"
+   ]
   },
   {
    "korean": "아까",
@@ -15480,7 +15768,7 @@
   {
    "korean": "어떻다",
    "romanization": "eotteohda",
-   "gloss": "how to be; what kind",
+   "gloss": "how to be",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15523,12 +15811,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "what kind"
+   ]
   },
   {
    "korean": "열매",
    "romanization": "yeolmae",
-   "gloss": "fruit; berry",
+   "gloss": "fruit",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15591,7 +15882,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "berry"
+   ]
   },
   {
    "korean": "오늘",
@@ -15648,7 +15942,7 @@
   {
    "korean": "올라가다",
    "romanization": "olragada",
-   "gloss": "to go up; to climb",
+   "gloss": "to go up",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15666,7 +15960,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to climb"
+   ]
   },
   {
    "korean": "완성",
@@ -15697,7 +15994,7 @@
   {
    "korean": "이상",
    "romanization": "isang",
-   "gloss": "abnormal; above; ideal",
+   "gloss": "abnormal",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15744,7 +16041,11 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "above",
+    "ideal"
+   ]
   },
   {
    "korean": "자연",
@@ -15778,7 +16079,7 @@
   {
    "korean": "잠깐",
    "romanization": "jamkkan",
-   "gloss": "a moment; briefly",
+   "gloss": "a moment",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15849,12 +16150,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "briefly"
+   ]
   },
   {
    "korean": "장소",
    "romanization": "jangso",
-   "gloss": "place; location",
+   "gloss": "place",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15898,12 +16202,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "location"
+   ]
   },
   {
    "korean": "재빠르다",
    "romanization": "jaeppareuda",
-   "gloss": "quick; agile",
+   "gloss": "quick",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15932,12 +16239,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "agile"
+   ]
   },
   {
    "korean": "적다",
    "romanization": "jeogda",
-   "gloss": "few; little; to write down",
+   "gloss": "few",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15955,12 +16265,16 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "little",
+    "to write down"
+   ]
   },
   {
    "korean": "전하다",
    "romanization": "jeonhada",
-   "gloss": "to convey; to deliver",
+   "gloss": "to convey",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -15984,12 +16298,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to deliver"
+   ]
   },
   {
    "korean": "정말",
    "romanization": "jeongmal",
-   "gloss": "really; truly",
+   "gloss": "really",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16055,12 +16372,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "truly"
+   ]
   },
   {
    "korean": "정말로",
    "romanization": "jeongmalro",
-   "gloss": "really; truly (intensified)",
+   "gloss": "really",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16098,12 +16418,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "truly (intensified)"
+   ]
   },
   {
    "korean": "즐겁다",
    "romanization": "jeulgeobda",
-   "gloss": "joyful; fun",
+   "gloss": "joyful",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16126,12 +16449,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "fun"
+   ]
   },
   {
    "korean": "직접",
    "romanization": "jigjeob",
-   "gloss": "directly; in person",
+   "gloss": "directly",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16175,7 +16501,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "in person"
+   ]
   },
   {
    "korean": "참가",
@@ -16392,7 +16721,7 @@
   {
    "korean": "피하다",
    "romanization": "pihada",
-   "gloss": "to avoid; to dodge",
+   "gloss": "to avoid",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 4,
@@ -16408,7 +16737,10 @@
     "item_description",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to dodge"
+   ]
   },
   {
    "korean": "핥다",
@@ -16552,7 +16884,7 @@
   {
    "korean": "가장",
    "romanization": "gajang",
-   "gloss": "most; the most",
+   "gloss": "most",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16566,12 +16898,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "the most"
+   ]
   },
   {
    "korean": "거지",
    "romanization": "geoji",
-   "gloss": "beggar; (sentence-ender, dialect) 'isn't it'",
+   "gloss": "beggar",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16597,12 +16932,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "(sentence-ender, dialect) 'isn't it'"
+   ]
   },
   {
    "korean": "걸다",
    "romanization": "geolda",
-   "gloss": "to hang; to bet",
+   "gloss": "to hang",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16667,12 +17005,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to bet"
+   ]
   },
   {
    "korean": "고맙다",
    "romanization": "gomabda",
-   "gloss": "to be thankful; thanks",
+   "gloss": "to be thankful",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16712,12 +17053,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "thanks"
+   ]
   },
   {
    "korean": "국화",
    "romanization": "gughwa",
-   "gloss": "chrysanthemum; (NPC name) Erika the Celadon Gym Leader",
+   "gloss": "chrysanthemum",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16751,7 +17095,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "(NPC name) Erika the Celadon Gym Leader"
+   ]
   },
   {
    "korean": "귀엽다",
@@ -16815,7 +17162,7 @@
   {
    "korean": "그냥",
    "romanization": "geunyang",
-   "gloss": "just; simply",
+   "gloss": "just",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16839,7 +17186,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "simply"
+   ]
   },
   {
    "korean": "낚시",
@@ -16908,7 +17258,7 @@
   {
    "korean": "내던지다",
    "romanization": "naedeonjida",
-   "gloss": "to throw down; to fling",
+   "gloss": "to throw down",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16922,12 +17272,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to fling"
+   ]
   },
   {
    "korean": "넣다",
    "romanization": "neohda",
-   "gloss": "to put in; to insert",
+   "gloss": "to put in",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -16977,7 +17330,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to insert"
+   ]
   },
   {
    "korean": "다르다",
@@ -17073,7 +17429,7 @@
   {
    "korean": "단련",
    "romanization": "danryeon",
-   "gloss": "training; discipline",
+   "gloss": "training",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17097,7 +17453,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "discipline"
+   ]
   },
   {
    "korean": "단어",
@@ -17140,7 +17499,7 @@
   {
    "korean": "대신",
    "romanization": "daesin",
-   "gloss": "instead (of); substitute",
+   "gloss": "instead (of)",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17160,12 +17519,15 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "substitute"
+   ]
   },
   {
    "korean": "대전",
    "romanization": "daejeon",
-   "gloss": "match; battle (formal)",
+   "gloss": "match",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17201,12 +17563,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "battle (formal)"
+   ]
   },
   {
    "korean": "대화",
    "romanization": "daehwa",
-   "gloss": "conversation; dialogue",
+   "gloss": "conversation",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17220,12 +17585,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "dialogue"
+   ]
   },
   {
    "korean": "도망",
    "romanization": "domang",
-   "gloss": "escape; running away",
+   "gloss": "escape",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17243,12 +17611,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "running away"
+   ]
   },
   {
    "korean": "돌아가다",
    "romanization": "dolagada",
-   "gloss": "to return; to go back",
+   "gloss": "to return",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17308,12 +17679,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to go back"
+   ]
   },
   {
    "korean": "동시",
    "romanization": "dongsi",
-   "gloss": "the same time; simultaneously",
+   "gloss": "the same time",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17329,7 +17703,10 @@
     "item_description",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "simultaneously"
+   ]
   },
   {
    "korean": "동전",
@@ -17444,7 +17821,7 @@
   {
    "korean": "등나무",
    "romanization": "deungnamu",
-   "gloss": "wisteria; (NPC name) Agatha",
+   "gloss": "wisteria",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17465,7 +17842,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "(NPC name) Agatha"
+   ]
   },
   {
    "korean": "만드다",
@@ -17495,7 +17875,7 @@
   {
    "korean": "만약",
    "romanization": "manyag",
-   "gloss": "if; in case",
+   "gloss": "if",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17516,7 +17896,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "in case"
+   ]
   },
   {
    "korean": "맡기다",
@@ -17586,7 +17969,7 @@
   {
    "korean": "멀리",
    "romanization": "meolri",
-   "gloss": "far away; afar",
+   "gloss": "far away",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17618,7 +18001,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "afar"
+   ]
   },
   {
    "korean": "모험",
@@ -17681,7 +18067,7 @@
   {
    "korean": "몰다",
    "romanization": "molda",
-   "gloss": "to drive (cattle); to herd",
+   "gloss": "to drive (cattle)",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17700,7 +18086,10 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to herd"
+   ]
   },
   {
    "korean": "무선",
@@ -17748,7 +18137,7 @@
   {
    "korean": "무섭다",
    "romanization": "museobda",
-   "gloss": "scary; frightening",
+   "gloss": "scary",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17800,12 +18189,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "frightening"
+   ]
   },
   {
    "korean": "반응",
    "romanization": "baneung",
-   "gloss": "reaction; response",
+   "gloss": "reaction",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17819,12 +18211,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "response"
+   ]
   },
   {
    "korean": "발톱",
    "romanization": "baltob",
-   "gloss": "claw; talon",
+   "gloss": "claw",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17839,7 +18234,10 @@
     "item_description",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "talon"
+   ]
   },
   {
    "korean": "발휘",
@@ -17863,7 +18261,7 @@
   {
    "korean": "방심",
    "romanization": "bangsim",
-   "gloss": "carelessness; lapse of attention",
+   "gloss": "carelessness",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17890,7 +18288,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "lapse of attention"
+   ]
   },
   {
    "korean": "배우다",
@@ -17922,7 +18323,7 @@
   {
    "korean": "버리다",
    "romanization": "beorida",
-   "gloss": "to throw away; to abandon",
+   "gloss": "to throw away",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17944,7 +18345,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to abandon"
+   ]
   },
   {
    "korean": "변하다",
@@ -17970,7 +18374,7 @@
   {
    "korean": "비전",
    "romanization": "bijeon",
-   "gloss": "vision; (Pokémon) HM (Hidden Machine)",
+   "gloss": "vision",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -17999,7 +18403,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "(Pokémon) HM (Hidden Machine)"
+   ]
   },
   {
    "korean": "뿌리",
@@ -18049,7 +18456,7 @@
   {
    "korean": "서로",
    "romanization": "seoro",
-   "gloss": "each other; mutually",
+   "gloss": "each other",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18084,12 +18491,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "mutually"
+   ]
   },
   {
    "korean": "세차다",
    "romanization": "sechada",
-   "gloss": "powerful; forceful",
+   "gloss": "powerful",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18103,7 +18513,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "forceful"
+   ]
   },
   {
    "korean": "손녀",
@@ -18146,7 +18559,7 @@
   {
    "korean": "순서",
    "romanization": "sunseo",
-   "gloss": "order; sequence",
+   "gloss": "order",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18160,7 +18573,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "sequence"
+   ]
   },
   {
    "korean": "쉽다",
@@ -18218,7 +18634,7 @@
   {
    "korean": "슬다",
    "romanization": "seulda",
-   "gloss": "to lay (eggs); to rust",
+   "gloss": "to lay (eggs)",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18259,12 +18675,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to rust"
+   ]
   },
   {
    "korean": "시험",
    "romanization": "siheom",
-   "gloss": "test; exam",
+   "gloss": "test",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18280,7 +18699,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "exam"
+   ]
   },
   {
    "korean": "신비",
@@ -18352,7 +18774,7 @@
   {
    "korean": "아쉽다",
    "romanization": "aswibda",
-   "gloss": "regrettable; missed",
+   "gloss": "regrettable",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18394,12 +18816,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "missed"
+   ]
   },
   {
    "korean": "아직",
    "romanization": "ajig",
-   "gloss": "still; yet",
+   "gloss": "still",
    "partOfSpeech": "adverb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18452,7 +18877,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "yet"
+   ]
   },
   {
    "korean": "어렵다",
@@ -18521,7 +18949,7 @@
   {
    "korean": "엄청나다",
    "romanization": "eomcheongnada",
-   "gloss": "tremendous; enormous",
+   "gloss": "tremendous",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18536,12 +18964,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "enormous"
+   ]
   },
   {
    "korean": "여행",
    "romanization": "yeohaeng",
-   "gloss": "travel; journey",
+   "gloss": "travel",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18586,7 +19017,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "journey"
+   ]
   },
   {
    "korean": "연분홍",
@@ -18642,7 +19076,7 @@
   {
    "korean": "영감",
    "romanization": "yeonggam",
-   "gloss": "old man; (also: inspiration)",
+   "gloss": "old man",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18656,7 +19090,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "(also: inspiration)"
+   ]
   },
   {
    "korean": "완벽",
@@ -18730,7 +19167,7 @@
   {
    "korean": "웃다",
    "romanization": "usda",
-   "gloss": "to laugh; to smile",
+   "gloss": "to laugh",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18797,12 +19234,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to smile"
+   ]
   },
   {
    "korean": "원래",
    "romanization": "wonrae",
-   "gloss": "originally; by nature",
+   "gloss": "originally",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -18824,7 +19264,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "by nature"
+   ]
   },
   {
    "korean": "유니언",
@@ -19011,7 +19454,7 @@
   {
    "korean": "장막",
    "romanization": "jangmag",
-   "gloss": "screen; curtain (e.g., Light Screen)",
+   "gloss": "screen",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19029,12 +19472,15 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "curtain (e.g., Light Screen)"
+   ]
   },
   {
    "korean": "재밌다",
    "romanization": "jaemissda",
-   "gloss": "fun; interesting",
+   "gloss": "fun",
    "partOfSpeech": "adjective",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19065,12 +19511,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "interesting"
+   ]
   },
   {
    "korean": "저택",
    "romanization": "jeotaeg",
-   "gloss": "mansion; estate",
+   "gloss": "mansion",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19094,12 +19543,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "estate"
+   ]
   },
   {
    "korean": "전부",
    "romanization": "jeonbu",
-   "gloss": "all; everything",
+   "gloss": "all",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19123,7 +19575,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "everything"
+   ]
   },
   {
    "korean": "전설",
@@ -19160,7 +19615,7 @@
   {
    "korean": "전원",
    "romanization": "jeonwon",
-   "gloss": "power source; everyone",
+   "gloss": "power source",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19192,7 +19647,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "everyone"
+   ]
   },
   {
    "korean": "젊다",
@@ -19239,7 +19697,7 @@
   {
    "korean": "정하다",
    "romanization": "jeonghada",
-   "gloss": "to decide; to set",
+   "gloss": "to decide",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19254,12 +19712,15 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to set"
+   ]
   },
   {
    "korean": "제일",
    "romanization": "jeil",
-   "gloss": "the most; number one",
+   "gloss": "the most",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19273,7 +19734,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "number one"
+   ]
   },
   {
    "korean": "줍다",
@@ -19329,7 +19793,7 @@
   {
    "korean": "중요",
    "romanization": "jungyo",
-   "gloss": "importance; important",
+   "gloss": "importance",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19345,12 +19809,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "important"
+   ]
   },
   {
    "korean": "지방",
    "romanization": "jibang",
-   "gloss": "region; province",
+   "gloss": "region",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19391,12 +19858,15 @@
     "pokemon_ability",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "province"
+   ]
   },
   {
    "korean": "쪼다",
    "romanization": "jjoda",
-   "gloss": "to peck; (slang) a sucker",
+   "gloss": "to peck",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19413,7 +19883,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "(slang) a sucker"
+   ]
   },
   {
    "korean": "차갑다",
@@ -19437,7 +19910,7 @@
   {
    "korean": "처음",
    "romanization": "cheoeum",
-   "gloss": "the first time; beginning",
+   "gloss": "the first time",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19479,7 +19952,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "beginning"
+   ]
   },
   {
    "korean": "최근",
@@ -19515,7 +19991,7 @@
   {
    "korean": "충격",
    "romanization": "chunggyeog",
-   "gloss": "shock; impact",
+   "gloss": "shock",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19533,12 +20009,15 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "impact"
+   ]
   },
   {
    "korean": "치료",
    "romanization": "chiryo",
-   "gloss": "treatment; cure",
+   "gloss": "treatment",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19561,7 +20040,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "cure"
+   ]
   },
   {
    "korean": "카드",
@@ -19689,7 +20171,7 @@
   {
    "korean": "털다",
    "romanization": "teolda",
-   "gloss": "to dust off; to shake off; (slang) to rob",
+   "gloss": "to dust off",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19732,12 +20214,16 @@
     2018,
     2022,
     2081
+   ],
+   "senses": [
+    "to shake off",
+    "(slang) to rob"
    ]
   },
   {
    "korean": "통신",
    "romanization": "tongsin",
-   "gloss": "communication; wireless transmission",
+   "gloss": "communication",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19776,12 +20262,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "wireless transmission"
+   ]
   },
   {
    "korean": "통하다",
    "romanization": "tonghada",
-   "gloss": "to pass through; to communicate",
+   "gloss": "to pass through",
    "partOfSpeech": "verb",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19797,7 +20286,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to communicate"
+   ]
   },
   {
    "korean": "티켓",
@@ -19946,7 +20438,7 @@
   {
    "korean": "혼신",
    "romanization": "honsin",
-   "gloss": "all one's strength; whole spirit",
+   "gloss": "all one's strength",
    "partOfSpeech": "noun",
    "areaId": "rom_mined",
    "frequency": 3,
@@ -19962,7 +20454,10 @@
     "item_description",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "whole spirit"
+   ]
   },
   {
    "korean": "혼자",

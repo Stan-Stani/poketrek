@@ -13,12 +13,15 @@
   "Attributed area data from lemma_area_index.json; 405 attributed, 308 unattributed.",
   "promote_generic_attribution: 56 cards moved from generic bucket → specific story area via corpus-stem search.",
   "Attributed area data from lemma_area_index.json; 409 attributed, 304 unattributed.",
-  "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search."
+  "promote_generic_attribution: 0 cards moved from generic bucket → specific story area via corpus-stem search.",
+  "restructure_glosses 2026-05-13: 132 entries updated; rom-table=0 dialog-map=0 split=132 noop=581",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=132 noop=581",
+  "restructure_glosses 2026-05-13: 0 entries updated; rom-table=0 dialog-map=0 split=132 noop=581"
  ],
  "entries": [
   {
    "korean": "키",
-   "gloss": "height; key",
+   "gloss": "height",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 365,
@@ -30,11 +33,14 @@
    "filledViaSubstring": {
     "rec_id": 29819,
     "score": 42
-   }
+   },
+   "senses": [
+    "key"
+   ]
   },
   {
    "korean": "몰다",
-   "gloss": "to drive (a vehicle); to herd; to drive (into)",
+   "gloss": "to drive (a vehicle)",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 337,
@@ -60,7 +66,11 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to herd",
+    "to drive (into)"
+   ]
   },
   {
    "korean": "끄다",
@@ -262,7 +272,7 @@
   },
   {
    "korean": "달",
-   "gloss": "moon; month",
+   "gloss": "moon",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 184,
@@ -274,7 +284,10 @@
    "filledViaSubstring": {
     "rec_id": 28011,
     "score": 33
-   }
+   },
+   "senses": [
+    "month"
+   ]
   },
   {
    "korean": "주",
@@ -327,7 +340,7 @@
   },
   {
    "korean": "내다",
-   "gloss": "to put out; to pay",
+   "gloss": "to put out",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 145,
@@ -352,7 +365,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to pay"
+   ]
   },
   {
    "korean": "하다",
@@ -444,7 +460,7 @@
   },
   {
    "korean": "같다",
-   "gloss": "same; like",
+   "gloss": "same",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 140,
@@ -519,7 +535,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "like"
+   ]
   },
   {
    "korean": "끓다",
@@ -620,7 +639,7 @@
   },
   {
    "korean": "타다",
-   "gloss": "to ride; to burn",
+   "gloss": "to ride",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 124,
@@ -673,11 +692,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to burn"
+   ]
   },
   {
    "korean": "통",
-   "gloss": "whole; container",
+   "gloss": "whole",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 123,
@@ -708,7 +730,10 @@
    "filledViaSubstring": {
     "rec_id": 33957,
     "score": 27
-   }
+   },
+   "senses": [
+    "container"
+   ]
   },
   {
    "korean": "잔",
@@ -732,7 +757,7 @@
   },
   {
    "korean": "메다",
-   "gloss": "to carry on the shoulder; to be choked up (목/가슴이 메다)",
+   "gloss": "to carry on the shoulder",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 115,
@@ -776,7 +801,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to be choked up (목/가슴이 메다)"
+   ]
   },
   {
    "korean": "검다",
@@ -974,7 +1002,7 @@
   },
   {
    "korean": "시",
-   "gloss": "hour; poem; city",
+   "gloss": "hour",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 84,
@@ -986,11 +1014,15 @@
    "filledViaSubstring": {
     "rec_id": 29819,
     "score": 42
-   }
+   },
+   "senses": [
+    "poem",
+    "city"
+   ]
   },
   {
    "korean": "끼다",
-   "gloss": "to put on; to be stuck",
+   "gloss": "to put on",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 81,
@@ -1002,11 +1034,14 @@
    ],
    "liveRecIds": [
     277
+   ],
+   "senses": [
+    "to be stuck"
    ]
   },
   {
    "korean": "간",
-   "gloss": "liver; interval",
+   "gloss": "liver",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 80,
@@ -1019,7 +1054,10 @@
    "filledViaSubstring": {
     "rec_id": 27924,
     "score": 37
-   }
+   },
+   "senses": [
+    "interval"
+   ]
   },
   {
    "korean": "보다",
@@ -1159,7 +1197,7 @@
   },
   {
    "korean": "공",
-   "gloss": "ball; zero",
+   "gloss": "ball",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 68,
@@ -1172,7 +1210,10 @@
    "filledViaSubstring": {
     "rec_id": 30058,
     "score": 40
-   }
+   },
+   "senses": [
+    "zero"
+   ]
   },
   {
    "korean": "피",
@@ -1192,7 +1233,7 @@
   },
   {
    "korean": "양",
-   "gloss": "quantity; sheep",
+   "gloss": "quantity",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 62,
@@ -1205,7 +1246,10 @@
    "filledViaSubstring": {
     "rec_id": 30058,
     "score": 40
-   }
+   },
+   "senses": [
+    "sheep"
+   ]
   },
   {
    "korean": "되다",
@@ -1305,7 +1349,7 @@
   },
   {
    "korean": "안",
-   "gloss": "inside; not",
+   "gloss": "inside",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 56,
@@ -1317,7 +1361,10 @@
    "filledViaSubstring": {
     "rec_id": 30249,
     "score": 33
-   }
+   },
+   "senses": [
+    "not"
+   ]
   },
   {
    "korean": "주다",
@@ -1491,7 +1538,7 @@
   },
   {
    "korean": "눈",
-   "gloss": "eye; snow",
+   "gloss": "eye",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 49,
@@ -1504,7 +1551,10 @@
    "filledViaSubstring": {
     "rec_id": 28280,
     "score": 24
-   }
+   },
+   "senses": [
+    "snow"
+   ]
   },
   {
    "korean": "다",
@@ -1597,7 +1647,7 @@
   },
   {
    "korean": "떨다",
-   "gloss": "to tremble; to shake off",
+   "gloss": "to tremble",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 46,
@@ -1618,7 +1668,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to shake off"
+   ]
   },
   {
    "korean": "멀다",
@@ -1741,7 +1794,7 @@
   },
   {
    "korean": "사이",
-   "gloss": "relationship; gap",
+   "gloss": "relationship",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 44,
@@ -1753,7 +1806,10 @@
    "filledViaSubstring": {
     "rec_id": 30249,
     "score": 33
-   }
+   },
+   "senses": [
+    "gap"
+   ]
   },
   {
    "korean": "오이",
@@ -1927,7 +1983,7 @@
   },
   {
    "korean": "달다",
-   "gloss": "sweet; to hang",
+   "gloss": "sweet",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 38,
@@ -1951,7 +2007,10 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "trainer_class_name"
+   "primarySourceType": "trainer_class_name",
+   "senses": [
+    "to hang"
+   ]
   },
   {
    "korean": "자다",
@@ -2004,7 +2063,7 @@
   },
   {
    "korean": "군",
-   "gloss": "Mr. (suffix); county",
+   "gloss": "Mr. (suffix)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 37,
@@ -2016,7 +2075,10 @@
    "filledViaSubstring": {
     "rec_id": 29819,
     "score": 42
-   }
+   },
+   "senses": [
+    "county"
+   ]
   },
   {
    "korean": "터",
@@ -2114,7 +2176,7 @@
   },
   {
    "korean": "세다",
-   "gloss": "strong; to count",
+   "gloss": "strong",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 35,
@@ -2182,11 +2244,14 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to count"
+   ]
   },
   {
    "korean": "차",
-   "gloss": "tea; car",
+   "gloss": "tea",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 35,
@@ -2198,7 +2263,10 @@
    "filledViaSubstring": {
     "rec_id": 29818,
     "score": 38
-   }
+   },
+   "senses": [
+    "car"
+   ]
   },
   {
    "korean": "곁",
@@ -2253,7 +2321,7 @@
   },
   {
    "korean": "날",
-   "gloss": "day; blade",
+   "gloss": "day",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 31,
@@ -2266,7 +2334,10 @@
    "filledViaSubstring": {
     "rec_id": 27924,
     "score": 37
-   }
+   },
+   "senses": [
+    "blade"
+   ]
   },
   {
    "korean": "피다",
@@ -2333,7 +2404,7 @@
   },
   {
    "korean": "나다",
-   "gloss": "to come out; to occur",
+   "gloss": "to come out",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 30,
@@ -2384,7 +2455,10 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to occur"
+   ]
   },
   {
    "korean": "나이",
@@ -2424,7 +2498,7 @@
   },
   {
    "korean": "부",
-   "gloss": "part, section; counter for copies; (in compounds) wealth; vice-",
+   "gloss": "part, section",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 30,
@@ -2443,7 +2517,12 @@
     "issue": "The single gloss 'department' is too narrow. 부 (部) primarily means 'part/section/division' and is a counter for copies of a book/newspaper (책 한 부); 부 (副) is the prefix 'vice-/deputy-'; 부 (富) means 'wealth/riches'. 'Department' is one specialised reading (e.g. 인사부) but is not the headword sense.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%80",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "counter for copies",
+    "(in compounds) wealth",
+    "vice-"
+   ]
   },
   {
    "korean": "먹다",
@@ -2517,7 +2596,7 @@
   },
   {
    "korean": "꾸다",
-   "gloss": "to dream; to borrow",
+   "gloss": "to dream",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 28,
@@ -2539,11 +2618,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to borrow"
+   ]
   },
   {
    "korean": "반",
-   "gloss": "half; class",
+   "gloss": "half",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 28,
@@ -2575,7 +2657,10 @@
    "filledViaSubstring": {
     "rec_id": 34024,
     "score": 33
-   }
+   },
+   "senses": [
+    "class"
+   ]
   },
   {
    "korean": "사",
@@ -2637,7 +2722,7 @@
   },
   {
    "korean": "쓰다",
-   "gloss": "to write; to use; to be bitter",
+   "gloss": "to write",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 27,
@@ -2695,7 +2780,11 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to use",
+    "to be bitter"
+   ]
   },
   {
    "korean": "울다",
@@ -2769,7 +2858,7 @@
   },
   {
    "korean": "호",
-   "gloss": "issue (number); unit (housing counter); lake; pen name",
+   "gloss": "issue (number)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 27,
@@ -2787,7 +2876,12 @@
     "issue": "The 'door' sense is incorrect — that is 문, not 호. 호 (號) means 'number/issue' (잡지 5월호, 101호) and is a counter for housing units; 호 (湖) means 'lake' (백두산 천지호); 호 (號) can also mean a courtesy/pen name. 'Door' looks like a confusion with the Chinese character 戶 (household), which is not a standalone Korean noun for 'door'.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%98%B8",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "unit (housing counter)",
+    "lake",
+    "pen name"
+   ]
   },
   {
    "korean": "가루",
@@ -2817,7 +2911,7 @@
   },
   {
    "korean": "단",
-   "gloss": "platform, tier; bunch, sheaf; rank (dan); section",
+   "gloss": "platform, tier",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 26,
@@ -2836,7 +2930,12 @@
     "issue": "Both senses listed are misleading. 'Sweet (prefix)' is not 단 standalone — it is the attributive form of 달다 (단 호박 = sweet pumpkin), a conjugation, not a lemma. 'Paragraph' is also off; the standalone noun 단 means 'platform/dais; bunch/sheaf (of vegetables); rank/level (martial arts dan); section/tier'. Paragraph in writing is typically 단락 or 문단, not bare 단.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%8B%A8",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "bunch, sheaf",
+    "rank (dan)",
+    "section"
+   ]
   },
   {
    "korean": "땀",
@@ -2860,7 +2959,7 @@
   },
   {
    "korean": "등",
-   "gloss": "back (body); etc.",
+   "gloss": "back (body)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 25,
@@ -2872,7 +2971,10 @@
    "filledViaSubstring": {
     "rec_id": 30298,
     "score": 35
-   }
+   },
+   "senses": [
+    "etc."
+   ]
   },
   {
    "korean": "매다",
@@ -2943,7 +3045,7 @@
   },
   {
    "korean": "꼭",
-   "gloss": "definitely; tightly",
+   "gloss": "definitely",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 24,
@@ -2959,11 +3061,14 @@
    "filledViaSubstring": {
     "rec_id": 28618,
     "score": 32
-   }
+   },
+   "senses": [
+    "tightly"
+   ]
   },
   {
    "korean": "들다",
-   "gloss": "to lift; to enter; to hold",
+   "gloss": "to lift",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 24,
@@ -3031,7 +3136,11 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to enter",
+    "to hold"
+   ]
   },
   {
    "korean": "좋다",
@@ -3132,7 +3241,7 @@
   },
   {
    "korean": "갈다",
-   "gloss": "to grind; to plow; to change",
+   "gloss": "to grind",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 22,
@@ -3149,7 +3258,11 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to plow",
+    "to change"
+   ]
   },
   {
    "korean": "낳다",
@@ -3375,7 +3488,7 @@
   },
   {
    "korean": "이사",
-   "gloss": "moving (residence); director",
+   "gloss": "moving (residence)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 19,
@@ -3387,7 +3500,10 @@
    "filledViaSubstring": {
     "rec_id": 10025,
     "score": 0
-   }
+   },
+   "senses": [
+    "director"
+   ]
   },
   {
    "korean": "잡다",
@@ -3540,7 +3656,7 @@
   },
   {
    "korean": "짜다",
-   "gloss": "salty; to compose",
+   "gloss": "salty",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 18,
@@ -3579,11 +3695,14 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to compose"
+   ]
   },
   {
    "korean": "뜨다",
-   "gloss": "to float; to rise (sun)",
+   "gloss": "to float",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 17,
@@ -3630,7 +3749,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to rise (sun)"
+   ]
   },
   {
    "korean": "곳",
@@ -3898,7 +4020,7 @@
   },
   {
    "korean": "싸다",
-   "gloss": "cheap; to wrap",
+   "gloss": "cheap",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 15,
@@ -3958,7 +4080,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to wrap"
+   ]
   },
   {
    "korean": "아마",
@@ -3998,7 +4123,7 @@
   },
   {
    "korean": "참",
-   "gloss": "really; truly",
+   "gloss": "really",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 15,
@@ -4029,11 +4154,14 @@
    "filledViaSubstring": {
     "rec_id": 33933,
     "score": 0
-   }
+   },
+   "senses": [
+    "truly"
+   ]
   },
   {
    "korean": "개",
-   "gloss": "dog; piece (counter)",
+   "gloss": "dog",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 14,
@@ -4045,11 +4173,14 @@
    "filledViaSubstring": {
     "rec_id": 29821,
     "score": 35
-   }
+   },
+   "senses": [
+    "piece (counter)"
+   ]
   },
   {
    "korean": "깨다",
-   "gloss": "to wake; to break",
+   "gloss": "to wake",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 14,
@@ -4083,7 +4214,10 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to break"
+   ]
   },
   {
    "korean": "높다",
@@ -4117,7 +4251,7 @@
   },
   {
    "korean": "돌",
-   "gloss": "stone; first birthday",
+   "gloss": "stone",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 14,
@@ -4129,11 +4263,14 @@
    "filledViaSubstring": {
     "rec_id": 28011,
     "score": 33
-   }
+   },
+   "senses": [
+    "first birthday"
+   ]
   },
   {
    "korean": "말",
-   "gloss": "word; horse",
+   "gloss": "word",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 14,
@@ -4145,7 +4282,10 @@
    "filledViaSubstring": {
     "rec_id": 29818,
     "score": 38
-   }
+   },
+   "senses": [
+    "horse"
+   ]
   },
   {
    "korean": "발",
@@ -4180,7 +4320,7 @@
   },
   {
    "korean": "위",
-   "gloss": "above; stomach",
+   "gloss": "above",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 14,
@@ -4193,7 +4333,10 @@
    "filledViaSubstring": {
     "rec_id": 30057,
     "score": 40
-   }
+   },
+   "senses": [
+    "stomach"
+   ]
   },
   {
    "korean": "전부",
@@ -4382,7 +4525,7 @@
   },
   {
    "korean": "말다",
-   "gloss": "to roll up; (auxiliary, in -지 말다) don't, stop",
+   "gloss": "to roll up",
    "partOfSpeech": "verb",
    "areaId": "topik_1",
    "frequency": 13,
@@ -4423,7 +4566,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "(auxiliary, in -지 말다) don't, stop"
+   ]
   },
   {
    "korean": "멋",
@@ -4443,7 +4589,7 @@
   },
   {
    "korean": "밉다",
-   "gloss": "to be detestable, dislikable; (of a person/behaviour) ugly",
+   "gloss": "to be detestable, dislikable",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 13,
@@ -4460,7 +4606,10 @@
     "issue": "'To be hateful' implies the subject is the one feeling hatred, which is the opposite of 밉다's meaning. 밉다 is a descriptive verb meaning the subject is the object of dislike — 'to be disliked, to look unpleasant, to be ugly/loathsome'. A more accurate gloss is 'to be despicable, to be hated/disliked' or 'to be ugly (in behaviour or looks)'.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B0%89%EB%8B%A4",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "(of a person/behaviour) ugly"
+   ]
   },
   {
    "korean": "아래",
@@ -4561,7 +4710,7 @@
   },
   {
    "korean": "두다",
-   "gloss": "to put; to keep",
+   "gloss": "to put",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 12,
@@ -4604,7 +4753,10 @@
     "system_text",
     "trainer_class_name"
    ],
-   "primarySourceType": "trainer_class_name"
+   "primarySourceType": "trainer_class_name",
+   "senses": [
+    "to keep"
+   ]
   },
   {
    "korean": "받다",
@@ -4688,7 +4840,7 @@
   },
   {
    "korean": "빨다",
-   "gloss": "to wash; to suck",
+   "gloss": "to wash",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 12,
@@ -4709,7 +4861,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to suck"
+   ]
   },
   {
    "korean": "상대",
@@ -4834,7 +4989,7 @@
   },
   {
    "korean": "약",
-   "gloss": "medicine; about",
+   "gloss": "medicine",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 12,
@@ -4846,11 +5001,14 @@
    "filledViaSubstring": {
     "rec_id": 29939,
     "score": 32
-   }
+   },
+   "senses": [
+    "about"
+   ]
   },
   {
    "korean": "유리",
-   "gloss": "glass; advantage",
+   "gloss": "glass",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 12,
@@ -4862,11 +5020,14 @@
    "filledViaSubstring": {
     "rec_id": 30068,
     "score": 33
-   }
+   },
+   "senses": [
+    "advantage"
+   ]
   },
   {
    "korean": "급",
-   "gloss": "urgent; class, grade",
+   "gloss": "urgent",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 11,
@@ -4878,7 +5039,10 @@
    "filledViaSubstring": {
     "rec_id": 31548,
     "score": 19
-   }
+   },
+   "senses": [
+    "class, grade"
+   ]
   },
   {
    "korean": "누나",
@@ -4992,7 +5156,7 @@
   },
   {
    "korean": "일",
-   "gloss": "work; day; one",
+   "gloss": "work",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 11,
@@ -5004,7 +5168,11 @@
    "filledViaSubstring": {
     "rec_id": 29841,
     "score": 36
-   }
+   },
+   "senses": [
+    "day",
+    "one"
+   ]
   },
   {
    "korean": "잊다",
@@ -5064,7 +5232,7 @@
   },
   {
    "korean": "화",
-   "gloss": "anger; fire",
+   "gloss": "anger",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 11,
@@ -5076,11 +5244,14 @@
    "filledViaSubstring": {
     "rec_id": 28027,
     "score": 32
-   }
+   },
+   "senses": [
+    "fire"
+   ]
   },
   {
    "korean": "낫다",
-   "gloss": "to recover; to be better",
+   "gloss": "to recover",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 10,
@@ -5107,7 +5278,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to be better"
+   ]
   },
   {
    "korean": "매우",
@@ -5140,7 +5314,7 @@
   },
   {
    "korean": "못",
-   "gloss": "cannot; nail",
+   "gloss": "cannot",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 10,
@@ -5152,11 +5326,14 @@
    "filledViaSubstring": {
     "rec_id": 30267,
     "score": 31
-   }
+   },
+   "senses": [
+    "nail"
+   ]
   },
   {
    "korean": "묻다",
-   "gloss": "to ask; to bury",
+   "gloss": "to ask",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 10,
@@ -5175,7 +5352,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to bury"
+   ]
   },
   {
    "korean": "밟다",
@@ -5408,7 +5588,7 @@
   },
   {
    "korean": "풀",
-   "gloss": "grass; glue",
+   "gloss": "grass",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 10,
@@ -5420,11 +5600,14 @@
    "filledViaSubstring": {
     "rec_id": 29825,
     "score": 37
-   }
+   },
+   "senses": [
+    "glue"
+   ]
   },
   {
    "korean": "걸다",
-   "gloss": "to hang; to bet",
+   "gloss": "to hang",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 9,
@@ -5490,11 +5673,14 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to bet"
+   ]
   },
   {
    "korean": "굽다",
-   "gloss": "to roast; to be bent",
+   "gloss": "to roast",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 9,
@@ -5506,6 +5692,9 @@
    ],
    "liveRecIds": [
     389
+   ],
+   "senses": [
+    "to be bent"
    ]
   },
   {
@@ -5675,7 +5864,7 @@
   },
   {
    "korean": "신",
-   "gloss": "god; shoes",
+   "gloss": "god",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 9,
@@ -5687,7 +5876,10 @@
    "filledViaSubstring": {
     "rec_id": 29841,
     "score": 36
-   }
+   },
+   "senses": [
+    "shoes"
+   ]
   },
   {
    "korean": "아름답다",
@@ -5795,7 +5987,7 @@
   },
   {
    "korean": "자신",
-   "gloss": "oneself; confidence",
+   "gloss": "oneself",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 9,
@@ -5824,7 +6016,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "confidence"
+   ]
   },
   {
    "korean": "그림",
@@ -6010,7 +6205,7 @@
   },
   {
    "korean": "육",
-   "gloss": "six; meat",
+   "gloss": "six",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 8,
@@ -6023,11 +6218,14 @@
    "filledViaSubstring": {
     "rec_id": 30057,
     "score": 40
-   }
+   },
+   "senses": [
+    "meat"
+   ]
   },
   {
    "korean": "좀",
-   "gloss": "a little; please",
+   "gloss": "a little",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 8,
@@ -6058,7 +6256,10 @@
    "filledViaSubstring": {
     "rec_id": 33957,
     "score": 27
-   }
+   },
+   "senses": [
+    "please"
+   ]
   },
   {
    "korean": "짧다",
@@ -6157,7 +6358,7 @@
   },
   {
    "korean": "구",
-   "gloss": "nine; ward",
+   "gloss": "nine",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 7,
@@ -6170,7 +6371,10 @@
    "filledViaSubstring": {
     "rec_id": 30057,
     "score": 40
-   }
+   },
+   "senses": [
+    "ward"
+   ]
   },
   {
    "korean": "끌다",
@@ -6254,7 +6458,7 @@
   },
   {
    "korean": "다리",
-   "gloss": "leg; bridge",
+   "gloss": "leg",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 7,
@@ -6266,7 +6470,10 @@
    "filledViaSubstring": {
     "rec_id": 29842,
     "score": 31
-   }
+   },
+   "senses": [
+    "bridge"
+   ]
   },
   {
    "korean": "떡",
@@ -6359,7 +6566,7 @@
   },
   {
    "korean": "밤",
-   "gloss": "night; chestnut",
+   "gloss": "night",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 7,
@@ -6371,7 +6578,10 @@
    "filledViaSubstring": {
     "rec_id": 44207,
     "score": 0
-   }
+   },
+   "senses": [
+    "chestnut"
+   ]
   },
   {
    "korean": "빨리",
@@ -6600,7 +6810,7 @@
   },
   {
    "korean": "원",
-   "gloss": "won (currency); circle",
+   "gloss": "won (currency)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 7,
@@ -6612,7 +6822,10 @@
    "filledViaSubstring": {
     "rec_id": 28038,
     "score": 34
-   }
+   },
+   "senses": [
+    "circle"
+   ]
   },
   {
    "korean": "일부",
@@ -6671,7 +6884,7 @@
   },
   {
    "korean": "차다",
-   "gloss": "cold; to kick; to be full",
+   "gloss": "cold",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 7,
@@ -6718,11 +6931,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to kick",
+    "to be full"
+   ]
   },
   {
    "korean": "표",
-   "gloss": "ticket; chart",
+   "gloss": "ticket",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 7,
@@ -6735,7 +6952,10 @@
    "filledViaSubstring": {
     "rec_id": 30058,
     "score": 40
-   }
+   },
+   "senses": [
+    "chart"
+   ]
   },
   {
    "korean": "하하",
@@ -7120,7 +7340,7 @@
   },
   {
    "korean": "술잔",
-   "gloss": "wine cup; drinking glass (for alcohol)",
+   "gloss": "wine cup",
    "partOfSpeech": "noun",
    "areaId": "topik_2",
    "frequency": 6,
@@ -7137,7 +7357,10 @@
     "issue": "Confirmed: 술잔 (술 'alcohol' + 잔 'cup') specifically denotes a vessel for alcohol — wineglass, shot glass, sake cup. wordrow.kr lists it as 'WINEGLASS; WINE CUP; GOBLET'. The generic 'drinking cup' could mislead learners.",
     "evidenceUrl": "https://wordrow.kr/basicn/en/meaning/65374_%EC%88%A0%EC%9E%94/",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "drinking glass (for alcohol)"
+   ]
   },
   {
    "korean": "알다",
@@ -7270,7 +7493,7 @@
   },
   {
    "korean": "이상",
-   "gloss": "more than; abnormal; ideal",
+   "gloss": "more than",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 6,
@@ -7318,7 +7541,11 @@
     "pokemon_species",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "abnormal",
+    "ideal"
+   ]
   },
   {
    "korean": "자라다",
@@ -7623,7 +7850,7 @@
   },
   {
    "korean": "넘다",
-   "gloss": "to exceed; to go over",
+   "gloss": "to exceed",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 5,
@@ -7654,7 +7881,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to go over"
+   ]
   },
   {
    "korean": "놀다",
@@ -8006,7 +8236,7 @@
   },
   {
    "korean": "분",
-   "gloss": "person (honorific); minute",
+   "gloss": "person (honorific)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 5,
@@ -8018,7 +8248,10 @@
    "filledViaSubstring": {
     "rec_id": 29823,
     "score": 37
-   }
+   },
+   "senses": [
+    "minute"
+   ]
   },
   {
    "korean": "빼다",
@@ -8222,7 +8455,7 @@
   },
   {
    "korean": "지다",
-   "gloss": "to lose; (of sun) to set",
+   "gloss": "to lose",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 5,
@@ -8278,11 +8511,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "(of sun) to set"
+   ]
   },
   {
    "korean": "찌다",
-   "gloss": "to steam; to gain weight",
+   "gloss": "to steam",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 5,
@@ -8301,7 +8537,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to gain weight"
+   ]
   },
   {
    "korean": "카레",
@@ -8576,7 +8815,7 @@
   },
   {
    "korean": "과",
-   "gloss": "department; lesson; and",
+   "gloss": "department",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 4,
@@ -8588,11 +8827,15 @@
    "filledViaSubstring": {
     "rec_id": 30293,
     "score": 33
-   }
+   },
+   "senses": [
+    "lesson",
+    "and"
+   ]
   },
   {
    "korean": "끊다",
-   "gloss": "to cut off; to quit",
+   "gloss": "to cut off",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 4,
@@ -8607,7 +8850,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to quit"
+   ]
   },
   {
    "korean": "날개",
@@ -9442,7 +9688,7 @@
   },
   {
    "korean": "자",
-   "gloss": "ruler; let's",
+   "gloss": "ruler",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 4,
@@ -9454,7 +9700,10 @@
    "filledViaSubstring": {
     "rec_id": 29819,
     "score": 42
-   }
+   },
+   "senses": [
+    "let's"
+   ]
   },
   {
    "korean": "장소",
@@ -9542,7 +9791,7 @@
   },
   {
    "korean": "정",
-   "gloss": "really; affection",
+   "gloss": "really",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 4,
@@ -9554,7 +9803,10 @@
    "filledViaSubstring": {
     "rec_id": 29870,
     "score": 32
-   }
+   },
+   "senses": [
+    "affection"
+   ]
   },
   {
    "korean": "정도",
@@ -9760,7 +10012,7 @@
   },
   {
    "korean": "감다",
-   "gloss": "to wash (hair); to wind; to close (eyes)",
+   "gloss": "to wash (hair)",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 3,
@@ -9822,11 +10074,15 @@
    ],
    "liveRecIds": [
     3695
+   ],
+   "senses": [
+    "to wind",
+    "to close (eyes)"
    ]
   },
   {
    "korean": "걸리다",
-   "gloss": "to take (time); to be caught",
+   "gloss": "to take (time)",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 3,
@@ -9845,7 +10101,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to be caught"
+   ]
   },
   {
    "korean": "결정",
@@ -10211,7 +10470,7 @@
   },
   {
    "korean": "막",
-   "gloss": "just (now); recklessly",
+   "gloss": "just (now)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 3,
@@ -10223,7 +10482,10 @@
    "filledViaSubstring": {
     "rec_id": 28027,
     "score": 32
-   }
+   },
+   "senses": [
+    "recklessly"
+   ]
   },
   {
    "korean": "많이",
@@ -10762,7 +11024,7 @@
   },
   {
    "korean": "식",
-   "gloss": "ceremony; formula, expression",
+   "gloss": "ceremony",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 3,
@@ -10784,7 +11046,10 @@
     "issue": "식 standalone does not mean 'meal'. The 'meal' sense only appears in compounds like 식사, 한식, 양식. Bare 식 means 'ceremony', 'formula' (math), or 'expression/style'. Listing 'meal' as a standalone gloss is misleading for learners.",
     "evidenceUrl": "https://eng.ichacha.net/korean/%EC%8B%9D.html",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "formula, expression"
+   ]
   },
   {
    "korean": "심다",
@@ -11110,7 +11375,7 @@
   },
   {
    "korean": "장",
-   "gloss": "sheet, page (counter for flat objects); chapter (章); market (場)",
+   "gloss": "sheet, page (counter for flat objects)",
    "partOfSpeech": "noun/counter",
    "areaId": "topik_1",
    "frequency": 3,
@@ -11128,7 +11393,11 @@
     "issue": "Confirmed: 장 is one of the most polysemous Sino-Korean syllables (chapter 章, market 場, sheet-counter 張, intestines 腸, head/chief 長, sauce 醬, etc.). The PoS 'noun/adv' is wrong for the counter sense (counters are not adverbs). At minimum, top three senses + correct PoS should be captured.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EC%9E%A5",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "chapter (章)",
+    "market (場)"
+   ]
   },
   {
    "korean": "전기",
@@ -11535,7 +11804,7 @@
   },
   {
    "korean": "편",
-   "gloss": "side; convenience",
+   "gloss": "side",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 3,
@@ -11547,7 +11816,10 @@
    "filledViaSubstring": {
     "rec_id": 28667,
     "score": 35
-   }
+   },
+   "senses": [
+    "convenience"
+   ]
   },
   {
    "korean": "평소",
@@ -11617,7 +11889,7 @@
   },
   {
    "korean": "한",
-   "gloss": "one (native numeral, prenominal); the very (intensifier prefix)",
+   "gloss": "one (native numeral, prenominal)",
    "partOfSpeech": "determiner",
    "areaId": "topik_1",
    "frequency": 3,
@@ -11636,7 +11908,10 @@
     "issue": "Standalone 한 is the native-Korean numeral determiner 'one' (한 사람 = one person), or a prefix/intensifier ('한가운데' = the very middle). It does not mean 'Korean' on its own; the 'Korean' sense only emerges in Sino-Korean compounds like 한국, 한복, 한식. PoS should be 'determiner' rather than 'noun/adv'.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%95%9C",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "the very (intensifier prefix)"
+   ]
   },
   {
    "korean": "힘들다",
@@ -11697,7 +11972,7 @@
   },
   {
    "korean": "가로",
-   "gloss": "horizontal; width",
+   "gloss": "horizontal",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 2,
@@ -11713,7 +11988,10 @@
    "filledViaSubstring": {
     "rec_id": 27777,
     "score": 8
-   }
+   },
+   "senses": [
+    "width"
+   ]
   },
   {
    "korean": "가스",
@@ -11808,7 +12086,7 @@
   },
   {
    "korean": "고르다",
-   "gloss": "to choose; even",
+   "gloss": "to choose",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -11827,11 +12105,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "even"
+   ]
   },
   {
    "korean": "고프다",
-   "gloss": "(of stomach) to be hungry; used as 배가 고프다",
+   "gloss": "(of stomach) to be hungry",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 2,
@@ -11854,7 +12135,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "used as 배가 고프다"
+   ]
   },
   {
    "korean": "구멍",
@@ -12216,7 +12500,7 @@
   },
   {
    "korean": "닦다",
-   "gloss": "to wipe; to polish",
+   "gloss": "to wipe",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 2,
@@ -12258,6 +12542,9 @@
     30135,
     30138,
     31006
+   ],
+   "senses": [
+    "to polish"
    ]
   },
   {
@@ -12454,7 +12741,7 @@
   },
   {
    "korean": "들",
-   "gloss": "field, plain (noun); -들 plural particle (suffix)",
+   "gloss": "field, plain (noun)",
    "partOfSpeech": "noun/particle",
    "areaId": "topik_2",
    "frequency": 2,
@@ -12472,7 +12759,10 @@
     "issue": "Both senses are real (plural particle -들 and noun 들 'field/plain'), but they are different parts of speech: the plural marker is a particle/suffix, while 들 'field' is a noun. PoS 'noun/adv' covers neither cleanly. 들 is also never an adverb.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%93%A4",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "-들 plural particle (suffix)"
+   ]
   },
   {
    "korean": "등록",
@@ -12498,7 +12788,7 @@
   },
   {
    "korean": "따르다",
-   "gloss": "to follow; to pour",
+   "gloss": "to follow",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -12560,7 +12850,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "item_description"
+   "primarySourceType": "item_description",
+   "senses": [
+    "to pour"
+   ]
   },
   {
    "korean": "딱",
@@ -12703,7 +12996,7 @@
   },
   {
    "korean": "맡다",
-   "gloss": "to take charge of; to smell",
+   "gloss": "to take charge of",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -12739,11 +13032,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to smell"
+   ]
   },
   {
    "korean": "맨",
-   "gloss": "bare, naked (prefix); the very (most), foremost (before position/order nouns)",
+   "gloss": "bare, naked (prefix)",
    "partOfSpeech": "prefix/det",
    "areaId": "topik_2",
    "frequency": 2,
@@ -12761,7 +13057,10 @@
     "issue": "맨 is primarily a prefix meaning 'bare/naked, nothing but' (맨손 'bare hand', 맨발 'bare foot', 맨바닥 'bare ground'). Only as a determiner before nouns of position/order does it intensify to 'the very (most)' (맨 앞, 맨 처음). The current gloss captures only the secondary sense and omits the dominant 'bare' meaning.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%A7%A8",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "the very (most), foremost (before position/order nouns)"
+   ]
   },
   {
    "korean": "메일",
@@ -12886,7 +13185,7 @@
   },
   {
    "korean": "미치다",
-   "gloss": "to go crazy; to reach",
+   "gloss": "to go crazy",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -12901,7 +13200,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to reach"
+   ]
   },
   {
    "korean": "뱀",
@@ -12970,7 +13272,7 @@
   },
   {
    "korean": "병",
-   "gloss": "bottle; illness",
+   "gloss": "bottle",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 2,
@@ -12986,7 +13288,10 @@
    "filledViaSubstring": {
     "rec_id": 26596,
     "score": 0
-   }
+   },
+   "senses": [
+    "illness"
+   ]
   },
   {
    "korean": "볶다",
@@ -13005,7 +13310,7 @@
   },
   {
    "korean": "북",
-   "gloss": "drum (instrument); north (mostly in compounds: 북쪽, 북부)",
+   "gloss": "drum (instrument)",
    "partOfSpeech": "noun",
    "areaId": "topik_2",
    "frequency": 2,
@@ -13025,7 +13330,10 @@
     "issue": "Confirmed: 북 'drum' (native Korean word) is fully standalone, while 북 'north' (北) is mostly bound — natural everyday usage is 북쪽/북부, not bare 북. Listing 'north' first as coequal misleads learners. Reordering is a defensible fix.",
     "evidenceUrl": "https://en.wiktionary.org/wiki/%EB%B6%81",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "north (mostly in compounds: 북쪽, 북부)"
+   ]
   },
   {
    "korean": "붉다",
@@ -13455,7 +13763,7 @@
   },
   {
    "korean": "이렇다",
-   "gloss": "to be like this; to be such",
+   "gloss": "to be like this",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 2,
@@ -13499,7 +13807,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to be such"
+   ]
   },
   {
    "korean": "이름",
@@ -13713,7 +14024,7 @@
   },
   {
    "korean": "적",
-   "gloss": "enemy (敵); occasion, time (어렸을 적에); -ic, -al (suffix 的)",
+   "gloss": "enemy (敵)",
    "partOfSpeech": "noun/suffix",
    "areaId": "topik_2",
    "frequency": 2,
@@ -13786,6 +14097,10 @@
     508,
     646,
     832
+   ],
+   "senses": [
+    "occasion, time (어렸을 적에)",
+    "-ic, -al (suffix 的)"
    ]
   },
   {
@@ -13813,7 +14128,7 @@
   },
   {
    "korean": "정말",
-   "gloss": "really, truly (adv); the truth, real fact (noun)",
+   "gloss": "really, truly (adv)",
    "partOfSpeech": "adverb/noun",
    "areaId": "topik_2",
    "frequency": 2,
@@ -13886,7 +14201,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "the truth, real fact (noun)"
+   ]
   },
   {
    "korean": "제법",
@@ -14115,7 +14433,7 @@
   },
   {
    "korean": "찍다",
-   "gloss": "to take (photo); to stamp",
+   "gloss": "to take (photo)",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 2,
@@ -14151,7 +14469,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "to stamp"
+   ]
   },
   {
    "korean": "최고",
@@ -14273,7 +14594,7 @@
   },
   {
    "korean": "태우다",
-   "gloss": "to burn; to give a ride",
+   "gloss": "to burn",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 2,
@@ -14292,7 +14613,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to give a ride"
+   ]
   },
   {
    "korean": "털",
@@ -14733,7 +15057,7 @@
   },
   {
    "korean": "같이",
-   "gloss": "together (adv); like, as (particle attached to noun)",
+   "gloss": "together (adv)",
    "partOfSpeech": "adverb/particle",
    "areaId": "topik_1",
    "frequency": 1,
@@ -14782,11 +15106,14 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "like, as (particle attached to noun)"
+   ]
   },
   {
    "korean": "거리",
-   "gloss": "street; distance",
+   "gloss": "street",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -14805,7 +15132,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "distance"
+   ]
   },
   {
    "korean": "겁",
@@ -14891,7 +15221,7 @@
   },
   {
    "korean": "경주",
-   "gloss": "Gyeongju (city); race",
+   "gloss": "Gyeongju (city)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -14908,7 +15238,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "race"
+   ]
   },
   {
    "korean": "경험",
@@ -14939,7 +15272,7 @@
   },
   {
    "korean": "계산",
-   "gloss": "calculation; bill",
+   "gloss": "calculation",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -14950,6 +15283,9 @@
    ],
    "liveRecIds": [
     4393
+   ],
+   "senses": [
+    "bill"
    ]
   },
   {
@@ -15105,7 +15441,7 @@
   },
   {
    "korean": "괜찮다",
-   "gloss": "to be okay; fine",
+   "gloss": "to be okay",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 1,
@@ -15129,7 +15465,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "fine"
+   ]
   },
   {
    "korean": "교수",
@@ -15210,7 +15549,7 @@
   },
   {
    "korean": "그만",
-   "gloss": "(no/that) much; (do) no more, enough; involuntarily",
+   "gloss": "(no/that) much",
    "partOfSpeech": "adverb",
    "areaId": "topik_2",
    "frequency": 1,
@@ -15237,11 +15576,15 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "(do) no more, enough",
+    "involuntarily"
+   ]
   },
   {
    "korean": "급하다",
-   "gloss": "urgent; in a hurry",
+   "gloss": "urgent",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -15257,11 +15600,14 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "in a hurry"
+   ]
   },
   {
    "korean": "기르다",
-   "gloss": "to raise; to grow",
+   "gloss": "to raise",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -15297,7 +15643,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to grow"
+   ]
   },
   {
    "korean": "기본",
@@ -15345,7 +15694,7 @@
   },
   {
    "korean": "기타",
-   "gloss": "guitar; etc.",
+   "gloss": "guitar",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -15359,7 +15708,10 @@
    "filledViaSubstring": {
     "rec_id": 38976,
     "score": 31
-   }
+   },
+   "senses": [
+    "etc."
+   ]
   },
   {
    "korean": "길",
@@ -15561,7 +15913,7 @@
   },
   {
    "korean": "남",
-   "gloss": "other person; south",
+   "gloss": "other person",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -15573,7 +15925,10 @@
    "filledViaSubstring": {
     "rec_id": 29841,
     "score": 36
-   }
+   },
+   "senses": [
+    "south"
+   ]
   },
   {
    "korean": "남자",
@@ -15726,7 +16081,7 @@
   },
   {
    "korean": "네",
-   "gloss": "yes; four (before counters, modifier form of 넷)",
+   "gloss": "yes",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -15745,7 +16100,10 @@
     "evidenceUrl": "https://www.howtostudykorean.com/unit1/unit-1-lessons-9-16/unit-1-lesson-10/",
     "auditedAt": "2026-05-09",
     "round": 2
-   }
+   },
+   "senses": [
+    "four (before counters, modifier form of 넷)"
+   ]
   },
   {
    "korean": "노란색",
@@ -16008,7 +16366,7 @@
   },
   {
    "korean": "똑같이",
-   "gloss": "identically; in the same way",
+   "gloss": "identically",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -16025,7 +16383,10 @@
     "issue": "똑같이 is an adverb meaning 'identically / in the same way / equally', describing how an action is done. The English gloss 'exactly the same' reads as an adjectival phrase modifying a noun. A learner seeing this gloss could mis-use it as an adjective. Better gloss: 'identically; in the same way; equally'.",
     "evidenceUrl": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62076",
     "auditedAt": "2026-05-09"
-   }
+   },
+   "senses": [
+    "in the same way"
+   ]
   },
   {
    "korean": "뜨겁다",
@@ -16435,7 +16796,7 @@
   },
   {
    "korean": "바람",
-   "gloss": "wind; hope",
+   "gloss": "wind",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -16462,7 +16823,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "hope"
+   ]
   },
   {
    "korean": "바쁘다",
@@ -16575,7 +16939,7 @@
   },
   {
    "korean": "밥",
-   "gloss": "rice; meal",
+   "gloss": "rice",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -16584,7 +16948,10 @@
    "filledViaSubstring": {
     "rec_id": 1677,
     "scope": "static"
-   }
+   },
+   "senses": [
+    "meal"
+   ]
   },
   {
    "korean": "방금",
@@ -16682,7 +17049,7 @@
   },
   {
    "korean": "부르다",
-   "gloss": "to call; to sing",
+   "gloss": "to call",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 1,
@@ -16729,7 +17096,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to sing"
+   ]
   },
   {
    "korean": "부분",
@@ -16752,7 +17122,7 @@
   },
   {
    "korean": "부인",
-   "gloss": "wife; lady",
+   "gloss": "wife",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -16763,11 +17133,14 @@
    ],
    "liveRecIds": [
     1746
+   ],
+   "senses": [
+    "lady"
    ]
   },
   {
    "korean": "부족",
-   "gloss": "shortage; tribe",
+   "gloss": "shortage",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -16790,7 +17163,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "tribe"
+   ]
   },
   {
    "korean": "부치다",
@@ -17039,7 +17415,7 @@
   },
   {
    "korean": "산소",
-   "gloss": "oxygen; ancestor's grave",
+   "gloss": "oxygen",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -17058,7 +17434,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "ancestor's grave"
+   ]
   },
   {
    "korean": "새로",
@@ -17130,7 +17509,7 @@
   },
   {
    "korean": "세우다",
-   "gloss": "to make stand; to set up",
+   "gloss": "to make stand",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -17152,7 +17531,10 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to set up"
+   ]
   },
   {
    "korean": "소금",
@@ -17575,7 +17957,7 @@
   },
   {
    "korean": "않다",
-   "gloss": "(auxiliary) to not do; to not be (in -지 않다)",
+   "gloss": "(auxiliary) to not do",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 1,
@@ -17652,11 +18034,14 @@
     "pokedex_entry",
     "system_text"
    ],
-   "primarySourceType": "pokedex_entry"
+   "primarySourceType": "pokedex_entry",
+   "senses": [
+    "to not be (in -지 않다)"
+   ]
   },
   {
    "korean": "알",
-   "gloss": "egg; grain",
+   "gloss": "egg",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -17669,7 +18054,10 @@
    "filledViaSubstring": {
     "rec_id": 30057,
     "score": 40
-   }
+   },
+   "senses": [
+    "grain"
+   ]
   },
   {
    "korean": "알리다",
@@ -17975,7 +18363,7 @@
   },
   {
    "korean": "연기",
-   "gloss": "smoke (煙氣); performance, acting (演技); postponement (延期)",
+   "gloss": "smoke (煙氣)",
    "partOfSpeech": "noun",
    "areaId": "topik_2",
    "frequency": 1,
@@ -17997,7 +18385,11 @@
     "pokemon_ability",
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "performance, acting (演技)",
+    "postponement (延期)"
+   ]
   },
   {
    "korean": "열리다",
@@ -18115,7 +18507,7 @@
   },
   {
    "korean": "와",
-   "gloss": "and; wow",
+   "gloss": "and",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -18127,7 +18519,10 @@
    "filledViaSubstring": {
     "rec_id": 29818,
     "score": 38
-   }
+   },
+   "senses": [
+    "wow"
+   ]
   },
   {
    "korean": "우선",
@@ -18675,7 +19070,7 @@
   },
   {
    "korean": "적다",
-   "gloss": "few; to write",
+   "gloss": "few",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 1,
@@ -18694,7 +19089,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to write"
+   ]
   },
   {
    "korean": "적어도",
@@ -18726,7 +19124,7 @@
   },
   {
    "korean": "전자",
-   "gloss": "electron; the former",
+   "gloss": "electron",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -18747,7 +19145,10 @@
    "sourceTypes": [
     "system_text"
    ],
-   "primarySourceType": "system_text"
+   "primarySourceType": "system_text",
+   "senses": [
+    "the former"
+   ]
   },
   {
    "korean": "전하다",
@@ -19244,7 +19645,7 @@
   },
   {
    "korean": "차리다",
-   "gloss": "to set up; to come to oneself",
+   "gloss": "to set up",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -19267,7 +19668,10 @@
     "pokemon_move",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to come to oneself"
+   ]
   },
   {
    "korean": "책",
@@ -19334,7 +19738,7 @@
   },
   {
    "korean": "철",
-   "gloss": "iron; season",
+   "gloss": "iron",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -19347,7 +19751,10 @@
    "filledViaSubstring": {
     "rec_id": 30488,
     "score": 0
-   }
+   },
+   "senses": [
+    "season"
+   ]
   },
   {
    "korean": "추다",
@@ -19657,7 +20064,7 @@
   },
   {
    "korean": "통하다",
-   "gloss": "to communicate; to pass through",
+   "gloss": "to communicate",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_2",
    "frequency": 1,
@@ -19674,7 +20081,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to pass through"
+   ]
   },
   {
    "korean": "특별히",
@@ -19766,7 +20176,7 @@
   },
   {
    "korean": "파리",
-   "gloss": "fly (insect); Paris",
+   "gloss": "fly (insect)",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_2",
    "frequency": 1,
@@ -19778,7 +20188,10 @@
    "filledViaSubstring": {
     "rec_id": 12261,
     "score": 0
-   }
+   },
+   "senses": [
+    "Paris"
+   ]
   },
   {
    "korean": "파일",
@@ -19797,7 +20210,7 @@
   },
   {
    "korean": "팔",
-   "gloss": "arm; eight",
+   "gloss": "arm",
    "partOfSpeech": "noun/adv",
    "areaId": "topik_1",
    "frequency": 1,
@@ -19809,7 +20222,10 @@
    "filledViaSubstring": {
     "rec_id": 29939,
     "score": 32
-   }
+   },
+   "senses": [
+    "eight"
+   ]
   },
   {
    "korean": "프로그램",
@@ -19832,7 +20248,7 @@
   },
   {
    "korean": "피우다",
-   "gloss": "to smoke; to make bloom",
+   "gloss": "to smoke",
    "partOfSpeech": "verb/adj",
    "areaId": "topik_1",
    "frequency": 1,
@@ -19849,7 +20265,10 @@
     "npc_dialog",
     "system_text"
    ],
-   "primarySourceType": "npc_dialog"
+   "primarySourceType": "npc_dialog",
+   "senses": [
+    "to make bloom"
+   ]
   },
   {
    "korean": "필요",
