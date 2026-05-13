@@ -483,12 +483,21 @@ private fun CardBack(
     ) {
         Text(label, color = Color(0xFF6EE7B7), fontSize = 10.sp)
         Text(text, color = Color.White, fontWeight = FontWeight.SemiBold, fontSize = 18.sp)
-        // Secondary senses sit directly below the primary gloss. Single
+        // Secondary senses sit directly below the answer text. Single
         // muted line, dot-separated, so the canonical headword stays
         // dominant and the grade buttons don't get pushed off-screen.
+        //
+        // In EN_TO_KO mode the answer is Korean but the senses are
+        // alternate English meanings of the front word — prefix with
+        // `also EN:` so a Korean learner isn't misled into thinking
+        // these are extra Korean readings.
         if (senses.isNotEmpty()) {
+            val sensesText = when (direction) {
+                FlashcardDirection.KO_TO_EN -> senses.joinToString(" · ")
+                FlashcardDirection.EN_TO_KO -> "also EN: " + senses.joinToString(" · ")
+            }
             Text(
-                senses.joinToString(" · "),
+                sensesText,
                 color = Color(0xFFA7F3D0),
                 fontSize = 11.sp,
             )
@@ -610,16 +619,16 @@ private fun vocabSidesFor(vocab: VocabEntry, direction: FlashcardDirection): Tex
     }
 
 /**
- * Senses to show on the back of the card. Only meaningful in KO_TO_EN
- * (English secondary senses surface under the English headword). In
- * EN_TO_KO the back is Korean and we don't have ranked Korean senses,
- * so render nothing.
+ * Senses to show on the back of the card.
+ *
+ * KO_TO_EN: alternate English meanings of the Korean headword — sit
+ *   directly under the English primary gloss.
+ * EN_TO_KO: same English alternates surface under the Korean answer,
+ *   labelled `also EN:` to make clear they're additional senses of the
+ *   front word (the prompt), not extra Korean readings.
  */
 private fun sensesForBack(vocab: VocabEntry, direction: FlashcardDirection): List<String> =
-    when (direction) {
-        FlashcardDirection.KO_TO_EN -> vocab.senses
-        FlashcardDirection.EN_TO_KO -> emptyList()
-    }
+    vocab.senses
 
 private fun sentenceSidesFor(s: SentenceEntry, direction: FlashcardDirection): TextSides =
     when (direction) {
