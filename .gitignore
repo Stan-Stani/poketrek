@@ -43,3 +43,7 @@ tools/moneo/rom_swap/lz77_callers_2024.json
 tools/moneo/rom_swap/lz77_sites_2024.json
 tools/moneo/rom_swap/patched_lz77_blocks.csv
 tools/moneo/rom_swap/diff_runs_2024.txt
+
+# Generated HTML reports from visualizer scripts (rebuilt by the .py)
+tools/moneo/rom_diff.html
+tools/moneo/sentence_browser.html
