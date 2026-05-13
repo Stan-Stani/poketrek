@@ -218,7 +218,17 @@ class MoneoRepository(
 
     /**
      * Pick the next due card for [areaId]. Returns null if no cards are due
-     * right now. Selection priority:
+     * right now.
+     *
+     * Two-tier ordering. The full SRS priority pass runs on the *home* tier
+     * first — cards whose [VocabEntry.areaId] equals [areaId] (or the
+     * pseudo-area's base) — and only falls through to the *referenced* tier
+     * (cards visible here solely because [areaId] is in their
+     * [VocabEntry.areasReferenced]) when no home card is due. This stops
+     * broadly-referenced ROM-mined cards (e.g. `집` referenced in 54 areas)
+     * from drowning out the handful of cards actually homed at the area.
+     *
+     * Within each tier, selection priority is:
      *   1. LEARNING cards whose due time has passed (oldest-due first)
      *   2. REVIEW cards due today
      *   3. NEW cards (limited per session via the caller's pacing if needed)
@@ -226,8 +236,19 @@ class MoneoRepository(
     fun nextDueCard(areaId: String, nowMs: Long = now()): Pair<CardRecord, VocabEntry>? {
         val vocab = vocabForArea(areaId).associateBy { it.id }
         if (vocab.isEmpty()) return null
-        val cards = _cards.value.values.filter { it.vocabId in vocab.keys && !it.suspended }
+        val baseAreaId = splitPseudoAreaId(areaId)?.first ?: areaId
+        val (homeVocab, refVocab) = vocab.values.partition { it.areaId == baseAreaId }
+        pickByPriority(homeVocab.map { it.id }.toSet(), vocab, nowMs)?.let { return it }
+        return pickByPriority(refVocab.map { it.id }.toSet(), vocab, nowMs)
+    }
 
+    private fun pickByPriority(
+        vocabIdSubset: Set<String>,
+        vocab: Map<String, VocabEntry>,
+        nowMs: Long,
+    ): Pair<CardRecord, VocabEntry>? {
+        if (vocabIdSubset.isEmpty()) return null
+        val cards = _cards.value.values.filter { it.vocabId in vocabIdSubset && !it.suspended }
         val learning = cards.filter { it.snapshot.state == CardState.LEARNING && it.snapshot.dueAt <= nowMs }
             .sortedBy { it.snapshot.dueAt }
         if (learning.isNotEmpty()) {
