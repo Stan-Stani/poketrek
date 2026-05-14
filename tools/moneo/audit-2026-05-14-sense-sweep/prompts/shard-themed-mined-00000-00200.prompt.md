@@ -1,0 +1,6172 @@
+# Audit task
+
+You are auditing a shard of moneo-sense-sweep records for translation, grammar,
+naturalness, and consistency problems. Your job is to FLAG only entries
+with clear, defensible defects, with direct-source evidence for each flag.
+
+## Verdict taxonomy
+
+Use exactly one of: pos_mismatch, wrong_sense, target_form_drift, mistranslation
+
+## Evidence policy
+
+- Every flag MUST carry an `evidence` object: `{type, value, note?}`.
+- Allowed types: url, corpus-rule, in-game-canon
+- For `type: "url"` value MUST be an http(s) URL to a direct source.
+- DO NOT cite AI Overview snippets, AI answer summaries, or generated
+  blog content. Naver Korean Dictionary, Standard Korean Dictionary,
+  official Pokemon Korea pages, and similar primary sources are OK.
+- For `type: "corpus-rule"` value is the rule (e.g. "noun-noun compound,
+  no internal space"); use only when an authoritative URL isn't a fit.
+- For `type: "in-game-canon"` value is the ROM-anchored fact (e.g.
+  "Struggle fires automatically when PP is exhausted").
+- Disallowed hosts: google.com/search, google.com/aio, bing.com/search?q=
+
+If you can't produce evidence, DO NOT FLAG — leave the entry alone.
+
+## Output
+
+Emit exactly one JSON object, no prose, matching:
+
+```
+{
+  "shardFile": "app/src/main/assets/moneo/sentences-ko-themed-mined.json",
+  "range": [0, 200],
+  "inspected": 200,
+  "flagged": [
+    {
+      "key": "<value of the vocabId field>",
+      "verdict": "<one of: pos_mismatch, wrong_sense, target_form_drift, mistranslation>",
+      "issue": "<concise prose>",
+      "suggestion": "<replacement text or 'regloss to ...'>",
+      "evidence": {"type": "url|corpus-rule|in-game-canon", "value": "...", "note": null},
+      "originalValue": {"<auditField>": "<snapshot>"},
+      "proposedValue": {"<dataset field to set>": "<new value>"}
+    }
+  ],
+  "auditor": "llm-claude-opus-4-7",
+  "auditedAt": "<ISO date>"
+}
+```
+
+`originalValue` should snapshot the audited fields so the reviewer UI can
+diff. `proposedValue` is what the applier will write into the entry if the
+reviewer accepts; if you only want to suggest in prose, omit it and put
+the suggestion in `suggestion`.
+
+## Shard
+
+Below is the list of 200 entries. For each, decide: leave alone OR
+flag with evidence. Be conservative — only flag clear, defensible defects.
+
+```
+[
+  {
+    "vocabId": "rom-mine-v3:되다",
+    "korean": "훌륭한 트레이너가 되고 싶어요.",
+    "gloss": "I want to become a fine trainer.",
+    "targetForm": "되",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "one_island",
+      "water_labyrinth",
+      "memorial_pillar",
+      "treasure_beach",
+      "resort_gorgeous",
+      "canyon_entrance",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "water_path",
+      "green_path",
+      "outcast_island",
+      "two_island",
+      "ruin_valley",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1039,
+      1061,
+      1166,
+      1246,
+      1272
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:만들다",
+    "korean": "친구가 새 도구를 만들어 줬어요.",
+    "gloss": "My friend made me a new tool.",
+    "targetForm": "만들",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "mt_moon",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "water_path",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      940,
+      1100,
+      1152,
+      1810,
+      1988
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:상태",
+    "korean": "포켓몬의 상태가 좋지 않아요.",
+    "gloss": "My Pokémon's condition isn't good.",
+    "targetForm": "상태",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "cerulean_city",
+      "route_25",
+      "saffron_city",
+      "vermilion_city",
+      "celadon_city",
+      "rom_mined",
+      "kindle_road",
+      "two_island",
+      "seven_island",
+      "five_isle_meadow",
+      "treasure_beach",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      929,
+      978,
+      2070,
+      2085,
+      2140
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:지니다",
+    "korean": "지닌 도구를 확인해 보세요.",
+    "gloss": "Please check the items you're carrying.",
+    "targetForm": "지닌",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      1963,
+      2376,
+      2899,
+      3882,
+      3978
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:갈다",
+    "korean": "낡은 신발을 새것으로 갈았어요.",
+    "gloss": "I swapped my old shoes for new ones.",
+    "targetForm": "갈",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "areasReferenced": [
+      "pewter_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      974
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:약재",
+    "korean": "할머니께서 약재를 모으세요.",
+    "gloss": "My grandmother collects medicinal herbs.",
+    "targetForm": "약재",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:으깨다",
+    "korean": "친구가 열매를 으깨서 약을 만들었어요.",
+    "gloss": "My friend mashed berries to make medicine.",
+    "targetForm": "으깨",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      6704
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:갚다",
+    "korean": "친구에게 빌린 돈을 갚았어요.",
+    "gloss": "I paid back the money I borrowed from a friend.",
+    "targetForm": "갚",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "cerulean_city",
+    "areasReferenced": [
+      "cerulean_city",
+      "lavender_town",
+      "vermilion_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2340
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:놓다",
+    "korean": "가방을 책상 위에 놓았어요.",
+    "gloss": "I placed the bag on the desk.",
+    "targetForm": "놓았",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "mistranslation",
+      "issue": "The vocab item is the verb 놓다 (to place/put), but the sentence uses the noun 논 (rice field) — the targetForm field is even '논'. The sentence is grammatically fine Korean but does not exemplify 놓다 in any form; 논 is an unrelated homograph of the bare stem.",
+      "evidenceUrl": null,
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_4",
+      "saffron_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "rom_mined",
+      "four_island",
+      "seven_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      3110,
+      4015
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:트다",
+    "korean": "추운 동굴을 지나 입술이 텄어요.",
+    "gloss": "My lips got chapped after passing through the cold cave.",
+    "targetForm": "텄",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "mistranslation",
+      "issue": "Target lemma is 트다 (active/transitive: 'to crack, to clear, to open [a passage]', e.g. 입술이 트다, 거래선을 트다). The form 트인 in the sentence is the attributive past of the passive/intransitive 트이다, not 트다. The collocation 탁 트인 들판 is real and natural, but it exemplifies 트이다, not the lemma 트다. Wrong-lemma mismatch (parallel to the entry-30 나다 vs 떠나다 case the prior auditor caught).",
+      "evidenceUrl": "https://hinative.com/questions/19771329",
+      "auditedAt": "2026-05-09",
+      "round": 2
+    },
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "lavender_town",
+      "vermilion_city",
+      "route_12",
+      "route_16",
+      "celadon_city",
+      "rom_mined",
+      "six_island",
+      "two_island",
+      "seven_island",
+      "treasure_beach",
+      "one_island",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1025,
+      1032,
+      1707
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:몰다",
+    "korean": "양 떼를 몬 사람은 친구의 형이에요.",
+    "gloss": "The person who herded the sheep is my friend's older brother.",
+    "targetForm": "몬",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "cerulean_city",
+    "areasReferenced": [
+      "cerulean_city",
+      "lavender_town",
+      "vermilion_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text",
+      "pokemon_species"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1024
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:굴다",
+    "korean": "동생이 너무 무례하게 굴어요.",
+    "gloss": "My younger sibling behaves too rudely.",
+    "targetForm": "굴",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "ungrammatical",
+      "issue": "굴다 takes the [adverb]-게 굴다 pattern (e.g., 무례하게 굴다, 버릇없이 굴다); 굴게 inverts this since 굴다 is not used adverbially. Additionally, 굴다 and 행동하다 are near-synonyms ('to act/behave'), so stacking them is redundant.",
+      "evidenceUrl": null,
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "pewter_city",
+    "areasReferenced": [
+      "pewter_city",
+      "mt_moon",
+      "rom_mined",
+      "green_path",
+      "trainer_tower",
+      "outcast_island",
+      "canyon_entrance",
+      "ruin_valley",
+      "water_path"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1987
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:달달",
+    "korean": "달달한 과자를 동생에게 줬어요.",
+    "gloss": "I gave sweet snacks to my younger sibling.",
+    "targetForm": "달달",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:울다",
+    "korean": "어린 포켓몬이 우는 소리가 들려요.",
+    "gloss": "I can hear a young Pokémon crying.",
+    "targetForm": "우",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      572
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:치다",
+    "korean": "공을 멀리 치는 연습을 해요.",
+    "gloss": "I practice hitting the ball far.",
+    "targetForm": "치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_3",
+    "areasReferenced": [
+      "route_3",
+      "rom_mined",
+      "four_island",
+      "two_island",
+      "three_island",
+      "ruin_valley"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      3072
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:쓰다",
+    "korean": "쓴 차가 몸에 좋다고 해요.",
+    "gloss": "They say bitter tea is good for your body.",
+    "targetForm": "쓴",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "saffron_city",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "fuchsia_city",
+      "route_16",
+      "route_18",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1207,
+      2126,
+      2140,
+      2182,
+      2212
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:주다",
+    "korean": "할아버지께서 손녀에게 책을 주신다.",
+    "gloss": "Grandfather gives a book to his granddaughter.",
+    "targetForm": "주신다",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "polish:fix",
+      "issue": "Honorific mismatch confirmed: with 할아버지 as subject, standard Korean usage requires honorific verb 주신다 (and ideally honorific particle 께서). 할아버지가 ... 준다 reads as disrespectful in normal usage.",
+      "evidenceUrl": "https://www.rollingkorea.com/en/k-lab/korean-particle-kkeseo/",
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "water_path",
+      "green_path",
+      "outcast_island",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      884,
+      927,
+      945,
+      978,
+      1147
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:보다",
+    "korean": "내일 친구를 볼 거예요.",
+    "gloss": "I'll see my friend tomorrow.",
+    "targetForm": "볼",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text",
+      "trainer_class_name",
+      "pokemon_move",
+      "pokemon_species"
+    ],
+    "primarySourceType": "trainer_class_name",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "one_island",
+      "water_labyrinth",
+      "memorial_pillar",
+      "treasure_beach",
+      "resort_gorgeous",
+      "canyon_entrance",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "water_path",
+      "green_path",
+      "outcast_island",
+      "two_island",
+      "ruin_valley",
+      "five_island",
+      "four_island"
+    ],
+    "liveRecIds": [
+      912,
+      930,
+      959,
+      980,
+      1014
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:세다",
+    "korean": "센 바람이 들판을 가로질러요.",
+    "gloss": "A strong wind crosses the field.",
+    "targetForm": "센",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      6295
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:크다",
+    "korean": "크고 넓은 호수가 마을 옆에 있어요.",
+    "gloss": "A big, wide lake is beside the village.",
+    "targetForm": "크",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "route_4",
+      "cerulean_city",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "water_path",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1105,
+      1376,
+      1564,
+      2622,
+      2893
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:벌다",
+    "korean": "여름 동안 용돈을 버는 중이에요.",
+    "gloss": "I'm earning pocket money over the summer.",
+    "targetForm": "버",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      2484
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:편지지",
+    "korean": "친구에게 보낼 편지지를 샀어요.",
+    "gloss": "I bought stationery to send to a friend.",
+    "targetForm": "편지지",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "celadon_city",
+    "areasReferenced": [
+      "celadon_city",
+      "rom_mined",
+      "six_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      6677
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:푸다",
+    "korean": "할머니가 국을 그릇에 퍼요.",
+    "gloss": "Grandmother ladles soup into the bowl.",
+    "targetForm": "퍼",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "wrong_inflection",
+      "issue": "푸다 is the only 우-irregular verb in Korean: the stem 푸 + 어 contracts to 퍼, never 푸어. Correct present polite form is 퍼요, not 푸어요.",
+      "evidenceUrl": "https://en.wiktionary.org/wiki/%ED%91%B8%EB%8B%A4",
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      761
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:프린트",
+    "korean": "선생님이 프린트를 나눠 주셨어요.",
+    "gloss": "The teacher handed out the printout.",
+    "targetForm": "프린트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      3477
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:마치",
+    "korean": "그 포켓몬은 마치 그림 속 같아요.",
+    "gloss": "That Pokémon looks just like it's from a painting.",
+    "targetForm": "마치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:전부",
+    "korean": "가방 안의 도구를 전부 보여 주세요.",
+    "gloss": "Please show me all the items in your bag.",
+    "targetForm": "전부",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_12",
+    "areasReferenced": [
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1493,
+      2429,
+      2444,
+      2545
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:끄다",
+    "korean": "잠자기 전에 불을 끄는 것이 좋아요.",
+    "gloss": "Turning off the lights before sleeping is good.",
+    "targetForm": "끄는",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "unnatural",
+      "issue": "The -(으)ㅁ nominalization 끔 is heavily formal/written and is rarely used as a clausal subject in conversational sentences. Standard natural Korean uses -는 것 here: 끄는 것이 좋아요 / 끄는 게 좋아요. 끔이 좋아요 sounds stilted and machine-translated.",
+      "evidenceUrl": null,
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "route_3",
+    "areasReferenced": [
+      "route_3",
+      "route_4",
+      "route_24",
+      "route_25",
+      "route_6",
+      "route_11",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      4070
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:달다",
+    "korean": "달고 시원한 주스를 마셨어요.",
+    "gloss": "I drank sweet, cool juice.",
+    "targetForm": "달",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "rom_mined",
+      "trainer_tower",
+      "outcast_island",
+      "kindle_road",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text",
+      "trainer_class_name"
+    ],
+    "primarySourceType": "trainer_class_name",
+    "liveRecIds": [
+      2182
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:같다",
+    "korean": "두 포켓몬은 색이 같아요.",
+    "gloss": "The two Pokémon are the same color.",
+    "targetForm": "같",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_6",
+      "saffron_city",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      881,
+      891,
+      1309,
+      1447,
+      1452
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:검다",
+    "korean": "검은 망토를 입은 사람이 지나갔어요.",
+    "gloss": "A person in a black cloak passed by.",
+    "targetForm": "검",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "areasReferenced": [
+      "pewter_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      3287
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:나다",
+    "korean": "동생이 갑자기 열이 났어요.",
+    "gloss": "My younger sibling suddenly developed a fever.",
+    "targetForm": "났",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "mistranslation",
+      "issue": "The vocab item is 나다 (to occur/come out), but the sentence uses 떠나다 (to leave). The targetForm '난다고' is just a substring of 떠난다고. The Korean is fine, but it does not exemplify the lemma 나다.",
+      "evidenceUrl": null,
+      "auditedAt": "2026-05-09"
+    },
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text",
+      "pokemon_species"
+    ],
+    "primarySourceType": "npc_dialog",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_25",
+      "route_8",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "route_16",
+      "route_17",
+      "route_18",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "rom_mined",
+      "green_path",
+      "trainer_tower",
+      "outcast_island",
+      "memorial_pillar",
+      "seven_island",
+      "ruin_valley",
+      "resort_gorgeous",
+      "canyon_entrance",
+      "water_path",
+      "water_labyrinth"
+    ],
+    "liveRecIds": [
+      1297,
+      1430,
+      1570,
+      2413,
+      2948
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:넣다",
+    "korean": "가방에 도시락을 넣어 두었어요.",
+    "gloss": "I put a lunch box in the bag.",
+    "targetForm": "넣어",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "wrong_inflection",
+      "issue": "넣다 + -어 두다 should give 넣어 두었어요. The form 너 is wrong — it looks like a truncation/typo of 넣어. The sentence is currently ungrammatical.",
+      "evidenceUrl": null,
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "route_10",
+      "vermilion_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      1961,
+      2225,
+      2344,
+      3131,
+      3137
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:들다",
+    "korean": "오랜만에 든 짐이 무거워요.",
+    "gloss": "The bag I picked up after a long time feels heavy.",
+    "targetForm": "든",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_6",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      994,
+      998,
+      1312,
+      1330,
+      1555
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:자다",
+    "korean": "어젯밤 동생은 일찍 잤어요.",
+    "gloss": "Last night my younger sibling slept early.",
+    "targetForm": "잤",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "firstAreaEncountered": "route_1",
+    "areasReferenced": [
+      "route_1",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "route_4",
+      "cerulean_city",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "route_16",
+      "route_9",
+      "rom_mined",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_island",
+      "four_island"
+    ],
+    "liveRecIds": [
+      999,
+      1374,
+      1527
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:캐다",
+    "korean": "농부 아저씨가 감자를 캐고 있어요.",
+    "gloss": "The farmer is digging up potatoes.",
+    "targetForm": "캐",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "route_25",
+      "seven_island",
+      "one_island"
+    ],
+    "sourceTypes": [],
+    "primarySourceType": "",
+    "liveRecIds": [
+      3005,
+      4474
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:키트",
+    "korean": "수리 키트를 가방에 넣어 두었어요.",
+    "gloss": "I put the repair kit in my bag.",
+    "targetForm": "키트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:펴다",
+    "korean": "친구가 지도를 책상 위에 폈어요.",
+    "gloss": "My friend spread a map out on the desk.",
+    "targetForm": "폈",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:혼란",
+    "korean": "낯선 길에서 잠시 혼란을 느꼈어요.",
+    "gloss": "I felt a moment of confusion on the unfamiliar road.",
+    "targetForm": "혼란",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "cerulean_city",
+    "areasReferenced": [
+      "cerulean_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      4434
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:꼬리",
+    "korean": "포켓몬의 꼬리가 길고 부드러워요.",
+    "gloss": "The Pokémon's tail is long and soft.",
+    "targetForm": "꼬리",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "rom_mined",
+      "five_isle_meadow",
+      "treasure_beach",
+      "ruin_valley",
+      "viridian_city"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text",
+      "item_description",
+      "pokemon_move",
+      "pokemon_species"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      659
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:나오다",
+    "korean": "동굴에서 나와서 햇빛을 봤어요.",
+    "gloss": "I came out of the cave and saw the sunlight.",
+    "targetForm": "나와서",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "lavender_town",
+      "route_21",
+      "celadon_city",
+      "rom_mined",
+      "resort_gorgeous",
+      "kindle_road",
+      "treasure_beach"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      907,
+      921,
+      945,
+      2053,
+      2235
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:내다",
+    "korean": "마지막으로 힘을 냈어요.",
+    "gloss": "I gave it my all at the end.",
+    "targetForm": "냈",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "pewter_city",
+      "route_4",
+      "saffron_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "rom_mined",
+      "four_island",
+      "seven_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      3102
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:모습",
+    "korean": "친구의 새 모습이 멋있어요.",
+    "gloss": "My friend's new look is cool.",
+    "targetForm": "모습",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "saffron_city",
+      "fuchsia_city",
+      "rom_mined",
+      "resort_gorgeous",
+      "green_path",
+      "outcast_island",
+      "kindle_road",
+      "memorial_pillar",
+      "water_path",
+      "six_island",
+      "treasure_beach",
+      "water_labyrinth"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1892,
+      2784
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:밀다",
+    "korean": "트레이너가 무거운 수레를 미는 중이에요.",
+    "gloss": "The trainer is pushing a heavy cart.",
+    "targetForm": "미",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      309
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:이상",
+    "korean": "그 이상은 묻지 마세요.",
+    "gloss": "Please don't ask any more than that.",
+    "targetForm": "이상",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "vermilion_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "green_path",
+      "outcast_island",
+      "kindle_road",
+      "memorial_pillar",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "ruin_valley",
+      "resort_gorgeous",
+      "four_island",
+      "water_path",
+      "water_labyrinth"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text",
+      "pokemon_ability",
+      "pokemon_move",
+      "pokemon_species"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      893,
+      1068,
+      1918,
+      2096,
+      2213
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:자신",
+    "korean": "자신의 꿈을 잊지 마세요.",
+    "gloss": "Don't forget your own dream.",
+    "targetForm": "자신",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "pewter_city",
+      "cerulean_city",
+      "route_25",
+      "saffron_city",
+      "route_16",
+      "route_18",
+      "route_22",
+      "rom_mined",
+      "seven_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      2229,
+      2237,
+      2781,
+      2951
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:전투",
+    "korean": "긴 전투가 드디어 끝났어요.",
+    "gloss": "The long battle finally ended.",
+    "targetForm": "전투",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "celadon_city",
+    "areasReferenced": [
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      4311
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:좋다",
+    "korean": "오늘 날씨가 정말 좋아요.",
+    "gloss": "Today the weather is really nice.",
+    "targetForm": "좋",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "one_island",
+      "water_labyrinth",
+      "memorial_pillar",
+      "treasure_beach",
+      "resort_gorgeous",
+      "canyon_entrance",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "water_path",
+      "green_path",
+      "outcast_island",
+      "two_island",
+      "ruin_valley",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      885,
+      892,
+      912,
+      914,
+      930
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:피다",
+    "korean": "마을 길가에 꽃이 피었어요.",
+    "gloss": "Flowers bloomed along the village road.",
+    "targetForm": "피",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      103
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:교체",
+    "korean": "포켓몬 교체를 신청했어요.",
+    "gloss": "I requested a Pokémon swap.",
+    "targetForm": "교체",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      3671
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:그림",
+    "korean": "친구는 포켓몬 그림을 잘 그려요.",
+    "gloss": "My friend draws Pokémon pictures well.",
+    "targetForm": "그림",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "mt_moon",
+      "fuchsia_city",
+      "route_21",
+      "celadon_city",
+      "rom_mined",
+      "green_path",
+      "trainer_tower",
+      "outcast_island",
+      "kindle_road",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "canyon_entrance",
+      "water_path"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1802,
+      1992,
+      2579,
+      4001,
+      4260
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:데다",
+    "korean": "뜨거운 냄비에 손을 덴 적이 있어요.",
+    "gloss": "I once burned my hand on a hot pot.",
+    "targetForm": "덴",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "seven_island",
+      "four_island",
+      "resort_gorgeous",
+      "six_island",
+      "five_island",
+      "canyon_entrance",
+      "two_island",
+      "three_island",
+      "one_island",
+      "treasure_beach",
+      "kindle_road",
+      "water_labyrinth",
+      "outcast_island",
+      "memorial_pillar",
+      "water_path",
+      "ruin_valley",
+      "green_path",
+      "trainer_tower",
+      "five_isle_meadow"
+    ],
+    "sourceTypes": [],
+    "primarySourceType": "",
+    "liveRecIds": [
+      232,
+      266,
+      282,
+      303,
+      328
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:들통",
+    "korean": "들통에 우물물을 가득 담았어요.",
+    "gloss": "I filled the bucket with well water.",
+    "targetForm": "들통",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:말다",
+    "korean": "어머니가 김밥을 잘 말아요.",
+    "gloss": "My mother rolls kimbap well.",
+    "targetForm": "말아",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "pos_mismatch",
+      "issue": "The previous example 그건 마음에 두지 마세요 used the auxiliary 말다 in the -지 말다 negative-imperative construction (don't ...), not the primary transitive 말다 'to roll up' that the headword gloss commits to. The vocab card already lists the auxiliary sense in `senses`; this entry should illustrate the primary sense.",
+      "evidenceUrl": "https://ko.dict.naver.com/#/search?query=%EB%A7%90%EB%8B%A4",
+      "auditedAt": "2026-05-14",
+      "githubIssue": 1,
+      "originalKorean": "그건 마음에 두지 마세요.",
+      "originalGloss": "Don't take that to heart."
+    },
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "vermilion_city",
+      "route_13",
+      "route_14",
+      "route_15",
+      "route_16",
+      "route_19",
+      "route_20",
+      "route_21",
+      "rom_mined",
+      "kindle_road"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1523,
+      1739,
+      2054,
+      2102,
+      2241
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:매다",
+    "korean": "동생이 신발끈을 단단히 맸어요.",
+    "gloss": "My younger sibling tied their shoelaces firmly.",
+    "targetForm": "맸",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_3",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "two_island",
+      "three_island",
+      "one_island",
+      "kindle_road",
+      "treasure_beach",
+      "water_labyrinth",
+      "outcast_island",
+      "resort_gorgeous",
+      "memorial_pillar",
+      "water_path",
+      "canyon_entrance",
+      "ruin_valley",
+      "green_path",
+      "trainer_tower",
+      "seven_island",
+      "four_island",
+      "six_island",
+      "five_island"
+    ],
+    "sourceTypes": [],
+    "primarySourceType": "",
+    "liveRecIds": [
+      95,
+      282,
+      286,
+      521,
+      802
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:매우",
+    "korean": "이 도시는 매우 조용해요.",
+    "gloss": "This city is very quiet.",
+    "targetForm": "매우",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "fuchsia_city",
+      "cinnabar_island",
+      "indigo_plateau",
+      "rom_mined",
+      "four_island",
+      "six_island",
+      "two_island",
+      "seven_island",
+      "three_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      2356
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:먹다",
+    "korean": "포켓몬이 열매를 먹고 있어요.",
+    "gloss": "The Pokémon is eating berries.",
+    "targetForm": "먹",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "saffron_city",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "fuchsia_city",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "two_island",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      953,
+      3896,
+      4198
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:멀다",
+    "korean": "다음 도시는 여기서 먼 곳에 있어요.",
+    "gloss": "The next city is far from here.",
+    "targetForm": "먼",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "route_4",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "rom_mined",
+      "trainer_tower",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "ruin_valley",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1097,
+      1615,
+      1676,
+      1966,
+      2161
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:상대",
+    "korean": "이번 상대는 강해 보여요.",
+    "gloss": "This opponent looks strong.",
+    "targetForm": "상대",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "saffron_city",
+      "lavender_town",
+      "route_10",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "fuchsia_city",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "water_path",
+      "green_path",
+      "two_island",
+      "ruin_valley",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1660,
+      2037,
+      2102,
+      2185,
+      2238
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:아마",
+    "korean": "그 친구는 아마 늦을 거예요.",
+    "gloss": "That friend will probably be late.",
+    "targetForm": "아마",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:영양",
+    "korean": "포켓몬에게 영양이 풍부한 음식을 줘요.",
+    "gloss": "I give my Pokémon nutritious food.",
+    "targetForm": "영양",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "celadon_city",
+    "areasReferenced": [
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      5169
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:공격",
+    "korean": "다음 공격은 신중히 골라요.",
+    "gloss": "I choose the next attack carefully.",
+    "targetForm": "공격",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_18",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "six_island",
+      "two_island",
+      "seven_island",
+      "three_island",
+      "ruin_valley",
+      "treasure_beach",
+      "one_island",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text",
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1375,
+      2140,
+      2218,
+      2229,
+      2406
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:기초",
+    "korean": "체육관 도전의 기초를 배웠어요.",
+    "gloss": "I learned the basics of gym challenges.",
+    "targetForm": "기초",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "celadon_city",
+    "areasReferenced": [
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      5508
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:노트",
+    "korean": "친구가 작은 노트를 선물했어요.",
+    "gloss": "My friend gave me a small notebook.",
+    "targetForm": "노트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2130,
+      2132
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:높이다",
+    "korean": "꾸준한 훈련으로 능력을 높이고 있어요.",
+    "gloss": "I am raising my skills through steady training.",
+    "targetForm": "높이",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      4653
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:능력",
+    "korean": "이 포켓몬의 능력이 뛰어나요.",
+    "gloss": "This Pokémon's abilities are outstanding.",
+    "targetForm": "능력",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "areasReferenced": [
+      "saffron_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      2650,
+      2740
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:도감",
+    "korean": "도감에 새로운 포켓몬을 등록했어요.",
+    "gloss": "I registered a new Pokémon in the encyclopedia.",
+    "targetForm": "도감",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "vermilion_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "two_island",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      980,
+      993,
+      2071,
+      2430,
+      2862
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:드리다",
+    "korean": "선생님께 선물을 드리는 것이 예의예요.",
+    "gloss": "Giving a gift to a teacher is courteous.",
+    "targetForm": "드리는",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "unnatural",
+      "issue": "The -(으)ㅁ nominalization 드림 as a clausal subject is awkward and overly formal. Native phrasing uses -는 것: 드리는 것이 예의예요. As written, it reads as machine-translated.",
+      "evidenceUrl": null,
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "route_2",
+    "areasReferenced": [
+      "route_2",
+      "route_4",
+      "cerulean_city",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "rom_mined",
+      "six_island",
+      "two_island",
+      "seven_island",
+      "three_island",
+      "treasure_beach",
+      "one_island",
+      "resort_gorgeous",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2288,
+      2866,
+      2984,
+      3092
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:모으다",
+    "korean": "친구는 배지를 모으고 있어요.",
+    "gloss": "My friend is collecting badges.",
+    "targetForm": "모으",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "rom_mined",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "treasure_beach",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      927,
+      1674,
+      2586
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:베이다",
+    "korean": "종이에 손가락이 베이지 않게 조심해요.",
+    "gloss": "Be careful not to cut your finger on paper.",
+    "targetForm": "베이",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      874
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:보이다",
+    "korean": "산 너머로 무지개가 보인다.",
+    "gloss": "A rainbow is visible over the mountain.",
+    "targetForm": "보인다",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "treasure_beach",
+      "resort_gorgeous"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      940,
+      1068,
+      1476,
+      1531,
+      1892
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:상처",
+    "korean": "포켓몬의 상처를 깨끗이 닦았어요.",
+    "gloss": "I cleaned my Pokémon's wound.",
+    "targetForm": "상처",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "vermilion_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "four_island",
+      "six_island",
+      "seven_island",
+      "three_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      2150
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:승부",
+    "korean": "내일 승부가 기다리고 있어요.",
+    "gloss": "A match awaits tomorrow.",
+    "targetForm": "승부",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "route_24",
+      "route_25",
+      "route_6",
+      "route_8",
+      "route_10",
+      "route_11",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "route_9",
+      "route_22",
+      "route_23",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "seven_island",
+      "five_isle_meadow",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      897,
+      1291,
+      1295,
+      1363,
+      1474
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:신비",
+    "korean": "그 호수에는 신비가 가득해요.",
+    "gloss": "That lake is full of mystery.",
+    "targetForm": "신비",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "vermilion_city",
+    "areasReferenced": [
+      "vermilion_city",
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text",
+      "item_description",
+      "pokemon_move"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2408
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:싸다",
+    "korean": "도시락을 정성껏 쌀 거예요.",
+    "gloss": "I'll wrap the lunch box with care.",
+    "targetForm": "쌀",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      159
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:아프다",
+    "korean": "오래 걸어서 다리가 아파온다.",
+    "gloss": "From walking so long my legs are starting to hurt.",
+    "targetForm": "아파온다",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      4990
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:포인트",
+    "korean": "다음 도시에서 포인트를 사용할 거예요.",
+    "gloss": "I'll use my points in the next city.",
+    "targetForm": "포인트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "saffron_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      949,
+      2754
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:기다",
+    "korean": "아기 포켓몬이 풀밭을 기어 다녀요.",
+    "gloss": "The baby Pokémon crawls around the grass.",
+    "targetForm": "기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_1",
+    "areasReferenced": [
+      "route_1",
+      "route_2",
+      "route_3",
+      "route_4",
+      "cerulean_city",
+      "route_25",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "celadon_city",
+      "route_9",
+      "rom_mined",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      1381,
+      1397,
+      1564,
+      2313,
+      2317
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:기록",
+    "korean": "오늘의 기록을 노트에 적었어요.",
+    "gloss": "I wrote today's record in my notebook.",
+    "targetForm": "기록",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_4",
+    "areasReferenced": [
+      "route_4",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "route_12",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2888
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:깨다",
+    "korean": "친구가 잠을 깨고 길을 떠났어요.",
+    "gloss": "My friend woke up and set off on the road.",
+    "targetForm": "깨",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_6",
+    "areasReferenced": [
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1116,
+      2906
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:놀다",
+    "korean": "공원에서 포켓몬과 놀아요.",
+    "gloss": "I play with my Pokémon in the park.",
+    "targetForm": "놀",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "celadon_city",
+      "route_23",
+      "rom_mined",
+      "trainer_tower",
+      "three_island",
+      "water_path",
+      "two_island",
+      "ruin_valley",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      638,
+      1183,
+      1524,
+      1617,
+      2873
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:루트",
+    "korean": "지도에서 다음 루트를 찾아봤어요.",
+    "gloss": "I looked for the next route on the map.",
+    "targetForm": "루트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:만나다",
+    "korean": "마을에서 옛 친구를 만나서 기뻐요.",
+    "gloss": "I'm happy to meet an old friend in the village.",
+    "targetForm": "만나",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "route_4",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1177,
+      1674,
+      2028,
+      2098,
+      2581
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:많다",
+    "korean": "이 마을에는 가게가 많아요.",
+    "gloss": "There are many shops in this village.",
+    "targetForm": "많",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      882,
+      897,
+      904,
+      926,
+      954
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:모이다",
+    "korean": "친구들이 광장에 모여서 이야기를 했어요.",
+    "gloss": "Friends gathered in the plaza and chatted.",
+    "targetForm": "모여서",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "saffron_city",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "resort_gorgeous",
+      "four_island",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1128,
+      1538,
+      2078,
+      2126,
+      3480
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:솔솔",
+    "korean": "솔솔 부는 바람이 시원해요.",
+    "gloss": "The gently blowing breeze is cool.",
+    "targetForm": "솔솔",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:수면",
+    "korean": "충분한 수면이 훈련에 중요해요.",
+    "gloss": "Enough sleep is important for training.",
+    "targetForm": "수면",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      4942
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:쉬다",
+    "korean": "긴 길을 걷고 잠시 쉬어요.",
+    "gloss": "I rest for a moment after walking a long road.",
+    "targetForm": "쉬",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_24",
+      "route_25",
+      "route_22",
+      "route_23",
+      "rom_mined",
+      "green_path",
+      "trainer_tower",
+      "outcast_island",
+      "kindle_road",
+      "memorial_pillar",
+      "ruin_valley",
+      "five_isle_meadow",
+      "treasure_beach",
+      "resort_gorgeous",
+      "canyon_entrance",
+      "water_path",
+      "water_labyrinth"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      949,
+      2002
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:쉽다",
+    "korean": "이 길은 생각보다 쉽고 평탄해요.",
+    "gloss": "This road is easier and flatter than I thought.",
+    "targetForm": "쉽",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "route_24",
+      "route_25",
+      "route_6",
+      "saffron_city",
+      "lavender_town",
+      "route_11",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "indigo_plateau",
+      "rom_mined",
+      "outcast_island",
+      "kindle_road",
+      "memorial_pillar",
+      "two_island",
+      "seven_island",
+      "three_island",
+      "ruin_valley",
+      "five_isle_meadow",
+      "resort_gorgeous",
+      "four_island",
+      "water_path"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      2050,
+      2066,
+      2208,
+      3946,
+      4047
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:슬다",
+    "korean": "녹이 슨 자전거를 닦아요.",
+    "gloss": "I clean a bicycle that has rusted.",
+    "targetForm": "슨",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_25",
+      "saffron_city",
+      "lavender_town",
+      "vermilion_city",
+      "fuchsia_city",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      912,
+      1097,
+      1818,
+      2321,
+      2654
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:아주",
+    "korean": "오늘 시합은 아주 긴장됐어요.",
+    "gloss": "Today's match was very nerve-wracking.",
+    "targetForm": "아주",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      6153
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:양복",
+    "korean": "할아버지가 새 양복을 입으셨어요.",
+    "gloss": "Grandfather wore a new suit.",
+    "targetForm": "양복",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:오르다",
+    "korean": "산 정상에 천천히 오른다.",
+    "gloss": "I climb slowly to the mountain summit.",
+    "targetForm": "오른다",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "cerulean_city",
+      "route_25",
+      "route_8",
+      "route_10",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "fuchsia_city",
+      "route_16",
+      "celadon_city",
+      "route_9",
+      "rom_mined",
+      "kindle_road",
+      "two_island",
+      "three_island",
+      "five_isle_meadow",
+      "ruin_valley",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      2218,
+      2257,
+      3935
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:위험",
+    "korean": "이 길은 밤에 위험이 있어요.",
+    "gloss": "This road has dangers at night.",
+    "targetForm": "위험",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "route_7",
+      "route_8",
+      "route_10",
+      "route_11",
+      "route_12",
+      "route_15",
+      "route_16",
+      "rom_mined",
+      "kindle_road"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      921,
+      2907
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:진화",
+    "korean": "친구의 포켓몬이 드디어 진화했어요.",
+    "gloss": "My friend's Pokémon finally evolved.",
+    "targetForm": "진화",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "cerulean_city",
+    "areasReferenced": [
+      "cerulean_city",
+      "route_6",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "rom_mined",
+      "two_island",
+      "three_island",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      1049,
+      1174,
+      1286,
+      2646,
+      2661
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:특공",
+    "korean": "그 포켓몬은 특공 능력이 높아요.",
+    "gloss": "That Pokémon has high special-attack power.",
+    "targetForm": "특공",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:특정",
+    "korean": "특정 포켓몬만 이 길에 나타나요.",
+    "gloss": "Only specific Pokémon appear on this road.",
+    "targetForm": "특정",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "celadon_city",
+    "areasReferenced": [
+      "celadon_city",
+      "rom_mined",
+      "two_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      6663
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:파다",
+    "korean": "정원에서 작은 구덩이를 파고 있어요.",
+    "gloss": "I'm digging a small hole in the garden.",
+    "targetForm": "파",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined",
+      "treasure_beach"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      360
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:가루약",
+    "korean": "약국에서 가루약을 받아왔어요.",
+    "gloss": "I picked up a powder medicine from the pharmacy.",
+    "targetForm": "가루약",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      6621
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:감전",
+    "korean": "젖은 손으로 만지면 감전 위험이 있어요.",
+    "gloss": "Touching with wet hands risks electric shock.",
+    "targetForm": "감전",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      5098
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:개다",
+    "korean": "내일 날씨가 갤 거예요.",
+    "gloss": "Tomorrow the weather will clear up.",
+    "targetForm": "갤",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "cerulean_city",
+    "areasReferenced": [
+      "cerulean_city",
+      "route_25",
+      "lavender_town",
+      "vermilion_city",
+      "celadon_city",
+      "rom_mined",
+      "seven_island",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1052,
+      3003
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:거의",
+    "korean": "친구가 거의 다 도착했어요.",
+    "gloss": "My friend has almost arrived.",
+    "targetForm": "거의",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined",
+      "seven_island",
+      "three_island",
+      "five_island",
+      "four_island",
+      "two_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1191
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:걸다",
+    "korean": "벽에 새 포스터를 걸고 있어요.",
+    "gloss": "I'm hanging a new poster on the wall.",
+    "targetForm": "걸",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "rom_mined",
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "indigo_plateau",
+      "treasure_beach",
+      "kindle_road",
+      "resort_gorgeous",
+      "water_labyrinth",
+      "memorial_pillar",
+      "water_path",
+      "trainer_tower",
+      "canyon_entrance",
+      "ruin_valley",
+      "outcast_island",
+      "green_path",
+      "three_island",
+      "seven_island",
+      "two_island",
+      "five_island",
+      "four_island",
+      "six_island",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      229
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:고르다",
+    "korean": "친구가 도구를 고르고 가게를 나갔어요.",
+    "gloss": "My friend chose an item and left the shop.",
+    "targetForm": "고르",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "areasReferenced": [
+      "saffron_city",
+      "cinnabar_island",
+      "indigo_plateau",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2704
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:근처",
+    "korean": "근처 공원에서 산책을 해요.",
+    "gloss": "I take a walk in the nearby park.",
+    "targetForm": "근처",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "areasReferenced": [
+      "saffron_city",
+      "cinnabar_island",
+      "indigo_plateau",
+      "rom_mined",
+      "three_island",
+      "five_island",
+      "four_island",
+      "two_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1184,
+      2692
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:급소",
+    "korean": "전투에서 급소를 노리지 않아요.",
+    "gloss": "I don't aim for vital points in matches.",
+    "targetForm": "급소",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      4416
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:기술",
+    "korean": "새로운 기술을 천천히 배워요.",
+    "gloss": "I learn new techniques slowly.",
+    "targetForm": "기술",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_4",
+      "cerulean_city",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_18",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "two_island",
+      "ruin_valley",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      949,
+      1053,
+      1061,
+      1390,
+      1441
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:나누다",
+    "korean": "사탕을 친구와 나누어 먹었어요.",
+    "gloss": "I shared candy with my friend.",
+    "targetForm": "나누",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "pewter_city",
+      "route_11",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "celadon_city",
+      "route_9",
+      "rom_mined",
+      "outcast_island",
+      "kindle_road",
+      "memorial_pillar",
+      "two_island",
+      "three_island",
+      "ruin_valley",
+      "five_isle_meadow",
+      "resort_gorgeous",
+      "four_island",
+      "water_path"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text",
+      "pokemon_move"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      3946
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:낫다",
+    "korean": "감기가 빨리 낫기를 바라요.",
+    "gloss": "I hope my cold gets better quickly.",
+    "targetForm": "낫",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "saffron_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "indigo_plateau",
+      "rom_mined",
+      "four_island",
+      "six_island",
+      "seven_island",
+      "three_island"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      2141
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:낳다",
+    "korean": "농장에서 닭이 알을 낳았어요.",
+    "gloss": "On the farm a hen laid an egg.",
+    "targetForm": "낳",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      5170
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:넓다",
+    "korean": "이 강은 매우 넓어요.",
+    "gloss": "This river is very wide.",
+    "targetForm": "넓",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "areasReferenced": [
+      "pewter_city",
+      "saffron_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      975,
+      1129
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:늘다",
+    "korean": "한국어 실력이 점점 느는 중이에요.",
+    "gloss": "My Korean skills are gradually improving.",
+    "targetForm": "느",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "cerulean_city",
+      "saffron_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "indigo_plateau",
+      "rom_mined",
+      "two_island",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      980,
+      1135,
+      2070
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:도망",
+    "korean": "겁 많은 포켓몬은 도망을 잘 가요.",
+    "gloss": "Cowardly Pokémon run away easily.",
+    "targetForm": "도망",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "vermilion_city",
+    "areasReferenced": [
+      "vermilion_city",
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      2398
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:돌진",
+    "korean": "큰 포켓몬이 우리 쪽으로 돌진했어요.",
+    "gloss": "A big Pokémon charged toward us.",
+    "targetForm": "돌진",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "rom_mined",
+      "fuchsia_city",
+      "pallet_town",
+      "pewter_city",
+      "route_13",
+      "route_23"
+    ],
+    "sourceTypes": [
+      "pokemon_move",
+      "system_text"
+    ],
+    "primarySourceType": "pokemon_move",
+    "liveRecIds": [
+      121
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:드세다",
+    "korean": "성격이 드세서 친구들이 조심해요.",
+    "gloss": "Their personality is forceful so friends are careful.",
+    "targetForm": "드세",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:들치다",
+    "korean": "트레이너가 천막을 들치고 안으로 들어갔어요.",
+    "gloss": "The trainer lifted the tent flap and went inside.",
+    "targetForm": "들치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "wrong_collocation",
+      "issue": "들치다 means to lift/raise the edge or corner of a covering (e.g., 천막을 들치다, 이불을 들치다). For tipping a hat as a greeting Koreans say 모자를 들어 인사하다 (raise the hat) or 모자를 벗어 인사하다 (take it off). 모자를 들치고 인사하다 is an unnatural collocation.",
+      "evidenceUrl": "https://www.ieka.net/Escribiendo_correctamente_Coreano/74216",
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:디밀다",
+    "korean": "친구가 메뉴판을 내 앞에 디미는 중이에요.",
+    "gloss": "My friend is pushing the menu in front of me.",
+    "targetForm": "디미",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:떨다",
+    "korean": "추워서 손이 떨려요.",
+    "gloss": "My hands are shaking from the cold.",
+    "targetForm": "떨",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "wrong_collocation",
+      "issue": "Involuntary trembling from cold/fear takes the intransitive 떨리다 (손이 떨리다, 손이 떨려요). The transitive 손을 떨다 implies a deliberate, voluntary shaking — pairing it with 추워서 (because it's cold) is unnatural; cold doesn't cause one to shake one's hands on purpose.",
+      "evidenceUrl": "https://hinative.com/questions/12080194",
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "route_12",
+    "areasReferenced": [
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1481,
+      4113
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:만지다",
+    "korean": "어린 포켓몬을 부드럽게 만졌어요.",
+    "gloss": "I gently touched the young Pokémon.",
+    "targetForm": "만졌",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_10",
+    "areasReferenced": [
+      "route_10",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      2532
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:맡기다",
+    "korean": "포켓몬을 친구에게 잠시 맡겼어요.",
+    "gloss": "I left my Pokémon with a friend for a while.",
+    "targetForm": "맡겼",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "saffron_city",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "cinnabar_island",
+      "celadon_city",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "rom_mined",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "one_island",
+      "water_labyrinth",
+      "two_island",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1207,
+      1213,
+      1823,
+      3110,
+      3984
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:모래",
+    "korean": "해변의 모래가 따뜻해요.",
+    "gloss": "The sand at the beach is warm.",
+    "targetForm": "모래",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_1",
+    "areasReferenced": [
+      "route_1",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      4582
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:모양",
+    "korean": "이 돌의 모양이 별과 비슷해요.",
+    "gloss": "This stone's shape resembles a star.",
+    "targetForm": "모양",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "areasReferenced": [
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "mt_moon",
+      "route_4",
+      "route_24",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "route_10",
+      "rom_mined",
+      "green_path",
+      "trainer_tower",
+      "outcast_island",
+      "ruin_valley",
+      "canyon_entrance",
+      "water_path"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1989,
+      2862,
+      4259
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:묶다",
+    "korean": "긴 머리를 단정히 묶었어요.",
+    "gloss": "I tied my long hair neatly.",
+    "targetForm": "묶",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:묻다",
+    "korean": "길을 묻는 손님이 가게에 들렀어요.",
+    "gloss": "A customer asking for directions stopped by the shop.",
+    "targetForm": "묻",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "areasReferenced": [
+      "saffron_city",
+      "cinnabar_island",
+      "indigo_plateau",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2694
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:물다",
+    "korean": "강아지가 막대기를 물고 달려요.",
+    "gloss": "The puppy runs while biting a stick.",
+    "targetForm": "물",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "rom_mined",
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "mt_moon",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "route_21",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "seven_island",
+      "five_island",
+      "six_island",
+      "four_island",
+      "treasure_beach",
+      "one_island",
+      "two_island",
+      "kindle_road",
+      "resort_gorgeous",
+      "water_path",
+      "trainer_tower",
+      "canyon_entrance",
+      "water_labyrinth",
+      "ruin_valley",
+      "memorial_pillar",
+      "outcast_island",
+      "green_path",
+      "three_island"
+    ],
+    "sourceTypes": [
+      "system_text",
+      "item_description"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      784
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:미리",
+    "korean": "필요한 것을 미리 준비했어요.",
+    "gloss": "I prepared what I needed in advance.",
+    "targetForm": "미리",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:받다",
+    "korean": "할머니께 편지를 받았어요.",
+    "gloss": "I received a letter from my grandmother.",
+    "targetForm": "받",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "route_1",
+      "viridian_city",
+      "route_2",
+      "pewter_city",
+      "route_3",
+      "route_4",
+      "cerulean_city",
+      "route_24",
+      "route_25",
+      "route_5",
+      "route_6",
+      "saffron_city",
+      "route_7",
+      "route_8",
+      "lavender_town",
+      "route_10",
+      "route_11",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "cinnabar_island",
+      "celadon_city",
+      "route_9",
+      "route_22",
+      "route_23",
+      "indigo_plateau",
+      "rom_mined",
+      "trainer_tower",
+      "kindle_road",
+      "six_island",
+      "seven_island",
+      "three_island",
+      "five_isle_meadow",
+      "one_island",
+      "water_path",
+      "water_labyrinth",
+      "green_path",
+      "outcast_island",
+      "memorial_pillar",
+      "two_island",
+      "ruin_valley",
+      "treasure_beach",
+      "resort_gorgeous",
+      "five_island",
+      "four_island",
+      "canyon_entrance"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text",
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      973,
+      1169,
+      1681,
+      1823,
+      1825
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:발전소",
+    "korean": "마을 끝에 작은 발전소가 있어요.",
+    "gloss": "There's a small power plant at the end of the village.",
+    "targetForm": "발전소",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_10",
+    "areasReferenced": [
+      "route_10",
+      "route_14",
+      "route_15",
+      "route_16",
+      "route_17",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1550
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:방심",
+    "korean": "끝까지 방심하지 마세요.",
+    "gloss": "Don't let your guard down until the end.",
+    "targetForm": "방심",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "celadon_city",
+      "rom_mined",
+      "green_path",
+      "trainer_tower",
+      "outcast_island",
+      "canyon_entrance",
+      "ruin_valley",
+      "water_path"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1977,
+      2123,
+      2517
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:방어",
+    "korean": "포켓몬은 방어가 매우 단단해요.",
+    "gloss": "The Pokémon's defense is very tough.",
+    "targetForm": "방어",
+    "areaId": "fuchsia_city",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "fuchsia_city",
+    "areasReferenced": [
+      "fuchsia_city",
+      "saffron_city",
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "pokemon_move",
+      "system_text"
+    ],
+    "primarySourceType": "pokemon_move",
+    "liveRecIds": [
+      3720
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:베다",
+    "korean": "정원사가 풀을 베고 있어요.",
+    "gloss": "The gardener is cutting the grass.",
+    "targetForm": "베",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      295
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:빈사",
+    "korean": "포켓몬이 빈사 상태예요.",
+    "gloss": "The Pokémon is in critical condition.",
+    "targetForm": "빈사",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:산란",
+    "korean": "이 호수는 포켓몬의 산란 장소예요.",
+    "gloss": "This lake is a Pokémon spawning ground.",
+    "targetForm": "산란",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:살다",
+    "korean": "친구는 바닷가 마을에 산 지 오래됐어요.",
+    "gloss": "My friend has lived in a seaside village for a long time.",
+    "targetForm": "산",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "areasReferenced": [
+      "pewter_city",
+      "cerulean_city",
+      "route_25",
+      "lavender_town",
+      "vermilion_city",
+      "route_12",
+      "route_15",
+      "fuchsia_city",
+      "route_16",
+      "route_17",
+      "route_18",
+      "route_19",
+      "route_20",
+      "celadon_city",
+      "route_22",
+      "rom_mined",
+      "two_island",
+      "one_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text",
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1069,
+      1636,
+      2930,
+      3047
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:삼다",
+    "korean": "이 길을 마음의 고향으로 삼고 있어요.",
+    "gloss": "I consider this road my heart's hometown.",
+    "targetForm": "삼",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      339
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:석양",
+    "korean": "석양이 도시의 지붕을 붉게 물들였어요.",
+    "gloss": "The sunset dyed the city's rooftops red.",
+    "targetForm": "석양",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:솟다",
+    "korean": "도시 한가운데 높은 탑이 솟아 있어요.",
+    "gloss": "A tall tower rises in the middle of the city.",
+    "targetForm": "솟",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:수완",
+    "korean": "그 점원의 수완이 정말 좋아요.",
+    "gloss": "That clerk's business skills are really good.",
+    "targetForm": "수완",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:술통",
+    "korean": "창고에는 오래된 술통이 있어요.",
+    "gloss": "There's an old wine barrel in the warehouse.",
+    "targetForm": "술통",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:스치다",
+    "korean": "바람이 머리카락을 스치고 지나갔어요.",
+    "gloss": "The wind brushed past my hair.",
+    "targetForm": "스치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:시트",
+    "korean": "침대 시트를 깨끗하게 빨았어요.",
+    "gloss": "I washed the bed sheets clean.",
+    "targetForm": "시트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:아들",
+    "korean": "그 댁의 아들이 아주 친절해요.",
+    "gloss": "That family's son is very kind.",
+    "targetForm": "아들",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      2630
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:약하다",
+    "korean": "포켓몬은 약할수록 더 보살펴야 해요.",
+    "gloss": "The weaker a Pokémon is, the more we must care for it.",
+    "targetForm": "약할수록",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "vermilion_city",
+      "route_12",
+      "route_13",
+      "route_14",
+      "route_15",
+      "celadon_city",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      1501,
+      2133,
+      2406
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:요트",
+    "korean": "항구에 흰 요트가 떠 있어요.",
+    "gloss": "A white yacht floats at the harbor.",
+    "targetForm": "요트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:잘리다",
+    "korean": "잘린 빵 조각을 가방에 넣었어요.",
+    "gloss": "I put the cut bread piece in my bag.",
+    "targetForm": "잘린",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "pokedex_entry",
+      "system_text"
+    ],
+    "primarySourceType": "pokedex_entry",
+    "liveRecIds": [
+      5047
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:접다",
+    "korean": "친구와 종이학을 접고 있어요.",
+    "gloss": "I'm folding paper cranes with a friend.",
+    "targetForm": "접",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      5314
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:정보",
+    "korean": "다음 도시의 정보를 미리 알아봤어요.",
+    "gloss": "I looked up info about the next city beforehand.",
+    "targetForm": "정보",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      214
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:주거",
+    "korean": "도시의 주거 지역은 조용해요.",
+    "gloss": "The city's residential area is quiet.",
+    "targetForm": "주거",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:주소",
+    "korean": "친구에게 주소를 알려줬어요.",
+    "gloss": "I told my friend my address.",
+    "targetForm": "주소",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:짖다",
+    "korean": "마을 개가 밤에 자주 짖어요.",
+    "gloss": "The village dog often barks at night.",
+    "targetForm": "짖",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:짜다",
+    "korean": "할머니께서 천을 짜신다.",
+    "gloss": "Grandmother weaves cloth.",
+    "targetForm": "짜신다",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "auditFix": {
+      "verdict": "polish:fix",
+      "issue": "Honorific mismatch confirmed: 할머니 as subject normally takes the honorific verb (짜신다) and ideally honorific particle 께서. The plain form 짠다 reads as disrespectful in standard usage.",
+      "evidenceUrl": "https://www.rollingkorea.com/en/k-lab/korean-particle-kkeseo/",
+      "auditedAt": "2026-05-09"
+    },
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      5011
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:치석",
+    "korean": "치석이 생기지 않게 양치질을 잘해요.",
+    "gloss": "I brush well so plaque doesn't form.",
+    "targetForm": "치석",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:치우다",
+    "korean": "방을 깨끗이 치우고 잠을 자요.",
+    "gloss": "I tidy the room cleanly and then sleep.",
+    "targetForm": "치우",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_25",
+    "areasReferenced": [
+      "route_25",
+      "route_16",
+      "route_18",
+      "route_22",
+      "rom_mined",
+      "seven_island"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      2944
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:토란",
+    "korean": "할머니가 토란국을 끓이셨어요.",
+    "gloss": "Grandmother made taro soup.",
+    "targetForm": "토란",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:토의",
+    "korean": "친구들과 다음 계획을 토의했어요.",
+    "gloss": "I discussed the next plan with friends.",
+    "targetForm": "토의",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:트이다",
+    "korean": "산을 넘으니 시야가 트이는 느낌이에요.",
+    "gloss": "Crossing the mountain, my view feels open.",
+    "targetForm": "트이",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:포트",
+    "korean": "여행용 포트로 차를 끓였어요.",
+    "gloss": "I made tea with a travel kettle.",
+    "targetForm": "포트",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [],
+    "sourceTypes": [],
+    "primarySourceType": ""
+  },
+  {
+    "vocabId": "rom-mine-v3:폭발",
+    "korean": "멀리서 작은 폭발 소리가 들렸어요.",
+    "gloss": "I heard a small explosion sound far away.",
+    "targetForm": "폭발",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "system_text"
+    ],
+    "primarySourceType": "system_text",
+    "liveRecIds": [
+      5028
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:하하",
+    "korean": "친구가 하하 웃으며 인사했어요.",
+    "gloss": "My friend laughed haha and greeted me.",
+    "targetForm": "하하",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "route_3",
+      "route_4",
+      "route_24",
+      "route_25",
+      "route_6",
+      "route_11",
+      "route_13",
+      "route_14",
+      "route_15",
+      "route_16",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "npc_dialog",
+    "liveRecIds": [
+      1358,
+      1524,
+      2097
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:헤헤",
+    "korean": "동생은 부끄러워 헤헤 웃었어요.",
+    "gloss": "My younger sibling laughed shyly hehe.",
+    "targetForm": "헤헤",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "cerulean_city",
+      "water_labyrinth",
+      "outcast_island",
+      "resort_gorgeous",
+      "memorial_pillar",
+      "water_path",
+      "canyon_entrance",
+      "ruin_valley",
+      "green_path",
+      "trainer_tower",
+      "seven_island",
+      "one_island",
+      "kindle_road",
+      "treasure_beach"
+    ],
+    "sourceTypes": [],
+    "primarySourceType": "",
+    "liveRecIds": [
+      980,
+      1951,
+      2034,
+      2982,
+      4230
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:화상",
+    "korean": "뜨거운 물에 화상을 입지 않게 조심해요.",
+    "gloss": "Be careful not to get burned by hot water.",
+    "targetForm": "화상",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "pallet_town",
+      "viridian_city",
+      "pewter_city",
+      "cerulean_city",
+      "saffron_city",
+      "lavender_town",
+      "vermilion_city",
+      "fuchsia_city",
+      "cinnabar_island",
+      "celadon_city",
+      "indigo_plateau",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "item_description",
+      "npc_dialog",
+      "system_text"
+    ],
+    "primarySourceType": "item_description",
+    "liveRecIds": [
+      1116,
+      2141,
+      2208,
+      2617,
+      2640
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:막치기",
+    "korean": "포켓몬이 막치기를 배웠어요.",
+    "gloss": "The Pokémon learned Karate Chop.",
+    "targetForm": "막치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "rom_mined",
+      "celadon_city",
+      "pewter_city",
+      "route_11",
+      "route_6"
+    ],
+    "liveRecIds": [
+      7015
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:태권당수",
+    "korean": "트레이너가 포켓몬에게 태권당수를 가르쳤어요.",
+    "gloss": "The trainer taught the Pokémon a chop strike.",
+    "targetForm": "태권당수",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "cerulean_city",
+      "route_3",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:연속뺨치기",
+    "korean": "친구의 포켓몬이 연속뺨치기를 잘 써요.",
+    "gloss": "My friend's Pokémon uses a slapping flurry well.",
+    "targetForm": "연속뺨치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pewter_city",
+      "route_3",
+      "route_6",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:연속펀치",
+    "korean": "연속펀치는 두 번에서 다섯 번까지 연속으로 때리는 기술이에요.",
+    "gloss": "Comet Punch is a move that strikes two to five times in a row.",
+    "targetForm": "연속펀치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_21",
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:메가톤펀치",
+    "korean": "체육관 시합에서 메가톤펀치를 사용했어요.",
+    "gloss": "I used Mega Punch in the gym match.",
+    "targetForm": "메가톤펀치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_4",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_4"
+    ],
+    "liveRecIds": [
+      1233,
+      1234
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:고양이돈받기",
+    "korean": "기술 목록에 고양이돈받기가 있어요.",
+    "gloss": "Pay Day is on the move list.",
+    "targetForm": "고양이돈받기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pewter_city",
+      "route_6"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:불꽃펀치",
+    "korean": "포켓몬이 시합에서 불꽃펀치를 보여 줬어요.",
+    "gloss": "The Pokémon showed off Fire Punch in the match.",
+    "targetForm": "불꽃펀치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:냉동펀치",
+    "korean": "냉동펀치는 트레이너의 자랑이에요.",
+    "gloss": "Ice Punch is the trainer's pride.",
+    "targetForm": "냉동펀치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:번개펀치",
+    "korean": "친구가 번개펀치를 처음 봤어요.",
+    "gloss": "My friend saw Thunder Punch for the first time.",
+    "targetForm": "번개펀치",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:할퀴기",
+    "korean": "이 포켓몬은 할퀴기를 익히는 중이에요.",
+    "gloss": "This Pokémon is learning Scratch.",
+    "targetForm": "할퀴기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "route_1",
+      "route_3",
+      "route_4",
+      "route_6",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:찝기",
+    "korean": "포켓몬이 찝기로 상대를 꽉 잡았어요.",
+    "gloss": "The Pokémon grabbed the opponent tightly with Vise Grip.",
+    "targetForm": "찝기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": []
+  },
+  {
+    "vocabId": "rom-mine-v3:가위자르기",
+    "korean": "선배가 가위자르기의 사용법을 알려 줬어요.",
+    "gloss": "A senior taught me how to use Guillotine.",
+    "targetForm": "가위자르기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pallet_town"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:칼바람",
+    "korean": "포켓몬이 칼바람을 배웠어요.",
+    "gloss": "The Pokémon learned Razor Wind.",
+    "targetForm": "칼바람",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "liveRecIds": [
+      7027
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:칼춤",
+    "korean": "트레이너가 포켓몬에게 칼춤을 가르쳤어요.",
+    "gloss": "The trainer taught the Pokémon Swords Dance.",
+    "targetForm": "칼춤",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "rom_mined"
+    ],
+    "liveRecIds": [
+      7028
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:풀베기",
+    "korean": "친구의 포켓몬이 풀베기를 잘 써요.",
+    "gloss": "My friend's Pokémon uses Cut well.",
+    "targetForm": "풀베기",
+    "areaId": "ss_anne",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "ss_anne",
+    "areasReferenced": [
+      "ss_anne",
+      "rom_mined"
+    ],
+    "sourceTypes": [
+      "pokemon_move",
+      "system_text"
+    ],
+    "primarySourceType": "pokemon_move",
+    "liveRecIds": [
+      293
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:바람일으키기",
+    "korean": "바람일으키기는 날개로 바람을 일으켜 공격하는 기술이에요.",
+    "gloss": "Gust is a move that attacks by stirring up wind with wings.",
+    "targetForm": "바람일으키기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_1",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_1",
+      "route_12",
+      "route_13",
+      "route_24",
+      "saffron_city",
+      "seafoam_islands"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:날개치기",
+    "korean": "체육관 시합에서 날개치기를 사용했어요.",
+    "gloss": "I used Wing Attack in the gym match.",
+    "targetForm": "날개치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "route_1",
+      "route_13",
+      "route_23",
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:날려버리기",
+    "korean": "기술 목록에 날려버리기가 있어요.",
+    "gloss": "Whirlwind is on the move list.",
+    "targetForm": "날려버리기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_1",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_1",
+      "route_13",
+      "route_24",
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:공중날기",
+    "korean": "포켓몬이 시합에서 공중날기를 보여 줬어요.",
+    "gloss": "The Pokémon showed off Fly in the match.",
+    "targetForm": "공중날기",
+    "areaId": "fuchsia_city",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "fuchsia_city",
+    "areasReferenced": [
+      "fuchsia_city"
+    ],
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move"
+  },
+  {
+    "vocabId": "rom-mine-v3:조이기",
+    "korean": "조이기는 트레이너의 자랑이에요.",
+    "gloss": "Bind is the trainer's pride.",
+    "targetForm": "조이기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "rom_mined",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": []
+  },
+  {
+    "vocabId": "rom-mine-v3:힘껏치기",
+    "korean": "친구가 힘껏치기를 처음 봤어요.",
+    "gloss": "My friend saw Slam for the first time.",
+    "targetForm": "힘껏치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_24",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:덩굴채찍",
+    "korean": "이 포켓몬은 덩굴채찍을 익히는 중이에요.",
+    "gloss": "This Pokémon is learning Vine Whip.",
+    "targetForm": "덩굴채찍",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pallet_town",
+      "route_12",
+      "route_24"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:짓밟기",
+    "korean": "포켓몬이 짓밟기를 사용했어요.",
+    "gloss": "The Pokémon used Stomp.",
+    "targetForm": "짓밟기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "fuchsia_city",
+      "pallet_town"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:두번치기",
+    "korean": "선배가 두번치기의 사용법을 알려 줬어요.",
+    "gloss": "A senior taught me how to use Double Kick.",
+    "targetForm": "두번치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_3",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_3",
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:메가톤킥",
+    "korean": "포켓몬이 메가톤킥을 배웠어요.",
+    "gloss": "The Pokémon learned Mega Kick.",
+    "targetForm": "메가톤킥",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:점프킥",
+    "korean": "트레이너가 포켓몬에게 점프킥을 가르쳤어요.",
+    "gloss": "The trainer taught the Pokémon Jump Kick.",
+    "targetForm": "점프킥",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:돌려차기",
+    "korean": "친구의 포켓몬이 돌려차기를 잘 써요.",
+    "gloss": "My friend's Pokémon uses Rolling Kick well.",
+    "targetForm": "돌려차기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "saffron_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:모래뿌리기",
+    "korean": "모래뿌리기는 상대의 명중률을 낮추는 기술이에요.",
+    "gloss": "Sand Attack is a move that lowers the opponent's accuracy.",
+    "targetForm": "모래뿌리기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_1",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "mt_moon",
+      "route_1",
+      "route_13",
+      "route_4",
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:박치기",
+    "korean": "체육관 시합에서 박치기를 사용했어요.",
+    "gloss": "I used Headbutt in the gym match.",
+    "targetForm": "박치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "rom_mined",
+      "cerulean_city",
+      "cinnabar_island",
+      "pallet_town",
+      "pewter_city",
+      "route_11",
+      "route_12"
+    ],
+    "sourceTypes": [
+      "pokemon_move",
+      "system_text"
+    ],
+    "primarySourceType": "pokemon_move",
+    "liveRecIds": [
+      5012
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:뿔찌르기",
+    "korean": "기술 목록에 뿔찌르기가 있어요.",
+    "gloss": "Horn Attack is on the move list.",
+    "targetForm": "뿔찌르기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pewter_city",
+      "route_3",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:마구찌르기",
+    "korean": "포켓몬이 시합에서 마구찌르기를 보여 줬어요.",
+    "gloss": "The Pokémon showed off Fury Attack in the match.",
+    "targetForm": "마구찌르기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "fuchsia_city",
+      "mt_moon",
+      "pewter_city",
+      "route_16",
+      "route_24",
+      "route_3",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:뿔드릴",
+    "korean": "뿔드릴은 트레이너의 자랑이에요.",
+    "gloss": "Horn Drill is the trainer's pride.",
+    "targetForm": "뿔드릴",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "viridian_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_3",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:몸통박치기",
+    "korean": "친구가 몸통박치기를 처음 봤어요.",
+    "gloss": "My friend saw Tackle for the first time.",
+    "targetForm": "몸통박치기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "celadon_city",
+      "cinnabar_island",
+      "fuchsia_city",
+      "mt_moon",
+      "pallet_town",
+      "pewter_city",
+      "route_1",
+      "route_10",
+      "route_12",
+      "route_13",
+      "route_2",
+      "saffron_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:누르기",
+    "korean": "이 포켓몬은 누르기를 익히는 중이에요.",
+    "gloss": "This Pokémon is learning Body Slam.",
+    "targetForm": "누르기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "four_island",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "two_island",
+      "four_island",
+      "three_island"
+    ],
+    "liveRecIds": [
+      3072
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:김밥말이",
+    "korean": "포켓몬이 김밥말이로 상대를 감쌌어요.",
+    "gloss": "The Pokémon wrapped the opponent with Wrap.",
+    "targetForm": "김밥말이",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "pallet_town",
+      "pewter_city",
+      "route_24"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:난동부리기",
+    "korean": "선배가 난동부리기의 사용법을 알려 줬어요.",
+    "gloss": "A senior taught me how to use Thrash.",
+    "targetForm": "난동부리기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "cerulean_city",
+      "pallet_town",
+      "pewter_city",
+      "route_3",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:이판사판태클",
+    "korean": "포켓몬이 이판사판태클을 배웠어요.",
+    "gloss": "The Pokémon learned Double-Edge.",
+    "targetForm": "이판사판태클",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pewter_city",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "cerulean_city",
+      "mt_moon",
+      "pewter_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:꼬리흔들기",
+    "korean": "트레이너가 포켓몬에게 꼬리흔들기를 가르쳤어요.",
+    "gloss": "The trainer taught the Pokémon Tail Whip.",
+    "targetForm": "꼬리흔들기",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "cerulean_city",
+      "fuchsia_city",
+      "pallet_town",
+      "pewter_city",
+      "route_1",
+      "route_13",
+      "route_2",
+      "route_21",
+      "route_3",
+      "viridian_city"
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:독침",
+    "korean": "친구의 포켓몬이 독침을 잘 써요.",
+    "gloss": "My friend's Pokémon uses Poison Sting well.",
+    "targetForm": "독침",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "pallet_town",
+    "areasReferenced": [
+      "rom_mined",
+      "pallet_town",
+      "pewter_city",
+      "route_3",
+      "route_4"
+    ],
+    "sourceTypes": [
+      "pokemon_move",
+      "system_text",
+      "pokemon_species"
+    ],
+    "primarySourceType": "pokemon_move",
+    "liveRecIds": [
+      5135
+    ]
+  },
+  {
+    "vocabId": "rom-mine-v3:더블니들",
+    "korean": "더블니들은 포켓몬이 시합에서 쓰는 기술이에요.",
+    "gloss": "Twineedle is a move Pokémon use in battle.",
+    "targetForm": "더블니들",
+    "areaId": "rom_mined",
+    "source": "themed-v1",
+    "generator": "llm-claude-opus-4-7",
+    "firstAreaEncountered": "route_24",
+    "sourceTypes": [
+      "pokemon_move"
+    ],
+    "primarySourceType": "pokemon_move",
+    "areasReferenced": [
+      "route_24"
+    ]
+  }
+]
+```

@@ -1,0 +1,31 @@
+{
+  "auditedAt": "2026-05-14",
+  "preset": "moneo-sense-sweep",
+  "totalInspected": 586,
+  "totalFlagged": 6,
+  "byVerdict": {
+    "wrong_sense": 3,
+    "pos_mismatch": 3
+  },
+  "byDataset": {
+    "sentences-ko-themed-mined.json": {
+      "inspected": 586,
+      "flagged": 6
+    }
+  },
+  "byShard": {
+    "app/src/main/assets/moneo/sentences-ko-themed-mined.json (0, 200)": {
+      "inspected": 200,
+      "flagged": 6
+    },
+    "app/src/main/assets/moneo/sentences-ko-themed-mined.json (200, 400)": {
+      "inspected": 200,
+      "flagged": 0
+    },
+    "app/src/main/assets/moneo/sentences-ko-themed-mined.json (400, 586)": {
+      "inspected": 186,
+      "flagged": 0
+    }
+  },
+  "rejected": []
+}

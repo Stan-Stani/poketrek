@@ -1,0 +1,8 @@
+{
+  "shardFile": "app/src/main/assets/moneo/sentences-ko-themed-mined.json",
+  "range": [200, 400],
+  "inspected": 200,
+  "auditor": "llm-claude-opus-4-7 (subagent)",
+  "auditedAt": "2026-05-14",
+  "flagged": []
+}

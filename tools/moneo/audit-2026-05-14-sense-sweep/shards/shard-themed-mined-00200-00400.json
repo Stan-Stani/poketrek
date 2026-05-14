@@ -1,0 +1,3985 @@
+{
+  "dataset": "themed-mined",
+  "shardFile": "app/src/main/assets/moneo/sentences-ko-themed-mined.json",
+  "range": [
+    200,
+    400
+  ],
+  "count": 200,
+  "keyField": "vocabId",
+  "entries": [
+    {
+      "vocabId": "rom-mine-v3:바늘미사일",
+      "korean": "체육관 시합에서 바늘미사일을 사용했어요.",
+      "gloss": "I used Pin Missile in the gym match.",
+      "targetForm": "바늘미사일",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_24",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:째려보기",
+      "korean": "기술 목록에 째려보기가 있어요.",
+      "gloss": "Leer is on the move list.",
+      "targetForm": "째려보기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "route_16",
+        "route_21",
+        "route_23",
+        "route_3",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:물기",
+      "korean": "포켓몬이 시합에서 물기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Bite in the match.",
+      "targetForm": "물기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_4",
+      "areasReferenced": [
+        "route_4",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokedex_entry",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4953
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:울음소리",
+      "korean": "울음소리는 트레이너의 자랑이에요.",
+      "gloss": "Growl is the trainer's pride.",
+      "targetForm": "울음소리",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "cinnabar_island",
+        "fuchsia_city",
+        "pallet_town",
+        "pewter_city",
+        "route_1",
+        "route_13",
+        "route_16",
+        "route_3",
+        "route_6",
+        "silph_co",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:울부짖기",
+      "korean": "친구가 울부짖기를 처음 봤어요.",
+      "gloss": "My friend saw Roar for the first time.",
+      "targetForm": "울부짖기",
+      "areaId": "route_23",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_23",
+      "areasReferenced": [
+        "route_23"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:노래하기",
+      "korean": "이 포켓몬은 노래하기를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Sing.",
+      "targetForm": "노래하기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city",
+        "route_3",
+        "route_6",
+        "silph_co"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:초음파",
+      "korean": "포켓몬이 초음파를 사용했어요.",
+      "gloss": "The Pokémon used Supersonic.",
+      "targetForm": "초음파",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "rom_mined",
+        "cinnabar_island",
+        "pallet_town",
+        "pewter_city",
+        "route_12",
+        "route_24",
+        "viridian_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4967
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:소닉붐",
+      "korean": "선배가 소닉붐의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Sonic Boom.",
+      "targetForm": "소닉붐",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "cinnabar_island",
+        "pallet_town",
+        "route_10"
+      ],
+      "liveRecIds": [
+        7063
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:사슬묶기",
+      "korean": "포켓몬이 사슬묶기를 배웠어요.",
+      "gloss": "The Pokémon learned Disable.",
+      "targetForm": "사슬묶기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "cerulean_cave",
+        "cinnabar_island",
+        "pallet_town",
+        "pewter_city",
+        "route_11",
+        "route_12",
+        "route_24",
+        "route_3"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:용해액",
+      "korean": "트레이너가 포켓몬에게 용해액을 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Acid.",
+      "targetForm": "용해액",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "pallet_town",
+        "pewter_city",
+        "route_24"
+      ],
+      "liveRecIds": [
+        7065
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:불꽃세례",
+      "korean": "친구의 포켓몬이 불꽃세례를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Ember well.",
+      "targetForm": "불꽃세례",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "fuchsia_city",
+        "pallet_town",
+        "route_23",
+        "route_7"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:화염방사",
+      "korean": "화염방사는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Flamethrower is a move Pokémon use in battle.",
+      "targetForm": "화염방사",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:흰안개",
+      "korean": "체육관 시합에서 흰안개를 사용했어요.",
+      "gloss": "I used Mist in the gym match.",
+      "targetForm": "흰안개",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "silph_co",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_cave",
+        "seafoam_islands",
+        "silph_co"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:물대포",
+      "korean": "기술 목록에 물대포가 있어요.",
+      "gloss": "Water Gun is on the move list.",
+      "targetForm": "물대포",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "cinnabar_island",
+        "fuchsia_city",
+        "mt_moon",
+        "pallet_town",
+        "silph_co",
+        "viridian_city"
+      ],
+      "liveRecIds": [
+        7069
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:하이드로펌프",
+      "korean": "포켓몬이 시합에서 하이드로펌프를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Hydro Pump in the match.",
+      "targetForm": "하이드로펌프",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "fuchsia_city",
+        "pallet_town",
+        "pewter_city",
+        "silph_co",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:파도타기",
+      "korean": "파도타기는 트레이너의 자랑이에요.",
+      "gloss": "Surf is the trainer's pride.",
+      "targetForm": "파도타기",
+      "areaId": "safari_zone",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "safari_zone",
+      "areasReferenced": [
+        "safari_zone"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:냉동빔",
+      "korean": "친구가 냉동빔을 처음 봤어요.",
+      "gloss": "My friend saw Ice Beam for the first time.",
+      "targetForm": "냉동빔",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:눈보라",
+      "korean": "이 포켓몬은 눈보라를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Blizzard.",
+      "targetForm": "눈보라",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        6287
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:환상빔",
+      "korean": "환상빔이 들판에 뻗어 나갔어요.",
+      "gloss": "Psybeam stretched out across the field.",
+      "targetForm": "환상빔",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "환상빔 (Psybeam) is a beam of energy, not a sound. 울려 퍼지다 needs an audible subject. A 빔 normally 발사되다 / 뻗어 나가다, not 울려 퍼지다.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "mt_moon",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "mt_moon",
+        "route_12",
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:거품광선",
+      "korean": "선배가 거품광선의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Bubble Beam.",
+      "targetForm": "거품광선",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "fuchsia_city",
+        "mt_moon",
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:오로라빔",
+      "korean": "포켓몬이 오로라빔을 배웠어요.",
+      "gloss": "The Pokémon learned Aurora Beam.",
+      "targetForm": "오로라빔",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "mt_moon",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:파괴광선",
+      "korean": "트레이너가 포켓몬에게 파괴광선을 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Hyper Beam.",
+      "targetForm": "파괴광선",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:쪼기",
+      "korean": "포켓몬이 쪼기로 상대를 공격했어요.",
+      "gloss": "The Pokémon attacked the opponent with Peck.",
+      "targetForm": "쪼기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "power_plant",
+        "route_16",
+        "route_3",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:회전부리",
+      "korean": "회전부리는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Drill Peck is a move Pokémon use in battle.",
+      "targetForm": "회전부리",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_3",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "power_plant",
+        "route_16",
+        "route_3"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:지옥의바퀴",
+      "korean": "체육관 시합에서 지옥의바퀴를 사용했어요.",
+      "gloss": "I used Submission in the gym match.",
+      "targetForm": "지옥의바퀴",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:안다리걸기",
+      "korean": "기술 목록에 안다리걸기가 있어요.",
+      "gloss": "Low Kick is on the move list.",
+      "targetForm": "안다리걸기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "route_3",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:카운터",
+      "korean": "포켓몬이 시합에서 카운터를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Counter in the match.",
+      "targetForm": "카운터",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city",
+        "pewter_city",
+        "route_4",
+        "fuchsia_city",
+        "celadon_city",
+        "rom_mined",
+        "seven_island"
+      ],
+      "sourceTypes": [
+        "npc_dialog",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        2396
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:지구던지기",
+      "korean": "지구던지기는 트레이너의 자랑이에요.",
+      "gloss": "Seismic Toss is the trainer's pride.",
+      "targetForm": "지구던지기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "route_3",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:괴력",
+      "korean": "친구가 괴력을 처음 봤어요.",
+      "gloss": "My friend saw Strength for the first time.",
+      "targetForm": "괴력",
+      "areaId": "saffron_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "saffron_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text",
+        "pokemon_ability",
+        "pokemon_species"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        66
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:흡수",
+      "korean": "이 포켓몬은 흡수를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Absorb.",
+      "targetForm": "흡수",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4534
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:메가드레인",
+      "korean": "친구의 포켓몬이 메가드레인을 잘 써요.",
+      "gloss": "My friend's Pokémon uses Mega Drain well.",
+      "targetForm": "메가드레인",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "메가드레인 (Mega Drain) is an HP-absorbing move, silent and non-acoustic. The 울려 퍼지다 collocation is incorrect; nothing audible is being produced.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:씨뿌리기",
+      "korean": "선배가 씨뿌리기의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Leech Seed.",
+      "targetForm": "씨뿌리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:성장",
+      "korean": "포켓몬이 성장을 배웠어요.",
+      "gloss": "The Pokémon learned Growth.",
+      "targetForm": "성장",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "pewter_city",
+        "route_7",
+        "rom_mined",
+        "resort_gorgeous",
+        "green_path",
+        "trainer_tower",
+        "outcast_island",
+        "memorial_pillar",
+        "canyon_entrance",
+        "ruin_valley",
+        "water_path",
+        "water_labyrinth"
+      ],
+      "sourceTypes": [
+        "npc_dialog",
+        "pokedex_entry",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        1963
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:잎날가르기",
+      "korean": "트레이너가 포켓몬에게 잎날가르기를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Razor Leaf.",
+      "targetForm": "잎날가르기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "route_12",
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:솔라빔",
+      "korean": "친구의 포켓몬이 솔라빔을 잘 써요.",
+      "gloss": "My friend's Pokémon uses Solar Beam well.",
+      "targetForm": "솔라빔",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:독가루",
+      "korean": "독가루는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Poison Powder is a move Pokémon use in battle.",
+      "targetForm": "독가루",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_12",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_12"
+      ],
+      "liveRecIds": [
+        4996
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:저리가루",
+      "korean": "체육관 시합에서 저리가루를 사용했어요.",
+      "gloss": "I used Stun Spore in the gym match.",
+      "targetForm": "저리가루",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_24",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_12",
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:수면가루",
+      "korean": "기술 목록에 수면가루가 있어요.",
+      "gloss": "Sleep Powder is on the move list.",
+      "targetForm": "수면가루",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "route_12",
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:꽃잎댄스",
+      "korean": "포켓몬이 시합에서 꽃잎댄스를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Petal Dance in the match.",
+      "targetForm": "꽃잎댄스",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:실뿜기",
+      "korean": "실뿜기는 트레이너의 자랑이에요.",
+      "gloss": "String Shot is the trainer's pride.",
+      "targetForm": "실뿜기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:용의분노",
+      "korean": "친구가 용의분노를 처음 봤어요.",
+      "gloss": "My friend saw Dragon Rage for the first time.",
+      "targetForm": "용의분노",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:회오리불꽃",
+      "korean": "이 포켓몬은 회오리불꽃을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Fire Spin.",
+      "targetForm": "회오리불꽃",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "fuchsia_city",
+        "pallet_town",
+        "route_23",
+        "route_7"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:전기쇼크",
+      "korean": "포켓몬이 전기쇼크를 사용했어요.",
+      "gloss": "The Pokémon used Thunder Shock.",
+      "targetForm": "전기쇼크",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cinnabar_island",
+        "power_plant",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:전기자석파",
+      "korean": "선배가 전기자석파의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Thunder Wave.",
+      "targetForm": "전기자석파",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cinnabar_island",
+        "power_plant",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:번개",
+      "korean": "포켓몬이 번개를 배웠어요.",
+      "gloss": "The Pokémon learned Thunder.",
+      "targetForm": "번개",
+      "areaId": "power_plant",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "power_plant",
+      "areasReferenced": [
+        "power_plant",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        2365
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:돌떨구기",
+      "korean": "트레이너가 포켓몬에게 돌떨구기를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Rock Throw.",
+      "targetForm": "돌떨구기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:지진",
+      "korean": "친구의 포켓몬이 지진을 잘 써요.",
+      "gloss": "My friend's Pokémon uses Earthquake well.",
+      "targetForm": "지진",
+      "areaId": "viridian_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "viridian_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4977
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:땅가르기",
+      "korean": "땅가르기는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Fissure is a move Pokémon use in battle.",
+      "targetForm": "땅가르기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_1"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:구멍파기",
+      "korean": "체육관 시합에서 구멍파기를 사용했어요.",
+      "gloss": "I used Dig in the gym match.",
+      "targetForm": "구멍파기",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:맹독",
+      "korean": "기술 목록에 맹독이 있어요.",
+      "gloss": "Toxic is on the move list.",
+      "targetForm": "맹독",
+      "areaId": "fuchsia_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city",
+        "celadon_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "item_description",
+        "npc_dialog",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        2562
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:염동력",
+      "korean": "포켓몬이 시합에서 염동력을 보여 줬어요.",
+      "gloss": "The Pokémon showed off Confusion in the match.",
+      "targetForm": "염동력",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "saffron_city"
+      ],
+      "liveRecIds": [
+        4980,
+        6321,
+        6322,
+        6477
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:최면술",
+      "korean": "최면술은 트레이너의 자랑이에요.",
+      "gloss": "Hypnosis is the trainer's pride.",
+      "targetForm": "최면술",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "areasReferenced": [
+        "rom_mined",
+        "pewter_city",
+        "route_11",
+        "vermilion_city",
+        "viridian_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        5024
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:요가포즈",
+      "korean": "친구가 요가포즈를 처음 봤어요.",
+      "gloss": "My friend saw Meditate for the first time.",
+      "targetForm": "요가포즈",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city",
+        "route_11",
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:고속이동",
+      "korean": "이 포켓몬은 고속이동을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Agility.",
+      "targetForm": "고속이동",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "fuchsia_city",
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "power_plant",
+        "route_1",
+        "route_13",
+        "route_16",
+        "route_23",
+        "route_24",
+        "route_3",
+        "saffron_city",
+        "seafoam_islands",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:전광석화",
+      "korean": "포켓몬이 전광석화로 돌진했어요.",
+      "gloss": "The Pokémon charged quickly with Quick Attack.",
+      "targetForm": "전광석화",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "redundant",
+        "issue": "전광석화 (電光石火) is a four-character idiom whose lexical meaning is 'as fast as lightning/flint sparks' — speed is baked into the word. Adding the adverb 재빨리 ('quickly') immediately after produces tautological reinforcement: literally 'charged lightning-fast quickly'. Native Korean usage with 전광석화 typically pairs it with verbs of motion alone (전광석화로 돌진했어요 / 전광석화처럼 달려들었어요) without an additional speed adverb.",
+        "evidenceUrl": "https://namu.wiki/w/%EC%A0%84%EA%B4%91%EC%84%9D%ED%99%94",
+        "auditedAt": "2026-05-09",
+        "round": 2
+      },
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "fuchsia_city",
+        "route_1",
+        "route_13",
+        "route_2",
+        "route_7",
+        "saffron_city",
+        "viridian_city"
+      ],
+      "liveRecIds": [
+        7111
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:분노",
+      "korean": "선배가 분노의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Rage.",
+      "targetForm": "분노",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "cerulean_city",
+        "pallet_town",
+        "pewter_city",
+        "route_16",
+        "route_21",
+        "route_24",
+        "route_3"
+      ],
+      "liveRecIds": [
+        7095
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:순간이동",
+      "korean": "포켓몬이 순간이동을 배웠어요.",
+      "gloss": "The Pokémon learned Teleport.",
+      "targetForm": "순간이동",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_24",
+      "areasReferenced": [
+        "route_24",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokedex_entry",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        67
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:나이트헤드",
+      "korean": "트레이너가 포켓몬에게 나이트헤드를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Night Shade.",
+      "targetForm": "나이트헤드",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "vermilion_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "vermilion_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:흉내내기",
+      "korean": "친구의 포켓몬이 흉내내기를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Mimic well.",
+      "targetForm": "흉내내기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "saffron_city",
+        "cinnabar_island",
+        "indigo_plateau"
+      ],
+      "liveRecIds": [
+        2693,
+        2696,
+        2698,
+        2753
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:싫은소리",
+      "korean": "싫은소리는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Screech is a move Pokémon use in battle.",
+      "targetForm": "싫은소리",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "cinnabar_island",
+        "pallet_town",
+        "pewter_city",
+        "route_10",
+        "route_3",
+        "route_6",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:그림자분신",
+      "korean": "체육관 시합에서 그림자분신을 사용했어요.",
+      "gloss": "I used Double Team in the gym match.",
+      "targetForm": "그림자분신",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:단단해지기",
+      "korean": "기술 목록에 단단해지기가 있어요.",
+      "gloss": "Harden is on the move list.",
+      "targetForm": "단단해지기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "fuchsia_city",
+        "pallet_town",
+        "route_2"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:작아지기",
+      "korean": "포켓몬이 시합에서 작아지기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Minimize in the match.",
+      "targetForm": "작아지기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "fuchsia_city",
+        "pewter_city",
+        "route_6"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:연막",
+      "korean": "연막은 트레이너의 자랑이에요.",
+      "gloss": "Smokescreen is the trainer's pride.",
+      "targetForm": "연막",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city",
+        "pallet_town"
+      ],
+      "liveRecIds": [
+        7120
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:이상한빛",
+      "korean": "친구가 이상한빛을 처음 봤어요.",
+      "gloss": "My friend saw Confuse Ray for the first time.",
+      "targetForm": "이상한빛",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "route_7",
+        "silph_co",
+        "vermilion_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:껍질에숨기",
+      "korean": "이 포켓몬은 껍질에숨기 기술을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Withdraw.",
+      "targetForm": "껍질에숨기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "The official Korean move name 껍질에숨기 contains the internal locative particle 에 ('hide IN [the] shell'). When followed by the object marker 를, learners parse the string as '...껍질에 숨기를...' (two competing clausal readings: '...is in shell, learning to hide...' vs '...is learning [the move] Withdraw'). The double-particle stacking inside a single noun phrase is awkward Korean and causes ambiguity for L2 readers. The previous auditor flagged this as 'uncertain' and no fix was applied; the issue persists.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09",
+        "round": 2
+      },
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city",
+        "cerulean_city"
+      ],
+      "liveRecIds": [
+        997
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:웅크리기",
+      "korean": "이 포켓몬은 웅크리기를 잘 써요.",
+      "gloss": "This Pokémon uses Defense Curl well.",
+      "targetForm": "웅크리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "wrong_collocation",
+        "issue": "울려 퍼지다 means 'to resonate/echo and spread,' used exclusively for sounds. 웅크리기 (Defense Curl) is a silent self-targeting pose, so it cannot 울려 퍼지다. The collocation is unnatural in Korean.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "pewter_city",
+        "route_12",
+        "route_3",
+        "route_4",
+        "route_6"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:배리어",
+      "korean": "선배가 배리어의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Barrier.",
+      "targetForm": "배리어",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_cave",
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:빛의장막",
+      "korean": "포켓몬이 빛의장막을 배웠어요.",
+      "gloss": "The Pokémon learned Light Screen.",
+      "targetForm": "빛의장막",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:흑안개",
+      "korean": "트레이너가 포켓몬에게 흑안개를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Haze.",
+      "targetForm": "흑안개",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:리플렉터",
+      "korean": "친구의 포켓몬이 리플렉터를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Reflect well.",
+      "targetForm": "리플렉터",
+      "areaId": "saffron_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "saffron_city",
+        "celadon_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "item_description",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        6514
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:기충전",
+      "korean": "기충전은 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Focus Energy is a move Pokémon use in battle.",
+      "targetForm": "기충전",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "mt_moon",
+        "pewter_city",
+        "route_2",
+        "route_24",
+        "route_3",
+        "saffron_city",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:참기",
+      "korean": "체육관 시합에서 참기를 사용했어요.",
+      "gloss": "I used Bide in the gym match.",
+      "targetForm": "참기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4610
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:손가락흔들기",
+      "korean": "기술 목록에 손가락흔들기가 있어요.",
+      "gloss": "Metronome is on the move list.",
+      "targetForm": "손가락흔들기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "viridian_city",
+        "pewter_city",
+        "route_4",
+        "fuchsia_city",
+        "cinnabar_island",
+        "celadon_city",
+        "seven_island"
+      ],
+      "liveRecIds": [
+        2664
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:따라하기",
+      "korean": "포켓몬이 시합에서 따라하기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Mirror Move in the match.",
+      "targetForm": "따라하기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_1",
+        "route_13",
+        "route_16",
+        "route_3",
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:자폭",
+      "korean": "자폭은 트레이너의 자랑이에요.",
+      "gloss": "Self-Destruct is the trainer's pride.",
+      "targetForm": "자폭",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city",
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "route_10"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4420
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:알폭탄",
+      "korean": "친구가 알폭탄을 처음 봤어요.",
+      "gloss": "My friend saw Egg Bomb for the first time.",
+      "targetForm": "알폭탄",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:핥기",
+      "korean": "이 포켓몬은 핥기를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Lick.",
+      "targetForm": "핥기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "vermilion_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:스모그",
+      "korean": "스모그가 들판에 퍼졌어요.",
+      "gloss": "Smog spread across the field.",
+      "targetForm": "스모그",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "wrong_collocation",
+        "issue": "Smog/gas spreads or drifts (퍼지다 is fine alone, but 울려 퍼지다 specifically means sound resonating). Gas does not 울리다, so this is the wrong verb pairing.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "celadon_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:오물공격",
+      "korean": "선배가 오물공격의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Sludge.",
+      "targetForm": "오물공격",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:뼈다귀치기",
+      "korean": "포켓몬이 뼈다귀치기를 배웠어요.",
+      "gloss": "The Pokémon learned Bone Club.",
+      "targetForm": "뼈다귀치기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:불대문자",
+      "korean": "트레이너가 포켓몬에게 불대문자를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Fire Blast.",
+      "targetForm": "불대문자",
+      "areaId": "cinnabar_island",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "cinnabar_island",
+      "areasReferenced": [
+        "cinnabar_island"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:폭포오르기",
+      "korean": "친구의 포켓몬이 폭포오르기를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Waterfall well.",
+      "targetForm": "폭포오르기",
+      "areaId": "cerulean_cave",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "cerulean_cave",
+      "areasReferenced": [
+        "cerulean_cave"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:껍질끼우기",
+      "korean": "껍질끼우기는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Clamp is a move Pokémon use in battle.",
+      "targetForm": "껍질끼우기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:스피드스타",
+      "korean": "체육관 시합에서 스피드스타를 사용했어요.",
+      "gloss": "I used Swift in the gym match.",
+      "targetForm": "스피드스타",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_cave",
+        "cinnabar_island",
+        "fuchsia_city",
+        "mt_moon",
+        "pallet_town",
+        "route_10",
+        "route_4"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:로케트박치기",
+      "korean": "기술 목록에 로케트박치기가 있어요.",
+      "gloss": "Skull Bash is on the move list.",
+      "targetForm": "로케트박치기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:가시대포",
+      "korean": "포켓몬이 시합에서 가시대포를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Spike Cannon in the match.",
+      "targetForm": "가시대포",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:휘감기",
+      "korean": "휘감기는 트레이너의 자랑이에요.",
+      "gloss": "Constrict is the trainer's pride.",
+      "targetForm": "휘감기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:망각술",
+      "korean": "친구가 망각술을 처음 봤어요.",
+      "gloss": "My friend saw Amnesia for the first time.",
+      "targetForm": "망각술",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_cave",
+        "cinnabar_island",
+        "pallet_town",
+        "route_12"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:숟가락휘기",
+      "korean": "이 포켓몬은 숟가락휘기를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Kinesis.",
+      "targetForm": "숟가락휘기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_24",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:알낳기",
+      "korean": "포켓몬이 알낳기로 체력을 회복했어요.",
+      "gloss": "The Pokémon recovered HP with Soft-Boiled.",
+      "targetForm": "알낳기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "wrong_collocation",
+        "issue": "울려 퍼지다 is a sound-only verb. 알낳기 (Soft-Boiled) is a silent healing move. Saying it 'echoed across the field' is not idiomatic Korean.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:무릎차기",
+      "korean": "선배가 무릎차기의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use High Jump Kick.",
+      "targetForm": "무릎차기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:뱀눈초리",
+      "korean": "포켓몬이 뱀눈초리를 배웠어요.",
+      "gloss": "The Pokémon learned Glare.",
+      "targetForm": "뱀눈초리",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:꿈먹기",
+      "korean": "트레이너가 포켓몬에게 꿈먹기를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Dream Eater.",
+      "targetForm": "꿈먹기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "viridian_city",
+        "route_4"
+      ],
+      "liveRecIds": [
+        953
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:독가스",
+      "korean": "친구의 포켓몬이 독가스를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Poison Gas well.",
+      "targetForm": "독가스",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city",
+        "pewter_city",
+        "route_11"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        5037
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:구슬던지기",
+      "korean": "구슬던지기는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Barrage is a move Pokémon use in battle.",
+      "targetForm": "구슬던지기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:흡혈",
+      "korean": "체육관 시합에서 흡혈을 사용했어요.",
+      "gloss": "I used Leech Life in the gym match.",
+      "targetForm": "흡혈",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "rom_mined",
+        "route_12"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        240
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:악마의키스",
+      "korean": "기술 목록에 악마의키스가 있어요.",
+      "gloss": "Lovely Kiss is on the move list.",
+      "targetForm": "악마의키스",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:불새",
+      "korean": "포켓몬이 시합에서 불새를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Sky Attack in the match.",
+      "targetForm": "불새",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_23",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "route_23"
+      ],
+      "liveRecIds": [
+        7155
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:변신",
+      "korean": "변신은 트레이너의 자랑이에요.",
+      "gloss": "Transform is the trainer's pride.",
+      "targetForm": "변신",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_13",
+      "areasReferenced": [
+        "route_13",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokedex_entry",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        5060
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:거품",
+      "korean": "친구가 거품을 처음 봤어요.",
+      "gloss": "My friend saw Bubble for the first time.",
+      "targetForm": "거품",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "pallet_town",
+        "viridian_city"
+      ],
+      "liveRecIds": [
+        7075
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:잼잼펀치",
+      "korean": "이 포켓몬은 잼잼펀치를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Dizzy Punch.",
+      "targetForm": "잼잼펀치",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_21",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_21"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:버섯포자",
+      "korean": "버섯포자가 들판에 퍼졌어요.",
+      "gloss": "Spores spread across the field.",
+      "targetForm": "버섯포자",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "wrong_collocation",
+        "issue": "버섯포자 (Spore) is airborne particles. Spores 날리다/퍼지다 but never 울리다. 울려 퍼지다 is the wrong verb for a non-sound subject.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:플래시",
+      "korean": "선배가 플래시의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Flash.",
+      "targetForm": "플래시",
+      "areaId": "rock_tunnel",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rock_tunnel",
+      "areasReferenced": [
+        "rock_tunnel",
+        "pallet_town",
+        "viridian_city",
+        "pewter_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "npc_dialog",
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        2182
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:사이코웨이브",
+      "korean": "포켓몬이 사이코웨이브를 배웠어요.",
+      "gloss": "The Pokémon learned Psywave.",
+      "targetForm": "사이코웨이브",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:튀어오르기",
+      "korean": "트레이너가 포켓몬에게 튀어오르기를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Splash.",
+      "targetForm": "튀어오르기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_2",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_2"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:녹기",
+      "korean": "친구의 포켓몬이 녹기를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Acid Armor well.",
+      "targetForm": "녹기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city"
+      ],
+      "liveRecIds": [
+        7162
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:찝게햄머",
+      "korean": "찝게햄머는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Crabhammer is a move Pokémon use in battle.",
+      "targetForm": "찝게햄머",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:대폭발",
+      "korean": "체육관 시합에서 대폭발을 사용했어요.",
+      "gloss": "I used Explosion in the gym match.",
+      "targetForm": "대폭발",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "route_10"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:마구할퀴기",
+      "korean": "기술 목록에 마구할퀴기가 있어요.",
+      "gloss": "Fury Swipes is on the move list.",
+      "targetForm": "마구할퀴기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city",
+        "route_1",
+        "route_3",
+        "route_4",
+        "route_6",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:뼈다귀부메랑",
+      "korean": "포켓몬이 시합에서 뼈다귀부메랑을 보여 줬어요.",
+      "gloss": "The Pokémon showed off Bonemerang in the match.",
+      "targetForm": "뼈다귀부메랑",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:잠자기",
+      "korean": "잠자기는 트레이너의 자랑이에요.",
+      "gloss": "Rest is the trainer's pride.",
+      "targetForm": "잠자기",
+      "areaId": "pokemon_mansion",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pokemon_mansion",
+      "areasReferenced": [
+        "pokemon_mansion"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:스톤샤워",
+      "korean": "친구가 스톤샤워를 처음 봤어요.",
+      "gloss": "My friend saw Rock Slide for the first time.",
+      "targetForm": "스톤샤워",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:필살앞니",
+      "korean": "이 포켓몬은 필살앞니를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Hyper Fang.",
+      "targetForm": "필살앞니",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_1",
+        "route_2"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:각지기",
+      "korean": "포켓몬이 각지기로 공격력을 올렸어요.",
+      "gloss": "The Pokémon raised its Attack with Sharpen.",
+      "targetForm": "각지기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "wrong_collocation",
+        "issue": "울려 퍼지다 requires a sound subject. 각지기 (Sharpen) is a non-acoustic stat-up move; it cannot resonate or echo across a field.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "celadon_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city"
+      ],
+      "liveRecIds": [
+        7170
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:텍스처",
+      "korean": "선배가 텍스처의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Conversion.",
+      "targetForm": "텍스처",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city"
+      ],
+      "liveRecIds": [
+        7171
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:트라이어택",
+      "korean": "포켓몬이 트라이어택을 배웠어요.",
+      "gloss": "The Pokémon learned Tri Attack.",
+      "targetForm": "트라이어택",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_16",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "route_16"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:분노의앞니",
+      "korean": "트레이너가 포켓몬에게 분노의앞니를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Super Fang.",
+      "targetForm": "분노의앞니",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_1",
+        "route_2"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:베어가르기",
+      "korean": "친구의 포켓몬이 베어가르기를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Slash well.",
+      "targetForm": "베어가르기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "pewter_city",
+        "route_1",
+        "route_4",
+        "route_6"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:대타출동",
+      "korean": "대타출동은 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Substitute is a move Pokémon use in battle.",
+      "targetForm": "대타출동",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "viridian_city",
+        "route_4",
+        "fuchsia_city",
+        "celadon_city"
+      ],
+      "liveRecIds": [
+        1083
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:발버둥",
+      "korean": "체육관 시합에서 PP가 다 떨어져 발버둥을 쳤어요.",
+      "gloss": "I used Struggle in the gym match.",
+      "targetForm": "발버둥",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "발버둥 (Struggle) is the auto-triggered fallback move that fires only when a Pokémon has no PP left on any other move. A trainer cannot deliberately '사용하다' Struggle, so '체육관 시합에서 발버둥을 사용했어요' frames an automatic, last-resort move as a chosen tactic. The Korean is grammatical (and 발버둥 also has the everyday meaning 'thrashing/floundering', which makes it superficially read fine), but the in-game collocation is semantically off and atypical of how Korean Pokémon discourse describes Struggle (one would say 발버둥을 쳤어요 / 발버둥치게 됐어요, not 발버둥을 사용했어요).",
+        "evidenceUrl": "https://namu.wiki/w/%EB%B0%9C%EB%B2%84%EB%91%A5",
+        "auditedAt": "2026-05-09",
+        "round": 2
+      },
+      "firstAreaEncountered": "rom_mined",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        6394
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:스케치",
+      "korean": "기술 목록에 스케치가 있어요.",
+      "gloss": "Sketch is on the move list.",
+      "targetForm": "스케치",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:트리플킥",
+      "korean": "포켓몬이 시합에서 트리플킥을 보여 줬어요.",
+      "gloss": "The Pokémon showed off Triple Kick in the match.",
+      "targetForm": "트리플킥",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:도둑질",
+      "korean": "도둑질은 트레이너의 자랑이에요.",
+      "gloss": "Thief is the trainer's pride.",
+      "targetForm": "도둑질",
+      "areaId": "rocket_hideout",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rocket_hideout",
+      "areasReferenced": [
+        "rocket_hideout"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:거미집",
+      "korean": "친구가 거미집을 처음 봤어요.",
+      "gloss": "My friend saw Spider Web for the first time.",
+      "targetForm": "거미집",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "liveRecIds": [
+        7180
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:마음의눈",
+      "korean": "이 포켓몬은 마음의눈을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Mind Reader.",
+      "targetForm": "마음의눈",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "saffron_city",
+        "seafoam_islands",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:악몽",
+      "korean": "포켓몬이 악몽을 걸어 상대 포켓몬을 괴롭혔어요.",
+      "gloss": "The Pokémon used Nightmare to torment the opponent's Pokémon.",
+      "targetForm": "악몽",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "악몽 (Nightmare) is a mental status condition, not a sound. 울려 퍼지다 requires an audible subject. Even metaphorically, nightmares 'spread' (퍼지다) but do not 울리다.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "route_11",
+      "areasReferenced": [
+        "rom_mined",
+        "route_11",
+        "vermilion_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4630
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:화염자동차",
+      "korean": "선배가 화염자동차의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Flame Wheel.",
+      "targetForm": "화염자동차",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_23",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_23"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:코골기",
+      "korean": "포켓몬이 코골기를 배웠어요.",
+      "gloss": "The Pokémon learned Snore.",
+      "targetForm": "코골기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_12",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_12"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:저주",
+      "korean": "트레이너가 포켓몬에게 저주를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Curse.",
+      "targetForm": "저주",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "areasReferenced": [
+        "rom_mined",
+        "cinnabar_island",
+        "pallet_town",
+        "vermilion_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text",
+        "item_description"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        743
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:바둥바둥",
+      "korean": "친구의 포켓몬이 바둥바둥을 잘 써요.",
+      "gloss": "My friend's Pokémon uses Flail well.",
+      "targetForm": "바둥바둥",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "pallet_town",
+        "pewter_city",
+        "route_2",
+        "viridian_city"
+      ],
+      "liveRecIds": [
+        7186
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:목화포자",
+      "korean": "목화포자는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Cotton Spore is a move Pokémon use in battle.",
+      "targetForm": "목화포자",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:기사회생",
+      "korean": "체육관 시합에서 기사회생을 사용했어요.",
+      "gloss": "I used Reversal in the gym match.",
+      "targetForm": "기사회생",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "route_21",
+        "saffron_city"
+      ],
+      "liveRecIds": [
+        7190
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:원한",
+      "korean": "기술 목록에 원한이 있어요.",
+      "gloss": "Spite is on the move list.",
+      "targetForm": "원한",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "vermilion_city",
+      "areasReferenced": [
+        "rom_mined",
+        "vermilion_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        5285
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:눈싸라기",
+      "korean": "포켓몬이 시합에서 눈싸라기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Powder Snow in the match.",
+      "targetForm": "눈싸라기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "seafoam_islands",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "seafoam_islands"
+      ],
+      "liveRecIds": [
+        7192
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:마하펀치",
+      "korean": "마하펀치는 트레이너의 자랑이에요.",
+      "gloss": "Mach Punch is the trainer's pride.",
+      "targetForm": "마하펀치",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:겁나는얼굴",
+      "korean": "친구가 겁나는얼굴을 처음 봤어요.",
+      "gloss": "My friend saw Scary Face for the first time.",
+      "targetForm": "겁나는얼굴",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "pallet_town",
+        "pewter_city",
+        "route_1"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:속여때리기",
+      "korean": "이 포켓몬은 속여때리기를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Faint Attack.",
+      "targetForm": "속여때리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city",
+        "route_6"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:천사의키스",
+      "korean": "친구가 천사의키스를 처음 봤어요.",
+      "gloss": "My friend saw Sweet Kiss for the first time.",
+      "targetForm": "천사의키스",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "천사의키스 (Sweet Kiss) is a status move, not a sound. The 울려 퍼지다 collocation requires an audible subject; this pairing is unidiomatic.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:배북",
+      "korean": "선배가 배북의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Belly Drum.",
+      "targetForm": "배북",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_12",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:오물폭탄",
+      "korean": "포켓몬이 오물폭탄을 배웠어요.",
+      "gloss": "The Pokémon learned Sludge Bomb.",
+      "targetForm": "오물폭탄",
+      "areaId": "rocket_hideout",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rocket_hideout",
+      "areasReferenced": [
+        "rocket_hideout"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:진흙뿌리기",
+      "korean": "트레이너가 포켓몬에게 진흙뿌리기를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Mud-Slap.",
+      "targetForm": "진흙뿌리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_1"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:대포무노포",
+      "korean": "친구의 포켓몬이 대포무노포를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Octazooka well.",
+      "targetForm": "대포무노포",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "mt_moon",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:압정뿌리기",
+      "korean": "압정뿌리기는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Spikes is a move Pokémon use in battle.",
+      "targetForm": "압정뿌리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "mt_moon",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:전자포",
+      "korean": "체육관 시합에서 전자포를 사용했어요.",
+      "gloss": "I used Zap Cannon in the gym match.",
+      "targetForm": "전자포",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "cinnabar_island",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "cinnabar_island"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:꿰뚫어보기",
+      "korean": "기술 목록에 꿰뚫어보기가 있어요.",
+      "gloss": "Foresight is on the move list.",
+      "targetForm": "꿰뚫어보기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "cerulean_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "route_12",
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:길동무",
+      "korean": "포켓몬이 시합에서 길동무를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Destiny Bond in the match.",
+      "targetForm": "길동무",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "mt_moon",
+      "areasReferenced": [
+        "rom_mined",
+        "celadon_city",
+        "mt_moon",
+        "vermilion_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4626
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:멸망의노래",
+      "korean": "멸망의노래는 트레이너의 자랑이에요.",
+      "gloss": "Perish Song is the trainer's pride.",
+      "targetForm": "멸망의노래",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "silph_co",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "silph_co"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:얼다바람",
+      "korean": "친구가 얼다바람을 처음 봤어요.",
+      "gloss": "My friend saw Icy Wind for the first time.",
+      "targetForm": "얼다바람",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:판별",
+      "korean": "이 포켓몬은 판별을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Detect.",
+      "targetForm": "판별",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "power_plant",
+        "saffron_city"
+      ],
+      "liveRecIds": [
+        7208
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:본러쉬",
+      "korean": "친구가 본러쉬를 처음 봤어요.",
+      "gloss": "My friend saw Bone Rush for the first time.",
+      "targetForm": "본러쉬",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "본러쉬 (Bone Rush) is a physical bone-throwing combo, not a sound. Pairing it with 울려 퍼지다 ('to resonate and spread') is awkward; a physical attack does not echo across a field in Korean.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:록온",
+      "korean": "선배가 록온의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Lock-On.",
+      "targetForm": "록온",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "mt_moon",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "celadon_city",
+        "cinnabar_island",
+        "mt_moon"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:역린",
+      "korean": "포켓몬이 역린을 배웠어요.",
+      "gloss": "The Pokémon learned Outrage.",
+      "targetForm": "역린",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "liveRecIds": [
+        7211
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:모래바람",
+      "korean": "트레이너가 포켓몬에게 모래바람을 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Sandstorm.",
+      "targetForm": "모래바람",
+      "areaId": "fuchsia_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move",
+        "system_text"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        4422
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:기가드레인",
+      "korean": "친구의 포켓몬이 기가드레인을 잘 써요.",
+      "gloss": "My friend's Pokémon uses Giga Drain well.",
+      "targetForm": "기가드레인",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:버티기",
+      "korean": "버티기는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Endure is a move Pokémon use in battle.",
+      "targetForm": "버티기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_21",
+        "route_23",
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:애교부리기",
+      "korean": "체육관 시합에서 애교부리기를 사용했어요.",
+      "gloss": "I used Charm in the gym match.",
+      "targetForm": "애교부리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:구르기",
+      "korean": "기술 목록에 구르기가 있어요.",
+      "gloss": "Rollout is on the move list.",
+      "targetForm": "구르기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town",
+        "pewter_city",
+        "route_10",
+        "route_12"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:칼등치기",
+      "korean": "포켓몬이 시합에서 칼등치기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off False Swipe in the match.",
+      "targetForm": "칼등치기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:뽐내기",
+      "korean": "뽐내기는 트레이너의 자랑이에요.",
+      "gloss": "Swagger is the trainer's pride.",
+      "targetForm": "뽐내기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city",
+        "route_11",
+        "route_3",
+        "route_6",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:우유마시기",
+      "korean": "친구가 우유마시기를 처음 봤어요.",
+      "gloss": "My friend saw Milk Drink for the first time.",
+      "targetForm": "우유마시기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:스파크",
+      "korean": "이 포켓몬은 스파크를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Spark.",
+      "targetForm": "스파크",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cinnabar_island",
+        "pallet_town",
+        "route_10"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:연속자르기",
+      "korean": "포켓몬이 연속자르기를 보여 줬어요.",
+      "gloss": "The Pokémon showed us Fury Cutter.",
+      "targetForm": "연속자르기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "unnatural",
+        "issue": "연속자르기 (Fury Cutter) is a series of physical slashes, not a sound. 울려 퍼지다 is reserved for sound; the collocation is off.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:강철날개",
+      "korean": "선배가 강철날개의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Steel Wing.",
+      "targetForm": "강철날개",
+      "areaId": "saffron_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "saffron_city",
+      "areasReferenced": [
+        "saffron_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:검은눈빛",
+      "korean": "포켓몬이 검은눈빛을 배웠어요.",
+      "gloss": "The Pokémon learned Mean Look.",
+      "targetForm": "검은눈빛",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "vermilion_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "vermilion_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:헤롱헤롱",
+      "korean": "트레이너가 포켓몬에게 헤롱헤롱을 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Attract.",
+      "targetForm": "헤롱헤롱",
+      "areaId": "rocket_hideout",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rocket_hideout",
+      "areasReferenced": [
+        "rocket_hideout"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:잠꼬대",
+      "korean": "친구의 포켓몬이 잠꼬대를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Sleep Talk well.",
+      "targetForm": "잠꼬대",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_12",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "route_12"
+      ],
+      "liveRecIds": [
+        7224
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:치료방울",
+      "korean": "치료방울은 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Heal Bell is a move Pokémon use in battle.",
+      "targetForm": "치료방울",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:은혜갚기",
+      "korean": "체육관 시합에서 은혜갚기를 사용했어요.",
+      "gloss": "I used Return in the gym match.",
+      "targetForm": "은혜갚기",
+      "areaId": "fuchsia_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:프레젠트",
+      "korean": "기술 목록에 프레젠트가 있어요.",
+      "gloss": "Present is on the move list.",
+      "targetForm": "프레젠트",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "liveRecIds": [
+        7227
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:화풀이",
+      "korean": "포켓몬이 시합에서 화풀이를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Frustration in the match.",
+      "targetForm": "화풀이",
+      "areaId": "fuchsia_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city",
+        "rom_mined"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "liveRecIds": [
+        7228
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:신비의부적",
+      "korean": "신비의부적은 트레이너의 자랑이에요.",
+      "gloss": "Safeguard is the trainer's pride.",
+      "targetForm": "신비의부적",
+      "areaId": "celadon_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "celadon_city",
+      "areasReferenced": [
+        "celadon_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:아픔나누기",
+      "korean": "친구가 아픔나누기를 처음 봤어요.",
+      "gloss": "My friend saw Pain Split for the first time.",
+      "targetForm": "아픔나누기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:성스러운불꽃",
+      "korean": "이 포켓몬은 성스러운불꽃을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Sacred Fire.",
+      "targetForm": "성스러운불꽃",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:매그니튜드",
+      "korean": "포켓몬의 매그니튜드로 들판이 크게 흔들렸어요.",
+      "gloss": "The field shook greatly from the Pokémon's Magnitude.",
+      "targetForm": "매그니튜드",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "pewter_city",
+        "route_1"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:폭발펀치",
+      "korean": "선배가 폭발펀치의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Dynamic Punch.",
+      "targetForm": "폭발펀치",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "cerulean_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:메가폰",
+      "korean": "포켓몬이 메가폰을 배웠어요.",
+      "gloss": "The Pokémon learned Megahorn.",
+      "targetForm": "메가폰",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "viridian_city"
+      ],
+      "liveRecIds": [
+        7234
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:용의숨결",
+      "korean": "트레이너가 포켓몬에게 용의숨결을 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Dragon Breath.",
+      "targetForm": "용의숨결",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:바톤터치",
+      "korean": "친구의 포켓몬이 바톤터치를 잘 써요.",
+      "gloss": "My friend's Pokémon uses Baton Pass well.",
+      "targetForm": "바톤터치",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_13",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_13"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:앵콜",
+      "korean": "앵콜은 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Encore is a move Pokémon use in battle.",
+      "targetForm": "앵콜",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_6",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_6"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:따라가때리기",
+      "korean": "체육관 시합에서 따라가때리기를 사용했어요.",
+      "gloss": "I used Pursuit in the gym match.",
+      "targetForm": "따라가때리기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_1",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_1",
+        "route_16",
+        "route_2",
+        "route_24",
+        "route_3",
+        "saffron_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:고속스핀",
+      "korean": "기술 목록에 고속스핀이 있어요.",
+      "gloss": "Rapid Spin is on the move list.",
+      "targetForm": "고속스핀",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "fuchsia_city",
+        "pallet_town",
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:달콤한향기",
+      "korean": "포켓몬이 시합에서 달콤한향기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Sweet Scent in the match.",
+      "targetForm": "달콤한향기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "route_12",
+        "route_24"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:아이언테일",
+      "korean": "아이언테일은 트레이너의 자랑이에요.",
+      "gloss": "Iron Tail is the trainer's pride.",
+      "targetForm": "아이언테일",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:메탈크로우",
+      "korean": "친구가 메탈크로우를 처음 봤어요.",
+      "gloss": "My friend saw Metal Claw for the first time.",
+      "targetForm": "메탈크로우",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:받아던지기",
+      "korean": "이 포켓몬은 받아던지기를 익히는 중이에요.",
+      "gloss": "This Pokémon is learning Vital Throw.",
+      "targetForm": "받아던지기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "cerulean_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:아침햇살",
+      "korean": "아침햇살이 들판에 비쳤어요.",
+      "gloss": "Morning sunlight shone on the field.",
+      "targetForm": "아침햇살",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "auditFix": {
+        "verdict": "wrong_collocation",
+        "issue": "울려 퍼지다 is for sounds. 아침햇살 (Morning Sun) is light/healing — sunlight 비치다/내리쬐다, not 울려 퍼지다. The collocation is wrong.",
+        "evidenceUrl": null,
+        "auditedAt": "2026-05-09"
+      },
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": []
+    },
+    {
+      "vocabId": "rom-mine-v3:광합성",
+      "korean": "선배가 광합성의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Synthesis.",
+      "targetForm": "광합성",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined",
+        "pallet_town"
+      ],
+      "liveRecIds": [
+        7244
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:달의불빛",
+      "korean": "포켓몬이 달의불빛을 배웠어요.",
+      "gloss": "The Pokémon learned Moonlight.",
+      "targetForm": "달의불빛",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_6",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "route_6"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:잠재파워",
+      "korean": "트레이너가 포켓몬에게 잠재파워를 가르쳤어요.",
+      "gloss": "The trainer taught the Pokémon Hidden Power.",
+      "targetForm": "잠재파워",
+      "areaId": "rock_tunnel",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rock_tunnel",
+      "areasReferenced": [
+        "rock_tunnel"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:크로스촙",
+      "korean": "친구의 포켓몬이 크로스촙을 잘 써요.",
+      "gloss": "My friend's Pokémon uses Cross Chop well.",
+      "targetForm": "크로스촙",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "viridian_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_city",
+        "route_3",
+        "viridian_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:회오리",
+      "korean": "회오리는 포켓몬이 시합에서 쓰는 기술이에요.",
+      "gloss": "Twister is a move Pokémon use in battle.",
+      "targetForm": "회오리",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:비바라기",
+      "korean": "체육관 시합에서 비바라기를 사용했어요.",
+      "gloss": "I used Rain Dance in the gym match.",
+      "targetForm": "비바라기",
+      "areaId": "fuchsia_city",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "fuchsia_city",
+      "areasReferenced": [
+        "fuchsia_city"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:쾌청",
+      "korean": "기술 목록에 쾌청이 있어요.",
+      "gloss": "Sunny Day is on the move list.",
+      "targetForm": "쾌청",
+      "areaId": "route_12",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "route_12",
+      "areasReferenced": [
+        "route_12"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    },
+    {
+      "vocabId": "rom-mine-v3:깨물어부수기",
+      "korean": "포켓몬이 시합에서 깨물어부수기를 보여 줬어요.",
+      "gloss": "The Pokémon showed off Crunch in the match.",
+      "targetForm": "깨물어부수기",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pallet_town",
+        "pewter_city",
+        "route_3"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:미러코트",
+      "korean": "미러코트는 트레이너의 자랑이에요.",
+      "gloss": "Mirror Coat is the trainer's pride.",
+      "targetForm": "미러코트",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "mt_moon",
+        "pallet_town",
+        "route_10"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:자기암시",
+      "korean": "친구가 자기암시를 처음 봤어요.",
+      "gloss": "My friend saw Psych Up for the first time.",
+      "targetForm": "자기암시",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pallet_town",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "cerulean_cave",
+        "cinnabar_island",
+        "pallet_town",
+        "pewter_city",
+        "route_11"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:신속",
+      "korean": "이 포켓몬은 신속을 익히는 중이에요.",
+      "gloss": "This Pokémon is learning ExtremeSpeed.",
+      "targetForm": "신속",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "rom_mined",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "rom_mined"
+      ],
+      "liveRecIds": [
+        7254
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:원시의힘",
+      "korean": "포켓몬이 원시의힘을 사용했어요.",
+      "gloss": "The Pokémon used Ancient Power.",
+      "targetForm": "원시의힘",
+      "areaId": "rom_mined",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pewter_city",
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move",
+      "areasReferenced": [
+        "pewter_city"
+      ]
+    },
+    {
+      "vocabId": "rom-mine-v3:섀도볼",
+      "korean": "선배가 섀도볼의 사용법을 알려 줬어요.",
+      "gloss": "A senior taught me how to use Shadow Ball.",
+      "targetForm": "섀도볼",
+      "areaId": "pokemon_tower",
+      "source": "themed-v1",
+      "generator": "llm-claude-opus-4-7",
+      "firstAreaEncountered": "pokemon_tower",
+      "areasReferenced": [
+        "pokemon_tower"
+      ],
+      "sourceTypes": [
+        "pokemon_move"
+      ],
+      "primarySourceType": "pokemon_move"
+    }
+  ]
+}
