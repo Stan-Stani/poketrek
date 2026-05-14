@@ -1,0 +1,73 @@
+{
+  "name": "moneo-sentences-ko",
+  "datasets": [
+    {
+      "name": "themed",
+      "path": "app/src/main/assets/moneo/sentences-ko-themed.json",
+      "entriesPath": "entries",
+      "keyField": "vocabId",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "target": "targetForm"
+      }
+    },
+    {
+      "name": "themed-mined",
+      "path": "app/src/main/assets/moneo/sentences-ko-themed-mined.json",
+      "entriesPath": "entries",
+      "keyField": "vocabId",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "target": "targetForm"
+      }
+    },
+    {
+      "name": "themed-species",
+      "path": "app/src/main/assets/moneo/sentences-ko-themed-species.json",
+      "entriesPath": "entries",
+      "keyField": "vocabId",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "target": "targetForm"
+      }
+    },
+    {
+      "name": "themed-topik",
+      "path": "app/src/main/assets/moneo/sentences-ko-themed-topik.json",
+      "entriesPath": "entries",
+      "keyField": "vocabId",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "target": "targetForm"
+      }
+    }
+  ],
+  "verdicts": [
+    "mistranslation",
+    "unnatural",
+    "ungrammatical",
+    "wrong_collocation",
+    "wrong_inflection",
+    "pos_mismatch",
+    "redundant",
+    "spacing",
+    "editorial_artifact",
+    "target_form_drift",
+    "uncertain"
+  ],
+  "evidencePolicy": {
+    "required": true,
+    "allowedTypes": ["url", "corpus-rule", "in-game-canon"],
+    "disallowedHosts": [
+      "google.com/search",
+      "google.com/aio",
+      "bing.com/search?q="
+    ]
+  },
+  "shardSize": 200,
+  "auditFixField": "auditFix"
+}

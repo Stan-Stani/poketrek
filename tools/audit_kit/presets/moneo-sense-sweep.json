@@ -1,0 +1,33 @@
+{
+  "name": "moneo-sense-sweep",
+  "datasets": [
+    {
+      "name": "themed-mined",
+      "path": "app/src/main/assets/moneo/sentences-ko-themed-mined.json",
+      "entriesPath": "entries",
+      "keyField": "vocabId",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "target": "targetForm"
+      }
+    }
+  ],
+  "verdicts": [
+    "pos_mismatch",
+    "wrong_sense",
+    "target_form_drift",
+    "mistranslation"
+  ],
+  "evidencePolicy": {
+    "required": true,
+    "allowedTypes": ["url", "corpus-rule", "in-game-canon"],
+    "disallowedHosts": [
+      "google.com/search",
+      "google.com/aio",
+      "bing.com/search?q="
+    ]
+  },
+  "shardSize": 200,
+  "auditFixField": "auditFix"
+}

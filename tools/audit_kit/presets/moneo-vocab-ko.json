@@ -1,0 +1,71 @@
+{
+  "name": "moneo-vocab-ko",
+  "datasets": [
+    {
+      "name": "vocab-mined",
+      "path": "app/src/main/assets/moneo/seed-vocab-ko-mined.json",
+      "entriesPath": "entries",
+      "keyField": "korean",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "partOfSpeech": "partOfSpeech",
+        "romanization": "romanization"
+      }
+    },
+    {
+      "name": "vocab-topik",
+      "path": "app/src/main/assets/moneo/seed-vocab-ko-topik.json",
+      "entriesPath": "entries",
+      "keyField": "korean",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss",
+        "partOfSpeech": "partOfSpeech",
+        "senses": "senses"
+      }
+    },
+    {
+      "name": "vocab-species",
+      "path": "app/src/main/assets/moneo/seed-vocab-ko-species.json",
+      "entriesPath": "entries",
+      "keyField": "korean",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss"
+      }
+    },
+    {
+      "name": "vocab-etymology",
+      "path": "app/src/main/assets/moneo/seed-vocab-ko-etymology.json",
+      "entriesPath": "entries",
+      "keyField": "korean",
+      "auditFields": {
+        "korean": "korean",
+        "gloss": "gloss"
+      }
+    }
+  ],
+  "verdicts": [
+    "wrong_gloss",
+    "incomplete_gloss",
+    "wrong_pos",
+    "wrong_romanization",
+    "spacing",
+    "redundant_sense",
+    "missing_sense",
+    "ambiguous",
+    "uncertain"
+  ],
+  "evidencePolicy": {
+    "required": true,
+    "allowedTypes": ["url", "corpus-rule", "in-game-canon"],
+    "disallowedHosts": [
+      "google.com/search",
+      "google.com/aio",
+      "bing.com/search?q="
+    ]
+  },
+  "shardSize": 200,
+  "auditFixField": "auditFix"
+}
