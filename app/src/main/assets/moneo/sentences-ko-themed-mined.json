@@ -1970,12 +1970,21 @@
   },
   {
    "vocabId": "rom-mine-v3:말다",
-   "korean": "그건 마음에 두지 마세요.",
-   "gloss": "Don't take that to heart.",
-   "targetForm": "마",
+   "korean": "어머니가 김밥을 잘 말아요.",
+   "gloss": "My mother rolls kimbap well.",
+   "targetForm": "말아",
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
+   "auditFix": {
+    "verdict": "pos_mismatch",
+    "issue": "The previous example 그건 마음에 두지 마세요 used the auxiliary 말다 in the -지 말다 negative-imperative construction (don't ...), not the primary transitive 말다 'to roll up' that the headword gloss commits to. The vocab card already lists the auxiliary sense in `senses`; this entry should illustrate the primary sense.",
+    "evidenceUrl": "https://ko.dict.naver.com/#/search?query=%EB%A7%90%EB%8B%A4",
+    "auditedAt": "2026-05-14",
+    "githubIssue": 1,
+    "originalKorean": "그건 마음에 두지 마세요.",
+    "originalGloss": "Don't take that to heart."
+   },
    "firstAreaEncountered": "pallet_town",
    "areasReferenced": [
     "pallet_town",
