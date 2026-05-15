@@ -254,8 +254,8 @@
   },
   {
    "vocabId": "rom-mine-v3:갈다",
-   "korean": "낡은 신발을 새것으로 갈았어요.",
-   "gloss": "I swapped my old shoes for new ones.",
+   "korean": "대장장이가 칼을 갈고 있어요.",
+   "gloss": "The blacksmith is sharpening a knife.",
    "targetForm": "갈",
    "areaId": "rom_mined",
    "source": "themed-v1",
@@ -272,7 +272,21 @@
    "primarySourceType": "npc_dialog",
    "liveRecIds": [
     974
-   ]
+   ],
+   "auditFix": {
+    "verdict": "wrong_sense",
+    "issue": "Card commits primary gloss to '갈다 = to grind' (Wiktionary Etymology 2: 칼을 갈다, 맷돌에 갈다). The sentence '낡은 신발을 새것으로 갈았어요' demonstrates the homonym '갈다 = to replace/swap/change' (Wiktionary Etymology 1: 옷을 갈아입다, 부품을 갈다). These are distinct etymologies — different historical origins, same modern form. The 'to change' sense is acknowledged in senses[] but the sentence should illustrate the committed primary 'to grind'.",
+    "evidence": {
+     "type": "url",
+     "value": "https://en.wiktionary.org/wiki/%EA%B0%88%EB%8B%A4",
+     "note": "Wiktionary lists 갈다 as having three distinct etymologies: Etymology 1 = to change/replace/switch (1447), Etymology 2 = to grind/whet/sharpen (1459), Etymology 3 = to plow. The committed primary 'to grind' is Etymology 2; the sentence uses Etymology 1."
+    },
+    "suggestion": "Replace with a sentence using the primary 'to grind/sharpen' sense, e.g. '대장장이가 칼을 갈고 있어요.' ('The blacksmith is sharpening a knife.') or '맷돌에 콩을 갈았어요.' ('I ground beans on the millstone.').",
+    "auditor": null,
+    "auditedAt": "2026-05-15",
+    "reviewerAction": "accept",
+    "reviewerNote": null
+   }
   },
   {
    "vocabId": "rom-mine-v3:약재",
@@ -541,9 +555,9 @@
   },
   {
    "vocabId": "rom-mine-v3:쓰다",
-   "korean": "쓴 차가 몸에 좋다고 해요.",
-   "gloss": "They say bitter tea is good for your body.",
-   "targetForm": "쓴",
+   "korean": "친구에게 편지를 쓰고 있어요.",
+   "gloss": "I am writing a letter to my friend.",
+   "targetForm": "쓰",
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
@@ -600,7 +614,21 @@
     2140,
     2182,
     2212
-   ]
+   ],
+   "auditFix": {
+    "verdict": "pos_mismatch",
+    "issue": "Card commits primary gloss to '쓰다 = to write' (Wiktionary Etymology 2, verb). The sentence '쓴 차가 몸에 좋다고 해요' uses '쓰다 = to be bitter (taste)' (Wiktionary Etymology 4, adjective). These are distinct etymologies AND distinct parts of speech — the primary is a verb, the sentence-demonstrated sense is an adjective. The 'to be bitter' sense is listed in senses[] but the sentence should illustrate the committed primary 'to write'.",
+    "evidence": {
+     "type": "url",
+     "value": "https://en.wiktionary.org/wiki/%EC%93%B0%EB%8B%A4",
+     "note": "Wiktionary lists 쓰다 with four distinct etymologies: 1=to wear, 2=to write, 3=to use, 4=to be bitter (explicitly classed as adjective, separate from the verb etymologies). The committed primary 'to write' is Etymology 2 (verb); the sentence uses Etymology 4 (adjective)."
+    },
+    "suggestion": "Replace with a sentence using the primary 'to write' sense, e.g. '친구에게 편지를 쓰고 있어요.' ('I am writing a letter to my friend.') or '일기를 매일 써요.' ('I write in my diary every day.').",
+    "auditor": null,
+    "auditedAt": "2026-05-15",
+    "reviewerAction": "accept",
+    "reviewerNote": null
+   }
   },
   {
    "vocabId": "rom-mine-v3:주다",
@@ -1609,8 +1637,8 @@
   },
   {
    "vocabId": "rom-mine-v3:이상",
-   "korean": "그 이상은 묻지 마세요.",
-   "gloss": "Please don't ask any more than that.",
+   "korean": "포켓몬의 상태에 이상이 있어요.",
+   "gloss": "There is something abnormal about the Pokémon's condition.",
    "targetForm": "이상",
    "areaId": "rom_mined",
    "source": "themed-v1",
@@ -1658,7 +1686,21 @@
     1918,
     2096,
     2213
-   ]
+   ],
+   "auditFix": {
+    "verdict": "wrong_sense",
+    "issue": "Card commits primary gloss to '이상 = abnormal' (異常). The sentence '그 이상은 묻지 마세요' uses '이상 = above / more than' (以上). These are distinct Sino-Korean homonyms with different hanja and different meanings — 異常 ('strange/abnormal') vs 以上 ('an amount more than or equal to'). The 'above' sense is acknowledged in senses[] but the sentence should illustrate the committed primary 異常.",
+    "evidence": {
+     "type": "url",
+     "value": "https://en.wiktionary.org/wiki/%EC%9D%B4%EC%83%81",
+     "note": "Wiktionary lists three distinct Sino-Korean homonyms: 以上 (more than/above, noun), 異常 (strange/abnormal, adjective), 理想 (ideal, noun). Same pronunciation 이상, different hanja, different meanings. The committed primary 'abnormal' is 異常; the sentence uses 以上."
+    },
+    "suggestion": "Replace with a sentence using the primary 異常 ('abnormal') sense, e.g. '포켓몬의 상태에 이상이 있어요.' ('There is something abnormal about the Pokémon's condition.') or '기계에 이상이 생겼어요.' ('Something went wrong with the machine.').",
+    "auditor": null,
+    "auditedAt": "2026-05-15",
+    "reviewerAction": "accept",
+    "reviewerNote": null
+   }
   },
   {
    "vocabId": "rom-mine-v3:자신",
@@ -2856,9 +2898,9 @@
   },
   {
    "vocabId": "rom-mine-v3:싸다",
-   "korean": "도시락을 정성껏 쌀 거예요.",
-   "gloss": "I'll wrap the lunch box with care.",
-   "targetForm": "쌀",
+   "korean": "시장에서 과일이 싸요.",
+   "gloss": "The fruit is cheap at the market.",
+   "targetForm": "싸",
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
@@ -2872,7 +2914,21 @@
    "primarySourceType": "system_text",
    "liveRecIds": [
     159
-   ]
+   ],
+   "auditFix": {
+    "verdict": "pos_mismatch",
+    "issue": "Card commits primary gloss to '싸다 = cheap' (Wiktionary Etymology 1, adjective). The sentence '도시락을 정성껏 쌀 거예요' uses '싸다 = to wrap/pack' (Wiktionary Etymology 3, transitive verb: 도시락을 싸다, 선물을 싸다). These are distinct etymologies AND distinct parts of speech — the primary is an adjective, the sentence-demonstrated sense is a transitive verb. The 'to wrap' sense is listed in senses[] but the sentence should illustrate the committed primary 'cheap'.",
+    "evidence": {
+     "type": "url",
+     "value": "https://en.wiktionary.org/wiki/%EC%8B%B8%EB%8B%A4",
+     "note": "Wiktionary lists 싸다 with distinct etymologies: Etymology 1 = adjective 'to be cheap/inexpensive' (Middle Korean 'to be worth'), Etymology 3 = transitive verb 'to wrap up, to bundle, to pack'. The committed primary 'cheap' is Etymology 1 (adj); the sentence uses Etymology 3 (verb)."
+    },
+    "suggestion": "Replace with a sentence using the primary 'cheap' adjective sense, e.g. '시장에서 과일이 싸요.' ('The fruit is cheap at the market.') or '이 가게는 도구가 싸요.' ('Items are cheap at this shop.').",
+    "auditor": null,
+    "auditedAt": "2026-05-15",
+    "reviewerAction": "accept",
+    "reviewerNote": null
+   }
   },
   {
    "vocabId": "rom-mine-v3:아프다",
@@ -3442,9 +3498,9 @@
   },
   {
    "vocabId": "rom-mine-v3:슬다",
-   "korean": "녹이 슨 자전거를 닦아요.",
-   "gloss": "I clean a bicycle that has rusted.",
-   "targetForm": "슨",
+   "korean": "버터플이 풀잎에 알을 슬었어요.",
+   "gloss": "Butterfree laid eggs on a blade of grass.",
+   "targetForm": "슬",
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
@@ -3485,7 +3541,21 @@
     1818,
     2321,
     2654
-   ]
+   ],
+   "auditFix": {
+    "verdict": "wrong_sense",
+    "issue": "Card commits primary gloss to '슬다 = to lay (eggs)' (used of insects/fish depositing eggs, e.g. 알을 슬다). The sentence '녹이 슨 자전거를 닦아요' uses '슬다 = to rust / form (mold)' (쇠붙이에 녹이 생기다 — for rust/mold to develop on metal). These are distinct senses listed under separate sub-entries in the Standard Korean Dictionary. The 'to rust' sense is acknowledged in senses[] but the sentence should illustrate the committed primary 'to lay (eggs)'.",
+    "evidence": {
+     "type": "url",
+     "value": "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?nationCode=&ParaWordNo=&mainSearchWord=%EC%8A%AC%EB%8B%A4",
+     "note": "Standard Korean Learner's Dictionary (krdict, NIKL) records 슬다 with the rust/mold-forming sense ('쇠붙이에 녹이 생기다'); the egg-laying sense ('벌레나 물고기가 알을 깔기어 놓다', e.g. 알을 슬다) is the basic native sense recorded in 표준국어대사전. Committed primary is egg-laying; sentence demonstrates the rust sense."
+    },
+    "suggestion": "Replace with a sentence using the primary 'to lay (eggs)' sense, e.g. '메뚜기가 풀잎에 알을 슬었어요.' ('The grasshopper laid eggs on the blade of grass.') or '연어가 강에서 알을 슬어요.' ('Salmon lay eggs in the river.').",
+    "auditor": null,
+    "auditedAt": "2026-05-15",
+    "reviewerAction": "edit",
+    "reviewerNote": "Rejected auditor's generic grasshopper; use a Pokémon egg-laying reference. Butterfree (Bug-type) keeps 슬다 in its insect/fish egg-laying register."
+   }
   },
   {
    "vocabId": "rom-mine-v3:아주",
@@ -5076,17 +5146,25 @@
   },
   {
    "vocabId": "rom-mine-v3:짜다",
-   "korean": "할머니께서 천을 짜신다.",
-   "gloss": "Grandmother weaves cloth.",
-   "targetForm": "짜신다",
+   "korean": "국이 너무 짜요.",
+   "gloss": "The soup is too salty.",
+   "targetForm": "짜",
    "areaId": "rom_mined",
    "source": "themed-v1",
    "generator": "llm-claude-opus-4-7",
    "auditFix": {
-    "verdict": "polish:fix",
-    "issue": "Honorific mismatch confirmed: 할머니 as subject normally takes the honorific verb (짜신다) and ideally honorific particle 께서. The plain form 짠다 reads as disrespectful in standard usage.",
-    "evidenceUrl": "https://www.rollingkorea.com/en/k-lab/korean-particle-kkeseo/",
-    "auditedAt": "2026-05-09"
+    "verdict": "pos_mismatch",
+    "issue": "Card commits primary gloss to '짜다 = salty' (Wiktionary Etymology 2, adjective). The sentence '할머니께서 천을 짜신다' uses '짜다 = to weave' (Wiktionary Etymology 1, verb: 천을 짜다, 베를 짜다 — to weave cloth on a loom). These are distinct etymologies AND distinct parts of speech. Note that 'to weave' is not even listed in senses[]; only 'to compose' (a related sub-sense of Etymology 1) is. So the sentence demonstrates a sense not acknowledged anywhere on the card.",
+    "evidence": {
+     "type": "url",
+     "value": "https://en.wiktionary.org/wiki/%EC%A7%9C%EB%8B%A4",
+     "note": "Wiktionary lists 짜다 with distinct etymologies/POS: Etymology 1 = verb 'to make, assemble, knit, weave, plan' (covers 천을 짜다 'weave cloth'), Etymology 2 = adjective 'to be salty', Etymology 3 = verb 'to press/squeeze'. The committed primary 'salty' is Etymology 2 (adj); the sentence uses Etymology 1 (verb, 'weave')."
+    },
+    "suggestion": "Replace with a sentence using the primary 'salty' adjective sense, e.g. '국이 너무 짜요.' ('The soup is too salty.') or '바닷물은 짜요.' ('Sea water is salty.').",
+    "auditor": null,
+    "auditedAt": "2026-05-15",
+    "reviewerAction": "accept",
+    "reviewerNote": null
    },
    "firstAreaEncountered": "rom_mined",
    "areasReferenced": [

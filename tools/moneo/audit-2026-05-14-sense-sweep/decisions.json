@@ -1,0 +1,37 @@
+{
+  "preset": "moneo-sense-sweep",
+  "reviewer": "anonymous",
+  "reviewedAt": "2026-05-15",
+  "decisions": [
+    {
+      "key": "rom-mine-v3:갈다",
+      "action": "accept"
+    },
+    {
+      "key": "rom-mine-v3:쓰다",
+      "action": "accept"
+    },
+    {
+      "key": "rom-mine-v3:이상",
+      "action": "accept"
+    },
+    {
+      "key": "rom-mine-v3:싸다",
+      "action": "accept"
+    },
+    {
+      "key": "rom-mine-v3:슬다",
+      "action": "edit",
+      "note": "Rejected auditor's generic grasshopper; use a Pokémon egg-laying reference. Butterfree (Bug-type) keeps 슬다 in its insect/fish egg-laying register.",
+      "override": {
+        "korean": "버터플이 풀잎에 알을 슬었어요.",
+        "gloss": "Butterfree laid eggs on a blade of grass.",
+        "targetForm": "슬"
+      }
+    },
+    {
+      "key": "rom-mine-v3:짜다",
+      "action": "accept"
+    }
+  ]
+}
