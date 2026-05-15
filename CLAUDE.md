@@ -30,7 +30,7 @@ Android app that turns the phone's hardware step counter into a movement budget 
 
 ## Testing on emulator vs device
 
-There is usually an Android emulator running (`emulator-5554`). It is fine for UI/build smoke tests but **does not expose `Sensor.TYPE_STEP_COUNTER`** — the foreground service registers and immediately logs that the sensor is unavailable. To exercise the budget on emulator, use the in-app **debug overlay** (Settings → "Debug overlay" toggle → "+10 fake steps") or call `MovementBudget.debugAddSteps` directly. Real step-counter behaviour can only be validated on a physical Android 8.0+ device with a pedometer.
+There is usually an Android emulator running (`emulator-5554`). It is fine for UI/build smoke tests but **does not expose `Sensor.TYPE_STEP_COUNTER`** — the foreground service registers and immediately logs that the sensor is unavailable. To exercise the budget on emulator, use the in-app **debug overlay** (Settings → "Debug overlay" toggle → "+10 fake steps") or call `MovementBudget.debugAddSteps` directly. Real step-counter behaviour can only be validated on a physical Android 8.0+ device with a pedometer. Verified on a **Samsung Galaxy S20+** (real-walk step-gating + save/restore); other devices not yet exercised.
 
 Iteration loop on emulator (rebuild → reinstall → relaunch → screenshot):
 

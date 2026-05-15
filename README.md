@@ -6,7 +6,7 @@ The twist: the emulator is **step-gated**. The phone's hardware step counter fee
 
 ## Get the app (for players)
 
-> ⚠️ **Pre-release.** Moneo is at **Phase 0**. It runs on a real device — smoke-tested on a **Samsung Galaxy S20+** — but broader device coverage is still untested, so expect rough edges. Download builds from the Releases page below.
+> ⚠️ **Pre-release.** Moneo is at **Phase 0**. Tested on a **Samsung Galaxy S20+** — real-world step-gating and save/restore work there — but broader device coverage is still untested, so expect rough edges. Download builds from the Releases page below.
 
 You don't need to build anything or know how to code to play.
 
@@ -38,7 +38,7 @@ The rest of this README is for people who want to build, modify, or contribute t
 
 ### Status
 
-**Phase 0** — emulator embed running; smoke-tested on a Samsung Galaxy S20+ (Android). Wider device validation still pending.
+**Phase 0** — emulator embed running; real-walk step-gating and save/restore verified on a Samsung Galaxy S20+ (Android). Wider device validation still pending.
 
 ### Prerequisites
 
