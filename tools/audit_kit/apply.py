@@ -28,8 +28,23 @@ def _load(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _detect_indent(path: Path, default: int = 1) -> int:
+    """Sniff the existing file's indent width so apply() doesn't reformat the
+    whole dataset (the moneo assets ship with indent=1; rewriting at indent=2
+    churns every line and breaks the 'minimal diff' convention)."""
+    try:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            stripped = line.lstrip(" ")
+            if stripped and stripped != line:
+                return len(line) - len(stripped)
+    except OSError:
+        pass
+    return default
+
+
 def _save(path: Path, doc: Any) -> None:
-    path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    indent = _detect_indent(path)
+    path.write_text(json.dumps(doc, ensure_ascii=False, indent=indent) + "\n", encoding="utf-8")
 
 
 def _ds_by_shard(cfg: AuditConfig) -> dict[str, DatasetSpec]:
