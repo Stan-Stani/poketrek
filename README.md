@@ -4,13 +4,43 @@ An Android app for learning Korean by reading the 2024 fan-translation of Pokém
 
 The twist: the emulator is **step-gated**. The phone's hardware step counter feeds a movement budget; every overworld tile you move (via the D-pad, as normal) costs one tile from that budget, and when the budget hits zero the direction-pad is masked until you walk in the real world again. You still play the game — you just can't out-walk yourself. The Korean words you'd be encountering at that point in the story queue up for review. The step-gating layer is called **PokéTrek**; Moneo is the Korean-learning experience that runs on top of it.
 
-The full design lives at `~/.claude/plans/i-would-like-to-inherited-papert.md`. Read that first.
+## Get the app (for players)
 
-## Status
+> ⚠️ **Pre-release.** Moneo is at **Phase 0** — the emulator embed is scaffolded but not yet validated on real devices. Expect rough edges. There may be no published build yet; check the Releases page below.
+
+You don't need to build anything or know how to code to play.
+
+**What you need:**
+
+- An **Android 8.0+ phone with a hardware step counter** (most phones since ~2016 have one). The step-gating feature only works on a real device — emulators don't report steps.
+- Your own **legally-obtained Pokémon LeafGreen ROM**. Moneo never ships a ROM. The Korean learning experience targets the 2024 Korean fan-translation; the English US Rev 1 ROM also runs (but the Korean flashcards stay dormant on it). See [Korean ROM (2024 fan-translation)](#korean-rom-2024-fan-translation) for how to get the Korean ROM.
+
+**Install:**
+
+1. Download the latest APK from the [**Releases page**](https://github.com/Stan-Stani/moneo/releases).
+2. On your phone, allow installing from your browser/files app when prompted (Settings → *Install unknown apps*).
+3. Open the APK to install, then launch **Moneo**.
+
+**Play:**
+
+1. In the app, go to **Settings → Add ROM** and pick your `.gba` file. Moneo identifies the ROM and turns on the matching features.
+2. Play LeafGreen normally with the on-screen D-pad.
+3. Every tile you walk in the overworld spends from a **movement budget**. When it runs out, the D-pad locks until you **walk in the real world** — your phone's step counter refills the budget.
+4. The Korean words you'd be meeting at that point in the story queue up as a spaced-repetition deck. Review them, then keep playing.
+
+Found a wrong or awkward Korean flashcard? Hit the **✎ Report** button on the review screen — it opens a pre-filled GitHub issue.
+
+---
+
+## Building from source (for contributors)
+
+The rest of this README is for people who want to build, modify, or contribute to Moneo. The full design lives at `~/.claude/plans/i-would-like-to-inherited-papert.md`.
+
+### Status
 
 **Phase 0** — emulator embed scaffolded; not yet validated on-device.
 
-## Prerequisites
+### Prerequisites
 
 - macOS / Linux
 - [Android Studio](https://developer.android.com/studio) (Ladybug 2024.2.1 or newer recommended)
@@ -18,7 +48,7 @@ The full design lives at `~/.claude/plans/i-would-like-to-inherited-papert.md`. 
 - CMake `3.22.1+` (also via SDK Manager)
 - A device or emulator running Android 8.0+ (API 26). For step-counter testing, a physical device with a hardware pedometer is required — the Android Emulator does not expose `TYPE_STEP_COUNTER`.
 
-## First-time setup
+### First-time setup
 
 ```bash
 # Clone with submodules (mGBA lives under third_party/mgba)
@@ -33,7 +63,7 @@ cp /path/to/leafgreen.gba app/src/androidTest/assets/leafgreen.gba
 
 Open the project in Android Studio. The first sync will take a while because CMake will configure mGBA.
 
-## Phase 0 verification
+### Phase 0 verification
 
 ```bash
 ./gradlew connectedDebugAndroidTest
@@ -45,7 +75,7 @@ Both tests in `Phase0EmulatorEmbedTest` must pass:
 
 If those pass, Phase 0 is complete and Phase 1 (playable UI) can begin.
 
-## Layout
+### Layout
 
 ```
 app/
