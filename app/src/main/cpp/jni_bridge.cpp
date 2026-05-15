@@ -24,6 +24,9 @@ extern "C" {
 
 #include "movement_gate.h"
 
+// Vendored xdelta3 (decode-only subset). Self-guards with extern "C".
+#include "xdelta3.h"
+
 #define LOG_TAG "poketrek-jni"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
@@ -342,4 +345,51 @@ Java_com_poketrek_emu_NativeEmulator_loadState(JNIEnv* env, jobject /*thiz*/, jb
                                   SAVESTATE_SAVEDATA | SAVESTATE_RTC);
     vfm->close(vfm);
     return ok ? JNI_TRUE : JNI_FALSE;
+}
+
+// Applies an xdelta (VCDIFF) patch to a base ROM entirely in memory and
+// returns the patched bytes, or null on failure. Standalone — does not
+// touch g_emulator, so no mutex. Mirrors tools/moneo/rom_swap/apply_patch.py:
+// try a strict decode first, then retry with XD3_ADLER32_NOVER so
+// non-canonical base dumps (e.g. [f1]-fixed) still apply.
+extern "C" JNIEXPORT jbyteArray JNICALL
+Java_com_poketrek_emu_NativeEmulator_applyXdelta(JNIEnv* env, jobject /*thiz*/,
+                                                 jbyteArray base, jbyteArray patch) {
+    if (!base || !patch) return nullptr;
+
+    jsize baseLen = env->GetArrayLength(base);
+    jsize patchLen = env->GetArrayLength(patch);
+    std::vector<uint8_t> baseBuf(baseLen), patchBuf(patchLen);
+    env->GetByteArrayRegion(base, 0, baseLen, reinterpret_cast<jbyte*>(baseBuf.data()));
+    env->GetByteArrayRegion(patch, 0, patchLen, reinterpret_cast<jbyte*>(patchBuf.data()));
+
+    // GBA cartridge ROMs top out at 32 MiB; give the decode buffer that ceiling.
+    constexpr usize_t kCap = 32u * 1024u * 1024u;
+    std::vector<uint8_t> out(kCap);
+    usize_t outLen = 0;
+
+    int ret = xd3_decode_memory(patchBuf.data(), patchLen,
+                                baseBuf.data(), baseLen,
+                                out.data(), &outLen, kCap, 0);
+    if (ret != 0) {
+        LOGI("applyXdelta: strict decode failed (%d: %s); retrying ADLER32_NOVER",
+             ret, xd3_strerror(ret));
+        outLen = 0;
+        ret = xd3_decode_memory(patchBuf.data(), patchLen,
+                                baseBuf.data(), baseLen,
+                                out.data(), &outLen, kCap, XD3_ADLER32_NOVER);
+    }
+    if (ret != 0) {
+        LOGE("applyXdelta: decode failed (%d: %s)", ret, xd3_strerror(ret));
+        return nullptr;
+    }
+
+    jbyteArray result = env->NewByteArray(static_cast<jsize>(outLen));
+    if (result) {
+        env->SetByteArrayRegion(result, 0, static_cast<jsize>(outLen),
+                                reinterpret_cast<const jbyte*>(out.data()));
+    }
+    LOGI("applyXdelta: %d-byte base + %d-byte patch -> %u bytes",
+         baseLen, patchLen, static_cast<unsigned>(outLen));
+    return result;
 }

@@ -34,6 +34,33 @@ set(USE_ELF OFF CACHE BOOL "" FORCE)
 set(MGBA_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../../../third_party/mgba")
 add_subdirectory("${MGBA_ROOT}" "${CMAKE_BINARY_DIR}/mgba" EXCLUDE_FROM_ALL)
 
+# Vendored xdelta3 (decode-only subset) for on-device ROM patching.
+# See third_party/xdelta3/README.poketrek.md. Config mirrors the host-side
+# proof that reproduced leafgreen_J-K_2024.gba (CRC 0x4A38A8CB) byte-for-byte:
+# no secondary compressors, no CLI, no regression suite. arm64-v8a and
+# x86_64 are both LP64 so the SIZEOF_* values are correct for both ABIs.
+set(XDELTA3_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../../../third_party/xdelta3")
+add_library(xdelta3 STATIC "${XDELTA3_ROOT}/xdelta3.c")
+target_include_directories(xdelta3 PUBLIC "${XDELTA3_ROOT}")
+# PUBLIC, not PRIVATE: xdelta3.h derives usize_t/xoff_t from these at
+# include time, so every consumer (jni_bridge.cpp) must see the identical
+# values or the types mismatch across the JNI call.
+target_compile_definitions(xdelta3 PUBLIC
+    SIZEOF_SIZE_T=8
+    SIZEOF_UNSIGNED_LONG_LONG=8
+    SIZEOF_UNSIGNED_INT=4
+    SIZEOF_UNSIGNED_LONG=8
+    XD3_USE_LARGEFILE64=0
+    SECONDARY_DJW=0
+    SECONDARY_FGK=0
+    SECONDARY_LZMA=0
+    XD3_MAIN=0
+    REGRESSION_TEST=0
+    XD3_DEBUG=0
+)
+# Upstream third-party C; don't hold it to our -Wall -Wextra posture.
+target_compile_options(xdelta3 PRIVATE -w)
+
 add_library(poketrek SHARED
     jni_bridge.cpp
     movement_gate.cpp
@@ -47,6 +74,7 @@ target_include_directories(poketrek PRIVATE
 # mGBA's static target is named `mgba` (CMake target). Link against it plus log/zlib.
 target_link_libraries(poketrek PRIVATE
     mgba
+    xdelta3
     android
     log
     z

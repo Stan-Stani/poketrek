@@ -70,6 +70,18 @@ class NativeEmulator {
     /** Restores emulator state from a previously-saved byte array. */
     external fun loadState(data: ByteArray): Boolean
 
+    /**
+     * Applies an xdelta (VCDIFF) [patch] to [base] entirely in memory and
+     * returns the patched ROM, or null if the decode fails. Standalone —
+     * unrelated to any loaded ROM; safe to call before [loadRom].
+     *
+     * Used for on-device Korean ROM patching: the user supplies their own
+     * Japanese LeafGreen base, the app applies the bundled/fetched patch.
+     * Tries a strict decode, then retries ignoring the source checksum so
+     * non-canonical base dumps still apply (mirrors apply_patch.py).
+     */
+    external fun applyXdelta(base: ByteArray, patch: ByteArray): ByteArray?
+
     /** Configures mGBA's blip channels for the desired output sample rate. */
     external fun initAudio(sampleRate: Int)
 
