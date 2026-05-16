@@ -106,9 +106,10 @@ class MoneoModule private constructor(context: Context) {
         val sentencesThemedSpecies = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-themed-species.json")
         }.getOrElse { emptyList() }
-        // LLM-generated themed sentences for the mined deck (586 of 591;
-        // 5 lemmas already in sentences-ko-themed.json). Replaces the
-        // rotated-ROM placeholders in the no-spoiler corpus.
+        // LLM-generated themed sentences for the mined deck: 586 original
+        // + a 232-lemma straggler batch (818 total) that closes the
+        // spoiler-free gap (incl. 따르다). Replaces the rotated-ROM
+        // placeholders in the no-spoiler corpus.
         val sentencesThemedMined = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-themed-mined.json")
         }.getOrElse { emptyList() }
