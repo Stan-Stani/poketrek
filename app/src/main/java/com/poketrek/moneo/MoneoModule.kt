@@ -120,12 +120,19 @@ class MoneoModule private constructor(context: Context) {
         val sentencesThemedTopik = runCatching {
             com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-themed-topik.json")
         }.getOrElse { emptyList() }
+        // LLM-generated themed sentences for the etymology root deck. Each
+        // line features the species whose Korean name carries the root, so
+        // the root surfaces as a substring without leaking ROM dialog. Without
+        // this the entire etymology deck has no spoiler-free example.
+        val sentencesThemedEtymology = runCatching {
+            com.poketrek.moneo.data.SentenceLoader.loadFromAssets(context, "moneo/sentences-ko-themed-etymology.json")
+        }.getOrElse { emptyList() }
         val allRomSentences = sentencesRom + sentencesMined + sentencesTopik + sentencesSpecies + sentencesEtymology
         // Spoiler-free corpus: hand-curated study sentences plus the themed
         // batch. The mined/topik/species/etymology corpora themselves are all
         // ROM-sourced (or surface in-game species names) so they leak content
         // when the user explicitly opts out of spoilers via the verbatim toggle.
-        val allStudySentences = sentencesStudy + sentencesThemed + sentencesThemedSpecies + sentencesThemedMined + sentencesThemedTopik
+        val allStudySentences = sentencesStudy + sentencesThemed + sentencesThemedSpecies + sentencesThemedMined + sentencesThemedTopik + sentencesThemedEtymology
         repository = MoneoRepository(
             store = store,
             initialVocab = vocab,
