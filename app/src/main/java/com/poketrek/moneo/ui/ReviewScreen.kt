@@ -240,6 +240,28 @@ fun ReviewScreen(
             romCrc32 = romCrc32Hex,
         )
     }
+    // Card-level report: usable even when there's no spoiler-free example
+    // sentence (mined/etymology lemmas with a corpus gap). Without this the
+    // entries that most need flagging would be the only ones you can't flag,
+    // since the Report button used to live exclusively inside SentenceCard.
+    val onReportCard: () -> Unit = {
+        pendingCorrection = CorrectionReport(
+            vocabId = vocab.id,
+            vocabHeadword = vocab.korean,
+            vocabGloss = vocab.gloss,
+            areaId = areaId,
+            currentKorean = vocab.korean,
+            currentGloss = vocab.gloss,
+            source = null,
+            speaker = null,
+            generator = null,
+            proposedKorean = null,
+            proposedGloss = null,
+            reason = null,
+            appVersion = BuildConfig.VERSION_NAME,
+            romCrc32 = romCrc32Hex,
+        )
+    }
     val front: @Composable () -> Unit = {
         CardFront(
             text = sides.front,
@@ -312,16 +334,18 @@ fun ReviewScreen(
                                 direction = direction,
                                 senses = sensesForBack(vocab, direction),
                             )
-                            sentenceSides?.let { ss ->
+                            if (sentenceSides != null) {
                                 SentenceCard(
-                                    frontText = ss.front,
-                                    backText = ss.back,
+                                    frontText = sentenceSides.front,
+                                    backText = sentenceSides.back,
                                     showBack = showSentenceGloss,
                                     generator = sentence?.generator,
                                     canSpeak = frontHasSpeaker,
-                                    onSpeak = { module.tts.speak(ss.front, frontLang) },
+                                    onSpeak = { module.tts.speak(sentenceSides.front, frontLang) },
                                     onReport = sentence?.let { s -> { onReportSentence(s) } },
                                 )
+                            } else {
+                                ReportOnlyCard(onReport = onReportCard)
                             }
                         }
                         ratings()
@@ -347,16 +371,18 @@ fun ReviewScreen(
                         direction = direction,
                         senses = sensesForBack(vocab, direction),
                     )
-                    sentenceSides?.let { ss ->
+                    if (sentenceSides != null) {
                         SentenceCard(
-                            frontText = ss.front,
-                            backText = ss.back,
+                            frontText = sentenceSides.front,
+                            backText = sentenceSides.back,
                             showBack = showSentenceGloss,
                             generator = sentence?.generator,
                             canSpeak = frontHasSpeaker,
-                            onSpeak = { module.tts.speak(ss.front, frontLang) },
+                            onSpeak = { module.tts.speak(sentenceSides.front, frontLang) },
                             onReport = sentence?.let { s -> { onReportSentence(s) } },
                         )
+                    } else {
+                        ReportOnlyCard(onReport = onReportCard)
                     }
                     ratings()
                 } else {
@@ -505,6 +531,32 @@ private fun CardBack(
         notes?.let {
             Text(it, color = Color(0xFFA7F3D0), fontSize = 12.sp)
         }
+    }
+}
+
+/**
+ * Shown in place of [SentenceCard] when the revealed card has no example
+ * sentence to display (e.g. a mined/etymology lemma with no spoiler-free
+ * line). Keeps the Report affordance reachable so corpus gaps are exactly
+ * the cards the user *can* flag, not the ones they can't.
+ */
+@Composable
+private fun ReportOnlyCard(onReport: () -> Unit) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.End,
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Text(
+            "✎ Report",
+            color = Color.White,
+            fontSize = 11.sp,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier
+                .background(Color(0xFF334155), shape = RoundedCornerShape(4.dp))
+                .clickable { onReport() }
+                .padding(horizontal = 6.dp, vertical = 2.dp),
+        )
     }
 }
 
