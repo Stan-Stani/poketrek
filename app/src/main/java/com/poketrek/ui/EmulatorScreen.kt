@@ -49,6 +49,9 @@ fun EmulatorScreen(
     moneoGate: MoneoSoftGate,
     onDebugAddSteps: (Int) -> Unit,
     onPickRom: () -> Unit,
+    onSetupKoreanRom: () -> Unit = {},
+    koreanSetupState: () -> com.poketrek.emu.KoreanRomPatcher.State =
+        { com.poketrek.emu.KoreanRomPatcher.State.Idle },
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
     onLoadSlot: (Int) -> Boolean,
@@ -169,6 +172,8 @@ fun EmulatorScreen(
                 romIdentity = romIdentity,
                 onDismiss = { settingsOpen = false },
                 onPickRom = onPickRom,
+                onSetupKoreanRom = onSetupKoreanRom,
+                koreanSetupState = koreanSetupState,
                 getSaveSlots = getSaveSlots,
                 onSaveSlot = onSaveSlot,
                 onLoadSlot = onLoadSlot,

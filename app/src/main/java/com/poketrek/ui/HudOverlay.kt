@@ -268,6 +268,9 @@ fun SettingsSheet(
     romIdentity: RomIdentity?,
     onDismiss: () -> Unit,
     onPickRom: () -> Unit,
+    onSetupKoreanRom: () -> Unit = {},
+    koreanSetupState: () -> com.poketrek.emu.KoreanRomPatcher.State =
+        { com.poketrek.emu.KoreanRomPatcher.State.Idle },
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
     onLoadSlot: (Int) -> Boolean,
@@ -345,6 +348,10 @@ fun SettingsSheet(
                         onClearStatus = onClearCalibrationStatus,
                     )
                 }
+                KoreanRomSetupSection(
+                    state = koreanSetupState(),
+                    onSetup = onSetupKoreanRom,
+                )
             }
 
             SectionCard(title = "Movement") {
@@ -1060,6 +1067,73 @@ private fun ShopSection(
             }
     }
 }
+/**
+ * "Set up Korean ROM" entry in the ROMs section. Lets a user who owns a
+ * Japanese LeafGreen 1.0 dump build the 2024 Korean fan-translation ROM
+ * on-device: we download the authors' public patch bundle and apply it
+ * with the native xdelta bridge. We host no ROM — only the user's base
+ * plus the authors' patch.
+ */
+@Composable
+private fun KoreanRomSetupSection(
+    state: com.poketrek.emu.KoreanRomPatcher.State,
+    onSetup: () -> Unit,
+) {
+    val running = state as? com.poketrek.emu.KoreanRomPatcher.State.Running
+
+    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Text("Korean ROM (2024 patch)", fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+        Text(
+            "Own a Japanese LeafGreen 1.0 ROM? Build the 99.6%-complete " +
+                "2024 Korean translation on your device. The fan-translation " +
+                "patch is downloaded from the authors (명군 외); your ROM never " +
+                "leaves the device.",
+            fontSize = 11.sp,
+            color = Color(0xFF6B7280),
+        )
+        when {
+            running != null -> {
+                val label = when (running.phase) {
+                    com.poketrek.emu.KoreanRomPatcher.Phase.DOWNLOADING_PATCH ->
+                        "Downloading patch…"
+                    com.poketrek.emu.KoreanRomPatcher.Phase.EXTRACTING_PATCH ->
+                        "Extracting patch…"
+                    com.poketrek.emu.KoreanRomPatcher.Phase.PATCHING -> "Patching ROM…"
+                    com.poketrek.emu.KoreanRomPatcher.Phase.VERIFYING -> "Verifying…"
+                }
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    CircularProgressIndicator(
+                        modifier = Modifier.size(18.dp),
+                        strokeWidth = 2.dp,
+                    )
+                    Text(label, fontSize = 12.sp)
+                }
+            }
+            state is com.poketrek.emu.KoreanRomPatcher.State.Success -> {
+                Text(
+                    "Korean ROM ready and loaded " +
+                        "(${com.poketrek.emu.RomIdentity.crc32Hex(state.crc32)}).",
+                    color = Color(0xFF059669),
+                    fontSize = 12.sp,
+                )
+            }
+            state is com.poketrek.emu.KoreanRomPatcher.State.Error -> {
+                Text("Setup failed.", color = Color(0xFFB91C1C), fontSize = 12.sp)
+                Text(state.message, fontSize = 11.sp, color = Color(0xFF6B7280))
+                Button(onClick = onSetup) { Text("Try again", fontSize = 12.sp) }
+            }
+            else -> {
+                Button(onClick = onSetup) {
+                    Text("Set up Korean ROM…", fontSize = 12.sp)
+                }
+            }
+        }
+    }
+}
+
 @Composable
 private fun CalibrationSection(
     hasCalibration: Boolean,

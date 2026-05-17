@@ -267,6 +267,16 @@ class EmulatorRunner(
         return true
     }
 
+    /**
+     * Applies an xdelta [patch] to [base], returning the patched bytes or
+     * null. Delegates to the native bridge; [NativeEmulator.applyXdelta] is
+     * standalone (no loaded-ROM state, no mutex), so this is safe to call
+     * before any [loadRom]. Used by [KoreanRomPatcher] for on-device
+     * Japanese→Korean ROM construction.
+     */
+    fun applyXdelta(base: ByteArray, patch: ByteArray): ByteArray? =
+        native.applyXdelta(base, patch)
+
     private fun startAudio() {
         val minBuf = AudioTrack.getMinBufferSize(
             SAMPLE_RATE,

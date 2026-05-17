@@ -30,11 +30,16 @@ import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.lifecycle.lifecycleScope
 import android.provider.OpenableColumns
 import com.poketrek.emu.CalibrationStore
 import com.poketrek.emu.EmulatorRunner
+import com.poketrek.emu.KoreanRomPatcher
 import com.poketrek.emu.RomCache
 import com.poketrek.emu.SaveStateStore
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import com.poketrek.moneo.MoneoModule
 import com.poketrek.moneo.gate.MoneoSoftGate
 import com.poketrek.step.MovementBudget
@@ -50,6 +55,11 @@ class EmulatorActivity : ComponentActivity() {
     private lateinit var moneo: MoneoModule
     private lateinit var moneoGate: MoneoSoftGate
     private lateinit var romCache: RomCache
+
+    // On-device Japanese→Korean ROM construction. Surfaced to the settings
+    // UI so the user sees download/patch/verify progress and errors.
+    private val koreanSetupState: MutableState<KoreanRomPatcher.State> =
+        mutableStateOf(KoreanRomPatcher.State.Idle)
 
     // Orientation lock + manual flip. The activity is locked (no sensor
     // follow) but we listen to OrientationEventListener purely to detect when
@@ -93,6 +103,53 @@ class EmulatorActivity : ComponentActivity() {
                 ?: identity.variant.displayName.takeIf { it.isNotBlank() }
                 ?: "ROM ${identity.crc32Hex}"
             romCache.put(bytes, identity.crc32, label)
+        }
+    }
+
+    // Step 1 of Korean setup: user picks their own Japanese LeafGreen 1.0
+    // base. We then download the authors' patch bundle, apply it via the
+    // native xdelta bridge, verify the CRC, cache + load. No ROM is ever
+    // shipped or hosted by us — only the user's base + the authors' patch.
+    private val pickJpBaseForKorean = registerForActivityResult(
+        ActivityResultContracts.OpenDocument(),
+    ) { uri: Uri? ->
+        if (uri == null) return@registerForActivityResult
+        val baseBytes = runCatching {
+            contentResolver.openInputStream(uri)?.use { it.readBytes() }
+        }.getOrNull()
+        if (baseBytes == null) {
+            koreanSetupState.value =
+                KoreanRomPatcher.State.Error("Couldn't read the selected file.")
+            return@registerForActivityResult
+        }
+        koreanSetupState.value =
+            KoreanRomPatcher.State.Running(KoreanRomPatcher.Phase.DOWNLOADING_PATCH)
+        lifecycleScope.launch {
+            val result = withContext(Dispatchers.IO) {
+                KoreanRomPatcher.produce(
+                    baseBytes = baseBytes,
+                    cacheDir = applicationContext.cacheDir,
+                    applyXdelta = runner::applyXdelta,
+                    onPhase = { phase ->
+                        koreanSetupState.value = KoreanRomPatcher.State.Running(phase)
+                    },
+                )
+            }
+            result.onSuccess { korean ->
+                val identity = com.poketrek.emu.RomIdentity.of(korean)
+                if (runner.loadRom(korean)) {
+                    romCache.put(korean, identity.crc32, KoreanRomPatcher.ROM_LABEL)
+                    koreanSetupState.value = KoreanRomPatcher.State.Success(identity.crc32)
+                } else {
+                    koreanSetupState.value =
+                        KoreanRomPatcher.State.Error("Patched ROM failed to load.")
+                }
+            }.onFailure {
+                Log.w(TAG, "Korean ROM setup failed", it)
+                koreanSetupState.value = KoreanRomPatcher.State.Error(
+                    it.message ?: "Korean ROM setup failed.",
+                )
+            }
         }
     }
 
@@ -174,6 +231,11 @@ class EmulatorActivity : ComponentActivity() {
                         moneo = moneo,
                         moneoGate = moneoGate,
                         onPickRom = { pickRom.launch(arrayOf("application/octet-stream", "*/*")) },
+                        onSetupKoreanRom = {
+                            koreanSetupState.value = KoreanRomPatcher.State.Idle
+                            pickJpBaseForKorean.launch(arrayOf("application/octet-stream", "*/*"))
+                        },
+                        koreanSetupState = { koreanSetupState.value },
                         onDebugAddSteps = budget::debugAddSteps,
                         getSaveSlots = saveStateStore::slots,
                         onSaveSlot = { slot ->
@@ -304,6 +366,8 @@ private fun AppRoot(
     moneo: MoneoModule,
     moneoGate: MoneoSoftGate,
     onPickRom: () -> Unit,
+    onSetupKoreanRom: () -> Unit,
+    koreanSetupState: () -> KoreanRomPatcher.State,
     onDebugAddSteps: (Int) -> Unit,
     getSaveSlots: () -> List<com.poketrek.emu.SaveStateStore.Slot>,
     onSaveSlot: (Int) -> Boolean,
@@ -337,6 +401,8 @@ private fun AppRoot(
                 moneoGate = moneoGate,
                 onDebugAddSteps = onDebugAddSteps,
                 onPickRom = onPickRom,
+                onSetupKoreanRom = onSetupKoreanRom,
+                koreanSetupState = koreanSetupState,
                 getSaveSlots = getSaveSlots,
                 onSaveSlot = onSaveSlot,
                 onLoadSlot = onLoadSlot,
